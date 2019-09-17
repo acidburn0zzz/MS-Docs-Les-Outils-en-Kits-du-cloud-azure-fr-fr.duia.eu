@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 39254fdf2dd5638978899308c4fe79cd40cf249f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 17f462802a9ff5b44dfd734b299057649bbd797b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816956"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023844"
 ---
 # <a name="migration-tools-decision-guide"></a>Guide de décision sur les outils de migration
 
@@ -21,7 +21,7 @@ La stratégie et les outils que vous utilisez pour effectuer la migration d’un
 
 Le choix entre une migration à l’aide d’une technologie PaaS ou d’une technologie IaaS est déterminé par l’équilibre entre le coût, le temps, la dette technique existante et les rendements à long terme. La technologie IaaS est souvent le chemin le plus rapide vers le cloud et qui nécessite le moins de modifications à la charge de travail. La technologie PaaS peut nécessiter des modifications au niveau des structures de données ou du code source, mais elle génère d’importants rendements à long terme, qui se traduisent par une réduction des coûts d’exploitation et une plus grande flexibilité technique. Dans le diagramme suivant, le terme _moderniser_ est utilisé pour refléter une décision visant à moderniser une ressource pendant la migration et à effectuer sa migration vers une plateforme PaaS.
 
-![Exemple de guide de décision sur les outils de migration](../../_images/migration/migration-tools-decision-tree.png)
+![Exemple de guide de décision sur les outils de migration](../../_images/migrate/migration-tools-decision-tree.png)
 
 ## <a name="key-questions"></a>Questions clés
 
@@ -40,7 +40,7 @@ Conformément à l’importance qui est donnée à la [migration incrémentielle
 
 ## <a name="learn-more"></a>En savoir plus
 
-- **[Principes de base du cloud : Vue d’ensemble des options de calcul Azure](/azure/architecture/guide/technology-choices/compute-overview)** . Fournit des informations sur les fonctionnalités des options de calcul Azure IaaS et PaaS.
-- **[Principes de base du cloud : Choisir le bon magasin de données](/azure/architecture/guide/technology-choices/data-store-overview)** . Décrit les options de stockage PaaS qui sont disponibles sur la plateforme Azure.
+- **[Principes de base du cloud : Vue d’ensemble des options de calcul Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Fournit des informations sur les fonctionnalités des options de calcul Azure IaaS et PaaS.
+- **[Principes de base du cloud : Choisir le bon magasin de données](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Décrit les options de stockage PaaS qui sont disponibles sur la plateforme Azure.
 - **[Migration à cadre étendu : les besoins en stockage dépassent la capacité réseau lors d’une migration](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Décrit les autres mécanismes de migration de données pour les cas où la migration des données est entravée par la quantité de bande passante réseau disponible.
-- **[Base de données SQL : Choisir l’option SQL Server appropriée dans Azure](/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Aborde les options et les justifications métier permettant de choisir entre une infrastructure hébergée (IaaS) ou un service hébergé (PaaS) pour héberger vos charges de travail SQL Server.
+- **[Base de données SQL : Choisir l’option SQL Server appropriée dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Aborde les options et les justifications métier permettant de choisir entre une infrastructure hébergée (IaaS) ou un service hébergé (PaaS) pour héberger vos charges de travail SQL Server.

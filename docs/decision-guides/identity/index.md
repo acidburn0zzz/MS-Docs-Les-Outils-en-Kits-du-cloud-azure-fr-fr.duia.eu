@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2e1ba47201285559be784fafe6b39bdbde0c35ed
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817075"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023894"
 ---
 # <a name="identity-decision-guide"></a>Guide de décision concernant l’identité
 
 Dans tous les environnements (local, hybride ou cloud uniquement), le service informatique doit contrôler les administrateurs, les utilisateurs et les groupes qui ont accès aux ressources. Les services de gestion des identités et des accès (IAM) vous permettent de gérer le contrôle des accès dans le cloud.
 
-![Options d’identité, de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/discovery-guides/discovery-guide-identity.png)
+![Options d’identité, de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/decision-guides/decision-guide-identity.png)
 
 Passer à : [Déterminer les exigences d’intégration des identités](#determine-identity-integration-requirements) | [Base de référence cloud](#cloud-baseline) | [Synchronisation des annuaires](#directory-synchronization) | [Services de domaines hébergés dans le cloud](#cloud-hosted-domain-services) | [Active Directory Federation Services](#active-directory-federation-services) | [En savoir plus](#learn-more)
 
@@ -61,7 +61,7 @@ Azure AD est le système natif de gestion des identités et des accès (IAM) qu
 
 Pour les organisations qui disposent déjà d’une infrastructure Active Directory locale, la synchronisation d’annuaires est souvent la meilleure solution pour conserver la gestion des accès et des utilisateurs existante tout en bénéficiant des capacités IAM nécessaires pour gérer les ressources cloud. Ce processus permet de dupliquer en continu les informations d’annuaire entre Azure AD et les services d’annuaire locaux. Ainsi, les utilisateurs peuvent utiliser les mêmes informations d’identification, la même identité, les mêmes rôles et les mêmes autorisations dans l’ensemble de votre organisation.
 
-Remarque : Les organisations qui ont adopté Office 365 ont peut-être déjà implémenté [la synchronisation d’annuaires](/office365/enterprise/set-up-directory-synchronization) entre leur infrastructure locale Active Directory et Azure Active Directory.
+Remarque : Les organisations qui ont adopté Office 365 ont peut-être déjà implémenté [la synchronisation d’annuaires](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) entre leur infrastructure locale Active Directory et Azure Active Directory.
 
 **Conditions nécessaires à la synchronisation d’annuaires** : L’utilisation d’une solution d’identité synchronisée implique les hypothèses suivantes :
 
@@ -91,16 +91,16 @@ Il se peut que vos services de domaine et de répertoires existants soient toujo
 
 La fédération des identités établit des relations d’approbation entre plusieurs systèmes de gestion des identités afin de permettre l’authentification et des fonctionnalités d’autorisation communes. Vous pouvez ensuite prendre en charge les fonctionnalités d’authentification unique sur plusieurs domaines dans votre organisation ou les systèmes d’identité gérés par vos clients ou partenaires commerciaux.
 
-Azure AD prend en charge la fédération de domaines Active Directory locaux à l’aide d’[Active Directory Federation Services](/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). Consultez l’architecture de référence [Extension d’AD FS vers Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs) pour en savoir plus sur l’implémentation dans Azure.
+Azure AD prend en charge la fédération de domaines Active Directory locaux à l’aide d’[Active Directory Federation Services](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). Consultez l’architecture de référence [Extension d’AD FS vers Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs) pour en savoir plus sur l’implémentation dans Azure.
 
 ## <a name="learn-more"></a>En savoir plus
 
 Pour plus d’informations sur les services d’identité dans Azure, consultez :
 
 - [Azure AD](https://azure.microsoft.com/services/active-directory). Azure AD fournit un service d’identité basé sur le cloud. Il vous permet de gérer l’accès à vos ressources Azure et de contrôler la gestion des identités, l’inscription des appareils, l’approvisionnement des utilisateurs, le contrôle de l’accès aux applications et la protection des données.
-- [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity). L’outil Azure AD Connect vous permet de connecter des instances Azure AD avec vos solutions de gestion des identités existantes, en autorisant la synchronisation de votre répertoire existant avec le cloud.
-- [Contrôle d’accès en fonction du rôle](/azure/role-based-access-control/overview) (RBAC). Azure AD fournit le contrôle des accès en fonction du rôle pour gérer efficacement et en toute sécurité l’accès aux ressources dans le plan de gestion. Les travaux et les responsabilités sont classés par rôle, et les utilisateurs sont assignés à ces rôles. Le RBAC vous permet de contrôler les utilisateurs qui ont accès à une ressource, ainsi que les actions qu’ils peuvent effectuer sur cette ressource.
-- [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM). PIM réduit le temps d’exposition des privilèges d’accès aux ressources et augmente votre visibilité en matière d’utilisation grâce à des rapports et des alertes. PIM autorise les utilisateurs à utiliser ces privilèges uniquement pendant une période précise (juste-à-temps (JIT)), ou en leur attribuant des privilèges pour une plus courte durée après laquelle ces privilèges sont automatiquement révoqués.
+- [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity). L’outil Azure AD Connect vous permet de connecter des instances Azure AD avec vos solutions de gestion des identités existantes, en autorisant la synchronisation de votre répertoire existant avec le cloud.
+- [Contrôle d’accès en fonction du rôle](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC). Azure AD fournit le contrôle des accès en fonction du rôle pour gérer efficacement et en toute sécurité l’accès aux ressources dans le plan de gestion. Les travaux et les responsabilités sont classés par rôle, et les utilisateurs sont assignés à ces rôles. Le RBAC vous permet de contrôler les utilisateurs qui ont accès à une ressource, ainsi que les actions qu’ils peuvent effectuer sur cette ressource.
+- [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM). PIM réduit le temps d’exposition des privilèges d’accès aux ressources et augmente votre visibilité en matière d’utilisation grâce à des rapports et des alertes. PIM autorise les utilisateurs à utiliser ces privilèges uniquement pendant une période précise (juste-à-temps (JIT)), ou en leur attribuant des privilèges pour une plus courte durée après laquelle ces privilèges sont automatiquement révoqués.
 - [Intégrer des domaines Active Directory locaux avec Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad). Cette architecture de référence fournit un exemple de synchronisation d’annuaires entre des domaines Active Directory locaux et Azure AD.
 - [Étendre Active Directory Domain Services (AD DS) à Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain). Cette architecture de référence fournit un exemple de déploiement de serveurs AD DS pour étendre les services de domaine aux ressources basées sur le cloud.
 - [Étendre les services de fédération Active Directory (AD FS) à Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs). Cette architecture de référence configure Active Directory Federation Services (ADFS) afin d’effectuer l’authentification fédérée et l’autorisation auprès de votre répertoire Azure AD.

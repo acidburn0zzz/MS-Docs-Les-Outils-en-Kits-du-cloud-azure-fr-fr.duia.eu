@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ac8d65ab897ddeac94305c9d2c365281808b36c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817959"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023761"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guide de décision concernant le SDN (Software Defined Networking)
 
@@ -22,9 +22,9 @@ La mise en réseau définie par logiciel (ou SDN, pour Software Defined Networki
 
 ## <a name="networking-decision-guide"></a>Guide de décision concernant la mise en réseau
 
-![Options de mise en réseau, de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/discovery-guides/discovery-guide-sdn.png)
+![Options de mise en réseau, de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Passer à : [PaaS uniquement](paas-only.md) | [Natif cloud](cloud-native.md) | [Zone DMZ cloud](cloud-dmz.md) [Hybride](hybrid.md) | [Modèle hub-and-spoke](hub-spoke.md) | [En savoir plus](#learn-more)
+Passer à : [PaaS uniquement](./paas-only.md) | [Natif cloud](./cloud-native.md) | [Zone DMZ cloud](./cloud-dmz.md) [Hybride](./hybrid.md) | [Modèle hub-and-spoke](./hub-spoke.md) | [En savoir plus](#learn-more)
 
 Le SDN fournit plusieurs options avec différents degrés de complexité et de tarification. Le guide de découverte ci-dessus fournit une référence pour personnaliser rapidement ces options afin de s’aligner au mieux sur des stratégies commerciales et technologiques spécifiques.
 
@@ -53,18 +53,18 @@ Lors de la planification de l’architecture de réseau virtuel ou de la combina
 
 En savoir plus sur les principales architectures réseau définies par le logiciel :
 
-- **[PaaS uniquement](paas-only.md) :** La plupart des produits PaaS (Platform as a Service) prennent en charge un ensemble limité de fonctions réseau intégrées et peuvent ne pas nécessiter un réseau à définition logicielle explicitement défini pour répondre aux besoins de charge de travail.
-- **[Natif cloud](cloud-native.md) :** Une architecture native cloud gère les charges de travail basées sur le cloud, au moyen de réseaux virtuels reposant sur les fonctionnalités réseau à définition logicielle par défaut de la plateforme cloud, sans avoir recours à des ressources locales ou externes.
-- **[Zone DMZ cloud](cloud-dmz.md) :** Prend en charge une connectivité limitée entre votre réseau local et votre réseau cloud, sécurisée par l’implémentation d’une zone démilitarisée contrôlant étroitement le trafic entre les deux environnements.
-- **[Hybride](hybrid.md) :** L’architecture de réseau cloud hybride permet aux réseaux virtuels d’environnements cloud approuvés d’accéder à vos ressources locales, et vice versa.
-- **[Hub-and-spoke](hub-spoke.md) :** L’architecture hub-and-spoke vous permet de gérer de manière centralisée la connectivité externe et les services partagés, d’isoler les charges de travail individuelles et de surmonter les limites d’abonnement potentielles.
+- **[PaaS uniquement](./paas-only.md) :** La plupart des produits PaaS (Platform as a Service) prennent en charge un ensemble limité de fonctions réseau intégrées et peuvent ne pas nécessiter un réseau à définition logicielle explicitement défini pour répondre aux besoins de charge de travail.
+- **[Natif cloud](./cloud-native.md) :** Une architecture native cloud gère les charges de travail basées sur le cloud, au moyen de réseaux virtuels reposant sur les fonctionnalités réseau à définition logicielle par défaut de la plateforme cloud, sans avoir recours à des ressources locales ou externes.
+- **[Zone DMZ cloud](./cloud-dmz.md) :** Prend en charge une connectivité limitée entre votre réseau local et votre réseau cloud, sécurisée par l’implémentation d’une zone démilitarisée contrôlant étroitement le trafic entre les deux environnements.
+- **[Hybride](./hybrid.md) :** L’architecture de réseau cloud hybride permet aux réseaux virtuels d’environnements cloud approuvés d’accéder à vos ressources locales, et vice versa.
+- **[Hub-and-spoke](./hub-spoke.md) :** L’architecture hub-and-spoke vous permet de gérer de manière centralisée la connectivité externe et les services partagés, d’isoler les charges de travail individuelles et de surmonter les limites d’abonnement potentielles.
 
 ## <a name="learn-more"></a>En savoir plus
 
 Pour plus d’informations sur le SDN (Software-Defined Networking) dans Azure, consultez :
 
-- [Réseau virtuel Azure](/azure/virtual-network/virtual-networks-overview) : sur Azure, la capacité fondamentale du SDN est fournie par un réseau virtuel Azure, qui agit comme un cloud analogue aux réseaux physiques locaux. Les réseaux virtuels servent également de limite d’isolement par défaut entre les ressources de la plate-forme.
-- [Meilleures pratiques Azure pour la sécurité réseau](/azure/security/azure-security-network-security-best-practices). suggestions de l’équipe Azure Security sur la façon de configurer vos réseaux virtuels pour minimiser les vulnérabilités de sécurité.
+- [Réseau virtuel Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) : sur Azure, la capacité fondamentale du SDN est fournie par un réseau virtuel Azure, qui agit comme un cloud analogue aux réseaux physiques locaux. Les réseaux virtuels servent également de limite d’isolement par défaut entre les ressources de la plate-forme.
+- [Meilleures pratiques Azure pour la sécurité réseau](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices). suggestions de l’équipe Azure Security sur la façon de configurer vos réseaux virtuels pour minimiser les vulnérabilités de sécurité.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

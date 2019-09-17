@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f1d4423e230d2eeff524a864f163e0cb13dc065b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 275342d452c3f9c47c004014d6e2831c88aa91df
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818265"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022234"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Meilleures pratiques de préparation pour Azure
 
@@ -24,7 +24,7 @@ Une grande partie de la préparation à l’adoption du cloud consiste à fourni
 Utilisez les indications suivantes lors de l’organisation et du déploiement de vos ressources dans l’environnement Azure :
 
 - [Concepts fondamentaux Azure](../considerations/fundamental-concepts.md). Découvrez les concepts fondamentaux et les termes utilisés dans Azure. Découvrez également les relations entre ces concepts.
-- [Conventions de nommage et de catégorisation recommandées](../considerations/name-and-tag.md). Passez en revue les recommandations détaillées relatives au nommage et la catégorisation de vos ressources. Celles-ci sont conçues pour prendre en charge les efforts d’adoption du cloud en entreprise.
+- [Conventions de nommage et de catégorisation recommandées](../considerations/naming-and-tagging.md). Passez en revue les recommandations détaillées relatives au nommage et la catégorisation de vos ressources. Celles-ci sont conçues pour prendre en charge les efforts d’adoption du cloud en entreprise.
 - [Mise à l’échelle avec plusieurs abonnements Azure](../considerations/scaling-subscriptions.md). Apprenez-en davantage sur les stratégies de mise à l’échelle avec plusieurs abonnements Azure.
 - [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json). Découvrez comment les groupes d’administration Azure peuvent aider à gérer les ressources, les rôles, les stratégies et le déploiement parmi plusieurs abonnements.
 - [Créer une cohérence de cloud hybride](../../infrastructure/misc/hybrid-consistency.md). Créez des solutions cloud hybrides qui offrent les avantages de l’innovation du cloud tout en conservant la plupart des aspects pratiques de la gestion locale.

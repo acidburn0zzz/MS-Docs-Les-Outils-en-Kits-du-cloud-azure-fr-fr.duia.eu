@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 082db3cb266c428d371687ebb32a4d7d52c4663a
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817840"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023465"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,10 +44,10 @@ L’analyse du patrimoine numérique gère les activités d’adoption du cloud.
 
 Pour réaliser l’analyse du patrimoine numérique, effectuez les étapes suivantes :
 
-1. [Déterminez la méthode d’analyse](approach.md).
-1. [Réalisez l’inventaire de l’état actuel des ressources](inventory.md).
-1. [Rationalisez les ressources du patrimoine numérique](rationalize.md).
-1. [Alignez les ressources sur les offres cloud pour calculer le prix](calculate.md).
+1. [Déterminez la méthode d’analyse](./approach.md).
+1. [Réalisez l’inventaire de l’état actuel des ressources](./inventory.md).
+1. [Rationalisez les ressources du patrimoine numérique](./rationalize.md).
+1. [Alignez les ressources sur les offres cloud pour calculer le prix](./calculate.md).
 
 Les modèles financiers et les backlogs de migration peuvent être modifiés pour mieux refléter le patrimoine après sa rationalisation et son évaluation.
 
@@ -56,4 +56,4 @@ Les modèles financiers et les backlogs de migration peuvent être modifiés pou
 Avant de commencer la planification du patrimoine numérique, déterminez l’approche à utiliser.
 
 > [!div class="nextstepaction"]
-> [Approches de la planification du patrimoine numérique](approach.md)
+> [Approches de la planification du patrimoine numérique](./approach.md)

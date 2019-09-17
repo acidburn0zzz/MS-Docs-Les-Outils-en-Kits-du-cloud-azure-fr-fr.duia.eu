@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cd4d6e7a017c9a71c090110720c28701082ce792
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817551"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023645"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guides de décision concernant le nommage et l’étiquetage des ressources
 
@@ -26,7 +26,7 @@ L’organisation des ressources cloud est l’une des tâches les plus important
 
 ## <a name="tagging-decision-guide"></a>Guide de décision concernant l’étiquetage
 
-![Options d’étiquetage, de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/discovery-guides/discovery-guide-tagging.png)
+![Options d’étiquetage, de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/decision-guides/decision-guide-resource-tagging.png)
 
 Passer à : [Conventions de nommage des bases de référence](#baseline-naming-conventions) | [Modèles d’étiquetage des ressources](#resource-tagging-patterns) | [En savoir plus](#learn-more)
 
@@ -74,7 +74,7 @@ Les modèles d’étiquetage courants listés ci-dessous montrent comment vous p
 Pour plus d’informations sur le nommage et l’étiquetage dans Azure, consultez :
 
 - [Conventions d’affectation de noms pour les ressources Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Consultez ce guide afin de connaître les conventions de nommage recommandées pour les ressources Azure.
-- [Organisation des ressources Azure à l’aide d’étiquettes](/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Dans Azure, vous pouvez appliquer des étiquettes au niveau des groupes de ressources et au niveau des ressources, ce qui vous permet de choisir le niveau de granularité des rapports comptables en fonction des étiquettes appliquées.
+- [Organisation des ressources Azure à l’aide d’étiquettes](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Dans Azure, vous pouvez appliquer des étiquettes au niveau des groupes de ressources et au niveau des ressources, ce qui vous permet de choisir le niveau de granularité des rapports comptables en fonction des étiquettes appliquées.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

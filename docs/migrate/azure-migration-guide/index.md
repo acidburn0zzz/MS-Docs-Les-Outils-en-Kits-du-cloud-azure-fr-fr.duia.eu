@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d370f8e868be1186aad17b89915f52ad0413d04d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b77b8fbbe6479b716d9b9f91d6e0154db8c0db7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816429"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022797"
 ---
 ::: zone target="chromeless"
 
@@ -67,7 +67,7 @@ Ce guide vous aide à répondre à ces questions. Il suggère les tâches et les
 
 ::: zone target="docs"
 
-Pour en savoir plus sur l’organisation et la structuration de vos abonnements, la gestion de vos ressources déployées et la conformité aux conditions de votre stratégie d’entreprise, consultez [Gouvernance dans Azure](/azure/security/governance-in-azure).
+Pour en savoir plus sur l’organisation et la structuration de vos abonnements, la gestion de vos ressources déployées et la conformité aux conditions de votre stratégie d’entreprise, consultez [Gouvernance dans Azure](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 ::: zone-end
 
@@ -112,8 +112,8 @@ Ces méthodes ne s’excluent pas mutuellement&mdash;par exemple, alors que la m
 
 ::: zone target="docs"
 
-Ces méthodes ne s’excluent pas mutuellement&mdash;par exemple, alors que la migration peut à la base utiliser un modèle de **réhébergement**, vous pouvez choisir d’implémenter une **refactorisation** ou une **réarchitecture** dans le cadre de la phase d’optimisation post-migration. Ce point est traité dans la section [Optimiser et transformer](optimize-and-transform.md) de ce guide.
+Ces méthodes ne s’excluent pas mutuellement&mdash;par exemple, alors que la migration peut à la base utiliser un modèle de **réhébergement**, vous pouvez choisir d’implémenter une **refactorisation** ou une **réarchitecture** dans le cadre de la phase d’optimisation post-migration. Ce point est traité dans la section [Optimiser et transformer](./optimize-and-transform.md) de ce guide.
 
 ::: zone-end
 
-![Infographie des options de migration](../../_images/migration/migration-options.png)
+![Infographie des options de migration](../../_images/migrate/migration-options.png)

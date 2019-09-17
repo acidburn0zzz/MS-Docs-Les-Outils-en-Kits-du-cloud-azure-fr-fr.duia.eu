@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96ab62dc2adf17890989160c0af4fb80636b31b9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818163"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022612"
 ---
 # <a name="prerequisites-for-migration"></a>Prérequis pour la migration
 
@@ -25,10 +25,10 @@ L’objectif est de vérifier l’état de préparation des parties métier, cul
 
 ## <a name="review-business-drivers"></a>Passer en revue les facteurs opérationnels
 
-Avant de lancer une migration vers le cloud, passez en revue les conseils associés aux étapes [Planifier](../../../business-strategy/index.md) et [Préparer](../../../ready/index.md) du Framework d’adoption du cloud pour vérifier que votre organisation est disposée à participer aux processus d’adoption du cloud et de migration vers le cloud. Examinez en particulier les impératifs de l’entreprise et les résultats attendus qui sous-tendent la migration :
+Avant de lancer une migration vers le cloud, passez en revue les conseils associés aux étapes [Planifier](../../../strategy/index.md) et [Préparer](../../../ready/index.md) du Framework d’adoption du cloud pour vérifier que votre organisation est disposée à participer aux processus d’adoption du cloud et de migration vers le cloud. Examinez en particulier les impératifs de l’entreprise et les résultats attendus qui sous-tendent la migration :
 
 - [Prise en main : Migrer](../../../getting-started/migrate.md)
-- [Pourquoi migrons-nous vers le cloud ?](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md)
+- [Pourquoi migrons-nous vers le cloud ?](../../../strategy/motivations.md)
 
 ## <a name="definition-of-done"></a>Définition de « *terminé* »
 
@@ -56,7 +56,7 @@ Un seul membre de chaque équipe doit être identifié comme responsable de chac
 
 Outre la responsabilité d’ensemble, certaines actions doivent être affectées directement à un individu ou à un groupe. Voici quelques-unes de ces obligations qui ont une incidence sur ces activités :
 
-- **Définition des priorités métier.** Prenez des décisions concernant les charges de travail à migrer et les contraintes de temps générales. Pour plus d’informations, passez en revue les [motivations qui poussent une entreprise à migrer vers le cloud](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md).
+- **Définition des priorités métier.** Prenez des décisions concernant les charges de travail à migrer et les contraintes de temps générales. Pour plus d’informations, passez en revue les [motivations qui poussent une entreprise à migrer vers le cloud](../../../strategy/motivations.md).
 - **État de préparation de la gestion des changements.** Établissez et communiquez le plan de suivi des changements techniques pendant la migration. D’autres d’informations à ce sujet seront disponibles au troisième trimestre 2019.
 - **Alignement avec les utilisateurs professionnels.** Établissez un plan visant à prédisposer la communauté des utilisateurs professionnels à l’exécution de la migration. D’autres d’informations à ce sujet seront disponibles au troisième trimestre 2019.
 - **Inventaire et analyse du patrimoine numérique.** Exécutez les outils nécessaires pour inventorier et analyser le patrimoine numérique. Pour plus d’informations, consultez la discussion portant sur le [patrimoine numérique](../../../digital-estate/index.md) dans le Framework d’adoption du cloud.

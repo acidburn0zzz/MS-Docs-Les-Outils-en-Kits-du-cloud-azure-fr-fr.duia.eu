@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0997698660f19ff47a2eebe6dcdccb122e7f20b5
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906095"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023629"
 ---
 # <a name="subscription-decision-guide"></a>Guide de décision concernant les abonnements
 
@@ -37,7 +37,8 @@ Chaque organisation étant différente, les groupes d’administration Azure son
 
 Avant de finaliser votre conception des abonnements, réfléchissez aussi à la façon dont la [cohérence des ressources](../resource-consistency/index.md) peut influencer votre choix.
 
-> ![REMARQUE] Les Contrats Entreprise Azure vous permettent de définir une autre hiérarchie organisationnelle à des fins de facturation. Cette hiérarchie est distincte de votre hiérarchie de groupes d’administration, qui met l’accent sur la remise d’un modèle d’héritage pour appliquer facilement des stratégies et un contrôle d’accès appropriés à vos ressources.
+> [!NOTE]
+> Les Contrats Entreprise Azure vous permettent de définir une autre hiérarchie organisationnelle à des fins de facturation. Cette hiérarchie est distincte de votre hiérarchie de groupes d’administration, qui met l’accent sur la remise d’un modèle d’héritage pour appliquer facilement des stratégies et un contrôle d’accès appropriés à vos ressources.
 
 Les modèles d’abonnements suivants reflètent une augmentation initiale de la sophistication de conception des abonnements, suivie de plusieurs hiérarchies plus avancées susceptibles de s’aligner correctement avec votre organisation :
 
@@ -94,9 +95,9 @@ Les hiérarchies de groupes d’administration peuvent avoir jusqu’à six nive
 
 ## <a name="related-resources"></a>Ressources associées
 
-- [Gestion de l’accès aux ressources dans Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Plusieurs couches de gouvernance dans les grandes entreprises](/azure/architecture/cloud-adoption/governance/journeys/large-enterprise/multiple-layers-of-governance)
-- [Zones géographiques multiples](/azure/architecture/cloud-adoption/migrate/expanded-scope/multiple-regions)
+- [Gestion de l’accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Plusieurs couches de gouvernance dans les grandes entreprises](../../govern/guides/complex/multiple-layers-of-governance.md)
+- [Zones géographiques multiples](../../migrate/expanded-scope/multiple-regions.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

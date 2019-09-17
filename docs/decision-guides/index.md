@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a1522713ccc96bdaf713d9a72b49dc4815823eb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817976"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023859"
 ---
 # <a name="architectural-decision-guides"></a>Guides de décision en matière d'architecture
 
@@ -42,11 +42,11 @@ Chacune des catégories suivantes représente une technologie de base de tout d�
 
 [Chiffrement](./encryption/index.md) : Sécurisez vos données sensibles à l’aide du chiffrement pour se conformer aux exigences de stratégie de sécurité et de conformité de votre entreprise.
 
-[Journaux d’activité et rapports](./log-and-report/index.md) : Surveillez les données de journal générées par les ressources cloud. L’analyse des données vous renseigne sur l’intégrité des opérations, de la maintenance et du statut de conformité des charges de travail.
+[Journaux d’activité et rapports](./logging-and-reporting/index.md) : Surveillez les données de journal générées par les ressources cloud. L’analyse des données vous renseigne sur l’intégrité des opérations, de la maintenance et du statut de conformité des charges de travail.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Découvrez comment les abonnements et les comptes servent de base à un déploiement dans le cloud.
 
 > [!div class="nextstepaction"]
-> [Conception des abonnements](subscriptions/index.md)
+> [Conception des abonnements](./subscriptions/index.md)
