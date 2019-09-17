@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: acee0d171be547910a0fd7892c794400ae2ee101
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f8a5b1bc61fd44752bae7989ff19779f8ad61882
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817296"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024685"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Modèle de migration du Framework d’adoption du cloud
 
@@ -23,7 +23,7 @@ Cette section du Framework d’adoption du cloud explique les principes qui sous
 
 La migration vers le cloud est un effort de gestion de portefeuille qui est adroitement déguisé en implémentation technique. Au cours du processus de migration, vous décidez de déplacer certaines ressources, d’investir dans d’autres et de retirer des ressources obsolètes ou inutilisées. Certaines ressources sont optimisées, refactorisées ou entièrement remplacées dans le cadre de ce processus. Chacune de ces décisions doit correspondre aux motivations qui sous-tendent votre migration vers le cloud. Les migrations les plus réussies vont également plus loin et alignent ces décisions sur les résultats opérationnels souhaités.
 
-Le modèle de migration Framework d’adoption du cloud dépend de l’organisation par votre entreprise d’un processus de préparation à l’adoption du cloud. Veillez à passer en revue les conseils associés aux étapes [Planifier](../../business-strategy/index.md) et [Préparer](../../ready/index.md) du Framework d’adoption du cloud pour déterminer les facteurs opérationnels ou toute autre justification d’une migration vers le cloud, ainsi que toutes les tâches de planification ou de formation organisationnelle requises avant l’exécution d’un processus de migration à grande échelle.
+Le modèle de migration Framework d’adoption du cloud dépend de l’organisation par votre entreprise d’un processus de préparation à l’adoption du cloud. Veillez à passer en revue les conseils associés aux étapes [Planifier](../../strategy/index.md) et [Préparer](../../ready/index.md) du Framework d’adoption du cloud pour déterminer les facteurs opérationnels ou toute autre justification d’une migration vers le cloud, ainsi que toutes les tâches de planification ou de formation organisationnelle requises avant l’exécution d’un processus de migration à grande échelle.
 
 > [!NOTE]
 > Si la planification des activités est importante, un état d’esprit axé sur la croissance l’est tout autant. Parallèlement aux efforts de planification des activités plus vastes entrepris par l’équipe de stratégie cloud, il est suggéré que l’équipe d’adoption du cloud migre une première charge de travail comme préalable à des activités de migration à plus grande échelle. Cette migration initiale permettra à l’équipe d’acquérir une expérience pratique des problèmes techniques et opérationnels liés à une migration.
@@ -32,7 +32,7 @@ Le modèle de migration Framework d’adoption du cloud dépend de l’organisat
 
 Il est important de vous faire une idée approximative de l’état final avant de commencer vos efforts de migration. Le diagramme ci-dessous montre un point de départ local de l’infrastructure, des applications et des données qui définissent votre *patrimoine numérique*. Au cours du processus de migration, ces ressources sont transférées au moyen de l’une des cinq stratégies de migration décrites dans [Les cinq R de la rationalisation](../../digital-estate/5-rs-of-rationalization.md).
 
-![Infographie des options de migration](../../_images/migration/migration-options.png)
+![Infographie des options de migration](../../_images/migrate/migration-options.png)
 
 Les efforts entrepris pour migrer et moderniser les charges de travail varient selon l’approche choisie. Ainsi, les migrations de *réhébergement* (« lift and shift ») utilisent simplement des fonctionnalités IaaS (infrastructure as a service) ne nécessitant aucun changement au niveau du code et des applications. En revanche, la *refactorisation* nécessite quelques changements minimes, tandis que la *réarchitecture* exige la modification et l’extension du code et des fonctionnalités des applications afin de tirer parti des technologies cloud.
 
@@ -47,7 +47,7 @@ Les stratégies natives dans le cloud et les stratégies PaaS (platform as a ser
 
 Le modèle de migration du Framework d’adoption du cloud est basé sur un processus de transformation incrémentielle dans le cloud. Il suppose que votre organisation commence par un effort initial de migration vers le cloud, à étendue limitée, que nous appelons communément la première charge de travail. Cet effort est étendu de manière itérative pour inclure davantage de charges de travail à mesure que vos équipes des opérations affinent et améliorent vos processus de migration.
 
-Des outils de migration vers le cloud, comme [Azure Site Recovery](/azure/site-recovery/site-recovery-overview), peuvent migrer des centres de données entiers comprenant des dizaines de milliers de machines virtuelles. Toutefois, les activités commerciales et informatiques existantes peuvent rarement gérer un rythme de changement si soutenu. De nombreuses organisations divisent donc l’effort de migration en plusieurs itérations, chaque itération étant l’objet d’un déplacement d’une charge de travail (ou d’une collection de charges de travail).
+Des outils de migration vers le cloud, comme [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview), peuvent migrer des centres de données entiers comprenant des dizaines de milliers de machines virtuelles. Toutefois, les activités commerciales et informatiques existantes peuvent rarement gérer un rythme de changement si soutenu. De nombreuses organisations divisent donc l’effort de migration en plusieurs itérations, chaque itération étant l’objet d’un déplacement d’une charge de travail (ou d’une collection de charges de travail).
 
 Les principes sous-jacents à ce modèle incrémentiel sont basés sur l’exécution de processus et de prérequis référencés dans l’infographie suivante.
 
