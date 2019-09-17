@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c519de24d6c7ac83240d1b1e14b0a21c67f67df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817653"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023717"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guide de décision pour l’application de la stratégie
 
 La définition d’une stratégie n’est efficace que si elle peut être appliquée dans toute l’organisation. Un aspect clé de la planification de toute migration vers le cloud consiste à déterminer la meilleure façon de combiner les outils fournis par la plateforme cloud avec vos processus informatiques existants afin d’optimiser la conformité à la stratégie pour l’ensemble de vos ressources cloud.
 
-![Traçage des options d’application de la stratégie de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/discovery-guides/discovery-guide-policy-enforcement.png)
+![Traçage des options d’application de la stratégie de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
 Passer à : [Pratiques recommandées pour la ligne de base](#baseline-recommended-practices) | [Surveillance de la conformité à la stratégie](#policy-compliance-monitoring) | [Application de la stratégie](#policy-enforcement) | [Stratégie à l’échelle de l’organisation](#cross-organization-policy) | [Application automatisée](#automated-enforcement)
 
@@ -28,7 +28,7 @@ Passer à : [Pratiques recommandées pour la ligne de base](#baseline-recommend
 
 Les mécanismes d’application des stratégies fournis par la plateforme au niveau de la ressource ou de l’abonnement sont généralement suffisants pour les petits patrimoines cloud. Les déploiements plus grands justifient une portée d’application plus étendue et peuvent nécessiter des mécanismes d’application plus sophistiqués impliquant des standards de déploiement, des regroupements et une organisation des ressources, ainsi que l’intégration de l’application des stratégies aux systèmes de journalisation et de création de rapports.
 
-Les principaux facteurs permettant de déterminer la portée de vos processus d’application des stratégies sont les [besoins de gouvernance cloud](/azure/architecture/cloud-adoption/governance/overview) de votre organisation, la taille et la nature de votre patrimoine cloud, et la façon dont votre [conception d’abonnements](../subscriptions/index.md) reflète votre organisation. L’augmentation de la taille de votre patrimoine et la nécessité de gérer l’application des stratégies de manière centralisée justifient une extension de la portée d’application.
+Les principaux facteurs permettant de déterminer la portée de vos processus d’application des stratégies sont les [besoins de gouvernance cloud](../../govern/index.md) de votre organisation, la taille et la nature de votre patrimoine cloud, et la façon dont votre [conception d’abonnements](../subscriptions/index.md) reflète votre organisation. L’augmentation de la taille de votre patrimoine et la nécessité de gérer l’application des stratégies de manière centralisée justifient une extension de la portée d’application.
 
 ## <a name="baseline-recommended-practices"></a>Pratiques recommandées pour la ligne de base
 
@@ -43,15 +43,15 @@ Commencez la planification de l’application de votre stratégie cloud en exami
 
 ## <a name="policy-compliance-monitoring"></a>Surveillance de la conformité à la stratégie
 
-Au-delà de la simple utilisation des mécanismes d’application des stratégies fournis par la plateforme Azure, une première étape consiste à vérifier que les applications et les services cloud sont conformes à la stratégie organisationnelle. Cela comprend l’implémentation de fonctionnalités de notification pour alerter les parties responsables qu’une ressource n’est plus conforme. La [journalisation et la génération de rapports](../log-and-report/index.md) sur l’état de conformité des charges de travail cloud constituent un aspect essentiel d’une stratégie d’application de stratégie d’entreprise.
+Au-delà de la simple utilisation des mécanismes d’application des stratégies fournis par la plateforme Azure, une première étape consiste à vérifier que les applications et les services cloud sont conformes à la stratégie organisationnelle. Cela comprend l’implémentation de fonctionnalités de notification pour alerter les parties responsables qu’une ressource n’est plus conforme. La [journalisation et la génération de rapports](../logging-and-reporting/index.md) effectives de l’état de conformité des charges de travail cloud constituent un aspect essentiel d’une stratégie d’application de stratégie d’entreprise.
 
-À mesure que vos ressources cloud augmentent, des outils supplémentaires tels qu’[Azure Security Center](/azure/security-center) peuvent offrir une sécurité intégrée et une détection des menaces, et vous aider à appliquer une gestion centralisée de la stratégie ainsi qu’à générer des alertes pour vos ressources cloud et locales.
+À mesure que vos ressources cloud augmentent, des outils supplémentaires tels qu’[Azure Security Center](https://docs.microsoft.com/azure/security-center) peuvent offrir une sécurité intégrée et une détection des menaces, et vous aider à appliquer une gestion centralisée de la stratégie ainsi qu’à générer des alertes pour vos ressources cloud et locales.
 
 ## <a name="policy-enforcement"></a>Application de stratégies
 
 Dans Azure, vous pouvez appliquer des paramètres de configuration et des règles de création de ressources au niveau du groupe d’administration, de l’abonnement ou du groupe de ressources, afin de garantir l’alignement des stratégies.
 
-[Azure Policy](/azure/governance/policy/overview) est un service Azure pour la création, l’assignation et la gestion des stratégies. Ces stratégies appliquent différentes règles et effets sur vos ressources, qui restent donc conformes aux normes et aux contrats de niveau de service de l’entreprise. Azure Policy évalue vos ressources afin d’épingler toute non-conformité avec les stratégies assignée. Par exemple, vous pouvez limiter la taille de référence SKU des machines virtuelles dans votre environnement. Une fois la stratégie correspondante implémentée, la conformité des ressources nouvelles et existantes est évaluée. Avec une stratégie appropriée, les ressources existantes peuvent être mises en conformité.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) est un service Azure pour la création, l’assignation et la gestion des stratégies. Ces stratégies appliquent différentes règles et effets sur vos ressources, qui restent donc conformes aux normes et aux contrats de niveau de service de l’entreprise. Azure Policy évalue vos ressources afin d’épingler toute non-conformité avec les stratégies assignée. Par exemple, vous pouvez limiter la taille de référence SKU des machines virtuelles dans votre environnement. Une fois la stratégie correspondante implémentée, la conformité des ressources nouvelles et existantes est évaluée. Avec une stratégie appropriée, les ressources existantes peuvent être mises en conformité.
 
 ## <a name="cross-organization-policy"></a>Stratégie à l’échelle de l’organisation
 
@@ -61,7 +61,7 @@ Votre [abonnement](../subscriptions/index.md) devra représenter la stratégie c
 
 ## <a name="automated-enforcement"></a>Application automatisée
 
-Si les modèles de déploiement normalisés sont efficaces à petite échelle, la solution [Azure Blueprints](/azure/governance/blueprints/overview) permet un approvisionnement et une orchestration de déploiement normalisés à grande échelle de solutions Azure. Les charges de travail de plusieurs abonnements peuvent être déployées avec des paramètres de stratégie cohérents pour toutes les ressources créées.
+Si les modèles de déploiement normalisés sont efficaces à petite échelle, la solution [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) permet un approvisionnement et une orchestration de déploiement normalisés à grande échelle de solutions Azure. Les charges de travail de plusieurs abonnements peuvent être déployées avec des paramètres de stratégie cohérents pour toutes les ressources créées.
 
 Pour des environnements informatiques intégrant des ressources cloud et locales, il se peut que vous deviez utiliser des systèmes de journalisation et de génération de rapports pour offrir des fonctionnalités de surveillance hybrides. Vos systèmes de surveillance opérationnelle tiers ou personnalisées peuvent offrir des fonctionnalités d’application de stratégie supplémentaires. Pour des patrimoines cloud plus grands ou plus complexes, vous devez réfléchir à la meilleure façon d’intégrer ces systèmes à vos ressources cloud.
 
