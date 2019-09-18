@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 6aabf9545aa6774b63d3dbd201373273c3f8f1ab
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0b561415d8038c41e1ea36624529a765bfa1105a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837751"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023327"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ Dans chaque rack ou cluster, la plupart des serveurs sont désignés pour exécu
 
 Chaque instance du contrôleur de structure est connectée à un autre ensemble de serveurs exécutant le logiciel d’orchestration du cloud, généralement appelé **frontal**. Le serveur frontal héberge les services web, les API RESTful et les bases de données Azure internes utilisés pour toutes les fonctions exécutées par le cloud.
 
-Par exemple, le serveur frontal héberge les services qui gèrent les demandes clients pour allouer des ressources Azure telles que des [machines virtuelles](/azure/virtual-machines) et des services tels que [Cosmos DB](/azure/cosmos-db/introduction). Tout d’abord, le serveur frontal valide l’utilisateur et vérifie que l’utilisateur est autorisé à allouer les ressources demandées. Dans ce cas, le serveur frontal consulte une base de données pour localiser un rack de serveurs avec une capacité suffisante, puis fait en sorte que le contrôleur de structure sur ce rack alloue la ressource.
+Par exemple, le serveur frontal héberge les services qui gèrent les demandes clients pour allouer des ressources Azure telles que des [machines virtuelles](https://docs.microsoft.com/azure/virtual-machines) et des services tels que [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction). Tout d’abord, le serveur frontal valide l’utilisateur et vérifie que l’utilisateur est autorisé à allouer les ressources demandées. Dans ce cas, le serveur frontal consulte une base de données pour localiser un rack de serveurs avec une capacité suffisante, puis fait en sorte que le contrôleur de structure sur ce rack alloue la ressource.
 
 Azure est tout simplement une vaste collection de serveurs et de matériel réseau qui exécutent un ensemble complexe d’applications distribuées qui orchestrent la configuration et l’opération du matériel et des logiciels virtualisés sur ces serveurs. C’est cette orchestration qui fait toute la puissance d’Azure : les utilisateurs ne sont plus responsables du suivi, ni de la mise à niveau du matériel, Azure effectuant tout cela en arrière-plan.
 
@@ -45,8 +45,4 @@ Azure est tout simplement une vaste collection de serveurs et de matériel rése
 Maintenant que vous comprenez le fonctionnement interne d’Azure, poursuivez votre apprentissage avec la gouvernance des ressources cloud.
 
 > [!div class="nextstepaction"]
-> [En savoir plus sur la gouvernance des ressources](../governance/resource-consistency/what-is-governance.md)
-
-<!-- links -->
-
-[docs-add-users-to-aad]: /azure/active-directory/add-users-azure-active-directory?toc=/azure/architecture/cloud-adoption-guide/toc.json
+> [En savoir plus sur la gouvernance des ressources](../govern/resource-consistency/what-is-governance.md)

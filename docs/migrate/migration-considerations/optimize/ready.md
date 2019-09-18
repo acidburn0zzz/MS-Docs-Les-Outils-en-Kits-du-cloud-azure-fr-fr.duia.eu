@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7d3e7f408e38634a9472ce75542d9e0ae1fdc38b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836623"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022626"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Préparer une application migrée pour la promotion en production
 
@@ -21,7 +21,7 @@ Après la promotion d’une charge de travail, le trafic utilisateur de producti
 
 ## <a name="validate-the-business-change-plan"></a>Valider le plan des changements opérationnels
 
-La transformation se produit lorsque des utilisateurs professionnels ou des clients tirent parti d’une solution technique pour exécuter des processus qui stimulent l’activité. La préparation est une bonne occasion de valider le [plan des changements opérationnels](business-change-plan.md) et de garantir une formation appropriée aux équipes techniques et à celles chargées des activités qui sont concernées. En particulier, assurez-vous que les aspects technologiques suivants du plan des changements sont correctement communiqués :
+La transformation se produit lorsque des utilisateurs professionnels ou des clients tirent parti d’une solution technique pour exécuter des processus qui stimulent l’activité. La préparation est une bonne occasion de valider le [plan des changements opérationnels](./business-change-plan.md) et de garantir une formation appropriée aux équipes techniques et à celles chargées des activités qui sont concernées. En particulier, assurez-vous que les aspects technologiques suivants du plan des changements sont correctement communiqués :
 
 - La formation des utilisateurs finaux est terminée (ou du moins planifiée).
 - Toutes les fenêtres de panne ont été communiquées et approuvées.

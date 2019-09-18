@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839163"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022280"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
 
@@ -44,7 +44,7 @@ Si vous décidez qu’une rationalisation du patrimoine numérique n’est pas n
 
 Dans l’article précédent, [Plan d’adoption du cloud et Azure DevOps](./template.md), vous avez créé un plan d’adoption du cloud dans Azure DevOps.
 
-Vous pouvez à présent représenter les charges de travail de la liste « Puissance de 10 » dans votre plan d’adoption du cloud. Le moyen le plus simple pour cela consiste à effectuer des modifications en bloc dans Microsoft Excel. Pour préparer votre station de travail pour des modifications en bloc, consultez [Ajouter ou modifier en bloc des éléments de travail avec Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Vous pouvez à présent représenter les charges de travail de la liste « Puissance de 10 » dans votre plan d’adoption du cloud. Le moyen le plus simple pour cela consiste à effectuer des modifications en bloc dans Microsoft Excel. Pour préparer votre station de travail pour des modifications en bloc, consultez [Ajouter ou modifier en bloc des éléments de travail avec Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 L’étape 5 de cet article vous indique de sélectionner **Liste d’entrée**. Au lieu de cela, sélectionnez **Liste de requête**. Ensuite, dans la liste déroulante **Sélectionner une requête**, sélectionnez la requête **Workload Template** (Modèle de charge de travail). Cette requête charge tous les efforts liés à la migration d’une charge de travail unique dans votre feuille de calcul.
 

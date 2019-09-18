@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30f50a6f4d965834de1de354b3149c559f071f72
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839107"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024725"
 ---
 # <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>Chemin de préparation aux compétences durant la phase « migration » d’un parcours de migration
 
@@ -23,16 +23,16 @@ Quatre processus distincts sont effectués de façon itérative pendant la phase
 
 ## <a name="prerequisites-skilling-resources"></a>Ressources de développement de compétences prérequises
 
-L’implémentation des processus de « migration » s’appuiera sur les compétences acquises lors des phases [Planification](../../business-strategy/suggested-skills.md) et [Préparation](../../organization/suggested-skills.md) du parcours de migration.
+L’implémentation des processus de « migration » s’appuiera sur les compétences acquises lors des phases [Planification](../../strategy/suggested-skills.md) et [Préparation](../../organize/suggested-skills.md) du parcours de migration.
 
 ## <a name="assess-skilling-resources"></a>Évaluer les ressources de développement de compétences
 
 Les outils suivants peuvent aider l’équipe à exécuter les activités d’évaluation :
 
 - [Équilibrer le portefeuille](./balance-the-portfolio.md) : Garantissez l’équilibre et la pertinence des allocations d’investissement dans un portefeuille d’applications.
-- [Développement d’une justification métier](../../business-strategy/cloud-migration-business-case.md) : Créez et comprenez la justification métier à l’origine de la migration vers le cloud.
+- [Développement d’une justification métier](../../strategy/cloud-migration-business-case.md) : Créez et comprenez la justification métier à l’origine de la migration vers le cloud.
 - [Rationaliser le patrimoine numérique](../../digital-estate/rationalize.md) : Rationalisez les ressources du patrimoine numérique.
-- [Évaluation du portefeuille d’applications](/learn/modules/app-and-infra-migration-and-modernization) : Critères pour prendre des décisions concernant les options de migration ou d’innovation au sein du portefeuille d’applications.
+- [Évaluation du portefeuille d’applications](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization) : Critères pour prendre des décisions concernant les options de migration ou d’innovation au sein du portefeuille d’applications.
 - [Évaluation et planification de la migration vers Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning) : Cours PluralSight pour faciliter l’évaluation des charges de travail locales
 
 Pendant l’évaluation des processus, les architectes sont appelés à concevoir des solutions pour chaque charge de travail. Les ressources de développement de compétences suivantes peuvent préparer les architectes pour ces tâches :
@@ -45,7 +45,7 @@ Pendant l’évaluation des processus, les architectes sont appelés à concevoi
 
 Le didacticiel suivant peut préparer l’équipe pour les activités de migration :
 
-- [Migration vers Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure) : Utilisation d’Azure Site Recovery pour migrer des machines virtuelles vers Azure.
+- [Migration vers Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure) : Utilisation d’Azure Site Recovery pour migrer des machines virtuelles vers Azure.
 - [Réhéberger des charges de travail dans Azure](https://aka.ms/rehostcourse) : Cours PluralSight qui enseigne aux observateurs comment réhéberger des charges de travail dans Azure
 - [Migration de serveurs physiques et virtuels vers Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents) : Cours PluralSight pour la migration de serveurs vers Azure
 - [Importation et exportation de données vers Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents) : Cours PluralSight sur le déplacement de données de et vers Azure

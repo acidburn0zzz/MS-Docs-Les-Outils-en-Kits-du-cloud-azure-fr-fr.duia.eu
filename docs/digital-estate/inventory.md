@@ -8,16 +8,16 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 616bf15db1fac01966573cd5822717c59286434b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837795"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023495"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Collecter des données d’inventaire pour un patrimoine numérique
 
-Le développement d’un inventaire est la première étape de [planification du patrimoine numérique](index.md). Au cours de ce processus, des ressources informatiques prenant en charge des fonctions métier spécifiques sont collectées en vue d’être analysées et rationalisées. Cet article part du principe qu’une analyse ascendante est plus appropriée pour la planification. Pour plus d’informations, consultez [Approches de la planification du patrimoine numérique](./approach.md).
+Le développement d’un inventaire est la première étape de [planification du patrimoine numérique](./index.md). Au cours de ce processus, des ressources informatiques prenant en charge des fonctions métier spécifiques sont collectées en vue d’être analysées et rationalisées. Cet article part du principe qu’une analyse ascendante est plus appropriée pour la planification. Pour plus d’informations, consultez [Approches de la planification du patrimoine numérique](./approach.md).
 
 ## <a name="take-inventory-of-a-digital-estate"></a>Inventaire du patrimoine numérique
 
@@ -38,4 +38,4 @@ Un inventaire est rarement complet après sa première itération. Nous recomman
 Une fois l’inventaire compilé et validé, il peut être rationalisé. La rationalisation de l’inventaire est l’étape qui suit dans la planification du patrimoine numérique.
 
 > [!div class="nextstepaction"]
-> [Rationaliser le patrimoine numérique](rationalize.md)
+> [Rationaliser le patrimoine numérique](./rationalize.md)

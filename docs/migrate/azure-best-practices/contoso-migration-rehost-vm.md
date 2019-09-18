@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d046b16e265bef9a4e2bfdc0d689056f1c2e6a88
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 3bc125145afce529507a341eae6b818cceee9330
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906372"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024028"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>réhéberger une application locale sur des machines virtuelles Azure
 
@@ -82,20 +82,20 @@ Contoso évalue la conception proposée en dressant une liste des avantages et d
 
 ### <a name="migration-process"></a>Processus de migration
 
-Contoso migrera les machines virtuelles frontales et de base de données d’application vers des machines virtuelles Azure avec la méthode sans agent de l’outil Migration de serveur Azure Migrate. 
+Contoso migrera les machines virtuelles frontales et de base de données d’application vers des machines virtuelles Azure avec la méthode sans agent de l’outil Migration de serveur Azure Migrate.
 
 - Dans un premier temps, Contoso prépare et configure les composants Azure pour l’outil Migration de serveur Azure Migrate et prépare l’infrastructure VMware locale.
-- Dans la mesure où l’[infrastructure Azure](contoso-migration-infrastructure.md) est déjà en place, Contoso doit simplement ajouter et configurer la réplication des machines virtuelles via l’outil Migration de serveur Azure Migrate. 
+- Dans la mesure où l’[infrastructure Azure](./contoso-migration-infrastructure.md) est déjà en place, Contoso doit simplement ajouter et configurer la réplication des machines virtuelles via l’outil Migration de serveur Azure Migrate.
 - Une fois tous les éléments préparés, Contoso peut commencer à répliquer les machines virtuelles.
 - Lorsque la réplication est activée et opère, la machine virtuelle est migrée en la basculant vers Azure.
 
-![Processus de migration](./media/contoso-migration-rehost-vm/migraton-process-az-migrate.png)
+![Processus de migration](./media/contoso-migration-rehost-vm/migration-process-az-migrate.png)
 
 ### <a name="azure-services"></a>Services Azure
 
 **Service** | **Description** | **Coût**
 --- | --- | ---
-[Migration de serveur Azure Migrate](/azure/migrate/contoso-migration-rehost-vm) | Le service orchestre et gère la migration de vos applications et charges de travail locales, ainsi que les instances de machine virtuelle AWS/GCP. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement, et entraînent des frais. [En savoir plus](https://azure.microsoft.com/pricing/details/azure-migrate/) sur les frais et la tarification.
+[Migration de serveur Azure Migrate](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | Le service orchestre et gère la migration de vos applications et charges de travail locales, ainsi que les instances de machine virtuelle AWS/GCP. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement, et entraînent des frais. [En savoir plus](https://azure.microsoft.com/pricing/details/azure-migrate/) sur les frais et la tarification.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -105,10 +105,9 @@ Voici ce dont Contoso a besoin pour exécuter ce scénario.
 
 **Configuration requise** | **Détails**
 --- | ---
-**Abonnement Azure** | Contoso a créé des abonnements dans un précédent article de cette série. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions.<br/><br/> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.<br/><br/> S’il vous faut plus d’autorisations granulaires, consultez [cet article](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastructure Azure** | [Découvrez comment](contoso-migration-infrastructure.md) Contoso configure une infrastructure Azure.<br/><br/> En savoir plus sur les [conditions requises](/azure/migrate/contoso-migration-rehost-vm#prerequisites) spécifiques pour l’outil Migration de serveur Azure Migrate.
+**Abonnement Azure** | Contoso a créé des abonnements dans un précédent article de cette série. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions.<br/><br/> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.<br/><br/> S’il vous faut plus d’autorisations granulaires, consultez [cet article](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infrastructure Azure** | [Découvrez comment](./contoso-migration-infrastructure.md) Contoso configure une infrastructure Azure.<br/><br/> En savoir plus sur les [conditions requises](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prerequisites) spécifiques pour l’outil Migration de serveur Azure Migrate.
 **Serveurs locaux** | Les serveurs vCenter locaux doivent exécuter la version 5.5, 6.0 ou 6.5<br/><br/> Les hôtes ESXi doivent exécuter la version 5.5, 6.0 ou 6.5<br/><br/> Une ou plusieurs machines virtuelles VMware doivent s’exécuter sur l’hôte ESXi.
-
 
 <!-- markdownlint-enable MD033 -->
 
@@ -118,7 +117,7 @@ Voici comment les administrateurs de Contoso exécuteront la migration :
 
 > [!div class="checklist"]
 >
-> - **Étape 1 : Préparer Azure pour l’outil Migration de serveur Azure Migrate.** L’outil de migration de serveur a été ajouté dans le projet Azure Migrate. 
+> - **Étape 1 : Préparer Azure pour l’outil Migration de serveur Azure Migrate.** L’outil de migration de serveur a été ajouté dans le projet Azure Migrate.
 > - **Étape 2 : Préparer l’instance VMware locale pour l’outil Migration de serveur Azure Migrate.** Ils préparent des comptes pour la découverte de machines virtuelles. Ils préparent également la connexion aux machines virtuelles Azure après basculement.
 > - **Étape 3 : Répliquer les machines virtuelles.** Ils configurent la réplication et de commencer à répliquer des machines virtuelles dans le stockage Azure.
 > - **Étape 4 : Migrer les machines virtuelles avec l’outil Migration de serveur Azure Migrate.** Ils effectuent un test de basculement pour vérifier que tout fonctionne correctement, puis opèrent un basculement complet pour migrer les machines virtuelles vers Azure.
@@ -128,17 +127,16 @@ Voici comment les administrateurs de Contoso exécuteront la migration :
 Les composants Azure dont Contoso a besoin pour migrer les machines virtuelles vers Azure sont les suivants :
 
 - Un réseau virtuel dans lequel les machines virtuelles Azure seront situées après leur création pendant le basculement.
-- L’outil Migration de serveur Azure Migrate a été provisionné. 
+- L’outil Migration de serveur Azure Migrate a été provisionné.
 
 La configuration est effectuée´comme suit :
 
-1. Configurer un réseau : la société Contoso a déjà configuré un réseau utilisable pour l’outil Migration de serveur Azure Migrate lorsqu’elle a [déployé l’infrastructure Azure](contoso-migration-infrastructure.md).
+1. Configurer un réseau : la société Contoso a déjà configuré un réseau utilisable pour l’outil Migration de serveur Azure Migrate lorsqu’elle a [déployé l’infrastructure Azure](./contoso-migration-infrastructure.md).
 
     - L’application SmartHotel360 est une application de production, et les machines virtuelles seront migrées vers le réseau de production Azure (VNET-PROD-EUS2) dans la région USA Est 2 principale.
     - Les deux machines virtuelles seront placées dans le groupe de ressources ContosoRG utilisé pour les ressources de production.
     - La machine virtuelle frontale de l’application (WEBVM) migrera vers le sous-réseau frontal (PROD-FE-EUS2) dans le réseau de production.
     - La machine virtuelle de la base de données de l’application (SQLVM) migrera vers le sous-réseau de la base de données (PROD-DB-EUS2) dans le réseau de production.
-
 
 2. Provisionner l’outil Migration de serveur Azure Migrate : avec le réseau et le compte de stockage en place, Contoso crée à présent un coffre Recovery Services (ContosoMigrationVault) et le place dans le groupe de ressources ContosoFailoverRG, dans la région USA Est 2 principale.
 
@@ -146,8 +144,7 @@ La configuration est effectuée´comme suit :
 
 **Besoin de plus d’aide ?**
 
-[En savoir plus](/azure/migrate/) sur la configuration de l’outil Migration de serveur Azure Migrate. 
-
+[En savoir plus](https://docs.microsoft.com/azure/migrate/) sur la configuration de l’outil Migration de serveur Azure Migrate.
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Préparer la connexion aux machines virtuelles Azure après le basculement
 
@@ -172,8 +169,7 @@ De plus, quand elle opèrent un basculement, elle doit vérifier les points suiv
 
 **Besoin de plus d’aide ?**
 
-- [En savoir plus](/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) sur la préparation des machines virtuelles pour la migration
-
+- [En savoir plus](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) sur la préparation des machines virtuelles pour la migration
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>Étape 3 : Répliquer les machines virtuelles locales
 
@@ -186,7 +182,8 @@ Une fois la découverte terminée, vous pouvez commencer la réplication des mac
     ![Répliquer des machines virtuelles](./media/contoso-migration-rehost-vm/select-replicate.png)
 
 2. Dans **Répliquer** > **Paramètres de la source** > **Vos machines sont-elles virtualisées ?** , sélectionnez **Oui, avec VMware vSphere**.
-3. Dans **Appliance locale**, sélectionnez le nom de l’appliance Azure Migrate que vous avez configurée > **OK**. 
+
+3. Dans **Appliance locale**, sélectionnez le nom de l’appliance Azure Migrate que vous avez configurée > **OK**.
 
     ![Paramètres de la source](./media/contoso-migration-rehost-vm/source-settings.png)
 
@@ -199,31 +196,27 @@ Une fois la découverte terminée, vous pouvez commencer la réplication des mac
 
 5. Dans **Machines virtuelles**, recherchez les machines virtuelles en fonction des besoins et cochez chaque machine virtuelle que vous souhaitez migrer. Cliquez ensuite sur **Suivant : Paramètres de la cible**.
 
-
 6. Dans **Paramètres de la cible**, sélectionnez l’abonnement et la région cible vers laquelle vous allez migrer, puis spécifiez le groupe de ressources dans lequel les machines virtuelles Azure résideront après la migration. Dans **Réseau virtuel**, sélectionnez le réseau virtuel/sous-réseau Azure auquel les machines virtuelles Azure seront jointes après la migration.
+
 7. Dans **Azure Hybrid Benefit** :
 
     - Sélectionnez **Non** si vous ne souhaitez pas appliquer Azure Hybrid Benefit. Cliquez ensuite sur **Suivant**.
     - Sélectionnez **Oui** si vous avez des machines Windows Server couvertes par des abonnements Software Assurance ou Windows Server actifs et que vous souhaitez appliquer l’avantage aux machines que vous migrez. Cliquez ensuite sur **Suivant**.
 
-
 8. Dans **Compute**, vérifiez le nom de la machine virtuelle, sa taille, le type de disque du système d’exploitation et le groupe à haute disponibilité. Les machines virtuelles doivent satisfaire aux [exigences d’Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
 
-    - **Taille de la machine virtuelle** : si vous utilisez les recommandations de l’évaluation, la liste déroulante Taille de la machine virtuelle contient la taille recommandée. Sinon, Azure Migrate choisit une taille qui correspond à la taille la plus proche dans l’abonnement Azure. Vous pouvez également choisir une taille manuelle dans **Taille de la machine virtuelle Azure**. 
-    - **Disque de système d’exploitation** : spécifiez le disque du système d’exploitation (démarrage) pour la machine virtuelle. Le disque du système d’exploitation est le disque qui contient le chargeur de démarrage et le programme d’installation du système d’exploitation. 
+    - **Taille de la machine virtuelle** : si vous utilisez les recommandations de l’évaluation, la liste déroulante Taille de la machine virtuelle contient la taille recommandée. Sinon, Azure Migrate choisit une taille qui correspond à la taille la plus proche dans l’abonnement Azure. Vous pouvez également choisir une taille manuelle dans **Taille de la machine virtuelle Azure**.
+    - **Disque de système d’exploitation** : spécifiez le disque du système d’exploitation (démarrage) pour la machine virtuelle. Le disque du système d’exploitation est le disque qui contient le chargeur de démarrage et le programme d’installation du système d’exploitation.
     - **Groupe à haute disponibilité** : si la machine virtuelle doit se trouver dans un groupe à haute disponibilité Azure après la migration, spécifiez-le ici. Ce groupe doit figurer dans le groupe de ressources cible que vous spécifiez pour la migration.
 
 9. Dans **Disques**, indiquez si les disques de machine virtuelle doivent être répliqués sur Azure, puis sélectionnez le type de disque (SSD/HDD standard ou disques managés Premium) dans Azure. Cliquez ensuite sur **Suivant**.
     - Vous pouvez exclure des disques de la réplication.
-    - Si vous excluez des disques, il ne seront pas présents sur la machine virtuelle Azure après la migration. 
-
+    - Si vous excluez des disques, il ne seront pas présents sur la machine virtuelle Azure après la migration.
 
 10. Dans **Passer en revue et démarrer la réplication**, passez en revue les paramètres, puis cliquez sur **Répliquer** pour démarrer la réplication initiale pour les serveurs.
 
 > [!NOTE]
 > Vous pouvez mettre à jour les paramètres de réplication à tout moment avant le démarrage de la réplication, dans **Gérer** > **Réplication des machines**. Vous ne pouvez pas changer les paramètres après le démarrage de la réplication.
-
-
 
 ## <a name="step-4-migrate-the-vms"></a>Étape 4 : Migrer les machines virtuelles
 
@@ -246,7 +239,6 @@ Les administrateurs de Contoso exécutent un test rapide de basculement, puis un
 
     ![Nettoyer la migration](./media/contoso-migration-rehost-vm/clean-up.png)
 
-
 ### <a name="migrate-the-vms"></a>Migrer les machines virtuelles
 
 Les administrateurs de Contoso peuvent à présent opérer un basculement complet pour achever la migration.
@@ -262,11 +254,10 @@ Les administrateurs de Contoso peuvent à présent opérer un basculement comple
 4. Un travail de migration démarre pour la machine virtuelle. Suivez le travail dans les notifications Azure.
 5. Une fois le travail terminé, vous pouvez afficher et gérer la machine virtuelle à partir de la page **Machines virtuelles**.
 
-
 **Besoin de plus d’aide ?**
 
-- [En savoir plus sur](/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) l’exécution d’un test de basculement.
-- [En savoir plus](/azure/migrate/tutorial-migrate-vmware#migrate-vms) sur la migration de machines virtuelles vers Azure. 
+- [En savoir plus sur](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) l’exécution d’un test de basculement.
+- [En savoir plus](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) sur la migration de machines virtuelles vers Azure.
 
 ## <a name="clean-up-after-migration"></a>Nettoyer après la migration
 
@@ -274,7 +265,7 @@ Une fois la migration terminée, les niveaux de l’application SmartHotel360 s�
 
 Contoso doit à présent effectuer les étapes de nettoyage suivantes :
 
-- Au terme de la migration, arrêtez la réplication. 
+- Au terme de la migration, arrêtez la réplication.
 - Supprimer la machine virtuelle WEBVM de l’inventaire vCenter.
 - Supprimer la machine virtuelle SQLVM de l’inventaire vCenter.
 - Supprimer les machines virtuelles WEBVM et SQLVM des travaux de sauvegarde locaux.
@@ -292,20 +283,20 @@ L’équipe de sécurité de Contoso examine les machines virtuelles Azure afin 
 - Pour contrôler l’accès, l’équipe examine les groupes de sécurité réseau (NSG) des machines virtuelles. Les groupes de sécurité réseau sont utilisés pour s’assurer que seul le trafic autorisé vers l’application puisse atteindre celle-ci.
 - L’équipe envisage également la sécurisation des données sur le disque à l’aide d’Azure Disk Encryption et de Key Vault.
 
-[En savoir plus](/azure/security/azure-security-best-practices-vms) sur les pratiques de sécurité pour les machines virtuelles.
+[En savoir plus](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sur les pratiques de sécurité pour les machines virtuelles.
 
 ## <a name="bcdr"></a>BCDR
 
 Pour assurer la continuité et la reprise d’activité (BCDR), Contoso effectue les actions suivantes :
 
-- Sécuriser les données : Contoso sauvegarde les données sur les machines virtuelles à l’aide du service Sauvegarde Azure. [Plus d’informations](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
-- Faire en sorte que les applications soient opérationnelles : Contoso réplique les machines virtuelles de l’application dans Azure vers une région secondaire à l’aide de Site Recovery. [Plus d’informations](/azure/site-recovery/azure-to-azure-quickstart)
+- Sécuriser les données : Contoso sauvegarde les données sur les machines virtuelles à l’aide du service Sauvegarde Azure. [Plus d’informations](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+- Faire en sorte que les applications soient opérationnelles : Contoso réplique les machines virtuelles de l’application dans Azure vers une région secondaire à l’aide de Site Recovery. [Plus d’informations](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 
 ### <a name="licensing-and-cost-optimization"></a>Gestion des licences et optimisation des coûts
 
 1. Contoso a un contrat de licence pour ses machines virtuelles et tirera parti d’Azure Hybrid Benefit. Contoso va convertir les machines virtuelles Azure existantes pour tirer parti de cette tarification.
-2. Contoso va activer Azure Cost Management sous licence de Cloudyn, une filiale de Microsoft. Il s’agit d’une solution de gestion des coûts multicloud qui vous aide à utiliser et à gérer Azure ainsi que d’autres ressources cloud. [En savoir plus](/azure/cost-management/overview) sur Azure Cost Management.
+2. Contoso va activer Azure Cost Management sous licence de Cloudyn, une filiale de Microsoft. Il s’agit d’une solution de gestion des coûts multicloud qui vous aide à utiliser et à gérer Azure ainsi que d’autres ressources cloud. [En savoir plus](https://docs.microsoft.com/azure/cost-management/overview) sur Azure Cost Management.
 
 ## <a name="conclusion"></a>Conclusion
 
-Cet article décrit comment Contoso a réhébergé l’application SmartHotel360 dans Azure en migrant les machines virtuelles de l’application vers des machines virtuelles Azure avec l’outil Migration de serveur Azure Migrate. 
+Cet article décrit comment Contoso a réhébergé l’application SmartHotel360 dans Azure en migrant les machines virtuelles de l’application vers des machines virtuelles Azure avec l’outil Migration de serveur Azure Migrate.

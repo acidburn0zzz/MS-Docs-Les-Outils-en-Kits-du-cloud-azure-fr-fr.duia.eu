@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dc567c80b6193d651c8bf3884476728a8d3daa7f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839083"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025401"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Gérer les modifications dans un effort de migration incrémentiel
 
-Cet article part du principe que les processus de migration sont incrémentiels par nature, s’exécutant parallèlement au [processus régi](../../../governance/index.md). Toutefois, le même guide peut être utilisé pour remplir les tâches initiales dans une structure de répartition du travail pour les approches de gestion des changements en cascade traditionnelles.
+Cet article part du principe que les processus de migration sont incrémentiels par nature, s’exécutant parallèlement au [processus régi](../../../govern/index.md). Toutefois, le même guide peut être utilisé pour remplir les tâches initiales dans une structure de répartition du travail pour les approches de gestion des changements en cascade traditionnelles.
 
 ## <a name="release-backlog"></a>Backlog de version
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e58dd50417ec6377774f07ee613a5fc69f74f0ea
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839111"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024790"
 ---
 # <a name="multiple-datacenters"></a>Plusieurs centres de données
 
@@ -37,7 +37,7 @@ La modification la plus importante du processus d’évaluation, lors de l’ext
 
 ### <a name="suggested-action-during-the-assess-process"></a>Action suggérée pendant le processus d’évaluation
 
-**Évaluer les dépendances entre les centres de données :** Les [outils de visualisation des dépendances d’Azure Migrate](/azure/migrate/concepts-dependency-visualization) peuvent vous aider à identifier les dépendances. L’utilisation de cet ensemble d’outils avant la migration est une bonne pratique générale. Toutefois, lors de la gestion de la complexité globale, cette étape devient indispensable pour le processus d’évaluation. Grâce au [regroupement des dépendances](/azure/migrate/how-to-create-group-machine-dependencies), la visualisation peut vous aider à identifier les adresses IP et les ports des ressources requises pour prendre en charge la charge de travail.
+**Évaluer les dépendances entre les centres de données :** Les [outils de visualisation des dépendances d’Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) peuvent vous aider à identifier les dépendances. L’utilisation de cet ensemble d’outils avant la migration est une bonne pratique générale. Toutefois, lors de la gestion de la complexité globale, cette étape devient indispensable pour le processus d’évaluation. Grâce au [regroupement des dépendances](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies), la visualisation peut vous aider à identifier les adresses IP et les ports des ressources requises pour prendre en charge la charge de travail.
 
 > [!IMPORTANT]
 > Deux remarques importantes : Tout d’abord, un expert en matière de placement des ressources et des schémas d’adresses IP est nécessaire pour identifier les ressources qui résident dans un centre de données secondaire. Deuxièmement, il est important d’évaluer les dépendances et les clients en aval dans le visuel pour comprendre les dépendances bidirectionnelles.

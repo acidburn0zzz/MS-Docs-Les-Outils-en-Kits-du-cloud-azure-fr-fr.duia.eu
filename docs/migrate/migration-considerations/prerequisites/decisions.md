@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1b07e5bc0dd578527e4e4c8c7271fad5fa967c9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836591"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025412"
 ---
 # <a name="decisions-that-affect-migrations"></a>Décisions qui affectent les migrations
 
@@ -49,7 +49,7 @@ Cette section du Framework d’adoption du cloud établit la théorie pour aider
 
 ## <a name="effort"></a>Effort
 
-L’effort de migration peut varier considérablement en fonction de la taille et de la complexité des charges de travail impliquées. Une migration de charge de travail plus petite impliquant quelques centaines de machines virtuelles est un processus tactique qui peut être implémenté à l’aide d’outils automatisés tels qu’[Azure Migrate](/azure/migrate/migrate-overview). À l’inverse, la migration de dizaines de milliers de charges de travail d’une grande entreprise nécessite un processus hautement stratégique et peut impliquer une refactorisation, une régénération et un remplacement importants des applications existantes intégrant des fonctionnalités PaaS (platform as a service) et SaaS (software as a service). [L’identification et l’équilibrage de l’étendue](../../expanded-scope/balance-the-portfolio.md) de vos migrations planifiées sont essentielles.
+L’effort de migration peut varier considérablement en fonction de la taille et de la complexité des charges de travail impliquées. Une migration de charge de travail plus petite impliquant quelques centaines de machines virtuelles est un processus tactique qui peut être implémenté à l’aide d’outils automatisés tels qu’[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). À l’inverse, la migration de dizaines de milliers de charges de travail d’une grande entreprise nécessite un processus hautement stratégique et peut impliquer une refactorisation, une régénération et un remplacement importants des applications existantes intégrant des fonctionnalités PaaS (platform as a service) et SaaS (software as a service). [L’identification et l’équilibrage de l’étendue](../../expanded-scope/balance-the-portfolio.md) de vos migrations planifiées sont essentielles.
 
 Avant de prendre des décisions susceptibles d’avoir un impact à long terme sur le programme de migration actuel, il est primordial de créer un consensus sur les décisions suivantes.
 

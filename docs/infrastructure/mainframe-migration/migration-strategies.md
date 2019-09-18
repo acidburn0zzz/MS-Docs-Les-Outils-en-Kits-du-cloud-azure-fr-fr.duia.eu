@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3296a471540c921d465859d0dfd800a91996f721
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70838431"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024388"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Assurer la transition d’ordinateurs mainframe vers Azure
 
@@ -48,7 +48,7 @@ Par comparaison, Azure s’engage à travers des contrats de niveau de service (
 
 Azure offre des garanties de disponibilité supplémentaires en répliquant les données à partir de plusieurs dispositifs de stockage, que ce soit localement ou dans d’autres régions géographiques. En cas de défaillance sur Azure, les ressources de calcul peuvent accéder aux données répliquées au niveau local ou régional.
 
-Si vous utilisez des ressources PaaS (« platform as a service ») Azure, comme [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) et [Azure Cosmos Database](/azure/cosmos-db/introduction), Azure peut gérer automatiquement les basculements. Si vous utilisez Azure IaaS (infrastructure as a service), le basculement s’appuie sur des fonctionnalités système spécifiques, comme les fonctionnalités SQL Server Always On, des instances de clustering de basculement et des groupes de disponibilité.
+Si vous utilisez des ressources PaaS (« platform as a service ») Azure, comme [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) et [Azure Cosmos Database](https://docs.microsoft.com/azure/cosmos-db/introduction), Azure peut gérer automatiquement les basculements. Si vous utilisez Azure IaaS (infrastructure as a service), le basculement s’appuie sur des fonctionnalités système spécifiques, comme les fonctionnalités SQL Server Always On, des instances de clustering de basculement et des groupes de disponibilité.
 
 ## <a name="scalability"></a>Extensibilité
 
@@ -60,7 +60,7 @@ La fonctionnalité de couplage effectue un calcul fortement couplé, alors que l
 
 Les clients dotés d’un ordinateur mainframe gèrent généralement des sites de récupération d’urgence ou font appel à un fournisseur de services mainframe indépendant pour les situations d’urgence. La synchronisation avec un site de récupération d’urgence s’effectue habituellement via des copies de données hors connexion. Dans les deux cas, les coûts sont élevés.
 
-Quoique très coûteuse, la géoredondance automatisée est aussi disponible via la fonctionnalité de couplage mainframe. Elle est généralement réservée aux systèmes stratégiques. En revanche, Azure propose des options de [sauvegarde](/azure/backup/backup-introduction-to-azure-backup), de [récupération](/azure/site-recovery/site-recovery-overview) et de [redondance](/azure/storage/common/storage-redundancy) économiques et faciles à implémenter au niveau local ou régional ou via la géoredondance.
+Quoique très coûteuse, la géoredondance automatisée est aussi disponible via la fonctionnalité de couplage mainframe. Elle est généralement réservée aux systèmes stratégiques. En revanche, Azure propose des options de [sauvegarde](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), de [récupération](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) et de [redondance](https://docs.microsoft.com/azure/storage/common/storage-redundancy) économiques et faciles à implémenter au niveau local ou régional ou via la géoredondance.
 
 ## <a name="storage"></a>Stockage
 
@@ -73,7 +73,7 @@ Il existe différents types de dispositif de stockage physique pour les ordinate
 - **Stockage central :** situé directement sur le processeur mainframe, il est aussi connu sous le nom de processeur ou de stockage réel.
 - **Stockage auxiliaire :** indépendant de l’ordinateur mainframe, ce type de stockage englobe le stockage sur dispositif DASD et est également appelé stockage de pagination.
 
-Le cloud offre tout un choix d’options flexibles et scalables, et vous ne paierez que les options dont vous avez besoin. [Stockage Azure](/azure/storage/common/storage-introduction) offre un magasin d’objets hautement scalable pour les objets de données, un service de système de fichiers pour le cloud, un magasin de messagerie fiable et un magasin NoSQL. Les machines virtuelles bénéficient d’un stockage sur disque sécurisé et persistant grâce à des disques managés et non managés.
+Le cloud offre tout un choix d’options flexibles et scalables, et vous ne paierez que les options dont vous avez besoin. [Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction) offre un magasin d’objets hautement scalable pour les objets de données, un service de système de fichiers pour le cloud, un magasin de messagerie fiable et un magasin NoSQL. Les machines virtuelles bénéficient d’un stockage sur disque sécurisé et persistant grâce à des disques managés et non managés.
 
 ## <a name="mainframe-development-and-testing"></a>Développement et test sur ordinateur mainframe
 
@@ -88,4 +88,4 @@ Dès que vous aurez développé et testé une solution sur Azure et qu’elle se
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Migration d’applications mainframe](application-strategies.md)
+> [Migration d’applications mainframe](./application-strategies.md)

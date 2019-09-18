@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905285"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025170"
 ---
 # <a name="azure-fundamental-concepts"></a>Concepts fondamentaux Azure
 
@@ -69,7 +69,7 @@ Lorsque vous créez un abonnement Azure, vous pouvez l’associer à un locatair
 
 Un compte e-mail peut être associé à plusieurs abonnements Azure. L’administrateur de compte peut transférer l’abonnement à un autre compte.
 
-Pour obtenir une description détaillée des rôles définis dans Azure, consultez [rôles d’administrateur d’abonnement classiques, rôles RBAC Azure et rôles d’administrateur Azure AD](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Pour obtenir une description détaillée des rôles définis dans Azure, consultez [rôles d’administrateur d’abonnement classiques, rôles RBAC Azure et rôles d’administrateur Azure AD](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 ## <a name="subscriptions-and-regions"></a>Abonnements et régions
 
@@ -84,13 +84,13 @@ Un abonnement n’est pas lié à une région Azure spécifique. Toutefois, chaq
 
 Les ressources suivantes fournissent des informations détaillées sur les concepts abordés dans cet article :
 
-- [Fonctionnement d’Azure](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Gestion de l’accès aux ressources dans Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Présentation d’Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)
-- [Contrôle d’accès en fonction du rôle (RBAC) pour les ressources Azure](/azure/role-based-access-control/overview)
-- [Qu’est-ce qu’Azure Active Directory ?](/azure/active-directory/fundamentals/active-directory-whatis)
-- [Associer ou ajouter un abonnement Azure à votre locataire Azure Active Directory](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Topologies pour Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Fonctionnement d’Azure](../../getting-started/what-is-azure.md)
+- [Gestion de l’accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Présentation d’Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Contrôle d’accès en fonction du rôle (RBAC) pour les ressources Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [Qu’est-ce qu’Azure Active Directory ?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Associer ou ajouter un abonnement Azure à votre locataire Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Topologies pour Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Abonnements, licences, comptes et locataires pour les offres cloud de Microsoft](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Étapes suivantes

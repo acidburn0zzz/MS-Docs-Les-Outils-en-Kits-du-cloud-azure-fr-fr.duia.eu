@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836627"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022641"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Évaluer et redimensionner les ressources cloud
 
@@ -36,7 +36,7 @@ Pendant la migration, utilisez des hypothèses et expérimentez le dimensionneme
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Évaluation et optimisation avec Azure Cost Management
 
-[Azure Cost Management](/azure/cost-management/overview), concédé sous licence par Cloudyn, une filiale Microsoft, gère les dépenses cloud avec transparence et précision. Ce service analyse, évalue, alloue et optimise les coûts du cloud.
+[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview), concédé sous licence par Cloudyn, une filiale Microsoft, gère les dépenses cloud avec transparence et précision. Ce service analyse, évalue, alloue et optimise les coûts du cloud.
 
 Les données d’historique peuvent aider à gérer les coûts en analysant l’utilisation et les coûts dans le temps pour identifier les tendances, qui sont ensuite utilisées pour prévoir les dépenses futures. La gestion des coûts propose aussi des rapports d’estimation des coûts très utiles. La répartition des coûts permet de gérer les coûts en analysant les coûts en fonction des stratégies de balisage. La répartition des coûts dans la rétrofacturation et la facturation interne met en évidence l’utilisation des ressources et les coûts associés dans le but d’influencer les comportements de consommation ou de facturer les clients du locataire. Le contrôle d’accès facilite la gestion des coûts en autorisant les utilisateurs et les équipes à accéder uniquement aux données de gestion des coûts dont ils ont besoin. La gestion des coûts est aussi facilitée par les alertes, qui vous avertissent automatiquement en cas de dépenses inhabituelles ou excessives. Les alertes peuvent aussi être envoyées automatiquement à d’autres parties prenantes en cas d’anomalies de dépenses et de risques de dépenses excessives. Plusieurs rapports prennent en charge les alertes basées sur les seuils budgétaires et de coûts.
 

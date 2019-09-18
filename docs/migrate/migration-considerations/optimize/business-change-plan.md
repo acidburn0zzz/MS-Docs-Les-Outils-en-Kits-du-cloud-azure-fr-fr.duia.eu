@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839059"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025466"
 ---
 # <a name="business-change-plan"></a>Plan de changement pour l’entreprise
 
@@ -25,7 +25,7 @@ Les plans d’adoption par les utilisateurs se concentrent sur la façon dont le
 
 Bien que les approches puissent varier, les thèmes généraux sont présents dans la plupart des plans d’adoption par les utilisateurs. Ces thèmes sont généralement fondés sur une approche de contrôle des risques et de facilitation qui s’aligne sur les améliorations incrémentielles. La matrice Eason, illustrée dans la figure ci-dessous, représente les facteurs qui sous-tendent ces thèmes pour un éventail de types d’adoption.
 
-![Matrice Eason des préoccupations relatives à l’adoption par les utilisateurs](../../../_images/eason-matrix.jpg)
+![Matrice Eason des préoccupations relatives à l’adoption par les utilisateurs](../../../_images/migrate/eason-matrix.jpg)
 
 *Matrice Eason des types d’adoption par les utilisateurs.*
 
@@ -37,8 +37,8 @@ Un plan des changements opérationnels va au-delà des changements techniques et
 
 **Questions en amont.** Les questions en amont examinent les impacts ou les changements qui surviennent avant l’adoption par les utilisateurs :
 
-- Un [résultat métier](../../../business-strategy/business-outcomes/index.md) attendu a-t-il été quantifié ?
-- L’impact sur l’entreprise correspond-il à des [paramètres d’apprentissage](../../../business-strategy/learning-metrics.md) définis ?
+- Un [résultat métier](../../../strategy/business-outcomes/index.md) attendu a-t-il été quantifié ?
+- L’impact sur l’entreprise correspond-il à des [paramètres d’apprentissage](../../../strategy/learning-metrics.md) définis ?
 - Quels sont les processus métier et les équipes qui tirent parti de cette solution technique ?
 - Qui dans l’entreprise peut le mieux coordonner les utilisateurs avancés pour les tests et les commentaires ?
 - Les chefs d’entreprise concernés ont-ils participé à l’établissement des priorités et à la planification de la migration ?

@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5a5e241e550f2fd79fcd7de48a0b041809340b78
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6cf1be3679032976efa0331e13ea6806f2f8a79f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70838159"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024367"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Déployer une charge de travail de base sur Azure
 
@@ -30,26 +30,26 @@ Cette isolation permet également de favoriser ce qui est désigné sous le nom 
 Une *charge de travail de base* est généralement définie comme une application web unique, ou un réseau virtuel avec une machine virtuelle.
 
 > [!NOTE]
-> Ce guide ne couvre pas le développement d’applications. Pour plus d’informations sur le développement d’applications sur Azure, consultez le [Guide d’Architecture des Applications Azure](/azure/architecture/guide).
+> Ce guide ne couvre pas le développement d’applications. Pour plus d’informations sur le développement d’applications sur Azure, consultez le [Guide d’Architecture des Applications Azure](https://docs.microsoft.com/azure/architecture/guide).
 
 Que la charge de travail soit une application web ou une machine virtuelle, chacun de ces déploiements nécessite un *groupe de ressources*. Un utilisateur autorisé à créer un groupe de ressources doit le faire avant de suivre les étapes ci-dessous.
 
 ## <a name="basic-web-application-paas"></a>Application web de base (PaaS)
 
-Pour une application web de base, sélectionnez un des Démarrages rapides de 5 minutes à partir de la [documentation web apps](/azure/app-service?toc=/azure/architecture/cloud-adoption-guide/toc.json) et suivez les étapes.
+Pour une application web de base, sélectionnez un des Démarrages rapides de 5 minutes à partir de la [documentation web apps](https://docs.microsoft.com/azure/app-service?toc=/azure/architecture/cloud-adoption-guide/toc.json) et suivez les étapes.
 
 > [!NOTE]
 > Certains des guides de démarrage rapide déploieront un groupe de ressources par défaut. Dans ce cas, il n’est pas nécessaire de créer un groupe de ressources de façon explicite. Vous pouvez également déployer l’application web pour le groupe de ressources créé ci-dessus.
 
-Une fois que vous avez déployé une charge de travail simple, vous pouvez trouver plus d’informations sur les pratiques éprouvées pour le déploiement d’une [application web de base](/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) sur Azure.
+Une fois que vous avez déployé une charge de travail simple, vous pouvez trouver plus d’informations sur les pratiques éprouvées pour le déploiement d’une [application web de base](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) sur Azure.
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Machine virtuelle Windows ou Linux simple (IaaS)
 
-Pour une charge de travail simple exécutable sur une machine virtuelle, la première étape consiste à déployer un réseau virtuel. Toutes les ressources IaaS (Infrastructure as a Service) dans Azure telles que les machines virtuelles, les équilibreurs de charge et les passerelles nécessitent un réseau virtuel. Une fois que vous en saurez plus sur [les réseaux virtuels Azure](/azure/virtual-network/virtual-networks-overview?toc=/azure/architecture/cloud-adoption-guide/toc.json), suivez les étapes pour [déployer un réseau virtuel dans Azure à l’aide du portail](/azure/virtual-network/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Quand vous spécifiez les paramètres pour le réseau virtuel dans le portail Azure, veillez à indiquer le nom du groupe de ressources créé ci-dessus.
+Pour une charge de travail simple exécutable sur une machine virtuelle, la première étape consiste à déployer un réseau virtuel. Toutes les ressources IaaS (Infrastructure as a Service) dans Azure telles que les machines virtuelles, les équilibreurs de charge et les passerelles nécessitent un réseau virtuel. Une fois que vous en saurez plus sur [les réseaux virtuels Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview?toc=/azure/architecture/cloud-adoption-guide/toc.json), suivez les étapes pour [déployer un réseau virtuel dans Azure à l’aide du portail](https://docs.microsoft.com/azure/virtual-network/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Quand vous spécifiez les paramètres pour le réseau virtuel dans le portail Azure, veillez à indiquer le nom du groupe de ressources créé ci-dessus.
 
-L’étape suivante consiste à décider s’il faut déployer une machine virtuelle simple Windows ou Linux. Pour une machine virtuelle Windows, suivez les étapes pour [déployer une machine virtuelle Windows sur Azure à l’aide du portail](/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Là encore, lorsque vous spécifiez les paramètres de la machine virtuelle dans le portail Azure, spécifiez le nom du groupe de ressources créé ci-dessus.
+L’étape suivante consiste à décider s’il faut déployer une machine virtuelle simple Windows ou Linux. Pour une machine virtuelle Windows, suivez les étapes pour [déployer une machine virtuelle Windows sur Azure à l’aide du portail](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Là encore, lorsque vous spécifiez les paramètres de la machine virtuelle dans le portail Azure, spécifiez le nom du groupe de ressources créé ci-dessus.
 
-Une fois que vous avez suivi les étapes et déployé la machine virtuelle, vous pouvez en savoir plus sur les [pratiques éprouvées pour l’exécution d’une machine virtuelle Windows dans Azure](/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). [Pour une machine virtuelle Linux, déployer une machine virtuelle Linux dans Azure à l’aide du portail](/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Vous pouvez également en apprendre davantage sur les [pratiques éprouvées pour l’exécution d’une machine virtuelle Linux dans Azure](/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
+Une fois que vous avez suivi les étapes et déployé la machine virtuelle, vous pouvez en savoir plus sur les [pratiques éprouvées pour l’exécution d’une machine virtuelle Windows dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). [Pour une machine virtuelle Linux, déployer une machine virtuelle Linux dans Azure à l’aide du portail](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Vous pouvez également en apprendre davantage sur les [pratiques éprouvées pour l’exécution d’une machine virtuelle Linux dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834675"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025111"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Chemin d’accès à la préparation des qualifications durant la phase Prêt d’un parcours de migration
 
@@ -24,7 +24,7 @@ Pendant la phase Prêt d’un parcours de migration, l’objectif est de prépar
 Selon les motivations et les résultats métier associés à un effort d’adoption du cloud, des dirigeants peuvent être appelés à établir de nouvelles structures organisationnelles ou équipes virtuelles (V-Teams) afin de faciliter diverses fonctions. Les articles suivants vous aident à acquérir les qualifications nécessaires pour structurer ces équipes conformément aux résultats souhaités :
 
 - [Alignement initial de l’organisation](./index.md) : Vue d’ensemble de l’alignement organisationnel et de différentes structures d’équipe pour faciliter des objectifs spécifiques.
-- [Briser les silos et les fiefs](../organization/fiefdoms-silos.md) : Découvrez deux anti-modèles organisationnels courants et des méthodes pour guider l’équipe vers une collaboration productive.
+- [Briser les silos et les fiefs](../organize/fiefdoms-silos.md) : Découvrez deux anti-modèles organisationnels courants et des méthodes pour guider l’équipe vers une collaboration productive.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Parcours d’apprentissage de la préparation (technique) de l’environnement
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: d4f420274b27646e94c64c2e5347bff50124c9dd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2309b56bec38383f9fe80e78e66e01a090701c3c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837811"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023809"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Approches de la planification du patrimoine numérique
 
@@ -62,4 +62,4 @@ Nous suggérons fortement une approche incrémentielle, comme nous le faisons po
 Une fois que vous avez sélectionné une approche, vous pouvez réaliser l’inventaire.
 
 > [!div class="nextstepaction"]
-> [Collecter des données d’inventaire](inventory.md)
+> [Collecter des données d’inventaire](./inventory.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 32a24f51a44c088331ea47a65a5d71e3d02cedf4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fbcb06b671b13b48fe5063e5efd8ba72c3071667
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70835039"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024329"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Réhéberger une application locale sur des machines virtuelles Azure et un groupe de disponibilité Always On SQL Server
 
@@ -97,7 +97,7 @@ Contoso évalue la conception proposée en dressant une liste des avantages et d
 **Service** | **Description** | **Coût**
 --- | --- | ---
 [Assistant de migration des données](/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA s’exécute localement depuis l’ordinateur SQL Server sur site et migre la base de données sur un VPN de site à site vers Azure. | DMA est un outil téléchargeable gratuitement.
-[Azure Site Recovery](/azure/site-recovery) | Site Recovery orchestre et gère la migration et la récupération d’urgence pour les machines virtuelles Azure, les machines virtuelles locales et les serveurs physiques. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement, et entraînent des frais. [En savoir plus](https://azure.microsoft.com/pricing/details/site-recovery) sur les frais et la tarification.
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery orchestre et gère la migration et la récupération d’urgence pour les machines virtuelles Azure, les machines virtuelles locales et les serveurs physiques. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement, et entraînent des frais. [En savoir plus](https://azure.microsoft.com/pricing/details/site-recovery) sur les frais et la tarification.
 
 ## <a name="migration-process"></a>Processus de migration
 
@@ -122,9 +122,9 @@ Voici ce que doit faire Contoso pour ce scénario.
 
 **Configuration requise** | **Détails**
 --- | ---
-**Abonnement Azure** | Contoso a déjà créé un abonnement dans un précédent article de cette série. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions.<br/><br/> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.<br/><br/> S’il vous faut plus d’autorisations granulaires, consultez [cet article](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastructure Azure** | [Découvrez comment](contoso-migration-infrastructure.md) Contoso configure une infrastructure Azure.<br/><br/> Apprenez-en davantage sur les configurations de [réseau](/azure/site-recovery/vmware-physical-azure-support-matrix#network) et de [stockage](/azure/site-recovery/vmware-physical-azure-support-matrix#storage) requises pour Site Recovery.
-**Site Recovery (local)** | L’instance vCenter Server locale doit exécuter la version 5.5, 6.0 ou 6.5.<br/><br/> Un hôte ESXi qui exécute la version 5.5, 6.0 ou 6.5<br/><br/> Une ou plusieurs machines virtuelles VMware exécutées sur l’hôte ESXi.<br/><br/> Les machines virtuelles doivent répondre aux [exigences Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Configuration [réseau](/azure/site-recovery/vmware-physical-azure-support-matrix#network) et [stockage](/azure/site-recovery/vmware-physical-azure-support-matrix#storage) prise en charge.<br/><br/> Les machines virtuelles que vous souhaitez répliquer doivent satisfaire aux [conditions requises par Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
+**Abonnement Azure** | Contoso a déjà créé un abonnement dans un précédent article de cette série. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions.<br/><br/> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.<br/><br/> S’il vous faut plus d’autorisations granulaires, consultez [cet article](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infrastructure Azure** | [Découvrez comment](./contoso-migration-infrastructure.md) Contoso configure une infrastructure Azure.<br/><br/> Apprenez-en davantage sur les configurations de [réseau](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) et de [stockage](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) requises pour Site Recovery.
+**Site Recovery (local)** | L’instance vCenter Server locale doit exécuter la version 5.5, 6.0 ou 6.5.<br/><br/> Un hôte ESXi qui exécute la version 5.5, 6.0 ou 6.5<br/><br/> Une ou plusieurs machines virtuelles VMware exécutées sur l’hôte ESXi.<br/><br/> Les machines virtuelles doivent répondre aux [exigences Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Configuration [réseau](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) et [stockage](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) prise en charge.<br/><br/> Les machines virtuelles que vous souhaitez répliquer doivent satisfaire aux [conditions requises par Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -175,8 +175,8 @@ Les administrateurs de Contoso configurent le cluster de la façon suivante :
 
 **Besoin de plus d’aide ?**
 
-- [Obtenir de l’aide](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) pour l’approvisionnement d’une machine virtuelle SQL Server.
-- [En savoir plus sur la](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) configuration de machines virtuelles pour les différentes références SKU de SQL Server.
+- [Obtenir de l’aide](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) pour l’approvisionnement d’une machine virtuelle SQL Server.
+- [En savoir plus sur la](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) configuration de machines virtuelles pour les différentes références SKU de SQL Server.
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>Étape 2 : Déployer et configurer le cluster
 
@@ -246,8 +246,8 @@ Une fois la solution Always On activée, Contoso peut configurer le groupe de di
 
 **Besoin de plus d’aide ?**
 
-- [En savoir plus sur](/windows-server/failover-clustering/deploy-cloud-witness) le témoin de cloud et la configuration d’un compte de stockage pour celui-ci.
-- [Obtenir des instructions](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial) pour la configuration d’un cluster et la création d’un groupe de disponibilité.
+- [En savoir plus sur](https://docs.microsoft.com/windows-server/failover-clustering/deploy-cloud-witness) le témoin de cloud et la configuration d’un compte de stockage pour celui-ci.
+- [Obtenir des instructions](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial) pour la configuration d’un cluster et la création d’un groupe de disponibilité.
 
 ## <a name="step-3-deploy-the-azure-load-balancer"></a>Étape 3 : Déployer Azure Load Balancer
 
@@ -305,8 +305,8 @@ La règle est créée comme suit :
 
 **Besoin de plus d’aide ?**
 
-- [Obtenez une vue d’ensemble](/azure/load-balancer/load-balancer-overview) d’Azure Load Balancer.
-- [En savoir plus sur la](/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) création d’un équilibreur de charge.
+- [Obtenez une vue d’ensemble](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) d’Azure Load Balancer.
+- [En savoir plus sur la](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) création d’un équilibreur de charge.
 
 ## <a name="step-4-prepare-azure-for-the-site-recovery-service"></a>Étape 4 : Préparer Azure pour le service Site Recovery
 
@@ -318,7 +318,7 @@ Les composants Azure dont Contoso a besoin pour déployer Site Recovery sont les
 
 Ils configurent cela comme suit :
 
-1. Contoso a déjà crée un réseau/sous-réseau utilisable pour Site Recovery lors du [déploiement de l’infrastructure Azure](contoso-migration-rehost-vm-sql-ag.md).
+1. Contoso a déjà crée un réseau/sous-réseau utilisable pour Site Recovery lors du [déploiement de l’infrastructure Azure](./contoso-migration-rehost-vm-sql-ag.md).
 
     - L’application SmartHotel360 est une application de production, et WEBVM sera migrée vers le réseau de production Azure (VNET-PROD-EUS2) dans la région USA Est 2 principale.
     - La machine virtuelle WEBVM sera placée dans le groupe de ressources ContosoRG utilisé pour les ressources de production et dans le sous-réseau de production (PROD-FE-EUS2).
@@ -336,7 +336,7 @@ Ils configurent cela comme suit :
 
 **Besoin de plus d’aide ?**
 
-[En savoir plus sur la](/azure/site-recovery/tutorial-prepare-azure) configuration d’Azure pour Site Recovery.
+[En savoir plus sur la](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) configuration d’Azure pour Site Recovery.
 
 ## <a name="step-5-prepare-on-premises-vmware-for-site-recovery"></a>Étape 5 : Préparer VMware en local pour Site Recovery
 
@@ -390,8 +390,8 @@ De plus, quand elle opèrent un basculement, elle doit vérifier les points suiv
 
 **Besoin de plus d’aide ?**
 
-- [En savoir plus sur la](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) création et l’attribution d’un rôle pour la détection automatique.
-- [En savoir plus sur la](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) création d’un compte pour une installation push du service Mobilité.
+- [En savoir plus sur la](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) création et l’attribution d’un rôle pour la détection automatique.
+- [En savoir plus sur la](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) création d’un compte pour une installation push du service Mobilité.
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure-with-site-recovery"></a>Étape 6 : Répliquer les machines virtuelles locales sur Azure avec Site Recovery
 
@@ -497,9 +497,9 @@ Ils peuvent maintenant commencer à répliquer la machine WebVM.
 
 **Besoin de plus d’aide ?**
 
-- Une procédure pas à pas complète de toutes ces étapes est décrite dans [Configurer la récupération d’urgence pour des machines virtuelles VMware locales](/azure/site-recovery/vmware-azure-tutorial).
-- Des instructions détaillées sont disponibles pour vous aider à [configurer l’environnement source](/azure/site-recovery/vmware-azure-set-up-source), à [déployer le serveur de configuration](/azure/site-recovery/vmware-azure-deploy-configuration-server) et à [configurer les paramètres de réplication](/azure/site-recovery/vmware-azure-set-up-replication).
-- Vous pouvez en apprendre davantage sur l’[activation de la réplication](/azure/site-recovery/vmware-azure-enable-replication).
+- Une procédure pas à pas complète de toutes ces étapes est décrite dans [Configurer la récupération d’urgence pour des machines virtuelles VMware locales](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
+- Des instructions détaillées sont disponibles pour vous aider à [configurer l’environnement source](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), à [déployer le serveur de configuration](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) et à [configurer les paramètres de réplication](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
+- Vous pouvez en apprendre davantage sur l’[activation de la réplication](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-7-install-the-data-migration-assistant-dma"></a>Étape 7 : Installer l’Assistant Migration de données (DMA)
 
@@ -577,9 +577,9 @@ Une fois que tout est configuré, Contoso dispose désormais dans Azure d’un g
 
 **Besoin de plus d’aide ?**
 
-- En savoir plus sur la création d’un [groupe de disponibilité](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) et d’un [écouteur](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener).
-- [Configurer le cluster pour qu’il utilise l’adresse IP de l’équilibreur de charge](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address) (manuellement).
-- [En savoir plus](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) sur la création et l’utilisation de SAP.
+- En savoir plus sur la création d’un [groupe de disponibilité](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) et d’un [écouteur](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener).
+- [Configurer le cluster pour qu’il utilise l’adresse IP de l’équilibreur de charge](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address) (manuellement).
+- [En savoir plus](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) sur la création et l’utilisation de SAP.
 
 ## <a name="step-8-migrate-the-vm-with-site-recovery"></a>Étape 8 : Migrer la machine virtuelle avec Site Recovery
 
@@ -631,9 +631,9 @@ La dernière étape du processus de migration pour Contoso consiste à mettre à
 
 **Besoin de plus d’aide ?**
 
-- [En savoir plus sur](/azure/site-recovery/tutorial-dr-drill-azure) l’exécution d’un test de basculement.
-- [Découvrez](/azure/site-recovery/site-recovery-create-recovery-plans) comment créer un plan de récupération.
-- [Découvrez](/azure/site-recovery/site-recovery-failover) comment basculer vers Azure.
+- [En savoir plus sur](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) l’exécution d’un test de basculement.
+- [Découvrez](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) comment créer un plan de récupération.
+- [Découvrez](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) comment basculer vers Azure.
 
 ## <a name="clean-up-after-migration"></a>Nettoyer après la migration
 
@@ -659,20 +659,20 @@ L’équipe de sécurité de Contoso examine les machines virtuelles Azure WEBVM
 - Elle prend également en considération la sécurisation des données sur le disque à l’aide d’Azure Disk Encryption et de Key Vault.
 - L’équipe doit évaluer le chiffrement transparent des données (TDE), puis l’activer sur la base de données SmartHotel360 qui s’exécute sur le nouvel AOG SQL. [Plus d’informations](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
 
-[En savoir plus](/azure/security/azure-security-best-practices-vms) sur les pratiques de sécurité pour les machines virtuelles.
+[En savoir plus](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sur les pratiques de sécurité pour les machines virtuelles.
 
 ## <a name="bcdr"></a>BCDR
 
  Pour assurer la continuité et la reprise d’activité (BCDR), Contoso effectue les actions suivantes :
 
-- Sécuriser les données : Contoso sauvegarde les données sur les machines virtuelles WEBVM, SQLAOG1 et SQLAOG2 à l’aide du service Sauvegarde Azure. [Plus d’informations](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
-- Contoso va également apprendre à utiliser le stockage Azure pour sauvegarder SQL Server directement sur le stockage d’objets blob. [Plus d’informations](/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)
-- Faire en sorte que les applications soient opérationnelles : Contoso réplique les machines virtuelles de l’application dans Azure vers une région secondaire à l’aide de Site Recovery. [Plus d’informations](/azure/site-recovery/azure-to-azure-quickstart)
+- Sécuriser les données : Contoso sauvegarde les données sur les machines virtuelles WEBVM, SQLAOG1 et SQLAOG2 à l’aide du service Sauvegarde Azure. [Plus d’informations](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+- Contoso va également apprendre à utiliser le stockage Azure pour sauvegarder SQL Server directement sur le stockage d’objets blob. [Plus d’informations](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)
+- Faire en sorte que les applications soient opérationnelles : Contoso réplique les machines virtuelles de l’application dans Azure vers une région secondaire à l’aide de Site Recovery. [Plus d’informations](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 
 ### <a name="licensing-and-cost-optimization"></a>Gestion des licences et optimisation des coûts
 
 1. Contoso a un contrat de licence pour sa machine WEBVM et tirera parti d’Azure Hybrid Benefit. Contoso va convertir les machines virtuelles Azure existantes pour tirer parti de cette tarification.
-2. Contoso va activer Azure Cost Management sous licence de Cloudyn, une filiale de Microsoft. Il s’agit d’une solution de gestion des coûts multicloud qui vous aide à utiliser et à gérer Azure ainsi que d’autres ressources cloud. [En savoir plus](/azure/cost-management/overview) sur Azure Cost Management.
+2. Contoso va activer Azure Cost Management sous licence de Cloudyn, une filiale de Microsoft. Il s’agit d’une solution de gestion des coûts multicloud qui vous aide à utiliser et à gérer Azure ainsi que d’autres ressources cloud. [En savoir plus](https://docs.microsoft.com/azure/cost-management/overview) sur Azure Cost Management.
 
 ## <a name="conclusion"></a>Conclusion
 

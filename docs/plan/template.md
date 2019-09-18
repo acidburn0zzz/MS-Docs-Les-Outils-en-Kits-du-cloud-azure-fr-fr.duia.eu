@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 91c1433f300efc3950cb54852a00b5020a992e8f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839159"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022304"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan d’adoption du cloud et Azure DevOps
 
@@ -59,7 +59,7 @@ La vue la plus claire du plan d’adoption du cloud provient de la vue du backlo
 
 ## <a name="align-the-cloud-adoption-plan"></a>Aligner le plan d’adoption du cloud
 
-Les pages de présentation des phases de planification et de stratégie du cycle de vie d’adoption du cloud font toutes référence au document [Cloud Adoption Framework strategy and planning template](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) (Modèle de planification et de stratégie du Framework d’adoption du cloud). Ce modèle organise les décisions et les points de données qui aligneront le modèle de plan d’adoption du cloud avec vos plans spécifiques d’adoption. Si vous ne l’avez pas déjà fait, vous souhaiterez peut-être effectuer les exercices relatifs à la [stratégie](../business-strategy/index.md) et à la [planification](../plan/index.md) avant d’aligner votre nouveau projet.
+Les pages de présentation des phases de planification et de stratégie du cycle de vie d’adoption du cloud font toutes référence au document [Cloud Adoption Framework strategy and planning template](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) (Modèle de planification et de stratégie du Framework d’adoption du cloud). Ce modèle organise les décisions et les points de données qui aligneront le modèle de plan d’adoption du cloud avec vos plans spécifiques d’adoption. Si vous ne l’avez pas déjà fait, vous souhaiterez peut-être effectuer les exercices relatifs à la [stratégie](../strategy/index.md) et à la [planification](../plan/index.md) avant d’aligner votre nouveau projet.
 
 Les articles suivants prennent en charge l’alignement du plan d’adoption du cloud :
 

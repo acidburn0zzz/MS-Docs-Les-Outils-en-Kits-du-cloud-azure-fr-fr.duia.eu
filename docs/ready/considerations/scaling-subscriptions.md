@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0f2bf93d8659804db3bdcd41caa832310fe2f46c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905355"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025139"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Mise à l’échelle avec plusieurs abonnements Azure
 
@@ -39,7 +39,7 @@ D’autres situations peuvent nécessiter des abonnements supplémentaires. Gard
 
 - Les abonnements ont des limites différentes pour différents types de ressources. Par exemple, le nombre de réseaux virtuels dans un abonnement est limité. Lorsqu’un abonnement approche de l’une de ses limites, vous devrez créer un autre abonnement et y placer les nouvelles ressources.
 
-  Pour plus d’informations, consultez [Abonnement Azure et limites, quotas et contraintes de service](/azure/azure-subscription-service-limits).
+  Pour plus d’informations, consultez [Abonnement Azure et limites, quotas et contraintes de service](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 - Chaque abonnement peut implémenter ses propres stratégies pour les types de ressources déployables et les régions prises en charge.
 
@@ -59,7 +59,7 @@ D’autres situations peuvent nécessiter des abonnements supplémentaires. Gard
 
 Vous pouvez également choisir de créer des abonnements supplémentaires pour d’autres raisons commerciales ou techniques spécifiques à votre organisation. Il peut y avoir des coûts supplémentaires pour l’entrée et la sortie des données entre les abonnements.
 
-Vous pouvez déplacer de nombreux types de ressources d’un abonnement à un autre ou utiliser des déploiements automatisés pour migrer des ressources vers un autre abonnement. Pour plus d’informations, consultez [Déplacer des ressources Azure vers un autre groupe de ressources ou abonnement](/azure/azure-resource-manager/resource-group-move-resources).
+Vous pouvez déplacer de nombreux types de ressources d’un abonnement à un autre ou utiliser des déploiements automatisés pour migrer des ressources vers un autre abonnement. Pour plus d’informations, consultez [Déplacer des ressources Azure vers un autre groupe de ressources ou abonnement](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="managing-multiple-subscriptions"></a>Gestion de plusieurs abonnements
 
@@ -76,7 +76,7 @@ Azure fournit quatre niveaux d’étendue de la gestion : groupes d’administr
 
 En vous appuyant sur ce modèle d’héritage, vous pouvez organiser les abonnements dans votre hiérarchie de façon à ce que chaque abonnement suive les stratégies et les contrôles de sécurité appropriés.
 
-![Les quatre niveaux d’étendue pour l’organisation de vos ressources Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Les quatre niveaux d’étendue pour l’organisation de vos ressources Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
 
 Toute attribution d’accès et de stratégie au groupe d’administration racine s’appliquent à toutes les ressources du répertoire. Examinez attentivement les éléments que vous définissez au niveau de cette étendue. Incluez uniquement les affectations dont vous avez besoin.
 
@@ -86,26 +86,26 @@ Lorsque vous déplacez un abonnement vers un groupe d’administration existant,
 
 ![Exemple d’une hiérarchie de groupes d’administration](../../_images/ready/management-group-hierarchy.png)
 
-Pour plus d’informations, consultez [Organiser vos ressources avec des groupes d’administration Azure](/azure/governance/management-groups).
+Pour plus d’informations, consultez [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
 ## <a name="tips-for-creating-new-subscriptions"></a>Conseils pour la création de nouveaux abonnements
 
 - Identifiez la personne qui sera responsable de la création de nouveaux abonnements.
 - Déterminez les ressources qui seront dans un abonnement par défaut.
 - Déterminez à quoi ressemblera tous les abonnements standard. Les considérations incluent l’accès RBAC, les stratégies, les balises et les ressources d’infrastructure.
-- Si possible, [utilisez un principal de service](/azure/azure-resource-manager/grant-access-to-create-subscription) pour créer des abonnements. Définissez un groupe de sécurité qui peut demander de nouveaux abonnements via un flux de travail automatisé.
+- Si possible, [utilisez un principal de service](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription) pour créer des abonnements. Définissez un groupe de sécurité qui peut demander de nouveaux abonnements via un flux de travail automatisé.
 - Si vous êtes un client Accord Entreprise (EA), demandez au support Azure de bloquer la création d’abonnements non-EA pour votre organisation.
 
 ## <a name="related-resources"></a>Ressources associées
 
 - [Concepts fondamentaux Azure](./fundamental-concepts.md).
-- [Organiser vos ressources avec des groupes d’administration Azure](/azure/governance/management-groups).
-- [Élever l’accès pour gérer tous les abonnements et groupes d’administration Azure](/azure/role-based-access-control/elevate-access-global-admin).
-- [Déplacer des ressources Azure vers un autre groupe de ressources ou un autre abonnement](/azure/azure-resource-manager/resource-group-move-resources).
+- [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/governance/management-groups).
+- [Élever l’accès pour gérer tous les abonnements et groupes d’administration Azure](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin).
+- [Déplacer des ressources Azure vers un autre groupe de ressources ou un autre abonnement](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Passez en revue les [conventions de nommage et de catégorisation recommandées](./name-and-tag.md) à suivre lors du déploiement de vos ressources Azure.
+Passez en revue les [conventions de nommage et de catégorisation recommandées](./naming-and-tagging.md) à suivre lors du déploiement de vos ressources Azure.
 
 > [!div class="nextstepaction"]
-> [Conventions de nommage et de catégorisation recommandées](./name-and-tag.md)
+> [Conventions de nommage et de catégorisation recommandées](./naming-and-tagging.md)

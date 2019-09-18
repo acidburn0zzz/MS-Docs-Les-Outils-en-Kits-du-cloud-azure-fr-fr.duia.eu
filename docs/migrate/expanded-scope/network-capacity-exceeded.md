@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb6a5adeac25293539edd5d97c816fad2865345c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b1078cbb6b7ca40b7a38ea56ae803fd61e67449
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836703"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024772"
 ---
 # <a name="storage-requirements-exceed-network-capacity-during-a-migration-effort"></a>Les besoins en stockage dépassent la capacité réseau lors d’une migration
 
@@ -29,11 +29,11 @@ La majeure partie de cet effort nécessaire dans le cadre de cette expansion de 
 
 **Transfert hors connexion de banques de données indépendantes :** Le diagramme ci-dessous présente des exemples de transferts de données en ligne et hors ligne avec Azure Data Box. Ces approches peuvent être utilisées pour envoyer des volumes importants de données vers le cloud avant la migration de la charge de travail. Dans un transfert de données hors connexion, les données source sont copiées sur une Azure Data Box, qui est ensuite physiquement livrée à Microsoft pour le transfert dans un compte de stockage Azure en tant que fichier ou objet blob. Ce processus peut être utilisé pour envoyer des données qui ne sont pas directement liées à une charge de travail spécifique, avant d’autres efforts de migration. Cela réduit la quantité de données qui doivent être expédiées sur le réseau, afin d’effectuer une migration respectant les contraintes réseau.
 
-Cette approche peut être utilisée pour transférer des données HDFS, des sauvegardes, des archives, des serveurs de fichiers, des applications, etc. Les conseils techniques existants expliquent comment utiliser cette approche pour transférer des données à partir [d’un magasin HDFS](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster), de disques à l’aide de [SMB](/azure/databox/data-box-deploy-copy-data), [NFS](/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](/azure/databox/data-box-deploy-copy-data-via-rest), ou du [service de copie de données](/azure/databox/data-box-deploy-copy-data-via-copy-service) vers Data Box.
+Cette approche peut être utilisée pour transférer des données HDFS, des sauvegardes, des archives, des serveurs de fichiers, des applications, etc. Les conseils techniques existants expliquent comment utiliser cette approche pour transférer des données à partir [d’un magasin HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster), de disques à l’aide de [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest), ou du [service de copie de données](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) vers Data Box.
 
 Il existe également des [solutions de partenaires tiers](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) qui utilisent Azure Data Box pour une migration « Seed and Feed », où un volume important de données est déplacé lors d’un transfert hors connexion, mais est ensuite synchronisé à une échelle plus faible sur le réseau.
 
-![Transferts de données en ligne et hors connexion avec Azure Data Box](../../_images/migration/databox.png)
+![Transferts de données en ligne et hors connexion avec Azure Data Box](../../_images/migrate/databox.png)
 
 ## <a name="assess-process-changes"></a>Évaluer les changements de processus
 
@@ -58,13 +58,13 @@ Lorsque vous utilisez des mécanismes de transfert hors connexion, les [processu
 
 ### <a name="suggested-action-during-the-migrate-process"></a>Action suggérée pendant le processus de migration
 
-**Copie du stockage :** Cette approche peut être utilisée pour transférer des données HDFS, des sauvegardes, des archives, des serveurs de fichiers, des applications, etc. Les conseils techniques existants expliquent comment utiliser cette approche pour transférer des données à partir [d’un magasin HDFS](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster), de disques à l’aide de [SMB](/azure/databox/data-box-deploy-copy-data), [NFS](/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](/azure/databox/data-box-deploy-copy-data-via-rest), ou du [service de copie de données](/azure/databox/data-box-deploy-copy-data-via-copy-service) vers Data Box.
+**Copie du stockage :** Cette approche peut être utilisée pour transférer des données HDFS, des sauvegardes, des archives, des serveurs de fichiers, des applications, etc. Les conseils techniques existants expliquent comment utiliser cette approche pour transférer des données à partir [d’un magasin HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster), de disques à l’aide de [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest), ou du [service de copie de données](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) vers Data Box.
 
 Il existe également des [solutions de partenaires tiers](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) qui utilisent Azure Data Box pour une migration « Seed and Sync », où un volume important de données est déplacé lors d’un transfert hors connexion, mais est ensuite synchronisé à une échelle plus faible sur le réseau.
 
-**Expédition de l’appareil :** Une fois les données copiées, l’appareil peut être [expédié à Microsoft](/azure/databox/data-box-deploy-picked-up). Une fois les données reçues et importées, elles sont disponibles dans un compte de stockage Azure.
+**Expédition de l’appareil :** Une fois les données copiées, l’appareil peut être [expédié à Microsoft](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up). Une fois les données reçues et importées, elles sont disponibles dans un compte de stockage Azure.
 
-**Restauration de la ressource :** [Vérifiez que les données](/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure) sont disponibles dans le compte de stockage. Une fois vérifiées, les données peuvent être utilisées en tant qu’objets blob ou dans Azure Files. Si les données sont un fichier VHD/VHDX, le fichier peut être converti en disques managés. Ces disques managés peuvent ensuite être utilisés pour instancier une machine virtuelle, ce qui crée un réplica de la ressource locale d’origine.
+**Restauration de la ressource :** [Vérifiez que les données](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure) sont disponibles dans le compte de stockage. Une fois vérifiées, les données peuvent être utilisées en tant qu’objets blob ou dans Azure Files. Si les données sont un fichier VHD/VHDX, le fichier peut être converti en disques managés. Ces disques managés peuvent ensuite être utilisés pour instancier une machine virtuelle, ce qui crée un réplica de la ressource locale d’origine.
 
 **Synchronisation :** Si la synchronisation de la dérive est requise pour une ressource migrée, une des [solutions de partenaires tiers](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) peut être utilisée pour synchroniser les fichiers jusqu’à ce que la ressource soit restaurée.
 

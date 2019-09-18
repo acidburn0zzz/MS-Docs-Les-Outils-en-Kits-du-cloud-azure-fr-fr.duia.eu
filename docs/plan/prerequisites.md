@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837607"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022321"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Liste de vérification de la configuration requise pour un plan d’adoption du cloud efficace
 
@@ -21,7 +21,7 @@ L’efficacité du plan est équivalente aux données qui y sont placées. Pour 
 
 ## <a name="strategic-inputs"></a>Entrées stratégiques
 
-Des entrées stratégiques précises garantissent que le travail effectué contribue à la concrétisation des résultats pour l’entreprise. La [section Stratégie du Framework d’adoption du cloud](../business-strategy/index.md) propose une série d’exercices permettant de développer une stratégie claire. Les résultats de ces exercices alimentent le plan d’adoption du cloud. Avant de créer le plan, assurez-vous que les éléments suivants sont bien définis à la suite de ces exercices :
+Des entrées stratégiques précises garantissent que le travail effectué contribue à la concrétisation des résultats pour l’entreprise. La [section Stratégie du Framework d’adoption du cloud](../strategy/index.md) propose une série d’exercices permettant de développer une stratégie claire. Les résultats de ces exercices alimentent le plan d’adoption du cloud. Avant de créer le plan, assurez-vous que les éléments suivants sont bien définis à la suite de ces exercices :
 
 - **Motivations clairement définies :** Pourquoi adopter le cloud ?
 - **Résultats définis pour l’entreprise** : Quels sont les résultats attendus de l’adoption du cloud ?

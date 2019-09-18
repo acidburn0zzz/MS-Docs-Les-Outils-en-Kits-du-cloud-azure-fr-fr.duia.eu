@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0f720d78da2750fa05cbd117cdbf9f29e5e18558
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 096d6756c1d2b4713b6a464cbcc05785e96bc5cc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837479"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023392"
 ---
 # <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>L’innovation via l’adoption du cloud dans le Framework d’adoption du cloud
 
@@ -27,7 +27,7 @@ L’innovation est étroitement liée à la migration. Lorsque des charges de tr
 L’innovation ne doit pas être le chemin d’adoption choisi pour toutes les charges de travail. Ce passage à l’adoption du cloud requiert souvent un investissement plus important en matière de code personnalisé et de gestion des données. L’innovation prend également plus de temps que la migration, voire même de nombreuses formes de modernisation. Toutefois, ce passage est conseillé lorsque les clients ciblent les types suivants de résultats métiers :
 
 - Se préparer à de nouvelles capacités techniques
-- S’adapter à de nouvelles demandes du marché
+- Mettre à l’échelle pour répondre aux besoins du marché
 - S’adapter à de nouvelles demandes géographiques
 - Développer de nouvelles capacités techniques
 - Améliorer l’expérience client/les engagements
@@ -43,7 +43,7 @@ Le contenu sur l’innovation présenté dans le Framework d’adoption du cloud
 - Suivre les pratiques qui encouragent l’esprit de croissance
 - Intégrer des stratégies DevOps
 
-![Vue d’ensemble du Framework d’adoption du cloud](../_images/cloud-adoption-framework-overview.png)
+![Vue d’ensemble du Framework d’adoption du cloud](../_images/caf-overview.png)
 
 ## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Exemples de charges de travail courantes associés à une innovation cloud
 

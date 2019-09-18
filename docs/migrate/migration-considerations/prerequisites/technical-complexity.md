@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7895094ea0297f725ae4f0451989055cb1afab93
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836583"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025365"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Se préparer à la complexité technique : gestion agile des changements
 
@@ -46,7 +46,7 @@ Le backlog de migration vous permet de suivre votre portefeuille de haut niveau 
 
 Initialement, il est peu probable que les charges de travail du backlog de migration répondent aux critères INVEST décrits dans la section précédente. Au lieu de cela, elles servent à regrouper logiquement des ressources à partir d’un inventaire initial en tant qu’espace réservé en vue d’une tâche future. Ces espaces réservés peuvent ne pas être techniquement exacts, mais ils servent de base pour la coordination avec l’entreprise.
 
-![Relation entre les backlogs de migration, de mise en production et d’itération utilisés pendant le processus de migration](../../../_images/migration/migrate-release-iteration-backlog-relationship.png)
+![Relation entre les backlogs de migration, de mise en production et d’itération utilisés pendant le processus de migration](../../../_images/migrate/backlog-relationships.png)
 
 *Les backlogs de migration, de mise en production et d’itération suivent différents niveaux d’activité pendant les processus de migration.*
 

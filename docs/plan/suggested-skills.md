@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9be3818dd12dff913aae6a2eef86587d869ce5a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837611"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025313"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Prise en main d’un chemin d’accès à la préparation des qualifications
 
@@ -24,7 +24,7 @@ Les membres du personnel informatique peuvent s’inquiéter quant à leur poste
 
 Le Cloud Adoption Framework guide les lecteurs tout au long du cycle de vie d’adoption. Tout au long de ce Framework, les lecteurs reçoivent des opportunités de créer les qualifications nécessaires. Pour vous aider à commencer ce parcours, des articles sur la préparation des qualifications sont inclus dans la structure suivante pour faciliter l’accès. Chacun des liens suivants correspond aux qualifications requises pour réussir chacune de ces phases d’adoption.
 
-- **[Stratégie](../business-strategy/suggested-skills.md) :** Développez les qualifications nécessaires à la préparation d’un plan de migration actionnable. Cela comprend la justification professionnelle et les autres compétences requises en matière de planification commerciale.
+- **[Stratégie](../strategy/suggested-skills.md) :** Développez les qualifications nécessaires à la préparation d’un plan de migration actionnable. Cela comprend la justification professionnelle et les autres compétences requises en matière de planification commerciale.
 - **[Planification](./suggested-skills.md) :** Développez les qualifications nécessaires à la préparation d’un plan de migration actionnable. Cela comprend la justification professionnelle et les autres compétences requises en matière de planification commerciale.
 - **[Prêt](../ready/suggested-skills.md) :** Développez les compétences nécessaires à la préparation de l’entreprise, de la culture, des personnes et de l’environnement pour les modifications à venir.
 

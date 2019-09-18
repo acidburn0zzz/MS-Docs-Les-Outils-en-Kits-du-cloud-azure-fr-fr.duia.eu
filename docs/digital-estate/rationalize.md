@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7bb9eb697beb44aa5bf4e9eec736a5be4b575eb7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837783"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023435"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 
-La rationalisation du cloud est le processus qui consiste à évaluer des ressources dans le but de déterminer la meilleure façon de les héberger dans le cloud. Une fois que vous avez déterminé une [approche](approach.md) et compilé un [inventaire](inventory.md), la rationalisation du cloud peut commencer. La rubrique [Rationalisation du cloud](rationalize.md) traite des options de rationalisation les plus courantes.
+La rationalisation du cloud est le processus qui consiste à évaluer des ressources dans le but de déterminer la meilleure façon de les héberger dans le cloud. Une fois que vous avez déterminé une [approche](./approach.md) et compilé un [inventaire](./inventory.md), la rationalisation du cloud peut commencer. La rubrique [Rationalisation du cloud](./rationalize.md) traite des options de rationalisation les plus courantes.
 
 ## <a name="traditional-view-of-rationalization"></a>Considérations traditionnelles sur la rationalisation
 
@@ -30,7 +30,7 @@ La rationalisation est facile à comprendre lorsque vous visualisez le processus
 
 **Analyse qualitative :** L’ensemble de décisions suivant nécessite une intelligence humaine dans le but d’effectuer une analyse qualitative. Souvent, ces questions sont propres à la solution et peuvent uniquement être posées aux parties prenantes et aux utilisateurs avancés. Ces décisions retardent généralement le processus, ce qui ralentit considérablement les choses. Cette analyse nécessite généralement 40 à 80 heures de travail à temps plein par application.
 
-Pour des conseils sur la création d’une liste de questions d’analyse qualitative, consultez [Approches de la planification du patrimoine numérique](approach.md).
+Pour des conseils sur la création d’une liste de questions d’analyse qualitative, consultez [Approches de la planification du patrimoine numérique](./approach.md).
 
 **Décision de rationalisation :** Une équipe de rationalisation expérimentée sait analyser les données qualitatives et quantitatives pour prendre des décisions éclairées. Malheureusement, de telles équipes coûtent cher à l’embauche ou nécessitent des mois de formation.
 
@@ -60,7 +60,7 @@ Dans un processus de rationalisation incrémentielle, vous pouvez utiliser une s
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Analyse quantitative : Simplifier la prise de décisions
 
-Quelle que soit l’approche que vous choisissez pour la découverte de l’inventaire, l’analyse quantitative peut déboucher sur un certain nombre de décisions et d’hypothèses initiales. Cela est particulièrement vrai lorsque vous tentez d’identifier la première charge de travail ou lorsque l’objectif de la rationalisation est d’obtenir une comparaison générale des coûts. Dans un processus de rationalisation incrémentielle, l’équipe de stratégie cloud et l’équipe chargée de l’adoption du cloud limitent les [5 R de la rationalisation](5-rs-of-rationalization.md) à deux décisions concises et appliquent uniquement ces facteurs quantitatifs, dans le but de simplifier l’analyse et de réduire la quantité de données initiales nécessaires au changement.
+Quelle que soit l’approche que vous choisissez pour la découverte de l’inventaire, l’analyse quantitative peut déboucher sur un certain nombre de décisions et d’hypothèses initiales. Cela est particulièrement vrai lorsque vous tentez d’identifier la première charge de travail ou lorsque l’objectif de la rationalisation est d’obtenir une comparaison générale des coûts. Dans un processus de rationalisation incrémentielle, l’équipe de stratégie cloud et l’équipe chargée de l’adoption du cloud limitent les [5 R de la rationalisation](./5-rs-of-rationalization.md) à deux décisions concises et appliquent uniquement ces facteurs quantitatifs, dans le but de simplifier l’analyse et de réduire la quantité de données initiales nécessaires au changement.
 
 Par exemple, si une organisation est en cours de migration IaaS vers le cloud, vous pouvez supposer que la plupart des charges de travail seront mises hors service ou réhébergées.
 
@@ -116,7 +116,7 @@ La première charge de travail est souvent déployée dans un environnement exp�
 
 ### <a name="qualitative-analysis"></a>Analyse qualitative
 
-Les équipes chargées de l’adoption du cloud et l’équipe chargée de l’adoption du cloud peuvent collaborer pour analyser cette petite charge de travail. Cette collaboration génère une opportunité contrôlée pour créer et tester les critères de l’analyse qualitative. Les petites charges de travail permettent d’interroger les utilisateurs affectés dans le but d’effectuer une analyse qualitative détaillée en une semaine maximum. Pour connaître les facteurs courants d’analyse qualitative, consultez la cible de rationalisation correspondante dans les [5 R de la rationalisation](5-rs-of-rationalization.md).
+Les équipes chargées de l’adoption du cloud et l’équipe chargée de l’adoption du cloud peuvent collaborer pour analyser cette petite charge de travail. Cette collaboration génère une opportunité contrôlée pour créer et tester les critères de l’analyse qualitative. Les petites charges de travail permettent d’interroger les utilisateurs affectés dans le but d’effectuer une analyse qualitative détaillée en une semaine maximum. Pour connaître les facteurs courants d’analyse qualitative, consultez la cible de rationalisation correspondante dans les [5 R de la rationalisation](./5-rs-of-rationalization.md).
 
 ### <a name="migration"></a>Migration
 
@@ -161,4 +161,4 @@ Dans certains cas, le modèle financier peut être trop strict pour permettre un
 La rationalisation génère un backlog hiérarchisé comprenant toutes les ressources qui seront affectées par la transformation choisie. Ce backlog est maintenant prêt à servir de base pour les modèles de coûts des services cloud.
 
 > [!div class="nextstepaction"]
-> [Aligner les modèles de coûts sur le patrimoine numérique](calculate.md)
+> [Aligner les modèles de coûts sur le patrimoine numérique](./calculate.md)

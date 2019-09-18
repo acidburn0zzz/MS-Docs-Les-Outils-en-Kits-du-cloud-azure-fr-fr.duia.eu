@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837819"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023615"
 ---
 # <a name="cloud-rationalization"></a>Rationalisation du cloud
 
-La rationalisation du cloud est le processus qui consiste à évaluer des ressources dans le but de déterminer la meilleure manière de migrer ou de moderniser chaque ressource présente dans le cloud. Pour plus d’informations sur le processus de rationalisation, consultez [Qu’est-ce qu’un patrimoine numérique ?](index.md)
+La rationalisation du cloud est le processus qui consiste à évaluer des ressources dans le but de déterminer la meilleure manière de migrer ou de moderniser chaque ressource présente dans le cloud. Pour plus d’informations sur le processus de rationalisation, consultez [Qu’est-ce qu’un patrimoine numérique ?](./index.md)
 
 ## <a name="rationalization-context"></a>Contexte de la rationalisation
 
@@ -161,4 +161,4 @@ Facteurs d’analyse qualitative :
 Collectivement, vous pouvez appliquer ces cinq R de la rationalisation à un patrimoine numérique en vue de prendre des décisions de rationalisation concernant l’état futur de chaque application.
 
 > [!div class="nextstepaction"]
-> [Qu’est-ce qu’un patrimoine numérique ?](index.md)
+> [Qu’est-ce qu’un patrimoine numérique ?](./index.md)
