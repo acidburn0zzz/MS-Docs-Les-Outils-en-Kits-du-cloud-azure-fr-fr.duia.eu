@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2951c3049a22036199e2bc73a6d3f9283582e7e1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818504"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025225"
 ---
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
@@ -80,9 +80,9 @@ Pour plus d'informations, consultez les rubriques suivantes :
 
 - [Notions de base d’Azure](../considerations/fundamental-concepts.md)
 - [Mise à l’échelle avec plusieurs abonnements Azure](../considerations/scaling-subscriptions.md)
-- [Comprendre la gestion des accès aux ressources dans Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organiser vos ressources avec des groupes d’administration Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Limites du service d’abonnement](/azure/azure-subscription-service-limits)
+- [Comprendre la gestion des accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Limites du service d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Adoptez des conventions standard en matière d’affectation de noms pour identi
 
 - Le côté opérationnel doit s’assurer que les noms incluent les informations dont les équipes informatiques ont besoin. Utilisez les détails qui identifient la charge de travail, l’application, l’environnement, le caractère critique et d’autres informations utiles pour la gestion des ressources.
 
-Différents types de ressources peuvent se distinguer en matière de limites de longueur et de caractères autorisés, dont la plupart sont répertoriés dans l’[article Conventions d’affectation de noms](/azure/architecture/best-practices/naming-conventions) des meilleures pratiques Azure. Pour obtenir plus d’informations et des recommandations visant spécifiquement à prendre en charge les efforts de l’entreprise dans le cadre de l’adoption du cloud, consultez l’[aide du Framework d’adoption du cloud au sujet de l’attribution de noms et de la catégorisation](../considerations/name-and-tag.md).
+Différents types de ressources peuvent se distinguer en matière de limites de longueur et de caractères autorisés, dont la plupart sont répertoriés dans l’[article Conventions d’affectation de noms](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) des meilleures pratiques Azure. Pour obtenir plus d’informations et des recommandations visant spécifiquement à prendre en charge les efforts de l’entreprise dans le cadre de l’adoption du cloud, consultez l’[aide du Framework d’adoption du cloud au sujet de l’attribution de noms et de la catégorisation](../considerations/naming-and-tagging.md).
 
 Le tableau suivant présente les modèles d’affectation de noms pour quelques exemples de types de ressources Azure.
 
@@ -161,7 +161,7 @@ Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses.
 
 Chaque ressource ou groupe de ressources peut inclure un maximum de 15 paires nom/valeur de balise. Cette limitation s’applique uniquement aux balises directement appliquées au groupe de ressources ou à la ressource.
 
-Pour obtenir d’autres recommandations et exemples de catégorisation, consultez l’[aide du Framework d’adoption du cloud au sujet de la catégorisation](../considerations/name-and-tag.md).
+Pour obtenir d’autres recommandations et exemples de catégorisation, consultez l’[aide du Framework d’adoption du cloud au sujet de la catégorisation](../considerations/naming-and-tagging.md).
 
 ::: zone target="docs"
 
@@ -176,7 +176,7 @@ Pour appliquer une étiquette à un groupe de ressources :
 
 ## <a name="learn-more"></a>En savoir plus
 
-Pour en savoir plus, consultez [Organiser vos ressources Azure à l’aide d’étiquettes](/azure/azure-resource-manager/resource-group-using-tags).
+Pour en savoir plus, consultez [Organiser vos ressources Azure à l’aide d’étiquettes](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

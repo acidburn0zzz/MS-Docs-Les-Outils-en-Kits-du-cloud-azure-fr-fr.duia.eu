@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 89ce17ad531d1ab3ea3df3072aa93654bbe00696
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b5fd413b1492d1ef885103ee529b4bdfb68f4666
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818606"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025195"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Gérer les coûts et la facturation de vos ressources Azure
 
@@ -67,9 +67,9 @@ Pour consulter vos demandes de support et leur état respectif :
 
 Pour plus d'informations, consultez les rubriques suivantes :
 
-- [Documentation sur la facturation et la gestion des coûts Azure](/azure/billing)
+- [Documentation sur la facturation et la gestion des coûts Azure](https://docs.microsoft.com/azure/billing)
 - [Framework d’adoption du cloud : Suivi des coûts dans les unités commerciales, les environnements ou les projets](../azure-best-practices/track-costs.md)
-- [Framework d’adoption du cloud : Discipline de la gouvernance relative à la gestion des coûts](../../governance/cost-management/index.md)
+- [Framework d’adoption du cloud : Discipline de la gouvernance relative à la gestion des coûts](../../govern/cost-management/index.md)
 
 ::: zone-end
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818742"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022767"
 ---
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
@@ -76,9 +76,9 @@ Créez un groupe de ressources pour regrouper des ressources comme les applicati
 
 Pour plus d'informations, consultez les rubriques suivantes :
 
-- [Présentation de la gestion des accès aux ressources dans Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organiser vos ressources avec des groupes d’administration Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Limites du service d’abonnement](/azure/azure-subscription-service-limits)
+- [Présentation de la gestion des accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Limites du service d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Adoptez des conventions de nommage standard pour identifier les ressources dans 
 
 ::: zone target="docs"
 
-Nous vous conseillons de passer en revue et d’adopter les [modèles et pratiques recommandés](/azure/architecture/best-practices/naming-conventions).
+Nous vous conseillons de passer en revue et d’adopter les [modèles et pratiques recommandés](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions).
 
 >[!TIP]
 >N’utilisez pas de caractères spéciaux (`-` ou `_`) comme premier ou dernier caractère d’un nom quel qu’il soit. Ces caractères entraînent l’échec de la plupart des règles de validation.
@@ -151,7 +151,7 @@ Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses.
 
 Chaque ressource ou groupe de ressources peut inclure un maximum de 15 paires nom/valeur de balise. Toutefois, cette limitation s’applique uniquement aux étiquettes qui sont directement appliquées au groupe de ressources ou à la ressource.
 
-Pour plus d’informations sur le balisage, consultez [Conventions d’affectation de noms du centre des architectures Azure pour les ressources Azure](../../ready/considerations/name-and-tag.md#metadata-tags)
+Pour plus d’informations sur le balisage, consultez [Conventions d’affectation de noms du centre des architectures Azure pour les ressources Azure](../../ready/considerations/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ Pour appliquer une étiquette à un groupe de ressources :
 
 ## <a name="learn-more"></a>En savoir plus
 
-Pour en savoir plus, consultez [Organiser vos ressources Azure à l’aide d’étiquettes](/azure/azure-resource-manager/resource-group-using-tags).
+Pour en savoir plus, consultez [Organiser vos ressources Azure à l’aide d’étiquettes](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

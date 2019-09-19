@@ -10,16 +10,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 94ab5fd4907d7c95ca0d1b0ca932aa25eea5be41
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818640"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025254"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Gouvernance, sécurité et conformité dans Azure
 
-Lorsque vous établissez une stratégie d’entreprise et planifiez vos stratégies de gouvernance, vous pouvez utiliser des outils et des services tels que Azure Policy, Azure Blueprints et Azure Security Center pour appliquer et automatiser les décisions de gouvernance de votre organisation. Avant de commencer votre planification de la gouvernance, utilisez l’[outil Governance Benchmark](http://aka.ms/caf/gov/assess) pour identifier les lacunes potentielles dans l’approche de gouvernance cloud de votre organisation. Pour plus d’informations sur la façon de développer des processus de gouvernance, consultez l’[aide du Framework d’adoption du cloud pour Azure au sujet de la gouvernance](../../governance/index.md).
+Lorsque vous établissez une stratégie d’entreprise et planifiez vos stratégies de gouvernance, vous pouvez utiliser des outils et des services tels que Azure Policy, Azure Blueprints et Azure Security Center pour appliquer et automatiser les décisions de gouvernance de votre organisation. Avant de commencer votre planification de la gouvernance, utilisez l’[outil Governance Benchmark](http://aka.ms/caf/gov/assess) pour identifier les lacunes potentielles dans l’approche de gouvernance cloud de votre organisation. Pour plus d’informations sur la façon de développer des processus de gouvernance, consultez l’[aide du Framework d’adoption du cloud pour Azure au sujet de la gouvernance](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
@@ -90,9 +90,9 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 
 Pour plus d'informations, consultez les rubriques suivantes :
 
-- [Azure Blueprints](/azure/governance/blueprints)
+- [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Framework d’adoption du cloud : Guide de décision pour la cohérence des ressources](../../decision-guides/resource-consistency/index.md)
-- [Exemples de blueprints basés sur des normes](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Exemples de blueprints basés sur des normes](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Pour appliquer une stratégie à un groupe de ressources :
 
 Pour plus d'informations, consultez les rubriques suivantes :
 
-- [Azure Policy](/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
 - [Framework d’adoption du cloud : Guide de décision pour l’application des stratégies](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -157,10 +157,10 @@ Pour explorer Azure Security Center, accédez au [portail Azure](https://portal.
 
 Pour plus d'informations, consultez les rubriques suivantes :
 
-- [Centre de sécurité Azure](/azure/security-center)
-- [Accès juste-à-temps aux machines virtuelles](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Centre de sécurité Azure](https://docs.microsoft.com/azure/security-center)
+- [Accès juste-à-temps aux machines virtuelles](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Niveaux tarifaires Standard et Gratuit](https://azure.microsoft.com/pricing/details/security-center)
-- [Framework d’adoption du cloud : Discipline de la gouvernance relative à la base de référence de la sécurité](../../governance/security-baseline/index.md)
+- [Framework d’adoption du cloud : Discipline de la gouvernance relative à la base de référence de la sécurité](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

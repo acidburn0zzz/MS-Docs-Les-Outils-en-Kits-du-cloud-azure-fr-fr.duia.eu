@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ce8338fbcd0e21cf0875a207633ce7c9ddf2ff9e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818759"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022782"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrer des ressources (infrastructure, applications et données)
 
@@ -50,7 +50,7 @@ Pour effectuer une migration à l’aide de Azure Migrate, procédez comme suit�
 
 ### <a name="read-more"></a>En savoir plus
 
-- [Tutoriel Azure Migrate - Migrer des serveurs physiques ou virtualisés vers Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Tutoriel Azure Migrate - Migrer des serveurs physiques ou virtualisés vers Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -59,7 +59,7 @@ Le service Azure Site Recovery peut gérer la migration de ressources locales ve
 Les étapes suivantes décrivent le processus d’utilisation de Site Recovery pour migrer :
 
 > [!TIP]
-> Selon votre scénario, ces étapes peuvent différer légèrement. Pour plus d’informations, consultez l’article [Migrer des machines locales vers Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure).
+> Selon votre scénario, ces étapes peuvent différer légèrement. Pour plus d’informations, consultez l’article [Migrer des machines locales vers Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure).
 
 ### <a name="prepare-azure-site-recovery-service"></a>Préparer le service Azure Site Recovery
 
@@ -102,7 +102,7 @@ Les étapes suivantes décrivent le processus d’utilisation de Site Recovery p
 
 Pour plus d'informations, consultez les pages suivantes :
 
-- [Migrer des machines locales vers Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
+- [Migrer des machines locales vers Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)
 
 ::: zone-end
 
@@ -141,8 +141,8 @@ Le service est maintenant prêt à migrer les bases de données sources prises e
 
 Pour plus d'informations, consultez les pages suivantes :
 
-- [Vue d’ensemble d’Azure Database Migration Service](/azure/dms/dms-overview)
-- [Créer une instance Azure Database Migration Service](/azure/dms/quickstart-create-data-migration-service-portal)
+- [Vue d’ensemble d’Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
+- [Créer une instance Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Azure Migrate dans le Portail Azure](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
 - [Portail Azure : Créer un projet de migration](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
@@ -166,21 +166,21 @@ Pour prendre en main l’Assistant Migration de données, procédez comme suit.
 1. Cliquez sur **Suivant** pour démarrer l’évaluation.
 1. Affichez les résultats dans l’ensemble d’outils de l’Assistant Migration de données.
 
-Pour une entreprise, nous vous recommandons de suivre l’approche décrite dans [Évaluer une entreprise et consolider les rapports d’évaluation à l’aide du DMA](/sql/dma/dma-consolidatereports) pour évaluer plusieurs serveurs, combiner les rapports, puis utiliser les rapports de Power BI fournis pour analyser les résultats.
+Pour une entreprise, nous vous recommandons de suivre l’approche décrite dans [Évaluer une entreprise et consolider les rapports d’évaluation à l’aide du DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports) pour évaluer plusieurs serveurs, combiner les rapports, puis utiliser les rapports de Power BI fournis pour analyser les résultats.
 
 Pour plus d’informations, notamment sur les étapes d’utilisation détaillées, consultez :
 
-- [Vue d’ensemble de l’Assistant Migration de données](/sql/dma/dma-overview)
-- [Évaluer une entreprise et consolider les rapports d’évaluation à l’aide de DMA](/sql/dma/dma-consolidatereports)
-- [Analyser les rapports d’évaluation consolidés créés par l’Assistant Migration de données grâce à Power BI](/sql/dma/dma-powerbiassesreport)
+- [Vue d’ensemble de l’Assistant Migration de données](https://docs.microsoft.com/sql/dma/dma-overview)
+- [Évaluer une entreprise et consolider les rapports d’évaluation à l’aide de DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
+- [Analyser les rapports d’évaluation consolidés créés par l’Assistant Migration de données grâce à Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport)
 
 ## <a name="sql-server-migration-assistant"></a>Assistant Migration SQL Server
 
-L’assistant Migration SQL Server de Microsoft (SSMA) est un outil conçu pour automatiser la migration de base de données vers SQL Server à partir de Microsoft Access, DB2, MySQL, Oracle et SAP ASE. Le concept général consiste à collecter, évaluer et examiner à l’aide de ces outils. Toutefois, en raison des écarts dans le processus pour chacun des systèmes sources, nous vous recommandons de consulter la [documentation détaillée de l’Assistant Migration SQL Server](/sql/ssma/sql-server-migration-assistant).
+L’assistant Migration SQL Server de Microsoft (SSMA) est un outil conçu pour automatiser la migration de base de données vers SQL Server à partir de Microsoft Access, DB2, MySQL, Oracle et SAP ASE. Le concept général consiste à collecter, évaluer et examiner à l’aide de ces outils. Toutefois, en raison des écarts dans le processus pour chacun des systèmes sources, nous vous recommandons de consulter la [documentation détaillée de l’Assistant Migration SQL Server](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant).
 
 Pour plus d'informations, consultez les pages suivantes :
 
-- [Vue d’ensemble de l’Assistant Migration SQL Server](/sql/ssma/sql-server-migration-assistant)
+- [Vue d’ensemble de l’Assistant Migration SQL Server](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)
 
 ## <a name="database-experimentation-assistant"></a>Assistant Expérimentation de base de données
 
@@ -194,7 +194,7 @@ L’Assistant Expérimentation de base de données contient les activités de fl
 
 Pour plus d'informations, consultez les pages suivantes :
 
-- [Vue d’ensemble de l’Assistant Expérimentation de base de données](/sql/dea/database-experimentation-assistant-overview)
+- [Vue d’ensemble de l’Assistant Expérimentation de base de données](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Outils de migration tiers](#tab/third-party-tools)
 
@@ -245,4 +245,4 @@ Ce ne sont pas les seuls outils disponibles. De nombreux autres outils tiers son
 
 # <a name="cost-managementtabmanagecost"></a>[Gestion des coûts](#tab/ManageCost)
 
-Lorsque vous migrez des ressources vers votre environnement cloud, il est important d’analyser régulièrement les coûts. Cela vous permet d’éviter des frais d’utilisation inattendus, car le processus de migration peut imposer des conditions d’utilisation supplémentaires sur vos services. Vous pouvez également redimensionner les ressources, le cas échéant, pour équilibrer le coût et la charge de travail (sujet abordé plus en détail dans la section **[Optimisation et transformation](optimize-and-transform.md)** ).
+Lorsque vous migrez des ressources vers votre environnement cloud, il est important d’analyser régulièrement les coûts. Cela vous permet d’éviter des frais d’utilisation inattendus, car le processus de migration peut imposer des conditions d’utilisation supplémentaires sur vos services. Vous pouvez également redimensionner les ressources, le cas échéant, pour équilibrer le coût et la charge de travail (sujet abordé plus en détail dans la section **[Optimisation et transformation](./optimize-and-transform.md)** ).
