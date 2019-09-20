@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837779"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023445"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>Activer la réussite dans l’ensemble des parcours d’adoption du cloud
 
@@ -22,12 +22,12 @@ Le Framework d’adoption du cloud Microsoft pour Azure est un outil en libre-se
 
 Tout au long de ce Framework, l’activation est un thème fondamental. La liste de vérification suivante contient une série de rubriques qui doivent être intégrées dans n’importe quel effort d’adoption du cloud pour s’assurer que le parcours est un succès aussi bien du point de vue informatique que de l’entreprise :
 
-- **Planifier :** établir des [résultats métiers](../business-strategy/business-outcomes/index.md) clairs, un [plan de parc numérique](../digital-estate/index.md) défini et des [backlogs d’adoption](../migrate/migration-considerations/prerequisites/migration-backlog-review.md) bien compris.
+- **Planifier :** établir des [résultats métiers](../strategy/business-outcomes/index.md) clairs, un [plan de parc numérique](../digital-estate/index.md) défini et des [backlogs d’adoption](../migrate/migration-considerations/prerequisites/migration-backlog-review.md) bien compris.
 - **Prêt :** garantir la disponibilité du personnel grâce [aux compétences et aux plans de formation](../ready/technical-skills.md).
 - **Opérer :** définir un modèle d’exploitation gérable pour guider les activités pendant et longtemps après l’adoption.
-  - **[Organiser](../organization/index.md) :** aligner les personnes et les équipes pour fournir des opérations et une adoption appropriées en matière de cloud.
-  - **Gouverner** : aligner les [disciplines de gouvernance](../governance/index.md) appropriées pour appliquer de manière cohérente la gestion des coûts, l’atténuation des risques, la conformité et les bases de référence de la sécurité tout au long de l’adoption du cloud.
-  - **Gestion** [Opérations](../operations/index.md) en cours du portefeuille informatique pour réduire les interruptions des processus métier et garantir la stabilité du portefeuille informatique.
+  - **[Organiser](../organize/index.md) :** aligner les personnes et les équipes pour fournir des opérations et une adoption appropriées en matière de cloud.
+  - **Gouverner** : aligner les [disciplines de gouvernance](../govern/index.md) appropriées pour appliquer de manière cohérente la gestion des coûts, l’atténuation des risques, la conformité et les bases de référence de la sécurité tout au long de l’adoption du cloud.
+  - **Gestion** [Gestion des opérations](../manage/index.md) continue du portefeuille informatique pour réduire les interruptions des processus métier et garantir la stabilité du portefeuille informatique.
   - **Support :** aligner des [options de partenariat et de support appropriées](../migrate/migration-considerations/assess/partnership-options.md).
 
 ## <a name="additional-tools"></a>Outils supplémentaires
@@ -38,7 +38,7 @@ En plus du Framework d’adoption du cloud, Microsoft couvre des sujets supplém
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">
