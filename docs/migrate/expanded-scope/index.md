@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Check-list pour le cadre étendu d’une migration cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 125c6d044fd766896971aced5bedbc515c14417f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4daf4b01a2fde83de1040f224b8096475a24fe60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817330"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224361"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Cadre étendu pour une migration cloud
 
@@ -27,7 +27,7 @@ La check-list suivante décrit des situations complexes qui peuvent nécessiter 
 
 - **Changements du cadre basés sur l’activité :**
   - [Équilibrage du portefeuille](./balance-the-portfolio.md)
-  - [Prise en charge des marchés internationaux](./multiple-regions.md)
+  - [Prise en charge des marchés internationaux](../../decision-guides/regions/index.md)
   - Considération des coûts lors d’une migration *(à venir au 3e trimestre 2019)*
 - **Changements du cadre basés sur la culture :**
   - Gestion des changements et processus d’approbation *(à venir au 3e trimestre 2019)*

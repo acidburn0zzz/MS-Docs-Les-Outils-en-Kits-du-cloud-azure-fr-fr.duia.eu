@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e4b0ab9c886ec8868cd1f630db6c193cadaff234
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023906"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223904"
 ---
 # <a name="encryption-decision-guide"></a>Guide de décision concernant le chiffrement
 
@@ -123,7 +123,7 @@ Pour plus d’informations sur le chiffrement et la gestion des clés dans Azure
 - [Vue d’ensemble du chiffrement Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). Description détaillée de la façon dont Azure utilise le chiffrement pour sécuriser les données au repos et les données en transit.
 - [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Key Vault est le principal système de gestion des clés qui permet de stocker et de gérer des clés de chiffrement, des secrets et des certificats dans Azure.
 - [Bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices). Rubrique concernant les bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure.
-- [Informatique confidentielle dans Azure](https://azure.microsoft.com/solutions/confidential-compute/). L’informatique confidentielle d’Azure fournit des outils et des technologies pour créer des environnements d’exécution approuvés ou d’autres mécanismes de chiffrement permettant de sécuriser les données en cours d’utilisation.
+- [Informatique confidentielle dans Azure](https://azure.microsoft.com/solutions/confidential-compute). L’informatique confidentielle d’Azure fournit des outils et des technologies pour créer des environnements d’exécution approuvés ou d’autres mécanismes de chiffrement permettant de sécuriser les données en cours d’utilisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

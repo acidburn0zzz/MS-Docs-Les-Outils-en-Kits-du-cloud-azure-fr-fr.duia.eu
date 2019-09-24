@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026253"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223630"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 
@@ -69,7 +69,7 @@ Conditions s’appliquant uniquement aux scénarios en local :
 
 ### <a name="gateway-aggregation"></a>Agrégation de passerelle
 
-Si la quantité de données de télémétrie basées sur le cloud est importante ou si les systèmes de supervision locaux existants ont besoin de modifier les données de journal avant de pouvoir les traiter, un service d’[agrégation de passerelle](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md) de données journal peut être nécessaire.
+Si la quantité de données de télémétrie basées sur le cloud est importante ou si les systèmes de supervision locaux existants ont besoin de modifier les données de journal avant de pouvoir les traiter, un service d’[agrégation de passerelle](/azure/architecture/patterns/gateway-aggregation) de données journal peut être nécessaire.
 
 Un service de passerelle est déployé sur votre fournisseur de cloud. Ensuite, les applications et les services appropriés sont configurés de manière à ce qu’ils envoient les données de télémétrie à la passerelle au lieu du système de journalisation par défaut. Suite à cela, la passerelle peut traiter les données : elle agrège des données, les combine et les formate selon les besoins avant de les envoyer à votre système de supervision qui les ingère et les analyse.
 
