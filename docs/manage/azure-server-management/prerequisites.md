@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 459d4255a959d2911f56dd08186b92c4e89317dd
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17538d7c49278a00a5927b0110a2591a03d59e5c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032121"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221471"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Phase 1 : Planification des prérequis pour les services de gestion de serveur Azure
 
@@ -48,7 +48,7 @@ Les exemples couverts dans ce guide partent du principe qu’il s’agit d’un 
 
 Quand vous préparez les espaces de travail et les comptes que vous créez pour l’intégration des services de gestion, consultez les discussions de questions suivantes :
 
-- **Zones géographiques Azure et conformité réglementaire**. Les régions Azure sont organisées en *zones géographiques*. Une [zone géographique Azure](https://azure.microsoft.com/global-infrastructure/geographies/) garantit que les conditions de résidence, de souveraineté, de conformité et de résilience des données sont respectées dans les limites géographiques. Si vos charges de travail sont soumises à une souveraineté des données ou à d’autres exigences de conformité, les comptes d’espace de travail et Automation doivent être déployés dans des régions appartenant à la même région géographique Azure que les ressources de charge de travail qu’ils prennent en charge.
+- **Zones géographiques Azure et conformité réglementaire**. Les régions Azure sont organisées en *zones géographiques*. Une [zone géographique Azure](https://azure.microsoft.com/global-infrastructure/geographies) garantit que les conditions de résidence, de souveraineté, de conformité et de résilience des données sont respectées dans les limites géographiques. Si vos charges de travail sont soumises à une souveraineté des données ou à d’autres exigences de conformité, les comptes d’espace de travail et Automation doivent être déployés dans des régions appartenant à la même région géographique Azure que les ressources de charge de travail qu’ils prennent en charge.
 - **Nombre d’espaces de travail**. Comme principe directeur, créez le nombre minimal d’espaces de travail requis par zone géographique Azure. Nous vous recommandons d’utiliser au moins un espace de travail pour chaque zone géographique Azure où se trouvent vos ressources de calcul ou de stockage. Cet alignement initial permet d’éviter des problèmes réglementaires lors de la migration de données vers différentes zones géographiques.
 - **Conservation et limitation des données**. Vous devrez peut-être également prendre en compte les stratégies de conservation des données ou les exigences de limitation des données lors de la création d’espaces de travail ou de comptes Automation. Pour en savoir plus sur ces principes et les points supplémentaires à prendre en compte lors de la planification de vos espaces de travail, consultez [Gérer les données du journal et les espaces de travail dans Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
 - **Mappage des régions**. La liaison d’un espace de travail Log Analytics et d’un compte Azure Automation n’est prise en charge qu’entre certaines régions Azure. Par exemple, si l’espace de travail log Analytics est hébergé dans la région *EastUS*, le compte Automation lié doit être créé dans la région *EastUS2* pour pouvoir être utilisé avec les services de gestion. Si vous avez un compte Automation qui a été créé dans une autre région, il ne peut pas créer un lien vers un espace de travail dans la région *EastUS*. Le choix de la région de déploiement peut avoir un impact significatif sur les exigences en matière de zones géographiques Azure. Consultez le [tableau des mappages des régions](https://docs.microsoft.com/azure/automation/how-to/region-mappings) pour déterminer la région qui doit héberger vos espaces de travail et vos comptes Automation.

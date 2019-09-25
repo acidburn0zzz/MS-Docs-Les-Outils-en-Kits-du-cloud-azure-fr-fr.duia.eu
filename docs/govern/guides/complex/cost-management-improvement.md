@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031703"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220169"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Gestion des coûts
 
@@ -66,14 +66,14 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 Cette section de l’article va améliorer la conception du MVP de gouvernance, afin d’inclure de nouvelles stratégies Azure et une implémentation d’Azure Cost Management. Ensemble, ces deux modifications de la conception permettront de répondre aux nouvelles instructions de la stratégie d’entreprise.
 
 1. Apportez des modifications au portail Microsoft Azure Enterprise Portal pour facturer le déploiement canadien à l’administrateur du département.
-1. Implémentez Azure Cost Management.
+2. Implémentez Azure Cost Management.
     1. Définissez le niveau d’étendue d’accès approprié en fonction du modèle d’abonnement et du modèle de regroupement des ressources. En partant d’un alignement sur le MPV de gouvernance défini dans les articles précédents, un accès à **l’étendue Compte d’inscription** est nécessaire pour l’équipe de gouvernance cloud qui exécutera la génération de rapports de haut niveau. D’autres équipes en dehors de la gouvernance, comme l’équipe canadienne responsable des achats, auront besoin d’un accès à **l’étendue Groupe de ressources**.
-    1. Établissez un budget dans Azure Cost Management.
-    1. Consultez les recommandations initiales et agissez en fonction. Il est recommandé d’avoir un processus récurrent pour prendre en charge le processus de génération de rapports.
-    1. Configurez et exécutez la fonctionnalité de génération de rapports initiaux et récurrents d’Azure Cost Management.
-1. Mettez à jour Azure Policy.
+    2. Établissez un budget dans Azure Cost Management.
+    3. Consultez les recommandations initiales et agissez en fonction. Il est recommandé d’avoir un processus récurrent pour prendre en charge le processus de génération de rapports.
+    4. Configurez et exécutez la fonctionnalité de génération de rapports initiaux et récurrents d’Azure Cost Management.
+3. Mettez à jour Azure Policy.
     1. Auditez les valeurs de marquage, de groupe de gestion, d’abonnement et de groupe de ressources pour identifier tout écart.
-    1. Définissez des options de taille pour les références SKU, afin de limiter les déploiements aux références SKU répertoriées dans la documentation de planification du déploiement.
+    2. Définissez des options de taille pour les références SKU, afin de limiter les déploiements aux références SKU répertoriées dans la documentation de planification du déploiement.
 
 ## <a name="conclusion"></a>Conclusion
 

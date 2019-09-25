@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031911"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222318"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence des identités
 
@@ -79,14 +79,14 @@ Voici les nouvelles meilleures pratiques :
 - **Blueprint de réseau virtuel hybride sécurisé :** le côté local du réseau hybride doit être configuré de manière à autoriser la communication entre la solution suivante et les serveurs Active Directory locaux. Pour respecter cette meilleure pratique, la zone démilitarisée doit activer Active Directory Domain Services au-delà des limites du réseau.
 - **Modèles Azure Resource Manager :**
     1. Définissez un groupe de sécurité réseau pour bloquer le trafic externe et autoriser le trafic interne.
-    1. Déployez deux machines virtuelles Active Directory dans une paire à charge équilibrée basée sur une image finale (golden). Au premier démarrage, cette image exécute un script PowerShell pour joindre le domaine et s’inscrire auprès des services du domaine. Pour plus d’informations, consultez la page [Extension d’Active Directory Domain Services (AD DS) à Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
+    2. Déployez deux machines virtuelles Active Directory dans une paire à charge équilibrée basée sur une image finale (golden). Au premier démarrage, cette image exécute un script PowerShell pour joindre le domaine et s’inscrire auprès des services du domaine. Pour plus d’informations, consultez la page [Extension d’Active Directory Domain Services (AD DS) à Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy : Appliquez le groupe de sécurité réseau à toutes les ressources.
 - Blueprint Azure :
     1. Créez un blueprint nommé `active-directory-virtual-machines`.
-    1. Ajoutez chaque modèle et stratégie Active Directory au blueprint.
-    1. Publiez le blueprint sur un groupe d’administration valable quelconque.
-    1. Appliquez le blueprint à un abonnement quelconque exigeant l’authentification multifacteur tierce ou héritée.
-    1. L’instance d’Active Directory qui est en cours d’exécution dans Azure est désormais utilisable en tant qu’extension de la solution Active Directory locale. Elle peut ainsi s’intégrer à l’outil d’authentification multifacteur existant et proposer l’authentification par revendication via des fonctionnalités Active Directory existantes.
+    2. Ajoutez chaque modèle et stratégie Active Directory au blueprint.
+    3. Publiez le blueprint sur un groupe d’administration valable quelconque.
+    4. Appliquez le blueprint à un abonnement quelconque exigeant l’authentification multifacteur tierce ou héritée.
+    5. L’instance d’Active Directory qui est en cours d’exécution dans Azure est désormais utilisable en tant qu’extension de la solution Active Directory locale. Elle peut ainsi s’intégrer à l’outil d’authentification multifacteur existant et proposer l’authentification par revendication via des fonctionnalités Active Directory existantes.
 
 ## <a name="conclusion"></a>Conclusion
 

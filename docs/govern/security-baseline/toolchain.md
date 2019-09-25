@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explication des outils capables d’améliorer la base de référence de la sécurité dans Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5d64befe7973201bc9727e0bef2b4f7a2e99052b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3bf3eea5486fbd349094663dc5f37527f5042bb5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032489"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221692"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Outils de base de référence de la sécurité dans Azure
 

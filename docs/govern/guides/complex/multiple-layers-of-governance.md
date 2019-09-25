@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a0a2674a91b963154d757eb35290b8aeead5c503
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031777"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222303"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Guide de gouvernance pour les entreprises complexes : Couches de gouvernance multiples
 
@@ -57,4 +57,3 @@ Le point important à retenir pour chacun de ces outils est la possibilité d’
 - **Équipes d’adoption du cloud :** des implémentations et décisions précises au sujet des applications ou des charges de travail peuvent être mises en place et prises par les équipes d’adoption du cloud, au sein du contexte des exigences de la gouvernance. L’équipe peut parfois demander des modèles de cohérence des ressources Azure supplémentaires pour accélérer les efforts d’adoption.
 
 Les détails concernant l’implémentation de la gouvernance à chaque niveau exigeront une certaine coordination entre les équipes. Le produit minimum viable pour la gouvernance et les améliorations de la gouvernance décrits dans ce guide peuvent faciliter la mise en place de cette coordination.
-

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: e46c045d51bd4961f1cf355352cb84b110a81d81
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: afac61c918f90c21e8d96032199d5e8c1cdfa50c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023533"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222626"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Aligner les modèles de coûts sur le patrimoine numérique afin de prévoir les coûts liés au cloud
 
@@ -24,7 +24,7 @@ Les outils de tarifs Azure vous permettent de gérer vos dépenses cloud avec tr
 
 - [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) : Azure Migrate est sans doute l’approche la plus économique pour l’alignement sur un modèle de coût. Vous pouvez réaliser un [inventaire](./inventory.md), une [rationalisation limitée](./rationalize.md) et le calcul des coûts pour votre patrimoine numérique à l’aide d’un seul et même outil.
 
-- [Outil de calcul du coût total de possession](https://azure.microsoft.com/pricing/tco/calculator/) : Réduisez le coût total de possession de votre infrastructure locale avec la plateforme cloud Azure. Utilisez la calculatrice du coût total de possession Azure pour estimer les économies que vous pouvez réaliser en effectuant la migration de vos charges de travail d’application vers Azure. Entrez une brève description de votre environnement local pour obtenir un rapport instantanément.
+- [Outil de calcul du coût total de possession](https://azure.microsoft.com/pricing/tco/calculator) : Réduisez le coût total de possession de votre infrastructure locale avec la plateforme cloud Azure. Utilisez la calculatrice du coût total de possession Azure pour estimer les économies que vous pouvez réaliser en effectuant la migration de vos charges de travail d’application vers Azure. Entrez une brève description de votre environnement local pour obtenir un rapport instantanément.
 
 - [Calculatrice de prix Azure](https://azure.microsoft.com/pricing) : Estimez votre facture mensuelle à l’aide de notre calculatrice de prix. Suivez l’utilisation réelle de votre compte et consultez votre facture à tout moment dans le portail de facturation. Configurez des e-mails d’alerte automatiques pour être informé lorsque vos dépenses dépassent le montant que vous aviez configuré.
 

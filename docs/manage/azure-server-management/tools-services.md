@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032183"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221421"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Outils et services de gestion de serveur Azure
 
@@ -96,4 +96,4 @@ Pour en savoir plus sur les tarifs des services de gestion Azure, consultez ces 
 - [Service Azure File Sync](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> La solution Azure Update Management est gratuite, mais il existe un coût réduit lié à l’ingestion des données. En règle générale, les 5 premiers Go par mois d’ingestion de données sont gratuits. Nous observons généralement que chaque machine utilise environ 25 Mo par mois. Ainsi, environ 200 machines par mois sont couvertes gratuitement. Pour chaque serveur supplémentaire, multipliez le nombre de serveurs supplémentaires par 25 Mo par mois. Multipliez le résultat par le coût de stockage pour la quantité totale de stockage nécessaire. [Les coûts de stockage sont disponibles ici](https://azure.microsoft.com/pricing/details/storage/). Chaque serveur supplémentaire doit avoir un impact minime sur le coût.
+> La solution Azure Update Management est gratuite, mais il existe un coût réduit lié à l’ingestion des données. En règle générale, les 5 premiers Go par mois d’ingestion de données sont gratuits. Nous observons généralement que chaque machine utilise environ 25 Mo par mois. Ainsi, environ 200 machines par mois sont couvertes gratuitement. Pour chaque serveur supplémentaire, multipliez le nombre de serveurs supplémentaires par 25 Mo par mois. Multipliez le résultat par le coût de stockage pour la quantité totale de stockage nécessaire. [Les coûts de stockage sont disponibles ici](https://azure.microsoft.com/pricing/details/storage). Chaque serveur supplémentaire doit avoir un impact minime sur le coût.

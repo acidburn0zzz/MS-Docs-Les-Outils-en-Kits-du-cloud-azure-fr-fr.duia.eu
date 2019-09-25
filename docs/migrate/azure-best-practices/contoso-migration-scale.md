@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 52e78e6f1e9dd5ee19b9def9a1b9cb4cbcc869ae
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fbb1e57d1073286d9b92db96dbf923eb28612f49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023993"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224081"
 ---
 # <a name="scale-a-migration-to-azure"></a>Mettre à l’échelle une migration vers Azure
 

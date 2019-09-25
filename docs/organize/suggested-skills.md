@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7b450165c1356e5297a3424ea8f699dced0422a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 75aa65f9a39576eb807e7b147c2c4a658f693619
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031117"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224295"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Chemin de préparation des qualifications durant la phase « Prêt » d’une migration
 
@@ -44,9 +44,9 @@ Pendant la phase de préparation, le personnel technique doit créer une zone d�
 
 Pendant la phase de préparation, les architectes doivent concevoir des solutions qui couvrent tous les environnements Azure. Les ressources suivantes peuvent les préparer à ces tâches :
 
-- [Fondamentaux de l’architecture cloud](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/) : Cours PluralSight pour vous aider à concevoir les bonnes solutions fondatrices.
-- [Architecture Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/) : Cours PluralSight pour les architectes qui découvrent l’architecture Azure.
-- [Conception de migrations pour Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/) : Cours PluralSight pour aider les architectes à concevoir une solution de migration.
+- [Fondamentaux de l’architecture cloud](https://app.pluralsight.com/library/courses/cloud-architecture-foundations) : Cours PluralSight pour vous aider à concevoir les bonnes solutions fondatrices.
+- [Architecture Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations) : Cours PluralSight pour les architectes qui découvrent l’architecture Azure.
+- [Conception de migrations pour Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations) : Cours PluralSight pour aider les architectes à concevoir une solution de migration.
 
 ## <a name="deeper-skills-exploration"></a>Exploration approfondie des qualifications
 
@@ -75,4 +75,4 @@ Voici quelques exemples de parcours d’apprentissage propres à des rôles sur 
 
 - Les [développeurs](/learn/browse/?roles=developer&term=infrastructure) peuvent utiliser des ressources Learn dans le cadre des activités d’architecture, de gouvernance et de modernisation.
 
-Pour obtenir des parcours d’apprentissage supplémentaires, parcourez le [catalogue d’apprentissage](/learn/browse/). Utilisez le filtre Rôles pour faire correspondre les parcours d’apprentissage à votre rôle.
+Pour obtenir des parcours d’apprentissage supplémentaires, parcourez le [catalogue d’apprentissage](/learn/browse). Utilisez le filtre Rôles pour faire correspondre les parcours d’apprentissage à votre rôle.

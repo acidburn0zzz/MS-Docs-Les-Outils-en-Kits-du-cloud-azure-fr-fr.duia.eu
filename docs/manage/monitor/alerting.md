@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031711"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221385"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guide de supervision du cloud : Génération d’alertes
 
@@ -94,7 +94,7 @@ Cela dit, quelques nuances importantes sont à considérer pour cette règle.
 
 La **télémétrie du système d’exploitation invité** parvient au système selon différentes voies.
 
-- Le moyen le plus rapide d’alerter sur ces données est de les importer en tant que métriques personnalisées. Pour cela, utilisez l’extension Diagnostics Azure, puis utilisez une alerte de métrique. Cependant, les métriques personnalisées sont actuellement en préversion et sont [plus coûteuses que les autres options](https://azure.microsoft.com/pricing/details/monitor/).
+- Le moyen le plus rapide d’alerter sur ces données est de les importer en tant que métriques personnalisées. Pour cela, utilisez l’extension Diagnostics Azure, puis utilisez une alerte de métrique. Cependant, les métriques personnalisées sont actuellement en préversion et sont [plus coûteuses que les autres options](https://azure.microsoft.com/pricing/details/monitor).
 
 - La méthode la plus économique mais la plus lente consiste à les envoyer au magasin Kusto des journaux Azure. L’exécution de l’agent Log Analytics sur la machine virtuelle est la meilleure façon d’obtenir toutes les données de métriques et de journaux du système d’exploitation invité dans ce magasin.
 
@@ -113,9 +113,9 @@ Si vous n’utilisez pas Azure Monitor pour machines virtuelles, explorez les fo
 
 - [Seuils dynamiques](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds). Les seuils dynamiques examinent l’activité de la ressource sur une période de temps donnée et créent des seuils supérieurs et inférieurs de « comportement normal ». Quand la métrique supervisée se passe en dehors de ces seuils, vous recevez une alerte.
 
-- [Alertes multisignaux](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Vous pouvez créer une alerte de métrique qui utilise la combinaison de deux entrées différentes provenant de deux types de ressources différents. Par exemple, si vous voulez déclencher une alerte quand l’utilisation du processeur d’une machine virtuelle dépasse 90 % et que le nombre de messages dans une certaine file d’attente Azure Service Bus qui alimente cette machine virtuelle dépasse une certaine quantité, vous pouvez le faire sans créer de requête de journal. Ceci fonctionne seulement pour deux signaux. Si vous avez une requête plus complexe, alimentez vos données de métriques dans le magasin de journaux d’Azure Monitor et utilisez une requête de journal.
+- [Alertes multisignaux](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Vous pouvez créer une alerte de métrique qui utilise la combinaison de deux entrées différentes provenant de deux types de ressources différents. Par exemple, si vous voulez déclencher une alerte quand l’utilisation du processeur d’une machine virtuelle dépasse 90 % et que le nombre de messages dans une certaine file d’attente Azure Service Bus qui alimente cette machine virtuelle dépasse une certaine quantité, vous pouvez le faire sans créer de requête de journal. Ceci fonctionne seulement pour deux signaux. Si vous avez une requête plus complexe, alimentez vos données de métriques dans le magasin de journaux d’Azure Monitor et utilisez une requête de journal.
 
-- [Alertes multiressources](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Azure Monitor permet qu’une même règle d’alerte de métrique s’applique à toutes les ressources de machine virtuelle. Cette fonctionnalité peut vous faire gagner du temps, car vous n’avez pas besoin de créer des alertes individuelles pour chaque machine virtuelle. La tarification pour ce type d’alerte est la même. Si vous avez créé 50 alertes pour la supervision de l’utilisation du processeur pour 50 machines virtuelles ou bien 1 alerte qui supervise l’utilisation du processeur pour toutes ces 50 machines virtuelles, cela vous coûte le même prix. Vous pouvez également utiliser ces types d’alertes en combinaison avec des seuils dynamiques.
+- [Alertes multiressources](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Azure Monitor permet qu’une même règle d’alerte de métrique s’applique à toutes les ressources de machine virtuelle. Cette fonctionnalité peut vous faire gagner du temps, car vous n’avez pas besoin de créer des alertes individuelles pour chaque machine virtuelle. La tarification pour ce type d’alerte est la même. Si vous avez créé 50 alertes pour la supervision de l’utilisation du processeur pour 50 machines virtuelles ou bien 1 alerte qui supervise l’utilisation du processeur pour toutes ces 50 machines virtuelles, cela vous coûte le même prix. Vous pouvez également utiliser ces types d’alertes en combinaison avec des seuils dynamiques.
 
 Utilisées ensemble, ces fonctionnalités permettent de gagner du temps en minimisant les notifications d’alerte et la gestion des alertes sous-jacentes.
 

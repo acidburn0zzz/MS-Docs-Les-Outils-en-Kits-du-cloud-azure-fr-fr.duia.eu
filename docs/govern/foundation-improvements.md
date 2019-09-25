@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment améliorer de façon incrémentielle votre fondation de gouvernance cloud initiale.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/03/2019
+ms.date: 09/13/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d4a0338daa65ea4269077f15acee05cd99a5fb10
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7e4c0516e1c52f1fc6ddd8b42485902cb24d58e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031779"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223639"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Améliorer votre fondation de gouvernance cloud initiale
 
@@ -28,14 +28,14 @@ Cet article suppose que vous avez établi une [fondation de gouvernance cloud in
 > [!IMPORTANT]
 > L’organisation des ressources peut affecter la façon dont ces instructions normatives sont appliquées. Il est important de commencer par les recommandations qui conviennent le mieux à la fondation de gouvernance cloud initiale que vous avez implémentée à l’étape précédente.
 
-|Risque/besoin | Petites et moyennes entreprises | Grandes entreprises |
+|Risque/besoin | Entreprise standard | Entreprise complexe |
 |---|---|---|
 |Données sensibles dans le cloud|[Instructions normatives](./guides/standard/security-baseline-improvement.md)|[Instructions normatives](./guides/complex/security-baseline-improvement.md)|
 |Applications critiques dans le cloud|[Instructions normatives](./guides/standard/resource-consistency-improvement.md)|[Instructions normatives](./guides/complex/resource-consistency-improvement.md)|
 |Gestion des coûts du cloud|[Instructions normatives](./guides/standard/cost-management-improvement.md)|[Instructions normatives](./guides/complex/cost-management-improvement.md)|
 |Multicloud|[Instructions normatives](./guides/standard/multicloud-improvement.md)|[Instructions normatives](./guides/complex/multicloud-improvement.md)|
-|Gestion des identités complexes/héritées|         |[Instructions normatives](./guides/complex/identity-baseline-improvement.md)|
-|Couches de gouvernance multiples|         |[Instructions normatives](./guides/complex/multiple-layers-of-governance.md)|
+|Gestion des identités complexes/héritées|N/A|[Instructions normatives](./guides/complex/identity-baseline-improvement.md)|
+|Couches de gouvernance multiples|N/A|[Instructions normatives](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023410"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223059"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Bien démarrer avec un parcours de migration cloud
 
@@ -84,7 +84,7 @@ Comme illustré dans l’image ci-dessus, ce framework aligne les décisions str
 - **[Prêt](../ready/index.md) :** La préparation de l’entreprise, de la culture, des personnes et de l’environnement aux changements à venir contribue au succès de chaque effort et accélère les projets d’implémentation et de changement.
 - **Adoption :** Veillez à l’implémentation appropriée des changements souhaités dans l’ensemble des processus informatiques et métier pour obtenir les résultats opérationnels attendus.
   - **[Migration](../migrate/index.md) :** Exécution itérative de la [méthodologie d’implémentation cloud](#cloud-implementation) conformément au processus testé d’évaluation, de migration, d’optimisation et de sécurisation et de gestion pour créer un processus reproductible de migration des charges de travail.
-- **[Exploitation](../operating-model/index.md) :** Définissez un modèle d’exploitation gérable pour guider les activités pendant et longtemps après leur adoption.
+- **[Exploitation](../operate/index.md) :** Définissez un modèle d’exploitation gérable pour guider les activités pendant et longtemps après leur adoption.
   - **[Organiser](../organize/index.md) :** Alignez les personnes et les équipes pour permettre l’exécution des opérations cloud appropriées et leur adoption.
   - **[Gouverner](../govern/index.md) :** Alignez la stratégie de l’entreprise sur les risques tangibles, en les atténuant par des outils de gouvernance de stratégie, de processus et cloud.
   - **[Gérer](../manage/index.md) :** Développez les opérations informatiques pour vérifier que les solutions cloud peuvent être exploitées via des processus sécurisés et rentables à l’aide d’outils d’exploitation modernes axés principalement sur le cloud.

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3bc125145afce529507a341eae6b818cceee9330
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1d4538230ae99fd7c22f53e2873645c9b112e46a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024028"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224122"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>réhéberger une application locale sur des machines virtuelles Azure
 
@@ -95,7 +95,7 @@ Contoso migrera les machines virtuelles frontales et de base de données d’app
 
 **Service** | **Description** | **Coût**
 --- | --- | ---
-[Migration de serveur Azure Migrate](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | Le service orchestre et gère la migration de vos applications et charges de travail locales, ainsi que les instances de machine virtuelle AWS/GCP. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement, et entraînent des frais. [En savoir plus](https://azure.microsoft.com/pricing/details/azure-migrate/) sur les frais et la tarification.
+[Migration de serveur Azure Migrate](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | Le service orchestre et gère la migration de vos applications et charges de travail locales, ainsi que les instances de machine virtuelle AWS/GCP. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement, et entraînent des frais. [En savoir plus](https://azure.microsoft.com/pricing/details/azure-migrate) sur les frais et la tarification.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -144,7 +144,7 @@ La configuration est effectuée´comme suit :
 
 **Besoin de plus d’aide ?**
 
-[En savoir plus](https://docs.microsoft.com/azure/migrate/) sur la configuration de l’outil Migration de serveur Azure Migrate.
+[En savoir plus](https://docs.microsoft.com/azure/migrate) sur la configuration de l’outil Migration de serveur Azure Migrate.
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Préparer la connexion aux machines virtuelles Azure après le basculement
 

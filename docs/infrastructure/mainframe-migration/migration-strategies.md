@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8416abd3429a0dafd50eda91323eb74bfb1bf9cd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024388"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221526"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Assurer la transition d’ordinateurs mainframe vers Azure
 
@@ -27,7 +27,7 @@ Cette section fournit des recommandations techniques pour assurer la transition 
 
 Il n’existe pas de formule de mappage universelle qui permette de déterminer le nombre de processeurs virtuels nécessaires pour exécuter des charges de travail mainframe. Cependant, la métrique MIPS (million d’instructions par seconde) est souvent mappée en processeurs virtuels sur Azure. La métrique MIPS mesure la puissance de calcul globale d’un ordinateur mainframe en fournissant une valeur constante du nombre de cycles par seconde pour une machine donnée.
 
-Si les besoins d’une petite organisation peuvent être inférieurs à 500 MIPS, une grande organisation aura généralement besoin de plus de 5 000 MIPS. Si l’on considère qu’un MIPS coûte 1 000 dollars, une grande organisation devra donc dépenser environ 5 millions de dollars par an pour déployer une infrastructure de 5 000 MIPS. Le coût estimé annuel d’un déploiement Azure type de cette envergure représente environ un dixième du coût d’une infrastructure MIPS. Pour plus de détails, consultez le tableau 4 du livre blanc intitulé [Démystification de la migration mainframe vers Azure ](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration).
+Si les besoins d’une petite organisation peuvent être inférieurs à 500 MIPS, une grande organisation aura généralement besoin de plus de 5 000 MIPS. Si l’on considère qu’un MIPS coûte 1 000 dollars, une grande organisation devra donc dépenser environ 5 millions de dollars par an pour déployer une infrastructure de 5 000 MIPS. Le coût estimé annuel d’un déploiement Azure type de cette envergure représente environ un dixième du coût d’une infrastructure MIPS. Pour plus de détails, consultez le tableau 4 du livre blanc intitulé [Demystifying Mainframe-to-Azure Migration](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration).
 
 Un calcul précis des MIPS ramené en nombre de processeurs virtuels avec Azure dépend du type de processeur virtuel et de la charge de travail que vous exécutez. Cependant, certaines études comparatives constituent une bonne base pour estimer le nombre et le type de processeurs virtuels dont vous aurez besoin. Dernièrement, un benchmark HPE zREF est arrivé aux estimations suivantes :
 

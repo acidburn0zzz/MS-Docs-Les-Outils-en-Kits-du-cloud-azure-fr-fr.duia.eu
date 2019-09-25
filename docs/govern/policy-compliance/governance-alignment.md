@@ -4,24 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aligner votre guide de conception de gouvernance cloud sur la stratégie d’entreprise
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c7be14efe6723a32808ba9bd2ba01f48292305df
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031554"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223743"
 ---
-<!---
-I've established policies. How to help developers adopt these policies?
-Draft an architecture design guide.
-
-[Aspirational statement] If you're using Azure, you can use one of ours as a starting point. The choose one of the following 6 as a starting point and mold it to fit your policies.
---->
-
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Aligner votre guide de conception de gouvernance cloud sur la stratégie d’entreprise
 
 Après avoir [défini des stratégies cloud](./policy-definition.md) basées sur les [risques que vous avez identifiés](./business-risk.md), vous devez générer des conseils exploitables, conformes à ces stratégies et auxquels le personnel informatique et les développeurs pourront se référer. La rédaction d’un guide de conception de gouvernance cloud vous permet de spécifier des choix spécifiques en matière de structure, de technologie et de processus conformément aux déclarations de stratégie que vous avez générées pour chacune des [cinq disciplines de gouvernance](../governance-disciplines.md).
