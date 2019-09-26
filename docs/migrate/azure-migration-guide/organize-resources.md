@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022767"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224052"
 ---
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
@@ -66,7 +66,7 @@ Utilisez des abonnements pour gérer les coûts et les ressources qui sont cré�
 
 Créez un groupe de ressources pour regrouper des ressources comme les applications web, les bases de données et les comptes de stockage qui partagent le même cycle de vie, les mêmes autorisations et les mêmes stratégies.
 
-1. Accédez aux [Groupes de ressources](https://portal.azure.com/#create/Microsoft.ResourceGroup).
+1. Accédez à [Groupes de ressources](https://portal.azure.com/#create/Microsoft.ResourceGroup).
 1. Sélectionnez **Ajouter**.
 1. Sélectionnez l’**Abonnement** sous lequel vous souhaitez créer votre groupe de ressources.
 1. Entrez un nom pour le **groupe de ressources**.
