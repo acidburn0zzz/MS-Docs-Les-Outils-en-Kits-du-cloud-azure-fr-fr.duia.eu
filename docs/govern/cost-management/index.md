@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explication de Gestion des coûts en lien avec la gouvernance cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d7f44027bdc7b2b17dc60dd070092b266609188c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025719"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221170"
 ---
 # <a name="cost-management-discipline-overview"></a>Vue d’ensemble de la discipline Gestion des coûts
 

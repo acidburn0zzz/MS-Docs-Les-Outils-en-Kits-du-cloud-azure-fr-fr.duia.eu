@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f9926fd59133303960338ac4e8b45cc9007dad51
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816225"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224239"
 ---
 # <a name="landing-zone-considerations"></a>Considérations relatives aux zones d’accueil
 
@@ -48,5 +48,5 @@ Les articles suivants vous aideront à prendre des décisions liées à la gouve
 - **Exigences en matière de coûts**. En fonction des facteurs de motivation d’adoption du cloud et des engagements opérationnels pris dans le cadre de cet environnement par une organisation, différentes configurations de gestion des coûts peuvent devoir être changées pour la zone d’accueil.
 - **Décisions en matière de supervision**. En fonction des exigences opérationnelles de cette zone d’accueil, différents outils de supervision peuvent être déployés. L’article sur les décisions en matière de supervision permet d’identifier les outils dont le déploiement est le plus utile.
 - **Utilisation du contrôle d’accès en fonction du rôle**. Le [contrôle d’accès en fonction du rôle (RBAC)](../azure-best-practices/roles.md) Azure offre une gestion précise de l’accès aux ressources basée sur des groupes et organisée autour des rôles d’utilisateur.
-- **Décisions en matière de stratégie**. Les exemples de blueprints Azure fournissent des blueprints de conformité précréés, chacun avec des initiatives de stratégie prédéfinies. Les décisions en matière de stratégie aident à sélectionner le meilleur blueprint ou la meilleure initiative en fonction des exigences et des contraintes.
+- **Décisions en matière de stratégie**. Les [exemples de blueprints Azure](https://docs.microsoft.com/azure/governance/blueprints/samples) fournissent des blueprints de conformité précréés, chacun avec des initiatives de stratégie prédéfinies. Les décisions en matière de stratégie aident à sélectionner le meilleur blueprint ou la meilleure initiative en fonction des exigences et des contraintes.
 - **[Créer une cohérence de cloud hybride](../../infrastructure/misc/hybrid-consistency.md)** . Créez des solutions de cloud hybride qui offrent à votre organisation les avantages de l’innovation du cloud tout en conservant la plupart des aspects pratiques de la gestion locale.

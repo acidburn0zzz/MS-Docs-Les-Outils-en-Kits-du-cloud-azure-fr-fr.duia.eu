@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment utiliser un abonnement de plateforme cloud comme un service principal lors des migrations Azure.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 06/07/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023629"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221013"
 ---
 # <a name="subscription-decision-guide"></a>Guide de décision concernant les abonnements
 
@@ -67,13 +67,8 @@ Une fois que vous êtes prêt à déployer une charge de travail dans un environ
 Chaque organisation classe ses applications différemment, souvent en séparant les abonnements en fonction des applications ou des services, ou en suivant des archétypes d’application. Cette classification est souvent conçue pour prendre en charge les charges de travail qui sont susceptibles de consommer la plupart des ressources d’un abonnement, ou des charges de travail critiques distinctes pour garantir qu’elles ne sont pas en concurrence avec d’autres charges de travail dans les limites de l’abonnement. Voici quelques charges de travail qui peuvent justifier l’utilisation d’un abonnement distinct dans ce modèle :
 
 - Les charges de travail critiques
-- Les applications comportant des données protégées
-- Les applications expérimentales
-- Les applications soumises à des réglementations (HIPAA ou FedRAMP)
-- Les charges de travail par lots
-- Les charges de travail de Big data comme Hadoop
-- Les charges de travail conteneurisées utilisant des orchestrateurs de déploiement comme Kubernetes
-- Les charges de travail d’analytique
+- Les applications s’inscrivant dans le « coût des marchandises vendues » (COGS, Cost of Goods Sold) de votre entreprise. Exemple : chaque instance du widget de la société X contient un module Azure IoT qui envoie des données de télémétrie. Ceci peut nécessiter un abonnement dédié à des fins de comptabilité/gouvernance dans le cadre du COGS.
+- Les applications soumises à des réglementations (HIPAA ou FedRAMP, par exemple).
 
 ### <a name="functional-pattern"></a>Modèle fonctionnel
 
@@ -97,7 +92,7 @@ Les hiérarchies de groupes d’administration peuvent avoir jusqu’à six nive
 
 - [Gestion de l’accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Plusieurs couches de gouvernance dans les grandes entreprises](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [Zones géographiques multiples](../../migrate/expanded-scope/multiple-regions.md)
+- [Zones géographiques multiples](../regions/index.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

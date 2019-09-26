@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4418b86e5fc77e4ae292351a6773b1808ce5e38
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 18d6d5d70d504e6575e54c4b00767a585f8ef43a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025679"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222392"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guide de gouvernance pour les entreprises standard
 
@@ -41,8 +41,9 @@ Chaque application doit être déployée dans la zone appropriée du groupe d’
 
 1. Un groupe d’administration pour chaque type d’environnement (par exemple, production, développement et test).
 2. Deux abonnements, un pour la production et un autre pour la non-production.
-3. Des groupes de ressources appropriés avec RBAC appliqués dans ces abonnements.
-4. Une [nomenclature cohérente](../../../ready/considerations/naming-and-tagging.md) doit être appliquée à chaque niveau de cette hiérarchie de regroupement.
+3. Une [nomenclature cohérente](../../../ready/considerations/naming-and-tagging.md) doit être appliquée à chaque niveau de cette hiérarchie de regroupement.
+4. Les groupes de ressources doivent être déployés de manière à prendre en compte le cycle de vie de leur contenu : tous les contenus développés ensemble sont gérés ensemble et mis hors service ensemble. Pour plus d’informations sur les bonnes pratiques relatives aux groupes de ressources, consultez [cette page](../../../decision-guides/resource-consistency/index.md).
+5. Le [choix de la région](../../../decision-guides/regions/index.md) est extrêmement important, notamment pour la mise en place du réseau, de la supervision et de l’audit pour le basculement/la restauration automatique. Il convient également de vérifier que les [références SKU nécessaires](https://azure.microsoft.com/global-infrastructure/services) sont disponibles dans les régions privilégiées.
 
 Voici un exemple de modèle utilisé :
 

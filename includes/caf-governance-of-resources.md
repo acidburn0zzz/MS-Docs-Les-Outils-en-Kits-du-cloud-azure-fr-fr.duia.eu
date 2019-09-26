@@ -53,6 +53,7 @@ Tant que la confiance dans l’environnement cloud n’est pas totalement établ
     1. L’[architecture de référence VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) établit un schéma et un modèle de déploiement pour la création d’une passerelle VPN dans Azure.
     2. Confirmez que les mécanismes de gestion de la sécurité et du trafic locaux traitent les réseaux cloud connectés comme étant non approuvés. Les ressources et les services hébergés dans le cloud doivent avoir uniquement accès aux services locaux autorisés.
     3. Vérifiez que l’appareil de périphérie local dans le centre de données local est compatible avec les [exigences de passerelle VPN Azure](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) et configuré pour accéder à l’Internet public.
+    4. Notez que les tunnels VPN ne doivent être considérés comme des circuits prêts pour la production que pour les charges de travail les plus simples. Si vous n’avez pas seulement affaire à quelques charges de travail simples nécessitant une connectivité locale, vous devez utiliser Azure ExpressRoute.
 1. Dans le groupe d’administration racine, créez une seconde définition de blueprint nommée `secure-hybrid-vnet`.
     1. Ajoutez le modèle Resource Manager pour la passerelle VPN comme artefact de la définition de blueprint.
     2. Ajoutez le modèle Resource Manager pour le réseau virtuel comme artefact de la définition de blueprint.

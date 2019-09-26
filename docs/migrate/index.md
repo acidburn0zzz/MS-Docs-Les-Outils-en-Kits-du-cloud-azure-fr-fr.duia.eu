@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 982451c9043f775c2e211d9b166ca2d094479ca9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816395"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224381"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migration cloud dans le Framework d’adoption du cloud
 
-Tout [plan d’adoption du cloud](../plan/index.md) à l’échelle de l’entreprise inclura des charges de travail qui ne justifient pas des investissements significatifs dans la création d’une nouvelle logique métier. Ces charges de travail peuvent être déplacées vers le cloud en suivant différentes approches : Lift & Shift, Lift & Optimize ou modernisation. Chacune d’elles est considérée comme une migration. Les exercices suivants vont vous aider à établir les processus itératifs pour évaluer, migrer, optimiser, sécuriser et gérer ces charges de travail.
+Tout [plan d’adoption du cloud](../plan/index.md) à l’échelle de l’entreprise inclura des charges de travail qui ne justifient pas des investissements significatifs dans la création d’une nouvelle logique métier. Ces charges de travail peuvent être déplacées vers le cloud en suivant différentes approches : lift-and-shift, lift-and-optimize ou modernisation. Chacune de ces approches est considérée comme une migration. Les exercices suivants vous aident à établir les processus itératifs pour évaluer, migrer, optimiser, sécuriser et gérer ces charges de travail.
 
 ## <a name="getting-started"></a>Prise en main
 

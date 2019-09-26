@@ -2,19 +2,19 @@
 title: Guide de décision pour la cohérence des ressources
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Apprenez-en davantage sur la cohérence des ressources lors de la planification d’une migration Azure.
-author: rotycenh
-ms.author: v-tyhopk
-ms.date: 02/11/2019
+author: doodlemania2
+ms.author: dermar
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04d0a1e2ed63145baf94010fdf071a271461e7d0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023793"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221111"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guide de décision pour la cohérence des ressources
 
@@ -32,16 +32,22 @@ La cohérence du déploiement, du regroupement et de la gestion des ressources c
 
 Dans Azure, les [groupes de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) sont un mécanisme d’organisation des ressources de base permettant de regrouper logiquement les ressources dans un abonnement.
 
-Les groupes de ressources servent de conteneurs pour les ressources ayant un cycle de vie commun ou des contraintes de gestion partagées telles que les exigences en matière de stratégie ou de contrôle d’accès en fonction du rôle (RBAC). Les groupes de ressources ne peuvent pas être imbriqués et les ressources ne peuvent appartenir qu’à un seul groupe de ressources. Certaines actions peuvent agir sur toutes les ressources contenues dans un groupe de ressources. Par exemple, la suppression d’un groupe de ressources supprime toutes les ressources dans ce groupe. Les schémas courants permettant de créer des groupes de ressources sont souvent divisés en deux catégories :
+Les groupes de ressources servent de conteneurs pour les ressources ayant un cycle de vie commun et des contraintes de gestion partagées telles que les exigences en matière de stratégie ou de contrôle d’accès en fonction du rôle (RBAC). Les groupes de ressources ne peuvent pas être imbriqués et les ressources ne peuvent appartenir qu’à un seul groupe de ressources. Toutes les actions du plan de contrôle agissent sur l’ensemble des ressources contenues dans un groupe de ressources. Par exemple, la suppression d’un groupe de ressources supprime également toutes les ressources dans ce groupe. Pour déterminer le modèle à privilégier pour la gestion des groupes de ressources, il convient de se poser les questions suivantes :
 
-- **Charges de travail informatiques traditionnelles :** Elles sont le plus souvent regroupés par éléments au sein d’un même cycle de vie, comme une application. Le regroupement par application permet de gestion des applications individuelles.
-- **Charges de travail informatiques de type agile :** Elles se concentrent sur les applications cloud pour les clients externes. Ces groupes de ressources reflètent souvent les couches fonctionnelles de déploiement (comme la couche web ou la couche application) et de gestion.
+1. Les contenus du groupe de ressources sont-ils développés ensemble ?
+1. Les contenus du groupe de ressources sont-ils gérés, mis à jour et supervisés ensemble et par les mêmes personnes ou équipes ?
+1. Les contenus du groupe de ressources sont-ils mis hors service ensemble ?
+
+Si vous avez répondu _non_ à l’une ou plusieurs de ces questions, vous devez placer la ressource en question ailleurs, dans un autre groupe de ressources.
+
+> [!IMPORTANT]
+> Les groupes de ressources sont également spécifiques à la région. Toutefois, il arrive fréquemment que des ressources se trouvent dans des régions différentes au sein du même groupe de ressources, car elles sont gérées ensemble comme décrit ci-dessus. Consultez [cette page](../regions/index.md) pour plus d’informations sur le choix des régions.
 
 ## <a name="deployment-consistency"></a>Cohérence du déploiement
 
 S’appuyant sur le mécanisme de regroupement des ressources de base, la plateforme Azure offre un système permettant d’utiliser des modèles de déploiement de vos ressources dans l’environnement cloud. Vous pouvez utiliser des modèles pour créer une organisation et des conventions de nommage cohérentes lors du déploiement des charges de travail, en appliquant ces aspects de la conception du déploiement et de la gestion de vos ressources.
 
-Les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) vous permettent de déployer vos ressources de façon répétée et cohérente en utilisant une configuration prédéterminée et une structure de groupes de ressources. Les modèles Resource Manager vous aident à définir un ensemble de standards qui serviront de base à vos déploiements.
+Les [modèles Azure Resource Manager](/azure/azure-resource-manager/template-deployment-overview) vous permettent de déployer vos ressources de façon répétée et cohérente en utilisant une configuration prédéterminée et une structure de groupes de ressources. Les modèles Resource Manager vous aident à définir un ensemble de standards qui serviront de base à vos déploiements.
 
 Par exemple, vous pouvez disposer d’un modèle standard pour déployer une charge de travail de serveur web qui contient deux machines virtuelles en tant que serveurs web combinés à un équilibreur de charge qui répartit le trafic entre les serveurs. Vous pouvez ensuite réutiliser ce modèle pour créer un groupe de machines virtuelles structurellement identiques et un équilibreur de charge chaque fois que ce type de charge de travail est nécessaire. Il vous suffit ensuite de modifier le nom du déploiement et les adresses IP concernées.
 

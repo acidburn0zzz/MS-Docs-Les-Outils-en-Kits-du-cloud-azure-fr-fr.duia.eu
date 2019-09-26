@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Raison de la Base de référence des identités dans le cadre de la gouvernance du cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 888e9e7381f5dba0dd2b3797bb4cc06e79a2c9b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025867"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222246"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Présentation de la discipline Base de référence des identités
 
@@ -26,7 +26,7 @@ La base de référence des identités est l’une des [cinq disciplines de la go
 
 Cette section des lignes directrices du Framework d’adoption du cloud décrit l’approche à adopter pour élaborer une discipline Base de référence des identités dans le cadre de votre stratégie de gouvernance cloud. Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Cependant, les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés des équipes informatiques responsables de l’implémentation et de l’administration de vos solutions de gestion des identités.
 
-Si votre organisation manque d’expertise interne en matière de sécurité et de Base de référence des identités, envisagez de faire appel à des consultants externes pour y remédier. Envisagez également de faire appel aux [Services de conseil Microsoft](https://www.microsoft.com/enterprise/services), au service d’adoption du cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou à des experts externes pour aborder les préoccupations liées à cette discipline.
+Si votre organisation manque d’expertise interne en matière de sécurité et de Base de référence des identités, envisagez de faire appel à des consultants externes pour y remédier. Envisagez également de faire appel aux [Services de conseil Microsoft](https://www.microsoft.com/enterprise/services), au service d’adoption du cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou à des partenaires externes pour aborder les préoccupations liées à cette discipline.
 
 ## <a name="policy-statements"></a>Policy statements
 
@@ -71,7 +71,7 @@ Les six étapes suivantes offrent des exemples et des options potentielles à pr
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Risques d’affaires</h3>
+                        <h3>Risques commerciaux</h3>
                         <p class="x-hidden-focus">Appréhendez les motivations et les risques généralement associés à la discipline Base de référence des identités.</p>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ Les six étapes suivantes offrent des exemples et des options potentielles à pr
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Développer des processus d’adhérence à la politique</h3>
+                        <h3>Développer des processus d’adhésion à la stratégie</h3>
                         <p class="x-hidden-focus">Suggestions de processus pour appuyer la conformité aux stratégies dans la discipline Base de référence des identités.</p>
                     </div>
                 </div>

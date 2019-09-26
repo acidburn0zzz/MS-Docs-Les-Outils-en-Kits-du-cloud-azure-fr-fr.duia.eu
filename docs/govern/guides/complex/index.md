@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Guide de gouvernance pour les entreprises complexes
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 63b66858c023ff85e1ff6f8adc811540f3034e2d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d2218c812c131c16716e9df1f347b4615e0c6b60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026170"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220561"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guide de gouvernance pour les entreprises complexes
 
@@ -39,10 +39,11 @@ Le schéma suivant montre la hiérarchie MVP de gouvernance pour organiser les r
 
 Chaque application doit être déployée dans la zone appropriée du groupe d’administration, de l’abonnement et de la hiérarchie des groupes de ressources. Lors de la planification du déploiement, l’équipe de gouvernance cloud crée les nœuds nécessaires dans la hiérarchie pour donner aux équipes d’adoption du cloud les moyens d’agir.
 
-1. Définissez un groupe de gestion pour chaque unité commerciale avec une hiérarchie détaillée qui reflète la géographie puis le type d’environnement (par exemple, production ou non-production).
-1. Créez un abonnement pour chaque combinaison unique d’unité commerciale, de géographie, d’environnement et de « Catégorisation d’applications ».
-1. Créez un groupe de ressources séparé pour chaque application.
-1. Appliquez une [nomenclature cohérente](../../../ready/considerations/naming-and-tagging.md) à chaque niveau de cette hiérarchie de regroupement.
+1. Définissez un groupe d’administration pour chaque unité commerciale avec une hiérarchie détaillée qui reflète la géographie, puis le type d’environnement (par exemple, production ou non-production).
+2. Créez un abonnement de production et de non-production pour chaque combinaison unique de géographie ou d’unité commerciale distincte. Soyez particulièrement prudent si vous créez plusieurs abonnements. Consultez [cette page](../../../decision-guides/subscriptions/index.md) pour plus d’informations.
+3. Appliquez une [nomenclature cohérente](../../../ready/considerations/naming-and-tagging.md) à chaque niveau de cette hiérarchie de regroupement.
+4. Les groupes de ressources doivent être déployés de manière à prendre en compte le cycle de vie de leur contenu : tous les contenus développés ensemble sont gérés ensemble et mis hors service ensemble. Pour plus d’informations sur les bonnes pratiques relatives aux groupes de ressources, consultez [cette page](../../../decision-guides/resource-consistency/index.md).
+5. Le [choix de la région](../../../decision-guides/regions/index.md) est extrêmement important, notamment pour la mise en place du réseau, de la supervision et de l’audit pour le basculement/la restauration automatique. Il convient également de vérifier que les [références SKU nécessaires](https://azure.microsoft.com/global-infrastructure/services) sont disponibles dans les régions privilégiées.
 
 ![Schéma d’organisation des ressources des grandes entreprises](../../../_images/govern/large-enterprise-resource-organization.png)
 
