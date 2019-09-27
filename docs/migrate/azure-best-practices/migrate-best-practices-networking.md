@@ -32,7 +32,7 @@ Azure fournit des réseaux virtuels (VNet) :
 - Vous pouvez implémenter plusieurs réseaux virtuels au sein de chaque abonnement et chaque région Azure.
 - Chaque réseau virtuel est isolé des autres réseaux virtuels.
 - Les réseaux virtuels peuvent contenir les adresses IP privées et publiques définies dans [RFC 1918](https://tools.ietf.org/html/rfc1918), exprimées en notation CIDR. Les adresses IP publiques spécifiées dans l’espace d’adressage d’un réseau virtuel ne sont pas directement accessibles à partir d’Internet.
-- Les réseaux virtuels peuvent se connecter entre elles sur la base d’une homologation de réseaux virtuels. Les réseaux virtuels connectés peuvent se trouver dans des régions identiques ou différentes. Par conséquent, les ressources d’un réseau virtuel peuvent se connecter aux ressources d’autres réseaux virtuels.
+- Les réseaux virtuels peuvent se connecter entre eux sur la base d’un peering de réseaux virtuels. Les réseaux virtuels connectés peuvent se trouver dans des régions identiques ou différentes. Par conséquent, les ressources d’un réseau virtuel peuvent se connecter aux ressources d’autres réseaux virtuels.
 - Par défaut, les itinéraires Azure se chargent de l’acheminement entre les sous-réseaux d’un réseau virtuel, les réseaux virtuels connectés, les réseaux locaux et Internet.
 
 Lorsque vous planifiez votre topologie de réseau virtuel, vous devez penser à la manière d’organiser les espaces d’adressage IP, d’implémenter un réseau hub-and-spoke, de segmenter les réseaux virtuels en sous-réseaux, de configurer le serveur DNS et d’implémenter les zones de disponibilité Azure.
@@ -57,7 +57,7 @@ Lorsque vous créez des réseaux virtuels dans le cadre de votre migration, il e
 Une topologie de réseau hub-and-spoke isole des charges de travail tout en partageant des services tels que l’identité et la sécurité.
 
 - Le hub est un réseau virtuel Azure qui agit comme point central de connectivité.
-- Les spokes sont des réseaux virtuels qui se connectent au réseau virtuel du hub à l’aide d’une homologation.
+- Les spokes sont des réseaux virtuels qui se connectent au réseau virtuel du hub à l’aide d’un peering.
 - Les services partagés sont déployés dans le hub, tandis que les charges de travail individuelles sont déployées en tant que rayons.
 
 Tenez compte des éléments suivants :

@@ -175,7 +175,7 @@ Les administrateurs de Contoso configurent le réseau virtuel de la façon suiva
     - Peering de **VNET-SQLMI-EUS2** avec **VNET-HUB-EUS2** (réseau virtuel hub pour la région USA Est 2).
     - Peering de **VNET-SQLMI-EUS2** avec **VNET-PROD-EUS2** (réseau de production).
 
-      ![Appairage de réseau](media/contoso-migration-rehost-vm-sql-managed-instance/mi-peering.png)
+      ![Peering de réseau](media/contoso-migration-rehost-vm-sql-managed-instance/mi-peering.png)
 
 5. Ils définissent des paramètres DNS personnalisés. Le système DNS pointe tout d’abord sur les contrôleurs de domaine Azure de Contoso. Azure DNS est secondaire. Les contrôleurs de domaine Azure de Contoso se situent comme suit :
 
