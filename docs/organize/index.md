@@ -11,10 +11,10 @@ ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
 ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
+ms.lasthandoff: 09/26/2019
 ms.locfileid: "71025801"
 ---
 # <a name="managing-organizational-alignment"></a>Gestion de l’alignement organisationnel
@@ -145,7 +145,7 @@ L’article sur la [détermination de l’évolution de la structure organisatio
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour suivre les décisions de structure de l’organisation au fur et à mesure, téléchargez et modifiez le modèle de feuille de calcul RACI.
+Pour suivre les décisions de structure de l’organisation au fur et à mesure, téléchargez et modifiez le [modèle de feuille de calcul RACI](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx).
 
 > [!div class="nextstepaction"]
 > [Télécharger le modèle de feuille de calcul RACI](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)
