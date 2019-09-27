@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exemples de déclarations de stratégie Base de référence des identités
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae5bb8283487ef7724f872fc293def2c1a80071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031967"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222134"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Exemples de déclarations de stratégie Base de référence des identités
 
@@ -67,11 +67,11 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 **Instruction de stratégie :** Le déploiement des applications nécessitant une authentification des clients doit utiliser un fournisseur d'identité approuvé compatible avec le fournisseur d'identité principal pour les utilisateurs internes.
 
-**Options de conception potentielles** : implémentez la [Fédération avec Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) entre vos fournisseurs d'identité interne et client.
+**Options de conception potentielles** : implémentez une [fédération avec Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) entre vos fournisseurs d’identité interne et client ou utilisez [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
 ## <a name="identity-reviews"></a>Révisions des identités
 
-**Risque technique :** au fil du temps, l'ajout de nouveaux déploiements dans le cloud ou l'apparition d'autres problèmes de sécurité peuvent accroître les risques d'accès non autorisé à des ressources sécurisées.
+**Risque technique :** à mesure que l’activité évolue, l’ajout de nouveaux déploiements dans le cloud ou l’apparition d’autres problèmes de sécurité peut accroître les risques d’accès non autorisé à des ressources sécurisées.
 
 **Instruction de stratégie :** les processus de gouvernance cloud doivent inclure des révisions trimestrielles avec les équipes de gestion des indentés. L'objectif est d'identifier les modèles d'utilisation ou les acteurs malveillants devant être bloqués par la configuration des ressources cloud.
 

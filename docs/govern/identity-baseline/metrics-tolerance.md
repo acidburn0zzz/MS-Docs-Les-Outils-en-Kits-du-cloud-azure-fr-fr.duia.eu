@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métriques, indicateurs et tolérance au risque de la base de référence des identités
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad0b06cad7aefc70eea6366eb9ef2b5844c871a6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031311"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220429"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Métriques, indicateurs et tolérance au risque de la base de référence des identités
 
-Cet article vise à vous aider à quantifier la tolérance au risque de l’entreprise en lien avec la base de référence des identités. La définition de métriques et d’indicateurs vous aide à créer une étude d’opportunité pour investir dans l’adoption progressive de la discipline Base de référence des identités.
+Cet article vous aide à quantifier la tolérance aux risques métier en lien avec la base de référence des identités. La définition de métriques et d’indicateurs vous aide à créer une étude d’opportunité pour investir dans l’adoption progressive de la discipline Base de référence des identités.
 
 ## <a name="metrics"></a>Mesures
 
@@ -28,13 +28,13 @@ Voici quelques exemples de métriques utiles que vous devez rassembler pour mieu
 
 - **Taille des systèmes d’identité.** Nombre total d’utilisateurs, de groupes ou d’autres objets gérés via vos systèmes d’identité.
 - **Taille globale de l’infrastructure des services d’annuaire.** Nombre de forêts, de domaines et de locataires d’annuaires utilisés par votre organisation.
-- **Dépendance des mécanismes d’authentification héritée ou locale.** Nombre de charges de travail qui dépendent des mécanismes d’authentification héritée ou des services d’authentification multifacteur de tiers.
+- **Dépendance des mécanismes d’authentification héritée ou locale.** Nombre de charges de travail qui dépendent de mécanismes d’authentification hérités, tiers ou multifacteurs.
 - **Étendue des services d’annuaire déployés dans le cloud.** Nombre de forêts, de domaines et de locataires d’annuaires que vous avez déployés dans le cloud.
 - **Serveurs Active Directory déployés dans le cloud.** Nombre de serveurs Active Directory déployés dans le cloud.
 - **Unités d’organisation déployées dans le cloud.** Nombre d’unités d’organisation Active Directory déployées dans le cloud.
 - **Étendue de la fédération.** Nombre de systèmes de Base de référence des identités fédérés avec les systèmes de votre organisation.
 - **Utilisateurs avec privilèges élevés.** Nombre de comptes d’utilisateur ayant un accès avec privilèges d’accès élevés aux ressources ou aux outils de gestion.
-- **Utilisation du contrôle d’accès en fonction du rôle.** Nombre d’abonnements, de groupes de ressources ou de ressources individuelles non gérés via le contrôle d’accès en fonction du rôle (RBAC).
+- **Utilisation du contrôle d’accès en fonction du rôle.** Nombre d’abonnements, de groupes de ressources ou de ressources individuelles non gérés avec le contrôle d’accès en fonction du rôle (RBAC) par le biais de groupes.
 - **Revendications d’authentification.** Nombre de tentatives d’authentification utilisateur ayant réussi ou échoué.
 - **Revendications d’autorisation.** Nombre de réussites et d’échecs des tentatives effectuées par les utilisateurs pour accéder aux ressources.
 - **Comptes compromis.** Nombre de comptes d’utilisateur qui ont été compromis.
@@ -56,7 +56,7 @@ Une fois que vous avez une base de référence, établissez des seuils minimaux 
 - **Déclencheur RBAC.** Une entreprise, avec moins de _x %_ de ressources utilisant les méthodes de contrôle d’accès en fonction du rôle (RBAC), peut envisager d’investir dans la discipline Base de référence des identités pour identifier des moyens optimisés d’affecter aux utilisateurs l’accès aux ressources.
 - **Déclencheur d’échec d’authentification.** Une entreprise où les échecs d’authentification représentent plus de _x %_ des tentatives peut investir dans la discipline Base de référence des identités pour garantir que les méthodes d’authentification ne sont pas soumises à des attaques externes, et que les utilisateurs sont en mesure d’utiliser correctement les méthodes d’authentification.
 - **Déclencheur d’échec d’autorisation.** Une entreprise où les tentatives d’accès sont rejetées dans une proportion supérieure à _x %_ peut investir dans la discipline Base de référence des identités pour améliorer l’application et la mise à jour des contrôles d’accès, et pour identifier les tentatives d’accès potentiellement malveillantes.
-- **Déclencheur de compte compromis.** Une entreprise avec plus de _x_ comptes compromis peut investir dans la discipline Base de référence des identités pour améliorer la robustesse et la sécurité des mécanismes d’authentification, et pour améliorer les mécanismes de correction des risques liés aux comptes compromis.
+- **Déclencheur de compte compromis.** Une entreprise avec plusieurs comptes compromis doit investir dans la discipline Base de référence des identités pour améliorer la robustesse et la sécurité des mécanismes d’authentification et pour améliorer les mécanismes de correction des risques liés aux comptes compromis.
 
 Les métriques et déclencheurs exacts à utiliser pour évaluer la tolérance au risque, et le niveau d’investissement dans la discipline Base de référence des identités sont spécifiques à votre organisation, mais les exemples ci-dessus devraient constituer une base utile pour la discussion au sein de votre équipe de gouvernance cloud.
 

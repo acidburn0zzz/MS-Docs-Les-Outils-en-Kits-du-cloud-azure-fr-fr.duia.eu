@@ -4,29 +4,29 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Risques d’affaires et motivations associés à la base de référence des identités
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c838063c77b02af4ec86187854a15d93b2998ef
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031835"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222175"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Risques d’affaires et motivations associés à la base de référence des identités
 
-Cet article décrit les raisons pour lesquelles les clients adoptent une discipline Base de référence des identités au sein d’une stratégie de gouvernance cloud. Des exemples sur les risques d’affaires conduisant à la rédaction d’instructions de stratégie sont également présentés.
+Cet article décrit les raisons pour lesquelles les clients adoptent une discipline Base de référence des identités au sein d’une stratégie de gouvernance cloud. Des exemples sur les risques métier conduisant à la rédaction d’instructions de stratégie sont également présentés.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-identity-baseline-relevant"></a>La Base de référence des identités est-elle pertinente ?
+## <a name="identity-baseline-relevancy"></a>Pertinence de la Base de référence des identités
 
 Les répertoires locaux traditionnels sont conçus pour permettre aux entreprises de contrôler strictement les autorisations et les stratégies pour les utilisateurs, les groupes et les rôles au sein de leurs réseaux et centres de données internes. Il s’agit généralement du support d’implémentations à locataire unique, les services ne s’appliquant qu’au sein de l’environnement local.
 
-Les services d’identité cloud visent à étendre les capacités d’authentification et de contrôle d’accès d’une organisation à l’Internet. Ils prennent en charge la mutualisation et permettent de gérer les utilisateurs et les stratégies d’accès dans les applications et les déploiements cloud. Les plateformes de cloud public possèdent une forme de services d’identité cloud natifs supportant les tâches de gestion et de déploiement et elles offrent [différents niveaux d’intégration](../../decision-guides/identity/index.md) avec vos solutions d’identité locales existantes. Par rapport à la gestion des identités de vos solutions locales existantes, toutes ces fonctionnalités peuvent compliquer la stratégie d’identité cloud.
+Les services d’identité cloud étendent les capacités d’authentification et de contrôle d’accès d’une organisation à l’Internet. Ils prennent en charge la mutualisation et permettent de gérer les utilisateurs et les stratégies d’accès dans les applications et les déploiements cloud. Les plateformes de cloud public possèdent des services d’identité cloud natifs prenant en charge les tâches de gestion et de déploiement. Par ailleurs, elles offrent [différents niveaux d’intégration](../../decision-guides/identity/index.md) avec vos solutions d’identité locales existantes. Par rapport à la gestion des identités de vos solutions locales existantes, toutes ces fonctionnalités peuvent compliquer la stratégie d’identité cloud.
 
 La discipline Base de référence des identités pour votre déploiement cloud s’avère particulièrement utile en fonction de la taille de votre équipe et de la nécessité d’intégrer votre solution d’identité basée sur le cloud à un service d’identité local existant. Les déploiements de tests initiaux peuvent ne pas nécessiter beaucoup d’organisation ou de gestion des utilisateurs, mais au fur et à mesure que votre investissement cloud se développe, vous devrez probablement prendre en charge une intégration organisationnelle et une gestion centralisée plus complexes.
 

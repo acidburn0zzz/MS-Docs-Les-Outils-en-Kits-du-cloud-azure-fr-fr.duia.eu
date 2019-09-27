@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Amélioration de la discipline Cohérence des ressources
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 12a1dbd734d4159f814c093c104709b950dddad8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031179"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223009"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Amélioration de la discipline Cohérence des ressources
 
@@ -101,7 +101,7 @@ La migration est un processus incrémentiel qui porte essentiellement sur le dé
 - Déterminez si, d’un point de vue financier, les abonnements des unités commerciales sont dans la lignée des comptes de résultats.
 - Pour les organisations internationales, implémentez vos exigences en matière de conformité SLA et de souveraineté.
 - Pour l’agrégation cloud, déployez une solution de passerelle vers un fournisseur de cloud.
-- Pour les outils n'autorisant pas les options de passerelle ou hybrides, associez la surveillance à un outil de surveillance opérationnelle.
+- Pour les outils n’autorisant pas les options de passerelle ou hybrides, associez étroitement la supervision à un outil de supervision opérationnelle couvrant tous les centres de données et clouds.
 
 ## <a name="operate-and-post-implementation"></a>Exploitation et post-implémentation
 

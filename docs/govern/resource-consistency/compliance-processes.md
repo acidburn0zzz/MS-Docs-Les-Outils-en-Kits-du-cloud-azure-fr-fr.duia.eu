@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processus de conformité à la stratégie de cohérence des ressources
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5daec332aa4fdbc75e15bfd9948fe6db52935d20
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031640"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223709"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processus de conformité à la stratégie de cohérence des ressources
 
@@ -60,6 +60,7 @@ Les déclencheurs et mesures d’application ci-après fournissent des exemples 
 - **Ressource sous-provisionnée détectée.** Les ressources détectées qui utilisent plus de 80 % de la capacité de la mémoire ou de l’UC doivent automatiquement monter en puissance ou approvisionner des ressources supplémentaires afin d’augmenter la capacité.
 - **Création de ressources sans catégorie.** Toute requête demandant la création d’une ressource sans les balises Meta requises sera automatiquement rejetée.
 - **Panne de ressource critique détectée.** Le personnel informatique est informé de toutes les pannes détectées sur des ressources critiques. Si la panne ne peut pas être résolue immédiatement, le personnel fait remonter le problème aux propriétaires de la charge de travail et à l’équipe de gouvernance cloud. L’équipe de gouvernance cloud effectue un suivi du problème jusqu’à obtenir des instructions de résolution et de mise à jour si la révision de la stratégie est nécessaire pour empêcher l’apparition de futurs incidents.
+- **Dérives de configuration.** Des alertes doivent être déclenchées dès lors que des ressources non conformes aux bases de référence établies sont détectées, et ces ressources doivent être corrigées automatiquement à l’aide d’outils de gestion de configuration comme Azure Automation, Chef, Puppet, Ansible, etc.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

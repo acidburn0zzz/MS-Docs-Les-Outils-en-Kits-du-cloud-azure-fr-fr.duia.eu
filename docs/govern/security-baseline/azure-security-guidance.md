@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Quelles sont les recommandations formulées par Microsoft en matière de sécurité ?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a4b256c665e0f4a86bca5a538de9ae950ccd400
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032124"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222915"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-security-guidance-does-microsoft-provide"></a>Quelles sont les recommandations formulées par Microsoft en matière de sécurité ?
+# <a name="microsoft-security-guidance"></a>Recommandations de Microsoft en matière de sécurité
 
-## <a name="security-guidance-and-tools"></a>Conseils de sécurité et outils
+## <a name="tools"></a>Outils
 
 Microsoft a introduit la [Plateforme d'approbation de services](https://servicetrust.microsoft.com) et le Gestionnaire de conformité pour faciliter ce qui suit :
 
@@ -52,7 +52,7 @@ La **Plateforme d'approbation de services (STP)** fournit des informations déta
 
 ## <a name="unique-intelligent-insights"></a>Intelligent Insights
 
-Au fur et à mesure que le volume et la complexité des signaux de sécurité augmentent, il apparaît bien trop long de déterminer si ces signaux constituent des menaces crédibles, puis d'agir. Microsoft propose un éventail inégalé d'informations de sécurité fournies à l'échelle du cloud pour mieux détecter les menaces et y remédier.
+Au fur et à mesure que le volume et la complexité des signaux de sécurité augmentent, il apparaît bien trop long de déterminer si ces signaux constituent des menaces crédibles, puis d'agir. Microsoft propose un éventail inégalé d'informations de sécurité fournies à l'échelle du cloud pour mieux détecter les menaces et y remédier. [En savoir plus](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ## <a name="azure-threat-intelligence"></a>Informations sur les menaces Azure
 

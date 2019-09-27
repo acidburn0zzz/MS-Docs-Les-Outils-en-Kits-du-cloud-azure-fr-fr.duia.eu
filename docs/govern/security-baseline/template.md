@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explication du concept de Base de référence de la sécurité dans le cadre de la gouvernance cloud.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03d8e9cf2a5e4679b61a318aeee41b982f08ac51
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031709"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222807"
 ---
 # <a name="security-baseline-template"></a>Modèle Base de référence de la sécurité
 
-La première étape de l’implémentation d’une modification consiste à communiquer autour de la modification désirée. Il en est de même lors de la modification des pratiques de gouvernance. Le modèle générique ci-dessous sert de point de départ pour documenter et communiquer des énoncés de stratégie qui régissent les problèmes de sécurité dans le cloud.
+La première étape de l’implémentation d’une modification consiste à communiquer autour de la modification désirée. Il en est de même lors de la modification des pratiques de gouvernance. Le modèle ci-dessous sert de point de départ pour documenter et communiquer des énoncés de stratégie qui régissent les problèmes de sécurité dans le cloud.
 
 Lorsque vos discussions avancent, utilisez la structure de ce modèle comme modèle pour capturer les risques métiers, les tolérances aux risques, les processus de conformité et les outils nécessaires pour définir les énoncés de stratégie « Base de référence de la sécurité » de votre organisation.
 

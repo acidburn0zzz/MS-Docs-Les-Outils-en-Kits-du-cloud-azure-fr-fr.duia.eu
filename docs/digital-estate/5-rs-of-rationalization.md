@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Passez en revue les options disponibles pour rationaliser un patrimoine numérique.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023615"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223870"
 ---
 # <a name="cloud-rationalization"></a>Rationalisation du cloud
 
@@ -69,7 +69,7 @@ Les facteurs les plus courants sont les suivants :
 
 - Mises à jour plus rapides
 - Portabilité du code
-- Une plus grande efficacité du cloud (ressources, vitesse, coût)
+- Une plus grande efficacité du cloud (ressources, vitesse, coût, opérations managées)
 
 Facteurs d’analyse quantitative :
 
@@ -77,6 +77,7 @@ Facteurs d’analyse quantitative :
 - Dépendances (trafic réseau)
 - Trafic utilisateur (consultations de page, temps passé sur une page, temps de chargement)
 - Plateforme de développement (langages, plateforme de données, services de niveau intermédiaire)
+- Base de données (UC, mémoire, stockage, version)
 
 Facteurs d’analyse qualitative :
 
@@ -102,6 +103,7 @@ Facteurs d’analyse quantitative :
 - Dépendances (trafic réseau)
 - Trafic utilisateur (consultations de page, temps passé sur une page, temps de chargement)
 - Plateforme de développement (langages, plateforme de données, services de niveau intermédiaire)
+- Base de données (UC, mémoire, stockage, version)
 
 Facteurs d’analyse qualitative :
 
@@ -125,6 +127,7 @@ Facteurs d’analyse quantitative :
 - Dépendances (trafic réseau)
 - Trafic utilisateur (consultations de page, temps passé sur une page, temps de chargement)
 - Plateforme de développement (langages, plateforme de données, services de niveau intermédiaire)
+- Base de données (UC, mémoire, stockage, version)
 
 Facteurs d’analyse qualitative :
 
@@ -148,6 +151,7 @@ Facteurs d’analyse quantitative :
 - Taille de la machine virtuelle (processeur, mémoire, stockage)
 - Dépendances (trafic réseau)
 - Ressources à mettre hors service
+- Base de données (UC, mémoire, stockage, version)
 
 Facteurs d’analyse qualitative :
 

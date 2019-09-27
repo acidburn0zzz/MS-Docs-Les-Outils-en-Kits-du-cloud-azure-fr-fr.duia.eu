@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explication des risques métier associés à une transformation cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cd8bee6cf7cf0ff06cb2846b440263cc83757f5f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031480"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223545"
 ---
 # <a name="evaluate-risk-tolerance"></a>Évaluer la tolérance au risque
 
@@ -47,7 +47,7 @@ L'identification des risques est un processus relativement direct. Les risques l
 Pour appréhender la tolérance au risque, examinons des données client. Si une entreprise d’un secteur particulier publie des données client sur un serveur non sécurisé, le risque technique de compromission ou de vol de ces données est à peu près identique. Toutefois, la tolérance d’une entreprise à ce risque variera considérablement en fonction de la nature et de la valeur potentielle des données.
 
 - Aux États-Unis, les entreprises du secteur de la santé et de la finance sont soumises à des obligations de conformité strictes imposées par des tiers. On part du principe que les données personnelles ou les données médicales sont extrêmement confidentielles. Les conséquences pour les entreprises de ce type sont graves si elles sont impliquées dans le scénario de risque ci-dessus. Leur tolérance est extrêmement faible. Toutes les données client publiées à l'intérieur ou à l'extérieur du réseau doivent être régies par ces stratégies de conformité tierces.
-- Une société de jeux dont les données client se limitent à un nom d’utilisateur, à des temps de jeu et à des scores est moins exposée à des conséquences graves si elle adopte le comportement à risque décrit ci-dessus. Si un risque pèse sur des données non sécurisées, l’impact de ce risque est faible. Par conséquent, dans ce cas, la tolérance au risque est élevée.
+- Une société de jeux dont les données client se limitent à un nom d’utilisateur, à des temps de jeu et à des scores est moins exposée à des conséquences graves (au-delà d’une réputation compromise) si elle adopte le comportement à risque décrit ci-dessus. Si un risque pèse sur des données non sécurisées, l’impact de ce risque est faible. Par conséquent, dans ce cas, la tolérance au risque est élevée.
 - La tolérance d’une PME fournissant des services de nettoyage de tapis à des milliers de clients se situerait entre ces deux extrémités. Les données client peuvent alors être plus robustes et contenir des informations comme l’adresse ou le numéro de téléphone. Dans la mesure où ces informations peuvent être considérées comme des données personnelles, elles doivent être protégées. Cela dit, il se peut qu'aucune obligation de gouvernance spécifique n'impose de sécuriser les données. D'un point de vue informatique, la réponse est simple : sécuriser les données. D'un point de vue commercial, ce n'est peut-être pas aussi simple. L'équipe commerciale aurait besoin de détails supplémentaires avant de pouvoir déterminer un niveau de tolérance pour ce risque.
 
 La section suivante contient des exemples de questions qui peuvent aider l’entreprise à déterminer un niveau de tolérance au risque pour le cas d’utilisation ci-dessus, entre autres.
@@ -56,12 +56,13 @@ La section suivante contient des exemples de questions qui peuvent aider l’ent
 
 Cette section présente trois catégories de questions : Impact sur les pertes, Probabilité de perte et Coûts d’atténuation. Quand les équipes commerciales et informatiques s’associent pour réfléchir à chacun de ces thèmes, la décision de consacrer des efforts à la gestion des risques et à la tolérance globale à un risque particulier est plus facile à prendre.
 
-**Impact sur les pertes :** Questions visant à déterminer l'impact d'un risque. Il est souvent difficile (voire impossible) de répondre à ce type de questions. Il est préférable de quantifier l'impact, mais parfois la conversation seule suffit à identifier la tolérance. Des fourchettes sont également acceptables, surtout si elles incluent les hypothèses qui les ont définies.
+**Impact sur les pertes :** Questions visant à déterminer l'impact d'un risque. Il peut être difficile de répondre à ces questions. Il est préférable de quantifier l'impact, mais parfois la conversation seule suffit à identifier la tolérance. Des fourchettes sont également acceptables, surtout si elles incluent les hypothèses qui les ont définies.
 
-- Ce risque enfreint-il les obligations de conformité de tiers ?
-- Ce risque enfreint-il les stratégies internes de l'entreprise ?
+- Ce risque peut-il enfreindre les obligations de conformité de tiers ?
+- Ce risque peut-il enfreindre les stratégies internes de l’entreprise ?
+- Ce risque peut-il entraîner un décès, la perte d’un membre ou une perte de propriété ?
 - Ce risque pourrait-il coûter des clients ou des parts de marché ? Si oui, ce coût peut-il être quantifié ?
-- Ce risque pourrait-il nuire à l'expérience client ? Cette expérience peut-elle affecter les ventes ou les recettes ?
+- Ce risque pourrait-il nuire à l'expérience client ? Ces expériences peuvent-elles affecter les ventes ou les recettes ?
 - Ce risque pourrait-il engager une nouvelle responsabilité juridique ? Si oui, existe-t-il un précédent en matière d'attribution de dommages-intérêts dans ce genre de cas ?
 - Ce risque pourrait-il entraîner une interruption d'activité pour l'entreprise ? Si oui, pendant combien de temps l'activité serait-elle interrompue ?
 - Ce risque pourrait-il ralentir les activités de l'entreprise ? Si oui, dans quelle mesure et pendant combien de temps ?
@@ -74,7 +75,7 @@ Ces questions de base soulèveront beaucoup d'autres interrogations. Après un d
 
 **Coûts de remédiation des risques :** Questions visant à déterminer le coût de la suppression ou de la minimisation du risque. Ces questions peuvent être assez directes, surtout lorsqu'elles sont représentées dans une fourchette.
 
-- Existe-t-il une solution claire ? Combien coûte-t-elle ?
+- Existe-t-il une solution claire, et quel est son coût ?
 - Existe-t-il des options permettant d’empêcher ou de minimiser ce risque ? Quelle est la fourchette de coûts de ces solutions ?
 - Comment l'entreprise doit-elle s'y prendre pour choisir la solution la plus efficace et la plus claire ?
 - Comment l'entreprise doit-elle s'y prendre pour valider les coûts ?

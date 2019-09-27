@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Raison de Cost Management dans le cadre de la gouvernance du cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be1d4456ac8924c87241089c637fa3aacc38fb47
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031637"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220963"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Mesures, indicateurs et tolérance au risque de Cost Management
 
-Cet article a pour objectif de vous aider à quantifier la tolérance au risque de l’entreprise en lien avec Cost Management. La définition de mesures et d’indicateurs vous aide à créer une étude de rentabilité pour investir dans la maturité de la discipline Cost Management.
+Cet article vous aide à quantifier la tolérance au risque de l’entreprise en lien avec Cost Management. La définition de mesures et d’indicateurs vous aide à créer une étude de rentabilité pour investir dans la maturité de la discipline Cost Management.
 
 ## <a name="metrics"></a>Mesures
 

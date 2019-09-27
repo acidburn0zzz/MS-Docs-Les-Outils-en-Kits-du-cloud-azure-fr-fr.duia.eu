@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Risques métier et motivations associés à Gestion des coûts
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031842"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223606"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Risques métier et motivations associés à Gestion des coûts
 
@@ -37,9 +37,9 @@ La discipline Gestion des coûts vise à lever les principaux risques métier li
 Les risques diffèrent en fonction de l’organisation, mais ceux liés aux coûts et présentés ci-dessous peuvent vous servir à initier des discussions au sein de votre équipe de gouvernance cloud :
 
 - **Contrôle du budget :** Si vous ne contrôlez pas votre budget, vous risquez d’engager des dépenses excessives auprès d’un fournisseur de cloud.
-- **Perte d’utilisation :** Les achats ou engagements préalables qui ne sont pas intégralement utilisés constituent des investissements perdus.
+- **Perte d’utilisation :** Les achats ou engagements préalables qui ne sont pas intégralement utilisés peuvent constituer des investissements perdus.
 - **Anomalies de dépenses :** Les pics inattendus (dans les deux directions) peuvent être le signe d’une mauvaise utilisation.
-- **Ressources surapprovisionnées :** Lorsque les ressources sont déployées dans une configuration qui dépasse les besoins d’une application ou d’une machine virtuelle, elles peuvent augmenter les coûts et générer des pertes.
+- **Ressources surapprovisionnées :** Quand les ressources sont déployées dans une configuration qui dépasse les besoins d’une application ou d’une machine virtuelle, elles peuvent générer des pertes.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

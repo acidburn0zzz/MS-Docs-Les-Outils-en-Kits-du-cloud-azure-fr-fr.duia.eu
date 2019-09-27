@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Déclarations de stratégie de cohérence des ressources
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031118"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221984"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Déclarations de stratégie de cohérence des ressources
 
@@ -74,8 +74,8 @@ Les exemples d’instructions de stratégie suivants traitent des risques commer
 
 **Instruction de stratégie :** les stratégies suivantes seront implémentées :
 
-- Les outils de gouvernance doivent vérifier que toutes les ressources associés aux applications critiques ou aux données protégées sont incluses dans la surveillance pour l’optimisation et l’épuisement des ressources.
-- Les outils de gouvernance doivent valider que le niveau approprié de données de journalisation est collecté pour toutes les applications critiques ou données protégées.
+- Les outils de gouvernance doivent vérifier que la supervision de l’épuisement, de la sécurité, de la conformité et de l’optimisation des ressources porte sur l’ensemble des ressources.
+- Les outils de gouvernance doivent vérifier que le niveau approprié de données de journalisation est collecté pour toutes les applications et données.
 
 **Options de conception potentielles** : [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) est le service de surveillance par défaut dans Azure, et une surveillance cohérente peut être appliquée via [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints) lors du déploiement de ressources.
 
@@ -85,7 +85,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques commer
 
 **Instruction de stratégie :** Toutes les applications stratégiques et données protégées doivent s'accompagner de solutions de sauvegarde et de récupération mises en œuvre pour limiter l'impact des pannes et défaillances système sur l'entreprise.
 
-**Options de conception potentielles** : Le service [Azure Site Recovery] propose des fonctionnalités de sauvegarde, de récupération et de réplication conçues pour limiter la durée des pannes dans des scénarios BCDR (continuité d'activité et reprise d'activité).
+**Options de conception potentielles** : Le service [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) offre des fonctionnalités de sauvegarde, de reprise d’activité et de réplication qui limitent la durée des pannes dans des scénarios BCDR (continuité de l’activité et reprise d’activité).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

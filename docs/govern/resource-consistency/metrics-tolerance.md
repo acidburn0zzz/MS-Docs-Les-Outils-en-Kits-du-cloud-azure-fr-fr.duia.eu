@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métriques de cohérence des ressources, indicateurs et tolérance au risque
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031552"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222944"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Métriques de cohérence des ressources, indicateurs et tolérance au risque
 
-Cet article vise à vous aider à quantifier la tolérance au risque de l’activité en lien avec la cohérence des ressources. La définition de métriques et d’indicateurs vous aide à créer une étude de rentabilité pour investir dans la maturation de la discipline Cohérence des ressources.
+Cet article vous aide à quantifier la tolérance au risque de l’activité en lien avec la cohérence des ressources. La définition de métriques et d’indicateurs vous aide à créer une étude de rentabilité pour investir dans la maturation de la discipline Cohérence des ressources.
 
 ## <a name="metrics"></a>Mesures
 
@@ -33,7 +33,7 @@ Chaque organisation a ses propres scénarios opérationnels, mais les éléments
 - **Âge de la ressource.** Temps écoulé depuis que la ressource a été déployée ou modifiée pour la dernière fois.
 - **Machines virtuelles en état critique.** Nombre de machines virtuelles déployées où un ou plusieurs problèmes critiques ont été détectés, qui doivent être corrigés afin de restaurer la fonctionnalité normale attendue.
 - **Alertes par gravité.** Nombre total d’alertes sur une ressource déployée, décomposées selon la gravité.
-- **Liens de sous-réseau défectueux.** Nombre de ressources confrontées à des problèmes de connectivité réseau.
+- **Liens réseau défectueux.** Nombre de ressources confrontées à des problèmes de connectivité réseau.
 - **Points de terminaison de service défectueux.** Nombre de problèmes avec des points de terminaison réseau externes.
 - **Incidents d’intégrité de service du fournisseur de cloud.** Nombre d’interruptions ou d’incidents liés aux performances causés par le fournisseur de cloud.
 - **Contrats de niveau de service.** Ce contrat peut inclure à la fois les engagements de Microsoft en matière de fonctionnement et de connectivité des services Azure, mais aussi les engagements pris par l’entreprise auprès de ses clients internes et externes.

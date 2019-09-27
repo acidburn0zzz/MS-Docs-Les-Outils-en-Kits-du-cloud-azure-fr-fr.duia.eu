@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025036"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221454"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Évaluer facilement vos charges de travail locales en vue d’une migration vers Azure
 
@@ -242,8 +242,8 @@ Configurez un nouveau projet Azure Migrate comme suit.
 
 6. Dans **Détails du projet*, spécifiez le nom du projet ainsi que la zone géographique où vous souhaitez le créer. Les régions États-Unis, Asie, Europe, Australie, Royaume-Uni, Canada, Inde et Japon sont prises en charge.
 
-    * La géographie du projet sert uniquement à stocker les métadonnées rassemblées à partir des machines virtuelles locales.
-    * Vous pouvez sélectionner n’importe quelle région cible quand vous exécutez une migration.
+    - La géographie du projet sert uniquement à stocker les métadonnées rassemblées à partir des machines virtuelles locales.
+    - Vous pouvez sélectionner n’importe quelle région cible quand vous exécutez une migration.
 
 7. Cliquez sur **Suivant**.
 
@@ -312,14 +312,13 @@ Ensuite, Contoso exécute le collecteur pour découvrir les machines virtuelles.
 
     ![Azure Migrate Collector - Vérifier la configuration requise](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. Connectez-vous à votre compte **Azure** et sélectionnez l’abonnement et le projet de migration que vous avez créé précédemment. Entrez également un nom pour l’**appliance** afin de pouvoir l’identifier dans le portail Azure. 
-7. Dans **Spécifier les détails vCenter Server**, Contoso spécifie le nom (FQDN) ou l’adresse IP de l’instance vCenter Server, ainsi que les informations d’identification en lecture seule utilisées pour la découverte.
-8. Contoso sélectionne une étendue pour la découverte des machines virtuelles. Le collecteur peut uniquement découvrir les machines virtuelles situées dans l’étendue spécifiée. L’étendue peut être définie au niveau d’un dossier, d’un centre de données ou d’un cluster. 
+5. Connectez-vous à votre compte **Azure** et sélectionnez l’abonnement et le projet de migration que vous avez créé précédemment. Entrez également un nom pour l’**appliance** pour pouvoir l’identifier dans le portail Azure.
+6. Dans **Spécifier les détails vCenter Server**, Contoso spécifie le nom (FQDN) ou l’adresse IP de l’instance vCenter Server, ainsi que les informations d’identification en lecture seule utilisées pour la découverte.
+7. Contoso sélectionne une étendue pour la découverte des machines virtuelles. Le collecteur peut uniquement découvrir les machines virtuelles situées dans l’étendue spécifiée. L’étendue peut être définie au niveau d’un dossier, d’un centre de données ou d’un cluster.
 
     ![Spécifier les détails vCenter Server](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-
-8. Le collecteur commence à découvrir et à collecter des informations sur l’environnement Contoso. 
+8. Le collecteur commence à découvrir et à collecter des informations sur l’environnement Contoso.
 
     ![Afficher la progression de la collecte](./media/contoso-migration-assessment/migrate-disccovery.png)
 
@@ -349,8 +348,8 @@ Avant de modifier les machines virtuelles, Contoso fait une copie des machines e
 
 1. Dans **Machines**, Contoso sélectionne la machine. Dans la colonne **Dépendances**, Contoso sélectionne **Installation requise**.
 2. Dans le volet **Découvrir des machines**, Contoso :
-    - Télécharge Microsoft Monitoring Agent (MMA) et Dependency Agent pour chaque machine virtuelle Windows
-    - Télécharge Microsoft Monitoring Agent (MMA) et Dependency Agent pour chaque machine virtuelle Linux
+    - Télécharge Microsoft Monitoring Agent (MMA) et Microsoft Dependency Agent pour chaque machine virtuelle Windows.
+    - Télécharge Microsoft Monitoring Agent (MMA) et Dependency Agent pour chaque machine virtuelle Linux.
 3. Contoso copie à présent l’ID et la clé de l’espace de travail. Contoso a besoin de l’ID et de la clé de l’espace de travail pour installer Microsoft Monitoring Agent.
 
     ![Téléchargement de l’agent](./media/contoso-migration-assessment/download-agents.png)
@@ -389,9 +388,11 @@ Contoso exécute l’installation sur chaque machine virtuelle.
 1. Contoso installe la bibliothèque ctypes Python sur chaque machine virtuelle à l’aide de la commande suivante :
 
     `sudo apt-get install python-ctypeslib`
+
 2. Contoso doit exécuter la commande pour installer Microsoft Monitoring Agent comme agent racine. Pour qu’il devienne racine, Contoso doit exécuter la commande suivante et entrer le mot de passe racine :
 
     `sudo -i`
+
 3. Contoso installe Microsoft Monitoring Agent :
     - Contoso entre l’ID et la clé de l’espace de travail dans la commande.
     - Ces commandes sont de type 64 bits.
@@ -404,11 +405,11 @@ Contoso exécute l’installation sur chaque machine virtuelle.
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Installer Dependency Agent sur des machines virtuelles Linux
 
-Une fois Microsoft Monitoring Agent installé, Contoso installe Dependency Agent sur les machines virtuelles Linux :
+Une fois Microsoft Monitoring Agent installé, Contoso installe Dependency Agent sur les machines virtuelles Linux :
 
 1. Dependency Agent est installé sur les ordinateurs Linux avec InstallDependencyAgent-Linux64.bin, un script shell comprenant un fichier binaire à extraction automatique. Contoso exécute le fichier à l’aide de sh ou y ajoute des autorisations d’exécution.
 
-2. Contoso installe l’instance de Dependency Agent pour Linux en tant que racine :
+2. Contoso installe l’instance de Dependency Agent pour Linux en tant que racine :
 
     ```console
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s

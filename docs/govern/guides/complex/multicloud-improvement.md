@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide pour les grandes entreprises : Amélioration multicloud'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6f015fcc7a0cb4000502d90ff971341fd6d26ca5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031969"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220616"
 ---
 # <a name="large-enterprise-guide-multicloud-improvement"></a>Guide pour les grandes entreprises : Amélioration multicloud
 
 ## <a name="advancing-the-narrative"></a>Développement du scénario
 
-Microsoft est conscient du fait que les clients adoptent plusieurs clouds pour des raisons bien spécifiques. C’est également le cas de l’entreprise fictive dont nous allons parler dans ce guide. En parallèle du parcours d’adoption d’Azure, la réussite de l’entreprise l’a amenée à acquérir une autre entreprise, petite mais complémentaire. Cette entreprise exécute toutes ses opérations informatiques sur un fournisseur de cloud différent.
+Microsoft est conscient du fait que les clients peuvent adopter plusieurs clouds pour des raisons bien spécifiques. C’est également le cas de l’entreprise fictive dont nous allons parler dans ce guide. Parallèlement au parcours d’adoption d’Azure, la réussite de l’entreprise l’a amenée à acquérir une autre entreprise, petite mais complémentaire. Cette entreprise exécute toutes ses opérations informatiques sur un fournisseur de cloud différent.
 
 Cet article décrit les changements observés suite à l’intégration de la nouvelle organisation. Pour ce scénario, nous partons du principe que cette entreprise a atteint toutes les itérations de gouvernance décrites dans ce guide de gouvernance.
 
@@ -64,23 +64,23 @@ Cette section de l’article améliore la conception du MVP de gouvernance, afin
 
 1. Connectez les réseaux. Cette tâche est exécutée par les équipes responsables de la sécurité informatique et de la mise en réseau, et prise en charge par la gouvernance.
     1. L’ajout d’une connexion depuis un fournisseur MPLS ou un fournisseur de ligne allouée au nouveau cloud intégrera les réseaux. L’ajout de configurations de pare-feu et de tables de routage contrôlera l’accès et le trafic entre les environnements.
-1. Consolidez les fournisseurs d’identité. En fonction des charges de travail hébergées dans le cloud secondaire, diverses options sont proposées pour consolider le fournisseur d’identité. Voici quelques exemples :
+2. Consolidez les fournisseurs d’identité. En fonction des charges de travail hébergées dans le cloud secondaire, diverses options sont proposées pour consolider le fournisseur d’identité. Voici quelques exemples :
     1. Pour les applications qui utilisent l’authentification OAuth2, les utilisateurs Active Directory dans le cloud secondaire peuvent simplement être répliqués vers le locataire Azure AD existant.
-    1. De l’autre côté, la fédération entre les deux fournisseurs d’identité locaux permettrait aux utilisateurs des nouveaux domaines Active Directory d’être répliqués sur Azure.
-1. Ajoutez des ressources à Azure Site Recovery.
+    2. De l’autre côté, la fédération entre les deux fournisseurs d’identité locaux permettrait aux utilisateurs des nouveaux domaines Active Directory d’être répliqués sur Azure.
+3. Ajoutez des ressources à Azure Site Recovery.
     1. Dès le départ, Azure Site Recovery a été conçu en tant qu’outil hybride et multicloud.
-    1. Les machines virtuelles dans le cloud secondaire peuvent être protégées par les mêmes processus Azure Site Recovery utilisés pour protéger les ressources locales.
-1. Ajoutez des ressources à Azure Cost Management.
+    2. Les machines virtuelles dans le cloud secondaire peuvent être protégées par les mêmes processus Azure Site Recovery utilisés pour protéger les ressources locales.
+4. Ajoutez des ressources à Azure Cost Management.
     1. Dès le départ, Azure Cost Management a été conçu en tant qu’outil multicloud.
-    1. Les machines virtuelles dans le cloud secondaire peuvent être compatibles avec Azure Cost Management pour certains fournisseurs cloud. Des frais supplémentaires peuvent s’appliquer.
-1. Ajoutez des ressources à Azure Monitor.
+    2. Les machines virtuelles dans le cloud secondaire peuvent être compatibles avec Azure Cost Management pour certains fournisseurs cloud. Des frais supplémentaires peuvent s’appliquer.
+5. Ajoutez des ressources à Azure Monitor.
     1. Dès le départ, Azure Monitor a été conçu en tant qu’outil cloud hybride.
-    1. Les machines virtuelles dans le cloud secondaire peuvent être compatibles avec les agents Azure Monitor, ce qui leur permet d’être incluses dans Azure Monitor pour la surveillance opérationnelle.
-1. Outils de mise en œuvre de la gouvernance.
+    2. Les machines virtuelles dans le cloud secondaire peuvent être compatibles avec les agents Azure Monitor, ce qui leur permet d’être incluses dans Azure Monitor pour la surveillance opérationnelle.
+6. Outils de mise en œuvre de la gouvernance.
     1. La mise en œuvre de la gouvernance est spécifique au cloud.
-    1. À l’inverse, les stratégies d’entreprise établies dans le guide de gouvernance ne le sont pas. Bien que l’implémentation puisse varier d’un cloud à l’autre, les instructions de stratégie peuvent être appliquées au fournisseur secondaire.
+    2. À l’inverse, les stratégies d’entreprise établies dans le guide de gouvernance ne le sont pas. Bien que l’implémentation puisse varier d’un cloud à l’autre, les instructions de stratégie peuvent être appliquées au fournisseur secondaire.
 
-Au fur et à mesure du développement de l’adoption multicloud, la conception de la gouvernance ci-dessus continuera de mûrir.
+L’adoption multicloud doit se limiter au périmètre nécessaire, défini selon les besoins techniques ou des exigences métier spécifiques. Plus elle s’étend, plus la complexité et les risques de sécurité s’alourdissent.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

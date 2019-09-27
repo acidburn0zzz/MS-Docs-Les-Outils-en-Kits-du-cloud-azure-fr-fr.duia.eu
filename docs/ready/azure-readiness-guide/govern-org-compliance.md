@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025254"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224277"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Gouvernance, sécurité et conformité dans Azure
 
@@ -69,7 +69,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 1. Accédez à **Blueprints - Définitions de blueprints**.
 1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
 1. Passez en revue la définition de blueprint et sélectionnez **Publier le blueprint**.
-1. Fournissez une **Version** (par exemple, 1.0) et toutes les **Notes de changement**, puis sélectionnez **Publier**.
+1. Spécifiez une **Version** (par exemple, _1.0_) et les **Notes de changement** éventuelles, puis sélectionnez **Publier**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -80,7 +80,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 1. Accédez à [Blueprints - Définitions de blueprints](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
 1. Passez en revue la définition de blueprint et sélectionnez **Publier le blueprint**.
-1. Fournissez une **Version** (par exemple, 1.0) et toutes les **Notes de changement**, puis sélectionnez **Publier**.
+1. Spécifiez une **Version** (par exemple, _1.0_) et les **Notes de changement** éventuelles, puis sélectionnez **Publier**.
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Pour plus d'informations, consultez les rubriques suivantes :
 
 - [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Framework d’adoption du cloud : Guide de décision pour la cohérence des ressources](../../decision-guides/resource-consistency/index.md)
-- [Exemples de blueprints basés sur des normes](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
+- [Exemples de blueprints basés sur des normes](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 

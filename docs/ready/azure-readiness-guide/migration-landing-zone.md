@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025221"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223926"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Déployer une zone d’accueil de migration
 
@@ -33,7 +33,7 @@ L’image suivante montre le blueprint de zone d’accueil de migration du Frame
 ![Alignement du blueprint](../../_images/ready/blueprint-overview.png)
 
 - La lettre A se trouve à l’intérieur d’une ligne courbe qui marque l’étendue de ce blueprint. Cette étendue vise à indiquer que ce blueprint couvre une complexité architecturale limitée, mais repose sur des exigences de conformité relativement moyennes.
-- Les clients qui ont un degré élevé de complexité et des exigences strictes en matière de conformité sont susceptibles d’être mieux servis en recourant au blueprint étendu d’un partenaire ou à l’un des [exemples de blueprints basés sur des normes](https://docs.microsoft.com/azure/governance/blueprints/samples/).
+- Les clients qui ont un degré élevé de complexité et des exigences strictes en matière de conformité sont susceptibles d’être mieux servis en recourant au blueprint étendu d’un partenaire ou à l’un des [exemples de blueprints basés sur des normes](https://docs.microsoft.com/azure/governance/blueprints/samples).
 - La plupart des besoins des clients se situent entre ces deux extrêmes. La lettre B représente le processus décrit dans les articles portant sur les [considérations relatives à la zone d’accueil](../considerations/index.md). Pour les clients dans cet espace, vous pouvez utiliser les guides de décision qui se trouvent dans ces articles pour identifier les nœuds à ajouter au blueprint de zone d’accueil de migration du Framework d’adoption du cloud. Cette approche vous permet de personnaliser le blueprint en fonction de vos besoins.
 
 ## <a name="use-this-blueprint"></a>Utilisation du blueprint
@@ -65,7 +65,7 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 |Conception de l’abonnement|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md)|
 |Groupes d’administration|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md)         |
 |Groupes de ressources|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md)         |
-|Données|N/A|[Choix de la bonne option SQL Server dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|Données|N/A|[Choix de la bonne option SQL Server dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) et [instructions relatives aux magasins de données Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Stockage|N/A|[Conseils relatifs à Stockage Azure](../considerations/storage-guidance.md)         |
 |Standards de nommage et de catégorisation|N/A|[Meilleures pratiques en matière de nommage et de catégorisation](../considerations/naming-and-tagging.md)         |
 |la gestion des coûts ;|N/A|[Coûts de suivi](../azure-best-practices/track-costs.md)|
@@ -73,7 +73,7 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Personnaliser ou déployer une zone d’accueil à partir de ce blueprint
 
-Découvrez plus d’informations et téléchargez un exemple de référence du blueprint de zone d’accueil de migration du Framework d’adoption du cloud pour le déployer ou le personnaliser à partir des [exemples de blueprints Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/index).
+Découvrez plus d’informations et téléchargez un exemple de référence du blueprint de zone d’accueil de migration du Framework d’adoption du cloud pour le déployer ou le personnaliser à partir des [exemples de blueprints Azure](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
 Les exemples de blueprints sont également disponibles dans le portail. Pour plus d’informations sur le déploiement d’un blueprint, consultez la page [Blueprints Azure](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 

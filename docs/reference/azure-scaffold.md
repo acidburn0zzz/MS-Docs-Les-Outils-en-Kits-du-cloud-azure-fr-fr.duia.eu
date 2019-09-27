@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b65f0ea129888440fbfa7598a6bc7790ad91b177
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031177"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223990"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
 
@@ -168,7 +168,7 @@ Quand vous vous lancez dans le cloud public, vous devez en premier lieu vous pos
 
 Pour sécuriser l’accès à vos ressources, vous devez configurer d’abord votre fournisseur d’identité, puis les rôles et l’accès. Azure Active Directory (Azure AD), connecté à votre instance Active Directory locale, est la pierre angulaire d’Azure Identity. Ceci dit, Azure AD n’est *pas* la même chose qu’Active Directory local et il est important de comprendre ce qu’est un locataire Azure AD et le rapport avec votre abonnement Azure. Consultez les [informations](../govern/resource-consistency/resource-access-management.md) disponibles pour acquérir des bases solides sur Azure AD et Active Directory local. Pour connecter et synchroniser votre instance Active Directory à Azure AD, installez et configurez l’[outil Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) localement.
 
-![Diagramme de l’architecture](../_images/reference/ad-architecture.png)
+![Schéma de l’architecture AD](../_images/reference/ad-architecture.png)
 
 Quand Azure a été initialement lancé, les contrôles d’accès à un abonnement étaient élémentaires : Administrateur ou coadministrateur. L’accès à un abonnement dans le modèle classique impliquait l’accès à toutes les ressources dans le portail. Ce manque de contrôle précis a conduit à une prolifération d’abonnements afin de fournir un niveau de contrôle d’accès raisonnable pour une inscription Azure. Cette prolifération d’abonnements n’est plus nécessaire. Le contrôle d’accès en fonction du rôle (RBAC) vous permet d’affecter les utilisateurs à des rôles standard qui offrent un accès courant, tel que « propriétaire », « collaborateur » ou « lecteur ». Vous pouvez même créer vos propres rôles.
 

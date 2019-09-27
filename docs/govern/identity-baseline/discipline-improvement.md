@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Amélioration de la discipline Base de référence des identités
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032483"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220489"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Amélioration de la discipline Base de référence des identités
 
@@ -46,7 +46,7 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 - Définissez les rôles et attributions qui régissent la gestion des identités et des accès dans le cloud.
 - Définissez vos groupes locaux et mappez-les aux rôles cloud correspondants.
 - Fournisseurs d’identité d’inventaire (y compris les identités pilotées par base de données utilisées par des applications personnalisées).
-- Examinez les options pour la consolidation ou l’intégration de fournisseurs d’identité où une duplication existe pour simplifier la solution d’identité globale.
+- Consolidez et intégrez les fournisseurs d’identité où une duplication existe pour simplifier la solution d’identité globale et réduire le risque.
 - Évaluez la compatibilité hybride de fournisseurs d’identité existants.
 - Pour les fournisseurs d’identité qui ne sont pas hybride compatibles, évaluez les options de consolidation ou de remplacement.
 
@@ -98,7 +98,7 @@ La migration est un processus incrémentiel qui porte essentiellement sur le dé
 - Validez et affinez votre [stratégie d’identité hybride](../../decision-guides/identity/index.md).
 - Assurez-vous que chaque application ou charge de travail reste alignée avec la stratégie d’identité avant la mise en production.
 - Validez le fait que l’authentification unique (SSO) et l’authentification unique transparente fonctionnent comme prévu pour vos applications.
-- Supprimez des magasins d’identités alternatifs pour en réduire le nombre lorsque cela est possible.
+- Réduisez le nombre de magasins d’identités alternatifs ou supprimez-les.
 - Examinez la nécessité de disposer de magasins d’identités dans l’application ou dans la base de données. Des identités ne provenant pas d’un fournisseur d’identité approprié (interne ou tiers) peuvent constituer une risque pour l’application et les utilisateurs.
 - Activez l’accès conditionnel pour [applications fédérées locales](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
 - Distribuez l’identité dans les régions globales de plusieurs hubs avec une synchronisation entre régions.
@@ -120,6 +120,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 **Activités potentielles :**
 
 - Effectuez des audits périodiques des stratégies d’identité et des pratiques d’adhésion.
+- Veillez à ce que l’authentification multifacteur et la détection de connexion anormale soient toujours activées pour les comptes d’utilisateur sensibles (PDG, directeur financier, vice-président, etc.).
 - Recherchez régulièrement des acteurs malveillants et des violations de données, en particulier en lien à des fraudes en matière d’identité, telles que des prises de contrôle éventuelles de comptes d’administrateur.
 - Configurez un outil de surveillance et de génération de rapports.
 - Envisagez une intégration plus étroite avec les systèmes de sécurité et de prévention des fraudes.

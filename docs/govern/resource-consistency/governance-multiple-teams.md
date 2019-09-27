@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instructions pour configurer les contrôles de gouvernance Azure pour plusieurs équipes, plusieurs charges de travail et plusieurs environnements.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d9b1dddff5cadd9219e6dffad87690145214b162
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d6a21e852ff44a9036f2fbb9d0d0e60a0f4c930f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031768"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223955"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Conception de gouvernance pour plusieurs équipes
 
@@ -26,16 +26,17 @@ Les conditions requises sont :
   - La personne de votre organisation qui détient la propriété des **abonnements**.
   - La personne de votre organisation responsable des **ressources d’infrastructure partagée** utilisées pour connecter votre réseau local à un réseau virtuel Azure.
   - Deux personnes de votre organisation responsables de la gestion d’une **charge de travail**.
-- Prise en charge de plusieurs **environnements**. Un environnement est un regroupement logique de ressources, telles que des machines virtuelles, des réseaux virtuels et des services de routage de trafic réseau. Ces groupes de ressources ont des exigences similaires en matière de sécurité et de gestion, et sont généralement utilisés dans un but bien spécifique, à des fins de test ou de production par exemple. Dans cet exemple, l’exigence porte sur trois environnements :
+- Prise en charge de plusieurs **environnements**. Un environnement est un regroupement logique de ressources, telles que des machines virtuelles, des réseaux virtuels et des services de routage de trafic réseau. Ces groupes de ressources ont des exigences similaires en matière de sécurité et de gestion, et sont généralement utilisés dans un but bien spécifique, à des fins de test ou de production par exemple. Dans cet exemple, l’exigence porte sur quatre environnements :
   - Un **environnement d’infrastructure partagée** qui inclut les ressources partagées par des charges de travail d’autres environnements. Par exemple, un réseau virtuel ayant un sous-réseau de passerelle qui assure la connectivité au niveau local.
   - Un **environnement de production** associé aux stratégies de sécurité les plus restrictives. Peut inclure des charges de travail internes ou externes.
-  - Un **environnement de développement** pour les tâches de démonstration et de test. Cet environnement comporte des stratégies de sécurité, de conformité et de coût qui diffèrent de celles de l’environnement de production.
+  - Un **environnement hors production** pour le travail de développement et de test. Cet environnement comporte des stratégies de sécurité, de conformité et de coût qui diffèrent de celles de l’environnement de production. Dans Azure, il prend la forme d’un abonnement Enterprise Dev/Test.
+  - Un **environnement de bac à sable** pour la preuve de concept et à des fins de formation. Cet environnement est généralement attribué par employé (parmi ceux participant à des activités de développement). Il inclut des contrôles procéduraux et de sécurité opérationnels stricts pour empêcher que des données d’entreprise y soient accessibles. Dans Azure, il prend la forme d’abonnements Visual Studio. Ces abonnements ne doivent _pas_ être liés au service Azure Active Directory de l’entreprise.
 - Un **modèle d’autorisations de privilège minimal** dans lequel les utilisateurs ne disposent d’aucune autorisation par défaut. Le modèle doit prendre en charge les éléments suivants :
-  - Un seul utilisateur approuvé dans l’étendue de l’abonnement, qui dispose de l’autorisation d’attribuer des droits d’accès aux ressources.
-  - Chaque propriétaire de charge de travail se voit refuser l’accès aux ressources par défaut. Les droits d’accès aux ressources sont accordés explicitement par le seul utilisateur approuvé dans l’étendue de l’abonnement.
-  - Accès à la gestion des ressources d’infrastructure partagée limité au propriétaire de l’infrastructure partagée.
-  - Accès à la gestion de chaque charge de travail limité au propriétaire de la charge de travail.
-  - L’entreprise ne souhaite pas avoir à gérer les rôles de façon indépendante dans chacun des trois environnements et a donc besoin d’utiliser seulement des [rôles intégrés](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) disponibles dans le contrôle d’accès en fonction du rôle (RBAC) d’Azure. Si l’entreprise utilisait des rôles RBAC personnalisés, un traitement supplémentaire serait nécessaire afin de synchroniser les rôles personnalisés pour les trois environnements.
+  - Un seul utilisateur approuvé (compte s’approchant d’un compte de service) dans l’étendue de l’abonnement, qui dispose de l’autorisation d’attribuer des droits d’accès aux ressources.
+  - Chaque propriétaire de charge de travail se voit refuser l’accès aux ressources par défaut. Les droits d’accès aux ressources sont accordés explicitement par le seul utilisateur approuvé dans l’étendue du groupe de ressources.
+  - Accès à la gestion des ressources d’infrastructure partagée limité aux propriétaires de l’infrastructure partagée.
+  - Accès à la gestion de chaque charge de travail limité au propriétaire de la charge de travail (en production) et niveaux de contrôle croissants suivant l’évolution du développement (développement, test, démonstration, puis production).
+  - L’entreprise ne souhaite pas avoir à gérer les rôles de façon indépendante dans chacun des trois environnements principaux et a donc besoin d’utiliser seulement des [rôles intégrés](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) disponibles dans le contrôle d’accès en fonction du rôle (RBAC) d’Azure. Si l’entreprise a réellement besoin de rôles RBAC personnalisés, des processus supplémentaires seront nécessaires pour synchroniser les rôles personnalisés pour les trois environnements.
 - Suivi des coûts par nom de propriétaire de la charge de travail et/ou par environnement.
 
 ## <a name="identity-management"></a>Gestion des identités
@@ -54,7 +55,7 @@ Lorsque votre organisation s’est inscrite pour bénéficier d’un compte Azur
 Les identités utilisateur du propriétaire du compte Azure et de l’administrateur global Azure AD sont stockées dans un système d’identité hautement sécurisé géré par Microsoft. Le propriétaire du compte Azure est autorisé à créer, mettre à jour et supprimer des abonnements. Bien que l’administrateur global Azure AD soit autorisé à effectuer de nombreuses actions dans Azure AD, vous allez ici vous concentrer uniquement sur la création et la suppression d’identités d’utilisateur.
 
 > [!NOTE]
-> Votre organisation possède peut-être déjà un locataire Azure AD si une licence Office 365 ou Intune est associée à votre compte.
+> Votre organisation possède peut-être déjà un locataire Azure AD si une licence Office 365, Intune ou Dynamics est associée à votre compte.
 
 Le propriétaire du compte Azure possède l’autorisation de créer, mettre à jour et supprimer des abonnements :
 
@@ -134,11 +135,11 @@ Si vous comparez chaque exemple aux exigences, vous pouvez voir que les deux exe
 
 Maintenant que vous avez conçu un modèle d’autorisations de privilège minimal, examinez quelques exemples pratiques d’utilisation de ces modèles de gouvernance. Souvenez-vous que vous devez prendre en charge les trois environnements suivants :
 
-1. **Infrastructure partagée :** un seul groupe de ressources partagé par toutes les charges de travail. Il s’agit par exemple des passerelles de réseau, des pare-feu et des services de sécurité.
-2. **Développement :** plusieurs groupes de ressources représentant plusieurs charges de travail prêtes hors production. Ces ressources sont utilisées pour des tâches de démonstration ou de test et d’autres activités de développement. Ces ressources peuvent avoir un modèle de gouvernance plus souple pour renforcer l’agilité des développeurs.
-3. **Production :** plusieurs groupes de ressources représentant plusieurs charges de travail de production. Ces ressources sont utilisées pour héberger les artefacts d’application privés et publics. Ces ressources sont généralement adossées à des modèles de gouvernance et de sécurité plus stricts afin de protéger les ressources, le code d’application et les données contre tout accès non autorisé.
+1. **Infrastructure partagée :** un groupe de ressources partagé par toutes les charges de travail. Il s’agit par exemple des passerelles de réseau, des pare-feu et des services de sécurité.
+2. **Production :** plusieurs groupes de ressources représentant plusieurs charges de travail de production. Ces ressources sont utilisées pour héberger les artefacts d’application privés et publics. Ces ressources sont généralement adossées à des modèles de gouvernance et de sécurité plus stricts afin de protéger les ressources, le code d’application et les données contre tout accès non autorisé.
+3. **Hors production :** plusieurs groupes de ressources représentant plusieurs charges de travail prêtes hors production. Ces ressources sont utilisées à des fins de développement et de test. Elles peuvent avoir un modèle de gouvernance plus souple pour renforcer l’agilité des développeurs. Le niveau de sécurité de ces groupes doit s’accroître à mesure que le processus de développement d’applications évolue vers le stade de la « production ».
 
-Pour chacun de ces trois environnements, vous avez besoin de suivre les données de coût par **propriétaire de charges de travail** et/ou par **environnement**. Autrement dit, vous souhaitez connaître le coût récurrent de **l’infrastructure partagée**, les frais engagés par les personnes intervenant à la fois dans les environnements de **développement** et de **production**, ainsi que le coût global de **développement** et de **production**.
+Pour chacun de ces trois environnements, vous avez besoin de suivre les données de coût par **propriétaire de charges de travail** et/ou par **environnement**. Autrement dit, vous souhaitez connaître le coût récurrent de **l’infrastructure partagée**, les frais engagés par les personnes intervenant à la fois dans les environnements **hors production** et les environnements de **production** ainsi que le coût global des opérations **hors production** et de **production**.
 
 Vous savez déjà que les ressources sont limitées à deux niveaux : **abonnement** et **groupe de ressources**. Il faut donc commencer par déterminer la façon d’organiser les environnements par **abonnement**. Il existe deux possibilités : un abonnement unique ou plusieurs abonnements.
 

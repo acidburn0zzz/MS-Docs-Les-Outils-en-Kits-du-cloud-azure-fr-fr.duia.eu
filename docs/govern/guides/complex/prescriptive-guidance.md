@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 651144a519103c1a35f6a189af88e2f3690ecbfc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031776"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220652"
 ---
 # <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Guide de gouvernance pour les entreprises complexes : Instructions normatives expliquées
 
@@ -59,13 +59,17 @@ La décision sur la conception de l’abonnement à utiliser détermine la faço
 
 ### <a name="resource-consistency"></a>Cohérence des ressources
 
-Les décisions relatives à la cohérence des ressources déterminent les outils, processus et efforts nécessaires pour garantir que les ressources Azure sont déployées, configurées et gérées de manière cohérente au sein d’un abonnement. Dans ce scénario, la **[cohérence hiérarchique](../../../decision-guides/resource-consistency/index.md#hierarchical-consistency)** a été choisie comme modèle de cohérence des ressources principales.
+Les décisions relatives à la cohérence des ressources déterminent les outils, processus et efforts nécessaires pour garantir que les ressources Azure sont déployées, configurées et gérées de manière cohérente au sein d’un abonnement. Dans ce scénario, la **[cohérence de déploiement](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** a été choisie comme modèle de cohérence des ressources principales.
 
-- Des groupes de ressources doivent être créés pour chaque application. Des groupes d’administration doivent être créés pour chaque archétype d’application. La stratégie Azure Policy doit être appliquée à tous les abonnements du groupe d’administration associé.
-- Dans le cadre du processus de déploiement, les modèles Cohérence des ressources doivent être stockés dans le contrôle du code source pour toutes les ressources.
-- Chaque groupe de ressources doit s’aligner sur une charge de travail ou une application spécifique.
-- La hiérarchie du groupe d’administration Azure doit représenter la responsabilité de facturation et la propriété d’application à l’aide des groupes imbriqués.
-- L’implémentation à grande échelle de la stratégie Azure Policy peut dépasser les échéances fixées par l’équipe et ne pas présenter un intérêt tangible pour le moment. Toutefois, une stratégie simple par défaut doit être créée et appliquée à chaque groupe de ressources, afin de faire appliquer les premières instructions de la stratégie de gouvernance cloud. Cette stratégie est censée définir l’implémentation d’exigences précises en matière de gouvernance. Ces implémentations peuvent ensuite être appliquées à toutes les ressources déployées.
+- Les groupes de ressources sont créés pour les applications à l’aide de l’approche par cycle de vie : tout ce qui est créé, géré et mis hors service ensemble doit se trouver dans un même groupe de ressources. Pour plus d’informations sur les groupes de ressources, consultez [cette section](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- La stratégie Azure doit être appliquée à tous les abonnements du groupe d’administration associé.
+- Dans le cadre du processus de déploiement, les modèles Cohérence des ressources Azure doivent être stockés dans le contrôle du code source pour le groupe de ressources.
+- Chaque groupe de ressources est associé à une charge de travail ou à une application spécifique basée sur l’approche par cycle de vie décrit plus haut.
+- Les groupes d’administration Azure permettent de mettre à jour les modèles de gouvernance au fur et à mesure que la stratégie de l’entreprise évolue.
+- La mise en œuvre à grande échelle de la stratégie Azure peut dépasser les échéances fixées par l’équipe et ne pas présenter un intérêt tangible pour le moment. Toutefois, une stratégie simple par défaut doit être créée et appliquée à chaque groupe de gestion pour faire respecter le faible nombre d’instructions portant sur la gouvernance cloud. Cette stratégie est censée définir l’implémentation d’exigences précises en matière de gouvernance. Ces implémentations peuvent ensuite être appliquées à toutes les ressources déployées.
+
+>[!IMPORTANT]
+>Chaque fois qu’une ressource d’un groupe de ressources ne partage plus le même cycle de vie, elle doit être déplacée vers un autre groupe de ressources. Il peut s’agir par exemple des bases de données communes et de composants de mise en réseau. Bien que ces éléments puissent servir l’application en cours de développement, ils peuvent également servir à d’autres fins et doivent donc exister dans d’autres groupes de ressources.
 
 ### <a name="resource-tagging"></a>Identification des ressources
 
@@ -122,7 +126,7 @@ Si l’un des modèles choisis dans ce guide de gouvernance ne correspond pas au
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois ce guide implémenté, chaque équipe d’adoption du cloud peut s’appuyer sur une base de gouvernance solide. L’équipe de gouvernance cloud travaille en parallèle à la mise à jour continue des stratégies d’entreprise et des disciplines de gouvernance.
+Une fois ce guide implémenté, chaque équipe d’adoption du cloud peut s’appuyer sur une base de gouvernance solide. Parallèlement, l’équipe de gouvernance cloud travaille à la mise à jour continue des stratégies d’entreprise et des disciplines de gouvernance.
 
 Les deux équipes utilisent les indicateurs de tolérance pour identifier le prochain groupe d’améliorations nécessaires à la poursuite de la prise en charge de l’adoption du cloud. La prochaine étape pour cette entreprise est l’amélioration incrémentielle de sa base de référence de gouvernance, afin de prendre en charge les applications ayant des exigences d’authentification multifacteur héritée ou de tiers.
 

@@ -4,20 +4,20 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Fonctionnement de la gouvernance des ressources cloud sur Azure
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 083b18c0c8c5edc0dc21a198df32e8934929299c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7f22a4f28d0d84a8847d06d37ad88002a03ecc16
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032185"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221863"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-is-cloud-resource-governance"></a>Qu’est-ce que la gouvernance des ressources cloud ?
+# <a name="cloud-resource-governance"></a>Gouvernance des ressources cloud
 
 Dans l’article [Fonctionnement d’Azure](../../getting-started/what-is-azure.md), vous avez appris qu’Azure est une collection de serveurs et de matériel réseau sur lesquels fonctionnent du matériel virtualisé et des logiciels pour le compte des utilisateurs. Azure garantit l’agilité des services informatiques et de développement d’applications de votre organisation en les aidant à créer, lire, mettre à jour et supprimer des ressources en fonction de leurs besoins.
 

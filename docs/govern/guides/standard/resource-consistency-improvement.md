@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec9263b1e1ab47e2018d86093a5198cdb1ac7b67
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031837"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222240"
 ---
 # <a name="standard-enterprise-guide-improving-resource-consistency"></a>Guide pour les entreprises standard : Amélioration de la cohérence des ressources
 
@@ -84,31 +84,31 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 Cette section de l’article va modifier la conception du MVP de gouvernance, afin d’inclure de nouvelles stratégies Azure ainsi qu’une implémentation d’Azure Cost Management. Ensemble, ces deux modifications de la conception permettront de répondre aux nouvelles instructions de la stratégie d’entreprise.
 
 1. L’équipe responsable des opérations cloud définira des outils de supervision opérationnelle et de correction automatisée. L’équipe de gouvernance cloud prendra en charge ces processus de détection. Ici, l’équipe responsable des opérations cloud a choisi Azure Monitor en tant qu’outil principal pour la supervision des applications stratégiques.
-1. Créez un référentiel dans Azure DevOps pour stocker et gérer les versions de tous les modèles Resource Manager pertinents et des configurations utilisant des scripts.
-1. Implémentation d’Azure Vault :
-    1. Définissez et déployez Azure Vault pour les processus de sauvegarde et de récupération.
-    1. Créez un modèle Resource Manager pour mettre en place un coffre dans chaque abonnement.
-1. Mettez à jour Azure Policy pour tous les abonnements :
+2. Créez un référentiel dans Azure DevOps pour stocker et gérer les versions de tous les modèles Resource Manager pertinents et des configurations utilisant des scripts.
+3. Implémentation d’un coffre Azure Recovery Services :
+    1. Définissez et déployez un coffre Azure Recovery Services pour les processus de sauvegarde et de reprise d’activité.
+    2. Créez un modèle Resource Manager pour mettre en place un coffre dans chaque abonnement.
+4. Mettez à jour Azure Policy pour tous les abonnements :
     1. Auditez et appliquez la classification des données et la criticité sur tous les abonnements, de façon à identifier les abonnements avec des ressources critiques.
-    1. Auditez et appliquez l’utilisation exclusive d’images approuvées.
-1. Implémentation d’Azure Monitor :
-    1. Une fois qu’un abonnement critique est identifié, créez un espace de travail Azure Monitor à l’aide de PowerShell. Il s’agit d’un processus de prédéploiement.
-    1. Pendant les tests de déploiement, l’équipe responsable des opérations cloud déploie les agents nécessaires et teste la détection.
-1. Mettez à jour Azure Policy pour tous les abonnements qui contiennent des applications critiques.
+    2. Auditez et appliquez l’utilisation exclusive d’images approuvées.
+5. Implémentation d’Azure Monitor :
+    1. Une fois qu’une charge de travail stratégique est identifiée, créez un espace de travail Azure Monitor.
+    2. Pendant les tests de déploiement, l’équipe responsable des opérations cloud déploie les agents nécessaires et teste la détection.
+6. Mettez à jour Azure Policy pour tous les abonnements qui contiennent des applications critiques.
     1. Auditez et imposez l’application d’un groupe de sécurité réseau à toutes les cartes réseau et à tous les sous-réseaux. Les équipes responsables de la sécurité informatique et de la mise en réseau définissent le groupe de sécurité réseau.
-    1. Auditez et imposez l’utilisation de sous-réseaux et réseaux virtuels approuvés pour chaque interface réseau.
-    1. Auditez et appliquez la limitation de tables de routage définies par l’utilisateur.
-    1. Auditez et appliquez le déploiement des agents Azure Monitor pour toutes les machines virtuelles.
-    1. Auditez et imposez la présence d’Azure Vault dans l’abonnement.
-1. Configuration du pare-feu :
+    2. Auditez et imposez l’utilisation de sous-réseaux et réseaux virtuels approuvés pour chaque interface réseau.
+    3. Auditez et appliquez la limitation de tables de routage définies par l’utilisateur.
+    4. Auditez et appliquez le déploiement des agents Azure Monitor pour toutes les machines virtuelles.
+    5. Vérifiez et imposez la présence de coffres Azure Recovery Services dans l’abonnement.
+7. Configuration du pare-feu :
     1. Identifiez une configuration de Pare-feu Azure qui répond aux exigences de sécurité. Vous pouvez également identifier une appliance tierce qui est compatible avec Azure.
     1. Créez un modèle Resource Manager pour déployer le pare-feu avec les configurations nécessaires.
-1. Blueprint Azure :
+8. Blueprint Azure :
     1. Créez un blueprint Azure nommé `protected-data`.
-    1. Ajoutez les modèles de pare-feu et Azure Vault au blueprint.
-    1. Ajoutez les nouvelles stratégies pour les abonnements de données protégées.
-    1. Publiez le blueprint dans les groupes d’administration destinés à héberger les applications critiques.
-    1. Appliquez le nouveau blueprint à chaque abonnement affecté, en plus des blueprints existants.
+    2. Ajoutez les modèles de pare-feu et Azure Vault au blueprint.
+    3. Ajoutez les nouvelles stratégies pour les abonnements de données protégées.
+    4. Publiez le blueprint dans les groupes d’administration qui hébergeront des applications stratégiques.
+    5. Appliquez le nouveau blueprint à chaque abonnement affecté, en plus des blueprints existants.
 
 ## <a name="conclusion"></a>Conclusion
 

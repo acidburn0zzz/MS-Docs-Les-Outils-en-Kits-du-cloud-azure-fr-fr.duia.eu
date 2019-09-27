@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Comprendre le risque opérationnel pendant la migration cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 26f110e808039fe17ac4186cdafa9e6a200f6fee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031906"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220399"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,10 +54,10 @@ Lors de la planification du risque professionnel, l’équipe de gouvernance clo
 
 Voici quelques exemples de base de risques professionnels qui peuvent être inclus dans le cadre d’un MVP :
 
-- Toutes les ressources sont exposées au risque d’être arrêtées (à cause d’une erreur, d’une méprise ou d’une maintenance).
+- Toutes les ressources sont exposées à un risque de suppression (à la suite d’une erreur, d’une méprise ou d’une opération de maintenance).
 - Toutes les ressources sont exposées au risque de générer trop de dépenses.
-- Toutes les ressources pourraient être compromises par des mots de passe faibles.
-- Toute ressource dont tous les ports ouverts sont exposés à Internet court un risque de compromission.
+- Toutes les ressources pourraient être compromises par des mots de passe faibles ou des paramètres non sécurisés.
+- Toute ressource dont les ports ouverts sont exposés à Internet court un risque de compromission.
 
 Les exemples ci-dessus sont destinés à établir les risques métier de MVP comme une théorie. La liste réelle sera propre à chaque environnement.
 Une fois les MVP de risque professionnel établis, ils peuvent être convertis en [stratégies](./index.md) afin de corriger chaque risque.

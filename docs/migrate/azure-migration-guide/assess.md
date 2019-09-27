@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022840"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224385"
 ---
 # <a name="assess-the-digital-estate"></a>Évaluer le patrimoine numérique
 
@@ -75,7 +75,7 @@ Azure Migrate utilise Service Map pour améliorer les fonctionnalités de créat
 Pour utiliser la visualisation des dépendances, vous devez télécharger et installer des agents sur chaque machine locale que vous souhaitez analyser.
 
 - [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) doit être installé sur chaque machine.
-- Le programme [Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) doit être installé sur chaque machine.
+- [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) doit être installé sur chaque machine.
 - En outre, si certaines de vos machines sont dépourvues de connexion Internet, vous devez télécharger et installer la passerelle Log Analytics sur ces machines.
 
 <!-- markdownlint-disable MD024 -->
@@ -84,7 +84,6 @@ Pour utiliser la visualisation des dépendances, vous devez télécharger et ins
 
 - [Utilisation de la solution Service Map dans Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate et Service Map : Visualisation des dépendances](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
-
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Scénarios et parties prenantes](#tab/Scenarios)
 

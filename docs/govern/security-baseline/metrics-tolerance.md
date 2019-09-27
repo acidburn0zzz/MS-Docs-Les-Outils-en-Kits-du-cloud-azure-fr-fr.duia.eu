@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métriques, indicateurs et tolérance au risque de la base de référence de sécurité
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2eeab224a9f025b9e93cf407626455e74d69ccd4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b8171839b79ffbe9e3849cf303180d1f1ee049f2
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032492"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222842"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Métriques, indicateurs et tolérance au risque de la base de référence de sécurité
 
-Cet article vise à vous aider à quantifier la tolérance au risque de l’entreprise en lien avec la base de référence de sécurité. La définition de métriques et d’indicateurs vous aide à créer une étude d’opportunité pour investir dans la maturation de la discipline Base de référence de sécurité.
+Cet article vous aide à quantifier la tolérance aux risques métier en lien avec la base de référence de sécurité. La définition de métriques et d’indicateurs vous aide à créer une étude d’opportunité pour investir dans la maturation de la discipline Base de référence de sécurité.
 
 ## <a name="metrics"></a>Mesures
 

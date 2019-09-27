@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024355"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224157"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Déployer une infrastructure de migration
 
@@ -496,7 +496,7 @@ Les réseaux virtuels de la région USA Centre sont résumés dans le tableau s
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>Sous-réseaux du réseau de production de la région USA Centre (VNET-PROD-CUS)
 
-En parallèle au réseau de production dans la région principale USA Est 2, il existe un réseau de production dans la région secondaire USA Centre.
+Parallèlement au réseau de production dans la région principale USA Est 2, il existe un réseau de production dans la région secondaire USA Centre.
 
 **Sous-réseau** | **CIDR** | **Adresses** | **Dans un sous-réseau**
 --- | --- | --- | ---

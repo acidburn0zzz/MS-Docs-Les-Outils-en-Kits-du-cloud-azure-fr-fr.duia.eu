@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 58dcbc125f0f4b65b4f4e4f2b292bbe1a4890ec0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032431"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220554"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence de la sécurité
 
@@ -105,26 +105,26 @@ Les nouvelles meilleures pratiques se répartissent dans deux catégories : Inf
 **Établissement d’un abonnement informatique d’entreprise hub-and-spoke pour centraliser la Base de référence de la sécurité :** Dans cette bonne pratique, la capacité de gouvernance existante est encapsulée par une [topologie hub-and-spoke avec des services partagés](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), accompagnée de quelques ajouts importants apportés par l’équipe de gouvernance cloud.
 
 1. Référentiel Azure DevOps. Créez un référentiel dans Azure DevOps pour stocker et gérer les versions de tous les modèles Azure Resource Manager pertinents et des configurations utilisant des scripts.
-1. Modèle hub-and-spoke :
+2. Modèle hub-and-spoke :
     1. Les instructions de l’architecture de référence de la [topologie hub-and-spoke avec des services partagés](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) peuvent servir à générer des modèles Resource Manager pour les ressources nécessaires dans un hub informatique d’entreprise.
-    1. À l'aide de ces modèles, cette structure peut être reproductible, dans le cadre d’une stratégie de gouvernance centrale.
-    1. En plus de l’architecture de référence actuelle, il est conseillé de créer un modèle de groupe de sécurité réseau, qui capture tout blocage de port ou exigence de mise en liste verte permettant au réseau virtuel d’héberger le pare-feu. Ce groupe de sécurité réseau diffère des groupes précédents, car il est le premier groupe de sécurité réseau à autoriser le trafic public vers un réseau virtuel.
-1. Créez des stratégies Azure. Créez une stratégie nommée `Hub NSG Enforcement` pour appliquer la configuration du groupe de sécurité réseau attribué à un réseau virtuel créé dans cet abonnement. Appliquez les stratégies intégrées pour la configuration des invités comme suit :
+    2. À l'aide de ces modèles, cette structure peut être reproductible, dans le cadre d’une stratégie de gouvernance centrale.
+    3. En plus de l’architecture de référence actuelle, il est conseillé de créer un modèle de groupe de sécurité réseau, qui capture tout blocage de port ou exigence de mise en liste verte permettant au réseau virtuel d’héberger le pare-feu. Ce groupe de sécurité réseau diffère des groupes précédents, car il est le premier groupe de sécurité réseau à autoriser le trafic public vers un réseau virtuel.
+3. Créez des stratégies Azure. Créez une stratégie nommée `Hub NSG Enforcement` pour appliquer la configuration du groupe de sécurité réseau attribué à un réseau virtuel créé dans cet abonnement. Appliquez les stratégies intégrées pour la configuration des invités comme suit :
     1. Vérifiez que les serveurs web Windows utilisent des protocoles de communication sécurisés.
-    1. Vérifiez que les paramètres de sécurité des mots de passe sont correctement définis dans les machines Linux et Windows.
-1. Blueprint informatique d’entreprise
+    2. Vérifiez que les paramètres de sécurité des mots de passe sont correctement définis dans les machines Linux et Windows.
+4. Blueprint informatique d’entreprise
     1. Créez un blueprint Azure nommé `corporate-it-subscription`.
-    1. Ajoutez les modèles hub-and-spoke et la stratégie `Hub NSG Enforcement`.
-1. Extension de la hiérarchie initiale de groupes d'administration.
+    2. Ajoutez les modèles hub-and-spoke et la stratégie `Hub NSG Enforcement`.
+5. Extension de la hiérarchie initiale de groupes d'administration.
     1. Pour chaque groupe d’administration ayant demandé la prise en charge des données protégées, le blueprint `corporate-it-subscription-blueprint` constitue une solution hub accélérée.
-    1. Les groupes d’administration dans cet exemple fictif incluant une hiérarchie régionale en plus d’une hiérarchie d'unités commerciales, ce blueprint sera déployé dans chaque région.
-    1. Pour chaque région de la hiérarchie de groupes d'administration, créez un abonnement nommé `Corporate IT Subscription`.
-    1. Appliquez le blueprint `corporate-it-subscription-blueprint` à chaque instance régionale.
-    1. Cela permettra d’établir un hub pour chaque unité commerciale dans chaque région. Remarque : le partage de hubs entre les unités commerciales de chaque région permet une plus importante réduction des coûts.
-1. Intégrez des objets de stratégie de groupe (GPO) par le biais d'une configuration d'état souhaité (DSC) :
+    2. Les groupes d’administration dans cet exemple fictif incluant une hiérarchie régionale en plus d’une hiérarchie d'unités commerciales, ce blueprint sera déployé dans chaque région.
+    3. Pour chaque région de la hiérarchie de groupes d'administration, créez un abonnement nommé `Corporate IT Subscription`.
+    4. Appliquez le blueprint `corporate-it-subscription-blueprint` à chaque instance régionale.
+    5. Cela permettra d’établir un hub pour chaque unité commerciale dans chaque région. Remarque : le partage de hubs entre les unités commerciales de chaque région permet une plus importante réduction des coûts.
+6. Intégrez des objets de stratégie de groupe (GPO) par le biais d'une configuration d'état souhaité (DSC) :
     1. Conversion GPO vers DSC - Le [projet de gestion de la base de référence Microsoft](https://github.com/Microsoft/BaselineManagement) dans GitHub peut accélérer cet effort. * Assurez-vous de stocker la configuration de l'état souhaité (DSC) dans le référentiel, en parallèle avec les modèles Resource Manager.
-    1. Déployez la configuration d’état souhaité Azure Automation sur plusieurs instances de l'abonnement informatique d'entreprise. Azure Automation peut être utilisé pour appliquer la configuration d'état souhaité aux machines virtuelles déployées dans des abonnements pris en charge au sein du groupe d’administration.
-    1. La feuille de route actuelle prévoit de permettre les stratégies de configuration personnalisée invité. Une fois cette fonctionnalité disponible, l’utilisation d’Azure Automation dans le cadre de cette meilleure pratique ne sera plus requise.
+    2. Déployez la configuration d’état souhaité Azure Automation sur plusieurs instances de l'abonnement informatique d'entreprise. Azure Automation peut être utilisé pour appliquer la configuration d'état souhaité aux machines virtuelles déployées dans des abonnements pris en charge au sein du groupe d’administration.
+    3. La feuille de route actuelle prévoit de permettre les stratégies de configuration personnalisée invité. Une fois cette fonctionnalité disponible, l’utilisation d’Azure Automation dans le cadre de cette meilleure pratique ne sera plus requise.
 
 **Application d’une plus grande gouvernance dans le cadre d’un abonnement d’adoption cloud (Spoke) :** En s’appuyant sur l’`Corporate IT Subscription`, des modifications mineures apportées au MVP de gouvernance et appliquées à chaque abonnement dédié à la prise en charge des archétypes d’application peuvent contribuer à une amélioration rapide.
 
@@ -132,38 +132,38 @@ Dans les modifications itératives précédentes apportées à la bonne pratique
 
 1. Modèle de peering de réseau. Ce modèle appairera le réseau virtuel à chaque abonnement avec le réseau virtuel hub dans l’abonnement informatique d’entreprise.
     1. L’architecture de référence de la section précédente, la [topologie hub-and-spoke avec des services partagés](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), a généré un modèle Resource Manager permettant le peering de réseau virtuel.
-    1. Ce modèle peut faire office de guide pour modifier le modèle DMZ à partir de la précédente itération de gouvernance.
-    1. Essentiellement, nous ajoutons désormais l'appairage de réseau virtuel au réseau virtuel DMZ précédemment connecté à l'appareil de périmètre local via VPN.
-    1. *** Il est aussi vivement conseillé de supprimer le VPN de ce modèle et de veiller à ce qu'aucun trafic ne soit directement routé vers le centre de données local, sans transiter via l'abonnement informatique d'entreprise et la solution de pare-feu.
-    1. Une [configuration réseau](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) supplémentaire sera requise par Azure Automation pour appliquer la configuration d'état souhaité aux machines virtuelles hébergées.
-1. Modifiez le groupe de sécurité réseau. Bloquez tout le trafic public **et** dirigez le trafic local vers le groupe de sécurité réseau. Seul le trafic entrant doit transiter via l'homologue de réseau virtuel dans l'abonnement informatique d'entreprise.
+    2. Ce modèle peut faire office de guide pour modifier le modèle DMZ à partir de la précédente itération de gouvernance.
+    3. Nous ajoutons à présent le VNet Peering au réseau virtuel DMZ précédemment connecté à l’appareil de périmètre local via VPN.
+    4. *** Il est aussi vivement conseillé de supprimer le VPN de ce modèle et de veiller à ce qu'aucun trafic ne soit directement routé vers le centre de données local, sans transiter via l'abonnement informatique d'entreprise et la solution de pare-feu. Vous pouvez également définir ce VPN comme circuit de basculement en cas de défaillance d’un circuit ExpressRoute.
+    5. Une [configuration réseau](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) supplémentaire sera requise par Azure Automation pour appliquer la configuration d'état souhaité aux machines virtuelles hébergées.
+2. Modifiez le groupe de sécurité réseau. Bloquez tout le trafic public **et** dirigez le trafic local vers le groupe de sécurité réseau. Seul le trafic entrant doit transiter via l'homologue de réseau virtuel dans l'abonnement informatique d'entreprise.
     1. Dans le cadre de la précédente itération, un groupe de sécurité réseau a été créé pour bloquer tout le trafic public et mettre le trafic interne sur liste verte. À présent, nous voulons légèrement déplacer ce groupe de sécurité réseau.
-    1. La nouvelle configuration de groupe de sécurité réseau doit bloquer tout le trafic public, et tout le trafic provenant du centre de données local.
-    1. Le trafic entrant dans ce réseau virtuel doit uniquement provenir du réseau virtuel situé de l'autre côté de l'homologue de réseau virtuel.
-1. Implémentation d’Azure Security Center :
+    2. La nouvelle configuration de groupe de sécurité réseau doit bloquer tout le trafic public, et tout le trafic provenant du centre de données local.
+    3. Le trafic entrant dans ce réseau virtuel doit uniquement provenir du réseau virtuel situé de l'autre côté de l'homologue de réseau virtuel.
+3. Implémentation d’Azure Security Center :
     1. Configurez Azure Security Center pour les groupes d’administration qui contiennent des classifications de données protégées.
-    1. Définissez le provisionnement automatique sur Activé par défaut pour garantir la conformité des mises à jour correctives.
-    1. Établissez des configurations de sécurité des systèmes d’exploitation. Équipe Sécurité informatique pour définir la configuration.
-    1. Apportez un support à la sécurité informatique pour l’utilisation initiale d'Azure Security Center. Transférez l’utilisation du centre de sécurité à la sécurité informatique, mais conservez un accès pour toute amélioration continue de la gouvernance.
-    1. Créez un modèle Resource Manager qui reflète les modifications nécessaires pour la configuration d'Azure Security Center au sein d’un abonnement.
-1. Mettez à jour Azure Policy pour tous les abonnements.
+    2. Définissez le provisionnement automatique sur Activé par défaut pour garantir la conformité des mises à jour correctives.
+    3. Établissez des configurations de sécurité des systèmes d’exploitation. Équipe Sécurité informatique pour définir la configuration.
+    4. Apportez un support à la sécurité informatique pour l’utilisation initiale d'Azure Security Center. Transférez l’utilisation du centre de sécurité à la sécurité informatique, mais conservez un accès pour toute amélioration continue de la gouvernance.
+    5. Créez un modèle Resource Manager qui reflète les modifications nécessaires pour la configuration d'Azure Security Center au sein d’un abonnement.
+4. Mettez à jour Azure Policy pour tous les abonnements.
     1. Auditez et appliquez la classification de la criticité et des données sur tous les groupes d’administration et tous les abonnements, de façon à identifier tous les abonnements avec des classifications de données protégées.
-    1. Auditez et appliquez l’utilisation exclusive d’images de système d'exploitation approuvées.
-    1. Auditez et appliquez les configurations invité basées sur les exigences de sécurité pour chaque nœud.
-1. Mettez à jour Azure Policy pour tous les abonnements qui contiennent des classifications de données protégées.
+    2. Auditez et appliquez l’utilisation exclusive d’images de système d'exploitation approuvées.
+    3. Auditez et appliquez les configurations invité basées sur les exigences de sécurité pour chaque nœud.
+5. Mettez à jour Azure Policy pour tous les abonnements qui contiennent des classifications de données protégées.
     1. Auditez et appliquez l’utilisation de rôles standard uniquement.
-    1. Auditez et imposez l'application de chiffrement au repos pour tous les comptes de stockage et tous les fichiers sur les nœuds individuels.
-    1. Auditez et imposez l'application de la nouvelle version du groupe de sécurité réseau DMZ.
-    1. Auditez et appliquez l’utilisation d’un réseau virtuel et sous-réseau de réseau approuvé par interface réseau.
-    1. Auditez et imposez la limitation des tables de routage définies par l’utilisateur.
-1. Blueprint Azure :
+    2. Auditez et imposez l'application de chiffrement au repos pour tous les comptes de stockage et tous les fichiers sur les nœuds individuels.
+    3. Auditez et imposez l'application de la nouvelle version du groupe de sécurité réseau DMZ.
+    4. Auditez et appliquez l’utilisation d’un réseau virtuel et sous-réseau de réseau approuvé par interface réseau.
+    5. Auditez et imposez la limitation des tables de routage définies par l’utilisateur.
+6. Blueprint Azure :
     1. Créez un blueprint Azure nommé `protected-data`.
-    1. Ajoutez l’homologue de réseau virtuel, le groupe de sécurité réseau et les modèles Azure Security Center au blueprint.
-    1. Assurez-vous que le modèle correspondant à Active Directory de la précédente itération ne soit **pas** inclus dans le blueprint. Toutes les dépendances Active Directory seront fournies par l’abonnement informatique d’entreprise.
-    1. Arrêtez les machines virtuelles Active Directory existantes déployées dans le cadre de l’itération précédente.
-    1. Ajoutez les nouvelles stratégies pour les abonnements de données protégées.
-    1. Publiez le blueprint dans les groupes d'administration destinés à héberger données protégées.
-    1. Appliquez le nouveau blueprint à chaque abonnement affecté, ainsi qu'aux blueprints existants.
+    2. Ajoutez l’homologue de réseau virtuel, le groupe de sécurité réseau et les modèles Azure Security Center au blueprint.
+    3. Assurez-vous que le modèle correspondant à Active Directory de la précédente itération ne soit **pas** inclus dans le blueprint. Toutes les dépendances Active Directory seront fournies par l’abonnement informatique d’entreprise.
+    4. Arrêtez les machines virtuelles Active Directory existantes déployées dans le cadre de l’itération précédente.
+    5. Ajoutez les nouvelles stratégies pour les abonnements de données protégées.
+    6. Publiez le blueprint dans tous les groupes d’administration qui hébergeront des données protégées.
+    7. Appliquez le nouveau blueprint à chaque abonnement affecté, ainsi qu'aux blueprints existants.
 
 ## <a name="conclusion"></a>Conclusion
 

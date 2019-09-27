@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7e10f9262e7b29df98e2341cbae0ef05f85cd954
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031186"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223817"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources
 
@@ -65,7 +65,7 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 5. Les outils de gouvernance doivent valider que le niveau approprié de données de journalisation est collecté pour toutes les applications critiques ou données protégées.
 6. Le processus de gouvernance doit valider que la sauvegarde, la restauration et le respect des SLA sont implémentés correctement pour les applications critiques et les données protégées.
 7. Les outils de gouvernance doivent limiter le déploiement des machines virtuelles aux images approuvées uniquement.
-8. Les outils de gouvernance doivent faire en sorte **d’empêcher** les mises à jour automatiques sur toutes les ressources déployées qui prennent en charge les applications critiques. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas automatiquement mises à jour doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
+8. Les outils de gouvernance doivent faire en sorte **d’empêcher** les mises à jour automatiques sur toutes les ressources déployées qui prennent en charge les applications critiques. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas mises à jour automatiquement doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques, de sorte que la mise à jour de ces serveurs s’effectue de façon rapide et efficace.
 9. Les outils de gouvernance doivent valider le marquage associé aux coûts, à la criticité, aux SLA, aux applications et aux classifications des données. Toutes les valeurs doivent être alignées avec les valeurs prédéfinies gérées par l’équipe de gouvernance cloud.
 10. Les processus de gouvernance doivent inclure des audits, à intervalles réguliers, au point de déploiement pour garantir la cohérence entre toutes les ressources.
 11. Les tendances et les attaques susceptibles d’affecter les déploiements cloud doivent être régulièrement examinées par l’équipe de sécurité pour fournir des mises à jour aux outils de base de référence de sécurité utilisés dans le cloud.
@@ -85,25 +85,25 @@ En reprenant l’exemple utilisé dans ce document, nous partons du principe que
 
 1. En tant que dépendance externe, l’équipe responsable des opérations cloud devra définir des outils de surveillance opérationnelle, des outils de continuité d’activité et reprise d’activité et des outils de correction automatisée. L’équipe de gouvernance cloud peut ensuite prendre en charge les processus de détection nécessaires.
     1. Ici, l’équipe responsable des opérations cloud a choisi Azure Monitor en tant qu’outil principal pour la surveillance des applications critiques.
-    1. Elle a également sélectionné Azure Site Recovery en tant qu’outil principal pour la continuité d’activité et reprise d’activité.
-1. Implémentation d’Azure Site Recovery.
-    1. Définissez et déployez Azure Vault pour les processus de sauvegarde et de récupération.
-    1. Créez un modèle de gestion des ressources Azure pour mettre en place un coffre dans chaque abonnement.
-1. Implémentation d’Azure Monitor.
-    1. Une fois qu’un abonnement critique est identifié, un espace de travail Log Analytics peut être cré à l’aide de PowerShell. Il s’agit d’un processus de prédéploiement.
+    2. Elle a également sélectionné Azure Site Recovery en tant qu’outil principal pour la continuité d’activité et reprise d’activité.
+2. Implémentation d’Azure Site Recovery.
+    1. Définissez et déployez un coffre Azure Site Recovery pour les processus de sauvegarde et de reprise d’activité.
+    2. Créez un modèle de gestion des ressources Azure pour mettre en place un coffre dans chaque abonnement.
+3. Implémentation d’Azure Monitor.
+    1. Une fois qu’un abonnement stratégique est identifié, un espace de travail Log Analytics peut être créé.
 
 **Abonnement équipe adoption du cloud individuel :** ce qui suit garantira que chaque abonnement peut être détecté par la solution de surveillance et prêt pour être inclus dans les pratiques de continuité d’activité et reprise d’activité.
 
 1. Azure Policy pour les nœuds critiques :
     1. Auditez et appliquez l’utilisation de rôles standard uniquement.
-    1. Auditez et appliquez le chiffrement pour tous les comptes de stockage.
-    1. Auditez et appliquez l’utilisation d’un réseau virtuel et sous-réseau de réseau approuvé par interface réseau.
-    1. Auditez et appliquez la limitation de tables de routage définies par l’utilisateur.
-    1. Auditez et appliquez le déploiement d’agents Log Analytics pour les machines virtuelles Windows et Linux.
+    2. Auditez et appliquez le chiffrement pour tous les comptes de stockage.
+    3. Auditez et appliquez l’utilisation d’un réseau virtuel et sous-réseau de réseau approuvé par interface réseau.
+    4. Auditez et appliquez la limitation de tables de routage définies par l’utilisateur.
+    5. Auditez et appliquez le déploiement d’agents Log Analytics pour les machines virtuelles Windows et Linux.
 2. Blueprint Azure :
     1. Créez un blueprint nommé `mission-critical-workloads-and-protected-data`. Ce blueprint appliquera des ressources en plus du blueprint de données protégées.
-    1. Ajoutez les nouvelles stratégies Azure au blueprint.
-    1. Appliquez le blueprint à tous les abonnements devant héberger une application critique.
+    2. Ajoutez les nouvelles stratégies Azure au blueprint.
+    3. Appliquez le blueprint à tous les abonnements devant héberger une application critique.
 
 ## <a name="conclusion"></a>Conclusion
 

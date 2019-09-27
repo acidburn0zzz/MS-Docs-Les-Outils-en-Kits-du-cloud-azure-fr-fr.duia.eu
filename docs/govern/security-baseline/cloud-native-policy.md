@@ -4,24 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Stratégie Base de référence de la sécurité Native cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aef22e31d632a585e59dd946c5c0ef71c13d46de
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031501"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222899"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Stratégie cloud native Base de référence de la sécurité
 
 La discipline [Base de référence de la sécurité](./index.md) est l’une des [cinq disciplines de la gouvernance cloud](../governance-disciplines.md). Elle se concentre sur les sujets généraux liés à la sécurité, comme la protection du réseau, les ressources numériques, les données, etc. Comme indiqué dans le [Guide de révision des stratégies](../policy-compliance/cloud-policy-review.md), pour chacune des cinq disciplines, le Framework d’adoption du cloud inclut 3 niveaux d’**exemples de stratégies** : Native cloud, Entreprise et Conformité au principe de conception cloud. Cet article traite de l’exemple de stratégie Native cloud pour la discipline Base de référence de la sécurité.
 
 > [!NOTE]
-> Microsoft n'est pas en position d'imposer une stratégie d'entreprise ou une stratégie informatique. Cet article a pour but de vous aider à vous préparer à une révision de stratégie interne. Il est supposé que cet exemple de stratégie sera étendu, validé et testé sur votre stratégie d'entreprise avant toute tentative d'utilisation. Il est déconseillé d'utiliser cet exemple de stratégie en l'état.
+> Microsoft n'est pas en position d'imposer une stratégie d'entreprise ou une stratégie informatique. Cet article vous aide à vous préparer à une révision de stratégie interne. Il est supposé que cet exemple de stratégie sera étendu, validé et testé sur votre stratégie d'entreprise avant toute tentative d'utilisation. Il est déconseillé d’utiliser cet exemple de stratégie en l’état.
 
 ## <a name="policy-alignment"></a>Alignement des stratégies
 
@@ -54,10 +54,10 @@ Le contrôle réseau comprend la configuration, la gestion et la sécurisation d
 
 Une stratégie Native cloud destinée aux contrôles réseau peut inclure des exigences semblables aux suivantes :
 
-- Les connexions hybrides aux ressources locales (bien que techniquement possibles dans Azure) peuvent ne pas être autorisées dans le cadre d'une stratégie Native cloud. Si une connexion hybride s'avère nécessaire, l'exemple de stratégie de sécurité Entreprise, plus robuste, constituera une référence plus pertinente.
+- Les connexions hybrides aux ressources locales peuvent ne pas être autorisées dans le cadre d’une stratégie Native cloud. Si une connexion hybride s'avère nécessaire, l'exemple de stratégie de sécurité Entreprise, plus robuste, constituera une référence plus pertinente.
 - Les utilisateurs peuvent établir des connexions sécurisées vers et au sein d'Azure à l'aide de réseaux virtuels et de groupes de sécurité réseau.
-- Le Pare-feu Windows Azure natif protège les hôtes du trafic réseau malveillant par un accès limité aux ports. La nécessité de bloquer (ou de ne pas activer) le trafic direct vers une machine virtuelle via RDP, port TCP/UDP 3389, serait un bon exemple de cette stratégie.
-- Des services tels que le pare-feu d’applications web et Azure Application Gateway et Azure DDoS Protection protègent les applications et garantissent la disponibilité des machines virtuelles exécutées dans Azure. Ces fonctionnalités ne doivent pas être désactivées ou mal utilisées.
+- Le Pare-feu Windows Azure natif protège les hôtes du trafic réseau malveillant par un accès limité aux ports. La nécessité de bloquer (ou de ne pas activer) le trafic direct vers une machine virtuelle avec un protocole SSH/RDP offre un bon exemple de cette stratégie.
+- Des services tels que le pare-feu d’applications web et Azure Application Gateway et Azure DDoS Protection protègent les applications et garantissent la disponibilité des machines virtuelles exécutées dans Azure. Ces fonctionnalités ne doivent pas être désactivées.
 
 ### <a name="data-protection"></a>Protection des données
 
@@ -65,7 +65,7 @@ Pour assurer la protection des données dans le cloud, l'un des facteurs clés c
 
 - Des contrôles de chiffrement des données sont intégrés aux services, des machines virtuelles jusqu'au stockage et à SQL Database.
 - Lorsque les données se déplacent entre les clouds et entre les clients, leur protection peut être assurée par des protocoles de chiffrement standard.
-- Azure Key Vault permet aux utilisateurs d'assurer la sécurité ainsi que le contrôle des clés de chiffrement et des secrets utilisés par les applications et services cloud.
+- Azure Key Vault permet aux utilisateurs de protéger et contrôler les clés de chiffrement, mots de passe, chaînes de connexion et certificats utilisés par les applications et services cloud.
 - Azure Information Protection vous aidera à classer, étiqueter et protéger vos données sensibles dans les applications.
 
 Bien que les fonctionnalités mentionnées ci-dessus soient intégrées à Azure, chacune d'entre elles nécessite une configuration qui peut entraîner une hausse des coûts. Il est vivement conseillé d'associer chaque fonctionnalité Native cloud à une [stratégie de classification des données](../policy-compliance/data-classification.md).
@@ -78,6 +78,7 @@ Ici, la surveillance de la sécurité est une stratégie proactive qui audite vo
 - Supervision et évaluations continues de la sécurité pour assurer la conformité et corriger les vulnérabilités.
 - Outils interactifs et renseignements sur les menaces contextuels pour simplifier les investigations.
 - Journalisation étendue et intégration aux informations de sécurité existantes.
+- Réduit la nécessité de recourir à des solutions de sécurité isolées, non intégrées et onéreuses.
 
 ### <a name="extending-cloud-native-policies"></a>Extension des stratégies de type Native cloud
 
@@ -87,7 +88,9 @@ Malgré cet investissement dans la Base de référence de la sécurité Native c
 
 - **Sécuriser des machines virtuelles**. La sécurité doit être la priorité absolue de toutes les organisations, et pour la garantir, vous devez : évaluer votre état de sécurité, vous protéger contre les menaces, puis détecter et réagir rapidement aux menaces qui surviennent.
 - **Protéger le contenu des machines virtuelles**. La mise en place de sauvegardes automatiques régulières est essentielle pour vous protéger des erreurs des utilisateurs. Mais ce n'est pas suffisant ; vous devez également vous assurer que vos sauvegardes sont protégées des cyberattaques et disponibles lorsque vous en avez besoin.
-- **Superviser les machines virtuelles et les applications**. Ce modèle englobe différentes tâches, notamment l'obtention d'insights sur l'intégrité de vos machines virtuelles, l'identification des interactions entre elles et l'établissement de moyens pour superviser les applications exécutées par ces machines virtuelles. Toutes ces tâches sont essentielles pour permettre à vos applications de fonctionner 24 heures sur 24.
+- **Superviser les applications.** Ce modèle englobe différentes tâches, notamment l'obtention d'insights sur l'intégrité de vos machines virtuelles, l'identification des interactions entre elles et l'établissement de moyens pour superviser les applications exécutées par ces machines virtuelles. Toutes ces tâches sont essentielles pour permettre à vos applications de fonctionner 24 heures sur 24.
+- **Sécuriser et auditer l’accès aux données.** Les organisations doivent auditer l’accès aux données dans son ensemble et s’appuyer sur des fonctionnalités de machine learning avancées pour identifier les écarts par rapport aux modèles d’accès corrects.
+- **Tester le basculement.** Les opérations cloud dont les tolérances de panne sont limitées doivent pouvoir basculer et/ou bénéficier d’une reprise d’activité à la suite d’un incident de plateforme ou de cybersécurité. Ces procédures ne doivent pas être simplement documentées, mais également testées tous les trimestres.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

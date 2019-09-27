@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cc3c5564d51a096f2794ec62e50c19a2a8e740c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032180"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223830"
 ---
 # <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Guide pour les entreprises standard : Instructions normatives expliquées
 
@@ -61,7 +61,7 @@ La décision sur la conception de l’abonnement à utiliser détermine la faço
 
 Les décisions relatives à la cohérence des ressources déterminent les outils, processus et efforts nécessaires pour garantir que les ressources Azure sont déployées, configurées et gérées de manière cohérente au sein d’un abonnement. Dans ce scénario, la **[cohérence de déploiement](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** a été choisie comme modèle de cohérence des ressources principales.
 
-- Les groupes de ressources sont créés pour les applications à l’aide de l’approche par cycle de vie : tout ce qui est créé ensemble est conservé ensemble et les ressources mises hors service peuvent se trouver dans un seul groupe de ressources.
+- Les groupes de ressources sont créés pour les applications à l’aide de l’approche par cycle de vie : tout ce qui est créé, géré et mis hors service ensemble doit se trouver dans un même groupe de ressources. Pour plus d’informations sur les groupes de ressources, consultez [cette section](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - La stratégie Azure doit être appliquée à tous les abonnements du groupe d’administration associé.
 - Dans le cadre du processus de déploiement, les modèles Cohérence des ressources Azure doivent être stockés dans le contrôle du code source pour le groupe de ressources.
 - Chaque groupe de ressources est associé à une charge de travail ou à une application spécifique basée sur l’approche par cycle de vie décrit plus haut.
@@ -116,7 +116,7 @@ Si l’un des modèles choisis dans ce guide de gouvernance ne correspond pas au
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois ce guide implémenté, chaque équipe d’adoption du cloud peut s’appuyer sur une base de gouvernance solide. L’équipe de gouvernance du cloud travaille en parallèle à la mise à jour continue des stratégies d’entreprise et des disciplines de gouvernance.
+Une fois ce guide implémenté, chaque équipe d’adoption du cloud peut s’appuyer sur une base de gouvernance solide. Parallèlement, l’équipe de gouvernance cloud travaille à la mise à jour continue des stratégies d’entreprise et des disciplines de gouvernance.
 
 Les deux équipes utilisent les indicateurs de tolérance pour identifier le prochain groupe d’améliorations nécessaires à la poursuite de la prise en charge de l’adoption du cloud. Pour l’entreprise fictive dans ce guide, l’étape suivante consiste à améliorer la base de référence de sécurité en vue du transfert des données protégées vers le cloud.
 

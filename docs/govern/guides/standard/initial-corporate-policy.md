@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4da4899038ca86bec2f1d003f9eaaee293119a09
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032241"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223664"
 ---
 # <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Guide pour les entreprises standard : Stratégie d’entreprise initiale sous-tendant la stratégie de gouvernance
 
@@ -33,7 +33,7 @@ Dans ce scénario, l’équipe de gouvernance cloud est composée de deux admini
 
 La tolérance au risque actuelle est élevée et l’envie d’investir dans la gouvernance de cloud est faible. Par conséquent, les indicateurs de tolérance agissent comme un système d’avertissement précoce pour déclencher des investissements de temps et d’énergie. Si les indicateurs suivants sont observés, vous devez améliorer de façon itérative la stratégie de gouvernance.
 
-- **Gestion des coûts :** La mise à l’échelle du déploiement dépasse 100 ressources dans le cloud, ou les dépenses dépassent 1 000 USD par mois.
+- **Gestion des coûts :** L’échelle du déploiement dépasse les limites prédéterminées quant au nombre de ressources ou au coût mensuel.
 - **Base de référence de la sécurité :** Inclusion de données protégées dans des plans définis d’adoption du cloud.
 - **Cohérence des ressources :** Inclusion de toutes les applications stratégiques dans des plans définis d’adoption du cloud.
 

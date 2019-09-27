@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031577"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221376"
 ---
 # <a name="automate-onboarding"></a>Automatiser l’intégration
 
@@ -21,7 +21,7 @@ Pour améliorer l’efficacité du déploiement des services de gestion de serve
 
 ## <a name="onboarding-by-using-automation"></a>Intégration à l’aide d’Automation
 
-Ce guide contient un référentiel GitHub d’exemples de code, [CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples), qui fournit des exemples de scripts et de modèles Azure Resource Manager pour vous aider à automatiser le déploiement des services de gestion de serveur Azure.
+Ce guide contient un référentiel GitHub d’exemples de code, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), qui fournit des exemples de scripts et de modèles Azure Resource Manager pour vous aider à automatiser le déploiement des services de gestion de serveur Azure.
 
 Ces exemples de fichiers illustrent l’utilisation des cmdlets Azure PowerShell pour automatiser les tâches suivantes :
 
@@ -33,7 +33,7 @@ Ces exemples de fichiers illustrent l’utilisation des cmdlets Azure PowerShell
 
 4. Activer Update Management, Change Tracking et Inventory pour l’espace de travail.
 
-5. Intégration de machines virtuelles Azure avec Azure Policy (une stratégie installe l’agent Log Analytics et l’agent Dependency sur les machines virtuelles Azure).
+5. Intégrer des machines virtuelles Azure avec Azure Policy (une stratégie installe l’agent Log Analytics et l’agent Dependency sur les machines virtuelles Azure).
 
 6. Intégration de serveurs locaux en y installant l’agent Log Analytics.
 

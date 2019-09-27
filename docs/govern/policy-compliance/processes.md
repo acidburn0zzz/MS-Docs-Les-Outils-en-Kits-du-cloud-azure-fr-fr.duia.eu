@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Établissez des processus pour garantir la conformité avec les stratégies de l’entreprise.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031904"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222046"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>Établir des processus d’adhésion à la stratégie
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 Après avoir établi vos déclarations de stratégie cloud et rédigé un guide de conception, vous devez créer des consignes pour être sûr que votre déploiement cloud reste conforme aux exigences de votre stratégie. Ces consignes devront englober les processus continus d’examen et de communication de votre équipe de gouvernance cloud, établir des critères pour déterminer à quel moment les violations des stratégies doivent être sanctionnées et définir les exigences relatives aux systèmes automatisés de surveillance et de conformité qui détecteront les violations et déclencheront des mesures correctives.
 
@@ -57,6 +53,8 @@ Au fur et à mesure que d’autres ressources et charges de travail seront dépl
 Pour être conforme à votre stratégie, le personnel et les développeurs de votre service informatique doivent comprendre ses exigences vis-à-vis de leurs domaines de responsabilité. Prévoyez de consacrer des ressources à la documentation des décisions et des exigences, et formez toutes les équipes concernées à l’aide de vos guides de conception pour la prise en charge des exigences de votre stratégie.
 
 Au fur et à mesure que votre stratégie évolue, mettez régulièrement à jour la documentation et le matériel de formation, et veillez à ce que toutes les exigences et les directives mises à jour soient communiquées au personnel informatique concerné lors des formations.
+
+À différentes étapes de votre parcours d’adoption du cloud, il vous sera judicieux de vous adresser aux partenaires et de consulter les programmes de formation professionnelle pour améliorer la formation de votre équipe, tant sur le plan technique que sur celui des procédures. En outre, pour de nombreuses organisations, les certifications formelles représentent un ajout précieux à leur éventail d’outils de formation. Elles doivent donc être prises en considération.
 
 ### <a name="establish-escalation-paths"></a>Organiser la remontée des informations
 

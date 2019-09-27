@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Qu’est-ce que la classification des données ?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d293aa5b4427b8f714175b85c6bb5197b53f107a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86c57efed1be2760aca607197eb8d28f0151097a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032104"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223570"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ La liste ci-dessous répertorie les classifications utilisées par Microsoft. En
 
 ## <a name="tagging-data-classification-in-azure"></a>Balisage de classification des données dans Azure
 
-Chaque fournisseur de cloud doit proposer un mécanisme permettant d’enregistrer des métadonnées associées à n’importe quel type de ressource. Dans le cas d’Azure, les balises de ressource sont l’approche suggérée pour le stockage des métadonnées et ces balises peuvent être utilisées pour appliquer des informations de classification aux ressources déployées. Bien que le marquage des ressources cloud par classification ne remplace pas le processus formel de classification des données, il s’agit d’un outil précieux pour la gestion des ressources et l’application de la stratégie.
+Les balises de ressource représentent l’approche suggérée pour le stockage des métadonnées, et ces balises peuvent être utilisées pour appliquer des informations de classification aux ressources déployées. Bien que le marquage des ressources cloud par classification ne remplace pas le processus formel de classification des données, il s’agit d’un outil précieux pour la gestion des ressources et l’application de la stratégie. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) offre une excellente solution pour classer les _données_, et ce, quel que soit leur emplacement (en local, dans Azure ou ailleurs). Ce service doit s’inscrire dans une stratégie de classification globale.
 
 Pour plus d’informations sur le balisage des ressources dans Azure, consultez l’article [Utilisation de balises pour organiser vos ressources Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 

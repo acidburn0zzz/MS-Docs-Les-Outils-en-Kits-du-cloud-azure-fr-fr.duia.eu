@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Amélioration de la discipline Accélération du déploiement
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7cff2c0cbf8fea06ea7ebdfaaade1c8538802639
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032312"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220747"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Amélioration de la discipline Accélération du déploiement
 
@@ -52,6 +52,7 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 
 - Pour les nouvelles applications cloud, introduisez au tout début du processus de développement des déploiements intégralement automatisés. Cet investissement permettra d’améliorer la fiabilité de vos processus de tests, tout en garantissant la cohérence dans l’ensemble de vos environnements de production, QA et de développement.
 - Stockez tous les artefacts du déploiement (modèles de déploiement ou scripts de configuration) à l’aide d’une plateforme de contrôle de code source telles que GitHub ou Azure DevOps.
+- Stockez tous les secrets, mots de passe, certificats et chaînes de connexion dans [Azure Key Vault](https://docs.microsoft.com/azure/key-vault).
 - Envisagez de procéder à un test pilote avant d’implémenter votre [chaîne d’outils d’accélération du déploiement](./toolchain.md), pour vous assurer que vos déploiements sont bien rationalisés. Tenez compte des commentaires reçus lors des tests pilotes pendant la phase de prédéploiement et répétez si nécessaire.
 - Évaluez l’architecture logique et physique de vos applications, et identifiez les opportunités d’automatisation du déploiement des ressources d’application ou d’améliorations de parties de l’architecture avec d’autres ressources cloud.
 - Mettez à jour le document d’instructions relatives à l’architecture pour inclure des plans de déploiement et d’adoption par les utilisateurs, puis distribuez-le aux principales parties prenantes.

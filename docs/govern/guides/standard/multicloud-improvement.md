@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d1953e190e2581d96db443be00aad74a6b94d5f9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2616193b01b252a74ad17a241d97bfd0ebc4860c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031838"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223790"
 ---
 # <a name="small-to-medium-enterprise-guide-multicloud-improvement"></a>Guide pour les petites et moyennes entreprises : Amélioration multicloud
 
@@ -22,7 +22,7 @@ Cet article fait progresser le scénario en ajoutant des contrôles à l’adopt
 
 ## <a name="advancing-the-narrative"></a>Développement du scénario
 
-Microsoft est conscient du fait que les clients adoptent plusieurs clouds pour des raisons bien spécifiques. C’est également le cas du client fictif dont nous allons parler dans ce guide. En parallèle du parcours d’adoption d’Azure, la réussite de l’entreprise l’a amenée à acquérir une autre entreprise, petite mais complémentaire. Cette entreprise exécute toutes ses opérations informatiques sur un fournisseur de cloud différent.
+Microsoft est conscient du fait que les clients peuvent adopter plusieurs clouds pour des raisons bien spécifiques. C’est également le cas du client fictif dont nous allons parler dans ce guide. Parallèlement au parcours d’adoption d’Azure, la réussite de l’entreprise l’a amenée à acquérir une autre entreprise, petite mais complémentaire. Cette entreprise exécute toutes ses opérations informatiques sur un fournisseur de cloud différent.
 
 Cet article décrit les changements observés suite à l’intégration de la nouvelle organisation. Pour ce scénario, nous partons du principe que cette entreprise a atteint toutes les itérations de gouvernance décrites dans ce guide de gouvernance.
 
@@ -65,23 +65,23 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 Cette section de l’article va modifier la conception du MVP de gouvernance, afin d’inclure de nouvelles stratégies Azure ainsi qu’une implémentation d’Azure Cost Management. Ensemble, ces modifications de la conception permettront de répondre aux nouvelles instructions de la stratégie d’entreprise.
 
 1. Connectez les réseaux. Cette étape est effectuée par les équipes de mise en réseau et de sécurité informatique, en collaboration avec l’équipe de gouvernance cloud. L’ajout d’une connexion d’un fournisseur MPLS/de ligne allouée au nouveau cloud intègrera les réseaux. L’ajout de configurations de pare-feu et de tables de routage contrôlera l’accès et le trafic entre les environnements.
-1. Consolidez les fournisseurs d’identité. En fonction des charges de travail hébergées dans le cloud secondaire, diverses options sont proposées pour consolider le fournisseur d’identité. Voici quelques exemples :
+2. Consolidez les fournisseurs d’identité. En fonction des charges de travail hébergées dans le cloud secondaire, diverses options sont proposées pour consolider le fournisseur d’identité. Voici quelques exemples :
     1. Pour les applications qui utilisent l’authentification OAuth2, les utilisateurs Active Directory dans le cloud secondaire peuvent simplement être répliqués sur le locataire Azure AD existant. Grâce à cela, tous les utilisateurs peuvent être authentifiés dans le locataire.
-    1. D’un autre côté, la fédération permet aux unités d’organisation de circuler dans Active Directory local, puis dans l’instance Azure AD.
-1. Ajoutez des ressources à Azure Site Recovery.
+    2. D’un autre côté, la fédération permet aux unités d’organisation de circuler dans Active Directory local, puis dans l’instance Azure AD.
+3. Ajoutez des ressources à Azure Site Recovery.
     1. Dès le départ, Azure Site Recovery a été conçu en tant qu’outil hybride ou multicloud.
-    1. Les machines virtuelles dans le cloud secondaire peuvent être en mesure d’être protégées par les mêmes processus Azure Site Recovery utilisés pour protéger les ressources locales.
-1. Ajoutez des ressources à Azure Cost Management.
+    2. Les machines virtuelles dans le cloud secondaire peuvent être en mesure d’être protégées par les mêmes processus Azure Site Recovery utilisés pour protéger les ressources locales.
+4. Ajoutez des ressources à Azure Cost Management.
     1. Dès le départ, Azure Cost Management a été conçu en tant qu’outil multicloud.
-    1. Les machines virtuelles dans le cloud secondaire peuvent être compatibles avec Azure Cost Management pour certains fournisseurs cloud. Des frais supplémentaires peuvent s’appliquer.
-1. Ajoutez des ressources à Azure Monitor.
+    2. Les machines virtuelles dans le cloud secondaire peuvent être compatibles avec Azure Cost Management pour certains fournisseurs cloud. Des frais supplémentaires peuvent s’appliquer.
+5. Ajoutez des ressources à Azure Monitor.
     1. Dès son lancement, Azure Monitor a été conçu en tant qu’outil cloud hybride.
-    1. Les machines virtuelles dans le cloud secondaire peuvent être compatibles avec les agents Azure Monitor, ce qui leur permet d’être incluses dans Azure Monitor pour la supervision opérationnelle.
-1. Adoptez des outils de mise en œuvre de la gouvernance.
+    2. Les machines virtuelles dans le cloud secondaire peuvent être compatibles avec les agents Azure Monitor, ce qui leur permet d’être incluses dans Azure Monitor pour la supervision opérationnelle.
+6. Adoptez des outils de mise en œuvre de la gouvernance.
     1. La mise en œuvre de la gouvernance est spécifique au cloud.
-    1. À l’inverse, les stratégies d’entreprise établies dans le guide de gouvernance ne le sont pas. Bien que l’implémentation puisse varier d’un cloud à l’autre, les stratégies peuvent être appliquées au fournisseur secondaire.
+    2. À l’inverse, les stratégies d’entreprise établies dans le guide de gouvernance ne le sont pas. Bien que l’implémentation puisse varier d’un cloud à l’autre, les stratégies peuvent être appliquées au fournisseur secondaire.
 
-Au fur et à mesure du développement de l’adoption multicloud, les modifications apportées à la conception ci-dessus continueront de mûrir.
+L’adoption multicloud doit se limiter au périmètre nécessaire, défini selon les besoins techniques ou des exigences métier spécifiques. Plus elle s’étend, plus la complexité et les risques de sécurité s’alourdissent.
 
 ## <a name="conclusion"></a>Conclusion
 

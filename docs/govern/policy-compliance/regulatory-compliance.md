@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Présentation de la conformité réglementaire
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032372"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222032"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Présentation de la conformité réglementaire
 
-Il s’agit d’un article introductif sur la conformité réglementaire. Il ne vise donc pas l’implémentation d’une stratégie de conformité. Il cherche uniquement à familiariser le lecteur au sujet. Des informations plus détaillées sur les [offres de conformité Azure](https://aka.ms/allcompliance) sont disponibles dans le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter/default.aspx). En outre, toute la documentation téléchargeable est disponible à certains clients Azure sur le [portail d’approbation de services Microsoft](https://servicetrust.microsoft.com).
+Il s’agit d’un article introductif sur la conformité réglementaire. Il ne vise donc pas l’implémentation d’une stratégie de conformité. Des informations plus détaillées sur les [offres de conformité Azure](https://aka.ms/allcompliance) sont disponibles dans le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter/default.aspx). En outre, toute la documentation téléchargeable est disponible à certains clients Azure sur le [portail d’approbation de services Microsoft](https://servicetrust.microsoft.com).
 
 La conformité réglementaire fait référence à la discipline et au processus consistant à garantir qu’une entreprise respecte les lois appliquées par les organes directeurs dans sa zone géographique ou les lois imposées par les normes du secteur volontairement adoptées. Pour la conformité réglementaire informatique, les personnes et les processus supervisent les systèmes de l’entreprise dans le but de détecter et d’empêcher les violations de stratégies et de procédures établies par ces lois, règlements et normes en vigueur. Cette notion concerne une un large éventail de processus d’application et de supervision. En fonction du secteur et de la zone géographique, ces processus peuvent être longs et complexes.
 
@@ -42,7 +42,7 @@ Les données personnelles sont des informations qui peuvent être utilisées pou
 
 ## <a name="gdpr"></a>RGPD
 
-Un des développements les plus importants dans ce sens est la promulgation récente par la Commission européenne du Règlement général sur la protection des données (RGPD). Celui-ci a été conçu pour renforcer la protection des données pour les personnes au sein de l’Union européenne. Le RGPD exige que les données concernant les personnes (comme « un nom, une adresse postale, une photo, une adresse e-mail, des coordonnées bancaires, des publications sur des réseaux sociaux, des informations médicales ou l’adresse IP d’un ordinateur ») restent sur des serveurs au sein de l’UE et ne soient pas transférées hors de celle-ci. Il exige également que les entreprises informent les personnes en cas de violations des données, et engagent un délégué à la protection des données (DPD). D’autres pays ont développé des réglementations semblables, ou sont en train de le faire.
+Un des développements les plus importants dans ce sens est le Règlement général sur la protection des données (RGPD). Celui-ci a été conçu pour renforcer la protection des données pour les personnes au sein de l’Union européenne. Le RGPD exige que les données concernant les personnes (comme « un nom, une adresse postale, une photo, une adresse e-mail, des coordonnées bancaires, des publications sur des réseaux sociaux, des informations médicales ou l’adresse IP d’un ordinateur ») restent sur des serveurs au sein de l’UE et ne soient pas transférées hors de celle-ci. Il exige également que les entreprises informent les personnes en cas de violations des données, et engagent un délégué à la protection des données (DPD). D’autres pays ont développé des réglementations semblables, ou sont en train de le faire.
 
 ## <a name="compliant-foundation-in-azure"></a>Conformité dans Azure
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Risques métier et motivations associés à la cohérence des ressources
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42510f62cb3f673698832403126901789b05e978
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031181"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222019"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Risques métier et motivations associés à la cohérence des ressources
 
@@ -22,7 +22,7 @@ Cet article décrit les raisons pour lesquelles les clients adoptent une discipl
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-resource-consistency-relevant"></a>La cohérence des ressources est-elle pertinente ?
+## <a name="resource-consistency-relevancy"></a>Pertinence de la cohérence des ressources
 
 En matière de déploiement de ressources et de charges de travail, le cloud offre davantage d’agilité et de flexibilité par rapport à la plupart des centres de données locaux traditionnels. Toutefois, ces avantages potentiels liés au cloud sont également associés à d’éventuels inconvénients en termes de gestion, qui peuvent grandement compromettre la réussite de votre adoption du cloud. Quelles ressources avez-vous déployées ? Quelles équipes possèdent quelles ressources ? Avez-vous suffisamment de ressources pour héberger une charge de travail ? Comment savez-vous que les charges de travail sont intègres ?
 

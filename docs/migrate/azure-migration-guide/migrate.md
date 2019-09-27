@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022782"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224073"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrer des ressources (infrastructure, applications et données)
 
@@ -196,6 +196,14 @@ Pour plus d'informations, consultez les pages suivantes :
 
 - [Vue d’ensemble de l’Assistant Expérimentation de base de données](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
+## <a name="cosmos-db-data-migration-tool"></a>Outil de migration de données Cosmos DB
+
+L’outil de migration de données Azure Cosmos DB peut importer des données dans les collections et les tables Azure Cosmos DB à partir de différentes sources. Vous pouvez importer à partir de fichiers JSON, de fichiers CSV, de SQL, de MongoDB, d’un stockage Table Azure, d’Amazon DynamoDB et même de collections d’API SQL Azure Cosmos DB. L’outil de migration de données peut également être utilisé pour migrer des données à partir d’une collection à partition unique vers une collection à plusieurs partitions pour l’API SQL.
+
+Pour plus d'informations, consultez les pages suivantes :
+
+- [Outil de migration de données Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Outils de migration tiers](#tab/third-party-tools)
 
 Plusieurs outils de migration tiers et services de fournisseur de logiciel indépendant (ISV) peuvent vous aider dans le processus de migration. Chacun offre des avantages et des points forts différents. Ces outils incluent :
@@ -224,16 +232,28 @@ Movere est une solution de détection qui fournit les données et les insights n
 
 [En savoir plus](https://www.movere.io)
 
+## <a name="cosmos-db-partners"></a>Partenaires Cosmos DB
+
+Vous pouvez choisir parmi un large éventail d’outils et de partenaires intégrateurs système expérimentés pour vous assister dans vos migrations Azure Cosmos DB tout en répondant à vos besoins en matière de bases de données NoSQL.
+
+[En savoir plus](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+
 Consultez le [Centre de migration Azure](https://azure.microsoft.com/migration/support) pour découvrir les organisations qui proposent des solutions technologiques partenaires prêtes à l’emploi pour répondre à vos scénarios de migration et en savoir plus sur d’autres outils de migration et services de support fournis par des tiers.
+
+Vous trouverez dans le [Guide de migration de bases de données Azure](https://datamigration.microsoft.com) une multitude d’options de migration de base de données et des instructions pas à pas pour les migrations de systèmes de partenaires et natifs.
 
 # <a name="project-management-toolstabproject-management-tools"></a>[Outils de gestion de projet](#tab/project-management-tools)
 
-Les projets qui ne sont pas suivis et gérés sont plus susceptibles de rencontrer des problèmes. Pour garantir un résultat réussi, nous pensons qu’il est important d’utiliser un outil de gestion de projet. De nombreux outils différents sont disponibles et les chefs de projet de votre organisation peuvent déjà avoir leur favori. Microsoft propose les outils de gestion de projet suivants, qui peuvent fonctionner ensemble pour fournir des fonctionnalités plus larges :
+Les projets qui ne sont pas suivis et gérés sont plus susceptibles de rencontrer des problèmes. Pour garantir un résultat réussi, nous pensons qu’il est important d’utiliser un outil de gestion de projet. De nombreux outils différents sont disponibles et les chefs de projet de votre organisation peuvent déjà avoir leur favori.
+
+Azure DevOps est l’outil de gestion de projet recommandé dans le cadre d’une migration cloud. Pour accélérer l’utilisation d’Azure DevOps, le Framework d’adoption du cloud inclut un outil assurant le déploiement automatique d’un modèle de projet. Ce modèle comprend les tâches généralement exécutées lors d’un travail de migration. Déployez le modèle en suivant [ces instructions](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template). Vous pouvez ensuite le modifier pour prendre en compte les [charges de travail ](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) et les [ressources](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) à migrer.
+
+Microsoft propose également les outils de gestion de projet suivants, qui peuvent fonctionner ensemble pour fournir des fonctionnalités plus larges :
 
 - [Microsoft Planner](https://tasks.office.com) : Moyen simple et visuel d’organiser le travail d’équipe.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software) : Gestion de projets et de portefeuilles, gestion de la capacité des ressources, gestion financière, gestion des feuilles de présence et des calendriers.
 - [Microsoft Teams](https://products.office.com/microsoft-teams) : Outil de collaboration et de communication pour les équipes. Teams intègre également Planner et d’autres outils pour améliorer la collaboration.
-- [Azure DevOps](https://dev.azure.com) : À l’aide d’Azure DevOps, vous pouvez gérer votre infrastructure sous forme de code ou utiliser les éléments de travail et les tableaux pour gérer les projets. À mesure que vous gagnez en expérience, votre organisation peut tirer parti des fonctionnalités CI/CD.
+- [Azure DevOps](https://dev.azure.com) : Le modèle de planification du Framework d’adoption du cloud n’est pas requis pour l’utilisation d’Azure DevOps. Vous pouvez utiliser le service sans le modèle pour gérer votre infrastructure sous forme de code ou utiliser les éléments de travail et les tableaux pour gérer les projets. À mesure que vous gagnez en expérience, votre organisation peut tirer parti des fonctionnalités CI/CD.
 
 Ce ne sont pas les seuls outils disponibles. De nombreux autres outils tiers sont largement utilisés dans la communauté de gestion de projet.
 

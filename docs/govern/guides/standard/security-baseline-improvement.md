@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a9b67b20f0f9169f5da7f941615612218ef29f94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031702"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223789"
 ---
 # <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Guide pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité
 
@@ -71,7 +71,7 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 
 1. Toutes les ressources déployées doivent être classées par criticité et par classification des données. Les classifications doivent être examinées par l’équipe de gouvernance cloud et le propriétaire de l’application avant le déploiement sur le cloud.
 2. Les applications qui stockent des données protégées ou y accèdent doivent être gérées différemment des autres applications. Au minimum, elles doivent être segmentées de façon à éviter tout accès involontaire à des données protégées.
-3. Toutes les données protégées doivent être chiffrées au repos.
+3. Toutes les données protégées doivent être chiffrées au repos. Même s’il s’agit du comportement par défaut pour tous les comptes de stockage Azure, des stratégies de chiffrement supplémentaires peuvent être nécessaires, notamment le chiffrement des données dans le compte de stockage, le chiffrement des machines virtuelles et le chiffrement au niveau de la base de données en cas d’utilisation de SQL sur une machine virtuelle (chiffrement de colonne et TDE).
 4. Les autorisations avec élévation de privilèges dans les segments contenant des données protégées doivent être des exceptions. Ces exceptions seront validées avec l’équipe de gouvernance cloud et auditées régulièrement.
 5. Les sous-réseaux de réseau qui contiennent des données protégées doivent être isolés de tous les autres sous-réseaux. Le trafic réseau entre les sous-réseaux de données protégées doit être audité régulièrement.
 6. Aucun sous-réseau contenant des données protégées ne doit être accessible directement via l’Internet public ou entre les centres de données. L’accès à ces sous-réseaux doit être routé via des sous-réseaux intermédiaires. Tous les accès à ces sous-réseaux doivent transiter par une solution de pare-feu qui peut effectuer des analyses des paquets et mettre en œuvre des fonctions de blocage.
@@ -93,35 +93,35 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 Cette conception du produit minimum viable (MVP) de la gouvernance va changer de façon à inclure de nouvelles stratégies Azure ainsi qu’une implémentation d’Azure Cost Management. Ensemble, ces deux modifications de la conception permettront de répondre aux nouvelles instructions de la stratégie d’entreprise.
 
 1. Les équipes Réseau et Sécurité informatique définissent la configuration réseau requise. L’équipe de gouvernance cloud prend en charge la conversion.
-1. Les équipes Identité et Sécurité informatique définissent les exigences liées aux identités et apportent les modifications nécessaires à l’implémentation locale d’Active Directory. L’équipe de gouvernance cloud passe en revue les modifications.
-1. Créez un référentiel dans Azure DevOps pour stocker et gérer les versions de tous les modèles Azure Resource Manager pertinents et des configurations utilisant des scripts.
-1. Implémentation d’Azure Security Center :
+2. Les équipes Identité et Sécurité informatique définissent les exigences liées aux identités et apportent les modifications nécessaires à l’implémentation locale d’Active Directory. L’équipe de gouvernance cloud passe en revue les modifications.
+3. Créez un référentiel dans Azure DevOps pour stocker et gérer les versions de tous les modèles Azure Resource Manager pertinents et des configurations utilisant des scripts.
+4. Implémentation d’Azure Security Center :
     1. Configurez Azure Security Center pour les groupes d’administration qui contiennent des classifications de données protégées.
-    1. Définissez le provisionnement automatique sur Activé par défaut pour garantir la conformité des mises à jour correctives.
-    1. Établissez des configurations de sécurité des systèmes d’exploitation. L’équipe Sécurité informatique définit la configuration.
-    1. Apportez un support à l’équipe Sécurité informatique pour l’utilisation initiale de Security Center. Confiez l’utilisation de Security Center à l’équipe Sécurité informatique, mais conservez un accès dans le but d’améliorer continuellement la gouvernance.
-    1. Créez un modèle Resource Manager qui reflète les modifications nécessaires pour la configuration de Security Center au sein d’un abonnement.
-1. Mettez à jour les stratégies Azure pour tous les abonnements :
+    2. Définissez le provisionnement automatique sur Activé par défaut pour garantir la conformité des mises à jour correctives.
+    3. Établissez des configurations de sécurité des systèmes d’exploitation. L’équipe Sécurité informatique définit la configuration.
+    4. Apportez un support à l’équipe Sécurité informatique pour l’utilisation initiale de Security Center. Confiez l’utilisation de Security Center à l’équipe Sécurité informatique, mais conservez un accès dans le but d’améliorer continuellement la gouvernance.
+    5. Créez un modèle Resource Manager qui reflète les modifications nécessaires pour la configuration de Security Center au sein d’un abonnement.
+5. Mettez à jour les stratégies Azure pour tous les abonnements :
     1. Auditez et appliquez la classification de la criticité et des données sur tous les groupes d’administration et tous les abonnements, de façon à identifier tous les abonnements avec des classifications de données protégées.
-    1. Auditez et imposez l’utilisation exclusive d’images approuvées.
-1. Mettez à jour les stratégies Azure pour tous les abonnements qui contiennent des classifications de données protégées :
+    2. Auditez et imposez l’utilisation exclusive d’images approuvées.
+6. Mettez à jour les stratégies Azure pour tous les abonnements qui contiennent des classifications de données protégées :
     1. Auditez et imposez l’utilisation exclusive de rôles RBAC Azure standard.
-    1. Auditez et imposez le chiffrement au repos pour tous les comptes de stockage et tous les fichiers sur les nœuds individuels.
-    1. Auditez et imposez l’application d’un groupe de sécurité réseau à toutes les cartes réseau et à tous les sous-réseaux. Les équipes Réseau et Sécurité informatique définissent le groupe de sécurité réseau.
-    1. Auditez et imposez l’utilisation d’un sous-réseau approuvé et d’une interface réseau par réseau virtuel.
-    1. Auditez et imposez la limitation des tables de routage définies par l’utilisateur.
-    1. Appliquez les stratégies intégrées pour la configuration des invités comme suit :
+    2. Auditez et imposez le chiffrement au repos pour tous les comptes de stockage et tous les fichiers sur les nœuds individuels.
+    3. Auditez et imposez l’application d’un groupe de sécurité réseau à toutes les cartes réseau et à tous les sous-réseaux. Les équipes Réseau et Sécurité informatique définissent le groupe de sécurité réseau.
+    4. Auditez et imposez l’utilisation d’un sous-réseau approuvé et d’une interface réseau par réseau virtuel.
+    5. Auditez et imposez la limitation des tables de routage définies par l’utilisateur.
+    6. Appliquez les stratégies intégrées pour la configuration des invités comme suit :
         1. Vérifiez que les serveurs web Windows utilisent des protocoles de communication sécurisés.
-        1. Vérifiez que les paramètres de sécurité des mots de passe sont correctement définis dans les machines Linux et Windows.
-1. Configuration du pare-feu :
+        2. Vérifiez que les paramètres de sécurité des mots de passe sont correctement définis dans les machines Linux et Windows.
+7. Configuration du pare-feu :
     1. Identifiez une configuration de Pare-feu Azure qui répond aux exigences de sécurité nécessaires. Vous pouvez également identifier une appliance de tiers qui est compatible avec Azure.
-    1. Créez un modèle Resource Manager pour déployer le pare-feu avec les configurations nécessaires.
-1. Blueprint Azure :
+    2. Créez un modèle Resource Manager pour déployer le pare-feu avec les configurations nécessaires.
+8. Blueprint Azure :
     1. Créez un blueprint nommé `protected-data`.
-    1. Ajoutez les modèles de pare-feu et Azure Security Center au blueprint.
-    1. Ajoutez les nouvelles stratégies pour les abonnements de données protégées.
-    1. Publiez le blueprint sur le groupe d’administration qui prévoit d’héberger des données protégées.
-    1. Appliquez le nouveau blueprint à chaque abonnement affecté, en plus des blueprints existants.
+    2. Ajoutez les modèles de pare-feu et Azure Security Center au blueprint.
+    3. Ajoutez les nouvelles stratégies pour les abonnements de données protégées.
+    4. Publiez le blueprint sur le groupe d’administration qui prévoit d’héberger des données protégées.
+    5. Appliquez le nouveau blueprint à chaque abonnement affecté, en plus des blueprints existants.
 
 ## <a name="conclusion"></a>Conclusion
 

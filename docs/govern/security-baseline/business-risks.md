@@ -4,25 +4,25 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Risques métier et motivations associés à la Base de référence de la sécurité
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032184"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222287"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Risques métier et motivations associés à la Base de référence de la sécurité
 
-Cet article décrit les raisons pour lesquelles les clients adoptent une discipline Base de référence de la sécurité au sein d’une stratégie de gouvernance cloud. Des exemples sur les risques métier potentiels pouvant conduire à la rédaction de déclarations de stratégie sont également présentés.
+Cet article décrit les raisons pour lesquelles les clients adoptent une discipline Base de référence de la sécurité au sein d’une stratégie de gouvernance cloud. Des exemples sur les risques métier potentiels pouvant conduire à la rédaction d’instructions de stratégie sont également présentés.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>La Base de référence de la sécurité est-elle pertinente ?
+## <a name="security-baseline-relevancy"></a>Pertinence de la Base de référence de la sécurité
 
 La sécurité est une préoccupation majeure de tous les services informatiques. Les déploiements dans le cloud sont confrontés aux mêmes risques de sécurité que les charges de travail hébergées dans des centres de données locaux classiques. Cela étant, la nature des plateformes de cloud public, sans propriété directe sur le matériel physique stockant et exécutant vos charges de travail, signifie que la sécurité du cloud requiert ses propres stratégies et processus.
 
