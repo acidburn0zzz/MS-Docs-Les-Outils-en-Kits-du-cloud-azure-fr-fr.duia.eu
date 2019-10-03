@@ -678,6 +678,8 @@
                   href: manage/monitor/platform-overview.md
             - name: Mettre en place un examen de santé opérationnel
               href: manage/operational-fitness-review.md
+            - name: Centraliser les opérations de gestion
+              href: manage/centralize-operations.md
     - name: Informations de référence
       items:
         - name: Feuille de route du Framework d’adoption du cloud
