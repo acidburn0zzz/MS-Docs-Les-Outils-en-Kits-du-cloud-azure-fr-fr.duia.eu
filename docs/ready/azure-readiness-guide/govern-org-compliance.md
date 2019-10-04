@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Apprenez à configurer la gouvernance, la sécurité et la conformité pour votre environnement Azure.
 author: tvuylsteke
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b94c1cac96fa5458c722d0a66e1ef2dac9d167f9
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224277"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71804484"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Gouvernance, sécurité et conformité dans Azure
 
-Lorsque vous établissez une stratégie d’entreprise et planifiez vos stratégies de gouvernance, vous pouvez utiliser des outils et des services tels que Azure Policy, Azure Blueprints et Azure Security Center pour appliquer et automatiser les décisions de gouvernance de votre organisation. Avant de commencer votre planification de la gouvernance, utilisez l’[outil Governance Benchmark](http://aka.ms/caf/gov/assess) pour identifier les lacunes potentielles dans l’approche de gouvernance cloud de votre organisation. Pour plus d’informations sur la façon de développer des processus de gouvernance, consultez l’[aide du Framework d’adoption du cloud pour Azure au sujet de la gouvernance](../../govern/index.md).
+Lorsque vous établissez une stratégie d’entreprise et planifiez vos stratégies de gouvernance, vous pouvez utiliser des outils et des services tels que Azure Policy, Azure Blueprints et Azure Security Center pour appliquer et automatiser les décisions de gouvernance de votre organisation. Avant de commencer votre planification de la gouvernance, utilisez l’[outil Governance Benchmark](https://cafbaseline.com) pour identifier les lacunes potentielles dans l’approche de gouvernance cloud de votre organisation. Pour plus d’informations sur la façon de développer des processus de gouvernance, consultez l’[aide du Framework d’adoption du cloud pour Azure au sujet de la gouvernance](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
@@ -78,7 +78,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 ::: zone target="docs"
 
 1. Accédez à [Blueprints - Définitions de blueprints](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
-1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
+1. Sélectionnez la définition de blueprint que vous avez créée dans les étapes précédentes.
 1. Passez en revue la définition de blueprint et sélectionnez **Publier le blueprint**.
 1. Spécifiez une **Version** (par exemple, _1.0_) et les **Notes de changement** éventuelles, puis sélectionnez **Publier**.
 
@@ -165,6 +165,7 @@ Pour plus d'informations, consultez les rubriques suivantes :
 ::: zone-end
 
 ::: zone target="chromeless"
+
 ## <a name="action"></a>Action
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::

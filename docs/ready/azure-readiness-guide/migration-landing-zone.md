@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment déployer une zone d’accueil de migration dans Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 5/19/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223926"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811101"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Déployer une zone d’accueil de migration
 
@@ -75,7 +75,7 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 
 Découvrez plus d’informations et téléchargez un exemple de référence du blueprint de zone d’accueil de migration du Framework d’adoption du cloud pour le déployer ou le personnaliser à partir des [exemples de blueprints Azure](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Les exemples de blueprints sont également disponibles dans le portail. Pour plus d’informations sur le déploiement d’un blueprint, consultez la page [Blueprints Azure](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Les exemples de blueprints sont également disponibles dans le portail. Pour des détails sur la création d’un blueprint, consultez [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Pour obtenir des conseils sur les modifications qui doivent être apportées à ce blueprint ou à la zone d’accueil qui en résulte, consultez les articles portant sur les [considérations relatives à la zone d’accueil](../considerations/index.md).
 
