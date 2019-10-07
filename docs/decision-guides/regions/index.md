@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 041e1ccaf6ec0e928b6868f4e8c90849c8d4dea8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224590"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967712"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
@@ -110,7 +110,7 @@ Cette approche est pilotée par des informations quantifiables. Par conséquent,
 Lorsque l’étendue d’une migration comprend plusieurs régions, les considérations suivantes relatives à la disponibilité doivent être évaluées par l’équipe d’adoption cloud :
 
 - La souveraineté des données peut nécessiter la localisation de certaines ressources, mais il existe de nombreuses ressources qui peuvent ne pas être régies par ces contraintes de conformité. Des opérations telles que la journalisation, la création de rapports, le routage réseau, l’identité et d’autres services informatiques centraux peuvent être admissibles pour être hébergés en tant que services partagés sur plusieurs abonnements, voire dans plusieurs régions. Il est recommandé que l’équipe d’adoption cloud évalue un modèle de partage pour ces services, comme indiqué dans [l’architecture de référence pour une topologie hub-and-spoke avec des services partagés](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
-- Lors du déploiement de plusieurs instances d’environnements similaires, une fabrique d’environnement peut assurer la cohérence, améliorer la gouvernance et accélérer le déploiement. Le [parcours de gouvernance pour les grandes entreprises](../../govern/guides/complex/index.md) établit une approche qui crée un environnement qui évolue dans plusieurs régions.
+- Lors du déploiement de plusieurs instances d’environnements similaires, une fabrique d’environnement peut assurer la cohérence, améliorer la gouvernance et accélérer le déploiement. Le [guide de gouvernance pour les entreprises complexes](../../govern/guides/complex/index.md) établit une approche qui crée un environnement qui évolue dans plusieurs régions.
 
 Une fois que l’équipe est à l’aise avec l’approche de base et que la préparation est alignée, il existe quelques conditions préalables basées sur les données à prendre en compte :
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b5d5bca79d08a0084026c027a242086cefb0100f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026088"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967601"
 ---
 # <a name="cloud-governance-guides"></a>Guides de gouvernance cloud
 
@@ -76,27 +76,27 @@ Pour entamer un parcours de gouvernance, choisissez l’une des deux options ci-
 
 ### <a name="business-characteristics"></a>Caractéristiques de l’entreprise
 
-| Caractéristique | Organisation standard                                                                              | Entreprise complexe                                                                                               |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Zone (pays ou région géopolitique) | Les clients ou le personnel se trouvent majoritairement dans une seule zone.                                                      | Les clients ou le personnel sont répartis sur plusieurs zones ou nécessitent des clouds souverains.                                                             |
-| Unités commerciales affectées                    | Unités commerciales partageant une infrastructure informatique commune                                                                                    | Plusieurs unités commerciales qui ne partagent pas une infrastructure informatique commune                                                                                        |
-| Budget informatique                                  | Budget informatique unique                                                                                        | Budget alloué à différentes unités commerciales et monnaies locales                                                                         |
-| Investissements informatiques                             | Les frais liés aux dépenses d’investissement sont planifiés annuellement et couvrent généralement uniquement la maintenance de base. | Les frais liés aux dépenses d’investissement sont planifiés annuellement et incluent souvent la maintenance ainsi qu’un cycle de renouvellement de trois à cinq ans. |
+| Caractéristique | Organisation standard | Entreprise complexe |
+|---|---|---|
+| Zone (pays ou région géopolitique) | Les clients ou le personnel se trouvent majoritairement dans une seule zone. | Les clients ou le personnel sont répartis sur plusieurs zones ou nécessitent des clouds souverains. |
+| Unités commerciales affectées | Unités commerciales partageant une infrastructure informatique commune | Plusieurs unités commerciales qui ne partagent pas une infrastructure informatique commune |
+| Budget informatique | Budget informatique unique | Budget alloué à différentes unités commerciales et monnaies locales |
+| Investissements informatiques | Les frais liés aux dépenses d’investissement sont planifiés annuellement et couvrent généralement uniquement la maintenance de base. | Les frais liés aux dépenses d’investissement sont planifiés annuellement et incluent souvent la maintenance ainsi qu’un cycle de renouvellement de trois à cinq ans. |
 
 ### <a name="current-state-before-adopting-cloud-governance"></a>État actuel avant l’adoption de la gouvernance cloud
 
-| State | Entreprise standard                                                                               | Entreprise complexe                                                                                                          |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Centre de données ou fournisseurs d’hébergement tiers | Moins de cinq centres de données                                                                                  | Plus de cinq centres de données                                                                                                   |
-| Mise en réseau                                  | Aucun réseau étendu ou 1&ndash;2 fournisseurs de réseau étendu                                                                             | Réseau complexe ou réseau étendu global                                                                                             |
-| Identité                                    | Forêt unique et domaine unique. | Complexe, forêts et domaines multiples.  |
+| State | Entreprise standard | Entreprise complexe |
+|---|---|---|
+| Centre de données ou fournisseurs d’hébergement tiers | Moins de cinq centres de données | Plus de cinq centres de données |
+| Mise en réseau | Aucun réseau étendu ou 1&ndash;2 fournisseurs de réseau étendu | Réseau complexe ou réseau étendu global |
+| Identité | Forêt unique et domaine unique. | Complexe, forêts et domaines multiples. |
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>État futur souhaité après une amélioration incrémentielle de la gouvernance cloud
 
-| State | Organisation standard                                                                        | Entreprise complexe                                                                                        |
-|----------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Gestion des coûts – comptabilité cloud           | Modèle de récupération des données de facturation. Facturation informatique centralisée.                                                | Modèle de rétrofacturation. La facturation peut être répartie en fonction de l’approvisionnement informatique.                                  |
-| Ligne de base de sécurité – données protégées           | Données financières de l’entreprise et adresse IP. Données client limitées. Aucune exigence en matière de conformité des tiers.     | Plusieurs ensembles de données financières et personnelles des clients. Conformité des tiers à envisager. |
+| State | Organisation standard | Entreprise complexe |
+|---|---|---|
+| Gestion des coûts – comptabilité cloud | Modèle de récupération des données de facturation. Facturation informatique centralisée. | Modèle de rétrofacturation. La facturation peut être répartie en fonction de l’approvisionnement informatique. |
+| Ligne de base de sécurité – données protégées | Données financières de l’entreprise et adresse IP. Données client limitées. Aucune exigence en matière de conformité des tiers. | Plusieurs ensembles de données financières et personnelles des clients. Conformité des tiers à envisager. |
 
 ## <a name="azure-virtual-datacenter"></a>Centre de données virtuel Azure
 
@@ -124,6 +124,6 @@ Pour plus d’informations, consultez la section [Centre de données virtuel Azu
 Choisissez un de ces guides :
 
 > [!div class="nextstepaction"]
-> [Guide de gouvernance standard](./standard/index.md)
+> [Guide de gouvernance pour les entreprises standard](./standard/index.md)
 >
 > [Guide de gouvernance pour les entreprises complexes](./complex/index.md)

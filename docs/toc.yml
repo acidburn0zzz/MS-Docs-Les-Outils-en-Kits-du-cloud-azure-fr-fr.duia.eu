@@ -66,8 +66,6 @@
               href: digital-estate/calculate.md
         - name: Alignement initial de l’organisation
           href: plan/initial-org-alignment.md
-        - name: 'Préparation des compétences - Adapter les rôles, compétences et processus'
-          href: plan/adapt-roles-skills-processes.md
         - name: Plan d’adoption du cloud
           items:
             - name: Introduction
@@ -426,7 +424,7 @@
               items:
                 - name: Vue d'ensemble
                   href: govern/guides/index.md
-                - name: Guide pour les petites et moyennes entreprises
+                - name: Guide de gouvernance pour les entreprises standard
                   items:
                     - name: Vue d'ensemble
                       href: govern/guides/standard/index.md
@@ -444,7 +442,7 @@
                       href: govern/guides/standard/cost-management-improvement.md
                     - name: Scénarios multiclouds
                       href: govern/guides/standard/multicloud-improvement.md
-                - name: Guide pour les grandes entreprises
+                - name: Guide de gouvernance pour les entreprises complexes
                   items:
                     - name: Vue d'ensemble
                       href: govern/guides/complex/index.md
@@ -685,8 +683,9 @@
         - name: Feuille de route du Framework d’adoption du cloud
           href: reference/roadmap.md
         - name: Guides de décision
-          href: decision-guides/index.md
           items:
+            - name: Vue d'ensemble
+              href: decision-guides/index.md
             - name: Abonnements
               href: decision-guides/subscriptions/index.md
             - name: Identité
