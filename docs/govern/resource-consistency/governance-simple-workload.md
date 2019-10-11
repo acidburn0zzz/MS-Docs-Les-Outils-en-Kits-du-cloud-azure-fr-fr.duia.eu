@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: df33e9f7f1c591d9de286b0a2c646bb009fc2775
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9a64a069dcebb12cf550f697561b76903e6d01bf
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223057"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967346"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Conception de gouvernance pour une charge de travail simple
 
@@ -109,7 +109,7 @@ Lors de la création de votre compte Azure, vous devez spécifier une personne d
 
 Ensuite, le **propriétaire du compte** Azure doit [créer un abonnement](https://docs.microsoft.com/partner-center/create-a-new-subscription) et [associer le client Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) à cet abonnement.
 
-Enfin, maintenant que l’abonnement est créé que le client Azure AD lui est associé, vous pouvez [ajouter le **propriétaire de la charge de travail** à l’abonnement intégré au **rôle de** propriétaire](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription).
+Enfin, maintenant que l’abonnement est créé que le client Azure AD lui est associé, vous pouvez [ajouter le **propriétaire de la charge de travail** à l’abonnement intégré au **rôle de** propriétaire](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222662"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967687"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exemples d’instructions de stratégie pour l’accélération du déploiement
 
@@ -32,7 +32,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques métiers 
 
 **Instruction de stratégie :** dans la mesure du possible, toutes les ressources déployées dans le cloud doivent être déployées à l’aide de modèles ou de scripts d’automatisation.
 
-**Options de conception potentielles** : les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) proposent une approche de type « infrastructure en tant que code » pour déployer vos ressources sur Azure. Vous pouvez également utiliser [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview), qui vous offre un outil cohérent pour le déploiement local et dans le cloud.
+**Options de conception potentielles** : les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) proposent une approche de type « infrastructure en tant que code » pour déployer vos ressources sur Azure. Vous pouvez également utiliser [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview), qui vous offre un outil cohérent pour le déploiement local et dans le cloud.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Manque de visibilité sur les problèmes du système
 
