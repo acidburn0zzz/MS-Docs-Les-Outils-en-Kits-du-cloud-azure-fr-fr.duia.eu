@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b7a2ae0457550189df66b8aa290fd9835cb11904
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223990"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378158"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
 
 > [!NOTE]
-> La structure d’entreprise Azure a été intégrée au framework d’adoption du cloud Microsoft. Le contenu de cet article est maintenant représenté dans la section [Prêt](../ready/index.md) du nouveau framework. Cet article sera déprécié début 2020. Pour commencer à utiliser le nouveau processus, reportez-vous à la [vue d’ensemble Prêt](../ready/index.md), à la [création de votre première zone d’accueil](../ready/azure-readiness-guide/migration-landing-zone.md) et/ou aux [considérations relatives aux zones d’accueil](../ready/considerations/index.md).
+> La structure d’entreprise Azure a été intégrée au framework d’adoption du cloud Microsoft. Le contenu de cet article est maintenant représenté dans la section [Prêt](../ready/index.md) du nouveau framework. Cet article sera déprécié début 2020. Pour commencer à utiliser le nouveau processus, reportez-vous à la [vue d’ensemble Prêt](../ready/index.md), à la [création de votre première zone d’accueil](../ready/azure-setup-guide/migration-landing-zone.md) et/ou aux [considérations relatives aux zones d’accueil](../ready/considerations/index.md).
 
 Les entreprises adoptent de plus en plus le cloud public en raison de son agilité et de la flexibilité. Elles s’appuient sur les points forts du cloud pour générer des revenus et optimiser l’utilisation des ressources dans le cadre de leur activité. Microsoft Azure offre une multitude de services et de fonctionnalités que les entreprises assemblent comme des modules pour gérer un large éventail de charges de travail et d’applications.
 

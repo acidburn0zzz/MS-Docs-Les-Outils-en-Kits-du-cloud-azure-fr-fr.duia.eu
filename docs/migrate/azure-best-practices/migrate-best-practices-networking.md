@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8fbdd20c435d4aed8a284174d813abc8d391171b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 632ba4f74046636a2a41d9666c5c58784290c9b4
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022851"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378351"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
 
@@ -74,7 +74,7 @@ Tenez compte des éléments suivants :
 
 - [En savoir plus](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) sur la topologie hub-and-spoke.
 - Obtenir des recommandations de réseau pour l’exécution de machines virtuelles [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) et [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) dans Azure.
-- [En savoir plus](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) sur l’homologation de réseaux virtuels.
+- [En savoir plus](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) sur le peering de réseaux virtuels.
 
 ## <a name="best-practice-design-subnets"></a>Meilleure pratique : conception des sous-réseaux
 
@@ -120,7 +120,7 @@ Azure ajoute par défaut un serveur DNS lorsque vous déployez un réseau virtue
 **En savoir plus :**
 
 - [En savoir plus sur](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) la résolution de noms lorsque vous utilisez votre propre serveur DNS.
-- [En savoir plus sur](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions?toc=%2fazure%2fvirtual-network%2ftoc.json#naming-subscriptions) les règles et restrictions d’affectation de noms DNS.
+- [En savoir plus sur](../../ready/considerations/naming-and-tagging.md) les règles et restrictions d’affectation de noms DNS.
 
 ## <a name="best-practice-set-up-availability-zones"></a>Meilleure pratique : Configurer des zones de disponibilité
 
