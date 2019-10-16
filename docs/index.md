@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024435"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72377946"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework d’adoption du cloud Microsoft pour Azure
 
@@ -159,7 +159,7 @@ Le Framework d’adoption du cloud est actuellement disponible en préversion pu
 - [Migration cloud](./migrate/index.md)
 - [Gouvernance cloud](./govern/guides/index.md)
 
-Nous développerons très régulièrement le Framework d’adoption du cloud avant sa disponibilité générale. L’expansion se traduira par des sections plus approfondies et de nouvelles sections de contenu. Pour plus d’informations, consultez la [feuille de route du Framework d’adoption du cloud](./reference/roadmap.md).
+Nous développerons très régulièrement le Framework d’adoption du cloud avant sa disponibilité générale. L’expansion se traduira par des sections plus approfondies et de nouvelles sections de contenu. Pour plus d’informations, consultez la [feuille de route du Framework d’adoption du cloud](./reference/index.md).
 
 ## <a name="intent"></a>Intention
 
