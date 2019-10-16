@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224381"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378260"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migration cloud dans le Framework d’adoption du cloud
 
@@ -57,7 +57,7 @@ Vérifiez que la zone d’accueil a été déployée et qu’elle est prête à 
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Migrer votre première charge de travail</h3>
-Utilisez le Guide de migration Azure pour vous aider à migrer votre première charge de travail. Cela vous aidera à vous familiariser avec les outils et approches nécessaires à la mise à l’échelle des efforts d’adoption.
+Utilisez le guide de migration Azure pour vous aider à migrer votre première charge de travail. Cela vous aidera à vous familiariser avec les outils et approches nécessaires à la mise à l’échelle des efforts d’adoption.
                         </div>
                     </div>
                 </div>

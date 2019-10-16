@@ -1,5 +1,5 @@
 ---
-title: 'Guide pour les entreprises standard : Le scénario sous-tendant la stratégie de gouvernance'
+title: 'Guide de gouvernance pour les entreprises standard : Le scénario sous-tendant la stratégie de gouvernance'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ce récit établit un cas d’utilisation de la gouvernance au cours du parcours d’adoption du cloud d’une entreprise standard.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 434a4d0238a4633210d31013e9787c3a0a92fc7a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031635"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967473"
 ---
-# <a name="standard-enterprise-guide-the-narrative-behind-the-governance-strategy"></a>Guide pour les entreprises standard : Le scénario sous-tendant la stratégie de gouvernance
+# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Guide de gouvernance pour les entreprises standard : Le scénario sous-tendant la stratégie de gouvernance
 
 Le récit suivant décrit le cas d’utilisation de la gouvernance au cours du [parcours d’adoption du cloud d’une entreprise standard](./index.md). Avant d’implémenter le cheminement, il est important de comprendre les hypothèses et les raisons qui sont reflétées dans ce scénario. Vous pouvez ensuite mieux aligner la stratégie de gouvernance au cheminement de votre propre organisation.
 

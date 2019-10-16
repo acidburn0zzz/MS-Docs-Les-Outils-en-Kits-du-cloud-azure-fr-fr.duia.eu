@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022161"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967751"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Suivi des coûts dans les unités commerciales, les environnements ou les projets
 
@@ -40,7 +40,7 @@ La première étape dans le suivi précis des informations relatives aux coûts 
 
 ### <a name="resource-organization"></a>Organisation des ressources
 
-Il existe plusieurs approches pour organiser les ressources. Cette section décrit une meilleure pratique basée sur les besoins d’une grande entreprise avec des structures de coût réparties entre les unités commerciales, les zones géographiques et les organisations informatiques. Une meilleure pratique similaire pour une organisation plus petite et moins complexe est disponible dans [Parcours de gouvernance pour les petites et moyennes entreprises](../../govern/guides/standard/index.md).
+Il existe plusieurs approches pour organiser les ressources. Cette section décrit une meilleure pratique basée sur les besoins d’une grande entreprise avec des structures de coût réparties entre les unités commerciales, les zones géographiques et les organisations informatiques. Une meilleure pratique similaire pour une organisation plus petite et moins complexe est disponible dans le [guide de gouvernance pour les entreprises standard](../../govern/guides/standard/index.md).
 
 Dans le cas d’une grande entreprise, le modèle suivant pour les groupes d’administration, les abonnements et les groupes de ressources créera une hiérarchie permettant à chaque équipe d’avoir le niveau de visibilité approprié pour accomplir ses tâches. Lorsque l’entreprise a besoin de contrôles de coûts pour empêcher les dépassements de budget, elle peut appliquer des outils de gouvernance tels qu’Azure Blueprints ou Azure Policy aux abonnements au sein de cette structure pour bloquer rapidement les futures erreurs de coût.
 

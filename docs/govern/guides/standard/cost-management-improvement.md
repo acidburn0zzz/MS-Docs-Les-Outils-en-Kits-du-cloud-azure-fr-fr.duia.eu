@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5cbf9a6cdb3776e763fc27492ad499679b4d1327
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b4ff2db2b8d7009eb9d5a50dee630c1a8a60723c
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031183"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967590"
 ---
 # <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Guide pour les entreprises standard : Améliorer la discipline Gestion des coûts
 

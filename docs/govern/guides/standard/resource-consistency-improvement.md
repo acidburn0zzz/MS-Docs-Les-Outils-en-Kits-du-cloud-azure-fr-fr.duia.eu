@@ -1,7 +1,7 @@
 ---
-title: 'Guide pour les entreprises standard : Amélioration de la cohérence des ressources'
+title: 'Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guide pour les entreprises standard : Amélioration de la cohérence des ressources'
+description: 'Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222240"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967444"
 ---
-# <a name="standard-enterprise-guide-improving-resource-consistency"></a>Guide pour les entreprises standard : Amélioration de la cohérence des ressources
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources
 
 Cet article fait progresser le scénario en ajoutant des contrôles de cohérence des ressources, afin de prendre en charge des applications stratégiques.
 

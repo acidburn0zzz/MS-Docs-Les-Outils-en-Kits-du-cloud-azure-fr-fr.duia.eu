@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022612"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378397"
 ---
 # <a name="prerequisites-for-migration"></a>Prérequis pour la migration
 
@@ -60,7 +60,7 @@ Outre la responsabilité d’ensemble, certaines actions doivent être affectée
 - **État de préparation de la gestion des changements.** Établissez et communiquez le plan de suivi des changements techniques pendant la migration. D’autres d’informations à ce sujet seront disponibles au troisième trimestre 2019.
 - **Alignement avec les utilisateurs professionnels.** Établissez un plan visant à prédisposer la communauté des utilisateurs professionnels à l’exécution de la migration. D’autres d’informations à ce sujet seront disponibles au troisième trimestre 2019.
 - **Inventaire et analyse du patrimoine numérique.** Exécutez les outils nécessaires pour inventorier et analyser le patrimoine numérique. Pour plus d’informations, consultez la discussion portant sur le [patrimoine numérique](../../../digital-estate/index.md) dans le Framework d’adoption du cloud.
-- **État de préparation du cloud.** Évaluez l’environnement de déploiement cible pour vérifier qu’il est conforme aux exigences des premières charges de travail candidates. Pour plus d’informations, consultez le [guide de préparation pour Azure](../../../ready/azure-readiness-guide/index.md).
+- **État de préparation du cloud.** Évaluez l’environnement de déploiement cible pour vérifier qu’il est conforme aux exigences des premières charges de travail candidates. Pour plus d’informations, consultez le [guide de configuration Azure](../../../ready/azure-setup-guide/index.md).
 
 Les articles restants de cette série vous aident à respecter chacune de ces obligations.
 

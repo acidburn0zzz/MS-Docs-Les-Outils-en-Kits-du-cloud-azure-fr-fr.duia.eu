@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: fa7777f0c6be9c3cd93cfb24cac4ee8e87bee553
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816157"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378334"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ Les exercices suivants vous aideront lors du processus de création de zone d’
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/index.md">
+        <a href="./azure-setup-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -40,8 +40,8 @@ Les exercices suivants vous aideront lors du processus de création de zone d’
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Guide de préparation Azure</h3>
-Passez en revue le Guide de préparation Azure pour vous familiariser avec les outils et approches nécessaires lors de la création d’une zone d’accueil.
+                            <h3>Guide de configuration d’Azure</h3>
+Passez en revue le guide de configuration Azure pour vous familiariser avec les outils et approches nécessaires lors de la création d’une zone d’accueil.
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ Passez en revue le Guide de préparation Azure pour vous familiariser avec les o
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/migration-landing-zone.md">
+        <a href="./azure-setup-guide/migration-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Validez les modifications de zone d’accueil par rapport aux sections de Bonnes
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Préparez-vous pour l’adoption du cloud en consultant le [Guide de préparation pour Azure](./azure-readiness-guide/index.md).
+Préparez-vous pour l’adoption du cloud en consultant le [guide de configuration Azure](./azure-setup-guide/index.md).
 
 > [!div class="nextstepaction"]
-> [Guide de préparation Azure](./azure-readiness-guide/index.md)
+> [Guide de configuration Azure](./azure-setup-guide/index.md)

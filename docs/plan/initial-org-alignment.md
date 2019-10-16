@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 7b80d61aea9f713de422b5575e7cb3617314857f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4a1135ec23d508cdd0f013439bb034ff66cf0c4d
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022488"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967788"
 ---
 # <a name="initial-organization-alignment"></a>Alignement initial de l’organisation
 
@@ -43,9 +43,11 @@ En supposant que la structure suggérée soit alignée sur votre plan d’adopti
 - Quelle personne sera responsable de la définition de ces contrôles de gouvernance ?
 - D’autres fonctionnalités ou d’autres personnes auront-elles des responsabilités dans le plan d’adoption du cloud ?
 
+Une fois que vous avez documenté les réponses à ces questions, vous pouvez établir des [plans de préparation des compétences](./adapt-roles-skills-processes.md) pour la préparation de ces personnes au travail à venir.
+
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que vous aurez documenté les réponses à ces questions, passez à l’[article sur la préparation des compétences](./adapt-roles-skills-processes.md) pour définir les plans de préparation de ces personnes au travail à venir.
+Découvrez comment planifier l’adoption du cloud.
 
 > [!div class="nextstepaction"]
-> [Définir un plan de préparation des compétences](./adapt-roles-skills-processes.md)
+> [Planifier l’adoption du cloud](./plan-intro.md)
