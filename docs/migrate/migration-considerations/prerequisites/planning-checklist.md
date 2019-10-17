@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022596"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378381"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Check-list de planification de l’environnement de migration – Valider la préparation de l’environnement avant la migration
 
@@ -35,7 +35,7 @@ Que vous choisissiez d’aligner votre migration initiale sur une stratégie de 
 
 Si vous envisagez d’aligner votre migration sur une stratégie de gouvernance du cloud dès le départ, vous devez appliquer les [cinq disciplines de la gouvernance du cloud](../../../govern/governance-disciplines.md) pour vous aider à prendre des décisions éclairées en matière de stratégies, chaînes d’outils et mécanismes de mise en conformité. Cela permettra d’aligner votre environnement cloud sur les exigences globales de l’entreprise. Pour obtenir des exemples d’implémentation de ce modèle à l’aide des services Azure, consultez les [guides actionnables de conception de gouvernance](../../../govern/guides/index.md) du Framework d’adoption du cloud.
 
-Si vos migrations initiales ne sont pas étroitement alignées sur une stratégie de gouvernance cloud plus large, les problèmes généraux liés à l’organisation, à l’accès et à la planification de l’infrastructure doivent tout de même être managés. Consultez le [guide de préparation à Azure](../../../ready/azure-readiness-guide/index.md) pour obtenir de l’aide concernant ces décisions en matière de préparation au cloud.
+Si vos migrations initiales ne sont pas étroitement alignées sur une stratégie de gouvernance cloud plus large, les problèmes généraux liés à l’organisation, à l’accès et à la planification de l’infrastructure doivent tout de même être managés. Consultez le [guide de configuration Azure](../../../ready/azure-setup-guide/index.md) pour obtenir de l’aide concernant ces décisions en matière de préparation au cloud.
 
 > [!CAUTION]
 > Nous vous recommandons vivement de développer une stratégie de gouvernance pour tout ce qui va au-delà de la migration initiale de vos charges de travail.

@@ -8,13 +8,13 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit
-ms.openlocfilehash: 82e011355363eb0483914b01185a739ab847a997
+ms.custom: fasttrack-edit, setup
+ms.openlocfilehash: 0eee9746f4d2ee5fcf078774e070ffc25d430f38
 ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378254"
+ms.locfileid: "72379205"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Déployer une zone d’accueil de migration
 

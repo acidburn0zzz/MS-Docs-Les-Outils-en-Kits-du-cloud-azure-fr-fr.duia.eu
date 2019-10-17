@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224140"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378076"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -49,7 +49,7 @@ Pour étayer les critères précédents, cette liste fournit un exemple de premi
 
 - **Événements métier critiques :** Quand la motivation principale est un événement métier critique, l’implémentation d’un outil tel qu’[Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) peut constituer un bon premier projet. Durant la migration, vous pouvez utiliser cet outil pour migrer rapidement les ressources du centre de données. Toutefois, au cours du premier projet, vous pouvez être amené à l’utiliser simplement comme outil de reprise d’activité, ce qui réduit les dépendances à l’égard des ressources de reprise après sinistre dans le centre de données.
 
-- **Motivations de la migration :** Quand la migration est la principale motivation, il est sage de commencer par la migration d’une charge de travail non critique. Le [Guide de préparation Azure](../ready/azure-readiness-guide/index.md) et le [Guide de migration Azure](../migrate/azure-migration-guide/index.md) peuvent vous aider à migrer votre première charge de travail.
+- **Motivations de la migration :** Quand la migration est la principale motivation, il est sage de commencer par la migration d’une charge de travail non critique. Le [Guide de configuration Azure](../ready/azure-setup-guide/index.md) et le [Guide de migration Azure](../migrate/azure-migration-guide/index.md) peuvent vous aider à migrer votre première charge de travail.
 
 - **Motivations de l’innovation :** Quand l’innovation est la principale motivation, la création d’un environnement de développement/test ciblé peut constituer un excellent premier projet.
 

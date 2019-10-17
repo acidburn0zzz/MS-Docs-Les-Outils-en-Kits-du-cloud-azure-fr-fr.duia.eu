@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: fb521115d0a59af123bd78fdc2f4cc7c72939fb6
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223059"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378001"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Bien démarrer avec un parcours de migration cloud
 
@@ -64,7 +64,7 @@ L’objectif de cet effort est la migration ou la modernisation des charges de t
 
 Les migrations cloud sont souvent considérées comme un seul projet au sein d’un programme plus vaste visant à simplifier les opérations informatiques, leurs coûts ou leur complexité. La méthodologie de l’implémentation cloud permet d’aligner les efforts techniques d’une série de migrations de charges de travail sur les valeurs métier plus générales décrites dans la stratégie et la planification cloud.
 
-**Bien démarrer :** Pour bien démarrer avec une implémentation cloud, le [Guide de migration Azure](../migrate/azure-migration-guide/index.md) et le [Guide de préparation Azure](../ready/azure-readiness-guide/index.md) décrivent les outils et processus généraux nécessaires à la réussite d’une implémentation cloud. La migration de votre première charge de travail à l’aide de ces guides va aider l’équipe à surmonter les courbes d’apprentissage initiales au début du processus de planification. Vous devez ensuite prendre en compte la [liste de contrôle d’étendue supplémentaire](../migrate/expanded-scope/index.md), les [bonnes pratiques de la migration](../migrate/azure-best-practices/index.md) ainsi que les [considérations relatives à la migration](../migrate/migration-considerations/index.md) pour aligner l’aide de base de référence aux contraintes, processus, structures d’équipe et objectifs uniques de votre effort.
+**Bien démarrer :** Pour bien démarrer avec une implémentation cloud, le [Guide de migration Azure](../migrate/azure-migration-guide/index.md) et le [Guide de configuration Azure](../ready/azure-setup-guide/index.md) décrivent les outils et processus généraux nécessaires à la réussite d’une implémentation cloud. La migration de votre première charge de travail à l’aide de ces guides va aider l’équipe à surmonter les courbes d’apprentissage initiales au début du processus de planification. Vous devez ensuite prendre en compte la [liste de contrôle d’étendue supplémentaire](../migrate/expanded-scope/index.md), les [bonnes pratiques de la migration](../migrate/azure-best-practices/index.md) ainsi que les [considérations relatives à la migration](../migrate/migration-considerations/index.md) pour aligner l’aide de base de référence aux contraintes, processus, structures d’équipe et objectifs uniques de votre effort.
 
 ## <a name="cloud-strategy-and-planning"></a>Stratégie et planification cloud
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967207"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378411"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mécanismes de contrôle des coûts axés sur la migration
 
@@ -91,7 +91,7 @@ Les étapes suivantes fournissent des recommandations de coût pour les ressourc
 
 Azure Cost Management peut fournir une vision plus holistique des habitudes de dépenses, notamment un affichage détaillé des coûts et des tendances des dépenses dans le temps. Pour les migrations volumineuses ou complexes, cet affichage peut fournir les insights nécessaires pour prendre des décisions de gestion des coûts à grande échelle.
 
-Configuration requise : Le reste de cet onglet part du principe que le lecteur a terminé la configuration d’Azure Cost Management pendant l’exécution du guide de préparation Azure. Pour plus d’informations sur la configuration d’Azure Cost Management, consultez cet [article dans le guide de préparation Azure](../../ready/azure-readiness-guide/manage-costs.md). Une fois les données remplies, suivez les étapes suivantes pour estimer les coûts mensuels en fonction des données collectées.
+Configuration requise : Le reste de cet onglet part du principe que le lecteur a terminé la configuration d’Azure Cost Management dans le cadre du guide de configuration Azure. Pour plus d’informations sur la configuration d’Azure Cost Management, consultez cet [article dans le guide de configuration Azure](../../ready/azure-setup-guide/manage-costs.md). Une fois les données remplies, suivez les étapes suivantes pour estimer les coûts mensuels en fonction des données collectées.
 
 Les étapes suivantes chargeront les données d’analyse des coûts d’Azure Cost Management pour vos abonnements :
 

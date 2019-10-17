@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: fc4d337f844cef3408c9bc073e3848ee4612fca3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 003e212326959b593071f8230d2ddc0dba646909
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032335"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378277"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Prêt : Conventions de nommage et de catégorisation recommandées
 
 L’organisation des ressources informatiques de manière à aider à la gestion opérationnelle et à prendre en charge les exigences comptables est un défi courant qui concerne les efforts importants en matière d’adoption du cloud. En appliquant des conventions bien définies de nommage et de catégorisation de métadonnées aux ressources hébergées dans le cloud, le personnel informatique peut rapidement trouver et gérer les ressources. Des noms et des balises bien définis aident également à aligner les coûts d’utilisation du cloud sur les équipes commerciales à l’aide des mécanismes comptables de récupération des données de facturation et de facturation interne.
 
-L’aide [Conventions d’affectation de noms pour les ressources Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) du Centre des architectures Azure fournit des recommandations générales sur les conventions d’affectation de noms et les discussions relatives aux restrictions d’appellation et aux règles de plateforme. La discussion suivante étend cette aide générique avec des recommandations plus détaillées visant spécifiquement à prendre en charge les efforts d’adoption du cloud d’entreprise.
+L’article [Règles de nommage et restrictions pour les ressources Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) du Centre des architectures Azure fournit des recommandations générales sur les conventions de nommage et les discussions relatives aux restrictions de nommage et aux règles des plateformes. La discussion suivante étend cette aide générique avec des recommandations plus détaillées visant spécifiquement à prendre en charge les efforts d’adoption du cloud d’entreprise.
 
 Les noms de ressources peuvent être difficiles à modifier. Faites en sorte que vos équipes d’adoption du cloud établissent une convention d’affectation de noms complète avant de commencer un déploiement important du cloud.
 
@@ -141,6 +141,8 @@ Les balises que vous appliquez aux ressources et celles qui sont requises ou fac
 ## <a name="sample-naming-convention"></a>Exemple de convention d’affectation de noms
 
 La section suivante fournit des exemples de modèles d’affectation de noms pour les types de ressources Azure courants qui sont déployés au cours d’un déploiement de cloud d’entreprise.
+
+<!-- markdownlint-disable MD033 -->
 
 ### <a name="subscriptions"></a>Abonnements
 
