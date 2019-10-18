@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221111"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547884"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guide de décision pour la cohérence des ressources
 
@@ -47,7 +47,7 @@ Si vous avez répondu _non_ à l’une ou plusieurs de ces questions, vous devez
 
 S’appuyant sur le mécanisme de regroupement des ressources de base, la plateforme Azure offre un système permettant d’utiliser des modèles de déploiement de vos ressources dans l’environnement cloud. Vous pouvez utiliser des modèles pour créer une organisation et des conventions de nommage cohérentes lors du déploiement des charges de travail, en appliquant ces aspects de la conception du déploiement et de la gestion de vos ressources.
 
-Les [modèles Azure Resource Manager](/azure/azure-resource-manager/template-deployment-overview) vous permettent de déployer vos ressources de façon répétée et cohérente en utilisant une configuration prédéterminée et une structure de groupes de ressources. Les modèles Resource Manager vous aident à définir un ensemble de standards qui serviront de base à vos déploiements.
+Les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) vous permettent de déployer vos ressources de façon répétée et cohérente en utilisant une configuration prédéterminée et une structure de groupes de ressources. Les modèles Resource Manager vous aident à définir un ensemble de standards qui serviront de base à vos déploiements.
 
 Par exemple, vous pouvez disposer d’un modèle standard pour déployer une charge de travail de serveur web qui contient deux machines virtuelles en tant que serveurs web combinés à un équilibreur de charge qui répartit le trafic entre les serveurs. Vous pouvez ensuite réutiliser ce modèle pour créer un groupe de machines virtuelles structurellement identiques et un équilibreur de charge chaque fois que ce type de charge de travail est nécessaire. Il vous suffit ensuite de modifier le nom du déploiement et les adresses IP concernées.
 
