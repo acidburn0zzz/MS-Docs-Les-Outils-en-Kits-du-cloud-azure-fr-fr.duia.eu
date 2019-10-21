@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: ce4cf827f391c5fb15f6b9e78997dd0f02e1751b
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378397"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683775"
 ---
 # <a name="prerequisites-for-migration"></a>Prérequis pour la migration
 
@@ -57,8 +57,8 @@ Un seul membre de chaque équipe doit être identifié comme responsable de chac
 Outre la responsabilité d’ensemble, certaines actions doivent être affectées directement à un individu ou à un groupe. Voici quelques-unes de ces obligations qui ont une incidence sur ces activités :
 
 - **Définition des priorités métier.** Prenez des décisions concernant les charges de travail à migrer et les contraintes de temps générales. Pour plus d’informations, passez en revue les [motivations qui poussent une entreprise à migrer vers le cloud](../../../strategy/motivations.md).
-- **État de préparation de la gestion des changements.** Établissez et communiquez le plan de suivi des changements techniques pendant la migration. D’autres d’informations à ce sujet seront disponibles au troisième trimestre 2019.
-- **Alignement avec les utilisateurs professionnels.** Établissez un plan visant à prédisposer la communauté des utilisateurs professionnels à l’exécution de la migration. D’autres d’informations à ce sujet seront disponibles au troisième trimestre 2019.
+- **État de préparation de la gestion des changements.** Établissez et communiquez le plan de suivi des changements techniques pendant la migration.
+- **Alignement avec les utilisateurs professionnels.** Établissez un plan visant à prédisposer la communauté des utilisateurs professionnels à l’exécution de la migration.
 - **Inventaire et analyse du patrimoine numérique.** Exécutez les outils nécessaires pour inventorier et analyser le patrimoine numérique. Pour plus d’informations, consultez la discussion portant sur le [patrimoine numérique](../../../digital-estate/index.md) dans le Framework d’adoption du cloud.
 - **État de préparation du cloud.** Évaluez l’environnement de déploiement cible pour vérifier qu’il est conforme aux exigences des premières charges de travail candidates. Pour plus d’informations, consultez le [guide de configuration Azure](../../../ready/azure-setup-guide/index.md).
 
