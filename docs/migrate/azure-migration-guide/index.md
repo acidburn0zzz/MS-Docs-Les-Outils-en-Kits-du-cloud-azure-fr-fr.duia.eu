@@ -10,22 +10,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9b77b8fbbe6479b716d9b9f91d6e0154db8c0db7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2fa30c01de9d09af2c2947f940264d9156941589
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022797"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698518"
 ---
-::: zone target="chromeless"
+::: zone target="docs"
 
-# <a name="before-you-start"></a>Avant de commencer
+# <a name="azure-migration-guide-before-you-start"></a>Guide de migration Azure : Avant de commencer
 
 ::: zone-end
 
-::: zone target="docs"
+::: zone target="chromeless"
 
-# <a name="introduction-to-the-azure-migration-guide"></a>Introduction au guide de migration Azure
+# <a name="before-you-start"></a>Avant de commencer
 
 ::: zone-end
 

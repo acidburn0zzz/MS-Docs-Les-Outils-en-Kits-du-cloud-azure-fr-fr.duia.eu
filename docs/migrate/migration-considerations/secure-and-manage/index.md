@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022584"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683773"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Outils de supervision et de gestion sécurisés
 
@@ -41,6 +41,16 @@ Reposez-vous sur Azure Security Center pour bénéficier de fonctionnalités uni
 
 Découvrez-en plus sur [Azure Security Center](https://docs.microsoft.com/azure/security-center) pour sécuriser les ressources migrées.
 
+## <a name="service-health-monitoring"></a>Supervision de l’intégrité du service
+
+Azure Service Health vous fournit des directives et alertes personnalisées quand des problèmes dans les services Azure vous affectent. Il peut vous avertir, vous aider à comprendre l’impact des problèmes et vous tenir informé de la résolution du problème. Il peut également vous aider à préparer une maintenance planifiée et des modifications pouvant avoir une incidence sur la disponibilité de vos ressources.
+
+- **Tableau de bord de l’intégrité des services.** Vérifiez l’intégrité globale de vos services et régions Azure, avec des mises à jour détaillées sur les problèmes de service actuels, une maintenance planifiée à venir et des transitions de service.
+- **Alertes sur l’intégrité des services.** Configurez des alertes qui vous informeront vous et vos équipes en cas de problème d’un service comme une panne ou une maintenance planifiée à venir.
+- **Historique de l’intégrité des services.** Consultez les problèmes de service précédents et téléchargez des résumés et des rapports officiels de Microsoft.
+
+Découvrez-en plus sur [Azure Service Health](https://docs.microsoft.com/azure/service-health) pour rester informé de l’intégrité de vos ressources migrées.
+
 ## <a name="protect-assets-and-data"></a>Protéger les ressources et les données
 
 Sauvegarde Azure fournit un moyen de protéger les machines virtuelles, les fichiers et les données. Sauvegarde Azure peut vous aider à accomplir de nombreuses tâches, notamment celles-ci :
@@ -51,3 +61,13 @@ Sauvegarde Azure fournit un moyen de protéger les machines virtuelles, les fich
 - Récupération de ressources protégées
 
 Découvrez-en plus sur [Sauvegarde Azure](https://docs.microsoft.com/azure/backup) pour protéger les ressources migrées.
+
+## <a name="optimize-resources"></a>Optimiser les ressources
+
+Azure Advisor est votre guide personnalisé pour les bonnes pratiques Azure. Il analyse les données de télémétrie relatives à vos configurations et à votre utilisation, et vous offre des recommandations pour optimiser vos ressources Azure en termes de haute disponibilité, de sécurité, de performances et de coûts. Les actions inline d’Advisor vous aident à résoudre rapidement et facilement vos recommandations et à optimiser vos déploiements.
+
+- **Bonnes pratiques Azure.** Optimisez la haute disponibilité, les performances, la sécurité et les coûts des ressources migrées.
+- **Instructions pas à pas.** Résolvez les recommandations efficacement à l’aide de liens rapides guidés.
+- **Nouvelles alertes de recommandations.** Restez informé des nouvelles recommandations, telles que des opportunités supplémentaires pour définir les machines virtuelles à la bonne taille et faire des économies.
+
+Découvrez-en plus sur [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) pour l’optimisation de vos ressources migrées.
