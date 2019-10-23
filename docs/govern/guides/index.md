@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967601"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547570"
 ---
 # <a name="cloud-governance-guides"></a>Guides de gouvernance cloud
 
@@ -70,6 +70,8 @@ Pour entamer un parcours de gouvernance, choisissez l’une des deux options ci-
 
 > [!WARNING]
 > Un point de départ de gouvernance plus robuste peut être nécessaire. Dans ce cas, examinez l’approche [Centre de données virtuel Azure](#azure-virtual-datacenter) décrite brièvement [ci-dessous](#azure-virtual-datacenter). Cette approche est généralement conseillée lors d’un projet d’adoption à l’échelle de l’entreprise, en particulier si ce projet dépasse 10 000 ressources. C’est également la meilleure option pour les scénarios de gouvernance complexes lorsqu’une des conditions suivantes est requise : exigences de conformité étendues de la part de tiers, expertise approfondie du domaine, ou parité avec des stratégies de gouvernance et des exigences de conformité informatique éprouvées.
+
+<!-- markdownlint-disable MD028 -->
 
 > [!NOTE]
 > Il est peu probable que les guides correspondent totalement à votre situation. Choisissez le guide qui s’en rapproche le plus et utilisez-le comme point de départ. Tout au long du guide, vous trouverez des informations supplémentaires afin de vous aider à personnaliser vos décisions et ainsi satisfaire certains critères spécifiques.

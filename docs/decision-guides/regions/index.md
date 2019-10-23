@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967712"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547852"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
@@ -52,8 +52,8 @@ Tout déploiement cloud robuste nécessite un réseau bien étudié, tenant comp
     > N’essayez pas d’utiliser le stockage géoredondant Azure pour la reprise d’activité ou les sauvegardes de machines virtuelles. Utilisez plutôt les services [Sauvegarde Azure](https://azure.microsoft.com/services/backup) et [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) avec des [disques managés](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) pour assurer la résilience de vos charges de travail IaaS.
 2. Les services Sauvegarde Azure et Azure Site Recovery fonctionnent en tandem avec votre conception réseau pour mettre en œuvre la résilience régionale répondant à vos besoins en sauvegarde de données et d’IaaS. Assurez-vous que le réseau est optimisé de sorte que les transferts de données restent sur le segment principal de Microsoft et, dans la mesure du possible, utilisez le [VNet Peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview). Certaines organisations de plus grande taille, effectuant des déploiements à l’échelle mondiale, peuvent privilégier [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) pour router le trafic entre les régions, ce qui leur permet de réduire les frais liés aux sorties régionales.
 3. Les groupes de ressources Azure sont des constructions spécifiques aux régions. Toutefois, il est normal que les ressources d’un groupe de ressources s’étendent sur plusieurs régions. Dans ce contexte, il est important de savoir qu’en cas de défaillance régionale, les opérations du plan de contrôle sur un groupe de ressources échoueront dans la région affectée, même si les ressources situées dans d’autres régions (au sein de ce groupe de ressources) continuent de fonctionner. Ceci peut avoir un impact sur la conception de votre réseau et sur celle de votre groupe de ressources.
-4. De nombreux services PaaS dans Azure prennent en charge les [points de terminaison de service](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) et/ou la [liaison privée](https://docs.microsoft.com/azure/private-link/private-link-overview). Ces deux solutions conditionnent fortement les considérations relatives au réseau quand vous étudiez la résilience régionale, la migration et la gouvernance.
-5. De nombreux services PaaS s’appuient sur leurs propres solutions de résilience régionale. Par exemple, Azure SQL Database vous permet d’effectuer facilement des réplications dans N régions supplémentaires, tout comme CosmosDB. Certains services comme Azure DNS n’ont aucune dépendance vis-à-vis de la région. Quand vous considérez les services que vous allez utiliser dans votre processus d’adoption, veillez à bien comprendre les fonctionnalités de basculement et les étapes de reprise d’activité potentiellement nécessaires pour chaque service Azure.
+4. De nombreux services PaaS dans Azure prennent en charge les [points de terminaison de service](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) ou la [liaison privée](https://docs.microsoft.com/azure/private-link/private-link-overview). Ces deux solutions conditionnent fortement les considérations relatives au réseau quand vous étudiez la résilience régionale, la migration et la gouvernance.
+5. De nombreux services PaaS s’appuient sur leurs propres solutions de résilience régionale. Par exemple, Azure SQL Database vous permet d’effectuer facilement des réplications dans N régions supplémentaires, tout comme Cosmos DB. Certains services comme Azure DNS n’ont aucune dépendance vis-à-vis de la région. Quand vous considérez les services que vous allez utiliser dans votre processus d’adoption, veillez à bien comprendre les fonctionnalités de basculement et les étapes de reprise d’activité potentiellement nécessaires pour chaque service Azure.
 6. En plus d’effectuer leurs déploiements dans plusieurs régions pour assurer la reprise d’activité, de nombreuses organisations choisissent un modèle de déploiement actif-actif de sorte qu’aucun basculement ne soit nécessaire. Cette approche présente des avantages supplémentaires, à savoir un équilibrage de charge global et un renforcement de la tolérance de panne et des performances réseau. Pour tirer parti de ce modèle, vos applications doivent prendre en charge l’exécution en mode actif-actif dans plusieurs régions.
 
 > [!WARNING]
@@ -63,9 +63,9 @@ Après avoir étudié la topologie de réseau qui vous permettra de rester opér
 
 - Envisagez une implémentation plus robuste de la préparation et de la gouvernance.
 - Inventoriez les zones géographiques affectées. Dressez la liste des régions et des pays affectés.
-- Documentez les exigences de souveraineté des données : Les pays identifiés ont-ils des exigences de conformité qui régissent la souveraineté des données ?
-- Documentez la base utilisateur : Les employés, partenaires ou clients dans le pays identifié seront-ils affectés par la migration vers le cloud ?
-- Documentez les ressources et centres de données : Existe-t-il des ressources dans le pays identifié qui peuvent être incluses dans l’effort de migration ?
+- Documentez les exigences de souveraineté des données. Les pays identifiés ont-ils des exigences de conformité qui régissent la souveraineté des données ?
+- Documentez la base utilisateur. Les employés, partenaires ou clients dans le pays identifié seront-ils affectés par la migration vers le cloud ?
+- Documentez les ressources et centres de données. Existe-t-il des ressources dans le pays identifié qui peuvent être incluses dans l’effort de migration ?
 - Documentez la disponibilité des références SKU et les exigences de basculement au niveau régional.
 
 Alignez les modifications à travers le processus de migration pour traiter l’inventaire initial.

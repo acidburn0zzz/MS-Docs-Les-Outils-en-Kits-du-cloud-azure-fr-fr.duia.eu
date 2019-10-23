@@ -1,48 +1,146 @@
 ---
-title: Présentation de la gestion opérationnelle
+title: Gestion de cloud
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Découvrez la gestion opérationnelle dans le framework d’adoption du cloud.
+description: Gestion de cloud dans le Framework d’adoption du cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
-ms.topic: article
+ms.date: 10/07/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.custom: manage
-ms.openlocfilehash: 96f87583f50783fa0c6a8c947aa8b34ae440fc95
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+layout: LandingPage
+ms.openlocfilehash: 2ae964d2b145a9d241cc647b939771f219b0379e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221443"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547297"
 ---
-# <a name="establishing-operational-management-practices-in-the-cloud"></a>Mise en place des pratiques de gestion opérationnelle dans le cloud
+# <a name="cloud-management-in-the-cloud-adoption-framework"></a>Gestion de cloud dans le Framework d’adoption du cloud
 
-L’adoption du cloud est un catalyseur pour générer de la valeur commerciale. Toutefois, la valeur commerciale réelle est réalisée avec des opérations continues et stables sur les ressources technologiques déployées dans le cloud. Cette section du Framework d’adoption du cloud guide le lecteur dans différentes transitions vers une gestion opérationnelle dans le cloud.
+Le suivi d’une [stratégie de cloud](../strategy/index.md) nécessite une planification, une préparation et une adoption solides. Mais c’est l’exploitation continue des ressources numériques qui offre des résultats tangibles pour l’entreprise. Sans la planification d’opérations de solutions cloud fiables et bien gérées, ces efforts offrent peu de valeur. Les exercices suivants vous aideront à développer les approches métier et techniques nécessaires pour fournir une gestion de cloud qui dynamise les opérations continues.
 
-## <a name="actionable-best-practices"></a>Bonnes pratiques à utiliser
+## <a name="getting-started"></a>Prise en main
 
-Les solutions de gestion des opérations modernes offrent une vue multicloud des opérations. Les ressources gérées à l’aide des suggestions de pratiques suivantes peuvent résider dans le cloud, dans un centre de données existant ou même chez un fournisseur de cloud concurrent. Actuellement, l’infrastructure comprend deux pratiques de référence recommandées pour affiner la gestion des opérations dans le cloud :
+Pour vous préparer à cette phase du cycle d’adoption du cloud, le framework suggère les exercices suivants :
 
-- [Gestion des serveurs Azure](./azure-server-management/index.md) : Guide d’intégration pour incorporer les outils et services cloud natifs nécessaires pour gérer les opérations.
-- [Supervision hybride](./monitor/index.md) : De nombreux clients ont déjà beaucoup investi dans System Center Operations Manager. Pour eux, ce guide de supervision hybride permet de comparer les outils de création de rapports natifs du cloud avec les outils Operations Manager. Cette comparaison permet de choisir facilement les outils à utiliser pour la gestion opérationnelle.
+<!-- markdownlint-disable MD033 -->
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./azure-management-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Établir une base de référence de gestion</h3>
+Définissez les classifications de criticité, les outils de gestion de cloud et les processus requis pour respecter votre engagement minimal en termes de gestion des opérations.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/business-alignment.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Définir des engagements métier</h3>
+Documentez les charges de travail prises en charge pour établir des engagements opérationnels avec l’entreprise et convenez des investissements de gestion de cloud pour chaque charge de travail.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Développer la base de référence de gestion</h3>
+En fonction des engagements métier et des décisions opérationnelles, tirez parti des bonnes pratiques incluses pour mettre en œuvre les outils de gestion de cloud requis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./design-principles.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Principes de conception et d’opérations avancés</h3>
+Les plateformes ou charges de travail nécessitant un niveau d’engagement métier plus élevé peuvent nécessiter un examen approfondi de l’architecture pour respecter les engagements en matière de résilience et de fiabilité.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-## <a name="cloud-operations"></a>Opérations cloud
+## <a name="scalable-cloud-management-methodology"></a>Méthodologie de gestion de cloud scalable
 
-Ces deux bonnes pratiques mènent à une méthodologie d’état futur de la gestion des opérations.
+Les étapes ci-dessus créent des approches actionnables pour suivre la méthodologie de gestion du Framework d’adoption du cloud.
 
-![Méthodologie de gestion CAF](../_images/manage/caf-manage.png)
+![Méthodologie de gestion dans le Framework d’adoption du cloud](../_images/manage/caf-manage.png)
 
-**Alignement de l’entreprise :** Dans la méthodologie de gestion, toutes les charges de travail sont classées par état critique et valeur commerciale. Cette classification peut alors être mesurée dans une analyse d’impact, qui calcule la valeur perdue associée à une dégradation des performances ou des interruptions d’activité. À l’aide de cet impact tangible sur le chiffre d’affaires, les équipes des opérations cloud peuvent collaborer avec l’entreprise pour s’engager à équilibrer les coûts et les performances.
+## <a name="creating-a-balanced-cloud-portfolio"></a>Création d’un portefeuille cloud équilibré
 
-**Disciplines des opérations cloud :** Une fois que l’entreprise est alignée, il est beaucoup plus facile de suivre et de créer des rapports sur les disciplines appropriées des opérations cloud pour chaque charge de travail. La prise de décision dans le cadre de chaque discipline peut entraîner des engagements facilement compréhensibles pour l’entreprise. Cette approche collaborative permet aux parties prenantes de l’entreprise d’agir en partenaires pour trouver le juste équilibre entre les coûts et les performances.
+Comme indiqué dans l’article sur l’[alignement de l’entreprise](./considerations/business-alignment.md), toutes les charges de travail ne sont pas critiques. Tout portefeuille comprend différents niveaux de besoins de gestion opérationnelle. Les efforts d’alignement de l’entreprise facilitent la capture de l’impact commercial et la négociation des coûts de gestion avec l’entreprise afin de garantir les outils et les processus de gestion opérationnelle les plus appropriés.
 
-- **Inventaire et visibilité :** La gestion des opérations implique au minimum le moyen de faire l’inventaire des ressources et de créer une visibilité sur l’état d’exécution de chaque ressource.
-- **Conformité opérationnelle :** Une gestion régulière de la configuration, du dimensionnement, du coût et des performances des ressources est essentielle pour assurer les performances attendues.
-- **Protection et récupération :** La réduction des interruptions opérationnelles et l’accélération de la récupération après chaque interruption permet d’éviter des pertes de performances et un impact sur le chiffre d’affaires. La détection et la récupération sont des aspects essentiels de cette discipline.
-- **Opérations de plateforme :** Tous les environnements informatiques contiennent un ensemble de plateformes couramment utilisées. Ces plateformes peuvent inclure des magasins de données de type SQL Server ou HDInsight. D’autres plateformes courantes peuvent inclure des solutions de conteneur comme Kubernetes ou AKS. Quelle que soit la plateforme, la maturité des opérations de plateforme est ciblée sur la personnalisation des opérations en fonction de la façon dont ces plateformes sont déployées, configurées et utilisées par les charges de travail.
-- **Opérations de charge de travail :** Au niveau le plus élevé de la maturité opérationnelle, les équipes des opérations cloud sont en mesure de paramétrer des opérations pour les charges de travail qui sont essentielles à la réussite de l’entreprise. Pour ces charges de travail critiques, les données disponibles peuvent aider à automatiser la correction, le dimensionnement ou la protection des charges de travail en fonction de leur utilisation.
+## <a name="objective-of-this-content"></a>Objectif de ce contenu
 
-Vous pouvez consulter des conseils supplémentaires comme le [Framework de révision de conception (nom de code : Principes de conception du cloud)](https://docs.microsoft.com/azure/architecture/reliability) pour vous aider à prendre des décisions architecturales détaillées concernant chaque charge de travail, dans les disciplines ci-dessus.
+Les instructions de cette section du Framework d’adoption du cloud visent deux objectifs :
 
-Cette section du framework d’adoption du cloud s’appuie sur chacune de ces rubriques pour mettre en place les opérations cloud au sein de votre organisation.
+- Proposer des exemples d’approches actionnables de gestion des opérations qui représentent des expériences communes souvent rencontrées par les clients.
+- Vous aider à créer des solutions de gestion personnalisées en fonction des engagements métier.
+
+Ce contenu est destiné à être utilisé par l’équipe des opérations cloud. Il peut également servir aux architectes du cloud qui cherchent à développer des fondements solides pour les opérations cloud ou les principes de conception du cloud.
+
+## <a name="intended-audience"></a>Public concerné
+
+Le contenu du Framework d’adoption du cloud touche l’activité, la technologie et la culture des entreprises. Cette section du Framework d’adoption du cloud implique d’interagir énormément avec les équipes des opérations informatiques, de la gouvernance informatique, de la finance, des responsables métier, du réseau, des identités et de l’adoption du cloud. Plusieurs dépendances sont à noter entre ces acteurs et nécessitent une approche de facilitation de la part des architectes cloud qui utilisent ce guide. Cette approche de facilitation auprès de ces équipes constitue rarement un effort unique.
+
+L’architecte du cloud joue le rôle de facilitateur et de leader d’opinion pour rassembler tous ces publics. Le contenu figurant dans cette collection de guides est conçu pour aider l’architecte cloud à adapter les discussions en fonction des publics et ainsi prendre les décisions nécessaires. La transformation métier rendue possible par le cloud dépend des conseils donnés par l’architecte du cloud aux équipes métier et informatiques.
+
+**Spécialisation Architecte du cloud dans cette section :** Chaque section du Framework d’adoption du cloud représente une spécialisation ou une variante différente du rôle de l’architecte cloud. La présente section du Framework d’adoption du cloud s’adresse aux architectes du cloud qui se passionnent pour les opérations et la gestion de solutions de déploiement. Au sein de ce framework, ces spécialistes sont souvent désignés sous le terme d’*opérations cloud* ou collectivement comme l’*équipe des opérations cloud*.
+
+## <a name="use-this-guide"></a>Utiliser ce guide
+
+Si vous souhaitez suivre ce guide du début à la fin, ce contenu vous aide à développer une stratégie des opérations cloud fiable. Les différentes instructions vous guident à travers la théorie et la mise en pratique de cette stratégie.
+
+<!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](./guide/index.md). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Appliquer la méthodologie pour [établir des engagements métier clairs](./considerations/business-alignment.md).
+
+> [!div class="nextstepaction"]
+> [Établir des engagements métier clairs](./considerations/business-alignment.md)

@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 492415da236ad54b66d6aeb6b1571f623793db0a
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967623"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547597"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guide de gouvernance pour les entreprises standard
 
 ## <a name="overview-of-best-practices"></a>Vue d’ensemble des bonnes pratiques
 
-Ce guide de gouvernance suit les expériences d’une entreprise fictive à différents stades de maturité. Il est basé sur les expériences de clients réels. Les pratiques recommandées se fondent sur les contraintes et les besoins de l’entreprise fictive.
+Ce guide de gouvernance suit les expériences d’une entreprise fictive à différents stades de maturité. Il est basé sur les expériences de clients réels. Les bonnes pratiques se fondent sur les contraintes et les besoins de l’entreprise fictive.
 
-Comme point de départ rapide, cette présentation définit un produit minimum viable (MVP) pour la gouvernance, basé sur des instructions normatives. Elle fournit également des liens vers des améliorations de gouvernance, qui ajoutent des pratiques recommandées à mesure que de nouveaux risques métier ou techniques émergent.
+Comme point de départ rapide, cette présentation définit un produit minimum viable (MVP) pour la gouvernance, basé sur les meilleures pratiques. Elle fournit également des liens vers des améliorations de gouvernance, qui ajoutent des bonnes pratiques à mesure que de nouveaux risques métier ou techniques émergent.
 
 > [!WARNING]
 > Ce MVP est un point de départ de base, qui se fonde sur un ensemble de postulats. Même cet ensemble minimal de meilleures pratiques se fonde sur des stratégies d’entreprise, qui sont axées sur des risques métier et des tolérances aux risques uniques. Pour déterminer si ces postulats s’appliquent à vous, lisez la [plus longue description](./narrative.md) qui suit cet article.

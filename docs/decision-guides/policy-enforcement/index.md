@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023717"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547866"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guide de décision pour l’application de la stratégie
 
@@ -22,7 +22,7 @@ La définition d’une stratégie n’est efficace que si elle peut être appliq
 
 ![Traçage des options d’application de la stratégie de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
-Passer à : [Pratiques recommandées pour la ligne de base](#baseline-recommended-practices) | [Surveillance de la conformité à la stratégie](#policy-compliance-monitoring) | [Application de la stratégie](#policy-enforcement) | [Stratégie à l’échelle de l’organisation](#cross-organization-policy) | [Application automatisée](#automated-enforcement)
+Passer à : [Bonnes pratiques pour la base de référence](#baseline-best-practices) | [Supervision de la conformité à la stratégie](#policy-compliance-monitoring) | [Application de la stratégie](#policy-enforcement) | [Stratégie à l’échelle de l’organisation](#cross-organization-policy) | [Application automatisée](#automated-enforcement)
 
 À mesure que grandira votre patrimoine cloud, vous aurez besoin de gérer et d’appliquer vos stratégies à un éventail plus vaste de ressources et d’abonnements. Pour répondre à l’augmentation du nombre de vos ressources et des besoins de stratégie de votre organisation, vous devez étendre la portée de vos processus d’application des stratégies afin de garantir une application cohérente des stratégies et une détection rapide des violations.
 
@@ -30,7 +30,7 @@ Les mécanismes d’application des stratégies fournis par la plateforme au niv
 
 Les principaux facteurs permettant de déterminer la portée de vos processus d’application des stratégies sont les [besoins de gouvernance cloud](../../govern/index.md) de votre organisation, la taille et la nature de votre patrimoine cloud, et la façon dont votre [conception d’abonnements](../subscriptions/index.md) reflète votre organisation. L’augmentation de la taille de votre patrimoine et la nécessité de gérer l’application des stratégies de manière centralisée justifient une extension de la portée d’application.
 
-## <a name="baseline-recommended-practices"></a>Pratiques recommandées pour la ligne de base
+## <a name="baseline-best-practices"></a>Bonnes pratiques pour la base de référence
 
 Pour un abonnement unique et des déploiements cloud simples, de nombreuses stratégies d’entreprise peuvent être appliquées à l’aide de fonctionnalités natives des ressources et des abonnements Azure. L’utilisation cohérente des modèles évoqués dans les [guides de décision](../index.md) du Framework d’adoption du cloud peut aider à établir un niveau de base de référence pour la conformité des stratégies, sans nécessiter d’investissements particuliers en application des stratégies. Voici quelques fonctionnalités :
 

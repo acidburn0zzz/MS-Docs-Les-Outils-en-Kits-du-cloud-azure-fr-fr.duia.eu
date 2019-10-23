@@ -172,7 +172,7 @@
               items:
                 - name: 'Suivi des coûts parmi les projets, les environnements et les divisions'
                   href: ready/azure-best-practices/track-costs.md
-                - name: Bonnes pratiques d’Azure Cost Management
+                - name: Meilleures pratiques de Azure Cost Management
                   href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Créer et gérer des budgets
                   href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -212,24 +212,20 @@
               items:
                 - name: Liste de contrôle de l’étendue supplémentaire
                   href: migrate/expanded-scope/index.md
-                - name: Modifications de la portée basées sur l’activité
-                  items:
-                    - name: Équilibrer le portefeuille
-                      href: migrate/expanded-scope/balance-the-portfolio.md
-                    - name: Zones géographiques multiples
-                      href: decision-guides/regions/index.md
-                - name: Modifications de la portée basées sur la culture
-                  items:
-                    - name: Préparation des compétences
-                      href: migrate/expanded-scope/suggested-skills.md
-                - name: Modifications de la portée basées sur les stratégies techniques
-                  items:
-                    - name: Plusieurs centres de données
-                      href: migrate/expanded-scope/multiple-datacenters.md
-                    - name: Besoins des données qui dépassent la capacité réseau
-                      href: migrate/expanded-scope/network-capacity-exceeded.md
-                    - name: Gouvernance et conformité
-                      href: migrate/expanded-scope/governance-or-compliance.md
+                - name: Équilibrer le portefeuille
+                  href: migrate/expanded-scope/balance-the-portfolio.md
+                - name: Préparation des compétences
+                  href: migrate/expanded-scope/suggested-skills.md
+                - name: Migration de l’hôte VMWare
+                  href: migrate/expanded-scope/vmware-host.md
+                - name: Migration de SQL Server
+                  href: migrate/expanded-scope/sql-migration.md
+                - name: Plusieurs centres de données
+                  href: migrate/expanded-scope/multiple-datacenters.md
+                - name: Besoins des données qui dépassent la capacité réseau
+                  href: migrate/expanded-scope/network-capacity-exceeded.md
+                - name: Gouvernance et conformité
+                  href: migrate/expanded-scope/governance-or-compliance.md
             - name: Bonnes pratiques
               items:
                 - name: Vue d'ensemble
@@ -278,6 +274,150 @@
                               href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                         - name: Mettre à l’échelle une migration
                           href: migrate/azure-best-practices/contoso-migration-scale.md
+                - name: Bonnes pratiques pour la migration des hôtes vmware
+                  items:
+                    - name: Vue d'ensemble
+                      href: migrate/azure-best-practices/vmware-host.md
+                    - name: Prérequis
+                      items:
+                        - name: Sécuriser votre environnement
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Gestion de cloud privé
+                          items:
+                            - name: Escalader les privilèges du cloud privé
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/escalate-privileges?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Configurer le DNS et le DHCP des charges de travail
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/dns-dhcp-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Migrer des charges de travail à l’aide de réseaux étendus de couche 2
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migration-layer-2-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Réseau de cloud privé
+                          items:
+                            - name: Connexion VPN à un cloud privé
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/set-up-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Connexion au réseau local avec ExpressRoute
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Connexion au réseau virtuel Azure avec ExpressRoute
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-expressroute-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Configurer la résolution de noms DNS
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-dns-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Plateforme VMware
+                          items:
+                            - name: Découvrir le modèle d’autorisation de cloud privé
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/learn-private-cloud-permissions?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Sources d’identité vCenter
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/set-vcenter-identity?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Azure Application Gateway avec des machines virtuelles VMware
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-application-gateway?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Configurer un serveur vCenter de cloud privé comme point de terminaison d’automatisation vRealize
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/configure-server-vrealize-automation-endpoint?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Garantir la haute disponibilité des applications dans VMware sur Azure
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/ensuring-high-availability?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Choisir une solution d’équilibrage de charge
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/load-balancers?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Intégration d’Azure Core
+                          items:
+                            - name: Source d’identité Azure AD sur le serveur vCenter de cloud privé
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-ad?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Connexion au réseau local avec ExpressRoute
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Connexion au réseau virtuel Azure avec ExpressRoute
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-expressroute-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Options de migration et de reprise d’activité
+                      items:
+                        - name: Migrer des machines virtuelles de charge de travail vers un cloud privé
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migration à l’aide d’Azure Data Box
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Sauvegarder des machines virtuelles de charge de travail
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/backup-workloads-veeam?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Configurer un cloud privé en tant que site de récupération d’urgence à l’aide de Zerto
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Configurer un cloud privé en tant que site de reprise d’activité avec VMware SRM
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Bonnes pratiques pour la migration de serveurs SQL
+                  items:
+                    - name: Vue d'ensemble
+                      href: migrate/azure-best-practices/sql-migration.md
+                    - name: Guide de migration des bases de données Azure
+                      items:
+                        - name: Migration de SQL Server vers Azure SQL Database
+                          href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migration de SQL Server vers Azure SQL Database Managed Instance
+                          href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migration de SQL Server vers SQL Server sur des machines virtuelles Azure
+                          href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migration de SQL Server vers Azure SQL Data Warehouse
+                          href: 'https://datamigration.microsoft.com/scenario/sql-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: MySQL
+                          items:
+                            - name: Migration de MySQL vers Azure SQL Database
+                              href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Migration de MySQL vers Azure SQL Database pour MySQL
+                              href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuremysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: PostgreSQL
+                          items:
+                            - name: Migration de PostgreSQL vers Azure Database pour PostgreSQL
+                              href: 'https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: MariaDB
+                          items:
+                            - name: Migration de MariaDB vers Azure Database for MariaDB
+                              href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: MongoDB
+                          items:
+                            - name: "Migration de MongoDB vers Azure Cosmos\_DB"
+                              href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Cassandra
+                          items:
+                            - name: "Migration de Cassandra vers Azure Cosmos\_DB"
+                              href: 'https://datamigration.microsoft.com/scenario/cassandra-to-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Oracle
+                          items:
+                            - name: Migration d’Oracle vers Azure SQL Database
+                              href: 'https://datamigration.microsoft.com/scenario/oracle-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Migration d’Oracle vers Azure Database pour PostgreSQL
+                              href: 'https://datamigration.microsoft.com/scenario/oracle-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Migration d’Oracle vers Azure SQL Data Warehouse
+                              href: 'https://datamigration.microsoft.com/scenario/oracle-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: DB2
+                          items:
+                            - name: Migration de DB2 vers Azure SQL Database
+                              href: 'https://datamigration.microsoft.com/scenario/db2-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: SAP ASE
+                          items:
+                            - name: Migration de SAP ASE vers Azure SQL Database
+                              href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Access
+                          items:
+                            - name: Migration d’Access vers Azure SQL Database
+                              href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Tutoriels Azure Database Migration Service (DMS)
+                      items:
+                        - name: Azure Database Migration Service
+                          href: 'https://docs.microsoft.com/azure/dms/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer SQL Server vers Azure SQL DB hors connexion
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer SQL Server vers Azure SQL DB en ligne
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer SQL Server vers Azure SQL DB Managed Instance hors connexion
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer SQL Server vers Azure SQL DB Managed Instance en ligne
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer AWS RDS SQL Server vers Azure SQL DB ou Azure SQL DB Managed Instance en ligne
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer MySQL vers Azure DB pour MySQL en ligne
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer AWS RDS MySQL vers Azure DB pour MySQL en ligne
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-mysql-server-azure-db-for-mysql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer PostgreSQL vers Azure DB pour PostgreSQL en ligne
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer AWS RDS PostgreSQL vers Azure DB pour PostgreSQL en ligne
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-postgresql-server-azure-db-for-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: "Migrer MongoDB vers l’API Mongo Azure Cosmos\_DB hors connexion"
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: "Migrer MongoDB vers l’API Mongo Azure Cosmos\_DB en ligne"
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrer Oracle vers Azure Database pour PostgreSQL en ligne
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Migration de mainframe
                       items:
                         - name: Vue d'ensemble
@@ -318,7 +458,7 @@
                           href: 'https://docs.microsoft.com/azure/security/azure-security-best-practices-vms?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Implémentation d’une architecture réseau hybride sécurisée dans Azure
                           href: 'https://docs.microsoft.com/azure/guidance/guidance-iaas-ra-secure-vnet-hybrid?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Meilleures pratiques de sécurité pour l’Internet des objets (IoT)
+                        - name: Meilleures pratiques relatives à la sécurité IoT
                           href: 'https://docs.microsoft.com/azure/security/azure-security-iot-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Sécurisation des bases de données PaaS dans Azure
                           href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -404,6 +544,318 @@
           items:
             - name: Vue d'ensemble
               href: innovate/index.md
+            - name: Guide d’innovation Azure
+              items:
+                - name: Introduction
+                  href: innovate/innovation-guide/index.md
+                - name: Préparer les commentaires des clients
+                  href: innovate/innovation-guide/adoption.md
+                - name: Démocratiser les données
+                  href: innovate/innovation-guide/data.md
+                - name: Impliquer par le biais d’applications
+                  href: innovate/innovation-guide/apps.md
+                - name: Favoriser l’adoption
+                  href: innovate/innovation-guide/ci-cd.md
+                - name: Interagir avec les appareils
+                  href: innovate/innovation-guide/devices.md
+                - name: Prédire et influencer
+                  href: innovate/innovation-guide/predict.md
+            - name: Considérations
+              items:
+                - name: Vue d'ensemble
+                  href: innovate/considerations/index.md
+                - name: Consensus sur la valeur métier
+                  href: innovate/business-value.md
+                - name: Adoption par le client
+                  items:
+                    - name: Boucles de rétroaction
+                      href: innovate/considerations/adoption.md
+                    - name: Développer en faisant preuve d’empathie vis à vis du client
+                      href: innovate/considerations/build.md
+                    - name: Mesure de l’impact sur le client
+                      href: innovate/considerations/measure.md
+                    - name: Apprendre avec les clients
+                      href: innovate/considerations/learn.md
+                    - name: Défis et blocages des clients
+                      href: innovate/considerations/challenges.md
+                - name: Invention numérique
+                  items:
+                    - name: Développer des inventions numériques
+                      href: innovate/considerations/invention.md
+                    - name: Démocratiser les données
+                      href: innovate/considerations/data.md
+                    - name: Impliquer par le biais d’applications
+                      href: innovate/considerations/apps.md
+                    - name: Favoriser l’adoption
+                      href: innovate/considerations/ci-cd.md
+                    - name: Interagir avec les appareils
+                      href: innovate/considerations/devices.md
+                    - name: Prédire et influencer
+                      href: innovate/considerations/predict.md
+            - name: Bonnes pratiques en matière d’innovation
+              items:
+                - name: Vue d’ensemble et chaîne d’outils Azure
+                  href: innovate/best-practices/index.md
+                - name: Démocratiser les données
+                  items:
+                    - name: Vue d'ensemble
+                      href: innovate/best-practices/data.md
+                    - name: Partager des données avec des experts
+                      items:
+                        - name: Générer rapidement des insights sur les données
+                          href: 'https://docs.microsoft.com/power-bi/service-insights?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Partager des données avec des collègues et des partenaires
+                          href: 'https://docs.microsoft.com/power-bi/service-share-dashboards?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Incorporer des rapports dans un site web ou un portail
+                          href: 'https://docs.microsoft.com/power-bi/service-embed-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Créer des espaces de travail dans Power BI
+                          href: 'https://docs.microsoft.com/power-bi/service-create-the-new-workspaces?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Régir les données
+                      items:
+                        - name: Classifier les données
+                          href: 'https://docs.microsoft.com/azure/cloud-adoption/governance/policy-compliance/data-classification.md'
+                        - name: Sécuriser les données
+                          href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Annoter des données avec un catalogue de données
+                          href: 'https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Documenter des sources de données avec un catalogue de données
+                          href: 'https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Centraliser des données
+                      items:
+                        - name: Créer et interroger un entrepôt de données SQL Azure
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/create-data-warehouse-portal?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Meilleures pratiques de chargement de données dans Azure SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/guidance-for-loading-data?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Visualiser des données d’entrepôt à l’aide de Power BI
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-get-started-visualize-with-power-bi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Architecture de référence - Enterprise BI avec SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Gérer le Big Data d’entreprise avec Azure Data Lake Storage
+                          href: 'https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: "Qu’est-ce qu’un lac de données\_?"
+                          href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Collecter les données
+                      items:
+                        - name: 'Migrer des données locales vers Azure à partir de plateformes SQL, Oracle ou NoSQL'
+                          href: innovate/best-practices/data-dms.md
+                        - name: "Intégrer des sources de données cloud à SQL\_Data\_Warehouse"
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Charger des données dans Azure SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/sql/integration-services/load-data-to-sql-data-warehouse?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Intégrer des données d’une fabrique de données à OLAP
+                          href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Ingérer Stream Analytics dans SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-integrate-azure-stream-analytics?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: "Architecture de référence\_: ingestion et analyse de nouveaux flux"
+                          href: 'https://docs.microsoft.com/azure/architecture/example-scenario/ai/newsfeed-ingestion?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Virtualisation des données avec Azure SQL Data Warehouse et Polybase
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/load-data-wideworldimportersdw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Impliquer par le biais d’applications
+                  items:
+                    - name: Vue d'ensemble
+                      href: innovate/best-practices/apps.md
+                    - name: Cloud natif
+                      items:
+                        - name: Application cloud native
+                          items:
+                            - name: Solutions de référence pour les applications cloud natives
+                              href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
+                            - name: Créer une application .Net Core avec SQL DB
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Créer une application .Net avec SQL DB
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Créer une application PHP avec MySQL
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Créer une application Node.js avec MongoDB
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Créer une application iOS
+                              href: 'https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-ios-get-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Microservices
+                          items:
+                            - name: 'Concevoir, générer et exploiter des microservices dans Azure'
+                              href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Architecture de référence pour les microservices avec Service Fabric
+                              href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/service-fabric?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Architecture de référence pour les microservices avec Azure Kubernetes Service (AKS)
+                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Guide de conception d’applications Azure
+                              href: 'https://docs.microsoft.com/azure/architecture/guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: 'Migrer/moderniser, puis innover'
+                      items:
+                        - name: 'Migrer des charges de travail (applications, machines virtuelles et données)'
+                          href: 'https://azure.microsoft.com/migration/'
+                        - name: Migrer une application existante avec Azure Managed Kubernetes Service (AKS)
+                          href: 'https://azure.microsoft.com/solutions/architecture/migrate-existing-applications-with-aks/'
+                        - name: Étendre des données héritées via des applications cloud natives et Azure Stack
+                          href: 'https://azure.microsoft.com/solutions/architecture/unlock-legacy-data/'
+                    - name: Développeurs citoyens
+                      items:
+                        - name: Création d’applications dans PowerApps
+                          href: 'https://docs.microsoft.com/powerapps/maker?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Créer votre premier workflow avec Microsoft Flow
+                          href: 'https://docs.microsoft.com/flow/getting-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Utilisation d’AI Builder
+                          href: 'https://docs.microsoft.com/powerapps/use-ai-builder?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Conformité et confidentialité des données pour les solutions de développeurs citoyens
+                          href: 'https://docs.microsoft.com/power-platform/admin/wp-compliance-data-privacy?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Stratégies de protection contre la perte de données pour les solutions de développeurs citoyens
+                          href: 'https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Expériences web modernes
+                      items:
+                        - name: Solutions de référence pour les applications cloud natives
+                          href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
+                        - name: Créer une application .Net Core avec SQL DB
+                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Créer une application .Net avec SQL DB
+                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Créer une application PHP avec MySQL
+                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Créer une application Node.js avec MongoDB
+                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Applications cloud natives
+                      items:
+                        - name: Architecture orientée microservices
+                          items:
+                            - name: Architecture de référence pour les microservices avec Azure Kubernetes Service (AKS)
+                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Containers
+                          items:
+                            - name: 'Concevoir, générer et exploiter des microservices dans Azure'
+                              href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Créer un cluster Azure Red Hat OpenShift
+                              href: 'https://docs.microsoft.com/azure/openshift/tutorial-create-cluster?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Microservices Spring Boot
+                          items:
+                            - name: Lancer une application Azure Spring Cloud
+                              href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-quickstart-launch-app-portal?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Suivi distribué avec Azure Spring Cloud
+                              href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-distributed-tracing?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Lier une base de données Azure Cosmos DB à votre application Azure Spring Cloud
+                              href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-bind-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Favoriser l’adoption
+                  items:
+                    - name: Vue d'ensemble
+                      href: innovate/best-practices/ci-cd.md
+                    - name: Solution partagée
+                      items:
+                        - name: Bien démarrer avec un dépôt partagé - GitHub and Git
+                          href: 'https://guides.github.com/introduction/git-handbook'
+                        - name: Bien démarrer avec un backlog partagé
+                          href: 'https://docs.microsoft.com/azure/devops/boards/backlogs/backlogs-boards-plans?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Synchroniser PowerApps avec Azure DevOps
+                          href: 'https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Boucles de rétroaction
+                      items:
+                        - name: Gérer les commentaires avec Azure DevOps
+                          href: 'https://docs.microsoft.com/azure/devops/project/feedback?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Intégration continue
+                      items:
+                        - name: Intégration continue avec Azure Pipelines et GitHub
+                          href: 'https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration/'
+                    - name: Test fiable
+                      items:
+                        - name: Gérer et suivre les plans de test
+                          href: 'https://docs.microsoft.com/azure/devops/test/track-test-status?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Déploiement de la solution
+                      items:
+                        - name: Déploiement continu avec Azure Pipelines et GitHub
+                          href: 'https://www.azuredevopslabs.com/labs/azuredevops/continuousdeployment/'
+                    - name: Métriques intégrées
+                      items:
+                        - name: Superviser les applications ASP.NET
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/quick-monitor-portal?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Superviser les applications .Net Core
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/dotnetcore-quick-start?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Superviser les applications Node.js
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/nodejs-quick-start?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Superviser les applications mobiles
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/mobile-center-quickstart?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Superviser les applications web
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/app/website-monitoring?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Superviser les machines virtuelles hébergeant des applications traditionnelles
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/quick-collect-azurevm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Interagir avec les appareils
+                  items:
+                    - name: Vue d'ensemble
+                      href: innovate/best-practices/devices.md
+                    - name: Expérience mobile
+                      items:
+                        - name: Étendre une application de traitement des revendications héritée avec une expérience web et mobile
+                          href: 'https://azure.microsoft.com/solutions/architecture/adding-a-modern-web-and-mobile-frontend-to-a-legacy-claims-processing-application/'
+                        - name: Optimiser les rapports pour partager des données sur une application mobile
+                          href: 'https://docs.microsoft.com/power-bi/desktop-create-phone-report?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Étendre une application canevas PowerApps à une expérience mobile
+                          href: 'https://docs.microsoft.com/powerapps/user/run-app-client?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Étendre Microsoft Flow pour ajouter une expérience mobile
+                          href: 'https://docs.microsoft.com/flow/create-mobile-task-flow?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Sécuriser les expériences mobiles
+                          items:
+                            - name: 'Protéger les rapports mobiles avec un visage, une interaction tactile ou des codes secrets'
+                              href: 'https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Sécuriser les flux de tâches mobiles avec Intune
+                              href: 'https://docs.microsoft.com/flow/intune-support?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Sécuriser les données dans Common Data Services
+                              href: 'https://docs.microsoft.com/power-platform/admin/wp-security?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Réalité mixte
+                      items:
+                        - name: Développer des expériences de réalité mixte avec Unity
+                          href: 'https://docs.microsoft.com/windows/mixed-reality/unity-development-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Guides de démarrage rapide pour ajouter Azure Spatial Anchors à une solution de réalité mixte
+                          href: 'https://docs.microsoft.com/azure/spatial-anchors?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Réalité intégrée et IoT
+                      items:
+                        - name: Visualiser des données de capteur avec Azure IoT dans Power BI
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Visualiser des données de capteur avec Azure IoT Hub dans une solution web
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Sécurisation d’une solution IoT
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/iot-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Bien démarrer avec Azure Sphere
+                          href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
+                        - name: Déployer des applications en OTA avec Azure Sphere
+                          href: 'https://docs.microsoft.com/azure-sphere/deployment/application-deployment-steps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Bien démarrer avec Azure Kinect DK
+                          href: 'https://docs.microsoft.com/azure/Kinect-dk/about-azure-kinect-dk?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Créer votre première application Azure Kinect DK
+                          href: 'https://docs.microsoft.com/azure/Kinect-dk/build-first-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Réalité ajustée
+                      items:
+                        - name: Azure Digital Twins + HoloLens - Ajustement de la réalité virtuelle
+                          href: 'https://azure.microsoft.com/resources/videos/build-2019-azure-digital-twins-hololens-powering-the-next-generation-of-iot/'
+                        - name: Bien démarrer avec Azure Digital Twins
+                          href: 'https://docs.microsoft.com/azure/digital-twins/about-digital-twins?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: "Surveiller un bâtiment avec Digital\_Twins"
+                          href: 'https://docs.microsoft.com/azure/digital-twins/tutorial-facilities-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Guide Azure IoT pour les communications cloud-à-appareil
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance'
+                        - name: Configuration d’Azure IoT pour les communications cloud-à-appareil
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance'
+                - name: Prédire et influencer
+                  items:
+                    - name: Vue d'ensemble
+                      href: innovate/best-practices/predict.md
+                    - name: Modèles
+                      items:
+                        - name: Workflow Azure Machine Learning
+                          href: 'https://docs.microsoft.com/azure/machine-learning/service/concept-azure-machine-learning-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Solution Hadoop R Scaler
+                          href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Azure Machine Learning avec Azure SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Prédictions
+                      items:
+                        - name: Déployer des prédictions
+                          href: 'https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Configuration de clusters HDInsight
+                          href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Interactions
+                      items:
+                        - name: Azure Machine Learning de l’expérience aux services opérationnels
+                          href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: "Azure Machine Learning\_: publier sur des services web pour la consommation d’applications"
+                          href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Rendre opérationnel ML Services sur Azure HDInsight
+                          href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize'
     - name: Gouvernance
       items:
         - name: Vue d'ensemble
@@ -590,46 +1042,28 @@
                   href: govern/deployment-acceleration/discipline-improvement.md
                 - name: Outils Azure d’accélération du déploiement
                   href: govern/deployment-acceleration/toolchain.md
-    - name: Opérer
+    - name: gérer
       items:
         - name: Vue d'ensemble
-          href: operate/index.md
-        - name: Organiser
+          href: manage/index.md
+        - name: Guide de gestion Azure
           items:
-            - name: Gestion de l’alignement de l’organisation
-              href: organize/index.md
-            - name: Fonctionnalités du cloud requises
-              items:
-                - name: Stratégie cloud
-                  href: organize/cloud-strategy.md
-                - name: Adoption du cloud
-                  href: organize/cloud-adoption.md
-                - name: Gouvernance cloud
-                  href: organize/cloud-governance.md
-                - name: Équipe informatique centrale
-                  href: organize/central-it.md
-                - name: Opérations cloud
-                  href: organize/cloud-operations.md
-                - name: Centre d’excellence de cloud
-                  href: organize/cloud-center-of-excellence.md
-                - name: Plateforme cloud
-                  href: organize/cloud-platform.md
-                - name: Automatisation du cloud
-                  href: organize/cloud-automation.md
-            - name: Établir des équipes
-              href: organize/organization-structures.md
-            - name: Aligner la matrice RACI
-              href: organize/raci-alignment.md
-            - name: Développement des compétences techniques
-              href: organize/suggested-skills.md
-            - name: Création d’une organisation sensible aux coûts
-              href: organize/cost-conscious-organization.md
-            - name: Antimodèles - Fiefs informatiques et silos informatiques
-              href: organize/fiefdoms-silos.md
-        - name: gérer
+            - name: Avant de commencer
+              href: manage/azure-management-guide/index.md
+            - name: Inventaire et visibilité
+              href: manage/azure-management-guide/inventory.md
+            - name: Conformité opérationnelle
+              href: manage/azure-management-guide/operational-compliance.md
+            - name: Protection et récupération
+              href: manage/azure-management-guide/protect-recover.md
+            - name: Base de référence améliorée
+              href: manage/azure-management-guide/enhanced-baseline.md
+            - name: Spécialisation de la plateforme
+              href: manage/azure-management-guide/platform-specialization.md
+            - name: Spécialisation de la charge de travail
+              href: manage/azure-management-guide/workload-specialization.md
+        - name: Bonnes pratiques
           items:
-            - name: Vue d'ensemble
-              href: manage/index.md
             - name: Gestion des serveurs Azure
               items:
                 - name: Présentation de la gestion des serveurs Azure
@@ -674,14 +1108,88 @@
                   href: manage/monitor/alerting.md
                 - name: Vue d’ensemble des plateformes de supervision
                   href: manage/monitor/platform-overview.md
-            - name: Mettre en place un examen de santé opérationnel
-              href: manage/operational-fitness-review.md
             - name: Centraliser les opérations de gestion
               href: manage/centralize-operations.md
+            - name: Mettre en place un examen de santé opérationnel
+              href: manage/operational-fitness-review.md
+            - name: Amélioration de la résilience des plateformes et des charges de travail
+              items:
+                - name: Liste de vérification de la résilience pour les services Azure
+                  href: 'https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Analyse du mode d’échec
+                  href: 'https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Récupérer après une interruption de service à l’échelle de la région
+                  href: 'https://docs.microsoft.com/azure/architecture/resiliency/recovery-loss-azure-region?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Récupérer suite à une altération de données ou à une suppression accidentelle
+                  href: 'https://docs.microsoft.com/azure/architecture/resiliency/recovery-data-corruption?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+        - name: Considérations relatives à la gestion
+          items:
+            - name: Vue d'ensemble
+              href: manage/considerations/index.md
+            - name: Alignement de l’entreprise
+              href: manage/considerations/business-alignment.md
+            - name: Définir la criticité
+              href: manage/considerations/criticality.md
+            - name: Comprendre l’impact sur l’activité
+              href: manage/considerations/impact.md
+            - name: Établir des engagements métier
+              href: manage/considerations/commitment.md
+            - name: Disciplines de gestion
+              href: manage/considerations/discipline.md
+            - name: Inventaire et visibilité
+              href: manage/considerations/inventory.md
+            - name: Conformité opérationnelle
+              href: manage/considerations/operational-compliance.md
+            - name: Protection et récupération
+              href: manage/considerations/protect.md
+            - name: Opérations de plateforme
+              href: manage/considerations/platform.md
+            - name: Opérations de charge de travail
+              href: manage/considerations/workload.md
+        - name: Gestion avancée et conception de système
+          href: manage/design-principles.md
+    - name: Organiser
+      items:
+        - name: Gestion de l’alignement de l’organisation
+          href: organize/index.md
+        - name: Fonctionnalités du cloud requises
+          items:
+            - name: Stratégie cloud
+              href: organize/cloud-strategy.md
+            - name: Adoption du cloud
+              href: organize/cloud-adoption.md
+            - name: Gouvernance cloud
+              href: organize/cloud-governance.md
+            - name: Équipe informatique centrale
+              href: organize/central-it.md
+            - name: Opérations cloud
+              href: organize/cloud-operations.md
+            - name: Centre d’excellence de cloud
+              href: organize/cloud-center-of-excellence.md
+            - name: Plateforme cloud
+              href: organize/cloud-platform.md
+            - name: Automatisation du cloud
+              href: organize/cloud-automation.md
+        - name: Établir des équipes
+          href: organize/organization-structures.md
+        - name: Aligner la matrice RACI
+          href: organize/raci-alignment.md
+        - name: Développement des compétences techniques
+          href: organize/suggested-skills.md
+        - name: Création d’une organisation sensible aux coûts
+          href: organize/cost-conscious-organization.md
+        - name: Antimodèles - Fiefs informatiques et silos informatiques
+          href: organize/fiefdoms-silos.md
     - name: Informations de référence
       items:
         - name: Feuille de route du Framework d’adoption du cloud
           href: reference/index.md
+        - name: Modèle de fonctionnement
+          items:
+            - name: Vue d'ensemble
+              href: operating-model/index.md
+            - name: Terminologie
+              href: operating-model/terms.md
         - name: Guides de décision
           items:
             - name: Vue d'ensemble
