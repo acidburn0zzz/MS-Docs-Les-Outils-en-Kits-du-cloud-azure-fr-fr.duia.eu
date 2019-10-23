@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7144e772da10cd6c7d581fba61c11677524b60c2
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 6f45b3d3da6a1086f77474e823a9fd573b9b9bd0
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967294"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548262"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Configurer les services de gestion Azure à l’échelle
 
@@ -30,7 +30,7 @@ L’intégration des services de gestion Azure à vos serveurs implique deux tâ
 
 Toutes les solutions de gestion décrites dans [Outils et services d’administration d’Azure](./tools-services.md) exigent que l’agent Log Analytics soit installé sur les machines virtuelles et les serveurs locaux Azure. Vous pouvez intégrer vos machines virtuelles Azure à grande échelle à l’aide d’Azure Policy. Attribuez une stratégie pour vous assurer que l’agent est installé sur toutes vos machines virtuelles Azure et connecté à l’espace de travail Log Analytics approprié.
 
-Azure Policy dispose d’une [initiative de stratégie](/azure/governance/policy/concepts/definition-structure#initiatives) intégrée qui inclut à la fois l’agent Log Analytics et [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), requis par Azure Monitor pour machines virtuelles.
+Azure Policy dispose d’une [initiative de stratégie](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives) intégrée qui inclut à la fois l’agent Log Analytics et [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), requis par Azure Monitor pour machines virtuelles.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.

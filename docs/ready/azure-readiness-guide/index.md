@@ -10,27 +10,31 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f2954bafecf542d9fc62587ca051c4cd527ef620
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c344751d8db08a84efdcaddc32a48f6326d1ac3f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548934"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698505"
 ---
-# <a name="before-you-start"></a>Avant de commencer
+::: zone target="docs"
+
+# <a name="azure-setup-guide-before-you-start"></a>Guide de configuration Azure : Avant de commencer
+
+> [!NOTE]
+> Ce guide fournit un point de départ pour les conseils d’innovation dans le Framework d’adoption du cloud. Il est également disponible dans le Centre de démarrage rapide Azure. Découvrez le conseil plus loin dans cet article pour obtenir un lien vers le Centre de démarrage rapide Azure.
+
+::: zone-end
 
 ::: zone target="docs"
 
-> [!NOTE]
-> Ce guide fournit un point de départ pour les conseils d’innovation dans le Framework d’adoption du cloud. Il est également disponible dans le Centre de démarrage rapide Azure. Consultez le conseil plus loin dans cet article pour obtenir un lien vers le Centre de démarrage rapide Azure.
+# <a name="before-you-start"></a>Avant de commencer
 
 ::: zone-end
 
 Avant de commencer à générer et à déployer des solutions à l’aide des services Azure, vous devez préparer votre environnement. Dans ce guide, nous présentons des fonctionnalités qui vous aideront à organiser les ressources, à contrôler les coûts et à sécuriser et gérer votre organisation. Pour plus d’informations et pour découvrir les bonnes pratiques et les considérations liées à la préparation de votre environnement cloud, consultez la [section de préparation du Framework d’adoption du cloud](../index.md).
 
 Vous découvrirez comment effectuer les actions suivantes :
-
-::: zone target="chromeless"
 
 > [!div class="checklist"]
 >
@@ -41,18 +45,7 @@ Vous découvrirez comment effectuer les actions suivantes :
 > - **Utiliser la supervision et les rapports :** bénéficiez d’une visibilité des ressources pour mieux identifier et résoudre les problèmes, optimiser les performances ou obtenir des insights sur le comportement des clients.
 > - **Rester informé sur Azure** : suivez les mises à jour de produits afin de pouvoir adopter une approche proactive de la gestion des changements.
 
-::: zone-end
-
 ::: zone target="docs"
-
-> [!div class="checklist"]
->
-> - **Organiser les ressources.** définissez une hiérarchie de gestion pour appliquer de façon cohérente un contrôle d’accès, une stratégie et une conformité à des groupes de ressources, et utilisez l’étiquetage pour effectuer le suivi de ressources associées.
-> - **Gérer l’accès.** utilisez le contrôle d’accès en fonction du rôle pour vous assurer que les utilisateurs disposent uniquement des autorisations dont ils ont vraiment besoin.
-> - **Gérer les coûts et la facturation.** déterminez le type de votre abonnement, comprenez le mode de facturation et découvrez comment contrôler vos coûts.
-> - **Planifier la gouvernance, la sécurité et la conformité.** appliquez et automatisez des stratégies et des paramètres de sécurité qui vous aident à respecter les obligations légales applicables.
-> - **Utiliser la supervision et les rapports.** bénéficiez d’une visibilité des ressources pour mieux identifier et résoudre les problèmes, optimiser les performances ou obtenir des insights sur le comportement des clients.
-> - **Rester informé sur Azure.** suivez les mises à jour de produits afin de pouvoir adopter une approche proactive de la gestion des changements.
 
 > [!TIP]
 > Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [centre des guides de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure et sélectionnez **Introduction à la configuration d’Azure**, puis suivez les instructions pas à pas.

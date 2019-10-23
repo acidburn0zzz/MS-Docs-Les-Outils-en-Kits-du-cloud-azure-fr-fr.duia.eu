@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 62d6ab27e127f9d954989465838cd7c328db0573
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d9b51b7bb67a58d3a41818b1c51138c2e1c9c43a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967769"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548982"
 ---
 # <a name="role-based-access-control"></a>Contrôle d’accès en fonction du rôle
 
@@ -28,7 +28,7 @@ Pour obtenir une vue d’ensemble des pratiques RBAC recommandées dans le cadre
 
 À l’aide du [contrôle d’accès en fonction du rôle](https://docs.microsoft.com/azure/role-based-access-control/overview), vous pouvez séparer les tâches au sein de votre équipe et n’accorder qu’un accès suffisant pour des utilisateurs, groupes, principaux de service ou identités managées Azure Active Directory (Azure AD) spécifiques pour effectuer leurs tâches. Plutôt que de donner à tous un accès illimité à votre abonnement ou à vos ressources Azure, vous pouvez limiter les autorisations pour chaque ensemble de ressources.
 
-Les [définitions de rôle RBAC](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) répertorient les opérations autorisées ou non autorisées pour les utilisateurs ou les groupes affectés à ce rôle. L’[étendue](/azure/role-based-access-control/overview#scope) d’un rôle spécifie les ressources auxquelles ces autorisations définies s’appliquent. Les étendues peuvent être spécifiées à plusieurs niveaux : groupe d’administration, abonnement, groupe de ressources ou ressource. Les étendues sont structurées dans une relation parent-enfant.
+Les [définitions de rôle RBAC](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) répertorient les opérations autorisées ou non autorisées pour les utilisateurs ou les groupes affectés à ce rôle. L’[étendue](https://docs.microsoft.com/azure/role-based-access-control/overview#scope) d’un rôle spécifie les ressources auxquelles ces autorisations définies s’appliquent. Les étendues peuvent être spécifiées à plusieurs niveaux : groupe d’administration, abonnement, groupe de ressources ou ressource. Les étendues sont structurées dans une relation parent-enfant.
 
 ![Hiérarchie d’étendues RBAC](../../_images/azure-best-practices/rbac-scope.png)
 

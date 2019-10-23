@@ -8,16 +8,16 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c43d07c6cfdea0152559d7a13fec7dde148b1530
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221571"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547268"
 ---
 # <a name="guest-configuration-policy"></a>Stratégie Guest Configuration
 
-L’extension Azure Policy [Guest Configuration](/azure/governance/policy/concepts/guest-configuration) vous permet d’auditer les paramètres de configuration d’une machine virtuelle. Guest Configuration est actuellement pris en charge uniquement sur les machines virtuelles Azure.
+L’extension Azure Policy [Guest Configuration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) vous permet d’auditer les paramètres de configuration d’une machine virtuelle. Guest Configuration est actuellement pris en charge uniquement sur les machines virtuelles Azure.
 
 Vous pouvez retrouver la liste des stratégies Guest Configuration en recherchant la catégorie « Guest Configuration » dans la page du portail Azure Policy. Vous pouvez également en retrouver la liste en exécutant cette cmdlet dans une fenêtre PowerShell :
 

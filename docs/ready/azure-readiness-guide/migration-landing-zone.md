@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 82e011355363eb0483914b01185a739ab847a997
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: cb4b14da5b7f9e934a6597fb0fc4e1c8b3d656ff
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378254"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548908"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Déployer une zone d’accueil de migration
 
@@ -60,12 +60,12 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 |Outils de migration|Azure Site Recovery sera déployé et un projet Azure Migrate sera créé.|[Guide de décision sur les outils de migration](../../decision-guides/migrate-decision-guide/index.md)|
 |Enregistrement et surveillance|L’espace de travail Operational Insights et le compte de stockage des diagnostics seront approvisionnés.|         |
 |Réseau|Un réseau virtuel sera créé avec des sous-réseaux pour la passerelle, le pare-feu, le jumpbox et la zone d’accueil.|[Décisions en matière de mise en réseau](../considerations/network-decisions.md)|
-|Identité|Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory.|[Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|Identité|Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory.|[Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
 |Stratégie|Ce blueprint suppose actuellement qu’aucune stratégie Azure ne doit être appliquée.|         |
 |Conception de l’abonnement|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md)|
 |Groupes d’administration|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md)         |
 |Groupes de ressources|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md)         |
-|Données|N/A|[Choix de la bonne option SQL Server dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) et [instructions relatives aux magasins de données Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Données|N/A|[Choix de la bonne option SQL Server dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) et [instructions relatives aux magasins de données Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Stockage|N/A|[Conseils relatifs à Stockage Azure](../considerations/storage-guidance.md)         |
 |Standards de nommage et de catégorisation|N/A|[Meilleures pratiques en matière de nommage et de catégorisation](../considerations/naming-and-tagging.md)         |
 |la gestion des coûts ;|N/A|[Coûts de suivi](../azure-best-practices/track-costs.md)|
