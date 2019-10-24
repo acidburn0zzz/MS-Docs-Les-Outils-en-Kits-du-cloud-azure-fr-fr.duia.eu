@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment choisir la région de la plateforme cloud.
 author: doodlemania2
 ms.author: dermar
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547852"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769402"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
@@ -44,7 +44,7 @@ En examinant ces formes de complexité de façon plus approfondie, vous comprend
 
 Tout déploiement cloud robuste nécessite un réseau bien étudié, tenant compte des régions Azure. Une fois que vous avez examiné les caractéristiques ci-dessus pour déterminer les régions de déploiement, le réseau doit être déployé. Si cet article n’a pas pour objet de fournir des informations réseau exhaustives, certaines considérations doivent faire l’objet d’une attention particulière :
 
-1. Les régions Azure sont déployées par paires. En cas de défaillance irrémédiable affectant une région, une autre région incluse dans le même périmètre géopolitique* joue le rôle de région jumelée. Envisagez l’opportunité d’effectuer le déploiement dans des régions jumelées comme une stratégie de résilience principale et secondaire. *La région Azure Brésil représente une exception notable dans la mesure où sa région jumelée est la région USA Centre Sud. Pour plus d’informations, consultez [cette page](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions).
+1. Les régions Azure sont déployées par paires. En cas de défaillance irrémédiable affectant une région, une autre région incluse dans le même périmètre géopolitique* joue le rôle de région jumelée. Envisagez l’opportunité d’effectuer le déploiement dans des régions jumelées comme une stratégie de résilience principale et secondaire. *La région Azure Brésil représente une exception notable dans la mesure où sa région jumelée est la région USA Centre Sud. Pour en savoir plus, consultez [Régions jumelées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
     1. Le service Stockage Azure prend en charge le [stockage géoredondant](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) (GRS, Geographically Redundant Storage) : trois copies de vos données sont stockées dans votre région primaire et trois copies supplémentaires sont stockées dans la région jumelée. Vous ne pouvez pas modifier le jumelage du stockage dans le cadre d’un stockage géoredondant.
     1. Les services qui s’appuient sur le stockage géoredondant Azure peuvent tirer parti de cette fonctionnalité de région jumelée. La prise en charge de cette fonctionnalité doit alors être prévue aussi bien au niveau de vos applications qu’au niveau du réseau.
     1. Si vous n’envisagez pas d’utiliser le stockage géoredondant pour satisfaire vos besoins en résilience régionale, il est recommandé de _ne pas_ utiliser la région jumelée comme région secondaire. En cas de défaillance régionale, les ressources seront soumises à une pression intense dans la région jumelée lors de leur migration. En utilisant un autre site pour la reprise d’activité, vous évitez cette pression et gagnez ainsi en rapidité lors de la reprise.
