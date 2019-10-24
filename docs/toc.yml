@@ -143,9 +143,9 @@
                 - name: Planification des réseaux virtuels
                   href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Bonnes pratiques pour la sécurité réseau
-                  href: 'https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Bonnes pratiques pour la création d’un réseau de migration de charge de travail
-                  href: 'https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  href: migrate/azure-best-practices/migrate-best-practices-networking.md
                 - name: Réseaux de périmètre
                   href: ready/azure-best-practices/perimeter-networks.md
                 - name: Topologie de réseau hub-and-spoke
@@ -153,11 +153,11 @@
             - name: Identité et contrôles d’accès
               items:
                 - name: Bonnes pratiques pour la gestion des identités
-                  href: 'https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Sécurisation de l’accès d’administrateur dans Azure AD
                   href: 'https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Choisir l’authentification Azure AD
-                  href: 'https://docs.microsoft.com/azure/security/azure-ad-choose-authn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/security/fundamentals/choose-ad-authn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Stockage
               items:
                 - name: Guide sur la sécurité du stockage
@@ -165,7 +165,7 @@
             - name: Bases de données
               items:
                 - name: Bonnes pratiques pour la sécurité de la base de données
-                  href: 'https://docs.microsoft.com/azure/security/azure-database-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Choix d’une version d’Azure SQL
                   href: 'https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: "la gestion des coûts\_;"
@@ -441,33 +441,33 @@
                         - name: Bonnes pratiques pour la sécurité des frontières Azure
                           href: reference/networking-vdc.md
                         - name: Meilleures pratiques en matière de sécurité pour les bases de données Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-database-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Bonnes pratiques pour la sécurité du contrôle d’accès et de gestion des identités Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Bonnes pratiques pour la sécurité des réseaux Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Bonnes pratiques pour la sécurité des opérations Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-operational-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Bonnes pratiques pour Azure PaaS
-                          href: 'https://docs.microsoft.com/azure/security/security-paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Bonnes pratiques pour la sécurité Azure Service Fabric
-                          href: 'https://docs.microsoft.com/azure/security/azure-service-fabric-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Meilleures pratiques pour la sécurité des machines virtuelles Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-best-practices-vms?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Implémentation d’une architecture réseau hybride sécurisée dans Azure
-                          href: 'https://docs.microsoft.com/azure/guidance/guidance-iaas-ra-secure-vnet-hybrid?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Meilleures pratiques relatives à la sécurité IoT
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-iot-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Sécurisation des bases de données PaaS dans Azure
-                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Sécurisation des applications mobiles et web PaaS avec Azure App Service
-                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Sécurisation des applications mobiles et web PaaS à l’aide du stockage Azure
-                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Meilleures pratiques de sécurité pour les charges de travail IaaS dans Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Considérations relatives à la migration
               items:
                 - name: Vue d'ensemble
@@ -613,7 +613,7 @@
                     - name: Régir les données
                       items:
                         - name: Classifier les données
-                          href: 'https://docs.microsoft.com/azure/cloud-adoption/governance/policy-compliance/data-classification.md'
+                          href: govern/policy-compliance/data-classification.md
                         - name: Sécuriser les données
                           href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Annoter des données avec un catalogue de données
@@ -641,7 +641,7 @@
                         - name: "Intégrer des sources de données cloud à SQL\_Data\_Warehouse"
                           href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Charger des données dans Azure SQL Data Warehouse
-                          href: 'https://docs.microsoft.com/sql/integration-services/load-data-to-sql-data-warehouse?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/sql/integration-services/load-data-to-sql-data-warehouse?view=sql-server-ver15&toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Intégrer des données d’une fabrique de données à OLAP
                           href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Ingérer Stream Analytics dans SQL Data Warehouse
@@ -683,23 +683,23 @@
                         - name: Infusion de l’intelligence
                           items:
                             - name: Vision par ordinateur dans Visual Studio
-                              href: 'https://docs.microsoft.com/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service'
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Traduire du texte en temps réel
-                              href: 'https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translate'
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translate?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Comprendre les sentiments avec LUIS
-                              href: 'https://docs.microsoft.com/azure/cognitive-services/luis/luis-quickstart-intent-and-sentiment-analysis'
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/luis/luis-quickstart-intent-and-sentiment-analysis?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Convertir la parole en texte
-                              href: 'https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-dotnet-windows'
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-dotnet-windows?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Recherche Web Bing
-                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-web-search/tutorial-bing-web-search-single-page-app'
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-web-search/tutorial-bing-web-search-single-page-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Recherche visuelle à partir d’une image
-                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-visual-search/index'
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-visual-search/index?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: ChatBots
                           items:
                             - name: Créer et déployer un bot de base
-                              href: 'https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-basic-deploy'
+                              href: 'https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-basic-deploy?view=azure-bot-service-4.0&tabs=csharp&toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Parcours d’apprentissage - Créer des bots avec Azure Bot Services
-                              href: 'https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service/'
+                              href: 'https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Dépôt - Exemples de bots Azure sur GitHub
                               href: 'https://github.com/microsoft/botframework-sdk'
                     - name: Applications cloud natives
@@ -709,7 +709,7 @@
                             - name: 'Concevoir, générer et exploiter des microservices dans Azure'
                               href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Architecture de référence pour les microservices avec Azure Kubernetes Service (AKS)
-                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                              href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Architecture de référence - Exemple de microservices serverless
                               href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Containers
@@ -747,13 +747,13 @@
                         - name: Bien démarrer avec un dépôt partagé - GitHub and Git
                           href: 'https://guides.github.com/introduction/git-handbook'
                         - name: Bien démarrer avec un backlog partagé
-                          href: 'https://docs.microsoft.com/azure/devops/boards/backlogs/backlogs-boards-plans?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/devops/boards/backlogs/backlogs-boards-plans?view=azure-devops&toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Synchroniser PowerApps avec Azure DevOps
                           href: 'https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Boucles de rétroaction
                       items:
                         - name: Gérer les commentaires avec Azure DevOps
-                          href: 'https://docs.microsoft.com/azure/devops/project/feedback?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/devops/project/feedback?view=azure-devops&toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Intégration continue
                       items:
                         - name: Intégration continue avec Azure Pipelines et GitHub
@@ -761,7 +761,7 @@
                     - name: Test fiable
                       items:
                         - name: Gérer et suivre les plans de test
-                          href: 'https://docs.microsoft.com/azure/devops/test/track-test-status?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops&toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Déploiement de la solution
                       items:
                         - name: Déploiement continu avec Azure Pipelines et GitHub
@@ -807,7 +807,7 @@
                         - name: Développer des expériences de réalité mixte avec Unity
                           href: 'https://docs.microsoft.com/windows/mixed-reality/unity-development-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Guides de démarrage rapide pour ajouter Azure Spatial Anchors à une solution de réalité mixte
-                          href: 'https://docs.microsoft.com/azure/spatial-anchors?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/spatial-anchors/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Réalité intégrée et IoT
                       items:
                         - name: Visualiser des données de capteur avec Azure IoT dans Power BI
@@ -815,7 +815,7 @@
                         - name: Visualiser des données de capteur avec Azure IoT Hub dans une solution web
                           href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Sécurisation d’une solution IoT
-                          href: 'https://docs.microsoft.com/azure/security/fundamentals/iot-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Bien démarrer avec Azure Sphere
                           href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
                         - name: Déployer des applications en OTA avec Azure Sphere
@@ -833,9 +833,9 @@
                         - name: "Surveiller un bâtiment avec Digital\_Twins"
                           href: 'https://docs.microsoft.com/azure/digital-twins/tutorial-facilities-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Guide Azure IoT pour les communications cloud-à-appareil
-                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance'
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Configuration d’Azure IoT pour les communications cloud-à-appareil
-                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance'
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Prédire et influencer
                   items:
                     - name: Vue d'ensemble
@@ -861,7 +861,7 @@
                         - name: "Azure Machine Learning\_: publier sur des services web pour la consommation d’applications"
                           href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Rendre opérationnel ML Services sur Azure HDInsight
-                          href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize'
+                          href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
     - name: Gouvernance
       items:
         - name: Vue d'ensemble
