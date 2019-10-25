@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 17f462802a9ff5b44dfd734b299057649bbd797b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 85d284494a6fd9ca95b9566c939015a0a57b6f78
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023844"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888907"
 ---
 # <a name="migration-tools-decision-guide"></a>Guide de décision sur les outils de migration
 
