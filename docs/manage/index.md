@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 3f66a3ef43c16c9a331fabdaf718c85f9f131d8a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682711"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979887"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Gestion de cloud dans le Framework d’adoption du cloud
 
-Le suivi d’une [stratégie de cloud](../strategy/index.md) nécessite une planification, une préparation et une adoption solides. Mais c’est l’exploitation continue des ressources numériques qui offre des résultats tangibles pour l’entreprise. Sans la planification d’opérations de solutions cloud fiables et bien gérées, ces efforts offrent peu de valeur. Les exercices suivants vous aideront à développer les approches métier et techniques nécessaires pour fournir une gestion de cloud qui dynamise les opérations continues.
+Le suivi d’une [stratégie de cloud](../strategy/index.md) nécessite une planification, une préparation et une adoption solides. Mais c’est l’exploitation continue des ressources numériques qui offre des résultats tangibles pour l’entreprise. Sans la planification d’opérations de solutions cloud fiables et bien gérées, ces efforts offrent peu de valeur. Les exercices suivants vous aident à développer les approches métier et techniques nécessaires pour fournir une gestion de cloud qui dynamise les opérations continues.
 
 ## <a name="getting-started"></a>Prise en main
 
@@ -107,7 +107,7 @@ Les plateformes ou charges de travail nécessitant un niveau d’engagement mét
 
 ## <a name="scalable-cloud-management-methodology"></a>Méthodologie de gestion de cloud scalable
 
-Les étapes ci-dessus créent des approches actionnables pour suivre la méthodologie de gestion du Framework d’adoption du cloud.
+Les étapes précédentes créent des approches actionnables pour suivre la méthodologie de gestion du Framework d’adoption du cloud.
 
 ![Méthodologie de gestion dans le Framework d’adoption du cloud](../_images/manage/caf-manage.png)
 
@@ -140,7 +140,7 @@ Si vous souhaitez suivre ce guide du début à la fin, ce contenu vous aide à d
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Appliquer la méthodologie pour [établir des engagements métier clairs](./considerations/business-alignment.md).
+Appliquer la méthodologie pour établir des engagements métier clairs.
 
 > [!div class="nextstepaction"]
 > [Établir des engagements métier clairs](./considerations/business-alignment.md)
