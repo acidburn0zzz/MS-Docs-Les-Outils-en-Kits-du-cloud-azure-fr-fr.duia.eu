@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72060f16add37d62a4747c5fe9d5aef49fe04c58
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 348bcc8a98585efb4b4b1dddef1499d4c4958424
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222121"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547412"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Base de référence des identités dans Azure
 
@@ -45,7 +45,7 @@ Quand vous choisissez cette méthode, Azure AD gère le processus de connexion d
 
 **Authentification fédérée :**
 
-Quand vous choisissez cette méthode, Azure AD transfère le processus d’authentification à un système d’authentification approuvée distinct, par exemple les services de fédération Active Directory (AD FS) ou un service de fédération tiers sécurisé, pour valider le mot de passe de l’utilisateur.
+Quand vous choisissez cette méthode, Azure AD transfère le processus d’authentification à un système d’authentification approuvée distinct, par exemple les services de fédération Active Directory (AD FS) ou un service de fédération tiers sécurisé, pour valider le mot de passe de l’utilisateur.
 
 L’article [Choisir la méthode d’authentification adaptée à Azure Active Directory](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) propose un arbre de décision pour vous aider à choisir la meilleure solution pour votre organisation.
 

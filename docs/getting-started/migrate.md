@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Bien démarrer avec un parcours de migration cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: fb521115d0a59af123bd78fdc2f4cc7c72939fb6
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378001"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547828"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Bien démarrer avec un parcours de migration cloud
 
@@ -84,10 +84,10 @@ Comme illustré dans l’image ci-dessus, ce framework aligne les décisions str
 - **[Prêt](../ready/index.md) :** La préparation de l’entreprise, de la culture, des personnes et de l’environnement aux changements à venir contribue au succès de chaque effort et accélère les projets d’implémentation et de changement.
 - **Adoption :** Veillez à l’implémentation appropriée des changements souhaités dans l’ensemble des processus informatiques et métier pour obtenir les résultats opérationnels attendus.
   - **[Migration](../migrate/index.md) :** Exécution itérative de la [méthodologie d’implémentation cloud](#cloud-implementation) conformément au processus testé d’évaluation, de migration, d’optimisation et de sécurisation et de gestion pour créer un processus reproductible de migration des charges de travail.
-- **[Exploitation](../operate/index.md) :** Définissez un modèle d’exploitation gérable pour guider les activités pendant et longtemps après leur adoption.
-  - **[Organiser](../organize/index.md) :** Alignez les personnes et les équipes pour permettre l’exécution des opérations cloud appropriées et leur adoption.
-  - **[Gouverner](../govern/index.md) :** Alignez la stratégie de l’entreprise sur les risques tangibles, en les atténuant par des outils de gouvernance de stratégie, de processus et cloud.
-  - **[Gérer](../manage/index.md) :** Développez les opérations informatiques pour vérifier que les solutions cloud peuvent être exploitées via des processus sécurisés et rentables à l’aide d’outils d’exploitation modernes axés principalement sur le cloud.
+  - **[Innovation](../innovate/index.md) :** Valorisez la valeur commerciale grâce à des activités d’innovation qui déverrouillent de nouvelles compétences techniques et des capacités métier étendues.
+- **[Gouverner](../govern/index.md) :** Alignez la stratégie de l’entreprise sur les risques tangibles, en les atténuant par des outils de gouvernance de stratégie, de processus et cloud.
+- **[Gérer](../manage/index.md) :** Développez les opérations informatiques pour vérifier que les solutions cloud peuvent être exploitées via des processus sécurisés et rentables à l’aide d’outils d’exploitation modernes axés principalement sur le cloud.
+- **[Organiser](../organize/index.md) :** aligner les personnes et les équipes pour fournir des opérations et une adoption appropriées en matière de cloud.
 
 Tout au long de cette expérience de migration, ce framework est utilisé pour lever les ambiguïtés, gérer les changements et guider les diverses équipes interfonctionnelles à atteindre les résultats opérationnels souhaités.
 
@@ -134,12 +134,18 @@ Les technologies migrées vers le cloud se développent constamment au fur et à
 Le Framework d’adoption du cloud est une solution de cycle de vie. Il est conçu pour aider les lecteurs qui commencent tout juste leur parcours de migration ainsi que ceux qui sont profondément engagés dans celui-ci. Ainsi, le contenu est très spécifique au contexte et à l’audience. Les étapes suivantes sont mieux alignées sur le processus général que le lecteur souhaite améliorer.
 
 > [!div class="nextstepaction"]
+> [Stratégie](../strategy/index.md)
+>
 > [Planification](../plan/index.md)
 >
 > [Prête](../ready/index.md)
 >
 > [Migrer](../migrate/index.md)
 >
-> [Gérer](../manage/index.md)
+> [Innovation](../innovate/index.md)
 >
 > [Gouvernance](../govern/index.md)
+>
+> [Gérer](../manage/index.md)
+>
+> [Organiser](../organize/index.md)

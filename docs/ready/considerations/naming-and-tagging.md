@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 003e212326959b593071f8230d2ddc0dba646909
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 242b397312fe466670d3f1a315059f72447b300b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378277"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548839"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Prêt : Conventions de nommage et de catégorisation recommandées
 
 L’organisation des ressources informatiques de manière à aider à la gestion opérationnelle et à prendre en charge les exigences comptables est un défi courant qui concerne les efforts importants en matière d’adoption du cloud. En appliquant des conventions bien définies de nommage et de catégorisation de métadonnées aux ressources hébergées dans le cloud, le personnel informatique peut rapidement trouver et gérer les ressources. Des noms et des balises bien définis aident également à aligner les coûts d’utilisation du cloud sur les équipes commerciales à l’aide des mécanismes comptables de récupération des données de facturation et de facturation interne.
 
-L’article [Règles de nommage et restrictions pour les ressources Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) du Centre des architectures Azure fournit des recommandations générales sur les conventions de nommage et les discussions relatives aux restrictions de nommage et aux règles des plateformes. La discussion suivante étend cette aide générique avec des recommandations plus détaillées visant spécifiquement à prendre en charge les efforts d’adoption du cloud d’entreprise.
+L’article [Règles de nommage et restrictions pour les ressources Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) du Centre des architectures Azure fournit des conseils généraux sur les restrictions des plateformes. La discussion suivante étend cette aide générique avec des recommandations plus détaillées visant spécifiquement à prendre en charge les efforts d’adoption du cloud d’entreprise.
 
 Les noms de ressources peuvent être difficiles à modifier. Faites en sorte que vos équipes d’adoption du cloud établissent une convention d’affectation de noms complète avant de commencer un déploiement important du cloud.
 
@@ -46,7 +46,7 @@ Une convention d’affectation de noms efficace assemble des noms de ressources 
 
 #### <a name="naming-scope"></a>Étendue de l’affectation de noms
 
-Tous les types de ressources Azure ont une étendue qui définit la façon dont ces ressources peuvent être managées par rapport à d’autres types de ressources. En termes de conventions d’affectation de noms, cela signifie qu’une ressource doit avoir un nom unique dans son étendue.
+Tous les types de ressources Azure ont une étendue qui définit le niveau à partir duquel les noms de ressources doivent être uniques. Une ressource doit avoir un nom unique dans son étendue.
 
 Par exemple, un réseau virtuel possède une étendue de groupe de ressources, ce qui signifie qu’il ne peut y avoir qu’un seul réseau portant le nom `vnet-prod-westus-001` dans un groupe de ressources donné. D’autres groupes de ressources peuvent avoir leur propre réseau virtuel nommé `vnet-prod-westus-001`. Les sous-réseaux, pour donner un autre exemple, sont étendus à des réseaux virtuels, ce qui signifie que chaque sous-réseau d’un réseau virtuel doit être nommé de façon unique.
 
@@ -77,45 +77,48 @@ La liste suivante répertorie les préfixes de type de ressource Azure recommand
 | Type de ressource                       | Préfixe de nom de ressource |
 | ----------------------------------- | -------------------- |
 | Resource group                      | rg-                  |
-| Réseau virtuel Azure                     | vnet-                |
+| Réseau virtuel Azure               | vnet-                |
 | Passerelle de réseau virtuel             | vnet-gw-             |
 | Connexion à la passerelle                  | cn-                  |
 | Subnet                              | snet-                |
 | Groupe de sécurité réseau              | nsg-                 |
-| Machines virtuelles Azure                    | vm-                  |
+| Table de routage                         | route-               |
+| Machines virtuelles Azure              | vm-                  |
 | Compte de stockage de machine virtuelle                  | stvm                 |
 | Adresse IP publique                           | pip-                 |
-| Azure Load Balancer                       | lb-                  |
+| Azure Load Balancer                 | lb-                  |
 | Carte d’interface réseau                                 | nic-                 |
-| Azure Service Bus                         | sb-                  |
-| Files d’attente Azure Service Bus                  | sbq-                 |
-| Applications Azure App Service                    | azapp-               |
-| Applications Azure Functions                       | azfun-               |
-| Services cloud Azure                      | azcs-                |
+| Azure Key Vault                     | kv-                  |
+| Azure Kubernetes Service            | aks-                 |
+| Azure Service Bus                   | sb-                  |
+| Files d’attente Azure Service Bus            | sbq-                 |
+| Applications Azure App Service              | azapp-               |
+| Applications Azure Functions                | azfun-               |
+| Services cloud Azure                | azcs-                |
 | Azure SQL Database                  | sqldb-               |
 | Azure Cosmos DB (anciennement Azure DocumentDB) | cosdb-               |
 | Cache Azure pour Redis               | redis-               |
 | Azure Database pour MySQL            | mysql-               |
-| Azure SQL Data Warehouse                  | sqldw-               |
+| Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
 | Stockage Azure                       | stor                 |
-| Azure StorSimple                          | ssimp                |
+| Azure StorSimple                    | ssimp                |
 | Recherche Azure                        | srch-                |
-| Azure Cognitive Services                  | cs-                  |
+| Azure Cognitive Services            | cs-                  |
 | Espace de travail Azure Machine Learning    | aml-                 |
 | Azure Data Lake Storage             | dls                  |
 | Service Analytique Azure Data Lake           | dla                  |
-| Azure HDInsight – Spark                   | hdis-                |
-| Azure HDInsight – Hadoop                  | hdihd-               |
-| Azure HDInsight – R Server                | hdir-                |
-| Azure HDInsight – HBase                   | hdihb-               |
+| Azure HDInsight – Spark             | hdis-                |
+| Azure HDInsight – Hadoop            | hdihd-               |
+| Azure HDInsight – R Server          | hdir-                |
+| Azure HDInsight – HBase             | hdihb-               |
 | Power BI Embedded                   | pbiemb               |
-| Azure Stream Analytics                    | asa-                 |
-| Azure Data Factory                        | df-                  |
-| Hubs d'événements Azure                           | evh-                 |
+| Azure Stream Analytics              | asa-                 |
+| Azure Data Factory                  | df-                  |
+| Hubs d'événements Azure                    | evh-                 |
 | Azure IoT Hub                       | aih-                 |
-| Azure Notification Hubs                   | anh-                 |
-| Espace de noms d’Azure Notification Hubs          | anhns-               |
+| Azure Notification Hubs             | anh-                 |
+| Espace de noms d’Azure Notification Hubs   | anhns-               |
 
 ### <a name="metadata-tags"></a>Balises de métadonnées
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fbcb06b671b13b48fe5063e5efd8ba72c3071667
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3869103c257fa03806fe09b840ab41fd6365c152
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024329"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547230"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Réhéberger une application locale sur des machines virtuelles Azure et un groupe de disponibilité Always On SQL Server
 

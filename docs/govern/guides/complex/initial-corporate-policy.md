@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2d8c2923820883561f75902830425b1bd81eb846
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 56629e6f313614965ee1baddaa08e4264b4bef53
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031415"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547673"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Guide de gouvernance pour les entreprises complexes : Stratégie d’entreprise initiale sous-tendant la stratégie de gouvernance
 
@@ -47,4 +47,4 @@ La tolérance au risque actuelle est élevée et l’envie d’investir dans la 
 Cette stratégie d’entreprise prépare l’équipe de gouvernance cloud à implémenter le MVP de gouvernance, qui constituera la base de l’adoption. L’étape suivante consiste à implémenter ce MVP.
 
 > [!div class="nextstepaction"]
-> [Instructions normatives expliquées](./prescriptive-guidance.md)
+> [Meilleures pratiques, explication](./prescriptive-guidance.md)

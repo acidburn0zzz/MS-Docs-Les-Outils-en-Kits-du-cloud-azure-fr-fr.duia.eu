@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be4fe4616b4f0599075ceac2b9c0838949b350c8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025431"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548486"
 ---
 # <a name="estimate-cloud-costs"></a>Estimer les coûts du cloud
 

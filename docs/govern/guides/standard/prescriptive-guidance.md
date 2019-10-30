@@ -1,7 +1,7 @@
 ---
-title: 'Guide de gouvernance pour les entreprises standard : Instructions normatives expliquées'
+title: 'Guide de gouvernance pour les entreprises standard : Explication des conseils'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Découvrez des conseils normatifs pour la gouvernance dans des entreprises standard.
+description: Découvrez nos conseils pour la gouvernance dans les entreprises standard.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967507"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547496"
 ---
-# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>Guide de gouvernance pour les entreprises standard : Instructions normatives expliquées
+# <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Guide de gouvernance pour les entreprises standard : Explication des conseils
 
-Ce guide de gouvernance commence par un ensemble de [stratégies d’entreprise](./initial-corporate-policy.md) initiales. Ces stratégies permettent de définir un produit minimum viable (MVP) pour la gouvernance reflétant les [pratiques recommandées](./index.md).
+Ce guide de gouvernance commence par un ensemble de [stratégies d’entreprise](./initial-corporate-policy.md) initiales. Ces stratégies permettent de définir un produit minimum viable (MVP) pour la gouvernance reflétant les [meilleures pratiques](./index.md).
 
 Dans cet article, nous allons parler des stratégies de haut niveau qui sont nécessaires pour créer un MVP de gouvernance. Au cœur d’un MVP de gouvernance se trouve la discipline : [Accélération du déploiement](../../deployment-acceleration/index.md). À ce stade, les outils et modèles qui sont appliqués permettent les améliorations incrémentielles nécessaires au développement de la gouvernance à l’avenir.
 
@@ -61,12 +61,12 @@ La décision sur la conception de l’abonnement à utiliser détermine la faço
 
 Les décisions relatives à la cohérence des ressources déterminent les outils, processus et efforts nécessaires pour garantir que les ressources Azure sont déployées, configurées et gérées de manière cohérente au sein d’un abonnement. Dans ce scénario, la **[cohérence de déploiement](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** a été choisie comme modèle de cohérence des ressources principales.
 
-- Les groupes de ressources sont créés pour les applications à l’aide de l’approche par cycle de vie : tout ce qui est créé, géré et mis hors service ensemble doit se trouver dans un même groupe de ressources. Pour plus d’informations sur les groupes de ressources, consultez [cette section](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Des groupes de ressources sont créés pour les applications à l’aide de l’approche du cycle de vie. Tout ce qui est créé, maintenu et mis hors service ensemble doit résider dans un seul groupe de ressources. Pour plus d’informations sur les groupes de ressources, consultez [cette section](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - La stratégie Azure doit être appliquée à tous les abonnements du groupe d’administration associé.
 - Dans le cadre du processus de déploiement, les modèles Cohérence des ressources Azure doivent être stockés dans le contrôle du code source pour le groupe de ressources.
 - Chaque groupe de ressources est associé à une charge de travail ou à une application spécifique basée sur l’approche par cycle de vie décrit plus haut.
 - Les groupes d’administration Azure permettent de mettre à jour les modèles de gouvernance au fur et à mesure que la stratégie de l’entreprise évolue.
-- La mise en œuvre à grande échelle de la stratégie Azure peut dépasser les échéances fixées par l’équipe et ne pas présenter un intérêt tangible pour le moment. Toutefois, une stratégie simple par défaut doit être créée et appliquée à chaque groupe de gestion pour faire respecter le faible nombre d’instructions portant sur la gouvernance cloud. Cette stratégie est censée définir l’implémentation d’exigences précises en matière de gouvernance. Ces implémentations peuvent ensuite être appliquées à toutes les ressources déployées.
+- La mise en œuvre à grande échelle d’Azure Policy peut dépasser les échéances fixées par l’équipe et ne pas présenter un intérêt tangible pour le moment. Toutefois, une stratégie simple par défaut doit être créée et appliquée à chaque groupe de gestion pour faire respecter le faible nombre d’instructions portant sur la gouvernance cloud. Cette stratégie est censée définir l’implémentation d’exigences précises en matière de gouvernance. Ces implémentations peuvent ensuite être appliquées à toutes les ressources déployées.
 
 >[!IMPORTANT]
 >Chaque fois qu’une ressource d’un groupe de ressources ne partage plus le même cycle de vie, elle doit être déplacée vers un autre groupe de ressources. Il peut s’agir par exemple des bases de données communes et de composants de mise en réseau. Bien que ces éléments puissent servir l’application en cours de développement, ils peuvent également servir à d’autres fins et doivent donc exister dans d’autres groupes de ressources.

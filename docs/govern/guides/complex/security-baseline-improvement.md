@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e2e075b6f051af003d4c8d542e592943084c1e7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220554"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547611"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence de la sécurité
 

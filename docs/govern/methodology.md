@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: cc4567495d60f76be760d532dc16a66274834396
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 431895263473481fbd43fc9c63d832a538a499db
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032429"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547393"
 ---
 # <a name="cloud-governance-methodology"></a>Méthodologie de gouvernance cloud
 
@@ -50,7 +50,7 @@ Au fond, les stratégies d’entreprise font figure de système d’avertissemen
 
 Comme les exigences de gouvernance changent tout au long du parcours d’adoption cloud, il est nécessaire d’adopter une approche différente face à la gouvernance. Les entreprises ne peuvent plus espérer qu’une petite équipe sécurise et jalonne chaque processus *avant de se lancer et de mettre en œuvre une première étape*. Des résultats commerciaux rapides et réguliers sont attendus. La gouvernance informatique doit également évoluer rapidement et suivre le rythme des exigences opérationnelles afin de rester pertinente lors du passage au cloud et d’éviter le phénomène « d’informatique fantôme ».
 
-L’approche de **gouvernance incrémentielle** permet de prendre toute la mesure de ces caractéristiques. La gouvernance incrémentielle repose sur un petit ensemble de stratégies d’entreprise, de processus et d’outils qui visent à établir une base solide pour le passage au cloud et sa gouvernance. Cette base est appelée un **produit minimum viable** (MVP, minimum viable product). Grâce au produit minimum viable, l’équipe responsable peut intégrer rapidement la gouvernance aux implémentations tout au long du cycle d’adoption du cloud. Un produit minimum viable peut être établi à tout moment pendant ce processus. Toutefois, il est conseillé d’adopter un produit minimum viable le plus tôt possible.
+L’approche de **gouvernance incrémentielle** permet de prendre toute la mesure de ces caractéristiques. La gouvernance incrémentielle repose sur un petit ensemble de stratégies d’entreprise, de processus et d’outils qui visent à établir une base solide pour le passage au cloud et sa gouvernance. Cette base est appelée un **produit minimum viable** (MVP, minimum viable product). Grâce au produit minimum viable, l’équipe responsable peut intégrer rapidement la gouvernance aux implémentations tout au long du cycle d’adoption du cloud. Un produit minimum viable peut être établi à tout moment pendant ce processus. Toutefois, il est conseillé d’adopter un produit minimum viable (MVP) le plus tôt possible.
 
 Quand elle est capable de répondre rapidement à l’évolution des risques, l’équipe de gouvernance cloud peut alors s’impliquer dans d’autres domaines. L’équipe de gouvernance cloud peut jouer le rôle d’éclaireur auprès de l’équipe de stratégie cloud, en devançant les équipes chargées de l’adoption du cloud et en s’éloignant des sentiers battus, afin de mettre rapidement en place des mesures de sécurité permettant de gérer les risques associés aux plans d’adoption. Ces couches de gouvernance juste-à-temps sont des **itérations de gouvernance**. Grâce à cette approche, la stratégie de gouvernance prend une longueur d’avance sur les équipes chargées de l’adoption du cloud.
 

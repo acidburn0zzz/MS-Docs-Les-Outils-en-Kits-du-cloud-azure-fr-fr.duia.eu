@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: fbb1e57d1073286d9b92db96dbf923eb28612f49
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1e8b42170a4db025087acdabba14544cea9c8194
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224081"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548126"
 ---
 # <a name="scale-a-migration-to-azure"></a>Mettre à l’échelle une migration vers Azure
 
@@ -260,7 +260,7 @@ Contoso doit savoir comment déployer ces composants en tenant compte des consid
 
 **Composant** | **Besoins en capacité**
 --- | ---
-**Taux de modification quotidien maximal** | Un seul serveur de processus peut prendre en charge un taux de modification quotidien maximal de 2 To. Sachant qu’une machine virtuelle ne peut utiliser qu’un seul serveur de processus, le taux de modification quotidien de données maximal pris en charge pour une machine virtuelle répliquée est de 2 To.
+**Taux de modification quotidien maximal** | Un seul serveur de processus peut prendre en charge un taux de modification quotidien maximal de 2 To. Sachant qu’une machine virtuelle ne peut utiliser qu’un seul serveur de processus, le taux quotidien maximal de modification de données pris en charge pour une machine virtuelle répliquée est de 2 To.
 **Débit maximal** | Un compte standard Stockage Azure peut gérer au maximum 20 000 demandes par seconde, et les opérations d’entrée/sortie par seconde (IOPS) sur une machine virtuelle en cours de réplication doivent se situer dans cette limite. Par exemple, si une machine virtuelle dispose de 5 disques et que chaque disque génère 120 IOPS (taille de 8 Ko) sur la machine virtuelle, la limite de 500 IOPS sur le disque Azure est respectée.<br/><br/> Notez que le nombre de comptes de stockage nécessaires est égal au nombre total d’IOPS de la machine source divisé par 20 000. Un ordinateur répliqué ne peut appartenir qu’à un seul compte de stockage dans Azure.
 **Serveur de configuration** | D’après son estimation de réplication de 100 à 200 machines virtuelles et des [exigences de dimensionnement du serveur de configuration](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server), les équipes Contoso estiment qu’elles ont besoin d’un ordinateur serveur de configuration avec les capacités suivantes :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets * 8 cœurs à 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> En plus des exigences de dimensionnement, Contoso devra vérifier que l’emplacement du serveur de configuration est optimal, à savoir sur le même réseau et le même segment de réseau local que les machines virtuelles qui seront migrées.
 **Serveur de traitement** | Contoso prévoit de déployer un serveur de processus dédié autonome capable de répliquer entre 100 et 200 machines virtuelles :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets * 8 cœurs à 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> Le serveur de processus sera fortement sollicité et doit donc se trouver sur un hôte ESXi capable de gérer les E/S disque, le trafic réseau et l’UC nécessaires à la réplication. Pour cela, Contoso examinera s’il y a lieu d’utiliser un hôte dédié.
@@ -318,7 +318,7 @@ Pour exploiter au mieux son investissement cloud, Contoso entend tirer parti de 
 Contoso prévoit aussi d’utiliser des scripts pour localiser les ressources non utilisées.
 
 - Pendant les migrations de grande ampleur, il est fréquent qu’il reste des reliquats de données, comme des disques durs virtuels (VHD), qui occasionnent des frais sans pour autant être utiles à l’entreprise. Les scripts sont disponibles dans le dépôt GitHub.
-- Contoso entend tirer parti du travail réalisé par le service informatique de Microsoft et envisage d’implémenter le kit de ressources d’optimisation des ressources Azure (ARO).
+- Contoso entend tirer parti du travail réalisé par le service informatique de Microsoft et envisage d’implémenter le kit d’optimisation des ressources Azure (ARO).
 - Contoso peut déployer un compte Azure Automation avec des runbooks et des planifications préconfigurés dans son abonnement et commencer à faire des économies. L’optimisation des ressources Azure se produit automatiquement dans un abonnement dès lors qu’une planification est activée ou créée, et l’optimisation s’étend aux nouvelles ressources.
 - Ces fonctionnalités d’automation décentralisées permettent de réduire les coûts. Voici quelques fonctionnalités :
   - Mise en veille automatique des machines virtuelles Azure faiblement actives.

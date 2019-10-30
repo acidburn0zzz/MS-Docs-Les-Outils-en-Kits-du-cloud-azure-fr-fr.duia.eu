@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 22dc2f69f1b7e1541a9556fc8b8802cbb2d5e878
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0efdd1a42ae7ff161c29f37365d0a14d4d869496
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024471"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547368"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Réarchitecturer une application locale dans un conteneur Azure et Azure SQL Database
 

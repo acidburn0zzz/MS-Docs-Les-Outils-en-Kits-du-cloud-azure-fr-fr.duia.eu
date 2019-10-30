@@ -1,23 +1,23 @@
 ---
-title: Équilibrage du portefeuille
+title: Équilibrer le portefeuille
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Équilibrage du portefeuille
+description: Découvrez comment équilibrer votre portefeuille cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1227b798972ce7e139181c9267a1a1e860390029
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836707"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548589"
 ---
 # <a name="balance-the-portfolio"></a>Équilibrer le portefeuille
 
-L’adoption du cloud est un effort de gestion de portefeuille qui est adroitement déguisé en implémentation technique. Comme n’importe quel exercice de gestion de portefeuille, l’équilibre du portefeuille est un élément essentiel à la réussite. À un niveau stratégique, cela signifie équilibrer la migration, l’innovation et l’expérimentation pour tirer le meilleur parti du cloud. Lorsque l’effort d’adoption du cloud va trop loin dans une direction ou une autre, la complexité se retrouve dans l’effort de migration. Cet article guide le lecteur à travers les approches pour atteindre un équilibre dans le portefeuille.
+L’adoption du cloud est un effort de gestion de portefeuille qui est adroitement déguisé en implémentation technique. Comme n’importe quel exercice de gestion de portefeuille, l’équilibre du portefeuille est essentiel. À un niveau stratégique, cela signifie équilibrer la migration, l’innovation et l’expérimentation pour tirer le meilleur parti du cloud. Lorsque l’effort d’adoption du cloud va trop loin dans une direction ou une autre, la complexité se retrouve dans l’effort de migration. Cet article guide le lecteur à travers les approches pour atteindre un équilibre dans le portefeuille.
 
 ## <a name="general-scope-expansion"></a>Expansion de l’étendue générale
 

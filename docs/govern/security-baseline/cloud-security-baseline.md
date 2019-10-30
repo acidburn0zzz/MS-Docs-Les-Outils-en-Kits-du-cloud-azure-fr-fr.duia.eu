@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 40bcd90d632bedd4e924942ac6efae5034cc0af8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221769"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548021"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Comprendre la base de référence de la sécurité cloud
 

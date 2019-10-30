@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 579f6eb761a6e59ab179e99c4c607f87897b4215
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0b743ffbace5c2b246df6f03d7e5b23570277dd0
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224179"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548139"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>réhéberger une application Linux locale sur des machines virtuelles Azure
 

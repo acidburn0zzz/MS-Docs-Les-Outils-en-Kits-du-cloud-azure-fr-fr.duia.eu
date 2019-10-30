@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 819d0c058acf48402296bbac8d4cb4837271259e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5b2de64af3d7e48a38fd1f125fc5f8b37b190dd2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70835443"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547194"
 ---
 # <a name="create-hybrid-cloud-consistency"></a>Créer une cohérence de cloud hybride
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025133"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548221"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Regénérer une application locale sur Azure AD
 

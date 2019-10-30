@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d6c52336f6bf02641cefd6d848ed319e8d3cc100
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a4f8c76abb36d0b3f410ed4d2027f9307d6c1f0c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031964"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548672"
 ---
 # <a name="examples-of-performance-outcomes"></a>Exemples de résultats de performances
 

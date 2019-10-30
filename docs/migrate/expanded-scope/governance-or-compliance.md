@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6c1ac4000f5b79d6b177e8703f5e58b6dd9c9e56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a6371fe5f3d90e72b29ecfc1e66b3d4991ef5822
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022730"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549238"
 ---
 # <a name="governance-or-compliance-strategy"></a>Stratégie de gouvernance ou de conformité
 
@@ -37,7 +37,7 @@ La configuration de l’environnement Azure de base peut changer considérableme
 
 **Services Microsoft :** Les services Microsoft fournissent des offres de solutions qui peuvent s’aligner sur le modèle de gouvernance du Framework d’adoption du cloud, les blueprints de conformité ou les options Centre de données virtuel pour garantir le modèle de gouvernance ou de conformité le plus approprié. Utilisez l’offre de solutions [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) pour établir une image basée sur les données d’un déploiement client dans Azure, valider la maturité de l’implémentation Azure du client tout en identifiant l’optimisation des architectures de déploiement existantes et supprimer les risques relatifs à la disponibilité et à la sécurité de la gouvernance. Selon les insights des clients, vous devriez adopter les approches suivantes :
 
-- **Fondation du cloud :** Établissez les conceptions, les modèles et l’architecture de gouvernance Azure essentiels du client à l’aide de l’offre de solutions [Hybride Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf). Mappez les exigences du client à l’architecture de référence la plus appropriée. Implémentez un produit minimum viable constitué de services partagés et de charges de travail IaaS.
+- **Fondation du cloud :** Établissez les conceptions, les modèles et l’architecture de gouvernance Azure essentiels du client à l’aide de l’offre de solutions [Hybride Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf). Mappez les exigences du client à l’architecture de référence la plus appropriée. Implémentez un produit minimum viable constitué de services partagés et de charges de travail IaaS.
 - **Modernisation du cloud :** Utilisez l’offre de solutions [Cloud Modernisation](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) comme approche complète pour déplacer des applications; des données et des infrastructures vers un cloud de classe Entreprise, ainsi que pour optimiser et moderniser une fois dans le cloud.
 - **Innovez grâce au cloud :** Impliquez les clients avec une approche de solutions de type [centre d’excellence du cloud (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) innovante et unique, qui crée une organisation informatique moderne pour permettre une agilité à grande échelle avec DevOps tout en gardant le contrôle. La solution implémente une approche agile pour capturer les besoins de l’entreprise, réutilise les packages de déploiement alignés sur les stratégies de sécurité, de conformité et de management des services et maintient la plateforme Azure alignée sur les procédures opérationnelles.
 

@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b7a2ae0457550189df66b8aa290fd9835cb11904
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378158"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548769"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
 
@@ -129,7 +129,7 @@ Les balises de ressource sont en parfaite adéquation avec les normes d’affect
 > [!IMPORTANT]
 > Les balises peuvent contenir des informations personnelles et être visées par les dispositions du RGPD. Planifiez soigneusement la gestion de vos balises. Si vous recherchez des informations générales sur le RGPD, consultez la section RGPD du [Portail d’approbation de services](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-Au-delà de la facturation et de la gestion, les balises sont utilisées de diverses manières. Elles sont souvent employées dans le cadre de l’automation (consultez la section ultérieure). Cet aspect doit être pris en considération en amont au risque de provoquer des conflits. Il est recommandé d’identifier toutes les balises courantes au niveau de l’entreprise (par exemple, ApplicationOwner, CostCenter) et de les appliquer systématiquement au moment de déployer les ressources à l’aide de l’automatisation.
+Au-delà de la facturation et de la gestion, les balises sont utilisées de diverses manières. Elles sont souvent employées dans le cadre de l’automation (consultez la section ultérieure). Cet aspect doit être pris en considération en amont au risque de provoquer des conflits. Nous vous recommandons d’identifier toutes les balises courantes au niveau de l’entreprise (par exemple, ApplicationOwner, CostCenter) et de les appliquer systématiquement au moment de déployer les ressources à l’aide de l’automatisation.
 
 ## <a name="azure-policy-and-initiatives"></a>Stratégie et initiatives Azure
 
@@ -267,7 +267,7 @@ Ces informations peuvent être consultées et traitées à plusieurs niveaux et 
 
 ## <a name="cost-management"></a>la gestion des coûts ;
 
-Un des changements majeurs auxquels vous serez confronté en passant d’un cloud local au cloud public est le passage de dépenses d’investissement (acheter du matériel) à des dépenses d’exploitation (payer pour le service que vous utilisez). Cette transition nécessite également une gestion plus précise de vos coûts. L’avantage du cloud est que vous pouvez agir foncièrement et positivement sur le coût d’un service que vous utilisez, simplement en l’arrêtant ou en le redimensionnant quand vous n’en avez pas besoin. La gestion délibérée des coûts dans le cloud est une pratique recommandée à laquelle les clients expérimentés s’adonnent quotidiennement.
+Un des changements majeurs auxquels vous serez confronté en passant d’un cloud local au cloud public est le passage de dépenses d’investissement (acheter du matériel) à des dépenses d’exploitation (payer pour le service que vous utilisez). Cette transition nécessite également une gestion plus précise de vos coûts. L’avantage du cloud est que vous pouvez agir foncièrement et positivement sur le coût d’un service que vous utilisez, simplement en l’arrêtant ou en le redimensionnant quand vous n’en avez pas besoin. La gestion délibérée des coûts dans le cloud est une meilleure pratique à laquelle les clients expérimentés s’adonnent quotidiennement.
 
 Microsoft met à votre disposition plusieurs outils pour visualiser, suivre et gérer les coûts. Nous vous proposons aussi un ensemble complet d’API pour vous permettre de personnaliser la gestion des coûts et de l’intégrer à vos propres outils et tableaux de bord. Ces outils sont plus ou moins regroupés dans les fonctionnalités du portail Azure et des fonctionnalités externes.
 
@@ -286,7 +286,7 @@ Il s’agit d’outils destinés à fournir des informations instantanées sur l
 
 - **API de consommation :** Les [API de consommation](/rest/api/consumption) vous donnent un accès programmatique à des données de coûts et d’utilisation, ainsi qu’à des informations sur les budgets, les instances réservées et les coûts de place de marché. Seuls les Accord de Mise en Œuvre Entreprise et certains abonnements directs web ont accès à ces API. Cependant, celles-ci vous permettent d’intégrer vos données de coûts dans vos propres outils et entrepôts de données. Vous pouvez également [accéder à ces API par le biais d’Azure CLI](/cli/azure/consumption?view=azure-cli-latest).
 
-Les clients qui sont des utilisateurs chevronnés du cloud suivent certaines pratiques fortement recommandées :
+Les clients qui sont des utilisateurs chevronnés du cloud suivent certaines meilleures pratiques :
 
 - **Supervision active des coûts.** Les organisations qui ont une certaine expérience d’Azure supervisent constamment les coûts et prennent des mesures quand cela s’avère nécessaire. Certaines organisations emploient même des personnes pour effectuer des analyses et suggérer des changements dans l’utilisation, des postes qui sont largement rentabilisés la première fois qu’elles découvrent qu’un cluster HDInsight inutilisé s’exécute depuis des mois.
 - **Utilisation d’instances de machines virtuelles réservées.** Un autre principe clé pour gérer les coûts dans le cloud est d’utiliser l’outil adéquat. Si vous avez une machine virtuelle IaaS qui doit rester active 24h/24, 7j/7, vous pouvez réalisez des économies significatives en utilisant une instance de machine virtuelle réservée. Trouver le bon équilibre entre automatiser l’arrêt des machines virtuelles et utiliser des instances réservées demande de l’expérience et de l’analyse.

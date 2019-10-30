@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224157"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547351"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Déployer une infrastructure de migration
 
@@ -102,7 +102,7 @@ Mobilité de licence à travers la Software Assurance octroie aux clients de lic
 
 #### <a name="reserve-instances-for-predictable-workloads"></a>Réserver des instances pour les charges de travail prévisibles
 
-Les charges de travail prévisibles sont celles qui doivent toujours être disponibles avec des machines virtuelles en cours d’exécution. Par exemple, les applications métier telles qu’un système ERP SAP. En revanche, les charges de travail imprévisibles sont celles qui sont variables, telles que les machines virtuelles qui sont activées en période de forte demande et désactivées lorsque la demande est faible.
+Les charges de travail prévisibles sont celles qui doivent toujours être disponibles avec des machines virtuelles en cours d’exécution. Par exemple, les applications métier telles qu’un système ERP SAP. En revanche, les charges de travail imprévisibles sont celles qui sont variables, telles que les machines virtuelles qui sont activées en période de forte demande et désactivées lorsque la demande est faible.
 
 ![Instance réservée](./media/contoso-migration-infrastructure/reserved-instance.png)
 
@@ -356,28 +356,28 @@ Pour connecter les deux régions, Contoso a décidé d’implémenter un modèle
 - Dans chaque région, Contoso utilisera un modèle hub-and-spoke.
 - Pour connecter des réseaux et des hubs, Contoso utilisera le Peering de réseau Azure.
 
-#### <a name="network-peering"></a>Appairage de réseau
+#### <a name="network-peering"></a>Peering de réseau
 
-Azure fournit un réseau d’homologation pour connecter des réseaux virtuels et des hubs. L’homologation globale permet d’établir des connexions entre des réseaux virtuels/hubs de différentes régions. L’homologation locale connecte des réseaux virtuels d’une même région. Le Peering de réseaux virtuels offre plusieurs avantages :
+Azure fournit un réseau de peering pour connecter des réseaux virtuels et des hubs. Le peering global permet d’établir des connexions entre des réseaux virtuels/hubs de différentes régions. Le peering local connecte des réseaux virtuels d’une même région. Le Peering de réseaux virtuels offre plusieurs avantages :
 
 - Le trafic réseau entre les réseaux virtuels homologués est privé.
 - Le trafic entre les réseaux virtuels reste sur le réseau principal de Microsoft. Aucun chiffrement et aucune connexion Internet publique, ni passerelle ne sont nécessaires pour que les réseaux virtuels communiquent.
-- L’homologation fournit une connexion par défaut à faible latence et haut débit entre les ressources de différents réseaux virtuels.
+- Le peering fournit une connexion par défaut à faible latence et haut débit entre les ressources de différents réseaux virtuels.
 
-[En savoir plus](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) sur l’homologation de réseaux.
+[En savoir plus](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) sur le peering de réseaux.
 
 #### <a name="hub-to-hub-across-regions"></a>Déploiement « hub à hub » entre les régions
 
-Contoso déploiera un hub dans chaque région. Un hub est un réseau virtuel (VNet) dans Azure qui centralise la connectivité à votre réseau local. Les réseaux virtuels de hubs se connectent à l’aide d’une homologation de réseaux virtuels globale. L’homologation de réseaux virtuels globale connecte des réseaux virtuels entre des régions Azure.
+Contoso déploiera un hub dans chaque région. Un hub est un réseau virtuel (VNet) dans Azure qui centralise la connectivité à votre réseau local. Les réseaux virtuels de hubs se connectent à l’aide d’un peering de réseaux virtuels global. Le peering de réseaux virtuels global connecte des réseaux virtuels entre des régions Azure.
 
 - Le hub de chaque région est jumelé à son hub partenaire dans l’autre région.
 - Le hub est jumelé à chaque réseau dans sa région et peut se connecter à toutes les ressources réseau.
 
-    ![Homologation globale](./media/contoso-migration-infrastructure/global-peering.png)
+    ![Peering global](./media/contoso-migration-infrastructure/global-peering.png)
 
 #### <a name="hub-and-spoke-model-within-a-region"></a>Modèle hub-and-spoke au sein d’une région
 
-Dans chaque région, Contoso déploiera des réseaux virtuels à différentes fins, sous forme de réseaux spoke à partir du hub de région. Les réseaux virtuels d’une région utilisent l’homologation pour se connecter à leur hub et entre eux.
+Dans chaque région, Contoso déploiera des réseaux virtuels à différentes fins, sous forme de réseaux spoke à partir du hub de région. Les réseaux virtuels d’une région utilisent le peering pour se connecter à leur hub et entre eux.
 
 #### <a name="design-the-hub-network"></a>Concevoir le réseau hub
 
@@ -523,7 +523,7 @@ VNET-ASR-CUS est le même sous-réseau de base que le sous-réseau virtuel de pr
 
 Le hub de chaque région sera être jumelé au hub de l’autre région et à tous les réseaux virtuels au sein de la région du hub. Les hubs peuvent ainsi communiquer et afficher tous les réseaux virtuels au sein d’une région. Notez les points suivants :
 
-- L’homologation crée deux connexions : une à partir de l’homologue initial sur le premier réseau virtuel, et une autre sur le second réseau virtuel.
+- Le peering crée deux connexions : une à partir de l’homologue initial sur le premier réseau virtuel, et une autre sur le second réseau virtuel.
 - Dans un déploiement hybride, le trafic qui transite entre des pairs doit être visible depuis la connexion VPN entre le centre de données local et Azure. Pour cela, quelques paramètres spécifiques doivent être définis sur les connexions jumelées.
 
 Pour toutes les connexions depuis les réseaux virtuels spoke via le hub et jusqu’au centre de données local, Contoso doit autoriser le transfert du trafic et traverser les passerelles VPN.
@@ -534,15 +534,15 @@ Pour les contrôleurs de domaine du réseau VNET-PROD-EUS2, Contoso souhaite que
 
 1. **Autoriser le trafic transféré** et **autoriser les configurations de transit par passerelle** sur la connexion jumelée. Dans notre exemple, il s’agit de la connexion VNET-HUB-EUS2 vers VNET-PROD-EUS2.
 
-    ![Homologation](./media/contoso-migration-infrastructure/peering1.png)
+    ![Peering](./media/contoso-migration-infrastructure/peering1.png)
 
-2. **Autoriser le trafic transféré** et **Utiliser des passerelles distantes** sur l’autre côté de l’homologation, sur la connexion VNET-PROD-EUS2 vers VNET-HUB-EUS2.
+2. **Autoriser le trafic transféré** et **Utiliser des passerelles distantes** sur l’autre côté du peering, sur la connexion VNET-PROD-EUS2 vers VNET-HUB-EUS2.
 
-    ![Homologation](./media/contoso-migration-infrastructure/peering2.png)
+    ![Peering](./media/contoso-migration-infrastructure/peering2.png)
 
 3. Localement, ils configurent une route statique qui achemine le trafic local au réseau virtuel via le tunnel VPN. La configuration est terminée sur la passerelle qui fournit le tunnel VPN de Contoso vers Azure. Ils utilisent RRAS pour cela.
 
-    ![Homologation](./media/contoso-migration-infrastructure/peering3.png)
+    ![Peering](./media/contoso-migration-infrastructure/peering3.png)
 
 ##### <a name="production-networks"></a>Réseaux de production
 
@@ -550,7 +550,7 @@ Un réseau homologue spoke ne peut pas voir un réseau homologue spoke d’une a
 
 Pour que les réseaux de production Contoso des deux régions puissent se voir, les administrateurs de Contoso doivent établir une connexion jumelée directe pour VNET-PROD-EUS2 et VENT-PROD-CUS.
 
-![Homologation](./media/contoso-migration-infrastructure/peering4.png)
+![Peering](./media/contoso-migration-infrastructure/peering4.png)
 
 ### <a name="set-up-dns"></a>Configurer le DNS
 
@@ -750,7 +750,7 @@ Avec la gestion de stratégie centralisée, Contoso assure la conformité aux ex
 
 Contoso tirera parti de l’évaluation continue de la sécurité, qui surveille la sécurité des machines, réseaux, stockages, données et applications, pour découvrir d’éventuels problèmes de sécurité.
 
-- Security Center analyse l’état de sécurité des ressources de calcul, d’infrastructure et de données de Contoso, et celui des services et applications Azure.
+- Security Center analyse l’état de sécurité des ressources de calcul, d’infrastructure et de données de Contoso, et celui des services et applications Azure.
 - L’évaluation continue aide l’équipe des opérations Contoso à découvrir d’éventuels problèmes de sécurité, comme les systèmes avec des mises à jour de sécurité manquantes ou des ports réseau exposés.
 - Contoso souhaite en particulier s’assurer que toutes les machines virtuelles sont protégées. Security Center facilite cette opération en vérifiant l’intégrité des machines virtuelles et en proposant des recommandations classées par priorité, permettant de résoudre les failles de sécurité avant qu’elles ne soient exploitées.
 

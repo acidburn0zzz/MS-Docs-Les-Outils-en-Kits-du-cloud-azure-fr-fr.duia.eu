@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 8bf9b65c71defd57c319f46a83b5d4540967b012
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967473"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547444"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Guide de gouvernance pour les entreprises standard : Le scénario sous-tendant la stratégie de gouvernance
 

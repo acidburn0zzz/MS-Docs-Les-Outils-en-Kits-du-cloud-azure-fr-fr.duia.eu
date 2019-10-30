@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca1e18bdc8da300667b721e673bb1fc0388b4bdf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031314"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548626"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ Il est important de comprendre quelles sont les unités commerciales qui opèren
 
 ## <a name="employee-usage-patterns"></a>Modèles d’utilisation des employés
 
-Il est important de comprendre comment les utilisateurs du monde entier accèdent aux applications qui ne sont pas hébergées dans leur pays. Bien souvent, les réseaux WAN mondiaux (réseaux étendus) routent les utilisateurs en fonction de contrats existants. Dans un monde local classique, certaines contraintes limitent la conception des réseaux WAN. Ces contraintes peuvent donner lieu à de mauvaises expériences utilisateur si elles ne sont pas bien comprises avant l’adoption du cloud.
+Il est important de comprendre comment les utilisateurs du monde entier accèdent aux applications qui ne sont pas hébergées dans leur pays. Les réseaux WAN mondiaux (réseaux étendus) routent les utilisateurs en fonction de contrats existants. Dans un monde local classique, certaines contraintes limitent la conception des réseaux WAN. Ces contraintes peuvent donner lieu à de mauvaises expériences utilisateur si elles ne sont pas bien comprises avant l’adoption du cloud.
 
 Dans un modèle de cloud, une connectivité Internet standard offre également de nombreuses nouvelles options. La communication des informations relatives à la répartition des employés sur plusieurs zones géographiques peut aider l’équipe d’adoption du cloud à concevoir des solutions WAN produisant des expériences utilisateur positives **et** susceptibles de réduire les coûts liés aux réseaux.
 

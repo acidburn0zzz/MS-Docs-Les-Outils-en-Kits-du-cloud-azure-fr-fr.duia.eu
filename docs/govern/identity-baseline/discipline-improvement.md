@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 265365d2064349f53d61b10af4af053c418c871a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220489"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547453"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Amélioration de la discipline Base de référence des identités
 

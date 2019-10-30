@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: ac62364b6117e4744b0432a5c4fbb46b7ee914b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1a0c1bfe2943176d647e53e8f91c8d92e168af12
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031915"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548685"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exemples de résultats comptables
 

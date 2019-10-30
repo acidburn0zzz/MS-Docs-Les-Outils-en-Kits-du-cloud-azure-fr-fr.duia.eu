@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1bf9497684c1043d23eec48b1ab5d5f1f12ef752
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837999"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547237"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Migration cloud dans le Framework d’adoption du cloud Microsoft pour Azure
 

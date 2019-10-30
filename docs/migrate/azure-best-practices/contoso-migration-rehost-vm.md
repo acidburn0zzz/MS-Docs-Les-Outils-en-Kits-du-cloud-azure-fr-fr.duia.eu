@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1d4538230ae99fd7c22f53e2873645c9b112e46a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d0fff6d3c88d62ed3efc9f4cf2140981e8be331a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224122"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547216"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>réhéberger une application locale sur des machines virtuelles Azure
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2a6f59c09533fc400871d549e32c9b7d56024551
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222944"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548071"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Métriques de cohérence des ressources, indicateurs et tolérance au risque
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 118279ca768507471dbdddf9f499a592d34a477e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022321"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549042"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Liste de vérification de la configuration requise pour un plan d’adoption du cloud efficace
 

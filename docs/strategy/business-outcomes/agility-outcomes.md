@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 51dc23c07ff11327a2c221dcf0e424ccd222bf78
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3fb87179de2dac492b506f8aba610cc52d69a751
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032320"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548702"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exemples de résultats souhaités en termes d’agilité 
 

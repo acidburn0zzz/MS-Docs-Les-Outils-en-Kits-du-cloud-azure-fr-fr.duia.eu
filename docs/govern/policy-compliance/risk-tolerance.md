@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223545"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547176"
 ---
 # <a name="evaluate-risk-tolerance"></a>Évaluer la tolérance au risque
 
@@ -30,7 +30,7 @@ Les véritables risques métier sont basés sur les détails des transformations
 > [!IMPORTANT]
 > Avant de lire ce qui suit, sachez que chacun de ces risques peut être géré. L’objectif de cet article est d’informer et de préparer les lecteurs à des discussions plus productives sur la gestion des risques.
 
-- **Violation des données :** en matière de transformation, la protection des données représente indiscutablement le risque numéro un. Les fuites de données peuvent provoquer des dommages importants pour votre entreprise, entraînant une perte de clients, une baisse de l’activité ou même une responsabilité légale. Tout changement apporté à la façon dont les données sont stockées, traitées ou utilisées engendre un risque. Les transformations cloud entraînent de nombreux changements en matière de gestion des données. Le risque ne doit donc pas être pris à la légère. La [base de référence de sécurité](../security-baseline/index.md), la [classification des données](./data-classification.md) et la [rationalisation incrémentielle](../../digital-estate/rationalize.md#incremental-rationalization) peuvent chacune contribuer à gérer ce risque.
+- **Violation des données :** Le principal risque d’une transformation est une violation de données. Les fuites de données peuvent provoquer des dommages importants pour votre entreprise, entraînant une perte de clients, une baisse de l’activité ou même une responsabilité légale. Tout changement apporté à la façon dont les données sont stockées, traitées ou utilisées engendre un risque. Les transformations cloud entraînent de nombreux changements en matière de gestion des données. Le risque ne doit donc pas être pris à la légère. La [base de référence de sécurité](../security-baseline/index.md), la [classification des données](./data-classification.md) et la [rationalisation incrémentielle](../../digital-estate/rationalize.md#incremental-rationalization) peuvent chacune contribuer à gérer ce risque.
 
 - **Interruption de service :** les opérations métier et les expériences client reposent largement sur les opérations techniques. Les transformations cloud entraînent des changements au niveau des opérations informatiques. Dans certaines organisations, ces changements sont mineurs et faciles à ajuster. Dans d’autres, ils peuvent nécessiter un réoutillage, un réentraînement ou de nouvelles approches pour prendre en charge les opérations cloud. Plus les changements sont importants, plus l’impact potentiel sur les opérations métier et l’expérience client le sont également. La gestion de ce risque exigera la participation de l’entreprise à la planification de la transformation. Les sections relatives à la planification de la mise en production et à la sélection de la première charge de travail dans l’article [Rationalisation incrémentielle](../../digital-estate/rationalize.md#incremental-rationalization) expliquent comment choisir les charges de travail pour les projets de transformation. Le rôle de l’entreprise dans le cadre de cette activité consiste à communiquer le risque des opérations métier que constitue le changement des charges de travail définies comme prioritaires. Le fait d’aider l’équipe informatique à choisir des charges de travail ayant un moindre impact sur les opérations diminuera le risque global.
 

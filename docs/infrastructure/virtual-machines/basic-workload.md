@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cf1be3679032976efa0331e13ea6806f2f8a79f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c3fcb72fc58f4b33735a95a7fcf1623fe081795
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024367"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548109"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Déployer une charge de travail de base sur Azure
 
@@ -41,7 +41,7 @@ Pour une application web de base, sélectionnez un des Démarrages rapides de 5 
 > [!NOTE]
 > Certains des guides de démarrage rapide déploieront un groupe de ressources par défaut. Dans ce cas, il n’est pas nécessaire de créer un groupe de ressources de façon explicite. Vous pouvez également déployer l’application web pour le groupe de ressources créé ci-dessus.
 
-Une fois que vous avez déployé une charge de travail simple, vous pouvez trouver plus d’informations sur les pratiques éprouvées pour le déploiement d’une [application web de base](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) sur Azure.
+Une fois que vous avez déployé une charge de travail simple, vous pouvez trouver plus d’informations sur les meilleures pratiques pour le déploiement d’une [application web de base](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) sur Azure.
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Machine virtuelle Windows ou Linux simple (IaaS)
 
@@ -49,7 +49,7 @@ Pour une charge de travail simple exécutable sur une machine virtuelle, la prem
 
 L’étape suivante consiste à décider s’il faut déployer une machine virtuelle simple Windows ou Linux. Pour une machine virtuelle Windows, suivez les étapes pour [déployer une machine virtuelle Windows sur Azure à l’aide du portail](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Là encore, lorsque vous spécifiez les paramètres de la machine virtuelle dans le portail Azure, spécifiez le nom du groupe de ressources créé ci-dessus.
 
-Une fois que vous avez suivi les étapes et déployé la machine virtuelle, vous pouvez en savoir plus sur les [pratiques éprouvées pour l’exécution d’une machine virtuelle Windows dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). [Pour une machine virtuelle Linux, déployer une machine virtuelle Linux dans Azure à l’aide du portail](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Vous pouvez également en apprendre davantage sur les [pratiques éprouvées pour l’exécution d’une machine virtuelle Linux dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
+Une fois que vous avez suivi les étapes et déployé la machine virtuelle, vous pouvez en savoir plus sur les [meilleures pratiques pour l’exécution d’une machine virtuelle Windows dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). [Pour une machine virtuelle Linux, déployer une machine virtuelle Linux dans Azure à l’aide du portail](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Vous pouvez également en apprendre davantage sur les [meilleures pratiques pour l’exécution d’une machine virtuelle Linux dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

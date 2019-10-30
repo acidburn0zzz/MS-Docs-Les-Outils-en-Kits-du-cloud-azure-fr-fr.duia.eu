@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023435"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547809"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 
@@ -122,7 +122,7 @@ Les équipes chargées de l’adoption du cloud et l’équipe chargée de l’a
 
 Parallèlement à la rationalisation continue, l’équipe chargée de l’adoption du cloud peut commencer à effectuer la migration de la petite charge de travail afin de développer ses connaissances dans les domaines clés suivants :
 
-- Renforcer ses compétences au sujet de la plateforme du fournisseur de cloud
+- Renforcer ses compétences au sujet de la plateforme du fournisseur de cloud.
 - Définir les services principaux (et les standards Azure) qui sont nécessaires à une vision à long terme.
 - Mieux comprendre comment les opérations peuvent être amenées à évoluer lors de la transformation.
 - Comprendre les risques commerciaux inhérents ainsi que la tolérance de l’entreprise à de tels risques

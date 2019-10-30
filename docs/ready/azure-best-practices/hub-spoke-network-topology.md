@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022364"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549015"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topologie de réseau hub-and-spoke
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5eabc654c174ac3eff895e6b2ff94700789f5de5
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022679"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549157"
 ---
 # <a name="understand-partnership-options"></a>Comprendre les options de partenariat
 
@@ -33,11 +33,11 @@ Lors de la planification, de la génération ou de la migration, une entreprise 
 Si votre organisation planifie une migration Azure par elle-même, Microsoft est toujours là pour vous aider tout au long du parcours. Pour faciliter le suivi de la migration vers Azure, Microsoft et ses partenaires ont développé un ensemble complet d’architectures, de guides, d’outils et de services pour réduire les risques et accélérer la migration des machines virtuelles, des applications et des bases de données. Ces outils et services prennent en charge un large choix de systèmes d’exploitation, de langages de programmation, d’infrastructures et de bases de données.
 
 - **Outils d’évaluation et de migration.** Azure fournit un large éventail d’outils à utiliser dans différentes phases pour votre transformation cloud, notamment l’évaluation de votre infrastructure existante. Pour plus d’informations, reportez-vous à la section « Évaluation » du chapitre « Migration » qui suit.
-- **[Framework d’adoption du cloud Microsoft](../../index.md).** Cette infrastructure présente une approche structurée de l’adoption et de la migration vers le cloud. Elle est basée sur des pratiques éprouvées pour de nombreux contrats client pris en charge par Microsoft et est organisée en une série d’étapes, de l’architecture et la conception à l’implémentation. À chaque étape, des recommandations vous aideront pour la conception de l’architecture de votre application.
+- **[Framework d’adoption du cloud Microsoft](../../index.md).** Cette infrastructure présente une approche structurée de l’adoption et de la migration vers le cloud. Elle est basée sur les meilleures pratiques pour de nombreux contrats client pris en charge par Microsoft et est organisée en une série d’étapes, de l’architecture et de la conception à l’implémentation. À chaque étape, des recommandations vous aideront pour la conception de l’architecture de votre application.
 - **[Modèles de conception cloud](https://docs.microsoft.com/azure/architecture/patterns).** Azure fournit des modèles de conception cloud utiles pour créer des charges de travail fiables, évolutives et sécurisées dans le cloud. Chaque modèle décrit le problème traité par le modèle, les aspects à prendre en compte pour l’application du modèle et un exemple basé sur Azure. La plupart des modèles incluent des exemples ou des extraits de code qui montrent comment implémenter le modèle sur Azure. Cependant, ils sont appropriés pour n’importe quel système distribué, qu’il soit hébergé sur Azure ou sur d’autres plateformes cloud.
 - **[Principes de base du cloud](https://docs.microsoft.com/azure/architecture/guide).** Les notions fondamentales vous aident à découvrir les approches de base de l’implémentation des concepts fondamentaux. Ce guide permet aux techniciens de réfléchir à des solutions qui vont au-delà d’un seul service Azure.
 - **[Exemples de scénarios](https://docs.microsoft.com/azure/architecture/example-scenario).** Le guide fournit des références à des implémentations réelles de clients, en soulignant les outils, approches et processus que les clients ont suivis pour atteindre des objectifs métier spécifiques.
-- **[Architectures de référence](https://docs.microsoft.com/azure/architecture/reference-architectures).** Les architectures de référence sont organisées par scénario, avec les architectures connexes regroupées. Chaque architecture comprend les pratiques recommandées, ainsi que des considérations pour l’extensibilité, la disponibilité, la facilité de gestion et la sécurité. La plupart incluent également une solution pouvant être déployée.
+- **[Architectures de référence](https://docs.microsoft.com/azure/architecture/reference-architectures).** Les architectures de référence sont organisées par scénario, avec les architectures connexes regroupées. Chaque architecture comprend les meilleures pratiques, ainsi que des considérations pour l’extensibilité, la disponibilité, la facilité de gestion et la sécurité. La plupart incluent également une solution pouvant être déployée.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 

@@ -1,7 +1,7 @@
 ---
-title: Guide de surveillance du cloud - Vue d’ensemble des plateformes de supervision
+title: 'Guide de supervision du cloud : Vue d’ensemble des plateformes de supervision'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Choisir quand utiliser Azure Monitor ou System Center Operations Manager dans Microsoft Azure
+description: Choisissez quand utiliser Azure Monitor ou System Center Operations Manager dans Microsoft Azure.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33d9647a0804859a611d45e130c753cab89a6ef6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 668710d38fe6d3aa03761580f530f484133df792
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031489"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547253"
 ---
-# <a name="cloud-monitoring-guide-overview-of-our-monitoring-platforms"></a>Guide de supervision du cloud : Vue d’ensemble de nos plateformes de supervision
+# <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Guide de supervision du cloud : Vue d’ensemble des plateformes de supervision
 
 Microsoft fournit une gamme de fonctionnalités de supervision dans deux produits : System Center Operations Manager, qui a été conçu pour un environnement local, puis étendu au cloud, et Azure Monitor, qui a été conçu pour le cloud, mais qui peut également superviser des systèmes locaux. Ces deux offres fournissent des services de supervision essentiels, comme les alertes, le suivi du temps d’activité des services, et la supervision, les diagnostics et l’analytique de l’intégrité des applications et de l’infrastructure.
 
@@ -34,7 +34,7 @@ Lors de la publication d’Azure en 2010, la supervision des services cloud éta
 
 Application Insights a été introduit pour évoluer avec les modifications du secteur, où la prolifération des appareils cloud, mobiles et IoT était en augmentation, et l’introduction de pratiques DevOps. Il est passé de la supervision des performances des applications dans Operations Manager à un service dans Azure, où il offre une supervision détaillée des applications web écrites dans différents langages. En 2015, la préversion d’Application Insights pour Visual Studio a été annoncée et plus tard, elle a été appelée simplement Application Insights. Elle collecte des détails sur les performances, les demandes et les exceptions, et les traces.
 
-En 2015, Azure Operational Insights a été rendu disponible publiquement. Il fournissait le service d’analyse Log Analytics, qui collectait et effectuait des recherches dans les données provenant de machines dans des environnements Azure et locaux, ou dans d’autres environnements cloud, et se connectait à System Center Operations Manager. Des Intelligence Packs étaient proposés, qui fournissaient différentes configurations de gestion et de supervision prépackagées, contenant une collection de logiques de requête et d’analytique, des visualisations et des règles de collecte de données pour des scénarios comme l’audit de sécurité, les évaluations de l’intégrité et la gestion des alertes.  Plus tard, Azure Operational Insights est devenu Log Analytics.  
+En 2015, Azure Operational Insights a été rendu disponible publiquement. Il fournissait le service d’analyse Log Analytics, qui collectait et effectuait des recherches dans les données provenant de machines dans des environnements Azure et locaux, ou dans d’autres environnements cloud, et se connectait à System Center Operations Manager. Des Intelligence Packs étaient proposés, qui fournissaient différentes configurations de gestion et de supervision prépackagées, contenant une collection de logiques de requête et d’analytique, des visualisations et des règles de collecte de données pour des scénarios comme l’audit de sécurité, les évaluations de l’intégrité et la gestion des alertes. Plus tard, Azure Operational Insights est devenu Log Analytics.  
 
 En 2016, la préversion d’Azure Monitor a été annoncée lors de la conférence Ignite. Il offrait une infrastructure commune pour collecter les métriques de la plateforme, les journaux de diagnostic des ressources et les événements du journal d’activité au niveau de l’abonnement provenant de n’importe quel service Azure qui commençait à utiliser l’infrastructure. Auparavant, chaque service Azure avait sa propre méthode de supervision.
 
@@ -94,7 +94,7 @@ Les packs d’administration peuvent contenir des centaines de règles, de monit
 
 Par exemple, un moniteur peut échantillonner un compteur de performance à des intervalles de quelques minutes. Si ce compteur dépasse un seuil, il définit immédiatement l’état d’intégrité de son objet cible, ce qui déclenche immédiatement une alerte dans le groupe d’administration. Une règle planifiée peut surveiller la création d’un événement particulier, puis déclencher immédiatement une alerte quand cet événement est créé dans le journal des événements local.
 
-Comme ces paramètres de supervision sont isolés les uns des autres et qu’ils fonctionnent à partir des sources de données individuelles, Operations Manager a des difficultés à corréler les données entre plusieurs sources. Il est également difficile de réagir aux données une fois qu’elles ont été collectées. Vous pouvez exécuter des workflows qui accèdent à la base de données Operations Manager, mais ce scénario n’est pas courant et il est généralement utilisé pour un nombre limité de workflows ayant des objectifs spéciaux.
+Comme ces paramètres de supervision sont isolés les uns des autres et qu’ils fonctionnent à partir des sources de données individuelles, Operations Manager a des difficultés à corréler les données entre plusieurs sources. Il est également difficile de réagir aux données une fois qu’elles ont été collectées. Vous pouvez exécuter des workflows qui accèdent à la base de données Operations Manager, mais ce scénario n’est pas courant et il est généralement utilisé pour un nombre limité de workflows ayant des objectifs spéciaux.
 
 ![Diagramme d’un groupe d’administration Operations Manager](./media/monitoring-management-guidance-cloud-and-on-premises/operations-manager-management-group-optimized.svg)
 
@@ -106,7 +106,7 @@ Azure Monitor collecte des données auprès de différentes sources, notamment d
 
 #### <a name="monitoring-solutions-and-insights"></a>Solutions de supervision et insights
 
-Les solutions de supervision utilisent la plateforme de journaux dans Azure Monitor pour assurer la supervision d’une application ou d’un service particulier. Ils définissent généralement la collecte des données auprès d’agents ou de services Azure, et fournissent des requêtes et des vues de journaux pour analyser ces données. En règle générale, ils ne fournissent pas de règles d’alerte, ce qui signifie que vous devez définir vos propres critères d’alerte en fonction des données collectées.
+Les solutions de supervision utilisent la plateforme de journaux dans Azure Monitor pour assurer la supervision d’une application ou d’un service particulier. Ils définissent généralement la collecte des données auprès d’agents ou de services Azure, et fournissent des requêtes et des vues de journaux pour analyser ces données. En règle générale, elles ne fournissent pas de règles d’alerte, ce qui signifie que vous devez définir vos propres critères d’alerte en fonction des données collectées.
 
 Les insights, comme Azure Monitor pour conteneurs et Azure Monitor pour machines virtuelles, utilisent la plateforme de journaux et de métriques d’Azure Monitor afin de fournir une expérience de supervision personnalisée pour une application ou un service dans le portail Azure. Ils peuvent fournir des conditions de supervision et d’alerte d’intégrité, en plus d’analyses personnalisées des données collectées.
 
@@ -126,7 +126,7 @@ Dans Operations Manager, les packs d’administration incluent un modèle de ser
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor ne fournit pas de méthode définissable par l’utilisateur pour implémenter un modèle de service ou des moniteurs qui indiquent l’état d’intégrité actuel des composants des services. Comme les solutions de supervision sont basées sur les fonctionnalités standard d’Azure Monitor, elles ne fournissent pas de supervision au niveau des états. Les fonctionnalités suivantes d’Azure Monitor peuvent être utiles :
+Azure Monitor ne fournit pas de méthode définissable par l’utilisateur pour implémenter un modèle de service ou des moniteurs qui indiquent l’état d’intégrité actuel des composants des services. Comme les solutions de supervision sont basées sur les fonctionnalités standard d’Azure Monitor, elles ne fournissent pas de supervision au niveau des états. Les fonctionnalités suivantes d’Azure Monitor peuvent être utiles :
 
 - **Application Insights** crée une carte composite de votre application web et fournit un état d’intégrité pour chaque composant ou dépendance de l’application. Ceci inclut l’état des alertes et l’exploration de diagnostics plus détaillés de votre application.
 
@@ -138,7 +138,7 @@ Azure Monitor ne fournit pas de méthode définissable par l’utilisateur pour 
 
 ### <a name="operations-manager"></a>Operations Manager
 
-Operations Manager fournit quatre méthodes de base pour analyser les données après leur collecte.
+Operations Manager fournit quatre méthodes de base pour analyser les données après leur collecte.
 
 - Avec l’**Explorateur d’intégrité**, vous pouvez trouver les moniteurs qui identifient un problème d’état d’intégrité, et passer en revue les informations sur le moniteur et les causes possibles des actions qui lui sont associées.
 

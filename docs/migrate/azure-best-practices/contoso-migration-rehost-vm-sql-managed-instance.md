@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 4b9f6bcb8ce2732cda094e83b832c0e4c920c665
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4948035001cba4ba9b433a6f31811f0c66e1704f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024173"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548150"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>réhéberger une application locale sur une machine virtuelle Azure et SQL Database Managed Instance
 
@@ -81,7 +81,7 @@ Dans le cadre de la conception de la solution, Contoso a fait une comparaison de
 - Contoso peut simplement effectuer une migration « lift-and-shift » vers Managed Instance à l’aide d’Azure Database Migration Service entièrement automatisé. Une fois ce service en place, Contoso peut le réutiliser pour les futures migrations de base de données.
 - SQL Managed Instance prend en charge SQL Server Agent, qui est essentiel pour l’application SmartHotel360. Contoso a besoin de cette compatibilité, sous peine de devoir recréer les plans de maintenance demandés par l’application.
 - Avec Software Assurance, Contoso peut échanger ses licences existantes contre une réduction de tarif sur SQL Database Managed Instance en utilisant Azure Hybrid Benefit pour SQL Server. Contoso peut alors économiser jusqu'à 30 % sur Managed Instance.
-- SQL Managed Instance est entièrement contenu dans le réseau virtuel ; il fournit donc une isolation et sécurité accrues pour les données de Contoso. Contoso peut obtenir les avantages du cloud public tout en isolant l’environnement du réseau Internet public.
+- SQL Managed Instance est entièrement contenu dans le réseau virtuel ; il fournit donc une isolation et sécurité accrues pour les données de Contoso. Contoso peut obtenir les avantages du cloud public tout en isolant l’environnement du réseau Internet public.
 - Managed Instance prend en charge plusieurs fonctionnalités de sécurité, notamment Always Encrypted, le masquage dynamique des données, la sécurité au niveau des lignes et la détection des menaces.
 
 ### <a name="solution-review"></a>Examen de la solution

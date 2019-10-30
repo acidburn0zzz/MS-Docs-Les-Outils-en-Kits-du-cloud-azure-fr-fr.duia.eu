@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022304"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549188"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan d’adoption du cloud et Azure DevOps
 
@@ -28,7 +28,7 @@ Pour déployer le plan d’adoption du cloud, ouvrez [Azure DevOps Demo Generato
 1. Vérifiez que le champ **Modèle sélectionné** est défini sur **Plan d’adoption du cloud**. Si ce n’est pas le cas, sélectionnez **Choisir un modèle** pour choisir le modèle approprié.
 2. Sélectionnez votre organisation Azure DevOps dans la zone de liste déroulante **Sélectionner une organisation**.
 3. Entrez un nom pour votre nouveau projet. Le plan d’adoption du cloud aura ce nom lorsqu’il sera déployé sur votre locataire Azure DevOps.
-4. Sélectionnez **Créer un projet** pour créer un projet sur votre locataire, en fonction du modèle de plan. Une barre de progression affiche la progression vers le déploiement du projet.
+4. Sélectionnez **Créer un projet** pour créer un projet sur votre locataire, en fonction du modèle de plan. Une barre de progression indique votre progression vers le déploiement du projet.
 5. Une fois le déploiement terminé, sélectionnez **Accéder au projet** pour afficher votre nouveau projet.
 
 Une fois que votre projet a été créé, poursuivez la lecture de cette série d’articles pour voir comment modifier le modèle pour l’aligner sur votre plan d’adoption du cloud.

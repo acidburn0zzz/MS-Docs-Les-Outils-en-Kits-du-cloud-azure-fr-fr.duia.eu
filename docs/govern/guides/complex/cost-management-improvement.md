@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3a6e2effbd47c3516e3663d3c0f1f75d9db924e8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220169"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547692"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Gestion des coûts
 
@@ -24,7 +24,7 @@ Cet article fait progresser le scénario en ajoutant des contrôles de coûts au
 
 L’adoption a dépassé l’indicateur de tolérance défini dans le produit minimum viable pour la gouvernance. L’augmentation des dépenses justifie désormais un investissement en temps de la part de l’équipe de gouvernance cloud pour superviser et contrôler les modèles de dépenses.
 
-Véritable moteur de l’innovation, le département informatique n’est plus uniquement considéré comme un centre de coûts. L’organisation informatique apportant de plus en plus de valeur, le directeur des services d’information et le directeur financier décident qu’il est temps de faire évoluer le rôle du département informatique dans l’entreprise. Parmi les modifications à mettre en œuvre, le directeur financier souhaite tester une méthode de facturation directe des opérations cloud pour la succursale canadienne de l’une des unités commerciales. L’un des deux centres de données mis hors service hébergeait exclusivement des ressources pour les opérations canadiennes de cette unité commerciale. Dans ce modèle, la succursale canadienne de l’unité métier sera facturée directement pour les frais d’exploitation associés aux ressources hébergées. Ce modèle permet aux équipes informatiques de se concentrer sur la création de valeur pour l’entreprise plutôt que sur la gestion des dépenses des autres. Toutefois, avant d’entreprendre cette transition, des outils de gestion des coûts doivent être en place.
+Véritable moteur de l’innovation, le département informatique n’est plus uniquement considéré comme un centre de coûts. L’organisation informatique apportant de plus en plus de valeur, le directeur des services d’information et le directeur financier décident qu’il est temps de faire évoluer le rôle du département informatique dans l’entreprise. Parmi les modifications à mettre en œuvre, le directeur financier souhaite tester une méthode de facturation directe des opérations cloud pour la succursale canadienne de l’une des unités commerciales. L’un des deux centres de données mis hors service hébergeait exclusivement des ressources pour les opérations canadiennes de cette unité commerciale. Dans ce modèle, la succursale canadienne de l’unité commerciale sera facturée directement pour les frais d’exploitation associés aux ressources hébergées. Ce modèle permet aux équipes informatiques de se concentrer sur la création de valeur pour l’entreprise plutôt que sur la gestion des dépenses des autres. Toutefois, avant d’entreprendre cette transition, des outils de gestion des coûts doivent être en place.
 
 ### <a name="changes-in-the-current-state"></a>Modifications apportées à l’état actuel
 
