@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549274"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058799"
 ---
 # <a name="assess-the-digital-estate"></a>Évaluer le patrimoine numérique
 
@@ -58,7 +58,7 @@ Pour commencer par une évaluation de la migration de serveur à l’aide d’Az
 
 ::: zone target="docs"
 
-### <a name="read-more"></a>En savoir plus
+### <a name="learn-more"></a>En savoir plus
 
 - [Vue d’ensemble d’Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [Migrer des serveurs physiques ou virtualisés vers Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -82,7 +82,7 @@ Pour utiliser la visualisation des dépendances, vous devez télécharger et ins
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="read-more"></a>En savoir plus
+### <a name="learn-more"></a>En savoir plus
 
 - [Utilisation de la solution Service Map dans Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate et Service Map : Visualisation des dépendances](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
@@ -104,7 +104,7 @@ La liste complète des parties prenantes varie selon les projets de migration. I
 
 La mise en place d’une équipe centrale de stratégie cloud, construite autour de ces principales parties prenantes de haut niveau, peut vous aider à préparer votre organisation à l’adoption du cloud et à guider l’ensemble de vos efforts de migration cloud. Cette équipe est chargée de comprendre les technologies cloud et les processus de migration, d’identifier la justification métier des migrations et de déterminer les meilleures solutions de haut niveau pour les efforts de migration. Elle aide également à identifier des applications et des parties prenantes spécifiques et à travailler avec elles pour garantir la réussite de la migration.
 
-Pour plus d’informations sur la façon de préparer votre organisation aux efforts de migration cloud, consultez l’article du Framework d’adoption du cloud sur [l’alignement initial de l’organisation](../../ready/initial-org-alignment.md).
+Pour plus d’informations sur la façon de préparer votre organisation aux efforts de migration cloud, consultez l’article du Framework d’adoption du cloud sur [l’alignement initial de l’organisation](../../plan/initial-org-alignment.md).
 
 # <a name="timelinestabtimelines"></a>[Chronologies](#tab/Timelines)
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dda348b5e0707a949df0171d718b8615918d9dff
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b8c28314037e023423d48c604a1dd9bd6c4ad381
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548648"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047913"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exemples de résultats de portée globale
 
@@ -27,13 +27,13 @@ Les solutions cloud déplacent le coût de la globalisation vers le fournisseur 
 
 Le développement sur un nouveau marché peut être l’un des résultats métiers les plus importants au cours d’une transformation. La capacité à déployer rapidement des ressources sur le marché sans engagement à long terme permet aux commerciaux et aux responsables des opérations d’explorer les options qui n’auraient pas été prises en compte dans le passé.
 
-- **Exemple**: Un fabricant de produits cosmétiques a identifié une tendance. Certains produits sont expédiés vers la région Asie-Pacifique, même si aucune équipe commerciale n’opère dans cette région. Les systèmes minimaux requis par une force de vente à distance sont peu volumineux, mais la latence empêche une solution d’accès à distance. Pour tirer profit de cette tendance, le directeur des ventes souhaite expérimenter avec les équipes de vente au Japon et en Corée. Étant donné que la société a subi une migration vers le cloud, elle a pu déployer les systèmes nécessaires à la fois au Japon et en Corée en quelques jours. Cela a permis au VP des ventes d’augmenter le chiffre d’affaires dans la région de _x %_ dans les trois mois. Ces deux marchés continuent d’être plus performants que les autres parties du monde, et réalisent des opérations de vente dans l’ensemble de la région.
+- **Exemple :** Un fabricant de produits cosmétiques a identifié une tendance. Certains produits sont expédiés vers la région Asie-Pacifique, même si aucune équipe commerciale n’opère dans cette région. Les systèmes minimaux requis par une force de vente à distance sont peu volumineux, mais la latence empêche une solution d’accès à distance. Pour tirer profit de cette tendance, le directeur des ventes souhaite expérimenter avec les équipes de vente au Japon et en Corée. Étant donné que la société a subi une migration vers le cloud, elle a pu déployer les systèmes nécessaires à la fois au Japon et en Corée en quelques jours. Cela a permis au VP des ventes d’augmenter le chiffre d’affaires dans la région de _x %_ dans les trois mois. Ces deux marchés continuent d’être plus performants que les autres parties du monde, et réalisent des opérations de vente dans l’ensemble de la région.
 
 ## <a name="data-sovereignty"></a>Souveraineté des données
 
 Les opérations sur de nouveaux marchés introduisent des contraintes de gouvernance supplémentaires. Le RGPD est un exemple de critère de gouvernance qui peut entraîner un recours important à des investissements. Azure propose des offres de conformité qui aident les clients à répondre aux obligations de conformité dans les secteurs réglementés et les différents marchés mondiaux. Pour plus d’informations, consultez [Présentation de la conformité Microsoft Azure](https://aka.ms/AzureCompliance).
 
-- **Exemple**: Un fournisseur d’utilitaires basé aux États-Unis a reçu un contrat pour fournir des utilitaires au Canada. La Loi sur la souveraineté des données du Canada exige que les données canadiennes soient conservées au Canada. Cette société s’est déployée dans le cadre d’un effort d’innovation cloud pendant des années. Par conséquent, ses logiciels ont pu être déployés via des processus DevOps entièrement scriptés. Avec quelques modifications mineures apportées à la base de code, la société a pu déployer une copie de travail du code sur un centre de données Azure au Canada, en répondant à la souveraineté des données et en conservant le client.
+- **Exemple :** Un fournisseur d’utilitaires basé aux États-Unis a reçu un contrat pour fournir des utilitaires au Canada. La Loi sur la souveraineté des données du Canada exige que les données canadiennes soient conservées au Canada. Cette société s’est déployée dans le cadre d’un effort d’innovation cloud pendant des années. Par conséquent, ses logiciels ont pu être déployés via des processus DevOps entièrement scriptés. Avec quelques modifications mineures apportées à la base de code, la société a pu déployer une copie de travail du code sur un centre de données Azure au Canada, en répondant à la souveraineté des données et en conservant le client.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 538cbc89fb592ecc19a5c25c42cf21231bfe05fe
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683432"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047749"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Collecter des données dans le cadre de la migration et de la modernisation de sources de données existantes
 
@@ -25,7 +25,7 @@ Cet article présente une série d’approches qui s’alignent sur les processu
 
 ## <a name="primary-toolset"></a>Ensemble d’outils principal
 
-Pour la migration et la modernisation de données résidant actuellement localement, l’outil Azure le plus fréquemment choisi est [Database Migration Service (DMS)](https://docs.microsoft.com/azure/dms), qui fait partie de la chaîne d’outils [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview). Pour les sources de données SQL Server existantes, l’[Assistant Migration de données](/sql/dma/dma-overview) (DMA, Data Migration Assistant) peut également offrir une assistance pour l’évaluation et la migration de structures de données moins nombreuses.
+Pour la migration et la modernisation de données résidant actuellement localement, l’outil Azure le plus fréquemment choisi est [Database Migration Service (DMS)](https://docs.microsoft.com/azure/dms), qui fait partie de la chaîne d’outils [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview). Pour les sources de données SQL Server existantes, l’[Assistant Migration de données](https://docs.microsoft.com/sql/dma/dma-overview) (DMA, Data Migration Assistant) peut également offrir une assistance pour l’évaluation et la migration de structures de données moins nombreuses.
 
 [Database Migration Service (DMS)](https://docs.microsoft.com/azure/dms) peut également être utilisé pour la prise en charge des migrations Oracle et NoSQL, et ce, pour certains types de bases de données sources et cibles, notamment pour les migrations d’Oracle vers PostgreSQL ou de MongoDB vers Cosmos DB. Les équipes d’adoption ont plus souvent recours à des outils tiers ou à des scripts de migration personnalisés pour migrer vers Cosmos DB, HDInsight ou des options de machine virtuelle IaaS.
 
@@ -41,7 +41,7 @@ Quand vous utilisez DMS pour la migration et la modernisation de données, il es
 |SQL Server|Azure SQL Database|DMS|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
 |SQL Server|Azure SQL Database Managed Instance|DMS|Hors ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
 |SQL Server|Azure SQL Database Managed Instance|DMS|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
-|RDS SQL Server|Azure SQL Database (ou Managed Instance)|DMS|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
+|SQL Server RDS|Azure SQL Database (ou Managed Instance)|DMS|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 |MySQL|Azure Database pour MySQL|DMS|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
 |PostgreSQL|Azure Database pour PostgreSQL|DMS|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MondoDB|API Mongo d’Azure Cosmos DB|DMS|Hors ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|

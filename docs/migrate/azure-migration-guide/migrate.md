@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 345811e62442341091cf91b3e52870ec454784bf
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 71838c7125b95ff83d1ac087e4cb028add9d2299
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549246"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058787"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrer des ressources (infrastructure, applications et données)
 
@@ -50,7 +50,7 @@ Pour effectuer une migration à l’aide de Azure Migrate, procédez comme suit�
 
 <!-- TODO: TBA -->
 
-### <a name="read-more"></a>En savoir plus
+### <a name="learn-more"></a>En savoir plus
 
 - [Tutoriel Azure Migrate - Migrer des serveurs physiques ou virtualisés vers Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f0349afd5507300588df9b10628d3b28b25827c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 45c4f22613a559add109c1fbfd608452911d0c86
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031234"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047941"
 ---
 # <a name="examples-of-customer-engagement-outcomes"></a>Exemples de résultats au niveau de l’engagement client
 
@@ -29,7 +29,7 @@ Voici quelques exemples et quelques résultats liés à l’engagement client :
 
 Dans le cadre des transformations où le client est fortement impliqué, par exemple un effort d’innovation sur les applications cloud, les clients répondent à l’engagement direct et à leurs besoins sont satisfaits rapidement par l’équipe de développement. Le temps de cycle est un terme Six Sigma qui fait référence au temps écoulé entre le début et la fin d’une fonction. Pour les leaders de l’entreprise qui sont obsédés par le client et qui investissent énormément dans l’amélioration de l’engagement client, le temps de cycle peut être un résultat important.
 
-- **Exemple**: Une société de services qui fournit des services B2B (Business-to-Business) tente de maintenir sa part de marché sur un marché compétitif. Les clients qui sont partis chez un autre fournisseur de services déclarent que la solution technique trop complexe interférait avec leurs processus et constituait la principale raison de leur départ. Dans ce cas, le temps de cycle est un élément impératif. Aujourd’hui, il faut 12 mois pour qu’une fonctionnalité passe de la demande à la mise en production. Si elle est définie comme prioritaire par l’équipe de direction, ce cycle peut être réduit à six à neuf mois. Grâce à un effort d’innovation des applications cloud, aux modèles d’application cloud natifs et à l’intégration d’Azure DevOps, l’équipe a pu réduire le temps de cycle à un mois, ce qui permet aux équipes de développement des processus métier et des applications d’interagir directement avec acheteurs.
+- **Exemple :** Une société de services qui fournit des services B2B (Business-to-Business) tente de maintenir sa part de marché sur un marché compétitif. Les clients qui sont partis chez un autre fournisseur de services déclarent que la solution technique trop complexe interférait avec leurs processus et constituait la principale raison de leur départ. Dans ce cas, le temps de cycle est un élément impératif. Aujourd’hui, il faut 12 mois pour qu’une fonctionnalité passe de la demande à la mise en production. Si elle est définie comme prioritaire par l’équipe de direction, ce cycle peut être réduit à six à neuf mois. Grâce à un effort d’innovation des applications cloud, aux modèles d’application cloud natifs et à l’intégration d’Azure DevOps, l’équipe a pu réduire le temps de cycle à un mois, ce qui permet aux équipes de développement des processus métier et des applications d’interagir directement avec acheteurs.
 
 > **ExakTime**
 >

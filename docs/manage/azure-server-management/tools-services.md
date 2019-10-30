@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e365cca30b5fe98e0737beb3005a13544844dc41
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221421"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888883"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Outils et services de gestion de serveur Azure
 
@@ -60,7 +60,7 @@ Pour les données de votre serveur de fichiers, un autre service à prendre en c
 
 Plusieurs services appartiennent à cette catégorie. Ils peuvent vous aider à automatiser les tâches opérationnelles, à gérer les configurations des serveurs, à mesurer la conformité des mises à jour, à planifier les mises à jour et à détecter les modifications apportées à vos serveurs. Ces services sont essentiels à la prise en charge des opérations en cours.
 
-- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management#viewing-update-assessments) automatise le déploiement des correctifs dans votre environnement, y compris le déploiement sur des instances de système d’exploitation qui s’exécutent en dehors d’Azure. Il prend en charge les systèmes d’exploitation Windows et Linux, et assure le suivi de la non-conformité et des principales vulnérabilités du système d’exploitation provoquées par des correctifs manquants.
+- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments) automatise le déploiement des correctifs dans votre environnement, y compris le déploiement sur des instances de système d’exploitation qui s’exécutent en dehors d’Azure. Il prend en charge les systèmes d’exploitation Windows et Linux, et assure le suivi de la non-conformité et des principales vulnérabilités du système d’exploitation provoquées par des correctifs manquants.
 - Les services [Change Tracking et Inventory](https://docs.microsoft.com/azure/automation/change-tracking) fournissent un insight sur les logiciels qui s’exécutent dans votre environnement et exposent toutes les modifications qui se sont produites.
 - [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) vous permet d’exécuter des scripts Python et PowerShell ou des runbooks pour automatiser des tâches dans votre environnement. Quand vous l’utilisez avec le [Runbook Worker hybride](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker), vous pouvez également étendre vos runbooks à vos ressources locales.
 - [Azure Automation State Configuration](https://docs.microsoft.com/azure/automation/automation-dsc-overview) vous permet d’envoyer (push) des configurations DSC (Desired State Configuration) PowerShell directement à partir d’Azure. À son tour, DSC vous permet de superviser et de conserver les configurations de charge de travail et de système d’exploitation invité.

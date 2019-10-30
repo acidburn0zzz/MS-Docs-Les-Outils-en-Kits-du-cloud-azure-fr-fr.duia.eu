@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d1fbc6fb2d16672c7ebfe0eabb28b77288856a3b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0505b9e09492c5533d17e2f6369794aaa9b6619b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548751"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048426"
 ---
 # <a name="storage-design-decisions"></a>Choix de conception de stockage
 
@@ -61,7 +61,7 @@ Azure offre plusieurs produits et services pour différentes capacités de stock
 | J’exécute des conteneurs avec des volumes persistants. | [Azure Files (Standard ou Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Stockage sur disque Azure (SSD Standard, Premium ou Ultra)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Les options de pilote de volumes de fichiers (RWX) et de blocs (RWO) sont disponibles pour les déploiements Azure Kubernetes Service (AKS) et Kubernetes personnalisé. Les volumes persistants peuvent être mappés à un Stockage sur disque Azure ou à un partage Azure Files managé. Choisissez l’option Premium ou Standard en fonction de la configuration requise des charges de travail pour les volumes persistants. |
 | Je dispose d’un lac de données (par exemple, un cluster Hadoop pour les données HDFS). | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br/><br/> [Stockage sur disque Azure (SSD Standard ou Premium)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | La fonctionnalité Data Lake Storage Gen 2 du stockage d’objets blob Azure fournit une compatibilité HDFS côté serveur et une mise à l’échelle des pétaoctets pour l’analytique parallèle. Elle offre également fiabilité et haute disponibilité. Des logiciels tels que Cloudera peuvent utiliser SSD Premium ou SSD Standard sur des nœuds principaux/Worker, le cas échéant. |
 | Je dispose d’un déploiement SAP ou SAP HANA. | [Stockage sur disque Azure (SSD Premium ou Ultra)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | SSD Ultra est optimisé pour offrir une latence inférieure à la milliseconde pour les charges de travail SAP de niveau 1. SSD Ultra est à présent en préversion. SSD Premium associé à la série M offre une option de disponibilité générale. |
-| Je dispose d’un site de récupération d’urgence avec un RPO/RTO strict qui est synchronisé à partir de mes serveurs principaux. | [Objets blob de pages Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Les objets blob de pages Azure sont utilisés par le logiciel de réplication pour activer la réplication à faible coût vers Azure sans avoir besoin de machines virtuelles de calcul jusqu’à ce que le basculement se produise. Pour plus d’informations, consultez la [documentation relative au Stockage sur disque Azure](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Remarque**: Les objets blob de pages prennent en charge un maximum de 8 To. |
+| Je dispose d’un site de récupération d’urgence avec un RPO/RTO strict qui est synchronisé à partir de mes serveurs principaux. | [Objets blob de pages Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Les objets blob de pages Azure sont utilisés par le logiciel de réplication pour activer la réplication à faible coût vers Azure sans avoir besoin de machines virtuelles de calcul jusqu’à ce que le basculement se produise. Pour plus d’informations, consultez la [documentation relative au Stockage sur disque Azure](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Remarque :** Les objets blob de pages prennent en charge un maximum de 8 To. |
 
 ### <a name="file-and-object-storage-scenarios"></a>Scénarios de stockage de fichiers et d’objets
 
