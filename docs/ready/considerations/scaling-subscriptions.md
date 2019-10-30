@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ad32490cd732888ca2fc78a39b3f33d88828776b
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: be35763ea3beeec5977073dab8ef98c2e441b537
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378302"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548796"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Mise à l’échelle avec plusieurs abonnements Azure
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b1b4395efd909a0f4456a39a6b2b933d25e4f002
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220747"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547786"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Amélioration de la discipline Accélération du déploiement
 
@@ -81,7 +81,7 @@ La migration est un processus incrémentiel qui porte essentiellement sur le dé
 
 Une fois la transformation terminée, la gouvernance et les opérations doivent perdurer tout au long du cycle de vie naturel d’une application ou d’une charge de travail. Cette phase de maturité de la gouvernance est centrée sur les activités qui interviennent généralement après l’implémentation de la solution et le début de stabilisation du cycle de transformation.
 
-**Activités minimales suggérées :**
+**Activités minimales suggérées :**
 
 - Personnalisez votre [chaîne d’outils d’accélération du déploiement](./toolchain.md) en fonction des changements résultant de l’évolution des besoins en matière d’identité de votre organisation.
 - Automatisez les notifications et les rapports pour vous avertir des problèmes de configuration ou menaces potentiels.

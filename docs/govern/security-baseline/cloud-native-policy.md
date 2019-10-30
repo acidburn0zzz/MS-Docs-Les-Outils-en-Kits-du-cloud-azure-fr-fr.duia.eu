@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 037cfa2a10ecce9bc56d747eb658824014758827
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222899"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548042"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Stratégie cloud native Base de référence de la sécurité
 
@@ -90,7 +90,7 @@ Malgré cet investissement dans la Base de référence de la sécurité Native c
 - **Protéger le contenu des machines virtuelles**. La mise en place de sauvegardes automatiques régulières est essentielle pour vous protéger des erreurs des utilisateurs. Mais ce n'est pas suffisant ; vous devez également vous assurer que vos sauvegardes sont protégées des cyberattaques et disponibles lorsque vous en avez besoin.
 - **Superviser les applications.** Ce modèle englobe différentes tâches, notamment l'obtention d'insights sur l'intégrité de vos machines virtuelles, l'identification des interactions entre elles et l'établissement de moyens pour superviser les applications exécutées par ces machines virtuelles. Toutes ces tâches sont essentielles pour permettre à vos applications de fonctionner 24 heures sur 24.
 - **Sécuriser et auditer l’accès aux données.** Les organisations doivent auditer l’accès aux données dans son ensemble et s’appuyer sur des fonctionnalités de machine learning avancées pour identifier les écarts par rapport aux modèles d’accès corrects.
-- **Tester le basculement.** Les opérations cloud dont les tolérances de panne sont limitées doivent pouvoir basculer et/ou bénéficier d’une reprise d’activité à la suite d’un incident de plateforme ou de cybersécurité. Ces procédures ne doivent pas être simplement documentées, mais également testées tous les trimestres.
+- **Tester le basculement.** Les opérations cloud dont les tolérances de panne sont limitées doivent pouvoir basculer ou bénéficier d’une reprise d’activité à la suite d’un incident de plateforme ou de cybersécurité. Ces procédures ne doivent pas être simplement documentées, mais également testées tous les trimestres.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

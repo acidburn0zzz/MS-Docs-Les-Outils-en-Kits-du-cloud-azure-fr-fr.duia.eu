@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548726"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048017"
 ---
-<!-- markdownlint-disable -->
+<!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Quels sont les résultats métier qui sont associés à une transformation ?
 
@@ -29,42 +29,42 @@ Pour plus d’informations sur les résultats métier et sur le modèle, consult
 
 Vous trouverez ci-dessous des résultats métier qui déclenchent généralement des conversations entre les différents rôles :
 
-- **Direction financière** : Augmenter la rentabilité tout en garantissant la conformité.
-- **Service marketing** : Acquérir de nouveaux clients et conserver les clients existants, se créer une réputation.
-- **Service commercial** : Accélérer les ventes, améliorer la valeur vie client.
-- **Ressources humaines** : Garder, recruter et autonomiser les employés.
+- **Direction financière :** Augmenter la rentabilité tout en garantissant la conformité.
+- **Service marketing :** Acquérir de nouveaux clients et conserver les clients existants, se créer une réputation.
+- **Service commercial :** Accélérer les ventes, améliorer la valeur vie client.
+- **Ressources humaines :** Garder, recruter et autonomiser les employés.
 
-# <a name="sample-outcomes-by-category"></a>Exemples de résultats par catégorie
+## <a name="sample-outcomes-by-category"></a>Exemples de résultats par catégorie
 
 La plupart des employés techniques sont complètement étrangers aux résultats métier. Pour les aider, Microsoft met à disposition un ensemble d’exemples de résultats métier dans le [framework des résultats métier](../index.md). Utilisez ces exemples pour expliquer les résultats métier qui peuvent être obtenus après une transformation.
 
 Pour vous aider à trouver plus facilement des résultats métier, nous les avons répartis en catégories. Cette approche a tendance à générer des conversations de recherche de consensus entre les divisions.
 
-## <a name="fiscal-outcomes"></a>Résultats budgétaires
+### <a name="fiscal-outcomes"></a>Résultats budgétaires
 
 Les résultats financiers ou budgétaires représentent le résultat métier le plus clair aux yeux de nombreux dirigeants, mais il n’est pas le seul.
 
 Voir des exemples de [résultats budgétaires](./fiscal-outcomes.md).
 
-## <a name="agility-outcomes"></a>Résultats au niveau de l’agilité
+### <a name="agility-outcomes"></a>Résultats au niveau de l’agilité
 
 De nos jours, les entreprises mettent l’accent sur la rapidité. L’agilité d’une entreprise se mesure principalement par sa rapidité à répondre aux changements du marché et à générer ces changements.
 
 Voir des exemples de [résultats au niveau de l’agilité](./agility-outcomes.md).
 
-## <a name="reach-outcomes"></a>Résultats au niveau de la portée
+### <a name="reach-outcomes"></a>Résultats au niveau de la portée
 
 Dans un marché en constante réduction, la portée mondiale (c’est-à-dire, la possibilité de prendre en charge les utilisateurs et les clients à l’échelle internationale) peut être mesurée par la conformité des zones géographiques de l’entreprise.
 
 Voir les résultats au niveau de la [portée mondiale](./reach-outcomes.md).
 
-## <a name="customer-engagement-outcomes"></a>Résultats au niveau de l’engagement utilisateur
+### <a name="customer-engagement-outcomes"></a>Résultats au niveau de l’engagement utilisateur
 
 Les places de marché présentes sur les réseaux sociaux sont en train de transformer la notion de gagnant-perdant à une vitesse inédite. Le fait de pouvoir répondre aux besoins de l’utilisateur est une mesure clé de l’engagement utilisateur.
 
 En savoir plus sur les [résultats au niveau de l’engagement utilisateur](./engagement-outcomes.md).
 
-## <a name="performance-outcomes"></a>Résultats au niveau des performances
+### <a name="performance-outcomes"></a>Résultats au niveau des performances
 
 Les performances et la fiabilité vont de soi. Lorsque l’une ou l’autre fait défaut, les effets sur la réputation de l’entreprise peuvent être douloureux et durables.
 

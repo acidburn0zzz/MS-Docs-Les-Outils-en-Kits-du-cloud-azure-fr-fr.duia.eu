@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3caefb507f2348f48d39c055000c3a0250fcc28a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025313"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549067"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Prise en main d’un chemin d’accès à la préparation des qualifications
 

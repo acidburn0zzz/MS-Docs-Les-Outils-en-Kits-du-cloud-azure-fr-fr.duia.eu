@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: c713af7557760d0bafeabf9d0cd0ef37a3885fe4
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967687"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547769"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exemples d’instructions de stratégie pour l’accélération du déploiement
 

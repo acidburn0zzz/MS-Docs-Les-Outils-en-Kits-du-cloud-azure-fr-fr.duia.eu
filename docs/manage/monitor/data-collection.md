@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8b0aebe00d987ac49ba965fc1982c1615372ba92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3d8d6b656f6bfe8072b53dccc05a67479aa36f24
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032188"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548566"
 ---
 # <a name="cloud-monitoring-guide-collecting-the-right-data"></a>Guide de supervision du cloud : Collecte des données appropriées
 
@@ -34,7 +34,7 @@ La façon dont vous répondez à ces questions ainsi que les critères d’alert
 
 ## <a name="develop-a-monitoring-configuration"></a>Développer une configuration de supervision
 
-Le propriétaire et l’équipe du service de supervision suivent généralement un ensemble commun d’activités pour développer une configuration de supervision. Ces activités commencent dès les premières étapes de planification, se poursuivent via les tests et les validations dans un environnement hors production, et s’étendent jusqu’au déploiement en production. Les configurations de supervision sont dérivées des modes de défaillance connus, des résultats des tests de défaillances simulées et de l’expérience de plusieurs personnes au sein de l’organisation (Service Desk, exploitation, ingénieurs et développeurs). De telles configurations supposent que le service existe déjà, qu’il va être migré dans le cloud et qu’il n’a pas été réarchitecturé.
+Le propriétaire et l’équipe du service de supervision suivent généralement un ensemble commun d’activités pour développer une configuration de supervision. Ces activités commencent dès les premières étapes de planification, se poursuivent via les tests et les validations dans un environnement hors production, et s’étendent jusqu’au déploiement en production. Les configurations de supervision sont dérivées des modes de défaillance connus, des résultats des tests de défaillances simulées et de l’expérience de plusieurs personnes au sein de l’organisation (Service Desk, exploitation, ingénieurs et développeurs). De telles configurations supposent que le service existe déjà, qu’il va faire l’objet d’une migration vers le cloud et qu’il n’a pas été réarchitecturé.
 
 Surveillez l’intégrité et la disponibilité de ces services dès le début du processus de développement, de façon à obtenir des résultats en matière de qualité du niveau de service. Si vous supervisez la conception de ce service ou de cette application a posteriori, vos résultats ne seront pas aussi satisfaisants.
 

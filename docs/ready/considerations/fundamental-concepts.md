@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 02d4cf1218c6b00dd0d42dfb877af49a92498115
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025170"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548829"
 ---
 # <a name="azure-fundamental-concepts"></a>Concepts fondamentaux Azure
 

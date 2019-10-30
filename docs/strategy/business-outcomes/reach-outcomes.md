@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 89c3e17dcc1a76e46eabb0155b9dc9bee7c7ea93
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dda348b5e0707a949df0171d718b8615918d9dff
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031423"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548648"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exemples de résultats de portée globale
 

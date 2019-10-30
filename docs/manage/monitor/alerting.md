@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0157cf5c50cd676478b28889b565c7f3f6952e32
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221385"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548606"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guide de supervision du cloud : Génération d’alertes
 
@@ -22,20 +22,20 @@ Pendant des années, les organisations informatiques ont rencontré des difficul
 
 ## <a name="successful-alerting-strategy"></a>Stratégie d’alerte réussie
 
-*Vous ne pouvez pas corriger ce dont vous ne savez pas qu’il est endommagé.*
+*On ne peut pas régler un problème quand on ne sait pas qu’il existe.*
 
 Déclencher des alertes sur ce qui est important est critique. Ceci est sous-entendu par la collecte et la mesure des métriques et des journaux appropriés. Vous avez également besoin d’un outil de supervision capable de stocker, d’agréger, de visualiser, d’analyser et de produire une réponse automatique quand certaines conditions sont remplies. L’amélioration de l’observabilité de vos services et de vos applications est possible seulement si vous comprenez pleinement leur composition. Vous mappez cette composition dans une configuration de supervision détaillée à appliquer par la plateforme de supervision. Ceci inclut les états de défaillance prévisibles (les symptômes qui ne sont pas la cause de la défaillance) pour lesquels les alertes sont justifiées.
 
 Tenez compte des principes suivants pour déterminer si un symptôme est un candidat approprié pour une alerte :
 
-- **Est-il important ?** Le problème est-il symptomatique d’un problème réel ou d’un problème influençant l’intégrité globale de l’application ? Par exemple, une utilisation élevée du processeur sur la ressource est-elle une préoccupation ? Un autre exemple est celui d’une requête SQL particulière s’exécutant sur une instance de base de données SQL sur cette ressource et entraînant une forte utilisation du processeur pendant une période prolongée. Comme la condition d’utilisation du processeur est un problème réel, vous devez alerter sur celui-ci. Mais vous n’avez pas besoin d’en informer l’équipe, car cela n’aide pas d’indiquer en premier lieu ce qui provoque la condition. Alerte et notifier à propos du problème d’utilisation du processus de requête SQL est à la fois pertinent et exploitable.
+- **Est-il important ?** Le problème est-il symptomatique d’un problème réel ou d’un problème influençant l’intégrité globale de l’application ? Par exemple, une utilisation élevée du processeur sur la ressource est-elle une préoccupation ? Un autre exemple est celui d’une requête SQL particulière s’exécutant sur une instance de base de données SQL sur cette ressource et entraînant une forte utilisation du processeur pendant une période prolongée. Comme la condition d’utilisation du processeur est un problème réel, vous devez alerter sur celui-ci. Mais vous n’avez pas besoin d’en informer l’équipe, car cela ne sert à rien d’indiquer la cause première du problème. Alerte et notifier à propos du problème d’utilisation du processus de requête SQL est à la fois pertinent et exploitable.
 - **Est-ce urgent ?** Le problème est-il réel et nécessite-t-il une attention de façon urgente ? Si oui, l’équipe responsable doit être immédiatement notifiée.
 - **Vos clients sont-ils affectés ?** Les utilisateurs du service ou de l’application sont-ils affectés suite au problème ?
 - **D’autres systèmes dépendants sont-ils affectés ?** Existe-t-il des alertes provenant de dépendances qui sont interdépendantes et qui peuvent éventuellement être corrélées pour éviter de notifier différentes équipes sur le même problème ?
 
 Posez-vous ces questions quand vous développez initialement une configuration de supervision. Testez et validez les hypothèses dans un environnement hors production, puis déployez-les en production. Les configurations de supervision sont dérivées de modes de défaillance connus, de résultats des tests de défaillances simulées et de l’expérience de différents membres de l’équipe.
 
-Après la publication de votre configuration de supervision, vous pouvez en apprendre beaucoup sur ce qui fonctionne et sur ce qui ne fonctionne pas. Examinez les volumes élevés d’alertes, les problèmes non signalés par la supervision mais remarqués par les utilisateurs finaux, ainsi que les meilleures actions qui ont été entreprises dans le cadre de cette évaluation. Identifiez les changements à implémenter pour améliorer la fourniture des services dans le cadre d’un processus continu d’amélioration de la supervision. Il ne s’agit pas seulement de l’évaluation des alertes inutiles ou des alertes manquées, mais également de l’efficacité de la façon vous supervisez la charge de travail. Cela concerne l’efficacité de vos stratégies d’alerte, de vos processus et de votre culture globale pour déterminer si vous vous améliorez.
+Après la publication de votre configuration de supervision, vous pouvez en apprendre beaucoup sur ce qui fonctionne et sur ce qui ne fonctionne pas. Examinez les volumes élevés d’alertes, les problèmes non signalés par la supervision mais remarqués par les utilisateurs finaux, ainsi que les meilleures actions qui ont été entreprises dans le cadre de cette évaluation. Identifiez les changements à implémenter pour améliorer la fourniture des services dans le cadre d’un processus continu d’amélioration de la supervision. Il ne s’agit pas seulement de l’évaluation des alertes inutiles ou des alertes manquées, mais également de l’efficacité de la supervision de la charge de travail. Cela concerne l’efficacité de vos stratégies d’alerte, de vos processus et de votre culture globale pour déterminer si vous vous améliorez.
 
 System Center Operations Manager et Azure Monitor prennent tous deux en charge les alertes basées sur des seuils statiques ou même sur des seuils dynamiques, et les actions configurées pour ces alertes. Les alertes par e-mail, par SMS et par appels vocaux pour des notifications simples en sont des exemples. Ces deux services prennent également en charge l’intégration d’ITSM, afin d’automatiser la création d’enregistrements d’incidents et de remonter les problèmes à l’équipe de support appropriée ou à tout autre système de gestion des alertes, en utilisant un webhook.
 
@@ -71,7 +71,7 @@ Il existe quatre types d’alertes dans Azure Monitor, qui sont globalement lié
 
 ### <a name="alerting-through-partner-tools"></a>Alertes via des outils de partenaires
 
-Si vous utilisez une solution d’alertes externes, routez autant que possible via Azure Event Hubs, car il s’agit du chemin le plus rapide depuis Azure Monitor. Vous devrez payer pour l’ingestion dans le hub d’événements. Si le coût est un problème et que la rapidité ne l’est pas, vous pouvez utiliser Stockage Azure comme alternative moins coûteuse. Vérifiez simplement que vos outils de supervision ou ITSM peuvent lire dans Stockage Azure pour extraire les données.
+Si vous utilisez une solution d’alertes externes, routez autant que possible via Azure Event Hubs, car il s’agit du chemin le plus rapide pour sortir d’Azure Monitor. Vous devrez payer pour l’ingestion dans le hub d’événements. Si le coût est un problème et que la rapidité ne l’est pas, vous pouvez utiliser Stockage Azure comme alternative moins coûteuse. Vérifiez simplement que vos outils de supervision ou ITSM peuvent lire dans Stockage Azure pour extraire les données.
 
 Azure Monitor prend en charge l’intégration à d’autres plateformes de supervision et à des logiciels ITSM comme ServiceNow. Vous pouvez utiliser les alertes Azure et néanmoins déclencher des actions en dehors d’Azure, si votre processus de gestion des incidents ou DevOps l’exige. Si vous voulez alerter dans Azure Monitor et automatiser la réponse, vous pouvez lancer des actions automatisées avec Azure Functions, Azure Logic Apps ou Azure Automation, selon votre scénario et vos exigences.
 
@@ -81,7 +81,7 @@ En général, les [solutions de gestion](https://docs.microsoft.com/azure/azure-
 
 Solution| Type de données | Comportement des alertes
 :---|:---|:---
-Azure Monitor pour des conteneurs | Les données des performances moyennes calculées à partir des nœuds et des pods sont écrites dans le magasin de métriques. | Créez des alertes de métrique si vous voulez être alerté en fonction de la variation des performances d’utilisation mesurées, agrégées sur une période donnée.
+Azure Monitor pour des conteneurs | Les données des performances moyennes calculées à partir des nœuds et des pods sont écrites dans le magasin de métriques. | Créez des alertes de métrique si vous voulez être alerté en fonction de la variation des performances d’utilisation mesurées et agrégées sur une période donnée.
 || Les données de performances calculées qui utilisent des centiles provenant de nœuds, de contrôleurs, de conteneurs et de pods sont écrites dans le magasin de journaux. Les journaux de conteneur et les informations d’inventaire sont également écrits dans le magasin de journaux. | Créez des alertes de requête de journal si vous voulez être alerté en fonction de la variation de l’utilisation mesurée des clusters et des conteneurs. Les alertes de requête de journal peuvent également être configurées en fonction des nombres de phases de pods et des nombres de nœuds d’état.
 Azure Monitor pour machines virtuelles | Les critères d’intégrité sont des métriques écrites dans le magasin de métriques. | Des alertes sont générées quand l’état d’intégrité passe d’une condition saine à une condition non saine. Prend en charge seulement les groupes d’actions configurés pour envoyer des notifications par SMS ou par e-mail.
 || Les données du journal de performances du système d’exploitation de mappage et invité sont écrites dans le magasin de journaux. | Créez des alertes de requête de journal.
@@ -104,9 +104,9 @@ La **télémétrie du système d’exploitation invité** parvient au système s
 
 ### <a name="minimize-alerts"></a>Minimiser les alertes
 
-Si vous utilisez une solution comme Azure Monitor pour machines virtuelles et que vous trouvez que les critères d’intégrité par défaut qui supervisent l’utilisation des performances sont acceptables, ne créez pas d’alertes de recherche de journal ou de métrique basées sur les mêmes compteurs de performance et qui se recouperaient.
+Si vous utilisez une solution comme Azure Monitor pour machines virtuelles et trouvez que les critères d’intégrité par défaut qui supervisent l’utilisation des performances sont acceptables, ne créez pas d’alertes de recherche de journal ou de métrique basées sur les mêmes compteurs de performance et qui se recouperaient.
 
-Si vous n’utilisez pas Azure Monitor pour machines virtuelles, explorez les fonctionnalités suivantes pour faciliter votre travail de création d’alertes et de gestion des notifications :  
+Si vous n’utilisez pas Azure Monitor pour machines virtuelles, explorez les fonctionnalités suivantes pour faciliter votre travail de création d’alertes et de gestion des notifications :
 
 > [!NOTE]
 > Ces fonctionnalités s’appliquent seulement aux alertes de métriques, c’est-à-dire aux alertes basées sur les données envoyées à la base de données de métriques d’Azure Monitor. Elles ne s’appliquent pas aux autres types d’alertes. Comme mentionné précédemment, l’objectif principal des alertes de métrique est la rapidité. Si obtenir une alerte en moins de 5 minutes n’est pas votre préoccupation principale, vous pouvez utiliser à la place une alerte de requête de journal.

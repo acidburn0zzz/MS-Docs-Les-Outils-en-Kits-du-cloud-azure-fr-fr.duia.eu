@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378411"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683840"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mécanismes de contrôle des coûts axés sur la migration
 
@@ -31,7 +31,7 @@ Les outils de cet article sont les suivants :
 > - Gestion des coûts Azure
 > - Azure Advisor
 
-Les processus décrits dans cet article peuvent également nécessiter un partenariat avec les responsables informatiques, les services financiers ou les propriétaires d’applications métier. Pour obtenir de l’aide concernant les partenariats avec ces rôles, consultez l’article du Framework d’adoption du cloud sur la mise en place d’une organisation sensible au coûts (disponible au 3e trimestre 2019).
+Les processus décrits dans cet article peuvent également nécessiter un partenariat avec les responsables informatiques, les services financiers ou les propriétaires d’applications métier.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
@@ -54,14 +54,14 @@ Ces calculatrices de coûts manuels peuvent être utilisées de manière autonom
 
 Azure Migrate calcule les **estimations de coût mensuel** en fonction des données capturées par le collecteur et la carte de service. Les étapes suivantes chargeront les estimations de coût :
 
-1. Accédez au panneau Évaluation Azure Migrate dans le portail.
-1. Dans la page **Vue d’ensemble** du projet, sélectionnez **+Créer une évaluation**.
-1. Cliquez sur **Tout afficher** pour passer en revue les propriétés de l’évaluation.
-1. Créez le groupe et spécifiez un nom de groupe.
-1. Sélectionnez les machines que vous souhaitez ajouter au groupe.
-1. Cliquez sur **Créer une évaluation** pour créer le groupe et l’évaluation.
-1. Une fois l’évaluation créée, affichez-la dans Vue d’ensemble > Tableau de bord.
-1. Dans la section Détails de l’évaluation de la navigation du panneau, sélectionnez **Détails des coûts**.
+1. Accédez à Évaluation Azure Migrate dans le portail.
+2. Dans la page **Vue d’ensemble** du projet, sélectionnez **+Créer une évaluation**.
+3. Cliquez sur **Tout afficher** pour passer en revue les propriétés de l’évaluation.
+4. Créez le groupe et spécifiez un nom de groupe.
+5. Sélectionnez les machines que vous souhaitez ajouter au groupe.
+6. Cliquez sur **Créer une évaluation** pour créer le groupe et l’évaluation.
+7. Une fois l’évaluation créée, affichez-la dans Vue d’ensemble > Tableau de bord.
+8. Dans la section Détails de l’évaluation de la navigation du portail, sélectionnez **Détails des coûts**.
 
 L’estimation obtenue, illustrée ci-dessous, identifie les coûts mensuels du calcul et du stockage, qui représentent souvent la plus grande partie des coûts du cloud.
 
@@ -83,9 +83,9 @@ Dans les 24 heures qui suivent la migration des ressources (infrastructure, app
 
 Les étapes suivantes fournissent des recommandations de coût pour les ressources (infrastructure, applications et données) au sein de vos abonnements actuels :
 
-1. Accédez au panneau **Azure Advisor** dans le portail. Pour ce faire, sélectionnez **Advisor** dans le volet de navigation gauche du Portail Azure. Si vous ne voyez pas Advisor dans le volet gauche, sélectionnez **Tous les services**. Dans le volet du menu de services, sous **Surveillance et gestion**, sélectionnez **Advisor**.
-1. Le tableau de bord Advisor présente un résumé de vos recommandations pour tous les abonnements sélectionnés. Vous pouvez choisir les abonnements pour lesquels afficher les recommandations à l’aide de la liste déroulante de filtrage des abonnements.
-1. Pour afficher les recommandations de coût, sélectionnez l’onglet Coût.
+1. Accédez à **Azure Advisor** dans le portail. Pour ce faire, sélectionnez **Advisor** dans le volet de navigation gauche du Portail Azure. Si vous ne voyez pas Advisor dans le volet gauche, sélectionnez **Tous les services**. Dans le volet du menu de services, sous **Surveillance et gestion**, sélectionnez **Advisor**.
+2. Le tableau de bord Advisor présente un résumé de vos recommandations pour tous les abonnements sélectionnés. Vous pouvez choisir les abonnements pour lesquels afficher les recommandations à l’aide de la liste déroulante de filtrage des abonnements.
+3. Pour afficher les recommandations de coût, sélectionnez l’onglet Coût.
 
 ## <a name="azure-cost-management"></a>Gestion des coûts Azure
 
@@ -95,10 +95,10 @@ Configuration requise : Le reste de cet onglet part du principe que le lecteur 
 
 Les étapes suivantes chargeront les données d’analyse des coûts d’Azure Cost Management pour vos abonnements :
 
-1. Accédez au panneau **Cost Management + facturation** dans le portail. Si vous ne voyez pas Cost Management + facturation dans le volet gauche, cliquez sur **Tous les services**. Dans le volet du menu de services, sous **Surveillance et gestion**, cliquez sur **Cost Management + facturation**.
-1. Dans le panneau Cost Management + facturation, sélectionnez **Cost Management** dans la navigation de gauche pour que le panneau ouvert commence l’analyse et l’optimisation des coûts du cloud.
-1. Dans le panneau Cost Management, sélectionnez **Analyse des coûts**.
-    1. Utilisez le paramètre **Étendue** pour passer à une autre étendue dans l’analyse des coûts.
+1. Accédez à **Cost Management + facturation** dans le portail. Si vous ne voyez pas Cost Management + facturation dans le volet gauche, cliquez sur **Tous les services**. Dans le volet du menu de services, sous **Surveillance et gestion**, cliquez sur **Cost Management + facturation**.
+2. Dans Cost Management + facturation, sélectionnez **Cost Management** dans le panneau de navigation de gauche pour commencer l’analyse et l’optimisation des coûts du cloud.
+3. Dans Cost Management, sélectionnez **Analyse des coûts**.
+    a. Utilisez le paramètre **Étendue** pour passer à une autre étendue dans l’analyse des coûts.
 
 Cette analyse vous permettra d’examiner les coûts totaux, le budget (le cas échéant) et les coûts cumulés. Chaque calcul peut être affiché par service, par ressource et dans le temps. Plus important encore, les coûts peuvent être analysés par balise. Le nommage et la catégorisation appropriés des ressources (infrastructure, applications et données) constituent le point de départ fondamental de tous les processus de gouvernance et de gestion des coûts. Des balises appropriées permettent une meilleure gestion des coûts et des impacts plus clairs des optimisations des niveaux de performance et des coûts.
 

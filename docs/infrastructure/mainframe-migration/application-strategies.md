@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024409"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547946"
 ---
 # <a name="mainframe-application-migration"></a>Migration d’applications d’un environnement mainframe
 

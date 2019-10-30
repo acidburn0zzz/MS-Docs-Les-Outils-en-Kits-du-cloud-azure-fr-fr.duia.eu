@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c5600fb06aefb40764117639b7d856f753c3372e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f7782aeedf794441a7ba4e1f6a97f162fa33abfb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024973"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548561"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Meilleures pratiques pour la sécurisation et la gestion des charges de travail migrées vers Azure
 
@@ -280,7 +280,7 @@ Il est fréquent que l’utilisation d’un seul nom de groupe de ressources li�
 
 Construire des charges de travail sécurisées, évolutives et gérables dans Azure peut s’avérer décourageant. Avec les changements continus, il peut être difficile de suivre les différentes fonctionnalités pour un environnement optimal. Il peut être utile d’avoir une référence pour en tirer des leçons lors de la conception et de la migration de vos charges de travail. Azure et ses partenaires Azure ont construit plusieurs exemples d’architectures de référence pour différents types d’environnements. Ces exemples sont conçus pour vous fournir des idées dont vous pouvez tirer des leçons et sur lesquelles vous pouvez vous appuyer.
 
-Les architectures de référence sont organisées par scénario. Elles contiennent des pratiques recommandées et des conseils sur la gestion, la disponibilité, l’évolutivité et la sécurité.
+Les architectures de référence sont organisées par scénario. Elles contiennent les meilleures pratiques et des conseils sur la gestion, la disponibilité, l’évolutivité et la sécurité.
 Azure App Service Environment fournit un environnement entièrement isolé et dédié dans lequel exécuter des applications Azure App Service, notamment des applications Web Windows et Linux, des conteneurs Docker, des Mobile Apps et des fonctions. App Service ajoute la puissance d’Azure à votre application grâce à la sécurité, l’équilibrage de charge, la mise à l’échelle automatique et la gestion automatisée. Vous pouvez également bénéficier de ses fonctionnalités DevOps, notamment le déploiement continu à partir d’Azure DevOps et GitHub, la gestion des packages, les environnements intermédiaires et les certificats SSL. App Service est utile pour les applications qui ont besoin d’une isolation et d’un accès réseau sécurisé, et pour celles qui utilisent de grandes quantités de mémoire et d’autres ressources qui ont besoin d’être mises à l’échelle.
 
 **En savoir plus :**
@@ -429,7 +429,7 @@ Les disques managés Azure simplifient la gestion des disques des machines virtu
 - [Découvrez comment](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) convertir des disques en disques managés.
 - [Découvrez comment](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability) gérer la disponibilité des machines virtuelles Windows dans Azure.
 
-## <a name="best-practice-monitor-resource-usage-and-performance"></a>Meilleure pratique : Superviser l’utilisation des ressources et les performances
+## <a name="best-practice-monitor-resource-usage-and-performance"></a>Meilleure pratique : Superviser l’utilisation des ressources et les performances
 
 Vous avez peut-être déplacé vos charges de travail vers Azure pour ses immenses capacités de mise à l’échelle. Cependant, le déplacement de votre charge de travail ne signifie pas qu’Azure implémentera automatiquement la mise à l’échelle. Par exemple :
 

@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c4733dbb77d7feb8fd2a0fdd289105cd5e112327
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d1fbc6fb2d16672c7ebfe0eabb28b77288856a3b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224203"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548751"
 ---
 # <a name="storage-design-decisions"></a>Choix de conception de stockage
 
@@ -109,7 +109,7 @@ Une fois que vous avez identifié les outils Azure qui correspondent le mieux à
 | [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Le service Azure NetApp Files est un service de stockage de fichiers limité, hautes performances et de classe entreprise. Azure NetApp Files prend en charge tout type de charge de travail et offre un niveau de disponibilité très élevé par défaut. Vous pouvez sélectionner des niveaux de performance et de service et configurer des instantanés via le service. |
 | [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge est un périphérique réseau local qui déplace des données depuis et vers Azure. Data Box Edge dispose d’un calcul en périphérie basé sur l’intelligence artificielle pour prétraiter les données pendant le chargement. Data Box Gateway est une version virtuelle de l’appareil, mais offrant les mêmes fonctionnalités de transfert de données. |
 | [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) | Azure Data Box Gateway est une solution de stockage qui vous permet d’envoyer en toute transparence des données vers Azure. Data Box Gateway est un appareil virtuel basé sur une machine virtuelle provisionnée dans votre hyperviseur ou environnement virtualisé. L’appareil virtuel réside localement, et vous y écrivez des données à l’aide des protocoles NFS et SMB. L’appareil transfère ensuite vos données vers des objets blob de blocs Azure, des objets blob de pages Azure ou Azure Files. |
-| [Avere vFXT pour Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT pour Azure est une solution de mise en cache des systèmes de fichiers pour les tâches de calcul haute performance (HPC) consommant beaucoup de données. Tirez parti de l’extensibilité du cloud computing pour rendre vos données accessibles où et quand elles sont nécessaires, &mdash;même pour les données stockées dans votre propre matériel local. |
+| [Avere vFXT pour Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT pour Azure est une solution de mise en cache des systèmes de fichiers pour les tâches de calcul haute performance (HPC) consommant beaucoup de données. Tirez parti de l’extensibilité du cloud computing pour rendre vos données accessibles où et quand elles sont nécessaires, même pour les données stockées dans votre propre matériel local. |
 
 ## <a name="data-redundancy-and-availability"></a>Redondance et disponibilité des données
 

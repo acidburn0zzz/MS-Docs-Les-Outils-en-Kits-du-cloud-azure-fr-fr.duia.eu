@@ -10,19 +10,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8d30001a3ee97783dca2709c33e7bebb9ab9a889
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 2e624ad1ede3546d4babb232f7bd4b974afadaaa
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769321"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047449"
 ---
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-before-you-start"></a>Guide d’innovation Azure : Avant de commencer
 
 > [!NOTE]
-> Ce guide fournit un point de départ pour les conseils d’innovation dans le Framework d’adoption du cloud. Il est également disponible dans le Centre de démarrage rapide Azure. Découvrez le conseil plus loin dans cet article pour obtenir un lien vers le Centre de démarrage rapide Azure.
+> Ce guide fournit un point de départ pour les conseils d’innovation dans le Framework d’adoption du cloud. Il est également disponible dans le [Centre de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade).
 
 ::: zone-end
 
@@ -32,23 +32,23 @@ ms.locfileid: "72769321"
 
 ::: zone-end
 
-Avant de commencer à développer des solutions innovantes à l’aide des services Azure, vous devez préparer votre environnement, ce qui comprend la gestion des boucles de rétroaction des clients. Dans ce guide, nous allons introduire des fonctionnalités qui vous aident à impliquer les clients, à créer des solutions et à favoriser l’adoption. Pour plus d’informations et pour découvrir les bonnes pratiques et les considérations liées à la préparation de votre environnement cloud, consultez la [section relative à l’innovation dans le Framework d’adoption du cloud](../index.md).
+Avant de commencer à développer des solutions innovantes à l’aide des services Azure, vous devez préparer votre environnement, ce qui implique de préparer la gestion des boucles de rétroaction des clients. Dans ce guide, nous allons introduire des fonctionnalités qui vous aident à impliquer les clients, à créer des solutions et à favoriser l’adoption. Pour plus d’informations et pour découvrir les bonnes pratiques et les considérations liées à la préparation de votre environnement cloud, consultez la [section relative à l’innovation dans le Framework d’adoption du cloud](../index.md).
 
-Vous découvrirez comment effectuer les actions suivantes :
+Dans ce guide, vous allez apprendre à :
 
 > [!div class="checklist"]
 >
-> - **Gérer les commentaires des clients :** configurez des outils et des processus pour gérer la boucle de rétroaction développer-mesurer-apprendre avec GitHub et Azure DevOps.
+> - **Gérer les commentaires des clients :** configurez des outils et des processus pour gérer la boucle de rétroaction développer-mesurer-apprendre en utilisant GitHub et Azure DevOps.
 > - **Démocratiser les données :** les données seules peuvent être suffisantes pour proposer des solutions innovantes à vos clients. Déployez des options de données courantes dans Azure.
 > - **Impliquer par le biais d’applications :** certaines innovations demandent une expérience engageante. Tirez parti des plateformes d’applications natives du cloud pour créer des expériences engageantes.
 > - **Favoriser l’adoption :** l’invention est intéressante, mais un plan de réduction des frictions est nécessaire pour favoriser et adapter l’adoption. Déployez une base pour CI/CD, DevOps et d’autres facilitateurs d’adoption.
 > - **Interagir par le biais des appareils :** créez des expériences ambiantes pour rapprocher vos applications et vos données de la demande des clients. Les expériences d’IoT, de réalité mixte et mobiles sont plus faciles avec Azure.
-> - **Prédire et influencer :** recherchez des modèles dans les données. Tirez parti de ces modèles pour prédire et influencer les comportements des clients à l’aide d’outils d’analyse prédictive basés sur Azure.
+> - **Prédire et influencer :** recherchez des modèles dans les données. Utilisez ces modèles pour prédire et influencer les comportements des clients à l’aide d’outils d’analyse prédictive basés sur Azure.
 
 ::: zone target="docs"
 
 > [!TIP]
-> Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [centre des guides de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure et sélectionnez **Introduction à la configuration d’Azure**, puis suivez les instructions pas à pas.
+> Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [centre des guides de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure, sélectionnez **Guide d’innovation Azure** et suivez les instructions pas à pas.
 
 Étapes suivantes : [Préparer l’innovation avec un dépôt partagé et des outils de gestion de la conceptualisation](./adoption.md)
 

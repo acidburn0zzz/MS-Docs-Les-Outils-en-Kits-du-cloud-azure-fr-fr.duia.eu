@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c344751d8db08a84efdcaddc32a48f6326d1ac3f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 656a72df1fc12c5b28580aef41802e1c0de603af
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72698505"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048483"
 ---
 ::: zone target="docs"
 
@@ -48,7 +48,7 @@ Vous découvrirez comment effectuer les actions suivantes :
 ::: zone target="docs"
 
 > [!TIP]
-> Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [centre des guides de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure et sélectionnez **Introduction à la configuration d’Azure**, puis suivez les instructions pas à pas.
+> Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [centre des guides de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure, sélectionnez **Introduction à la configuration d’Azure** et suivez les instructions pas à pas.
 
 Étapes suivantes : [Organiser vos ressources afin de simplifier la façon dont vous appliquez des paramètres](./organize-resources.md)
 

@@ -8,18 +8,18 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4e095dd90711f201935e88ea5f2712e881a8574b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c5bafd4504a0df9570bf65846a5a077e54e158ca
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837623"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549028"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Chronologies d’un plan d’adoption du cloud
 
 Dans l’article précédent de cette série, les charges de travail et les tâches étaient attribuées aux [mises en production et aux itérations](./iteration-paths.md). Ces attributions alimentent les estimations de chronologie dans cet article.
 
-Les structures de répartition du travail (WBS) sont couramment utilisées dans les outils de gestion de projets séquentiels. Elles représentent la façon dont les tâches dépendantes sont effectuées sur une période donnée. De telles structures fonctionnent bien lorsque les tâches sont séquentielles par nature. Les interdépendances des tâches dans l’adoption du cloud rendent ces structures difficiles à gérer. Pour combler cette lacune, vous pouvez estimer les chronologies en fonction des attributions de chemin d’itération en masquant la complexité.
+Les structures de répartition du travail (WBS) sont couramment utilisées dans les outils de gestion de projets séquentiels. Elles représentent la façon dont les tâches dépendantes sont effectuées dans le temps. De telles structures fonctionnent bien lorsque les tâches sont séquentielles par nature. Les interdépendances des tâches dans l’adoption du cloud rendent ces structures difficiles à gérer. Pour combler cette lacune, vous pouvez estimer les chronologies en fonction des attributions de chemin d’itération en masquant la complexité.
 
 ## <a name="estimate-timelines"></a>Estimer les chronologies
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 360565a9d42dadc25c5ddcce5e8f1b3941d9ee42
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839099"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549218"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Approuver les changements de l’architecture avant la migration
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 85d284494a6fd9ca95b9566c939015a0a57b6f78
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: cdfa8ffe64ac7af6d545f9706f8f0652a4d583c4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888907"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047715"
 ---
 # <a name="migration-tools-decision-guide"></a>Guide de décision sur les outils de migration
 
@@ -40,7 +40,7 @@ Conformément à l’importance qui est donnée à la [migration incrémentielle
 
 ## <a name="learn-more"></a>En savoir plus
 
-- **[Principes de base du cloud : Vue d’ensemble des options de calcul Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Fournit des informations sur les fonctionnalités des options de calcul Azure IaaS et PaaS.
-- **[Principes de base du cloud : Choisir le bon magasin de données](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Décrit les options de stockage PaaS qui sont disponibles sur la plateforme Azure.
-- **[Migration à cadre étendu : les besoins en stockage dépassent la capacité réseau lors d’une migration](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Décrit les autres mécanismes de migration de données pour les cas où la migration des données est entravée par la quantité de bande passante réseau disponible.
-- **[Base de données SQL : Choisir l’option SQL Server appropriée dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Aborde les options et les justifications métier permettant de choisir entre une infrastructure hébergée (IaaS) ou un service hébergé (PaaS) pour héberger vos charges de travail SQL Server.
+- **[Principes de base du cloud : Vue d’ensemble des options de calcul Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview).** Fournit des informations sur les fonctionnalités des options de calcul Azure IaaS et PaaS.
+- **[Principes de base du cloud : Choisissez le bon magasin de données](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).** Décrit les options de stockage PaaS qui sont disponibles sur la plateforme Azure.
+- **[Migration à cadre étendu : Les besoins en stockage dépassent la capacité réseau lors d’une migration](../../migrate/expanded-scope/network-capacity-exceeded.md).** Décrit les autres mécanismes de migration de données pour les cas où la migration des données est entravée par la quantité de bande passante réseau disponible.
+- **[Base de données SQL : Choisir l’option SQL Server appropriée dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines).** Aborde les options et les justifications métier permettant de choisir entre une infrastructure hébergée (IaaS) ou un service hébergé (PaaS) pour héberger vos charges de travail SQL Server.

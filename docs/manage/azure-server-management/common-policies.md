@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9eee6f81922c88304c0ca5bf7edd6572daf493d8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0d998f06e73c03a74cdaf5fbd75cb605fa9a2fbb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031499"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547317"
 ---
 # <a name="common-azure-policy-examples"></a>Exemples de stratégies Azure Policy courantes
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 66b1d5e414ecf7b1512cb408947bc519e460c471
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223817"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683536"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources
 

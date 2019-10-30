@@ -10,18 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224385"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549274"
 ---
 # <a name="assess-the-digital-estate"></a>Évaluer le patrimoine numérique
 
 Dans une migration idéale, chaque ressource (infrastructure, application ou données) est compatible avec une plateforme cloud et prête pour la migration. En réalité, tous les éléments n’ont pas besoin d’être migrés vers le cloud. En outre, toutes les ressources ne sont pas compatibles avec les plateformes cloud. Avant de migrer une charge de travail vers le cloud, il est important d’évaluer la charge de travail et chaque ressource associée (infrastructure, applications et données).
 
 Les ressources de cette section vous aideront à évaluer votre environnement afin de déterminer s’il convient à la migration et quelles sont les méthodes à envisager.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="toolstabtools"></a>[outils](#tab/Tools)
 
@@ -39,7 +41,7 @@ Pour commencer par une évaluation de la migration de serveur à l’aide d’Az
 
 1. Sélectionnez **Azure Migrate**.
 1. Dans **Vue d’ensemble**, cliquez sur **Évaluer et migrer des serveurs**.
-1. Sélectionnez **Ajouter un ou plusieurs outils**.
+1. Sélectionnez **Ajouter des outils**.
 1. Dans **Découvrir, évaluer et migrer des serveurs**, cliquez sur **Ajouter des outils**.
 1. Dans **Projet de migration**, sélectionnez votre abonnement Azure, puis créez un groupe de ressources si vous n’en avez pas.
 1. Dans **Détails du projet**, spécifiez le nom du projet et la géographie dans laquelle vous souhaitez créer le projet, puis cliquez sur **Suivant**.

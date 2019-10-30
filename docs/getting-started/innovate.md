@@ -8,19 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 096d6756c1d2b4713b6a464cbcc05785e96bc5cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 718835335103130418f9fe75284adb7ceb94821c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023392"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683474"
 ---
 # <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>L’innovation via l’adoption du cloud dans le Framework d’adoption du cloud
 
-L’innovation est étroitement liée à la migration. Lorsque des charges de travail créent des opportunités de différenciation du marché, il est courant qu’elles soient migrées vers le cloud, puis modernisées. Une fois la modernisation cloud effectuée, vous pouvez accélérer les approches modernes basées sur le cloud, ce qui permet également de développer de nouvelles innovations.
-
-> [!NOTE]
-> Ce guide est développé pour la version 2019 du 3e trimestre du Framework d’adoption du cloud. La taxonomie et l’approche ci-dessous sont susceptibles de changer. Les informations suivantes illustrent la direction générale des recommandations en matière d’innovation.
+La migration cloud constitue une excellente option pour les charges de travail qui existent déjà dans un environnement. La création de produits et services nécessite une approche différente. La méthodologie d’innovation de ce framework établit une approche qui oriente le développement de nouveaux produits et services.
 
 ## <a name="motivations-behind-innovation"></a>Les motivations derrière l’innovation
 
@@ -34,17 +31,6 @@ L’innovation ne doit pas être le chemin d’adoption choisi pour toutes les c
 - Transformer des produits ou services
 - Proposer de nouveaux produits ou services sur le marché
 
-## <a name="innovation-guidance"></a>Guide de l’innovation
-
-Le contenu sur l’innovation présenté dans le Framework d’adoption du cloud fournit des conseils sur les sujets suivants :
-
-- Moderniser les ressources existantes
-- Créer de nouvelles applications
-- Suivre les pratiques qui encouragent l’esprit de croissance
-- Intégrer des stratégies DevOps
-
-![Vue d’ensemble du Framework d’adoption du cloud](../_images/caf-overview.png)
-
 ## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Exemples de charges de travail courantes associés à une innovation cloud
 
 - Applications personnalisées.
@@ -52,3 +38,10 @@ Le contenu sur l’innovation présenté dans le Framework d’adoption du cloud
 - IoT : intégration de produits physiques et de technologies.
 - Intelligence ambiante : intégration de technologies non intrusives dans un environnement.
 - Cognitive Services : Big Data, IA, Machine Learning et solutions prédictives.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Commencez votre parcours d’innovation avec la [méthodologie d’innovation](../innovate/index.md).
+
+> [!div class="nextstepaction"]
+> [Commencer votre parcours d’innovation](../innovate/index.md)
