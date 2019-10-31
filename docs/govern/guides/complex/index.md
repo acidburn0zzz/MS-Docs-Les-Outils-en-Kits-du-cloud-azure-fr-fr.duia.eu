@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7542fafccd5b1ef4c5e944db8c14322c76772ed4
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683563"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058704"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guide de gouvernance pour les entreprises complexes
 
@@ -39,7 +39,7 @@ Le schéma suivant montre la hiérarchie MVP de gouvernance pour organiser les r
 
 Chaque application doit être déployée dans la zone appropriée du groupe d’administration, de l’abonnement et de la hiérarchie des groupes de ressources. Lors de la planification du déploiement, l’équipe de gouvernance cloud crée les nœuds nécessaires dans la hiérarchie pour donner aux équipes d’adoption du cloud les moyens d’agir.
 
-1. Définissez un groupe d’administration pour chaque unité commerciale avec une hiérarchie détaillée qui reflète la géographie, puis le type d’environnement (par exemple, production ou non-production).
+1. Définissez un groupe d’administration pour chaque unité commerciale avec une hiérarchie détaillée qui reflète la géographie, puis le type d’environnement (par exemple, environnements de production ou de préproduction).
 2. Créez un abonnement de production et de non-production pour chaque combinaison unique de géographie ou d’unité commerciale distincte. Soyez particulièrement prudent si vous créez plusieurs abonnements. Consultez [cette page](../../../decision-guides/subscriptions/index.md) pour plus d’informations.
 3. Appliquez une [nomenclature cohérente](../../../ready/considerations/naming-and-tagging.md) à chaque niveau de cette hiérarchie de regroupement.
 4. Les groupes de ressources doivent être déployés de manière à prendre en compte le cycle de vie de leur contenu : tous les contenus développés ensemble sont gérés ensemble et mis hors service ensemble. Pour plus d’informations sur les bonnes pratiques relatives aux groupes de ressources, consultez [cette page](../../../decision-guides/resource-consistency/index.md).

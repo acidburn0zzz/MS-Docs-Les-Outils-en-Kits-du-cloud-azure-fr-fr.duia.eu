@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 000d1aba1ec496e7b6583c84351e2d6ca29b3e1f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683518"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058721"
 ---
 # <a name="subscription-decision-guide"></a>Guide de décision concernant les abonnements
 
@@ -26,7 +26,7 @@ Avec la croissance de votre patrimoine numérique Azure, vous devrez probablemen
 
 Voici quelques exemples de base de l’utilisation de groupes d’administration pour séparer différentes charges de travail :
 
-- **Production et hors production :** certaines entreprises créent des groupes d’administration pour séparer leurs abonnements Production de leurs abonnements Hors production. Les groupes d’administration permettent à ces clients de gérer plus facilement les rôles et les stratégies. Par exemple, un abonnement Hors production peut permettre aux développeurs de bénéficier d’un accès **Contributeur**. Toutefois, dans un abonnement Production, ils bénéficient seulement d’un accès **Lecteur**.
+- **Charges de travail de production et non-production :** certaines entreprises créent des groupes d’administration pour séparer leurs abonnements Production de leurs abonnements Hors production. Les groupes d’administration permettent à ces clients de gérer plus facilement les rôles et les stratégies. Par exemple, un abonnement Hors production peut permettre aux développeurs de bénéficier d’un accès **Contributeur**. Toutefois, dans un abonnement Production, ils bénéficient seulement d’un accès **Lecteur**.
 - **Services internes et services externes :** tout comme pour les charges de travail Production et Hors production, les entreprises ont souvent des besoins, des stratégies et des rôles différents pour les services internes et les services externes (destinés aux clients).
 
 Ce guide de décision présente différentes approches pour organiser votre hiérarchie de groupes d’administration.

@@ -127,6 +127,12 @@
           href: ready/azure-best-practices/roles.md
         - name: Créer une cohérence de cloud hybride
           href: infrastructure/misc/hybrid-consistency.md
+    - name: Étendue supplémentaire
+      items:
+        - name: Zones d’atterrissage Terraform
+          href: ready/expanded-scope/terraform-landing-zone.md
+        - name: Sécurité des limites du réseau
+          href: reference/networking-vdc.md
     - name: Bonnes pratiques
       items:
         - name: Vue d'ensemble
@@ -437,8 +443,6 @@
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
                 - name: Bonnes pratiques supplémentaires
                   items:
-                    - name: Bonnes pratiques pour la sécurité des frontières Azure
-                      href: reference/networking-vdc.md
                     - name: Meilleures pratiques en matière de sécurité pour les bases de données Azure
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure
