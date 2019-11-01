@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 10af3ade249bcc115d5b273b2610c093e48bf9a2
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547866"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238869"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guide de décision pour l’application de la stratégie
 
@@ -57,7 +57,7 @@ Dans Azure, vous pouvez appliquer des paramètres de configuration et des règle
 
 À mesure que vos ressources cloud augmentent pour couvrir de nombreux abonnements nécessitant une application, vous devez vous concentrer sur une stratégie d’application à l’échelle du patrimoine cloud, afin de garantir la cohérence des stratégies.
 
-Votre [abonnement](../subscriptions/index.md) devra représenter la stratégie car celle-ci a trait à la structure de votre organisation. En plus de vous aider à prendre en charge une organisation complexe au sein de votre abonnement, des [groupes d’administration Azure](../../ready/considerations/scaling-subscriptions.md#managing-multiple-subscriptions) peuvent être utilisés pour assigner des règles Azure Policy à plusieurs abonnements.
+Votre [abonnement](../subscriptions/index.md) devra représenter la stratégie car celle-ci a trait à la structure de votre organisation. En plus de vous aider à prendre en charge une organisation complexe au sein de votre abonnement, des [groupes d’administration Azure](../../ready/azure-best-practices/scaling-subscriptions.md#managing-multiple-subscriptions) peuvent être utilisés pour assigner des règles Azure Policy à plusieurs abonnements.
 
 ## <a name="automated-enforcement"></a>Application automatisée
 

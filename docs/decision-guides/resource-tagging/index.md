@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 77fe8ba38b2ebf79ddceeb9fe2df940e8e333cc6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378030"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238844"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guides de décision concernant le nommage et l’étiquetage des ressources
 
@@ -40,7 +40,7 @@ L’étiquetage des schémas qui sont alignés sur l’entreprise (comme la comp
 
 Une convention de nommage standardisée constitue le point de départ de l’organisation de vos ressources hébergées dans le cloud. Un système de nommage correctement structuré vous permet d’identifier rapidement les ressources à des fins de gestion et de comptabilité. Si vous disposez déjà de conventions de nommage informatiques dans d’autres services de votre organisation, déterminez si les conventions de nommage cloud doivent s’aligner sur ces conventions ou si vous devez établir des standards distincts pour le cloud.
 
-Notez également que les [exigences de nommage](../../ready/considerations/naming-and-tagging.md) varient selon le type de ressource Azure. Vos conventions de nommage doivent être compatibles avec ces exigences de nommage.
+Notez également que les [exigences de nommage](../../ready/azure-best-practices/naming-and-tagging.md) varient selon le type de ressource Azure. Vos conventions de nommage doivent être compatibles avec ces exigences de nommage.
 
 ## <a name="resource-tagging-patterns"></a>Modèles d’étiquetage des ressources
 

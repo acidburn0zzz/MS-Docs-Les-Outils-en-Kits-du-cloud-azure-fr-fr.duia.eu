@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: c2e7d5a3b442e6094ccc08fefbadab6102b09fcc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058704"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239731"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guide de gouvernance pour les entreprises complexes
 
@@ -41,7 +41,7 @@ Chaque application doit être déployée dans la zone appropriée du groupe d’
 
 1. Définissez un groupe d’administration pour chaque unité commerciale avec une hiérarchie détaillée qui reflète la géographie, puis le type d’environnement (par exemple, environnements de production ou de préproduction).
 2. Créez un abonnement de production et de non-production pour chaque combinaison unique de géographie ou d’unité commerciale distincte. Soyez particulièrement prudent si vous créez plusieurs abonnements. Consultez [cette page](../../../decision-guides/subscriptions/index.md) pour plus d’informations.
-3. Appliquez une [nomenclature cohérente](../../../ready/considerations/naming-and-tagging.md) à chaque niveau de cette hiérarchie de regroupement.
+3. Appliquez une [nomenclature cohérente](../../../ready/azure-best-practices/naming-and-tagging.md) à chaque niveau de cette hiérarchie de regroupement.
 4. Les groupes de ressources doivent être déployés de manière à prendre en compte le cycle de vie de leur contenu : tous les contenus développés ensemble sont gérés ensemble et mis hors service ensemble. Pour plus d’informations sur les bonnes pratiques relatives aux groupes de ressources, consultez [cette page](../../../decision-guides/resource-consistency/index.md).
 5. Le [choix de la région](../../../decision-guides/regions/index.md) est extrêmement important, notamment pour la mise en place du réseau, de la supervision et de l’audit pour le basculement/la restauration automatique. Il convient également de vérifier que les [références SKU nécessaires](https://azure.microsoft.com/global-infrastructure/services) sont disponibles dans les régions privilégiées.
 
