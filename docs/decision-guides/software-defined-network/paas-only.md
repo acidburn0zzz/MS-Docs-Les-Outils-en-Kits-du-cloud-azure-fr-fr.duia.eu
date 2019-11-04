@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 704dbb16be57c4203199ca972aa61b520eece3ca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ca73050c2ca6a753727b7b972a3c1febe4ec9515
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023541"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058728"
 ---
 # <a name="software-defined-networking-paas-only"></a>Software Defined Networking : PaaS uniquement
 
 Lorsque vous implémentez une ressource PaaS (platform as a service), le processus de déploiement crée automatiquement un réseau sous-jacent supposé, qui comprend un nombre limité de contrôles sur ce réseau. Ces contrôles incluent, entre autres, l’équilibrage de charge, le blocage des ports et les connexions à d’autres services PaaS.
 
-Dans Azure, différents types de ressources PaaS peuvent être [déployés dans](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) ou [connectés à](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) un réseau virtuel. De cette manière, ces ressources peuvent s’intégrer à votre infrastructure existante de mise en réseau virtuelle. D’autres services, tels qu’[App Service Environment](https://docs.microsoft.com/azure/app-service/environment/intro), [Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes), et [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview), doivent être déployés au sein du réseau virtuel. La plupart du temps, une architecture de mise en réseau « PaaS uniquement », qui ne s’appuie que sur ces capacités de mise en réseau natives par défaut fournies par les ressources PaaS, est suffisante pour répondre aux exigences de connectivité et de gestion du trafic d’une charge de travail.
+Dans Azure, différents types de ressources PaaS peuvent être [déployés dans](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) ou [connectés à](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) un réseau virtuel. De cette manière, ces ressources peuvent s’intégrer à votre infrastructure existante de mise en réseau virtuelle. D'autres services, tels qu'[App Service Environment](https://docs.microsoft.com/azure/app-service/environment/intro), [Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes) et [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview), doivent être déployés au sein du réseau virtuel. La plupart du temps, une architecture de mise en réseau « PaaS uniquement », qui ne s’appuie que sur ces capacités de mise en réseau natives par défaut fournies par les ressources PaaS, est suffisante pour répondre aux exigences de connectivité et de gestion du trafic d’une charge de travail.
 
 Si vous envisagez d’utiliser une architecture de mise en réseau « PaaS uniquement », vérifiez bien que les postulats requis s’alignent sur vos exigences.
 

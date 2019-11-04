@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8449878d46c939c58f690e585aac07fa0e827484
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548043"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058825"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -52,7 +52,7 @@ La **Plateforme d'approbation de services (STP)** fournit des informations déta
 
 ## <a name="unique-intelligent-insights"></a>Intelligent Insights
 
-Au fur et à mesure que le volume et la complexité des signaux de sécurité augmentent, il apparaît bien trop long de déterminer si ces signaux constituent des menaces crédibles, puis d'agir. Microsoft propose un éventail inégalé d'informations de sécurité fournies à l'échelle du cloud pour mieux détecter les menaces et y remédier. [En savoir plus](https://docs.microsoft.com/azure/security-center/security-center-intro)
+Au fur et à mesure que le volume et la complexité des signaux de sécurité augmentent, il apparaît bien trop long de déterminer si ces signaux constituent des menaces crédibles, puis d'agir. Microsoft propose un éventail inégalé d'informations de sécurité fournies à l'échelle du cloud pour mieux détecter les menaces et y remédier. Pour plus d'informations, consultez la page [Vue d'ensemble d'Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro).
 
 ## <a name="azure-threat-intelligence"></a>Informations sur les menaces Azure
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8c052b5a9c3745a1d253b533086a9fdf4d86eae9
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967810"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058778"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Conception de gouvernance pour plusieurs équipes
 
@@ -29,10 +29,10 @@ Les conditions requises sont :
 - Prise en charge de plusieurs **environnements**. Un environnement est un regroupement logique de ressources, telles que des machines virtuelles, des réseaux virtuels et des services de routage de trafic réseau. Ces groupes de ressources ont des exigences similaires en matière de sécurité et de gestion, et sont généralement utilisés dans un but bien spécifique, à des fins de test ou de production par exemple. Dans cet exemple, l’exigence porte sur quatre environnements :
   - Un **environnement d’infrastructure partagée** qui inclut les ressources partagées par des charges de travail d’autres environnements. Par exemple, un réseau virtuel ayant un sous-réseau de passerelle qui assure la connectivité au niveau local.
   - Un **environnement de production** associé aux stratégies de sécurité les plus restrictives. Peut inclure des charges de travail internes ou externes.
-  - Un **environnement hors production** pour le travail de développement et de test. Cet environnement comporte des stratégies de sécurité, de conformité et de coût qui diffèrent de celles de l’environnement de production. Dans Azure, il prend la forme d’un abonnement Enterprise Dev/Test.
+  - Un **environnement de préproduction** pour le travail de développement et de test. Cet environnement comporte des stratégies de sécurité, de conformité et de coût qui diffèrent de celles de l’environnement de production. Dans Azure, il prend la forme d’un abonnement Enterprise Dev/Test.
   - Un **environnement de bac à sable** pour la preuve de concept et à des fins de formation. Cet environnement est généralement attribué par employé (parmi ceux participant à des activités de développement). Il inclut des contrôles procéduraux et de sécurité opérationnels stricts pour empêcher que des données d’entreprise y soient accessibles. Dans Azure, il prend la forme d’abonnements Visual Studio. Ces abonnements ne doivent _pas_ être liés au service Azure Active Directory de l’entreprise.
 - Un **modèle d’autorisations de privilège minimal** dans lequel les utilisateurs ne disposent d’aucune autorisation par défaut. Le modèle doit prendre en charge les éléments suivants :
-  - Un seul utilisateur approuvé (compte s’approchant d’un compte de service) dans l’étendue de l’abonnement, qui dispose de l’autorisation d’attribuer des droits d’accès aux ressources.
+  - Un seul utilisateur approuvé (traité comme un compte de service) à l'échelle de l'abonnement, avec autorisation d'attribuer des droits d'accès aux ressources.
   - Chaque propriétaire de charge de travail se voit refuser l’accès aux ressources par défaut. Les droits d’accès aux ressources sont accordés explicitement par le seul utilisateur approuvé dans l’étendue du groupe de ressources.
   - Accès à la gestion des ressources d’infrastructure partagée limité aux propriétaires de l’infrastructure partagée.
   - Accès à la gestion de chaque charge de travail limité au propriétaire de la charge de travail (en production) et niveaux de contrôle croissants suivant l’évolution du développement (développement, test, démonstration, puis production).
@@ -135,11 +135,11 @@ Si vous comparez chaque exemple aux exigences, vous pouvez voir que les deux exe
 
 Maintenant que vous avez conçu un modèle d’autorisations de privilège minimal, examinez quelques exemples pratiques d’utilisation de ces modèles de gouvernance. Souvenez-vous que vous devez prendre en charge les trois environnements suivants :
 
-1. **Infrastructure partagée :** un groupe de ressources partagé par toutes les charges de travail. Il s’agit par exemple des passerelles de réseau, des pare-feu et des services de sécurité.
-2. **Production :** plusieurs groupes de ressources représentant plusieurs charges de travail de production. Ces ressources sont utilisées pour héberger les artefacts d’application privés et publics. Ces ressources sont généralement adossées à des modèles de gouvernance et de sécurité plus stricts afin de protéger les ressources, le code d’application et les données contre tout accès non autorisé.
-3. **Hors production :** plusieurs groupes de ressources représentant plusieurs charges de travail prêtes hors production. Ces ressources sont utilisées à des fins de développement et de test. Elles peuvent avoir un modèle de gouvernance plus souple pour renforcer l’agilité des développeurs. Le niveau de sécurité de ces groupes doit s’accroître à mesure que le processus de développement d’applications évolue vers le stade de la « production ».
+1. **Environnement à infrastructure partagée :** un groupe de ressources partagé par toutes les charges de travail. Il s’agit par exemple des passerelles de réseau, des pare-feu et des services de sécurité.
+2. **Environnement de production :** plusieurs groupes de ressources représentant plusieurs charges de travail de production. Ces ressources sont utilisées pour héberger les artefacts d’application privés et publics. Ces ressources sont généralement adossées à des modèles de gouvernance et de sécurité plus stricts afin de protéger les ressources, le code d’application et les données contre tout accès non autorisé.
+3. **Environnement de préproduction :** plusieurs groupes de ressources représentant plusieurs charges de travail prêtes hors production. Ces ressources sont utilisées à des fins de développement et de test. Elles peuvent avoir un modèle de gouvernance plus souple pour renforcer l’agilité des développeurs. Le niveau de sécurité de ces groupes doit s’accroître à mesure que le processus de développement d’applications évolue vers le stade de la « production ».
 
-Pour chacun de ces trois environnements, vous avez besoin de suivre les données de coût par **propriétaire de charges de travail** et/ou par **environnement**. Autrement dit, vous souhaitez connaître le coût récurrent de **l’infrastructure partagée**, les frais engagés par les personnes intervenant à la fois dans les environnements **hors production** et les environnements de **production** ainsi que le coût global des opérations **hors production** et de **production**.
+Pour chacun de ces trois environnements, vous avez besoin de suivre les données de coût par **propriétaire de charges de travail** et/ou par **environnement**. Autrement dit, vous souhaitez connaître le coût récurrent de **l'infrastructure partagée**, les frais engagés par les personnes intervenant à la fois dans les environnements de **préproduction** et de **production** ainsi que le coût global des environnements de **préproduction** et de **production**.
 
 Vous savez déjà que les ressources sont limitées à deux niveaux : **abonnement** et **groupe de ressources**. Il faut donc commencer par déterminer la façon d’organiser les environnements par **abonnement**. Il existe deux possibilités : un abonnement unique ou plusieurs abonnements.
 

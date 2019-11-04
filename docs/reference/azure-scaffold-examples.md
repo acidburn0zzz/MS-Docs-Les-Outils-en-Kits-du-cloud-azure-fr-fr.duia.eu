@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 3cc5071ca4b57473b52e0478e59b3c6a0dd49bea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378043"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058057"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Exemples d’implémentation d’une structure d’entreprise Azure
 
 > [!NOTE]
-> La structure d’entreprise Azure a été intégrée au framework d’adoption du cloud Microsoft. Le contenu de cet article est maintenant représenté dans la section [Prêt](../ready/index.md) du nouveau framework. Cet article sera déprécié début 2020. Pour commencer à utiliser le nouveau processus, reportez-vous à la [vue d’ensemble Prêt](../ready/index.md), à la [création de votre première zone d’accueil](../ready/azure-setup-guide/migration-landing-zone.md) et/ou aux [considérations relatives aux zones d’accueil](../ready/considerations/index.md).
+> La structure d’entreprise Azure a été intégrée au framework d’adoption du cloud Microsoft. Le contenu de cet article est maintenant représenté dans la section [Prêt](../ready/index.md) du nouveau framework. Cet article sera déprécié début 2020. Pour commencer à utiliser le nouveau processus, reportez-vous à la [vue d’ensemble Prêt](../ready/index.md), à la [création de votre première zone d'atterrissage](../ready/azure-setup-guide/migration-landing-zone.md) et aux [considérations relatives aux zones d'atterrissage](../ready/considerations/index.md).
 
 Cet article fournit des exemples montrant comment une entreprise peut implémenter les recommandations pour une [structure d’entreprise Azure](./azure-scaffold.md). Elle utilise une société fictive nommée Contoso pour illustrer les bonnes pratiques pour des scénarios courants.
 
@@ -138,6 +138,8 @@ Dave se connecte à Azure Enterprise Portal et voit que le service Chaîne d’a
 | --- | --- |
 | Développement |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | Production |Contoso SupplyChain Operations LoyaltyCard Production |
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="policies"></a>Stratégies
 

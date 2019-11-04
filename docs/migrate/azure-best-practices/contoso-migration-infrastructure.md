@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 13a3a8a8734ffe67298d09544882c612916b995f
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547351"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058910"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Déployer une infrastructure de migration
 
@@ -325,7 +325,7 @@ Une fois la conception des régions définie, Contoso peut élaborer une straté
 
 ### <a name="plan-hybrid-network-connectivity"></a>Planifier la connectivité du réseau hybride
 
-Contoso a étudié [plusieurs architectures](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) pour créer un réseau hybride entre Azure et le centre de données local. [En savoir plus](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) sur la comparaison des options.
+Contoso a étudié [plusieurs architectures](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) pour créer un réseau hybride entre Azure et le centre de données local. Pour plus d'informations, consultez [Choisir une solution pour connecter un réseau local à Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations).
 
 Pour rappel, l’infrastructure du réseau local de Contoso se compose actuellement du centre de données à New York et de branches locales dans la partie est des États-Unis. Tous les emplacements disposent d’une connexion Internet de qualité professionnelle. Chacune des branches est ensuite connectée au centre de données via un tunnel VPN IPSec sur Internet.
 
@@ -638,7 +638,7 @@ Active Directory est un service essentiel pour la mise en réseau et doit être 
 
 ## <a name="step-5-plan-for-governance"></a>Étape 5 : Planifier pour la gouvernance
 
-Azure fournit une gamme de contrôles de gouvernance pour les services et la plateforme Azure. [En savoir plus](https://docs.microsoft.com/azure/security/governance-in-azure) sur les principes de base des options.
+Azure fournit une gamme de contrôles de gouvernance pour les services et la plateforme Azure. Pour plus d'informations, consultez la page [Options de gouvernance Azure](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 Comme elle configure l’identité et le contrôle d’accès, Contoso a déjà commencé à mettre en place certains aspects de la gouvernance et de la sécurité. Globalement, il existe trois domaines à prendre en compte :
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 54621d366f0ae0a3e2e3504532ace183bc7f49c4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839075"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058852"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Corriger les ressources avant la migration
 
@@ -31,7 +31,7 @@ Dans tous les environnements d’entreprise existe une dette technique. Dans une
 - **Modifications de la configuration de l’application.** Les applications migrées peuvent nécessiter des modifications de variables, telles que les chemins d’accès réseau aux ressources dépendantes, les modifications de compte de service ou les mises à jour des adresses IP dépendantes.
 - **Modifications mineures apportées aux chemins d’accès réseau.** Il peut être nécessaire de modifier les modèles de routage pour acheminer correctement le trafic utilisateur vers les nouvelles ressources.
     > [!NOTE]
-    > Il ne s’agit pas du routage de production vers les nouvelles ressources, mais d’une configuration permettant un routage approprié vers les ressources en général.
+    > Il ne s'agit pas d'un routage de production vers les nouvelles ressources, mais d'une configuration permettant un routage approprié vers les ressources en général.
 
 ## <a name="large-scale-remediation-tasks"></a>Tâches de correction à grande échelle
 
