@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3874b1af74d7604e3e5c5dd3376b11c43ce24e05
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8703734cbb287003edfd38ddac4395ac0e437332
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032319"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048384"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Comment utiliser le modèle de résultat opérationnel
 
@@ -51,15 +51,15 @@ La découverte est un principe fondamental de l’architecture d’entreprise. S
 
 *Figure 3 - Cinq domaines principaux pour la découverte : les parties prenantes, les résultats, les axes, les indicateurs de performance et les fonctionnalités.*
 
-**Parties prenantes** : Qui dans l'organisation est susceptible de voir la plus grande valeur dans un résultat opérationnel spécifique ? Qui est le plus susceptible de prendre en charge cette transformation, en particulier quand les choses deviennent difficiles ou fastidieuses ? Qui a le plus grand intérêt à la réussite de cette transformation ? Cette personne est une partie prenante potentielle.
+**Parties prenantes :** Qui dans l'organisation est susceptible de voir la plus grande valeur dans un résultat opérationnel spécifique ? Qui est le plus susceptible de prendre en charge cette transformation, en particulier quand les choses deviennent difficiles ou fastidieuses ? Qui a le plus grand intérêt à la réussite de cette transformation ? Cette personne est une partie prenante potentielle.
 
-**Résultats opérationnels** : Un résultat opérationnel est un résultat concis, défini et observable, ou une modification des performances de l’entreprise, pris en charge par une mesure spécifique. Comment la partie prenante souhaite-t-elle modifier les activités ? En quoi l’entreprise sera-t-elle affectée ? Quelle est la valeur de cette transformation ?
+**Résultats métier :** Un résultat opérationnel est un résultat concis, défini et observable, ou une modification des performances de l’entreprise, pris en charge par une mesure spécifique. Comment la partie prenante souhaite-t-elle modifier les activités ? En quoi l’entreprise sera-t-elle affectée ? Quelle est la valeur de cette transformation ?
 
-**Axes stratégiques** : Les axes stratégiques capturent le défi actuel qui empêche l’entreprise d’atteindre les résultats souhaités. Ils permettent également de capturer de nouvelles opportunités dont l’entreprise peut tirer parti pour trouver la bonne solution. Comment décrivez-vous les défis actuels ou l’état futur de l’entreprise ? Quelles fonctions commerciales changeraient pour répondre aux résultats souhaités ?
+**Axes stratégiques :** Les axes stratégiques capturent le défi actuel qui empêche l’entreprise d’atteindre les résultats souhaités. Ils permettent également de capturer de nouvelles opportunités dont l’entreprise peut tirer parti pour trouver la bonne solution. Comment décrivez-vous les défis actuels ou l’état futur de l’entreprise ? Quelles fonctions commerciales changeraient pour répondre aux résultats souhaités ?
 
-**Indicateurs de performance clés** : Comment cette modification sera-t-elle mesurée ? Comment les entreprises savent-elles si elles réussissent ? À quelle fréquence cet indicateur de performance clé sera-t-il respecté ? Comprendre chaque indicateur de performance clé permet d’activer les modifications incrémentielles et l’expérimentation.
+**Indicateurs de performance clés :** Comment cette modification sera-t-elle mesurée ? Comment les entreprises savent-elles si elles réussissent ? À quelle fréquence cet indicateur de performance clé sera-t-il respecté ? Comprendre chaque indicateur de performance clé permet d’activer les modifications incrémentielles et l’expérimentation.
 
-**Fonctionnalités** : Lorsque vous définissez un parcours de transformation, comment les fonctionnalités techniques vont-elles accélérer la réalisation des résultats opérationnels ? Quelles applications doivent être incluses dans la transformation pour atteindre les objectifs opérationnels ? Comment les différentes applications ou charges de travail sont-elles hiérarchisées pour offrir des fonctionnalités ? Comment des parties de la solution doivent-elles être développées ou remaniées pour répondre à chacun des résultats ? Les approches d’exécution (ou chronologies) peuvent-elles être réorganisées pour hiérarchiser les résultats opérationnels à fort impact ?
+**Fonctionnalités :** Lorsque vous définissez un parcours de transformation, comment les fonctionnalités techniques vont-elles accélérer la réalisation des résultats opérationnels ? Quelles applications doivent être incluses dans la transformation pour atteindre les objectifs opérationnels ? Comment les différentes applications ou charges de travail sont-elles hiérarchisées pour offrir des fonctionnalités ? Comment des parties de la solution doivent-elles être développées ou remaniées pour répondre à chacun des résultats ? Les approches d’exécution (ou chronologies) peuvent-elles être réorganisées pour hiérarchiser les résultats opérationnels à fort impact ?
 
 ## <a name="next-steps"></a>Étapes suivantes
 

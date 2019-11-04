@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f38c207c89cbe4d37958292c552165f39e2bd383
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 8f7882a28dc135763584c8f2af4f5d834160f3ba
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769281"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047573"
 ---
 ::: zone target="docs"
 
@@ -29,9 +29,9 @@ ms.locfileid: "72769281"
 
 ::: zone-end
 
-Innovez avec des appareils connectés par intermittence et des appareils de périmètre perceptifs. Orchestrez des millions de ces appareils, acquérez et traitez des données illimitées et tirez parti d’un nombre croissant d’expériences multipériphériques et multicapteurs. Pour les appareils à la périphérie de votre réseau, Azure fournit une infrastructure pour la création de solutions d’entreprise immersifs et efficaces. L’informatique ubiquitaire, activée par Azure et par une technologie d’intelligence artificielle (IA), vous permet de concevoir chaque type d’application et de système intelligent que vous pouvez imaginer.
+Innovez avec des appareils connectés par intermittence et des appareils de périmètre perceptifs. Orchestrez des millions de ces appareils, acquérez et traitez des données illimitées et tirez parti d’un nombre croissant d’expériences multipériphériques et multicapteurs. Pour les appareils à la périphérie de votre réseau, Azure fournit une infrastructure pour la création de solutions d’entreprise immersifs et efficaces. Avec l’informatique ubiquitaire, activée par Azure et par une technologie d’intelligence artificielle (IA), vous pouvez concevoir chaque type d’application et de système intelligent que vous pouvez imaginer.
 
-Les clients Azure utilisent un ensemble de systèmes et d’appareils connectés en perpétuelle expansion qui accumule et analyse des données&mdash; (proches de vos utilisateurs, de vos données, ou les deux). Les utilisateurs reçoivent des aperçus et des expériences en temps réel, livrées par des applications conscientes du contexte et hautement réactives. En déplaçant des parties de la charge de travail en périphérie, ces appareils peuvent passer moins de temps à envoyer des messages vers le cloud et réagir plus rapidement aux événements spatiaux.
+Les clients Azure utilisent un ensemble de systèmes et d’appareils connectés en perpétuelle expansion qui accumule et analyse des données&mdash;(proches de vos utilisateurs, de vos données, ou les deux). Les utilisateurs reçoivent des aperçus et des expériences en temps réel, livrées par des applications conscientes du contexte et hautement réactives. En déplaçant des parties de la charge de travail en périphérie, ces appareils peuvent passer moins de temps à envoyer des messages vers le cloud et réagir plus rapidement aux événements spatiaux.
 
 > [!div class="checklist"]
 >
@@ -49,7 +49,9 @@ Les clients Azure utilisent un ensemble de systèmes et d’appareils connectés
 
 <!-- markdownlint-enable MD025 -->
 
-Concevez des solutions qui exercent une communication bidirectionnelle avec les appareils IoT à l’échelle de milliards. Utilisez les données de télémétrie transmises par les appareils au cloud prêtes à l’emploi pour comprendre l’état de vos appareils et définir des itinéraires d’acheminement de messages vers d’autres services Azure, simplement par la configuration. Tirez parti des messages du cloud vers les appareils, envoyez en toute confiance des commandes et des notifications à vos appareils connectés et suivez la remise des messages avec des accusés de réception. Si besoin, renvoyez automatiquement des messages aux appareils à des fins de connectivité intermittente.
+Concevez des solutions qui exercent une communication bidirectionnelle avec les appareils IoT à l’échelle de milliards. Utilisez les données de télémétrie transmises par les appareils au cloud prêtes à l’emploi pour comprendre l’état de vos appareils et définir des itinéraires d’acheminement de messages vers d’autres services Azure, simplement par la configuration. En tirant parti des messages du cloud vers les appareils, vous pouvez envoyer en toute confiance des commandes et des notifications à vos appareils connectés et suivez la remise des messages avec des accusés de réception. Si besoin, renvoyez automatiquement des messages aux appareils à des fins de connectivité intermittente.
+
+Voici quelques-unes des fonctionnalités que vous trouverez :
 
 - **Canal de communication sécurisé** pour envoyer et recevoir des données à partir d'appareils IoT.
 - **Gestion intégrée des appareils** et provisionnement pour connecter et gérer les appareils IoT à grande échelle.
@@ -66,16 +68,18 @@ Concevez des solutions qui exercent une communication bidirectionnelle avec les 
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
-Pour créer IoT Hub :
+Pour créer un hub IoT :
 
 1. Accédez à **IoT Hub**.
-2. Cliquez sur **Création du IoT hub**.
+2. Sélectionnez **Créer un hub IoT**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs]" submitText="Go to IoT Hub" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
 
 Le service IoT Hub Device Provisioning est un service d’assistance pour IoT Hub qui propose le provisionnement sans contact et juste-à-temps.
 
@@ -86,7 +90,9 @@ Le service IoT Hub Device Provisioning est un service d’assistance pour IoT Hu
 Pour créer des services IoT Hub Device Provisioning :
 
 1. Accédez à **Services IoT Hub Device Provisioning**.
-2. Cliquez sur **Créer des services Device Provisioning**.
+2. Sélectionnez **Créer des services Device Provisioning**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FProvisioningServices]" submitText="Go to Device Provisioning Services" :::
 
@@ -112,16 +118,16 @@ Créez des expériences à intelligence spatiale réutilisables et extrêmement 
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
 Pour créer Azure Digital Twins :
 
 1. Dans le volet de gauche, sélectionnez **Créer une ressource**.
-2. Recherchez digital twins, puis sélectionnez **Digital Twins**.
+2. Recherchez **digital twins**, puis sélectionnez **Digital Twins**.
 3. Sélectionnez **Créer** pour commencer le processus de déploiement.
-4. Cliquez sur le bouton ci-dessous pour passer en revue les Digital Twins existants.
+4. Pour passer en revue les Digital Twins existants, sélectionnez ce bouton :
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.IoTSpaces%2FGraph]" submitText="Go to Digital Twins" :::
 
@@ -149,14 +155,14 @@ En plus des fonctionnalités de localisation traditionnelles, telles que la prox
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
 Pour utiliser l’intelligence géographique :
 
 1. Accédez à **Comptes Azure Maps**.
-2. Cliquez sur **Créer des comptes Azure Maps**.
+2. Sélectionnez **Créer des comptes Azure Maps**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Maps%2Faccounts]" submitText="Go to Azure Maps Account" :::
 
@@ -184,14 +190,14 @@ Azure Spatial Anchors se compose d’un service managé et de kits SDK clients p
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
 Pour utiliser les expériences spatiales :
 
 1. Accédez à **Comptes Spatial Anchors**.
-2. Cliquez sur **Créer des comptes Spatial Anchors**.
+2. Sélectionnez **Créer des comptes Spatial Anchors**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.MixedReality%2FspatialAnchorsAccounts]" submitText="Go to Spatial Anchors Accounts" :::
 
@@ -215,14 +221,14 @@ Le processus de rendu exige beaucoup de ressources informatiques. Il peut y avoi
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
 Pour utiliser Remote Rendering :
 
 1. Accédez à **Comtes Batch**.
-2. Cliquez sur **Créer des comptes Batch**.
+2. Sélectionnez **Créer des comptes Batch**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Batch%2FbatchAccounts]" submitText="Go to Azure Batch" :::
 

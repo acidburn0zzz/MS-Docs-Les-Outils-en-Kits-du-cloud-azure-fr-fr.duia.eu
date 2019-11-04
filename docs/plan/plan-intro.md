@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 74fd1f02455d822ae8f8266bc3f6deb5935c09fe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839171"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048283"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planifier l’adoption du cloud
 
@@ -35,11 +35,11 @@ Les modèles d’acquisition du cloud changent les dépendances principales qui 
 
 Cette série d’articles décrit chaque étape de la procédure visant à traduire une stratégie et des efforts en un plan exploitable d’adoption du cloud :
 
-1. **Conditions préalables**: Vérifiez que toutes les étapes prérequises ont été effectuées avant de créer votre plan.
+1. **Configuration requise :** Vérifiez que toutes les étapes prérequises ont été effectuées avant de créer votre plan.
 2. **Définir et hiérarchiser les charges de travail** : Classez par ordre de priorité vos 10 premières charges de travail pour établir un backlog d’adoption initial.
-3. **Aligner les ressources** : Identifiez les ressources (proposées ou existantes) requises pour prendre en charge les charges de travail hiérarchisées.
-4. **Passer en revue la rationalisation** : Examinez les décisions de rationalisation pour affiner les choix de chemin d’adoption : migrer ou innover.
-5. **Définir les itérations et les versions** : Les *itérations* sont les blocs de temps alloués pour le travail. Les *versions* sont la définition du travail à effectuer avant de déclencher une modification des processus de production.
+3. **Aligner les ressources :** Identifiez les ressources (proposées ou existantes) requises pour prendre en charge les charges de travail hiérarchisées.
+4. **Passer en revue la rationalisation :** Examinez les décisions de rationalisation pour affiner les choix de chemin d’adoption : migrer ou innover.
+5. **Définir les itérations et les versions :** Les *itérations* sont les blocs de temps alloués pour le travail. Les *versions* sont la définition du travail à effectuer avant de déclencher une modification des processus de production.
 6. **Estimer les chronologies** : Établissez des chronologies approximatives pour la planification des versions, en fonction des estimations initiales.
 
 ## <a name="next-steps"></a>Étapes suivantes

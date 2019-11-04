@@ -8,21 +8,21 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9d98a9e368f71310a05ae6242ef75a57771824d5
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ef5ffecd998bbe4e5adadd30cf24fe965e22b703
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837615"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048262"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Aligner les ressources sur des charges de travail hiérarchisées
 
 La charge de travail est une description conceptuelle d’un ensemble de ressources : les machines virtuelles, les applications et les sources de données. L’article précédent intitulé [Hiérarchiser et définir des charges de travail](./workloads.md) a donné des conseils pour la collecte des données qui définiront la charge de travail. Avant la migration, quelques entrées techniques de cette liste nécessitent une validation supplémentaire. Cet article permet de valider les entrées suivantes :
 
-- **Applications** : répertorie toutes les applications incluses dans cette charge de travail.
-- **Machines virtuelles/serveurs** : répertorie l’ensemble des machines virtuelles ou serveurs inclus dans la charge de travail.
-- **Sources de données** : répertorie toutes les sources de données incluses dans la charge de travail.
-- **Dépendances** : répertorie toutes les dépendances de ressources non incluses dans la charge de travail.
+- **Applications :** répertorie toutes les applications incluses dans cette charge de travail.
+- **Machines virtuelles et serveurs :** répertorie l’ensemble des machines virtuelles ou serveurs inclus dans la charge de travail.
+- **Sources de données :** répertorie toutes les sources de données incluses dans la charge de travail.
+- **Dépendances :** répertorie toutes les dépendances de ressources non incluses dans la charge de travail.
 
 Plusieurs options s’offrent à vous pour assembler ces données. Voici quelques-unes des approches les plus courantes.
 

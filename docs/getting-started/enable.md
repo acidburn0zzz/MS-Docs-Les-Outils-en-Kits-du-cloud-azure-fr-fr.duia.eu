@@ -1,7 +1,7 @@
 ---
 title: Activer la réussite des clients lors des parcours d’adoption du cloud
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Activer la réussite des clients lors des parcours d’adoption du cloud
+description: Activer la réussite des clients tout au long des parcours d’adoption du cloud
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,20 +9,20 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea9d6b17627883f63e0814b66ed5cb657555995d
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023445"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048341"
 ---
-# <a name="enable-success-across-any-cloud-adoption-journey"></a>Activer la réussite dans l’ensemble des parcours d’adoption du cloud
+# <a name="enable-success-during-a-cloud-adoption-journey"></a>Activer la réussite lors des parcours d’adoption du cloud
 
-Le Framework d’adoption du cloud Microsoft pour Azure est un outil en libre-service gratuit qui guide les lecteurs via différents efforts d’adoption du cloud. Ce contenu a pour but d’aider les clients à atteindre leurs objectifs métiers qui peuvent être activés par Azure. Toutefois, ce contenu respecte également le fait que le lecteur peut répondre à des défis métier, de culture ou techniques qui peuvent être étendus et peuvent parfois nécessiter une position indépendante du cloud. Par conséquent, chaque section de cette aide commence par une approche Azure, mais se poursuit par une théorie cloud neutre qui peut évoluer dans le cadre de décisions techniques et métiers.
+Le Framework d’adoption du cloud est un outil en libre-service gratuit qui guide les lecteurs via différents efforts d’adoption du cloud. L’infrastructure permet aux clients de réaliser des objectifs commerciaux qui peuvent être activés par Microsoft Azure. Toutefois, ce contenu reconnait également le fait que le lecteur peut répondre à des défis métier, de culture ou techniques étendus et qui peuvent parfois nécessiter une position indépendante du cloud. Par conséquent, chaque section de cette aide commence par une approche Azure, puis se poursuit par une théorie cloud neutre qui peut évoluer dans le cadre de décisions techniques et métiers.
 
-Tout au long de ce Framework, l’activation est un thème fondamental. La liste de vérification suivante contient une série de rubriques qui doivent être intégrées dans n’importe quel effort d’adoption du cloud pour s’assurer que le parcours est un succès aussi bien du point de vue informatique que de l’entreprise :
+Tout au long de ce Framework, l’activation est un thème fondamental. La liste de vérification suivante présente les principes fondamentaux de l’adoption du cloud garantissant que le parcours d’adoption est considéré comme concluant par l’informatique et l’entreprise :
 
-- **Planifier :** établir des [résultats métiers](../strategy/business-outcomes/index.md) clairs, un [plan de parc numérique](../digital-estate/index.md) défini et des [backlogs d’adoption](../migrate/migration-considerations/prerequisites/migration-backlog-review.md) bien compris.
+- **Planifier :** établir des [résultats métiers](../strategy/business-outcomes/index.md) clairs, un [plan de parc numérique](../digital-estate/index.md) clairement défini et des [backlogs d’adoption](../migrate/migration-considerations/prerequisites/migration-backlog-review.md) bien compris.
 - **Prêt :** garantir la disponibilité du personnel grâce [aux compétences et aux plans de formation](../ready/technical-skills.md).
 - **Opérer :** définir un modèle d’exploitation gérable pour guider les activités pendant et longtemps après l’adoption.
   - **[Organiser](../organize/index.md) :** aligner les personnes et les équipes pour fournir des opérations et une adoption appropriées en matière de cloud.

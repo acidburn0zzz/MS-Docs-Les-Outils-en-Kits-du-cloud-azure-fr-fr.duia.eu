@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547809"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915017"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 

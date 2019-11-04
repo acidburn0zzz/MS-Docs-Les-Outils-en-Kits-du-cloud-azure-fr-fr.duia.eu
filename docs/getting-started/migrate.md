@@ -1,23 +1,23 @@
 ---
-title: Bien démarrer avec un parcours de migration cloud
+title: Commencer un parcours de migration vers le cloud dans Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Bien démarrer avec un parcours de migration cloud
+description: Commencer un parcours de migration vers le cloud dans Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547828"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048315"
 ---
-# <a name="getting-started-with-a-cloud-migration-journey"></a>Bien démarrer avec un parcours de migration cloud
+# <a name="begin-a-cloud-migration-journey-in-azure"></a>Commencer un parcours de migration vers le cloud dans Azure
 
-En savoir plus sur l’utilisation du Framework d’adoption du cloud Microsoft pour Azure afin d’entamer un parcours de migration cloud. Ce framework fournit une aide complète sur la transition des charges de travail d’application héritées à l’aide de technologies novatrices basées sur le cloud.
+Utilisez le Framework d’adoption du cloud Microsoft pour Azure afin d’entamer un parcours de migration cloud. Ce framework fournit une aide complète sur la transition des charges de travail d’application héritées à l’aide de technologies novatrices basées sur le cloud.
 
 ## <a name="executive-summary"></a>Résumé
 

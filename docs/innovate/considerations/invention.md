@@ -8,32 +8,32 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 78f2e1df65a5cc30225c43888c13ca300daf3be8
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: e1e9d693e7ca8de494ec2eb3e833ed3d0b07786f
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682728"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980042"
 ---
 # <a name="developing-digital-inventions"></a>Développement d’inventions numériques
 
-Comme décrit dans la [méthodologie d’innovation](./index.md), l’innovation nécessite un équilibre entre **invention** et **adoption**. Les retours des clients et un partenariat avec ces derniers sont essentiels pour susciter l’adoption. Les disciplines ci-dessous définissent une série d’approches pour développer des inventions numériques en gardant à l’esprit l’adoption et l’empathie vis-à-vis du client. Chacune des disciplines est brièvement décrite ci-dessous, et chaque processus est associé à des liens permettant d’obtenir plus d’informations.
+Comme décrit dans [Innovation dans l’économie numérique](./index.md), l’innovation nécessite un équilibre entre *invention* et *adoption*. Les retours des clients et un partenariat avec ces derniers sont essentiels pour susciter l’adoption. Les disciplines décrites dans la prochaine section définissent une série d’approches pour développer des inventions numériques en gardant à l’esprit l’adoption et l’empathie vis-à-vis du client. Chacune des disciplines est brièvement décrite, et chaque processus est associé à des liens permettant d’obtenir plus d’informations.
 
 ![Méthodologie d’innovation du Framework d’adoption du cloud](../../_images/innovate/innovate-methodology.png)
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>Résumé de chaque discipline d’invention numérique
 
-Les disciplines suivantes ne sont pas toutes nécessaires pour stimuler l’innovation. L’article [Développez en faisant preuve d’empathie](./build.md), fournit des conseils pour tester une hypothèse à chaque itération. Définir le résultat de chaque itération en tant que [produit minimum viable (MVP)](./build.md#build-a-minimum-viable-product-mvp) entraînerait l’utilisation d’un aussi petit nombre de disciplines que possible.
+Les disciplines suivantes ne sont pas *toutes* nécessaires pour stimuler l’innovation dans un cas donné. L’article [Développer en faisant preuve d’empathie vis-à-vis du client](./build.md), fournit des conseils pour tester une hypothèse à chaque itération. En définissant la sortie de chaque itération en tant que [produit viable minimal (MVP)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance#minimum-viable-product-mvp-for-policy), cela devrait vous permettre d’impliquer le moins de disciplines possible.
 
-- **[Démocratiser les données](./data.md) :** Les données entre les mains des clients, des partenaires et des employés sont le moteur d’une observation innovante. Ingérez, centralisez, gouvernez et partagez les données.
-- **[Impliquer par le biais d’applications](./apps.md) :** Les utilisateurs accèdent à la connaissance par le biais d’applications et d’expériences. Donnez aux développeurs professionnels et citoyens les moyens de créer rapidement des applications.
+- **[Démocratiser les données](./data.md) :** En mettant les données entre les mains des clients, des partenaires et des employés, vous encouragez l’observation innovante. Ingérez, centralisez, gouvernez et partagez les données.
+- **[Impliquer par le biais d’applications ](./apps.md):** Les utilisateurs accèdent à la connaissance par le biais d’applications et d’expériences. Donnez aux développeurs professionnels et citoyens les moyens de créer rapidement des applications.
 - **[Favoriser l’adoption](./ci-cd.md) :** Encouragez l’innovation en réduisant les frictions lors de l’adoption et du partenariat. Architecte pour la visibilité, la collaboration, la vitesse et les boucles de rétroaction.
 - **[Interagir avec les appareils](./devices.md) :** Les lignes numériques et physiques se sont estompées sur plusieurs canaux. Proposez des expériences impliquant des appareils, l’Internet des objets et la réalité mixte.
 - **[Prédire et influencer](./predict.md) :** Observez l’avenir pour rester à la pointe de l’innovation. Regardez au-delà des données actuelles pour donner du sens aux expériences et aux interactions au moyen d’outils prédictifs.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-La première discipline d’innovation à évaluer est la [démocratisation des données](./data.md).
+La première discipline d’innovation à considérer et à évaluer est la [démocratisation des données](./data.md).
 
 > [!div class="nextstepaction"]
 > [Démocratiser les données](./data.md)

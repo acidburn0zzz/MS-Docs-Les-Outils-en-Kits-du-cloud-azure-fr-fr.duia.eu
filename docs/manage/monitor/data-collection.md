@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3d8d6b656f6bfe8072b53dccc05a67479aa36f24
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0328ea8487817b9c8b74bda2200af9353a56e047
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548566"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979836"
 ---
-# <a name="cloud-monitoring-guide-collecting-the-right-data"></a>Guide de supervision du cloud : Collecte des données appropriées
+# <a name="cloud-monitoring-guide-collect-the-right-data"></a>Guide de supervision du cloud : Collecte des données appropriées
 
 Cet article décrit quelques éléments à prendre en compte pour la collecte de données de supervision dans une application cloud.
 
-Pour observer l’intégrité et la disponibilité de votre solution cloud, vous devez configurer les outils de supervision pour collecter un niveau de signaux basés sur des états de défaillance prévisibles. Ces signaux sont les symptômes de la défaillance, mais n’en sont pas la cause. Les outils de supervision utilisent des métriques et, dans le cas de diagnostics avancés et de l’analyse de la cause racine, ils utilisent également des journaux.
+Pour observer l’intégrité et la disponibilité de votre solution cloud, vous devez configurer les outils de supervision pour collecter un niveau de signaux basés sur des états de défaillance prévisibles. Ces signaux sont les symptômes de la défaillance, mais n’en sont pas la cause. Les outils de supervision utilisent des métriques et, dans le cas de diagnostics avancés et de l’analyse de la cause racine, des journaux.
 
 Planifiez la supervision et la migration avec soin. Commencez par inclure le propriétaire du service de supervision, le responsable de l’exploitation et d’autres personnes associées pendant la phase de planification, et continuez à les impliquer tout au long du cycle de développement et de publication. Leur but premier sera de développer une configuration de supervision basée sur les critères suivants :
 
@@ -36,16 +36,16 @@ La façon dont vous répondez à ces questions ainsi que les critères d’alert
 
 Le propriétaire et l’équipe du service de supervision suivent généralement un ensemble commun d’activités pour développer une configuration de supervision. Ces activités commencent dès les premières étapes de planification, se poursuivent via les tests et les validations dans un environnement hors production, et s’étendent jusqu’au déploiement en production. Les configurations de supervision sont dérivées des modes de défaillance connus, des résultats des tests de défaillances simulées et de l’expérience de plusieurs personnes au sein de l’organisation (Service Desk, exploitation, ingénieurs et développeurs). De telles configurations supposent que le service existe déjà, qu’il va faire l’objet d’une migration vers le cloud et qu’il n’a pas été réarchitecturé.
 
-Surveillez l’intégrité et la disponibilité de ces services dès le début du processus de développement, de façon à obtenir des résultats en matière de qualité du niveau de service. Si vous supervisez la conception de ce service ou de cette application a posteriori, vos résultats ne seront pas aussi satisfaisants.
+Pour les résultats en matière de qualité du niveau de service, surveillez l’intégrité et la disponibilité de ces services dès le début du processus de développement. Si vous supervisez la conception de ce service ou de cette application a posteriori, vos résultats ne seront pas aussi satisfaisants.
 
 Pour accélérer la résolution de l’incident, tenez compte des recommandations suivantes :
 
 - Définissez un tableau de bord pour chaque composant du service.
 - Utilisez des métriques pour guider le diagnostic approfondi, et pour identifier une solution ou un contournement du problème si vous ne pouvez pas déterminer une cause racine.
 - Utilisez les fonctionnalités d’exploration du tableau de bord ou prenez en charge la personnalisation de la vue pour l’examiner plus en détails.
-- Si vous avez besoin de journaux détaillés, les métriques doivent avoir permis de cibler les critères de recherche. Si ce n’est pas le cas, améliorez vos mesures pour l’incident suivant.
+- Si vous avez besoin de journaux détaillés, les métriques doivent avoir permis de cibler les critères de recherche. Si les mesures n’ont pas été utiles, améliorez-les pour l’incident suivant.
 
-L’adoption de cet ensemble de principes vous offre des insights en quasi temps réel ainsi qu’une meilleure gestion de votre service.
+L’adoption de cet ensemble de principes peut vous offrir des insights en quasi temps réel ainsi qu’une meilleure gestion de votre service.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
