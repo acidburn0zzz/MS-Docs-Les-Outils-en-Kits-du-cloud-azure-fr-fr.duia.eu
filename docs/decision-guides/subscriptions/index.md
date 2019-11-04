@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058721"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238793"
 ---
 # <a name="subscription-decision-guide"></a>Guide de décision concernant les abonnements
 
@@ -22,7 +22,7 @@ Une conception efficace des abonnements aide les organisations à établir une s
 
 Chaque ressource dans Azure, telle qu’une machine virtuelle ou une base de données, est associée à un abonnement. L’adoption d’Azure commence par la création d’un abonnement Azure, son association à un compte et le déploiement de ressources sur l’abonnement. Pour obtenir une vue d’ensemble de ces concepts, consultez [Concepts fondamentaux Azure](../../ready/considerations/fundamental-concepts.md).
 
-Avec la croissance de votre patrimoine numérique Azure, vous devrez probablement créer des abonnements supplémentaires pour répondre à vos besoins. Azure vous permet de définir une hiérarchie de groupes d’administration pour organiser vos abonnements et appliquer facilement la bonne stratégie aux bonnes ressources. Pour plus d’informations, consultez [Mise à l’échelle avec plusieurs abonnements Azure](../../ready/considerations/scaling-subscriptions.md).
+Avec la croissance de votre patrimoine numérique Azure, vous devrez probablement créer des abonnements supplémentaires pour répondre à vos besoins. Azure vous permet de définir une hiérarchie de groupes d’administration pour organiser vos abonnements et appliquer facilement la bonne stratégie aux bonnes ressources. Pour plus d’informations, consultez [Mise à l’échelle avec plusieurs abonnements Azure](../../ready/azure-best-practices/scaling-subscriptions.md).
 
 Voici quelques exemples de base de l’utilisation de groupes d’administration pour séparer différentes charges de travail :
 

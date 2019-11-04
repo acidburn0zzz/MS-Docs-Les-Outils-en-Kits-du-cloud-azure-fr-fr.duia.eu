@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548466"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240277"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Modèle de migration du Framework d’adoption du cloud
 
@@ -34,7 +34,7 @@ Il est important de vous faire une idée approximative de l’état final avant 
 
 ![Infographie des options de migration](../../_images/migrate/migration-options.png)
 
-Les efforts entrepris pour migrer et moderniser les charges de travail varient selon l’approche choisie. Ainsi, les migrations de *réhébergement* (« lift and shift ») utilisent simplement des fonctionnalités IaaS (infrastructure as a service) ne nécessitant aucun changement au niveau du code et des applications. En revanche, la *refactorisation* nécessite quelques changements minimes, tandis que la *réarchitecture* exige la modification et l’extension du code et des fonctionnalités des applications afin de tirer parti des technologies cloud.
+Les efforts entrepris pour migrer et moderniser les charges de travail varient selon l’approche choisie. Ainsi, les migrations de _réhébergement_ (également appelé _lift and shift_) utilisent simplement des fonctionnalités IaaS (infrastructure as a service) ne nécessitant aucun changement au niveau du code et des applications. En revanche, la _refactorisation_ nécessite quelques changements minimes, tandis que la _réarchitecture_ exige la modification et l’extension du code et des fonctionnalités des applications afin de tirer parti des technologies cloud.
 
 Les stratégies natives dans le cloud et les stratégies PaaS (platform as a service) *reconstruisent* des charges de travail locales à l’aide des offres de plateforme locales et de services gérés Azure. Les charges de travail ayant des offres équivalentes basées sur le cloud SaaS (software as a service) et entièrement gérées peuvent souvent être entièrement *remplacées* par ces services dans le cadre du processus de migration.
 

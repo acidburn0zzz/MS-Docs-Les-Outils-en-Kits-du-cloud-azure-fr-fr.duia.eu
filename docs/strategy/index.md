@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 layout: LandingPage
-ms.openlocfilehash: 1c112665ed11ba0f4e9ca205a5eec6bb719e95f9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e051b5272535ccb9fe080176e04859ccf20470c
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025985"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240057"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -98,7 +98,7 @@ Développez une étude de cas afin de valider le modèle financier prenant en ch
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Choisir le bon premier projet</h3>
-Votre premier projet cloud vous aidera à aligner les motivations avec un effort technique. Cet article peut vous aider à choisir votre premier projet judicieusement.
+Votre premier projet d’adoption du cloud vous aidera à aligner les motivations avec un effort technique. Cet article peut vous aider à choisir votre premier projet judicieusement.
                         </div>
                     </div>
                 </div>

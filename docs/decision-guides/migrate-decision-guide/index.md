@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: cdfa8ffe64ac7af6d545f9706f8f0652a4d583c4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: f493f53d2cc316a0e4ff7ae75211c5e41bc9d8a8
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047715"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238824"
 ---
 # <a name="migration-tools-decision-guide"></a>Guide de décision sur les outils de migration
 
@@ -42,5 +42,5 @@ Conformément à l’importance qui est donnée à la [migration incrémentielle
 
 - **[Principes de base du cloud : Vue d’ensemble des options de calcul Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview).** Fournit des informations sur les fonctionnalités des options de calcul Azure IaaS et PaaS.
 - **[Principes de base du cloud : Choisissez le bon magasin de données](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).** Décrit les options de stockage PaaS qui sont disponibles sur la plateforme Azure.
-- **[Migration à cadre étendu : Les besoins en stockage dépassent la capacité réseau lors d’une migration](../../migrate/expanded-scope/network-capacity-exceeded.md).** Décrit les autres mécanismes de migration de données pour les cas où la migration des données est entravée par la quantité de bande passante réseau disponible.
+- **[Migration à cadre étendu : Les besoins en données dépassent la capacité réseau lors d’une migration](../../migrate/expanded-scope/network-capacity-exceeded.md).** Décrit les autres mécanismes de migration de données pour les cas où la migration des données est entravée par la quantité de bande passante réseau disponible.
 - **[Base de données SQL : Choisir l’option SQL Server appropriée dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines).** Aborde les options et les justifications métier permettant de choisir entre une infrastructure hébergée (IaaS) ou un service hébergé (PaaS) pour héberger vos charges de travail SQL Server.

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 9f9ad2db240ad9453a8e337bdbc23f0122ebb9c5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048520"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239979"
 ---
 ::: zone target="docs"
 
@@ -42,7 +42,7 @@ Avant de migrer des ressources vers Azure, vous devez choisir la méthode de mig
 
 Ce guide vous explique les bases de la migration des applications et des ressources de votre environnement local vers Azure. Il est conçu pour les étendues de migration avec une complexité minimale. Pour savoir si ce guide est adapté à votre migration, consultez l’onglet **Quand utiliser ce guide**.
 
-Lorsque vous migrez vers Azure, vous pouvez migrer vos applications telles quelles à l’aide de solutions de machine virtuelle IaaS (connues sous le nom de migration de « réhébergement » ou « lift-and-shift »), ou utiliser des services managés et autres fonctionnalités cloud natives pour moderniser vos applications. Pour plus d’informations sur le choix à faire, consultez **Options de migration**. Lorsque vous développez votre stratégie de migration, vous pouvez vous poser les questions suivantes :
+Lorsque vous migrez vers Azure, vous pouvez migrer vos applications telles quelles à l’aide de solutions de machine virtuelle IaaS (connues sous le nom de migration de _réhébergement_ ou _lift-and-shift_), ou utiliser des services managés et autres fonctionnalités cloud natives pour moderniser vos applications. Pour plus d’informations sur le choix à faire, consultez **Options de migration**. Lorsque vous développez votre stratégie de migration, vous pouvez vous poser les questions suivantes :
 
 - Mes applications à migrer vont-elles fonctionner dans le cloud ?
 - Quelle est la meilleure stratégie (technologie, outils et migrations) pour mon application ? Pour plus d’informations, consultez le [guide de décision des outils de migration](../../decision-guides/migrate-decision-guide/index.md) du Framework d’adoption du cloud.
