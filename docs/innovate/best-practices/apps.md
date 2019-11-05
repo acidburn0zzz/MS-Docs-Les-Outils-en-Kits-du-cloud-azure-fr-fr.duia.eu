@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 86e1cbe87b81bcd68ff2a7e6ad6a4652674c9c5f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: f930f1b0f228b3969b89319962706104176717cc
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683463"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058610"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Outils d’implication par le biais d’applications dans Azure
 
@@ -31,7 +31,7 @@ Dans le cadre de cet article, nous partons du principe que toutes les inventions
 - **Expériences intelligentes :** créez des expériences modernes à l’aide de plateformes cloud pour accélérer le déploiement et raccourcir les boucles de rétroaction. Appuyez-vous sur des applications web pour infuser de l’intelligence ou même intégrer des bots.
 - **Cloud natif :** développez une nouvelle invention qui tire naturellement parti des fonctionnalités du cloud.
 
-Chaque voie présente des avantages et des inconvénients à long terme et à court terme. Quand les équipes de gouvernance cloud, des opérations cloud et du centre d’excellence du cloud sont prêtes à assurer un support pour chaque approche, l’adoption peut être accélérée avec un impact minimal sur les opérations durables de l’entreprise.
+Chaque voie présente des avantages et des inconvénients à long terme et à court terme. Quand les équipes respectives de gouvernance cloud, des opérations cloud et du centre d’excellence du cloud sont prêtes à assurer un support pour chaque approche, l’adoption peut être accélérée avec un impact minimal sur les opérations durables de l’entreprise.
 
 ## <a name="toolchain"></a>Chaîne d’outils
 

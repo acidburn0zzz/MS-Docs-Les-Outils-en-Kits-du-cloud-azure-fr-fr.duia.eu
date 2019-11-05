@@ -1,7 +1,7 @@
 ---
-title: 'Guide d’innovation Azure : Impliquer par le biais d’applications'
+title: 'Guide d’innovation Azure : Retenir les clients par le biais d’applications'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Apprenez à innover en vous engageant sur des applications à l’aide d’Azure.
+description: Apprenez à innover en retenant les clients par le biais d’applications à l’aide d’Azure
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -10,45 +10,47 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: df91d44d9b1efc2196b8b322c247dd39ef3d0d1e
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769360"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058556"
 ---
 ::: zone target="docs"
 
-# <a name="azure-innovation-guide-engage-through-apps"></a>Guide d’innovation Azure : Impliquer par le biais d’applications
+# <a name="azure-innovation-guide-engage-customers-through-apps"></a>Guide d’innovation Azure : Retenir les clients par le biais d’applications
 
 ::: zone-end
 
 ::: zone target="chromeless"
 
-# <a name="engage-through-apps"></a>Impliquer par le biais d’applications
+# <a name="engage-customers-through-apps"></a>Retenir les clients par le biais d’applications
 
 ::: zone-end
 
-L’innovation avec les applications comprend la modernisation de vos applications existantes hébergées en local, ainsi que la création d’applications cloud natives à l’aide de conteneurs ou de technologies sans serveur. En ce qui concerne la modernisation d’applications, Azure fournit des services PaaS comme Azure App Service pour moderniser facilement vos applications Web et API existantes écrites en .NET, .NET Core, Java, node. js, Ruby, Python ou PHP pour le déploiement dans Azure. Avec un modèle de conteneur standard ouvert, la création de microservices ou la mise en conteneur de vos applications existantes et leur déploiement sur Azure est simple grâce à des services gérés tels que les services Kubernetes Azure, Azure Container Instances et les Web App pour conteneurs. Les technologies sans serveur telles que Azure Functions et Azure Logic Apps vous aident à vous concentrer sur la création de votre application à l’aide d’un modèle de consommation (payez pour ce que vous utilisez) au lieu de déployer et de gérer l’infrastructure.
+L’innovation avec les applications comprend la modernisation de vos applications existantes qui sont hébergées en local et la création d’applications cloud natives en utilisant des conteneurs ou des technologies serverless. Azure fournit des services PaaS comme Azure App Service pour vous aider à moderniser facilement vos applications web et API existantes écrites en .NET, .NET Core, Java, Node.js, Ruby, Python ou PHP pour le déploiement dans Azure.
+
+Avec un modèle de conteneur standard ouvert, la création de microservices ou la mise en conteneur de vos applications existantes et leur déploiement sur Azure est simple lorsque vous utilisez des services gérés tels que Azure Kubernetes Service, Azure Container Instances et Web App pour conteneurs. Les technologies serverless telles que Azure Functions et Azure Logic Apps utilisent un modèle de consommation (payez pour ce que vous utilisez) et vous aident à vous concentrer sur la création de votre application plutôt que sur le déploiement et la gestion de votre infrastructure.
 
 <!-- markdownlint-disable MD025 -->
 
 # <a name="deliver-value-fastertabdelivervaluefaster"></a>[Offrir de la valeur plus rapidement](#tab/DeliverValueFaster)
 
-L’un des avantages des solutions basées sur le cloud est la possibilité de recueillir des commentaires plus rapidement et de commencer à fournir de la valeur à votre utilisateur final. Qu’il s’agisse d’un client externe ou d’un utilisateur de votre propre entreprise, plus vous pouvez obtenir des commentaires plus rapidement sur vos applications, mieux c’est.
+L’un des avantages des solutions informatiques est la possibilité de recueillir des commentaires plus rapidement et de commencer à fournir de la valeur à votre utilisateur. Qu’il s’agisse d’un client externe ou d’un utilisateur de votre propre entreprise, plus vite vous pouvez obtenir des commentaires sur vos applications, mieux c’est.
 
 ## <a name="azure-app-service"></a>Azure App Service
 
-Azure App Service fournit un environnement d’hébergement pour vos applications, ce qui élimine la charge de gestion de l’infrastructure et la mise à jour corrective du système d’exploitation. Il permet l’automatisation de la mise à l’échelle pour répondre aux besoins de vos utilisateurs, tout en étant délimité par vos soins pour assurer le contrôle des coûts.
+Azure App Service fournit un environnement d’hébergement pour vos applications, ce qui élimine la charge de gestion de l’infrastructure et la mise à jour corrective du système d’exploitation. Il permet l’automatisation de la mise à l’échelle pour répondre aux demandes de vos utilisateurs tout en respectant les limites que vous définissez pour maîtriser les coûts.
 
-Azure App Service offre une prise en charge de première classe pour des langages tels que ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP ou Python. Si vous devez héberger une autre pile d’exécution, Web App pour conteneurs vous permet d’héberger rapidement et facilement un conteneur Docker au sein de l’environnement Azure App Service, hébergeant ainsi votre pile de code personnalisée dans un environnement qui vous permet de vous sortir de l’activité du serveur.
+Azure App Service offre une prise en charge de première classe pour des langages tels que ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP ou Python. Si vous devez héberger une autre pile d’exécution, Web App pour conteneurs vous permet d’héberger rapidement et facilement un conteneur Docker au sein de l’environnement Azure App Service, afin que vous puisiez héberger votre pile de code personnalisée dans un environnement qui vous permet de vous sortir de l’activité du serveur.
 
 ### <a name="action"></a>Action
 
 Pour configurer ou surveiller les déploiements de Azure App Service :
 
 1. Accédez à **App Services**.
-2. Configurer un nouveau service : cliquez sur le lien **Ajouter +** et suivez les invites.
+2. Configurer un nouveau service : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer des services existants : Sélectionnez l’application souhaitée dans la liste des applications hébergées.
 
 ::: zone target="chromeless"
@@ -63,16 +65,16 @@ Pour configurer ou surveiller les déploiements de Azure App Service :
 
 ## <a name="azure-cognitive-services"></a>Azure Cognitive Services
 
-Azure Cognitive Services vous permet d’intégrer l’intelligence avancée directement dans votre application via un ensemble d’API, ce qui vous permet de tirer parti des algorithmes d’intelligence artificielle et de Machine Learning pris en charge par Microsoft.
+Grâce à Azure Cognitive Services, vous pouvez intégrer l’intelligence avancée directement dans votre application via un ensemble d’API qui vous permettent de tirer parti des algorithmes d’intelligence artificielle et d’apprentissage automatique pris en charge par Microsoft.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="action"></a>Action
 
-Pour configurer ou surveiller les déploiements de Azure Cognitive Service :
+Pour configurer ou surveiller les déploiements d’Azure Cognitive Services :
 
 1. Accédez à **Cognitive Services**.
-2. Configurer un nouveau service : cliquez sur le lien **Ajouter +** et suivez les invites.
+2. Configurer un nouveau service : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer des services existants : Sélectionnez le service souhaité dans la liste des services hébergés.
 
 ::: zone target="chromeless"
@@ -85,16 +87,16 @@ Pour configurer ou surveiller les déploiements de Azure Cognitive Service :
 
 ::: zone-end
 
-## <a name="azure-bot-services"></a>Azure Bot Services
+## <a name="azure-bot-service"></a>Azure Bot Service
 
-Les services Azure bot étendent votre application standard pour inclure une interface de bot naturelle qui utilise l’intelligence artificielle et le Machine Learning pour créer une nouvelle interaction pour vos clients.
+Azure Bot Service étend votre application standard en ajoutant une interface de bot naturelle qui utilise l’intelligence artificielle et l’apprentissage automatique pour créer une nouvelle façon d’interagir avec vos clients.
 
 ### <a name="action"></a>Action
 
 Pour configurer ou surveiller les déploiements de services Azure Bot :
 
 1. Accédez à **Services Bot**.
-2. Configurer un nouveau service : cliquez sur le lien **Ajouter +** et suivez les invites.
+2. Configurer un nouveau service : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer des services existants : Sélectionnez le bot souhaité dans la liste des services hébergés.
 
 ::: zone target="chromeless"
@@ -109,15 +111,15 @@ Pour configurer ou surveiller les déploiements de services Azure Bot :
 
 ## <a name="azure-devops"></a>Azure DevOps
 
-Pendant votre parcours d’innovation, vous vous retrouverez sur le chemin d’accès à DevOps. Microsoft a longtemps bénéficié d’un produit local connu sous le nom de Team Foundation Server (TFS). Au cours de notre propre cycle d’innovation, Microsoft a développé Azure DevOps pour être un service cloud qui fournit des outils de génération et de mise en production prenant en charge de nombreux langages et destinations différents pour vos versions. [Azure DevOps](https://docs.microsoft.com/azure/devops)
+Au cours de votre parcours d’innovation, vous serez éventuellement amené à vous engager sur la voie de DevOps. Microsoft a longtemps bénéficié d’un produit local connu sous le nom de Team Foundation Server (TFS). Au cours de notre propre cycle d’innovation, Microsoft a développé Azure DevOps, un service informatique qui fournit des outils de génération et de mise en production prenant en charge de nombreux langages et destinations pour vos versions. Pour plus d’informations, consultez [Azure DevOps](https://docs.microsoft.com/azure/devops).
 
 ## <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-Étant donné que la popularité des applications mobiles continue de croître, la nécessité d’une plate-forme capable de fournir des tests automatisés sur des appareils réels avec des configurations différentes augmente. Visual Studio App Center fournit non seulement un emplacement au sein duquel vous pouvez tester vos applications sur iOS, Android, Windows et macOS, mais il offre également une plateforme d’analyse avec la possibilité de tirer parti de Azure Application Insights pour obtenir rapidement et facilement des informations sur vos données de télémétrie. Pour plus d’informations, consultez la [vue d’ensemble du centre d’applications Visual Studio](https://docs.microsoft.com/appcenter).
+Étant donné que la popularité des applications mobiles continue de croître, la nécessité d’une plate-forme capable de fournir des tests automatisés sur des appareils réels avec des configurations différentes augmente. Visual Studio App Center ne fournit pas seulement un emplacement où vous pouvez tester vos applications pour iOS, Android, Windows et macOS. Il fournit également une plateforme de surveillance qui peut utiliser Azure Application Insights pour analyser vos données de télémétrie rapidement et facilement. Pour plus d’informations, consultez [Vue d’ensemble de Visual Studio App Center](https://docs.microsoft.com/appcenter).
 
-Visual Studio App Center fournit également un service de notification qui permet à un appel unique d’envoyer des notifications à votre application sur plusieurs plateformes sans avoir à contacter chaque service de notification individuellement. Pour plus d’informations, consultez [Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push).
+Visual Studio App Center fournit également un service de notification qui vous permet d’utiliser un appel unique pour envoyer des notifications à votre application sur plusieurs plateformes sans avoir à contacter chaque service de notification individuellement. Pour plus d’informations, consultez [Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push).
 
-### <a name="read-more"></a>En savoir plus
+### <a name="learn-more"></a>En savoir plus
 
 - [Vue d'ensemble d'App Service](https://docs.microsoft.com/azure/app-service/overview)
 - [Web Apps pour les conteneurs : Exécuter un conteneur personnalisé](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker)
@@ -130,45 +132,45 @@ Visual Studio App Center fournit également un service de notification qui perme
 - [Documentation du Kit Azure SDK pour Go](https://docs.microsoft.com/azure/go)
 - [Solutions DevOps](https://azure.microsoft.com/solutions/devops)
 
-# <a name="cloud-native-appstabcloudnative"></a>[Applications cloud natives](#tab/CloudNative)
+# <a name="create-cloud-native-appstabcloudnative"></a>[Créer des applications cloud natives](#tab/CloudNative)
 
 <!-- markdownlint-disable MD026 -->
 
 ## <a name="what-are-cloud-native-applications"></a>Présentation des applications cloud natives
 
-Les applications cloud natives sont entièrement créées, et optimisées pour l’échelle et les performances du cloud. Elles sont basées de façon souple sur des architectures de microservices, utilisent des services managés, sont observables et tirent parti d’une livraison continue pour gagner en fiabilité et accélérer la commercialisation. En général, elles sont portables et peuvent s’exécuter sur des environnements dynamiques tels que des clouds publics, privés et hybrides. Les applications cloud natives sont généralement créées à l’aide d’une ou de plusieurs des méthodes suivantes :
+Les applications cloud natives sont entièrement créées, et optimisées pour l’échelle et les performances du cloud. Elles sont basées de façon souple sur des architectures de microservices, utilisent des services managés, sont observables et tirent parti d’une livraison continue pour gagner en fiabilité et accélérer la commercialisation. Habituellement, elles sont portables et peuvent s’exécuter sur des environnements dynamiques tels que des clouds publics, privés et hybrides. Les applications cloud natives sont généralement créées à l’aide d’une ou de plusieurs des approches suivantes :
 
 - Microservices
 - Sans serveur
-- Conteneur
+- Containers
 
 ## <a name="microservices"></a>Microservices
 
-Les microservices constituent un style d’architecture logicielle dans laquelle les applications sont constituées de petits modules indépendants qui communiquent entre eux à l’aide de contrats d’API bien définis. Ces modules de services sont des blocs de construction hautement découplés qui sont assez petits pour mettre en œuvre une seule fonctionnalité. Les microservices vous aident à :
+Les microservices sont un style d’architecture logicielle dans laquelle les applications sont constituées de petits modules indépendants qui communiquent entre eux par l’intermédiaire de contrats d’API bien définis. Ces modules de services sont des blocs de construction hautement découplés qui sont assez petits pour mettre en œuvre une seule fonctionnalité. Les microservices vous aident à :
 
 - Générer des services de manière indépendante.
 - Mettre à l’échelle les services de manière autonome.
-- Utiliser les approches les plus appropriées pour le déploiement et le langage de programmation.
+- Utiliser les approches les plus appropriées pour le déploiement et les langages de programmation.
 - Isoler les points d’échec.
 - Offrir de la valeur plus rapidement.
 
 ### <a name="azure-kubernetes-service-aks"></a>Azure Kubernetes Service (AKS)
 
-Utilisez un service Kubernetes entièrement managé pour gérer le provisionnement, la mise à niveau et la mise à l’échelle des ressources de cluster à la demande. AKS facilite le déploiement et la gestion des applications en conteneur. Il offre une expérience d'intégration continue et de livraison continue (CI/CD) Kubernetes serverless, ainsi qu'une sécurité et une gouvernance de classe Entreprise. Réunissez vos équipes dédiées aux déploiements et aux opérations sur une même plateforme pour rapidement créer, livrer et mettre à l'échelle des applications en toute confiance.
+Utilisez un service Kubernetes complètement managé pour gérer l’approvisionnement, la mise à niveau et la mise à l’échelle des ressources de cluster à la demande. AKS facilite le déploiement et la gestion des applications en conteneur. Il offre une expérience d'intégration continue et de livraison continue (CI/CD) Kubernetes serverless, ainsi qu'une sécurité et une gouvernance de classe Entreprise. Réunissez vos équipes dédiées aux déploiements et aux opérations sur une même plateforme pour rapidement créer, livrer et mettre à l'échelle des applications en toute confiance.
 
 #### <a name="action"></a>Action
 
-Pour configurer ou superviser Azure Kubernetes Services :
+Pour configurer ou surveiller un service Azure Kubernetes :
 
-1. Accédez **Kubernetes Services**.
-2. Configurer un nouveau service : cliquez sur le lien **Ajouter +** et suivez les invites.
+1. Accédez à **Azure Kubernetes services**.
+2. Configurer un nouveau service : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer des services existants : Sélectionnez le service Kubernetes souhaité dans la liste.
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FmanagedClusters]" submitText="Go to Kubernetes Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FmanagedClusters]" submitText="Go to Azure Kubernetes services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -178,18 +180,18 @@ Pour configurer ou superviser Azure Kubernetes Services :
 
 ### <a name="azure-functions"></a>Azure Functions
 
-Azure Functions fournit une plateforme pour exécuter facilement des petits morceaux de code, ou fonctions avec le cloud. Les fonctions peuvent être un moyen de commencer à refactoriser votre code dans une architecture de microservices.
+Azure Functions fournit une plateforme pour exécuter facilement des petites unités de code ou de fonctions dans le cloud. Les fonctions peuvent être un moyen de commencer à refactoriser votre code dans une architecture de microservices.
 
-Le runtime d’Azure Functions prend en charge de nombreux langages, notamment C#, Java, JavaScript et Python. Pour une liste complète, consultez la page [Langages pris en charge dans Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages).
+Le runtime d’Azure Functions prend en charge de nombreux langages, notamment C#, Java, JavaScript et Python. Pour obtenir la liste complète, consultez [Langages pris en charge dans Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages).
 
-Un autre avantage des fonctions est la possibilité d’être déclenchées par des actions et des événements différents, tels que HTTPTriggers, TimerTriggers et des déclencheurs à partir d’autres services Azure tels que le stockage d’objets BLOB, EventGrid et ServiceBus. Pour plus d’informations sur les déclencheurs et les liaisons, consultez [Concepts des déclencheurs et liaisons Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
+Un autre avantage des fonctions est qu’elles peuvent être déclenchées par des actions et des événements différents, tels que HTTPTriggers, TimerTriggers et des déclencheurs provenant d’autres services Azure tels que Stockage Blob, Event Grid et Service Bus. Pour plus d’informations sur les déclencheurs et les liaisons, consultez [Concepts des déclencheurs et liaisons Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
 
 #### <a name="action"></a>Action
 
 Pour configurer ou surveiller les déploiements Azure Functions :
 
 1. Accédez à **Application de fonction**.
-2. Configurer une nouvelle application : cliquez sur le lien **Ajouter +** et suivez les invites.
+2. Configurer une nouvelle application : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer des applications existantes : Sélectionnez l’application souhaitée dans la liste des applications de fonction.
 
 ::: zone target="chromeless"
@@ -204,11 +206,11 @@ Pour configurer ou surveiller les déploiements Azure Functions :
 
 ## <a name="serverless-solutions"></a>Solutions sans serveur
 
-Créez des applications cloud natives sans approvisionner ni gérer d’infrastructure, grâce à une plateforme gérant la mise à l’échelle, la disponibilité et les performances pour vous. Les solutions sans serveur Azure présentent les avantages suivants :
+Créez des applications cloud natives sans approvisionner ni gérer d’infrastructure, grâce à une plateforme complètement managée gérant la mise à l’échelle, la disponibilité et les performances pour vous. Les solutions sans serveur Azure présentent les avantages suivants :
 
-- Amélioration de la vitesse de développement
-- Amélioration des performances d'équipe
-- Amélioration de l'impact à l'échelle de l'organisation
+- Amélioration de la rapidité de développement.
+- Amélioration des performances de l’équipe.
+- Amélioration de l’impact à l’échelle de l’organisation.
 
 ### <a name="azure-logic-apps"></a>Azure Logic Apps
 
@@ -216,11 +218,11 @@ Intégrez des données et des applications au lieu de créer du code d’intégr
 
 #### <a name="action"></a>Action
 
-Pour configurer ou surveiller Azure Logic Apps :
+Pour configurer ou surveiller les applications logiques Azure :
 
 1. Accédez à **Applications logiques**.
-2. Configurer une nouvelle application : cliquez sur le lien **Ajouter +** et suivez les invites.
-3. Gérer des applications existantes : Sélectionnez l’API logique souhaitée dans la liste.
+2. Configurer une nouvelle application : Sélectionnez **Ajouter** et suivez les invites.
+3. Gérer des applications existantes : Sélectionnez l’application logique souhaitée dans la liste.
 
 ::: zone target="chromeless"
 
@@ -234,21 +236,21 @@ Pour configurer ou surveiller Azure Logic Apps :
 
 ### <a name="serverless-api-management"></a>Gestion des API sans serveur
 
-Publiez, sécurisez, transformez, maintenez et surveillez des API à l'aide du service complètement managé Gestion des API Azure, qui offre un modèle d'utilisation conçu et implémenté pour les applications serverless.
+Publiez, sécurisez, transformez, tenez à jour et surveillez des API à l’aide du service complètement managé Gestion des API Azure, qui offre un modèle d’utilisation conçu et implémenté pour les applications serverless.
 
 #### <a name="action"></a>Action
 
 Pour configurer ou surveiller les services Gestion des API :
 
 1. Accédez aux **services Gestion des API**.
-2. Configurer un nouveau service : cliquez sur le lien **Ajouter +** et suivez les invites.
+2. Configurer un nouveau service : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer des services existants : Sélectionnez le service souhaité dans la liste.
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice]" submitText="Go to API Management Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice]" submitText="Go to API Management services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -256,18 +258,18 @@ Pour configurer ou surveiller les services Gestion des API :
 
 ## <a name="containers"></a>Containers
 
-En ce qui concerne la modernisation de votre portefeuille d’applications, Azure fournit différents services de conteneur pour déplacer vos applications existantes vers des conteneurs, et pour créer des applications de microservices natives en cloud afin de fournir à vos utilisateurs une valeur ajoutée plus rapidement. Utilisez des outils CI/CD et de développeur de bout en bout pour développer, mettre à jour et déployer vos applications conteneurisées. Gérez les conteneurs à l’échelle avec un service d’orchestration de conteneur Kubernetes entièrement géré qui s’intègre à Azure Active Directory. Quel que soit l’endroit où vous vous trouvez dans le parcours de votre application, accélérez le développement de vos applications conteneurisées tout en répondant aux exigences de sécurité.
+Pour moderniser votre portefeuille d’applications, Azure fournit différents services conteneurs pour migrer vos applications existantes vers des conteneurs et créer des applications de microservices cloud natives afin que vous puissiez offrir de la valeur à vos utilisateurs plus rapidement. Utilisez des outils CI/CD et de développeur de bout en bout pour développer, mettre à jour et déployer vos applications conteneurisées. Gérez les conteneurs à l’échelle avec un service d’orchestration de conteneur Kubernetes entièrement géré qui s’intègre à Azure Active Directory. Quel que soit l’endroit où vous vous trouvez dans le parcours de votre application, accélérez le développement de vos applications conteneurisées tout en répondant aux exigences de sécurité.
 
 ### <a name="azure-container-instances"></a>Azure Container Instances
 
-Exécutez des conteneurs Docker à la demande dans un environnement Azure serverless géré. Azure Container Instances (ACI) est une solution adaptée à tous les scénarios qui peut fonctionner dans des conteneurs isolés, sans orchestration. En exécutant vos charges de travail dans ACI, vous pouvez vous concentrer sur la conception et la création de vos applications au lieu de gérer l’infrastructure qui les exécute.
+Exécutez des conteneurs Docker à la demande dans un environnement Azure serverless géré. Azure Container Instances est une solution adaptée à tous les scénarios qui peut fonctionner dans des conteneurs isolés sans orchestration. Lorsque vous exécutez vos charges de travail dans Container Instances, vous pouvez vous concentrer sur la conception et la création de vos applications au lieu de gérer l’infrastructure qui les exécute.
 
 ### <a name="action"></a>Action
 
 Pour configurer ou surveiller des instances de conteneur :
 
 1. Accédez à **Container instances**.
-2. Configurer une nouvel instance de conteneur : cliquez sur le lien **Ajouter +** et suivez les invites.
+2. Configurer une nouvelle instance de conteneur : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer les instances de conteneur existantes : Sélectionnez l’instance de conteneur souhaitée dans la liste.
 
 ::: zone target="chromeless"
@@ -282,24 +284,24 @@ Pour configurer ou surveiller des instances de conteneur :
 
 ### <a name="azure-red-hat-openshift"></a>Azure Red Hat OpenShift
 
-Azure Red Hat OpenShift permet un déploiement flexible en libre-service de clusters OpenShift complètement managés. Maintenez la conformité réglementaire et concentrez-vous sur le développement de vos applications ; les nœuds principaux, les nœuds d'infrastructure et les nœuds d'application sont corrigés, mis à jour et surveillés par Microsoft et Red Hat. Choisissez vos propres solutions de registre, de mise en réseau, de stockage et CI/CD, commencez rapidement à utiliser les solutions intégrées avec la gestion automatisée du code source, les builds de conteneurs et d’applications, les déploiements, la mise à l’échelle, la gestion de l’intégrité et bien plus encore.
+Azure Red Hat OpenShift permet un déploiement flexible en libre-service de clusters OpenShift complètement managés. Tenez à jour la conformité réglementaire et concentrez-vous sur le développement de vos applications pendant que les nœuds principaux, les nœuds d’infrastructure et les nœuds d’application sont corrigés, mis à jour et surveillés par Microsoft et Red Hat. Choisissez vos propres solutions de registre, de mise en réseau, de stockage ou de CI/CD. Ou lancez-vous rapidement en utilisant des solutions intégrées avec gestion automatisée du code source, création de conteneurs et d’applications, déploiements, mise à l’échelle, gestion de l’intégrité, etc.
 
 **Accédez à [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)**
 
 # <a name="isolate-points-of-failuretabisolatepointsoffailure"></a>[Isoler les points d’échec](#tab/IsolatePointsOfFailure)
 
-Lorsque vous commencez à quitter la phase de test initiale, évaluez les façons d’isoler et de supprimer les points de défaillance. En raison de la nature distribuée du cloud Azure, vous pouvez concevoir votre application pour réduire les échecs tout en améliorant également les performances.
+Lorsque vous commencez à quitter la phase de test initiale, évaluez les façons d’isoler et de supprimer les points de défaillance. En raison de la nature distribuée de la plateforme cloud Azure, vous pouvez concevoir votre application de manière à réduire les défaillances tout en améliorant également le niveau de performance.
 
-## <a name="azure-front-door"></a>Azure Front Door
+## <a name="azure-front-door-service"></a>Azure Front Door Service
 
-Azure Front Door fournit un point d’entrée évolutif et sécurisé pour fournir votre application dans le monde entier. Azure Front Door combine l’optimisation du trafic pour obtenir de meilleures performances et un basculement global instantané. Azure Front Door doit être préféré à Traffic Manager si vous recherchez une terminaison de protocole TLS (« déchargement SSL ») ou un traitement de couche d’application par requête HTTP/HTTPS.
+Azure Front Door Service fournit un point d’entrée évolutif et sécurisé que vous pouvez utiliser pour mettre votre application à disposition dans le monde entier. Azure Front Door Service combine l’optimisation du trafic visant à obtenir un meilleur niveau de performance et un basculement mondial instantané. Vous devez utiliser Azure Front Door Service plutôt qu’Azure Traffic Manager si vous avez besoin d’une terminaison de protocole TLS (« déchargement SSL ») ou d’un traitement de couche d’application par requête HTTP/HTTPS.
 
 ### <a name="action"></a>Action
 
 Pour configurer ou surveiller les portes d’entrée :
 
 1. Accédez à **Portes d’entrée**.
-2. Configurer une nouvelle porte d’entrée  : cliquez sur le lien **Ajouter +** et suivez les invites.
+2. Configurer une nouvelle porte d’entrée : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer les portes d’entrée existantes : Sélectionnez la porte d’entrée souhaitée dans la liste.
 
 ::: zone target="chromeless"
@@ -314,14 +316,14 @@ Pour configurer ou surveiller les portes d’entrée :
 
 ## <a name="traffic-manager"></a>Traffic Manager
 
-Traffic Manager fournit un équilibrage de charge DNS qui peut être routé en fonction de différentes règles. Cela permet de garantir la résilience en cas d’échec de l’un des services déployés. Vous pouvez également empiler Traffic Manager pour utiliser le routage basé sur les défaillances et le routage basé sur les performances, ce qui offre la meilleure expérience possible en fonction de la géographie.
+Traffic Manager fournit un équilibrage de charge DNS qui peut être routé en fonction de différentes règles. Cette fonctionnalité permet de garantir la résilience en cas de défaillance de l’un des services déployés. Vous pouvez également empiler Traffic Manager pour utiliser le routage basé sur les défaillances et celui basé sur le niveau de performance afin d’offrir la meilleure expérience possible, en fonction de la géographie.
 
 ### <a name="action"></a>Action
 
 Pour configurer ou surveiller des profils Traffic Manager :
 
 1. Accédez à **Profils Traffic Manager**.
-2. Configurer un nouveau profil : cliquez sur le lien **Ajouter +** et suivez les invites.
+2. Configurer un nouveau profil : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer les profils existants : Sélectionnez le profil souhaité dans la liste.
 
 ::: zone target="chromeless"
@@ -336,14 +338,14 @@ Pour configurer ou surveiller des profils Traffic Manager :
 
 ## <a name="azure-content-delivery-network"></a>Azure Content Delivery Network
 
-Azure propose un réseau de distribution de contenu (CDN, Content Delivery Network) distribué qui vous permet de garantir la remise en temps voulu des ressources en les mettant à la disposition des utilisateurs finaux. Cette mise en cache permet d’améliorer l’expérience de vos clients et d’éviter les problèmes lors du téléchargement de contenu dû à des problèmes de réseau entre le point de terminaison CDN et le centre de données hébergeant votre application. Ce CDN peut également être utilisé par des applications qui ne sont pas hébergées dans Azure.
+Azure propose un réseau de distribution de contenu (CDN ou Content Delivery Network) distribué qui vous permet de garantir la remise des ressources en temps voulu en les mettant en cache près de vos utilisateurs. Cette mise en cache permet d’améliorer l’expérience de vos clients. Pendant le téléchargement du contenu, elle prévient également les problèmes causés par les incidents réseau susceptibles de survenir entre le point de terminaison CDN et le centre de données qui héberge votre application. Le CDN peut également être utilisé par des applications qui ne sont pas hébergées dans Azure.
 
 ### <a name="action"></a>Action
 
-Pour configurer ou surveiller des profils CDN :
+Pour configurer ou surveiller les profils CDN :
 
 1. Accédez à **Profils CDN**.
-2. Configurer un nouveau profil : cliquez sur le lien **Ajouter +** et suivez les invites.
+2. Configurer un nouveau profil : Sélectionnez **Ajouter** et suivez les invites.
 3. Gérer les profils existants : Sélectionnez le profil souhaité dans la liste.
 
 ::: zone target="chromeless"
@@ -356,7 +358,7 @@ Pour configurer ou surveiller des profils CDN :
 
 ::: zone-end
 
-### <a name="read-more"></a>En savoir plus
+### <a name="learn-more"></a>En savoir plus
 
 - [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
 - [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager)

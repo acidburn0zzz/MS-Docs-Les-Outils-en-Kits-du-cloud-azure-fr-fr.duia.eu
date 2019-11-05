@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549101"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888835"
 ---
 # <a name="cloud-governance-capabilities"></a>Compétences de gouvernance cloud
 
@@ -63,7 +63,7 @@ La compétence de gouvernance cloud est généralement assurée par une équipe 
 Voici les participants qui prennent fréquemment part aux activités de gouvernance cloud :
 
 - Les cadres intermédiaires et les contributeurs directs qui occupent des rôles clés, désignés pour représenter l’entreprise, aident dans l’évaluation des tolérances aux risques.
-- Les compétences de gouvernance cloud sont souvent une extension de la [compétence de stratégie cloud](./cloud-strategy.md). De la même façon que les dirigeants sont censés participer aux compétences de stratégie cloud, leurs collaborateurs direct sont censés participer aux activités de gouvernance cloud.
+- Les compétences de gouvernance cloud sont fournies par une extension de la [compétence de stratégie cloud](./cloud-strategy.md). De la même façon que les dirigeants sont censés participer aux compétences de stratégie cloud, leurs collaborateurs direct sont censés participer aux activités de gouvernance cloud.
 - Les employés de l’entreprise membres de la division qui travaillent en étroite collaboration avec la direction doivent être en mesure de prendre des décisions concernant les risques d’entreprise et techniques.
 - Les employés du service informatique et du service de la sécurité des informations qui comprennent les aspects techniques de la transformation cloud peuvent être sollicités ponctuellement au lieu d’assurer constamment les compétences de gouvernance cloud.
 

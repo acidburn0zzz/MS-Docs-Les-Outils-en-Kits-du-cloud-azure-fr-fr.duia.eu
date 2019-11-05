@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: bfa693155bb017f377b3a19c95c8cdb98ae3baa0
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769503"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048243"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Centres de données virtuels : perspective réseau
 
@@ -321,17 +321,17 @@ Les composants de type charge de travail désignent l’emplacement où résiden
 
 Les possibilités de charge de travail sont illimitées. Voici quelques-uns des innombrables types de charges de travail possibles :
 
-**Applications métier internes** : Les applications métiers sont des applications informatiques cruciales pour le fonctionnement continu d’une entreprise. Les applications métiers présentent certaines caractéristiques en commun :
+**Applications métier internes :** Les applications métiers sont des applications informatiques cruciales pour le fonctionnement continu d’une entreprise. Les applications métiers présentent certaines caractéristiques en commun :
 
-- Elles sont **interactives** par nature. Une fois que vous avez entré des données, des résultats ou des rapports sont retournés.
-- Elles sont **pilotées par les données**&mdash;Elles utilisent les données de manière intensive et accèdent fréquemment aux bases de données ou à d’autres types de stockage.
-- Elles sont **intégrées**&mdash;Elles assurent une intégration avec d’autres systèmes au sein ou en dehors de l’organisation.
+- **Interactives par nature :** Une fois que vous avez entré des données, des résultats ou des rapports sont retournés.
+- **Pilotées par les données :** Charges de travail gourmandes en données avec accès fréquent aux bases de données ou à d’autres types de stockage.
+- **Intégrées :** Charges de travail offrant une intégration avec d’autres systèmes au sein ou en dehors de l’organisation.
 
-**Sites web destinés aux clients (accessibles par Internet ou en interne)**  : La plupart des applications qui interagissent avec Internet sont des sites web. Azure permet d’exécuter un site web sur une machine virtuelle IaaS ou à partir d’un site [Azure Web Apps][WebApps] (PaaS). Azure Web Apps prend en charge l’intégration à des réseaux virtuels permettant le déploiement des applications web dans la zone réseau d’un rayon. Les sites web internes n’ont pas besoin d’exposer un point de terminaison Internet public, car les ressources sont accessibles par le biais d’adresses routables non-Internet privées à partir du réseau virtuel privé.
+**Sites web destinés aux clients (accessibles par Internet ou en interne) :** La plupart des applications qui interagissent avec Internet sont des sites web. Azure permet d’exécuter un site web sur une machine virtuelle IaaS ou à partir d’un site [Azure Web Apps][WebApps] (PaaS). Azure Web Apps prend en charge l’intégration à des réseaux virtuels permettant le déploiement des applications web dans la zone réseau d’un rayon. Les sites web internes n’ont pas besoin d’exposer un point de terminaison Internet public, car les ressources sont accessibles par le biais d’adresses routables non-Internet privées à partir du réseau virtuel privé.
 
-**Big Data/Analytique** : En cas de scale-up lié à un volume de données très important, il peut arriver que le scale-up des bases de données ne s’effectue pas correctement. La technologie Hadoop offre un système permettant d’exécuter des requêtes distribuées en parallèle sur un grand nombre de nœuds. Les clients ont la possibilité d’exécuter des charges de travail de données dans des machines virtuelles IaaS ou PaaS ([HDInsight][HDI]). HDInsight prend en charge le déploiement dans un réseau virtuel basé sur l’emplacement et peut être déployé sur un cluster dans un rayon du centre de données virtuel.
+**Big Data et Analytics :** En cas de scale-up lié à un volume de données très important, il peut arriver que le scale-up des bases de données ne s’effectue pas correctement. La technologie Hadoop offre un système permettant d’exécuter des requêtes distribuées en parallèle sur un grand nombre de nœuds. Les clients ont la possibilité d’exécuter des charges de travail de données dans des machines virtuelles IaaS ou PaaS ([HDInsight][HDI]). HDInsight prend en charge le déploiement dans un réseau virtuel basé sur l’emplacement et peut être déployé sur un cluster dans un rayon du centre de données virtuel.
 
-**Événements et messagerie** : [Azure Event Hubs][EventHubs] est un service d’ingestion de télémétrie hyperscale qui collecte, transforme et stocke des millions d’événements. En tant que plateforme de streaming distribuée, il offre une faible latence et une durée de rétention configurable vous permettant d’ingérer des quantités massives de données de télémétrie dans Azure et de lire les données de plusieurs applications. Le service Event Hubs prend en charge le traitement de pipelines en temps réel et par lots sur le même flux.
+**Événements et messagerie :** [Azure Event Hubs][EventHubs] est un service d’ingestion de télémétrie hyperscale qui collecte, transforme et stocke des millions d’événements. En tant que plateforme de streaming distribuée, il offre une faible latence et une durée de rétention configurable vous permettant d’ingérer des quantités massives de données de télémétrie dans Azure et de lire les données de plusieurs applications. Le service Event Hubs prend en charge le traitement de pipelines en temps réel et par lots sur le même flux.
 
 Vous pouvez implémenter un service de messagerie cloud à haut niveau de fiabilité entre applications et services via [Azure Service Bus][ServiceBus]. Il offre une messagerie répartie asynchrone entre le client et le serveur, une messagerie FIFO (premier entré, premier sorti) structurée ainsi que des fonctionnalités de publication et d’abonnement.
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b2ed1b072d5226649e5248e350edfa3578978c4c
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 5bd467e6e74ff1289a7db40add87a049d2b0697e
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769258"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047616"
 ---
 ::: zone target="docs"
 
@@ -29,30 +29,31 @@ ms.locfileid: "72769258"
 
 ::: zone-end
 
-En guise de pionnier, votre entreprise aura des insights sur les données, le comportement et les besoins de votre base de clients. L’étude de ces insights peut vous aider à prédire les besoins de votre client, avant qu’il n’en soit lui-même conscient. Cet article présente quelques approches permettant de fournir des solutions prédictives. Dans la section ultérieure, l’article présente des approches pour intégrer ces prédictions à votre solution afin d’influencer les comportements des clients.
+En tant que pionnier, votre entreprise a un aperçu des données, du comportement et des besoins de sa clientèle. L’étude de ces informations peut vous aider à prédire les besoins de vos clients, éventuellement avant qu’ils n’en soit eux-même conscients. Cet article présente quelques approches permettant de fournir des solutions prédictives. Dans la section finale, l’article présente des approches pour intégrer les prédictions à votre solution afin d’influencer les comportements des clients.
 
-Le tableau suivant est conçu pour vous aider à trouver la meilleure solution, en fonction de vos besoins d’implémentation.
+Le tableau suivant peut vous aider à trouver la meilleure solution, en fonction de vos besoins d’implémentation.
 
-|de diffusion en continu  |Modèles prédéfinis  |Créer et expérimenter  |Apprentissage et génération avec Python|Compétences requises|
+|Service  |Modèles prédéfinis  |Créer et expérimenter  |Apprendre et créer avec Python|Compétences requises|
 |---------|---------|---------|---------|---------|
-|Cognitive Services|OUI|Non|Non|Compétences des développeurs et des API|
+|Azure Cognitive Services|OUI|Non|Non|Compétences des développeurs et des API|
 |Azure Machine Learning Studio|OUI|OUI|Non|Compréhension générale des algorithmes prédictifs|
 |Service Azure Machine Learning|OUI|OUI|OUI|Scientifique des données|
 
 ## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Azure Cognitive Services](#tab/CognitiveServices)
 
-Le chemin le plus rapide et le plus simple des prédictions est Azure Cognitive Services. Cognitive Services permet d’effectuer des prédictions basées sur des modèles existants, ne nécessitant aucune formation supplémentaire. Ces services sont optimaux, lorsqu’il n’existe pas de scientifique des données pour l’apprentissage du modèle prédictif. Pour certains services, aucune formation n’est requise. D’autres nécessitent uniquement une formation minimale.
+La voie la plus rapide et la plus simple pour prédire les besoins des clients est Azure Cognitive Services. Cognitive Services permet d’effectuer des prédictions basées sur des modèles existants, ne nécessitant aucune formation supplémentaire. Ces services sont optimaux et efficaces lorsqu’il n’y a aucun spécialiste des données au sein du personnel pour effectuer l’apprentissage du modèle prédictif. Pour certains services, aucune formation n’est requise. D’autres nécessitent uniquement une formation minimale.
 
-Pour obtenir la liste des services disponibles et la quantité de formation requise, consultez [Cognitive Services et Machine Learning](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model).
+Pour obtenir la liste des services disponibles et connaître la quantité d’apprentissage pouvant être nécessaire, consultez [Cognitive Services et Machine Learning](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model).
 
 ### <a name="action"></a>Action
 
-Pour utiliser une API de service cognitif :
+Pour utiliser une API Cognitive Services :
 
-1. Accédez à **Cognitive Services**.
-2. Cliquez sur **Ajouter +** pour rechercher un service cognitif à partir de la place de marché.
-3. Si vous connaissez le nom du service que vous souhaitez utiliser, vous pouvez le saisir dans la zone de texte **Rechercher dans la place de marché**.
-4. Sinon, pour obtenir la liste des services cognitifs, cliquez sur le lien **Afficher plus** près de l’en-tête Cognitive Services.
+1. Dans le [Portail Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts), accédez à **Cognitive Services**.
+2. Sélectionnez **Ajouter** pour trouver une API Cognitive Services dans la Place de marché Azure.
+3. Effectuez l’une des actions suivantes :
+   * Si vous connaissez le nom du service que vous souhaitez utiliser, saisissez-le dans la zone **Rechercher dans la Place de marché**.
+   * Pour obtenir la liste des API Cognitive Services, cliquez sur le lien **Afficher plus** à côté du titre Cognitive Services.
 
 ::: zone target="chromeless"
 
@@ -72,17 +73,18 @@ Accédez directement à Cognitive Services dans le [portail Azure](https://porta
 
 ## <a name="azure-machine-learning-studiotabmachinelearningstudio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
 
-Si les modèles existants dans les services cognitifs ne sont pas alignés sur la prédiction souhaitée, Azure Machine Learning Studio peut offrir un moyen de créer les prédictions souhaitées, sans nécessiter de compétences en matière de science des données.
+Si les modèles existants dans Cognitive Services ne sont pas alignés sur votre prédiction souhaitée, Azure Machine Learning Studio peut offrir un moyen de créer les prédictions souhaitées, sans nécessiter les compétences d’un scientifique des données.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="action"></a>Action
 
-Vous pouvez utiliser un Azure Machine Learning Studio pour créer un modèle et faire des essais avec :
+Vous pouvez utiliser Azure Machine Learning Studio pour créer un modèle et l’expérimenter en procédant comme suit :
 
-1. Accédez à **Azure Machine Learning Studio**.
-2. Cliquez sur **Créer un espace de travail Machine Learning Studio** et suivez les instructions pour créer un espace de travail.
-3. Le nouvel espace de travail fournit une interface de glisser-déplacer pour créer un modèle et l’expérimenter, comme alternative à la formation profonde.
+1. Dans le [Portail Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces), accéder à **Azure Machine Learning Studio**.
+2. Sélectionnez **Créer un espace de travail Machine Learning Studio**, puis suivez les invites pour créer un espace de travail.
+
+   Le nouvel espace de travail fournit une interface de glisser-déplacer pour créer un modèle et l’expérimenter comme alternative à la formation approfondie.
 
 ::: zone target="chromeless"
 
@@ -102,21 +104,21 @@ Accédez directement à Azure Machine Learning Studio dans le [Portail Azure](ht
 
 ## <a name="azure-machine-learning-servicetabmachinelearningservice"></a>[Service Azure Machine Learning](#tab/MachineLearningService)
 
-Azure Machine Learning service fournit une approche basée sur le code plus poussée, nécessaire pour une formation plus poussée des jeux de données clients. À l’aide de langages tels que Python, les scientifiques des données peuvent former et créer un algorithme visant à prédire les besoins des clients.
+Azure Machine Learning service fournit une approche plus poussée basée sur le code qui est nécessaire pour une formation plus approfondie des jeux de données clients. À l’aide de langages informatiques tels que Python, les scientifiques des données peuvent effectuer l’apprentissage et créer un algorithme visant à prédire les besoins des clients.
 
 ### <a name="action"></a>Action
 
-Un scientifique des données peut utiliser un service Azure Machine Learning pour former et créer un modèle à l’aide de langages avancés tels que Python :
+Un scientifique des données peut utiliser Azure Machine Learning service pour créer un modèle et en effectuer l’apprentissage à l’aide de langages informatiques avancés tels que Python :
 
-1. Accédez à **Azure Machine Learning Service**.
-2. Cliquez sur **Créer des espaces de travail Machine Learning Service** et suivez les instructions pour créer un espace de travail.
-3. Le nouvel espace de travail offre une approche par code aux scientifiques de données pour former et concevoir des modèles exigeant des analytiques plus avancées pour prévoir les besoins des clients avec précision.
+1. Accédez à **Azure Machine Learning service**.
+2. Sélectionnez **Créer des espaces de travail Machine Learning service**, puis suivez les invites pour créer un espace de travail.
+3. Le nouvel espace de travail offre une approche axée sur le code aux scientifiques des données pour effectuer l’apprentissage et permettre la création de modèles exigeant des analytiques plus avancées pour prédire avec précision les besoins des clients.
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning service" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -130,6 +132,6 @@ Accédez directement à Azure Machine Learning Studio dans le [Portail Azure](ht
 
 ## <a name="influence"></a>Influence
 
-Toutes les approches mentionnées ci-dessus génèrent une API qui expose le modèle de prédiction aux applications. Au sein de votre solution, utilisez l’une de ces approches pour alimenter les données collectées à partir de votre client dans une API prédictive. Les résultats peuvent ensuite être intégrés à l’expérience client comme étape suivante suggérée.
+Toutes les approches mentionnées précédemment génèrent une API qui expose le modèle de prédiction aux applications. Au sein de votre solution, utilisez l’une de ces approches pour alimenter les données collectées auprès de votre client dans une API prédictive. Les résultats peuvent ensuite être intégrés à l’expérience client comme étape suivante suggérée.
 
-Les étapes suivantes tentent de mettre en forme les modèles de comportements des clients et d’influencer la manière dont ils réagissent. Étant donné que les étapes suivantes sont basées sur des algorithmes prédictifs, elles utilisent les clients précédents et les données disponibles pour prédire les besoins du client et répondre à ce besoin, souvent avant que celui-ci n’en soit même conscience.
+Ces étapes suivantes suggérées peuvent aider à façonner les modèles de comportement des clients et à influencer leur réaction. Comme ces étapes sont basées sur des algorithmes prédictifs, elles utilisent les besoins antérieurs des clients et les données disponibles pour prédire leurs besoins futurs et y répondre, souvent avant même que les clients eux-mêmes n’aient conscience du besoin en question.

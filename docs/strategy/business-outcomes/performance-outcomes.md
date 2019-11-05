@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a4f8c76abb36d0b3f410ed4d2027f9307d6c1f0c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: d772f7c8a2e7c76770a6496bb85acbac54debfe4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548672"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048347"
 ---
 # <a name="examples-of-performance-outcomes"></a>Exemples de résultats de performances
 
@@ -27,7 +27,7 @@ Les plus grands services de cloud computing s’exécutent sur un réseau de cen
 
 Transformez votre entreprise et réduisez les coûts grâce à une infrastructure écoénergétique couvrant plus de 100 installations hautement sécurisées dans le monde, reliées par l’un des plus grands réseaux au monde. Azure couvre plus de régions que tout autre fournisseur de cloud. Cela se traduit par l’échelle requise pour rapprocher les applications des utilisateurs dans le monde entier, en préservant la résidence des données et en offrant aux clients des options complètes de conformité et de résilience.
 
-- **Exemple 1** : Une société de services travaillait avec un fournisseur d’hébergement qui hébergeait plusieurs ressources d’infrastructure opérationnelle. Ces systèmes ont subi des pannes fréquentes et ont connu des performances médiocres. La société a migré ses ressources vers Azure pour tirer parti du contrat de niveau de service et des contrôles de performances du cloud. Le temps d’arrêt subi a coûté environ 15 000 USD par minute de panne. Avec quatre à huit heures d’interruption par mois, il était facile de justifier cette transformation organisationnelle.
+- **Exemple 1 :** Une société de services travaillait avec un fournisseur d’hébergement qui hébergeait plusieurs ressources d’infrastructure opérationnelle. Ces systèmes ont subi des pannes fréquentes et ont connu des performances médiocres. La société a migré ses ressources vers Azure pour tirer parti du contrat de niveau de service et des contrôles de performances du cloud. Le temps d’arrêt subi a coûté environ 15 000 USD par minute de panne. Avec quatre à huit heures d’interruption par mois, il était facile de justifier cette transformation organisationnelle.
 
 - **Exemple 2 :** Une société d’investissement de consommateurs se trouvait dans les premières étapes d’un effort d’innovation pour les applications prenant en charge le cloud. Les processus agiles et DevOps évoluaient bien, mais les performances de l’application étaient irrégulières. Dans le cadre d’une transformation plus mature, l’entreprise a lancé un programme pour surveiller et automatiser le dimensionnement en fonction des besoins d’utilisation. La société a pu éliminer les problèmes de dimensionnement à l’aide des outils de gestion des performances Azure, ce qui a entraîné une augmentation surprenante des transactions de 5 %.
 
@@ -41,7 +41,7 @@ Sauvegarde Azure est une solution simple qui réduit vos coûts d’infrastructu
 
 Azure Site Recovery simplifie le test de la récupération d’urgence en répliquant les applications entre les régions Azure. Vous pouvez également répliquer des machines virtuelles VMware et Hyper-V et des serveurs physiques locaux sur Azure pour qu’ils restent disponibles en cas de défaillance du site principal. Et vous pouvez récupérez les charges de travail sur le site principal lorsqu’il fonctionne à nouveau.
 
-- **Exemple**: Une société de pétrole et de gaz a utilisé des technologies Azure pour implémenter une récupération de site complète. L’entreprise a choisi de ne pas adopter pleinement le cloud pour les opérations quotidiennes, mais les fonctionnalités de récupération d’urgence et de continuité des activités du cloud ont continué de protéger son centre de données. Tandis qu’un ouragan se formait à des centaines de kilomètres, son partenaire d’implémentation a commencé la récupération du site vers Azure. Avant même que la tempête n’arrive, toutes les ressources critiques s’exécutaient dans Azure, évitant ainsi tout temps d’arrêt.
+- **Exemple :** Une société de pétrole et de gaz a utilisé des technologies Azure pour implémenter une récupération de site complète. L’entreprise a choisi de ne pas adopter pleinement le cloud pour les opérations quotidiennes, mais les fonctionnalités de récupération d’urgence et de continuité des activités du cloud ont continué de protéger son centre de données. Tandis qu’un ouragan se formait à des centaines de kilomètres, son partenaire d’implémentation a commencé la récupération du site vers Azure. Avant même que la tempête n’arrive, toutes les ressources critiques s’exécutaient dans Azure, évitant ainsi tout temps d’arrêt.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

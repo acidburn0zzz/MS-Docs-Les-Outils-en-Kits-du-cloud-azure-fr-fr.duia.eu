@@ -1,41 +1,43 @@
 ---
-title: L’innovation via l’adoption du cloud
+title: Innover via l’adoption du cloud
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: L’innovation via l’adoption du cloud
+description: Apprenez à innover via l’adoption du cloud à l’aide du Framework d’adoption du cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 718835335103130418f9fe75284adb7ceb94821c
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683474"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048442"
 ---
-# <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>L’innovation via l’adoption du cloud dans le Framework d’adoption du cloud
+# <a name="innovate-through-cloud-adoption"></a>Innover via l’adoption du cloud
 
-La migration cloud constitue une excellente option pour les charges de travail qui existent déjà dans un environnement. La création de produits et services nécessite une approche différente. La méthodologie d’innovation de ce framework établit une approche qui oriente le développement de nouveaux produits et services.
+La migration vers le cloud est une excellente option pour vos charges de travail existantes. Cependant, la création de produits et services nécessite une approche différente. La méthodologie Innover du Framework d’adoption du cloud établit une approche qui oriente le développement de nouveaux produits et services.
 
 ## <a name="motivations-behind-innovation"></a>Les motivations derrière l’innovation
 
-L’innovation ne doit pas être le chemin d’adoption choisi pour toutes les charges de travail. Ce passage à l’adoption du cloud requiert souvent un investissement plus important en matière de code personnalisé et de gestion des données. L’innovation prend également plus de temps que la migration, voire même de nombreuses formes de modernisation. Toutefois, ce passage est conseillé lorsque les clients ciblent les types suivants de résultats métiers :
+En matière d’adoption, l’innovation n’est pas le bon choix pour toutes les charges de travail. La voie de l’innovation requiert en général un investissement plus important en matière de code personnalisé et de gestion des données que les autres voies. L’innovation prend également plus de temps que la migration ou d’autres formes de modernisation. Ce cheminement est recommandé lorsque les clients ciblent les résultats opérationnels suivants :
 
-- Se préparer à de nouvelles capacités techniques
-- Mettre à l’échelle pour répondre aux besoins du marché
-- S’adapter à de nouvelles demandes géographiques
-- Développer de nouvelles capacités techniques
-- Améliorer l’expérience client/les engagements
-- Transformer des produits ou services
-- Proposer de nouveaux produits ou services sur le marché
+- Se préparer à de nouvelles capacités techniques.
+- Mettre à l’échelle pour répondre aux besoins du marché.
+- Mettre à l’échelle pour répondre aux besoins géographiques.
+- Créer des fonctionnalités techniques.
+- Améliorer les expériences client et les engagements utilisateur.
+- Transformer des produits ou services.
+- Proposer de nouveaux produits ou services sur le marché.
 
-## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Exemples de charges de travail courantes associés à une innovation cloud
+## <a name="workloads-associated-with-cloud-innovation"></a>Charges de travail associées à l’innovation du cloud
+
+Les charges de travail potentielles en matière d’innovation du cloud comprennent :
 
 - Applications personnalisées.
 - Expériences basées sur la technologie.
-- IoT : intégration de produits physiques et de technologies.
+- Intégration de produits physiques et de technologies utilisant l’IoT.
 - Intelligence ambiante : intégration de technologies non intrusives dans un environnement.
 - Cognitive Services : Big Data, IA, Machine Learning et solutions prédictives.
 

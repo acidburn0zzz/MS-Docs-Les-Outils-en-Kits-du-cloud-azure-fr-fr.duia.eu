@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 222768f457f566d1ba19f8c53814110595e03bf3
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379116"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980189"
 ---
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
@@ -159,7 +159,7 @@ Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses.
 - **Automatisation :** Il se peut que vous ayez des scripts s’exécutant régulièrement qui effectuent une action basée sur une valeur de balise telle que « HeureArrêt » ou « DateDéprovisionnement ».
 - **Facturation :** les étiquettes peuvent apparaître sur votre facture. Vous pouvez utiliser des balises comme « CentreCoûts » ou « FacturerÀ » pour faciliter la segmentation de votre facture.
 
-Chaque ressource ou groupe de ressources peut inclure un maximum de 15 paires nom/valeur de balise. Cette limitation s’applique uniquement aux balises directement appliquées au groupe de ressources ou à la ressource.
+Chaque ressource ou groupe de ressources peut inclure un maximum de 50 paires nom/valeur de balise. Cette limitation s’applique uniquement aux balises directement appliquées au groupe de ressources ou à la ressource.
 
 Pour obtenir d’autres recommandations et exemples de catégorisation, consultez l’[aide du Framework d’adoption du cloud au sujet de la catégorisation](../considerations/naming-and-tagging.md).
 

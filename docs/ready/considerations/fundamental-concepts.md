@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 02d4cf1218c6b00dd0d42dfb877af49a92498115
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548829"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048396"
 ---
 # <a name="azure-fundamental-concepts"></a>Concepts fondamentaux Azure
 
@@ -23,25 +23,25 @@ Découvrez les concepts fondamentaux et les termes qui sont utilisés dans Azure
 
 Il est utile de connaître les définitions suivantes lorsque vous commencez vos efforts d’adoption du cloud Azure :
 
-- **Ressource** : Une entité gérée par Azure. Les exemples incluent les machines virtuelles, les réseaux virtuels et les comptes de stockage Azure.
-- **Abonnement**: Un conteneur logique pour vos ressources. Chaque ressource Azure est associée à un seul abonnement. La création d’un abonnement est la première étape de l’adoption d’Azure.
-- **Compte Azure** : L’adresse de messagerie que vous fournissez lors de la création d’un abonnement Azure est le compte Azure associé à l’abonnement. Le tiers associé au compte de messagerie est responsable des coûts mensuels engendrés par les ressources de l’abonnement. Lorsque vous créez un compte Azure, vous fournissez vos informations de contact et vos détails de facturation, comme une carte de crédit. Vous pouvez utiliser le même compte Azure (adresse e-mail) pour plusieurs abonnements. Chaque abonnement est associé à un seul compte Azure.
-- **Administrateur de comptes** : Le tiers associé à l’adresse de messagerie utilisée pour créer un abonnement Azure. Il incombe à l’administrateur de compte de payer tous les coûts engendrés par les ressources de l’abonnement.
-- **Azure Active Directory** (Azure AD) : Un service Microsoft basé sur le cloud qui gère les identités et les accès. Azure AD permet à vos employés de se connecter et d’accéder aux ressources.
-- **Locataire Azure AD** : Une instance dédiée et approuvée d’Azure AD. Un locataire Azure AD est automatiquement créé quand votre organisation souscrit un abonnement à un service cloud Microsoft tel que Microsoft Azure, Microsoft Intune ou Office 365. Un locataire Azure représente une seule organisation.
-- **Annuaire Azure AD** : Chaque locataire Azure a un annuaire Azure AD dédié et approuvé. L’annuaire contient les utilisateurs, les groupes et les applications du locataire. Cet annuaire est utilisé pour exécuter des fonctions de gestion des identités et des accès en relation avec les ressources du client. Un répertoire peut être associé à plusieurs abonnements, mais chaque abonnement est associé à un seul répertoire.
-- **Groupes de ressources** : Des conteneurs logiques que vous utilisez pour regrouper les ressources associées dans un abonnement. Chaque ressource ne peut exister que dans un seul groupe de ressources.
-- **Groupes d’administration** : Conteneurs logiques que vous utilisez pour un ou plusieurs abonnements. Vous pouvez définir une hiérarchie de groupes d’administration, d’abonnements, de groupes de ressources et de ressources pour gérer efficacement l’accès, les stratégies et la conformité par le biais de l’héritage.
-- **Région** : Ensemble de centres de données Azure déployés au sein d’un périmètre défini par la latence. Les centres de données sont connectés via un réseau dédié, régional et à faible latence. La plupart des ressources Azure s’exécutent dans une région Azure spécifique.
+- **Ressource :** Une entité gérée par Azure. Les exemples incluent les machines virtuelles, les réseaux virtuels et les comptes de stockage Azure.
+- **Abonnement :** Un conteneur logique pour vos ressources. Chaque ressource Azure est associée à un seul abonnement. La création d’un abonnement est la première étape de l’adoption d’Azure.
+- **Compte Azure :** L’adresse de messagerie que vous fournissez lors de la création d’un abonnement Azure est le compte Azure associé à l’abonnement. Le tiers associé au compte de messagerie est responsable des coûts mensuels engendrés par les ressources de l’abonnement. Lorsque vous créez un compte Azure, vous fournissez vos informations de contact et vos détails de facturation, comme une carte de crédit. Vous pouvez utiliser le même compte Azure (adresse e-mail) pour plusieurs abonnements. Chaque abonnement est associé à un seul compte Azure.
+- **Administrateur de compte :** Le tiers associé à l’adresse de messagerie utilisée pour créer un abonnement Azure. Il incombe à l’administrateur de compte de payer tous les coûts engendrés par les ressources de l’abonnement.
+- **Azure Active Directory (Azure AD) :** Un service Microsoft basé sur le cloud qui gère les identités et les accès. Azure AD permet à vos employés de se connecter et d’accéder aux ressources.
+- **Locataire Azure AD :** Une instance dédiée et approuvée d’Azure AD. Un locataire Azure AD est automatiquement créé quand votre organisation souscrit un abonnement à un service cloud Microsoft tel que Microsoft Azure, Microsoft Intune ou Office 365. Un locataire Azure représente une seule organisation.
+- **Répertoire Azure AD :** Chaque locataire Azure a un annuaire Azure AD dédié et approuvé. L’annuaire contient les utilisateurs, les groupes et les applications du locataire. Cet annuaire est utilisé pour exécuter des fonctions de gestion des identités et des accès en relation avec les ressources du client. Un répertoire peut être associé à plusieurs abonnements, mais chaque abonnement est associé à un seul répertoire.
+- **Groupes de ressources :** Des conteneurs logiques que vous utilisez pour regrouper les ressources associées dans un abonnement. Chaque ressource ne peut exister que dans un seul groupe de ressources.
+- **Groupes d’administration :** Conteneurs logiques que vous utilisez pour un ou plusieurs abonnements. Vous pouvez définir une hiérarchie de groupes d’administration, d’abonnements, de groupes de ressources et de ressources pour gérer efficacement l’accès, les stratégies et la conformité par le biais de l’héritage.
+- **Région :** Ensemble de centres de données Azure déployés au sein d’un périmètre défini par la latence. Les centres de données sont connectés via un réseau dédié, régional et à faible latence. La plupart des ressources Azure s’exécutent dans une région Azure spécifique.
 
 ## <a name="azure-subscription-purposes"></a>Objectifs de l’abonnement Azure
 
 Un abonnement Azure remplit plusieurs fonctions. Un abonnement Azure est :
 
-- **Un accord légal**. Chaque abonnement est associé à une [offre Azure](https://azure.microsoft.com/support/legal/offer-details) (par exemple une version d’évaluation gratuite ou un paiement à l’utilisation). Chaque offre présente un plan tarifaire, des avantages et des conditions générales associées. Vous choisissez une offre Azure lorsque vous créez un abonnement.
-- **Un accord de paiement**. Lorsque vous créez un abonnement, vous fournissez des informations de paiement pour cet abonnement, comme un numéro de carte de crédit. Chaque mois, les coûts engendrés par les ressources déployées sur cet abonnement sont calculés et facturés par le biais de ce mode de paiement.
-- **Une limite d’échelle**. Des limites d’échelle sont définies pour un abonnement. Les ressources de l’abonnement ne peuvent pas dépasser les limites d’échelle définies. Par exemple, il existe une limite sur le nombre de machines virtuelles que vous pouvez créer dans un seul abonnement.
-- **Une limite administrative**. Un abonnement peut agir comme une limite pour l’administration, la sécurité et la stratégie. Azure fournit également d’autres mécanismes pour répondre à ces besoins, comme les groupes d’administration, les groupes de ressources et le contrôle d’accès en fonction du rôle.
+- **Un accord légal.** Chaque abonnement est associé à une [offre Azure](https://azure.microsoft.com/support/legal/offer-details) (par exemple une version d’évaluation gratuite ou un paiement à l’utilisation). Chaque offre présente un plan tarifaire, des avantages et des conditions générales associées. Vous choisissez une offre Azure lorsque vous créez un abonnement.
+- **Un accord de paiement.** Lorsque vous créez un abonnement, vous fournissez des informations de paiement pour cet abonnement, comme un numéro de carte de crédit. Chaque mois, les coûts engendrés par les ressources déployées sur cet abonnement sont calculés et facturés par le biais de ce mode de paiement.
+- **Une limite d’échelle.** Des limites d’échelle sont définies pour un abonnement. Les ressources de l’abonnement ne peuvent pas dépasser les limites d’échelle définies. Par exemple, il existe une limite sur le nombre de machines virtuelles que vous pouvez créer dans un seul abonnement.
+- **Une limite administrative.** Un abonnement peut agir comme une limite pour l’administration, la sécurité et la stratégie. Azure fournit également d’autres mécanismes pour répondre à ces besoins, comme les groupes d’administration, les groupes de ressources et le contrôle d’accès en fonction du rôle.
 
 ## <a name="azure-subscription-considerations"></a>Considérations relatives aux abonnements Azure
 

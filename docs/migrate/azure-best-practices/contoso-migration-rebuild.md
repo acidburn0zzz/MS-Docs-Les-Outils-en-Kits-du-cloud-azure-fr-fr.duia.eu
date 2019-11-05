@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548221"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058572"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Regénérer une application locale sur Azure AD
 
@@ -132,11 +132,11 @@ Voici comment Contoso exécutera la migration :
 Les administrateurs de Contoso exécutent un script de déploiement pour créer le cluster Kubernetes managé à l’aide d’AKS et d’Azure Container Registry (ACR).
 
 - Les instructions de cette section utilisent le référentiel **SmartHotel360-Azure-backend**.
-- Le référentiel GitHub **SmartHotel360-Azure-backend** contient tous les logiciels pour cette partie du déploiement.
+- Le référentiel GitHub **SmartHotel360-Azure-backend** contient tous les logiciels pour cette partie du déploiement.  
 
 ### <a name="prerequisites"></a>Prérequis
 
-1. Avant de commencer, les administrateurs de Contoso s’assurent que les logiciels requis sont installés sur la machine de développement qu’ils utilisent pour le déploiement.
+1. Avant de commencer, les administrateurs de Contoso s’assurent que tous les logiciels requis sont installés sur la machine de développement qu’ils utilisent pour le déploiement.
 2. Ils clonent le référentiel localement sur la machine de développement à l’aide de Git : `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
 
 ### <a name="provision-aks-and-acr"></a>Provisionner AKS et ACR
@@ -152,7 +152,7 @@ Les administrateurs de Contoso effectuent le provisionnement comme suit :
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. Dans le terminal intégré PowerShell, ils se connectent à Azure à l’aide de la commande Connect-AzureRmAccount. [En savoir plus](https://docs.microsoft.com/powershell/azure/get-started-azureps) sur la mise en route avec PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. Ils authentifient Azure CLI en exécutant la commande **az login**, et en suivant les instructions pour s’authentifier à l’aide de leur navigateur web. [En savoir plus](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sur la connexion avec Azure CLI.
+6. Ils authentifient Azure CLI en exécutant la commande `az login`, et en suivant les instructions pour s’authentifier à l’aide de leur navigateur web. [En savoir plus](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sur la connexion avec Azure CLI.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. Ils exécutent la commande suivante, en passant le nom de groupe de ressources ContosoRG, le nom du cluster AKS smarthotel-aks-eus2, et le nouveau nom de registre.
 
@@ -178,7 +178,9 @@ Les administrateurs de Contoso effectuent le provisionnement comme suit :
 
 11. Ils exécutent la commande suivante pour démarrer le tableau de bord Kubernetes :
 
-    **az aks browse --resource-group ContosoRG --name smarthotelakseus2**
+    ```console
+    az aks browse --resource-group ContosoRG --name smarthotelakseus2
+    ```
 
 12. Un onglet de navigateur s’ouvre sur le tableau de bord. Il s’agit d’une connexion par tunnel utilisant Azure CLI.
 
@@ -278,7 +280,7 @@ Les administrateurs de Contoso doivent à présent procéder comme suit :
 - Déployer les microservices sur le cluster AKS.
 - Dans un premier temps, ils mettent à jour les chaînes de connexion en fonction des microservices à l’aide d’Azure DevOps. Ensuite, ils configurent un nouveau pipeline de mise en production Azure DevOps pour déployer les microservices.
 - Les instructions de cette section utilisent le référentiel [SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend).
-- Notez que certains paramètres de configuration (par exemple Active Directory B2C) ne sont pas évoqués dans cet article. Pour plus d’informations sur ces paramètres, consultez le dépôt.
+- Certains paramètres de configuration (par exemple Active Directory B2C) ne sont pas évoqués dans cet article. Pour plus d’informations sur ces paramètres, consultez le référentiel ci-dessus.
 
 Ils créent le pipeline :
 

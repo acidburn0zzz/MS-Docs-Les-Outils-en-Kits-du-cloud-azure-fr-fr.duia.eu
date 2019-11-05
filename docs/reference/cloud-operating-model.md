@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8d9bce8b12b3054c2f4a6aa0421e1d30d5011860
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032368"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048138"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Le modèle Cloud Operating Model fait désormais partie du Framework d’adoption du cloud Microsoft pour Azure
 
@@ -26,9 +26,9 @@ En octobre 2018, nous avons commencé à examiner tous les modèles qui étaien
 
 Pour une approche similaire au COM, les lecteurs doivent commencer par l’un des éléments suivants :
 
-- [Bien démarrer avec la migration vers le cloud](../getting-started/migrate.md)
-- [Bien démarrer avec l’innovation dans le cloud](../getting-started/innovate.md)
-- [Favoriser la réussite de l’adoption](../getting-started/enable.md)
+- [Commencer un parcours de migration vers le cloud](../getting-started/migrate.md)
+- [Innover via l’adoption du cloud](../getting-started/innovate.md)
+- [Réussir l’adoption du cloud](../getting-started/enable.md)
 
 Les conseils fournis précédemment dans le modèle COM sont toujours pertinents dans le cadre de l’adoption du Framework d’adoption du cloud. L’expérience est différente, mais la structure du Framework d’adoption du cloud est simplement une prolongation de ces conseils. Pour passer du modèle COM au Framework d’adoption du cloud, il est important d’en comprendre la portée et la structure. Les deux sections suivantes décrivent cette transition.
 

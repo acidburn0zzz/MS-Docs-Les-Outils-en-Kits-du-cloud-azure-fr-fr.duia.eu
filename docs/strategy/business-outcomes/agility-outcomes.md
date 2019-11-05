@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3fb87179de2dac492b506f8aba610cc52d69a751
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548702"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048068"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exemples de résultats souhaités en termes d’agilité 
 
@@ -33,7 +33,7 @@ Pour les entreprises bien implantées et les nouveaux venus, l’agilité métie
 
 Pendant les efforts d’innovation dans le cloud, le Time-to-market est une mesure essentielle de la capacité du service informatique à répondre aux changements de marché. Dans de nombreux cas, un responsable d’entreprise peut avoir un budget existant pour la création d’une application ou le lancement d’un nouveau produit. Le fait de communiquer clairement un avantage Time-to-market peut inciter ce responsable à rediriger le budget vers le parcours de transformation du service informatique.
 
-- **Exemple 1** : La division européenne d’une société américaine doit se conformer aux réglementations RGPD en protégeant les données client dans une base de données qui prend en charge les opérations du Royaume-Uni. La version existante de SQL ne prend pas en charge la sécurité au niveau des lignes nécessaire. Une mise à niveau sur place serait trop disruptive. En utilisant Azure SQL pour répliquer et mettre à niveau la base de données, le client ajoute la mesure de conformité nécessaire en quelques semaines.
+- **Exemple 1 :** La division européenne d’une société américaine doit se conformer aux réglementations RGPD en protégeant les données client dans une base de données qui prend en charge les opérations du Royaume-Uni. La version existante de SQL ne prend pas en charge la sécurité au niveau des lignes nécessaire. Une mise à niveau sur place serait trop disruptive. En utilisant Azure SQL pour répliquer et mettre à niveau la base de données, le client ajoute la mesure de conformité nécessaire en quelques semaines.
 
 - **Exemple 2 :** Une société de logistique a découvert un segment inexploité du marché, mais elle a besoin d’une nouvelle version de son application phare pour capturer cette part de marché. Son plus grand concurrent a effectué la même découverte. Grâce à l’exécution d’un effort d’innovation pour les applications cloud, la société adopte l’obsession du client et une approche de développement orientée DevOps pour devancer son concurrent de _x_ mois. Ce saut à l’entrée du marché a permis de sécuriser la base de clients.
 
@@ -48,7 +48,7 @@ Pendant les efforts d’innovation dans le cloud, le Time-to-market est une mesu
 
 Lorsque l’entreprise exige de nouveaux services informatiques ou une mise à l’échelle vers des services existants, l’acquisition et le provisionnement de nouveaux matériels ou de nouvelles ressources virtuelles peuvent prendre plusieurs semaines. Après la migration vers le cloud, le service informatique peut plus facilement activer le provisionnement en libre-service, ce qui permet une mise à l’échelle de l’entreprise en quelques heures seulement.
 
-- **Exemple**: Une société de produits de grande consommation requiert la création et la destruction de centaines de clusters de bases de données par an pour répondre à ses besoins opérationnels. Les hôtes virtuels locaux peuvent être configurés rapidement, mais le processus de récupération des ressources virtuelles est lent et oblige l’équipe à y consacrer de nombreuses heures. Par conséquent, l’environnement local hérité subit un ballonnement et peut difficilement suivre la demande. Après la migration vers le cloud, le service informatique peut plus facilement fournir un script de provisionnement autonome des ressources, avec une approche de rétrofacturation. Tout cela permet à l’entreprise d’effectuer la migration aussi rapidement que nécessaire, tout en restant responsable du coût des ressources qu’elle demande. De cette façon, dans le cloud, vous limitez les déploiements au budget de l’entreprise uniquement.
+- **Exemple :** Une société de produits de grande consommation requiert la création et la destruction de centaines de clusters de bases de données par an pour répondre à ses besoins opérationnels. Les hôtes virtuels locaux peuvent être configurés rapidement, mais le processus de récupération des ressources virtuelles est lent et oblige l’équipe à y consacrer de nombreuses heures. Par conséquent, l’environnement local hérité subit un ballonnement et peut difficilement suivre la demande. Après la migration vers le cloud, le service informatique peut plus facilement fournir un script de provisionnement autonome des ressources, avec une approche de rétrofacturation. Tout cela permet à l’entreprise d’effectuer la migration aussi rapidement que nécessaire, tout en restant responsable du coût des ressources qu’elle demande. De cette façon, dans le cloud, vous limitez les déploiements au budget de l’entreprise uniquement.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

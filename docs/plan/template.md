@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bd26321eca1747e5ed579e4394b0a4b7b713294
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549188"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048214"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan d’adoption du cloud et Azure DevOps
 
@@ -45,10 +45,10 @@ Pour préparer votre station de travail pour des modifications en bloc, consulte
 
 Le plan d’adoption du cloud organise les activités par type d’activité :
 
-- **Épopées** : Une *épopée* représente une phase globale du cycle de vie d’adoption du cloud.
-- **Fonctionnalités** : Les fonctionnalités permettent d’organiser des objectifs spécifiques au sein de chaque phase. Par exemple, la migration d’une charge de travail spécifique est une fonctionnalité.
-- **Récits utilisateur** : Les récits utilisateur regroupent le travail en collections logiques d’activités basées sur un objectif spécifique.
-- **Tâches** : Les tâches correspondent au véritable travail à effectuer.
+- **Épopées :** Une *épopée* représente une phase globale du cycle de vie d’adoption du cloud.
+- **Fonctionnalités :** Les fonctionnalités permettent d’organiser des objectifs spécifiques au sein de chaque phase. Par exemple, la migration d’une charge de travail spécifique est une fonctionnalité.
+- **Récits utilisateur :** Les récits utilisateur regroupent le travail en collections logiques d’activités basées sur un objectif spécifique.
+- **Tâches :** Les tâches correspondent au véritable travail à effectuer.
 
 Sur chaque couche, les activités sont ensuite séquencées en fonction des dépendances. Les activités sont liées à des articles fournis dans le Framework d’adoption du cloud pour clarifier l’objectif ou la tâche en cours.
 
