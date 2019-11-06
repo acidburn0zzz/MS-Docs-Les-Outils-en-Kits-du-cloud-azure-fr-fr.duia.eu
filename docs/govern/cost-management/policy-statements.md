@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: efc105298462afa9dfac76f0505854fdc157c17d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220944"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566400"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Exemples d’instructions de la stratégie de gestion des coûts
 
 Les instructions de stratégie cloud individuelles sont des recommandations destinées à traiter des risques spécifiques identifiés lors de votre processus d’évaluation des risques. Ces instructions doivent fournir un bref récapitulatif des risques, ainsi que des plans établis pour les gérer. Chaque définition d’instruction doit inclure les informations suivantes :
 
-- **Risque métier.** un récapitulatif du risque que cette stratégie gérera.
-- **Instruction de stratégie.** Une explication succincte claire des exigences de la stratégie.
-- **Options de conception.** Recommandations exploitables, spécifications ou autres conseils que des équipes informatiques et des développeurs peuvent utiliser lors de l’implémentation de la stratégie.
+- **Risque métier :** un récapitulatif du risque que cette stratégie gérera.
+- **Instruction de stratégie :** Une explication succincte claire des exigences de la stratégie.
+- **Options de conception :** Recommandations exploitables, spécifications ou autres conseils que des équipes informatiques et des développeurs peuvent utiliser lors de l’implémentation de la stratégie.
 
 Les exemples d’instructions de stratégie suivants traitent des risques courants liés aux coûts. Ces instructions sont des exemples que vous pouvez réutiliser lorsque vous rédigez des instructions de stratégie pour répondre aux besoins de votre organisation. Ces exemples ne sont pas destinés à être normatifs, et il existe potentiellement plusieurs options de stratégie pour gérer chaque risque identifié. Travaillez en étroite collaboration avec les équipes métier et les équipes informatiques afin d’identifier les meilleures stratégies pour vos propres risques.
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8e58aea5c0d3b77cd194f8bd8919f43143ab18a4
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 052c723372830791c9baaf490e43ac373ea05760
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979940"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656561"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Établir des pratiques de gestion opérationnelle dans le cloud
 
@@ -32,16 +32,16 @@ Ces deux bonnes pratiques s'articulent autour d'une méthodologie de gestion des
 
 ![Méthodologie de gestion dans le Framework d’adoption cloud](../_images/manage/caf-manage.png)
 
-**Alignement de l'entreprise** : Dans la méthodologie de gestion, toutes les charges de travail sont classées par état critique et valeur commerciale. Cette classification peut alors être mesurée dans une analyse d’impact, qui calcule la valeur perdue associée à une dégradation des performances ou des interruptions d’activité. À l’aide de cet impact tangible sur le chiffre d’affaires, les équipes des opérations cloud peuvent collaborer avec l’entreprise pour s’engager à équilibrer les coûts et les performances.
+**Alignement de l’entreprise :** Dans la méthodologie de gestion, toutes les charges de travail sont classées par état critique et valeur commerciale. Cette classification peut alors être mesurée dans une analyse d’impact, qui calcule la valeur perdue associée à une dégradation des performances ou des interruptions d’activité. À l’aide de cet impact tangible sur le chiffre d’affaires, les équipes des opérations cloud peuvent collaborer avec l’entreprise pour s’engager à équilibrer les coûts et les performances.
 
-**Disciplines des opérations cloud** : Une fois l'entreprise alignée, il est beaucoup plus facile de suivre et de créer des rapports sur les disciplines appropriées des opérations cloud pour chaque charge de travail. La prise de décision dans le cadre de chaque discipline peut ensuite être convertie en conditions d'engagement facilement compréhensibles pour l'entreprise. Cette approche collaborative permet aux parties prenantes de l’entreprise d’agir en partenaires pour trouver le juste équilibre entre les coûts et les performances.
+**Disciplines des opérations cloud :** Une fois l'entreprise alignée, il est beaucoup plus facile de suivre et de créer des rapports sur les disciplines appropriées des opérations cloud pour chaque charge de travail. La prise de décision dans le cadre de chaque discipline peut ensuite être convertie en conditions d'engagement facilement compréhensibles pour l'entreprise. Cette approche collaborative permet aux parties prenantes de l’entreprise d’agir en partenaires pour trouver le juste équilibre entre les coûts et les performances.
 
-- **Inventaire et visibilité** : La gestion des opérations doit pouvoir au moins faire l’inventaire des ressources et créer une visibilité sur l’état d’exécution de chaque ressource.
-- **Conformité opérationnelle** : Une gestion régulière de la configuration, du dimensionnement, du coût et des performances des ressources est essentielle pour assurer les performances attendues.
-- **Protection et récupération** : La réduction des interruptions d'activité et l'accélération de la récupération permettent à l'entreprise d'éviter les pertes de performances et les impacts négatifs sur son chiffre d'affaires. La détection et la récupération sont des aspects essentiels de cette discipline.
-- **Opérations de plateforme** : Tous les environnements informatiques contiennent un ensemble de plateformes couramment utilisées. Ces plateformes peuvent inclure des magasins de données de type SQL Server ou Azure HDInsight. D'autres plateformes courantes peuvent inclure des solutions de conteneur comme Azure Kubernetes Service (AKS). Quelle que soit la plateforme, la maturité des opérations de plateforme est ciblée sur la personnalisation des opérations en fonction de la façon dont les plateformes communes sont déployées, configurées et utilisées par les charges de travail.
-- **Opérations de charge de travail** : Au niveau le plus élevé de la maturité opérationnelle, les équipes des opérations cloud sont en mesure de paramétrer des opérations pour les charges de travail qui sont essentielles à la réussite de l'entreprise. Pour ces charges de travail hautement stratégiques, les données disponibles peuvent aider à automatiser la correction, le dimensionnement ou la protection des charges de travail en fonction de leur utilisation.
+- **Inventaire et visibilité :** La gestion des opérations doit pouvoir au moins faire l’inventaire des ressources et créer une visibilité sur l’état d’exécution de chaque ressource.
+- **Conformité opérationnelle :** Une gestion régulière de la configuration, du dimensionnement, du coût et des performances des ressources est essentielle pour assurer les performances attendues.
+- **Protection et récupération :** La réduction des interruptions d'activité et l'accélération de la récupération permettent à l'entreprise d'éviter les pertes de performances et les impacts négatifs sur son chiffre d'affaires. La détection et la récupération sont des aspects essentiels de cette discipline.
+- **Opérations de plateforme :** Tous les environnements informatiques contiennent un ensemble de plateformes couramment utilisées. Ces plateformes peuvent inclure des magasins de données de type SQL Server ou Azure HDInsight. D'autres plateformes courantes peuvent inclure des solutions de conteneur comme Azure Kubernetes Service (AKS). Quelle que soit la plateforme, la maturité des opérations de plateforme est ciblée sur la personnalisation des opérations en fonction de la façon dont les plateformes communes sont déployées, configurées et utilisées par les charges de travail.
+- **Opérations de charge de travail :** Au niveau le plus élevé de la maturité opérationnelle, les équipes des opérations cloud sont en mesure de paramétrer des opérations pour les charges de travail qui sont essentielles à la réussite de l'entreprise. Pour ces charges de travail hautement stratégiques, les données disponibles peuvent aider à automatiser la correction, le dimensionnement ou la protection des charges de travail en fonction de leur utilisation.
 
-Vous pouvez consulter des conseils supplémentaires comme le [Framework de révision de la conception (nom de code : Principes de conception dans le cloud)](https://docs.microsoft.com/azure/architecture/reliability) pour vous aider à prendre des décisions architecturales détaillées concernant chaque charge de travail, dans les disciplines décrites précédemment.
+Vous pouvez consulter des conseils supplémentaires comme le [Framework de révision de la conception (nom de code : Principes de conception dans le cloud)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview) pour vous aider à prendre des décisions architecturales détaillées concernant chaque charge de travail, dans les disciplines décrites précédemment.
 
 Cette section du framework d'adoption du cloud s'appuie sur chacune des rubriques précédentes pour promouvoir des opérations de cloud computing matures au sein de votre organisation.

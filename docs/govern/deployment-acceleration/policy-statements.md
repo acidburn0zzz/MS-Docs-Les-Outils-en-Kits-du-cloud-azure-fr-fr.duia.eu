@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c713af7557760d0bafeabf9d0cd0ef37a3885fe4
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547769"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566347"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exemples d’instructions de stratégie pour l’accélération du déploiement
 
 Les instructions de stratégie cloud individuelles sont des recommandations pour la gestion de risques spécifiques identifiés lors de votre processus d’évaluation des risques. Ces instructions doivent fournir un bref récapitulatif des risques, ainsi que des plans établis pour les gérer. Chaque définition d’instruction doit inclure les informations suivantes :
 
-- **Risque technique.** Un récapitulatif du risque que cette stratégie gérera.
-- **Instruction de stratégie.** Une explication succincte claire des exigences de la stratégie.
-- **Options de conception.** Recommandations exploitables, spécifications ou autres conseils que des équipes informatiques et des développeurs peuvent utiliser lors de l’implémentation de la stratégie.
+- **Risque technique :** un récapitulatif du risque que cette stratégie gérera.
+- **Instruction de stratégie :** Une explication succincte claire des exigences de la stratégie.
+- **Options de conception :** Recommandations exploitables, spécifications ou autres conseils que des équipes informatiques et des développeurs peuvent utiliser lors de l’implémentation de la stratégie.
 
 Les exemples d’énoncés de stratégie suivants traitent des risques métiers courants liés aux configurations. Ces énoncés sont des exemples que vous pouvez référencer lorsque vous rédigez des énoncés de stratégie pour répondre aux besoins de votre organisation. Ces exemples ne sont pas destinés à être normatifs, et il existe potentiellement plusieurs options de stratégie pour gérer chaque risque identifié. Travaillez en étroite collaboration avec les équipes métier et les équipes informatiques pour identifier les meilleures stratégies pour vos propres risques.
 

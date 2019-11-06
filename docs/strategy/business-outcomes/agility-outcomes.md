@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048068"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566643"
 ---
-# <a name="examples-of-agility-outcomes"></a>Exemples de résultats souhaités en termes d’agilité 
+# <a name="examples-of-agility-outcomes"></a>Exemples de résultats souhaités en termes d’agilité
 
 Comme indiqué dans la [vue d’ensemble sur les résultats pour l’entreprise](./index.md), plusieurs résultats potentiels de l’entreprise peuvent servir de base pour les conversations sur parcours de transformation avec l’entreprise. Cet article se concentre sur la mesure métier la plus opportune : l’agilité métier. Bien comprendre la position de votre entreprise sur le marché et le paysage concurrentiel peut vous aider à structurer les résultats de l’entreprise qui sont la cible du parcours de transformation de celle-ci.
 
@@ -37,7 +37,9 @@ Pendant les efforts d’innovation dans le cloud, le Time-to-market est une mesu
 
 - **Exemple 2 :** Une société de logistique a découvert un segment inexploité du marché, mais elle a besoin d’une nouvelle version de son application phare pour capturer cette part de marché. Son plus grand concurrent a effectué la même découverte. Grâce à l’exécution d’un effort d’innovation pour les applications cloud, la société adopte l’obsession du client et une approche de développement orientée DevOps pour devancer son concurrent de _x_ mois. Ce saut à l’entrée du marché a permis de sécuriser la base de clients.
 
-**Aurora Health Care** : le système de santé transforme les services en ligne en expérience numérique conviviale. Pour transformer ses services numériques, Aurora Health Care a migré ses sites web vers la plateforme Microsoft Azure et adopté une stratégie d’innovation continue.
+### <a name="aurora-health-care"></a>Aurora Health Care
+
+le système de santé transforme les services en ligne en expérience numérique conviviale. Pour transformer ses services numériques, Aurora Health Care a migré ses sites web vers la plateforme Microsoft Azure et adopté une stratégie d’innovation continue.
 
 > « En tant qu’équipe, nous nous concentrons sur les solutions de haute qualité et la vitesse. Le choix d’Azure a été une décision source de transformation pour nous. »  
 > Jamey Shiels  

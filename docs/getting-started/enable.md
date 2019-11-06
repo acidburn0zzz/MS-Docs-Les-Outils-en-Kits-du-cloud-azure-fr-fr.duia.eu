@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: ea9d6b17627883f63e0814b66ed5cb657555995d
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048341"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656589"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Activer la réussite lors des parcours d’adoption du cloud
 
@@ -57,7 +57,7 @@ En plus du Framework d’adoption du cloud, Microsoft couvre des sujets supplém
     </a>
 </li>
 <li style="display: flex; flex-direction: column;">
-    <a href="https://docs.microsoft.com/azure/architecture/reliability" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="https://docs.microsoft.com/azure/architecture/framework/resiliency/overview" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

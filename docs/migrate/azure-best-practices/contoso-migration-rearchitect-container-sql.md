@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0efdd1a42ae7ff161c29f37365d0a14d4d869496
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 2487b7c213c45b0dcc78ffd4c12b1acae67aa429
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547368"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566660"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Réarchitecturer une application locale dans un conteneur Azure et Azure SQL Database
 
@@ -99,7 +99,7 @@ Contoso évalue la conception proposée en dressant une liste des avantages et d
 
 **Service** | **Description** | **Coût**
 --- | --- | ---
-[Assistant Migration de données (DMA)](/sql/dma/dma-overview?view=ssdt-18vs2017) | Évalue et détecte les problèmes de compatibilité qui peuvent avoir un impact sur les fonctionnalités de base de données dans Azure. DMA évalue la parité des fonctionnalités entre SQL sources et cibles, et recommande des améliorations des performances et de la fiabilité. | Cet outil est téléchargeable gratuitement.
+[Assistant Migration de données (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Évalue et détecte les problèmes de compatibilité qui peuvent avoir un impact sur les fonctionnalités de base de données dans Azure. DMA évalue la parité des fonctionnalités entre SQL sources et cibles, et recommande des améliorations des performances et de la fiabilité. | Cet outil est téléchargeable gratuitement.
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | Fournit un service de base de données cloud relationnelle entièrement managé et intelligent. | Coût basé sur les fonctionnalités, le débit et la taille. [Plus d’informations](https://azure.microsoft.com/pricing/details/sql-database/managed)
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Stocke les images pour tous types de déploiements de conteneur. | Coût basé sur les fonctionnalités, le stockage et la durée d’utilisation. [Plus d’informations](https://azure.microsoft.com/pricing/details/container-registry)
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | Génère et exploite des applications distribuées, scalables et toujours disponibles | Coûts basé sur la taille, l’emplacement et la durée des nœuds de calcul. [Plus d’informations](https://azure.microsoft.com/pricing/details/service-fabric)

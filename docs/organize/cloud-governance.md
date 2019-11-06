@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888835"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566788"
 ---
 # <a name="cloud-governance-capabilities"></a>Compétences de gouvernance cloud
 
@@ -31,7 +31,7 @@ Selon les résultats souhaités par l’entreprise, les aptitudes nécessaires p
 - Mise en réseau
 - Identité
 - Virtualisation
-- Continuité de l’activité/Reprise d’activité
+- Continuité d’activité et reprise d’activité
 - Propriétaires d’applications au sein du service informatique
 
 La compétence de gouvernance cloud identifie les risques liés aux mises en production actuelles et futures. Cette compétence est observée dans les efforts d’évaluation des risques, de compréhension des impacts potentiels et de prise de décisions concernant la tolérance aux risques. Ce faisant, des plans peuvent rapidement être mis à jour pour refléter les besoins en constante évolution de la [capacité d’adoption du cloud](./cloud-adoption.md).

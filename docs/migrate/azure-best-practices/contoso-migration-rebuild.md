@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058572"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566612"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Regénérer une application locale sur Azure AD
 
@@ -95,7 +95,7 @@ Contoso évalue la conception proposée en dressant une liste des avantages et d
 
 **Service** | **Description** | **Coût**
 --- | --- | ---
-[AKS](/sql/dma/dma-overview?view=ssdt-18vs2017) | Simplifie le déploiement, la gestion et les opérations de Kubernetes. Utilisez un service d'orchestration de conteneur Kubernetes entièrement géré. | AKS est un service gratuit. Vous payez uniquement pour les machines virtuelles, le stockage associé et la consommation des ressources réseau. [Plus d’informations](https://azure.microsoft.com/pricing/details/kubernetes-service)
+[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Simplifie le déploiement, la gestion et les opérations de Kubernetes. Utilisez un service d'orchestration de conteneur Kubernetes entièrement géré. | AKS est un service gratuit. Vous payez uniquement pour les machines virtuelles, le stockage associé et la consommation des ressources réseau. [Plus d’informations](https://azure.microsoft.com/pricing/details/kubernetes-service)
 [Azure Functions](https://azure.microsoft.com/services/functions) | Accélère le développement avec une expérience de calcul sans serveur pilotée par événements. Mettez à l’échelle à la demande. | Payez uniquement pour les ressources consommées. L’offre est facturée sur la base des exécutions et de la consommation de ressources par seconde. [Plus d’informations](https://azure.microsoft.com/pricing/details/functions)
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Stocke les images pour tous types de déploiements de conteneur. | Coût basé sur les fonctionnalités, le stockage et la durée d’utilisation. [Plus d’informations](https://azure.microsoft.com/pricing/details/container-registry)
 [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Créez, déployez et mettez à l’échelle rapidement des applications web, mobiles et API de classe entreprise exécutables sur toute plateforme. | Les plans App Service sont facturés par seconde. [Plus d’informations](https://azure.microsoft.com/pricing/details/app-service/windows)
@@ -110,7 +110,7 @@ Voici ce dont Contoso a besoin pour ce scénario :
 --- | ---
 **Abonnement Azure** | Dans un article précédent, Contoso a créé des abonnements. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions.<br/><br/> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.
 **Infrastructure Azure** | [Découvrez comment](./contoso-migration-infrastructure.md) Contoso configure une infrastructure Azure.
-**Prérequis pour développeur** | Contoso a besoin des outils suivants sur une station de travail de développeur :<br/><br/> - [Visual Studio 2017 Community Edition : Version 15.5](https://www.visualstudio.com)<br/><br/> Charge de travail .NET activée.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Interface de ligne de commande Azure](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install), configurés pour utiliser des conteneurs Windows.
+**Prérequis pour développeur** | Contoso a besoin des outils suivants sur une station de travail de développeur :<br/><br/> - [Visual Studio 2017 Community Edition : Version 15.5](https://www.visualstudio.com)<br/><br/> Charge de travail .NET activée.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Interface de ligne de commande Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install), configurés pour utiliser des conteneurs Windows.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -152,7 +152,7 @@ Les administrateurs de Contoso effectuent le provisionnement comme suit :
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. Dans le terminal intégré PowerShell, ils se connectent à Azure à l’aide de la commande Connect-AzureRmAccount. [En savoir plus](https://docs.microsoft.com/powershell/azure/get-started-azureps) sur la mise en route avec PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. Ils authentifient Azure CLI en exécutant la commande `az login`, et en suivant les instructions pour s’authentifier à l’aide de leur navigateur web. [En savoir plus](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sur la connexion avec Azure CLI.
+6. Ils authentifient Azure CLI en exécutant la commande `az login`, et en suivant les instructions pour s’authentifier à l’aide de leur navigateur web. [En savoir plus](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sur la connexion avec Azure CLI.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. Ils exécutent la commande suivante, en passant le nom de groupe de ressources ContosoRG, le nom du cluster AKS smarthotel-aks-eus2, et le nouveau nom de registre.
 

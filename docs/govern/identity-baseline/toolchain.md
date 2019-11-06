@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42c0d24d36785615013076b54c0ec51cc2ec4cb4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5c06523d2b22293463d55f05c397dd55247f4369
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047926"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566163"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Base de référence des identités dans Azure
 
@@ -77,6 +77,6 @@ Le tableau suivant énumère les outils natifs qui peuvent aider à faire mûrir
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Le livre blanc [Hybrid Identity Digital Transformation Framework](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html?LCID=EN-US) décrit un certain nombre de combinaisons et de solutions pour le choix et l’intégration de chacun de ces éléments.
+Le livre blanc [Hybrid Identity Digital Transformation Framework](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html) décrit un certain nombre de combinaisons et de solutions pour le choix et l’intégration de chacun de ces éléments.
 
 [L’outil Azure AD Connect](https://aka.ms/aadconnectwiz) vous aide à intégrer vos répertoires locaux à Azure AD.

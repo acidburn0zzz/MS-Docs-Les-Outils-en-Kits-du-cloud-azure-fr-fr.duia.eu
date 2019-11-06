@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047665"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565648"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Expériences ambiantes : Interagir avec les appareils
 
@@ -46,7 +46,7 @@ Dans la première étape de l’expérience ambiante, l’utilisateur s’éloig
 
 Lorsque les clients sont mobiles et changent fréquemment d’emplacement, cela peut représenter la forme d’expérience ambiante la plus pertinente pour une solution particulière. Au cours de la dernière décennie, l’innovation a souvent été déclenchée par l’intégration de solutions existantes à une expérience mobile.
 
-Azure App Services est un excellent exemple de cette approche. Lors des premières itérations, la [fonctionnalité d’application web d’Azure App Services](/azure/app-service/overview) peut être utilisée pour tester l’hypothèse. À mesure que les hypothèses deviennent plus complexes, la [fonctionnalité d’application mobile d’Azure App Services](/azure/app-service-mobile/) peut étendre l’application web pour l’exécuter sur diverses plateformes mobiles.
+Azure App Services est un excellent exemple de cette approche. Lors des premières itérations, la [fonctionnalité d’application web d’Azure App Services](https://docs.microsoft.com/azure/app-service/overview) peut être utilisée pour tester l’hypothèse. À mesure que les hypothèses deviennent plus complexes, la [fonctionnalité d’application mobile d’Azure App Services](https://docs.microsoft.com/azure/app-service-mobile) peut étendre l’application web pour l’exécuter sur diverses plateformes mobiles.
 
 ## <a name="mixed-reality"></a>Réalité mixte
 
@@ -68,7 +68,7 @@ Cette expérience est idéale lorsqu’une certaine forme d’appareil se trouve
 Voici quelques exemples de réalité intégrée dans Azure :
 
 - [Les solutions Azure Internet of Things (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), une collection de services dans Azure qui contribuent chacun à la gestion des appareils et du flux de données entre ces appareils et le cloud et entre le cloud et les utilisateurs finaux.
-- [Azure Sphere](/azure-sphere), une combinaison de matériel et de logiciels. Azure Sphere est un moyen intrinsèquement sécurisé pour permettre à un appareil existant de transmettre des données en toute sécurité entre l’appareil et les solutions Azure IoT.
+- [Azure Sphere](https://docs.microsoft.com/azure-sphere), une combinaison de matériel et de logiciels. Azure Sphere est un moyen intrinsèquement sécurisé pour permettre à un appareil existant de transmettre des données en toute sécurité entre l’appareil et les solutions Azure IoT.
 - [Azure Kinect Developers Kit](https://docs.microsoft.com/azure/Kinect-dk), des capteurs IA avec des modèles vocaux et de vision par ordinateur avancés. Ces capteurs peuvent collecter des données visuelles et audio à partir de l’environnement immédiat et alimenter ces entrées dans votre solution.
 
 Vous pouvez utiliser ces trois outils pour collecter des données sur l’environnement naturel et au moment où le client en a besoin. À partir de là, votre solution peut répondre à ces entrées de données pour répondre au besoin, parfois avant même que le client ne sache qu’un déclencheur pour ce besoin s’est manifesté.
@@ -81,7 +81,7 @@ Les assistants virtuels et les enceintes connectées offrent d’excellents exem
 
 Les ateliers dans le monde entier fournissent d’autres exemples de réalité ajustée. Lors des premières phases de la réalité intégrée, les capteurs sur les appareils ont détecté des conditions telles qu’une surchauffe, puis ont alerté un être humain par le biais d’une application. Dans la réalité ajustée, le client peut rester impliqué, mais le retour d’informations est plus restreint. Dans un atelier de réalité ajustée, un appareil pourrait détecter la surchauffe d’une machine essentielle quelque part sur la chaîne de montage. Quelque part ailleurs dans l’atelier, un deuxième appareil ralentit alors légèrement la production pour permettre à la machine de refroidir et de reprendre à plein régime lorsque la situation est résolue. Dans cette situation, le client est un participant indirect. Le client utilise votre application pour définir les règles et comprendre comment ces règles ont influé sur la production, mais celles-ci ne sont pas nécessaires au retour d’informations.
 
-Les services Azure décrits dans [Solutions Azure Internet of Things (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](/azure-sphere) et [Azure Kinect Developers Kit](https://docs.microsoft.com/azure/Kinect-dk) peuvent tous être des composants d’une solution de réalité ajustée. Votre application d’origine et votre logique métier serviraient alors d’intermédiaire entre l’entrée environnementale et la modification qui doit être apportée dans l’environnement physique.
+Les services Azure décrits dans [Solutions Azure Internet of Things (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](https://docs.microsoft.com/azure-sphere) et [Azure Kinect Developers Kit](https://docs.microsoft.com/azure/Kinect-dk) peuvent tous être des composants d’une solution de réalité ajustée. Votre application d’origine et votre logique métier serviraient alors d’intermédiaire entre l’entrée environnementale et la modification qui doit être apportée dans l’environnement physique.
 
 Un jumeau numérique est un autre exemple de réalité ajustée. Ce terme fait référence à la représentation numérique d’un appareil physique, présentée par le biais d’un ordinateur, d’un téléphone mobile ou de formats à réalité mixte. Contrairement aux modèles 3D moins sophistiqués,un jumeau numérique reflète les données collectées à partir d’un appareil réel dans l’environnement physique. Cette solution permet à l’utilisateur d’interagir avec la représentation numérique d’une manière qui n’aurait jamais été possible dans le monde réel. Dans cette approche, des appareils physiques ajustent un environnement de réalité mixte. Toutefois, la solution continue de rassembler des données à partir d’une solution de réalité intégrée et de les utiliser pour façonner la réalité de l’environnement actuel du client.
 
