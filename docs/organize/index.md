@@ -10,14 +10,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71025801"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564287"
 ---
-# <a name="managing-organizational-alignment"></a>Gestion de l’alignement organisationnel
+# <a name="manage-organizational-alignment"></a>Gérer l’alignement organisationnel
 
 L’adoption du cloud est impossible sans des personnes bien organisées. Une adoption réussie du cloud est le résultat de personnes qualifiées qui procèdent à des tâches appropriées, en phase avec leurs objectifs métier clairement définis et dans un environnement bien géré. Pour obtenir un modèle d’exploitation cloud efficace, il est important d’établir des structures organisationnelles avec le bon personnel. Cet article décrit une approche permettant d’établir et de maintenir des structures organisationnelles appropriées en quatre étapes.
 
@@ -130,7 +130,7 @@ Voici une liste des fonctionnalités cloud indispensables à une adoption réuss
 - [Plateforme cloud](./cloud-platform.md) : Utiliser et faire évoluer la plateforme.
 - [Automatisation du cloud](./cloud-automation.md) : Accélérer l’adoption et l’innovation.
 
-## <a name="maturing-organizational-structures"></a>Évolution des structures organisationnelles
+## <a name="mature-organizational-structures"></a>Faire évoluer les structures organisationnelles
 
 Dans une certaine mesure, chacune des fonctionnalités ci-dessus est fournie dans chaque étape de l’adoption du cloud, soit explicitement, soit conformément à une structure d’équipe définie.
 Si les besoins d’adoption augmentent, les besoins de créer un équilibre et une structure augmentent également. Pour y répondre, les entreprises suivent souvent un processus d’évolution des structures organisationnelles.
@@ -139,7 +139,7 @@ Si les besoins d’adoption augmentent, les besoins de créer un équilibre et u
 
 L’article sur la [détermination de l’évolution de la structure organisationnelle](./organization-structures.md) fournit des détails supplémentaires sur chaque niveau de l’évolution.
 
-## <a name="aligning-raci-charts"></a>Alignement des graphiques RACI
+## <a name="align-raci-charts"></a>Aligner les graphiques RACI
 
 À chaque niveau de l’évolution, la responsabilité des différentes fonctionnalités cloud passe entre les mains de nouvelles équipes. Ce changement de responsabilité permet d’accélérer les cycles de migration et d’innovation en supprimant et en automatisant les obstacles au changement. Pour aligner correctement les attributions, l’article sur [l’alignement RACI](./raci-alignment.md) partage un graphique RACI pour chacune des structures organisationnelles référencées.
 

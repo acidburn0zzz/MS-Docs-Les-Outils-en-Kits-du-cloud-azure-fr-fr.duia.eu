@@ -10,19 +10,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 13dc4936bff9058c7fe28761c584be8faa398f89
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: f8ab35cabf37843f21e51d3f45c464f988649d3c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048474"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73563298"
 ---
 ::: zone target="docs"
 
 # <a name="azure-setup-guide-before-you-start"></a>Guide de configuration Azure : Avant de commencer
 
 > [!NOTE]
-> Ce guide constitue un point de départ pour obtenir des conseils de préparation dans le Framework d’adoption du cloud. Il est également disponible dans le Centre de démarrage rapide Azure (voir le lien dans la section Conseil de l’article).
+> Ce guide constitue un point de départ pour obtenir des conseils de préparation dans le Framework d’adoption du cloud. Il est également disponible dans le Centre de démarrage rapide Azure. (voir le lien dans la section Conseil de l’article).
 
 ::: zone-end
 

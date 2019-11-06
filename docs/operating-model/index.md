@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 77e3ded1f76b096655a7831bc1950bf28bd4c86b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683810"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564537"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Établir un modèle de fonctionnement pour le cloud
 
@@ -36,7 +36,7 @@ Cette section du Framework d’adoption du cloud fournit un modèle de fonctionn
 - [Gérer](../manage/index.md) : Aligner les processus en cours pour la gestion opérationnelle de la technologie afin d’optimiser la réalisation de la valeur et de réduire les disruptions.
 - [Organiser](../organize/index.md) : à mesure que le modèle de fonctionnement murit, il en va de même de l’organisation des différentes équipes et fonctionnalités qui le prennent en charge.
 
-## <a name="aligning-operating-models"></a>Alignement des modèles de fonctionnement
+## <a name="align-operating-models"></a>Aligner les modèles de fonctionnement
 
 Le cloud et l’économie numérique ont révélé la nécessité de disposer de plusieurs modèles de fonctionnement. Parfois, c’est une exigence de prise en charge de plusieurs clouds publics qui dicte ce besoin. Plus généralement, le besoin est mis en évidence par le passage d’un environnement local au cloud. Dans les deux scénarios, il est important d’aligner les modèles de fonctionnement pour optimiser les performances et réduire la redondance au minimum.
 

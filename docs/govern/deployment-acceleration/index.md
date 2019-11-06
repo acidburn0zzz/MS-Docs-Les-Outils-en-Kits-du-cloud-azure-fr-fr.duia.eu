@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9de6f01a4252383c1d7619078568964fe8e685c9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222705"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566363"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Vue d’ensemble de la discipline Accélération du déploiement
 
@@ -33,9 +33,9 @@ Ce guide s’adresse principalement aux architectes cloud de votre organisation 
 Les déclarations de stratégie exploitables et les exigences d’architecture qui en résultent constituent la base d’une discipline Accélération du déploiement. Pour prendre connaissance des exemples de déclarations de stratégie, consultez l’article [Déclarations de stratégie d’accélération du déploiement](./policy-statements.md). Ces exemples peuvent servir de point de départ à l’élaboration de stratégies de gouvernance de votre organisation.
 
 > [!CAUTION]
-> Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des déclarations de stratégie qui répondent aux besoins particuliers de votre entreprise.
+> Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des instructions stratégiques qui répondent aux besoins particuliers de votre entreprise.
 
-## <a name="developing-deployment-acceleration-governance-policy-statements"></a>Élaboration de déclarations de stratégie de gouvernance Accélération du déploiement
+## <a name="develop-governance-policy-statements"></a>Développer des instructions de stratégie de gouvernance
 
 Les six étapes suivantes vous aideront à définir des stratégies de gouvernance pour contrôler le déploiement et la configuration des ressources dans votre environnement cloud.
 

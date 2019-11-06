@@ -173,7 +173,7 @@
               href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Choisir une option de déploiement dans Azure SQL
               href: 'https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-        - name: Gestion des coûts
+        - name: "la gestion des coûts\_;"
           items:
             - name: Suivre les coûts
               href: ready/azure-best-practices/track-costs.md
@@ -221,7 +221,7 @@
               href: migrate/expanded-scope/balance-the-portfolio.md
             - name: Préparation des compétences
               href: migrate/expanded-scope/suggested-skills.md
-            - name: Migration de l’hôte VMWare
+            - name: Migration de l’hôte VMware
               href: migrate/expanded-scope/vmware-host.md
             - name: Migration de SQL Server
               href: migrate/expanded-scope/sql-migration.md
@@ -279,7 +279,7 @@
                           href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                     - name: Mettre à l’échelle une migration
                       href: migrate/azure-best-practices/contoso-migration-scale.md
-            - name: Migration des hôtes VMWare
+            - name: Migration des hôtes VMware
               items:
                 - name: Vue d'ensemble
                   href: migrate/azure-best-practices/vmware-host.md
@@ -475,13 +475,13 @@
               items:
                 - name: Vue d'ensemble
                   href: migrate/migration-considerations/prerequisites/index.md
-                - name: Décisions qui affectent les activités de migration
+                - name: Décisions qui affectent la migration
                   href: migrate/migration-considerations/prerequisites/decisions.md
                 - name: Liste de contrôle pour la planification de l’environnement
                   href: migrate/migration-considerations/prerequisites/planning-checklist.md
                 - name: Aligner les rôles et les responsabilités
                   href: migrate/migration-considerations/prerequisites/cultural-complexity.md
-                - name: Structurer les backlogs pour gérer les modifications
+                - name: Gestion agile des changements
                   href: migrate/migration-considerations/prerequisites/technical-complexity.md
                 - name: Révision du backlog de migration
                   href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
@@ -491,31 +491,31 @@
                   href: migrate/migration-considerations/assess/index.md
                 - name: Conserver l’alignement des priorités
                   href: migrate/migration-considerations/assess/business-priorities.md
-                - name: Évaluer la préparation des charges de travail et ressources
+                - name: Évaluer la préparation des charges de travail
                   href: migrate/migration-considerations/assess/evaluate.md
                 - name: Concevoir l’architecture des charges de travail
                   href: migrate/migration-considerations/assess/architect.md
                 - name: Estimer les coûts du cloud
                   href: migrate/migration-considerations/assess/estimate.md
-                - name: Impliquer les partenaires de migration et le support technique
+                - name: Comprendre les options de partenariat
                   href: migrate/migration-considerations/assess/partnership-options.md
-                - name: Gérer les processus incrémentiels
+                - name: Gérer les changements
                   href: migrate/migration-considerations/assess/release-iteration-backlog.md
-                - name: Modifier les processus d’approbation
+                - name: Approuver les changements de l’architecture
                   href: migrate/migration-considerations/assess/approve.md
             - name: Migrer des ressources individuelles
               items:
                 - name: Vue d'ensemble
                   href: migrate/migration-considerations/migrate/index.md
-                - name: "Modèles de promotion\_: single-step (étape unique), staged (étapes intermédiaires) ou flight (vol)"
+                - name: Modèles de promotion
                   href: migrate/migration-considerations/migrate/promotion-models.md
-                - name: Tâches de correction
+                - name: Corriger les ressources
                   href: migrate/migration-considerations/migrate/remediate.md
-                - name: Répliquer des ressources vers le cloud
+                - name: Répliquer les ressources
                   href: migrate/migration-considerations/migrate/replicate.md
                 - name: Options de réplication
                   href: migrate/migration-considerations/migrate/replicate-options.md
-                - name: Gérer les charges de travail dans différentes phases pour le test et la promotion
+                - name: Indexer les charges de travail
                   href: migrate/migration-considerations/migrate/stage.md
             - name: Optimiser et promouvoir des charges de travail
               items:
@@ -525,15 +525,15 @@
                   href: migrate/migration-considerations/optimize/business-change-plan.md
                 - name: Tests avec l’entreprise
                   href: migrate/migration-considerations/optimize/business-test.md
-                - name: Évaluer et optimiser les ressources
+                - name: Évaluer et redimensionner les ressources
                   href: migrate/migration-considerations/optimize/optimize.md
-                - name: Prêt pour la promotion
+                - name: Préparer à la promotion
                   href: migrate/migration-considerations/optimize/ready.md
-                - name: Promouvoir des charges de travail en production
+                - name: Promouvoir en production
                   href: migrate/migration-considerations/optimize/promote.md
                 - name: Désactiver les ressources hors service
                   href: migrate/migration-considerations/optimize/decommission.md
-                - name: Rétrospective
+                - name: Mener des rétrospectives
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: Sécuriser et gérer les charges de travail en production
               items:

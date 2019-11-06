@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221170"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566425"
 ---
 # <a name="cost-management-discipline-overview"></a>Vue d’ensemble de la discipline Gestion des coûts
 
@@ -33,7 +33,7 @@ Les instructions de stratégie exploitables et les exigences d’architecture qu
 > [!CAUTION]
 > Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des instructions stratégiques qui répondent aux besoins particuliers de votre entreprise.
 
-## <a name="developing-cost-management-governance-policy-statements"></a>Développement d’instructions de stratégie de gouvernance Gestion des coûts
+## <a name="develop-governance-policy-statements"></a>Développer des instructions de stratégie de gouvernance
 
 Les six étapes suivantes vous aideront à définir des stratégies de gouvernance pour contrôler les coûts de votre environnement.
 

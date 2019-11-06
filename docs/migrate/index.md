@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378260"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566861"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migration cloud dans le Framework d’adoption du cloud
 
@@ -130,7 +130,7 @@ La migration vers le cloud se compose essentiellement de quatre phases simples 
 
 ![Modèle de migration du Framework d’adoption du cloud](../_images/operational-transformation-migrate.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Création d’un portefeuille cloud équilibré
+## <a name="create-a-balanced-cloud-portfolio"></a>Créer un portefeuille cloud équilibré
 
 Tout portefeuille technologique équilibré est constitué d’un mélange de ressources dans différents états. La mise hors service est planifiée pour certaines applications et celles-ci font donc l’objet d’un support minimal. D’autres applications ou ressources font l’objet d’un support de l’ordre de la simple maintenance, mais les fonctionnalités de ces solutions sont stables. Pour des processus métier plus récents, les conditions changeantes du marché vont probablement pousser à une amélioration ou à une modernisation en continu des fonctionnalités. Quand des opportunités de générer de nouveaux flux de revenus se présentent, de nouvelles applications ou ressources sont introduites dans l’environnement. À chaque étape du cycle de vie d’une ressource, l’impact d’un investissement sur le chiffre d’affaires et sur les bénéfices va changer. Plus la phase du cycle de vie est tardive, moins il est probable qu’une nouvelle fonctionnalité ou un travail de modernisation va générer un fort retour sur investissement.
 
