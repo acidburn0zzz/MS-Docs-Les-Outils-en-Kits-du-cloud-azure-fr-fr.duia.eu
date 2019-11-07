@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: be2cb79383748050e2b3b4506da53c42320847f6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980189"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239818"
 ---
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
@@ -40,7 +40,7 @@ Vous pouvez appliquer des paramètres d’administration, tels que des stratégi
 
 En règle générale, il est judicieux d’appliquer les paramètres critiques à des niveaux supérieurs et les exigences spécifiques au projet à des niveaux inférieurs. Par exemple, vous voudrez vous assurer que toutes les ressources de votre organisation sont déployées dans certaines régions. Pour ce faire, appliquez une stratégie à l’abonnement qui spécifie les emplacements autorisés. Lorsque les autres utilisateurs de votre organisation ajouteront de nouveaux groupes de ressources et des ressources, les emplacements autorisés seront automatiquement appliqués. Pour en savoir plus sur les stratégies, consultez la section de ce guide consacrée à la gouvernance, à la sécurité et à la conformité.
 
-Si vous disposez de quelques abonnements seulement, il est relativement simple de les gérer de manière indépendante. Si le nombre d’abonnements que vous utilisez augmente, envisagez de créer une hiérarchie de groupes d’administration pour simplifier la gestion de vos abonnements et de vos ressources. Pour plus d’informations sur la gestion de plusieurs abonnements, consultez [Mise à l’échelle avec plusieurs abonnements Azure](../considerations/scaling-subscriptions.md).
+Si vous disposez de quelques abonnements seulement, il est relativement simple de les gérer de manière indépendante. Si le nombre d’abonnements que vous utilisez augmente, envisagez de créer une hiérarchie de groupes d’administration pour simplifier la gestion de vos abonnements et de vos ressources. Pour plus d’informations sur la gestion de plusieurs abonnements, consultez [Mise à l’échelle avec plusieurs abonnements Azure](../azure-best-practices/scaling-subscriptions.md).
 
 Planifiez votre stratégie de conformité en collaboration avec les personnes qui, dans vos organisations, ont un rôle dans les domaines suivants : sécurité et conformité, administration informatique, architecture d’entreprise, réseau, finances et approvisionnement.
 
@@ -79,7 +79,7 @@ Créez un groupe de ressources pour regrouper des ressources comme les applicati
 Pour plus d'informations, consultez les rubriques suivantes :
 
 - [Notions de base d’Azure](../considerations/fundamental-concepts.md)
-- [Mise à l’échelle avec plusieurs abonnements Azure](../considerations/scaling-subscriptions.md)
+- [Mise à l’échelle avec plusieurs abonnements Azure](../azure-best-practices/scaling-subscriptions.md)
 - [Comprendre la gestion des accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Limites du service d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits)
@@ -130,7 +130,7 @@ Adoptez des conventions standard en matière d’affectation de noms pour identi
 
 - Le côté opérationnel doit s’assurer que les noms incluent les informations dont les équipes informatiques ont besoin. Utilisez les détails qui identifient la charge de travail, l’application, l’environnement, le caractère critique et d’autres informations utiles pour la gestion des ressources.
 
-Différents types de ressources peuvent se distinguer en matière de limites de longueur et de caractères autorisés, dont la plupart sont répertoriés dans l’[article Conventions d’affectation de noms](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) des meilleures pratiques Azure. Pour obtenir plus d’informations et des recommandations visant spécifiquement à prendre en charge les efforts de l’entreprise dans le cadre de l’adoption du cloud, consultez l’[aide du Framework d’adoption du cloud au sujet de l’attribution de noms et de la catégorisation](../considerations/naming-and-tagging.md).
+Différents types de ressources peuvent se distinguer en matière de limites de longueur et de caractères autorisés, dont la plupart sont répertoriés dans l’[article Conventions d’affectation de noms](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) des meilleures pratiques Azure. Pour obtenir plus d’informations et des recommandations visant spécifiquement à prendre en charge les efforts de l’entreprise dans le cadre de l’adoption du cloud, consultez l’[aide du Framework d’adoption du cloud au sujet de l’attribution de noms et de la catégorisation](../azure-best-practices/naming-and-tagging.md).
 
 Le tableau suivant présente les modèles d’affectation de noms pour quelques exemples de types de ressources Azure.
 
@@ -161,7 +161,7 @@ Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses.
 
 Chaque ressource ou groupe de ressources peut inclure un maximum de 50 paires nom/valeur de balise. Cette limitation s’applique uniquement aux balises directement appliquées au groupe de ressources ou à la ressource.
 
-Pour obtenir d’autres recommandations et exemples de catégorisation, consultez l’[aide du Framework d’adoption du cloud au sujet de la catégorisation](../considerations/naming-and-tagging.md).
+Pour obtenir d’autres recommandations et exemples de catégorisation, consultez l’[aide du Framework d’adoption du cloud au sujet de la catégorisation](../azure-best-practices/naming-and-tagging.md).
 
 ::: zone target="docs"
 

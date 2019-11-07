@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fe7614d29ba6a6baba99cd447d65bc30e3396bec
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6c1e253d2ff49c331f4f1c153124f2ca06c81c36
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058531"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565548"
 ---
 ::: zone target="docs"
 
@@ -106,10 +106,6 @@ Pour créer un partage de données :
 <!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
-
-Utilisez [Azure Open Datasets](https://docs.microsoft.com/azure/open-datasets/overview-what-are-open-datasets) pour améliorer votre analyse en incorporant des données de [vacances](https://azure.microsoft.com/services/open-datasets/catalog/public-holidays), [météo](https://azure.microsoft.com/services/open-datasets/catalog/noaa-global-forecast-system)et [d’imagerie spatiale](https://azure.microsoft.com/services/open-datasets/catalog/hls) dans vos modèles.
-
-Les prochaines étapes sont la [démocratisation des processus d’entreprise](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/democratize-business-processes) et [l’autonomisation des développeurs citoyens](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/empower-citizen-developers).
 
 # <a name="insightstabinsights"></a>[Insights](#tab/Insights)
 

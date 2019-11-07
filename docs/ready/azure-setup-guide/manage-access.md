@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 7ce8b1f8509ab0e51c94913ef010eb35b22b8978
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: dc52d39699e20a243a6d1156764e30063aea76a5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379031"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240130"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Gérer l’accès à votre environnement Azure avec des contrôles d’accès en fonction du rôle
 
@@ -29,7 +29,7 @@ Lorsque vous planifiez votre stratégie de contrôle d’accès, vous pouvez acc
 
 Pour planifier votre stratégie de contrôle d’accès, faites-le si possible en collaboration avec les personnes qui, dans vos organisations, ont un rôle dans les domaines suivants : sécurité et conformité, administration informatique et architecture d’entreprise.
 
-Le Framework d’adoption du cloud offre des conseils supplémentaires sur l’[utilisation du contrôle d’accès en fonction du rôle](../azure-best-practices/roles.md) dans le cadre de vos efforts d’adoption du cloud.
+Le Framework d’adoption du cloud offre des conseils supplémentaires sur l’[utilisation du contrôle d’accès en fonction du rôle](../considerations/roles.md) dans le cadre de vos efforts d’adoption du cloud.
 
 ::: zone target="chromeless"
 
@@ -88,6 +88,6 @@ Pour accorder à un utilisateur l’accès à un abonnement :
 Pour plus d'informations, consultez les rubriques suivantes :
 
 - [Qu’est-ce que le contrôle d’accès en fonction du rôle (RBAC) ?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Framework d’adoption du cloud : Utiliser le contrôle d’accès en fonction du rôle](../azure-best-practices/roles.md)
+- [Framework d’adoption du cloud : Utiliser le contrôle d’accès en fonction du rôle](../considerations/roles.md)
 
 ::: zone-end

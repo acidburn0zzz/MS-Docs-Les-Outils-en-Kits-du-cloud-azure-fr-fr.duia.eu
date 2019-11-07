@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e47e7e5f8528580d4aa268fd90e7aa838e5f70ba
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224052"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239958"
 ---
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
@@ -151,7 +151,7 @@ Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses.
 
 Chaque ressource ou groupe de ressources peut inclure un maximum de 15 paires nom/valeur de balise. Toutefois, cette limitation s’applique uniquement aux étiquettes qui sont directement appliquées au groupe de ressources ou à la ressource.
 
-Pour plus d’informations sur le balisage, consultez [Conventions d’affectation de noms du centre des architectures Azure pour les ressources Azure](../../ready/considerations/naming-and-tagging.md#metadata-tags)
+Pour plus d’informations sur le balisage, consultez [Conventions d’affectation de noms du centre des architectures Azure pour les ressources Azure](../../ready/azure-best-practices/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 
