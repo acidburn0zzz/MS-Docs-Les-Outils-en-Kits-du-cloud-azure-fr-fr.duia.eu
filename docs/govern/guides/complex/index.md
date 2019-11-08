@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6c3588c7b7b8e3ae53fc2d2a311b93b548b856c5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a678620e2d194fa2430579b0289ac39c0720204
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566288"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753220"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guide de gouvernance pour les entreprises complexes
 
@@ -39,15 +39,15 @@ Le schéma suivant montre la hiérarchie MVP de gouvernance pour organiser les r
 
 Chaque application doit être déployée dans la zone appropriée du groupe d’administration, de l’abonnement et de la hiérarchie des groupes de ressources. Lors de la planification du déploiement, l’équipe de gouvernance cloud crée les nœuds nécessaires dans la hiérarchie pour donner aux équipes d’adoption du cloud les moyens d’agir.
 
-1. Définissez un groupe d’administration pour chaque unité commerciale avec une hiérarchie détaillée qui reflète la géographie, puis le type d’environnement (par exemple, environnements de production ou de préproduction).
-2. Créez un abonnement de production et de non-production pour chaque combinaison unique de géographie ou d’unité commerciale distincte. Soyez particulièrement prudent si vous créez plusieurs abonnements. Pour plus d’informations, consultez le [Guide de décision concernant les abonnements](../../../decision-guides/subscriptions/index.md).
+1. Définissez un groupe d’administration pour chaque unité commerciale avec une hiérarchie détaillée qui reflète d’abord la géographie, puis le type d’environnement (par exemple, environnements de production ou de non-production).
+2. Créez un abonnement de production et un abonnement de non-production pour chaque combinaison unique de géographie ou d’unité commerciale distincte. La création de plusieurs abonnements nécessite une attention particulière. Pour plus d’informations, consultez le [Guide de décision concernant les abonnements](../../../decision-guides/subscriptions/index.md).
 3. Appliquez une [nomenclature cohérente](../../../ready/azure-best-practices/naming-and-tagging.md) à chaque niveau de cette hiérarchie de regroupement.
-4. Les groupes de ressources doivent être déployés de manière à prendre en compte le cycle de vie de leur contenu : tous les contenus développés ensemble sont gérés ensemble et mis hors service ensemble. Pour plus d’informations sur les bonnes pratiques relatives aux groupes de ressources, consultez [cette page](../../../decision-guides/resource-consistency/index.md).
+4. Les groupes de ressources doivent être déployés de manière à prendre en compte le cycle de vie de leur contenu. Les ressources développées, gérées et retirées ensemble appartiennent au même groupe de ressources. Pour plus d’informations sur les bonnes pratiques en matière d’utilisation de groupes de ressources, consultez [cette page](../../../decision-guides/resource-consistency/index.md).
 5. Le [choix de la région](../../../decision-guides/regions/index.md) est extrêmement important, notamment pour la mise en place du réseau, de la supervision et de l’audit pour le basculement/la restauration automatique. Il convient également de vérifier que les [références SKU nécessaires](https://azure.microsoft.com/global-infrastructure/services) sont disponibles dans les régions privilégiées.
 
 ![Schéma d’organisation des ressources des grandes entreprises](../../../_images/govern/large-enterprise-resource-organization.png)
 
-Ces modèles laissent de l’espace pour la croissance sans compliquer la hiérarchie inutilement.
+Ces modèles autorisent la croissance sans compliquer inutilement la hiérarchie.
 
 [!INCLUDE [governance-of-resources](../../../../includes/caf-governance-of-resources.md)]
 

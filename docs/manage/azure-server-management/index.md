@@ -8,22 +8,20 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4d1ada9d47e54f4b0d3828ce93b2d55f3eda8a34
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 53feb14cab8f2109b86aa5850d856261d132ba19
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025921"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656608"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Vue d’ensemble des services de gestion de serveurs Azure
 
-Les services de gestion de serveurs Azure fournissent aux clients une expérience cohérente pour la gestion de leurs serveurs à grande échelle. Ces services couvrent les systèmes d’exploitation Linux et Windows, et peuvent être utilisés dans des environnements de production, de développement et de test. Ils peuvent aussi prendre en charge les machines virtuelles Azure IaaS, les serveurs physiques et les machines virtuelles hébergées localement ou dans d’autres environnements d’hébergement. 
+Les services de gestion de serveurs Azure fournissent une expérience cohérente pour gérer les serveurs à grande échelle. Ces services couvrent à la fois les systèmes d’exploitation Linux et Windows. Ils peuvent être utilisés dans des environnements de production, de développement et de test. Les services de gestion de serveurs peuvent aussi prendre en charge les machines virtuelles Azure IaaS, les serveurs physiques et les machines virtuelles hébergées localement ou dans d’autres environnements d’hébergement.
 
-Le diagramme ci-dessous illustre les services inclus dans la suite de services de gestion de serveurs Azure. 
+La suite de services de gestion de serveurs Azure comprend les services dans le diagramme suivant : ![Diagramme du modèle d’opérations Azure](./media/operations-diagram.png)
 
-![Diagramme du modèle d’opérations Azure](./media/operations-diagram.png)
-
-Les instructions de cette section du Framework d’adoption du cloud Microsoft fournissent un plan normatif actionnable pour le déploiement de services de gestion de serveurs dans votre environnement. Ce plan a pour objectif de vous orienter rapidement vers ces services, avec un ensemble de phases de gestion incrémentielles pour toutes les tailles d’environnement.
+Cette section du Framework d’adoption du cloud Microsoft fournit un plan normatif actionnable pour déployer les services de gestion de serveurs dans votre environnement. Ce plan vous aide à vous orienter rapidement vers ces services, avec un ensemble de phases de gestion incrémentielles pour toutes les tailles d’environnement.
 
 Pour faire simple, nous avons regroupé les tâches décrites dans ce guide en trois phases :
 
@@ -31,14 +29,14 @@ Pour faire simple, nous avons regroupé les tâches décrites dans ce guide en t
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="why-use-azure-management-services"></a>Pourquoi utiliser les services de gestion Azure ?
+## <a name="why-use-azure-server-management-services"></a>Pourquoi utiliser les services de gestion de serveurs Azure ?
 
-Les services de gestion Azure offrent les avantages suivants :
+Les services de gestion de serveurs Azure offrent les avantages suivants :
 
-- **Caractère natif dans Azure.** Les services de gestion sont intégrés en mode natif à Azure Resource Manager. Ils sont constamment améliorés afin de fournir de nouvelles fonctionnalités et capacités.
-- **Windows et Linux**. Les machines Windows et Linux fournissent la même expérience de gestion cohérente.
-- **Caractère hybride.** Les services de gestion couvrent les machines virtuelles Azure IaaS ainsi que les serveurs virtuels et physiques hébergés localement ou dans d’autres environnements d’hébergement.
-- **Sécurité.** Microsoft consacre des ressources substantielles à toutes les formes de sécurité. Cet investissement protège non seulement l’infrastructure cloud Azure, mais étend également les technologies et l’expertise qui en résulte afin de protéger les ressources des clients partout où elles résident.
+- **Mode natif dans Azure :** Les services de gestion de serveurs sont intégrés en mode natif à Azure Resource Manager. Ils sont constamment améliorés afin de fournir de nouvelles fonctionnalités et capacités.
+- **Windows et Linux :** Les machines Windows et Linux ont la même expérience de gestion cohérente.
+- **Hybride :** Les services de gestion de serveurs couvrent les machines virtuelles Azure IaaS ainsi que les serveurs virtuels et physiques hébergés localement ou dans d’autres environnements d’hébergement.
+- **Sécurité :** Microsoft consacre des ressources substantielles à toutes les formes de sécurité. Cet investissement protège non seulement l’infrastructure Azure, mais étend aussi les technologies et l’expertise qui en résulte afin de protéger les ressources des clients où qu’elles soient.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

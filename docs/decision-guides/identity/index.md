@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023894"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753193"
 ---
 # <a name="identity-decision-guide"></a>Guide de décision concernant l’identité
 
@@ -26,9 +26,9 @@ Passer à : [Déterminer les exigences d’intégration des identités](#determ
 
 Plusieurs options sont disponibles pour gérer les identités dans un environnement cloud. Ces options varient au niveau du coût et de la complexité. Le niveau d’intégration requis avec votre infrastructure d’identité sur site existante est un facteur clé dans la structuration de vos services d’identité cloud.
 
-Dans Azure, Azure Active Directory (Azure AD) fournit un niveau basique de gestion des identités et de contrôle d’accès aux ressources cloud. Toutefois, si l’infrastructure Active Directory de votre organisation présente une structure en forêt complexe ou des unités d’organisation personnalisées, il se peut que vos charges de travail basées sur le cloud nécessitent la synchronisation des annuaires avec Azure AD pour bénéficier d’un ensemble cohérent d’identités, de groupes et de rôles sur tous vos environnements locaux et cloud. En outre, pour garantir la prise en charge des applications qui dépendent de mécanismes d’authentification hérités, il se peut que vous deviez déployer Active Directory Domain Services (AD DS) dans le cloud.
+Dans Azure, Azure Active Directory (Azure AD) fournit un niveau basique de gestion des identités et de contrôle d’accès aux ressources cloud. Cependant, si l’infrastructure Active Directory locale de votre organisation présente une structure en forêt complexe ou des unités d’organisation personnalisées, il se peut que vos charges de travail basées sur le cloud nécessitent la synchronisation des annuaires avec Azure AD pour bénéficier d’un ensemble cohérent d’identités, de groupes et de rôles dans vos environnements locaux et cloud. De plus, pour garantir la prise en charge des applications qui dépendent de mécanismes d’authentification hérités, vous pouvez être amené à déployer Active Directory Domain Services (AD DS) dans le cloud.
 
-La gestion des identités basée sur le cloud est un processus itératif. Pour un premier déploiement, il se peut que vous souhaitiez débuter par une solution cloud native comprenant un petit ensemble d’utilisateurs et de rôles correspondants. À mesure qu’avance votre migration, vous devrez intégrer votre solution de gestion des identités à l’aide de la synchronisation d’annuaire, ou ajouter des services de domaine dans le cadre de vos déploiements cloud. Réétudiez votre stratégie d’identité dans chaque itération du processus de migration.
+La gestion des identités basée sur le cloud est un processus itératif. Pour un premier déploiement, vous pouvez commencer par une solution cloud native avec un petit ensemble d’utilisateurs et les rôles correspondants. À mesure que votre migration arrive à maturité, vous pouvez avoir besoin d’intégrer votre solution d’identité en utilisant la synchronisation d’annuaires ou d’ajouter des services de domaine dans le cadre de vos déploiements cloud. Réétudiez votre stratégie d’identité dans chaque itération du processus de migration.
 
 ## <a name="determine-identity-integration-requirements"></a>Déterminer les exigences d’intégration des identités
 
@@ -48,12 +48,12 @@ Azure AD est le système natif de gestion des identités et des accès (IAM) qu
 **Conditions nécessaires pour la base de référence cloud** : L’utilisation d’une infrastructure d’identité cloud native (uniquement) implique les hypothèses suivantes :
 
 - Vos ressources basées sur le cloud ne peuvent présenter aucune dépendance avec les services d’annuaire locaux ni les serveurs Active Directory, ou bien les charges de travail doivent être modifiées pour supprimer ces dépendances.
-- Les charges de travail d’application ou de service qui sont en cours de migration doivent prendre en charge les mécanismes d’authentification compatibles avec Azure AD ou bien elles peuvent être modifiées facilement pour les prendre en charge. Azure AD s’appuie sur des mécanismes d’authentification Internet (SAML, OAuth et OpenID Connect, par exemple). Il se peut que les charges de travail existantes qui dépendent de méthodes d’authentification héritées, et qui utilisent des protocoles tels que NTLM ou Kerberos, doivent être refactorisées avant la migration vers le cloud, à l’aide du modèle de base de référence cloud.
+- Les charges de travail d’application ou de service qui sont en cours de migration doivent prendre en charge les mécanismes d’authentification compatibles avec Azure AD ou bien elles peuvent être modifiées facilement pour les prendre en charge. Azure AD s’appuie sur des mécanismes d’authentification Internet (SAML, OAuth et OpenID Connect, par exemple). Les charges de travail existantes qui dépendent de méthodes d’authentification héritées utilisant des protocoles comme Kerberos ou NTLM peuvent nécessiter une refactorisation avant d’être migrées vers le cloud à l’aide du modèle de base de référence cloud.
 
 > [!TIP]
 > En effectuant la migration complète de vos services d’identité vers Azure AD, vous éliminez le besoin de maintenir votre propre infrastructure d’identité et vous simplifiez considérablement votre gestion informatique.
 >
-> Toutefois, Azure AD ne peut pas remplacer entièrement une infrastructure Active Directory locale traditionnelle. Il se peut que les fonctionnalités d’annuaire (méthodes d’authentification héritées, gestion des ordinateurs ou stratégies de groupe, par exemple) ne soient pas disponibles si vous ne déployez pas les outils et les services nécessaires dans le cloud.
+> Toutefois, Azure AD ne peut pas remplacer entièrement une infrastructure Active Directory locale traditionnelle. Il est possible que les fonctionnalités d’annuaire que sont notamment les méthodes d’authentification héritées, la gestion des ordinateurs ou les stratégies de groupe ne soient pas disponibles si vous ne déployez pas des outils ou services supplémentaires dans le cloud.
 >
 > Si vous avez besoin d’intégrer vos identités ou vos services de domaine locaux à vos déploiements cloud, consultez la section ci-dessous concernant la synchronisation d’annuaires et les modèles de services de domaine hébergés dans le cloud.
 
@@ -61,7 +61,7 @@ Azure AD est le système natif de gestion des identités et des accès (IAM) qu
 
 Pour les organisations qui disposent déjà d’une infrastructure Active Directory locale, la synchronisation d’annuaires est souvent la meilleure solution pour conserver la gestion des accès et des utilisateurs existante tout en bénéficiant des capacités IAM nécessaires pour gérer les ressources cloud. Ce processus permet de dupliquer en continu les informations d’annuaire entre Azure AD et les services d’annuaire locaux. Ainsi, les utilisateurs peuvent utiliser les mêmes informations d’identification, la même identité, les mêmes rôles et les mêmes autorisations dans l’ensemble de votre organisation.
 
-Remarque : Les organisations qui ont adopté Office 365 ont peut-être déjà implémenté [la synchronisation d’annuaires](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) entre leur infrastructure locale Active Directory et Azure Active Directory.
+Remarque : Les organisations qui ont adopté Office 365 ont peut-être déjà implémenté la [synchronisation d’annuaires](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) entre leur infrastructure Active Directory locale et Azure Active Directory.
 
 **Conditions nécessaires à la synchronisation d’annuaires** : L’utilisation d’une solution d’identité synchronisée implique les hypothèses suivantes :
 
@@ -73,7 +73,7 @@ Remarque : Les organisations qui ont adopté Office 365 ont peut-être déjà i
 
 ### <a name="cloud-hosted-domain-services"></a>Services de domaines hébergés dans le cloud
 
-Si vous disposez de charges de travail qui dépendent d’authentification par revendication à l’aide de protocoles hérités (Kerberos ou NTLM, par exemple), et qu’il est impossible de refactoriser ces charges de travail pour accepter des protocoles d’authentification modernes (tels que SAML, OAuth et OpenID Connect), vous devrez peut-être migrer certains de vos services de domaine vers le cloud dans le cadre de votre déploiement cloud.
+Si vous disposez de charges de travail qui dépendent de l’authentification par revendication utilisant des protocoles hérités (Kerberos ou NTLM, par exemple), et qu’il est impossible de refactoriser ces charges de travail pour accepter des protocoles d’authentification modernes (tels que SAML, OAuth et OpenID Connect), vous devrez peut-être migrer certains de vos services de domaine vers le cloud dans le cadre de votre déploiement cloud.
 
 Ce modèle implique le déploiement de machines virtuelles exécutant Active Directory sur vos réseaux virtuels basés sur le cloud, afin de fournir Active Directory Domain Services (AD DS) aux ressources du cloud. Les applications et les services existants qui font l’objet d’une migration vers votre réseau cloud doivent pouvoir utiliser ces serveurs d’annuaires hébergés dans le cloud sans nécessiter de modifications importantes.
 

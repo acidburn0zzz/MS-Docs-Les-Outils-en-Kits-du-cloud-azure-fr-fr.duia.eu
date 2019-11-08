@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4e97c7c1d363b81badc440eb46495b134c680162
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238793"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753137"
 ---
 # <a name="subscription-decision-guide"></a>Guide de décision concernant les abonnements
 
@@ -48,7 +48,7 @@ Un seul abonnement par compte peut s’avérer suffisant pour les organisations 
 
 ### <a name="production-and-nonproduction-pattern"></a>Modèle de production et de non-production
 
-Une fois que vous êtes prêt à déployer une charge de travail dans un environnement de production, vous devez ajouter un abonnement supplémentaire. Cela vous permet de conserver vos données de production et autres ressources hors de vos environnements de développement/test. Vous pouvez aussi appliquer facilement deux différents ensembles de stratégies sur les ressources dans les deux abonnements.
+Dès que vous êtes prêt à déployer une charge de travail dans un environnement de production, vous devez ajouter un abonnement supplémentaire. Cela vous permet de conserver vos données de production et autres ressources hors de vos environnements de développement/test. Vous pouvez aussi appliquer facilement deux différents ensembles de stratégies sur les ressources dans les deux abonnements.
 
 ![Modèle d’abonnement de production et de non-production](../../_images/ready/basic-subscription-model.png)
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564836"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753157"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guide de décision pour l’application de la stratégie
 
@@ -51,13 +51,13 @@ Au-delà de la simple utilisation des mécanismes d’application des stratégie
 
 Dans Azure, vous pouvez appliquer des paramètres de configuration et des règles de création de ressources au niveau du groupe d’administration, de l’abonnement ou du groupe de ressources, afin de garantir l’alignement des stratégies.
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) est un service Azure pour la création, l’assignation et la gestion des stratégies. Ces stratégies appliquent différentes règles et effets sur vos ressources, qui restent donc conformes aux normes et aux contrats de niveau de service de l’entreprise. Azure Policy évalue vos ressources afin d’épingler toute non-conformité avec les stratégies assignée. Par exemple, vous pouvez limiter la taille de référence SKU des machines virtuelles dans votre environnement. Une fois la stratégie correspondante implémentée, la conformité des ressources nouvelles et existantes est évaluée. Avec une stratégie appropriée, les ressources existantes peuvent être mises en conformité.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) est un service Azure pour la création, l’assignation et la gestion des stratégies. Ces stratégies appliquent différentes règles et effets sur vos ressources, qui restent donc conformes aux normes et aux contrats de niveau de service de l’entreprise. Azure Policy évalue vos ressources afin d’épingler toute non-conformité avec les stratégies assignée. Par exemple, vous pouvez limiter la taille de référence SKU des machines virtuelles dans votre environnement. Après avoir implémenté une stratégie correspondante, la conformité des ressources nouvelles et existantes est évaluée. Avec une stratégie appropriée, les ressources existantes peuvent être mises en conformité.
 
 ## <a name="cross-organization-policy"></a>Stratégie à l’échelle de l’organisation
 
-À mesure que vos ressources cloud augmentent pour couvrir de nombreux abonnements nécessitant une application, vous devez vous concentrer sur une stratégie d’application à l’échelle du patrimoine cloud, afin de garantir la cohérence des stratégies.
+À mesure que vos ressources cloud augmentent pour couvrir de nombreux abonnements nécessitant une application, vous devez vous concentrer sur une stratégie d’application à l’échelle du patrimoine cloud afin de garantir la cohérence des stratégies.
 
-Votre [abonnement](../subscriptions/index.md) devra représenter la stratégie car celle-ci a trait à la structure de votre organisation. En plus de vous aider à prendre en charge une organisation complexe au sein de votre abonnement, des [groupes d’administration Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) peuvent être utilisés pour assigner des règles Azure Policy à plusieurs abonnements.
+Votre [abonnement](../subscriptions/index.md) doit prendre en considération la stratégie par rapport à la structure de votre organisation. En plus de vous aider à prendre en charge une organisation complexe au sein de votre abonnement, des [groupes d’administration Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) peuvent être utilisés pour assigner des règles Azure Policy à plusieurs abonnements.
 
 ## <a name="automated-enforcement"></a>Application automatisée
 

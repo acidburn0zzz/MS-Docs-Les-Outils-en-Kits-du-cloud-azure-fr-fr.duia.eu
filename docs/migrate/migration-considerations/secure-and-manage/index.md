@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683773"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753429"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Outils de supervision et de gestion sécurisés
 
-Une fois la migration terminée, les ressources migrées doivent être gérées par des opérations informatiques contrôlées. Cet article n’a pas pour but de suggérer une quelconque déviation par rapport aux bonnes pratiques opérationnelles. Considérez plutôt ce qui suit comme le minimum viable pour sécuriser et gérer des ressources migrées : soit au moyen d’opérations informatiques, soit de manière indépendante à mesure que ces opérations sont disponibles en ligne.
+Une fois la migration terminée, les ressources migrées doivent être gérées par des opérations informatiques contrôlées. Cet article ne s’écarte pas des bonnes pratiques opérationnelles. Considérez plutôt ce qui suit comme le minimum viable pour sécuriser et gérer des ressources migrées : soit au moyen d’opérations informatiques, soit de manière indépendante à mesure que ces opérations sont disponibles en ligne.
 
 ## <a name="monitoring"></a>Surveillance
 

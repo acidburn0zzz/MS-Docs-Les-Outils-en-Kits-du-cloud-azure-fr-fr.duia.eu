@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aac08981375a3fcbbd658d6e14564a07e06795e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816293"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753462"
 ---
 # <a name="assess-assets-prior-to-migration"></a>Évaluer les ressources avant la migration
 
@@ -56,7 +56,7 @@ Outre la responsabilité d’ensemble, certaines actions doivent être affectée
   - Pour éviter les surprises plus tard dans le processus, au moins un représentant de l’entreprise doit être impliqué dans le processus d’approbation.
 
 > [!CAUTION]
-> Cette liste complète de responsabilités et d’actions peut prendre en charge des migrations vastes et complexes impliquant plusieurs rôles avec différents niveaux de responsabilité et nécessitant un processus d’approbation détaillé. Les efforts de migration moins intenses et plus simples peuvent ne pas nécessiter l’ensemble des rôles et des actions décrits ici. Pour déterminer les activités qui ajoutent de la valeur et celles qui représentent une charge inutile, les équipes d’adoption du cloud et de stratégie cloud sont invitées à utiliser ce processus complet dans le cadre de la migration de votre première charge de travail. Une fois la charge de travail vérifiée et testée, l’équipe peut évaluer ce processus et choisir les actions à utiliser par la suite.
+> Cette liste complète de responsabilités et d’actions peut prendre en charge des migrations vastes et complexes impliquant plusieurs rôles avec différents niveaux de responsabilité et nécessitant un processus d’approbation détaillé. Les efforts de migration moins intenses et plus simples peuvent ne pas nécessiter l’ensemble des rôles et des actions décrits ici. Pour distinguer les activités qui ajoutent de la valeur de celles qui ne sont pas nécessaires, vos équipes d’adoption du cloud et de stratégie cloud doivent utiliser ce processus complet dans le cadre de votre première migration de charge de travail. Une fois la charge de travail vérifiée et testée, l’équipe peut évaluer ce processus et choisir les actions à utiliser par la suite.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

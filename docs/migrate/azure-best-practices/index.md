@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e8a7ae0af3b64a6d7e04555fe64a6189d964b3ff
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 1519adff06d600b9829c9b7ff3ca82a0aa5a0160
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816565"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753381"
 ---
 # <a name="azure-migration-best-practices"></a>Bonnes pratiques pour la migration Azure
 
@@ -27,4 +27,4 @@ Développez un processus dans la table des matières sur la gauche pour voir les
 > La planification du patrimoine numérique et l’évaluation des ressources représentent deux niveaux différents de planification et d’évaluation de la migration :
 >
 > - **Planification du patrimoine numérique** : Vous planifiez ou rationalisez le patrimoine numérique pendant la planification pour établir un backlog de migration global. Toutefois, ce plan est basé sur des hypothèses et des détails qui doivent être validés avant de pouvoir migrer une charge de travail.
-> - **Évaluation des ressources :** Vous évaluez les ressources d’une charge de travail avant sa migration pour estimer la compatibilité cloud et comprendre l’architecture et les contraintes de taille. Ce processus valide les premières hypothèses et fournit les détails nécessaires pour migrer une ressource individuelle.
+> - **Évaluation des ressources :** Vous évaluez les ressources individuelles d’une charge de travail avant sa migration pour estimer la compatibilité cloud et comprendre l’architecture et les contraintes de taille. Ce processus valide les premières hypothèses et fournit les détails nécessaires pour migrer une ressource individuelle.

@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1ddb65153cde9fac7426c8ef9b10f58a60918b82
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c5ffe30a66305dcff1df70a383f6716702b4a067
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223878"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753327"
 ---
 # <a name="architectural-decision-guides"></a>Guides de décision en matière d'architecture
 
 Les guides de décision en matière d’architecture du framework d'adoption du cloud décrivent les modèles qui permettent de formuler des recommandations de conception de gouvernance cloud. Chaque guide de décision se concentre sur un composant d’infrastructure des déploiements cloud et liste les schémas et modèles pouvant prendre en charge des scénarios de déploiement cloud spécifiques.
 
-Lorsque vous commencez à établir la gouvernance cloud de votre organisation, des parcours de gouvernance actionnables fournissent une feuille de route de référence. Cela étant, ces parcours reposent sur des hypothèses en termes d'exigences et de priorités, qui ne reflètent pas systématiquement celles de votre organisation.
+Lorsque vous commencez à établir la gouvernance cloud de votre organisation, des parcours de gouvernance actionnables fournissent une feuille de route de référence. Cela étant, ces parcours reposent sur des hypothèses en termes d’exigences et de priorités, qui ne reflètent pas systématiquement celles de votre organisation.
 
 Ces guides de décision complètent les exemples de parcours de gouvernance en proposant d'autres modèles pour vous permettre d'aligner les choix de conception architecturale faits dans les exemples de recommandations de conception avec vos propres exigences.
 

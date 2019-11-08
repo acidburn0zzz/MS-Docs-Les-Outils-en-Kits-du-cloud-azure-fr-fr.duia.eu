@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cbd9f8dcea85b22f68ddb0401ef5713491200fdc
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564537"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753663"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Établir un modèle de fonctionnement pour le cloud
 
@@ -40,9 +40,9 @@ Cette section du Framework d’adoption du cloud fournit un modèle de fonctionn
 
 Le cloud et l’économie numérique ont révélé la nécessité de disposer de plusieurs modèles de fonctionnement. Parfois, c’est une exigence de prise en charge de plusieurs clouds publics qui dicte ce besoin. Plus généralement, le besoin est mis en évidence par le passage d’un environnement local au cloud. Dans les deux scénarios, il est important d’aligner les modèles de fonctionnement pour optimiser les performances et réduire la redondance au minimum.
 
-Les analystes prévoient l’adoption multicloud à des volumes élevés. De nombreux clients font leur cette prédiction. Malheureusement, les clients signalent des défis importants concernant l’exploitation de plusieurs clouds. La duplication des ressources, processus, compétences et technologies engendre une augmentation des coûts, au lieu des économies que laissait entrevoir le cloud. Pour éviter cette tendance, les clients sont invités à adopter un modèle de fonctionnement spécialisé. Quand vous alignez des modèles de fonctionnement, il doit toujours y avoir un **modèle de fonctionnement général**. Les **modèles de fonctionnement spécialisés** supplémentaires seraient exploités pour des scénarios spécifiques afin de prendre en charge des écarts par rapport au modèle standard.
+Les analystes prévoient l’adoption multicloud à des volumes élevés. De nombreux clients font leur cette prédiction. Malheureusement, les clients signalent des défis importants concernant l’exploitation de plusieurs clouds. La duplication des ressources, processus, compétences et technologies engendre une augmentation des coûts, au lieu des économies que laissait entrevoir le cloud. Pour éviter cette tendance, les clients doivent adopter un modèle de fonctionnement spécialisé. Quand vous alignez des modèles de fonctionnement, il doit toujours y avoir un **modèle de fonctionnement général**. Des **modèles de fonctionnement spécialisés** supplémentaires peuvent être utilisés pour des scénarios spécifiques de façon autoriser les déviations par rapport au modèle standard.
 
-- **Modèle de fonctionnement général :** Le modèle de fonctionnement général s’aligne sur une plateforme cloud publique ou privée unique. Les opérations de cette plateforme définissent les standards, stratégies et processus opérationnels. Ce modèle de fonctionnement doit être le principal moyen d’alimenter la stratégie cloud de mise en œuvre. Dans ce modèle, l’objectif est de tirer parti du fournisseur de cloud principal pour la majeure partie de l’adoption du cloud.
+- **Modèle de fonctionnement général :** Le modèle de fonctionnement général s’aligne sur une plateforme cloud publique ou privée unique. Les opérations de cette plateforme définissent les standards, stratégies et processus opérationnels. Ce modèle de fonctionnement doit être le principal moyen d’alimenter la stratégie cloud de mise en œuvre. Dans ce modèle, l’objectif est d’utiliser le fournisseur de services cloud principal pour la majeure partie de l’adoption du cloud.
 
 - **Modèle de fonctionnement spécialisé :** Les résultats métier spécifiques peuvent être mieux adaptés à un autre fournisseur de cloud. En présence d’un cas métier attrayant, les standards, stratégies et processus issus du modèle de fonctionnement général sont appliqués au nouveau fournisseur de cloud, mais sont ensuite modifiés pour s’adapter au cas d’usage spécialisé.
 
