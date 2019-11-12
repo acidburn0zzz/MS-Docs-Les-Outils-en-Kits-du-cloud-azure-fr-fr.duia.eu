@@ -9,18 +9,20 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: f3ede236dc0abc59dbf6e250c319185dda4e11e6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0d8ffd15dd0e42e7ba31760361dc970b63025eda
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72545126"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565619"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovation cloud dans le Framework d’adoption du cloud
 
-Chaque portefeuille informatique dispose d’une petite collection de charges de travail et d’idées susceptibles d’améliorer de manière significative la position de l’entreprise sur le marché. Tandis que la plupart des efforts d’adoption du cloud se focalisent sur la migration et la modernisation des charges de travail existantes, la valeur métier la plus grande dérivée de l’adoption du cloud provient des activités d’innovation qui révèlent de nouvelles compétences techniques et des capacités métier étendues. Cette section du Framework d’adoption du cloud se concentre sur la partie du portefeuille qui assure le plus grand retour sur investissement.
+Tous les portefeuilles informatiques disposent de quelques charges de travail et idées susceptibles d’améliorer de manière significative la position d’une entreprise sur le marché. La plupart des efforts d’adoption du cloud se concentrent sur la migration et la modernisation des charges de travail existantes. Toutefois, l’innovation fournit la plus grande valeur métier. L’innovation en matière d’adoption du cloud peut déverrouiller de nouvelles compétences techniques et étendre les fonctionnalités métier.
 
-## <a name="getting-started"></a>Prise en main
+Cette section du Framework d’adoption du cloud se concentre sur les éléments de votre portefeuille qui génèrent le plus grand retour sur investissement.
+
+## <a name="get-started"></a>Prise en main
 
 Pour vous préparer à cette phase du cycle d’adoption du cloud, le framework suggère les exercices suivants :
 
@@ -39,7 +41,7 @@ Pour vous préparer à cette phase du cycle d’adoption du cloud, le framework 
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Consensus sur la valeur métier</h3>
-Avant de choisir des solutions techniques, il est important d’aligner la valeur métier souhaitée. Cette valeur doit correspondre à la stratégie de cloud. Dans cette méthodologie incrémentielle, la valeur métier est représentée par une hypothèse sur les besoins des clients.
+Avant de choisir des solutions techniques, identifiez comment une nouvelle innovation peut générer de la valeur métier. Mappez cette valeur à votre stratégie cloud. Dans cette méthodologie incrémentielle, la valeur métier est représentée par une hypothèse sur les besoins des clients.
                         </div>
                     </div>
                 </div>
@@ -58,7 +60,7 @@ Avant de choisir des solutions techniques, il est important d’aligner la valeu
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Guide d’innovation Azure</h3>
-De nombreux outils cloud natifs disponibles dans Azure peuvent accélérer le développement de solutions innovantes. Selon l’hypothèse du client, diverses combinaisons d’outils peuvent s’appliquer. Nous vous suggérons de créer un produit minimum viable avec des outils de base.
+Azure inclut divers outils cloud qui peuvent accélérer le déploiement de solutions innovantes. Selon votre hypothèse, vous pouvez envisager différentes combinaisons d’outils. Nous vous suggérons de créer un produit minimum viable (MVP) avec des outils de base.
                         </div>
                     </div>
                 </div>
@@ -77,7 +79,7 @@ De nombreux outils cloud natifs disponibles dans Azure peuvent accélérer le d�
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Bonnes pratiques</h3>
-Vérifiez que les décisions architecturales suivent les bonnes pratiques pour chaque outil de la chaîne d’outils. Ces bonnes pratiques aident à accélérer le développement de solutions et fournissent une référence pour les conceptions architecturales solides.
+Vos décisions architecturales doivent respecter les bonnes pratiques relatives à chaque outil de la chaîne d’outils. Le respect de ces instructions vous permet d’accélérer le développement de solutions et de fournir une référence pour des conceptions architecturales solides.
                         </div>
                     </div>
                 </div>
@@ -96,7 +98,7 @@ Vérifiez que les décisions architecturales suivent les bonnes pratiques pour c
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Boucles de rétroaction</h3>
-Au cours de chaque itération de développement, les solutions en cours de développement permettent aux équipes d’apprendre aux côtés des clients. Des boucles de rétroaction rapides et précises avec les clients aident à effectuer des tests, des mesures et à apprendre à réduire l’impact du délai de la mise sur le marché. Découvrez comment Azure et GitHub accélèrent les boucles de rétroaction.
+À chaque itération, les solutions en cours de développement offrent à vos équipes un moyen d’apprendre aux côtés de leurs clients. Des boucles de rétroaction rapides et précises avec vos clients peuvent vous aider à effectuer des tests, à réaliser des mesures et à apprendre, ainsi qu’à réduire au final l’impact du délai de la mise sur le marché. Découvrez comment Azure et GitHub accélèrent les boucles de rétroaction.
                         </div>
                     </div>
                 </div>
@@ -108,15 +110,15 @@ Au cours de chaque itération de développement, les solutions en cours de déve
 
 ## <a name="methodology-summary"></a>Résumé de la méthodologie
 
-La [section relative aux considérations sur la méthodologie d’innovation](./considerations/index.md) établit un langage commun pour l’innovation entre les équipes de développement d’applications, DevOps, informatique et métier. Les exercices ci-dessus rendent cette méthodologie actionnable pendant le développement de solutions innovantes.
+- La [présentation des considérations sur la méthodologie](./considerations/index.md) établit un langage commun pour l’innovation entre les équipes de développement d’applications, DevOps, informatique et métier.
+- Les exercices de la section [Prise en main](#get-started) aident à rendre cette méthodologie actionnable pendant le développement de solutions innovantes.
 
 ![Méthodologie d’innovation du Framework d’adoption du cloud](../_images/innovate/innovate-methodology.png)
 
-Cette méthodologie s’appuie sur les méthodologies épurées existantes afin de créer une conversation centrée sur le cloud au sujet de l’adoption par le client et un modèle scientifique pour la création de la valeur métier. Elle aligne également les services Azure existants sur des processus de décision gérables, facilitant la recherche d’options techniques appropriées pour répondre à un besoin ou une hypothèse spécifique du client.
+Cette approche s’appuie sur les méthodologies épurées existantes. Elle est conçue pour vous aider à créer une conversation centrée sur le cloud au sujet de l’adoption par le client et un modèle scientifique pour la création de la valeur métier. Cette approche mappe également les services Azure existants à des processus de décision gérables. Cet alignement peut vous aider à trouver les options techniques appropriées pour répondre à des besoins ou à des hypothèses spécifiques du client.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Le premier exercice de l’innovation cloud consiste à [créer un consensus pour la valeur métier](./business-value.md).
-
+Le premier exercice relatif à l’innovation dans le cloud consiste à :
 > [!div class="nextstepaction"]
-> [Créer un consensus pour la valeur métier](./business-value.md)
+> [Créer un consensus autour de la valeur métier de l’innovation](./business-value.md)

@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3504e9107f221e71953a238b5ebd092a7531e5ae
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023465"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564728"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,11 +27,11 @@ Le patrimoine numérique prend toute son importance lors de la planification et 
 
 La mesure d’un patrimoine numérique varie selon les résultats souhaités.
 
-- **Migrations de l’infrastructure.** Quand une organisation réfléchit à l’optimisation des coûts, des processus opérationnels, de l’agilité ou d’autres aspects de ses opérations, le patrimoine numérique est focalisé sur les machines virtuelles, les serveurs et les charges de travail.
+- **Migrations de l’infrastructure :** Quand une organisation réfléchit à l’optimisation des coûts, des processus opérationnels, de l’agilité ou d’autres aspects de ses opérations, le patrimoine numérique est focalisé sur les machines virtuelles, les serveurs et les charges de travail.
 
-- **Innovation des applications.** Pour les transformations focalisées sur les clients, la situation est un peu différente. Vous devez vous focaliser sur les applications, les API et les données transactionnelles qui prennent en charge les clients. Les machines virtuelles et les appliances réseau sont souvent moins importantes dans ce cas.
+- **Innovation des applications :** Pour les transformations focalisées sur les clients, la situation est un peu différente. Vous devez vous focaliser sur les applications, les API et les données transactionnelles qui prennent en charge les clients. Les machines virtuelles et les appliances réseau sont souvent moins importantes dans ce cas.
 
-- **Innovation basée sur les données.** Dans le marché numérique actuel, il est difficile de lancer un nouveau produit ou service sans disposer de données solides. Quand les efforts sont portés sur l’innovation des données cloud, le focus est davantage mis sur les silos de données au sein de l’organisation.
+- **Innovation basée sur les données :** Dans le marché numérique actuel, il est difficile de lancer un nouveau produit ou service sans disposer de données solides. Quand les efforts sont portés sur l’innovation des données cloud, le focus est davantage mis sur les silos de données au sein de l’organisation.
 
 Une fois que l’organisation a compris quel type de transformation est le plus important, le patrimoine numérique devient beaucoup plus facile à gérer.
 

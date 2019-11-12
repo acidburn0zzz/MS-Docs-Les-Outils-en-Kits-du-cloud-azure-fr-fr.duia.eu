@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e7da35bb2b88c8f24abf09f8d3d2a708f732c1c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d4fc79c7829a0cc9058b07dd386e626a19cabb1b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222091"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565994"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Présentation de la discipline Cohérence des ressources
 
@@ -35,7 +35,7 @@ Les instructions de stratégie exploitables et les exigences d’architecture qu
 > [!CAUTION]
 > Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des instructions stratégiques qui répondent aux besoins particuliers de votre entreprise.
 
-## <a name="developing-resource-consistency-governance-policy-statements"></a>Développer des instructions stratégiques pour la gouvernance Cohérence des ressources
+## <a name="develop-governance-policy-statements"></a>Développer des instructions de stratégie de gouvernance
 
 Les six étapes suivantes offrent des exemples et des options potentielles à prendre en compte lors de l’élaboration de la gouvernance Cohérence des ressources. Chaque étape peut servir de thème de discussion au sein de votre équipe de gouvernance et avec les équipes concernées et les équipes informatiques de votre organisation, en vue d’établir les stratégies et processus nécessaires à la gestion des risques liés à la cohérence des ressources.
 

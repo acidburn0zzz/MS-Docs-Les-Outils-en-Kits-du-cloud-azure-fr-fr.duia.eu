@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223904"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564891"
 ---
 # <a name="encryption-decision-guide"></a>Guide de décision concernant le chiffrement
 
@@ -103,7 +103,9 @@ Le chiffrement des données au repos englobe également des techniques plus avan
 
 Ce sont vos exigences globales concernant les stratégies et la conformité, la sensibilité des données stockées ainsi que les exigences de performances de vos charges de travail qui déterminent quelles ressources doivent être chiffrées.
 
-**Conditions nécessaires au chiffrement des données au repos.** Le chiffrement des données au repos suppose que :
+### <a name="assumptions-about-encrypting-data-at-rest"></a>Hypothèses relatives au chiffrement des données au repos
+
+Le chiffrement des données au repos suppose que :
 
 - Vous stockez des données qui ne sont pas destinées à une utilisation publique.
 - Vos charges de travail peuvent accepter la latence supplémentaire liée au chiffrement du disque.

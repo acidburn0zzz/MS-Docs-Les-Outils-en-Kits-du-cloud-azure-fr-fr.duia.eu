@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 1e54fdc30e0db1ed1cecf01156bb9c25368a8457
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979887"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565031"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Gestion de cloud dans le Framework d’adoption du cloud
 
@@ -111,7 +111,7 @@ Les étapes précédentes créent des approches actionnables pour suivre la mét
 
 ![Méthodologie de gestion dans le Framework d’adoption du cloud](../_images/manage/caf-manage.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Création d’un portefeuille cloud équilibré
+## <a name="create-a-balanced-cloud-portfolio"></a>Créer un portefeuille cloud équilibré
 
 Comme indiqué dans l’article sur l’[alignement de l’entreprise](./considerations/business-alignment.md), toutes les charges de travail ne sont pas critiques. Tout portefeuille comprend différents niveaux de besoins de gestion opérationnelle. Les efforts d’alignement de l’entreprise facilitent la capture de l’impact commercial et la négociation des coûts de gestion avec l’entreprise afin de garantir les outils et les processus de gestion opérationnelle les plus appropriés.
 

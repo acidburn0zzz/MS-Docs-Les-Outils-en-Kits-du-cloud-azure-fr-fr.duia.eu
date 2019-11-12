@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ee164f75b4f3748fce027d0c6c98db5200dcdd71
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 181777e08e82cf7e58c73c7c8b66544d0960656d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548502"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564632"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Cadre étendu pour une migration cloud
 
@@ -32,7 +32,7 @@ La check-list suivante décrit des situations complexes qui peuvent nécessiter 
 
 ### <a name="technology-driven-scope-expansion"></a>Expansion du cadre basée sur la technologie
 
-- **[Migration des hôtes VMWare](./vmware-host.md) :** la migration des hôtes VMWare peut accélérer le processus de migration global. Chaque hôte VMWare migré peut déplacer plusieurs charges de travail vers le cloud à l’aide d’une approche lift-and-shift. Après la migration, ces machines virtuelles et charges de travail peuvent rester dans VMWare ou être migrées vers des fonctionnalités cloud modernes.
+- **[Migration VMware](./vmware-host.md) :** la migration des hôtes VMware peut accélérer le processus de migration global. Chaque hôte VMware migré peut déplacer plusieurs charges de travail vers le cloud à l’aide d’une approche lift-and-shift. Après la migration, ces machines virtuelles et charges de travail peuvent rester dans VMware ou être migrées vers des fonctionnalités cloud modernes.
 - **[Migration de SQL Server](./sql-migration.md) :** la migration de serveurs SQL peut accélérer le processus de migration global. Chaque SQL Server migré peut déplacer plusieurs bases de données et services, ce qui peut accélérer plusieurs charges de travail.
 - **[Centres de données multiples](./multiple-datacenters.md) :** la migration de plusieurs centres de données rend la migration très complexe. Durant les processus d’évaluation, de migration, d’optimisation et de gestion, d’autres considérations sont abordées pour préparer des environnements plus complexes.
 - **[Besoins des données qui dépassent la capacité réseau](./network-capacity-exceeded.md) :** Les entreprises choisissent souvent de passer au cloud, car elles ne sont plus satisfaites de la capacité, de la rapidité ou de la stabilité d’un centre de données existant. Malheureusement, ces mêmes contraintes compliquent le processus de migration, en nécessitant une planification supplémentaire lors des processus de migration et d’évaluation.

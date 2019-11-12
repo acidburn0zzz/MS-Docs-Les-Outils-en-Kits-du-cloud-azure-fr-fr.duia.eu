@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a0b0ed642e11fc3ffc81db7fd1095853a5458b1d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221752"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565943"
 ---
 # <a name="security-baseline-discipline-overview"></a>Présentation de la discipline Base de référence de la sécurité
 
@@ -35,7 +35,7 @@ Les instructions de stratégie exploitables et les exigences d’architecture qu
 > [!CAUTION]
 > Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des instructions stratégiques qui répondent aux besoins particuliers de votre entreprise.
 
-## <a name="developing-security-baseline-governance-policy-statements"></a>Élaboration d’instructions stratégiques pour la gouvernance Base de référence de la sécurité
+## <a name="develop-governance-policy-statements"></a>Développer des instructions de stratégie de gouvernance
 
 Les six étapes suivantes offrent des exemples et des options potentielles à prendre en compte lors de l’élaboration de la gouvernance Base de référence de la sécurité. Chaque étape peut servir de thème de discussion au sein de votre équipe de gouvernance cloud et avec les équipes commerciales, informatiques et de sécurité concernées au sein de votre organisation, en vue d’établir les stratégies et processus nécessaires à la gestion des risques liés à la sécurité.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238763"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564875"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 
@@ -22,13 +22,13 @@ Toutes les organisations ont besoin de mécanismes leur permettant d’avertir l
 
 ![Traçage des options de journalisation, de création de rapports et de supervision de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/decision-guides/decision-guide-logging-and-reporting.png)
 
-Passer à : [Planification de votre infrastructure de supervision](#planning-your-monitoring-infrastructure) | [Cloud natif](#cloud-native) | [Extension locale](#on-premises-extension) | [Agrégation de passerelle](#gateway-aggregation) | [Supervision hybride (locale)](#hybrid-monitoring-on-premises) | [Supervision hybride (basée sur le cloud)](#hybrid-monitoring-cloud-based) | [Multicloud](#multicloud) | [En savoir plus](#learn-more)
+Passer à : [Planification de votre infrastructure de supervision](#plan-your-monitoring-infrastructure) | [Cloud natif](#cloud-native) | [Extension locale](#on-premises-extension) | [Agrégation de passerelle](#gateway-aggregation) | [Supervision hybride (locale)](#hybrid-monitoring-on-premises) | [Supervision hybride (basée sur le cloud)](#hybrid-monitoring-cloud-based) | [Multicloud](#multicloud) | [En savoir plus](#learn-more)
 
 Lorsque vous déterminez une stratégie de journalisation et de création de rapports cloud, le point d’inflexion se base principalement sur les investissements que votre organisation a déjà faits dans les processus opérationnels et, dans une certaine mesure, sur les exigences à prendre en charge dans une stratégie multicloud.
 
 Il existe plusieurs façons de journaliser et de créer des rapports sur les activités dans le cloud. Le cloud natif et la journalisation centralisée sont deux options de service managé courantes, qui sont basées sur la conception de l’abonnement et le nombre d’abonnements.
 
-## <a name="planning-your-monitoring-infrastructure"></a>Planification de l’infrastructure de supervision
+## <a name="plan-your-monitoring-infrastructure"></a>Planifier votre infrastructure de supervision
 
 Lors de la planification de votre déploiement, vous devez penser à l’emplacement où seront stockées vos données de journalisation, et à la manière dont vous intégrerez les rapports et les services de supervision basés sur le cloud à vos processus et outils existants.
 
@@ -45,9 +45,9 @@ Si votre organisation ne dispose pas à l’heure actuelle de systèmes de créa
 
 Dans ce scénario, toutes les données de journal sont enregistrées et stockées dans le cloud, tandis que les outils de journalisation et création de rapports, qui traitent les informations et les mettent en évidence auprès de l’équipe informatique, sont fournis par la plateforme Azure et Azure Monitor.
 
-Les solutions de journalisation cloud personnalisées basées sur Azure Monitor peuvent être implémentées ad hoc pour chaque abonnement ou charge de travail, dans des déploiements plus petits ou expérimentaux. Par ailleurs, elles sont organisées de manière centralisée afin de superviser les données de journal de l’ensemble de votre patrimoine cloud.
+Les solutions de journalisation personnalisées basées sur Azure Monitor peuvent être implémentées ad hoc pour chaque abonnement ou charge de travail, dans des déploiements plus petits ou expérimentaux. Par ailleurs, elles sont organisées de manière centralisée afin de superviser les données de journal de tout votre patrimoine cloud.
 
-**Conditions nécessaires pour le cloud natif.** Les conditions suivantes sont nécessaires à l’utilisation d’un système de création de rapports et de journalisation cloud natif :
+**Conditions nécessaires pour le cloud natif :** Les conditions suivantes sont nécessaires à l’utilisation d’un système de création de rapports et de journalisation cloud natif :
 
 - Vous n’avez pas besoin d’intégrer les données de journal de vos charges de travail cloud dans vos systèmes locaux existants.
 - Vous n’utilisez pas vos systèmes de création de rapports basés sur le cloud pour superviser les systèmes locaux.
@@ -87,7 +87,7 @@ Une solution de supervision hybride combine les données de journal de vos resso
 
 Si vous avez déjà investi dans des systèmes de supervision locaux qu’il serait difficile ou coûteux de remplacer, vous pouvez intégrer la télémétrie de vos charges de travail cloud à vos solutions de supervision locales existantes. Dans un système de supervision local hybride, les données de télémétrie locales continuent d’utiliser le système de supervision local existant. Les données de télémétrie basées sur le cloud peuvent être directement envoyées au système de supervision local, ou elles peuvent être envoyées à Azure Monitor, puis compilées et ingérées par le système local à intervalles réguliers.
 
-**Conditions nécessaires à la supervision hybride locale**. Les postulats suivants sont admis lorsque l’on utilise un système de création de rapports et de journalisation local pour la supervision hybride :
+**Conditions nécessaires à la supervision hybride locale :** Les postulats suivants sont admis lorsque l’on utilise un système de création de rapports et de journalisation local pour la supervision hybride :
 
 - Vous devez utiliser des systèmes de création de rapports locaux existants pour superviser les charges de travail cloud.
 - Vous devez rester propriétaire des données de journal locales.

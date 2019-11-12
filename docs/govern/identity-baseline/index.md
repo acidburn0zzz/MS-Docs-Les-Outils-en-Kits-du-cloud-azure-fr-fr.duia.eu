@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c134cd2a3cf17cd4e650f637fec2c417f3c29ff1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222246"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566192"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Présentation de la discipline Base de référence des identités
 
@@ -33,9 +33,9 @@ Si votre organisation manque d’expertise interne en matière de sécurité et 
 Les déclarations de stratégie exploitables et les exigences d’architecture qui en résultent constituent la base d’une discipline Base de référence des identités. Pour prendre connaissance des exemples de déclarations de stratégie, consultez l’article [Déclarations de stratégie Base de référence des identités](./policy-statements.md). Ces exemples peuvent servir de point de départ à l’élaboration de stratégies de gouvernance de votre organisation.
 
 > [!CAUTION]
-> Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes pour créer des déclarations de stratégie qui répondent aux besoins particuliers de votre entreprise.
+> Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des instructions stratégiques qui répondent aux besoins particuliers de votre entreprise.
 
-## <a name="developing-identity-baseline-governance-policy-statements"></a>Élaboration de déclarations de stratégie de gouvernance Base de référence des identités
+## <a name="develop-governance-policy-statements"></a>Développer des instructions de stratégie de gouvernance
 
 Les six étapes suivantes offrent des exemples et des options potentielles à prendre en compte lors de l’élaboration de la gouvernance Base de référence des identités. Chaque étape peut servir de thème de discussion au sein de votre équipe de gouvernance, et avec les équipes concernées et les équipes informatiques de votre organisation, en vue d’établir les stratégies et processus nécessaires à la gestion des risques liés aux identités.
 

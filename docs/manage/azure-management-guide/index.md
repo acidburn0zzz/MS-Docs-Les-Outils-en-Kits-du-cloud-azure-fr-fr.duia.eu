@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 58a01e02abad2de68fac9a94d2a2aa3ad22d32a1
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: abbcdd7214673fdad47946ae77f7dd0bdb7c57af
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769145"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565501"
 ---
 ::: zone target="docs"
 
@@ -32,7 +32,7 @@ ms.locfileid: "72769145"
 
 ::: zone-end
 
-Le guide de gestion Azure est conçu pour aider les clients Azure actifs à créer une base de référence de gestion afin d’établir une cohérence des ressources dans Azure. Ce guide décrit les outils de base nécessaires à tout environnement Azure de production, en particulier les environnements qui hébergent des données sensibles. Pour plus d’informations et pour découvrir les bonnes pratiques et les considérations liées à la préparation de votre environnement cloud, consultez la [section de préparation du Framework d’adoption du cloud](../index.md).
+Le guide de gestion Azure aide les clients Azure à créer une base de référence de gestion afin d’établir une cohérence des ressources dans Azure. Ce guide décrit les outils de base requis pour tout environnement de production Azure, en particulier les environnements qui hébergent des données sensibles. Pour plus d’informations et pour découvrir les bonnes pratiques et les considérations liées à la préparation de votre environnement cloud, consultez la [section de préparation du Framework d’adoption du cloud](../index.md).
 
 ## <a name="scope-of-this-guide"></a>Portée de ce guide
 
@@ -49,14 +49,14 @@ Ce guide vous apprend à établir des outils pour une base de référence de ges
 
 ## <a name="management-baseline"></a>Base de référence de gestion
 
-Une base de référence de gestion est l’ensemble minimal d’outils et de processus qui doit être appliqué à chaque ressource de l’environnement. Plusieurs options supplémentaires peuvent être incluses dans la base de référence de gestion. Les prochains articles permettent d’accélérer les fonctionnalités de gestion du cloud en se concentrant sur les options minimales nécessaires, et non pas sur toutes les options disponibles.
+Une base de référence de gestion est l’ensemble minimal d’outils et de processus qui doit être appliqué à chaque ressource d’un environnement. Plusieurs options supplémentaires peuvent être incluses dans la base de référence de gestion. Les prochains articles permettent d’accélérer les fonctionnalités de gestion cloud en se concentrant sur les options minimales nécessaires, et non pas sur toutes les options disponibles.
 
 ::: zone target="docs"
 
 > [!TIP]
-> Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [centre des guides de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure et sélectionnez **Azure Management Guide** (Guide de gestion Azure). puis suivez les instructions pas à pas.
+> Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [Centre de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le Portail Azure et sélectionnez **Azure Management Guide** (Guide de gestion Azure). puis suivez les instructions pas à pas.
 
-Étapes suivantes : [Inventaire et visibilité](./inventory.md)
+Étape suivante : [Inventaire et visibilité](./inventory.md).
 
 ::: zone-end
 

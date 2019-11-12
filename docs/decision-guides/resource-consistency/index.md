@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cab22f60604b2bf201f333df366c7ceca0398ffc
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683526"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564799"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guide de décision pour la cohérence des ressources
 
@@ -32,7 +32,7 @@ La cohérence du déploiement, du regroupement et de la gestion des ressources c
 
 Dans Azure, les [groupes de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) sont un mécanisme d’organisation des ressources de base permettant de regrouper logiquement les ressources dans un abonnement.
 
-Les groupes de ressources servent de conteneurs pour les ressources ayant un cycle de vie commun et des contraintes de gestion partagées telles que les exigences en matière de stratégie ou de contrôle d’accès en fonction du rôle (RBAC). Les groupes de ressources ne peuvent pas être imbriqués et les ressources ne peuvent appartenir qu’à un seul groupe de ressources. Toutes les actions du plan de contrôle agissent sur l’ensemble des ressources contenues dans un groupe de ressources. Par exemple, la suppression d’un groupe de ressources supprime également toutes les ressources dans ce groupe. Pour déterminer le modèle à privilégier pour la gestion des groupes de ressources, il convient de se poser les questions suivantes :
+Les groupes de ressources servent de conteneurs pour les ressources ayant un cycle de vie commun ainsi que des contraintes de gestion partagées telles que les exigences en matière de stratégie ou de contrôle d’accès en fonction du rôle (RBAC). Les groupes de ressources ne peuvent pas être imbriqués et les ressources ne peuvent appartenir qu’à un seul groupe de ressources. Toutes les actions du plan de contrôle agissent sur l’ensemble des ressources contenues dans un groupe de ressources. Par exemple, la suppression d’un groupe de ressources supprime également toutes les ressources dans ce groupe. Pour déterminer le modèle à privilégier pour la gestion des groupes de ressources, il convient de se poser les questions suivantes :
 
 1. Les contenus du groupe de ressources sont-ils développés ensemble ?
 1. Les contenus du groupe de ressources sont-ils gérés, mis à jour et supervisés ensemble et par les mêmes personnes ou équipes ?
@@ -41,7 +41,7 @@ Les groupes de ressources servent de conteneurs pour les ressources ayant un cyc
 Si vous avez répondu _non_ à l’une ou plusieurs de ces questions, vous devez placer la ressource en question ailleurs, dans un autre groupe de ressources.
 
 > [!IMPORTANT]
-> Les groupes de ressources sont également spécifiques à la région. Toutefois, il arrive fréquemment que des ressources se trouvent dans des régions différentes au sein du même groupe de ressources, car elles sont gérées ensemble comme décrit ci-dessus. Consultez [cette page](../regions/index.md) pour plus d’informations sur le choix des régions.
+> Les groupes de ressources sont également spécifiques à la région. Toutefois, il arrive fréquemment que des ressources se trouvent dans des régions différentes au sein du même groupe de ressources, car elles sont gérées ensemble comme décrit ci-dessus. Pour plus d’informations sur la sélection des régions, consultez le [Guide de décision concernant les régions](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Cohérence du déploiement
 

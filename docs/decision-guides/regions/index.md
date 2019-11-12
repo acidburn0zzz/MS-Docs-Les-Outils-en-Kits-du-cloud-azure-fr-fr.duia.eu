@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 3e43c6ac4136a2f8f89446091f9bcea005369fce
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769402"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564826"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
@@ -29,7 +29,7 @@ Azure est disponible dans de nombreuses régions du monde. Chaque [région Azure
     1. [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
     1. Remarque : En [Australie](https://azure.microsoft.com/global-infrastructure/australia), deux régions sont gérées par Microsoft, mais sont fournies pour le gouvernement australien, ses clients et sous-traitants. Ainsi, elles impliquent des contraintes vis-à-vis des clients, de la même façon que les autres clouds souverains.
 
-## <a name="operating-in-multiple-geographic-regions"></a>Activités dans plusieurs régions géographiques
+## <a name="operate-in-multiple-geographic-regions"></a>Opérer dans plusieurs régions géographiques
 
 Les entreprises ayant des activités dans plusieurs régions géographiques bénéficient de la résilience dont elles ont besoin, mais font face à une complexité supplémentaire. Cette complexité se manifeste sous quatre formes principales :
 
@@ -44,17 +44,23 @@ En examinant ces formes de complexité de façon plus approfondie, vous comprend
 
 Tout déploiement cloud robuste nécessite un réseau bien étudié, tenant compte des régions Azure. Une fois que vous avez examiné les caractéristiques ci-dessus pour déterminer les régions de déploiement, le réseau doit être déployé. Si cet article n’a pas pour objet de fournir des informations réseau exhaustives, certaines considérations doivent faire l’objet d’une attention particulière :
 
-1. Les régions Azure sont déployées par paires. En cas de défaillance irrémédiable affectant une région, une autre région incluse dans le même périmètre géopolitique* joue le rôle de région jumelée. Envisagez l’opportunité d’effectuer le déploiement dans des régions jumelées comme une stratégie de résilience principale et secondaire. *La région Azure Brésil représente une exception notable dans la mesure où sa région jumelée est la région USA Centre Sud. Pour en savoir plus, consultez [Régions jumelées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
-    1. Le service Stockage Azure prend en charge le [stockage géoredondant](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) (GRS, Geographically Redundant Storage) : trois copies de vos données sont stockées dans votre région primaire et trois copies supplémentaires sont stockées dans la région jumelée. Vous ne pouvez pas modifier le jumelage du stockage dans le cadre d’un stockage géoredondant.
-    1. Les services qui s’appuient sur le stockage géoredondant Azure peuvent tirer parti de cette fonctionnalité de région jumelée. La prise en charge de cette fonctionnalité doit alors être prévue aussi bien au niveau de vos applications qu’au niveau du réseau.
-    1. Si vous n’envisagez pas d’utiliser le stockage géoredondant pour satisfaire vos besoins en résilience régionale, il est recommandé de _ne pas_ utiliser la région jumelée comme région secondaire. En cas de défaillance régionale, les ressources seront soumises à une pression intense dans la région jumelée lors de leur migration. En utilisant un autre site pour la reprise d’activité, vous évitez cette pression et gagnez ainsi en rapidité lors de la reprise.
-    > [!WARNING]
-    > N’essayez pas d’utiliser le stockage géoredondant Azure pour la reprise d’activité ou les sauvegardes de machines virtuelles. Utilisez plutôt les services [Sauvegarde Azure](https://azure.microsoft.com/services/backup) et [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) avec des [disques managés](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) pour assurer la résilience de vos charges de travail IaaS.
-2. Les services Sauvegarde Azure et Azure Site Recovery fonctionnent en tandem avec votre conception réseau pour mettre en œuvre la résilience régionale répondant à vos besoins en sauvegarde de données et d’IaaS. Assurez-vous que le réseau est optimisé de sorte que les transferts de données restent sur le segment principal de Microsoft et, dans la mesure du possible, utilisez le [VNet Peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview). Certaines organisations de plus grande taille, effectuant des déploiements à l’échelle mondiale, peuvent privilégier [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) pour router le trafic entre les régions, ce qui leur permet de réduire les frais liés aux sorties régionales.
-3. Les groupes de ressources Azure sont des constructions spécifiques aux régions. Toutefois, il est normal que les ressources d’un groupe de ressources s’étendent sur plusieurs régions. Dans ce contexte, il est important de savoir qu’en cas de défaillance régionale, les opérations du plan de contrôle sur un groupe de ressources échoueront dans la région affectée, même si les ressources situées dans d’autres régions (au sein de ce groupe de ressources) continuent de fonctionner. Ceci peut avoir un impact sur la conception de votre réseau et sur celle de votre groupe de ressources.
-4. De nombreux services PaaS dans Azure prennent en charge les [points de terminaison de service](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) ou la [liaison privée](https://docs.microsoft.com/azure/private-link/private-link-overview). Ces deux solutions conditionnent fortement les considérations relatives au réseau quand vous étudiez la résilience régionale, la migration et la gouvernance.
-5. De nombreux services PaaS s’appuient sur leurs propres solutions de résilience régionale. Par exemple, Azure SQL Database vous permet d’effectuer facilement des réplications dans N régions supplémentaires, tout comme Cosmos DB. Certains services comme Azure DNS n’ont aucune dépendance vis-à-vis de la région. Quand vous considérez les services que vous allez utiliser dans votre processus d’adoption, veillez à bien comprendre les fonctionnalités de basculement et les étapes de reprise d’activité potentiellement nécessaires pour chaque service Azure.
-6. En plus d’effectuer leurs déploiements dans plusieurs régions pour assurer la reprise d’activité, de nombreuses organisations choisissent un modèle de déploiement actif-actif de sorte qu’aucun basculement ne soit nécessaire. Cette approche présente des avantages supplémentaires, à savoir un équilibrage de charge global et un renforcement de la tolérance de panne et des performances réseau. Pour tirer parti de ce modèle, vos applications doivent prendre en charge l’exécution en mode actif-actif dans plusieurs régions.
+- Les régions Azure sont déployées par paires. En cas de défaillance irrémédiable affectant une région, une autre région incluse dans le même périmètre géopolitique* joue le rôle de région jumelée. Envisagez l’opportunité d’effectuer le déploiement dans des régions jumelées comme une stratégie de résilience principale et secondaire. *La région Azure Brésil représente une exception notable dans la mesure où sa région jumelée est la région USA Centre Sud. Pour en savoir plus, consultez [Régions jumelées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+
+  - Le service Stockage Azure prend en charge le [stockage géoredondant](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) (GRS, Geographically Redundant Storage) : trois copies de vos données sont stockées dans votre région primaire et trois copies supplémentaires sont stockées dans la région jumelée. Vous ne pouvez pas modifier le jumelage du stockage dans le cadre d’un stockage géoredondant.
+  - Les services qui s’appuient sur le stockage géoredondant Azure peuvent tirer parti de cette fonctionnalité de région jumelée. La prise en charge de cette fonctionnalité doit alors être prévue aussi bien au niveau de vos applications qu’au niveau du réseau.
+  - Si vous n’envisagez pas d’utiliser le stockage géoredondant pour satisfaire vos besoins en résilience régionale, il est recommandé de _ne pas_ utiliser la région jumelée comme région secondaire. En cas de défaillance régionale, les ressources seront soumises à une pression intense dans la région jumelée lors de leur migration. En utilisant un autre site pour la reprise d’activité, vous évitez cette pression et gagnez ainsi en rapidité lors de la reprise.
+  > [!WARNING]
+  > N’essayez pas d’utiliser le stockage géoredondant Azure pour la reprise d’activité ou les sauvegardes de machines virtuelles. Utilisez plutôt les services [Sauvegarde Azure](https://azure.microsoft.com/services/backup) et [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) avec des [disques managés Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) pour assurer la résilience de vos charges de travail IaaS.
+
+- Les services Sauvegarde Azure et Azure Site Recovery fonctionnent en tandem avec votre conception réseau pour mettre en œuvre la résilience régionale répondant à vos besoins en sauvegarde de données et d’IaaS. Assurez-vous que le réseau est optimisé de sorte que les transferts de données restent sur le segment principal de Microsoft et, dans la mesure du possible, utilisez le [VNet Peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview). Certaines organisations de plus grande taille, effectuant des déploiements à l’échelle mondiale, peuvent privilégier [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) pour router le trafic entre les régions, ce qui leur permet de réduire les frais liés aux sorties régionales.
+
+- Les groupes de ressources Azure sont des constructions spécifiques aux régions. Toutefois, il est normal que les ressources d’un groupe de ressources s’étendent sur plusieurs régions. Dans ce contexte, il est important de savoir qu’en cas de défaillance régionale, les opérations du plan de contrôle sur un groupe de ressources échoueront dans la région affectée, même si les ressources situées dans d’autres régions (au sein de ce groupe de ressources) continuent de fonctionner. Ceci peut avoir un impact sur la conception de votre réseau et sur celle de votre groupe de ressources.
+
+- De nombreux services PaaS dans Azure prennent en charge les [points de terminaison de service](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) ou la [liaison privée](https://docs.microsoft.com/azure/private-link/private-link-overview). Ces deux solutions conditionnent fortement les considérations relatives au réseau quand vous étudiez la résilience régionale, la migration et la gouvernance.
+
+- De nombreux services PaaS s’appuient sur leurs propres solutions de résilience régionale. Par exemple, Azure SQL Database vous permet d’effectuer facilement des réplications dans N régions supplémentaires, tout comme Cosmos DB. Certains services comme Azure DNS n’ont aucune dépendance vis-à-vis de la région. Quand vous considérez les services que vous allez utiliser dans votre processus d’adoption, veillez à bien comprendre les fonctionnalités de basculement et les étapes de reprise d’activité potentiellement nécessaires pour chaque service Azure.
+
+- En plus d’effectuer leurs déploiements dans plusieurs régions pour assurer la reprise d’activité, de nombreuses organisations choisissent un modèle de déploiement actif-actif de sorte qu’aucun basculement ne soit nécessaire. Cette approche présente des avantages supplémentaires, à savoir un équilibrage de charge global et un renforcement de la tolérance de panne et des performances réseau. Pour tirer parti de ce modèle, vos applications doivent prendre en charge l’exécution en mode actif-actif dans plusieurs régions.
 
 > [!WARNING]
 > Les régions Azure sont des constructions hautement disponibles, assorties de SLA appliqués aux services qui s’y exécutent. Toutefois, vous devez toujours éviter que vos applications stratégiques soient dépendantes d’une région unique. Soyez toujours prêt à une défaillance régionale et pratiquez les étapes de reprise d’activité et d’atténuation.
@@ -70,7 +76,7 @@ Après avoir étudié la topologie de réseau qui vous permettra de rester opér
 
 Alignez les modifications à travers le processus de migration pour traiter l’inventaire initial.
 
-## <a name="documenting-complexity"></a>Documentation de la complexité
+## <a name="document-complexity"></a>Documenter la complexité
 
 Le tableau suivant peut vous aider à documenter les résultats des étapes précédentes :
 
@@ -99,7 +105,7 @@ Les entreprises qui prennent en charge des utilisateurs finaux dans plusieurs pa
 
 L’emplacement des centres de données existants peut affecter une stratégie de migration. Voici quelques-uns des impacts les plus courants :
 
-**Décisions relatives à l’architecture :** Le ciblage de la région/l’emplacement est l’une des premières étapes de la conception de la stratégie de migration. Cela est souvent influencé par l’emplacement des ressources existantes. En outre, les services cloud disponibles et le coût unitaire de ces services peuvent varier d’une région à l’autre. Ainsi, la compréhension de l’emplacement actuel et futur des ressources affecte les décisions d’architecture et peut également affecter les estimations de budget.
+**Décisions relatives à l’architecture :** Le ciblage de la région est l’une des premières étapes de la conception de la stratégie de migration. Cela est souvent influencé par l’emplacement des ressources existantes. En outre, les services cloud disponibles et le coût unitaire de ces services peuvent varier d’une région à l’autre. Ainsi, la compréhension de l’emplacement actuel et futur des ressources affecte les décisions d’architecture et peut également affecter les estimations de budget.
 
 **Dépendances du centre de données :** En fonction des données du tableau ci-dessus, il est probable que des dépendances existent entre les différents centres de données dans le monde. Dans de nombreuses organisations qui opèrent sur ce type de mise à l’échelle, ces dépendances peuvent ne pas être documentées ou bien comprises. Les approches utilisées pour évaluer les profils utilisateur vous aideront à identifier certaines de ces dépendances. Toutefois, des étapes supplémentaires sont suggérées au cours du processus d’évaluation pour atténuer les risques associés à cette complexité.
 
@@ -114,7 +120,7 @@ Lorsque l’étendue d’une migration comprend plusieurs régions, les considé
 
 Une fois que l’équipe est à l’aise avec l’approche de base et que la préparation est alignée, il existe quelques conditions préalables basées sur les données à prendre en compte :
 
-- **Découverte générale :** Complétez le tableau de [documentation de la complexité](#documenting-complexity) ci-dessus.
+- **Découverte générale :** Complétez le tableau de [documentation de la complexité](#document-complexity) ci-dessus.
 - **Effectuez une analyse de profil utilisateur sur chaque pays affecté :** Il est important de comprendre le routage de l’utilisateur final général tôt lors du processus de migration. La modification des lignes d’emprunt globales et l’ajout de connexions comme ExpressRoute à un centre de données cloud peut nécessiter des mois de retards réseau. Résolvez cela aussi tôt que possible dans le processus.
 - **Rationalisation initiale du patrimoine numérique :** Chaque fois que de la complexité est introduite dans une stratégie de migration, une rationalisation initiale doit être effectuée. Pour obtenir de l'aide, consultez l’aide sur la [rationalisation du patrimoine numérique](../../digital-estate/index.md).
   - **Exigences supplémentaires relatives au patrimoine :** Établissez des stratégies de marquage pour identifier les charges de travail affectées par les exigences de souveraineté des données. Les étiquettes requises doivent commencer par la rationalisation du patrimoine numérique et traverser les ressources migrées.
