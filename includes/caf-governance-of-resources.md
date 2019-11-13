@@ -19,7 +19,7 @@ Les définitions de stratégie personnalisées sont enregistrées dans un groupe
 
 Étant donné que les stratégies nécessaires à la prise en charge du MVP de gouvernance sont destinées à s’appliquer à tous les abonnements actuels, les besoins métier suivants seront implémentés à l’aide d’une combinaison de définitions intégrées et de définitions personnalisées créées dans le groupe d’administration racine :
 
-1. Limitez la liste des attributions de rôle disponibles à un ensemble de rôles Azure intégrés autorisé par votre équipe de gouvernance cloud. Cela nécessite une [définition de stratégie personnalisée](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
+1. Limitez la liste des attributions de rôle disponibles à un ensemble de rôles Azure intégrés autorisés par votre équipe de gouvernance cloud. Cela nécessite une [définition de stratégie personnalisée](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
 2. Exigez l’utilisation des étiquettes suivantes sur toutes les ressources : *Département/Unité de facturation*, *Géographie*, *Classification des données*, *Caractère critique*, *SLA*, *Environnement*, *Archétype d’application*, *Application* et *Propriétaire de l’application*. Cela peut être géré en utilisant la définition intégrée `Require specified tag`.
 3. Exigez que l’étiquette `Application` des ressources corresponde au nom du groupe de ressources approprié. Cela peut être gérée à l’aide de la définition intégrée « Exiger une étiquette et sa valeur ».
 
@@ -31,7 +31,7 @@ Les stratégies Azure peuvent être affectées au niveau du groupe de ressources
 
 Azure Blueprints autorise l’attribution cohérente de stratégies et de rôles, l’application de modèles Resource Manager et le déploiement de groupes de ressources parmi plusieurs abonnements. Comme avec les définitions de stratégie, les définitions de blueprint sont enregistrées dans des abonnements ou des groupes d’administration et sont disponibles par héritage pour tous les enfants de la hiérarchie des groupes d’administration.
 
-L’équipe de la gouvernance cloud a décidé que la mise en œuvre des attributions de rôle RBAC et de stratégie Azure Policy requises sur les abonnements sera implémentée via Azure Blueprints et les artefacts associés :
+L’équipe de gouvernance cloud a décidé que la mise en œuvre des attributions obligatoires de rôle RBAC et de stratégie Azure Policy sur les abonnements est implémentée par le biais d’Azure Blueprints et des artefacts associés :
 
 1. Dans le groupe d’administration racine, créez une définition de blueprint nommée `governance-baseline`.
 2. Ajoutez les artefacts de blueprint suivants à la définition de blueprint :
@@ -53,7 +53,7 @@ Tant que la confiance dans l’environnement cloud n’est pas totalement établ
     1. L’[architecture de référence VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) établit un schéma et un modèle de déploiement pour la création d’une passerelle VPN dans Azure.
     2. Confirmez que les mécanismes de gestion de la sécurité et du trafic locaux traitent les réseaux cloud connectés comme étant non approuvés. Les ressources et les services hébergés dans le cloud doivent avoir uniquement accès aux services locaux autorisés.
     3. Vérifiez que l’appareil de périphérie local dans le centre de données local est compatible avec les [exigences de passerelle VPN Azure](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) et configuré pour accéder à l’Internet public.
-    4. Notez que les tunnels VPN ne doivent être considérés comme des circuits prêts pour la production que pour les charges de travail les plus simples. Si vous n’avez pas seulement affaire à quelques charges de travail simples nécessitant une connectivité locale, vous devez utiliser Azure ExpressRoute.
+    4. Notez que les tunnels VPN ne doivent être considérés comme des circuits prêts pour la production que pour les charges de travail les plus simples. Si vous avez plus que quelques charges de travail simples nécessitant une connectivité locale, vous devez utiliser Azure ExpressRoute.
 1. Dans le groupe d’administration racine, créez une seconde définition de blueprint nommée `secure-hybrid-vnet`.
     1. Ajoutez le modèle Resource Manager pour la passerelle VPN comme artefact de la définition de blueprint.
     2. Ajoutez le modèle Resource Manager pour le réseau virtuel comme artefact de la définition de blueprint.
