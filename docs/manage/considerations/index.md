@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e3dad3c514c4d76a857b6b433b7bf7ee7320e626
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 367480222244c1e4287bebec85743408a10efc19
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565130"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752846"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>Gestion et opérations informatiques dans le cloud
 
@@ -21,7 +21,7 @@ Lorsqu’une entreprise adopte un modèle basé sur le cloud, l’importance de 
 
 ## <a name="brief-history-of-it-management"></a>Bref historique de la gestion informatique
 
-Avant l’avènement du cloud, la gestion informatique reposait sur une simple fonction d’acquisition. L’acquisition d’équipements techniques pour prendre en charge les processus métier nécessitait une expertise technique et une expérience approfondie avec un groupe spécifique de fournisseurs d’équipements. La gestion informatique regroupait la sélection, l’acquisition et la configuration des ressources informatiques. En général, les ressources acquises comprenaient le stockage, la puissance de calcul, les fonctionnalités réseau et d’autres ressources similaires requises pour alimenter la fonction métier souhaitée. En tant qu’expert principal de l’équipement, le service informatique était également chargé de faire fonctionner l’équipement pour garantir des performances optimales et des interruptions de l’activité minimes.
+Avant le cloud, la gestion informatique reposait sur une simple fonction d’acquisition. L’acquisition d’équipements techniques pour prendre en charge les processus métier nécessitait une expertise technique et une expérience approfondie avec un groupe spécifique de fournisseurs d’équipements. La gestion informatique regroupait la sélection, l’acquisition et la configuration des ressources informatiques. En général, les ressources acquises comprenaient le stockage, la puissance de calcul, les fonctionnalités réseau et d’autres ressources similaires requises pour alimenter la fonction métier souhaitée. En tant qu’expert principal de l’équipement, le service informatique était également chargé de faire fonctionner l’équipement pour garantir des performances optimales et des interruptions de l’activité minimes.
 
 Lorsque l’entreprise génère de nouvelles solutions technologiques, elle a un besoin clair qui peut justifier les dépenses importantes associées à l’acquisition des ressources, voire à la création de centres de données complets. Quand elle crée des solutions, l’entreprise considère les coûts d’acquisition comme un investissement pour l’avenir. Une fois le besoin métier satisfait, la perception des mêmes coûts change. Les coûts associés aux solutions existantes sont considérés comme un frein opérationnel créé par les besoins passés. Cette perception est la raison pour laquelle de nombreuses entreprises voient l’informatique comme un centre de coûts. Elle explique également pourquoi de nombreuses organisations informatiques font régulièrement l’objet d’exercices de contrôle des coûts ou de réductions du personnel informatique.
 

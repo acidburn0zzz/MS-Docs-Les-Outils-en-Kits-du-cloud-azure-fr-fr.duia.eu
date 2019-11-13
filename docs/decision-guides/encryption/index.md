@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564891"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753351"
 ---
 # <a name="encryption-decision-guide"></a>Guide de décision concernant le chiffrement
 
@@ -63,7 +63,7 @@ Avec une approche de type Bring Your Own Key, vous générez des clés sur du ma
 
 ### <a name="on-premises-hold-your-own-key"></a>Locale (Hold Your Own Key, HYOK)
 
-Dans certains scénarios, une stratégie réglementaire ou des raisons techniques peuvent vous empêcher de stocker les clés dans un système de gestion des clés basé sur le cloud. Dans ce cas, vous devez générer des clés sur du matériel local, les stocker et les gérer à l’aide d’un système de gestion des clés local, et provisionner un mécanisme pour permettre aux ressources cloud d’accéder à ces clés à des fins de chiffrement. Notez que l’approche HYOK (Hold Your Own Key) peut ne pas être compatible avec tous les services Azure.
+Dans certains scénarios, une stratégie réglementaire ou des raisons techniques peuvent vous empêcher de stocker les clés dans un système de gestion des clés basé sur le cloud. Dans ce cas, vous devez générer des clés sur du matériel local, les stocker et les gérer à l’aide d’un système de gestion des clés local, et mettre en place un moyen de permettre aux ressources cloud d’accéder à ces clés pour le chiffrement. Notez que l’approche HYOK (Hold Your Own Key) peut ne pas être compatible avec tous les services Azure.
 
 **Conditions nécessaires à la gestion locale des clés :** L’utilisation d’un système local de gestion des clés dans le cloud suppose que :
 
@@ -84,7 +84,7 @@ Lorsque vous planifiez votre stratégie de chiffrement, prenez en compte plusieu
 
 Les données en transit sont des données qui sont déplacées d’une ressource interne à une autre, d’un centre de données à un autre, vers des réseaux externes ou sur Internet.
 
-Le chiffrement des données en transit est généralement obtenu en exigeant les protocoles SSL/TLS pour le trafic. Le trafic qui transite entre vos ressources hébergées dans le cloud et un réseau externe ou l’Internet public doit toujours être chiffré. Par défaut, les ressources PaaS appliquent également un chiffrement SSL/TLS pour le trafic. Il revient à l’équipe chargée de l’adoption du cloud ainsi qu’au propriétaire de la charge de travail d’appliquer ou non le chiffrement du trafic entre les ressources IaaS hébergées sur vos réseaux virtuels. Un tel chiffrement est généralement recommandé.
+Les données en transit sont généralement chiffrées en exigeant les protocoles SSL/TLS pour le trafic réseau. Chiffrez toujours le trafic entre vos ressources hébergées dans le cloud et les réseaux externes ou l’Internet public. Les ressources PaaS appliquent généralement le chiffrement SSL/TLS par défaut. Vos équipes chargées de l’adoption du cloud ainsi que les propriétaires de la charge de travail doivent envisager d’appliquer le chiffrement du trafic entre les ressources IaaS hébergées dans vos réseaux virtuels.
 
 **Conditions nécessaires au chiffrement des données en transit** : L’implémentation correcte des stratégies de chiffrement des données en transit suppose que :
 

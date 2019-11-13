@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: b231df4665e0da46229d6bc87f8ac32bc1985067
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2129e0f27dd44a32ea0966326cd0c172603783cf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564847"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753343"
 ---
 # <a name="migration-tools-decision-guide"></a>Guide de décision sur les outils de migration
 
@@ -32,7 +32,7 @@ En répondant aux questions suivantes, vous pourrez prendre des décisions en vo
 - **Votre application est-elle actuellement exécutée sur des machines virtuelles dédiées ou est-elle hébergée avec d’autres applications ?** Les applications exécutées sur des machines virtuelles dédiées peuvent être plus facilement migrées vers des options d’hébergement PaaS que les applications qui sont exécutées sur des serveurs partagés.
 - **La migration de vos données va-t-elle dépasser la capacité de votre bande passante réseau ?** La capacité réseau entre Azure et vos sources de données locales peut représenter un goulot d’étranglement lors d’une migration de données. Si les données que vous devez transférer font face à des limitations de bande passante qui empêchent une migration efficace ou en temps voulu, vous devrez chercher des alternatives ou des mécanismes de transfert hors connexion. Dans le Framework d’adoption du cloud, l’[article sur la réplication de la migration](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) explique comment les limites de réplication peuvent affecter la migration. Dans le cadre de votre évaluation de la migration, consultez vos équipes informatique pour vérifier que votre bande passante locale et WAN est capable de prendre en charge votre migration. Consultez également le [scénario de migration à cadre étendu lorsque les besoins de stockage dépassent la capacité réseau lors d’une migration](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites).
 - **Votre application utilise-t-elle un pipeline DevOps existant ?** Dans de nombreux cas, les pipelines Azure peuvent être facilement refactorisés pour déployer des applications dans des environnements d’hébergement basés sur le cloud.
-- **Vos données ont-elles des exigences de stockage complexes ?** Les applications de production nécessitent généralement un stockage de données hautement disponible, qui offre toujours des fonctionnalités ainsi qu’un niveau de disponibilité et de continuité similaires. Les options de base de données Azure PaaS, telles que Azure SQL Database, Azure Database pour MySQL et Azure Cosmos DB, offrent des contrats de niveau de service avec une disponibilité de 99,99 %. À l’inverse, les instances SQL Server basées sur IaaS qui se trouvent sur des machines virtuelles Azure offrent des contrats de niveau de service à instance unique avec une disponibilité de 99,95 %. Si vos données ne peuvent pas être modernisées pour utiliser les options de stockage PaaS, la garantie d’une disponibilité IaaS plus élevée va nécessiter des scénarios de stockage de données plus complexes, comme l’exécution de clusters AlwaysOn SQL Server et la synchronisation continue des données des différentes instances. Cela peut impliquer des coûts d’hébergement et de maintenance élevés. Par conséquent, lorsque vous envisagez les différentes options de migration, il est important de trouver le juste équilibre entre exigences de disponibilité, efforts de modernisation et impact global sur le budget.
+- **Vos données ont-elles des exigences de stockage complexes ?** Les applications de production nécessitent généralement un stockage de données hautement disponible, qui offre toujours des fonctionnalités ainsi qu’un niveau de disponibilité et de continuité similaires. Les options de base de données Azure PaaS, telles que Azure SQL Database, Azure Database pour MySQL et Azure Cosmos DB, offrent des contrats de niveau de service avec une disponibilité de 99,99 %. À l’inverse, les instances SQL Server basées sur IaaS qui se trouvent sur des machines virtuelles Azure offrent des contrats de niveau de service à une seule instance avec une disponibilité de 99,95 %. Si vos données ne peuvent pas être modernisées pour utiliser les options de stockage PaaS, la garantie d’une disponibilité IaaS plus élevée va nécessiter des scénarios de stockage de données plus complexes, comme l’exécution de clusters AlwaysOn SQL Server et la synchronisation continue des données des différentes instances. Cela peut impliquer des coûts d’hébergement et de maintenance élevés. Par conséquent, lorsque vous envisagez les différentes options de migration, il est important de trouver le juste équilibre entre exigences de disponibilité, efforts de modernisation et impact global sur le budget.
 
 ## <a name="innovation-and-migration"></a>Innovation et migration
 

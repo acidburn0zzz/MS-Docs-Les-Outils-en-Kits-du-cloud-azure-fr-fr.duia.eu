@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564875"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753168"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 
@@ -26,7 +26,7 @@ Passer à : [Planification de votre infrastructure de supervision](#plan-your-m
 
 Lorsque vous déterminez une stratégie de journalisation et de création de rapports cloud, le point d’inflexion se base principalement sur les investissements que votre organisation a déjà faits dans les processus opérationnels et, dans une certaine mesure, sur les exigences à prendre en charge dans une stratégie multicloud.
 
-Il existe plusieurs façons de journaliser et de créer des rapports sur les activités dans le cloud. Le cloud natif et la journalisation centralisée sont deux options de service managé courantes, qui sont basées sur la conception de l’abonnement et le nombre d’abonnements.
+Les activités dans le cloud peuvent être journalisées et signalées de plusieurs façons. Le cloud natif et la journalisation centralisée sont deux options de service managé courantes, qui sont basées sur la conception de l’abonnement et le nombre d’abonnements.
 
 ## <a name="plan-your-monitoring-infrastructure"></a>Planifier votre infrastructure de supervision
 
@@ -54,7 +54,7 @@ Les solutions de journalisation personnalisées basées sur Azure Monitor peuven
 
 ### <a name="on-premises-extension"></a>Extension locale
 
-L’utilisation de solutions de journalisation et de création de rapports cloud, telles que Azure Monitor, peut nécessiter un effort important de redéveloppement pour les applications et les services devant faire l’objet d’une migration vers le cloud. Dans ce cas, il peut être judicieux d’autoriser les charges de travail à continuer d’envoyer des données de télémétrie aux systèmes locaux existants.
+L’utilisation de solutions de journalisation et de création de rapports cloud, comme Azure Monitor, peut nécessiter un effort important de redéveloppement pour les applications et les services qui doivent être migrés dans le cloud. Dans ce cas, autorisez les charges de travail à continuer d’envoyer des données de télémétrie aux systèmes locaux existants.
 
 Pour que cette approche soit possible, vos ressources cloud doivent être en mesure de communiquer directement avec vos systèmes locaux via un [réseau hybride](../software-defined-network/hybrid.md) et des [services de domaine hébergés dans le cloud](../identity/index.md#cloud-hosted-domain-services). Une fois cela mis en place, le réseau virtuel cloud fonctionne comme une extension de l’environnement local. Par conséquent, vos charges de travail hébergées sur le cloud peuvent communiquer directement avec votre système de création de rapports et de journalisation local.
 
@@ -69,7 +69,7 @@ Conditions s’appliquant uniquement aux scénarios en local :
 
 ### <a name="gateway-aggregation"></a>Agrégation de passerelle
 
-Si la quantité de données de télémétrie basées sur le cloud est importante ou si les systèmes de supervision locaux existants ont besoin de modifier les données de journal avant de pouvoir les traiter, un service d’[agrégation de passerelle](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation) de données journal peut être nécessaire.
+Si la quantité de données de télémétrie basées sur le cloud est importante ou si les systèmes de supervision locaux existants ont besoin de modifier les données de journal avant de pouvoir les traiter, vous pouvez avoir besoins d’un service d’[agrégation de passerelle](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation) de données de journal.
 
 Un service de passerelle est déployé sur votre fournisseur de cloud. Ensuite, les applications et les services appropriés sont configurés de manière à ce qu’ils envoient les données de télémétrie à la passerelle au lieu du système de journalisation par défaut. Suite à cela, la passerelle peut traiter les données : elle agrège des données, les combine et les formate selon les besoins avant de les envoyer à votre système de supervision qui les ingère et les analyse.
 
