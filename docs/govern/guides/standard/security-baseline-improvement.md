@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3ffc0c0707dd8a8631bc7724fd432a2183fea797
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058661"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753046"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité
 
@@ -71,7 +71,7 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 
 1. Toutes les ressources déployées doivent être classées par criticité et par classification des données. Les classifications doivent être examinées par l’équipe de gouvernance cloud et le propriétaire de l’application avant le déploiement sur le cloud.
 2. Les applications qui stockent des données protégées ou y accèdent doivent être gérées différemment des autres applications. Au minimum, elles doivent être segmentées de façon à éviter tout accès involontaire à des données protégées.
-3. Toutes les données protégées doivent être chiffrées au repos. Même s’il s’agit du comportement par défaut pour tous les comptes de stockage Azure, des stratégies de chiffrement supplémentaires peuvent être nécessaires, notamment le chiffrement des données dans le compte de stockage, le chiffrement des machines virtuelles et le chiffrement au niveau de la base de données en cas d’utilisation de SQL sur une machine virtuelle (chiffrement de colonne et TDE).
+3. Toutes les données protégées doivent être chiffrées au repos. Même s’il s’agit du comportement par défaut pour tous les comptes de stockage Azure, des stratégies de chiffrement supplémentaires peuvent être nécessaires, notamment le chiffrement des données dans le compte de stockage, le chiffrement des machines virtuelles et le chiffrement au niveau de la base de données lors de l’utilisation de SQL sur une machine virtuelle (chiffrement de colonne et TDE).
 4. Les autorisations avec élévation de privilèges dans les segments contenant des données protégées doivent être des exceptions. Ces exceptions seront validées avec l’équipe de gouvernance cloud et auditées régulièrement.
 5. Les sous-réseaux de réseau qui contiennent des données protégées doivent être isolés de tous les autres sous-réseaux. Le trafic réseau entre les sous-réseaux de données protégées doit être audité régulièrement.
 6. Aucun sous-réseau contenant des données protégées ne doit être accessible directement via l’Internet public ou entre les centres de données. L’accès à ces sous-réseaux doit être routé via des sous-réseaux intermédiaires. Tous les accès à ces sous-réseaux doivent transiter par une solution de pare-feu qui peut effectuer des analyses des paquets et mettre en œuvre des fonctions de blocage.

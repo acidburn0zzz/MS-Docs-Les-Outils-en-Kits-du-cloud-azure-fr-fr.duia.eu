@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f761f85fa4b21b35e8428985707176624b92a5ec
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b19357bd98858cc227426d2adb03a6e84210b9b3
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032438"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753777"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ La difficulté avec les métriques de comportement des clients est qu’elles pe
 
 ## <a name="data-innovation"></a>Innovation des données
 
-La modification d’un secteur, la disruption de marchés ou la transformation de produits/services peuvent prendre des années. Dans un effort d’innovation des données dans le cloud, l’expérimentation est essentielle à la mesure du succès. Soyez transparent en partageant des métriques de prédiction telles que le pourcentage de probabilité, le nombre d’expérimentations ayant échoué et la quantité de modèles entraînés. Les échecs s’accumulent plus rapidement que les réussites. Ces métriques peuvent être décourageantes et il est important que l’équipe de direction comprenne le temps et l’investissement nécessaires pour exploiter correctement les données.
+La modification d’un secteur, la disruption de marchés ou la transformation de produits et services peuvent prendre des années. Dans un effort d’innovation des données dans le cloud, l’expérimentation est essentielle à la mesure du succès. Soyez transparent en partageant des métriques de prédiction telles que le pourcentage de probabilité, le nombre d’expérimentations ayant échoué et le nombre de modèles entraînés. Les échecs s’accumulent plus rapidement que les réussites. Ces métriques pouvant être décourageantes, l’équipe de direction doit comprendre le temps et l’investissement nécessaires pour les utiliser correctement.
 
 En revanche, certains indicateurs positifs sont souvent associés à l’apprentissage piloté par les données : la centralisation des jeux de données hétérogènes, l’entrée des données et la démocratisation des données. Alors que l’équipe est en train de se renseigner sur le client de demain, des résultats réels peuvent se produire immédiatement. La prise en charge des métriques d’apprentissage peut inclure les éléments suivants :
 

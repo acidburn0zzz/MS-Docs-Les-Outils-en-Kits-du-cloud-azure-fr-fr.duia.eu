@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656589"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753294"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Activer la réussite lors des parcours d’adoption du cloud
 
@@ -32,7 +32,7 @@ Tout au long de ce Framework, l’activation est un thème fondamental. La liste
 
 ## <a name="additional-tools"></a>Outils supplémentaires
 
-En plus du Framework d’adoption du cloud, Microsoft couvre des sujets supplémentaires qui peuvent assurer la réussite. Cet article met en évidence quelques outils courants qui peuvent améliorer considérablement le succès au-delà de la portée du Framework d’adoption du cloud. L’établissement d’une gouvernance cloud, d’architectures résilientes, de compétences techniques et d’une approche DevOps est essentiel à la réussite de tout effort d’adoption du cloud. Le lecteur est invité à marquer cette page en tant que ressource pour la revisiter tout au long du parcours d’adoption du cloud.
+En plus du Framework d’adoption du cloud, Microsoft couvre des sujets supplémentaires qui peuvent assurer la réussite. Cet article met en évidence quelques outils courants qui peuvent améliorer considérablement le succès au-delà de la portée du Framework d’adoption du cloud. L’établissement d’une gouvernance cloud, d’architectures résilientes, de compétences techniques et d’une approche DevOps est essentiel à la réussite de tout effort d’adoption du cloud. Marquez cette page en tant que ressource pour la revisiter tout au long du parcours d’adoption du cloud.
 
 <!-- markdownlint-disable MD033 -->
 

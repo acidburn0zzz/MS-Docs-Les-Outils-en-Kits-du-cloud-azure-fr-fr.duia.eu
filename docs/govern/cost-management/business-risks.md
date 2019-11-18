@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223606"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753259"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Risques métier et motivations associés à Gestion des coûts
 
@@ -45,7 +45,7 @@ Les risques diffèrent en fonction de l’organisation, mais ceux liés aux coû
 
 À l’aide du [modèle Gestion de cloud](./template.md), documentez les risques métier susceptibles d’être introduits par le plan d’adoption du cloud actuel.
 
-Une fois tous les risques métier réalistes appréhendés, l’étape suivante consiste à documenter la tolérance de l’activité aux risques, ainsi que les indicateurs et métriques clés permettant de surveiller cette tolérance.
+Une fois que vous avez compris tous les risques métier réalistes, l’étape suivante consiste à documenter la tolérance de l’activité aux risques, ainsi que les indicateurs et métriques clés permettant de superviser cette tolérance.
 
 > [!div class="nextstepaction"]
 > [Comprendre les indicateurs, les métriques et la tolérance au risque](./metrics-tolerance.md)

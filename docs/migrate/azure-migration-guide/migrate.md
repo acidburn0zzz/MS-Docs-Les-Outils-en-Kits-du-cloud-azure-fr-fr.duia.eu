@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 71838c7125b95ff83d1ac087e4cb028add9d2299
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 22a9f9f3a6c39932b50f58512e015eed41d30068
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058787"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753563"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrer des ressources (infrastructure, applications et données)
 
@@ -200,7 +200,7 @@ Pour plus d'informations, consultez les pages suivantes :
 
 ## <a name="cosmos-db-data-migration-tool"></a>Outil de migration de données Cosmos DB
 
-L’outil de migration de données Azure Cosmos DB peut importer des données dans les collections et les tables Azure Cosmos DB à partir de différentes sources. Vous pouvez importer à partir de fichiers JSON, de fichiers CSV, de SQL, de MongoDB, d’un stockage Table Azure, d’Amazon DynamoDB et même de collections d’API SQL Azure Cosmos DB. L’outil de migration de données peut également être utilisé pour migrer des données à partir d’une collection à partition unique vers une collection à plusieurs partitions pour l’API SQL.
+L’outil de migration de données Azure Cosmos DB peut importer des données dans les collections et les tables Azure Cosmos DB à partir de différentes sources. Vous pouvez importer à partir de fichiers JSON, de fichiers CSV, de SQL, de MongoDB, d’un stockage Table Azure, d’Amazon DynamoDB et même de collections d’API SQL Azure Cosmos DB. L’outil de migration de données peut également être utilisé pour migrer des données à partir d’une collection à partition unique vers une collection multipartition pour l’API SQL.
 
 Pour plus d'informations, consultez les pages suivantes :
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058556"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751557"
 ---
 ::: zone target="docs"
 
@@ -43,7 +43,7 @@ L’un des avantages des solutions informatiques est la possibilité de recueill
 
 Azure App Service fournit un environnement d’hébergement pour vos applications, ce qui élimine la charge de gestion de l’infrastructure et la mise à jour corrective du système d’exploitation. Il permet l’automatisation de la mise à l’échelle pour répondre aux demandes de vos utilisateurs tout en respectant les limites que vous définissez pour maîtriser les coûts.
 
-Azure App Service offre une prise en charge de première classe pour des langages tels que ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP ou Python. Si vous devez héberger une autre pile d’exécution, Web App pour conteneurs vous permet d’héberger rapidement et facilement un conteneur Docker au sein de l’environnement Azure App Service, afin que vous puisiez héberger votre pile de code personnalisée dans un environnement qui vous permet de vous sortir de l’activité du serveur.
+Azure App Service offre une prise en charge de première classe pour des langages tels que ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP ou Python. Si vous devez héberger une autre pile d’exécution, Web App pour conteneurs vous permet d’héberger rapidement et facilement un conteneur Docker au sein d’App Service, afin que vous puissiez héberger votre pile de code personnalisée dans un environnement qui vous permet de vous sortir de l’activité du serveur.
 
 ### <a name="action"></a>Action
 

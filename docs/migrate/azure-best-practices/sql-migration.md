@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 80e1de695d28f7eca7032559854f9a54dd4d3d99
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 09fb5a11a7d97d4cb94a11fbbb22aef84a29b87e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558615"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753596"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>Meilleures pratiques relatives à la migration de SQL Server pour Azure
 
@@ -27,4 +27,4 @@ L’[article à la portée étendue sur la migration de SQL Server](../expanded-
 
 ## <a name="migration-best-practices"></a>Bonnes pratiques en matière de migration
 
-La table des matières située à gauche présente plusieurs conseils de Microsoft qui permettent de guider la migration de SQL Server à l’aide du Guide de migration des bases de données Azure, d’Azure Data Migration Service (DMS) ou d’autres outils. Ajoutez cette page à vos favoris pour une référence rapide de la liste complète des meilleures pratiques.
+La table des matières située à gauche présente plusieurs conseils de Microsoft qui permettent de guider la migration de SQL Server à l’aide du Guide de migration des bases de données Azure, d’Azure Database Migration Service (DMS) ou d’autres outils. Ajoutez cette page à vos favoris pour une référence rapide de la liste complète des meilleures pratiques.

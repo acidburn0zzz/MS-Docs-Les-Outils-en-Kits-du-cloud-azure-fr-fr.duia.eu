@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: e0ddf68f959130df11305a9791c553aa48009c01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378076"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753802"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -63,7 +63,7 @@ Voici d’autres exemples de projets de première adoption :
 - **Développement/Test :** Supprimez les développements/tests des environnements locaux pour fournir aux développeurs le contrôle, l’agilité et les fonctionnalités du libre-service.
 - **Applications simples (moins de cinq) :** Modernisez et migrez une application simple pour acquérir rapidement une expérience de développement et d’exploitation.
 - **Labs de performances :** Quand vous avez besoin de performances à grande échelle dans un environnement lab, utilisez le cloud pour provisionner rapidement et à moindre coût ces labs sur une brève période.
-- **Plateforme de données :** Création d’un lac de données avec une capacité de calcul scalable pour les charges de travail d’analytique, de rapport ou de machine learning et migration vers des bases de données managées à l’aide de méthodes de création d’image mémoire et de restauration ou de services de migration de données.
+- **Plateforme de données :** Création d’un lac de données avec une capacité de calcul scalable pour les charges de travail d’analytique, de rapport ou de machine learning, et migration vers des bases de données managées à l’aide de méthodes de création d’image mémoire et de restauration ou de services de migration de données.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

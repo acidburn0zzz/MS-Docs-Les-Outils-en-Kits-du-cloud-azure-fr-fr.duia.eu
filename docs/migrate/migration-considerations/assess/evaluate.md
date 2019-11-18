@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549144"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753520"
 ---
 # <a name="evaluate-workload-readiness"></a>Évaluer la préparation des charges de travail
 
@@ -21,7 +21,7 @@ Cette activité est axée sur l’évaluation de la préparation d’une charge 
 
 ## <a name="evaluation-assumptions"></a>Hypothèses d’évaluation
 
-La plupart du contenu traitant des principes du Framework d’adoption du cloud est destiné à être indépendant des services cloud. Toutefois, le processus d’évaluation de la préparation doit être en grande partie spécifique à chaque plateforme cloud. Les instructions suivantes supposent que vous avez l’intention de migrer vers Azure. Elles supposent également l’utilisation d’Azure Migrate (également appelé Azure Site Recovery) pour les [activités de réplication](../migrate/replicate.md). Pour en savoir plus sur d’autres outils, consultez [Options de réplication](../migrate/replicate-options.md).
+La plupart du contenu traitant des principes du Framework d’adoption du cloud est indépendant des services cloud. Toutefois, le processus d’évaluation de la préparation doit être en grande partie spécifique à chaque plateforme cloud. Les instructions suivantes supposent que vous avez l’intention de migrer vers Azure. Elles supposent également l’utilisation d’Azure Migrate (également appelé Azure Site Recovery) pour les [activités de réplication](../migrate/replicate.md). Pour en savoir plus sur d’autres outils, consultez [Options de réplication](../migrate/replicate-options.md).
 
 Cet article ne vise pas à capturer toutes les activités d’évaluation possibles. Il est supposé que chaque environnement et résultat métier dicteront des exigences spécifiques. Pour accélérer la création de ces exigences, le reste de cet article partage quelques activités d’évaluation courantes liées à l’évaluation des [infrastructures](#common-infrastructure-evaluation-activities), des [bases de données](#common-database-evaluation-activities) et des [réseaux](#common-network-evaluation-activities).
 

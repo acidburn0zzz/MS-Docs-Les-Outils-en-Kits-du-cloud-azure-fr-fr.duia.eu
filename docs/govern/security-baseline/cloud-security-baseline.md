@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548021"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752167"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Comprendre la base de référence de la sécurité cloud
 
@@ -27,7 +27,7 @@ Cet article d’introduction présente le thème général de la base de référ
 
 La sécurité cloud est une extension des pratiques traditionnelles destinées à protéger les informations. La sécurité informatique traditionnelle englobe les stratégies et contrôles permettant de surveiller la sécurité des ordinateurs, la sécurité du réseau, la protection des données, l’utilisation des informations, etc. Ces mêmes stratégies et contrôles sont nécessaires dans le cloud. Pendant la transformation cloud, il est impératif que le responsable de la sécurité des systèmes soit activement impliqué et qu’il comprenne le paysage cloud, afin de s’assurer que les stratégies informatiques héritées sont mappées à des niveaux de contrôle corrects dans le cloud.
 
-Toute stratégie de sécurité cloud doit au moins prendre en compte les points suivants :
+Toute stratégie de sécurité cloud doit au moins prendre en compte les points suivants :
 
 - **Classification des données.** Une classification correcte des données est nécessaire pour comprendre toutes les sources de données privées, protégées ou hautement confidentielles. Elle vous aide à gérer les risques pendant la planification.
 - **Planification d’un scénario de cloud hybride.** Comprendre comment les réseaux locaux hérités se connecteront au cloud aide le chef de la sécurité des systèmes à identifier et éliminer les risques.

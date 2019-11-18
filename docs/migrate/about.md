@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ab28d38aafdddc0206b9fc7abc98cb489bba5d1b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547237"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751291"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Migration cloud dans le Framework d’adoption du cloud Microsoft pour Azure
 
@@ -44,7 +44,7 @@ L’architecte du cloud joue le rôle de facilitateur et de leader d’opinion p
 
 Pour les lecteurs qui souhaitent suivre ce guide du début à la fin, ce contenu les aidera à développer une stratégie de migration vers le cloud fiable. Les différentes instructions guident le lecteur à travers la théorie et la mise en pratique de cette stratégie.
 
-Dans un premier temps, il est recommandé aux lecteurs d’étudier le [guide de migration Azure](./azure-migration-guide/index.md) pour comprendre l’ensemble standard d’outils et d’approches nécessaires à la migration dans un cas d’usage courant. Par la suite, les recommandations de base peuvent être étendues pour répondre aux besoins des lecteurs grâce aux [scénarios de migration complexes](./expanded-scope/index.md), aux [pratiques recommandées pour la migration](./azure-best-practices/index.md) et aux [considérations relatives à la migration](./migration-considerations/index.md).
+Dans un premier temps, étudiez le [guide de migration Azure](./azure-migration-guide/index.md) pour comprendre l’ensemble standard d’outils et d’approches nécessaires à la migration dans un cas d’usage courant. Par la suite, les recommandations de base peuvent être étendues pour répondre aux besoins des lecteurs grâce aux [scénarios de migration complexes](./expanded-scope/index.md), aux [pratiques recommandées pour la migration](./azure-best-practices/index.md) et aux [considérations relatives à la migration](./migration-considerations/index.md).
 
 > [!div class="nextstepaction"]
 > [Guide de migration Azure](./azure-migration-guide/index.md)

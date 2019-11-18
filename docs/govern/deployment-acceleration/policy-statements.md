@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566347"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752674"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exemples d’instructions de stratégie pour l’accélération du déploiement
 
@@ -32,7 +32,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques métiers 
 
 **Instruction de stratégie :** dans la mesure du possible, toutes les ressources déployées dans le cloud doivent être déployées à l’aide de modèles ou de scripts d’automatisation.
 
-**Options de conception potentielles** : les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) proposent une approche de type « infrastructure en tant que code » pour déployer vos ressources sur Azure. Vous pouvez également utiliser [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview), qui vous offre un outil cohérent pour le déploiement local et dans le cloud.
+**Options de conception potentielles** : les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) proposent une approche de type « infrastructure en tant que code » pour déployer vos ressources sur Azure. Vous pouvez également utiliser [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview), qui vous offre un outil cohérent pour le déploiement local et dans le cloud.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Manque de visibilité sur les problèmes du système
 
@@ -43,7 +43,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques métiers 
 - Des mesures de diagnostics et des métriques clés seront identifiées pour tous les composants et systèmes de production, et des outils de diagnostics et de surveillance seront appliqués à ces systèmes et surveillés de façon régulière par le personnel responsable des opérations.
 - L’équipe responsable des opérations envisagera d’utiliser les outils de surveillance et de diagnostics dans les environnements autres que ceux de production, comme les environnements intermédiaires et AQ, pour identifier les problèmes des systèmes avant qu’ils ne se répercutent dans l’environnement de production.
 
-**Options de conception potentielles** : [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), qui inclut également Log Analytics et Application Insights, fournit des outils pour la collecte et l’analyse des données de télémétrie afin de vous aider à comprendre le fonctionnement de vos applications et d’identifier de manière proactive les problèmes qu’elles rencontrent et les ressources dont elles dépendent. En outre, le [journal d’activité Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) signale toutes les modifications effectuées au niveau de la plateforme. Vous devez le contrôler/vérifier pour identifier les modifications non conformes.
+**Options de conception potentielles** : [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), qui inclut Log Analytics et Application Insights, fournit des outils pour la collecte et l’analyse des données de télémétrie afin de vous aider à comprendre le fonctionnement de vos applications et d’identifier de manière proactive les problèmes qu’elles rencontrent et les ressources dont elles dépendent. En outre, le [journal d’activité Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) signale toutes les modifications effectuées au niveau de la plateforme. Vous devez le superviser et vérifier pour identifier les modifications non conformes.
 
 ## <a name="configuration-security-reviews"></a>Révisions de la sécurité des configurations
 

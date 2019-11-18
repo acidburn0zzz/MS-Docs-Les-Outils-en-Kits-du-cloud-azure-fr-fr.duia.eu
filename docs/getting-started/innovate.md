@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5e88a87a141adb1170f419db5d410cc31341c230
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048442"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753099"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Innover via l’adoption du cloud
 
@@ -21,7 +21,7 @@ La migration vers le cloud est une excellente option pour vos charges de travail
 
 ## <a name="motivations-behind-innovation"></a>Les motivations derrière l’innovation
 
-En matière d’adoption, l’innovation n’est pas le bon choix pour toutes les charges de travail. La voie de l’innovation requiert en général un investissement plus important en matière de code personnalisé et de gestion des données que les autres voies. L’innovation prend également plus de temps que la migration ou d’autres formes de modernisation. Ce cheminement est recommandé lorsque les clients ciblent les résultats opérationnels suivants :
+En matière d’adoption, l’innovation n’est pas le bon choix pour toutes les charges de travail. La voie de l’innovation requiert en général un investissement plus important en matière de code personnalisé et de gestion des données que les autres voies. L’innovation prend également plus de temps que la migration ou d’autres formes de modernisation. Suivez ce cheminement quand vous ciblez les résultats métier suivants :
 
 - Se préparer à de nouvelles capacités techniques.
 - Mettre à l’échelle pour répondre aux besoins du marché.

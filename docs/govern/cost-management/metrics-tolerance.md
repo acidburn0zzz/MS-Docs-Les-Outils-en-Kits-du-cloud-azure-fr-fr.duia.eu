@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: dc026ec6fc1a82db3c5c025becd31cd5cf2e7d8d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220963"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752691"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Mesures, indicateurs et tolérance au risque de Cost Management
 
@@ -41,12 +41,12 @@ Lors des premières étapes de l’adoption du cloud, vous collaborez avec votre
 
 Après avoir identifié les [risques métier](./business-risks.md), vous collaborez avec votre entreprise pour définir les bancs d’essai permettant d’identifier les déclencheurs d’augmentation potentielle de ces risques. Voici quelques exemples de mesures, telles que celles mentionnées ci-dessus, par rapport à votre tolérance aux risques de référence pour inciter votre entreprise à investir davantage dans Cost Management.
 
-- **Engagement justifié (cas le plus courant) :** Entreprise qui s’engage à dépenser n 000 000 € cette année dans des services de fournisseur cloud. Elle a besoin d’une discipline Cost Management pour veiller à ne pas dépasser ses objectifs de dépenses de plus de 20 % et à utiliser au moins 90 % de ce budget.
-- **Déclencheur de pourcentage :** Entreprise dont les dépenses cloud sont stables pour ses systèmes de production. En cas de hausse de plus _x %_ , une discipline Cost Management s’avère être un investissement judicieux.
-- **Déclencheur de surapprovisionnement :** Entreprise qui considère ses solutions déployées sont suraprovisionnées. Cost Management est un investissement prioritaire tant que l’entreprise ne peut pas démontrer que l’approvisionnement des ressources est parfaitement adapté à l’utilisation de celles-ci.
-- **Déclencheur de dépense mensuelle :** Des dépenses mensuelles de plus de n 000 € constituent un coût important pour une entreprise. Si les dépenses dépassent ce montant au cours d’un mois donné, l’entreprise doit investir dans Cost Management.
-- **Déclencheur de dépense annuelle :** Entreprise disposant d’un budget informatique de R&D qui permet de dépenser n 000 € par an pour l’expérimentation cloud. L’entreprise peut exécuter des charges de travail de production dans le cloud, mais le déclencheur est toujours considéré comme une solution expérimentale si le budget ne dépasse pas ce montant. En cas de dépassement du budget, celui-ci doit être traité comme un investissement de production, ce qui oblige à gérer étroitement les dépenses.
-- **Frais d’exploitation indésirables (rare) :** Une entreprise refuse de subir des dépenses d’exploitation et a besoin de disposer de contrôles Cost Management avant de déployer une charge de travail de développement/de test.
+- **Engagement justifié (cas le plus courant) :** Entreprise qui s’engage à dépenser _n 000 000 €_ cette année dans des services de fournisseur cloud. Elle a besoin d’une discipline Cost Management pour veiller à ne pas dépasser ses objectifs de dépenses de plus de 20 % et à utiliser au moins 90 % de son budget.
+- **Déclencheur de pourcentage :** Entreprise dont les dépenses cloud sont stables pour ses systèmes de production. En cas de hausse de plus _x %_ , une discipline Cost Management est un investissement judicieux.
+- **Déclencheur de surapprovisionnement :** Entreprise qui considère ses solutions déployées sont suraprovisionnées. Cost Management est un investissement prioritaire tant que l’entreprise ne démontre pas que le provisionnement des ressources est parfaitement adapté à l’utilisation de celles-ci.
+- **Déclencheur de dépense mensuelle :** Des dépenses mensuelles de plus de _n 000 €_ constituent un coût important pour une entreprise. Si les dépenses dépassent ce montant au cours d’un mois donné, l’entreprise doit investir dans Cost Management.
+- **Déclencheur de dépense annuelle :** Entreprise disposant d’un budget informatique de R&D qui permet de dépenser _n 000 €_ par an pour l’expérimentation cloud. L’entreprise peut exécuter des charges de travail de production dans le cloud, mais le déclencheur est toujours considéré comme une solution expérimentale si le budget ne dépasse pas ce montant. Si le budget est dépassé, il doit être traité comme un investissement de production, ce qui oblige à gérer étroitement les dépenses.
+- **Frais d’exploitation indésirables (rare) :** Une entreprise refuse de subir des dépenses d’exploitation et a besoin de disposer de contrôles de gestion des coûts avant de déployer une charge de travail de développement/de test.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

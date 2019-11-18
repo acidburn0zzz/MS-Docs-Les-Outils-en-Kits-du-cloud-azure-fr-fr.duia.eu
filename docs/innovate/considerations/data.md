@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565699"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753041"
 ---
 # <a name="democratize-data"></a>Démocratiser les données
 
 Le charbon, le pétrole et le potentiel humain ont été les trois principaux atouts de la révolution industrielle. Ces ressources ont permis de bâtir des entreprises, de déplacer des marchés et, en définitive, de changer des nations. Dans l’économie numérique, il existe trois ressources d’égale importance : les données, les appareils et le potentiel humain. Chacune d'entre elles recèle un grand potentiel d'innovation. Dans tout effort d'innovation de l'ère moderne, les données représentent le nouveau pétrole.
 
-Aujourd'hui, dans toutes les entreprises, il existe des poches de données qui pourraient être exploitées pour identifier et répondre plus efficacement aux besoins des clients. Malheureusement, le processus d’exploitation de ces données pour stimuler l’innovation a longtemps été coûteux et chronophage. La plupart des solutions les plus précieuses pour les clients ne sont pas satisfaisantes, car les utilisateurs ne peuvent pas accéder aux données dont ils ont besoin.
+Aujourd’hui, dans toutes les entreprises, il existe des poches de données qui pourraient être utilisées pour identifier et répondre plus efficacement aux besoins des clients. Malheureusement, le processus d’exploitation de ces données pour stimuler l’innovation a longtemps été coûteux et chronophage. La plupart des solutions les plus précieuses pour les clients ne sont pas satisfaisantes, car les utilisateurs ne peuvent pas accéder aux données dont ils ont besoin.
 
 La démocratisation des données est le processus qui consiste à mettre ces données entre les bonnes mains pour stimuler l’innovation. Ce processus peut prendre différentes formes, mais il comprend généralement des solutions pour l'acquisition ou l'intégration des données brutes ainsi que pour la centralisation, le partage et la sécurisation des données. Lorsque ces méthodes fonctionnent, des experts de l'entreprise peuvent utiliser les données pour tester des hypothèses. Très souvent, les équipes d'adoption du cloud peuvent [développer en faisant preuve d'empathie vis-à-vis des clients](./build.md) en utilisant uniquement des données et en répondant rapidement aux besoins des clients existants.
 
@@ -33,7 +33,7 @@ Les phases suivantes guideront les décisions et les approches nécessaires à l
 
 Lorsque vous [développez en faisant preuve d'empathie vis à vis du client](./build.md), tous les processus font passer les besoins du client avant une solution technique. Parce que la démocratisation des données ne fait pas exception, nous commençons par partager les données. Pour démocratiser des données, le développement doit inclure une solution qui partage des données avec un consommateur de données. Le consommateur de données peut être un client direct ou un mandataire qui prend des décisions pour les clients. Les consommateurs de données approuvés peuvent analyser, interroger et créer des rapports sur des données centralisées, sans l'aide du personnel informatique.
 
-De nombreuses innovations ont été lancées avec succès en tant que produits minimum viables (PMV) qui proposent des processus manuels et pilotés par les données au nom du client. Dans ce modèle de conciergerie, un employé est le consommateur de données. Cet employé utilise les données pour aider le client. Chaque fois que le client a recours au support manuel, une hypothèse peut être testée et validée. Cette approche est souvent un moyen rentable de tester une hypothèse centrée sur le client avant d'investir massivement dans des solutions intégrées.
+De nombreuses innovations ont été lancées avec succès en tant que produit minimum viable (PMV) qui proposent des processus manuels et pilotés par les données au nom du client. Dans ce modèle de conciergerie, un employé est le consommateur de données. Cet employé utilise les données pour aider le client. Chaque fois que le client a recours au support manuel, une hypothèse peut être testée et validée. Cette approche est souvent un moyen rentable de tester une hypothèse centrée sur le client avant d'investir massivement dans des solutions intégrées.
 
 Les principaux outils permettant de partager des données directement avec les consommateurs de données sont les rapports en libre-service ou les données intégrées dans d'autres expériences à l'aide d'outils tels que [Power BI](https://docs.microsoft.com/power-bi).
 
@@ -46,7 +46,7 @@ Le partage de données peut rapidement produire un PMV utilisable dans le cadre 
 
 La gouvernance des données est un vaste sujet qui pourrait nécessiter son propre cadre dédié. Ce degré de granularité dépasse la portée du [Framework d'adoption du cloud](../../index.md). Toutefois, certains aspects de la gouvernance des données doivent être pris en compte dès que l'hypothèse du client est validée. Par exemple :
 
-- **Les données partagées sont-elles sensibles ?** [Les données doivent être classées secrètes](../../govern/policy-compliance/data-classification.md) avant tout partage public afin de protéger les intérêts des clients et de l’entreprise.
+- **Les données partagées sont-elles sensibles ?** [Les données doivent être classées secrètes](../../govern/policy-compliance/data-classification.md) avant d’être partagées publiquement afin de protéger les intérêts des clients et de l’entreprise.
 - **Si les données sont sensibles, ont-elles été sécurisées ?** La protection des données sensibles doit être obligatoire pour toutes les données démocratisées. L’exemple de la charge de travail axée sur la [sécurisation des solutions de données](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) fournit quelques références relatives à la sécurisation des données.
 - **Les données sont-elles cataloguées ?** La saisie de détails sur les données partagées facilitera la gestion des données à long terme. Les outils permettant de documenter les données, comme Azure Data Catalog, peuvent rendre ce processus beaucoup plus facile dans le cloud. L’aide relative à l’[annotation des données](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) et à la [documentation des sources de données](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) peuvent accélérer le processus.
 
@@ -72,7 +72,7 @@ Lorsque vous devez centraliser des données pour répondre aux besoins d'un clie
 
 **Intégration :** Les données qui résident dans un magasin de données existant peuvent être intégrées au magasin de données centralisé en utilisant des techniques traditionnelles de déplacement des données. Cela est particulièrement courant pour les scénarios qui impliquent un stockage de données multicloud. Ces techniques consistent à extraire les données du magasin de données existant, puis à les charger dans le magasin de données central. À un moment donné de ce processus, les données sont généralement transformées pour être plus utiles et pertinentes dans le magasin central.
 
-Les outils cloud ont transformé ces techniques en outils de paiement à l'utilisation, réduisant ainsi les obstacles à l'entrée pour la collecte et la centralisation des données. Data Migration Service et Data Factory sont des exemples d'outils de ce type dans Azure. L'architecture de référence d'une [fabrique de données avec magasin de données OLAP](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) est un exemple de solution de ce type.
+Les outils cloud ont transformé ces techniques en outils de paiement à l'utilisation, réduisant ainsi les obstacles à l'entrée pour la collecte et la centralisation des données. Azure Database Migration Service et Azure Data Factory sont des exemples d’outils de ce type. L'architecture de référence d'une [fabrique de données avec magasin de données OLAP](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) est un exemple de solution de ce type.
 
 **Ingestion :** Certaines données ne figurent dans aucun magasin de données existant. Lorsque ces données temporaires constituent une source principale d'innovation, vous devez envisager d'autres approches. Les données temporaires figurent dans différents types de sources existantes, comme les applications, les API, les flux de données, les appareils IoT, les blockchains, le cache des applications, le contenu multimédia ou même les fichiers plats.
 

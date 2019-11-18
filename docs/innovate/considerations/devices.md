@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a1b96a5f29ebac9fd228ab1603d12e08b38ba63
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565648"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752091"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Expériences ambiantes : Interagir avec les appareils
 
@@ -55,7 +55,7 @@ Les solutions de réalité mixte représentent le niveau de maturité suivant po
 > [!IMPORTANT]
 > Si un appareil de réalité virtuelle (RV) est nécessaire et *ne fait pas déjà partie de l’environnement immédiat ou des comportements naturels d’un client*, la réalité augmentée ou virtuelle relève plus de l’expérience de remplacement que de l’expérience ambiante.
 
-Les expériences de réalité mixte sont de plus en plus courantes parmi les travailleurs à distance. Leur utilisation croît encore plus rapidement dans les secteurs nécessitant une collaboration ou des compétences spécialisées qui ne sont pas immédiatement disponibles sur le marché local. Les situations qui requièrent la prise en charge centralisée de l’implémentation d’un produit complexe pour une main-d’œuvre à distance sont un terreau particulièrement fertile pour la réalité augmentée. Dans ces scénarios, l’équipe centrale du support technique et les travailleurs à distance peuvent tirer parti de la réalité augmentée pour travailler sur le produit, détecter un problème sur celui-ci et l’installer.
+Les expériences de réalité mixte sont de plus en plus courantes parmi les travailleurs à distance. Leur utilisation croît encore plus rapidement dans les secteurs nécessitant une collaboration ou des compétences spécialisées qui ne sont pas immédiatement disponibles sur le marché local. Les situations qui requièrent la prise en charge centralisée de l’implémentation d’un produit complexe pour une main-d’œuvre à distance sont un terreau particulièrement fertile pour la réalité augmentée. Dans ces scénarios, l’équipe centrale du support technique et les travailleurs à distance peuvent utiliser la réalité augmentée pour travailler sur le produit, détecter un problème sur celui-ci et l’installer.
 
 Considérez par exemple le cas des ancres spatiales. Les ancres spatiales vous permettent de créer des expériences de réalité mixte avec des objets qui conservent leurs emplacements respectifs sur les appareils et dans le temps. Grâce aux ancres spatiales, un comportement spécifique peut être capturé, enregistré et rendu persistant, fournissant ainsi une expérience ambiante la prochaine fois que l’utilisateur opère dans cet environnement augmenté. [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) est un service qui adapte cette logique au cloud, permettant de dupliquer les expériences entre les appareils et même entre les solutions.
 

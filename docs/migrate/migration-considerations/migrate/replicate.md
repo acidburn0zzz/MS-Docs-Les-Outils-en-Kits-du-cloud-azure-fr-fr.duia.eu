@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 62c12796abf8921c13cebe471fe555d012bab15c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: cd76991fc7d8b13302e4614cf9e57da740f650d8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549131"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753692"
 ---
 <!-- markdownlint-disable MD026 -->
 

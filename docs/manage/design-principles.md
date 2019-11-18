@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565008"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752767"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Appliquer des principes de conception et des opérations avancées
 
@@ -48,7 +48,7 @@ Il existe deux domaines de spécialisation :
 - **Spécialisation de plateforme :** Investir dans les opérations en cours d’une plateforme partagée, en répartissant l’investissement entre plusieurs charges de travail.
 - **Spécialisation de charge de travail :** Investir dans les opérations en cours d’une charge de travail spécifique. Généralement réservée aux charges de travail critiques.
 
-### <a name="central-it-or-cloud-center-of-excellence-ccoe"></a>Informatique centralisée ou Cloud Center of Excellence (CCoE)
+### <a name="central-it-or-cloud-center-of-excellence-ccoe"></a>Informatique centralisée ou centre d’excellence du cloud (CCoE)
 
 Le choix entre une spécialisation de plateforme et une spécialisation de charge de travail est basé sur la criticité et l’impact de chaque charge de travail. Toutefois, ces choix reflètent également une décision culturelle plus large qui consiste à choisir entre les modèles organisationnels Informatique centralisée et CCoE.
 
