@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025466"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564596"
 ---
 # <a name="business-change-plan"></a>Plan de changement pour l’entreprise
 
@@ -31,7 +31,7 @@ Bien que les approches puissent varier, les thèmes généraux sont présents da
 
 Ces thèmes reposent souvent sur l’hypothèse que l’introduction de nouvelles solutions aux utilisateurs doit se concentrer en grande partie sur le contrôle des risques et la facilitation du changement. En outre, le service informatique s’est principalement concentré sur les risques liés aux changements technologiques et à la facilitation de ces changements.
 
-## <a name="creating-business-change-plans"></a>Création de plans de changements opérationnels
+## <a name="create-business-change-plans"></a>Créer des plan de changements dans l’entreprise
 
 Un plan des changements opérationnels va au-delà des changements techniques et suppose que chaque mise en production d’un effort de migration entraîne un certain niveau de changement dans les processus métier. Il regarde en amont et en aval des changements techniques. Les questions suivantes permettent aux participants de réfléchir à l’adoption par les utilisateurs du point de vue des changements opérationnels, afin d’optimiser l’impact sur l’activité :
 

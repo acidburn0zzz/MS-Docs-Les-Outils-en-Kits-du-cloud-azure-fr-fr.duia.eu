@@ -10,27 +10,27 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a79164435772f571849d0a836f43b53ce3bca087
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 83ac1abd6ce35b62f64722d101f599726c7b26b3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557004"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565417"
 ---
 # <a name="protect-and-recover-in-azure"></a>Protéger et récupérer dans Azure
 
-La protection et la récupération constituent la troisième et dernière discipline dans toute ligne de base de gestion cloud.
+_Protéger et récupérer_ constituent la troisième et dernière discipline de toute ligne de base de gestion cloud.
 
 ![Base de référence de gestion cloud](../../_images/manage/management-baseline.png)
 
-Dans le dernier article « Conformité opérationnelle », l’objectif est de réduire la probabilité d’une interruption d’activité. Cet article « Protéger et récupérer » vise à réduire la durée et l’impact des pannes qui ne peuvent pas être évitées.
+Dans [Conformité opérationnelle dans Azure](./operational-compliance.md), l’objectif est de réduire la probabilité d’une interruption d’activité. Cet article actuel vise à réduire la durée et l’impact des pannes qui ne peuvent pas être évitées.
 
-Dans le cas d’un environnement d’entreprise, le tableau suivant présente le minimum suggéré pour toute base de référence de gestion.
+Dans le cas d’un environnement d’entreprise, ce tableau présente le minimum suggéré pour toute ligne de base de gestion :
 
 |Process  |Outil  |Objectif  |
 |---------|---------|---------|
-|Protection des données|Sauvegarde Azure|Sauvegarder des données et des machines virtuelles dans le cloud|
-|Protéger l'environnement|Azure Security Center|
+|Protection des données|Sauvegarde Azure|Sauvegardez des données et des machines virtuelles dans le cloud.|
+|Protéger l'environnement|Azure Security Center|Renforcer la sécurité et fournir une protection avancée contre les menaces pour vos charges de travail hybrides.|
 
 ::: zone target="docs"
 
@@ -43,13 +43,13 @@ Dans le cas d’un environnement d’entreprise, le tableau suivant présente le
 
 ::: zone-end
 
-Sauvegarde Azure est le service Azure qui vous permet de sauvegarder (ou de protéger) et de récupérer vos données dans le cloud Microsoft. Sauvegarde Azure remplace votre solution actuelle de sauvegarde locale ou hors site par une solution informatique la fois fiable, sécurisée et économique. Il peut également être utilisé pour protéger et récupérer des ressources locales via une solution cohérente.
+Sauvegarde Azure vous permet de sauvegarder, protéger et récupérer vos données dans le cloud Microsoft. Sauvegarde Azure remplace votre solution de sauvegarde locale ou hors site existante par une solution informatique. Cette nouvelle solution est fiable, sécurisée et économique. Sauvegarde Azure peut également être utilisé pour protéger et récupérer des ressources locales via une solution cohérente.
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Activer la sauvegarde pour une machine virtuelle Azure
 
 1. Dans le Portail Azure, sélectionnez **Machines virtuelles**, puis la machine virtuelle que vous souhaitez répliquer.
-1. Dans **Opérations**, sélectionnez **Sauvegarde**.
-1. Créez un coffre Recovery Services ou sélectionnez-en un existant.
+1. Dans le volet **Opérations**, sélectionnez **Sauvegarde**.
+1. Créez ou sélectionnez un coffre Recovery Services Azure existant.
 1. Sélectionnez **Créer (ou modifier) une nouvelle stratégie**.
 1. Configurez la planification et la période de rétention.
 1. Sélectionnez **OK**.
@@ -76,12 +76,11 @@ Sauvegarde Azure est le service Azure qui vous permet de sauvegarder (ou de prot
 
 Azure Site Recovery est un composant essentiel de votre stratégie de récupération d’urgence.
 
-Le service Azure Site Recovery vous permet de répliquer des machines virtuelles et des charges de travail hébergées dans une région Azure primaire vers une copie hébergée dans une région secondaire. Lorsqu’une panne se produit dans votre région primaire, vous pouvez basculer vers la copie en cours d’exécution dans la région secondaire et continuer à accéder à vos applications et services à partir de là. Cette approche proactive de la récupération peut réduire de manière significative les temps de récupération. Lorsque l’environnement de récupération n’est plus nécessaire, le trafic de production peut revenir à l’environnement d’origine.
+Site Recovery réplique les machines virtuelles et les charges de travail hébergées dans une région Azure primaire. Il les réplique vers une copie hébergée dans une région secondaire. Lorsqu’une panne se produit dans votre région primaire, vous basculez vers la copie en cours d’exécution dans la région secondaire. Vous accédez toujours à vos applications et services à partir de là. Cette approche proactive de la récupération peut réduire de manière significative les temps de récupération. Lorsque l’environnement de récupération n’est plus nécessaire, le trafic de production peut revenir à l’environnement d’origine.
 
-### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>Répliquer une machine virtuelle Azure vers une autre région avec le service Site Recovery
+### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery"></a>Répliquer une machine virtuelle Azure vers une autre région avec Site Recovery
 
-Les étapes suivantes décrivent le processus d’utilisation du service Site Recovery pour répliquer une machine virtuelle Azure vers une autre région (Azure vers Azure) :
-
+Les étapes suivantes décrivent le processus d’utilisation de Site Recovery pour une réplication Azure-to-Azure, c’est-à-dire, une réplication d’une machine virtuelle Azure vers une autre région.
 >
 > [!TIP]
 > Selon votre scénario, les étapes exactes peuvent différer légèrement.
@@ -90,9 +89,9 @@ Les étapes suivantes décrivent le processus d’utilisation du service Site Re
 ### <a name="enable-replication-for-the-azure-vm"></a>Activer la réplication des machines virtuelles Azure
 
 1. Dans le Portail Azure, sélectionnez **Machines virtuelles**, puis la machine virtuelle que vous souhaitez répliquer.
-1. Dans **Opérations**, sélectionnez **Récupération d’urgence**.
-1. Dans **Configurer la récupération d’urgence** > **Région cible**, sélectionnez la région cible vers laquelle vous allez effectuer la réplication.
-1. Pour ce démarrage rapide, acceptez les autres paramètres par défaut.
+1. Dans le volet **Opérations**, sélectionnez **Récupération d’urgence**.
+1. Sélectionnez **Configurer la récupération d’urgence** > **Région cible** et choisissez la région cible vers laquelle vous allez effectuer la réplication.
+1. Pour ce démarrage rapide, acceptez les valeurs par défaut pour toutes les autres options.
 1. Sélectionnez **Activer la réplication**, démarrant un travail permettant la réplication pour la machine virtuelle.
 
 ::: zone target="chromeless"
@@ -106,7 +105,7 @@ Les étapes suivantes décrivent le processus d’utilisation du service Site Re
 Une fois le travail de réplication terminé, vous pouvez vérifier l’état et l’intégrité de la réplication et tester le déploiement.
 
 1. Dans le menu Machine virtuelle, sélectionnez **Récupération d’urgence**.
-2. Vérifiez l’intégrité de la réplication, les points de récupération qui ont été créés ainsi que les régions sources et cibles sur la carte.
+1. Vérifiez l’intégrité de la réplication, les points de récupération qui ont été créés ainsi que les régions sources et cibles sur la carte.
 
 ::: zone target="chromeless"
 

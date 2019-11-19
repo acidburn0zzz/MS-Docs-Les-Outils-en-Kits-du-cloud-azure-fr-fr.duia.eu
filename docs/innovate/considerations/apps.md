@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f26cf77f918c12c46c653c6fc91ebc972d0db64
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047555"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565769"
 ---
 # <a name="engage-through-applications"></a>Impliquer par le biais d’applications
 
@@ -27,16 +27,16 @@ Dans certains cas, les données seules sont suffisantes pour produire des change
 
 Les équipes capables de répondre plus rapidement et plus précisément aux retours des clients, aux évolutions du marché et aux opportunités d’innovation sont celles dominent habituellement l’innovation sur leurs marchés respectifs. Le premier principe sur lequel reposent les applications innovantes est résumé dans la section [présentation de l’esprit de croissance](./learn.md#growth-mindset) : « Partager le code. » Au fil du temps, l’innovation émerge d’un thème culturel. L’innovation doit être soutenue par différentes perspectives et contributions.
 
-Dans une perspective d’innovation, tout développement d’application doit commencer par un dépôt de code partagé. [GitHub](https://guides.github.com/) est l’outil de gestion de dépôts de code le plus utilisé. Il vous permet de créer rapidement un dépôt de code partagé. [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) est également un ensemble d’outils de gestion de versions dans Azure DevOps Services que vous pouvez utiliser pour gérer votre code. Azure Repos offre deux types de gestion de version :
+Dans une perspective d’innovation, tout développement d’application doit commencer par un dépôt de code partagé. [GitHub](https://guides.github.com) est l’outil de gestion de dépôts de code le plus utilisé. Il vous permet de créer rapidement un dépôt de code partagé. [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) est également un ensemble d’outils de gestion de versions dans Azure DevOps Services que vous pouvez utiliser pour gérer votre code. Azure Repos offre deux types de gestion de version :
 
-- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) : gestion de version distribuée
-- [Team Foundation Version Control (TFVC)](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) : gestion de versions centralisée
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) : gestion de version distribuée
+- [Team Foundation Version Control (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) : gestion de versions centralisée
 
 ## <a name="citizen-developers"></a>Développeurs citoyens
 
 Les développeurs professionnels représentent un composant vital de l’innovation. Quand une hypothèse se révèle exacte à grande échelle, les développeurs professionnels doivent stabiliser la solution et la préparer en vue d’un développement à grande échelle. La plupart des principes auxquels cet article fait référence nécessitent un support de la part de développeurs professionnels. Malheureusement, les tendances actuelles suggèrent qu’il y a une demande de développeurs professionnels dépassant le nombre de développeurs disponibles. En outre, quand un développement professionnel est nécessaire, le coût et le rythme de l’innovation peuvent se révéler moins favorables. En réponse à ces défis, les développeurs citoyens offrent un moyen d’adapter les efforts de développement et d’accélérer les premiers tests d’hypothèse.
 
-L’utilisation de développeurs citoyens peut être une approche viable et efficace quand les premières hypothèses peuvent être validées à l’aide d’outils tels que [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) pour les interfaces d’application, [AI Builder](https://docs.microsoft.com//powerapps/use-ai-builder) pour les processus et les prédictions, [Microsoft Flow](https://docs.microsoft.com/flow) pour les workflows et [Power BI](https://docs.microsoft.com/power-bi) pour la consommation de données.
+L’utilisation de développeurs citoyens peut être une approche viable et efficace quand les premières hypothèses peuvent être validées à l’aide d’outils tels que [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) pour les interfaces d’application, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) pour les processus et les prédictions, [Microsoft Flow](https://docs.microsoft.com/flow) pour les workflows et [Power BI](https://docs.microsoft.com/power-bi) pour la consommation de données.
 
 > [!NOTE]
 > Quand vous vous appuyez sur des développeurs citoyens pour tester les hypothèses, il est recommandé d’obtenir un support, une revue et de l’aide auprès de développeurs professionnels. Une fois qu’une hypothèse est validée à grande échelle, un processus de transition de l’application vers un modèle de programmation plus robuste accélère les retours sur l’innovation. L’implication de développeurs professionnels dès les premières définitions de processus peut conduire à des transitions plus fluides par la suite.
@@ -83,11 +83,11 @@ L’extension d’une solution est une forme courante de modernisation. Cette ap
 
 - La logique métier existante doit répondre au besoin existant du client (ou y répondre quasiment).
 - Une expérience améliorée répondrait mieux aux besoins d’une cohorte de clients spécifique.
-- La logique métier nécessaire à la solution de produit minimum viable (MVP) a été centralisée, généralement par le biais d’une approche [multiniveau](/azure/architecture/guide/architecture-styles/n-tier), [microservices](/azure/architecture/guide/architecture-styles/microservices), basée sur des services web ou basée sur des API. Cette approche consiste à wrapper la solution existante avec une nouvelle expérience hébergée dans le cloud. Cette solution est probablement disponible dans Azure App Services.
+- La logique métier nécessaire à la solution de produit minimum viable (MVP) a été centralisée, généralement par le biais d’une approche [multiniveau](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), [microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), basée sur des services web ou basée sur des API. Cette approche consiste à wrapper la solution existante avec une nouvelle expérience hébergée dans le cloud. Cette solution est probablement disponible dans Azure App Services.
 
 ### <a name="rebuild-an-existing-solution"></a>Regénérer une solution existante
 
-Si une application ne peut pas être étendue facilement, il peut être nécessaire de refactoriser la solution. Dans le cadre de cette approche, la charge de travail est migrée vers le cloud. Une fois la migration de l’application effectuée, certaines parties de l’application sont modifiées ou dupliquées en tant que services web ou [microservices](/azure/architecture/guide/architecture-styles/microservices) déployés parallèlement à la solution existante. La solution parallèle basée sur les services peut être traitée comme une solution étendue. Cette approche consiste simplement à wrapper la solution existante avec une nouvelle expérience hébergée dans le cloud. Cette solution est probablement disponible dans Azure App Services.
+Si une application ne peut pas être étendue facilement, il peut être nécessaire de refactoriser la solution. Dans le cadre de cette approche, la charge de travail est migrée vers le cloud. Une fois la migration de l’application effectuée, certaines parties de l’application sont modifiées ou dupliquées en tant que services web ou [microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices) déployés parallèlement avec la solution existante. La solution parallèle basée sur les services peut être traitée comme une solution étendue. Cette approche consiste simplement à wrapper la solution existante avec une nouvelle expérience hébergée dans le cloud. Cette solution est probablement disponible dans Azure App Services.
 
 > [!CAUTION]
 > La refactorisation ou la réorganisation des solutions ou la centralisation de la logique métier peut rapidement déclencher un [spike technique](./build.md#reduce-complexity-and-delay-technical-spikes) chronophage,au lieu d’une source de valeur client. Il s’agit d’un risque pour l’innovation, particulièrement au début de la validation de l’hypothèse. En faisant preuve d’un peu de créativité dans la conception d’une solution, il doit être possible de créer un MVP n’impliquant pas la refactorisation de solutions existantes. Il est recommandé de retarder la refactorisation jusqu’à ce que l’hypothèse initiale puisse être validée à grande échelle.
@@ -98,7 +98,7 @@ En plus des approches modernes et novatrices de la création d’applications, i
 
 Le type de modèle de gestion opérationnelle en libre-service, que l’on trouve dans un centre d’excellence du cloud, offre des contrôles plus stricts et des itérations plus rapides au sein de l’environnement de la solution. Pour accomplir ces buts, la responsabilité et le contrôle des opérations sont transférés à l’équipe commerciale.
 
-Si vous souhaitez mesurer ou répondre à une demande mondiale vis-à-vis d’une solution existante, vous pouvez considérer cette approche comme suffisante pour valider une hypothèse client. Une fois qu’une solution a été migrée et légèrement modernisée, l’équipe d’entreprise peut la mettre à l’échelle pour tester un large éventail d’opérations. Celles-ci impliquent généralement des cohortes de clients qui se soucient de l’impact des opérations informatiques sur les performances, la distribution mondiale et d’autres besoins qu’ils pourraient avoir.
+Si vous essayez de mettre à l’échelle ou de répondre à une demande mondiale vis-à-vis d’une solution existante, cette approche peut être suffisante pour valider une hypothèse client. Une fois qu’une solution a été migrée et légèrement modernisée, l’équipe d’entreprise peut la mettre à l’échelle pour tester un large éventail d’opérations. Celles-ci impliquent généralement des cohortes de clients qui se soucient de l’impact des opérations informatiques sur les performances, la distribution mondiale et d’autres besoins qu’ils pourraient avoir.
 
 ## <a name="reduce-overhead-and-management"></a>Réduire la surcharge et l’effort de gestion
 

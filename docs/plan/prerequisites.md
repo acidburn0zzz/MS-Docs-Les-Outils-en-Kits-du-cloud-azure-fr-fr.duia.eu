@@ -1,21 +1,21 @@
 ---
-title: Liste de vérification de la configuration requise pour un plan d’adoption du cloud efficace
+title: Vérification de la configuration pour un plan d’adoption du cloud efficace
 titleSuffix: Microsoft Cloud Adoption Framework
-description: Liste de vérification de la configuration requise pour un plan d’adoption du cloud efficace
+description: Comprendre la vérification de la configuration pour un plan d’adoption du cloud efficace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0933474aef96d01862f0f230073e275ac262cd83
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6689945769c7eb31ba306567e2a09e51456d47cc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048504"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240224"
 ---
-# <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Liste de vérification de la configuration requise pour un plan d’adoption du cloud efficace
+# <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Vérification de la configuration pour un plan d’adoption du cloud efficace
 
 L’efficacité du plan est équivalente aux données qui y sont placées. Pour que le plan d’adoption du cloud soit efficace, il existe deux catégories d’entrées : *stratégique* et *tactique*. Les sections suivantes décrivent les points de données minimum requis dans chaque catégorie.
 

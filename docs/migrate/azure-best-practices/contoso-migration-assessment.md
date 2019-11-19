@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221454"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566488"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Évaluer facilement vos charges de travail locales en vue d’une migration vers Azure
 
@@ -73,7 +73,7 @@ Contoso utilise les outils Microsoft pour son évaluation de la migration. Ces o
 
 Technology | Description | Coût
 --- | --- | ---
-[Assistant de migration des données](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso utilise l’Assistant Migration de données pour évaluer et détecter les problèmes de compatibilité susceptibles d’affecter les fonctionnalités de base de données dans Azure. L’Assistant Migration de données évalue la parité des fonctionnalités entre les instances sources et cibles de SQL. Il recommande des améliorations au niveau des performances et de la fiabilité. | L’Assistant Migration de données est un outil gratuit et téléchargeable.
+[Assistant de migration des données](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso utilise l’Assistant Migration de données pour évaluer et détecter les problèmes de compatibilité susceptibles d’affecter les fonctionnalités de base de données dans Azure. L’Assistant Migration de données évalue la parité des fonctionnalités entre les instances sources et cibles de SQL. Il recommande des améliorations au niveau des performances et de la fiabilité. | L’Assistant Migration de données est un outil gratuit et téléchargeable.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso utilise le service Azure Migrate pour évaluer ses machines virtuelles VMware. Azure Migrate évalue la pertinence de la migration des ordinateurs. Il fournit des estimations de dimensionnement et de coût pour l’exécution des machines dans Azure. | À compter de mai 2018, Azure Migrate devient un service gratuit.
 [Service Map](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate utilise Service Map pour afficher les dépendances qui existent entre les ordinateurs que vous souhaitez migrer. | Service Map fait partie des journaux d’Azure Monitor. Contoso peut utiliser Service Map gratuitement pendant 180 jours.
 
@@ -188,7 +188,7 @@ Les résultats s’affichent dès qu’elles sont disponibles. Si Contoso a corr
     ![Assistant Migration de données - Rapport Recommandations de fonctionnalités](./media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso doit [activer Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) pour toutes les bases de données SQL Server. Ceci est plus important pour les bases de données situées dans le cloud que pour celles qui sont hébergées localement. Transparent Data Encryption doit être activé après la migration. Si Transparent Data Encryption est déjà activé, Contoso doit déplacer le certificat ou la clé asymétrique vers la base de données MASTER du serveur cible. Découvrez comment [déplacer une base de données protégée par Transparent Data Encryption vers une autre instance de SQL Server](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)
+    > Contoso doit [activer Transparent Data Encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) pour toutes les bases de données SQL Server. Ceci est plus important pour les bases de données situées dans le cloud que pour celles qui sont hébergées localement. Transparent Data Encryption doit être activé après la migration. Si Transparent Data Encryption est déjà activé, Contoso doit déplacer le certificat ou la clé asymétrique vers la base de données MASTER du serveur cible. Découvrez comment [déplacer une base de données protégée par Transparent Data Encryption vers une autre instance de SQL Server](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)
 
 3. Contoso peut exporter l’évaluation au format JSON ou CSV.
 
@@ -196,8 +196,8 @@ Les résultats s’affichent dès qu’elles sont disponibles. Si Contoso a corr
 > Pour les évaluations à grande échelle :
 >
 > - Vous pouvez exécuter plusieurs évaluations simultanément et afficher l’état des évaluations en ouvrant la page **Toutes les évaluations**.
-> - Vous pouvez centraliser des évaluations dans une [ base de données SQL Server](/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
-> - Vous pouvez centraliser des évaluations dans un [rapport Power BI](/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
+> - Vous pouvez centraliser des évaluations dans une [ base de données SQL Server](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
+> - Vous pouvez centraliser des évaluations dans un [rapport Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
 
 ## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Étape 3 : Préparer l’évaluation de la machine virtuelle avec Azure Migrate
 
@@ -279,7 +279,7 @@ Avant de déployer la machine virtuelle, Contoso vérifie que le fichier .OVA es
     **Exemple :**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. Le hachage généré doit correspondre aux valeurs de hachage figurant dans la section [Vérifier la sécurité](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) du tutoriel [Évaluer les machines virtuelles VMware pour la migration](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
+3. Le code de hachage généré doit correspondre aux valeurs du code de hachage figurant dans la section [Vérifier la sécurité](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) du didacticiel [Évaluer les machines virtuelles VMware pour la migration](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
 
 ### <a name="create-the-collector-appliance"></a>Créer l’appliance de collecteur
 
@@ -394,6 +394,7 @@ Contoso exécute l’installation sur chaque machine virtuelle.
     `sudo -i`
 
 3. Contoso installe Microsoft Monitoring Agent :
+
     - Contoso entre l’ID et la clé de l’espace de travail dans la commande.
     - Ces commandes sont de type 64 bits.
     - L’ID de l’espace de travail et la clé primaire se trouvent dans l’espace de travail Log Analytics dans le portail Azure. Sélectionnez **Paramètres**, puis l’onglet **Sources connectées**.

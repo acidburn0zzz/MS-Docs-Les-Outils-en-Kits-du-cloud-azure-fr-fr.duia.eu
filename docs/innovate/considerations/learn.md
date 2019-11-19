@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 82f6ea5b422bc4d33fe898f86d003ffb2ab92422
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565634"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753000"
 ---
 # <a name="learn-with-customers"></a>Apprendre avec les clients
 
@@ -56,4 +56,4 @@ La prochaine étape pour comprendre cette méthodologie des [Obstacles et défis
 > [!div class="nextstepaction"]
 > [Compréhension des obstacles et défis courants](./challenges.md)
 
-Certains concepts de cet article s’appuient sur les sujets initialement abordés dans l’ouvrage [The Lean Startup](http://theleanstartup.com/book) d’Eric Ries.
+Certains concepts de cet article s’appuient sur les sujets initialement abordés dans l’ouvrage [The Lean Startup](https://theleanstartup.com/book) d’Eric Ries.

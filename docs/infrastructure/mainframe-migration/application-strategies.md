@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547946"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239437"
 ---
 # <a name="mainframe-application-migration"></a>Migration d’applications d’un environnement mainframe
 
@@ -27,7 +27,7 @@ La migration d’applications engage généralement une ou plusieurs des straté
 
 - **Mise hors service :** toutes les applications devenues inutiles doivent être mises hors service avant la migration.
 
-- **Regénération :** certaines organisations choisissent de réécrire entièrement les programmes à l’aide de techniques modernes. Cette approche est moins courante que l’approche « lift-and-shift », car elle s’avère plus chère et plus complexe. Après ce type de migration, il est souvent judicieux de commencer à remplacer des modules et du code en s’aidant de moteurs de transformation de code.
+- **Regénération :** certaines organisations choisissent de réécrire entièrement les programmes à l’aide de techniques modernes. Cette approche est moins courante que l’approche lift-and-shift, car elle s’avère plus chère et plus complexe. Après ce type de migration, il est souvent judicieux de commencer à remplacer des modules et du code en s’aidant de moteurs de transformation de code.
 
 - **Remplacement :** cette approche remplace les fonctionnalités du mainframe par des options équivalentes dans le cloud. SaaS (software as a service) est une option disponible : elle utilise une solution créée spécifiquement pour répondre à un besoin de l’entreprise, comme la finance, les ressources humaines, la fabrication ou la planification des ressources métier. En outre, il existe maintenant de nombreuses applications métier capables de résoudre des problématiques qui étaient auparavant gérées par des solutions mainframe personnalisées.
 
@@ -57,7 +57,7 @@ En plus des environnements d’émulation, Azure fournit des services PaaS (plat
 
 ## <a name="migrate-oltp-workloads-to-azure"></a>Migrer des charges de travail OLTP vers Azure
 
-L’approche « lift-and-shift » est l’option sans code qui vous permet de migrer rapidement des applications existantes vers Azure. Chaque application est migrée en l’état, ce qui offre les avantages du cloud sans les risques ni les coûts liés aux modifications de code. Cette approche est possible quand vous utilisez un émulateur pour les moniteurs TP de mainframe sur Azure.
+L’approche lift-and-shift est l’option sans code qui vous permet de migrer rapidement des applications existantes vers Azure. Chaque application est migrée en l’état, ce qui offre les avantages du cloud sans les risques ni les coûts liés aux modifications de code. Cette approche est possible quand vous utilisez un émulateur pour les moniteurs TP de mainframe sur Azure.
 
 Les moniteurs TP sont proposés par différents fournisseurs et s’exécutent sur des machines virtuelles, une option IaaS (infrastructure as a service) disponible sur Azure. Les diagrammes suivants avant/après illustrent la migration d’une application en ligne adossée au système SGBD IBM DB2 sur un ordinateur mainframe IBM z/OS. Le système DB2 pour z/OS utilise des fichiers VSAM (Virtual Storage Access Method) pour stocker les données et des fichiers plats ISAM (Indexed Sequential Access Method). Cette architecture utilise également le système CICS pour la supervision des transactions.
 

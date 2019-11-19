@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d374fdc5df4589e58b890ae5c169d26d0b1f206
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839167"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564141"
 ---
 # <a name="review-rationalization-decisions"></a>Passer en revue les décisions de rationalisation
 
@@ -26,7 +26,7 @@ Pour valider les décisions de rationalisation, utilisez les questions suivantes
 
 ## <a name="innovation-indicators"></a>Indicateurs d’innovation
 
-Si l’examen conjoint des questions suivantes aboutit à une réponse « Oui », une charge de travail peut être plus avantageuse pour l’innovation. Une telle charge de travail n’est pas migrée via un modèle de décalage/levage ou de modernisation. Au lieu de cela, la logique métier ou les structures de données seraient recréées en tant qu’application nouvelle ou remaniée. Cette approche peut éventuellement demander plus d’efforts et de temps. Toutefois, une charge de travail renforçant de façon significative le rendement de l’entreprise justifie un tel investissement.
+Si l’examen conjoint des questions suivantes aboutit à une réponse « Oui », une charge de travail peut être plus avantageuse pour l’innovation. Une telle charge de travail n’est pas migrée via un modèle lift-and-shift ou de modernisation. Au lieu de cela, la logique métier ou les structures de données seraient recréées en tant qu’application nouvelle ou remaniée. Cette approche peut éventuellement demander plus d’efforts et de temps. Toutefois, une charge de travail renforçant de façon significative le rendement de l’entreprise justifie un tel investissement.
 
 - Les applications figurant dans cette charge de travail génèrent-elles une différenciation sur le marché ?
 - Existe-t-il un investissement proposé ou approuvé visant à améliorer les expériences associées aux applications dans cette charge de travail ?

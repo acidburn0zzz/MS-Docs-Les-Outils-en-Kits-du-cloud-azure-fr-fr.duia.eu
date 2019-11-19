@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d62b2f5957dc5cee19f462e3c7d74c85672eadfe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834783"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566826"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Architecture de charges de travail avant la migration
 
@@ -23,7 +23,7 @@ Cet article développe le processus d’évaluation en examinant les activités 
 
 Les hypothèses suivantes sont typiques pour tout effort de migration :
 
-- **IaaS.** Il est généralement supposé que la migration des charges de travail implique principalement le déplacement des machines virtuelles d’un centre de donnes physiques vers un centre de donnes cloud via une migration IaaS, nécessitant un minimum de redéveloppement ou de reconfiguration. C’est ce qu’on appelle une migration de type « Lift and Shift ». (Les exceptions suivent.)
+- **IaaS.** Il est généralement supposé que la migration des charges de travail implique principalement le déplacement des machines virtuelles d’un centre de donnes physiques vers un centre de donnes cloud via une migration IaaS, nécessitant un minimum de redéveloppement ou de reconfiguration. C’est ce qu’on appelle une migration de type _lift and Shift_. (Les exceptions suivent.)
 - **Cohérence de l’architecture.** Les modifications apportées à l’architecture principale pendant une migration augmentent considérablement la complexité. Le débogage d’un système modifié sur une nouvelle plateforme introduit de nombreuses variables qui peuvent être difficiles à isoler. Pour cette raison, les charges de travail ne doivent subir que des modifications mineures pendant la migration, et les modifications doivent être minutieusement testées.
 - **Test de mise hors service.** Les migrations et l’hébergement des ressources sont synonymes de dépenses opérationnelles et potentiellement de capital. On suppose que toutes les charges de travail en cours de migration ont été examinées pour valider l’utilisation continue. Le choix de mettre hors service des ressources inutilisées entraîne des économies immédiates.
 - **Redimensionnement des ressources.** On suppose que peu de ressources locales utilisent entièrement les ressources allouées. Avant la migration, on suppose que les ressources seront redimensionnées pour s’adapter au mieux aux besoins d’utilisation réels.
@@ -37,7 +37,7 @@ Les hypothèses triées pouvant créer des obstacles susceptibles de ralentir la
 - **Paiement de la dette technique.** Certaines charges de travail vieillissantes ont un montant élevé de dette technique. Cela peut entraîner des défis à long terme en augmentant les coûts d’hébergement avec n’importe quel fournisseur cloud. Lorsque la dette technique augmente de façon non naturelle les coûts d’hébergement, d’autres architectures doivent être évaluées.
 - **Modèles de trafic utilisateur.** Les solutions existantes peuvent dépendre de modèles de routage réseau existants. Ces modèles peuvent ralentir considérablement les performances. En outre, l’introduction de nouvelles solutions de réseau étendu (WAN) hybrides peut prendre des semaines, voire des mois. Préparez-vous au début du processus d’architecture en tenant compte des modèles de trafic et des modifications apportées aux services d’infrastructure de base.
 
-## <a name="accelerating-business-value"></a>Accélération de la valeur métier
+## <a name="accelerate-business-value"></a>Accélérer la valeur métier
 
 Certains scénarios peuvent nécessiter une architecture différente de la stratégie de réhébergement IaaS supposée. Voici quelques exemples :
 

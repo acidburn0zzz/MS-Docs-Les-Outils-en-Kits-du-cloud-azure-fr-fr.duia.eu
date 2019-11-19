@@ -8,16 +8,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f1d9b4a0f17b3f2fb556a95132d494042ba9bab
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 001231a74680a3dabbc1ec18646fad0dd4fc94e3
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72693956"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656569"
 ---
 # <a name="nosql-migration-decision-tree"></a>Arbre de décision de migration NoSQL
 
-L’arbre de décision suivant présente les options disponibles pour la migration d’une structure de données NoSQL vers différentes plateformes de données dans Azure.
-Cette référence peut aider à déterminer le chemin de migration le plus approprié pour NoSQL.
+L’arbre de décision suivant présente les options disponibles pour la migration d’une structure de données NoSQL vers différentes plateformes de données dans Azure. Cette référence peut vous aider à déterminer le chemin de migration le plus approprié pour NoSQL.
 
 ![Arbre de décision de migration NoSQL](../../_images/innovate/considerations/no-sql-decision-tree.png)

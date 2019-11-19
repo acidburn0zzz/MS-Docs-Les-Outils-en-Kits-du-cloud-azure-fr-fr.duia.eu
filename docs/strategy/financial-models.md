@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 75f19fcdc9f23066d5a6471cd79c0a6a00869554
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: cb5653de592fb92fa9ad9f5866997703a928ee4e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031579"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566588"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Créer un modèle financier pour la transformation cloud
 
@@ -28,13 +28,13 @@ Le ROI (retour sur investissement) est souvent un critère important pour la dir
 
 Dans les sections suivantes, nous allons voir quelles sont les données à inclure dans le calcul de l’investissement initial et du gain résultant de cet investissement (revenus).
 
-## <a name="calculating-initial-investment"></a>Calcul de l’investissement initial
+## <a name="calculate-initial-investment"></a>Calculer l’investissement initial
 
 L’investissement initial correspond aux dépenses en capital et aux dépenses d’exploitation à engager pour effectuer une transformation. La classification des coûts dépend du modèle comptable utilisé et des préférences du directeur financier. Toutefois, cette catégorie doit comprendre des éléments tels que les services professionnels à transformer, les licences logicielles utilisées uniquement durant la transformation, le coût des services cloud durant la transformation et, éventuellement, le coût des employés salariés durant la transformation.
 
 Ajoutez ces coûts pour créer une estimation de l’investissement initial.
 
-## <a name="calculating-the-gain-from-investment"></a>Calcul du gain de l’investissement
+## <a name="calculate-the-gain-from-investment"></a>Calculer le gain de l’investissement
 
 Le calcul du gain résultant de l’investissement nécessite souvent une seconde formule spécifique aux résultats opérationnels et aux changements techniques associés. Le calcul des revenus est plus difficile que le calcul des réductions de coûts.
 

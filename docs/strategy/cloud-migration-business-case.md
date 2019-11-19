@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 629b882c993e85dbb85b04cc9568491bd6e2036d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224194"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566615"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Créer une justification professionnelle pour la migration vers le cloud
 
@@ -22,7 +22,7 @@ Les migrations cloud peuvent rapidement générer un retour sur investissement (
 
 ## <a name="dispelling-cloud-migration-myths"></a>Démystification de la migration cloud
 
-**Mythe : Le cloud est toujours moins cher.** Il est communément admis qu’exploiter un centre de données dans le cloud revient toujours moins cher que de l’exploiter localement. Bien que cette hypothèse soit généralement vraie, ce n’est pas toujours le cas. Parfois, les coûts opérationnels du cloud sont plus élevés. Ces coûts plus élevés sont souvent liés à une mauvaise gouvernance, des architectures système inadéquates, une duplication des processus, des configurations système atypiques ou des charges de personnel plus importantes. Heureusement, vous pouvez atténuer un bon nombre de ces problèmes pour obtenir un ROI (retour sur investissement) rapide. Suivre l’aide fournie dans [Élaboration de la justification](#building-the-business-justification) peut vous aider à détecter et à éviter ces problèmes d’adéquation. Le fait de dissiper les autres mythes décrits ici peut également vous aider.
+**Mythe : Le cloud est toujours moins cher.** Il est communément admis qu’exploiter un centre de données dans le cloud revient toujours moins cher que de l’exploiter localement. Bien que cette hypothèse soit généralement vraie, ce n’est pas toujours le cas. Parfois, les coûts opérationnels du cloud sont plus élevés. Ces coûts plus élevés sont souvent liés à une mauvaise gouvernance, des architectures système inadéquates, une duplication des processus, des configurations système atypiques ou des charges de personnel plus importantes. Heureusement, vous pouvez atténuer un bon nombre de ces problèmes pour obtenir un ROI (retour sur investissement) rapide. Suivre l’aide fournie dans [Générer la justification métier](#build-the-business-justification) peut vous aider à détecter et à éviter ces alignements incorrects. Le fait de dissiper les autres mythes décrits ici peut également vous aider.
 
 **Mythe : Tout doit être placé dans le cloud.** En fait, certains axes stratégiques peuvent vous amener à choisir une solution hybride. Avant de finaliser un modèle d’affaires, il est judicieux d’effectuer une première analyse quantitative, comme cela est expliqué dans les [articles consacrés au patrimoine numérique](../digital-estate/5-rs-of-rationalization.md). Pour plus d’informations sur les différents facteurs quantitatifs impliqués dans la rationalisation, consultez [Les 5 R de la rationalisation](../digital-estate/5-rs-of-rationalization.md). Chaque approche utilise des données d’inventaire faciles à obtenir ainsi qu’une brève analyse quantitative pour identifier les charges de travail ou les applications susceptibles de présenter des coûts plus élevés dans le cloud. Ces approches peuvent également identifier les dépendances ou les modèles de trafic qui nécessitent une solution hybride.
 
@@ -57,7 +57,7 @@ L’adoption du cloud peut être ralentie par des obstacles techniques et cultur
 
 Pour anticiper et atténuer au maximum les risques liés aux chronologies, préparez les parties prenantes décisionnaires en leur présentant une solide justification avec les bénéfices et les résultats pour l’entreprise. Aidez ces parties prenantes à comprendre la nature des changements qui vont accompagner la transformation. Soyez clair et établissez des objectifs réalistes dès le début. Si des personnes ou des technologies ralentissent le processus, il sera plus facile d’obtenir le soutien de la direction.
 
-## <a name="building-the-business-justification"></a>Élaboration de la justification
+## <a name="build-the-business-justification"></a>Élaboration de la justification métier
 
 Le processus suivant définit une approche possible pour élaborer la justification d’une migration cloud. Pour plus d’informations sur les calculs et les termes financiers, consultez l’article sur les [modèles financiers](./financial-models.md).
 
@@ -73,7 +73,7 @@ Nous pouvons décomposer cette équation afin d’obtenir une vue spécifique à
 - Certains fournisseurs de cloud proposent également des calculatrices du delta des coûts. La [calculatrice du TCO (coût total de possession) Azure](https://azure.com/tco) en est un exemple.
 - Pour des structures de coûts plus détaillées, effectuez plutôt une [planification du patrimoine numérique](../digital-estate/index.md).
 - Estimez le coût de la migration.
-- Estimez le coût des besoins de formation. [Microsoft Learn](/learn) peut être une solution pour atténuer ces coûts.
+- Estimez le coût des besoins de formation. [Microsoft Learn](https://docs.microsoft.com/learn) peut être une solution pour atténuer ces coûts.
 - Dans certaines entreprises, le temps investi par les membres d’équipes existants est éventuellement à inclure dans les coûts initiaux. Pour obtenir des conseils, consultez le service financier.
 - Discutez des coûts supplémentaires ou des coûts cachés éventuels avec le service financier pour faire valider votre estimation.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ebff4e0bbeb7f74a61b81527e0dbc62874ffbe6c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223709"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566042"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processus de conformité à la stratégie de cohérence des ressources
 

@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547176"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566062"
 ---
 # <a name="evaluate-risk-tolerance"></a>Évaluer la tolérance au risque
 
@@ -38,7 +38,7 @@ Les véritables risques métier sont basés sur les détails des transformations
 
 Voici quelques-uns des risques les plus fréquemment mentionnés par les clients. L’équipe de gouvernance cloud et les équipes d’adoption du cloud peuvent commencer à développer un profil de risque à mesure que les charges de travail sont migrées et préparées pour la mise en production. Préparez-vous à devoir discuter pour définir, affiner et gérer les risques en fonction des résultats opérationnels et des efforts de transformation souhaités.
 
-## <a name="understanding-risk-tolerance"></a>Appréhender la tolérance au risque
+## <a name="understand-risk-tolerance"></a>Comprendre la tolérance aux risques
 
 L'identification des risques est un processus relativement direct. Les risques liés à l’informatique sont généralement standard dans tous les secteurs. Toutefois, la tolérance à ces risques est spécifique à chaque organisation. C'est là que les conversations commerciales et informatiques ont tendance à s'enliser. Chacune des parties représentées parle une langue différente. Les comparaisons et les questions suivantes sont conçues pour engager la conversation afin d'aider chaque partie à mieux appréhender et évaluer la tolérance au risque.
 

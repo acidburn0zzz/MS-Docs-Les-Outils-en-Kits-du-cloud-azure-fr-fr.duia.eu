@@ -8,16 +8,16 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024725"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240267"
 ---
-# <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>Chemin de préparation aux compétences durant la phase « migration » d’un parcours de migration
+# <a name="skills-readiness-for-cloud-migration"></a>Préparation aux compétences pour la migration vers le cloud
 
-Lors d’une migration vers le cloud, il est probable que les employés et même certains partenaires d’intégration de systèmes ou partenaires de services gérés devront développer de nouvelles compétences pour être efficaces lors des efforts de migration.
+Lors d’une migration vers le cloud, il est probable que les employés et même certains partenaires d’intégration de systèmes ou partenaires de services managés en place devront développer de nouvelles compétences pour être efficaces lors des efforts de migration.
 
 Quatre processus distincts sont effectués de façon itérative pendant la phase de migration lors de tout parcours de migration. Les sections suivantes permettent d’aligner les compétences nécessaires à chacun de ces processus avec les références aux deux prérequis pour les ressources de développement de compétence.
 

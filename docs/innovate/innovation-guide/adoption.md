@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058102"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565561"
 ---
 ::: zone target="docs"
 
@@ -36,7 +36,7 @@ La création d’une solution innovante n’a pas pour objet de donner aux utili
 - **Quantitative (test de commentaires) :** Ces commentaires mesurent les actions que nous espérons voir.
 - **Qualitative (commentaires des clients) :** Ces commentaires nous indiquent ce que ces mesures signifient pour le client.
 
-Avant d’intégrer des retours d’informations, vous devez disposer d’un référentiel partagé pour votre solution. Un référentiel centralisé offre un moyen d’enregistrer et de traiter tous les commentaires relatifs à votre projet. [GitHub](https://github.com/) est l’endroit pour trouver un logiciel open source. Il s’agit également de l’une des plateformes les plus couramment utilisées pour héberger les référentiels de code source pour les applications développées pour le commerce. L’article sur la [création de référentiels GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) peut vous aider à prendre en main votre référentiel.
+Avant d’intégrer des retours d’informations, vous devez disposer d’un référentiel partagé pour votre solution. Un référentiel centralisé offre un moyen d’enregistrer et de traiter tous les commentaires relatifs à votre projet. [GitHub](https://github.com) est l’endroit pour trouver un logiciel open source. Il s’agit également de l’une des plateformes les plus couramment utilisées pour héberger les référentiels de code source pour les applications développées pour le commerce. L’article sur la [création de référentiels GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) peut vous aider à prendre en main votre référentiel.
 
 Chacun des outils suivants dans Azure s’intègre à (ou est compatible avec) des projets hébergés dans GitHub :
 
@@ -126,7 +126,7 @@ Le backlog (ou tableau) est l’emplacement où les commentaires sont enregistr�
 ### <a name="action"></a>Action
 
 Azure Boards et Azure Pipelines requièrent un portail distinct de GitHub et d’Azure.
-Pour prendre en main l’un de ces outils, accédez à [Azure DevOps](https://dev.azure.com/).
+Pour prendre en main l’un de ces outils, accédez à [Azure DevOps](https://dev.azure.com).
 
 ::: zone-end
 
@@ -138,11 +138,11 @@ Pour prendre en main l’un de ces outils, accédez à [Azure DevOps](https://d
 
 Pour créer un projet DevOps :
 
-1. Accédez au **projet Azure DevOps**.
+1. Accédez aux **projets Azure DevOps**.
 2. Sélectionnez **Créer un projet DevOps**.
 3. Sélectionnez **Runtime, framework et service**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -152,8 +152,8 @@ Pour créer un projet DevOps :
 
 Ces articles vous aideront à centraliser et à gérer les commentaires en utilisant Azure Boards avec GitHub :
 
-- [Prise en main d’Azure Boards](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
-- [Azure Boards & GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
+- [Prise en main d’Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards & GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Fermer la boucle avec des pipelines](#tab/pipelines)
 
@@ -163,7 +163,7 @@ Le fait d’agir sur les commentaires ne signifie pas toujours ajouter la foncti
 
 Pour afficher les déploiements actuels dans votre pipeline :
 
-1. Accédez à **App Service**.
+1. Accédez à **App Services**.
 2. Sélectionnez l’application souhaitée dans la liste.
 3. Sélectionnez **Centre de déploiement** dans la section **Déploiement** du volet Services d’application.
 
@@ -171,7 +171,7 @@ Pour afficher les déploiements actuels dans votre pipeline :
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

@@ -10,18 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b5fd413b1492d1ef885103ee529b4bdfb68f4666
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a8ef217104e1b4bf90719c32786c5fdd3732a352
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025195"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566719"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Gérer les coûts et la facturation de vos ressources Azure
 
 La gestion des coûts est le processus qui vous permet de prévoir et de maîtriser les coûts de votre entreprise avec efficacité. Les tâches de gestion des coûts sont normalement effectuées par les équipes des finances, d’administration et des applications. La solution Azure Cost Management peut vous aider à planifier en gardant les coûts à l’esprit. Elle vous permet aussi d’analyser efficacement les coûts et de prendre des mesures pour optimiser les dépenses cloud.
 
-Pour plus d’informations sur la façon d’intégrer des processus de gestion des coûts du cloud au sein de votre organisation, consultez l’article du Framework d’adoption du cloud pour Azure relatif au [suivi des coûts dans les unités commerciales, les environnements ou les projets](../azure-best-practices/track-costs.md).
+Pour plus d’informations sur la façon d’intégrer des processus de gestion des coûts du cloud au sein de votre organisation, consultez l’article Infrastructure d’adoption cloud sur comment [suivre des coûts dans les unités commerciales, les environnements ou les projets](../azure-best-practices/track-costs.md).
 
 ## <a name="manage-your-costs-with-azure-cost-management"></a>Gérer vos coûts avec Azure Cost Management
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: a2acba3f9aa06298922d2cc95d298d3792a9ada9
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058799"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240012"
 ---
 # <a name="assess-the-digital-estate"></a>Évaluer le patrimoine numérique
 
@@ -31,7 +31,7 @@ Les outils suivants vous aident à évaluer votre environnement pour déterminer
 
 ## <a name="azure-migrate"></a>Azure Migrate
 
-Le service Azure Migrate évalue l’infrastructure, les applications et les données locales pour la migration vers Azure. Le service évalue la pertinence de la migration des ressources locales, effectue le dimensionnement en fonction des niveaux de performance et fournit des estimations de coût pour l’exécution des ressources locales dans Azure. Si vous envisagez d’effectuer des migrations « lift-and-shift » ou si vous êtes dans les premières étapes de l’évaluation de la migration, ce service vous correspond. Une fois l’évaluation terminée, Azure Migrate peut être utilisé pour exécuter la migration.
+Le service Azure Migrate évalue l’infrastructure, les applications et les données locales pour la migration vers Azure. Le service évalue la pertinence de la migration des ressources locales, effectue le dimensionnement en fonction des niveaux de performance et fournit des estimations de coût pour l’exécution des ressources locales dans Azure. Si vous envisagez d’effectuer des migrations lift-and-shift ou si vous êtes dans les premières étapes de l’évaluation de la migration, ce service vous correspond. Une fois l’évaluation terminée, Azure Migrate peut être utilisé pour exécuter la migration.
 
 ![Vue d’ensemble d’Azure Migrate](./media/assess/azuremigrate-overview-1.png)
 

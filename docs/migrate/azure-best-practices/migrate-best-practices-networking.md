@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bba3d7f028849ec3397e14dbdb0f39dfa246660
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058881"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565223"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
 
@@ -120,7 +120,7 @@ Azure ajoute par défaut un serveur DNS lorsque vous déployez un réseau virtue
 **En savoir plus :**
 
 - [En savoir plus sur](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) la résolution de noms lorsque vous utilisez votre propre serveur DNS.
-- [En savoir plus sur](../../ready/considerations/naming-and-tagging.md) les règles et restrictions d’affectation de noms DNS.
+- [En savoir plus sur](../../ready/azure-best-practices/naming-and-tagging.md) les règles et restrictions d’affectation de noms DNS.
 
 ## <a name="best-practice-set-up-availability-zones"></a>Meilleure pratique : Configurer des zones de disponibilité
 
@@ -278,7 +278,7 @@ Pour optimiser le routage pour les utilisateurs des deux bureaux, vous devez sav
 
 - [En savoir plus](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing) sur l’optimisation du routage.
 
-## <a name="securing-vnets"></a>Sécurisation des réseaux virtuels
+## <a name="secure-vnets"></a>Réseaux virtuels sécurisés
 
 Microsoft partage avec vous la responsabilité de la sécurisation des réseaux virtuels. Microsoft fournit de nombreuses fonctionnalités de mise en réseau, ainsi que des services conçus pour aider à sécuriser les ressources. Lorsque vous concevez la sécurité de réseaux virtuels, vous devez respecter les meilleures pratiques qui comprennent notamment l’implémentation d’un réseau de périmètre, l’utilisation de groupes de sécurité et de filtrage, la sécurisation de l’accès aux ressources et aux adresses IP, ou encore l’implémentation d’un mécanisme de protection contre les attaques.
 
