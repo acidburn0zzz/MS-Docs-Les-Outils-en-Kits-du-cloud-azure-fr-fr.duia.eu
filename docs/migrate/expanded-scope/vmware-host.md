@@ -1,27 +1,27 @@
 ---
-title: Accélérer la migration grâce aux hôtes VMWare
+title: Accélérer la migration grâce aux hôtes VMware
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Accélérer la migration grâce aux hôtes VMWare
+description: Accélérer la migration grâce aux hôtes VMware
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66a39d53adeaf73e96cf04bdc5f80fc9574b675a
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 724a227407f431e08b5344dfd1280397bfca9b65
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980205"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566881"
 ---
-# <a name="accelerate-migration-with-vmware-hosts"></a>Accélérer la migration grâce aux hôtes VMWare
+# <a name="accelerate-migration-with-vmware-hosts"></a>Accélérer la migration grâce aux hôtes VMware
 
-La migration d’hôtes VMWare entiers permet de déplacer plusieurs charges de travail et plusieurs ressources en une seule migration. Les conseils suivants développent le contenu du guide de migration [Azure](../azure-migration-guide/index.md) pour traiter la migration d’hôte VMWare. La majeure partie des efforts requis ici se déroulent pendant l’établissement des conditions préalables, mais aussi pendant les processus de migration d’un effort de migration.
+La migration d’hôtes VMware entiers permet de déplacer plusieurs charges de travail et plusieurs ressources en une seule migration. Les conseils suivants développent le contenu du guide de migration [Azure](../azure-migration-guide/index.md) pour traiter la migration d’hôte VMware. La majeure partie des efforts requis ici se déroulent pendant l’établissement des conditions préalables, mais aussi pendant les processus de migration d’un effort de migration.
 
 ## <a name="suggested-prerequisites"></a>Prérequis suggérés
 
-Lors de la migration de votre premier hôte VMWare vers Azure, vous devez remplir un certain nombre de conditions préalables pour préparer l’identité, le réseau et les exigences de gestion. Une fois ces conditions préalables remplies, chaque hôte supplémentaire devrait nécessiter beaucoup moins d’efforts pour migrer. Les sections suivantes décrivent plus en détail ces conditions préalables.
+Lors de la migration de votre premier hôte VMware vers Azure, vous devez remplir un certain nombre de conditions préalables pour préparer l’identité, le réseau et les exigences de gestion. Une fois ces conditions préalables remplies, chaque hôte supplémentaire devrait nécessiter beaucoup moins d’efforts pour migrer. Les sections suivantes décrivent plus en détail ces conditions préalables.
 
 ### <a name="secure-your-azure-environment"></a>Sécuriser votre environnement Azure
 
@@ -44,15 +44,15 @@ Une fois les exigences de gestion établies, vous pouvez procéder à la mise en
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Intégration au plan d’adoption du cloud
 
-Une fois que vous avez rempli les autres conditions préalables, vous devez inclure chaque hôte VMWare dans le [plan d’adoption du Cloud](../../plan/template.md). Dans le plan d’adoption du cloud, ajoutez chaque hôte à migrer en tant que [charge de travail distincte](../../plan/workloads.md). Au sein de chaque charge de travail, ajoutez les machines virtuelles à migrer sous forme de [ressources](../../plan/workloads.md). Pour ajouter en masse des charges de travail et des ressources au plan d’adoption, veuillez consulter l’article [Ajouter/modifier des éléments de travail avec Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Une fois que vous avez rempli les autres conditions préalables, vous devez inclure chaque hôte VMware dans le [plan d’adoption du Cloud](../../plan/template.md). Dans le plan d’adoption du cloud, ajoutez chaque hôte à migrer en tant que [charge de travail distincte](../../plan/workloads.md). Au sein de chaque charge de travail, ajoutez les machines virtuelles à migrer sous forme de [ressources](../../plan/workloads.md). Pour ajouter en masse des charges de travail et des ressources au plan d’adoption, veuillez consulter l’article [Ajouter/modifier des éléments de travail avec Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 ## <a name="migrate-process-changes"></a>Migrer les changements de processus
 
-Au cours de chaque itération, l’équipe chargée de l’adoption traite le backlog afin de migrer les charges de travail ayant la priorité la plus élevée. Le processus ne change pas énormément pour les hôtes VMWare. Lorsque la prochaine charge de travail du backlog est un hôte VMWare, la seule différence est l’outil utilisé.
+Au cours de chaque itération, l’équipe chargée de l’adoption traite le backlog afin de migrer les charges de travail ayant la priorité la plus élevée. Le processus ne change pas énormément pour les hôtes VMware. Lorsque la prochaine charge de travail du backlog est un hôte VMware, la seule différence est l’outil utilisé.
 
 Vous pouvez utiliser les outils suivants dans l’effort de migration :
 
-- [Outils VMWare natifs](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Outils VMware natifs](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 - [Azure Data Box](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 Sinon, vous pouvez migrer les charges de travail par le biais d’un basculement de récupération d’urgence en utilisant ces ressources :

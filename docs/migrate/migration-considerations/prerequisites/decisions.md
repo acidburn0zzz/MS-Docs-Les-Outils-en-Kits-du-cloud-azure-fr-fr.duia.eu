@@ -1,21 +1,21 @@
 ---
-title: Décisions qui affectent les migrations
+title: Décisions qui affectent la migration
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Décisions importantes à prendre en ce qui concerne le processus de migration
+description: Décisions importantes à prendre concernant le processus de migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548309"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564578"
 ---
-# <a name="decisions-that-affect-migrations"></a>Décisions qui affectent les migrations
+# <a name="decisions-that-affect-migration"></a>Décisions qui affectent la migration
 
 Pendant la migration, plusieurs facteurs peuvent influencer les décisions et les activités d’exécution. Cet article explique le thème central de ces décisions et explore quelques questions qui traitent des principes de migration de cette section du guide du Framework d’adoption du cloud.
 
@@ -31,19 +31,19 @@ Aucune entreprise ne poursuivrait un seul de ces résultats. Sans opérations, i
 
 Ce prérequis n’est pas une demande pour vous de choisir l’un de ces trois objectifs, mais plutôt d’aider vos équipes de stratégie cloud et d’adoption du cloud à établir un ensemble de priorités opérationnelles qui guideront l’exécution des trois à six prochains mois. Ces priorités sont définies en classant chacune des trois options détaillées de *la plus significative* à *la moins significative*, car elles se rapportent aux efforts auxquels cette équipe peut contribuer au cours d’un ou des deux trimestres suivants.
 
-### <a name="acting-on-migration-outcomes"></a>Agir sur les résultats de la migration
+### <a name="act-on-migration-outcomes"></a>Agir sur les résultats de la migration
 
-Si les résultats opérationnels sont classés le plus haut dans la liste, cette section du Framework d’adoption du cloud fonctionnera correctement pour votre équipe. Dans cette section, il est supposé que vous devez classer par ordre de priorité la vitesse et les économies de coûts en tant qu’indicateurs de performance clés (KPI) primaires, auquel cas un modèle de migration vers l’adoption serait bien aligné avec les résultats. Un modèle axé sur la migration est essentiellement fondé sur la migration « lift-and-shift » des ressources Infrastructure as a service (IaaS) pour épuiser un centre de données et réaliser des économies. Dans ce type de modèle, une modernisation peut avoir lieu, mais elle constitue un objectif secondaire jusqu’à ce que la mission principale de la migration soit réalisée.
+Si les résultats opérationnels sont classés le plus haut dans la liste, cette section du Framework d’adoption du cloud fonctionnera correctement pour votre équipe. Dans cette section, il est supposé que vous devez classer par ordre de priorité la vitesse et les économies de coûts en tant qu’indicateurs de performance clés (KPI) primaires, auquel cas un modèle de migration vers l’adoption serait bien aligné avec les résultats. Un modèle axé sur la migration est essentiellement fondé sur la migration lift-and-shift des ressources Infrastructure as a service (IaaS) pour épuiser un centre de données et réaliser des économies. Dans ce type de modèle, une modernisation peut avoir lieu, mais elle constitue un objectif secondaire jusqu’à ce que la mission principale de la migration soit réalisée.
 
-### <a name="acting-on-application-innovations"></a>Agir sur les innovations des applications
+### <a name="act-on-application-innovations"></a>Agir sur les innovations des applications
 
 Si la part de marché et l’expérience client sont vos principaux moteurs, ce n’est peut-être pas la meilleure section du Framework d’adoption du cloud pour guider les efforts de vos équipes. L’innovation des applications nécessite un plan axé sur la modernisation et la transition des charges de travail, quelle que soit l’infrastructure sous-jacente. Dans ce cas, les instructions de cette section peuvent être utiles, mais elles ne constituent peut-être pas la meilleure approche pour guider les décisions fondamentales.
 
-### <a name="acting-on-data-innovations"></a>Agir sur les innovations de données
+### <a name="act-on-data-innovations"></a>Agir sur les innovations des données
 
 Si les données, l’expérimentation, la recherche et le développement (R&D) ou les nouveaux produits sont votre priorité pour les six prochains mois, cette section du Framework d’adoption du cloud n’est peut-être pas la meilleure pour guider les efforts de vos équipes. Tout effort d’innovation des données peut tirer parti des conseils relatifs à la migration des données sources existantes. Toutefois, l’objectif plus large de cet effort est l’entrée et l’intégration de sources de données supplémentaires. L’élargissement de ces recommandations par des prédictions et de nouvelles expériences est bien plus importante que la migration des ressources IaaS.
 
-## <a name="balancing-the-portfolio"></a>Équilibrage du portefeuille
+## <a name="balance-the-portfolio"></a>Équilibrer le portefeuille
 
 Cette section du Framework d’adoption du cloud établit la théorie pour aider les lecteurs à comprendre les différentes approches pour traiter les changements dans un portefeuille équilibré. L’article sur [l’équilibrage du portefeuille](../../expanded-scope/balance-the-portfolio.md) est un exemple d’expansion d’étendue, conçu pour aider à donner suite à cette théorie.
 

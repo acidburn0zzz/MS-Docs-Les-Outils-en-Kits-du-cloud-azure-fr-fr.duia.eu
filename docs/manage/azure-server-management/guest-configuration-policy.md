@@ -8,43 +8,43 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 741a73bacadccc0ee7b06542b86b9958aa236982
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547268"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656311"
 ---
 # <a name="guest-configuration-policy"></a>Stratégie Guest Configuration
 
-L’extension Azure Policy [Guest Configuration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) vous permet d’auditer les paramètres de configuration d’une machine virtuelle. Guest Configuration est actuellement pris en charge uniquement sur les machines virtuelles Azure.
+Vous pouvez utiliser l’extension Azure Policy [Guest Configuration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) pour auditer les paramètres de configuration d’une machine virtuelle. Guest Configuration est actuellement pris en charge uniquement sur les machines virtuelles Azure.
 
-Vous pouvez retrouver la liste des stratégies Guest Configuration en recherchant la catégorie « Guest Configuration » dans la page du portail Azure Policy. Vous pouvez également en retrouver la liste en exécutant cette cmdlet dans une fenêtre PowerShell :
+Pour trouver la liste des stratégies Guest Configuration, recherchez « Guest Configuration » dans la page du portail Azure Policy. Ou bien exécutez cette cmdlet dans une fenêtre PowerShell pour trouver la liste :
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> La fonctionnalité Guest Configuration est régulièrement mise à jour pour pouvoir prendre en charge d’autres jeux de stratégies. Vérifiez régulièrement les nouvelles stratégies prises en charge et déterminez si elles répondent à vos besoins.
+> La fonctionnalité Guest Configuration est régulièrement mise à jour pour pouvoir prendre en charge d’autres jeux de stratégies. Vérifiez régulièrement les nouvelles stratégies prises en charge et évaluez leur utilité.
 
 <!-- TODO: Update these links when available. 
 
-By default, we recommend enabling the following policies:
+By default, we recommend that you enable the following policies:
 
-- [Preview]: Audit to verify password security settings are set correctly inside Linux and Windows machines.
+- [Preview]: Audit to verify that password-security settings are correct on Linux and Windows machines.
 - Audit to verify that certificates are not nearing expiration on Windows VMs.
 
 -->
 
 ## <a name="deployment"></a>Déploiement
 
-Utilisez ensuite l’exemple de script PowerShell suivant pour déployer ces stratégies :
+Utilisez l’exemple de script PowerShell suivant pour déployer ces stratégies sur :
 
 - Vérifiez que les paramètres de sécurité du mot de passe sont correctement définis sur les ordinateurs Windows et Linux.
 - Vérifiez que les certificats ne sont pas proches de l’expiration sur les machines virtuelles Windows.
 
- Avant d’exécuter ce script, vous devez vous connecter à l’aide de la cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0). Lorsque vous exécutez le script, vous devez fournir le nom de l’abonnement auquel vous souhaitez appliquer les stratégies.
+ Avant d’exécuter ce script, utilisez la cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) pour vous connecter. Lorsque vous exécutez le script, vous devez fournir le nom de l’abonnement auquel vous souhaitez appliquer les stratégies.
 
 ```powershell
 

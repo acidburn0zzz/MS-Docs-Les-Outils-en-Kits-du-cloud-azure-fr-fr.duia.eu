@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8c64507c03a99ef771f7885dc8fbde960c570e4d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547735"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566322"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence des identités
 
@@ -31,7 +31,7 @@ La justification commerciale pour migrer les deux centres de données vers le cl
 
 Les deux premiers obstacles seront gérés en parallèle. Cet article porte sur la résolution des troisième et quatrième obstacles.
 
-### <a name="expanding-the-cloud-governance-team"></a>Étoffement de l’équipe de gouvernance cloud
+### <a name="expand-the-cloud-governance-team"></a>Étoffer l’équipe de gouvernance cloud
 
 L’équipe de gouvernance cloud se développe. Étant donné l’accroissement du besoin de prise en charge en matière de gestion des identités, un administrateur des systèmes issu de l’équipe de base de référence des identités participe désormais à une réunion hebdomadaire afin d’informer les membres actuels de l’équipe sur les nouveautés.
 

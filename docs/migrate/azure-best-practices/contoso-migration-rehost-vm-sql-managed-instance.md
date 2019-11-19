@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058495"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239175"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>réhéberger une application locale sur une machine virtuelle Azure et SQL Database Managed Instance
 
@@ -78,7 +78,7 @@ Dans le cadre de la conception de la solution, Contoso a fait une comparaison de
 
 - Managed Instance vise à fournir une compatibilité de quasi 100 % avec la dernière version locale de SQL Server. Microsoft recommande Managed Instance aux clients qui exécutent SQL Server localement ou sur une machine virtuelle IaaS et qui souhaitent migrer leurs applications vers un service entièrement managé en changeant le moins possible la conception.
 - Contoso a l’intention de migrer un grand nombre d’applications locales vers IaaS. Beaucoup d’entre elles sont fournies par l’ISV. Contoso se rend compte que Managed Instance peut garantir une compatibilité de base de données pour ces applications que SQL Database ne prend peut-être pas en charge.
-- Contoso peut simplement effectuer une migration « lift-and-shift » vers Managed Instance à l’aide d’Azure Database Migration Service entièrement automatisé. Une fois ce service en place, Contoso peut le réutiliser pour les futures migrations de base de données.
+- Contoso peut simplement effectuer une migration lift-and-shift vers Managed Instance à l’aide d’Azure Database Migration Service entièrement automatisé. Une fois ce service en place, Contoso peut le réutiliser pour les futures migrations de base de données.
 - SQL Managed Instance prend en charge SQL Server Agent, qui est essentiel pour l’application SmartHotel360. Contoso a besoin de cette compatibilité, sous peine de devoir recréer les plans de maintenance demandés par l’application.
 - Avec Software Assurance, Contoso peut échanger ses licences existantes contre une réduction de tarif sur SQL Database Managed Instance en utilisant Azure Hybrid Benefit pour SQL Server. Contoso peut alors économiser jusqu'à 30 % sur Managed Instance.
 - SQL Managed Instance est entièrement contenu dans le réseau virtuel ; il fournit donc une isolation et sécurité accrues pour les données de Contoso. Contoso peut obtenir les avantages du cloud public tout en isolant l’environnement du réseau Internet public.
@@ -103,7 +103,7 @@ Contoso migre les niveaux web et données de son application SmartHotel360 vers 
 
 1. Contoso disposant déjà d’une infrastructure Azure en place, il faut simplement ajouter quelques composants Azure spécifiques pour ce scénario.
 2. La couche Données sera migrée à l’aide d’Azure Database Migration Service. Le service se connecte à la machine virtuelle SQL Server locale par le biais d’une connexion VPN site à site entre le centre de données de Contoso et Azure. Le service migre ensuite la base de données.
-3. La couche web sera migrée à l’aide d’une migration « lift-and-shift » avec Site Recovery. Ce processus nécessite la préparation de l’environnement VMware local, la configuration et l’activation de la réplication, et la migration des machines virtuelles par leur basculement vers Azure.
+3. La couche web sera migrée à l’aide d’une migration lift-and-shift avec Site Recovery. Ce processus nécessite la préparation de l’environnement VMware local, la configuration et l’activation de la réplication, et la migration des machines virtuelles par leur basculement vers Azure.
 
      ![Architecture de la migration](media/contoso-migration-rehost-vm-sql-managed-instance/migration-architecture.png)
 

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224342"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564313"
 ---
 # <a name="cloud-center-of-excellence"></a>Centre d’excellence de cloud
 
@@ -92,7 +92,7 @@ En échange de ces avantages, la fonction informatique existante peut échanger 
 
 Dans les entreprises saines désireuses d’adopter le cloud, ce processus de négociation est une conversation dynamique entre les pairs et les équipes informatiques partenaires. Les détails techniques peuvent être complexes, mais ils sont gérables lorsque le service informatique comprend parfaitement l’objectif et appuie les efforts du CCoE. Lorsque le service informatique apporte un soutien moindre, la section suivante, qui porte sur les moyens d’assurer la réussite du CCoE, peut aider à surmonter les blocages culturels.
 
-## <a name="enabling-ccoe-success"></a>Assurer la réussite du CCoE
+## <a name="enable-ccoe-success"></a>Assurer la réussite du CCoE
 
 Avant de poursuivre avec ce modèle, il est important de s’assurer que l’entreprise a une réelle volonté de croissance et que le service informatique est disposé à déléguer les responsabilités centrales. Comme indiqué ci-dessus, le but d’un CCoE est d’échanger le contrôle contre de l’agilité et de la vitesse.
 

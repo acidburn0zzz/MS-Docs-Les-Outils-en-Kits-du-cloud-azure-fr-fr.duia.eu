@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a64a069dcebb12cf550f697561b76903e6d01bf
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 116119530ba5cedcdad836b219b43f23f74d9afc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967346"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566017"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Conception de gouvernance pour une charge de travail simple
 
@@ -25,12 +25,12 @@ Dans la phase préparatoire à l’adoption, notre objectif est de déployer une
 - Gestion des identités pour un seul **propriétaire de charge de travail** qui est responsable du déploiement et la gestion de la charge de travail simple. Le propriétaire de la charge de travail requiert une autorisation pour créer, lire, mettre à jour et supprimer des ressources, ainsi que pour déléguer ces droits à d’autres utilisateurs dans le système de gestion d’identité.
 - Gérez toutes les ressources de la charge de travail simple en tant qu’unité de gestion unique.
 
-## <a name="licensing-azure"></a>Gestion des licences Azure
+## <a name="azure-licensing"></a>Gestion des licences Azure
 
 Avant de commencer la conception du modèle de gouvernance, il est important de comprendre comment Azure est concédé sous licence. En effet, les comptes d’administration associés à votre licence Azure ont le plus haut niveau d’accès à toutes vos ressources Azure. Ces comptes d’administration constituent la base de votre modèle de gouvernance.
 
 > [!NOTE]
-> Si votre organisation dispose déjà d’un [contrat entreprise Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) qui n’inclut pas Azure, Azure peut être ajouté en effectuant un engagement financier initial. Consultez les [licences Azure pour l’entreprise](https://azure.microsoft.com/pricing/enterprise-agreement) pour plus d’informations.
+> Si votre organisation dispose déjà d’un [contrat entreprise Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) qui n’inclut pas Azure, Azure peut être ajouté en effectuant un engagement financier initial. Pour plus d’informations, consultez [Gestion des licences Azure pour l’entreprise](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Lorsqu’Azure a été ajouté au Contrat Entreprise de votre organisation, cette dernière a été invitée à créer un **compte Azure**. Pendant le processus de création du compte, un **propriétaire de compte Azure** a été créé, ainsi qu’un locataire Azure Active Directory (Azure AD) avec un compte **d’administrateur général**. Un client Azure AD est une construction logique qui représente une instance d’Azure AD dédiée et sécurisée.
 
@@ -92,18 +92,18 @@ Pour illustrer ceci, nous allons examiner ce qui se passe lorsque le **propriét
 
 Là encore, le rôle de **propriétaire** intégré accorde toutes les autorisations au **propriétaire de la charge de travail** pour l’étendue du groupe de ressources. Comme indiqué précédemment, ce rôle est hérité du niveau d’abonnement. Si un rôle différent est attribué à cet utilisateur dans cette étendue, il s’applique à cette étendue uniquement.
 
-Le niveau le plus bas de l’étendue de la gestion est le niveau **ressource**. Les opérations appliquées au niveau de la ressource s’appliquent uniquement à la ressource elle-même. Et là encore, les autorisations au niveau de la ressource sont héritées à partir de l’étendue du groupe de ressources. Par exemple, nous allons examiner ce qui se passe si le **propriétaire de la charge de travail** déploie un [réseau virtuel](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) dans le groupe de ressources :
+Le niveau le plus bas de l’étendue de la gestion est le niveau **ressource**. Les opérations appliquées au niveau de la ressource s’appliquent uniquement à la ressource elle-même. Là encore, les autorisations au niveau de la ressource sont héritées de l’étendue du groupe de ressources. Par exemple, nous allons examiner ce qui se passe si le **propriétaire de la charge de travail** déploie un [réseau virtuel](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) dans le groupe de ressources :
 
 ![Le **propriétaire de la charge de travail** crée une ressource](../../_images/govern/design/governance-1-8.png)
 *Figure 8 - Le propriétaire de la charge de travail crée une ressource et hérite du rôle de propriétaire intégré pour l’étendue de la ressource.*
 
 Le **propriétaire de la charge de travail** hérite du rôle de propriétaire au niveau de l’étendue d’une ressource, ce qui signifie que le propriétaire de la charge de travail dispose de toutes les autorisations pour le réseau virtuel.
 
-## <a name="implementing-the-basic-resource-access-management-model"></a>Implémentation du modèle de gestion d’accès aux ressources
+## <a name="implement-the-basic-resource-access-management-model"></a>Implémenter le modèle de gestion d’accès aux ressources de base
 
 Apprenons maintenant à implémenter le modèle de gouvernance conçu précédemment.
 
-Pour commencer, votre organisation nécessite un compte Azure. Si votre organisation dispose déjà d’un [contrat entreprise Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) qui n’inclut pas Azure, Azure peut être ajouté en effectuant un engagement financier initial. Consultez les [licences Azure pour l’entreprise](https://azure.microsoft.com/pricing/enterprise-agreement) pour plus d’informations.
+Pour commencer, votre organisation nécessite un compte Azure. Si votre organisation dispose déjà d’un [contrat entreprise Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) qui n’inclut pas Azure, Azure peut être ajouté en effectuant un engagement financier initial. Pour plus d’informations, consultez [Gestion des licences Azure pour l’entreprise](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Lors de la création de votre compte Azure, vous devez spécifier une personne de votre organisation comme étant le **propriétaire du compte** Azure. Un client Azure Active Directory (Azure AD) est ensuite créé par défaut. Le **propriétaire du compte** Azure doit [créer le compte d’utilisateur](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory) de la personne **propriétaire de la charge de travail** de votre organisation.
 

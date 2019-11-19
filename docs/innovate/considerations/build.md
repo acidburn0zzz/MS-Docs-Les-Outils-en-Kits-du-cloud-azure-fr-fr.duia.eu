@@ -8,12 +8,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 25cc7cac212bffda6d7fa3514de7bb274fc1c17e
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058598"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565733"
 ---
 # <a name="build-with-customer-empathy"></a>Développer en faisant preuve d’empathie vis à vis du client
 
@@ -81,7 +81,7 @@ En règle générale, une solution MVP est constituée d’une simple applicatio
 - Un algorithme prédictif incorrect 99 % du temps, mais démontrant des résultats souhaités spécifiques.
 - Un appareil IoT qui ne communique pas de manière sécurisée en environnement de production, mais qui peut démontrer la valeur de données en quasi-temps réel au sein d’un processus.
 - Une application créée par un développeur citoyen pour tester une hypothèse ou répondre à des besoins à plus petite échelle
-- Un processus manuel qui recrée les avantages de l’application à suivre
+- Un processus manuel qui recrée les avantages de l’application à suivre.
 - Une maquette ou une vidéo suffisamment détaillée pour permettre au client d’interagir.
 
 Le développement d’un MVP ne doit pas nécessiter un lourd investissement en développement. Pour minimiser le nombre d’hypothèses testées à un moment donné, il est préférable de limiter cet investissement autant que possible. Ensuite, dans chaque itération et avec chaque version, la solution est intentionnellement améliorée afin d’évoluer vers une solution prête pour un développement à grande échelle, représentant plusieurs disciplines de l’invention.

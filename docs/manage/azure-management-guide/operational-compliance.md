@@ -10,28 +10,28 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7073df6b697da49429d4086d9f8f3f113583e52d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557089"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565485"
 ---
 # <a name="operational-compliance-in-azure"></a>Conformité opérationnelle au sein d’Azure
 
-La conformité opérationnelle est la deuxième discipline d’une base de référence de gestion cloud.
+La _conformité opérationnelle_ est la deuxième discipline d’une base de référence de gestion cloud.
 
 ![Base de référence de gestion cloud](../../_images/manage/management-baseline.png)
 
-L’amélioration de la conformité opérationnelle réduit la probabilité d’une panne liée à la dérive de la configuration ou aux vulnérabilités liées aux systèmes et qui ne sont pas correctement corrigés.
+L’amélioration de la conformité opérationnelle réduit la probabilité d’une panne liée à la dérive de la configuration ou aux vulnérabilités liées aux systèmes et qui ne sont pas correctement corrigées.
 
-Dans le cas d’un environnement d’entreprise, le tableau suivant présente le minimum suggéré pour toute base de référence de gestion.
+Dans le cas d’un environnement d’entreprise, ce tableau présente le minimum suggéré pour toute base de référence de gestion.
 
 |Process  |Outil  |Objectif  |
 |---------|---------|---------|
 |Gestion des correctifs|Update Management|Gestion et planification des mises à jour|
 |Application de stratégies|Azure Policy|Mise en œuvre de la stratégie pour garantir la conformité environnementale et invité|
-|Env. Configuration|Azure Blueprint|Conformité automatisée pour les services de base|
+|Configuration de l’environnement|Azure Blueprints|Conformité automatisée pour les services de base|
 
 ::: zone target="docs"
 
@@ -48,26 +48,29 @@ Les ordinateurs gérés par Update Management utilisent les configurations suiva
 
 - Microsoft Monitoring Agent (MMA) pour Windows ou Linux
 - PowerShell DSC (Desired State Configuration, configuration d’état souhaité) pour Linux
-- Runbook Worker hybride Automation
+- Runbook Worker hybride Azure Automation
 - Services Microsoft Update ou Windows Server Update (WSUS) pour ordinateurs Windows
 
-Pour plus d'informations, consultez [Solution Gestion des mises à jour](https://docs.microsoft.com/azure/automation/automation-update-management)
+Pour plus d'informations, consultez [Solution Gestion des mises à jour](https://docs.microsoft.com/azure/automation/automation-update-management).
 
 > [!WARNING]
 > Avant d’utiliser la gestion des mises à jour, vous devez intégrer des machines virtuelles ou un abonnement entier à Log Analytics et Azure Automation.
-> Il existe deux approches d’intégration : une des deux doit être suivie avant de procéder à la gestion des mises à jour.
+>
+> Il existe deux approches pour l’intégration :
 >
 > - [Machine virtuelle unique](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 > - [Abonnement entier](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+>
+> Vous devez suivre une de ces approches avant de procéder à la gestion des mises à jour.
 
 ### <a name="manage-updates"></a>Gérer les mises à jour
 
 Pour appliquer une stratégie à un groupe de ressources :
 
 1. Accédez à [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
-2. Choisissez l’un des **comptes Automation** de la liste.
-3. Recherchez la section **Gestion de la configuration** dans la navigation du portail.
-4. L’inventaire, la gestion des modifications et la configuration d’état peuvent être utilisés pour contrôler l’état et la conformité opérationnelle des machines virtuelles gérées.
+1. Sélectionnez **Comptes Automation**, puis choisissez un des comptes répertoriés.
+1. Sélectionnez **Gestion de la configuration**.
+1. L’**inventaire**, la **gestion des modifications** et la **configuration d’état** peuvent être utilisés pour contrôler l’état et la conformité opérationnelle des machines virtuelles gérées.
 
 ::: zone target="chromeless"
 
@@ -90,13 +93,13 @@ Pour appliquer une stratégie à un groupe de ressources :
 
 ::: zone-end
 
-Azure Policy est utilisé pendant les processus de gouvernance. Mais il est également très utilisé au sein de processus de gestion cloud. En plus de l’audit et de la correction des ressources Azure, Azure Policy peut auditer les paramètres internes d’une machine. La validation est effectuée par le client et l’extension de configuration d’invité. L’extension, via le client, valide des paramètres tels que :
+Azure Policy est utilisé pendant les processus de gouvernance. Il est également très utilisé au sein de processus de gestion cloud. En plus de l’audit et de la correction des ressources Azure, Azure Policy peut auditer les paramètres internes d’une machine. La validation est effectuée par le client et l’extension de configuration d’invité. L’extension, via le client, valide des paramètres tels que :
 
-- Configuration du système d’exploitation
-- La configuration ou la présence de l’application
-- Paramètres d'environnement
+- Configuration du système d’exploitation.
+- Configuration ou présence de l’application.
+- Paramètres d'environnement.
 
-À ce stade, la configuration d’invité Azure Policy effectue uniquement un audit des paramètres à l’intérieur de la machine. Elle n’applique pas de configurations.
+Actuellement, la configuration d’invité Azure Policy effectue uniquement un audit des paramètres à l’intérieur de la machine. Elle n’applique pas de configurations.
 
 ::: zone target="chromeless"
 
@@ -134,9 +137,11 @@ Pour plus d'informations, consultez les rubriques suivantes :
 
 ::: zone-end
 
-Azure Blueprints permet aux architectes cloud et aux groupes centraux responsables des technologies de l’information de définir un ensemble reproductible de ressources Azure qui implémentent et respectent les normes, modèles et exigences d’une organisation. Azure Blueprints permet aux équipes de développement de créer et mettre en place rapidement de nouveaux environnements et d’avoir confiance en leur conformité aux exigences de l’organisation à l’aide d’un ensemble de composants intégrés, comme la mise en réseau, visant à accélérer le développement et la livraison.
+Avec Azure Blueprints, les architectes cloud et les groupes d’informatique centrale peuvent définir un ensemble reproductible de ressources Azure. Ces ressources implémentent et respectent les normes, modèles et exigences d’une organisation.
 
-Les blueprints sont un moyen déclaratif d’orchestrer le déploiement de divers modèles de ressources et d’autres artefacts, notamment ceux-ci :
+Avec Azure Blueprints, les équipes de développement peuvent rapidement créer et mettre en place de nouveaux environnements. Elles ont également la garantie que les environnements créés sont conformes aux exigences de l’organisation. Pour cela, elles utilisent un ensemble de composants intégrés, comme la mise en réseau, visant à accélérer le développement et la livraison.
+
+Les blueprints sont un moyen déclaratif d’orchestrer le déploiement de différents modèles de ressources et d’autres artefacts, notamment ceux-ci :
 
 - Attributions de rôle.
 - Attributions de stratégies.
@@ -152,11 +157,12 @@ Pour créer un blueprint :
 ::: zone target="chromeless"
 
 1. Accédez à **Blueprints – Prise en main**.
-1. Dans la section **Créer un blueprint**, sélectionnez **Créer**.
+1. Dans le volet **Créer un blueprint**, sélectionnez **Créer**.
 1. Filtrez la liste des blueprints pour sélectionner le blueprint approprié.
-1. Entrez le **Nom du blueprint**, puis sélectionnez l’**Emplacement de définition** approprié.
-1. Cliquez sur **Suivant : Artefacts >>** et examinez les artefacts inclus dans le blueprint.
-1. Cliquez sur **Enregistrer le brouillon**.
+1. Dans la zone **Nom du blueprint**, entrez le nom du blueprint.
+1. Sélectionnez **Emplacement de définition**, puis choisissez l’emplacement correspondant.
+1. Sélectionnez **Suivant : Artefacts >>** , puis examinez les artefacts inclus dans le blueprint.
+1. Sélectionnez **Enregistrer le brouillon**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -165,11 +171,12 @@ Pour créer un blueprint :
 ::: zone target="docs"
 
 1. Accédez à [Blueprints – Prise en main](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
-1. Dans la section **Créer un blueprint**, sélectionnez **Créer**.
+1. Dans le volet **Créer un blueprint**, sélectionnez **Créer**.
 1. Filtrez la liste des blueprints pour sélectionner le blueprint approprié.
-1. Entrez le **Nom du blueprint**, puis sélectionnez l’**Emplacement de définition** approprié.
-1. Cliquez sur **Suivant : Artefacts >>** et examinez les artefacts inclus dans le blueprint.
-1. Cliquez sur **Enregistrer le brouillon**.
+1. Dans la zone **Nom du blueprint**, entrez le nom du blueprint.
+1. Sélectionnez **Emplacement de définition**, puis choisissez l’emplacement correspondant.
+1. Sélectionnez **Suivant : Artefacts >>** , puis examinez les artefacts inclus dans le blueprint.
+1. Sélectionnez **Enregistrer le brouillon**.
 
 ::: zone-end
 
@@ -182,7 +189,9 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 1. Accédez à **Blueprints - Définitions de blueprints**.
 1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
 1. Passez en revue la définition de blueprint et sélectionnez **Publier le blueprint**.
-1. Spécifiez une **Version** (par exemple, « 1.0 ») et les **Notes de changement** éventuelles, puis sélectionnez **Publier**.
+1. Dans la zone **Version**, entrez une version, par exemple « 1.0 ».
+1. Dans la zone **Notes de changement**, entrez vos notes.
+1. Sélectionnez **Publier**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -193,7 +202,11 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 1. Accédez à [Blueprints - Définitions de blueprints](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
 1. Passez en revue la définition de blueprint et sélectionnez **Publier le blueprint**.
-1. Spécifiez une **Version** (par exemple, « 1.0 ») et les **Notes de changement** éventuelles, puis sélectionnez **Publier**.
+1. Dans la zone **Version**, entrez une version, par exemple « 1.0 ».
+1. Dans la zone **Notes de changement**, entrez vos notes.
+1. Sélectionnez **Publier**.
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="learn-more"></a>En savoir plus
 

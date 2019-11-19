@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4fa02d8b81e4f1b0afcd5cf5fb932c52fc3c1ea6
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979921"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564905"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Mettre en place un examen de santé opérationnel
 
@@ -82,25 +82,25 @@ Il est important de souligner que ces métriques doivent refléter directement l
 
 La phase de passage en revue des services est essentielle dans le processus de passage en revue de l’adéquation opérationnelle. Elle comprend ces étapes :
 
-1. **Mettre en place des métriques de service**. Utilisez les métriques de tableau de bord pour superviser les services et garantir qu’ils répondent aux attentes métier. La supervision des services est essentielle. Si vous ne pouvez pas superviser un ensemble de services relativement aux exigences non fonctionnelles, envisagez d’afficher en rouge les métriques de tableau de bord correspondantes. La première étape pour y remédier consiste à implémenter le monitoring du service en question. Par exemple, si l’entreprise attend d’un service qu’il fonctionne avec une disponibilité de 99,99 %, mais qu’aucune télémétrie de production n’est en place pour en mesurer la disponibilité, partez du principe que vous ne répondez pas à cette exigence.
+1. **Mettre en place des métriques de service**. Utilisez les métriques de carte de performance pour superviser les services et garantir qu’ils répondent aux attentes métier. La supervision des services est essentielle. Si vous ne pouvez pas superviser un ensemble de services relativement aux exigences non fonctionnelles, envisagez d’afficher en rouge les métriques de carte de performance correspondantes. La première étape pour y remédier consiste à implémenter le monitoring du service en question. Par exemple, si l’entreprise attend d’un service qu’il fonctionne avec une disponibilité de 99,99 %, mais qu’aucune télémétrie de production n’est en place pour en mesurer la disponibilité, partez du principe que vous ne répondez pas à cette exigence.
 
 2. **Prévoir des mesures de correction**. Pour chaque opération de service dont les métriques se trouvent sous le seuil acceptable, calculez ce que coûterait une correction du service permettant d’y remédier. Si ce coût est supérieur au revenu attendu du service, prenez en compte les coûts intangibles, comme l’expérience utilisateur. Par exemple, si les clients ont des difficultés à passer une commande en utilisant le service, ils risquent de choisir à la place un concurrent.
 
 3. **Implémenter la correction**. Dès que les responsables de l'entreprise et l'équipe d'ingénierie se sont mis d'accord sur un plan, implémentez-le. Signalez l'état de l'implémentation à chaque passage en revue des métriques de tableau de bord.
 
-Ce processus est itératif et dans l’idéal, l’entreprise doit avoir une équipe qui y est dédiée. Des réunions régulières doivent être organisées pour passer en revue les projets de correction existants, lancer le passage en revue fondamental des nouvelles charges de travail et effectuer le suivi du tableau de bord global de l’entreprise. L’équipe doit avoir l’autorité nécessaire pour demander des comptes aux équipes de correction qui ne respectent pas les métriques ou sont en retard sur la planification.
+Ce processus est itératif et dans l’idéal, l’entreprise doit avoir une équipe qui y est dédiée. Des réunions régulières doivent être organisées pour passer en revue les projets de correction existants, lancer le passage en revue fondamental des nouvelles charges de travail et effectuer le suivi de la carte de performance globale de l’entreprise. L’équipe doit avoir l’autorité nécessaire pour demander des comptes aux équipes de correction qui ne respectent pas les métriques ou sont en retard sur la planification.
 
 ## <a name="structure-of-the-review-team"></a>Structure de l’équipe de passage en revue
 
 L’équipe responsable du passage en revue de l’adéquation opérationnelle se compose des rôles suivants :
 
-- **Responsable de l’entreprise** : Apporte les connaissances métier pour identifier et hiérarchiser les opérations métier critiques. Il compare également le coût des mesures d'atténuation à l'impact sur l'entreprise, et prend la décision finale concernant les mesures correctives à appliquer.
+- **Responsable métier :** Apporte les connaissances métier pour identifier et hiérarchiser les opérations métier critiques. Il compare également le coût des mesures d'atténuation à l'impact sur l'entreprise, et prend la décision finale concernant les mesures correctives à appliquer.
 
-- **Responsable métier** : Décompose les opérations métier en parties discrètes et les associe aux services et à l'infrastructure, qu'ils soient locaux ou dans le cloud. Une connaissance approfondie des technologies associées à chaque opération est nécessaire.
+- **Responsable métier :** Décompose les opérations métier en parties discrètes et les associe aux services et à l'infrastructure, qu'ils soient locaux ou dans le cloud. Une connaissance approfondie des technologies associées à chaque opération est nécessaire.
 
-- **Responsable de l’ingénierie** : Implémente les services associés à l’opération métier. Ces personnes doivent participer à la conception, à l’implémentation et au déploiement de solutions pour des problèmes liés aux exigences non fonctionnelles qui ne sont pas révélés par l’équipe de passage en revue.
+- **Responsable de l’ingénierie :** Implémente les services associés à l’opération métier. Ces personnes doivent participer à la conception, à l’implémentation et au déploiement de solutions pour des problèmes liés aux exigences non fonctionnelles qui ne sont pas révélés par l’équipe de passage en revue.
 
-- **Responsable des services** : Exploite les applications et services métier. Ils collectent des données de journalisation et d’utilisation de ces applications et services, Ces données sont utilisées pour identifier les problèmes et pour vérifier les correctifs une fois qu’ils sont déployés.
+- **Responsable des services :** Exploite les applications et services métier. Ils collectent des données de journalisation et d’utilisation de ces applications et services, Ces données sont utilisées pour identifier les problèmes et pour vérifier les correctifs une fois qu’ils sont déployés.
 
 ## <a name="review-meeting"></a>Réunion de passage en revue
 
@@ -114,11 +114,11 @@ Adaptez les détails du processus et des réunions à vos besoins spécifiques. 
 
 3. Les responsables de l’ingénierie et des services évaluent l’état actuel de la journalisation et du monitoring opérationnels des services listés à l’étape précédente. Une journalisation et une supervision robustes sont critiques : elles identifient les composants des services qui contribuent au non-respect des exigences non fonctionnelles. Si la journalisation et la supervision sont insuffisantes, l'équipe doit les mettre en place en créant et en implémentant un plan.
 
-4. L'équipe crée des métriques de tableau de bord pour les nouvelles opérations métier. Le tableau de bord se compose de la liste des composants constitutifs de chaque service identifié à l’étape 2. Il est aligné sur les exigences non fonctionnelles et comprend une mesure de la façon dont chaque composant répond aux exigences.
+4. L'équipe crée des métriques de tableau de bord pour les nouvelles opérations métier. La carte de performance se compose de la liste des composants constitutifs de chaque service identifié à l’étape 2. Il est aligné sur les exigences non fonctionnelles et comprend une mesure de la façon dont chaque composant répond aux exigences.
 
 5. Pour les composants constitutifs qui ne répondent pas aux exigences non fonctionnelles, l'équipe conçoit une solution globale et lui attribue un responsable de l'ingénierie. À ce stade, le responsable de l’entreprise et le responsable métier doivent alors établir un budget pour le travail de correction, en fonction du revenu attendu de l’opération métier.
 
-6. Enfin, l'équipe évalue le travail de correction en cours. Chacune des métriques de tableau de bord pour le travail en cours est passée en revue par rapport aux critères attendus. Pour les composants constitutifs qui satisfont aux critères des métriques, le responsable du service présente les données de journalisation et de supervision pour confirmer que les critères sont respectés. Pour les composants constitutifs qui ne répondent pas aux critères des métriques, chaque responsable de l'ingénierie explique les problèmes qui empêchent le respect des critères et présente les nouvelles conceptions permettant d'y remédier.
+6. Enfin, l'équipe évalue le travail de correction en cours. Chacune des métriques de carte de performance pour le travail en cours est passée en revue par rapport aux critères attendus. Pour les composants constitutifs qui satisfont aux critères des métriques, le responsable du service présente les données de journalisation et de supervision pour confirmer que les critères sont respectés. Pour les composants constitutifs qui ne répondent pas aux critères des métriques, chaque responsable de l'ingénierie explique les problèmes qui empêchent le respect des critères et présente les nouvelles conceptions permettant d'y remédier.
 
 ## <a name="recommended-resources"></a>Ressources recommandées
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3caefb507f2348f48d39c055000c3a0250fcc28a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549067"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564211"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Prise en main d’un chemin d’accès à la préparation des qualifications
 
@@ -37,3 +37,16 @@ Le Cloud Adoption Framework guide les lecteurs tout au long du cycle de vie d’
   - **Gestion** Bénéficiez des qualifications nécessaires pour régir l’environnement cloud.
 
 Chacun des parcours d’apprentissage précédents partage des opportunités sur plusieurs types de médias pour optimiser l’acquisition de connaissances.
+
+## <a name="microsoft-learn"></a>Microsoft Learn
+
+Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation aux nouvelles compétences et responsabilités qui accompagnent l’adoption du cloud n’est pas facile. Microsoft Learn offre une approche plus gratifiante de l’apprentissage pratique qui vous permet d’atteindre vos objectifs plus rapidement. Gagnez des points et des niveaux et accomplissez davantage.
+Voici quelques exemples de parcours d’apprentissage sur mesure sur Microsoft Learn, qui correspondent à la section Plan de l’infrastructure d’adoption du cloud :
+
+[Faites évoluer vos pratiques DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices) : DevOps est le rassemblement des personnes, des processus et des produits qui permettent une livraison continue de valeur ajoutée aux clients finaux. Azure DevOps est un ensemble de services qui vous offre les outils dont vous avez besoin pour le faire. Azure DevOps vous permet de créer, de tester et de déployer une application, vers le cloud ou localement.
+
+[Azure pour l’ingénieur de données](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer) : voyez comment le monde des données a évolué et comment l’avènement des technologies de cloud offre de nouvelles opportunités d’activité à explorer. Vous découvrirez les différentes technologies de plateformes de données disponibles, ainsi que la façon dont un ingénieur de données peut en tirer parti au profit d’une organisation.
+
+## <a name="learn-more"></a>En savoir plus
+
+Pour découvrir des parcours d’apprentissage supplémentaires, parcourez le [catalogue Microsoft Learn](https://docs.microsoft.com/learn/browse). Utilisez le filtre Rôles pour faire correspondre les parcours d’apprentissage à votre rôle.

@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 217b2653a4bec268720f44ac1eefd74bc2d05366
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980237"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566892"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Accélérer la migration en migrant une instance de SQL Server
 
@@ -32,7 +32,7 @@ Toutefois, certaines structures de données peuvent être migrées plus efficace
 - **Bases de données à haute densité et faible utilisation :** L'instance de SQL Server présente une densité élevée de bases de données. Chacune de ces bases de données affiche un faible volume de transactions et nécessite peu de ressources de calcul. N'hésitez pas à envisager d'autres solutions plus modernes, mais une approche IaaS (infrastructure as a service) peut entraîner une réduction significative des coûts d'exploitation.
 - **Coût total de possession :** Le cas échéant, vous pouvez appliquer [Azure Hybrid Benefits](https://azure.microsoft.com/pricing/hybrid-benefit) au prix catalogue. Vous obtiendrez ainsi le coût de possession le plus bas pour les instances de SQL Server. Cela est particulièrement courant pour les clients qui hébergent SQL Server dans des scénarios multicloud.
 - **Accélérateur de migration :** La migration « lift-and-shift » d'une instance peut déplacer plusieurs bases de données en une seule itération. Cette approche permet parfois aux itérations ultérieures de se concentrer plus spécifiquement sur les applications et les machines virtuelles, ce qui signifie que vous pouvez migrer plus de charges de travail en une seule itération.
-- **Migration des hôtes VMWare :** Une architecture locale courante comprend des applications et des machines virtuelles sur un hôte virtuel, et des bases de données sur un appareil sans système d'exploitation. Dans ce scénario, vous pouvez migrer des instances entières de SQL Server pour prendre en charge la migration de l'hôte VMWare vers le service Azure VMWare. Pour plus d'informations, consultez la page [Migration de l'hôte VMWare](./vmware-host.md).
+- **Migration VMware :** Une architecture locale courante comprend des applications et des machines virtuelles sur un hôte virtuel, et des bases de données sur un appareil sans système d'exploitation. Dans ce scénario, vous pouvez migrer des instances entières de SQL Server pour prendre en charge la migration de l'hôte VMware vers le service Azure VMware. Pour plus d'informations, consultez la page [Migration de l'hôte VMware](./vmware-host.md).
 
 Si aucun des critères ci-dessus ne s'applique à cette migration, il peut être préférable de poursuivre avec le [processus de migration standard](../index.md). Dans le cadre du processus standard, les structures de données sont migrées de manière itérative parallèlement à chaque charge de travail.
 
@@ -81,7 +81,7 @@ Si une base de données du plan peut être migrée vers une plateforme de donné
 
 Pour les bases de données qui peuvent être migrées vers une solution PaaS, les actions suivantes sont effectuées au cours du processus d'évaluation.
 
-- **Évaluer avec l'Assistant Migration de données :** Utilisez l'Assistant Migration de données pour détecter les problèmes de compatibilité susceptibles d'affecter la fonctionnalité de base de données de l'instance gérée Azure SQL Database cible. Utilisez l'Assistant Migration de données pour recommander des améliorations en matière de fiabilité et de niveau de performance, ainsi que pour déplacer le schéma, les données et les objets sans contenant de votre serveur source vers votre serveur cible. Pour plus d’informations, consultez [Assistant Migration de données](/sql/dma/dma-overview).
+- **Évaluer avec l'Assistant Migration de données :** Utilisez l'Assistant Migration de données pour détecter les problèmes de compatibilité susceptibles d'affecter la fonctionnalité de base de données de l'instance gérée Azure SQL Database cible. Utilisez l'Assistant Migration de données pour recommander des améliorations en matière de fiabilité et de niveau de performance, ainsi que pour déplacer le schéma, les données et les objets sans contenant de votre serveur source vers votre serveur cible. Pour plus d’informations, consultez [Assistant Migration de données](https://docs.microsoft.com/sql/dma/dma-overview).
 - **Corriger et convertir :** En fonction des résultats de l'Assistant Migration de données, convertissez le schéma de données source pour résoudre les problèmes de compatibilité. Testez le schéma de données converti avec les applications dépendantes.
 
 ## <a name="migrate-process-changes"></a>Migrer les changements de processus
@@ -96,9 +96,9 @@ Le chemin suggéré pour la migration et la synchronisation utilise une combinai
 
 |Option de migration|Objectif|
 |---------|---------|
-|[Azure Database Migration Service](/sql/dma/dma-overview)|Prend en charge les migrations en ligne (temps d'arrêt minimal) et hors connexion (en une seule fois) à grande échelle vers une instance gérée de base d'Azure SQL Database. Prend en charge la migration à partir de : SQL Server 2005, SQL Server 2008 et SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 et SQL Server 2017.|
-|[Réplication transactionnelle](/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|La réplication transactionnelle vers une instance gérée par Azure SQL Database est prise en charge pour les migrations à partir de : SQL Server 2012 (SP2 CU8, SP3 ou version ultérieure), SQL Server 2014 (RTM CU10 ou version ultérieure, ou SP1 CU3 ou version ultérieure), SQL Server 2016, SQL Server 2017.|
-|[Chargement en masse](/sql/t-sql/statements/bulk-insert-transact-sql)|Utilisez le chargement en masse sur une instance gérée d'Azure SQL Database pour les données stockées dans : SQL Server 2005, SQL Server 2008 et SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 et SQL Server 2017.|
+|[Azure Database Migration Service](https://docs.microsoft.com/sql/dma/dma-overview)|Prend en charge les migrations en ligne (temps d'arrêt minimal) et hors connexion (en une seule fois) à grande échelle vers une instance gérée de base d'Azure SQL Database. Prend en charge la migration à partir de : SQL Server 2005, SQL Server 2008 et SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 et SQL Server 2017.|
+|[Réplication transactionnelle](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|La réplication transactionnelle vers une instance gérée par Azure SQL Database est prise en charge pour les migrations à partir de : SQL Server 2012 (SP2 CU8, SP3 ou version ultérieure), SQL Server 2014 (RTM CU10 ou version ultérieure, ou SP1 CU3 ou version ultérieure), SQL Server 2016, SQL Server 2017.|
+|[Chargement en masse](https://docs.microsoft.com/sql/t-sql/statements/bulk-insert-transact-sql)|Utilisez le chargement en masse sur une instance gérée d'Azure SQL Database pour les données stockées dans : SQL Server 2005, SQL Server 2008 et SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 et SQL Server 2017.|
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>Conseils et didacticiels pour le processus de migration suggéré
 
@@ -120,7 +120,7 @@ Après le déplacement des bases de données d'une instance de SQL Server vers D
 |---------|---------|---------|---------|---------|
 |SQL Server Integration Services|Runtime d'intégration Azure Data Factory|Azure Data Factory|Hors ligne|[Didacticiel](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
 |SQL Server Analysis Services - Modèle tabulaire|Azure Analysis Services|SQL Server Data Tools|Hors ligne|[Didacticiel](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Power BI Report Server|Power BI|Hors ligne|[Didacticiel](/power-bi/report-server/migrate-report-server)|
+|SQL Server Reporting Services|Power BI Report Server|Power BI|Hors ligne|[Didacticiel](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Conseils et didacticiels pour la migration de SQL Server vers une instance IaaS de SQL Server
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915017"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564705"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 
@@ -28,7 +28,7 @@ La rationalisation est facile à comprendre lorsque vous visualisez le processus
 
 **Analyse quantitative :** Dans l’arbre de décision, ce sont les questions quantitatives qui déterminent la première couche de décisions. Les questions courantes sont les suivantes : Cette ressource est-elle actuellement utilisée ? Si oui, est-elle correctement optimisée et dimensionnée ? Quelles sont les dépendances qui existent entre les ressources ? Ces questions sont essentielles à la classification de l’inventaire.
 
-**Analyse qualitative :** L’ensemble de décisions suivant nécessite une intelligence humaine dans le but d’effectuer une analyse qualitative. Souvent, ces questions sont propres à la solution et peuvent uniquement être posées aux parties prenantes et aux utilisateurs avancés. Ces décisions retardent généralement le processus, ce qui ralentit considérablement les choses. Cette analyse nécessite généralement 40 à 80 heures de travail à temps plein par application.
+**Analyse qualitative :** L’ensemble de décisions suivant nécessite une intelligence humaine dans le but d’effectuer une analyse qualitative. Souvent, ces questions sont propres à la solution et ne peuvent être posées qu’aux parties prenantes et aux utilisateurs avancés. Ces décisions retardent généralement le processus, ce qui ralentit considérablement les choses. Cette analyse nécessite généralement 40 à 80 heures de travail à temps plein par application.
 
 Pour des conseils sur la création d’une liste de questions d’analyse qualitative, consultez [Approches de la planification du patrimoine numérique](./approach.md).
 

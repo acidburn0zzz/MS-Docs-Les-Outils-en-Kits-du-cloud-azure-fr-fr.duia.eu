@@ -8,24 +8,24 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058151"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561684"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Utiliser Terraform pour créer vos zones d’atterrissage
 
-Azure fournit des services natifs pour le déploiement de vos zones d’atterrissage. D’autres outils tiers peuvent également vous aider à cet effet. Terraform de Hashicorp est l’un de ces outils que les clients et les partenaires utilisent souvent pour déployer des zones d’atterrissage. Cette section montre comment utiliser une zone d’atterrissage prototype pour déployer des fonctions fondamentales de journalisation, de comptabilité et de sécurité pour un abonnement Azure.
+Azure fournit des services natifs pour le déploiement de vos zones d’atterrissage. D’autres outils tiers peuvent également vous aider à cet effet. Terraform de Hashicorp est l’un des outils que les clients et les partenaires utilisent souvent pour déployer des zones d’atterrissage. Cette section montre comment utiliser une zone d’atterrissage prototype pour déployer des fonctions fondamentales de journalisation, de comptabilité et de sécurité pour un abonnement Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Objectif de la zone d’atterrissage
 
-La zone d’atterrissage de base du Framework d’adoption du cloud pour Terraform comporte un ensemble limité de responsabilités et de fonctionnalités permettant d’assurer la journalisation, la comptabilité et la sécurité. Nous avons conçu cette zone d’atterrissage à l’aide de composants standard connus sous le nom de modules Terraform pour garantir la cohérence entre les ressources déployées dans l’environnement.
+La zone d’atterrissage de base du Framework d’adoption du cloud pour Terraform comporte un ensemble limité de responsabilités et de fonctionnalités permettant d’assurer la journalisation, la comptabilité et la sécurité. Cette zone d’atterrissage utilise des composants standard connus sous le nom de modules Terraform pour garantir la cohérence entre les ressources déployées dans l’environnement.
 
-## <a name="using-standard-modules"></a>Utilisation de modules standard
+## <a name="use-standard-modules"></a>Utiliser des modules standard
 
-La réutilisation des composants est un principe fondamental de l’infrastructure en tant que code. Les modules jouent un rôle déterminant dans la définition des normes et la cohérence du déploiement des ressources à l’échelle de chaque environnement. L’ensemble des modules utilisés pour déployer cette première zone d’atterrissage sont disponibles dans le [registre Terraform](https://registry.terraform.io/search?q=aztfmod) officiel.
+La réutilisation des composants est un principe fondamental de l’infrastructure en tant que code. Les modules jouent un rôle déterminant dans la définition des normes et la cohérence du déploiement des ressources à l’échelle de chaque environnement. Les modules utilisés pour déployer cette première zone d’atterrissage sont disponibles dans le [registre Terraform](https://registry.terraform.io/search?q=aztfmod) officiel.
 
 ## <a name="architecture-diagram"></a>Diagramme de l’architecture
 
@@ -40,10 +40,10 @@ Les composants déployés et leur rôle comprennent ce qui suit :
 | Composant | Responsabilité |
 |---------|---------|
 | Groupes de ressources | Principaux groupes de ressources nécessaires pour la base |
-| Journalisation de l’activité | Audit de toutes les activités d’abonnement et de l’archivage : </br> – Compte de stockage </br> – Event Hubs |  
+| Journalisation de l’activité | Audit de toutes les activités d’abonnement et de l’archivage : </br> – Compte de stockage </br> - Azure Event Hubs |  
 | Journalisation des diagnostics | Tous les journaux d’opérations sont conservés pendant un certain nombre de jours : </br> – Compte de stockage </br> – Event Hubs |
 | Log Analytics | Stocke tous les journaux d’opérations </br> Déploie des solutions courantes pour un examen approfondi des meilleures pratiques d’application : </br> – NetworkMonitoring </br> – ADAssessment </br> – ADReplication </br> – AgentHealthAssessment </br> – DnsAnalytics </br> – KeyVaultAnalytics
-| Security Center | Envoi de mesures et d’alertes en matière d’hygiène de sécurité par e-mail et numéro de téléphone |
+| Azure Security Center | Envoi de mesures et d’alertes en matière d’hygiène de sécurité par e-mail et numéro de téléphone |
 
 ## <a name="use-this-blueprint"></a>Utilisation du blueprint
 
@@ -56,7 +56,7 @@ Les hypothèses ou contraintes suivantes ont été prises en compte lors de la d
 - **Limites d’abonnement :** Il est peu probable que cet effort d’adoption dépasse les [limites d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits). Deux indicateurs courants sont un excès de 25 000 machines virtuelles ou 10 000 processeurs virtuels.
 - **Conformité :** Aucune exigence de tiers en matière de conformité n’est requise pour cette zone d’atterrissage.
 - **Complexité architecturale :** La complexité architecturale ne nécessite pas d’abonnements de production supplémentaires.
-- **Services partagés :** Aucun des services partagés existants dans Azure ne nécessite que cet abonnement soit traité comme un spoke dans une architecture Hub-and-Spoke.
+- **Services partagés :** Aucun des services partagés existants dans Azure ne nécessite que cet abonnement soit traité comme un spoke dans une architecture hub and spoke.
 
 Si ces hypothèses correspondent à votre environnement actuel, ce blueprint peut être une bonne façon de commencer à créer votre zone d’atterrissage.
 
@@ -66,18 +66,18 @@ Les décisions suivantes sont représentées dans la zone d’atterrissage Terra
 
 | Composant | Décisions | Autres approches |
 | --- | --- | --- |
-|Enregistrement et surveillance | L’espace de travail Log Analytics d’Azure Monitor sera utilisé. Un compte de stockage de diagnostics et un Event Hub seront approvisionnés. |         |
-|Réseau | N/A : le réseau sera implémenté dans une autre zone d’atterrissage. |[Décisions en matière de mise en réseau](../considerations/network-decisions.md) |
+|Enregistrement et surveillance | L’espace de travail Azure Monitor Log Analytics est utilisé. Un compte de stockage de diagnostics et un Event Hub sont provisionnés. |         |
+|Réseau | N/A : le réseau est implémenté dans une autre zone d’atterrissage. |[Décisions en matière de mise en réseau](../considerations/networking-options.md) |
 |Identité | Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory. | [Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Stratégie | Cette zone d’atterrissage indique actuellement qu’aucune stratégie Azure ne doit être appliquée. | |
-|Conception de l’abonnement | N/A : conçu pour un abonnement de production unique. | [Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md) |
-| Groupes d’administration | N/A : conçu pour un abonnement de production unique. |[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md) |
-| Groupes de ressources | N/A : conçu pour un abonnement de production unique. | [Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md) |
+|Conception de l’abonnement | N/A : conçu pour un abonnement de production unique. | [Abonnements de mise à l’échelle](../azure-best-practices/scaling-subscriptions.md) |
+| Groupes d’administration | N/A : conçu pour un abonnement de production unique. |[Abonnements de mise à l’échelle](../azure-best-practices/scaling-subscriptions.md) |
+| Groupes de ressources | N/A : conçu pour un abonnement de production unique. | [Abonnements de mise à l’échelle](../azure-best-practices/scaling-subscriptions.md) |
 | Données | N/A | [Choix de la bonne option SQL Server dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) et [instructions relatives aux magasins de données Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Stockage|N/A|[Conseils relatifs à Stockage Azure](../considerations/storage-guidance.md) |
-| Normes d’attribution de noms | Un préfixe unique sera crée en même temps que la création de l’environnement. Les ressources qui requièrent un nom global unique (par exemple, les comptes de stockage) utilisent ce préfixe. Le nom personnalisé est ajouté avec un suffixe aléatoire. L’utilisation des balises est obligatoire tel que décrit dans le tableau ci-dessous. | [Meilleures pratiques en matière de nommage et de catégorisation](../considerations/naming-and-tagging.md) |
+|Stockage|N/A|[Conseils relatifs à Stockage Azure](../considerations/storage-options.md) |
+| Normes d’attribution de noms | Un préfixe unique est créé en même temps que la création de l’environnement. Les ressources qui requièrent un nom global unique (par exemple, les comptes de stockage) utilisent ce préfixe. Le nom personnalisé est ajouté avec un suffixe aléatoire. L’utilisation des balises est obligatoire tel que décrit dans le tableau ci-dessous. | [Meilleures pratiques en matière de nommage et de catégorisation](../azure-best-practices/naming-and-tagging.md) |
 | la gestion des coûts ; | N/A | [Coûts de suivi](../azure-best-practices/track-costs.md) |
-| Calcul | N/A | [Options de calcul](../considerations/compute-decisions.md) |
+| Calcul | N/A | [Options de calcul](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Normes de catégorisation
 
@@ -91,7 +91,7 @@ L’ensemble suivant de balises minimales doit être présent sur toutes les res
 | Environnement | Environnement de déploiement de l’application, de la charge de travail ou du service. |  Env | Prod, Dev, QA, Stage, Test, Training |
 | Nom du propriétaire | Propriétaire de l’application, de la charge de travail ou du service.| Propriétaire | email |
 | Type de déploiement | Définit la façon dont les ressources sont conservées. | deploymentType | Manual, Terraform |
-| Version | Version du blueprint déployé | version | v0.1 |
+| Version | Version du blueprint déployé. | version | v0.1 |
 | Nom de l’application | Nom de l’application, du service ou de la charge de travail auxquels la ressource est associée. | ApplicationName | « app name » |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Personnaliser et déployer votre première zone d’atterrissage
@@ -100,7 +100,7 @@ Vous pouvez [cloner votre zone d’atterrissage de base Terraform](https://githu
 
 Examinons les différentes sections variables.
 
-Dans ce premier objet, nous créons deux groupes de ressources dans la région `southeastasia`, nommés « -hub-core-sec » et « -hub-core-sec » avec un préfixe ajouté au moment de l’exécution.
+Dans ce premier objet, nous créons deux groupes de ressources dans la région `southeastasia`, nommés `-hub-core-sec` et `-hub-operations` avec un préfixe ajouté au moment de l’exécution.
 
 ```hcl
 resource_groups_hub = {
@@ -115,7 +115,7 @@ resource_groups_hub = {
 }
 ```
 
-Ensuite, nous spécifions les régions dans lesquelles nous pouvons définir les fondations. Ici, `southeastasia` sera utilisé pour déployer toutes les ressources.
+Ensuite, nous spécifions les régions dans lesquelles nous pouvons définir les fondations. Ici, `southeastasia` est utilisé pour déployer toutes les ressources.
 
 ```hcl
 location_map = {
@@ -124,14 +124,14 @@ location_map = {
 }
 ```
 
-Ensuite, nous spécifions la période de rétention pour les journaux d’opérations et les journaux d’abonnement Azure. Ces données seront stockées dans des comptes de stockage distincts et un Event Hub, dont les noms sont générés de manière aléatoire, car ils doivent être uniques.
+Ensuite, nous spécifions la période de rétention pour les journaux d’opérations et les journaux d’abonnement Azure. Ces données sont stockées dans des comptes de stockage distincts et un Event Hub, dont les noms sont générés de manière aléatoire, car ils doivent être uniques.
 
 ```hcl
 azure_activity_logs_retention = 365
 azure_diagnostics_logs_retention = 60
 ```
 
-Dans le tags_hub, nous spécifions l’ensemble minimum de balises qui seront appliquées à toutes les ressources créées.
+Dans le tags_hub, nous spécifions l’ensemble minimum de balises qui sont appliquées à toutes les ressources créées.
 
 ```hcl
 tags_hub = {
@@ -144,7 +144,7 @@ tags_hub = {
 }
 ```
 
-Ensuite, nous précisons le nom de l’analytique des journaux d’activité et un ensemble de solutions qui analyseront le déploiement. Ici, nous avons conservé Supervision réseau, Évaluation d’AD et Réplication, DNS Analytics et Key Vault Analytics.
+Ensuite, nous précisons le nom de l’analytique des journaux d’activité et un ensemble de solutions qui analysent le déploiement. Ici, nous avons conservé Supervision réseau, Évaluation d’Active Directory (AD) et Réplication, DNS Analytics et Key Vault Analytics.
 
 ```hcl
 
@@ -189,13 +189,13 @@ security_center = {
 }
 ```
 
-## <a name="getting-started"></a>Prise en main
+## <a name="get-started"></a>Prise en main
 
-Une fois que vous avez examiné la configuration, vous pouvez la déployer comme vous le feriez pour déployer un environnement Terraform. Toutefois, nous vous recommandons d’utiliser le rover, qui est un conteneur Docker qui permet le déploiement à partir de Windows, Linux ou MacOS. Vous pouvez vous familiariser avec le [référentiel rover GitHub](https://github.com/aztfmod/rover).
+Une fois que vous avez examiné la configuration, vous pouvez la déployer comme vous le feriez pour déployer un environnement Terraform. Nous vous recommandons d’utiliser le rover, qui est un conteneur Docker qui permet le déploiement à partir de Windows, Linux ou MacOS. Vous pouvez vous familiariser avec le [référentiel rover GitHub](https://github.com/aztfmod/rover).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-La zone d’atterrissage de base constitue le fondement d’un environnement complexe de façon décomposée. Cette édition fournit un ensemble de fonctionnalités très simples qui peuvent être étendues par :
+La zone d’atterrissage de base constitue le fondement d’un environnement complexe de façon décomposée. Cette édition fournit un ensemble de fonctionnalités simples qui peuvent être étendues par :
 
 - l’ajout d’autres modules au blueprint ;
 - la superposition de zones d’atterrissage supplémentaires.
@@ -205,4 +205,4 @@ La superposition de zones d’atterrissage est une bonne pratique pour découple
 De futures architectures de référence démontreront ce concept pour une topologie hub-and-spoke.
 
 > [!div class="nextstepaction"]
-> [Examiner l’échantillon de la zone d’atterrissage de base utilisant Terraform](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Examiner l’échantillon de la zone d’atterrissage Terraform de base](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

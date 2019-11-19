@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 6e02cffdbd76932e3066ed68501856aef2669b02
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979910"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564971"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guide de supervision du cloud : Stratégie de supervision pour les modèles de déploiement cloud
 
@@ -88,7 +88,7 @@ Le tableau suivant résume les conditions requises qu’Azure Monitor et que Sys
 |Supervision des applications web modernes | OUI | Non |
 |Supervision des applications web héritées | Oui, les limitations dépendent du kit de développement logiciel (SDK)<br> Prend en charge la supervision des versions antérieures des applications web .NET et Java. | Oui, avec des limitations |
 |Superviser des conteneurs Azure Kubernetes Service | OUI | Non |
-|Superviser des conteneurs Docker/Windows | OUI | Non |
+|Superviser des conteneurs Docker ou Windows | OUI | Non |
 |Analyse des performances réseau | OUI | Oui, avec des limitations<br> Prend en charge les vérifications de disponibilité et collecte des statistiques de base à partir des périphériques réseau à l'aide du protocole SNMP (Simple Network Management Protocol) du réseau d'entreprise.|
 |Analyse de données interactive | OUI | Non<br> S’appuie sur les des rapports prédéfinis ou personnalisés SQL Server Reporting Services, des solutions de visualisation tierces ou une implémentation de Power BI personnalisée. L’entrepôt de données Operations Manager présente des limitations de performances et de mise à l’échelle. S'intègre aux journaux Azure Monitor comme alternative aux exigences d'agrégation de données. L'intégration s'effectue en configurant le connecteur Log Analytics.|
 |Diagnostics de bout en bout, analyse de la cause racine et résolution des problèmes en temps opportun | OUI | Oui, avec des limitations<br> Prend en charge les diagnostics de bout en bout et la résolution des problèmes uniquement pour l’infrastructure et les applications locales. Utilise d’autres composants System Center ou des solutions de partenaires.|
@@ -131,7 +131,7 @@ Même si Operations Manager est en mesure de superviser les ressources hébergé
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Inconvénients liés à l'utilisation d'Operations Manager seul
 
-- L'analyse des données de supervision dans Operations Manager s'effectue généralement à l'aide de vues prédéfinies dans les packs d'administration accessibles à partir de la console, des rapports SQL Server Reporting Services (SSRS) ou des vues personnalisées créées par les utilisateurs finaux. Il est impossible d'effectuer des analyses ad hoc des données. La fonctionnalité de création de rapports d'Operations Manager est rigide. L'entrepôt de données qui assure la conservation à long terme des données de supervision n'évolue pas ou ne fonctionne pas bien. Et des connaissances en matière de rédaction d'instructions T-SQL, de développement de solution Power BI ou d'utilisation de solutions tierces sont nécessaires pour satisfaire les exigences des différents membres du service informatique.
+- L'analyse des données de supervision dans Operations Manager s'effectue généralement à l'aide de vues prédéfinies fournies par des packs d'administration accessibles à partir de la console, de rapports SQL Server Reporting Services (SSRS) ou de vues personnalisées créées par les utilisateurs finaux. L’analyse ad hoc des données n’est pas prête à l’emploi. La fonctionnalité de création de rapports d'Operations Manager est rigide. L'entrepôt de données qui assure la conservation à long terme des données de supervision n'évolue pas ou ne fonctionne pas bien. Et des connaissances en matière de rédaction d'instructions T-SQL, de développement de solution Power BI ou d'utilisation de solutions tierces sont nécessaires pour satisfaire les exigences des différents membres du service informatique.
 
 - La fonctionnalité d'alerte d'Operations Manager ne prend pas en charge les expressions complexes ou n'inclut pas la logique de corrélation. Pour réduire le bruit, les alertes sont regroupées afin de mettre leurs relations en évidence et d'identifier leurs causes.
 
@@ -165,7 +165,7 @@ Bien que la migration vers le cloud présente de nombreux défis, elle comporte 
 
 - Activez Azure Monitor pour machines virtuelles, Azure Monitor pour conteneurs et Application Insights afin de détecter et de diagnostiquer les problèmes entre l’infrastructure et les applications. Pour une analyse et une corrélation plus approfondies des données collectées à partir des différents composants ou dépendances sur lesquels repose l'application, vous devez utiliser les journaux Azure Monitor.
 
-- Créez des alertes intelligentes qui peuvent s’appliquer à un ensemble principal d’applications et de composants de service, réduisez le bruit d’alerte avec des seuils dynamiques pour les signaux complexes et utilisez l’agrégation d’alertes basée sur les algorithmes Machine Learning pour identifier rapidement le problème.
+- Créez des alertes intelligentes qui s’appliquent à un ensemble principal d’applications et de composants de service, réduisez le bruit d’alerte avec des seuils dynamiques pour les signaux complexes et utilisez l’agrégation d’alertes basée sur les algorithmes Machine Learning pour identifier rapidement le problème.
 
 - Définissez une bibliothèque de requêtes et de tableaux de bord pour répondre aux exigences des différents membres du service informatique.
 

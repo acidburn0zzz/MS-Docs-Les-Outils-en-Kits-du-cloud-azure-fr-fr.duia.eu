@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222046"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566130"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -83,7 +83,7 @@ Exemples de déclencheurs de violations et d’actions :
 | Base de référence de la sécurité | Détectez toute activité de connexion d’utilisateur suspecte. | Prévenez l’équipe de sécurité informatique et désactivez le compte de l’utilisateur suspect. |
 | Cohérence des ressources | Une charge de travail utilise plus de 90 % de l’UC. | Prévenez l’équipe des opérations informatiques et montez en charge des ressources supplémentaires pour gérer la charge. |
 
-## <a name="monitoring-and-compliance-automation"></a>Automatisation de la surveillance et de la conformité
+## <a name="automation-of-monitoring-and-compliance"></a>Automatisation de la surveillance et de la conformité
 
 Lorsque vous avez défini vos déclencheurs et actions de violation de conformité, vous pouvez commencer à planifier la meilleure façon d’utiliser les outils de journalisation et de création de rapport, ainsi que les autres fonctionnalités de votre plate-forme cloud pour automatiser la surveillance et la mise en conformité vis-à-vis de votre stratégie.
 

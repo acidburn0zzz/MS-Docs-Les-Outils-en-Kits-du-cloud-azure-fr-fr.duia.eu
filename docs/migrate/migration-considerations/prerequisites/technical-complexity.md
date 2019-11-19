@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548266"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564550"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Se préparer à la complexité technique : gestion agile des changements
 
@@ -21,7 +21,7 @@ Lorsque l’ensemble d’un centre de données peut être mis hors service et re
 
 Lors du passage à un modèle agile dans lequel l’accès est mis sur la flexibilité et l’itération, la complexité technique et la gestion des changements sont gérées différemment par rapport à un modèle traditionnel en cascade axé sur une série linéaire d’étapes de migration. Cet article décrit une approche de haut niveau de la gestion des changements dans le cadre d’un effort de migration basé sur l’agilité. À la fin de cet article, vous devriez avoir une compréhension générale des niveaux de gestion des changements et de la documentation connexe dans une approche de migration incrémentielle. Des formations et des décisions supplémentaires sont requises pour sélectionner et implémenter des pratiques agiles basées sur cette compréhension. L’objectif de cet article est de préparer les architectes cloud pour faciliter la conversation avec la gestion de projet afin d’expliquer le concept général de gestion des changements dans cette approche.
 
-## <a name="addressing-technical-complexity"></a>Résolution de la complexité technique
+## <a name="address-technical-complexity"></a>Résoudre la complexité technique
 
 Lors de la modification d’un système technique, la complexité et l’interdépendance introduisent un risque dans les plans de projet. Il en va de même pour les migrations cloud. Lors du déplacement de milliers&mdash;ou de dizaines de milliers&mdash;de ressources vers le cloud, ces risques sont amplifiés. La détection et le mappage de toutes les dépendances dans un patrimoine numérique important peuvent prendre des années. Peu d’entreprises peuvent tolérer un cycle d’analyse aussi long. Pour équilibrer la nécessité d’une analyse architecturale et d’une accélération des activités, le Framework d’adoption du cloud se concentre sur un modèle INVEST pour la gestion du backlog de produit. Les sections suivantes résument ce type de modèle.
 

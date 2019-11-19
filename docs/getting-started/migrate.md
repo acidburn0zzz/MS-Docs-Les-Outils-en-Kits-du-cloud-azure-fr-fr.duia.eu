@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048315"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564682"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Commencer un parcours de migration vers le cloud dans Azure
 
@@ -36,7 +36,7 @@ Les migrations cloud peuvent aider les entreprises à atteindre leurs résultats
 
 |Événements métier critiques | Motivations de la migration | Motivations de l’innovation |
 |---------|---------|---------|
-| Sortie du centre de données<br/><br/>Fusions, acquisitions ou cessions<br/><br/>Réductions des dépenses d’investissement<br/><br/>Fin du support des technologies stratégiques<br/><br/>Réponse aux changements liés à la conformité réglementaire<br/><br/>Répondre aux nouvelles exigences liées à la souveraineté des données<br/><br/>Réduire les interruptions et améliorer la stabilité informatique|Réduction des coûts<br/><br/>Réduction de la complexité liée aux fournisseurs ou aux contraintes techniques<br/><br/>Optimisation des opérations internes<br/><br/>Augmenter la réactivité de l’entreprise<br/><br/>Se préparer à de nouvelles fonctionnalités techniques<br/><br/>Mettre à l’échelle pour répondre aux besoins du marché<br/><br/>Mettre à l’échelle pour répondre aux besoins géographiques|Se préparer à de nouvelles fonctionnalités techniques<br/><br/>Créer des fonctionnalités techniques<br/><br/>Mettre à l’échelle pour répondre aux besoins du marché<br/><br/>Mettre à l’échelle pour répondre aux besoins géographiques<br/><br/>Améliorer les expériences utilisateur/engagements des clients<br/><br/>Transformer des produits ou services<br/><br/>Proposer de nouveaux produits ou services sur le marché|
+| Sortie du centre de données<br/><br/>Fusions, acquisitions ou cessions<br/><br/>Réductions des dépenses d’investissement<br/><br/>Fin du support des technologies stratégiques<br/><br/>Réponse aux changements liés à la conformité réglementaire<br/><br/>Répondre aux nouvelles exigences liées à la souveraineté des données<br/><br/>Réduire les interruptions et améliorer la stabilité informatique|Réduction des coûts<br/><br/>Réduction de la complexité liée aux fournisseurs ou aux contraintes techniques<br/><br/>Optimisation des opérations internes<br/><br/>Augmenter la réactivité de l’entreprise<br/><br/>Se préparer à de nouvelles fonctionnalités techniques<br/><br/>Mettre à l’échelle pour répondre aux besoins du marché<br/><br/>Mettre à l’échelle pour répondre aux besoins géographiques|Se préparer à de nouvelles fonctionnalités techniques<br/><br/>Créer des fonctionnalités techniques<br/><br/>Mettre à l’échelle pour répondre aux besoins du marché<br/><br/>Mettre à l’échelle pour répondre aux besoins géographiques<br/><br/>Améliorer les expériences client et les engagements<br/><br/>Transformer des produits ou services<br/><br/>Proposer de nouveaux produits ou services sur le marché|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -50,7 +50,7 @@ Si tous les participants sont préparés à l’effort de migration en ayant con
 
 ## <a name="migration-approach"></a>Approche de migration
 
-Le Framework d’adoption du cloud établit une construction générale basée sur les concepts de planification, de préparation et d’adoption pour regrouper les types d’effort nécessaires à une adoption du cloud. Ce récapitulatif s’appuie sur ce flux général afin d’établir des processus itératifs permettant de regrouper les efforts de lift-and-shift/d’optimisation **et** les efforts de modernisation en une seule approche pour toutes les activités de migration cloud.
+Le Framework d’adoption du cloud établit une construction générale basée sur les concepts de planification, de préparation et d’adoption pour regrouper les types d’effort nécessaires à une adoption du cloud. Ce récapitulatif s’appuie sur ce flux général afin d’établir des processus itératifs permettant de regrouper les efforts d’optimisation lift-and-shift et les efforts de modernisation en une seule approche pour toutes les activités de migration cloud.
 
 Cette approche comporte deux méthodologies ou domaines prioritaires : Stratégie/planification cloud et implémentation cloud. La [motivation](#motivations) ou le résultat opérationnel souhaité pour une migration cloud détermine souvent l’investissement qu’une équipe doit fournir dans [la stratégie et la planification](#cloud-strategy-and-planning) ainsi que dans l’[implémentation](#cloud-implementation). Ces motivations peuvent également influencer les décisions pour une exécution séquentielle ou parallèle.
 

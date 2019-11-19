@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548963"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240143"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Suivi des coûts dans les unités commerciales, les environnements ou les projets
 
@@ -25,7 +25,7 @@ ms.locfileid: "72548963"
 
 Le contrôle des coûts, de la même façon que la gouvernance et d’autres constructions de gestion, dépend d’un environnement bien managé. L’établissement d’un tel environnement (et particulièrement un environnement complexe) requiert des processus cohérents dans la classification et l’organisation de toutes les ressources.
 
-Les ressources incluent l’ensemble des machines virtuelles, des sources de données et des applications déployées dans le cloud. Azure fournit plusieurs mécanismes de classification et d’organisation des ressources. Les options de [mise à l’échelle avec plusieurs abonnements Azure](../considerations/scaling-subscriptions.md) permettent d’organiser les ressources en fonction de plusieurs critères pour établir un environnement bien managé. Cet article se concentre sur l’application des concepts fondamentaux d’Azure pour fournir une visibilité des coûts du cloud.
+Les ressources incluent l’ensemble des machines virtuelles, des sources de données et des applications déployées dans le cloud. Azure fournit plusieurs mécanismes de classification et d’organisation des ressources. Les options de [mise à l’échelle avec plusieurs abonnements Azure](../azure-best-practices/scaling-subscriptions.md) permettent d’organiser les ressources en fonction de plusieurs critères pour établir un environnement bien managé. Cet article se concentre sur l’application des concepts fondamentaux d’Azure pour fournir une visibilité des coûts du cloud.
 
 ### <a name="classification"></a>classification ;
 
@@ -35,7 +35,7 @@ La catégorisation est un moyen primaire de comprendre les données dans les rap
 
 La première étape dans le suivi précis des informations relatives aux coûts dans les unités commerciales, les environnements et les projets consiste à définir un standard de catégorisation. La seconde étape consiste à s’assurer que le standard de catégorisation est appliqué de manière cohérente. Les articles suivants peuvent vous aider à effectuer chacune de ces étapes :
 
-- [Développer des standards de nommage et de catégorisation](../considerations/naming-and-tagging.md)
+- [Développer des standards de nommage et de catégorisation](../azure-best-practices/naming-and-tagging.md)
 - [Établir un MVP de gouvernance pour appliquer les standards de catégorisation](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>Organisation des ressources
@@ -59,7 +59,7 @@ Le diagramme montre les meilleures pratiques, mais n’inclut pas les options su
 
 Le reste de cet article suppose l’utilisation de l’approche recommandée dans le diagramme précédent. Toutefois, les articles suivants peuvent vous aider à appliquer l’approche à une organisation de ressources qui correspond le mieux à votre entreprise :
 
-- [Mise à l’échelle avec plusieurs abonnements Azure](../considerations/scaling-subscriptions.md)
+- [Mise à l’échelle avec plusieurs abonnements Azure](../azure-best-practices/scaling-subscriptions.md)
 - [Déploiement d’un MVP de gouvernance pour gérer les standards en matière d’environnements bien managés](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Fournir le niveau approprié en matière d’accès aux coûts
@@ -102,7 +102,7 @@ Les paramètres d’étendue et de rôle suivants vont créer la visibilité req
 
 - [Centre d’excellence du cloud](../../organize/cloud-center-of-excellence.md). La responsabilité de la gestion des coûts associés aux services partagés requiert un accès Contributeur Cost Management au niveau de l’abonnement. En outre, cette équipe peut nécessiter un accès Contributeur Cost Management aux groupes de ressources ou aux abonnements contenant des ressources déployées par les automatisations du CCoE pour comprendre comment ces automatisations influencent les coûts.
 
-  - **Services partagés**. Lorsqu’un centre d’excellence du cloud est engagé, la meilleure pratique consiste à ce que les ressources managées par le CCoE soient prises en charge à partir d’un abonnement de services partagés centralisé au sein d’un modèle hub/spoke. Dans ce scénario, le CCoE est susceptible d’avoir un accès contributeur ou propriétaire à cet abonnement, ce qui rend inutile l’attribution d’une étendue supplémentaire pour un [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
+  - **Services partagés**. Lorsqu’un centre d’excellence du cloud est engagé, la meilleure pratique consiste à ce que les ressources managées par le CCoE soient prises en charge à partir d’un abonnement de services partagés centralisé au sein d’un modèle hub and spoke. Dans ce scénario, le CCoE est susceptible d’avoir un accès contributeur ou propriétaire à cet abonnement, ce qui rend inutile l’attribution d’une étendue supplémentaire pour un [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
   - **Automatisation/contrôles du CCoE**. Le CCoE fournit généralement des contrôles et des scripts de déploiement automatisés aux équipes d’adoption du cloud. Le CCoE a la responsabilité de comprendre comment ces accélérateurs influencent les coûts. Pour obtenir cette visibilité, l’équipe a besoin d’un accès [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) à tous les groupes de ressources ou abonnements qui exécutent ces accélérateurs.
 
 - **Équipe des opérations cloud**. La responsabilité de la gestion des coûts continus des environnements de production nécessite un accès Contributeur Cost Management à tous les abonnements de production.

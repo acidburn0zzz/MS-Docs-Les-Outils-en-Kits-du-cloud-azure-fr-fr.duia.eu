@@ -1,54 +1,52 @@
 ---
-title: Automatiser l’intégration et la configuration des alertes
+title: Automatiser l’intégration
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Automatiser l’intégration et la configuration des alertes
+description: Automatiser l’intégration
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221376"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565404"
 ---
 # <a name="automate-onboarding"></a>Automatiser l’intégration
 
-Pour améliorer l’efficacité du déploiement des services de gestion de serveur Azure, envisagez d’automatiser le déploiement des services de gestion à l’aide des recommandations présentées dans les sections précédentes de ce guide. Le script et les exemples de modèles fournis dans les sections suivantes sont des points de départ pour le développement de votre propre automatisation du processus d’intégration.
+Pour améliorer l’efficacité du déploiement des services de gestion de serveur Azure, envisagez d’automatiser le déploiement conformément aux sections précédentes de ce guide. Le script et les exemples de modèles fournis dans les sections suivantes sont des points de départ pour le développement de votre propre automatisation du processus d’intégration.
 
-## <a name="onboarding-by-using-automation"></a>Intégration à l’aide d’Automation
+Ce guide contient un référentiel GitHub de prise en charge d’exemples de code, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples). Ce référentiel fournit des exemples de scripts et de modèles Azure Resource Manager pour vous aider à automatiser le déploiement des services de gestion de serveur Azure.
 
-Ce guide contient un référentiel GitHub d’exemples de code, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), qui fournit des exemples de scripts et de modèles Azure Resource Manager pour vous aider à automatiser le déploiement des services de gestion de serveur Azure.
+Les exemples de fichiers illustrent l’utilisation des cmdlets Azure PowerShell pour automatiser les tâches suivantes :
 
-Ces exemples de fichiers illustrent l’utilisation des cmdlets Azure PowerShell pour automatiser les tâches suivantes :
+- Créer un [espace de travail Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access). (Ou utiliser un espace de travail existant s’il est conforme aux exigences. Pour plus d’informations, consultez [Planification de l’espace de travail](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).)
 
-1. Créer un [espace de travail log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access) (ou utiliser un espace de travail existant s’il répond à la configuration requise&mdash;, consultez [Planification de l’espace de travail](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
+- Créer un compte Automation. (Ou utiliser un compte existant s’il est conforme aux exigences. Pour plus d’informations, consultez [Planification de l’espace de travail](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).)
 
-2. Créer un compte Automation (ou utiliser un compte existant s’il répond à la configuration requise&mdash;, consultez [Planification de l’espace de travail](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
+- Lier le compte Automation et l’espace de travail Log Analytics. Cette étape n’est pas requise si vous intégrez à l’aide du portail Azure.
 
-3. Lier le compte Automation et l’espace de travail Log Analytics (pas nécessaire en cas d’intégration via le portail).
+- Activer Update Management ainsi que Change Tracking et Inventory pour l’espace de travail.
 
-4. Activer Update Management, Change Tracking et Inventory pour l’espace de travail.
+- Intégrer des machines virtuelles Azure à l’aide d’Azure Policy. Une stratégie installe l’agent Log Analytics et l’agent Microsoft Dependency sur les machines virtuelles Azure.
 
-5. Intégrer des machines virtuelles Azure avec Azure Policy (une stratégie installe l’agent Log Analytics et l’agent Dependency sur les machines virtuelles Azure).
+- Intégration de serveurs locaux en y installant l’agent Log Analytics.
 
-6. Intégration de serveurs locaux en y installant l’agent Log Analytics.
-
-Les fichiers décrits dans le tableau suivant sont utilisés dans cet exemple et vous pouvez les personnaliser pour vos propres scénarios de déploiement.
+Les fichiers décrits dans le tableau suivant sont utilisés dans cet exemple. Vous pouvez les personnaliser pour prendre en charge vos propres scénarios de déploiement.
 
 | Nom de fichier | Description |
 |-----------|-------------|
-| New-AMSDeployment.ps1 | Principal script d’orchestration qui automatise l’intégration. Ce script PowerShell nécessite un abonnement, mais il créera des groupes de ressources, des emplacements, des espaces de travail et des comptes Automation s’ils n’existent pas. |
+| New-AMSDeployment.ps1 | Principal script d’orchestration qui automatise l’intégration. Il crée des groupes de ressources ainsi que des emplacements, des espaces de travail et des comptes Automation s’ils n’existent pas déjà. Ce script PowerShell requiert un abonnement existant. |
 | Workspace-AutomationAccount.json | Modèle de Resource Manager qui déploie les ressources de l’espace de travail et du compte Automation. |
-| WorkspaceSolutions.json | Modèle Resource Manager qui active les solutions souhaitées dans l’espace de travail Log Analytics. |
+| WorkspaceSolutions.json | Modèle Resource Manager, qui active les solutions souhaitées dans l’espace de travail Log Analytics. |
 | ScopeConfig.json | Modèle Resource Manager qui utilise le modèle d’abonnement pour les serveurs locaux avec la solution Change Tracking. L’utilisation du modèle de consentement est facultative. |
-| Enable-VMInsightsPerfCounters.ps1 | Script PowerShell qui active VMInsight pour les serveurs et configure les compteurs de performances. |
+| Enable-VMInsightsPerfCounters.ps1 | Script PowerShell, qui active les insights de machines virtuelles pour les serveurs et configure les compteurs de performances. |
 | ChangeTracking-Filelist.json | Modèle Resource Manager qui définit la liste des fichiers qui seront surveillés par Change Tracking. |
 
-Vous pouvez exécuter New-AMSDeployment. ps1 à l’aide de la commande suivante :
+Utilisez la commande suivante pour exécuter New-AMSDeployment. ps1 :
 
 ```powershell
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}
@@ -59,4 +57,4 @@ Vous pouvez exécuter New-AMSDeployment. ps1 à l’aide de la commande suivante
 Découvrez comment configurer des alertes de base pour informer votre équipe des événements et des problèmes de gestion importants.
 
 > [!div class="nextstepaction"]
-> [Configuration des alertes de base](./setup-alerts.md)
+> [Configurer des alertes de base](./setup-alerts.md)

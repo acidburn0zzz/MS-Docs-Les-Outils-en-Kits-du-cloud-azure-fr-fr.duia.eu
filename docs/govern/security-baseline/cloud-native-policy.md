@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c9676684ebec0a34fcc2dc845935c598814ea52
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047861"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565951"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Stratégie cloud native Base de référence de la sécurité
 
-La discipline [Base de référence de la sécurité](./index.md) est l’une des [cinq disciplines de la gouvernance cloud](../governance-disciplines.md). Elle se concentre sur les sujets généraux liés à la sécurité, comme la protection du réseau, les ressources numériques, les données, etc. Comme indiqué dans le [Guide de révision des stratégies](../policy-compliance/cloud-policy-review.md), le Framework d’adoption du cloud comprend trois niveaux d’**exemples de stratégies** : Native cloud, Entreprise et Conformité au principe de conception cloud pour chacune des disciplines. Cet article traite de l’exemple de stratégie Native Cloud pour la discipline Base de référence de la sécurité.
+La discipline [Base de référence de la sécurité](./index.md) est l’une des [cinq disciplines de la gouvernance cloud](../governance-disciplines.md). Elle se concentre sur les sujets généraux liés à la sécurité, comme la protection du réseau, les ressources numériques, les données, etc. Comme indiqué dans le [Guide de révision des stratégies](../policy-compliance/cloud-policy-review.md), le Framework d’adoption du cloud comprend trois niveaux d’exemples de stratégies : cloud native, d’entreprise et conforme au principe de conception cloud pour chacune des disciplines. Cet article traite de l’exemple de stratégie Native Cloud pour la discipline Base de référence de la sécurité.
 
 > [!NOTE]
 > Microsoft n'est pas en position d'imposer une stratégie d'entreprise ou une stratégie informatique. Cet article vous aide à vous préparer à une révision de stratégie interne. Il est supposé que cet exemple de stratégie sera étendu, validé et testé sur votre stratégie d'entreprise avant toute tentative d'utilisation. Il est déconseillé d’utiliser cet exemple de stratégie en l’état.
@@ -82,7 +82,8 @@ Ici, la surveillance de la sécurité est une stratégie proactive qui audite vo
 
 ### <a name="extending-cloud-native-policies"></a>Extension des stratégies de type Native cloud
 
-L'utilisation du cloud peut réduire une partie du fardeau que représente la sécurité. Microsoft assure la sécurité physique des centres de données Azure et contribue à protéger la plateforme cloud des menaces d'infrastructure, comme les attaques DDoS. Sachant que Microsoft emploie des milliers de spécialistes de la cybersécurité qui œuvrent chaque jour pour garantir la sécurité, les ressources engagées pour atténuer, détecter et réduire les cyberattaques sont considérables. En fait, la plupart des entreprises qui se demandaient autrefois si le cloud était sécurisé savent maintenant que compte tenu du niveau d’investissement en termes de ressources humaines et d’infrastructures spécialisées effectuées par des fournisseurs tels que Microsoft, le cloud est en réalité plus sécurisé que la plupart des centres de données locaux.
+L'utilisation du cloud peut réduire une partie du fardeau que représente la sécurité. Microsoft assure la sécurité physique des centres de données Azure et contribue à protéger la plateforme cloud des menaces d'infrastructure, comme les attaques DDoS. Sachant que Microsoft emploie des milliers de spécialistes de la cybersécurité qui œuvrent chaque jour pour garantir la sécurité, les ressources engagées pour atténuer, détecter et réduire les cyberattaques sont considérables. En fait, alors que d’habitude les entreprises se demandaient si le cloud était sécurisé, la plupart d’entre elles savent maintenant que, compte tenu du niveau d’investissement en termes de ressources humaines et d’infrastructures spécialisées effectuées par des fournisseurs tels que Microsoft, le cloud est en réalité plus sécurisé que la plupart des centres de données locaux.
+L'utilisation du cloud peut réduire une partie du fardeau que représente la sécurité. Microsoft assure la sécurité physique des centres de données Azure et contribue à protéger la plateforme cloud des menaces d'infrastructure, comme les attaques DDoS. Sachant que Microsoft emploie des milliers de spécialistes de la cybersécurité qui œuvrent chaque jour pour garantir la sécurité, les ressources engagées pour atténuer, détecter et réduire les cyberattaques sont considérables. En fait, alors que d’habitude les entreprises se demandaient si le cloud était sécurisé, la plupart d’entre elles savent maintenant que, compte tenu du niveau d’investissement en termes de ressources humaines et d’infrastructures spécialisées effectuées par des fournisseurs tels que Microsoft, le cloud est en réalité plus sécurisé que la plupart des centres de données locaux.
 
 Malgré cet investissement dans la Base de référence de la sécurité Native cloud, il est conseillé d'étendre les stratégies de type Native cloud par défaut de toute stratégie Base de référence de la sécurité. Voici quelques exemples de stratégies étendues à prendre en compte, même dans un environnement de type Native cloud :
 

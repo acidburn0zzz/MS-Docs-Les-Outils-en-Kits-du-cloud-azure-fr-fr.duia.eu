@@ -47,7 +47,7 @@ La première décision à prendre en matière d’accélération du déploiement
 - Bien que les groupes d’administration Azure soient utilisés, c’est une hiérarchie relativement simple qui est attendue.
 - Azure Blueprints servira à déployer et mettre à jour les abonnements en appliquant les exigences de contrôle d’accès en fonction du rôle, les modèles Resource Manager et Azure Policy aux groupes d’administration.
 
-## <a name="applying-the-dependent-patterns"></a>Application des modèles dépendants
+## <a name="apply-the-dependent-patterns"></a>Appliquer les modèles dépendants
 
 Les décisions suivantes représentent les modèles qui doivent être appliqués grâce à la stratégie de mise en œuvre ci-dessus :
 

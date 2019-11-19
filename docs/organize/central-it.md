@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549120"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564275"
 ---
 # <a name="central-it-capabilities"></a>Fonctionnalités de l’informatique centralisée
 
@@ -93,7 +93,7 @@ Les mesures de ce risque sont la vitesse et la flexibilité. Le cloud simplifie 
 
 De nombreux secteurs requièrent un respect strict de la conformité tierce. Certaines exigences de conformité exigent toujours un contrôle informatique centralisé. La mise en œuvre de ces mesures de conformité peut ajouter du temps aux processus de déploiement, en particulier pour les nouvelles technologies qui n’ont pas été utilisées à grande échelle. Dans ces scénarios, attendez-vous à des retards de déploiement au cours des premières phases d’adoption. Des situations similaires existent pour les entreprises qui gèrent des données client sensibles, mais peuvent ne pas être régies par une exigence de conformité tierce.
 
-### <a name="operating-within-the-exceptions"></a>Exploitation malgré les exceptions
+### <a name="operate-within-the-exceptions"></a>Exploiter malgré les exceptions
 
 Lorsque des processus informatiques centralisés sont requis et que ces processus créent des points de contrôle appropriés en adoptant de nouvelles technologies, ces points de contrôle d’innovation peuvent toujours être gérés rapidement. Les exigences de gouvernance et de conformité sont conçues pour protéger les éléments sensibles, et non pour tout protéger. Le cloud fournit des mécanismes simples pour l’acquisition et le déploiement de ressources isolées tout en maintenant une barrière de sécurité adaptée.
 

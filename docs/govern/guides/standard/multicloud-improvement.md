@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 78ffb3b3d91f1f00fb92d70147fd7177ffa9f1b0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547507"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566232"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Guide de gouvernance pour les entreprises standard : Amélioration multicloud
 
@@ -34,7 +34,7 @@ Depuis, certains changements ont eu lieu et ceux-ci vont avoir un impact sur la 
 
 - L’identité est contrôlée par une instance locale d’Active Directory. L’identité hybride est facilitée grâce à la réplication vers Azure Active Directory.
 - Les opérations informatiques ou opérations cloud sont principalement gérées par Azure Monitor et les autres automatisations associées.
-- La continuité d’activité et la reprise d’activité sont contrôlées par des instances Azure Vault.
+- La récupération d'urgence et la continuité de l’activité sont contrôlées par des instances Azure Vault.
 - Azure Security Center est utilisé pour superviser les attaques et les violations de sécurité.
 - Azure Security Center et Azure Monitor sont tous les deux utilisés pour superviser la gouvernance du cloud.
 - Azure Blueprints, Azure Policy et des groupes d’administration Azure sont utilisés pour automatiser la conformité à la stratégie.

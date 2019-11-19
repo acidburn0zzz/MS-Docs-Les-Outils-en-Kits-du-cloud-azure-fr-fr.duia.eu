@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223870"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238798"
 ---
 # <a name="cloud-rationalization"></a>Rationalisation du cloud
 
@@ -38,7 +38,7 @@ Les 5 R de la rationalisation listés ici décrivent les options de rationalisa
 
 ## <a name="rehost"></a>Réhébergement
 
-Également appelé migration « lift and shift », le réhébergement déplace une ressource vers le fournisseur de cloud choisi, en apportant des modifications minimales à l’architecture globale.
+Également appelé migration _lift-and-shift_, le réhébergement déplace une ressource vers le fournisseur de cloud choisi, en apportant des modifications minimales à l’architecture globale.
 
 Les facteurs les plus courants sont les suivants :
 

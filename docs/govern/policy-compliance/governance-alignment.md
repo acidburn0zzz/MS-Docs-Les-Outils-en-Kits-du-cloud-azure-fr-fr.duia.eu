@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223743"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566150"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Aligner votre guide de conception de gouvernance cloud sur la stratégie d’entreprise
 
@@ -27,7 +27,7 @@ Les guides de conception cloud doivent tenir compte de certains détails techniq
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="using-the-actionable-governance-guides"></a>Utilisation des guides de gouvernance exploitables
+## <a name="use-the-actionable-governance-guides"></a>Utiliser les guides de gouvernance exploitables
 
 Si vous envisagez d’utiliser la plateforme Azure pour votre adoption du cloud, le Framework d’adoption du cloud fournit des [guides de gouvernance exploitables](../guides/index.md) illustrant l’approche incrémentielle du modèle de gouvernance du Framework d’adoption du cloud. Ces guides narratifs couvrent un ensemble de scénarios d’adoption courants, notamment sur les risques métier, les exigences de tolérance et les déclarations de stratégie ayant permis de créer un produit minimum viable (MVP) de gouvernance. Ces guides représentent une synthèse du processus d’adoption du cloud dans Azure tel qu’il est vécu par un client réel.
 

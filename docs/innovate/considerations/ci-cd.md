@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8828b79aa27083b3b3e0a0188ac9e538089c52cf
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058582"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565692"
 ---
 # <a name="empower-adoption"></a>Favoriser l’adoption
 
 Le test ultime de l’innovation est la réaction du client à votre invention. L’hypothèse est-elle avérée ? Les clients utilisent-ils la solution ? Est-elle mise à l’échelle pour répondre aux besoins du pourcentage d’utilisateurs souhaité ? Plus important encore, les utilisateurs continuent-ils de revenir ? Aucune de ces questions ne peut être posée tant que la solution de produit minimum viable (MVP) n’a pas été déployée. Dans cet article, nous allons nous concentrer sur la discipline de la favorisation de l’adoption.
 
-## <a name="reducing-friction-to-adoption"></a>Réduction des difficultés de l’adoption
+## <a name="reduce-friction-that-affects-adoption"></a>Réduire les frictions qui affectent l’adoption
 
 Il existe quelques problématiques clés pour l’adoption qui peuvent être réduites en combinant des technologies et des processus. Les lecteurs connaissant les processus d’intégration continue (CI) et de déploiement continu (CD) ou de DevOps seront familiers avec les éléments suivants. L’objectif de cet article est d’établir un point de départ pour les équipes d’adoption du cloud, qui alimentent l’innovation et les boucles de commentaires. À long terme, ce point de départ peut passer à des approches CI/CD ou DevOps plus robustes à mesure que les produits et les équipes gagnent en maturité.
 

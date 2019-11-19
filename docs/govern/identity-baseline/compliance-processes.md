@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 22fa26bdf4665584224551015cd4b3277d4755a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223764"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566211"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Base de référence de l’identité des processus de conformité à la stratégie
 
@@ -40,7 +40,7 @@ Ce processus de planification constitue également un moment idéal pour évalue
 
 **Révisions mensuelles d’audit et de rapport :** Tous les mois, effectuez un audit sur tous les déploiements cloud afin de garantir leur alignement continu sur la stratégie d’identité. Profitez de cet examen pour vérifier l’accès des utilisateurs par rapport aux changements opérationnels afin de vous assurer que les utilisateurs ont un accès correct aux ressources cloud et que les stratégies d’accès telles que le contrôle d’accès en fonction du rôle (RBAC) sont suivies de façon cohérente. Identifiez tous les comptes privilégiés et documentez leur raison d’être. Cette procédure d’examen produit un rapport pour l’équipe de la stratégie cloud et pour chaque équipe d’adoption du cloud, afin de détailler l’adhésion générale des parties prenantes à la stratégie. Le rapport est également conservé à des fins d’audit et juridiques.
 
-## <a name="ongoing-monitoring-processes"></a>Processus de supervision continue
+## <a name="processes-for-ongoing-monitoring"></a>Processus de surveillance continue
 
 Votre stratégie de gouvernance d’identité réussit si l’état actuel et passé de vos systèmes d’identité est clairement identifiable. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet du déploiement de votre cloud, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance en cours évoqués précédemment exigent des données de qualité pour s’assurer que la stratégie peut être modifiée afin de répondre à l’évolution des besoins de votre entreprise.
 

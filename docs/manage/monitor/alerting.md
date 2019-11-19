@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8f0f2ed925432badf22de70dfa87aa3528738842
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979860"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564993"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guide de supervision du cloud : Génération d’alertes
 
@@ -47,17 +47,17 @@ Si vous utilisez Azure Monitor exclusivement, suivez ces instructions lorsque vo
 
 En fonction des fonctionnalités et de la configuration utilisées, vous pouvez stocker les données de supervision dans l’un des six référentiels :
 
-- **Base de données des métriques Azure Monitor** : Base de données de séries chronologiques utilisée principalement pour les métriques de la plateforme Azure Monitor, mais les données des métriques d’Application Insights y sont également reflétées. Les informations entrées dans cette base de données ont les délais d’alerte les plus rapides.
+- **Base de données des métriques Azure Monitor :** Base de données de séries chronologiques utilisée principalement pour les métriques de la plateforme Azure Monitor, mais les données des métriques d’Application Insights y sont également reflétées. Les informations entrées dans cette base de données ont les délais d’alerte les plus rapides.
 
-- **Magasin des journaux Application Insights** : Base de données qui stocke la plupart des données de télémétrie d’Application Insights sous forme de journaux.
+- **Magasin des journaux Application Insights :** Base de données qui stocke la plupart des données de télémétrie d’Application Insights sous forme de journaux.
 
-- **Magasin des journaux Azure Monitor** : Magasin principal pour les données des journaux Azure. D’autres outils peuvent y envoyer des données, qui peuvent être analysées dans les journaux Azure Monitor. En raison des opérations d’ingestion et d’indexation, les requêtes sur les alertes des journaux ont une latence plus élevée. Cette latence est généralement de 5 à 10 minutes, mais elle peut être plus élevée dans certaines circonstances.
+- **Magasin des journaux Azure Monitor :** Magasin principal pour les données des journaux Azure. D’autres outils peuvent y envoyer des données, qui peuvent être analysées dans les journaux Azure Monitor. En raison des opérations d’ingestion et d’indexation, les requêtes sur les alertes des journaux ont une latence plus élevée. Cette latence est généralement de 5 à 10 minutes, mais elle peut être plus élevée dans certaines circonstances.
 
-- **Magasin des journaux d’activités** : Utilisé pour tous les événements des journaux d’activités et d’intégrité du service. Les alertes dédiées sont possibles. Contient les événements de niveau abonnement qui se produisent sur les objets de votre abonnement, tels qu’ils sont vus de l’extérieur de ces objets. Par exemple, quand une stratégie est définie, ou en cas d’accès ou de suppression d’une ressource.
+- **Magasin des journaux d’activité :** Utilisé pour tous les événements des journaux d’activités et d’intégrité du service. Les alertes dédiées sont possibles. Contient les événements de niveau abonnement qui se produisent sur les objets de votre abonnement, tels qu’ils sont vus de l’extérieur de ces objets. Par exemple, quand une stratégie est définie, ou en cas d’accès ou de suppression d’une ressource.
 
-- **Stockage Azure** : Stockage universel pris en charge par Diagnostics Azure et d’autres outils de supervision. Il s’agit d’une option à bas coût pour la conservation à long terme de la télémétrie de supervision. Les alertes ne sont pas prises en charge à partir des données stockées dans ce service.
+- **Stockage Azure :** Stockage universel pris en charge par Diagnostics Azure et d’autres outils de supervision. Il s’agit d’une option à bas coût pour la conservation à long terme de la télémétrie de supervision. Les alertes ne sont pas prises en charge à partir des données stockées dans ce service.
 
-- **Event Hubs** : Généralement utilisé pour diffuser en continu des données dans des outils de supervision ou ITSM locaux ou d’autres partenaires.
+- **Event Hubs :** Généralement utilisé pour diffuser en continu des données dans des outils de supervision ou ITSM locaux ou d’autres partenaires.
 
 Azure Monitor possède quatre types d’alertes, toutes globalement liées au référentiel où les données sont stockées :
 
@@ -69,7 +69,7 @@ Azure Monitor possède quatre types d’alertes, toutes globalement liées au r�
 
 - [Alerte Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json) : Type spécial d’alerte, uniquement pour les problèmes de Service Health provenant du magasin de journaux d’activités.
 
-### <a name="alerting-through-partner-tools"></a>Alertes via des outils de partenaires
+### <a name="enable-alerting-through-partner-tools"></a>Activer les alertes via des outils partenaires
 
 Si vous utilisez une solution d’alertes externes, routez autant que possible via Azure Event Hubs, le chemin le plus rapide pour sortir d’Azure Monitor. Vous devrez payer pour l’ingestion dans le hub d’événements. Si le coût est un problème et que la rapidité ne l’est pas, vous pouvez utiliser Stockage Azure comme alternative moins coûteuse. Vérifiez simplement que vos outils de supervision ou ITSM peuvent lire dans Stockage Azure pour extraire les données.
 
@@ -100,7 +100,7 @@ La **télémétrie du système d’exploitation invité** parvient au système s
 
 - Vous pouvez envoyer aux deux magasins en exécutant à la fois l’extension et l’agent sur la même machine virtuelle. Vous pouvez ensuite alerter rapidement, mais également utiliser les données du système d’exploitation invité dans le cadre de recherches plus complexes quand vous les combinez à d’autres données de télémétrie.
 
-**Importation de données à partir d’un emplacement local** : Si vous essayez d’interroger et de superviser des machines s’exécutant dans Azure et en local, vous pouvez utiliser l’agent Log Analytics pour collecter les données du système d’exploitation invité. Vous pouvez ensuite utiliser une fonctionnalité appelée [journaux vers métriques](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs) afin de transférer ces métriques dans le magasin de métriques. Cette méthode ignore une partie du processus d’ingestion dans le magasin de journaux Azure, et les données sont donc disponibles plus tôt dans la base de données de métriques.
+**Importation de données à partir d’un emplacement local :** Si vous essayez d’interroger et de superviser des machines s’exécutant dans Azure et en local, vous pouvez utiliser l’agent Log Analytics pour collecter les données du système d’exploitation invité. Vous pouvez ensuite utiliser une fonctionnalité appelée [journaux vers métriques](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs) afin de transférer ces métriques dans le magasin de métriques. Cette méthode ignore une partie du processus d’ingestion dans le magasin de journaux Azure, et les données sont donc disponibles plus tôt dans la base de données de métriques.
 
 ### <a name="minimize-alerts"></a>Minimiser les alertes
 

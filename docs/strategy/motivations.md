@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9a6c007beedd06ff6e1a88cd7ccc497f58807af9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032099"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561601"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -25,7 +25,7 @@ Cet article présente quelques-unes des motivations de la migration vers le clou
 
 ## <a name="motivations"></a>Motivations
 
-Les transformations métiers qui sont prises en charge par l’adoption du cloud peuvent être déterminées par différentes motivations. Il est même probable que plusieurs motivations soient applicables en même temps. L’objectif des listes répertoriées dans le tableau suivant est d’aider à susciter des idées sur les motivations pertinentes. À partir de là, vous pouvez hiérarchiser et évaluer les impacts potentiels des motivations. Dans cet article, nous recommandons que votre équipe d’adoption du cloud rencontre différents cadres et leaders de l’entreprise, en utilisant la liste ci-dessous pour comprendre quelles motivations sont affectées par l’effort d’adoption du cloud.
+Les transformations métiers qui sont prises en charge par l’adoption du cloud peuvent être déterminées par différentes motivations. Il est probable que plusieurs motivations s’appliquent en même temps. L’objectif des listes répertoriées dans le tableau suivant est d’aider à susciter des idées sur les motivations pertinentes. À partir de là, vous pouvez hiérarchiser et évaluer les impacts potentiels des motivations. Dans cet article, nous recommandons que votre équipe d’adoption du cloud rencontre différents cadres et leaders de l’entreprise, en utilisant la liste ci-dessous pour comprendre quelles motivations sont affectées par l’effort d’adoption du cloud.
 
 <!-- markdownlint-disable MD033 -->
 

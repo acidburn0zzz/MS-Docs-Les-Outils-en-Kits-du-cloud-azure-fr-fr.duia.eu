@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: f77d42b9f55e5a8585e663b416f0d354e2de78de
-ms.sourcegitcommit: d37c4443e9acaa381ea74ee3fc50e3b99f13f22a
+ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72001861"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566670"
 ---
 # <a name="azure-virtual-datacenter"></a>Centre de données virtuel Azure
 
@@ -43,8 +43,8 @@ ms.locfileid: "72001861"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Centre de données virtuel Azure : Guide lift-and-shift </a></h3>
-        <p>Ce livre blanc porte sur le processus que le personnel des services informatiques et les décisionnaires de l’entreprise peuvent utiliser afin d’identifier et de planifier la migration d’applications et de serveurs vers Azure à l’aide d’une approche « lift and shift », qui permet de réduire au minimum les coûts de développement additionnels tout en optimisant les possibilités d’hébergement cloud.</p>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Centre de données virtuel Azure : Guide du lift-and-shift</a></h3>
+        <p>Ce livre blanc porte sur le processus que le personnel des services informatiques et les décisionnaires de l’entreprise peuvent utiliser afin d’identifier et de planifier la migration d’applications et de serveurs vers Azure à l’aide d’une approche lift-and-shift, qui permet de réduire au minimum les coûts de développement additionnels tout en optimisant les possibilités d’hébergement cloud.</p>
     </td>
 </tr>
 </table>

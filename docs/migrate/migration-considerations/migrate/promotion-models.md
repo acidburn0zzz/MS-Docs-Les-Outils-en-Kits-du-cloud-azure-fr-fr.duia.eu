@@ -1,5 +1,5 @@
 ---
-title: Modèles de promotion – Promotion, intermédiaire ou en vol
+title: 'Modèles de promotion : single-step (étape unique), staged (étapes intermédiaires) ou flight (vol)'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Comprendre l’impact de la promotion sur les activités de migration
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b251e5159f6e6728e0b5a7ce807eaba0ea85696a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 690c871ab18bef96a5a1738de90a216ca5b8df90
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548433"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564618"
 ---
-# <a name="promotion-models---single-step-staged-or-flight"></a>Modèles de promotion : single-step (étape unique), staged (étapes intermédiaires) ou flight (vol)
+# <a name="promotion-models-single-step-staged-or-flight"></a>Modèles de promotion : single-step (étape unique), staged (étapes intermédiaires) ou flight (vol)
 
 La migration des charges de travail est souvent traitée comme une activité unique. En réalité, il s’agit d’une collection d’activités plus petites qui facilitent le déplacement d’une ressource numérique vers le cloud. L’une des dernières activités d’une migration est la promotion d’une ressource en production. La promotion est le moment où le système de production change pour les utilisateurs finaux. Il peut souvent être aussi simple que de modifier le routage réseau et de rediriger les utilisateurs finaux vers la nouvelle ressource de production. La promotion est également le moment où les opérations informatiques ou cloud changent l’objectif des processus de gestion opérationnelle du système de production précédent vers les nouveaux systèmes de production.
 

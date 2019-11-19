@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 367480222244c1e4287bebec85743408a10efc19
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 90fd78e45f71c6ca52ea76f5efe6a3aaae49af74
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752846"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160311"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>Gestion et opérations informatiques dans le cloud
 
-Lorsqu’une entreprise adopte un modèle basé sur le cloud, l’importance de la gestion et des opérations ne saurait être sous-estimée. Malheureusement, peu d’organisations sont préparées au changement de gestion informatique nécessaire pour réussir à créer un modèle d’exploitation privilégiant le cloud. Cette section du Framework d’adoption du cloud présente le modèle d’exploitation, les processus et les outils qui ont fait la preuve de leur efficacité dans le cloud. Chacun de ces domaines apporte un changement mineur mais fondamental à la manière dont l’entreprise doit regarder les opérations et la gestion informatique au fur et à mesure qu’elle commence à adopter le cloud.
+Lorsqu’une entreprise adopte un modèle basé sur le cloud, l’importance de la gestion et des opérations ne saurait être sous-estimée. Malheureusement, peu d’organisations sont préparées au changement de gestion informatique nécessaire pour réussir à créer un modèle d’exploitation privilégiant le cloud. Cette section du Framework d’adoption du cloud présente le modèle d’exploitation, les processus et les outils qui ont fait la preuve de leur efficacité dans le cloud. Chacun de ces domaines apporte un changement mineur mais fondamental dans la manière dont l’entreprise doit percevoir les opérations et la gestion informatique quand elle commence à adopter le cloud.
 
 ## <a name="brief-history-of-it-management"></a>Bref historique de la gestion informatique
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022280"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240198"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
 
@@ -29,7 +29,7 @@ Dans le contexte d’une adoption du cloud, une charge de travail est un ensembl
 
 ## <a name="prerequisites"></a>Prérequis
 
-Les entrées stratégiques de la liste de vérification des prérequis facilitent grandement les tâches suivantes. Pour obtenir de l’aide sur la collecte des données présentées dans cet article, passez en revue la [liste de vérification des prérequis](./prerequisites.md).
+Les entrées stratégiques de la liste des prérequis facilitent grandement les tâches suivantes. Pour obtenir de l’aide sur la collecte des données présentées dans cet article, passez en revue les [prérequis](./prerequisites.md).
 
 ## <a name="initial-workload-prioritization"></a>Hiérarchisation initiale des charges de travail
 

@@ -1,21 +1,21 @@
 ---
 title: Capacité réseau dépassée
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Les besoins en stockage dépassent la capacité réseau lors d’une migration.
+description: Les besoins en données dépassent la capacité réseau lors d’une migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9b1078cbb6b7ca40b7a38ea56ae803fd61e67449
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024772"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239973"
 ---
-# <a name="storage-requirements-exceed-network-capacity-during-a-migration-effort"></a>Les besoins en stockage dépassent la capacité réseau lors d’une migration
+# <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Les besoins en données dépassent la capacité réseau lors d’une migration
 
 Lors d’une migration cloud, les ressources sont répliquées et synchronisées sur le réseau entre le centre de données existant et le cloud. Il n’est pas rare que les exigences de taille des données existantes de différentes charges de travail dépassent la capacité du réseau. Dans ce type de scénario, le processus de migration peut être radicalement ralenti ou, dans certains cas, complètement interrompu. Le guide qui suit étendra la portée du [guide de migration Azure](../azure-migration-guide/index.md) pour fournir une solution qui permet de contourner les limitations du réseau.
 

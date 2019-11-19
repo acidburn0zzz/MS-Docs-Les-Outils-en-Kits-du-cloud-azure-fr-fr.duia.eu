@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 30b3a88a8ce7c90f4b3925af7ead21489c2fb821
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a272a9b8633f60544aca9982654a899288e3b4e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223909"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564150"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Adapter les rôles, compétences et processus existants pour le cloud
 
@@ -25,7 +25,7 @@ Les professionnels de l’informatique s’inquiètent parfois au sujet de leur 
 
 Pour obtenir des conseils sur la création d’un nouvel ensemble de compétences, consultez le document [Chemin d’accès à la préparation des qualifications](./suggested-skills.md).
 
-## <a name="capturing-concerns"></a>Recueil des préoccupations
+## <a name="capture-concerns"></a>Préoccupations relatives à la capture
 
 Lorsque l’organisation se prépare à l’effort d’adoption du cloud, chaque équipe doit documenter les préoccupations du personnel à mesure qu’elles se manifestent, en identifiant les éléments suivants :
 

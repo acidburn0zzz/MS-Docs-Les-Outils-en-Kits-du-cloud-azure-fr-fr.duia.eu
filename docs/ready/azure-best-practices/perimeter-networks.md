@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 3ac29e353f04370daf36e4c780fde8a14be45a37
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022222"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564020"
 ---
 # <a name="perimeter-networks"></a>Réseaux de périmètre
 
@@ -27,9 +27,9 @@ Pour que les réseaux de périmètre soient efficaces, les paquets entrants doiv
 Les réseaux de périmètre utilisent les fonctionnalités et services Azure suivants :
 
 - [des réseaux virtuels][virtual-networks], [des itinéraires définis par l’utilisateur][user-defined-routes] et [des groupes de sécurité réseau][network-security-groups]
-- [Appliances virtuelles réseau][NVA] (NVA)
+- [Appliances virtuelles réseau (NVA)][NVA]
 - [Équilibrage de charge Azure][ALB]
-- [Azure Application Gateway][AppGW] et [WAF][AppGWWAF] (pare-feu d’applications web)
+- [Azure Application Gateway][AppGW] et [WAF (pare-feu d’applications web)][AppGWWAF]
 - [Adresses IP publiques][PIP]
 - [Azure Front Door][AFD] avec [pare-feu d’applications web][AFDWAF]
 - [Pare-feu Azure][AzFW]
@@ -42,9 +42,9 @@ Les réseaux de périmètre utilisent les fonctionnalités et services Azure sui
 
 En règle générale, votre équipe centrale d’informatique et de sécurité est responsable de la définition des conditions requises pour le fonctionnement de vos réseaux de périmètre.
 
-![Exemple de réseau hub-and-spoke][7]
+![Exemple de topologie de réseau hub and spoke][7]
 
-Le diagramme précédent illustre un exemple de [réseau hub-and-spoke](./hub-spoke-network-topology.md) qui implémente l’application de deux périmètres avec un accès à Internet et à un réseau local. Les deux périmètres résident dans le hub DMZ. Dans le hub DMZ, le réseau de périmètre vers Internet peut monter en puissance pour permettre la prise en charge d’un grand nombre de métiers (LOB) à l’aide de plusieurs batteries d’instances WAF et de Pare-feu Azure qui contribuent à protéger les réseaux virtuels spoke. Le hub permet également une connectivité via un VPN ou Azure ExpressRoute le cas échéant.
+Le diagramme précédent illustre un exemple de [topologie réseau hub and spoke](./hub-spoke-network-topology.md) qui implémente l’application de deux périmètres avec un accès à Internet et à un réseau local. Les deux périmètres résident dans le hub DMZ. Dans le hub DMZ, le réseau de périmètre vers Internet peut monter en puissance pour permettre la prise en charge d’un grand nombre de métiers (LOB) à l’aide de plusieurs batteries d’instances WAF et de Pare-feu Azure qui contribuent à protéger les réseaux virtuels spoke. Le hub permet également une connectivité via un VPN ou Azure ExpressRoute le cas échéant.
 
 ## <a name="virtual-networks"></a>Réseaux virtuels
 
@@ -54,7 +54,7 @@ Les réseaux de périmètre reposent généralement sur un [réseau virtuel][vir
 
 À l’aide d’[itinéraires définis par l’utilisateur][user-defined-routes], les clients peuvent déployer des pare-feu, des systèmes de détection ou de prévention d’intrusion ainsi que d’autres appliances virtuelles. Ils peuvent router le trafic via ces appliances de sécurité pour garantir la mise en œuvre, l’audit et l’inspection des stratégies relatives aux limites de sécurité. Des itinéraires définis par l’utilisateur peuvent être créés pour garantir que le trafic transite par les machines virtuelles personnalisées, les instances NVA et les équilibreurs de charge spécifiés.
 
-Dans un exemple de réseau hub-and-spoke, garantir que le trafic généré par les machines virtuelles qui résident dans le spoke passe par les appliances virtuelles appropriées dans le hub nécessite un itinéraire défini par l’utilisateur dans les sous-réseaux du spoke. Cet itinéraire définit l’adresse IP frontale de l’équilibreur de charge interne en tant que prochain tronçon. L’équilibreur de charge interne distribue le trafic interne vers les appliances virtuelles (pool principal d’équilibreur de charge).
+Dans un exemple de réseau hub and spoke, garantir que le trafic généré par les machines virtuelles qui résident dans le spoke passe par les appliances virtuelles appropriées dans le hub nécessite un itinéraire défini par l’utilisateur dans les sous-réseaux du spoke. Cet itinéraire définit l’adresse IP frontale de l’équilibreur de charge interne en tant que prochain tronçon. L’équilibreur de charge interne distribue le trafic interne vers les appliances virtuelles (pool principal d’équilibreur de charge).
 
 ## <a name="azure-firewall"></a>Pare-feu Azure
 
@@ -80,7 +80,7 @@ Utilisez un ensemble d’instances de Pare-feu Azure (ou NVA) pour le trafic pro
 
 Azure Load Balancer peut également tester l’intégrité des différentes instances de serveur. Quand une instance ne répond pas au probe, l’équilibreur de charge cesse d’envoyer du trafic à l’instance non saine.
 
-En guise d’exemple d’utilisation d’un réseau hub-and-spoke, vous pouvez déployer un équilibreur de charge externe sur le hub et les spokes. Dans le hub, l’équilibreur de charge achemine efficacement le trafic vers les services des spokes. Dans les spokes, les équilibreurs de charge gèrent le trafic des applications.
+En guise d’exemple d’utilisation d’une topologie de réseau hub and spoke, vous pouvez déployer un équilibreur de charge externe sur le hub et les spokes. Dans le hub, l’équilibreur de charge achemine efficacement le trafic vers les services des spokes. Dans les spokes, les équilibreurs de charge gèrent le trafic des applications.
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 
@@ -118,7 +118,7 @@ Les données de télémétrie en temps réel sont disponibles par le biais d’a
 [5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Utilisateurs, groupes, abonnements et projets"
 [6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Diagramme d’infrastructure de haut niveau"
 [7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Diagramme d’infrastructure de haut niveau"
-[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "Homologation de réseaux virtuels et réseaux de périmètre"
+[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "Peering de réseaux virtuels et réseaux de périmètre"
 [9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Diagramme de surveillance de haut niveau"
 [10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Diagramme de charge de travail de haut niveau"
 

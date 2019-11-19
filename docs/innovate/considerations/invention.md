@@ -1,23 +1,23 @@
 ---
-title: 'Innovation cloud : Développement d’inventions numériques'
+title: 'Innovation cloud : Développer des inventions numériques'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Introduction à l’innovation dans le cloud - Développement d’inventions numériques
+description: Introduction à l’innovation dans le cloud – Développement d’inventions numériques
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e1e9d693e7ca8de494ec2eb3e833ed3d0b07786f
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 6eaad06105ed6078f462082855378f72bc25d6a7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980042"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565668"
 ---
-# <a name="developing-digital-inventions"></a>Développement d’inventions numériques
+# <a name="develop-digital-inventions"></a>Développer des inventions numériques
 
-Comme décrit dans [Innovation dans l’économie numérique](./index.md), l’innovation nécessite un équilibre entre *invention* et *adoption*. Les retours des clients et un partenariat avec ces derniers sont essentiels pour susciter l’adoption. Les disciplines décrites dans la prochaine section définissent une série d’approches pour développer des inventions numériques en gardant à l’esprit l’adoption et l’empathie vis-à-vis du client. Chacune des disciplines est brièvement décrite, et chaque processus est associé à des liens permettant d’obtenir plus d’informations.
+Comme décrit dans [Innovation dans l'économie numérique](./index.md), l'innovation nécessite un équilibre entre *invention* et *adoption*. Les retours des clients et un partenariat avec ces derniers sont essentiels pour susciter l’adoption. Les disciplines décrites dans la prochaine section définissent une série d’approches pour développer des inventions numériques en gardant à l’esprit l’adoption et l’empathie vis-à-vis du client. Chacune des disciplines est brièvement décrite, et chaque processus est associé à des liens permettant d’obtenir plus d’informations.
 
 ![Méthodologie d’innovation du Framework d’adoption du cloud](../../_images/innovate/innovate-methodology.png)
 

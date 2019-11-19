@@ -8,14 +8,14 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 52789f374b619a974181ed3dbd15e2206e9afdad
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6c01ec344d6c02fa9c576e5e674b8fddf59849fe
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223964"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566809"
 ---
-# <a name="building-a-cost-conscious-organization"></a>Construction d’une organisation sensible aux coûts
+# <a name="build-a-cost-conscious-organization"></a>Construire une organisation sensible aux coûts
 
 Comme indiqué dans [Motivations : Pourquoi migrons-nous vers le cloud ?](../strategy/motivations.md), il existe, pour une entreprise, de nombreuses raisons d’adopter le cloud. Lorsque la réduction des coûts est une motivation majeure, il est important de créer une organisation sensible aux coûts.
 

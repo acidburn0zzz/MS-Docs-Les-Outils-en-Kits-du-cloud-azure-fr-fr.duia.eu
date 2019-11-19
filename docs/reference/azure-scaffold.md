@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058179"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656663"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
 
@@ -115,7 +115,7 @@ Le premier pilier de la structure est une norme d’attribution de noms cohéren
 > [!TIP]
 > Pour les conventions de dénomination :
 >
-> - Passez en revue et adoptez autant que possible les [modèles et pratiques recommandées](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Ces recommandations vous aident à choisir une norme d’attribution de noms explicite et fournissent de nombreux exemples.
+> - Passez en revue et adoptez autant que possible les [modèles et pratiques recommandées](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming). Ces recommandations vous aident à choisir une norme d’attribution de noms explicite et fournissent de nombreux exemples.
 > - Utilisation de stratégies Resource Manager pour appliquer des normes de nommage.
 >
 > Ne perdez pas de vue qu’il est difficile de changer les noms par la suite et que les quelques minutes passées ici vous éviterons des problèmes plus tard.
@@ -263,7 +263,7 @@ Ces informations peuvent être consultées et traitées à plusieurs niveaux et 
 - **Service Map :** Service Map offre une vue graphique de vos composants d’infrastructure, de leurs processus et de leurs interdépendances vis-à-vis d’autres ordinateurs et processus externes. Il intègre des événements, des données de performance et des solutions de gestion dans Log Analytics.
 
 > [!TIP]
-> Avant de créer des alertes individuelles, créez et tenez à jour un ensemble de groupes d’actions partagés qui puisse être utilisé dans toutes les alertes Azure. Vous pourrez ainsi gérer de façon centralisée le cycle de vie de vos listes de destinataires, les méthodes de remise de notifications (e-mail, numéros de téléphone SMS) et les webhooks ciblant des actions externes (runbooks Azure Automation, Azure Functions / Logic Apps, ITSM).
+> Avant de créer des alertes individuelles, créez et tenez à jour un ensemble de groupes d’actions partagés qui puisse être utilisé dans toutes les alertes Azure. Vous pourrez ainsi gérer de façon centralisée le cycle de vie de vos listes de destinataires, les méthodes de remise de notifications (e-mail, numéros de téléphone SMS) et les webhooks ciblant des actions externes (runbooks Azure Automation, Azure Functions et Logic Apps, ITSM).
 
 ## <a name="cost-management"></a>la gestion des coûts ;
 
@@ -284,7 +284,7 @@ Il s’agit d’outils destinés à fournir des informations instantanées sur l
 
 - **Power BI Azure Consumption Insights :** Vous souhaitez créer vos propres visualisations pour votre organisation ? Dans ce cas, le pack de contenu Azure Consumption Insights pour Power BI est l’outil qu’il vous faut. Avec ce pack de contenu et Power BI, vous pouvez créer des visualisations personnalisées de façon à représenter votre organisation, à effectuer une analyse plus approfondie des coûts et à ajouter d’autres sources de données pour enrichir ces visualisations.
 
-- **API de consommation :** Les [API de consommation](/rest/api/consumption) vous donnent un accès programmatique à des données de coûts et d’utilisation, ainsi qu’à des informations sur les budgets, les instances réservées et les coûts de place de marché. Seuls les Accord de Mise en Œuvre Entreprise et certains abonnements directs web ont accès à ces API. Cependant, celles-ci vous permettent d’intégrer vos données de coûts dans vos propres outils et entrepôts de données. Vous pouvez également [accéder à ces API par le biais d’Azure CLI](/cli/azure/consumption?view=azure-cli-latest).
+- **API de consommation :** Les [API de consommation](https://docs.microsoft.com/rest/api/consumption) vous donnent un accès programmatique à des données de coûts et d’utilisation, ainsi qu’à des informations sur les budgets, les instances réservées et les coûts de place de marché. Seuls les Accord de Mise en Œuvre Entreprise et certains abonnements directs web ont accès à ces API. Cependant, celles-ci vous permettent d’intégrer vos données de coûts dans vos propres outils et entrepôts de données. Vous pouvez également [accéder à ces API par le biais d’Azure CLI](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
 
 Les clients qui sont des utilisateurs chevronnés du cloud suivent certaines meilleures pratiques :
 
@@ -303,7 +303,7 @@ Plusieurs outils peuvent vous aider à générer cette fonctionnalité, notammen
 
 - **Azure Automation** est une fonctionnalité cloud qui vous permet de créer des runbooks (dans PowerShell ou Python) et d’automatiser les processus, de configurer les ressources et même d’appliquer des correctifs. [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) propose un ensemble complet de fonctionnalités multiplateformes qui sont indispensables à votre déploiement, mais elles sont trop nombreuses pour être présentées ici en détail.
 - **Event Grid** est un système de routage d’événements complètement managé qui vous permet de réagir aux événements qui se produisent dans votre environnement Azure. Si Azure Automation est le tissu conjonctif des organisations cloud matures, [Event Grid](https://docs.microsoft.com/azure/event-grid) est le tissu conjonctif d’une automatisation efficace. Avec Event Grid, vous pouvez créer une action serverless simple pour envoyer un e-mail à un administrateur chaque fois qu’une ressource est créée et journaliser cette ressource dans une base de données. Ce même Event Grid peut envoyer une notification quand une ressource est supprimée et supprimer l’élément de la base de données.
-- **Azure Cloud Shell** est un [interpréteur de commandes](https://docs.microsoft.com/azure/cloud-shell/overview) interactif basé sur navigateur qui permet de gérer les ressources dans Azure. Il fournit un environnement complet pour PowerShell ou Bash qui se lance si nécessaire (et est géré automatiquement), si bien que vous disposez d’un environnement cohérent à partir duquel exécuter vos scripts. Azure Cloud Shell vous donne accès à d’autres outils clés (déjà installés) pour automatiser votre environnement, notamment [Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) et une liste croissante d’autres [outils](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) destinés à gérer conteneurs, bases de données (sqlcmd) et bien plus encore.
+- **Azure Cloud Shell** est un [interpréteur de commandes](https://docs.microsoft.com/azure/cloud-shell/overview) interactif basé sur navigateur qui permet de gérer les ressources dans Azure. Il fournit un environnement complet pour PowerShell ou Bash qui se lance si nécessaire (et est géré automatiquement), si bien que vous disposez d’un environnement cohérent à partir duquel exécuter vos scripts. Azure Cloud Shell vous donne accès à d’autres outils clés (déjà installés) pour automatiser votre environnement, notamment [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) et une liste croissante d’autres [outils](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) destinés à gérer conteneurs, bases de données (sqlcmd) et bien plus encore.
 
 L’automatisation est une tâche à temps plein qui deviendra rapidement l’une des tâches opérationnelles les plus importantes au sein de votre équipe cloud. Les organisations qui misent en priorité sur l’automation sont celles qui tirent le meilleur parti d’Azure :
 

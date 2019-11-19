@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: cb4b14da5b7f9e934a6597fb0fc4e1c8b3d656ff
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b3adddc6b68d07084ec8c3909d6c8010c25bb387
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548908"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239852"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Déployer une zone d’accueil de migration
 
@@ -47,7 +47,7 @@ Les hypothèses ou contraintes suivantes ont été utilisées lors de la défini
 - **Limites d’abonnement :** Cet effort d’adoption ne doit pas dépasser les [limites d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits). Deux indicateurs courants sont un excès de 25 000 machines virtuelles ou 10 000 processeurs virtuels.
 - **Conformité :** Aucune exigence de tiers en matière de conformité n’est nécessaire dans cette zone d’accueil.
 - **Complexité architecturale :** La complexité architecturale ne nécessite pas d’abonnements de production supplémentaires.
-- **Services partagés :** Aucun des services partagés existants dans Azure ne nécessite que cet abonnement soit traité comme un spoke dans une architecture Hub-and-Spoke.
+- **Services partagés :** Aucun des services partagés existants dans Azure ne nécessite que cet abonnement soit traité comme un spoke dans une architecture hub and spoke.
 
 Si ces hypothèses semblent alignées sur votre environnement actuel, ce blueprint peut être un bon point de départ pour commencer à créer votre zone d’accueil.
 
@@ -59,17 +59,17 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 |---------|---------|---------|
 |Outils de migration|Azure Site Recovery sera déployé et un projet Azure Migrate sera créé.|[Guide de décision sur les outils de migration](../../decision-guides/migrate-decision-guide/index.md)|
 |Enregistrement et surveillance|L’espace de travail Operational Insights et le compte de stockage des diagnostics seront approvisionnés.|         |
-|Réseau|Un réseau virtuel sera créé avec des sous-réseaux pour la passerelle, le pare-feu, le jumpbox et la zone d’accueil.|[Décisions en matière de mise en réseau](../considerations/network-decisions.md)|
+|Réseau|Un réseau virtuel sera créé avec des sous-réseaux pour la passerelle, le pare-feu, le jumpbox et la zone d’accueil.|[Décisions en matière de mise en réseau](../considerations/networking-options.md)|
 |Identité|Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory.|[Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
 |Stratégie|Ce blueprint suppose actuellement qu’aucune stratégie Azure ne doit être appliquée.|         |
-|Conception de l’abonnement|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md)|
-|Groupes d’administration|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md)         |
-|Groupes de ressources|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../considerations/scaling-subscriptions.md)         |
+|Conception de l’abonnement|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../azure-best-practices/scaling-subscriptions.md)|
+|Groupes d’administration|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../azure-best-practices/scaling-subscriptions.md)         |
+|Groupes de ressources|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../azure-best-practices/scaling-subscriptions.md)         |
 |Données|N/A|[Choix de la bonne option SQL Server dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) et [instructions relatives aux magasins de données Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Stockage|N/A|[Conseils relatifs à Stockage Azure](../considerations/storage-guidance.md)         |
-|Standards de nommage et de catégorisation|N/A|[Meilleures pratiques en matière de nommage et de catégorisation](../considerations/naming-and-tagging.md)         |
+|Stockage|N/A|[Conseils relatifs à Stockage Azure](../considerations/storage-options.md)         |
+|Standards de nommage et de catégorisation|N/A|[Meilleures pratiques en matière de nommage et de catégorisation](../azure-best-practices/naming-and-tagging.md)         |
 |la gestion des coûts ;|N/A|[Coûts de suivi](../azure-best-practices/track-costs.md)|
-|Calcul|N/A|[Options de calcul](../considerations/compute-decisions.md)|
+|Calcul|N/A|[Options de calcul](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Personnaliser ou déployer une zone d’accueil à partir de ce blueprint
 

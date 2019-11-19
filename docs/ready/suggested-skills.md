@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025111"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566704"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Chemin d’accès à la préparation des qualifications durant la phase Prêt d’un parcours de migration
 
@@ -30,16 +30,16 @@ Selon les motivations et les résultats métier associés à un effort d’adopt
 
 Pendant la phase Prêt, le personnel technique est appelé pour créer une zone d’accueil de migration capable d’héberger, d’exécuter et de régir des charges de travail qui ont été migrées vers le cloud. L’acquisition des qualifications nécessaires peut être accélérée grâce aux parcours d’apprentissage suivants :
 
-- [Création d’un compte Azure](/learn/modules/create-an-azure-account) : La première étape pour utiliser Azure est de créer un compte. Votre compte contient les services Azure que vous approvisionnez et gère vos paramètres personnels, tels que l’identité, la facturation et les préférences.
-- [Portail Azure](/learn/modules/tour-azure-portal): Découvrez les fonctionnalités du portail et des services Azure, et personnalisez le portail.
-- [Présentation d’Azure](/learn/modules/welcome-to-azure) : Prenez Azure en main en créant et en configurant votre première machine virtuelle dans le cloud.
-- [Présentation de la sécurité dans Azure](/learn/modules/intro-to-security-in-azure) : Discutez des concepts de base pour la protection de votre infrastructure et de vos données lorsque vous travaillez dans le cloud. Comprenez les responsabilités qui vous incombent et ce qu’Azure prend en charge pour vous.
-- [Gestion des ressources dans Azure](/learn/paths/manage-resources-in-azure) : Découvrez comment utiliser la ligne de commande et le portail web Azure pour créer, gérer et contrôler les ressources informatiques.
-- [Création d’une machine virtuelle](/learn/modules/create-windows-virtual-machine-in-azure) : Créez une machine virtuelle à l’aide du Portail Azure.
-- [Mise en réseau Azure](/learn/modules/intro-to-azure-networking) : Découvrez quelques-uns des principes fondamentaux de la mise en réseau Azure et de quelle façon la mise en réseau Azure permet d’améliorer la résilience et de réduire la latence.
-- [Options de calcul Azure](/learn/modules/intro-to-azure-compute) : Passez en revue les services de calcul Azure.
-- [Sécurisation des ressources avec le contrôle d’accès en fonction du rôle (RBAC)](/learn/modules/secure-azure-resources-with-rbac) : Utilisez le RBAC pour sécuriser des ressources.
-- [Options de stockage de données](/learn/modules/intro-to-data-in-azure/index) : Avantages du stockage de données Azure.
+- [Création d’un compte Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account) : La première étape pour utiliser Azure est de créer un compte. Votre compte contient les services Azure que vous approvisionnez et gère vos paramètres personnels, tels que l’identité, la facturation et les préférences.
+- [Portail Azure](https://docs.microsoft.com/learn/modules/tour-azure-portal): Découvrez les fonctionnalités du portail et des services Azure, et personnalisez le portail.
+- [Présentation d’Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) : Prenez Azure en main en créant et en configurant votre première machine virtuelle dans le cloud.
+- [Présentation de la sécurité dans Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure) : Discutez des concepts de base pour la protection de votre infrastructure et de vos données lorsque vous travaillez dans le cloud. Comprenez les responsabilités qui vous incombent et ce qu’Azure prend en charge pour vous.
+- [Gestion des ressources dans Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure) : Découvrez comment utiliser la ligne de commande et le portail web Azure pour créer, gérer et contrôler les ressources informatiques.
+- [Création d’une machine virtuelle](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure) : Créez une machine virtuelle à l’aide du Portail Azure.
+- [Mise en réseau Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking) : Découvrez quelques-uns des principes fondamentaux de la mise en réseau Azure et de quelle façon la mise en réseau Azure permet d’améliorer la résilience et de réduire la latence.
+- [Options de calcul Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute) : Passez en revue les services de calcul Azure.
+- [Sécurisation des ressources avec le contrôle d’accès en fonction du rôle (RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac) : Utilisez le RBAC pour sécuriser des ressources.
+- [Options de stockage de données](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index) : Avantages du stockage de données Azure.
 
 Pendant la phase Prêt, les architectes sont appelés à concevoir des solutions qui couvrent tous les environnements Azure. Les ressources suivantes d’acquisition des qualifications peuvent préparer les architectes pour ces tâches :
 
@@ -55,24 +55,26 @@ Au-delà de ces options initiales d’acquisition des qualifications, de nombreu
 
 Microsoft et ses partenaires offrent un large éventail d’options pour que tous les publics puissent développer leurs qualifications relatives aux services Azure :
 
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/microsoft-azure) : Offre une formation dispensée par les personnes qui ont aidé à créer Azure. L’enseignement va d’une vue d’ensemble de base à une formation technique approfondie afin que le personnel informatique apprenne à utiliser Azure pour son entreprise.
-- [Microsoft IT Pro Cloud Essentials](https://www.microsoft.com/azureessentials) : Fournit un abonnement annuel gratuit incluant des avantages en matière de services cloud, de formation et de support. IT Pro Cloud Essentials fournit aux implémenteurs informatiques une expérience pratique et des opportunités pédagogiques ciblées. Les abonnés ont également accès à des experts dans des domaines qui ont le plus d’importance pour améliorer la connaissance et s’ouvrir des perspectives de carrière.
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro) : Fait office de ressource en ligne gratuite pour vous aider à mettre en correspondance votre parcours de carrière dans le cloud. Découvrez ce que les experts du secteur suggèrent pour votre rôle cloud et les qualifications nécessaires pour y parvenir. Suivez un programme de formation à votre rythme pour acquérir les qualifications dont vous avez le plus besoin pour rester compétent.
 
 Obtenez la reconnaissance officielle de vos connaissances sur Azure au moyen des [examens et formations de certification Microsoft Azure](https://www.microsoft.com/learning/azure-certification.aspx).
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation aux nouvelles responsabilités qui accompagnent l’adoption du cloud n’est pas facile. Microsoft Learn offre une approche plus gratifiante de l’apprentissage pratique qui vous permet d’atteindre vos objectifs plus rapidement. Gagnez des points et des niveaux et accomplissez davantage.
+Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation aux nouvelles compétences et responsabilités qui accompagnent l’adoption du cloud n’est pas facile. Microsoft Learn offre une approche plus gratifiante de l’apprentissage pratique qui vous permet d’atteindre vos objectifs plus rapidement. Gagnez des points et des niveaux et accomplissez davantage.
 
-Voici quelques exemples de parcours d’apprentissage spécifiques aux rôles sur Microsoft Learn :
+Les exemples suivants illustrent quelques parcours d’apprentissage sur mesure sur Microsoft Learn, qui correspondent à la section Ready (Prêt) de l’infrastructure d’adoption du cloud :
 
-Les [utilisateurs en entreprise](/learn/browse/?roles=business-user) sont susceptibles de faire face à une courbe d’apprentissage abrupte lorsqu’ils sont invités à participer à la planification, au test et à l’adoption de la technologie cloud. Microsoft Learn aide les utilisateurs en entreprise grâce à des modules qui se concentrent sur l’adoption de modèles et d’outils cloud pour mieux gérer l’entreprise via les services informatiques.
+[Notions de base d’Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer) : Découvrez les concepts du cloud, comme la haute disponibilité, l’évolutivité, l’élasticité, l’agilité, la tolérance de panne et la récupération d’urgence.  Découvrez les avantages du cloud computing dans Azure et comment cela peut vous faire gagner du temps et de l’argent. Comparez les stratégies de base pour la transition vers le cloud Azure. Explorez l’éventail des services disponibles dans Azure, notamment le calcul, le réseau, le stockage et la sécurité.
 
-Les [architectes de solution](/learn/browse/?roles=solution-architect) peuvent accéder à des centaines de modules et parcours d’apprentissage. Les rubriques disponibles vont des services de l’infrastructure principale à la transformation avancée de données.
+[Gestion des ressources dans Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer) : Découvrez comment utiliser la ligne de commande et le portail web Azure pour créer, gérer et contrôler les ressources informatiques.
 
-Les [administrateurs](/learn/browse/?roles=administrator) ont accès à des modules qui se concentrent sur les notions de base d’Azure, la configuration de conteneurs ou l’administration avancée dans le cloud.
+[Administrer les ressources d’infrastructure dans Azure](https://docs.microsoft.com/learn/paths/administer-infrastructure-resources-in-azure) : Découvrez comment créer, gérer, sécuriser et mettre à l’échelle des ressources de machine virtuelle.
 
-Les [développeurs](/learn/browse/?roles=developer&term=infrastructure) jouent un rôle important dans la migration des ressources vers le cloud. En savoir plus sur les moyens de contribuer pendant les activités d’architecture, de gouvernance et de modernisation.
+[Stocker des données dans Azure](https://docs.microsoft.com/learn/paths/store-data-in-azure) : Azure fournit plusieurs modes de stockage des données : non structuré, archive, relationnel, etc. Apprenez les bases de la gestion du stockage dans Azure, à créer un compte de stockage et à choisir le bon modèle pour les données que vous souhaitez stocker dans le cloud.
 
-Pour obtenir des parcours d’apprentissage supplémentaires, parcourez le [catalogue d’apprentissage](/learn/browse). Utilisez le filtre **Rôles** pour aligner les parcours d’apprentissage avec votre rôle.
+[Créer l’architecture de superbes solutions dans Azure](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure) : Apprenez à concevoir et à créer des solutions sécurisées, scalable et à hautes performances dans Azure en examinant les principes fondamentaux de chaque bonne architecture.
+
+## <a name="learn-more"></a>En savoir plus
+
+Pour découvrir des parcours d’apprentissage supplémentaires, parcourez le [catalogue Microsoft Learn](https://docs.microsoft.com/learn/browse). Utilisez le filtre **Rôles** pour aligner les parcours d’apprentissage avec votre rôle.

@@ -8,37 +8,39 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f930f1b0f228b3969b89319962706104176717cc
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 96450c838ce6833d77803428272e96d2327747de
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058610"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565875"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Outils d’implication par le biais d’applications dans Azure
 
-Comme décrit dans l’article [Impliquer par le biais d’applications](../considerations/apps.md), les applications peuvent constituer un aspect important d’une solution MVP. Souvent, des applications sont nécessaires pour tester une hypothèse. Cet article vous aide à prendre en main les outils Azure permettant d’accélérer le développement de ces applications.
+Comme décrit dans l’article [Impliquer par le biais d’applications](../considerations/apps.md), les applications peuvent constituer un aspect important d’une solution MVP. Des applications sont souvent nécessaires pour tester une hypothèse. Cet article vous aide à connaître les outils fournis par Azure pour accélérer le développement de ces applications.
 
 ![Framework d’adoption du cloud : approche de l’implication par le biais d’applications](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="alignment-to-the-methodology"></a>Alignement sur la méthodologie
 
-Ce type d’invention numérique peut être accéléré avec chaque approche décrite plus bas, également illustrée ci-dessus. La table des matières, à gauche, inclut des rubriques d’aide technique permettant d’accélérer l’invention numérique. Ces articles ont été regroupés selon les mêmes approches pour aligner l’aide sur la méthodologie globale :
+Vous pouvez accélérer ce type d’invention numérique avec chacune des approches répertoriées ci-dessous. L’image précédente illustre également ces approches. La table des matières à gauche de cette page inclut une aide technique pour accélérer l’invention numérique. Ces articles sont regroupés par approches pour aligner l’aide sur la méthodologie globale.
 
-Dans le cadre de cet article, nous partons du principe que toutes les inventions qui se traduisent par une application sont issues d’une solution partagée (décrite dans l’article [Favoriser l’adoption](./ci-cd.md)). Nous supposons également que chaque application entraîne un certain type d’expérience client (pour un client interne ou externe). Sur la base de ces hypothèses, les trois voies suivantes sont les plus courantes pour les équipes d’adoption du cloud qui développent des inventions numériques :
+Dans le cadre de cet article, nous partons du principe que toutes les inventions qui se traduisent par une application sont issues d’une solution partagée comme celle décrite dans l’article [Favoriser l’adoption](./ci-cd.md). Nous supposons également que chaque application entraîne un certain type d’expérience client, pour les clients internes et pour les clients externes.
 
-- **Développeurs citoyens :** les experts techniques d’entreprise choisissent d’utiliser des outils de développeur citoyen pour tester une hypothèse client et vérifier rapidement qu’elle répond aux besoins du client avant de recourir à des développeurs professionnels.
+Sur la base de ces hypothèses, les trois parcours suivants sont les plus courants pour les équipes d’adoption du cloud qui développent des inventions numériques :
+
+- **Développeurs citoyens :** avant de faire appel à des développeurs professionnels, les experts professionnels utilisent des outils de développeurs citoyens. Ces outils testent et valident rapidement le fait qu’une hypothèse client peut répondre aux besoins de ce client.
 - **Expériences intelligentes :** créez des expériences modernes à l’aide de plateformes cloud pour accélérer le déploiement et raccourcir les boucles de rétroaction. Appuyez-vous sur des applications web pour infuser de l’intelligence ou même intégrer des bots.
 - **Cloud natif :** développez une nouvelle invention qui tire naturellement parti des fonctionnalités du cloud.
 
-Chaque voie présente des avantages et des inconvénients à long terme et à court terme. Quand les équipes respectives de gouvernance cloud, des opérations cloud et du centre d’excellence du cloud sont prêtes à assurer un support pour chaque approche, l’adoption peut être accélérée avec un impact minimal sur les opérations durables de l’entreprise.
+Chaque parcours présente des avantages et des inconvénients, à court terme comme à long terme. Lorsque l’équipe de gouvernance cloud, l’équipe opérationnelle cloud et l’équipe du centre d’excellence cloud sont prêtes à prendre un charge chaque approche, l’adoption peut être accélérée avec un impact minimal sur les opérations durables de l’entreprise.
 
 ## <a name="toolchain"></a>Chaîne d’outils
 
-Selon la voie empruntée par l’équipe d’adoption du cloud, Azure fournit des outils permettant à l’équipe de développer plus rapidement une solution en faisant preuve d’empathie vis-à-vis du client. La liste suivante présente les offres Azure regroupées en fonction des voies décisionnelles indiquées plus haut. Ces offres incluent :
+Selon le parcours choisi par l’équipe d’adoption du cloud, Azure fournit des outils permettant à l’équipe de créer plus rapidement une solution en faisant preuve d’empathie vis-à-vis du client. La liste suivante présente les offres Azure regroupées en fonction des parcours choisis précédemment. Ces offres incluent :
 
 - Azure App Service
-- Azure Kubernetes Service
+- Azure Kubernetes Service (AKS)
 - Azure Migrate
 - Azure Stack
 - PowerApps
@@ -47,7 +49,7 @@ Selon la voie empruntée par l’équipe d’adoption du cloud, Azure fournit de
 
 ## <a name="get-started"></a>Prise en main
 
-La table des matières, à gauche, inclut de nombreux articles qui vous aideront à prendre en main chacun des outils de cette chaîne.
+La table des matières sur le côté gauche de cette page met en avant de nombreux articles. Ces articles vous aident à prendre en main chacun des outils de cette chaîne d’outils.
 
 > [!NOTE]
-> Certains liens pointent vers des contenus s’éloignant du framework d’adoption du cloud, vous permettant d’aller au-delà de la portée de ce framework.
+> Certains liens peuvent pointer vers d’autres contenus que ceux du framework d’adoption du cloud pour vous aider à aller au-delà de la portée de ce framework.

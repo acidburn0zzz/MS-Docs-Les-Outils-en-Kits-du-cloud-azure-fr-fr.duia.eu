@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 075d587b60b7da1748cd6d06ce01a1a5866f8304
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058121"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566265"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence de la sécurité
 
@@ -122,7 +122,7 @@ Les nouvelles meilleures pratiques se répartissent dans deux catégories : Inf
     4. Appliquez le blueprint `corporate-it-subscription-blueprint` à chaque instance régionale.
     5. Cela permettra d’établir un hub pour chaque unité commerciale dans chaque région. Remarque : le partage de hubs entre les unités commerciales de chaque région permet une plus importante réduction des coûts.
 6. Intégrez des objets de stratégie de groupe (GPO) par le biais d'une configuration d'état souhaité (DSC) :
-    1. Conversion GPO vers DSC - Le [projet de gestion de la base de référence Microsoft](https://github.com/Microsoft/BaselineManagement) dans GitHub peut accélérer cet effort. * Assurez-vous de stocker la configuration de l'état souhaité (DSC) dans le référentiel, en parallèle avec les modèles Resource Manager.
+    1. Conversion GPO vers DSC - Le [projet de gestion de la base de référence Microsoft](https://github.com/Microsoft/BaselineManagement) dans GitHub peut accélérer cet effort. Veillez à stocker DSC dans le référentiel, parallèlement aux modèles Resource Manager.
     2. Déployez la configuration d’état souhaité Azure Automation sur plusieurs instances de l'abonnement informatique d'entreprise. Azure Automation peut être utilisé pour appliquer la configuration d'état souhaité aux machines virtuelles déployées dans des abonnements pris en charge au sein du groupe d’administration.
     3. La feuille de route actuelle prévoit de permettre les stratégies de configuration personnalisée invité. Une fois cette fonctionnalité disponible, l’utilisation d’Azure Automation dans le cadre de cette meilleure pratique ne sera plus requise.
 

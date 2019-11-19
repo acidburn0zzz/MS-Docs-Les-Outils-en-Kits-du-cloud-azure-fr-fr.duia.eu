@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8b7902910de3df729524b1625fe83b0681eeef5b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556783"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565460"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventaire et visibilité dans Azure
 
@@ -23,19 +23,19 @@ _Inventaire et visibilité_ est la première des trois disciplines dans une lign
 
 ![Base de référence de gestion cloud](../../_images/manage/management-baseline.png)
 
-Cette discipline vient en premier, car il est essentiel de collecter les données opérationnelles appropriées lorsque vous prenez des décisions sur les opérations. Les équipes de gestion cloud doivent comprendre ce qui est géré et la façon dont ces ressources sont exploitées. Cet article décrit les différents outils qui fournissent un inventaire et une visibilité à l’état d’exécution de l’inventaire.
+Cette discipline vient en premier, car il est essentiel de collecter les données opérationnelles appropriées lorsque vous prenez des décisions sur les opérations. Les équipes de gestion cloud doivent comprendre ce qui est géré et la façon dont ces ressources sont exploitées. Cet article décrit les différents outils qui fournissent à la fois un inventaire et une visibilité à l’état d’exécution de l’inventaire.
 
-Dans le cas d’un environnement d’entreprise, le tableau suivant présente le minimum suggéré pour toute base de référence de gestion.
+Dans le cas d’un environnement d’entreprise, le tableau suivant présente le minimum suggéré pour une base de référence de gestion.
 
 |Process  |Outil  |Objectif  |
 |---------|---------|---------|
 |Surveiller l’intégrité des services Azure|Azure Service Health|Intégrité, performances et diagnostics pour les services s’exécutant dans Azure|
 |Centralisation des journaux|Log Analytics|Journalisation centralisée pour tous les objectifs de visibilité|
 |Surveillance de la centralisation|Azure Monitor|Surveillance centralisée des données opérationnelles et des tendances|
-|Inventaire de machine virtuelle et suivi des modifications|Azure Change Tracking et service Inventaire|Inventorier les machines virtuelles et surveiller les modifications au niveau du système d’exploitation invité|
-|Service Health|Journaux d’activité|Surveiller les modifications au niveau de l’abonnement|
-|Surveillance du système d’exploitation invité|Azure Monitor pour machines virtuelles|Surveiller les modifications et les performances des machines virtuelles|
-|Analyse du réseau|Azure Network Watcher|Surveiller les modifications et les performances du réseau|
+|Inventaire de machine virtuelle et suivi des modifications|Suivi des modifications et inventaire Azure|Inventorier les machines virtuelles et surveiller les modifications au niveau du système d’exploitation invité|
+|État d’intégrité du service|Journaux d’activité|Surveillance des modifications au niveau de l’abonnement|
+|Surveillance du système d’exploitation invité|Azure Monitor pour machines virtuelles|Surveillance des modifications et des performances des machines virtuelles|
+|Analyse du réseau|Azure Network Watcher|Surveillance des modifications et des performances du réseau|
 |Supervision DNS|DNS Analytics|Sécurité, performances et opérations de DNS|
 
 ::: zone target="docs"
@@ -49,15 +49,15 @@ Dans le cas d’un environnement d’entreprise, le tableau suivant présente le
 
 ::: zone-end
 
-Azure Service Health fournit un affichage personnalisé de l’intégrité des services et régions Azure que vous utilisez. Service Health publie des informations sur les problèmes actuels qui sont utiles pour comprendre l’impact sur vos ressources. Des mises à jour régulières vous tiennent informé de la résolution des problèmes.
+Azure Service Health fournit un affichage personnalisé de l’intégrité de vos services et régions Azure. Service Health publie des informations sur les problèmes actuels qui sont utiles pour comprendre l’impact sur vos ressources. Des mises à jour régulières vous tiennent informé de la résolution des problèmes.
 
-Service Health publie également les événements de maintenance planifiée pour vous avertir des prochains changements qui sont susceptibles d’impacter la disponibilité de vos ressources. Configurez des alertes Azure Service Health pour être informé des problèmes liés aux services, de la maintenance planifiée et d’autres changements pouvant avoir un impact sur les services et régions Azure que vous utilisez.
+Service Health publie également les événements de maintenance planifiée pour vous avertir des prochains changements susceptibles d’affecter la disponibilité de vos ressources. Configurez des alertes Azure Service Health pour être informé des problèmes liés aux services, de la maintenance planifiée et d’autres changements pouvant avoir un impact sur vos services et régions Azure.
 
 Azure Service Health inclut :
 
 - **Azure Status :** Affichage global de l’intégrité des services Azure.
 - **Service Health :** Affichage personnalisé de l’intégrité de vos services Azure.
-- **Resource Health :** Affichage plus approfondi de l’intégrité de chacune de vos ressources individuelles.
+- **Resource Health :** Affichage plus approfondi de l’intégrité de vos ressources individuelles.
 
 ::: zone target="chromeless"
 
@@ -125,13 +125,13 @@ Pour plus d’informations, consultez la [documentation relative à la création
 
 ::: zone-end
 
-Azure Monitor fournit un seul hub unifié pour toutes les données de supervision et de diagnostic dans Azure. Vous pouvez l’utiliser pour obtenir une visibilité sur l’ensemble de vos ressources. Grâce à Azure Monitor, vous pouvez rechercher et résoudre les problèmes et optimiser le niveau de performance. Vous pouvez également comprendre le comportement des clients.
+Avec Azure Monitor, vous bénéficiez d’un seul hub unifié pour toutes les données de supervision et de diagnostic dans Azure, ainsi que d’une visibilité sur l’ensemble de vos ressources. Grâce à Azure Monitor, vous pouvez rechercher et résoudre les problèmes et optimiser le niveau de performance. Vous pouvez également comprendre le comportement des clients.
 
 - **Superviser et visualiser les métriques.** Les métriques sont des valeurs numériques disponibles à partir des ressources Azure. Elles vous aident à comprendre l’intégrité de vos systèmes. Personnalisez les graphiques de vos tableaux de bord et utilisez des classeurs pour la création de rapports.
 
 - **Interroger et analyser les journaux.** Les journaux incluent les journaux d’activité et les journaux de diagnostic à partir d’Azure. Collectez des journaux supplémentaires provenant d’autres solutions de supervision et de gestion pour vos ressources cloud ou locales. Log Analytics fournit un référentiel central pour agréger toutes ces données. À partir de là, vous pouvez exécuter des requêtes pour aider à résoudre des problèmes ou pour visualiser des données.
 
-- **Configurer des alertes et des actions.** Les alertes vous avertissent de conditions critiques de façon proactive. Des actions correctives peuvent être prises en fonction de déclencheurs activés par des métriques, des journaux ou des problèmes d’intégrité de service. Vous pouvez configurer différentes actions et notifications et envoyer les données à vos outils de gestion des services informatiques.
+- **Configurer des alertes et des actions.** Les alertes vous avertissent de conditions critiques. Des actions correctives peuvent être prises en fonction de déclencheurs activés par des métriques, des journaux ou des problèmes d’intégrité de service. Vous pouvez configurer différentes actions et notifications et envoyer les données à vos outils de gestion des services informatiques.
 
 ::: zone target="chromeless"
 
@@ -171,14 +171,14 @@ Pour en savoir plus, consultez la [documentation d’Azure Monitor](https://docs
 
 ::: zone-end
 
-Pour activer les solutions, vous devez configurer l’espace de travail Log Analytics. Les machines virtuelles Azure et les serveurs locaux intégrés obtiendront les solutions à partir des espaces de travail Log Analytics auxquels ils sont connectés.
+Pour activer les solutions, vous devez configurer l’espace de travail Log Analytics. Les machines virtuelles Azure et les serveurs locaux intégrés obtiennent les solutions à partir des espaces de travail Log Analytics auxquels ils sont connectés.
 
 Il existe deux approches pour l’intégration :
 
 - [Machine virtuelle unique](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 - [Abonnement entier](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
 
-Chaque article vous guide tout au long d’une série d’étapes pour intégrer les solutions suivantes :
+Chaque article vous guide tout au long d’une série d’étapes pour intégrer ces solutions :
 
 - Update Management
 - Suivi des modifications et inventaire
@@ -188,4 +188,4 @@ Chaque article vous guide tout au long d’une série d’étapes pour intégrer
 - Azure Monitor pour machines virtuelles
 - Azure Security Center
 
-Chacun des éléments ci-dessus vous aidera à établir l’inventaire et la visibilité.
+Chacune des étapes précédentes vous aidera à établir l’inventaire et la visibilité.

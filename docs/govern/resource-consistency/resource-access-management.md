@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a429aa445a7188a98593ec27892fb6ded8f9eb45
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223027"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565971"
 ---
 # <a name="resource-access-management-in-azure"></a>Gestion de l’accès aux ressources dans Azure
 
@@ -97,7 +97,7 @@ Le contrôle suivant vérifie que la requête est autorisée sous les paramètre
 ![Stratégie de ressource Azure](../../_images/govern/design/governance-1-19.png)
 *Figure 11. Stratégie de ressource Azure.*
 
-Le contrôle suivant consiste à vérifier que la requête ne dépasse pas une [limite d’abonnement Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits). Par exemple, chaque abonnement dispose d’une limite de 980 groupes de ressources par abonnement. Si une requête pour déployer un groupe de ressources supplémentaire est reçue une fois la limite atteinte, elle est refusée.
+Le contrôle suivant consiste à vérifier que la requête ne dépasse pas une [limite d’abonnement Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits). Par exemple, chaque abonnement dispose d’une limite de 980 groupes de ressources par abonnement. Si une requête pour déployer un groupe de ressources supplémentaire est reçue lorsque la limite a été atteinte, elle est refusée.
 
 ![Limites des ressources Azure](../../_images/govern/design/governance-1-20.png)
 *Figure 12. Limites des ressources Azure.*

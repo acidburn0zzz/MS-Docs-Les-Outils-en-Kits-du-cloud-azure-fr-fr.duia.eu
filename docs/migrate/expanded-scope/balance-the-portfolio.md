@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548589"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566924"
 ---
 # <a name="balance-the-portfolio"></a>Équilibrer le portefeuille
 
@@ -23,7 +23,7 @@ L’adoption du cloud est un effort de gestion de portefeuille qui est adroiteme
 
 Cette rubrique est de nature stratégique. Par conséquent, l’approche adoptée dans cet article est tout aussi stratégique. Pour baser la stratégie sur des décisions fondées sur des données, cet article part du principe que le lecteur a évalué le [patrimoine numérique](../../digital-estate/index.md) existant (ou est en train de le faire). L’objectif de cette approche est de vous aider à évaluer les charges de travail afin de garantir un bon équilibre dans le portefeuille grâce à des questions qualitatives et à l’amélioration du portefeuille.
 
-### <a name="documenting-business-outcomes"></a>Documenter les résultats métier
+### <a name="document-business-outcomes"></a>Documenter les résultats opérationnels
 
 Avant d’équilibrer le portefeuille, il est important de documenter et de partager les résultats métier dans le cadre de l’effort de migration cloud. Pour quelques exemples de résultats métier généraux relatifs aux migrations cloud, consultez le [résumé de la migration cloud](../../getting-started/migrate.md).
 
@@ -47,7 +47,7 @@ Les conseils relatifs à la [rationalisation incrémentielle du patrimoine numé
 
 ### <a name="importance-of-sunset-and-retire-decisions"></a>Importance des décisions d’extinction et de mise hors service
 
-Le tableau de la section relative à la [documentation des résultats métier](#documenting-business-outcomes) ci-dessus n’aboutit pas à un résultat clé qui permettrait de réduire les coûts informatiques. Lorsque les réductions de coûts informatiques se classent n’importe où dans la liste des résultats métier, il est important de prendre en compte la possibilité de mettre fin à des charges de travail ou de les mettre hors service. Dans certains scénarios, les économies de coûts peuvent provenir de la non-migration de charges de travail qui ne justifient pas un investissement à court terme. Certains clients ont rapporté des économies au-delà de 20 % de la réduction du coût total grâce à la mise hors service des charges de travail sous-exploitées.
+Le tableau de la section relative à la [documentation des résultats métier](#document-business-outcomes) ci-dessus n’aboutit pas à un résultat clé qui permettrait de réduire les coûts informatiques. Lorsque les réductions de coûts informatiques se classent n’importe où dans la liste des résultats métier, il est important de prendre en compte la possibilité de mettre fin à des charges de travail ou de les mettre hors service. Dans certains scénarios, les économies de coûts peuvent provenir de la non-migration de charges de travail qui ne justifient pas un investissement à court terme. Certains clients ont rapporté des économies au-delà de 20 % de la réduction du coût total grâce à la mise hors service des charges de travail sous-exploitées.
 
 Pour équilibrer le portefeuille et mieux refléter les décisions d’extinction et de mise hors service, les équipes de stratégie cloud et d’adoption du cloud sont encouragées à poser les questions suivantes pour chaque charge de travail dans le cadre des processus d’évaluation et de migration :
 
@@ -74,7 +74,7 @@ Les prérequis spécifiés dans le guide de référence doivent toujours être s
 
 ### <a name="suggested-action-during-the-assess-process"></a>Action suggérée pendant le processus d’évaluation
 
-D’après les données du tableau figurant dans la section relative à la [documentation des résultats métier](#documenting-business-outcomes) ci-dessus, il existe un risque probable que le portefeuille s’oriente trop vers un modèle d’exécution axé sur la migration. Si l’expérience client était la priorité la plus élevée, un portefeuille axé sur les innovations serait plus probable. Ni l’un ni l’autre n’est bon ou mauvais, mais une trop grande inclinaison dans une direction entraîne généralement une diminution des rendements, ajoute une complexité inutile et augmente le temps d’exécution lié aux efforts d’adoption du cloud.
+D’après les données du tableau figurant dans la section relative à la [documentation des résultats métier](#document-business-outcomes) ci-dessus, il existe un risque probable que le portefeuille s’oriente trop vers un modèle d’exécution axé sur la migration. Si l’expérience client était la priorité la plus élevée, un portefeuille axé sur les innovations serait plus probable. Ni l’un ni l’autre n’est bon ou mauvais, mais une trop grande inclinaison dans une direction entraîne généralement une diminution des rendements, ajoute une complexité inutile et augmente le temps d’exécution lié aux efforts d’adoption du cloud.
 
 Pour réduire la complexité, il est recommandé que le lecteur suive une approche traditionnelle de la rationalisation des portefeuilles, mais selon un modèle itératif. Les étapes suivantes décrivent un modèle qualitatif pour une telle approche :
 
@@ -113,7 +113,7 @@ Il est recommandé de segmenter ces divers efforts entre deux équipes d’adopt
 
 **Refactorisation mineure :** Certaines applications peuvent être modernisées avec une refactorisation mineure au niveau des données ou de l’application. Ce travail oblige les membres de l’équipe à déployer des données sur des plateformes de données informatiques ou à apporter des modifications mineures à la configuration de l’application. Cela peut nécessiter un support limité des experts en matière de développement d’applications ou de données. Toutefois, ce travail est similaire au travail effectué par les implémenteurs informatiques lors du déploiement d’applications tierces. Ce travail peut facilement s’aligner sur l’équipe de migration cloud ou celle de stratégie cloud. Bien que cet effort ne soit pas aussi rapide qu’une migration de réhébergement, il prend moins de temps que les efforts de refactorisation.
 
-Lors de la migration, il est recommandé de segmenter les efforts des trois manières répertoriées ci-dessus et de faire exécuter ces efforts par l’équipe appropriée dans l’itération appropriée. Bien qu’il soit conseillé de diversifier le portefeuille, il est également conseillé de concentrer et de séparer les efforts.
+Lors de la migration, les efforts devraient être segmentés des trois manières répertoriées ci-dessus et fournis par l’équipe appropriée dans l’itération appropriée. Même si vous devez diversifier le portefeuille, veillez également à ce que les efforts restent très concentrés et séparés.
 
 ## <a name="optimize-and-promote-process-changes"></a>Changements aux processus d’optimisation et de promotion
 

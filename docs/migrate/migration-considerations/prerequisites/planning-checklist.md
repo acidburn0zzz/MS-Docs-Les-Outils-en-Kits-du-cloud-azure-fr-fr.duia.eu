@@ -1,5 +1,5 @@
 ---
-title: Environnement de migration – Check-list de planification
+title: Check-list de planification de l’environnement de migration
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Valider la préparation de l’environnement avant la migration
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378381"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564565"
 ---
-# <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Check-list de planification de l’environnement de migration – Valider la préparation de l’environnement avant la migration
+# <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Check-list de planification de l’environnement de migration : valider la préparation de l’environnement avant la migration
 
 En première étape du processus de migration, vous devez créer l’environnement approprié dans le cloud pour recevoir, héberger et prendre en charge la migration des ressources. Cet article fournit une liste des éléments à valider dans l’environnement actuel avant la migration.
 

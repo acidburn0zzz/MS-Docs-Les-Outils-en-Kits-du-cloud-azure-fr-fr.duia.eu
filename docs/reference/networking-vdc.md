@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048243"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566687"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Centres de données virtuels : perspective réseau
 
@@ -35,7 +35,7 @@ Les clients peuvent choisir d’accéder à ces services cloud via Internet ou a
 
 Les solutions cloud ont d’abord été conçues pour héberger des applications uniques et relativement isolées dans le domaine public. Cette approche a donné de bons résultats pendant quelques années. Les avantages des solutions cloud sont ensuite devenus évidents, et plusieurs charges de travail à grande échelle ont été hébergées dans le cloud. Il s’est révélé crucial de résoudre les problèmes de sécurité, de fiabilité, de performances et de coûts des déploiements dans une ou plusieurs régions sur l’ensemble du cycle de vie du service cloud.
 
-Le diagramme suivant de déploiement cloud montre un exemple de faille de sécurité dans la **zone rouge**. La **zone jaune** indique qu’il est possible d’optimiser les appliances virtuelles réseau parmi les charges de travail.
+Le diagramme suivant de déploiement cloud montre un exemple de faille de sécurité, mis en surbrillance dans la zone rouge. La zone jaune indique qu’il est possible d’optimiser les appliances virtuelles réseau dans les charges de travail.
 
 ![0][0]
 
@@ -263,7 +263,7 @@ Nous vous recommandons d’utiliser un ensemble d’instances de Pare-feu Azure,
 
 Azure Load Balancer peut également analyser à l’aide de sondes l’intégrité des différentes instances de serveur ; si l’une des instances ne répond pas à une sonde, l’équilibreur de charge arrête d’envoyer le trafic à l’instance défaillante correspondante. Dans le centre de données virtuel, un équilibreur de charge externe est déployé sur le hub et les rayons. Dans le hub, l’équilibreur de charge est utilisé pour router efficacement le trafic vers des services dans les rayons. Dans ces derniers, les équilibreurs de charge sont utilisés pour gérer le trafic des applications.
 
-[**Azure Front Door**][AFD] (AFD) est une plateforme d’accélération d’applications web scalable à haute disponibilité, intégrant un équilibreur de charge HTTP global, la protection d’application et le réseau de distribution de contenu. En s’exécutant dans plus de 100 emplacements au niveau de la périphérie du réseau global de Microsoft, AFD vous permet de générer et de faire fonctionner votre application web dynamique et votre contenu statique. Vous pouvez aussi effectuer un scale-out de ces derniers. AFD fournit à votre application des performances d’utilisateur final très élevées, l’automatisation de la maintenance de région/d’horodatage unifiée, l’automatisation de la continuité d’activité et de la reprise d’activité, des informations client/utilisateur unifiées, ainsi que des insights sur la mise en cache et les services. La plateforme offre des SLA relatifs aux performances, à la fiabilité et au support, des certifications de conformité et des pratiques de sécurité vérifiables, dont le développement, la mise en œuvre et la prise en charge sont effectués de manière native par Azure.
+[Azure Front Door (AFD)][AFD] est une plateforme d’accélération d’applications web scalable à haute disponibilité, intégrant un équilibreur de charge HTTP global, la protection d’application et le réseau de distribution de contenu. En s’exécutant dans plus de 100 emplacements au niveau de la périphérie du réseau global de Microsoft, AFD vous permet de générer et de faire fonctionner votre application web dynamique et votre contenu statique. Vous pouvez aussi effectuer un scale-out de ces derniers. AFD fournit à votre application des performances d’utilisateur final très élevées, l’automatisation de la maintenance de région/d’horodatage unifiée, l’automatisation de la continuité d’activité et de la reprise d’activité, des informations client/utilisateur unifiées, ainsi que des insights sur la mise en cache et les services. La plateforme offre des SLA relatifs aux performances, à la fiabilité et au support, des certifications de conformité et des pratiques de sécurité vérifiables, dont le développement, la mise en œuvre et la prise en charge sont effectués de manière native par Azure.
 
 [**Application Gateway**][AppGW] Microsoft Azure Application Gateway est une appliance virtuelle dédiée qui intègre Application Delivery Controller (ADC) en tant que service, offrant ainsi diverses fonctionnalités d’équilibrage de charge de couche 7 pour votre application. Cette appliance vous permet d’optimiser la productivité de la batterie de serveurs Web en déchargeant une terminaison SSL nécessitant de nombreuses ressources du processeur vers la passerelle Application Gateway. Elle fournit également d’autres fonctionnalités de routage de couche 7, notamment la distribution en tourniquet (round robin) du trafic entrant, l’affinité de session basée sur les cookies, le routage basé sur le chemin d’accès de l’URL et la possibilité d’héberger plusieurs sites web derrière une seule passerelle Application Gateway. Un pare-feu d’applications web (WAF) est également intégré à la référence SKU Application Gateway WAF. Cette référence SKU protège les applications web contre les vulnérabilités et les codes malveillants exploitant une faille de sécurité les plus courants sur le web. La passerelle Application Gateway peut être configurée en tant que passerelle internet, passerelle interne uniquement ou une combinaison des deux.
 
@@ -337,7 +337,7 @@ Vous pouvez implémenter un service de messagerie cloud à haut niveau de fiabil
 
 ![10][10]
 
-### <a name="making-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Rendre un centre de données virtuel hautement disponible : plusieurs centres de centres virtuels
+### <a name="make-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Rendre un centre de données virtuel hautement disponible : plusieurs centres de données virtuels
 
 Jusqu’à présent, cet article s’est concentré sur la conception d’un seul centre de données virtuel en décrivant l’architecture et les composants de base qui contribuent à la résilience. Les fonctionnalités Azure telles que l’équilibreur de charge Azure, les appliances virtuelles réseau, les groupes à haute disponibilité, les groupes identiques et divers autres mécanismes contribuent à l’obtention d’un système qui vous permet d’assurer des niveaux de SLA élevés dans vos services de production.
 
@@ -378,7 +378,7 @@ Nous recommandons aux clients d’exécuter des tests de qualification de résea
 
 ### <a name="summary"></a>Résumé
 
-Un centre de données virtuel est une approche relative à la migration d’un centre de données qui permet de créer une architecture scalable dans Azure qui optimise l’utilisation des ressources cloud, réduit les coûts et simplifie la gouvernance du système. Un centre de données virtuel repose sur une topologie réseau de type « hub-and-spoke » qui fournit les services partagés communs dans le hub et autorise des applications/charges de travail spécifiques dans les rayons. Le centre de données virtuel respecte également la structure des rôles d’une entreprise, où collaborent différents services (équipes informatique centrale, DevOps, opérations et maintenance, etc.) tout en exerçant leur rôle spécifique. Un centre de données virtuel répond aux exigences d’une migration « lift-and-shift », mais offre également de nombreux avantages pour les déploiements de cloud natifs.
+Un centre de données virtuel est une approche relative à la migration d’un centre de données qui permet de créer une architecture scalable dans Azure qui optimise l’utilisation des ressources cloud, réduit les coûts et simplifie la gouvernance du système. Un centre de données virtuel repose sur une topologie réseau de type « hub-and-spoke » qui fournit les services partagés communs dans le hub et autorise des applications/charges de travail spécifiques dans les rayons. Le centre de données virtuel respecte également la structure des rôles d’une entreprise, où collaborent différents services (équipes informatique centrale, DevOps, opérations et maintenance, etc.) tout en exerçant leur rôle spécifique. Un centre de données virtuel répond aux exigences d’une migration lift-and-shift, mais offre également de nombreux avantages pour les déploiements de cloud natifs.
 
 ## <a name="references"></a>Références
 

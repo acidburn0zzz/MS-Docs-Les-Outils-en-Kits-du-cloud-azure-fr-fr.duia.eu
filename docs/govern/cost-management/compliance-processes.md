@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6345a8cae51a6b26b7fad174113a40e9dc0dae3e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: eb3bfc584e3c3f86e39918495fe7e0d313f13e55
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220979"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564718"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Processus de conformité à la stratégie Gestion des coûts
 
@@ -42,7 +42,7 @@ Ce processus de planification trimestriel constitue également un moment idéal 
 
 Ces processus de base permettent d’ajuster les dépenses et d’établir les fondements de la discipline Gestion des coûts.
 
-## <a name="ongoing-monitoring-processes"></a>Processus de supervision continue
+## <a name="processes-for-ongoing-monitoring"></a>Processus de surveillance continue
 
 La réussite des stratégies de gouvernance Gestion des coûts dépend du degré de visibilité sur les dépenses de cloud passées, en cours et prévues. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet de vos coûts existants, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance continus décrits ci-dessus exigent que vous fournissiez des données de qualité afin d’être capable de modifier la stratégie pour protéger votre infrastructure au mieux face à l’évolution des besoins métiers et l’utilisation du cloud.
 
@@ -54,8 +54,8 @@ Lorsque des violations sont détectées, vous devez prendre des actions de mise 
 
 Voici quelques exemples de déclencheurs :
 
-- **Écarts de budget mensuel.** Lorsque l’écart entre les dépenses mensuelles réelles et les prévisions dépasse 20 %, discutez-en avec le responsable de l’unité de facturation. Mettez-vous d’accord sur des résolutions et des modifications à apporter aux prévisions.
-- **Rythme d’adoption.** Tout écart de niveau d’abonnement supérieur à 20 % déclenche une révision avec le responsable de l’unité de facturation. Mettez-vous d’accord sur des résolutions et des modifications à apporter aux prévisions.
+- **Écarts de budget mensuel :** Lorsque l’écart entre les dépenses mensuelles réelles et les prévisions dépasse 20 %, discutez-en avec le responsable de l’unité de facturation. Mettez-vous d’accord sur des résolutions et des modifications à apporter aux prévisions.
+- **Rythme d’adoption :** Tout écart de niveau d’abonnement supérieur à 20 % déclenche une révision avec le responsable de l’unité de facturation. Mettez-vous d’accord sur des résolutions et des modifications à apporter aux prévisions.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

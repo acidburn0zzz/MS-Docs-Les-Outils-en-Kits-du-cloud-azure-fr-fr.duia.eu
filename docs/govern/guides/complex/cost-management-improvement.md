@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a6e2effbd47c3516e3663d3c0f1f75d9db924e8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ad7770a7339cf1fa444442e68d2e13539f272190
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547692"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566329"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Gestion des coûts
 
@@ -57,7 +57,7 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 - Chaque semaine, l’équipe de gouvernance cloud doit s’assurer que tous les coûts liés au cloud sont conformes au plan. Chaque mois, des rapports sur les écarts entre les coûts du cloud et ceux prévus par le plan doivent être remis aux responsables informatiques et au département financier. Chaque mois, toutes les mises à jour des coûts liés au cloud et du plan doivent être contrôlées par les responsables informatiques et le service financier.
 - Tous les coûts doivent être affectés à une fonction opérationnelle à des fins de responsabilisation.
 - Les ressources du cloud doivent être contrôlées en permanence afin de déceler les possibilités d'optimisation.
-- Les outils de gouvernance du cloud doivent limiter les options de dimensionnement des ressources à une liste approuvée de configurations. Les outils doivent garantir que toutes les ressources peuvent être détectées et suivies par la solution de supervision des coûts.
+- Les outils de gouvernance cloud doivent limiter les options de taille des ressources à une liste approuvée de configurations. Les outils doivent garantir que toutes les ressources peuvent être détectées et suivies par la solution de supervision des coûts.
 - Lors de la planification du déploiement, toutes les ressources cloud requises associées à l’hébergement de charges de travail de production doivent être documentées. Cette documentation permettra d’affiner les budgets et de préparer des outils d’automatisation supplémentaires pour éviter l’utilisation d’options plus coûteuses. Au cours de ce processus, il convient d’envisager l’adoption de différents outils de remise proposés par le fournisseur de cloud, tels que des instances réservées ou des réductions sur le coût des licences.
 - Tous les propriétaires d’applications sont tenus de suivre une formation sur les pratiques d’optimisation des charges de travail afin de mieux contrôler les coûts liés au cloud.
 

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 170054f07cb7e8282b3abd582e484a730aca1280
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032020"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566755"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimodèles organisationnels : Silos et fiefs
 
@@ -64,7 +64,7 @@ Les membres d’un silo d’informations se définissent vraisemblablement eux-m
 
 Cet antimodèle émerge souvent d’une passion commune pour une solution spécifique. Les silos d’informations sont alors renforcés par les compétences avancées de l’équipe faisant suite à l’investissement dans cette solution spécifique. Cette compétence supérieure peut constituer un accélérateur pour les efforts d’adoption du cloud si la résistance au changement peut être surmontée. Elle peut aussi devenir un blocage majeur si les silos sont décomposés ou si les membres de l’équipe ne peuvent pas évaluer avec précision leurs possibilités. Heureusement, les silos d’informations sont souvent surmontables sans nécessiter de changements significatifs dans l’organigramme de l’entreprise.
 
-### <a name="addressing-resistance-from-it-silos"></a>Résolution des problèmes de résistance dus aux silos d’informations
+### <a name="address-resistance-from-it-silos"></a>Résoudre les problèmes de résistance dus aux silos informatiques
 
 Les approches suivantes permettent de traiter les silos d’informations. La meilleure approche dépend de la cause racine de la résistance.
 
@@ -112,9 +112,9 @@ Les fiefs s’avèrent particulièrement courants au sein des organisations qui 
 
 En règle générale, les fiefs sont générés par un responsable qui craint de perdre son équipe et son autorité. De tels responsables ont souvent un sens aigu du devoir vis-à-vis de leur équipe et ils ont besoin de protéger leurs subalternes contre des conséquences négatives. Des expressions comme « mettre l’équipe à l’abri du changement » et « protéger l’équipe contre les ruptures de processus » peuvent être symptomatiques d’un responsable excessivement prudent qui a lui-même besoin d’un meilleur encadrement.
 
-### <a name="addressing-resistance-from-it-fiefdoms"></a>Résolution des problèmes de résistance dus aux fiefs informatiques
+### <a name="address-resistance-from-it-fiefdoms"></a>Résoudre les problèmes de résistance dus aux fiefs informatiques
 
-Les fiefs informatiques peuvent s’améliorer en suivant les approches de [résolution des problèmes de résistance dus aux silos d’informations](#addressing-resistance-from-it-silos). Avant d’essayer de résoudre les problèmes de résistance d’un fief informatique, nous vous recommandons, dans un premier temps, de considérer l’équipe comme un silo d’informations. Si ces types d’approches n’apportent aucun changement significatif, l’équipe résistante suit peut-être un antimodèle de fief informatique. La cause racine des fiefs informatiques est un peu plus complexe, car cette résistance tend à provenir du supérieur hiérarchique direct (ou d’un responsable situé plus haut dans l’organigramme de l’entreprise). Les défis que génèrent les silos d’informations sont généralement plus simples à relever.
+Les fiefs informatiques peuvent s’améliorer en suivant les approches de [résolution des problèmes de résistance dus aux silos d’informations](#address-resistance-from-it-silos). Avant d’essayer de résoudre les problèmes de résistance d’un fief informatique, nous vous recommandons, dans un premier temps, de considérer l’équipe comme un silo d’informations. Si ces types d’approches n’apportent aucun changement significatif, l’équipe résistante suit peut-être un antimodèle de fief informatique. La cause racine des fiefs informatiques est un peu plus complexe, car cette résistance tend à provenir du supérieur hiérarchique direct (ou d’un responsable situé plus haut dans l’organigramme de l’entreprise). Les défis que génèrent les silos d’informations sont généralement plus simples à relever.
 
 Quand une résistance continue provenant de fiefs informatiques bloque les efforts d’adoption du cloud, il peut s’avérer judicieux d’évaluer la situation avec les responsables informatiques existants. Ces derniers doivent écouter attentivement les remarques de l’[équipe de stratégie cloud](./cloud-strategy.md), du [centre d’excellence du cloud](./cloud-center-of-excellence.md) et de l’[équipe de gouvernance cloud](./cloud-governance.md) avant de prendre des décisions.
 
@@ -122,6 +122,8 @@ Quand une résistance continue provenant de fiefs informatiques bloque les effor
 > Les responsables informatiques ne doivent jamais prendre à la légère les modifications apportées à l’organigramme. Ils doivent aussi valider et analyser les commentaires émis par chacune des équipes. Toutefois, des efforts de transformation comme l’adoption du cloud tendent à exacerber des problèmes sous-jacents qui n’ont pas été remarqués ni traités depuis longtemps. Quand des fiefs empêchent une entreprise de réussir, un changement de direction est une nécessité probable.
 >
 > Heureusement, le départ du responsable d’un fief ne se conclue pas souvent par un licenciement. Ces chefs sérieux et passionnés peuvent souvent évoluer vers un autre poste à responsabilités après une courte période de réflexion. Avec la bonne prise en charge, un tel changement peut s’avérer sain à la fois pour le responsable du fief et l’équipe actuelle.
+
+<!-- -->
 
 > [!CAUTION]
 > Pour les responsables de fiefs informatiques, la protection de l’équipe contre les risques est une valeur incontournable. Toutefois, la distinction entre protection et isolation est alors infime. Quand la participation de l’équipe à des changements est bloquée, celle-ci peut en subir des conséquences psychologiques et professionnelles. L’envie de résister au changement peut être forte, particulièrement en période de changement visible.
