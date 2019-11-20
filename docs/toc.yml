@@ -1239,8 +1239,6 @@
       href: reference/cloud-operating-model.md
     - name: Structure d’entreprise Azure
       href: reference/azure-scaffold.md
-    - name: Implémentation d’une structure d’entreprise Azure
-      href: reference/azure-scaffold-examples.md
     - name: Centre de données virtuel (VDC)
       href: reference/vdc.md
     - name: Fonctionnement d’Azure

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221661"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160534"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Exemples d’instructions de stratégie de base de référence de la sécurité
 
@@ -56,7 +56,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques courants 
 
 **Instruction de stratégie :** Aucun sous-réseau contenant des données protégées ne doit pas être accessible directement par l’Internet public ou dans les centres de données. L’accès à ces sous-réseaux doit être routé via des sous-réseaux intermédiaires. Tous les accès à ces sous-réseaux doivent transiter par une solution de pare-feu capable d’effectuer des analyses des paquets et de bloquer des fonctions.
 
-**Option de conception potentielle :** Dans Azure, sécurisez les points de terminaison publics en déployant une [zone DMZ entre l’Internet public et votre réseau basé sur le cloud](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Envisagez le déploiement, la configuration et l’automatisation du [pare-feu Azure](https://docs.microsoft.com/azure/firewall).
+**Option de conception potentielle :** Dans Azure, sécurisez les points de terminaison publics en déployant une [zone DMZ entre l’Internet public et votre réseau basé sur le cloud](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Envisagez le déploiement, la configuration et l’automatisation du [pare-feu Azure](https://docs.microsoft.com/azure/firewall).
 
 ## <a name="ddos-protection"></a>Protection DDoS
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d9dda8b5cb91b97da2da50bc747cb3bd6b31947e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf585f923a4c8abddeeb56bab4a3a4b8eb370f8d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023588"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160211"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Software Defined Networking : Cloud natif
 
@@ -42,4 +42,4 @@ Les autres problèmes que votre équipe chargée de l’adoption du cloud doit p
 Pour plus d’informations sur les réseaux virtuels cloud natifs sur la plateforme Azure, consultez :
 
 - [Réseau virtuel Azure : guides pratiques](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Les réseaux virtuels Azure nouvellement créés sont natifs du cloud par défaut. Aidez-vous de ces guides pour planifier la conception et le déploiement de vos réseaux virtuels.
-- [Limites d’abonnement : Mise en réseau](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits). Un réseau virtuel et des ressources connectées ne peuvent exister que dans un abonnement unique, et sont liés par des limites d’abonnement.
+- [Limites d’abonnement : Mise en réseau](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Un réseau virtuel et des ressources connectées ne peuvent exister que dans un abonnement unique, et sont liés par des limites d’abonnement.

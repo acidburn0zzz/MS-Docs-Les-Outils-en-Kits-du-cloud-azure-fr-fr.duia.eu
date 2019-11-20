@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: b3adddc6b68d07084ec8c3909d6c8010c25bb387
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: f5869cd688984946ec55266dca3754547f950017
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239852"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159631"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Déployer une zone d’accueil de migration
 
@@ -65,7 +65,7 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 |Conception de l’abonnement|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../azure-best-practices/scaling-subscriptions.md)|
 |Groupes d’administration|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../azure-best-practices/scaling-subscriptions.md)         |
 |Groupes de ressources|N/A : conçu pour un abonnement de production unique.|[Abonnements de mise à l’échelle](../azure-best-practices/scaling-subscriptions.md)         |
-|Données|N/A|[Choix de la bonne option SQL Server dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) et [instructions relatives aux magasins de données Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Données|N/A|[Choix de la bonne option SQL Server dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) et [instructions relatives aux magasins de données Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Stockage|N/A|[Conseils relatifs à Stockage Azure](../considerations/storage-options.md)         |
 |Standards de nommage et de catégorisation|N/A|[Meilleures pratiques en matière de nommage et de catégorisation](../azure-best-practices/naming-and-tagging.md)         |
 |la gestion des coûts ;|N/A|[Coûts de suivi](../azure-best-practices/track-costs.md)|

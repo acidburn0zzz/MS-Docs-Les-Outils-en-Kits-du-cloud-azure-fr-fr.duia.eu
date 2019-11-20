@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3bd26321eca1747e5ed579e4394b0a4b7b713294
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 8860fe9f4c689d2d2072a3a494b42c58b532a524
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048214"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160537"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan d’adoption du cloud et Azure DevOps
 
@@ -33,7 +33,7 @@ Pour déployer le plan d’adoption du cloud, ouvrez [Azure DevOps Demo Generato
 
 Une fois que votre projet a été créé, poursuivez la lecture de cette série d’articles pour voir comment modifier le modèle pour l’aligner sur votre plan d’adoption du cloud.
 
-Pour obtenir de l’aide et des conseils supplémentaires sur cet outil, consultez [Azure DevOps Services Demo Generator](https://docs.microsoft.com/azure/devops/demo-gen/?toc=%2Fazure%2Fdevops%2Fdemo-gen%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fdemo-gen%2Fbreadcrumb%2Ftoc.json&view=azure-devops).
+Pour obtenir de l’aide et des conseils supplémentaires sur cet outil, consultez [Azure DevOps Services Demo Generator](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops).
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>Modifier en bloc le plan d’adoption du cloud
 
