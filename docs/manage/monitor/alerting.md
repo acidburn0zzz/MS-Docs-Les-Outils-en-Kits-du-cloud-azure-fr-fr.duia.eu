@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
-ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
+ms.openlocfilehash: d3c3021c75c39b5ae712f9945afd937d4472ecb8
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73912500"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160295"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guide de supervision du cloud : Génération d’alertes
 
@@ -67,7 +67,7 @@ Azure Monitor possède quatre types d’alertes, toutes globalement liées au r�
 
 - [Alerte de journal d’activité](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log) : Alerte sur les éléments du magasin de journaux d’activités, à l’exception des données de Service Health.
 
-- [Alerte Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json) : Type spécial d’alerte utilisé seulement pour les problèmes Service Health provenant du magasin de journaux d’activité, comme les pannes et la maintenance planifiée à venir. Notez que ce type d’alerte est configuré via [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), un service associé à Azure Monitor.
+- [Alerte Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications) : Type spécial d’alerte utilisé seulement pour les problèmes Service Health provenant du magasin de journaux d’activité, comme les pannes et la maintenance planifiée à venir. Notez que ce type d’alerte est configuré via [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), un service associé à Azure Monitor.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Activer les alertes via des outils partenaires
 

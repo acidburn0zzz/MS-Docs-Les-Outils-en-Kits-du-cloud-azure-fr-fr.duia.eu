@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751847"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160368"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Déployer une infrastructure de migration
 
@@ -299,7 +299,7 @@ Sauvegarde Azure vous permet de sauvegarder et de restaurer des disques de machi
 - Les sauvegardes sont cohérentes avec les applications, garantissant la cohérence transactionnelle des données sauvegardées et le démarrage des applications après leur restauration.
 - Sauvegarde Azure prend en charge le stockage localement redondant (LRS) pour répliquer plusieurs copies de vos données de sauvegarde au sein d’un centre de données, en cas de défaillance matérielle locale.
 - En cas de panne régionale, Sauvegarde Azure prend également en charge le stockage géoredondant (GRS) en répliquant vos données de sauvegarde dans une région secondaire jumelée.
-- Sauvegarde Azure chiffre les données en transit à l’aide d’AES 256. Les données sauvegardées au repos sont chiffrées à l’aide de [Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
+- Sauvegarde Azure chiffre les données en transit à l’aide d’AES 256. Les données sauvegardées au repos sont chiffrées à l’aide de [Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
 Contoso utilise Sauvegarde Azure avec GRS sur toutes les machines virtuelles de production pour s’assurer que les données de charge de travail sont sauvegardées et peuvent être restaurées rapidement en cas de panne ou d’interruption. [Plus d’informations](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
 
