@@ -5,17 +5,17 @@ description: Meilleures pratiques pour organiser efficacement vos ressources Azu
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 79102a3664f055489da37fc3de0ec7156c1272ef
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: da55cdbe44bcfc366ab58587700ef8896c507059
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239835"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251384"
 ---
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 

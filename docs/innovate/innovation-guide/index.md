@@ -5,17 +5,17 @@ description: Apprenez à créer des solutions innovantes pour vos clients avec A
 author: matticusau
 ms.author: mlavery
 ms.date: 10/17/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2e624ad1ede3546d4babb232f7bd4b974afadaaa
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: bccac613f60c87260b946c7ca92b556d40926286
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047449"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251862"
 ---
 ::: zone target="docs"
 

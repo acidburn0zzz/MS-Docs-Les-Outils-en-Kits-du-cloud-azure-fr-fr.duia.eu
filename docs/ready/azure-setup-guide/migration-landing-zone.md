@@ -5,16 +5,16 @@ description: Découvrez comment déployer une zone d’accueil de migration dans
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 528864cab448ef2e6ead89b16ee174cc2c405401
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 59b57467eeae47b73fa24ce672d9e7e4f0ed4478
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159577"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251708"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Déployer une zone d’accueil de migration
 

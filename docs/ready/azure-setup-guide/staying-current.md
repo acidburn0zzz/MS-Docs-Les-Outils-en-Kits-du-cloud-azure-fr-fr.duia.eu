@@ -5,17 +5,17 @@ description: Découvrez comment rester à jour et gérer les modifications sur A
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: fef411923327fe9f3318c4cb20c6dd456aa112d5
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: abfbdb31ccb9e0270f8ef93b1173726a372df53f
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72698498"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251459"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Rester informé sur Microsoft Azure
 
