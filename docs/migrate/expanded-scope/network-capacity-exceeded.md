@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239973"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753495"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Les besoins en données dépassent la capacité réseau lors d’une migration
 
@@ -39,7 +39,7 @@ Il existe également des [solutions de partenaires tiers](https://azuremarketpla
 
 Si les besoins de stockage d’une charge de travail (ou plusieurs) dépassent la capacité du réseau, vous pouvez toujours utiliser une Azure Data Box pour un transfert de données hors connexion.
 
-La position générale de Microsoft est que la transmission réseau est l’approche conseillée, sauf si le réseau n’est pas disponible. Cette suggestion est due à la vitesse de transfert. Le transfert de données sur le réseau (même lorsque la bande passante est limitée) est généralement plus rapide que l’expédition physique de la même quantité de données à l’aide d’un mécanisme de transfert hors connexion, comme Data Box.
+La transmission réseau est l’approche recommandée, sauf si le réseau n’est pas disponible. La vitesse de transfert de données sur le réseau, même quand la bande passante est limitée, est généralement plus rapide que l’expédition physique de la même quantité de données via un mécanisme de transfert hors connexion, comme Data Box.
 
 Si la connectivité à Azure est disponible, une analyse doit être effectuée avant d’utiliser Data Box, surtout si la migration de la charge de travail est sensible au temps. Data Box est recommandé uniquement lorsque le temps de transfert des données nécessaires dépasse le temps requis pour remplir, expédier et restaurer les données à l’aide de Data Box.
 

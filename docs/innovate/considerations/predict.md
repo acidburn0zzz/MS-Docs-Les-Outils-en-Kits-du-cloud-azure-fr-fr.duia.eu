@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8aa0e1d86bb679241bc8e769bb8a09fc436c6906
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bcb01ada3589b733fe97de2689352ab414ef469b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565588"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752987"
 ---
 # <a name="predict-and-influence"></a>Prédire et influencer
 
@@ -48,7 +48,7 @@ Des sources de données variées peuvent être utilisées pour fournir des capac
 
 ## <a name="insights"></a>Insights
 
-Les experts en la matière exploitent les données sur les besoins et les comportements des clients pour développer des informations commerciales de base, ou « insights », en étudiant des données brutes. Ces informations permettent d’identifier les comportements des clients souhaités (ou bien les résultats indésirables). Au cours des itérations sur les prédictions, ces insights peuvent aider à identifier les corrélations potentielles susceptibles de générer des résultats positifs. Si vous souhaitez obtenir des conseils sur la façon de permettre aux experts de développer des insights, consultez l’article [Démocratisation des données](./data.md).
+Les experts en la matière utilisent les données sur les besoins et les comportements des clients pour développer des insights métier de base en étudiant des données brutes. Ces informations permettent d’identifier les comportements des clients souhaités (ou bien les résultats indésirables). Au cours des itérations sur les prédictions, ces insights peuvent aider à identifier les corrélations potentielles susceptibles de générer des résultats positifs. Si vous souhaitez obtenir des conseils sur la façon de permettre aux experts de développer des insights, consultez l’article [Démocratisation des données](./data.md).
 
 ## <a name="patterns"></a>Modèles
 

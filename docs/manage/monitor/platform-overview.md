@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 4d50025ee6030e07ccb2979fff89ebb6569e0aed
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564958"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751676"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Guide de supervision du cloud : Vue d’ensemble des plateformes de supervision
 
@@ -74,6 +74,8 @@ Azure Monitor est un service Logiciel en tant que service (SaaS), où toute l’
 
 ## <a name="data-collection"></a>Collecte des données
 
+<!-- markdownlint-disable MD024 -->
+
 ### <a name="operations-manager"></a>Operations Manager
 
 #### <a name="agents"></a>Agents
@@ -116,7 +118,7 @@ Azure Monitor sépare la collecte de données et les actions effectuées sur ces
 
 Toutes les données collectées par Azure Monitor sont stockées sous forme de journaux ou de métriques, qui servent de base à ses différentes fonctionnalités. Les métriques contiennent des valeurs numériques dans des séries chronologiques bien adaptées aux alertes en quasi temps réel et à la détection rapide des problèmes. Les journaux contiennent des données texte ou numériques, et sont pris en charge par un langage de requête puissant, qui les rend particulièrement pratiques pour effectuer des analyses complexes.
 
-Comme Azure Monitor sépare la collecte de données et les actions sur ces données, il est possible qu’il ne puisse pas fournir des alertes en quasi temps réel dans de nombreux cas. Pour alerter sur les données des journaux, les requêtes sont exécutées selon une planification périodique définie dans l’alerte. Ce comportement permet à Azure Monitor de corréler facilement les données de toutes les sources supervisées, et vous pouvez analyser les données de façon interactive de différentes manières. Ceci est particulièrement utile pour effectuer une analyse des causes racines et pour identifier l’endroit où un problème peut survenir.
+Comme Monitor sépare la collecte de données et les actions sur ces données, il est possible qu’il ne puisse pas fournir des alertes en quasi temps réel dans de nombreux cas. Pour alerter sur les données des journaux, les requêtes sont exécutées selon une planification périodique définie dans l’alerte. Ce comportement permet à Azure Monitor de corréler facilement les données de toutes les sources supervisées, et vous pouvez analyser les données de façon interactive de différentes manières. Ceci est particulièrement utile pour effectuer une analyse des causes racines et pour identifier l’endroit où un problème peut survenir.
 
 ## <a name="health-monitoring"></a>Surveillance de l’intégrité
 

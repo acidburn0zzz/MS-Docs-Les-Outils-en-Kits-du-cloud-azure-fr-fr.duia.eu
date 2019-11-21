@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dafe5f36a59d60fa91816695cae1e1f3784df046
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 20a4168f5a7650b20357de2ec2628a0edb093993
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565305"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751644"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Phase 1 : Planification des prérequis pour les services de gestion de serveur Azure
 

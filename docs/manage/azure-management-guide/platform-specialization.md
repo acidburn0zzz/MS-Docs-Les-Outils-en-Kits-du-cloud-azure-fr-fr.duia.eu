@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5b775feb4b007629a6c93e762c8b02e5d5ef0a8a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8c3954627ee991f43c2b8d3a94dbd77746d3d4b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565448"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752942"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Spécialisation de la plateforme pour la gestion cloud
 
@@ -23,7 +23,7 @@ ms.locfileid: "73565448"
 
 ![Au-delà de la base de référence de gestion cloud](../../_images/manage/beyond-the-baseline.png)
 
-- **Opérations de charge de travail :** L'investissement par charge de travail le plus important et le plus haut degré de résilience. Nous recommandons de mettre en place des opérations de charge de travail pour environ 20 % des charges de travail qui pilotent la valeur commerciale. Cette spécialisation est généralement réservée aux charges de travail importantes ou critiques.
+- **Opérations de charge de travail :** L'investissement par charge de travail le plus important et le plus haut degré de résilience. Nous recommandons de mettre en place des opérations de charge de travail pour environ 20 % des charges de travail qui pilotent la valeur commerciale. Cette spécialisation est généralement réservée aux charges de travail très importantes ou critiques.
 - **Opérations de plateforme :** Les investissements opérationnels sont répartis sur de nombreuses charges de travail. Les améliorations de la résilience affectent toutes les charges de travail qui utilisent la plateforme définie. Nous recommandons de mettre en place des opérations de plateformes pour environ 20 % des plateformes les plus importantes. Cette spécialisation est généralement réservée aux charges de travail de niveau moyen ou critique.
 - **Base de référence de gestion améliorée :** L’investissement opérationnel le plus bas. Cette spécialisation améliore légèrement les engagements commerciaux à l’aide d’outils et de processus d’opérations natifs du cloud.
 

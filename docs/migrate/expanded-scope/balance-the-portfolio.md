@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566924"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753471"
 ---
 # <a name="balance-the-portfolio"></a>Équilibrer le portefeuille
 
@@ -76,7 +76,7 @@ Les prérequis spécifiés dans le guide de référence doivent toujours être s
 
 D’après les données du tableau figurant dans la section relative à la [documentation des résultats métier](#document-business-outcomes) ci-dessus, il existe un risque probable que le portefeuille s’oriente trop vers un modèle d’exécution axé sur la migration. Si l’expérience client était la priorité la plus élevée, un portefeuille axé sur les innovations serait plus probable. Ni l’un ni l’autre n’est bon ou mauvais, mais une trop grande inclinaison dans une direction entraîne généralement une diminution des rendements, ajoute une complexité inutile et augmente le temps d’exécution lié aux efforts d’adoption du cloud.
 
-Pour réduire la complexité, il est recommandé que le lecteur suive une approche traditionnelle de la rationalisation des portefeuilles, mais selon un modèle itératif. Les étapes suivantes décrivent un modèle qualitatif pour une telle approche :
+Pour réduire la complexité, vous devez suivre une approche traditionnelle de la rationalisation des portefeuilles, mais selon un modèle itératif. Les étapes suivantes décrivent un modèle qualitatif pour une telle approche :
 
 - L’équipe de stratégie cloud gère un backlog classé par ordre de priorité des charges de travail à migrer.
 - Les équipes de stratégie cloud et d’adoption du cloud organisent une réunion de planification des mises en production avant la fin de chaque mise en production.
@@ -90,7 +90,7 @@ Pour réduire la complexité, il est recommandé que le lecteur suive une approc
   - La charge de travail est-elle compatible avec des plateformes d’applications modernes telles qu’Azure App Service ?
 - Les réponses aux questions ci-dessus et toutes les autres analyses qualitatives requises influencent alors les ajustements du backlog classé par ordre de priorité. Ces ajustements peuvent inclure :
   - Si une charge de travail peut être remplacée par une solution PaaS, elle peut être entièrement supprimée du backlog de migration. Au minimum, une diligence raisonnable supplémentaire pour décider entre le réhébergement et le remplacement serait ajoutée en tant que tâche, ce qui réduirait temporairement la priorité de la charge de travail dans le backlog de migration.
-  - Si une charge de travail est en cours de développement (ou doit l’être), elle peut mieux s’adapter à un modèle de refactorisation/réarchitecture/régénération. Étant donné que l’innovation et la migration requièrent des compétences techniques différentes, il est souvent conseillé de gérer les applications qui s’alignent sur une approche de refactorisation/réarchitecture/régénération par le biais d’un backlog d’innovation, par opposition à un backlog de migration.
+  - Si une charge de travail est (ou devrait être) en cours de développement, elle peut mieux s’adapter à un modèle de refactorisation-réarchitecture-regénération. Étant donné que l’innovation et la migration nécessitent des compétences techniques différentes, les applications qui s’alignent sur une approche de refactorisation-réarchitecture-regénération doivent être gérées via un backlog d’innovation au lieu d’un backlog de migration.
   - Si une charge de travail fait partie d’une innovation en aval, il peut être judicieux de refactoriser la plateforme de données, mais de conserver les couches Application en tant que candidates au réhébergement. Une refactorisation mineure de la plateforme de données d’une charge de travail peut souvent être traitée dans une migration ou un backlog d’innovation. Ce résultat de rationalisation peut entraîner des éléments de travail plus détaillés dans le backlog, mais ne modifie pas les priorités.
   - Si une charge de travail n’est pas stratégique, mais qu’elle est compatible avec des plateformes informatiques modernes d’hébergement d’applications, il peut être judicieux d’effectuer une refactorisation mineure sur l’application pour la déployer en tant qu’application moderne. Cela peut contribuer aux économies globales en réduisant les exigences globales de la migration cloud en matière de licences IaaS et de système d’exploitation.
   - Si une charge de travail est une application tierce et que les données de cette charge de travail ne sont pas planifiées pour une utilisation dans le cadre d’une innovation en aval, il peut être préférable de la conserver comme option de réhébergement dans le backlog.
@@ -105,7 +105,7 @@ Pendant la migration, les activités d’équilibrage du portefeuille peuvent av
 
 La rationalisation des portefeuilles nécessite une diversité d’efforts techniques. Il est tentant pour les équipes d’adoption du cloud de faire correspondre la diversité de ce portefeuille aux efforts de migration. Les parties prenantes de l’entreprise demandent souvent à une seule équipe d’adoption du cloud de traiter l’intégralité du backlog de migration. Il s’agit rarement d’une approche souhaitable et, dans de nombreux cas, cela peut être contre-productif.
 
-Il est recommandé de segmenter ces divers efforts entre deux équipes d’adoption du cloud ou plus. En utilisant un modèle à deux équipes comme exemple de mode d’exécution, l’équipe 1 est l’équipe de migration, et l’équipe 2 est l’équipe d’innovation. Pour les efforts plus importants, ces équipes peuvent être segmentées davantage pour résoudre d’autres approches, telles que les efforts de remplacement/PaaS ou la refactorisation mineure. L’exemple suivant présente les qualifications et les rôles nécessaires pour un réhébergement, une refactorisation ou une refactorisation mineure :
+Ces différents efforts doivent être répartis entre deux équipes d’adoption du cloud ou plus. En utilisant un modèle à deux équipes comme exemple de mode d’exécution, l’équipe 1 est l’équipe de migration, et l’équipe 2 est l’équipe d’innovation. Pour les efforts plus importants, ces équipes peuvent être segmentées davantage pour résoudre d’autres approches, telles que les efforts de remplacement/PaaS ou la refactorisation mineure. L’exemple suivant présente les qualifications et les rôles nécessaires pour un réhébergement, une refactorisation ou une refactorisation mineure :
 
 **Réhébergement :** Le réhébergement requiert que les membres de l’équipe implémentent des modifications axées sur l’infrastructure. En général, un outil comme Azure Site Recovery est utilisé pour migrer des machines virtuelles ou d’autres ressources vers Azure. Ce travail s’aligne bien sur les administrateurs de centres de données ou les implémenteurs informatiques. L’équipe de migration cloud est bien structurée pour effectuer ce travail à grande échelle. Il s’agit de l’approche la plus rapide pour migrer des ressources existantes dans la plupart des scénarios.
 

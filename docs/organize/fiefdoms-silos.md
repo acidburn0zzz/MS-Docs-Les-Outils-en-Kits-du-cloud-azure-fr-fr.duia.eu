@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f0767ad4825a0b6b1506b8ee17e33eccf383325a
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566755"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753643"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimodèles organisationnels : Silos et fiefs
 
@@ -82,7 +82,7 @@ Pendant l’évaluation de la solution concurrente, utilisez les pratiques décr
 
 Quand les silos d’informations commencent à résister, il est important de ne pas cloisonner vos propres solutions. Gardez à l’esprit cette vérité simple : une solution cloud native n’est pas toujours la meilleure. Envisagez des solutions hybrides susceptibles d’offrir une opportunité d’extension des investissements existants du silo d’informations à l’avenir.
 
-Tenez également compte des versions cloud de la solution que l’équipe du silo d’informations utilise actuellement. Expérimentez ces solutions et confrontez-vous au point de vue de ceux qui évoluent dans le silo d’informations. Au minimum, vous gagnerez un nouveau point de vue. Dans de nombreuses situations, vous pouvez gagner suffisamment de respect de la part du silo d’informations pour en réduire la résistance.
+Tenez également compte des versions cloud de la solution que l’équipe du silo d’informations utilise actuellement. Expérimentez ces solutions et confrontez-vous au point de vue de ceux qui évoluent dans le silo d’informations. Au minimum, vous obtiendrez une nouvelle perspective. Dans de nombreuses situations, vous pouvez gagner suffisamment de respect de la part du silo d’informations pour en réduire la résistance.
 
 **Investissez dans l’éducation :** Les membres d’un silo d’informations sont nombreux à se passionner pour la solution en cours suite au développement de leur propre éducation. Investir dans l’éducation de ces équipes est rarement vain. Laissez le temps nécessaire à ces personnes pour suivre des séances d’autoformation, des cours ou même des conférences afin de rompre avec la routine quotidienne de la solution actuelle.
 

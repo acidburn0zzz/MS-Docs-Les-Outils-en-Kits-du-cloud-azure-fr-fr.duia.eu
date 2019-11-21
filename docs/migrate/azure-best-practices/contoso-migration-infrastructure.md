@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566496"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751847"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Déployer une infrastructure de migration
 
@@ -643,7 +643,7 @@ Azure fournit une gamme de contrôles de gouvernance pour les services et la pla
 Comme elle configure l’identité et le contrôle d’accès, Contoso a déjà commencé à mettre en place certains aspects de la gouvernance et de la sécurité. Globalement, il existe trois domaines à prendre en compte :
 
 - **Stratégie :** Azure Policy applique des règles et des effets sur vos ressources afin que ces dernières restent conformes aux exigences de l’entreprise et aux contrats de niveau de service.
-- **Verrous :** Azure vous permet de verrouiller des abonnements, des groupes de ressources et d’autres ressources, afin que ces éléments puissent uniquement être modifiés par les personnes autorisées à le faire.
+- **Verrous :** Azure vous permet de verrouiller des abonnements, des groupes de ressources et d’autres ressources, afin que ces éléments puissent être modifiés seulement par les personnes autorisées à le faire.
 - **Balises :** les ressources peuvent être contrôlées, auditées et gérées à l’aide d’étiquettes. Les balises associent des métadonnées aux ressources pour fournir des informations sur les ressources ou les propriétaires.
 
 ### <a name="set-up-policies"></a>Configurer les stratégies
@@ -654,7 +654,7 @@ Les stratégies spécifient une définition de stratégie, tandis qu’une attri
 
 Contoso souhaite commencer avec deux stratégies :
 
-- L’entreprise veut une stratégie pour garantir que les ressources peuvent uniquement être déployées dans les régions EUS2 et CUS.
+- L’entreprise veut une stratégie pour garantir que les ressources peuvent être déployées seulement dans les régions EUS2 et CUS.
 - Elle veut limiter les références de machine virtuelle aux références approuvées uniquement. L’objectif est de s’assurer qu’aucune référence (SKU) de machine virtuelle coûteuse n’est utilisée.
 
 #### <a name="limit-resources-to-regions"></a>Limiter des ressources à des régions
@@ -780,7 +780,7 @@ Les groupes de sécurité réseau associés aux groupes de sécurité d’applic
 
 **Action** | **Nom** | **Source** | **Cible** | **Port**
 --- | --- | --- | --- | ---
-AUTORISER | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+AUTORISER | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 AUTORISER | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 AUTORISER | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Deny | DenyAllInbound | Quelconque | Quelconque | Quelconque

@@ -5,17 +5,17 @@ description: Évaluer le patrimoine numérique
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a2acba3f9aa06298922d2cc95d298d3792a9ada9
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 31e76ec1f81bc38b03e8f1e480d083983dc85b14
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240012"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251418"
 ---
 # <a name="assess-the-digital-estate"></a>Évaluer le patrimoine numérique
 
@@ -31,7 +31,7 @@ Les outils suivants vous aident à évaluer votre environnement pour déterminer
 
 ## <a name="azure-migrate"></a>Azure Migrate
 
-Le service Azure Migrate évalue l’infrastructure, les applications et les données locales pour la migration vers Azure. Le service évalue la pertinence de la migration des ressources locales, effectue le dimensionnement en fonction des niveaux de performance et fournit des estimations de coût pour l’exécution des ressources locales dans Azure. Si vous envisagez d’effectuer des migrations lift-and-shift ou si vous êtes dans les premières étapes de l’évaluation de la migration, ce service vous correspond. Une fois l’évaluation terminée, Azure Migrate peut être utilisé pour exécuter la migration.
+Le service Azure Migrate évalue l’infrastructure, les applications et les données locales pour la migration vers Azure. Le service évalue la pertinence de la migration des ressources locales, effectue le dimensionnement en fonction des niveaux de performance et fournit des estimations de coût pour l’exécution des ressources locales dans Azure. Si vous envisagez d’effectuer des migrations lift-and-shift ou si vous êtes dans les premières étapes de l’évaluation de la migration, ce service vous correspond. Une fois l’évaluation terminée, Azure Migrate peut être utilisé pour effectuer la migration.
 
 ![Vue d’ensemble d’Azure Migrate](./media/assess/azuremigrate-overview-1.png)
 

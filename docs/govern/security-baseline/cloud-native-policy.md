@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9d11dff3ce8900d3dc95e1061af87313eae47a1b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565951"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752535"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Stratégie cloud native Base de référence de la sécurité
 
@@ -90,7 +90,7 @@ Malgré cet investissement dans la Base de référence de la sécurité Native c
 - **Sécuriser des machines virtuelles**. La sécurité doit être la priorité absolue de toutes les organisations, et pour la garantir, vous devez : évaluer votre état de sécurité, vous protéger contre les menaces, puis détecter et réagir rapidement aux menaces qui surviennent.
 - **Protéger le contenu des machines virtuelles**. La mise en place de sauvegardes automatiques régulières est essentielle pour vous protéger des erreurs des utilisateurs. Mais ce n'est pas suffisant ; vous devez également vous assurer que vos sauvegardes sont protégées des cyberattaques et disponibles lorsque vous en avez besoin.
 - **Superviser les applications.** Ce modèle englobe différentes tâches, notamment l'obtention d'insights sur l'intégrité de vos machines virtuelles, l'identification des interactions entre elles et l'établissement de moyens pour superviser les applications exécutées par ces machines virtuelles. Toutes ces tâches sont essentielles pour permettre à vos applications de fonctionner 24 heures sur 24.
-- **Sécuriser et auditer l’accès aux données.** Les organisations doivent auditer l’accès aux données dans son ensemble et s’appuyer sur des fonctionnalités de machine learning avancées pour identifier les écarts par rapport aux modèles d’accès corrects.
+- **Sécuriser et auditer l’accès aux données.** Les organisations doivent auditer tous les accès aux données et utiliser des fonctionnalités avancées de machine learning pour identifier les écarts par rapport aux modèles d’accès habituels.
 - **Tester le basculement.** Les opérations cloud dont les tolérances de panne sont limitées doivent pouvoir basculer ou bénéficier d’une reprise d’activité à la suite d’un incident de plateforme ou de cybersécurité. Ces procédures ne doivent pas être simplement documentées, mais également testées tous les trimestres.
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565223"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753618"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
 
@@ -85,7 +85,7 @@ Pour garantir une forme d’isolation à l’intérieur d’un réseau virtuel, 
 - Vos décisions en matière de sous-réseau dépendent de vos exigences techniques et organisationnelles.
 - Vous devez utiliser la notation CIDR pour créer des sous-réseaux.
 - Lorsque vous décidez de la plage réseau de vos sous-réseaux, sachez qu’Azure conserve les cinq adresses IP de chaque sous-réseau qui ne peuvent pas être utilisées. Par exemple, si vous créez le plus petit sous-réseau disponible, soit /29 (avec huit adresses IP), Azure conservera cinq adresses ; autrement dit, vous ne disposerez que de trois adresses utilisables que vous pourrez assigner aux hôtes sur le sous-réseau.
-- Dans la plupart des cas, il est recommandé d’utiliser /28 comme le plus petit sous-réseau.
+- Dans la plupart des cas, utilisez /28 comme plus petit sous-réseau.
 
 **Exemple :**
 
@@ -160,8 +160,8 @@ Pour une migration réussie, il est essentiel de connecter les réseaux d’entr
 
 Pour implémenter un VPN de site à site, vous devez configurer une passerelle VPN dans Azure.
 
-- Une passerelle VPN est un type spécifique de passerelle de réseau virtuel qui est utilisé pour envoyer du trafic chiffré entre un réseau virtuel Azure et un emplacement local via l’Internet public.
-- Vous pouvez également utiliser des passerelles VPN pour envoyer du trafic chiffré entre les réseaux virtuels Azure sur le réseau Microsoft.
+- Une passerelle VPN est un type spécifique de passerelle de réseau virtuel qui envoie du trafic chiffré entre un réseau virtuel Azure et un emplacement local via l’Internet public.
+- Une passerelle VPN peut aussi envoyer du trafic chiffré entre des réseaux virtuels Azure sur le réseau Microsoft.
 - Un réseau virtuel ne peut posséder qu’une seule passerelle VPN.
 - Vous pouvez créer plusieurs connexions à la même passerelle VPN. Lorsque vous créez plusieurs connexions, tous les tunnels VPN partagent la bande passante de passerelle disponible.
 - Chaque passerelle VPN Azure comprend deux instances dans une configuration de type actif / passif.
@@ -175,7 +175,7 @@ Lorsque vous configurez un VPN de site à site, procédez comme suit :
 
 - Vous avez besoin d’un réseau virtuel dont la plage d’adresses ne se chevauche pas avec le réseau local auquel se connecte le VPN.
 - Vous devez créer un sous-réseau de passerelle dans le réseau.
-- Vous devez créer une passerelle VPN, spécifier le type de passerelle (VPN) et indiquer si la passerelle est basée sur un routage ou sur une stratégie. Un VPN basé sur un routage est recommandé pour sa capacité et sa durabilité.
+- Vous devez créer une passerelle VPN, spécifier le type de passerelle (VPN) et indiquer si la passerelle est basée sur un routage ou sur une stratégie. Un VPN basé sur le routage est considéré comme ayant de meilleures capacités et comme étant plus durable.
 - Vous devez créer une passerelle de réseau local en local et configurer votre appareil VPN local.
 - Vous devez créer une connexion de VPN de site à site de basculement entre la passerelle de réseau virtuel et l’appareil en local. L’utilisation d’un VPN basé sur un routage autorise les connexions actif/passif ou actif/actif vers Azure. Un VPN basé sur un routage prend également en charge simultanément les connexions site à site (depuis n’importe quel ordinateur) et point à site (depuis un seul ordinateur).
 - Vous devez spécifier la référence SKU de la passerelle que vous souhaitez utiliser. Cela dépendra de vos besoins en charges de travail, de vos débits, de vos fonctionnalités et de vos contrats de niveau de service.

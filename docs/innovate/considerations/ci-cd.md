@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565692"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752107"
 ---
 # <a name="empower-adoption"></a>Favoriser l’adoption
 
@@ -21,7 +21,7 @@ Le test ultime de l’innovation est la réaction du client à votre invention. 
 
 ## <a name="reduce-friction-that-affects-adoption"></a>Réduire les frictions qui affectent l’adoption
 
-Il existe quelques problématiques clés pour l’adoption qui peuvent être réduites en combinant des technologies et des processus. Les lecteurs connaissant les processus d’intégration continue (CI) et de déploiement continu (CD) ou de DevOps seront familiers avec les éléments suivants. L’objectif de cet article est d’établir un point de départ pour les équipes d’adoption du cloud, qui alimentent l’innovation et les boucles de commentaires. À long terme, ce point de départ peut passer à des approches CI/CD ou DevOps plus robustes à mesure que les produits et les équipes gagnent en maturité.
+Il existe quelques problématiques clés pour l’adoption qui peuvent être réduites en combinant des technologies et des processus. Pour les lecteurs connaissant les processus d’intégration continue (CI) et de déploiement continu (CD), ou les processus DevOps, ce qui suit leur sera familier. Cet article établit un point de départ pour les équipes d’adoption du cloud, qui alimente les boucles d’innovation et de feeback. Dans le futur, ce point de départ peut passer à des approches CI/CD ou DevOps plus robustes, à mesure que les produits et les équipes gagnent en maturité.
 
 Comme précisé dans [Mesure de l’impact client](./measure.md), la validation positive de toute hypothèse requiert une itération et une détermination. Vous échouerez plus souvent que vous ne réussirez au cours de n’importe quel cycle d’innovation. Ceci est normal. Toutefois, lorsqu’un besoin du client, l’hypothèse et la solution sont alignés à grande échelle, le monde change rapidement. Cet article vise à réduire les [pics techniques](./build.md#reduce-complexity-and-delay-technical-spikes) qui ralentissent l’innovation, tout en garantissant que quelques bonnes pratiques solides sont en place. Cela permet à l’équipe de se préparer au succès, tout en répondant aux besoins actuels des clients.
 
@@ -69,7 +69,7 @@ Apprenez-en plus sur l’[intégration continue](https://docs.microsoft.com/azur
 
 Les défauts de toute solution peuvent créer des faux positifs ou des faux négatifs. Des erreurs inattendues peuvent facilement entraîner une mauvaise interprétation des métriques d’adoption des utilisateurs. Elles peuvent également entraîner des commentaires négatifs des clients qui ne représentent pas précisément le test de votre hypothèse.
 
-Lors des premières itérations d’une solution MVP, vous pouvez vous attendre à rencontrer des erreurs. Les utilisateurs précoces peuvent d’ailleurs les trouver attrayants. Dans les premières versions, les tests d’acceptation seront habituellement inexistants. Toutefois, l’un des aspects de la création avec empathie est la validation des besoins et de l’hypothèse. Les deux peuvent être effectuées par le biais de tests unitaires au niveau du code et de tests d’acceptation manuels avant le déploiement. Ensemble, elles fournissent un niveau de fiabilité lors des tests. À long terme, vous devez vous efforcer d’automatiser une série bien définie de tests de génération, d’unité et d’acceptation. Celles-ci garantissent des mesures fiables relatives à des ajustements plus granulaires de l’hypothèse et de la solution obtenue.
+Lors des premières itérations d’une solution MVP, vous pouvez vous attendre à rencontrer des erreurs. Les utilisateurs précoces peuvent d’ailleurs les trouver attrayants. Dans les premières versions, les tests d’acceptation seront habituellement inexistants. Toutefois, l’un des aspects de la création avec empathie est la validation des besoins et de l’hypothèse. Les deux peuvent être effectuées par le biais de tests unitaires au niveau du code et de tests d’acceptation manuels avant le déploiement. Ensemble, elles fournissent un niveau de fiabilité lors des tests. Vous devez vous efforcer d’automatiser une série bien définie de tests de génération, de tests unitaires et de tests d’acceptation. Celles-ci garantissent des mesures fiables relatives à des ajustements plus granulaires de l’hypothèse et de la solution obtenue.
 
 La fonctionnalité [Azure Test Plans](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) fournit des outils permettant de développer et d’exécuter des plans de test pendant l’exécution des tests manuels ou automatisés.
 

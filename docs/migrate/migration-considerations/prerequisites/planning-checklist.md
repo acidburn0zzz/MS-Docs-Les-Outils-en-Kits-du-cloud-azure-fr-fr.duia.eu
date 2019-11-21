@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564565"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753441"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Check-list de planification de l’environnement de migration : valider la préparation de l’environnement avant la migration
 
@@ -27,7 +27,7 @@ Cet article et cette check-list adoptent une approche de _réhébergement_ ou de
 
 ## <a name="governance-alignment"></a>Alignement de la gouvernance
 
-La première décision, qui est aussi et la plus importante, concernant n’importe quel environnement prêt à la migration est le choix de l’alignement de la gouvernance. Un consensus a-t-il été atteint en ce qui concerne l’alignement de la gouvernance avec la base de la migration ? Au minimum, l’équipe chargée de l’adoption du cloud doit déterminer si cette migration est accueillie dans un environnement unique avec une gouvernance limitée, une fabrique d’environnement entièrement régie ou une variante intermédiaire. Pour plus d’options et de conseils sur l’alignement de la gouvernance, consultez l’article relatif à l’[alignement de la gouvernance et la conformité](../../expanded-scope/governance-or-compliance.md).
+La première décision, qui est aussi et la plus importante, concernant n’importe quel environnement prêt à la migration est le choix de l’alignement de la gouvernance. Un consensus a-t-il été atteint en ce qui concerne l’alignement de la gouvernance avec la base de la migration ? Au minimum, l’équipe chargée de l’adoption du cloud doit déterminer si cette migration est accueillie dans un seul environnement avec une gouvernance limitée, une fabrique d’environnements avec une gouvernance complète ou une variante intermédiaire. Pour plus d’options et de conseils sur l’alignement de la gouvernance, consultez l’article relatif à l’[alignement de la gouvernance et la conformité](../../expanded-scope/governance-or-compliance.md).
 
 ## <a name="cloud-readiness-implementation"></a>Implémentation de la préparation au cloud
 
@@ -52,7 +52,7 @@ Une approche cohérente de dénomination des ressources ainsi que des schémas d
 
 ### <a name="resource-governance"></a>Gouvernance des ressources
 
-Une décision concernant les outils de gouvernance des ressources doit être prise avant la migration. Les outils n’ont pas besoin d’être entièrement implémentés, mais une direction doit être choisie et testée. Il est recommandé que l’équipe de gouvernance cloud définisse et exige l’implémentation d’un produit minimum viable (MVP) pour les outils de gouvernance avant la migration.
+Une décision concernant les outils de gouvernance des ressources doit être prise avant la migration. Les outils n’ont pas besoin d’être entièrement implémentés, mais une direction doit être choisie et testée. L’équipe de gouvernance cloud doit définir et exiger l’implémentation d’un produit minimum viable (MVP) pour les outils de gouvernance avant la migration.
 
 ## <a name="network"></a>Réseau
 

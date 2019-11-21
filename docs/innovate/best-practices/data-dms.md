@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0b717222c7e5f1906330eb5b181d675f1247bb37
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 46e21c08bac9501dd9b99fceb4ef3040cc9f0a83
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565862"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752035"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Collecter des données dans le cadre de la migration et de la modernisation de sources de données existantes
 
@@ -33,7 +33,7 @@ Pour prendre en charge les migrations Oracle et NoSQL, vous pouvez également ut
 
 ## <a name="considerations-and-guidance"></a>Aide et aspects à prendre en considération
 
-Lorsque vous utilisez Database Migration Service pour la migration et la modernisation des données, il est important de comprendre ce qui suit :
+Quand vous utilisez Azure Database Migration Service pour la migration et la modernisation des données, il est important de comprendre ce qui suit :
 
 - La plateforme actuelle pour l’hébergement de la source de données.
 - La version actuelle.

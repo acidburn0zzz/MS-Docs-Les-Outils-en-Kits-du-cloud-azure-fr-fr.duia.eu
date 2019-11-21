@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 92b9988d47dcc8ba4b7a7e3dd02a4ec9ff3ed2e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565377"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752922"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Spécialisation de la charge de travail pour la gestion cloud
 
@@ -23,7 +23,7 @@ La spécialisation de la charge de travail repose sur les concepts décrits dans
 
 ![Au-delà de la base de référence de gestion cloud](../../_images/manage/beyond-the-baseline.png)
 
-- **Opérations de charge de travail :** L'investissement par charge de travail le plus important et le plus haut degré de résilience. Nous recommandons de mettre en place des opérations de charge de travail pour environ 20 % des charges de travail qui pilotent la valeur commerciale. Cette spécialisation est généralement réservée aux charges de travail importantes ou critiques.
+- **Opérations de charge de travail :** L'investissement par charge de travail le plus important et le plus haut degré de résilience. Nous recommandons de mettre en place des opérations de charge de travail pour environ 20 % des charges de travail qui pilotent la valeur commerciale. Cette spécialisation est généralement réservée aux charges de travail très importantes ou critiques.
 - **Opérations de plateforme :** Les investissements opérationnels sont répartis sur de nombreuses charges de travail. Les améliorations de la résilience affectent toutes les charges de travail qui utilisent la plateforme définie. Nous recommandons de mettre en place des opérations de plateformes pour environ 20 % des plateformes les plus importantes. Cette spécialisation est généralement réservée aux charges de travail de niveau moyen ou critique.
 - **Base de référence de gestion améliorée :** L’investissement opérationnel le plus bas. Cette spécialisation améliore légèrement les engagements commerciaux à l’aide d’outils et de processus d’opérations natifs du cloud.
 
@@ -44,9 +44,9 @@ Lorsque la spécialisation de la charge de travail est requise, la gestion opér
 
 Dans ce modèle, les tâches opérationnelles, telles que la surveillance, le déploiement, DevOps et d’autres fonctions d’innovation, sont déplacées vers une organisation de développement d’applications ou d’unité commerciale. La plateforme cloud et l’équipe de surveillance du cloud de base fournissent toujours la ligne de base de gestion dans l’environnement.
 
-Ces équipes centralisées guident et demandent aux équipes de charge de travail des équipes spécialisées concernant les opérations de leurs charges de travail. Mais la responsabilité opérationnelle quotidienne se situe dans une équipe de gestion cloud gérée en dehors de celle-ci. Ce type de contrôle distribué est l’un des principaux indicateurs du centre d’excellence de cloud.
+Ces équipes centralisées guident et demandent aux équipes de charge de travail des équipes spécialisées concernant les opérations de leurs charges de travail. Mais la responsabilité opérationnelle quotidienne se situe dans une équipe de gestion cloud gérée en dehors de celle-ci. Ce type de contrôle distribué est un des principaux indicateurs de maturité dans un centre d’excellence cloud.
 
-## <a name="beyond-platform-specialization---application-insights"></a>Au-delà de la spécialisation de la plateforme-Application Insights
+## <a name="beyond-platform-specialization-application-insights"></a>Au-delà de la spécialisation de plateforme : Application Insights
 
 Des détails supplémentaires sur la charge de travail spécifique sont requis pour fournir des opérations de charge de travail claires. Au cours de la phase d’amélioration permanente, Application Insights sera nécessaire pour la chaîne d’outils de gestion cloud.
 

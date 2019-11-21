@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565769"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752066"
 ---
 # <a name="engage-through-applications"></a>Impliquer par le biais d’applications
 
@@ -106,7 +106,7 @@ Plus il y a de composants à gérer dans une solution, plus l’itération de la
 
 Pour préparer les nombreuses itérations nécessaires à la fourniture d’une solution innovante, il est important de réfléchir à l’avance. Par exemple, minimisez les charges opérationnelles au début du processus en privilégiant les options serverless. Dans Azure, [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) et les [conteneurs](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql) peuvent représenter des options d’application serverless.
 
-En parallèle, Azure fournit des options de données de transaction serverless qui réduisent également la surcharge. La [liste des produits de base de données](https://docs.microsoft.com/azure/#pivot=products&panel=databases) présente des options d’hébergement des données n’impliquant pas le recours à une plateforme de données complète.
+En parallèle, Azure fournit des options de données de transaction serverless qui réduisent également la surcharge. La [liste des produits de base de données](https://docs.microsoft.com/azure/#pivot=products&panel=databases) fournit des options d’hébergement des données n’impliquant pas le recours à une plateforme de données complète.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

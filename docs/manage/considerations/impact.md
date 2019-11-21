@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356460b8f2952475060c857e0b7999696be0d215
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0480a03ef488d00625115ded8f03526f959dd203
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565141"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752865"
 ---
 # <a name="business-impact-in-cloud-management"></a>Impact commercial en gestion cloud
 
@@ -41,7 +41,7 @@ Lorsque vous souhaitez prendre en compte des investissements de gestion supplém
 
 - **Pertes ajustées :** Si l’entreprise a connu un événement ayant entraîné des pertes très importantes, comme un ouragan ou autre catastrophe naturelle, il est probable qu’un expert en sinistres ait calculé les pertes réelles subies pendant la panne. Ces calculs sont basés sur les normes du secteur des assurances pour le calcul des pertes et la gestion des risques. L’utilisation des pertes ajustées pour le montant total des pertes dans un laps de temps spécifique peut amener à des projections très précises.
 
-- **Pertes historiques :** Si l’environnement local a subi des interruptions historiques dues à l’instabilité de l’infrastructure, il peut être un peu plus difficile de calculer les pertes. Toutefois, vous pouvez toujours appliquer les formules de l’expert optimisées en interne. Pour calculer les pertes historiques, comparez les deltas des ventes, du chiffre d’affaires brut et des coûts d’exploitation sur trois délais d'exécution : avant, pendant et après une panne. L’examen de ces deltas peut permettre d’identifier des pertes précises quand aucune autre donnée n’est disponible.
+- **Pertes historiques :** Si l’environnement local a subi des interruptions historiques dues à l’instabilité de l’infrastructure, il peut être un peu plus difficile de calculer les pertes. Vous pouvez cependant toujours appliquer les formules d’ajustement utilisées en interne. Pour calculer les pertes historiques, comparez les deltas des ventes, du chiffre d’affaires brut et des coûts d’exploitation sur trois délais d'exécution : avant, pendant et après une panne. L’examen de ces deltas peut permettre d’identifier des pertes précises quand aucune autre donnée n’est disponible.
 
 - **Calcul complet des pertes :** Si aucune donnée historique n’est disponible, une valeur de perte comparative peut être dérivée. Dans ce modèle, déterminez le chiffre d’affaires brut moyen par heure pour l’unité commerciale. Lorsque vous projetez des investissements en matière d’élimination des pertes, il n’est pas juste de supposer qu’une panne système complète correspond à une perte de chiffre de 100 %. Toutefois, vous pouvez partir de ce principe pour comparer grossièrement les impacts et définir la priorité des investissements.
 

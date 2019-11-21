@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 25e9ecd4d911766864d81a5ff34f00caf82e86bf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564275"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753632"
 ---
 # <a name="central-it-capabilities"></a>Fonctionnalités de l’informatique centralisée
 
 Dans le cadre de l’adoption du cloud, les capacités de gouvernance cloud ne sont pas suffisantes pour régir les efforts d’adoption. Lorsque l’adoption est progressive, les équipes ont tendance à développer de façon biologique les compétences et les processus qui devaient être prêts pour le cloud au fil du temps.
 
-Toutefois, lorsqu’une équipe chargée de l’adoption du cloud tire parti du cloud pour obtenir un résultat métier élevé, l’adoption progressive est rare. La réussite génère la réussite. Cela est également vrai pour l’adoption du cloud, mais cela se produit à l’échelle du cloud. Lorsque l’adoption du cloud s’étend d’une équipe à plusieurs équipes dans un laps de temps relativement bref, une prise en charge supplémentaire du personnel informatique existant est nécessaire. Toutefois, ces membres du personnel peuvent manquer de la formation et de l’expérience nécessaires à la prise en charge du cloud à l’aide des outils informatiques cloud natifs. Cela conduit souvent à la formation d’une équipe d’informatique centralisée qui régit le cloud.
+Cependant, quand une équipe chargée de l’adoption du cloud utilise le cloud pour obtenir un résultat métier de premier plan, l’adoption progressive se fait rarement. La réussite génère la réussite. Cela est également vrai pour l’adoption du cloud, mais cela se produit à l’échelle du cloud. Lorsque l’adoption du cloud s’étend d’une équipe à plusieurs équipes dans un laps de temps relativement bref, une prise en charge supplémentaire du personnel informatique existant est nécessaire. Toutefois, ces membres du personnel peuvent manquer de la formation et de l’expérience nécessaires à la prise en charge du cloud à l’aide des outils informatiques cloud natifs. Cela conduit souvent à la formation d’une équipe d’informatique centralisée qui régit le cloud.
 
 > [!CAUTION]
 > Bien qu’il s’agisse d’une étape de maturité courante, elle peut présenter un risque élevé d’adoption, bloquant potentiellement l’innovation et les efforts de migration, en l’absence de gestion efficace. Consultez la section Risque ci-dessous pour savoir comment atténuer le risque que la centralisation devienne un antimodèle culturel.
@@ -105,7 +105,7 @@ Cet exemple narratif illustre l’approche adoptée par une équipe informatique
 
 La société Contoso, LLC a adopté un modèle d’informatique centralisée pour la prise en charge des ressources cloud de l’entreprise. Pour fournir ce modèle, elle a implémenté des contrôles étroits pour différents services partagés tels que les connexions réseau entrantes. Cela a permis de réduire l’exposition de son environnement cloud et de fournir un appareil unique de « basculement » pour bloquer tout le trafic en cas de violation. Sa stratégie Base de référence de la sécurité indique que tout le trafic entrant doit traverser un appareil partagé géré par l’équipe informatique centralisée.
 
-Toutefois, l’une de ses équipes d’adoption du cloud requiert à présent un environnement avec une connexion réseau d’entrée dédiée et spécialement configurée pour tirer parti d’une technologie cloud spécifique. Une équipe informatique centralisée immature pourrait simplement refuser la demande et donner la priorité aux processus existants et non aux besoins d’adoption. L’équipe informatique centralisée de Contoso fonctionne différemment. Elle a rapidement identifié une solution simple en quatre parties à ce dilemme : classification, négociation, isolation et automatisation.
+Cependant, une de ses équipes d’adoption du cloud exige à présent un environnement avec une connexion réseau d’entrée dédiée et spécialement configurée pour utiliser une technologie cloud spécifique. Une équipe informatique centralisée immature pourrait simplement refuser la demande et donner la priorité aux processus existants et non aux besoins d’adoption. L’équipe informatique centralisée de Contoso fonctionne différemment. Elle a rapidement identifié une solution simple en quatre parties à ce dilemme : classification, négociation, isolation et automatisation.
 
 **Classification :** Étant donné que l’équipe chargée de l’adoption du cloud gérait les premières étapes de création d’une nouvelle solution et n’avait pas de données sensibles ou de besoins en support stratégique, les ressources de l’environnement étaient classées comme étant à faible risque et non critiques. Une classification efficace est un signe de maturité dans l’informatique centralisée. La classification de l’ensemble des ressources et des environnements permet d’obtenir des stratégies plus claires.
 

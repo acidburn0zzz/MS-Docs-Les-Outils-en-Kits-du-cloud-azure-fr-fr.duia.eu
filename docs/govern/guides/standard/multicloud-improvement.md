@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566232"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753071"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Guide de gouvernance pour les entreprises standard : Amélioration multicloud
 
@@ -85,4 +85,4 @@ L’adoption multicloud doit se limiter au périmètre nécessaire, défini selo
 
 ## <a name="conclusion"></a>Conclusion
 
-Cette série d’articles décrit le développement incrémental des bonnes pratiques de gouvernance, conformément aux expériences de cette entreprise fictive. En commençant doucement mais avec des bases solides, l’entreprise a pu rapidement évoluer tout en appliquant la bonne quantité de gouvernance au bon moment. Le MVP en lui-même n’a pas protégé le client. En fait, il a créé les bases permettant de gérer les risques et d’ajouter de la protection. À partir de là, des couches de gouvernance ont été appliquées pour traiter les risques tangibles. Le parcours présenté ici n’est pas conforme à 100 % avec les expériences d’un lecteur. Il doit plutôt être considéré comme un modèle pour la gouvernance incrémentielle. Il est conseillé au lecteur d’adapter ces meilleures pratiques à ses propres contraintes et exigences de gouvernance.
+Cette série d’articles décrit le développement incrémental des bonnes pratiques de gouvernance, conformément aux expériences de cette entreprise fictive. En commençant doucement mais avec des bases solides, l’entreprise a pu rapidement évoluer tout en appliquant la bonne quantité de gouvernance au bon moment. Le MVP en lui-même n’a pas protégé le client. En fait, il a créé les bases permettant de gérer les risques et d’ajouter de la protection. À partir de là, des couches de gouvernance ont été appliquées pour traiter les risques tangibles. Le parcours présenté ici n’est pas conforme à 100 % avec les expériences d’un lecteur. Il doit plutôt être considéré comme un modèle pour la gouvernance incrémentielle. Adaptez ces bonnes pratiques à vos propres contraintes et exigences de gouvernance.

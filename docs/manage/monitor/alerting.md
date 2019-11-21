@@ -1,5 +1,5 @@
 ---
-title: Guide de supervision du cloud - Alertes
+title: 'Guide de supervision du cloud : Génération d’alertes'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Choisir quand utiliser Azure Monitor ou System Center Operations Manager dans Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
+ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564993"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912500"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guide de supervision du cloud : Génération d’alertes
 
@@ -67,7 +67,7 @@ Azure Monitor possède quatre types d’alertes, toutes globalement liées au r�
 
 - [Alerte de journal d’activité](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log) : Alerte sur les éléments du magasin de journaux d’activités, à l’exception des données de Service Health.
 
-- [Alerte Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json) : Type spécial d’alerte, uniquement pour les problèmes de Service Health provenant du magasin de journaux d’activités.
+- [Alerte Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json) : Type spécial d’alerte utilisé seulement pour les problèmes Service Health provenant du magasin de journaux d’activité, comme les pannes et la maintenance planifiée à venir. Notez que ce type d’alerte est configuré via [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), un service associé à Azure Monitor.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Activer les alertes via des outils partenaires
 
@@ -88,7 +88,7 @@ Azure Monitor pour machines virtuelles | Les critères d’intégrité sont des 
 
 ### <a name="fastest-speed-driven-by-cost"></a>Vitesse la plus rapide pilotée par le coût
 
-La latence est une des décisions les plus critiques nécessitant des alertes et la résolution rapide des problèmes affectant votre service. Si vous avez besoin d’alertes en quasi temps réel dans les cinq minutes, évaluez d’abord si vous avez ou pouvez recevoir des alertes sur vos données de télémétrie là où elles sont stockées par défaut. En général, cette stratégie est également l’option la moins chère, car l’outil que vous utilisez envoie déjà ses données à cet emplacement.
+La latence est une des décisions les plus critiques nécessitant des alertes et la résolution rapide des problèmes affectant votre service. Si vous avez besoin d’alertes en quasi temps réel dans les cinq minutes, évaluez d’abord si vous avez ou si vous pouvez recevoir des alertes sur vos données de télémétrie là où elles sont stockées par défaut. En général, cette stratégie est également l’option la moins chère, car l’outil que vous utilisez envoie déjà ses données à cet emplacement.
 
 Cela dit, quelques nuances importantes sont à considérer pour cette règle.
 

@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656663"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753774"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
 
@@ -195,13 +195,13 @@ Outre des fonctionnalités de protection avancée contre les menaces, [Azure Sec
 > [!TIP]
 >Azure Security Center est un outil puissant régulièrement amélioré avec de nouvelles fonctionnalités que vous pouvez utiliser pour détecter les menaces et protéger votre entreprise. Il est vivement recommandé de toujours activer Azure Security Center.
 
-### <a name="azure-resource-locks"></a>Verrous de ressource Azure
+### <a name="locks-for-azure-resources"></a>Verrous pour les ressources Azure
 
-Plus votre organisation ajoute des services de base aux abonnements, plus il est important d’éviter une interruption de service. Un type d’interruption que nous observons souvent est la conséquence inattendue de la suppression accidentelle de ressources par des scripts et des outils utilisés avec un abonnement Azure. Les [verrous de ressource](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) vous permettent de limiter les opérations sur les ressources importantes au cas où leur suppression ou leur modification aurait un impact significatif. Les verrous peuvent s’appliquer à un abonnement, un groupe de ressources ou même des ressources individuelles. Le cas d’utilisation courant consiste à appliquer des verrous aux ressources fondamentales que sont les réseaux virtuels, les passerelles, les groupes de sécurité réseau et les comptes de stockage de clés.
+Plus votre organisation ajoute des services de base aux abonnements, plus il est important d’éviter une interruption de service. Une interruption courante se produit quand un script ou un outil s’exécutant dans un abonnement Azure supprime involontairement une ressource. Les [verrous](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) limitent les opérations sur les ressources importantes, dont la modification ou la suppression aurait un impact significatif. Vous pouvez appliquer des verrous à des abonnements, à des groupes de ressources ou à des ressources individuelles. Appliquez des verrous aux ressources fondamentales, comme les réseaux virtuels, les passerelles, les groupes de sécurité réseau et les comptes de stockage de clés.
 
-### <a name="secure-devops-toolkit"></a>Kit de ressources DevOps sécurisé
+### <a name="secure-devops-kit-for-azure"></a>Kit DevOps sécurisé pour Azure
 
-Le kit DevOps sécurisé pour Azure (AzSK) est une collection de scripts, d’outils, d’extensions et de fonctionnalités d’automatisation qui a été créée à l’origine par la propre équipe informatique de Microsoft et [publiée en open source via GitHub ](https://github.com/azsk/DevOpsKit-docs). AzSK répond aux besoins de sécurité de bout en bout des abonnements et des ressources pour les équipes qui ont recours à une automatisation étendue et qui intègrent graduellement la sécurité dans des flux de travail DevOps natifs, favorisant ainsi la sécurisation des tâches DevOps dans les six domaines suivants :
+Le kit DevOps sécurisé pour Azure (AzSK) est une collection de scripts, d’outils, d’extensions et de fonctionnalités d’automatisation qui a été créée à l’origine par la propre équipe informatique de Microsoft et [publiée en open source via GitHub ](https://github.com/azsk/devopskit-docs). AzSK répond aux besoins de sécurité de bout en bout des abonnements et des ressources pour les équipes qui ont recours à une automatisation étendue et qui intègrent graduellement la sécurité dans des flux de travail DevOps natifs, favorisant ainsi la sécurisation des tâches DevOps dans les six domaines suivants :
 
 - Sécurisation de l’abonnement
 - Sécurisation du développement
@@ -210,9 +210,9 @@ Le kit DevOps sécurisé pour Azure (AzSK) est une collection de scripts, d’ou
 - Alertes et supervision
 - Gouvernance des risques du cloud
 
-![Kit de ressources Azure DevOps](../_images/reference/secure-devops-kit.png)
+![Diagramme général du kit DevOps sécurisé pour Azure](../_images/reference/secure-devops-kit.png)
 
-AzSK est un ensemble complet d’outils, de scripts et d’informations qui représente une part importante d’un plan de gouvernance Azure complet. Il est essentiel de l’incorporer dans votre structure de façon à aider votre organisation à atteindre ses objectifs de gestion des risques.
+AzSK est un ensemble complet d’outils, de scripts et d’informations qui représentent une partie importante d’un plan de gouvernance Azure complet. Il est essentiel de l’incorporer dans votre structure de façon à aider votre organisation à atteindre ses objectifs de gestion des risques.
 
 ### <a name="azure-update-management"></a>Azure Update Management
 

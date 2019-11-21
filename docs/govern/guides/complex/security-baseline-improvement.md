@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566265"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753212"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence de la sécurité
 
@@ -98,9 +98,9 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Amélioration incrémentielle des bonnes pratiques
 
-Cette section de l’article va modifier la conception du MVP de gouvernance, afin d’inclure de nouvelles stratégies Azure ainsi qu’une implémentation d’Azure Cost Management. Ensemble, ces deux modifications de la conception permettront de répondre aux nouvelles instructions de la stratégie d’entreprise.
+Cette section modifie la conception du MVP de gouvernance, afin d’inclure de nouvelles stratégies Azure ainsi qu’une implémentation d’Azure Cost Management. Ensemble, ces deux modifications de la conception permettront de répondre aux nouvelles instructions de la stratégie d’entreprise.
 
-Les nouvelles meilleures pratiques se répartissent dans deux catégories : Informatique d’entreprise (hub) et Adoption du cloud (spoke).
+Les nouvelles bonnes pratiques se répartissent en deux catégories : informatique d’entreprise (hub) et adoption du cloud (spoke).
 
 **Établissement d’un abonnement informatique d’entreprise hub-and-spoke pour centraliser la Base de référence de la sécurité :** Dans cette bonne pratique, la capacité de gouvernance existante est encapsulée par une [topologie hub-and-spoke avec des services partagés](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), accompagnée de quelques ajouts importants apportés par l’équipe de gouvernance cloud.
 
@@ -108,7 +108,7 @@ Les nouvelles meilleures pratiques se répartissent dans deux catégories : Inf
 2. Modèle hub-and-spoke :
     1. Les instructions de l’architecture de référence de la [topologie hub-and-spoke avec des services partagés](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) peuvent servir à générer des modèles Resource Manager pour les ressources nécessaires dans un hub informatique d’entreprise.
     2. À l'aide de ces modèles, cette structure peut être reproductible, dans le cadre d’une stratégie de gouvernance centrale.
-    3. En plus de l’architecture de référence actuelle, il est conseillé de créer un modèle de groupe de sécurité réseau, qui capture tout blocage de port ou exigence de mise en liste verte permettant au réseau virtuel d’héberger le pare-feu. Ce groupe de sécurité réseau diffère des groupes précédents, car il est le premier groupe de sécurité réseau à autoriser le trafic public vers un réseau virtuel.
+    3. En plus de l’architecture de référence actuelle, un modèle de groupe de sécurité réseau doit être créé pour capturer les exigences quant aux blocages ou à la mise en liste verte des ports pour le réseau virtuel destiné à héberger le pare-feu. Ce groupe de sécurité réseau diffère des groupes précédents, car il est le premier groupe de sécurité réseau à autoriser le trafic public vers un réseau virtuel.
 3. Créez des stratégies Azure. Créez une stratégie nommée `Hub NSG Enforcement` pour appliquer la configuration du groupe de sécurité réseau attribué à un réseau virtuel créé dans cet abonnement. Appliquez les stratégies intégrées pour la configuration des invités comme suit :
     1. Vérifiez que les serveurs web Windows utilisent des protocoles de communication sécurisés.
     2. Vérifiez que les paramètres de sécurité des mots de passe sont correctement définis dans les machines Linux et Windows.
@@ -134,7 +134,7 @@ Dans les modifications itératives précédentes apportées à la bonne pratique
     1. L’architecture de référence de la section précédente, la [topologie hub-and-spoke avec des services partagés](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), a généré un modèle Resource Manager permettant le peering de réseau virtuel.
     2. Ce modèle peut faire office de guide pour modifier le modèle DMZ à partir de la précédente itération de gouvernance.
     3. Nous ajoutons à présent le VNet Peering au réseau virtuel DMZ précédemment connecté à l’appareil de périmètre local via VPN.
-    4. *** Il est aussi vivement conseillé de supprimer le VPN de ce modèle et de veiller à ce qu'aucun trafic ne soit directement routé vers le centre de données local, sans transiter via l'abonnement informatique d'entreprise et la solution de pare-feu. Vous pouvez également définir ce VPN comme circuit de basculement en cas de défaillance d’un circuit ExpressRoute.
+    4. *** Le VPN doit aussi être supprimé de ce modèle de façon à garantir qu’aucun trafic n’est directement routé vers le centre de données local sans transiter via l’abonnement du département informatique de l’entreprise et la solution de pare-feu. Vous pouvez également définir ce VPN comme circuit de basculement en cas de défaillance d’un circuit ExpressRoute.
     5. Une [configuration réseau](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) supplémentaire sera requise par Azure Automation pour appliquer la configuration d'état souhaité aux machines virtuelles hébergées.
 2. Modifiez le groupe de sécurité réseau. Bloquez tout le trafic public **et** dirigez le trafic local vers le groupe de sécurité réseau. Seul le trafic entrant doit transiter via l'homologue de réseau virtuel dans l'abonnement informatique d'entreprise.
     1. Dans le cadre de la précédente itération, un groupe de sécurité réseau a été créé pour bloquer tout le trafic public et mettre le trafic interne sur liste verte. À présent, nous voulons légèrement déplacer ce groupe de sécurité réseau.

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 415e7b456cc342f7a749cd98a55e573a46563bf4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564550"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753686"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Se préparer à la complexité technique : gestion agile des changements
 
@@ -107,7 +107,7 @@ Pour une petite migration avec une équipe de migration autonome, un seul sprint
 
 ### <a name="sprint-backlog-data-points"></a>Points de données du backlog de sprint
 
-Le résultat d’un sprint capture et documente les changements apportés à une charge de travail, fermant ainsi la boucle de gestion des changements. Lorsqu’un sprint est terminé, au minimum, les informations suivantes doivent être documentées. Tout au long de l’exécution d’un sprint, cette documentation doit être remplie en tandem avec les éléments de travail techniques.
+Le résultat d’un sprint capture et documente les changements apportés à une charge de travail, fermant ainsi la boucle de gestion des changements. Quand c’est terminé, au minimum, les éléments suivants doivent être documentés. Tout au long de l’exécution d’un sprint, cette documentation doit être remplie en tandem avec les éléments de travail techniques.
 
 - **Ressources déployées.** Toutes les ressources déployées dans le cloud pour héberger la charge de travail.
 - **Correction.** Toute modification apportée aux ressources pour préparer la migration cloud.

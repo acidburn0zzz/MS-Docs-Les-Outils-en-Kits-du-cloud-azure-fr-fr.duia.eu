@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cfe7fdfa47b04cbcff7e09b18c5ba6a0b4fec795
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8cdd9a48d8d229fdca7cba383d677a49525d06cc
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565524"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752967"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Base de référence de gestion améliorée dans Azure
 
@@ -67,7 +67,7 @@ Ce tableau présente quelques processus, outils et effets potentiels courants co
 
 Azure Automation fournit un système centralisé pour la gestion des contrôles automatisés. Dans Azure Automation, vous pouvez exécuter des processus de correction, de mise à l’échelle et d’optimisation simples en réponse aux mesures environnementales. Ces processus réduisent la surcharge associée au traitement manuel des incidents.
 
-Plus important encore, la correction automatisée peut être délivrée en temps quasi-réel, ce qui réduit considérablement les interruptions des processus métier. Une étude des interruptions métier les plus courantes permettra d’identifier les activités pouvant être automatisées au sein de votre environnement.
+Plus important encore, la correction automatisée peut être délivrée en quasi temps réel, ce qui réduit considérablement les interruptions des processus métier. Une étude des interruptions d’activité les plus courantes identifie les activités qui être automatisées au sein de votre environnement.
 
 ### <a name="runbooks"></a>Runbooks
 

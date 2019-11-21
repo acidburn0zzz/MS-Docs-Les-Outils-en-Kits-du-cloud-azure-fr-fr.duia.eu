@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c57152b92826539a236227636ee115c19bd70e7a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8085a87f114011ce9a1089c0427ff9c592b33d15
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565747"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752022"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Créer un consensus autour de la valeur métier de l’innovation
 
@@ -57,7 +57,7 @@ Le framework d’adoption du cloud doit suivre une procédure comprenant les pha
 Ces opportunités relatives à la perspective globale révèlent souvent des moyens d’améliorer l’alignement de la solution innovante sur la stratégie cloud. Cet exercice aboutit souvent aux deux résultats suivants :
 
 - Ces conversations peuvent aider votre équipe à améliorer la stratégie de cloud de votre organisation et à mieux répondre aux besoins importants des clients. Ce changement peut renforcer le soutien de votre équipe par la direction.
-- À l’inverse, ces entretiens peuvent montrer que votre équipe d’adoption du cloud devrait s’investir dans une solution différente. Dans ce cas, envisagez de migrer cette solution avant de continuer à investir dans l’innovation. Sinon, ces entretiens peuvent indiquer que vous adoptez une approche développeur citoyenne pour tester d’abord la valeur métier. Dans les deux cas, ils permettent à votre équipe d’éviter un gros investissement au rendement limité pour l’entreprise.
+- À l’inverse, ces entretiens peuvent montrer que votre équipe d’adoption du cloud devrait s’investir dans une solution différente. Dans ce cas, envisagez de migrer cette solution avant de continuer à investir dans l’innovation. Ces entretiens peuvent aussi indiquer que vous adoptez une approche de développeur citoyen pour tester d’abord la valeur métier. Dans les deux cas, ils permettent à votre équipe d’éviter un gros investissement au rendement limité pour l’entreprise.
 
 ## <a name="address-solution-alignment"></a>Améliorer l’alignement de la solution
 
@@ -65,7 +65,7 @@ Il n’est pas rare que les réponses aux questions une et deux ne coïncident p
 
 - **Opportunité d’hypothèse :** souvent, différentes parties prenantes et équipes de développement présentent des attentes excessives vis-à-vis d’une solution. Des attentes peu réalistes peuvent être un signe que l’hypothèse est trop vague. Suivez les conseils pour [développer une solution en faisant preuve d’empathie vis-à-vis du client](./considerations/build.md) afin d’élaborer une hypothèse plus claire.
 - **Opportunité de développement :** il est possible que les équipes soient mal alignées parce qu’elles ne sont pas d’accord sur la façon de répondre aux besoins du client. Ce désaccord indique généralement que l’équipe est [retardée par un pic d’évolution technique prématuré](./considerations/build.md#reduce-complexity-and-delay-technical-spikes). Pour que l’équipe reste concentrée sur le client, commencez la première itération et développez un petit produit minimum viable (MVP) pour traiter une partie de l’hypothèse. Pour plus d’informations sur la façon d’aider l’équipe à avancer, consultez [Développer des inventions numériques](./considerations/invention.md).
-- **Opportunité de formation :** L’une ou l’autre équipe peut être mal alignée parce qu’elle doit satisfaire à des exigences techniques approfondies et à des exigences fonctionnelles étendues. Ceci peut aboutir à une opportunité de formation aux méthodologies agiles. Quand la culture de l’équipe n’est pas prête pour les processus agiles, innover et suivre le rythme du marché peut représenter un défi.  Pour connaître les ressources de formation sur l’approche DevOps et les pratiques agiles, consultez :
+- **Opportunité de formation :** L’une ou l’autre équipe peut être mal alignée, car elle doit satisfaire à des exigences techniques approfondies et à des exigences fonctionnelles étendues. Ceci peut aboutir à une opportunité de formation aux méthodologies agiles. Quand la culture de l’équipe n’est pas prête pour les processus agiles, innover et suivre le rythme du marché peut représenter un défi.  Pour connaître les ressources de formation sur l’approche DevOps et les pratiques agiles, consultez :
   - [Faire évoluer vos activités DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Générer des applications avec Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
   - [Déployer des applications avec Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
@@ -74,6 +74,7 @@ Le suivi de la méthodologie et des outils de gestion du backlog dans chaque sec
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après avoir aligné et communiqué votre proposition de valeur métier, vous pouvez commencer à développer votre solution.
+Après avoir aligné et communiqué votre proposition de valeur métier, vous êtes prêt à commencer à développer votre solution.
+
 > [!div class="nextstepaction"]
 > [Revenir aux exercices sur l’innovation en vue des étapes suivantes](./index.md)

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 44e566d1f2936c51e61f8a1bd4211af2000f454b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 356d6c463e97553cb56d132c4f94e812a5b1c656
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565066"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752800"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Protéger et récupérer dans la gestion cloud
 
@@ -31,7 +31,7 @@ Au minimum, chaque ressource prenant en charge une charge de travail donnée doi
 
 ### <a name="recovery-time-objectives-rto"></a>Objectifs de délai de récupération (RTO)
 
-En cas de sinistre, le RTO est le laps de temps nécessaire pour remettre un système dans son d’avant l’incident. Pour chaque charge de travail, cela inclut le temps requis pour restaurer les fonctionnalités minimales nécessaires pour les machines virtuelles et les applications. Il comprend également le temps nécessaire pour restaurer les données requises par les applications.
+En cas de sinistre, l’objectif de délai de récupération est le laps de temps nécessaire pour remettre un système dans son état d’avant l’incident. Pour chaque charge de travail, cela inclut le temps requis pour restaurer les fonctionnalités minimales nécessaires pour les machines virtuelles et les applications. Il comprend également le temps nécessaire pour restaurer les données requises par les applications.
 
 En termes commerciaux, le RTO représente la durée pendant laquelle le processus d’entreprise sera hors service. Pour les charges de travail stratégiques, cette variable doit être relativement faible, ce qui permet une reprise rapide des processus d’entreprise. Pour les charges de travail de priorité plus basse, un niveau standard de RTO peut ne pas avoir d’impact notable sur le niveau de performance de l’entreprise.
 
@@ -41,7 +41,7 @@ La ligne de base relative à la gestion doit établir un objectif de délai de r
 
 Dans la plupart des systèmes de gestion du cloud, les données sont capturées et stockées régulièrement grâce à une certaine forme de protection des données. Le point de récupération désigne la dernière fois que les données ont été capturées. En cas de défaillance d’un système, celui-ci peut être restauré uniquement au point de récupération le plus récent.
 
-Si un système a un objectif de point de récupération mesuré en heures ou en jours, une défaillance du système entraînerait la perte de données pour ces heures ou jours entre le dernier point de récupération et la panne. Un RPO d’un jour entraînerait théoriquement la perte de toutes les transactions dans la journée précédant la défaillance.
+Si un système a un objectif de point de récupération mesuré en heures ou en jours, une défaillance du système entraînerait la perte de données pour ces heures ou jours entre le dernier point de récupération et la panne. Un objectif de point de récupération d’un jour entraînerait théoriquement la perte de toutes les transactions de la journée précédant la défaillance.
 
 Pour les systèmes stratégiques, l’utilisation d’un RPO mesuré en minutes ou en secondes peut être plus appropriée pour éviter une perte de revenus. Toutefois, un RPO plus court entraîne généralement une augmentation des coûts de gestion globaux.
 
@@ -49,7 +49,7 @@ Pour aider à réduire les coûts, une ligne de base relative à la gestion doit
 
 ## <a name="protect-and-recover-workloads"></a>Protéger et récupérer des charges de travail
 
-La plupart des charges de travail dans un environnement informatique prennent en charge un processus d’entreprise ou technique très petit. Les systèmes qui n’ont pas d’impact systémique sur les opérations d’entreprise ne justifient souvent pas les investissements accrus nécessaires pour récupérer rapidement ou minimaliser la perte de données. L’établissement d’une ligne de base permet à l’entreprise de comprendre clairement quel niveau de support relatif à la récupération peut être offert à un tarif cohérent et facile à gérer. Cette compréhension aide les parties prenantes de l’entreprise à déterminer la valeur d’un investissement accru en matière de récupération.
+La plupart des charges de travail dans un environnement informatique prennent en charge un processus d’entreprise ou technique spécifique. Les systèmes qui n’ont pas d’impact systémique sur les opérations d’entreprise ne justifient souvent pas les investissements accrus nécessaires pour récupérer rapidement ou minimaliser la perte de données. L’établissement d’une ligne de base permet à l’entreprise de comprendre clairement quel niveau de support relatif à la récupération peut être offert à un tarif cohérent et facile à gérer. Cette compréhension aide les parties prenantes de l’entreprise à déterminer la valeur d’un investissement accru en matière de récupération.
 
 Pour la plupart des équipes de gestion du cloud, une ligne de base améliorée avec des engagements RPO/RTO spécifiques pour différentes ressources offre la voie la plus favorable aux engagements commerciaux réciproques. Les sections suivantes décrivent quelques lignes de base améliorées courantes qui permettent à l’entreprise d’ajouter facilement des fonctionnalités de protection et de récupération par le biais d’un processus reproductible.
 
@@ -57,7 +57,7 @@ Pour la plupart des équipes de gestion du cloud, une ligne de base améliorée 
 
 Les données constituent sans doute la ressource la plus précieuse dans l’économie numérique. La possibilité de protéger et de récupérer des données de manière plus efficace est la ligne de base améliorée la plus courante. Pour les données qui alimentent une charge de travail en production, la perte de données peut être directement comparée à la perte de revenus ou de rentabilité. Nous encourageons généralement les équipes de gestion du cloud à offrir un niveau de ligne de base relative à la gestion améliorée qui prend en charge les plateformes de données courantes.
 
-Avant que les équipes de gestion de cloud n’implémentent des opérations de plateforme, il est courant qu’elles prennent en charge des opérations améliorées pour une plateforme de données PaaS. Par exemple, il est facile pour une équipe de gestion du cloud d’imposer une plus grande fréquence de sauvegarde ou de réplication multirégionale pour les solutions Azure SQL Database ou Cosmo Azure Cosmos DB. De cette façon, l’équipe de développement peut facilement améliorer le RPO en modernisant simplement ses plateformes de données.
+Avant que les équipes de gestion de cloud n’implémentent des opérations de plateforme, il est courant qu’elles prennent en charge des opérations améliorées pour une plateforme de données PaaS. Par exemple, il est facile pour une équipe de gestion du cloud d’imposer une plus grande fréquence de sauvegarde ou de réplication multirégionale pour les solutions Azure SQL Database ou Azure Cosmos DB. De cette façon, l’équipe de développement peut facilement améliorer le RPO en modernisant simplement ses plateformes de données.
 
 Pour en savoir plus sur ce processus de réflexion, consultez [Discipline d’opérations de plateforme](./platform.md).
 
@@ -65,7 +65,7 @@ Pour en savoir plus sur ce processus de réflexion, consultez [Discipline d’op
 
 La plupart des charges de travail ont une certaine dépendance envers les machines virtuelles, qui hébergent différents aspects de la solution. Pour que la charge de travail prenne en charge un processus d’entreprise après une défaillance du système, un certain nombre de machines virtuelles doivent être récupérées rapidement.
 
-Chaque minute de temps d’arrêt de ces machines virtuelles peut s’assimiler à une perte de revenus ou à une rentabilité réduite. Lorsque le temps d’arrêt des machines virtuelles a un impact direct sur le rendement budgétaire de l’entreprise, le RTO est très important. Les machines virtuelles peuvent être récupérées plus rapidement grâce à la réplication sur un site secondaire et à la récupération automatisée. Ce modèle est appelé mode de récupération chaud/tiède. Au plus haut niveau de récupération, les machines virtuelles peuvent être répliquées sur un site secondaire entièrement fonctionnel. Cette approche plus coûteuse est appelée mode de récupération à chaud ou à haute disponibilité.
+Chaque minute de temps d’arrêt de ces machines virtuelles peut provoquer une perte de chiffre d’affaires ou une rentabilité réduite. Lorsque le temps d’arrêt des machines virtuelles a un impact direct sur le rendement budgétaire de l’entreprise, le RTO est très important. Les machines virtuelles peuvent être récupérées plus rapidement grâce à la réplication sur un site secondaire et à la récupération automatisée. Ce modèle est appelé mode de récupération chaud/tiède. Au plus haut niveau de récupération, les machines virtuelles peuvent être répliquées sur un site secondaire entièrement fonctionnel. Cette approche plus coûteuse est appelée mode de récupération à chaud ou à haute disponibilité.
 
 Chacun des modèles précédents réduit l’objectif de délai de récupération (ROT), ce qui permet de restaurer plus rapidement les capacités des processus d’entreprise. Toutefois, chaque modèle entraîne également des coûts de gestion cloud considérablement accrus.
 
@@ -73,7 +73,7 @@ Pour en savoir plus sur ce processus de réflexion, consultez [Discipline d’op
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après que ce composant de la ligne de base relative à la gestion a été atteint, l’équipe peut anticiper les pannes afin de les éviter en exécutant des [opérations relatives aux plateformes](./platform.md) et des [opérations relatives aux charges de travail](./workload.md).
+Une fois réalisé ce composant de la base de référence pour la gestion, l’équipe peut anticiper les pannes afin de les éviter en effectuant des [opérations sur les plateformes](./platform.md) et des [opérations sur les charges de travail](./workload.md).
 
 > [!div class="nextstepaction"]
 > [Opérations relatives aux plateformes](./platform.md)

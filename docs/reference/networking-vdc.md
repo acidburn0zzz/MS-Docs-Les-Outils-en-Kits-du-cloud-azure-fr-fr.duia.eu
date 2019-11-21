@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 526c7846de947b9098f7d9d0b7458a314177a9c8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566687"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753731"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Centres de données virtuels : perspective réseau
 
@@ -194,7 +194,7 @@ Le diagramme précédent illustre la relation entre les projets, les utilisateur
 
 Dans le contexte informatique, un environnement (ou niveau) désigne généralement un système dans lequel plusieurs applications sont déployées et exécutées. Les grandes entreprises utilisent un environnement de développement (dans lequel les modifications sont effectuées et testées) et un environnement de production (destiné aux utilisateurs finaux). Ces environnements sont séparés, le plus souvent par des environnements intermédiaires, afin d’autoriser l’échelonnement des phases de déploiement (lancement), de test et de restauration en cas de problème. Les architectures de déploiement varient sensiblement, mais le processus de base qui consiste à commencer par le niveau développement (DEV) et à terminer par le niveau production (PROD) reste généralement appliqué.
 
-Une architecture communément employée pour ces types d’environnement multiniveau comprend les environnements Azure DevOps pour le développement et les tests, UAT pour la préproduction, et les environnements de production. Les organisations peuvent tirer profit d’un ou de plusieurs locataires Azure AD afin de définir l’accès et les droits pour ces environnements. Le diagramme précédent illustre un cas d’utilisation de deux locataires Azure AD distincts : l’un pour Azure DevOps et UAT, et l’autre exclusivement destiné à la production.
+Une architecture communément employée pour ces types d’environnement multiniveau comprend les environnements Azure DevOps pour le développement et les tests, UAT pour la préproduction, et les environnements de production. Les organisations peuvent utiliser un ou plusieurs locataires Azure AD afin de définir l’accès et les droits pour ces environnements. Le diagramme précédent illustre un cas d’utilisation de deux locataires Azure AD distincts : l’un pour Azure DevOps et UAT, et l’autre exclusivement destiné à la production.
 
 La présence de différents locataires Azure AD met en œuvre la séparation entre les environnements. Le même groupe d’utilisateurs, par exemple le groupe du service informatique central, doit s’authentifier à l’aide d’un URI distinct pour accéder à un autre locataire Azure AD et modifier les rôles ou autorisations des environnements Azure DevOps ou de production d’un projet. L’utilisation d’authentifications utilisateur distinctes pour accéder à différents environnements réduit les éventuelles interruptions et autres problèmes dus à des erreurs humaines.
 

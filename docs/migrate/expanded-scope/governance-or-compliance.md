@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566905"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753541"
 ---
 # <a name="governance-or-compliance-strategy"></a>Stratégie de gouvernance ou de conformité
 
@@ -47,7 +47,7 @@ Pendant l’évaluation, des décisions supplémentaires sont requises pour s’
 
 ### <a name="suggested-action-during-the-assess-process"></a>Action suggérée pendant le processus d’évaluation
 
-Les exigences en matière d’évaluation de la gouvernance et de la conformité sont trop spécifiques au client pour fournir des indications générales sur les étapes réellement effectuées pendant l’évaluation. Toutefois, il est recommandé que le processus comprenne des tâches et des allocations de temps pour « l’alignement sur les exigences de conformité/gouvernance ». Pour une compréhension plus approfondie de ces exigences, consultez les liens suivants :
+Les exigences en matière d’évaluation de la gouvernance et de la conformité sont trop spécifiques au client pour fournir des indications générales sur les étapes réellement effectuées pendant l’évaluation. Cependant, le processus doit inclure des tâches et du temps alloué pour « l’alignement sur les exigences de conformité/gouvernance ». Pour une compréhension plus approfondie de ces exigences, consultez les liens suivants :
 
 Pour une compréhension plus approfondie de la gouvernance, consultez la [vue d’ensemble des cinq disciplines de la gouvernance cloud](../../govern/governance-disciplines.md). Cette section du Framework d’adoption du cloud comprend également des modèles pour documenter les stratégies, les recommandations et les exigences de chacune des cinq sections :
 
@@ -61,15 +61,15 @@ Pour obtenir des conseils sur l’élaboration d’une gouvernance basée sur le
 
 ## <a name="optimize-and-promote-process-changes"></a>Changements aux processus d’optimisation et de promotion
 
-Au cours des processus d’optimisation et de promotion, il est recommandé que l’équipe de gouvernance cloud investisse le temps nécessaire pour tester et valider l’adhésion aux standards de gouvernance et de conformité. En outre, cette étape est un bon moment pour injecter des processus afin que l’équipe de gouvernance cloud organise des modèles qui pourraient fournir une [accélération de déploiement](../../govern/deployment-acceleration/index.md) supplémentaire pour les projets à venir.
+Au cours des processus d’optimisation et de promotion, l’équipe de gouvernance cloud doit consacrer le temps nécessaire pour tester et valider l’adhésion aux standards de gouvernance et de conformité. En outre, cette étape est un bon moment pour injecter des processus afin que l’équipe de gouvernance cloud organise des modèles qui pourraient fournir une [accélération de déploiement](../../govern/deployment-acceleration/index.md) supplémentaire pour les projets à venir.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Action suggérée pendant le processus d’optimisation et de promotion
 
-Au cours de ce processus, il est recommandé de prévoir dans le plan de projet du temps alloué à l’équipe de gouvernance cloud pour qu’elle exécute une évaluation de la conformité pour chaque charge de travail planifiée pour la promotion en production.
+Au cours de ce processus, le plan du projet doit inclure du temps alloué à l’équipe de gouvernance cloud afin d’effectuer une évaluation de la conformité pour chaque charge de travail planifiée pour la promotion en production.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-En guise d’élément final sur la [check-list d’expansion d’étendue](./index.md), il est conseillé au lecteur de revenir à la check-list et de réévaluer toute exigence d’étendue supplémentaire pour l’effort de migration.
+En guise d’élément final sur la [check-list d’expansion d’étendue](./index.md), revenez à la check-list et réévaluez les exigences d’étendue supplémentaires pour l’effort de migration.
 
 > [!div class="nextstepaction"]
 > [Check-list d’expansion d’étendue](./index.md)

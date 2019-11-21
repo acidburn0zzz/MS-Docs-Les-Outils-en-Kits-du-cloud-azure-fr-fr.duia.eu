@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5461ea659ae2363e98ddf45d8623e21f1ce0d90
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565190"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752879"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Engagement commercial dans la gestion cloud
 
@@ -42,7 +42,7 @@ Pour vous aider dans votre processus de décision, le reste de cet article décr
 
 ## <a name="it-operations-prerequisites"></a>Conditions requises pour les opérations informatiques
 
-Le [Guide de gestion Azure](../azure-management-guide/index.md) présente les outils de gestion disponibles dans Azure. Avant de parvenir à un engagement envers l’entreprise, le département informatique doit déterminer une ligne de base de gestion standard acceptable à appliquer à toutes les charges de travail gérées. Il calcule ensuite un coût de gestion standard pour chacune des charges de travail gérées dans le portefeuille informatique, en fonction du nombre de cœurs de processeur, de l’espace disque et d’autres variables relatives aux ressources. Il évalue également un contrat SLA composite pour chaque charge de travail selon l’architecture.
+Le [Guide de gestion Azure](../azure-management-guide/index.md) présente les outils de gestion disponibles dans Azure. Avant de parvenir à un engagement envers l’entreprise, le département informatique doit déterminer une base de référence de gestion standard acceptable à appliquer à toutes les charges de travail gérées. Il calcule ensuite un coût de gestion standard pour chacune des charges de travail gérées dans le portefeuille informatique, en fonction du nombre de cœurs de processeur, de l’espace disque et d’autres variables relatives aux ressources. Il évalue également un contrat SLA composite pour chaque charge de travail selon l’architecture.
 
 > [!TIP]
 > Les équipes d’exploitation informatique utilisent souvent une durée de fonctionnement minimale de 99,9 pour cent par défaut pour le contrat SLA composite initial. Ils peuvent également choisir de normaliser les coûts de gestion en fonction de la charge de travail moyenne, en particulier pour les solutions ayant des besoins minimaux en journalisation et en stockage. La moyenne des coûts de quelques charges de travail de gravité moyenne peut constituer un point de départ pour les conversations initiales.
@@ -60,13 +60,13 @@ Dans un environnement local traditionnel, le coût de la gestion de l’environn
 
 Les organisations peuvent également choisir de [sous-traiter certaines de leurs fonctions de gestion en cours avec un fournisseur de services](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Ces fournisseurs de services peuvent utiliser [Azure Lighthouse](https://azure.com/lighthouse) pour offrir aux organisations un contrôle plus précis de l’octroi de l’accès à leurs ressources, ainsi qu’une meilleure visibilité des actions effectuées par les fournisseurs de services.
 
-- **Responsabilité déléguée** : comme il n’est pas nécessaire de centraliser et de prévoir une surcharge de gestion opérationnelle, les opérations informatiques de nombreuses organisations envisagent de nouvelles approches. L’une des approches courantes est appelée _responsabilité déléguée_. Dans un modèle de centre d’excellence cloud, les opérations de plateforme et l’automatisation de plateforme fournissent des outils de gestion libre-service qui peuvent être utilisés par les équipes d’exploitation, indépendamment d’une équipe centrale des opérations informatiques. Cette approche donne aux parties prenantes de l’entreprise le contrôle total des budgets liés à la gestion. Il permet également au centre d’excellence cloud (CCOE) de s’assurer qu’un nombre minimum de barrières de sécurité a été correctement instauré. Dans ce modèle, l’informatique agit comme un courtier et un guide pour aider l’entreprise à prendre des décisions judicieuses. Les opérations métier supervisent les opérations quotidiennes des charges de travail dépendantes.
+- **Responsabilité déléguée** : comme il n’est pas nécessaire de centraliser et de prévoir une surcharge de gestion opérationnelle, les opérations informatiques de nombreuses organisations envisagent de nouvelles approches. L’une des approches courantes est appelée _responsabilité déléguée_. Dans un modèle de centre d’excellence cloud, les opérations de plateforme et l’automatisation de plateforme fournissent des outils de gestion libre-service qui peuvent être utilisés par les équipes d’exploitation, indépendamment d’une équipe centrale des opérations informatiques. Cette approche donne aux parties prenantes de l’entreprise le contrôle total des budgets liés à la gestion. Elle permet également au centre d’excellence cloud de garantir qu’un nombre minimal de barrières de sécurité ont été correctement implémentées. Dans ce modèle, l’informatique agit comme un courtier et un guide pour aider l’entreprise à prendre des décisions judicieuses. Les opérations métier supervisent les opérations quotidiennes des charges de travail dépendantes.
 
 - **Responsabilité centralisée** : Les exigences de conformité, la complexité technique et certains modèles de service partagés peuvent nécessiter un modèle _informatique central_. Dans ce modèle, l’informatique continue d’exercer ses responsabilités de gestion des opérations. La conception environnementale, les contrôles de gestion et les outils de gouvernance peuvent être gérés et contrôlés de manière centralisée, ce qui limite l’engagement des parties prenantes métier dans la gestion. Toutefois, la visibilité du coût et de l’architecture des approches du cloud facilitent grandement la communication des coûts et du niveau de gestion pour chaque charge de travail.
 
 - **Modèle mixte :** La classification est au cœur d’un _modèle mixte_ de responsabilités de gestion. Les entreprises qui se trouvent au milieu d’une transformation d’un environnement local vers le cloud peuvent avoir besoin d’un modèle d’exploitation local en premier pendant un certain temps. Celles qui ont des exigences strictes en matière de conformité ou qui dépendent de contrats à long terme avec des fournisseurs sous-traitants peuvent avoir besoin d’un modèle d’exploitation centralisé.
 
-  Quelles que soient leurs contraintes, aujourd’hui les entreprises doivent innover. Lorsque l’innovation rapide doit croître, au milieu d’un modèle de responsabilité informatique centralisée, une approche avec un modèle mixte peut offrir un équilibre. Dans cette approche, l’informatique centrale fournit un modèle d’exploitation centralisé pour toutes les charges de travail stratégiques ou qui contiennent des informations sensibles. Dans un même temps, toutes les autres classifications de charge de travail peuvent être placées dans un environnement cloud conçu pour les responsabilités déléguées. L’approche de responsabilité centralisée fait office de modèle d’exploitation général. L’entreprise a ensuite la possibilité d’adopter un modèle d’exploitation spécialisé, en fonction du niveau de support et de sensibilité requis.
+  Quelles que soient leurs contraintes, aujourd’hui les entreprises doivent innover. Lorsque l’innovation rapide doit croître, au milieu d’un modèle de responsabilité informatique centralisée, une approche avec un modèle mixte peut offrir un équilibre. Dans cette approche, l’informatique centrale fournit un modèle d’exploitation centralisé pour toutes les charges de travail critiques ou qui contiennent des informations sensibles. Dans un même temps, toutes les autres classifications de charge de travail peuvent être placées dans un environnement cloud conçu pour les responsabilités déléguées. L’approche de responsabilité centralisée fait office de modèle d’exploitation général. L’entreprise a ensuite la possibilité d’adopter un modèle d’exploitation spécialisé, en fonction du niveau de support et de sensibilité requis.
 
 La première étape est la validation d’une approche de responsabilité, ce qui façonne les engagements suivants.
 

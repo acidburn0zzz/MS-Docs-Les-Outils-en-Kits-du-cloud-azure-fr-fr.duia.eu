@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 85b02e488476960a50112c1b5ebd7380a873a3f8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565723"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751998"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Obstacles et défis courants à l’innovation
 
@@ -45,7 +45,7 @@ Le cloud a résolu un grand nombre de ces défis liés à l’invention en fourn
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Défis liés à l’invention dans une économie numérique
 
-Les défis d’aujourd’hui liés à l’invention sont différents. Le potentiel infini des technologies du cloud produit également davantage d’options d’implémentation et des considérations plus approfondies sur la façon dont ces implémentations pourraient être exploitées.
+Les défis d’aujourd’hui liés à l’invention sont différents. Le potentiel infini des technologies cloud offre également davantage d’options d’implémentation et amène à des considérations plus approfondies sur la façon dont ces implémentations doivent être utilisées.
 
 La méthodologie Innover utilise les disciplines d’innovation suivantes pour vous aider à aligner vos décisions d’implémentation sur vos objectifs d’invention et d’adoption :
 

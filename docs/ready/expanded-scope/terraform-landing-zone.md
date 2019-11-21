@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561684"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753755"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Utiliser Terraform pour créer vos zones d’atterrissage
 
@@ -200,7 +200,7 @@ La zone d’atterrissage de base constitue le fondement d’un environnement com
 - l’ajout d’autres modules au blueprint ;
 - la superposition de zones d’atterrissage supplémentaires.
 
-La superposition de zones d’atterrissage est une bonne pratique pour découpler les systèmes, gérer les versions de chaque composant que vous utilisez et permettre une innovation et une stabilité rapides pour le déploiement de votre infrastructure en tant que code.
+La superposition de zones d’atterrissage est une bonne pratique pour découpler les systèmes, gérer les versions de chaque composant que vous utilisez, et permettre une innovation rapide et une stabilité pour votre infrastructure sous forme de déploiement du code.
 
 De futures architectures de référence démontreront ce concept pour une topologie hub-and-spoke.
 
