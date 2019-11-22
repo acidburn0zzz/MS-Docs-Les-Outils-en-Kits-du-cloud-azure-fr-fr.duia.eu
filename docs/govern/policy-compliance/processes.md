@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6671efc087d718a44de97062dcf8c32498cfdb81
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566130"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159840"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -38,15 +38,15 @@ Avant de définir les déclencheurs de la correction de la conformité à la vot
 
 ### <a name="assign-cloud-governance-team-members"></a>Affectation des membres de l’équipe de gouvernance cloud
 
-Votre équipe de gouvernance cloud fournira des conseils continus sur la conformité à la stratégie et s’occupera des questions liées à la gestion de la stratégie qui émergent lors du déploiement et de l’exploitation de vos actifs cloud. Lors de la création de cette équipe, invitez le personnel de votre organisation qui dispose d’une expertise dans les domaines couverts par les déclarations de politique et les risques identifiés.
+Votre équipe de gouvernance cloud fournira des conseils continus sur la conformité à la stratégie et s’occupera des questions liées à la gestion de la stratégie qui émergent lors du déploiement et de l’exploitation de vos actifs cloud. Lors de la création de cette équipe, invitez les membres du personnel qui disposent d’une expertise dans les domaines couverts par les déclarations de stratégie définies et les risques identifiés.
 
-Vous pouvez vous en tenir à quelques administrateurs système lors des premiers tests de déploiement. Ils établiront les bases de la gouvernance. Au fur et à mesure que vos processus de gouvernance évoluent, vous devrez examiner régulièrement les membres de l’équipe chargée des conseils cloud, pour vérifier qu’ils sont capables de répondre correctement les nouveaux risques possibles et les dernières exigences de stratégie. Identifiez les membres de votre personnel informatique et administratif ayant une expérience pertinente ou un intérêt dans des domaines spécifiques de gouvernance et intégrez-les dans vos équipes de façon permanente ou ponctuelle en fonction des besoins.
+Vous pouvez vous en tenir à quelques administrateurs système lors des premiers tests de déploiement. Ils établiront les bases de la gouvernance. Au fur et à mesure que vos processus de gouvernance évoluent, vous devrez examiner régulièrement les membres de l’équipe chargée des conseils cloud, pour vérifier qu’ils sont capables de répondre correctement les nouveaux risques possibles et les dernières exigences de stratégie. Identifiez les membres de votre personnel informatique et administratif ayant une expérience pertinente ou un intérêt dans des domaines spécifiques de gouvernance et intégrez-les dans vos équipes de façon permanente ou temporaire en fonction des besoins.
 
 ### <a name="reviews-and-policy-iteration"></a>Révisions et itération de la stratégie
 
 Au fur et à mesure que d’autres ressources et charges de travail seront déployées, l’équipe de gouvernance du cloud devra s’assurer que les nouvelles charges de travail ou les nouvelles ressources sont conformes aux exigences de la stratégie. Évaluez les nouvelles exigences des équipes de développement des charges de travail pour vous assurer que les déploiements qu’ils prévoient sont alignés sur vos guides de conception et pour mettre à jour vos politiques pour prendre en charge ces exigences le cas échéant.
 
-Évaluez les nouveaux risques potentiels et mettez à jour les instructions de stratégie et les guides de conception. Collaborez avec le personnel informatique et les équipes responsables des charges de travail pour évaluer de manière continue les nouveaux services et fonctionnalités Azure. Planifiez également des cycles d’examen réguliers pour chacune des cinq disciplines de gouvernance. Vous pourrez ainsi vous assurer que la stratégie est à jour et respectée.
+Évaluez les nouveaux risques potentiels et mettez à jour les instructions de stratégie et les guides de conception. Collaborez avec le personnel informatique et les équipes responsables des charges de travail pour évaluer de manière continue les nouveaux services et fonctionnalités Azure. Planifiez également des cycles d’examen réguliers pour chacune des cinq disciplines de gouvernance. Vous pourrez ainsi vous assurer que la stratégie est à jour et conforme.
 
 ### <a name="education"></a>Formation
 
@@ -79,15 +79,15 @@ Exemples de déclencheurs de violations et d’actions :
 
 | Discipline de gouvernance cloud | Exemple de déclencheur | Exemple d’action |
 |-----------------------------|----------------|---------------|
-| Cost Management | Les dépenses cloud mensuelles sont 20 % plus élevées que prévu. | Notifiez le responsable de l’unité de facturation qui examinera l’utilisation des ressources. |
-| Base de référence de la sécurité | Détectez toute activité de connexion d’utilisateur suspecte. | Prévenez l’équipe de sécurité informatique et désactivez le compte de l’utilisateur suspect. |
-| Cohérence des ressources | Une charge de travail utilise plus de 90 % de l’UC. | Prévenez l’équipe des opérations informatiques et montez en charge des ressources supplémentaires pour gérer la charge. |
+| Cost Management | Les dépenses cloud mensuelles sont 20 % plus élevées que prévu. | Informez le responsable de l’unité de facturation qui examinera l’utilisation des ressources. |
+| Base de référence de la sécurité | Détectez toute activité d’utilisateur suspecte. | Prévenez l’équipe de sécurité informatique et désactivez le compte de l’utilisateur suspect. |
+| Cohérence des ressources | Une charge de travail utilise plus de 90 % du processeur. | Prévenez l’équipe des opérations informatiques et effectuez un scale-out des ressources supplémentaires pour gérer la charge. |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>Automatisation de la surveillance et de la conformité
 
 Lorsque vous avez défini vos déclencheurs et actions de violation de conformité, vous pouvez commencer à planifier la meilleure façon d’utiliser les outils de journalisation et de création de rapport, ainsi que les autres fonctionnalités de votre plate-forme cloud pour automatiser la surveillance et la mise en conformité vis-à-vis de votre stratégie.
 
-Consultez la rubrique [Guide de décision sur la journalisation et création de rapports](../../decision-guides/logging-and-reporting/index.md) du Framework d’adoption du cloud pour obtenir des conseils pour choisir le meilleur modèle de surveillance pour votre déploiement.
+Pour obtenir des conseils dans le choix du meilleur modèle de supervision pour votre déploiement, consultez le [guide de décision sur la journalisation et création de rapports](../../decision-guides/logging-and-reporting/index.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

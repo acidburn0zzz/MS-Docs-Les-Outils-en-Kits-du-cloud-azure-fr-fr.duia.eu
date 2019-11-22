@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: fc06264bad61571aaa4735350a16e294492dd9c0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 315797d7ef4ab93d5d386ee32a499f4172752687
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547714"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159935"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Améliorer votre fondation de gouvernance cloud initiale
 
@@ -31,7 +31,7 @@ Cet article suppose que vous avez établi une [fondation de gouvernance cloud in
 |Risque/besoin | Entreprise standard | Entreprise complexe |
 |---|---|---|
 |Données sensibles dans le cloud|[Amélioration de la discipline](./guides/standard/security-baseline-improvement.md)|[Amélioration de la discipline](./guides/complex/security-baseline-improvement.md)|
-|Applications critiques dans le cloud|[Amélioration de la discipline](./guides/standard/resource-consistency-improvement.md)|[Amélioration de la discipline](./guides/complex/resource-consistency-improvement.md)|
+|Applications stratégiques dans le cloud|[Amélioration de la discipline](./guides/standard/resource-consistency-improvement.md)|[Amélioration de la discipline](./guides/complex/resource-consistency-improvement.md)|
 |Gestion des coûts du cloud|[Amélioration de la discipline](./guides/standard/cost-management-improvement.md)|[Amélioration de la discipline](./guides/complex/cost-management-improvement.md)|
 |Multicloud|[Amélioration de la discipline](./guides/standard/multicloud-improvement.md)|[Amélioration de la discipline](./guides/complex/multicloud-improvement.md)|
 |Gestion des identités complexes/héritées|N/A|[Amélioration de la discipline](./guides/complex/identity-baseline-improvement.md)|

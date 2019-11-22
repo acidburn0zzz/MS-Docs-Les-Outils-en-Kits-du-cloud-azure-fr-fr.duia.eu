@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 02a4b4debf11507f557951652f362c02e4ae0ecc
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752879"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160395"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Engagement commercial dans la gestion cloud
 
@@ -60,7 +60,7 @@ Dans un environnement local traditionnel, le coût de la gestion de l’environn
 
 Les organisations peuvent également choisir de [sous-traiter certaines de leurs fonctions de gestion en cours avec un fournisseur de services](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Ces fournisseurs de services peuvent utiliser [Azure Lighthouse](https://azure.com/lighthouse) pour offrir aux organisations un contrôle plus précis de l’octroi de l’accès à leurs ressources, ainsi qu’une meilleure visibilité des actions effectuées par les fournisseurs de services.
 
-- **Responsabilité déléguée** : comme il n’est pas nécessaire de centraliser et de prévoir une surcharge de gestion opérationnelle, les opérations informatiques de nombreuses organisations envisagent de nouvelles approches. L’une des approches courantes est appelée _responsabilité déléguée_. Dans un modèle de centre d’excellence cloud, les opérations de plateforme et l’automatisation de plateforme fournissent des outils de gestion libre-service qui peuvent être utilisés par les équipes d’exploitation, indépendamment d’une équipe centrale des opérations informatiques. Cette approche donne aux parties prenantes de l’entreprise le contrôle total des budgets liés à la gestion. Elle permet également au centre d’excellence cloud de garantir qu’un nombre minimal de barrières de sécurité ont été correctement implémentées. Dans ce modèle, l’informatique agit comme un courtier et un guide pour aider l’entreprise à prendre des décisions judicieuses. Les opérations métier supervisent les opérations quotidiennes des charges de travail dépendantes.
+- **Responsabilité déléguée** : comme il n’est pas nécessaire de centraliser et de prévoir une surcharge de gestion opérationnelle, les opérations informatiques de nombreuses organisations envisagent de nouvelles approches. L’une des approches courantes est appelée _responsabilité déléguée_. Dans un modèle de centre d’excellence cloud, les opérations de plateforme et l’automatisation de plateforme fournissent des outils de gestion libre-service qui peuvent être utilisés par les équipes d’exploitation, indépendamment d’une équipe centrale des opérations informatiques. Cette approche donne aux parties prenantes de l’entreprise le contrôle total des budgets liés à la gestion. Elle permet également à l’équipe du centre d’excellence de cloud (CCoE) de garantir qu’un nombre minimal de barrières de sécurité ont été correctement implémentées. Dans ce modèle, l’informatique agit comme un courtier et un guide pour aider l’entreprise à prendre des décisions judicieuses. Les opérations métier supervisent les opérations quotidiennes des charges de travail dépendantes.
 
 - **Responsabilité centralisée** : Les exigences de conformité, la complexité technique et certains modèles de service partagés peuvent nécessiter un modèle _informatique central_. Dans ce modèle, l’informatique continue d’exercer ses responsabilités de gestion des opérations. La conception environnementale, les contrôles de gestion et les outils de gouvernance peuvent être gérés et contrôlés de manière centralisée, ce qui limite l’engagement des parties prenantes métier dans la gestion. Toutefois, la visibilité du coût et de l’architecture des approches du cloud facilitent grandement la communication des coûts et du niveau de gestion pour chaque charge de travail.
 

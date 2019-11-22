@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564643"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159897"
 ---
 # <a name="understand-partnership-options"></a>Comprendre les options de partenariat
 
@@ -84,7 +84,7 @@ Les principales étapes d’un engagement FastTrack for Azure standard sont les 
 
 **Migration/optimisation :** La [solution de modernisation du cloud](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) des services Microsoft offre une approche complète pour déplacer des applications et infrastructures vers Azure, ainsi que pour optimiser et moderniser après le déploiement dans le cloud, grâce à une migration rationalisée.
 
-**Innovation :** La solution [Cloud Center of Excellence (CCOE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) des services Microsoft offre un engagement de coaching DevOps et utilise les principes DevOps associés à des contrôles de sécurité et de management des services cloud natifs pour aider à engendrer l’innovation dans l’entreprise, augmenter l’agilité et réduire le temps de rentabilisation au sein d’une structure de gestion des opérations et de livraison des services sécurisée, prévisible et flexible.
+**Innovation :** La [solution Centre d’excellence de cloud (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) des services Microsoft offre un engagement de coaching DevOps et utilise les principes DevOps associés à des contrôles de sécurité et de management des services cloud natifs pour aider à engendrer l’innovation dans l’entreprise, augmenter l’agilité et réduire le temps de rentabilisation au sein d’une structure de gestion des opérations et de livraison des services sécurisée, prévisible et flexible.
 
 ## <a name="azure-support"></a>Support Azure
 

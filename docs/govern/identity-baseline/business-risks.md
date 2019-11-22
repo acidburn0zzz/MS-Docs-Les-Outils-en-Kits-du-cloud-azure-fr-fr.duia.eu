@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222175"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160119"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Risques d’affaires et motivations associés à la base de référence des identités
 
@@ -24,7 +24,7 @@ Cet article décrit les raisons pour lesquelles les clients adoptent une discipl
 
 ## <a name="identity-baseline-relevancy"></a>Pertinence de la Base de référence des identités
 
-Les répertoires locaux traditionnels sont conçus pour permettre aux entreprises de contrôler strictement les autorisations et les stratégies pour les utilisateurs, les groupes et les rôles au sein de leurs réseaux et centres de données internes. Il s’agit généralement du support d’implémentations à locataire unique, les services ne s’appliquant qu’au sein de l’environnement local.
+Les répertoires locaux traditionnels sont conçus pour permettre aux entreprises de contrôler strictement les autorisations et les stratégies pour les utilisateurs, les groupes et les rôles au sein de leurs réseaux et centres de données internes. Ces répertoires prennent généralement en charge les implémentations à locataire unique, les services ne s’appliquant qu’au sein de l’environnement local.
 
 Les services d’identité cloud étendent les capacités d’authentification et de contrôle d’accès d’une organisation à l’Internet. Ils prennent en charge la mutualisation et permettent de gérer les utilisateurs et les stratégies d’accès dans les applications et les déploiements cloud. Les plateformes de cloud public possèdent des services d’identité cloud natifs prenant en charge les tâches de gestion et de déploiement. Par ailleurs, elles offrent [différents niveaux d’intégration](../../decision-guides/identity/index.md) avec vos solutions d’identité locales existantes. Par rapport à la gestion des identités de vos solutions locales existantes, toutes ces fonctionnalités peuvent compliquer la stratégie d’identité cloud.
 

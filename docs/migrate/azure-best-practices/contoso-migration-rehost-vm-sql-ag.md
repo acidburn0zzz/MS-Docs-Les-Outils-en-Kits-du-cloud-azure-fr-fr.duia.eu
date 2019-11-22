@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566519"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160346"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Réhéberger une application locale sur des machines virtuelles Azure et des groupes de disponibilité Always On SQL Server
 
@@ -214,7 +214,7 @@ Les administrateurs de Contoso créent un compte de stockage de la façon suivan
 
 Avant de configurer le cluster, les administrateurs prennent un instantané du disque du système d’exploitation sur chaque machine.
 
-![instantané](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
+![Création d’un instantané](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
 
 1. Ensuite, elle exécute un script assemblé pour créer le cluster de basculement Windows.
 
@@ -438,8 +438,8 @@ Les administrateurs de Contoso suivent les étapes ci-dessous :
 7. L’outil effectue des tâches de configuration, puis redémarre.
 8. Contoso se reconnecte à l’ordinateur et l’Assistant de gestion du serveur de configuration démarre automatiquement.
 9. Dans l’Assistant, Contoso sélectionne la carte réseau qui doit recevoir le trafic de réplication. Une fois configuré, ce paramètre ne peut pas être modifié.
-10. L’abonnement, le groupe de ressources et le coffre dans lequel inscrire le serveur de configuration sont sélectionnés.
-        ![coffre](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
+10. Contoso sélectionne l’abonnement, le groupe de ressources et le coffre dans lequel inscrire le serveur de configuration.
+        ![Sélectionner le coffre Recovery Services](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
 11. Ensuite, elle télécharge puis installe MySQL Server et VMware PowerCLI.
 12. Après la validation, Contoso spécifie le nom de domaine complet (FQDN) ou l’adresse IP du serveur vCenter ou de l’hôte vSphere. On quitte le port par défaut, puis on spécifie un nom convivial pour le serveur vCenter.

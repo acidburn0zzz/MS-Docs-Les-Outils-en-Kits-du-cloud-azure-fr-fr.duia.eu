@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656686"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160480"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Conception de gouvernance pour plusieurs équipes
 
@@ -82,28 +82,29 @@ Par conséquent, pour créer un modèle d’accès avec privilège minimum, vous
 Jetons un œil à deux exemples de modèles d’autorisation pour mieux comprendre ce concept. Dans le premier exemple, le modèle fait confiance uniquement à l’administrateur de services fédérés pour créer des groupes de ressources. Dans le deuxième exemple, le modèle attribue le rôle de propriétaire intégré à chaque propriétaire d’une charge de travail dans l’étendue de l’abonnement.
 
 Dans les deux exemples, un administrateur de services d’abonnement se voit attribuer le rôle de propriétaire intégré dans l’étendue de l’abonnement. N’oubliez pas que le rôle de propriétaire intégré accorde toutes les autorisations, dont la gestion de l’accès aux ressources.
-![administrateur de service d’abonnement avec le rôle de propriétaire](../../_images/govern/design/governance-2-1.png)
-*Figure 3 - Abonnement dans lequel un administrateur de services est doté du rôle de propriétaire intégré.*
+
+![Administrateur de service d’abonnement avec le rôle de propriétaire](../../_images/govern/design/governance-2-1.png)
+*Figure 3 - Abonnement dans lequel un administrateur de service est doté du rôle de propriétaire intégré.*
 
 1. Dans le premier exemple, le **propriétaire de la charge de travail A** ne possède pas d’autorisation au niveau de l’étendue de l’abonnement ; par défaut, il ne possède donc pas de droit de gestion des accès aux ressources. Cet utilisateur souhaite déployer et gérer les ressources de sa charge de travail. Il doit contacter **l’administrateur de services fédérés** pour demander la création d’un groupe de ressources.
-    ![le propriétaire de la charge de travail demande la création du groupe de ressources A](../../_images/govern/design/governance-2-2.png)
+    ![Le propriétaire de la charge de travail demande la création du groupe de ressources A](../../_images/govern/design/governance-2-2.png)
 2. **L’administrateur de services fédérés** passe en revue la demande et crée le **groupe de ressources A**. À ce stade, le **propriétaire de la charge de travail A** n’est toujours pas autorisé à faire quoi que ce soit.
-    ![l’administrateur de services fédérés crée le groupe de ressources A](../../_images/govern/design/governance-2-3.png)
+    ![L’administrateur de service crée le groupe de ressources A](../../_images/govern/design/governance-2-3.png)
 3. **L’administrateur de services fédérés** ajoute le **propriétaire de la charge de travail A** au **groupe de ressources A** et lui affecte le [rôle de contributeur intégré](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). Le rôle de contributeur accorde toutes les autorisations sur le **groupe de ressources A**, à l’exception de la gestion des autorisations d’accès.
-    ![l’administrateur de services fédérés ajoute le propriétaire de la charge de travail au groupe de ressources a](../../_images/govern/design/governance-2-4.png)
+    ![L’administrateur de service ajoute le propriétaire de la charge de travail A au groupe de ressources A](../../_images/govern/design/governance-2-4.png)
 4. Supposons que le **propriétaire de la charge de travail A** ait besoin que deux membres de l’équipe puissent visualiser les données d’analyse de l’UC et du trafic réseau, afin de planifier les capacités pour la charge de travail. Étant donné que le **propriétaire de la charge de travail A** dispose du rôle de contributeur, il n’est pas autorisé à ajouter un utilisateur au **groupe de ressources A**. Il doit en fait la demande à **l’administrateur de services fédérés**.
-    ![le propriétaire de la charge de travail demande l’ajout de contributeurs au groupe de ressources](../../_images/govern/design/governance-2-5.png)
+    ![Le propriétaire de la charge de travail demande l’ajout de contributeurs au groupe de ressources](../../_images/govern/design/governance-2-5.png)
 5. **L’administrateur de services fédérés** examine la demande et ajoute les deux **contributeurs de la charge de travail** au **groupe de ressources A**. Aucun de ces deux utilisateurs n’ayant besoin de l’autorisation de gérer les ressources, le [rôle de lecteur intégré](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) leur est attribué.
-    ![l’administrateur de services fédérés ajoute les contributeurs de la charge de travail au groupe de ressources A](../../_images/govern/design/governance-2-6.png)
+    ![L’administrateur de service ajoute les contributeurs de la charge de travail au groupe de ressources A](../../_images/govern/design/governance-2-6.png)
 6. Le **propriétaire de la charge de travail B** a également besoin d’un groupe de ressources auquel rattacher les ressources de sa charge de travail. Comme pour le **propriétaire de la charge de travail A**, le **propriétaire de la charge de travail B** ne dispose au départ d’aucune autorisation d’exécuter une action dans l’étendue de l’abonnement. Il doit donc envoyer une demande à **l’administrateur de services fédérés**.
-    ![le propriétaire de la charge de travail B demande la création du groupe de ressources B](../../_images/govern/design/governance-2-7.png)
+    ![Le propriétaire de la charge de travail B demande la création du groupe de ressources B](../../_images/govern/design/governance-2-7.png)
 7. **L’administrateur de services fédérés** passe en revue la demande et crée le **groupe de ressources B**.  ![L’administrateur de services fédérés crée le groupe de ressources B](../../_images/govern/design/governance-2-8.png)
 8. **L’administrateur de services fédérés** ajoute alors le **propriétaire de la charge de travail B** au **groupe de ressources B** et lui attribue le rôle de contributeur intégré.
     ![L’administrateur de services fédérés ajoute le propriétaire de la charge de travail B au groupe de ressources B](../../_images/govern/design/governance-2-9.png)
 
 À ce stade, chacun des propriétaires de charges de travail est isolé dans son propre groupe de ressources. Ni les propriétaires de charges de travail ni les membres de leur équipe ne disposent d’un accès administratif aux ressources d’un autre groupe de ressources.
 
-![abonnement avec les groupes de ressources A et B](../../_images/govern/design/governance-2-10.png)
+![Abonnement avec les groupes de ressources A et B](../../_images/govern/design/governance-2-10.png)
 *Figure 4 - Abonnement avec deux propriétaires de charges de travail isolés avec leur propre groupe de ressources.*
 
 Ce modèle est un modèle avec privilège minimum : chaque utilisateur se voit attribuer l’autorisation appropriée dans l’étendue de gestion des ressources qui convient.
@@ -124,8 +125,8 @@ Examinons un deuxième exemple qui réduit le nombre de tâches confiées à **l
 
 Notez que dans ce modèle, **l’administrateur de services fédérés** est moins intervenu que dans le premier exemple car l’accès administratif a été délégué à chaque propriétaire de la charge de travail.
 
-![abonnement avec les groupes de ressources A et B](../../_images/govern/design/governance-2-16.png)
-*Figure 5 - Abonnement avec un administrateur de services et deux propriétaires de charges de travail auxquels le rôle de propriétaire intégré a été attribué.*
+![Abonnement avec les groupes de ressources A et B](../../_images/govern/design/governance-2-16.png)
+*Figure 5 - Abonnement avec un administrateur de service et deux propriétaires de charges de travail auxquels le rôle de propriétaire intégré a été attribué.*
 
 Toutefois, étant donné que le **propriétaire de la charge de travail A** et le **propriétaire de la charge de travail B** se sont vu attribuer le rôle de propriétaire intégré dans l’étendue de l’abonnement, chacun d’eux a hérité du rôle de propriétaire intégré pour le groupe de ressources de l’autre. Cela signifie que non seulement chaque propriétaire dispose d’un accès complet aux ressources de l’autre, mais qu’il a également la possibilité de déléguer l’accès administratif aux groupes de ressources de l’autre. Par exemple, le **propriétaire de la charge de travail B** a le droit d’ajouter n’importe quel autre utilisateur au **groupe de ressources A** et peut lui attribuer le rôle de son choix, y compris le rôle de propriétaire intégré.
 

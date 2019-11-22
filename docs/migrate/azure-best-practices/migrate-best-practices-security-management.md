@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656707"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160059"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Meilleures pratiques pour la sécurisation et la gestion des charges de travail migrées vers Azure
 
@@ -38,10 +38,10 @@ Après la migration, la tâche la plus critique consiste à protéger les charge
 
 Microsoft fait tout son possible pour que les administrateurs locataires Azure disposent des informations nécessaires pour activer les fonctionnalités de sécurité qui protègent les charges de travail contre les attaques. Azure Security Center fournit la gestion de la sécurité unifiée. Depuis le Security Center, vous pouvez appliquer des stratégies de sécurité sur l’ensemble des charges de travail, limiter l’exposition aux menaces, détecter et répondre aux attaques. Security Center analyse les ressources et les configurations des locataires Azure et émet des recommandations en matière de sécurité, notamment :
 
-- **Gestion de stratégie centralisée** : assurez la conformité aux exigences de sécurité obligatoires ou de votre société en gérant de façon centralisée les stratégies de sécurité dans toutes vos charges de travail cloud hybride.
-- **Évaluation continue de la sécurité** : contrôlez la situation de sécurité des machines, réseaux, applications, services de stockage et de données pour découvrir d’éventuels problèmes de sécurité.
-- **Recommandations exploitables** : corrigez les failles de sécurité avant qu’elles puissent être exploitées par des attaquants avec des recommandations de sécurité exploitables et classées par ordre de priorité.
-- **Alertes et incidents classés par ordre de priorité** : concentrez-vous en premier lieu sur les menaces les plus importantes avec les incidents et alertes de sécurité classés par ordre de priorité.
+- **Gestion de stratégie centralisée :** Assurez la conformité aux exigences de sécurité obligatoires ou de votre société en gérant de façon centralisée les stratégies de sécurité dans toutes vos charges de travail cloud hybrides.
+- **Évaluation continue de la sécurité :** Supervisez la posture de sécurité des machines, réseaux, services de stockage et de données, et des applications pour découvrir d’éventuels problèmes de sécurité.
+- **Recommandations exploitables :** Corrigez les failles de sécurité avant qu’elles ne puissent être exploitées par des attaquants avec des recommandations de sécurité exploitables et classées par ordre de priorité.
+- **Alertes et incidents classés par ordre de priorité :** Concentrez-vous en premier lieu sur les menaces les plus importantes avec les incidents et alertes de sécurité classés par ordre de priorité.
 
 En plus des évaluations et des recommandations, Azure Security Center offre un d’autres fonctionnalités de sécurité qui peuvent être activées pour des ressources spécifiques.
 
@@ -136,10 +136,9 @@ Azure propose quelques solutions :
   - Un pare-feu d’applications web peut être supervisé à l’aide d’Azure Monitor et il est intégré à Azure Security Center.
 
 ![Sécuriser les applications web](./media/migrate-best-practices-security-management/web-apps.png)
-
 *Azure Key Vault*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Consultez une vue d’ensemble](https://docs.microsoft.com/azure/key-vault/key-vault-overview) sur Azure Key Vault.
 - [En savoir plus](https://docs.microsoft.com/azure/application-gateway/waf-overview) sur le pare-feu d’application web.
@@ -175,10 +174,9 @@ Azure Active Directory (Azure AD) fournit les journaux d’activité qui apparai
 - Prenez l’habitude d’examiner les journaux d’activité ou d’intégrer vos outils de gestion des informations et des événements de sécurité (SIEM) pour examiner automatiquement les anomalies. Si vous n’utilisez pas Premium 1 ou 2, vous devrez effectuer un grand nombre d’analyses vous-même ou utiliser votre système SIEM. L’analyse comprend la recherche de connexions et d’événements à risque, ainsi que d’autres modèles d’attaques d’utilisateurs.
 
 ![Utilisateurs et groupes](./media/migrate-best-practices-security-management/azure-ad.png)
+*Utilisateurs et utilisateurs Azure AD*
 
-*Utilisateurs et groupes Azure AD*
-
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor) sur les journaux d’activité Azure AD dans Azure Monitor.
 - [Découvrez comment](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) contrôler les rapports d’activité sur le portail Azure.
@@ -214,8 +212,7 @@ Afin d’améliorer la productivité et l’efficacité, assurez-vous que vos gr
 - Si vous synchronisez votre Active Directory local avec Azure AD à l’aide d’Azure AD Connect, pensez à faire correspondre les noms des groupes de sécurité locaux aux noms des groupes de ressources dans Azure.
 
 ![Dénomination](./media/migrate-best-practices-security-management/naming.png)
-
-*Dénomination du groupe de ressources*
+*Dénomination de groupe de ressources*
 
 **En savoir plus :**
 
@@ -225,11 +222,10 @@ Afin d’améliorer la productivité et l’efficacité, assurez-vous que vos gr
 
 La dernière chose dont vous pouvez vous passer est qu’un groupe de ressources disparaisse parce qu’il a été supprimé accidentellement. Nous vous recommandons d’implémenter des verrous de suppression pour que cela ne se produise pas.
 
-![Verrous de suppression](./media/migrate-best-practices-security-management/locks.png)
+![Supprimer des verrous](./media/migrate-best-practices-security-management/locks.png)
+*Supprimer des verrous*
 
-*Verrous de suppression*
-
-**En savoir plus :**
+**En savoir plus :**
 
 - [Découvrez comment](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) verrouiller les ressources pour empêcher les modifications inattendues.
 
@@ -359,7 +355,7 @@ Vous pouvez utiliser Sauvegarde Azure pour sauvegarder les machines virtuelles d
 - **Sauvegarde directe dans un coffre Recovery Services.** Vous pouvez sauvegarder vos machines virtuelles IaaS en déployant un coffre Azure Backup Recovery Services. Cela fournit un emplacement unique pour le suivi et la gestion des sauvegardes, ainsi que des options de sauvegarde et de restauration précises. La sauvegarde s’effectue jusqu’à trois fois par jour, au niveau des fichiers/dossiers. Elle n’est pas compatible avec les applications, et Linux n’est pas pris en charge. Installez l’agent Microsoft Azure Recovery Services (MARS) sur chaque machine virtuelle que vous souhaitez sauvegarder à l’aide de cette méthode.
 - **Protéger la machine virtuelle dans Azure Backup Server.** Serveur de sauvegarde Azure est fourni gratuitement avec Sauvegarde Azure. La machine virtuelle est sauvegardée dans le serveur de sauvegarde Azure. Vous sauvegardez ensuite le serveur de sauvegarde Azure dans un coffre-fort sur Azure. La sauvegarde est compatible avec les applications, avec une granularité totale sur les sauvegardes fréquentes et la rétention. Vous pouvez sauvegarder au niveau de l’application, par exemple en sauvegardant SQL Server ou SharePoint.
 
-Pour des raisons de sécurité, Azure Backup chiffre les données en transit à l’aide d’AES 256 et les envoie à Azure via HTTPS. Les données sauvegardées au repos dans Azure sont chiffrées en utilisant [Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), et les données pour la transmission et le stockage.
+Pour des raisons de sécurité, Azure Backup chiffre les données en transit à l’aide d’AES 256 et les envoie à Azure via HTTPS. Les données sauvegardées au repos dans Azure sont chiffrées en utilisant [Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json), et les données pour la transmission et le stockage.
 
 ![Sauvegarde Azure](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Sauvegarde Azure*
@@ -401,10 +397,9 @@ Azure Site Recovery est le principal service Azure assurant que les machines vir
 Site Recovery réplique des machines virtuelles d’une région primaire à une région secondaire Azure. En cas de sinistre, vous basculerez vers les machines virtuelles de la région primaire et continuez à y accéder normalement dans la région secondaire. Lorsque les opérations reviennent à la normale, vous pouvez faire basculer les machines virtuelles vers la région primaire.
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-
 *Site Recovery*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Révisez](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) les scénarios de récupération d’urgence des machines virtuelles Azure.
 - [Découvrez comment](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-replicate-after-migration) configurer la récupération d’urgence pour une machine virtuelle Azure après la migration.
@@ -420,10 +415,9 @@ Les disques managés Azure simplifient la gestion des disques des machines virtu
 - Vous devez créer des machines virtuelles dans des groupes à haute disponibilité pour la résilience et la haute disponibilité. Lorsque des arrêts planifiés ou imprévus surviennent, les groupes à haute disponibilité garantissent qu’au moins une de vos machines virtuelles du groupe reste disponible.
 
 ![Disques managés](./media/migrate-best-practices-security-management/managed-disks.png)
-
 *Disques managés*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Consultez une vue d’ensemble](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) sur les disques managés.
 - [Découvrez comment](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) convertir des disques en disques managés.

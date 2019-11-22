@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1742f794f12501a1506cc6228241435adc5fba52
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565168"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160353"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Criticité pour l’entreprise en gestion cloud
 
-Dans chaque entreprise, il existe un petit nombre de charges de travail qui sont trop importantes pour échouer. Elles sont considérées comme critiques. Lorsque ces charges de travail connaissent des pannes ou une dégradation de leurs performances, l’impact négatif sur les revenus et la rentabilité se fait ressentir à tous les niveaux de l’entreprise.
+Dans chaque entreprise, il existe un petit nombre de charges de travail qui sont trop importantes pour échouer. Ces charges de travail sont considérées comme stratégiques. Lorsque ces charges de travail connaissent des pannes ou une dégradation de leurs performances, l’impact négatif sur les revenus et la rentabilité se fait ressentir à tous les niveaux de l’entreprise.
 
 À l’inverse, certaines charges de travail peuvent ne pas être utilisées pendant plusieurs mois. Il n’est bien sûr pas souhaitable que ces charges de travail connaissent des pannes ou une baisse des performances, toutefois, l’impact sera isolé et limité.
 

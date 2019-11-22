@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753471"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159914"
 ---
 # <a name="balance-the-portfolio"></a>Équilibrer le portefeuille
 
@@ -95,7 +95,7 @@ Pour réduire la complexité, vous devez suivre une approche traditionnelle de l
   - Si une charge de travail n’est pas stratégique, mais qu’elle est compatible avec des plateformes informatiques modernes d’hébergement d’applications, il peut être judicieux d’effectuer une refactorisation mineure sur l’application pour la déployer en tant qu’application moderne. Cela peut contribuer aux économies globales en réduisant les exigences globales de la migration cloud en matière de licences IaaS et de système d’exploitation.
   - Si une charge de travail est une application tierce et que les données de cette charge de travail ne sont pas planifiées pour une utilisation dans le cadre d’une innovation en aval, il peut être préférable de la conserver comme option de réhébergement dans le backlog.
 
-Ces questions ne doivent pas être l’étendue de l’analyse qualitative effectuée pour chaque charge de travail, mais elles visent à guider une conversation qui aide à aborder la complexité d’un portefeuille déséquilibré.
+Ces questions ne doivent pas être l’étendue de l’analyse qualitative effectuée pour chaque charge de travail, mais elles aident à guider une conversation sur la façon d’aborder la complexité d’un portefeuille déséquilibré.
 
 ## <a name="migrate-process-changes"></a>Migrer les changements de processus
 

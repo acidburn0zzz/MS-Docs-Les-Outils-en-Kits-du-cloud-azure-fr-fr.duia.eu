@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564578"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159854"
 ---
 # <a name="decisions-that-affect-migration"></a>Décisions qui affectent la migration
 
@@ -80,8 +80,8 @@ Souvent, les migrations sont motivées par un événement métier attrayant qui 
 Avant de continuer, documentez les hypothèses suivantes et partagez-les avec les équipes de stratégie cloud et d’adoption du cloud :
 
 - Résultats métier.
-- Rôles. Ceci sera documenté et affiné pour les processus *Évaluer*, *Migrer*, *Optimiser* et *Sécuriser et gérer* de la migration.
-- Définition de Terminé. Ceci sera documenté et affiné séparément pour les processus *Évaluer*, *Migrer*, *Optimiser* et *Sécuriser et gérer* de la migration.
+- Rôles, documentés et affinés pour les processus de migration *Évaluer*, *Migrer*, *Optimiser* et *Sécuriser et gérer*.
+- Définition de Terminé, documentée et affinée séparément pour les processus de migration *Évaluer*, *Migrer*, *Optimiser* et *Sécuriser et gérer*.
 - Type d’effort.
 - Échelle de l’effort.
 - Calendrier de l’effort.

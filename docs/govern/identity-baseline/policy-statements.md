@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 118a111ae787e58d1f50704216e921a4df43501e
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44c0f8693362572e0faf1e39d9f2ec7ba2ff16b9
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753019"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160067"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Exemples de déclarations de stratégie Base de référence des identités
 
@@ -28,7 +28,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 ## <a name="lack-of-access-controls"></a>Absence de contrôles d'accès
 
-**Risque technique :** des paramètres de contrôle d'accès insuffisants ou ad hoc peuvent introduire un risque d'accès non autorisé à des ressources sensibles ou stratégiques.
+**Risque technique :** des paramètres de contrôle d’accès insuffisants ou ad hoc peuvent introduire un risque d’accès non autorisé à des ressources sensibles ou stratégiques.
 
 **Instruction de stratégie :** Toutes les ressources déployées dans le cloud doivent être contrôlées à l’aide d’identités et de rôles approuvés par les stratégies de gouvernance en vigueur.
 

@@ -9,20 +9,20 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564313"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160491"
 ---
 # <a name="cloud-center-of-excellence"></a>Centre d’excellence de cloud
 
-L’agilité commerciale et technique est un objectif fondamental de la plupart des organisations informatiques. CCoE (Cloud Center of Excellence) est une fonction qui crée un équilibre entre vitesse et stabilité.
+L’agilité commerciale et technique est un objectif fondamental de la plupart des organisations informatiques. Un centre d’excellence de cloud (CCoE) est une fonction qui crée un équilibre entre vitesse et stabilité.
 
 ## <a name="function-structure"></a>Structure fonctionnelle
 
-CCoE nécessite une collaboration entre chacune des fonctionnalités suivantes :
+Un modèle CCoE nécessite une collaboration entre chacune des fonctionnalités suivantes :
 
 - Adoption du cloud (en particulier les architectes de solutions)
 - Stratégie cloud (plus précisément, les chefs de projet et les responsables de programme)
@@ -132,7 +132,7 @@ De plus, nous recommandons que les parties prenantes de l’entreprise s’infor
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Le centre d’excellence du cloud requiert à la fois des [fonctionnalités de la plateforme cloud](./cloud-platform.md) et des [fonctionnalités d’automatisation du cloud](./cloud-automation.md). La prochaine étape consiste à aligner les [fonctionnalités de la plateforme cloud](./cloud-platform.md).
+Un modèle CCoE nécessite à la fois des [fonctionnalités de la plateforme cloud](./cloud-platform.md) et des [fonctionnalités d’automatisation du cloud](./cloud-automation.md). La prochaine étape consiste à aligner les [fonctionnalités de la plateforme cloud](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
 > [Aligner les fonctionnalités d’une plateforme cloud](./cloud-platform.md)

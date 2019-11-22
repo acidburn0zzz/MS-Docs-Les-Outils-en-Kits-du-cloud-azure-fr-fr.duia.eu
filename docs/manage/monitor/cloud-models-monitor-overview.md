@@ -9,21 +9,21 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752725"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160248"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guide de supervision du cloud : Stratégie de supervision pour les modèles de déploiement cloud
 
 Cet article inclut notre stratégie de supervision recommandée pour chacun des modèles de déploiement cloud, en fonction des critères suivants :
 
-- Vous devez maintenir votre engagement envers Operations Manager ou une autre plateforme de supervision d'entreprise, parce qu'elle est intégrée à vos processus, à vos connaissances et à votre expertise en matière d'opérations informatiques, ou que certaines fonctionnalités ne sont pas encore disponibles dans Azure Monitor.
+- Vous devez conserver votre engagement envers Operations Manager ou une autre plateforme de supervision de l’entreprise, en raison de l’intégration à vos processus, vos connaissances et votre expertise en matière d’exploitation informatique, ou parce que certaines fonctionnalités ne sont pas encore disponibles dans Azure Monitor.
 - Vous devez superviser des charges de travail à la fois localement et dans le cloud public, ou seulement dans le cloud.
 - Votre stratégie de migration cloud comprend la modernisation des opérations informatiques, et la migration vers nos services et solutions de supervision cloud.
-- Vous pouvez avoir des systèmes critiques en « air gap » ou physiquement isolés, hébergés dans un cloud privé ou sur du matériel physique. Et ces systèmes doivent être supervisés.
+- Vous pouvez avoir des systèmes critiques en « air gap » ou physiquement isolés, hébergés dans un cloud privé ou sur du matériel physique, et ces systèmes doivent être supervisés.
 
 Notre stratégie comprend la supervision de l'infrastructure (charges de travail de calcul, de stockage et de serveur), des applications (utilisateur final, exceptions et client) et des ressources réseau. Elle offre une perspective de supervision complète et orientée service.
 
@@ -104,7 +104,7 @@ Pour collecter les métriques et les journaux des ressources d'infrastructure et
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Superviser avec System Center Operations Manager
 
-Bien que System Center Operations Manager ait été initialement conçu comme une solution locale de supervision des applications, des charges de travail et de l'infrastructure exécutées dans votre environnement informatique, il a évolué pour inclure des fonctionnalités de supervision cloud. Il s'intègre à Azure, Office 365 et Amazon Web Services (AWS). Il peut superviser tous ces environnements grâce à des packs d'administration conçus et mis à jour pour les prendre en charge.  
+Bien que System Center Operations Manager ait été initialement conçu comme une solution locale de supervision des applications, des charges de travail et des composants d’infrastructure exécutés dans votre environnement informatique, il a évolué pour inclure des fonctionnalités de supervision cloud. Il s'intègre à Azure, Office 365 et Amazon Web Services (AWS). Il peut superviser tous ces environnements grâce à des packs d'administration conçus et mis à jour pour les prendre en charge.  
 
 Pour les clients qui ont beaucoup investi dans Operations Manager afin de bénéficier d'une supervision complète étroitement intégrée à leurs processus et outils de gestion des services informatiques, ou pour les clients qui découvrent Azure, il est compréhensible de se poser les questions suivantes :
 
@@ -181,7 +181,7 @@ Vous pouvez effectuer une supervision complète d’Azure Stack avec System Cent
 
 Vous pouvez également effectuer une supervision complète avec une combinaison de [fonctionnalités de supervision d'infrastructure](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) incluses dans Azure Stack. Ces fonctionnalités vous permettent de voir l’intégrité et les alertes pour une région Azure Stack et le [service Azure Monitor](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) dans Azure Stack, ce qui fournit des métriques et des journaux de l’infrastructure à un niveau de base pour la plupart des services.
 
-Si vous avez déjà investi dans Operations Manager, utilisez le pack d’administration Azure Stack pour superviser la disponibilité et l’état d’intégrité des déploiements Azure Stack. Ceci inclut les régions, les fournisseurs de ressources, les mises à jour, les exécutions des mises à jour, les unités d’échelle, les nœuds d’unité, les rôles d’infrastructure et leurs instances (entités logiques constituées des ressources matérielles). Il utilise les API REST du fournisseur de ressources d’intégrité et de mise à jour pour communiquer avec Azure Stack. Pour superviser des serveurs physiques et des périphériques de stockage, utilisez le pack d’administration des fournisseurs OEM (par exemple fourni par Lenovo, Hewlett Packard ou Dell). Operations Manager peut superviser les commutateurs réseau en mode natif pour collecter des statistiques de base à l'aide du protocole SNMP. La supervision des charges de travail du locataire est possible avec le pack d’administration Azure en suivant deux étapes de base. Configurez l’abonnement que vous voulez superviser, puis ajoutez les moniteurs pour cet abonnement.
+Si vous avez déjà investi dans Operations Manager, utilisez le pack d’administration Azure Stack pour superviser la disponibilité et l’état d’intégrité des déploiements Azure Stack, notamment les régions, les fournisseurs de ressources, les mises à jour, les exécutions de mises à jour, les unités d’échelle, les nœuds d’unité, les rôles d’infrastructure et leurs instances (entités logiques constituées des ressources matérielles). Ce pack d’administration utilise les API REST du fournisseur de ressources d’intégrité et de mise à jour pour communiquer avec Azure Stack. Pour superviser des serveurs physiques et des périphériques de stockage, utilisez le pack d’administration des fournisseurs OEM (par exemple fourni par Lenovo, Hewlett Packard ou Dell). Operations Manager peut superviser les commutateurs réseau en mode natif pour collecter des statistiques de base à l'aide du protocole SNMP. La supervision des charges de travail du locataire est possible avec le pack d’administration Azure en suivant deux étapes de base. Configurez l’abonnement que vous voulez superviser, puis ajoutez les moniteurs pour cet abonnement.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

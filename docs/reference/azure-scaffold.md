@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ad84a52b35a98744f59b0d719e61f2c83a61af0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753774"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160464"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
 
@@ -40,20 +40,20 @@ Dans la construction, la structure sert de fondations. La structure trace les gr
 
 Elle est basée sur des pratiques que nous avons développées au cours de nos nombreuses collaborations avec des clients de tailles diverses. Nous comptons parmi ces clients aussi bien des petites entreprises développant des solutions dans le cloud que de grandes multinationales et des éditeurs de logiciels indépendants qui migrent des charges de travail et développent des solutions cloud natives. La structure d’entreprise a été spécialement conçue pour offrir une flexibilité permettant de prendre en charge les charges de travail informatiques traditionnelles et les charges de travail agiles, comme quand les développeurs créent des applications SaaS (software as a service) basées sur les fonctionnalités de la plateforme Azure.
 
-La structure d’entreprise constitue le fondement de chaque nouvel abonnement dans Azure. Elle permet aux administrateurs de s’assurer que les charges de travail répondent à la configuration requise minimale en matière de gouvernance d’une organisation sans empêcher les groupes professionnels et les développeurs d’atteindre rapidement leurs objectifs. Notre expérience montre qu’elle a pour effet non pas d’empêcher la croissance du cloud public, mais de l’accélérer considérablement.
+La structure d’entreprise peut constituer le fondement de chaque nouvel abonnement dans Azure. Elle permet aux administrateurs de s’assurer que les charges de travail répondent à la configuration requise minimale en matière de gouvernance d’une organisation sans empêcher les groupes professionnels et les développeurs d’atteindre rapidement leurs objectifs. Notre expérience montre qu’elle a pour effet non pas d’empêcher la croissance du cloud public, mais de l’accélérer considérablement.
 
 > [!NOTE]
 > Microsoft a publié en préversion une nouvelle fonctionnalité appelée [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) qui vous permet d’empaqueter, gérer et déployer images, modèles, stratégies et autres scripts courants dans les abonnements et les groupes d’administration. Cette fonctionnalité est le trait d’union entre l’objectif de la structure en tant que modèle de référence et le déploiement de ce modèle dans votre organisation.
 >
 L’illustration suivante présente les composants de la structure. Celle-ci est basée sur un plan solide de la hiérarchie de gestion et des abonnements. Les piliers en sont des stratégies Resource Manager et des normes d’affectation de noms fortes. Le reste de la structure est constitué des fonctionnalités Azure de base qui habilitent et connectent un environnement sécurisé et facile à gérer.
 
-![structure d’entreprise](../_images/reference/scaffoldv2.png)
+![Structure d’entreprise](../_images/reference/scaffoldv2.png)
 
 ## <a name="define-your-hierarchy"></a>Définition de votre hiérarchie
 
 La structure a pour assise la hiérarchie et la relation de l’Accord de Mise en Œuvre Entreprise Azure à travers les abonnements et les groupes de ressources. L’Accord de Mise en Œuvre Entreprise définit la forme et l’utilisation des services Azure au sein de votre entreprise d’un point de vue conceptuel. Dans le cadre du Contrat Entreprise, vous pouvez subdiviser l’environnement en services, en comptes, en abonnements et en groupes de ressources à l’image de la structure de votre organisation.
 
-![hiérarchie](../_images/reference/agreement.png)
+![Hiérarchie](../_images/reference/agreement.png)
 
 Un abonnement Azure est l’unité de base contenant toutes les ressources. Il définit aussi plusieurs limites au sein d’Azure, comme le nombre de cœurs, de réseaux virtuels et d’autres ressources. Les groupes de ressources servent à affiner le modèle d’abonnement et permettent un regroupement plus naturel des ressources.
 
@@ -228,7 +228,7 @@ La collecte et l’analyse des données de télémétrie, qui donnent des indica
 
 Ces informations peuvent être consultées et traitées à plusieurs niveaux et sont constamment améliorées. Azure propose des fonctionnalités **partagées**, **basiques** et **approfondies** destinées à superviser les ressources Azure via les services présentés dans le schéma ci-dessous.
 
-![monitoring](../_images/reference/monitoring.png)
+![Surveillance](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Fonctionnalités partagées
 
@@ -344,4 +344,4 @@ Azure met à votre disposition à la fois des fonctionnalités internes et des f
 
 La gouvernance est essentielle au succès d’Azure. Cet article vise l’implémentation technique d’une structure d’entreprise, mais traite uniquement de processus plus larges et de relations entre les composants. La gouvernance de stratégies s’applique du haut vers le bas et dépend des objectifs de l’entreprise. Naturellement, la création d’un modèle de gouvernance pour Azure inclut des représentants du service informatique. Mais, plus important encore, elle doit également intégrer des responsables de groupes professionnels et de la gestion des risques et de la sécurité. Au final, une structure d’entreprise consiste à limiter les risques métier afin de faciliter la mission et la poursuite des objectifs d’une organisation.
 
-Maintenant que vous connaissez mieux la gouvernance des abonnements, il est temps pour voir ces recommandations dans la pratique. Voir la rubrique [Examples of implementing Azure subscription governance](./azure-scaffold-examples.md) (Exemples d’implémentation de la gouvernance des abonnements Azure).
+Maintenant que vous connaissez mieux la gouvernance des abonnements, il est temps pour voir ces recommandations dans la pratique. Pour plus d’informations, consultez [Bonnes pratiques de préparation pour Azure](../ready/azure-best-practices/index.md).
