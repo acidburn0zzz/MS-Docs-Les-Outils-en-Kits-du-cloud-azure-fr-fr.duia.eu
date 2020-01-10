@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: 743bbb31b6bee799e18161a55b0f70c1783eaf6f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c945539be722db41f9e4f04813c8bf9ac93af34f
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565923"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781706"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework d’adoption du cloud Microsoft pour Azure
 
@@ -52,7 +52,7 @@ Définir la justification professionnelle et les résultats attendus.
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Planification</h3>
+                            <h3>Plan</h3>
 Aligner les plans d’adoption actionnables sur les résultats métier.
                         </div>
                     </div>
@@ -147,7 +147,7 @@ Gouverner l’environnement et les charges de travail.
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>gérer</h3>
+                            <h3>Gérer</h3>
 Gestion des opérations pour les solutions cloud et hybrides.
                         </div>
                     </div>
@@ -163,13 +163,13 @@ Chacune des phases capturées ci-dessus fait partie d’un large cycle de vie d�
 
 ![Vue d’ensemble du Framework d’adoption du cloud](./_images/caf-overview.png)
 
-## <a name="intent"></a>Intention
+## <a name="intent"></a>Intentionnel
 
-Le cloud change radicalement la façon dont les entreprises se procurent et utilisent des ressources informatiques. Jusqu’ici, elles étaient propriétaires et responsables de tous les aspects informatiques, de l’infrastructure aux logiciels. En passant au cloud, les entreprises peuvent provisionner et consommer des ressources seulement quand elles en ont besoin. Bien que le cloud offre une formidable flexibilité quant aux choix de conception, les entreprises ont besoin d’une méthodologie éprouvée et cohérente pour l’adoption de technologies cloud. Le Framework d’adoption du cloud Microsoft pour Azure répond à ce besoin, en aidant à la prise des décisions tout au long de l’adoption du cloud.
+Le cloud change radicalement la façon dont les entreprises se procurent, utilisent et sécurisent les ressources informatiques. Jusqu’ici, elles étaient propriétaires et responsables de tous les aspects informatiques, de l’infrastructure aux logiciels. En passant au cloud, les entreprises peuvent provisionner et consommer des ressources seulement quand elles en ont besoin. Bien que le cloud offre une formidable flexibilité quant aux choix de conception, les entreprises ont besoin d’une méthodologie éprouvée et cohérente pour l’adoption de technologies cloud. Le Framework d’adoption du cloud Microsoft pour Azure répond à ce besoin, en aidant à la prise des décisions tout au long de l’adoption du cloud.
 
 L’adoption du cloud n’est cependant qu’un moyen d’atteindre un objectif final. Une adoption réussie du cloud débute bien avant le choix du fournisseur de la plateforme cloud. Elle commence quand les décisionnaires informatiques et métier prennent conscience du fait que le cloud peut accélérer un objectif de transformation métier spécifique. Le Framework d’adoption du cloud peut les aider à aligner des stratégies en matière de transformation technique, culturelle et métier de façon à atteindre les objectifs métier souhaités.
 
-Le Framework d’adoption du cloud fournit une aide technique pour Microsoft Azure. Étant donné que les entreprises clientes peuvent encore être dans la phase de sélection d’un fournisseur cloud, le framework donne des conseils d’ordre général sur le cloud pour des décisions stratégiques quand c’est possible.
+Le Framework d’adoption du cloud fournit une aide technique pour Microsoft Azure. Étant donné que les entreprises clientes peuvent encore être dans la phase de sélection d’un fournisseur cloud ou avoir une stratégie multicloud intentionnelle, le framework donne des conseils d’ordre général sur le cloud pour les décisions stratégiques quand c’est possible.
 
 ## <a name="intended-audience"></a>Public concerné
 

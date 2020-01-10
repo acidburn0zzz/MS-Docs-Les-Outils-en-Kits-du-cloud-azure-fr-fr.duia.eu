@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 25ccd940207e6b8d081b68b154e921c2da599147
-ms.sourcegitcommit: 57208103dd80b6b169e7144a8e55994a56184740
+ms.openlocfilehash: 86082985a252e4724f237806669814d41ac29173
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856795"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781434"
 ---
 # <a name="landing-zone-considerations"></a>Considérations relatives aux zones d’accueil
 
@@ -37,7 +37,7 @@ Toutes les zones d’accueil fournissent une structure aux options d’hébergem
 Chaque zone d’accueil fait partie d’une solution plus large ayant comme objectif d’organiser les ressources dans un environnement cloud. Les fondamentaux Azure sont les éléments constitutifs essentiels pour l’organisation.
 
 - **[Concepts fondamentaux Azure](./fundamental-concepts.md).** Découvrez les concepts fondamentaux et les termes utilisés pour organiser les ressources dans Azure et quel est le lien entre les différents concepts.
-- **Guide de décision concernant l’organisation des ressources**. Une fois que vous avez compris tous les fondamentaux, le guide de décision concernant l’organisation des ressources peur vous aider à prendre des décisions permettant de structurer la zone d’accueil.
+- **[Guide de décision pour la cohérence des ressources](../../decision-guides/resource-consistency/)** . Une fois que vous avez compris tous les fondamentaux, le guide de décision concernant l’organisation des ressources peur vous aider à prendre des décisions permettant de structurer la zone d’accueil.
 
 ## <a name="governance-considerations"></a>Considérations sur la gouvernance
 

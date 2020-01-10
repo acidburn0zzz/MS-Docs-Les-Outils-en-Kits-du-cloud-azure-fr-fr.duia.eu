@@ -9,30 +9,30 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 977a1f58d59a182df6451b27f15747477a1a1de9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 40bce7ec1a68463c9ece51188170d94a274507c3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683745"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781519"
 ---
-# <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework d’adoption du cloud Microsoft pour Azure
+# <a name="cloud-adoption-framework-roadmap"></a>Feuille de route du Framework d’adoption du cloud
 
 Le cloud change radicalement la façon dont les entreprises se procurent et utilisent des ressources informatiques. Jusqu’ici, elles étaient propriétaires et responsables de tous les aspects informatiques, de l’infrastructure aux logiciels. Le cloud permet aux entreprises de provisionner et de consommer des ressources seulement quand c’est nécessaire. L’adoption du cloud est cependant un moyen d’atteindre un objectif final. Les entreprises adoptent le cloud lorsqu’elles réalisent qu’elles peuvent répondre à une de ces opportunités commerciales :
 
 - Voici quelques-unes des motivations des entreprises pour **migrer** vers le cloud :
-  - Optimiser les opérations.
-  - Simplifier la technologie.
-  - Augmenter la réactivité de l’entreprise.
-  - Réduire les coûts.
-  - Se préparer à de nouvelles capacités techniques.
-  - S’adapter à de nouvelles demandes ou zones géographiques.
+  - Optimiser les opérations
+  - Simplifier la technologie
+  - Augmenter la réactivité de l’entreprise
+  - Réduire les coûts
+  - Se préparer à de nouvelles fonctionnalités techniques
+  - Adaptation à la demande du marché ou à de nouvelles régions géographiques
 - Voici quelques-unes des motivations des entreprises pour **innover** avec le cloud :
-  - Améliorer l’expérience client.
-  - Augmenter l’engagement clients.
-  - Transformer les produits.
-  - Se préparer à de nouvelles capacités techniques et les mettre en place.
-  - S’adapter à de nouvelles demandes ou zones géographiques.
+  - Améliorer l’expérience client
+  - Augmenter l’engagement des clients
+  - Transformer les produits
+  - Se préparer à de nouvelles capacités techniques et les mettre en place
+  - S’adapter à la demande du marché ou à de nouvelles régions géographiques
 
 ## <a name="vision-and-objectives"></a>Vision et objectifs
 
@@ -46,11 +46,11 @@ Le cloud change radicalement la façon dont les entreprises se procurent et util
 
 Le Framework d’adoption du cloud est une structure globale qui couvre les étapes de planification, de préparation et d’adoption des phases de migration et d’innovation pour l’adoption du cloud, avec des conseils sur la gouvernance et l’exploitation.
 
-Microsoft développe activement ce framework en collaboration avec les clients, les partenaires et les équipes internes. Pour encourager le partenariat, le contenu sera publié en préversion publique dès qu’il sera disponible. Ces préversions publiques permettent de tester, de valider et d’affiner de manière incrémentielle les recommandations. Il sera proposé en disponibilité générale une fois les objectifs atteints.
+Le Framework est maintenant en disponibilité générale (GA). Toutefois, nous développons encore activement ce framework en collaboration avec les clients, les partenaires et les équipes internes. Pour encourager les partenariats, le contenu est publié dès qu’il est disponible. Ces versions publiques permettent de tester, de valider et d’affiner petit à petit les recommandations. 
 
 Pour réussir l’adoption du cloud, le client doit préparer son personnel, ses technologies et ses processus à la transformation numérique. Le Framework d’adoption du cloud comprend une section détaillant les parcours d’adoption globaux, à la fois la migration et l’innovation, sous forme de vue d’ensemble pour les clients. Cette section se compose des phases suivantes dans le parcours d’adoption :
 
-- **Planification :** Alignez les résultats pour l’entreprise sur les backlogs des technologies exploitables. Cette phase se compose de trois domaines de planification précoce :
+- **Planifier :** Alignez les résultats pour l’entreprise sur les backlogs des technologies exploitables. Cette phase se compose de trois domaines de planification précoce :
   - Définir la justification métier et les résultats attendus.
   - Définir la priorité des charges de travail en fonction de l’impact sur les résultats pour l’entreprise.
   - Créez un plan d’adoption du cloud basé sur le patrimoine numérique actuel et les charges de travail définies comme prioritaires.
