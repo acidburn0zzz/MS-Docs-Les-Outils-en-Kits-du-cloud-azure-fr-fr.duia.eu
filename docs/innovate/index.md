@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 06110380d848cdab37f7bc6109869be07faa9265
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681783"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868079"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovation cloud dans le Framework d’adoption du cloud
 
@@ -22,7 +22,7 @@ Tous les portefeuilles informatiques disposent de quelques charges de travail et
 
 Cette section du Framework d’adoption du cloud se concentre sur les éléments de votre portefeuille qui génèrent le plus grand retour sur investissement.
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 Pour vous préparer à cette phase du cycle d’adoption du cloud, le framework suggère les exercices suivants :
 
@@ -78,7 +78,7 @@ Azure inclut divers outils cloud qui peuvent accélérer le déploiement de solu
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Bonnes pratiques</h3>
+                            <h3>Meilleures pratiques</h3>
 Vos décisions architecturales doivent respecter les bonnes pratiques relatives à chaque outil de la chaîne d’outils. Le respect de ces instructions vous permet d’accélérer le développement de solutions et de fournir une référence pour des conceptions architecturales solides.
                         </div>
                     </div>
@@ -123,9 +123,9 @@ Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation 
 
 Voici quelques exemples de parcours d’apprentissage spécifiques aux rôles sur Microsoft Learn en ligne avec la partie Innover du framework d’adoption du cloud.
 
-[Administrer les conteneurs dans Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/) : Azure Container Instances (ACI) constitue le moyen le plus rapide et le plus facile d’exécuter des conteneurs dans Azure. Ce parcours d’apprentissage vous apprend à créer et gérer vos conteneurs, et à utiliser ACI pour fournir une mise à l’échelle élastique pour Kubernetes.
+[Administrer les conteneurs dans Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure) : Azure Container Instances (ACI) constitue le moyen le plus rapide et le plus facile d’exécuter des conteneurs dans Azure. Ce parcours d’apprentissage vous apprend à créer et gérer vos conteneurs, et à utiliser ACI pour fournir une mise à l’échelle élastique pour Kubernetes.
 
-[Créer des applications serverless](https://docs.microsoft.com/learn/paths/create-serverless-applications/) : Azure Functions permet de créer des systèmes de calcul à la demande basés sur les événements, qui peuvent être déclenchés par divers événements externes. Découvrez comment tirer parti des fonctions pour exécuter une logique côté serveur et créer des architectures serverless.
+[Créer des applications serverless](https://docs.microsoft.com/learn/paths/create-serverless-applications) : Azure Functions permet de créer des systèmes de calcul à la demande basés sur les événements, qui peuvent être déclenchés par divers événements externes. Découvrez comment tirer parti des fonctions pour exécuter une logique côté serveur et créer des architectures serverless.
 
 Pour découvrir des parcours d’apprentissage supplémentaires, parcourez le [catalogue Learn](/learn/browse). Utilisez le filtre **Rôles** pour aligner les parcours d’apprentissage avec votre rôle.
 
@@ -134,4 +134,3 @@ Pour découvrir des parcours d’apprentissage supplémentaires, parcourez le [c
 Le premier exercice relatif à l’innovation dans le cloud consiste à :
 > [!div class="nextstepaction"]
 > [Créer un consensus autour de la valeur métier de l’innovation](./business-value.md)
-

@@ -8,14 +8,14 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
+ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753526"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "75328920"
 ---
-# <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Accélérer la migration en migrant une instance de SQL Server
+# <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Accélérer la migration en migrant plusieurs bases de données ou serveurs SQL entiers
 
 La migration d’instances entières peut accélérer les efforts de migration de la charge de travail. L'aide suivante étend la portée du [guide de migration Azure](../azure-migration-guide/index.md) en migrant une instance de SQL Server en dehors d'un effort de migration centré sur la charge de travail. Cette approche peut amorcer la migration de plusieurs charges de travail grâce à une seule migration de plateforme de données. La majeure partie de l'effort nécessaire à l'expansion de cette portée se produit au cours des processus de détermination des prérequis, d'évaluation, de migration et d'optimisation d'un effort de migration.
 
@@ -27,7 +27,7 @@ L'approche recommandée dans le [guide de migration Azure](../azure-migration-gu
 
 Toutefois, certaines structures de données peuvent être migrées plus efficacement par le biais d’une migration distincte de plateforme de données. Voici quelques exemples :
 
-- **Fin du service :** Le déplacement rapide d'une instance de SQL Server pour éviter des problèmes de fin du service peut justifier l'utilisation de ce guide en dehors des efforts de migration standard.
+- **Fin du service :** Le déplacement rapide d’une instance SQL Server en tant qu’itération isolée dans un effort de migration plus grande peut éviter des problèmes de fin de service. Ce guide vous aidera à intégrer la migration d’une instance SQL Server dans le processus d’une migration plus grande. Toutefois, si vous migrez/mettez à niveau une instance SQL Server indépendamment de tout autre effort d’adoption du cloud, les articles [Vue d’ensemble de la fin de vie SQL Server](/sql/sql-server/end-of-support/sql-server-end-of-life-overview) ou [Documentation sur la migration SQL Server](/sql/sql-server/migrate/index) peuvent fournir des conseils plus clairs.
 - **Services SQL Server :** La structure de données fait partie d’une solution plus large qui requiert l’exécution de SQL Server sur une machine virtuelle. Cela est courant pour les solutions qui utilisent des services SQL Server tels que SQL Server Reporting Services, SQL Server Integration Services ou SQL Server Analysis Services.
 - **Bases de données à haute densité et faible utilisation :** L'instance de SQL Server présente une densité élevée de bases de données. Chacune de ces bases de données affiche un faible volume de transactions et nécessite peu de ressources de calcul. N'hésitez pas à envisager d'autres solutions plus modernes, mais une approche IaaS (infrastructure as a service) peut entraîner une réduction significative des coûts d'exploitation.
 - **Coût total de possession :** Le cas échéant, vous pouvez appliquer [Azure Hybrid Benefits](https://azure.microsoft.com/pricing/hybrid-benefit) au prix catalogue. Vous obtiendrez ainsi le coût de possession le plus bas pour les instances de SQL Server. Cela est particulièrement courant pour les clients qui hébergent SQL Server dans des scénarios multicloud.
@@ -48,11 +48,11 @@ Voici un exemple d'inventaire de serveur :
 
 |SQL Server|Objectif|Version|[Caractère critique](../../manage/considerations/criticality.md)|[Sensibilité](../../govern/policy-compliance/data-classification.md)|Nombre de bases de données|SSIS|SSRS|SSAS|Cluster|Nombre de nœuds|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-|sql-01|Applications principales|2016|Intégration stratégique|Hautement confidentiel|40|N/A|N/A|N/A|OUI|3|
-|sql-02|Applications principales|2016|Intégration stratégique|Hautement confidentiel|40|N/A|N/A|N/A|OUI|3|
-|sql-03|Applications principales|2016|Intégration stratégique|Hautement confidentiel|40|N/A|N/A|N/A|OUI|3|
-|sql-04|BI|2012|Élevé|XX|6|N/A|Confidentiel|Oui - Cube multidimensionnel|Non|1|
-|sql-05|Intégration|2008 R2|Faible|Généralités|20|OUI|N/A|N/A|Non|1|
+|sql-01|Applications principales|2016|Intégration stratégique|Hautement confidentiel|40|N/A|N/A|N/A|Oui|3|
+|sql-02|Applications principales|2016|Intégration stratégique|Hautement confidentiel|40|N/A|N/A|N/A|Oui|3|
+|sql-03|Applications principales|2016|Intégration stratégique|Hautement confidentiel|40|N/A|N/A|N/A|Oui|3|
+|sql-04|BI|2012|Élevé|XX|6|N/A|Confidential|Oui - Cube multidimensionnel|Non|1|
+|sql-05|Intégration|2008 R2|Faible|Général|20|Oui|N/A|N/A|Non|1|
 
 ### <a name="database-inventory"></a>Inventaire de base de données
 
@@ -61,11 +61,11 @@ Voici un exemple d'inventaire de base de données pour l'un des serveurs ci-dess
 |Serveur|Base de données|[Caractère critique](../../manage/considerations/criticality.md)|[Sensibilité](../../govern/policy-compliance/data-classification.md)|Résultats de l'Assistant Migration de données (DMA)|Correction DMA|Plateforme cible|
 |---------|---------|---------|---------|---------|---------|---------|
 |sql-01|DB-1|Intégration stratégique|Hautement confidentiel|Compatible|N/A|Azure SQL Database|
-|sql-01|DB-2|Élevé|Confidentiel|Modification requise du schéma|Modifications implémentées|Azure SQL Database|
-|sql-01|DB-1|Élevé|Généralités|Compatible|N/A|Instance gérée d'Azure SQL|
-|sql-01|DB-1|Faible|Hautement confidentiel|Modification requise du schéma|Modifications planifiées|Instance gérée d'Azure SQL|
-|sql-01|DB-1|Intégration stratégique|Généralités|Compatible|N/A|Instance gérée d'Azure SQL|
-|sql-01|DB-2|Élevé|Confidentiel|Compatible|N/A|Azure SQL Database|
+|sql-01|DB-2|Élevé|Confidential|Modification requise du schéma|Modifications implémentées|Azure SQL Database|
+|sql-01|DB-3|Élevé|Général|Compatible|N/A|Instance gérée d'Azure SQL|
+|sql-01|DB-4|Faible|Hautement confidentiel|Modification requise du schéma|Modifications planifiées|Instance gérée d'Azure SQL|
+|sql-01|DB-5|Intégration stratégique|Général|Compatible|N/A|Instance gérée d'Azure SQL|
+|sql-01|DB-6|Élevé|Confidential|Compatible|N/A|Azure SQL Database|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Intégration au plan d’adoption du cloud
 
@@ -106,9 +106,9 @@ Le choix de la meilleure aide pour la migration avec Azure Database Migration Se
 
 |Source  |Cible  |Outil  |Type de migration  |Assistance  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|Database Migration Service|Hors ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Azure SQL Database|Database Migration Service|Hors connexion|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Azure SQL Database|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Azure SQL Database Managed Instance|Database Migration Service|Hors ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Azure SQL Database Managed Instance|Database Migration Service|Hors connexion|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
 |SQL Server|Azure SQL Database Managed Instance|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |SQL Server RDS|Azure SQL Database (ou instance gérée)|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 
@@ -118,9 +118,9 @@ Après le déplacement des bases de données d’une instance de SQL Server vers
 
 |Source  |Cible  |Outil  |Type de migration  |Assistance  |
 |---------|---------|---------|---------|---------|
-|SQL Server Integration Services|Runtime d'intégration Azure Data Factory|Azure Data Factory|Hors ligne|[Didacticiel](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
-|SQL Server Analysis Services - Modèle tabulaire|Azure Analysis Services|SQL Server Data Tools|Hors ligne|[Didacticiel](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Power BI Report Server|Power BI|Hors ligne|[Didacticiel](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
+|SQL Server Integration Services|Runtime d'intégration Azure Data Factory|Azure Data Factory|Hors connexion|[Didacticiel](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
+|SQL Server Analysis Services - Modèle tabulaire|Azure Analysis Services|SQL Server Data Tools|Hors connexion|[Didacticiel](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
+|SQL Server Reporting Services|Power BI Report Server|Power BI|Hors connexion|[Didacticiel](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Conseils et didacticiels pour la migration de SQL Server vers une instance IaaS de SQL Server
 
@@ -130,7 +130,7 @@ Adoptez cette approche pour migrer des bases de données ou d'autres services su
 
 |Source  |Cible  |Outil  |Type de migration  |Assistance  |
 |---------|---------|---------|---------|---------|
-|SQL Server à instance unique|SQL Server sur IaaS|Différentes possibilités|Hors ligne|[Didacticiel](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
+|SQL Server à instance unique|SQL Server sur IaaS|Différentes possibilités|Hors connexion|[Didacticiel](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
 ## <a name="optimization-process-changes"></a>Modifications du processus d’optimisation
 
@@ -161,4 +161,4 @@ Tant que l'étape 5 n'a pas abouti, vous ne pouvez pas terminer les bases de do
 Revenez à la [liste de vérification d’expansion d’étendue](./index.md) pour vous assurer que votre méthode de migration est entièrement alignée.
 
 > [!div class="nextstepaction"]
-> [Liste de contrôle d’expansion d’étendue](./index.md)
+> [Check-list d’expansion d’étendue](./index.md)
