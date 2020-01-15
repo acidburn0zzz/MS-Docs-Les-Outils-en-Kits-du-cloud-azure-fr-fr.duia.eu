@@ -9,19 +9,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 59a18ab71befd7b4f60c4e0a97ecb6af28690d7f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b594283b4787cb9b369f018264098fd052ec638e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752840"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781859"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>réhéberger une application locale sur une machine virtuelle Azure et SQL Database Managed Instance
 
 Cet article explique comment la société fictive Contoso migre une application frontale Windows .NET à deux niveaux qui s’exécute sur des machines virtuelles VMware vers une machine virtuelle Azure à l’aide du service Azure Site Recovery. Il explique également la façon dont Contoso migre la base de données d’application vers Azure SQL Database Managed Instance.
-
-> [!NOTE]
-> Azure SQL Database Managed Instance est actuellement en préversion.
 
 L’application SmartHotel360 utilisée dans cet exemple est fournie au format open source. Si vous souhaitez l’utiliser à des fins de test, vous pouvez la télécharger à partir de [GitHub](https://github.com/Microsoft/SmartHotel360).
 
@@ -86,7 +83,7 @@ Dans le cadre de la conception de la solution, Contoso a fait une comparaison de
 
 ### <a name="solution-review"></a>Examen de la solution
 
-Contoso évalue la conception proposée en dressant une liste des avantages et des inconvénients.
+Contoso évalue la conception proposée en dressant la liste des avantages et des inconvénients.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -115,15 +112,14 @@ Service | Description | Coût
 [Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Managed Instance est un service de base de données managé qui représente une instance de SQL Server entièrement managée dans le cloud Azure. Il utilise le même code que la dernière version du moteur de base de données SQL Server et offre les dernières fonctionnalités, améliorations en termes de performances et correctifs de sécurité. | L’utilisation de SQL Database Managed Instance exécuté dans Azure entraîne des frais basés sur la capacité. Apprenez-en davantage sur la [tarification de Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Le service Site Recovery orchestre et gère la migration et la reprise d’activité pour les machines virtuelles Azure, les machines virtuelles locales et les serveurs physiques. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement et entraînent des frais. Apprenez-en davantage sur les [frais et la tarification de Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery).
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Contoso et les autres utilisateurs doivent respecter les prérequis suivants pour ce scénario :
 
 <!-- markdownlint-disable MD033 -->
 
-Configuration requise | Détails
+Spécifications | Détails
 --- | ---
-**S’inscrire à la préversion de Managed Instance** | Vous devez être inscrit pour tester la préversion publique limitée de SQL Database Managed Instance. Vous avez besoin d’un abonnement Azure pour vous [inscrire](https://portal.azure.com#create/Microsoft.SQLManagedInstance). La confirmation d’inscription prend quelques jours. Veillez donc à vous inscrire avant de commencer le déploiement de ce scénario.
 **Abonnement Azure** | Vous devez avoir déjà créé un abonnement quand vous effectuez l’évaluation dans le premier article de cette série. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions.<br/><br/> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur de l’abonnement, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.<br/><br/> Si vous avez besoin d’autorisations plus précises, consultez [Utiliser le contrôle d’accès en fonction du rôle pour gérer l’accès à Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
 **Infrastructure Azure** | Contoso configure son infrastructure Azure comme décrit dans [Infrastructure Azure pour la migration](./contoso-migration-infrastructure.md).
 **Site Recovery (local)** | Votre instance locale de vCenter Server doit exécuter la version 5.5, 6.0 ou 6.5<br/><br/> Un hôte ESXi qui exécute la version 5.5, 6.0 ou 6.5<br/><br/> Une ou plusieurs machines virtuelles VMware exécutées sur l’hôte ESXi.<br/><br/> Les machines virtuelles doivent répondre aux [exigences Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Configuration [réseau](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) et [stockage](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) prise en charge.
@@ -138,14 +134,14 @@ Voici comment Contoso prévoie de configurer le déploiement :
 > [!div class="checklist"]
 >
 > - **Étape 1 : Configurer une SQL Database Managed Instance.** Contoso a besoin d’une instance managée existante vers laquelle la base de données SQL Server locale migrera.
-> - **Étape 2 : Préparer Azure Database Migration Service.** Contoso doit inscrire le fournisseur de migration de base de données, créer une instance, puis créer un projet Azure Database Migration Service. Contoso doit également configurer un URI (Uniform Resource Identifier) avec signature d’accès partagé (SAP) pour Azure Database Migration Service. Un URI SAP fournit un accès délégué aux ressources du compte de stockage Contoso. Ainsi, Contoso peut accorder des autorisations limitées aux objets de stockage. Contoso configure un URI SAP pour qu’Azure Database Migration Service puisse accéder au conteneur du compte de stockage sur lequel le service charge les fichiers de sauvegarde SQL Server.
-> - **Étape 3 : Préparer Azure pour Site Recovery.** Contoso doit créer un compte de stockage afin de conserver les données répliquées pour Site Recovery. Ils doivent également créer un coffre Azure Recovery Services.
-> - **Étape 4 : Préparer une machine virtuelle VMware locale pour Site Recovery.** Contoso doit préparer des comptes pour la découverte de machines virtuelles et l’installation d’agents, afin d’établir une connexion aux machines virtuelles Azure après basculement.
-> - **Étape 5 : Répliquer les machines virtuelles.** pour la réplication, Contoso configure les environnements source et cible de Site Recovery ainsi qu’une stratégie de réplication, et commence la réplication des machines virtuelles vers Stockage Azure.
-> - **Étape 6 : Migrer la base de données à l’aide d’Azure Database Migration Service.** Contoso migre la base de données.
-> - **Étape 7 : Migrer les machines virtuelles à l’aide de Site Recovery.** Contoso exécute un test de basculement pour vérifier que tout fonctionne. Ensuite, Contoso exécute un basculement complet pour migrer les machines virtuelles vers Azure.
+> - **Étape 2 : Préparer Azure Database Migration Service.** Contoso doit inscrire le fournisseur de migration de base de données, créer une instance, puis créer un projet Azure Database Migration Service. Contoso doit également configurer un URI (Uniform Resource Identifier) avec signature d’accès partagé (SAP) pour Azure Database Migration Service. Un URI SAP fournit un accès délégué aux ressources du compte de stockage Contoso. Ainsi, Contoso peut accorder des autorisations limitées aux objets de stockage. Contoso configure un URI SAP pour qu’Azure Database Migration Service puisse accéder au conteneur du compte de stockage sur lequel le service charge les fichiers de sauvegarde SQL Server.
+> - **Étape 3 : Préparer Azure pour Site Recovery.** Contoso doit créer un compte de stockage afin de conserver les données répliquées pour Site Recovery. Ils doivent également créer un coffre Azure Recovery Services.
+> - **Étape 4 : Préparer une machine virtuelle VMware locale pour Site Recovery.** Contoso doit préparer des comptes pour la découverte de machines virtuelles et l’installation d’agents, afin d’établir une connexion aux machines virtuelles Azure après basculement.
+> - **Étape 5 : Répliquer les machines virtuelles.** pour la réplication, Contoso configure les environnements source et cible de Site Recovery ainsi qu’une stratégie de réplication, et commence la réplication des machines virtuelles vers Stockage Azure.
+> - **Étape 6 : Migrer la base de données à l’aide d’Azure Database Migration Service.** Contoso migre la base de données.
+> - **Étape 7 : Migrer les machines virtuelles à l’aide de Site Recovery.** Contoso exécute un test de basculement pour vérifier que tout fonctionne. Ensuite, Contoso exécute un basculement complet pour migrer les machines virtuelles vers Azure.
 
-## <a name="step-1-prepare-a-sql-database-managed-instance"></a>Étape 1 : Préparer SQL Database Managed Instance
+## <a name="step-1-prepare-a-sql-database-managed-instance"></a>Étape 1 : Préparer SQL Database Managed Instance
 
 Pour configurer Azure SQL Database Managed Instance, Contoso a besoin d’un sous-réseau qui remplit les conditions suivantes :
 
@@ -242,7 +238,7 @@ Découvrez comment [configurer des itinéraires pour une instance gérée](https
 
 Découvrez comment [provisionner une instance gérée](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
 
-## <a name="step-2-prepare-the-azure-database-migration-service"></a>Étape 2 : Préparer Azure Database Migration Service
+## <a name="step-2-prepare-the-azure-database-migration-service"></a>Étape 2 : Préparer Azure Database Migration Service
 
 Pour préparer Azure Database Migration Service, les administrateurs de Contoso doivent effectuer quelques opérations :
 
@@ -347,7 +343,7 @@ Les administrateurs de Contoso doivent également vérifier ces éléments quand
 - Aucune mise à jour de Windows ne doit être en attente sur la machine virtuelle quand un basculement est déclenché. Si des mises à jour de Windows sont en attente, les utilisateurs de Contoso ne peuvent pas se connecter à la machine virtuelle tant que la mise à jour n’est pas terminée.
 - Après le basculement, les administrateurs doivent examiner les **diagnostics de démarrage** pour voir une capture d’écran de la machine virtuelle. S’ils ne peuvent pas voir les diagnostics de démarrage, ils doivent vérifier que la machine virtuelle est en cours d’exécution, puis passer en revue les [conseils de dépannage](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
-## <a name="step-5-replicate-the-on-premises-vms-to-azure"></a>Étape 5 : Répliquer les machines virtuelles locales sur Azure
+## <a name="step-5-replicate-the-on-premises-vms-to-azure"></a>Étape 5 : Répliquer les machines virtuelles locales sur Azure
 
 Avant d’exécuter une migration vers Azure, les administrateurs de Contoso doivent configurer et activer la réplication pour les machines virtuelles locales.
 
@@ -515,7 +511,7 @@ Les administrateurs de Contoso exécutent un rapide test de basculement, puis mi
 
 Avant de migrer la machine virtuelle WEBVM, un test de basculement permet de s’assurer que tout fonctionne comme prévu. Les administrateurs effectuent les étapes suivantes :
 
-1. Ils exécutent un basculement de test jusqu’au dernier point dans le temps disponible (**Dernier point traité**).
+1. Ils exécutent un test de basculement jusqu’au dernier point dans le temps disponible (**Dernier point traité**).
 2. Ils sélectionnent **Arrêter la machine avant de commencer le basculement**. Cette option étant sélectionnée, Site Recovery tente d’arrêter la machine virtuelle source avant de déclencher le basculement. Le basculement se poursuit même en cas d’échec de l’arrêt.
 3. Le test de basculement est exécuté : a. Une vérification des prérequis est effectuée pour s’assurer que toutes les conditions nécessaires pour la migration sont en place.
     b. Le basculement traite les données pour permettre la création d’une machine virtuelle Azure. Si le dernier point de récupération est sélectionné, un point de récupération est créé à partir des données.

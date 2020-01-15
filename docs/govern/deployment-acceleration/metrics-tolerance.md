@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: af2ce9e70dbc694679538b1910912febb552f695
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220709"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75867950"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Métriques d’accélération du déploiement, indicateurs et tolérance au risque
 
@@ -34,7 +34,7 @@ Les risques liés à l’accélération du déploiement dépendent en grande par
 
 <!-- "en-us" location is required for the URL below. -->
 
-L’organisation informatique classique des entreprises sépare souvent les équipes chargées des opérations, de la sécurité et du développement. Bien souvent, ces équipes ne collaborent pas ou sont même hostiles les unes envers les autres. C’est en reconnaissant ces défis au tout début du processus et en intégrant les parties prenantes principales de chacune des équipes que vous pouvez favoriser l’agilité dans votre adoption du cloud, tout en gardant la main sur la sécurité et la gouvernance. Vous devez donc envisager d’adopter une culture organisationnelle de type DevOps ou [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) au tout début de votre parcours d’adoption du cloud. 
+L’organisation informatique classique des entreprises sépare souvent les équipes chargées des opérations, de la sécurité et du développement. Bien souvent, ces équipes ne collaborent pas ou sont même hostiles les unes envers les autres. C’est en reconnaissant ces défis au tout début du processus et en intégrant les parties prenantes principales de chacune des équipes que vous pouvez favoriser l’agilité dans votre adoption du cloud, tout en gardant la main sur la sécurité et la gouvernance. Vous devez donc envisager d’adopter une culture organisationnelle de type DevOps ou [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) au tout début de votre parcours d’adoption du cloud.
 
 Collaborez avec votre équipe DevSecOps et les parties prenantes de l’entreprise pour identifier les [risques commerciaux](./business-risks.md) liés à la configuration, puis déterminez une ligne de base acceptable pour configurer la tolérance au risque. Cette section des instructions du Framework d’adoption du cloud fournit des exemples, mais les risques et les bases de référence détaillés pour votre entreprise ou vos déploiements risquent d’être différents.
 
