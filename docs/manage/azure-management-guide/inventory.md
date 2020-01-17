@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4969681cbc6fbb71da70f3ced09b5e4616c773b5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565460"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781774"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventaire et visibilité dans Azure
 
@@ -33,7 +33,7 @@ Dans le cas d’un environnement d’entreprise, le tableau suivant présente le
 |Centralisation des journaux|Log Analytics|Journalisation centralisée pour tous les objectifs de visibilité|
 |Surveillance de la centralisation|Azure Monitor|Surveillance centralisée des données opérationnelles et des tendances|
 |Inventaire de machine virtuelle et suivi des modifications|Suivi des modifications et inventaire Azure|Inventorier les machines virtuelles et surveiller les modifications au niveau du système d’exploitation invité|
-|État d’intégrité du service|Journaux d’activité|Surveillance des modifications au niveau de l’abonnement|
+|Supervision des abonnements|Journaux d’activité|Surveillance des modifications au niveau de l’abonnement|
 |Surveillance du système d’exploitation invité|Azure Monitor pour machines virtuelles|Surveillance des modifications et des performances des machines virtuelles|
 |Analyse du réseau|Azure Network Watcher|Surveillance des modifications et des performances du réseau|
 |Supervision DNS|DNS Analytics|Sécurité, performances et opérations de DNS|

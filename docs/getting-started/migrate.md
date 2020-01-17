@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c902c2a3f564bd2fcc575c8eb885b52da068826e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564682"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781679"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Commencer un parcours de migration vers le cloud dans Azure
 
@@ -36,7 +36,7 @@ Les migrations cloud peuvent aider les entreprises à atteindre leurs résultats
 
 |Événements métier critiques | Motivations de la migration | Motivations de l’innovation |
 |---------|---------|---------|
-| Sortie du centre de données<br/><br/>Fusions, acquisitions ou cessions<br/><br/>Réductions des dépenses d’investissement<br/><br/>Fin du support des technologies stratégiques<br/><br/>Réponse aux changements liés à la conformité réglementaire<br/><br/>Répondre aux nouvelles exigences liées à la souveraineté des données<br/><br/>Réduire les interruptions et améliorer la stabilité informatique|Réduction des coûts<br/><br/>Réduction de la complexité liée aux fournisseurs ou aux contraintes techniques<br/><br/>Optimisation des opérations internes<br/><br/>Augmenter la réactivité de l’entreprise<br/><br/>Se préparer à de nouvelles fonctionnalités techniques<br/><br/>Mettre à l’échelle pour répondre aux besoins du marché<br/><br/>Mettre à l’échelle pour répondre aux besoins géographiques|Se préparer à de nouvelles fonctionnalités techniques<br/><br/>Créer des fonctionnalités techniques<br/><br/>Mettre à l’échelle pour répondre aux besoins du marché<br/><br/>Mettre à l’échelle pour répondre aux besoins géographiques<br/><br/>Améliorer les expériences client et les engagements<br/><br/>Transformer des produits ou services<br/><br/>Proposer de nouveaux produits ou services sur le marché|
+| Sortie du centre de données<br/><br/>Fusions, acquisitions ou cessions<br/><br/>Réductions des dépenses d’investissement<br/><br/>Fin de la prise en charge de technologies stratégiques<br/><br/>Réponse aux changements liés à la conformité réglementaire<br/><br/>Répondre aux nouvelles exigences liées à la souveraineté des données<br/><br/>Réduire les interruptions et améliorer la stabilité informatique|Réduction des coûts<br/><br/>Réduction de la complexité liée aux fournisseurs ou aux contraintes techniques<br/><br/>Optimisation des opérations internes<br/><br/>Augmenter la réactivité de l’entreprise<br/><br/>Se préparer à de nouvelles fonctionnalités techniques<br/><br/>Mettre à l’échelle pour répondre aux besoins du marché<br/><br/>Mettre à l’échelle pour répondre aux besoins d’une région ou du marché|Se préparer à de nouvelles fonctionnalités techniques<br/><br/>Créer des fonctionnalités techniques<br/><br/>Moderniser la posture et les contrôles de sécurité<br/><br/>Mettre à l’échelle pour répondre aux besoins d’une région ou du marché<br/><br/>Améliorer les expériences client et les engagements<br/><br/>Transformer des produits ou services<br/><br/>Proposer de nouveaux produits ou services sur le marché|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -93,13 +93,13 @@ Tout au long de cette expérience de migration, ce framework est utilisé pour l
 
 ### <a name="common-cultural-changes-resulting-from-adherence-to-this-methodology"></a>Changements culturels courants résultant de l’adhésion à cette méthodologie
 
-L’effort nécessaire pour atteindre les résultats opérationnels souhaités peut déclencher de légers changements dans la culture des services informatiques et, dans une certaine mesure, la culture de l’entreprise. Voici quelques changements culturels courants observés dans ce processus :
+L’effort nécessaire pour atteindre les résultats opérationnels souhaités peut déclencher de légers changements dans la culture des services informatiques, la sécurité et, dans une certaine mesure, la culture de l’entreprise. Voici quelques changements culturels courants observés dans ce processus :
 
-- L’équipe informatique est susceptible d’adopter de nouvelles compétences pour prendre en charge les charges de travail dans le cloud.
+- Les équipes informatique et de sécurité vont probablement adopter de nouvelles compétences pour prendre en charge les charges de travail dans le cloud.
 - L’exécution d’une migration cloud encourage les approches itératives ou agiles.
 - L’inclusion de la gouvernance cloud a également tendance à inspirer les approches DevOps.
 - La création d’une équipe de stratégie cloud peut conduire à une intégration plus étroite entre les dirigeants de l’entreprise et les responsables informatiques.
-- Collectivement, ces changements ont tendance à favoriser l’agilité de l’entreprise et informatique.
+- Collectivement, ces changements tendent à aboutir à une plus grande agilité de l’entreprise et informatique.
 
 Le changement culturel n’est pas un objectif de la migration cloud ou du Framework d’adoption du cloud. Toutefois, il s’agit d’un résultat couramment rencontré.
 Les changements culturels ne sont pas directement guidés. À la place, des changements subtils au niveau de la culture sont incorporés dans des suggestions d’amélioration de processus et des conseils d’approche.

@@ -1,19 +1,19 @@
 ---
-title: Chemin d’accès à la préparation des qualifications
+title: Chemin de préparation aux compétences pendant la planification
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Vue d’ensemble du chemin d’accès à la préparation des qualifications
+description: Vue d’ensemble du chemin de préparation aux compétences pendant la phase de planification de la migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62152049578d1bd1f433cc4d2070504363cffef1
+ms.sourcegitcommit: 2efd4715294189bcea7aada8a1cbbc85c72f6264
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561638"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75943456"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Chemin de préparation aux compétences durant la phase de planification d’un parcours de migration
 

@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7c733c715f636416f1a6f3f4a4cfe1d984eae73b
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564705"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781740"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 
-La rationalisation du cloud est le processus qui consiste à évaluer des ressources dans le but de déterminer la meilleure façon de les héberger dans le cloud. Une fois que vous avez déterminé une [approche](./approach.md) et compilé un [inventaire](./inventory.md), la rationalisation du cloud peut commencer. La rubrique [Rationalisation du cloud](./rationalize.md) traite des options de rationalisation les plus courantes.
+La rationalisation du cloud est le processus qui consiste à évaluer des ressources dans le but de déterminer la meilleure façon de les héberger dans le cloud. Une fois que vous avez déterminé une [approche](./approach.md) et compilé un [inventaire](./inventory.md), la rationalisation du cloud peut commencer. La rubrique Rationalisation du cloud traite des options de rationalisation les plus courantes.
 
 ## <a name="traditional-view-of-rationalization"></a>Considérations traditionnelles sur la rationalisation
 

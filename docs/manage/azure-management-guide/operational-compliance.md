@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9109a51a85627f3c8d0cee8b72baa0936d56c98e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565485"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781808"
 ---
 # <a name="operational-compliance-in-azure"></a>Conformité opérationnelle au sein d’Azure
 
@@ -32,6 +32,7 @@ Dans le cas d’un environnement d’entreprise, ce tableau présente le minimum
 |Gestion des correctifs|Update Management|Gestion et planification des mises à jour|
 |Application de stratégies|Azure Policy|Mise en œuvre de la stratégie pour garantir la conformité environnementale et invité|
 |Configuration de l’environnement|Azure Blueprints|Conformité automatisée pour les services de base|
+|Configuration de ressource|DSC (Desired State Configuration)|Configuration automatisée sur le système d’exploitation invité et quelques aspects de l’environnement|
 
 ::: zone target="docs"
 

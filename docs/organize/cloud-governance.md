@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 38fa6133c9a4f823d4347b3c1b4db5dd81f24ceb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566788"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781452"
 ---
 # <a name="cloud-governance-capabilities"></a>Compétences de gouvernance cloud
 
@@ -26,6 +26,7 @@ Selon les résultats souhaités par l’entreprise, les aptitudes nécessaires p
 
 - Gouvernance informatique
 - Architecture d’entreprise
+- Sécurité
 - Opérations informatiques
 - Infrastructure informatique
 - Mise en réseau
@@ -33,6 +34,7 @@ Selon les résultats souhaités par l’entreprise, les aptitudes nécessaires p
 - Virtualisation
 - Continuité d’activité et reprise d’activité
 - Propriétaires d’applications au sein du service informatique
+- Propriétaires financiers
 
 La compétence de gouvernance cloud identifie les risques liés aux mises en production actuelles et futures. Cette compétence est observée dans les efforts d’évaluation des risques, de compréhension des impacts potentiels et de prise de décisions concernant la tolérance aux risques. Ce faisant, des plans peuvent rapidement être mis à jour pour refléter les besoins en constante évolution de la [capacité d’adoption du cloud](./cloud-adoption.md).
 
@@ -48,7 +50,7 @@ Ces tâches sont généralement exécutées tous les mois par la compétence de 
 - Représenter la [tolérance aux risques de l’entreprise](../govern/policy-compliance/risk-tolerance.md)
 - Faciliter la création d’un [MVP de gouvernance](../govern/guides/index.md)
 
-**Tâches mensuelles suivies :**
+**Tâches mensuelles en cours :**
 
 - Comprendre les [risques métier](../govern/policy-compliance/risk-tolerance.md) introduits à chaque mise en production
 - Représenter la [tolérance aux risques de l’entreprise](../govern/policy-compliance/risk-tolerance.md)
@@ -69,7 +71,7 @@ Voici les participants qui prennent fréquemment part aux activités de gouverna
 
 ## <a name="maturation-of-cloud-governance-capability"></a>Maturation de la compétence de gouvernance cloud
 
-Certaines grandes organisations ont des équipes dédiées existantes qui se concentrent sur la gouvernance informatique. Ces équipes sont spécialisées dans la gestion des risques de tout le portefeuille informatique par le biais de méthodologies comme ITIL ou ITSM. Lorsque ces équipes existent, les modèles de maturité suivants peuvent être rapidement accélérés. En revanche, l’équipe de gouvernance informatique est encouragée à examiner le modèle de gouvernance cloud pour comprendre comment la gouvernance évolue légèrement vers le cloud. Consultez notamment les articles sur l’[extension de la stratégie d’entreprise vers le cloud](../govern/corporate-policy.md) et les [cinq disciplines de gouvernance cloud](../govern/governance-disciplines.md).
+Certaines grandes organisations ont des équipes dédiées existantes qui se concentrent sur la gouvernance informatique. Ces équipes sont spécialisées dans la gestion des risques de tout le portefeuille informatique. Lorsque ces équipes existent, les modèles de maturité suivants peuvent être rapidement accélérés. En revanche, l’équipe de gouvernance informatique est encouragée à examiner le modèle de gouvernance cloud pour comprendre comment la gouvernance évolue légèrement vers le cloud. Consultez notamment les articles sur l’[extension de la stratégie d’entreprise vers le cloud](../govern/corporate-policy.md) et les [cinq disciplines de gouvernance cloud](../govern/governance-disciplines.md).
 
 **Aucune gouvernance :** Il est courant pour les organisations d’adopter le cloud sans établir clairement de plans de gouvernance. Très vite, des préoccupations liées à la sécurité, au coût, à l’échelle et aux opérations commencent à déclencher des conversations sur le besoin d’un modèle de gouvernance et de personnes pour s’occuper des processus associés à ce modèle. Aborder ces sujets avant qu’ils ne deviennent des préoccupations s’avère toujours une démarche préliminaire utile pour éviter l’antimodèle « aucune gouvernance ». La section sur la [définition d’une stratégie d’entreprise](../govern/corporate-policy.md) peut faciliter ces conversations.
 

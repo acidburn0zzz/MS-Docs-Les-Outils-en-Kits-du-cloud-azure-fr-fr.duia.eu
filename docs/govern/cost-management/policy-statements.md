@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3ee38869badce877fc89784c1e90a60ed7ee04eb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566400"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781536"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Exemples d’instructions de la stratégie de gestion des coûts
 
@@ -24,7 +24,7 @@ Les instructions de stratégie cloud individuelles sont des recommandations dest
 - **Instruction de stratégie :** Une explication succincte claire des exigences de la stratégie.
 - **Options de conception :** Recommandations exploitables, spécifications ou autres conseils que des équipes informatiques et des développeurs peuvent utiliser lors de l’implémentation de la stratégie.
 
-Les exemples d’instructions de stratégie suivants traitent des risques courants liés aux coûts. Ces instructions sont des exemples que vous pouvez réutiliser lorsque vous rédigez des instructions de stratégie pour répondre aux besoins de votre organisation. Ces exemples ne sont pas destinés à être normatifs, et il existe potentiellement plusieurs options de stratégie pour gérer chaque risque identifié. Travaillez en étroite collaboration avec les équipes métier et les équipes informatiques afin d’identifier les meilleures stratégies pour vos propres risques.
+Les exemples d’instructions de stratégie suivants traitent des risques courants liés aux coûts. Ces énoncés sont des exemples que vous pouvez référencer lorsque vous rédigez des énoncés de stratégie pour répondre aux besoins de votre organisation. Ces exemples ne sont pas destinés à être normatifs, et il existe potentiellement plusieurs options de stratégie pour gérer chaque risque identifié. Travaillez en étroite collaboration avec les équipes métier et les équipes informatiques pour identifier les meilleures stratégies pour vos propres risques.
 
 ## <a name="future-proofing"></a>Pérennité
 
@@ -81,7 +81,7 @@ Utilisez les exemples mentionnés dans cet article comme point de départ pour d
 
 Pour commencer à développer vos instructions de stratégie personnalisées pour la gestion des coûts, téléchargez le [modèle de gestion des coûts](./template.md).
 
-Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance exploitable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
+Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance actionnable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
 
 Sur la base des risques et de la tolérance, établir un processus de gouvernance et de communication en lien avec l’adhésion à la stratégie Cost Management.
 

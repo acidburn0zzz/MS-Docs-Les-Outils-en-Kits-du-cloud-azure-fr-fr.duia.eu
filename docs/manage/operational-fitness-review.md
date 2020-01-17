@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564905"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868050"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Mettre en place un examen de santé opérationnel
 
@@ -24,7 +24,7 @@ Il existe cinq catégories principales d’exigences non fonctionnelles, qui son
 - Extensibilité
 - Disponibilité
 - Résilience, incluant la continuité d’activité et de la reprise d’activité
-- gestion
+- Gestion
 - Sécurité
 
 Un processus de passage en revue de l’adéquation opérationnelle garantit que les charges de travail critiques répondent aux attentes de votre entreprise relativement aux piliers de la qualité.
@@ -130,3 +130,5 @@ Adaptez les détails du processus et des réunions à vos besoins spécifiques. 
     Ce guide commence par une définition du terme _résilience_ et des concepts associés. Il décrit ensuite un processus pour atteindre la résilience selon une approche structurée pendant la durée de vie d’une application, depuis la conception et l’implémentation jusqu’au déploiement et à l’exploitation.
 - [Modèles de conception cloud](https://docs.microsoft.com/azure/architecture/patterns).
     Ces modèles de conception sont utiles aux équipes d’ingénieurs qui souhaitent créer des applications selon les piliers de la qualité logicielle.
+- [Azure Advisor](https://docs.microsoft.com/azure/advisor).
+    Advisor fournit des recommandations qui sont personnalisées en fonction de votre utilisation et de vos configurations pour vous permettre d’optimiser vos ressources en termes de haute disponibilité, sécurité, performances et coûts.

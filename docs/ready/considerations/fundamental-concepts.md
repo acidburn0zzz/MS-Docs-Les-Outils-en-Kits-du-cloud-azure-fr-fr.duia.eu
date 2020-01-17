@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 30dd36841171ebc0e239a8e59f94d290cc5782c7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a3b773c4715b064413cb07d15d750b1204ddf90a
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561764"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781502"
 ---
 # <a name="azure-fundamental-concepts"></a>Concepts fondamentaux Azure
 
@@ -30,7 +30,7 @@ Il est utile de connaître les définitions suivantes lorsque vous commencez vos
 - **Azure Active Directory (Azure AD) :** Un service Microsoft basé sur le cloud qui gère les identités et les accès. Azure AD permet à vos employés de se connecter et d’accéder aux ressources.
 - **Locataire Azure AD :** Une instance dédiée et approuvée d’Azure AD. Un locataire Azure AD est automatiquement créé quand votre organisation souscrit un abonnement à un service cloud Microsoft tel que Microsoft Azure, Microsoft Intune ou Office 365. Un locataire Azure représente une seule organisation.
 - **Répertoire Azure AD :** Chaque locataire Azure a un annuaire Azure AD dédié et approuvé. L’annuaire contient les utilisateurs, les groupes et les applications du locataire. Cet annuaire est utilisé pour exécuter des fonctions de gestion des identités et des accès en relation avec les ressources du client. Un répertoire peut être associé à plusieurs abonnements, mais chaque abonnement est associé à un seul répertoire.
-- **Groupes de ressources :** Des conteneurs logiques que vous utilisez pour regrouper les ressources associées dans un abonnement. Chaque ressource ne peut exister que dans un seul groupe de ressources.
+- **Groupes de ressources :** Des conteneurs logiques que vous utilisez pour regrouper les ressources associées dans un abonnement. Chaque ressource ne peut exister que dans un seul groupe de ressources. Les groupes de ressources permettent des regroupements plus précis au sein d’un abonnement. Ils sont couramment utilisés pour représenter une collection de ressources nécessaires à la prise en charge d’une charge de travail, d’une application ou d’une fonction spécifique au sein d’un abonnement.
 - **Groupes d’administration :** Conteneurs logiques que vous utilisez pour un ou plusieurs abonnements. Vous pouvez définir une hiérarchie de groupes d’administration, d’abonnements, de groupes de ressources et de ressources pour gérer efficacement l’accès, les stratégies et la conformité par le biais de l’héritage.
 - **Région :** Ensemble de centres de données Azure déployés au sein d’un périmètre défini par la latence. Les centres de données sont connectés via un réseau dédié, régional et à faible latence. La plupart des ressources Azure s’exécutent dans une région Azure spécifique.
 

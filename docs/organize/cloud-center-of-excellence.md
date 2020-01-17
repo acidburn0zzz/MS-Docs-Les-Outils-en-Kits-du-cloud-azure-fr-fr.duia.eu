@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 1f25b3debed6110f7a45933fa3d4f724ff8390a5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160491"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781825"
 ---
 # <a name="cloud-center-of-excellence"></a>Centre d’excellence de cloud
 
@@ -135,4 +135,4 @@ De plus, nous recommandons que les parties prenantes de l’entreprise s’infor
 Un modèle CCoE nécessite à la fois des [fonctionnalités de la plateforme cloud](./cloud-platform.md) et des [fonctionnalités d’automatisation du cloud](./cloud-automation.md). La prochaine étape consiste à aligner les [fonctionnalités de la plateforme cloud](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
-> [Aligner les fonctionnalités d’une plateforme cloud](./cloud-platform.md)
+> [Aligner les fonctionnalités de la plateforme cloud](./cloud-platform.md)

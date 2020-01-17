@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f24227cbbb06630810f7f6b48e7acdf842c171b3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753294"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781587"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Activer la réussite lors des parcours d’adoption du cloud
 
@@ -29,6 +29,8 @@ Tout au long de ce Framework, l’activation est un thème fondamental. La liste
   - **Gouverner** : aligner les [disciplines de gouvernance](../govern/index.md) appropriées pour appliquer de manière cohérente la gestion des coûts, l’atténuation des risques, la conformité et les bases de référence de la sécurité tout au long de l’adoption du cloud.
   - **Gestion** [Gestion des opérations](../manage/index.md) continue du portefeuille informatique pour réduire les interruptions des processus métier et garantir la stabilité du portefeuille informatique.
   - **Support :** aligner des [options de partenariat et de support appropriées](../migrate/migration-considerations/assess/partnership-options.md).
+
+Un autre thème clé est la sécurité, qui est un attribut de qualité critique pour réussir l’adoption du cloud. La sécurité est intégrée à l’ensemble de ce framework pour fournir des conseils intégrés sur la gestion de la confidentialité, de l’intégrité et des garanties de disponibilité pour vos charges de travail cloud. 
 
 ## <a name="additional-tools"></a>Outils supplémentaires
 
