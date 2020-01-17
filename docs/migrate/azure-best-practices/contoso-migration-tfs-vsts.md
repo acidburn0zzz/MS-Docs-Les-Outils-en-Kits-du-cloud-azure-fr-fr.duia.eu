@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
-ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
+ms.openlocfilehash: 48ceb3581f72f6fed72360ecf4e30596b4d2eb72
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74557025"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868098"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refactoriser un déploiement de Team Foundation Server vers Azure DevOps Services
 
@@ -63,7 +63,7 @@ Contoso va effectuer le processus de migration comme suit :
 
 ![Processus de migration](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Voici ce dont Contoso a besoin pour exécuter ce scénario.
 
@@ -82,11 +82,11 @@ Voici comment Contoso effectue la migration :
 > [!div class="checklist"]
 >
 > - **Étape 1 : Créer un compte de stockage Azure.** ce compte de stockage sera utilisé pendant le processus de migration.
-> - **Étape 2 : Mettre à niveau TFS.** Contoso procède à la mise à niveau de son déploiement vers TFS 2018 Update 2.
-> - **Étape 3 : Valider la collection.** Contoso valide la collection TFS pour préparer la migration.
-> - **Étape 4 : Générer le fichier de préparation.** Contoso crée les fichiers de migration à l'aide de l'outil de migration de TFS.
+> - **Étape 2 : Mettre à niveau TFS.** Contoso procède à la mise à niveau de son déploiement vers TFS 2018 Update 2.
+> - **Étape 3 : Valider la collection.** Contoso valide la collection TFS pour préparer la migration.
+> - **Étape 4 : Générer le fichier de préparation.** Contoso crée les fichiers de migration à l'aide de l'outil de migration de TFS.
 
-## <a name="step-1-create-a-storage-account"></a>Étape 1 : Créez un compte de stockage.
+## <a name="step-1-create-a-storage-account"></a>Étape 1 : Créez un compte de stockage.
 
 1. Dans le portail Azure, les administrateurs de Contoso créent un compte de stockage (**contosodevmigration**).
 2. Ils placent le compte dans leur région secondaire qu’ils utilisent pour le basculement, USA Centre. Ils utilisent un compte standard à usage général avec un stockage localement redondant.
@@ -98,12 +98,12 @@ Voici comment Contoso effectue la migration :
 - [Présentation du Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 - [Créer un compte de stockage](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account).
 
-## <a name="step-2-upgrade-tfs"></a>Étape 2 : Mettre à niveau TFS
+## <a name="step-2-upgrade-tfs"></a>Étape 2 : Mettre à niveau TFS
 
 Les administrateurs de Contoso mettent à niveau le serveur TFS vers TFS 2018 Update 2. Avant de commencer :
 
 - Ils téléchargent [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads).
-- Ils vérifient la [configuration matérielle requise](/azure/devops/server/requirements), et lisent les [notes de publication](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) et les [astuces de mise à niveau](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
+- Ils vérifient la [configuration matérielle requise](https://docs.microsoft.com/azure/devops/server/requirements), et lisent les [notes de publication](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) et les [astuces de mise à niveau](https://docs.microsoft.com/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
 
 Ils mettent à niveau comme suit :
 
@@ -132,7 +132,7 @@ Ils mettent à niveau comme suit :
 
 **Besoin de plus d’aide ?**
 
-Apprenez-en davantage sur la [mise à niveau de TFS](/azure/devops/server/upgrade/get-started).
+Apprenez-en davantage sur la [mise à niveau de TFS](https://docs.microsoft.com/azure/devops/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Étape 3 : Valider la collection TFS
 
@@ -266,7 +266,7 @@ Avant de commencer, les administrateurs de Contoso effectuent une sauvegarde loc
 Contoso crée une sauvegarde (DACPAC) à importer dans Azure DevOps Services.
 
 - SqlPackage.exe dans SQL Server Data Tools est utilisé pour créer le DACPAC. Il existe plusieurs versions de SqlPackage.exe installées avec SQL Server Data Tools, situées dans des dossiers portant des noms tels que 120, 130 et 140. Il est important d’utiliser la version appropriée pour préparer le DACPAC.
-- Les importations de TFS 2018 doivent utiliser SqlPackage.exe à partir du dossier 140 ou d’un dossier supérieur. Pour CONTOSOTFS, ce fichier se trouve dans le dossier : **C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
+- Les importations de TFS 2018 doivent utiliser SqlPackage.exe à partir du dossier 140 ou d’un dossier supérieur. Pour CONTOSOTFS, ce fichier se trouve dans le dossier : `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140
 
 Les administrateurs de Contoso génèrent le DACPAC de la façon suivante :
 
@@ -276,15 +276,15 @@ Les administrateurs de Contoso génèrent le DACPAC de la façon suivante :
     SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
     ```
 
-    ![Sauvegarde](./media/contoso-migration-tfs-vsts/backup1.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup1.png)
 
 2. Le message suivant s’affiche après exécution de la commande s’exécute.
 
-    ![Sauvegarde](./media/contoso-migration-tfs-vsts/backup2.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
 
 3. Ils vérifient les propriétés du fichier DACPAC.
 
-    ![Sauvegarde](./media/contoso-migration-tfs-vsts/backup3.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
 
 ### <a name="update-the-file-to-storage"></a>Mise à jour du fichier sur le stockage
 
