@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b9bc3a5c2b2bf62c49726a29cedbac81d1d1a96e
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240143"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520172"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Suivi des coûts dans les unités commerciales, les environnements ou les projets
 
@@ -71,7 +71,7 @@ La gestion des coûts est une activité d’équipe. La section du Framework d�
 
 En règle générale et à titre de meilleure pratique, nous vous suggérons de disposer d’un modèle basé sur le privilège minimum pour affecter des personnes à différents rôles et étendues.
 
-### <a name="roles"></a>contrôleur
+### <a name="roles"></a>Rôles
 
 Azure Cost Management prend en charge les rôles intégrés suivants pour chaque étendue :
 
@@ -126,7 +126,7 @@ Pour plus d’informations sur la prise en main d’Azure Cost Management, consu
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Utiliser Azure Cost Management pour régir les coûts d’AWS
 
-- [Intégration des rapports sur les coûts et l’utilisation d’AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [Intégration des rapports sur les coûts et l’utilisation d’AWS](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [Gérer les coûts d’AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>Établir l’accès, les rôles et l’étendue
