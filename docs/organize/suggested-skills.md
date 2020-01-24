@@ -1,7 +1,7 @@
 ---
-title: Chemin d’accès à la préparation des qualifications
+title: Développement des compétences techniques
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Vue d’ensemble du chemin d’accès à la préparation des qualifications
+description: Vue d’ensemble du chemin de préparation aux compétences pendant la phase de Prêt de la migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c8954fbb4e5c17ec43951270ded2708cfb3432df
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 21239c8fafe4ef202ec7feba054b8d176fe598ff
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564239"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520155"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Chemin de préparation des qualifications durant la phase « Prêt » d’une migration
+# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Chemin de préparation des qualifications durant la phase Prêt d’une migration
 
 Pendant la phase *Prêt* d’une migration, l’objectif est de préparer le parcours. Cette phase est accomplie dans deux domaines principaux : la préparation de l’organisation et la préparation de l’environnement (technique). Chaque domaine peut nécessiter de nouvelles qualifications pour les contributeurs techniques et non techniques. Les informations suivantes peuvent aider votre organisation à compiler les qualifications nécessaires.
 
@@ -40,7 +40,7 @@ Pendant la phase de préparation, le personnel technique doit créer une zone d�
 - [Services réseau Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking) : Découvrez les bases des réseaux Azure et comment améliorer la résilience et réduire la latence.
 - [Options de calcul Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute) : Passez en revue les services de calcul Azure.
 - [Sécuriser les ressources avec RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac) : Utilisez le contrôle d’accès en fonction du rôle (RBAC) pour sécuriser les ressources.
-- [Options de stockage Azure](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index) : Découvrez les avantages du stockage de données Azure.
+- [Options de stockage Azure](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index) : découvrez les avantages du stockage de données Azure.
 
 Pendant la phase de préparation, les architectes doivent concevoir des solutions qui couvrent tous les environnements Azure. Les ressources suivantes peuvent les préparer à ces tâches :
 
