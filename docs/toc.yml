@@ -11,13 +11,13 @@
       href: getting-started/enable.md
 - name: Stratégie
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       href: strategy/index.md
     - name: Motivations
       href: strategy/motivations.md
     - name: Résultats métier
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: strategy/business-outcomes/index.md
         - name: Résultats budgétaires
           href: strategy/business-outcomes/fiscal-outcomes.md
@@ -45,9 +45,9 @@
       href: strategy/first-adoption-project.md
     - name: Compétences suggérées
       href: strategy/suggested-skills.md
-- name: Planification
+- name: Plan
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       href: plan/index.md
     - name: Patrimoine numérique
       items:
@@ -67,9 +67,9 @@
       href: plan/initial-org-alignment.md
     - name: Plan d’adoption du cloud
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: plan/plan-intro.md
-        - name: Prérequis
+        - name: Conditions préalables requises
           href: plan/prerequisites.md
         - name: Déployer le modèle sur Azure DevOps
           href: plan/template.md
@@ -89,7 +89,7 @@
       href: plan/adapt-roles-skills-processes.md
 - name: Ready
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       href: ready/index.md
     - name: Guide de configuration d’Azure
       items:
@@ -109,9 +109,9 @@
           href: ready/azure-setup-guide/staying-current.md
         - name: Déployer une zone d’accueil de migration
           href: ready/azure-setup-guide/migration-landing-zone.md
-    - name: Considérations relatives à la zone d’accueil
+    - name: Considérations relatives aux zones d’accueil
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: ready/considerations/index.md
         - name: Concepts fondamentaux Azure
           href: ready/considerations/fundamental-concepts.md
@@ -133,9 +133,9 @@
           href: ready/expanded-scope/terraform-landing-zone.md
         - name: Sécurité des limites du réseau
           href: reference/networking-vdc.md
-    - name: Bonnes pratiques
+    - name: Meilleures pratiques
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: ready/azure-best-practices/index.md
         - name: Organisation des ressources
           items:
@@ -193,7 +193,7 @@
   items:
     - name: Migrer
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: migrate/index.md
         - name: Guide de migration Azure
           items:
@@ -231,9 +231,9 @@
               href: migrate/expanded-scope/network-capacity-exceeded.md
             - name: Gouvernance et conformité
               href: migrate/expanded-scope/governance-or-compliance.md
-        - name: Bonnes pratiques
+        - name: Meilleures pratiques
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: migrate/azure-best-practices/index.md
             - name: Évaluation des charges de travail
               items:
@@ -245,7 +245,7 @@
                   href: migrate/azure-best-practices/migrate-best-practices-networking.md
                 - name: Migration d’applications
                   items:
-                    - name: Vue d'ensemble
+                    - name: Vue d’ensemble
                       href: migrate/azure-best-practices/contoso-migration-overview.md
                     - name: Déployer une infrastructure de migration
                       href: migrate/azure-best-practices/contoso-migration-infrastructure.md
@@ -281,9 +281,9 @@
                       href: migrate/azure-best-practices/contoso-migration-scale.md
             - name: Migration des hôtes VMware
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: migrate/azure-best-practices/vmware-host.md
-                - name: Prérequis
+                - name: Conditions préalables requises
                   items:
                     - name: Sécuriser votre environnement
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -337,7 +337,7 @@
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Migrer des plateformes de données
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: migrate/azure-best-practices/sql-migration.md
                 - name: Guide de migration des bases de données Azure
                   items:
@@ -387,7 +387,7 @@
                       items:
                         - name: Migration de SAP ASE vers Azure SQL Database
                           href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Access
+                    - name: Accès
                       items:
                         - name: Migration d’Access vers Azure SQL Database
                           href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -421,7 +421,7 @@
                       href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Migrer des ordinateurs mainframe
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: infrastructure/mainframe-migration/index.md
                 - name: Mythes et réalités
                   href: infrastructure/mainframe-migration/myths-and-facts.md
@@ -469,11 +469,11 @@
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
         - name: Considérations relatives à la migration
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: migrate/migration-considerations/index.md
-            - name: Prérequis
+            - name: Conditions préalables requises
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: migrate/migration-considerations/prerequisites/index.md
                 - name: Décisions qui affectent la migration
                   href: migrate/migration-considerations/prerequisites/decisions.md
@@ -505,7 +505,7 @@
                   href: migrate/migration-considerations/assess/approve.md
             - name: Migrer des ressources individuelles
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: migrate/migration-considerations/migrate/index.md
                 - name: Modèles de promotion
                   href: migrate/migration-considerations/migrate/promotion-models.md
@@ -519,7 +519,7 @@
                   href: migrate/migration-considerations/migrate/stage.md
             - name: Optimiser et promouvoir des charges de travail
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: migrate/migration-considerations/optimize/index.md
                 - name: Plan de changement pour l’entreprise
                   href: migrate/migration-considerations/optimize/business-change-plan.md
@@ -537,11 +537,11 @@
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: Sécuriser et gérer les charges de travail en production
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: migrate/migration-considerations/secure-and-manage/index.md
     - name: Innover
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: innovate/index.md
         - name: Guide d’innovation Azure
           items:
@@ -561,7 +561,7 @@
               href: innovate/innovation-guide/predict.md
         - name: Considérations
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: innovate/considerations/index.md
             - name: Consensus sur la valeur métier
               href: innovate/business-value.md
@@ -597,7 +597,7 @@
               href: innovate/best-practices/index.md
             - name: Démocratiser les données
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: innovate/best-practices/data.md
                 - name: Partager des données avec des experts
                   items:
@@ -651,7 +651,7 @@
                       href: 'https://docs.microsoft.com/azure/sql-data-warehouse/load-data-wideworldimportersdw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Impliquer par le biais d’applications
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: innovate/best-practices/apps.md
                 - name: Développeurs citoyens
                   items:
@@ -739,7 +739,7 @@
                           href: 'https://docs.microsoft.com/azure/azure-functions/'
             - name: Favoriser l’adoption
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: innovate/best-practices/ci-cd.md
                 - name: Solution partagée
                   items:
@@ -781,7 +781,7 @@
                       href: 'https://docs.microsoft.com/azure/azure-monitor/learn/quick-collect-azurevm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Interagir avec les appareils
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: innovate/best-practices/devices.md
                 - name: Expérience mobile
                   items:
@@ -817,8 +817,8 @@
                       href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Bien démarrer avec Azure Sphere
                       href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
-                    - name: Déployer des applications en OTA avec Azure Sphere
-                      href: 'https://docs.microsoft.com/azure-sphere/deployment/application-deployment-steps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Créer un déploiement avec Azure Sphere
+                      href: 'https://docs.microsoft.com/azure-sphere/deployment/create-a-deployment?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Bien démarrer avec Azure Kinect DK
                       href: 'https://docs.microsoft.com/azure/Kinect-dk/about-azure-kinect-dk?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Créer votre première application Azure Kinect DK
@@ -837,7 +837,7 @@
                       href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Prédire et influencer
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: innovate/best-practices/predict.md
                 - name: Modèles
                   items:
@@ -847,7 +847,7 @@
                       href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Azure Machine Learning avec Azure SQL Data Warehouse
                       href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                - name: Prédictions
+                - name: Prévisions
                   items:
                     - name: Déployer des prédictions
                       href: 'https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -857,13 +857,11 @@
                   items:
                     - name: Azure Machine Learning de l’expérience aux services opérationnels
                       href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: "Azure Machine Learning\_: publier sur des services web pour la consommation d’applications"
-                      href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Rendre opérationnel ML Services sur Azure HDInsight
                       href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
 - name: Gouvernance
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       href: govern/index.md
     - name: Méthodologie
       href: govern/methodology.md
@@ -875,11 +873,11 @@
       href: govern/foundation-improvements.md
     - name: Guides de gouvernance
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: govern/guides/index.md
         - name: Guide de gouvernance pour les entreprises standard
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: govern/guides/standard/index.md
             - name: Narration
               href: govern/guides/standard/narrative.md
@@ -897,7 +895,7 @@
               href: govern/guides/standard/multicloud-improvement.md
         - name: Guide de gouvernance pour les entreprises complexes
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: govern/guides/complex/index.md
             - name: Narration
               href: govern/guides/complex/narrative.md
@@ -1047,9 +1045,9 @@
               href: govern/deployment-acceleration/discipline-improvement.md
             - name: Outils Azure d’accélération du déploiement
               href: govern/deployment-acceleration/toolchain.md
-- name: gérer
+- name: Gérer
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       href: manage/index.md
     - name: Guide de gestion Azure
       items:
@@ -1067,7 +1065,7 @@
           href: manage/azure-management-guide/platform-specialization.md
         - name: Spécialisation de la charge de travail
           href: manage/azure-management-guide/workload-specialization.md
-    - name: Bonnes pratiques
+    - name: Meilleures pratiques
       items:
         - name: Gestion des serveurs Azure
           items:
@@ -1077,7 +1075,7 @@
               href: manage/azure-server-management/prerequisites.md
             - name: Bien démarrer avec les opérations cloud
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: manage/azure-server-management/onboarding-overview.md
                 - name: Configurer le service pour une seule machine virtuelle
                   href: manage/azure-server-management/onboard-single-vm.md
@@ -1089,7 +1087,7 @@
                   href: manage/azure-server-management/setup-alerts.md
             - name: Opérations cloud continues
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   href: manage/azure-server-management/ongoing-management-overview.md
                 - name: Activer la stratégie Guest Configuration
                   href: manage/azure-server-management/guest-configuration-policy.md
@@ -1103,11 +1101,11 @@
               href: manage/azure-server-management/tools-services.md
         - name: Surveillance
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: manage/monitor/index.md
             - name: Supervision des modèles cloud
               href: manage/monitor/cloud-models-monitor-overview.md
-            - name: Collecte des données
+            - name: Collecte de données
               href: manage/monitor/data-collection.md
             - name: Génération d’alertes
               href: manage/monitor/alerting.md
@@ -1129,7 +1127,7 @@
               href: 'https://docs.microsoft.com/azure/architecture/resiliency/recovery-data-corruption?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
     - name: Considérations relatives à la gestion
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: manage/considerations/index.md
         - name: Alignement de l’entreprise
           href: manage/considerations/business-alignment.md
@@ -1191,13 +1189,13 @@
       href: reference/index.md
     - name: Modèle de fonctionnement
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: operating-model/index.md
         - name: Terminologie
           href: operating-model/terms.md
     - name: Guides de décision
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: decision-guides/index.md
         - name: Abonnements
           href: decision-guides/subscriptions/index.md
@@ -1213,11 +1211,11 @@
           href: decision-guides/encryption/index.md
         - name: Réseaux à définition logicielle
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: decision-guides/software-defined-network/index.md
             - name: PaaS uniquement
               href: decision-guides/software-defined-network/paas-only.md
-            - name: Natif cloud
+            - name: Cloud natif
               href: decision-guides/software-defined-network/cloud-native.md
             - name: Zone DMZ cloud
               href: decision-guides/software-defined-network/cloud-dmz.md
