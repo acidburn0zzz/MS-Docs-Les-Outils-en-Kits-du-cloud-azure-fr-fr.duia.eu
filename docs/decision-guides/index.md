@@ -1,6 +1,5 @@
 ---
 title: Guides de décision en matière d'architecture
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez les guides de décision en matière d'architecture du framework d'adoption du cloud.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c5ffe30a66305dcff1df70a383f6716702b4a067
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aa1f2b4bfdb77f8b69b79a89da8bd425918799d4
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753327"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806779"
 ---
 # <a name="architectural-decision-guides"></a>Guides de décision en matière d'architecture
 

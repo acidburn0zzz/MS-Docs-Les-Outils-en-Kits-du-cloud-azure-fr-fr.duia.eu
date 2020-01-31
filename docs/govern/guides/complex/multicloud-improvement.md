@@ -1,6 +1,5 @@
 ---
 title: 'Guide de gouvernance pour les entreprises complexes : Amélioration multicloud'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises complexes : Amélioration multicloud'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4279f088dd985b26c87d28a580b8351d45d9384e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547663"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805589"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Guide de gouvernance pour les entreprises complexes : Amélioration multicloud
 
@@ -34,7 +33,7 @@ Depuis, certains changements ont eu lieu et ceux-ci vont avoir un impact sur la 
 - Les opérations informatiques ou opérations cloud sont principalement gérées par Azure Monitor et les autres fonctionnalités d’automatisation associées.
 - La solution de continuité d’activité et reprise d’activité (BCDR) est contrôlée par des instances Azure Vault.
 - Azure Security Center est utilisé pour superviser les attaques et les violations de sécurité.
-- Azure Security Center et Azure Monitor sont utilisés pour surveiller la gouvernance du cloud.
+- Azure Security Center et Azure Monitor sont tous les deux utilisés pour superviser la gouvernance du cloud.
 - Azure Blueprints, Azure Policy et des groupes d’administration sont utilisés pour automatiser la conformité à la stratégie.
 
 ### <a name="incrementally-improve-the-future-state"></a>Améliorer progressivement l’état futur
@@ -84,7 +83,7 @@ L’adoption multicloud doit se limiter au périmètre nécessaire, défini selo
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans de nombreuses grandes entreprises, les cinq disciplines de la gouvernance cloud peuvent représenter des freins à l’adoption. L’article suivant présente une réflexion supplémentaire quant à la façon de transformer la gouvernance en sport collectif, afin de garantir la réussite à long terme dans le cloud.
+Dans de nombreuses grandes entreprises, les Cinq disciplines de la gouvernance cloud peuvent représenter des freins à l’adoption. L’article suivant présente une réflexion supplémentaire quant à la façon de transformer la gouvernance en sport collectif, afin de garantir la réussite à long terme dans le cloud.
 
 > [!div class="nextstepaction"]
 > [Couches de gouvernance multiples](./multiple-layers-of-governance.md)

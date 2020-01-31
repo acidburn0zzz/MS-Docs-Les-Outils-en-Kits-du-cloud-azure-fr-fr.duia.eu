@@ -1,6 +1,5 @@
 ---
 title: 'Se préparer à la complexité culturelle : alignement des rôles et des responsabilités'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Préparez-vous à la complexité culturelle en alignant les rôles et les responsabilités.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: bc880e3bb27492b18a8e577911527978c7a4e0d2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548338"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801492"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Se préparer à la complexité culturelle : alignement des rôles et des responsabilités
 
@@ -27,13 +26,13 @@ Dans toute migration, il existe quelques fonctions clés qui sont le mieux exéc
 
 | Process | Activité | Description |
 |---------|---------|---------|
-| Évaluation | Objectifs métier | Définissez les résultats métier souhaités de l’effort de migration. |
-| Évaluation | Priorités | Assurez l’alignement sur l’évolution des priorités de l’entreprise et des conditions du marché. |
-| Évaluation | Justification | Validez les hypothèses qui sous-tendent l’évolution des justifications métier. |
-| Évaluation | Risque | Aidez l’équipe d’adoption du cloud à comprendre l’impact des risques commerciaux tangibles. |
-| Évaluation | Approbation | Passez en revue et approuvez l’impact commercial des modifications d’architecture proposées. |
-| Optimisation | Changement du plan | Définissez un plan de consommation du changement au sein de l’entreprise, y compris les périodes de faible activité et les gels de modifications. |
-| Optimisation | Test | Alignez les utilisateurs avancés capables de valider le niveau de performance et les fonctionnalités. |
+| Évaluer | Objectifs métier | Définissez les résultats métier souhaités de l’effort de migration. |
+| Évaluer | Priorités | Assurez l’alignement sur l’évolution des priorités de l’entreprise et des conditions du marché. |
+| Évaluer | Justification | Validez les hypothèses qui sous-tendent l’évolution des justifications métier. |
+| Évaluer | Risque | Aidez l’équipe d’adoption du cloud à comprendre l’impact des risques commerciaux tangibles. |
+| Évaluer | Approbation | Passez en revue et approuvez l’impact commercial des modifications d’architecture proposées. |
+| Optimiser | Changement du plan | Définissez un plan de consommation du changement au sein de l’entreprise, y compris les périodes de faible activité et les gels de modifications. |
+| Optimiser | Test | Alignez les utilisateurs avancés capables de valider le niveau de performance et les fonctionnalités. |
 | Sécuriser et gérer | Impact de l’interruption | Aidez l’équipe d’adoption du cloud à quantifier l’impact d’une interruption du processus métier. |
 | Sécuriser et gérer | Validation du contrat de niveau de service (SLA) | Aidez l’équipe d’adoption du cloud à définir des contrats de niveau de service et des tolérances acceptables pour les pannes d’activité. |
 
@@ -50,11 +49,11 @@ Chaque processus au sein de la discussion sur les principes de migration du Fram
 |---------|---------|---------|---------|
 | Configuration requise | Patrimoine numérique | Alignez l’inventaire existant sur les hypothèses de base, en fonction des résultats métier. | équipe de stratégie cloud |
 | Configuration requise | Backlog de migration | Classez par ordre de priorité la séquence des charges de travail à migrer. | équipe de stratégie cloud |
-| Évaluation | Architecture | Défiez les hypothèses initiales pour définir l’architecture cible en fonction des métriques d’utilisation. | équipe d’adoption du cloud |
-| Évaluation | Approbation | Approuvez l’architecture proposée. | équipe de stratégie cloud |
+| Évaluer | Architecture | Défiez les hypothèses initiales pour définir l’architecture cible en fonction des métriques d’utilisation. | équipe d’adoption du cloud |
+| Évaluer | Approbation | Approuvez l’architecture proposée. | équipe de stratégie cloud |
 | Migrer | Accès à la réplication | Accès aux ressources et hôtes locaux existants pour établir des processus de réplication. | équipe d’adoption du cloud |
-| Optimisation | Ready | Vérifiez que le système répond aux exigences en matière de niveau de performance et de coût avant la promotion. | équipe d’adoption du cloud |
-| Optimisation | Promouvoir | Autorisations pour promouvoir une charge de travail en production et rediriger le trafic de production. | équipe d’adoption du cloud |
+| Optimiser | Ready | Vérifiez que le système répond aux exigences en matière de niveau de performance et de coût avant la promotion. | équipe d’adoption du cloud |
+| Optimiser | Promouvoir | Autorisations pour promouvoir une charge de travail en production et rediriger le trafic de production. | équipe d’adoption du cloud |
 | Sécuriser et gérer | Transition d’opérations | Documentez les systèmes de production avant les opérations de production. | équipe d’adoption du cloud |
 
 > [!CAUTION]

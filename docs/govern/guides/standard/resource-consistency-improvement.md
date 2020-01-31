@@ -1,6 +1,5 @@
 ---
 title: 'Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: aa752e83dd5e83da101600c756fe7b878015c1db
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967444"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805997"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources
 
@@ -52,8 +51,8 @@ Ce risque métier peut être lié à plusieurs risques techniques :
 4. La configuration des ressources déployées peut ne pas répondre aux attentes en termes de performances.
 5. La journalisation peut ne pas être correctement enregistrée et centralisée pour permettre la résolution des problèmes de performances.
 6. Les stratégies de récupération peuvent échouer ou durer plus longtemps que prévu.
-7. Des processus de déploiement incohérents peuvent entraîner des failles de sécurité pouvant être à l’origine de fuites de données ou d’interruptions.
-8. Des changements de configuration ou des correctifs manqués peuvent entraîner des failles de sécurité pouvant être à l’origine de fuites de données ou d’interruptions.
+7. Des processus de déploiement incohérents peuvent entraîner des failles de sécurité susceptibles de provoquer des fuites de données ou des interruptions.
+8. Des changements de configuration ou des correctifs manqués peuvent entraîner des failles de sécurité susceptibles de provoquer des fuites de données ou des interruptions.
 9. La configuration peut ne pas appliquer les exigences des SLA définis ou les exigences de récupération approuvées.
 10. Des applications ou systèmes d’exploitation déployés peuvent ne pas répondre aux exigences de renforcement de la sécurité.
 11. En raison du nombre d’équipes travaillant dans le cloud, il existe un risque d’incohérence.
@@ -103,7 +102,7 @@ Cette section de l’article va modifier la conception du MVP de gouvernance, af
 7. Configuration du pare-feu :
     1. Identifiez une configuration de Pare-feu Azure qui répond aux exigences de sécurité. Vous pouvez également identifier une appliance tierce qui est compatible avec Azure.
     1. Créez un modèle Resource Manager pour déployer le pare-feu avec les configurations nécessaires.
-8. Blueprint Azure :
+8. Blueprint Azure :
     1. Créez un blueprint Azure nommé `protected-data`.
     2. Ajoutez les modèles de pare-feu et Azure Vault au blueprint.
     3. Ajoutez les nouvelles stratégies pour les abonnements de données protégées.

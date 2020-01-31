@@ -1,6 +1,5 @@
 ---
 title: Base de référence des identités dans Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Base de référence des identités dans Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5c06523d2b22293463d55f05c397dd55247f4369
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d145d08aa4cf2b386c3ee1f0df403f684b27c2a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566163"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806065"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Base de référence des identités dans Azure
 
@@ -56,11 +55,11 @@ Le tableau suivant énumère les outils natifs qui peuvent aider à faire mûrir
 |Considération|Synchronisation de hachage du mot de passe + authentification unique transparente|Authentification directe + authentification unique transparente|Fédération avec AD FS|
 |:-----|:-----|:-----|:-----|
 |Où l’authentification se produit-elle ?|Dans le cloud|Dans le cloud, après un échange de vérification de mot de passe sécurisé avec l’agent d’authentification local|Local|
-|Quelles sont les exigences pour le serveur local au-delà du système de provisionnement : Azure AD Connect ?|Aucun|Un serveur par agent d’authentification supplémentaire|Deux ou plusieurs serveurs AD FS<br><br>Deux ou plusieurs serveurs WAP dans le réseau de périmètre/DMZ|
-|Quelles sont les exigences Internet et réseau locales au-delà du système de provisionnement ?|Aucun|[Accès Internet sortant](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) à partir des serveurs exécutant des agents d’authentification|[Accès Internet entrant](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) pour les serveurs WAP dans le périmètre<br><br>Accès réseau entrant aux serveurs AD FS à partir des serveurs WAP dans le périmètre<br><br>Équilibrage de charge réseau|
-|Y a-t-il une exigence de certificat SSL ?|Non|Non|OUI|
+|Quelles sont les exigences pour le serveur local au-delà du système de provisionnement : Azure AD Connect ?|None|Un serveur par agent d’authentification supplémentaire|Deux ou plusieurs serveurs AD FS<br><br>Deux ou plusieurs serveurs WAP dans le réseau de périmètre/DMZ|
+|Quelles sont les exigences Internet et réseau locales au-delà du système de provisionnement ?|None|[Accès Internet sortant](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) à partir des serveurs exécutant des agents d’authentification|[Accès Internet entrant](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) pour les serveurs WAP dans le périmètre<br><br>Accès réseau entrant aux serveurs AD FS à partir des serveurs WAP dans le périmètre<br><br>Équilibrage de charge réseau|
+|Y a-t-il une exigence de certificat SSL ?|Non|Non|Oui|
 |Existe-t-il une solution de supervision de l’intégrité ?|Non requis|État de l’agent fourni par le [Centre d’administration Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication)|[Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs)|
-|Les utilisateurs obtiennent-ils une authentification unique auprès des ressources cloud à partir d’appareils joints au domaine au sein du réseau d’entreprise ?|Oui avec [authentification unique fluide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Oui avec [authentification unique fluide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|OUI|
+|Les utilisateurs obtiennent-ils une authentification unique auprès des ressources cloud à partir d’appareils joints au domaine au sein du réseau d’entreprise ?|Oui avec [authentification unique fluide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Oui avec [authentification unique fluide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Oui|
 |Quels types de connexion sont pris en charge ?|UserPrincipalName + mot de passe<br><br>Authentification Windows intégrée avec [authentification unique transparente](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)<br><br>[ID de connexion de substitution](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)|UserPrincipalName + mot de passe<br><br>Authentification Windows intégrée avec [authentification unique transparente](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)<br><br>[ID de connexion de substitution](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-faq)|UserPrincipalName + mot de passe<br><br>sAMAccountName + mot de passe<br><br>Authentification Windows intégrée<br><br>[Authentification par certificat et carte à puce](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-user-certificate-authentication)<br><br>[ID de connexion de substitution](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configuring-alternate-login-id)|
 |Windows Hello Entreprise est-il pris en charge ?|[Modèle de confiance de clé](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)<br><br>[Modèle de certificat de confiance avec Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune)|[Modèle de confiance de clé](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)<br><br>[Modèle de certificat de confiance avec Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune)|[Modèle de confiance de clé](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)<br><br>[Modèle de certificat de confiance ](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs)|
 |Quelles sont les options d’authentification multifacteur ?|[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication)<br><br>[Contrôles personnalisés avec accès conditionnel*](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview)|[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication)<br><br>[Contrôles personnalisés avec accès conditionnel*](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview)|[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication)<br><br>[Serveur Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy)<br><br>[Authentification multifacteur externe](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs)<br><br>[Contrôles personnalisés avec accès conditionnel*](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview)|

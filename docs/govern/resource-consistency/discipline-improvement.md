@@ -1,6 +1,5 @@
 ---
 title: Amélioration de la discipline Cohérence des ressources
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Amélioration de la discipline Cohérence des ressources
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0113c37aaca23374021d6790bcbb1db751ffcf4a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548080"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807238"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Amélioration de la discipline Cohérence des ressources
 
@@ -26,10 +25,10 @@ Cet article décrit certaines tâches potentielles que votre entreprise peut ent
 
 *Figure 1 - Phases d’adoption de l’approche incrémentielle de la gouvernance cloud.*
 
-Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [MVP de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour améliorer la stratégie incrémentielle. Votre équipe de gouvernance cloud devra décider combien investir dans ces activités pour améliorer vos fonctionnalités de gouvernance de Cohérence des ressources.
+Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [produit minimum viable (MVP) de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance cloud devra décider combien investir dans ces activités pour améliorer vos fonctionnalités de gouvernance de Cohérence des ressources.
 
 > [!CAUTION]
-> Les activités minimales ou potentielles décrites dans cet article ne correspondent pas à des stratégies d’entreprise spécifiques ou à des exigences de tiers en matière de conformité. Ces conseils visent à favoriser les échanges qui conduiront à un alignement des deux exigences avec un modèle de gouvernance cloud.
+> Les activités minimales ou potentielles décrites dans cet article ne correspondent pas spécialement à des stratégies d’entreprise spécifiques ou à des exigences de conformité de tiers. Ces conseils visent à favoriser les échanges qui conduiront à un alignement des deux exigences avec un modèle de gouvernance cloud.
 
 ## <a name="planning-and-readiness"></a>Planification et préparation
 
@@ -39,7 +38,7 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 
 - Évaluez votre options de [chaîne d’outils en matière de cohérence des données](./toolchain.md).
 - Appréhendez au mieux les conditions de licence de votre stratégie cloud.
-- Développez un brouillon de document d’instructions relatives à l’architecture et distribuez-le aux principales parties prenantes.
+- Élaborer un brouillon de recommandations relatives à l’architecture et distribuer ce document aux principales parties prenantes.
 - Familiarisez-vous avec le gestionnaire de ressources que vous utilisez pour déployer, gérer et surveiller toutes les ressources de votre solution en tant que groupe.
 - Formez et impliquez les personnes et les équipes concernées par le développement des instructions relatives à l'architecture.
 - Ajoutez des tâches de déploiement de ressources classées par ordre de priorité à votre backlog de migration.
@@ -61,7 +60,7 @@ Plusieurs conditions techniques et non techniques sont exigées pour migrer corr
 - Implémentez votre [chaîne d’outils de cohérence des ressources](./toolchain.md) en la déployant dans le cadre d’une phase de prédéploiement.
 - Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
 - Implémentez des tâches de déploiement de ressources sur votre backlog de migration classé par ordre de priorité.
-- Développez une documentation et des ressources pédagogiques, des communications de sensibilisation, des incitations et d’autres programmes afin d’encourager l’adoption par les utilisateurs.
+- Élaborer une documentation et des ressources pédagogiques, des messages de sensibilisation, des incitations et d’autres programmes afin de favoriser l’adoption par les utilisateurs.
 
 **Activités potentielles :**
 
@@ -84,7 +83,7 @@ La migration est un processus incrémentiel qui porte essentiellement sur le dé
 
 - Migrez votre [chaîne d’outils de cohérence des ressources](./toolchain.md) du prédéploiement à la production.
 - Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
-- Développez une documentation et des ressources pédagogiques, des communications de sensibilisation, des incitations et d’autres programmes afin d’encourager l’adoption par les utilisateurs.
+- Élaborer une documentation et des ressources pédagogiques, des messages de sensibilisation, des incitations et d’autres programmes afin de favoriser l’adoption par les utilisateurs.
 - Migrez tous les scripts de correction automatisés ou outils pour prendre en charge les exigences du contrat SLA.
 
 **Activités potentielles :**
@@ -111,7 +110,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 
 - Personnalisez votre [chaîne d’outils de cohérence des ressources](./toolchain.md) selon les besoins évolutifs de votre entreprise en matière de gestion des coûts.
 - Envisagez l’automatisation des notifications et des rapports à mesure que l'utilisation des ressources évolue.
-- Affinez les instructions relatives à l’architecture pour guider les futurs processus d’adoption.
+- Affiner les recommandations relatives à l’architecture pour orienter les futurs processus d’adoption.
 - Formez régulièrement les équipes concernées pour vous assurer de leur adhésion continue aux instructions relatives à l'architecture.
 
 **Activités potentielles :**

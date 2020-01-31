@@ -1,6 +1,5 @@
 ---
 title: 'Innovation cloud : Prédire et influencer'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduction à l’innovation cloud - Prédire et influencer
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bcb01ada3589b733fe97de2689352ab414ef469b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752987"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808394"
 ---
 # <a name="predict-and-influence"></a>Prédire et influencer
 
@@ -60,7 +59,7 @@ La technologie Machine Learning s’appuie sur les insights pour former et appli
 
 Pour des modèles d’apprentissage machine plus robustes, les services [Machine Learning d’Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/r-server/r-server-overview) fournissent une plate-forme Machine Learning basée sur des clusters Apache Hadoop. Cette approche permet un contrôle plus granulaire des clusters sous-jacents, du stockage et des nœuds de calcul. Azure HDInsight offre également une intégration plus poussée, grâce à des outils tels que ScaleR et SparkR, qui génèrent des prédictions basées sur des données intégrées et ingérées, même en travaillant avec les données d’un flux. La [solution de prédiction des retards d’avions](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr) démontre chacune de ces capacités avancées lorsqu’elle est utilisée pour prédire des retards d’avions en fonction des conditions météorologiques. La solution HDInsight permet également la mise en place de contrôles au niveau de l’entreprise, tels que la sécurisation des données, l’accès au réseau et l’analyse des performances pour opérationnaliser les modèles.
 
-## <a name="predictions"></a>Prédictions
+## <a name="predictions"></a>Prévisions
 
 Après qu’un modèle est construit et formé, il peut être appliqué à l’aide d’API, qui peuvent faire des prédictions tout en fournissant une expérience numérique. La plupart de ces API sont développées à partir d’un modèle correctement formé, basé sur un modèle tiré de vos données. À mesure que de plus en plus de clients déploient des charges de travail quotidiennes dans le cloud, les API de prédiction utilisées par les fournisseurs de cloud en accélèrent l’adoption.
 

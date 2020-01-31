@@ -1,6 +1,5 @@
 ---
 title: Amélioration de la discipline Accélération du déploiement
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Amélioration de la discipline Accélération du déploiement
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b1b4395efd909a0f4456a39a6b2b933d25e4f002
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c5f07137ac1ca8c3ddbc4717dba5622096551862
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547786"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805929"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Amélioration de la discipline Accélération du déploiement
 
@@ -35,14 +34,14 @@ Il est impossible pour un même document de prendre en compte les exigences de t
 
 Cette phase de maturité de la gouvernance comble le fossé entre les résultats opérationnels et les stratégies concrètes. Au cours de ce processus, l’équipe de direction définit des métriques spécifiques, les mappe au patrimoine numérique, et commence à planifier l’effort global de migration.
 
-**Activités minimales suggérées :**
+**Activités minimales suggérées :**
 
 - Évaluez vos options de [chaîne d’outils d’accélération du déploiement](./toolchain.md) et implémentez une stratégie hybride appropriée pour votre organisation.
-- Développez un brouillon de document d’instructions relatives à l’architecture et distribuez-le aux principales parties prenantes.
-- Formez et impliquez les personnes et les équipes affectées par le développement des instructions relatives à l’architecture.
+- Élaborer un brouillon de recommandations relatives à l’architecture et distribuer ce document aux principales parties prenantes.
+- Sensibiliser et impliquer les personnes et les équipes concernées par le développement des recommandations relatives à l’architecture.
 - Formez le personnel informatique et les équipes de développement pour qu’elles comprennent les stratégies et les principes DevSecOps, ainsi que l’importance des déploiements intégralement automatisés dans la discipline Accélération du déploiement.
 
-**Activités potentielles :**
+**Activités potentielles :**
 
 - Définissez les rôles et attributions qui régiront la discipline Accélération du déploiement dans le cloud.
 
@@ -58,7 +57,7 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 - Mettez à jour le document d’instructions relatives à l’architecture pour inclure des plans de déploiement et d’adoption par les utilisateurs, puis distribuez-le aux principales parties prenantes.
 - Continuez de former les personnes et les équipes les plus concernées par les instructions relatives à l’architecture.
 
-**Activités potentielles :**
+**Activités potentielles :**
 
 - Définissez un pipeline de déploiement continu et d’intégration continue pour gérer en intégralité les versions des mises à jour de vos applications via vos environnements de production, QA et de développement.
 
@@ -66,15 +65,15 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 
 La migration est un processus incrémentiel qui porte essentiellement sur le déplacement, le test et l’adoption d’applications ou de charges de travail dans un patrimoine numérique.
 
-**Activités minimales suggérées :**
+**Activités minimales suggérées :**
 
 - Migrez votre [chaîne d’outils d’accélération du déploiement](./toolchain.md) du développement vers la production.
-- Mettez à jour le document d’instructions relatives à l’architecture et distribuez-le aux principales parties prenantes.
+- Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
 - Développez une documentation et des ressources pédagogiques, des communications de sensibilisation, des incitations et d’autres programmes afin d’encourager l’adoption par les équipes informatiques et de développement.
 
 **Activités potentielles :**
 
-- Vérifiez que les meilleures pratiques définies pendant les phases de génération/prédéploiement sont correctement mises en œuvre.
+- Vérifiez que les bonnes pratiques définies pendant les phases de génération/prédéploiement sont correctement mises en œuvre.
 - Assurez-vous que chaque application ou charge de travail est alignée avec la stratégie d’accélération du déploiement avant la mise en production.
 
 ## <a name="operate-and-post-implementation"></a>Exploitation et post-implémentation
@@ -90,7 +89,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 - Révisez les instructions relatives à l’architecture pour guider les futurs processus d’adoption.
 - Continuez à communiquer avec les équipes et personnes concernées et formez-les régulièrement pour vous assurer de leur adhésion continue aux instructions relatives à l’architecture.
 
-**Activités potentielles :**
+**Activités potentielles :**
 
 - Configurez un outil de création de rapports et de surveillance de la configuration de l’état souhaité.
 - Passez régulièrement en revue des outils et scripts de configuration pour améliorer les processus et identifier les problèmes courants.

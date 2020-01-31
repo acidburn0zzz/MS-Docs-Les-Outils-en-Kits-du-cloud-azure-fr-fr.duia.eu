@@ -1,6 +1,5 @@
 ---
 title: Mise à l’échelle avec plusieurs abonnements Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment mettre à l’échelle avec plusieurs abonnements Azure.
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4910309817d348874ec7eed75640bd0407f1ffcf
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564004"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799792"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>Mettre à l’échelle avec plusieurs abonnements Azure
 

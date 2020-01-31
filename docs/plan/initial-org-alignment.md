@@ -1,6 +1,5 @@
 ---
 title: Alignement initial de l’organisation
-titleSuffix: Microsoft Cloud Adoption Framework
 description: Alignement initial de l’organisation
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4a1135ec23d508cdd0f013439bb034ff66cf0c4d
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 42fd2e1668c0eb9411cc53679e4a81c5a9ca7a43
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967788"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800353"
 ---
 # <a name="initial-organization-alignment"></a>Alignement initial de l’organisation
 

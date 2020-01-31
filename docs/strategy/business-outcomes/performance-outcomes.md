@@ -1,6 +1,5 @@
 ---
 title: Exemples de résultats de performances
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exemples de résultats de performances
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d772f7c8a2e7c76770a6496bb85acbac54debfe4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 8a8c3b471787e1bc189a0d1f0abe2e2d84447e7c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048347"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806830"
 ---
 # <a name="examples-of-performance-outcomes"></a>Exemples de résultats de performances
 
-Comme indiqué dans la [section sur les résultats pour l’entreprise](./index.md), plusieurs résultats potentiels de l’entreprise peuvent servir de base pour les conversations sur le parcours de transformation avec l’entreprise. Cet article se concentre sur une mesure métier courante : les performances.
+Comme indiqué dans la [section sur les résultats métiers](./index.md), plusieurs résultats métiers potentiels peuvent servir de base pour les conversations sur le parcours de transformation avec l’entreprise. Cet article se concentre sur une mesure métier courante : les performances.
 
 Dans la société technologique d’aujourd’hui, les clients partent du principe que les applications fonctionnent correctement et seront toujours disponibles. Lorsque cette attente n’est pas satisfaite, cela entraîne des dommages en matière de réputation qui peuvent être coûteux et durables.
 

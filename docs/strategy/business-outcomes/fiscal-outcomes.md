@@ -1,6 +1,5 @@
 ---
 title: Exemples de résultats comptables
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exemples de résultats comptables
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 350b13e993d2130dc72482cbe7cafb3823b6a4d8
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048366"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806847"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exemples de résultats comptables
 
@@ -57,7 +56,7 @@ Le cloud computing peut réduire les dépenses d’investissement liées à l’
 - **Exemple no 2 :** Une société de portefeuille a récemment acquis une nouvelle entreprise. Dans le cadre de l’acquisition, les termes du contrat indiquent que la nouvelle entité doit être supprimée des centres de données dans les six mois. Si elle ne le fait pas, elle entraîne une pénalité de 1 million d’euros/mois au profit de la société de portefeuille. Le déplacement des ressources numériques vers le cloud dans le cadre d’une migration cloud pourrait permettre une mise hors service rapide des anciennes ressources.
 - **Exemple no 3 :** Une société qui s’occupe de la gestion des impôts sur le revenu de particuliers réalise 70 pour cent de son chiffre d’affaires annuel au cours des trois premiers mois de l’année. Le reste de l’année, son important investissement dans l’informatique est relativement peu utilisé. Une migration cloud permettrait au département informatique de déployer la capacité de traitement/hébergement nécessaire pour ces trois mois. Pendant les 9 mois restants, les coûts IaaS pourraient être considérablement réduits en diminuant la surface du système informatique.
 
-### <a name="example-coverdell"></a>Exemple : Coverdell
+### <a name="example-coverdell"></a>Exemple : Coverdell
 
 Coverdell modernise son infrastructure afin de réaliser des économies de coûts avec Azure. La décision de Coverdell d’investir dans Azure et d’unifier son réseau de sites web, ses applications, ses données et son infrastructure au sein de cet environnement a permis de réaliser davantage d’économies que ce que la société attendait. La migration vers un environnement entièrement Azure a diminué de 54 000 euros les coûts mensuels pour les services de colocation. Avec son infrastructure nouvelle et unifiée, Coverdell s’attend à économiser environ 1 million d’euros au cours des deux à trois prochaines années.
 

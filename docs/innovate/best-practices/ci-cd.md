@@ -1,6 +1,5 @@
 ---
-title: 'Innovation cloud : outils permettant de favoriser l’adoption dans Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'Innovation cloud : Outils permettant de favoriser l’adoption dans Azure'
 description: Outils permettant de favoriser l’adoption dans Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 203bd84154b038939b29cb42b53bfbac2b4d2360
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 01961b514f5640d73150504ea65ee9af2fec17b2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565896"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808700"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Outils permettant de favoriser l’adoption dans Azure
 
@@ -45,7 +44,7 @@ Pour les équipes d’adoption, composées de développeurs professionnels expé
 
 La table des matières sur le côté gauche de cette page répertorie les conseils pour chaque outil et s’aligne sur le modèle de maturité décrit précédemment.
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 La table des matières sur le côté gauche de cette page met en avant de nombreux articles. Ces articles vous aident à prendre en main chacun des outils de cette chaîne d’outils.
 

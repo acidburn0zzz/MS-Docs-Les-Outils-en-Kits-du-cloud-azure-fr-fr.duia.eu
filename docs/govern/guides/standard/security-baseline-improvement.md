@@ -1,6 +1,5 @@
 ---
 title: 'Guide de gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ef4d58cb871ea290f8489e806a4b78f32a9d8b3d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753046"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807119"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité
 
@@ -78,14 +77,14 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 7. Les outils de gouvernance doivent auditer et appliquer les exigences de configuration réseau définies par l’équipe Gestion de la sécurité.
 8. Les outils de gouvernance doivent limiter le déploiement des machines virtuelles seulement avec des images approuvées.
 9. Quand c’est possible, la gestion de la configuration des nœuds doit appliquer les exigences de la stratégie à la configuration de tous les systèmes d’exploitation invités.
-10. Les outils de gouvernance doivent veiller à ce que les mises à jour automatiques soient activées sur toutes les ressources déployées. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies d’exploitation. Les ressources qui ne sont pas mises à jour automatiquement doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
+10. Les outils de gouvernance doivent veiller à ce que les mises à jour automatiques soient activées sur toutes les ressources déployées. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas mises à jour automatiquement doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
 11. La création de nouveaux abonnements ou de groupes d’administration pour les applications critiques ou les données protégées nécessite un examen par l’équipe de gouvernance du cloud pour vérifier que le blueprint approprié est affecté.
 12. Un modèle d’accès de moindre privilège doit être appliqué aux groupes d’administration ou aux abonnements qui contiennent des applications critiques ou des données protégées.
 13. Les tendances et les attaques susceptibles d’affecter les déploiements cloud doivent être régulièrement examinées par l’équipe Sécurité de façon à fournir des mises à jour aux outils de gestion de la sécurité utilisés dans le cloud.
 14. Les outils de déploiement doivent être approuvés par l’équipe de gouvernance cloud pour s’assurer de la gouvernance en continu des ressources déployées.
 15. Les scripts de déploiement doivent être conservés dans un référentiel centralisé, accessible par l’équipe de gouvernance cloud pour effectuer des audits et des révisions périodiques.
 16. Les processus de gouvernance doivent inclure des audits, à intervalles réguliers, au point de déploiement pour garantir la cohérence entre toutes les ressources.
-17. Le déploiement des applications nécessitant une authentification des clients doit utiliser un fournisseur d’identité approuvé qui est compatible avec le fournisseur d’identité principal pour les utilisateurs internes.
+17. Le déploiement des applications nécessitant une authentification des clients doit utiliser un fournisseur d'identité approuvé compatible avec le fournisseur d'identité principal pour les utilisateurs internes.
 18. Les processus de gouvernance du cloud doivent inclure des révisions trimestrielles avec les équipes de gestion des identités. Ces révisions peuvent aider à identifier les personnes malveillantes ou des modèles d’utilisation que la configuration des ressources cloud doit empêcher.
 
 ## <a name="incremental-improvement-of-governance-practices"></a>Amélioration incrémentielle des pratiques de gouvernance
@@ -103,13 +102,13 @@ Cette conception du produit minimum viable (MVP) de la gouvernance va changer de
     5. Créez un modèle Resource Manager qui reflète les modifications nécessaires pour la configuration de Security Center au sein d’un abonnement.
 5. Mettez à jour les stratégies Azure pour tous les abonnements :
     1. Auditez et appliquez la classification de la criticité et des données sur tous les groupes d’administration et tous les abonnements, de façon à identifier tous les abonnements avec des classifications de données protégées.
-    2. Auditez et imposez l’utilisation exclusive d’images approuvées.
+    2. Auditez et appliquez l’utilisation exclusive d’images approuvées.
 6. Mettez à jour les stratégies Azure pour tous les abonnements qui contiennent des classifications de données protégées :
     1. Auditez et imposez l’utilisation exclusive de rôles RBAC Azure standard.
     2. Auditez et imposez le chiffrement au repos pour tous les comptes de stockage et tous les fichiers sur les nœuds individuels.
     3. Auditez et imposez l’application d’un groupe de sécurité réseau à toutes les cartes réseau et à tous les sous-réseaux. Les équipes Réseau et Sécurité informatique définissent le groupe de sécurité réseau.
     4. Auditez et imposez l’utilisation d’un sous-réseau approuvé et d’une interface réseau par réseau virtuel.
-    5. Auditez et imposez la limitation des tables de routage définies par l’utilisateur.
+    5. Auditez et appliquez la limitation de tables de routage définies par l’utilisateur.
     6. Appliquez les stratégies intégrées pour la configuration des invités comme suit :
         1. Vérifiez que les serveurs web Windows utilisent des protocoles de communication sécurisés.
         2. Vérifiez que les paramètres de sécurité des mots de passe sont correctement définis dans les machines Linux et Windows.

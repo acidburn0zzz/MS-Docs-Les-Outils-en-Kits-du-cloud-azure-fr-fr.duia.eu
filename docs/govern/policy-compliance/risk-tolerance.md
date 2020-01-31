@@ -1,6 +1,5 @@
 ---
 title: Évaluer la tolérance au risque
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explication des risques métier associés à une transformation cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 06f8229ab38134ac4d51a4f0cef212ebc864bbdb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566062"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806014"
 ---
 # <a name="evaluate-risk-tolerance"></a>Évaluer la tolérance au risque
 

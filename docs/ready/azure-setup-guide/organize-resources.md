@@ -1,6 +1,5 @@
 ---
 title: Organiser vos ressources Azure efficacement
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Meilleures pratiques pour organiser efficacement vos ressources Azure afin d’en faciliter la gestion.
 author: laraaleite
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 393c80c684de13cf27cba738a8e539533de57d38
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251412"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799333"
 ---
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
@@ -141,7 +140,7 @@ Le tableau suivant présente les modèles d’affectation de noms pour quelques 
 
 ::: zone-end
 
-| Entité | Étendue | Longueur | Casse | Caractères valides | Modèle suggéré | Exemples |
+| Entité | Étendue | Longueur | Casse | Caractères valides | Modèle suggéré | Exemple |
 | --- | --- | --- | --- | --- | --- | --- |
 |Resource group |Subscription |1-90 |Insensible à la casse |Alphanumériques, trait de soulignement, parenthèses, trait d’union, point (sauf à la fin) et caractères Unicode |`<service short name>-<environment>-rg` |`profx-prod-rg` |
 |Groupe à haute disponibilité |Resource group |1-80 |Insensible à la casse |Alphanumériques, trait de soulignement et trait d’union |`<service-short-name>-<context>-as` |`profx-sql-as` |

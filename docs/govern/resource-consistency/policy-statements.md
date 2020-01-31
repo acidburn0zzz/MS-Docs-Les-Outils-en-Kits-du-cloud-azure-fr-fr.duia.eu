@@ -1,6 +1,5 @@
 ---
 title: Déclarations de stratégie de cohérence des ressources
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Déclarations de stratégie de cohérence des ressources
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,22 +8,22 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5e997dee318d0d6799167de4f4c61a93c814c548
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221984"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807255"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Déclarations de stratégie de cohérence des ressources
 
-Les déclarations de stratégie cloud individuelles sont des recommandations destinées à traiter des risques spécifiques identifiés lors de votre processus d'évaluation des risques. Ces instructions doivent fournir un bref récapitulatif des risques, ainsi que des plans établis pour les gérer. Chaque définition d’instruction doit inclure les informations suivantes :
+Les instructions de stratégie cloud individuelles sont des recommandations destinées à traiter des risques spécifiques identifiés lors de votre processus d’évaluation des risques. Ces instructions doivent fournir un bref récapitulatif des risques, ainsi que des plans établis pour les gérer. Chaque définition d’instruction doit inclure les informations suivantes :
 
 - **Risque technique :** un récapitulatif du risque que cette stratégie gérera.
 - **Instruction de stratégie :** Une explication succincte claire des exigences de la stratégie.
 - **Options de conception :** Recommandations exploitables, spécifications ou autres conseils que des équipes informatiques et des développeurs peuvent utiliser lors de l’implémentation de la stratégie.
 
-Les exemples d’instructions de stratégie suivants traitent des risques commerciaux courants liés à la cohérence des ressources. Ces instructions sont des exemples que vous pouvez référencer lorsque vous rédigez des instructions de stratégie pour répondre aux besoins de votre organisation. Ces exemples ne sont pas destinés à être normatifs, et il existe potentiellement plusieurs options de stratégie pour gérer chaque risque identifié. Travaillez en étroite collaboration avec les équipes métier et informatiques pour identifier les meilleures stratégies pour votre ensemble de risques unique.
+Les exemples d’instructions de stratégie suivants traitent des risques commerciaux courants liés à la cohérence des ressources. Ces énoncés sont des exemples que vous pouvez référencer lorsque vous rédigez des énoncés de stratégie pour répondre aux besoins de votre organisation. Ces exemples ne sont pas destinés à être normatifs, et il existe potentiellement plusieurs options de stratégie pour gérer chaque risque identifié. Travaillez en étroite collaboration avec les équipes métier et les équipes informatiques pour identifier les meilleures stratégies pour vos propres risques.
 
 ## <a name="tagging"></a>Marquage
 
@@ -34,7 +33,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques commer
 
 - Les ressources déployées doivent être étiquetées avec les valeurs suivantes :
   - Coût
-  - Importance
+  - Caractère critique
   - Contrat SLA
   - Environnement
 - Les outils de gouvernance doivent valider le marquage associé aux coûts, à la criticité, aux SLA, aux applications et aux environnements. Toutes les valeurs doivent être alignées avec les valeurs prédéfinies gérées par l’équipe de gouvernance.
@@ -53,7 +52,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques commer
 
 **Risque technique :** Les machines virtuelles (VM) ne disposant pas des dernières mises à jour et derniers correctifs logiciels peuvent faire l'objet de problèmes de sécurité ou de performances susceptibles d'entraîner des interruptions de service.
 
-**Instruction de stratégie :** Les outils de gouvernance doivent veiller à ce que les mises à jour automatiques soient activées sur toutes les machines virtuelles déployées. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies d’exploitation. Les ressources qui ne sont pas mises à jour automatiquement doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
+**Instruction de stratégie :** Les outils de gouvernance doivent veiller à ce que les mises à jour automatiques soient activées sur toutes les machines virtuelles déployées. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas mises à jour automatiquement doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
 
 **Options de conception potentielles** : Les machines virtuelles hébergées sur Azure peuvent faire l'objet d'une gestion cohérente des mises à jour à l'aide de la [solution Update Management dans Azure Automation](https://docs.microsoft.com/azure/automation/automation-update-management).
 
@@ -89,11 +88,11 @@ Les exemples d’instructions de stratégie suivants traitent des risques commer
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Utilisez les exemples mentionnés dans cet article comme point de départ pour développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d'adoption du cloud.
+Utilisez les exemples mentionnés dans cet article comme point de départ pour développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
 Pour commencer à développer vos déclarations de stratégie personnalisées liées à la cohérence des ressources, téléchargez le [modèle Cohérence des ressources](./template.md).
 
-Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance exploitable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
+Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance actionnable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
 
 Sur la base des risques et de la tolérance, établir un processus de gouvernance et de communication en lien avec l’adhésion à la stratégie Cohérence des ressources.
 

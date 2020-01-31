@@ -1,6 +1,5 @@
 ---
-title: 'Guide de gouvernance pour les entreprises complexes : Explication des bonnes pratiques'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'Guide de gouvernance pour les entreprises complexes : Explication des conseils'
 description: Découvrez les bonnes pratiques pour la gouvernance dans des entreprises complexes.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e733db73ce5a77d4b1e81f052804b7a49da4aad5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547651"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806269"
 ---
-# <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Guide de gouvernance pour les entreprises complexes : Explication des bonnes pratiques
+# <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Guide de gouvernance pour les entreprises complexes : Explication des conseils
 
 Ce guide de gouvernance commence par un ensemble de [stratégies d’entreprise](./initial-corporate-policy.md) initiales. Ces stratégies permettent de définir un produit minimum viable (MVP) pour la gouvernance. Ce MVP reflète les [meilleures pratiques](./index.md).
 
-Dans cet article, nous allons parler des stratégies de haut niveau qui sont nécessaires à la création d’un MVP de gouvernance. Au cœur d’un MVP de gouvernance se trouve la discipline : [Accélération du déploiement](../../deployment-acceleration/index.md). À ce stade, les outils et modèles qui sont appliqués permettent les améliorations incrémentielles nécessaires au développement de la gouvernance à l’avenir.
+Dans cet article, nous allons parler des stratégies de haut niveau qui sont nécessaires pour créer un MVP de gouvernance. Au cœur d’un MVP de gouvernance se trouve la discipline : [Accélération du déploiement](../../deployment-acceleration/index.md). À ce stade, les outils et modèles qui sont appliqués permettent les améliorations incrémentielles nécessaires au développement de la gouvernance à l’avenir.
 
 ## <a name="governance-mvp-initial-governance-foundation"></a>Produit minimum viable de gouvernance (fondation de gouvernance initiale)
 

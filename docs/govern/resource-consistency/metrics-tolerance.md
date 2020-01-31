@@ -1,6 +1,5 @@
 ---
 title: Métriques de cohérence des ressources, indicateurs et tolérance au risque
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métriques de cohérence des ressources, indicateurs et tolérance au risque
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a6f59c09533fc400871d549e32c9b7d56024551
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e6947ce39cc713f969ee658f7c0d0c269fb358d7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548071"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805147"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Métriques de cohérence des ressources, indicateurs et tolérance au risque
 

@@ -1,6 +1,5 @@
 ---
 title: Innovation dans l’économie numérique
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez la théorie directrice de l’innovation cloud dans le Framework d’adoption du cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8f1a89f5cd216bafeb8df4e9c6e0f64c6ec449f4
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 87d47fa7e6f28f41c7edc98525cadabe65b99d48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980059"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808462"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innovation dans l’économie numérique
 

@@ -1,6 +1,5 @@
 ---
 title: Comprendre la base de référence de la sécurité cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez la base de référence de la sécurité cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752167"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808887"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Comprendre la base de référence de la sécurité cloud
 

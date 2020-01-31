@@ -1,6 +1,5 @@
 ---
-title: 'Innovation cloud : outils de démocratisation des données dans Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'Innovation cloud : Outils de démocratisation des données dans Azure'
 description: Outils de démocratisation des données dans Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d86bebc3a993443c4dded4b1a0f23ff518147bd4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565838"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808683"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Outils de démocratisation des données dans Azure
 
@@ -42,7 +41,7 @@ Dans Azure, les outils suivants sont fréquemment utilisés pour accélérer l�
 
 - Power BI
 - Azure Data Catalog
-- Azure SQL Data Warehouse
+- Azure SQL Data Warehouse.
 - Azure Cosmos DB
 - Azure Database pour PostgreSQL
 - Azure Database pour MySQL
@@ -51,7 +50,7 @@ Dans Azure, les outils suivants sont fréquemment utilisés pour accélérer l�
 - Azure Data Lake
 - Azure Database Migration Service
 - Azure SQL Database, avec ou sans instances managées
-- Azure Data Factory
+- Azure Data Factory
 - Azure Stream Analytics
 - SQL Server Integration Services
 - Azure Stack
@@ -63,7 +62,7 @@ Dans Azure, les outils suivants sont fréquemment utilisés pour accélérer l�
 
 À mesure que l’invention s’approche de l’adoption à grande échelle, les aspects de chaque solution nécessitent un affinement et une maturité technique. Dans ce contexte, un plus grand nombre de ces services sera probablement nécessaire. Utilisez la table des matières sur le côté gauche de cette page pour obtenir des conseils sur les outils Azure relatifs à votre processus de test d’hypothèses.
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 La table des matières sur le côté gauche de cette page met en avant de nombreux articles. Ces articles vous aident à prendre en main chacun des outils de cette chaîne d’outils.
 

@@ -1,6 +1,5 @@
 ---
 title: Processus de conformité à la stratégie Gestion des coûts
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processus de conformité à la stratégie Gestion des coûts
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eb3bfc584e3c3f86e39918495fe7e0d313f13e55
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6a6f5c5d13a98b6c210fececb2d6372e7f95626b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564718"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804144"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Processus de conformité à la stratégie Gestion des coûts
 
@@ -59,7 +58,7 @@ Voici quelques exemples de déclencheurs :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle de gestion cloud ](./template.md), documentez les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
+À l’aide du [modèle de gestion cloud](./template.md), documentez les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
 
 Pour obtenir des conseils sur l’exécution des stratégies de gestion cloud en harmonie avec les plans d’adoption, consultez l’article sur l’amélioration de la discipline Gestion des coûts.
 

@@ -1,6 +1,5 @@
 ---
 title: Guide de décision concernant le SDN (Software Defined Networking)
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez les réseaux à définition logicielle en tant que service de base dans les migrations Azure.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7eb03b01dfab3627117b4d07727f09669e6b0924
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564785"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806592"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guide de décision concernant le SDN (Software Defined Networking)
 
@@ -40,14 +39,14 @@ Il existe de nombreuses façons de mettre en œuvre les technologies SDN pour cr
 
 Lors de la planification de l’architecture de réseau virtuel ou de la combinaison d’architectures à prendre en compte lors de la planification de votre migration vers le Cloud, prenez en compte les questions suivantes pour déterminer ce qui convient à votre entreprise :
 
-| Question | PaaS uniquement | Natif cloud | Zone DMZ cloud | Hybride | Hub-and-spoke |
+| Question | PaaS uniquement | Cloud natif | Zone DMZ cloud | Hybride | Hub-and-spoke |
 |-----|-----|-----|-----|-----|-----|
-| Votre charge de travail utilisera-t-elle uniquement les services PaaS ? Ses besoins en capacités réseau seront-ils supérieurs à celles fournies par les services eux-mêmes ? | OUI | Non | Non | Non | Non |
-| Votre charge de travail nécessite-t-elle une intégration avec des applications sur site ? | Non | Non | OUI | OUI | OUI |
-| Avez-vous établi des stratégies de sécurité avancées et une connectivité sécurisée entre vos locaux et vos réseaux cloud ? | Non | Non | Non | OUI | OUI |
-| Votre charge de travail nécessite-t-elle des services d’authentification non pris en charge par les services d’identité cloud, ou avez-vous besoin d’un accès direct aux contrôleurs de domaine locaux ? | Non | Non | Non | OUI | OUI |
-| Devrez-vous déployer et gérer un grand nombre de machines virtuelles et de charges de travail ? | Non | Non | Non | Non | OUI |
-| Devrez-vous fournir une gestion centralisée et une connectivité locale tout en déléguant le contrôle des ressources à des équipes de travail individuelles ? | Non | Non | Non | Non | OUI |
+| Votre charge de travail utilisera-t-elle uniquement les services PaaS ? Ses besoins en capacités réseau seront-ils supérieurs à celles fournies par les services eux-mêmes ? | Oui | Non | Non | Non | Non |
+| Votre charge de travail nécessite-t-elle une intégration avec des applications sur site ? | Non | Non | Oui | Oui | Oui |
+| Avez-vous établi des stratégies de sécurité avancées et une connectivité sécurisée entre vos locaux et vos réseaux cloud ? | Non | Non | Non | Oui | Oui |
+| Votre charge de travail nécessite-t-elle des services d’authentification non pris en charge par les services d’identité cloud, ou avez-vous besoin d’un accès direct aux contrôleurs de domaine locaux ? | Non | Non | Non | Oui | Oui |
+| Devrez-vous déployer et gérer un grand nombre de machines virtuelles et de charges de travail ? | Non | Non | Non | Non | Oui |
+| Devrez-vous fournir une gestion centralisée et une connectivité locale tout en déléguant le contrôle des ressources à des équipes de travail individuelles ? | Non | Non | Non | Non | Oui |
 
 ## <a name="virtual-networking-architectures"></a>Architectures de réseaux virtuels
 

@@ -1,6 +1,5 @@
 ---
 title: Déployer une charge de travail de base
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Décrit comment déployer une charge de travail de base sur Azure
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4f00fbb1c494d3eecd32597cf94fe17192ad66ed
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: b4d5821e7ed29efeea5dd7e6a59b7e4afd86f0e0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160441"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808734"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Déployer une charge de travail de base sur Azure
 

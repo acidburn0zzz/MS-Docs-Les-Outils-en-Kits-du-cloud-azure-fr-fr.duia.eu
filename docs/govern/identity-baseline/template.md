@@ -1,6 +1,5 @@
 ---
 title: Modèle Base de référence des identités
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Modèle Base de référence des identités
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fafd0d467940f2086731ff9e9575c7e6d12aaf0b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1f8e752f1952890880eb30f9f1911d83fca6a40
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220422"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807204"
 ---
 # <a name="identity-baseline-template"></a>Modèle Base de référence des identités
 
@@ -33,7 +32,7 @@ La première étape de l’implémentation d’une modification consiste à comm
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Des pratiques de gouvernance solides commencent par une [compréhension des risques commerciaux](./business-risks.md). Consultez l’article sur les risques commerciaux, et commencez à documenter ceux qui correspondent à votre plan actuel d’adoption du cloud.
+Des pratiques de gouvernance solides commencent par une [compréhension des risques commerciaux](./business-risks.md). Consultez l’article sur les risques métier, et commencez à documenter les risques qui correspondent à votre plan actuel d’adoption du cloud.
 
 > [!div class="nextstepaction"]
 > [Comprendre les risques métier](./business-risks.md)

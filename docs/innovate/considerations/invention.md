@@ -1,6 +1,5 @@
 ---
 title: 'Innovation cloud : Développer des inventions numériques'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduction à l’innovation dans le cloud – Développement d’inventions numériques
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6eaad06105ed6078f462082855378f72bc25d6a7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4011f34f61ec41d4ec30be8b9ee8c5cb203f930a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565668"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808445"
 ---
 # <a name="develop-digital-inventions"></a>Développer des inventions numériques
 

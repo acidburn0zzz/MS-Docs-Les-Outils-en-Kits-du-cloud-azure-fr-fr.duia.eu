@@ -1,6 +1,5 @@
 ---
 title: Appliquer des principes de conception et des opérations avancées
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Appliquer des principes de conception et des opérations avancées
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16762a0eae366c3bf1cd578faaf52df60e6c97b1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752767"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807680"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Appliquer des principes de conception et des opérations avancées
 

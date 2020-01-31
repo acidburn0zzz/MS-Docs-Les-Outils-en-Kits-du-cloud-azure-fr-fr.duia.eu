@@ -1,6 +1,5 @@
 ---
 title: Guide de préparation au cloud pour un Chef de la sécurité des systèmes d’information
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Comment un Chef de la sécurité des systèmes d’information peut se préparer au cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 5675d611979c992f41f03d362f0110aaeb3b9b24
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ea86e0b35dd61cb65a5396a6c9f2e604abe6d9a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547385"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804994"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>Guide de préparation au cloud pour un Chef de la sécurité des systèmes d’information
 

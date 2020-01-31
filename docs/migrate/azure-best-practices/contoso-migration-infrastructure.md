@@ -1,6 +1,5 @@
 ---
 title: Déployer une infrastructure de migration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment Contoso configure une infrastructure Azure pour la migration vers Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160368"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807510"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Déployer une infrastructure de migration
 
@@ -23,18 +22,18 @@ Cet article explique comment la société fictive Contoso prépare son infrastru
 - L’exemple d’architecture présenté est spécifique à Contoso. Passez en revue les besoins commerciaux et les exigences techniques et structurelles de votre organisation lorsque vous prenez d’importantes décisions en matière d’infrastructure concernant la conception des abonnements ou l’architecture réseau.
 - Votre stratégie de migration détermine si vous avez besoin de tous les éléments décrits dans l’article. Par exemple, si vous créez uniquement des applications cloud en mode natif dans Azure, vous aurez peut-être besoin d’une structure de mise en réseau moins complexe.
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Avant de pouvoir effectuer la migration vers Azure, Contoso doit impérativement préparer une infrastructure Azure. Généralement, Contoso doit prendre en compte six points essentiels :
 
 > [!div class="checklist"]
 >
 > - **Étape 1 : Abonnements Azure.** comment acheter Azure, et interagir avec la plateforme et les services Azure ?
-> - **Étape 2 : Identité hybride.** comment gérer et contrôler l’accès aux ressources locales et Azure après la migration ? Comment étendre ou transférer la gestion des identités vers le cloud ?
-> - **Étape 3 : Récupération d’urgence et résilience.** comment garantir la résilience des applications et de l’infrastructure en cas de pannes et de sinistres ?
-> - **Étape 4 : Mise en réseau.** comment concevoir une infrastructure réseau et établir la connectivité entre le centre de données local et Azure ?
-> - **Étape 5 : Sécurité.** Comment le déploiement Azure ou hybride sera-t-il sécurisé ?
-> - **Étape 6 : Gouvernance.** comment garder le déploiement en phase avec les exigences de gouvernance et de sécurité ?
+> - **Étape 2 : Identité hybride.** comment gérer et contrôler l’accès aux ressources locales et Azure après la migration ? Comment étendre ou transférer la gestion des identités vers le cloud ?
+> - **Étape 3 : Récupération d’urgence et résilience.** comment garantir la résilience des applications et de l’infrastructure en cas de pannes et de sinistres ?
+> - **Étape 4 : Mise en réseau.** comment concevoir une infrastructure réseau et établir la connectivité entre le centre de données local et Azure ?
+> - **Étape 5 : Sécurité.** Comment le déploiement Azure ou hybride sera-t-il sécurisé ?
+> - **Étape 6 : Gouvernance.** comment garder le déploiement en phase avec les exigences de gouvernance et de sécurité ?
 
 ## <a name="before-you-start"></a>Avant de commencer
 
@@ -108,7 +107,7 @@ Les charges de travail prévisibles sont celles qui doivent toujours être dispo
 
 En contrepartie de l’utilisation d’instances réservées pour des instances de machine virtuelle spécifiques qui doivent être gérées sur de longues périodes, Contoso peut bénéficier à la fois d’une remise et d’une capacité hiérarchisée. Grâce aux [instances réservées Azure](https://azure.microsoft.com/pricing/reserved-vm-instances) et à Azure Hybrid Benefit, Contoso peut économiser jusqu'à 82 % sur le tarif d’un paiement à l'utilisation (avril 2018).
 
-## <a name="step-2-manage-hybrid-identity"></a>Étape 2 : Gérer l’identité hybride
+## <a name="step-2-manage-hybrid-identity"></a>Étape 2 : Gérer l’identité hybride
 
 L’octroi et le contrôle de l’accès utilisateur à des ressources Azure avec une gestion des identités et des accès (IAM) constituent une étape importante dans la mise en place de votre infrastructure Azure.
 
@@ -780,9 +779,9 @@ Les groupes de sécurité réseau associés aux groupes de sécurité d’applic
 
 **Action** | **Nom** | **Source** | **Cible** | **Port**
 --- | --- | --- | --- | ---
-AUTORISER | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
-AUTORISER | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
-AUTORISER | AllowAppToDB | APP1-APP | APP1-DB | 1433
+Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
+Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Deny | DenyAllInbound | Quelconque | Quelconque | Quelconque
 
 ### <a name="encrypt-data"></a>Chiffrer les données

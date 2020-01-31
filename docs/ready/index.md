@@ -1,6 +1,5 @@
 ---
 title: Préparer pour l’adoption du cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Préparer l’environnement pour l’adoption du cloud à venir
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: dfac24cfc71d1cccdfdf3bc64eb6390aece79466
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378334"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798925"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -97,7 +96,7 @@ Utilisez les considérations relatives à la zone d’accueil pour identifier et
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Bonnes pratiques</h3>
+                            <h3>Meilleures pratiques</h3>
 Validez les modifications de zone d’accueil par rapport aux sections de Bonnes pratiques, afin de garantir la configuration correcte de vos zones d’accueil actuelles et futures.
                         </div>
                     </div>

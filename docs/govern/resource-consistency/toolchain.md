@@ -1,6 +1,5 @@
 ---
 title: Outils de cohérence des ressources dans Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Outils de cohérence des ressources dans Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a09e4748dd805757d9f78e8dd927737ca9a91f7f
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a2f553285f9d44085cc816c2db34f76fcb02235d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222923"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805181"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Outils de cohérence des ressources dans Azure
 
@@ -22,40 +21,40 @@ La discipline [Cohérence des ressources](./index.md) est l'une des [cinq discip
 
 La liste suivante énumère les outils Azure qui peuvent contribuer à faire mûrir les stratégies et les processus soutenant cette discipline de gouvernance.
 
-| Outil | [Portail Azure](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Sauvegarde Azure](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| Outil | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
-| Déployer des ressources                             | OUI | OUI | OUI | OUI | Non  | Non | Non |
-| Gestion des ressources                             | OUI | OUI | OUI | OUI | Non  | Non | Non |
-| Déploiement des ressources à l'aide de modèles             | Non  | OUI | Non  | OUI | Non  | Non | Non |
-| Déploiement d'un environnement orchestré          | Non  | Non  | OUI | Non  | Non  | Non | Non |
-| Définition de groupes de ressources                       | OUI | OUI | OUI | Non  | Non  | Non | Non |
-| Gestion de la charge de travail et des propriétaires de compte           | OUI | OUI | OUI | Non  | Non  | Non | Non |
-| Gestion de l'accès conditionnel aux ressources       | OUI | OUI | OUI | Non  | Non  | Non | Non |
-| Configuration des utilisateurs RBAC                         | OUI | Non  | Non  | Non  | OUI | Non | Non |
-| Attribution de rôles et d'autorisations aux ressources | OUI | OUI | OUI | Non  | OUI | Non | Non |
-| Définition des dépendances entre les ressources        | Non  | OUI | OUI | Non  | Non  | Non | Non |
-| Application du contrôle d'accès                         | OUI | OUI | OUI | Non  | OUI | Non | Non |
-| Évaluation de la disponibilité et de l'extensibilité          | Non  | Non  | Non  | OUI | Non  | Non | Non |
-| Application d'étiquettes aux ressources                      | OUI | OUI | OUI | Non  | Non  | Non | Non |
-| Affectation de règles Azure Policy                    | OUI | OUI | OUI | Non  | Non  | Non | Non |
-| Application de la correction automatique                  | Non  | Non  | Non  | OUI | Non  | Non | Non |
-| Gérer la facturation                               | OUI | Non  | Non  | Non  | Non  | Non | Non |
-| Préparation des ressources pour la récupération d'urgence         | OUI | OUI | OUI | Non  | Non  | OUI | OUI |
-|Récupération des données lors d'une panne ou d'une violation du contrat de niveau de service     | Non | Non  | Non  | Non  | Non  | OUI | OUI |
-|Récupération des applications et des données lors d'une panne ou d'une violation du contrat de niveau de service     | Non | Non  | Non  | Non  | Non  | OUI | OUI |
+| Déployer des ressources                             | Oui | Oui | Oui | Oui | Non  | Non | Non |
+| Gestion des ressources                             | Oui | Oui | Oui | Oui | Non  | Non | Non |
+| Déploiement des ressources à l'aide de modèles             | Non  | Oui | Non  | Oui | Non  | Non | Non |
+| Déploiement d'un environnement orchestré          | Non  | Non  | Oui | Non  | Non  | Non | Non |
+| Définition de groupes de ressources                       | Oui | Oui | Oui | Non  | Non  | Non | Non |
+| Gestion de la charge de travail et des propriétaires de compte           | Oui | Oui | Oui | Non  | Non  | Non | Non |
+| Gestion de l'accès conditionnel aux ressources       | Oui | Oui | Oui | Non  | Non  | Non | Non |
+| Configuration des utilisateurs RBAC                         | Oui | Non  | Non  | Non  | Oui | Non | Non |
+| Attribution de rôles et d'autorisations aux ressources | Oui | Oui | Oui | Non  | Oui | Non | Non |
+| Définition des dépendances entre les ressources        | Non  | Oui | Oui | Non  | Non  | Non | Non |
+| Application du contrôle d'accès                         | Oui | Oui | Oui | Non  | Oui | Non | Non |
+| Évaluation de la disponibilité et de l'extensibilité          | Non  | Non  | Non  | Oui | Non  | Non | Non |
+| Application d'étiquettes aux ressources                      | Oui | Oui | Oui | Non  | Non  | Non | Non |
+| Affectation de règles Azure Policy                    | Oui | Oui | Oui | Non  | Non  | Non | Non |
+| Application de la correction automatique                  | Non  | Non  | Non  | Oui | Non  | Non | Non |
+| Gérer la facturation                               | Oui | Non  | Non  | Non  | Non  | Non | Non |
+| Préparation des ressources pour la récupération d'urgence         | Oui | Oui | Oui | Non  | Non  | Oui | Oui |
+|Récupération des données lors d'une panne ou d'une violation du contrat de niveau de service     | Non | Non  | Non  | Non  | Non  | Oui | Oui |
+|Récupération des applications et des données lors d'une panne ou d'une violation du contrat de niveau de service     | Non | Non  | Non  | Non  | Non  | Oui | Oui |
 
 Outre ces outils et fonctionnalités de cohérence des ressources, vous devez superviser les ressources que vous avez déployées afin de déceler les éventuels problèmes de performances et d'intégrité. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) est la solution de supervision et de création de rapports par défaut d'Azure. Azure Monitor fournit des fonctionnalités de surveillance de vos ressources cloud. Cette liste présente la fonctionnalité qui répond aux exigences de surveillance les plus courantes.
 
-| Outil | [Portail Azure](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [API REST Azure Monitor](https://docs.microsoft.com/rest/api/monitor) |
+| Outil | [Azure portal](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [API REST Azure Monitor](https://docs.microsoft.com/rest/api/monitor) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
-| Enregistrement des données de télémétrie des machines virtuelles                 | Non           | Non                   | OUI           | Non                     |
-| Enregistrement des données de télémétrie du réseau virtuel              | Non           | Non                   | OUI           | Non                     |
-| Enregistrement des données de télémétrie des services PaaS                   | Non           | Non                   | OUI           | Non                     |
-| Enregistrement des données de télémétrie des applications                     | Non           | OUI                  | Non            | Non                     |
-| Configuration des rapports et alertes                       | OUI          | Non                   | Non            | OUI                    |
+| Enregistrement des données de télémétrie des machines virtuelles                 | Non           | Non                   | Oui           | Non                     |
+| Enregistrement des données de télémétrie du réseau virtuel              | Non           | Non                   | Oui           | Non                     |
+| Enregistrement des données de télémétrie des services PaaS                   | Non           | Non                   | Oui           | Non                     |
+| Enregistrement des données de télémétrie des applications                     | Non           | Oui                  | Non            | Non                     |
+| Configuration des rapports et alertes                       | Oui          | Non                   | Non            | Oui                    |
 | Planification de rapports réguliers ou d'analyses personnalisées        | Non           | Non                   | Non            | Non                     |
-| Visualisation et analyse des données de journal et de performance     | OUI          | Non                   | Non            | Non                     |
-| Intégration à une solution de supervision locale ou tierce     | Non           | Non                   | Non            | OUI                    |
+| Visualisation et analyse des données de journal et de performance     | Oui          | Non                   | Non            | Non                     |
+| Intégration à une solution de supervision locale ou tierce     | Non           | Non                   | Non            | Oui                    |
 
 Lors de la planification de votre déploiement, vous devrez penser à l'emplacement où seront stockées vos données de journalisation, et à la manière dont vous intègrerez les [services de création de rapports et de supervision](../../decision-guides/logging-and-reporting/index.md) basés sur le cloud à vos processus et outils existants.
 

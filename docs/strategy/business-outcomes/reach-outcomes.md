@@ -1,6 +1,5 @@
 ---
 title: Exemples de résultats de portée globale
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exemples de résultats de portée globale
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b8c28314037e023423d48c604a1dd9bd6c4ad381
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6e9a791507a67ddbd53988f1adadd46c4689cd00
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047913"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798347"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exemples de résultats de portée globale
 

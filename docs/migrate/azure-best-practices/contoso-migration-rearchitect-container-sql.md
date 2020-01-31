@@ -1,6 +1,5 @@
 ---
 title: Restructurer une application dans un conteneur Azure et Azure SQL Database
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment Contoso réarchitecture une application dans des conteneurs Microsoft Azure et Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 2487b7c213c45b0dcc78ffd4c12b1acae67aa429
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3727c6bac138dae12ec976683ba2b5954bbd9163
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566660"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807544"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Réarchitecturer une application locale dans un conteneur Azure et Azure SQL Database
 
@@ -75,7 +74,7 @@ Après avoir défini précisément les objectifs et les exigences, Contoso conç
 
 ### <a name="solution-review"></a>Examen de la solution
 
-Contoso évalue la conception proposée en dressant une liste des avantages et des inconvénients.
+Contoso évalue la conception proposée en dressant la liste des avantages et des inconvénients.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -105,7 +104,7 @@ Contoso évalue la conception proposée en dressant une liste des avantages et d
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | Génère et exploite des applications distribuées, scalables et toujours disponibles | Coûts basé sur la taille, l’emplacement et la durée des nœuds de calcul. [Plus d’informations](https://azure.microsoft.com/pricing/details/service-fabric)
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Fournit un pipeline d’intégration et de déploiement continus (CI/CD) pour le développement d’applications. Le pipeline démarre avec un dépôt Git pour la gestion du code de l’application, un système de build pour la production de packages et d’autres artefacts de build, et un système Release Management pour le déploiement de modifications sur les environnements de production, de test et de développement.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Voici ce dont Contoso a besoin pour exécuter ce scénario :
 
@@ -126,16 +125,16 @@ Voici comment Contoso exécute la migration :
 > [!div class="checklist"]
 >
 > - **Étape 1 : Approvisionner une instance SQL Database dans Azure.** Contoso approvisionne une instance SQL dans Azure. Une fois la machine virtuelle web frontale migrée vers un conteneur Azure, l’instance de conteneur avec l’application web frontale pointe vers cette base de données.
-> - **Étape 2 : Créer un Azure Container Registry (ACR).** Contoso provisionne un registre de conteneurs d’entreprise pour les images conteneur Docker.
-> - **Étape 3 : Approvisionner Azure Service Fabric.** Il provisionne un cluster Service Fabric.
-> - **Étape 4 : Gérer les certificats Service Fabric.** Contoso configure des certificats pour l’accès d’Azure DevOps Services au cluster.
-> - **Étape 5 : Migrer la base de données avec DMA.** Elle migre la base de données de l’application à l’aide de l’Assistant Migration de données.
-> - **Étape 6 : Configurer Azure DevOps Services.** Contoso configure un nouveau projet dans Azure DevOps Services et importe le code dans le dépôt Git.
-> - **Étape 7 : Convertir l’application.** Contoso convertit l’application en conteneur à l’aide d’Azure DevOps et de SDK Tools.
+> - **Étape 2 : Créer un Azure Container Registry (ACR).** Contoso provisionne un registre de conteneurs d’entreprise pour les images conteneur Docker.
+> - **Étape 3 : Approvisionner Azure Service Fabric.** Il provisionne un cluster Service Fabric.
+> - **Étape 4 : Gérer les certificats Service Fabric.** Contoso configure des certificats pour l’accès d’Azure DevOps Services au cluster.
+> - **Étape 5 : Migrer la base de données avec DMA.** Elle migre la base de données de l’application à l’aide de l’Assistant Migration de données.
+> - **Étape 6 : Configurer Azure DevOps Services.** Contoso configure un nouveau projet dans Azure DevOps Services et importe le code dans le dépôt Git.
+> - **Étape 7 : Convertir l’application.** Contoso convertit l’application en conteneur à l’aide d’Azure DevOps et de SDK Tools.
 > - **Étape 8 : Configurer le build et la mise en production.** Contoso configure les pipelines de build et de mise en production pour créer et publier l’application sur l’ACR et le cluster Service Fabric.
 > - **Étape 9 : Étendre l’application.** Une fois l’application publique, Contoso l’étend pour tirer parti des fonctionnalités Azure et la republie sur Azure à l’aide du pipeline.
 
-## <a name="step-1-provision-an-azure-sql-database"></a>Étape 1 : Provisionner une base de données Azure SQL
+## <a name="step-1-provision-an-azure-sql-database"></a>Étape 1 : Provisionner une base de données Azure SQL
 
 Les administrateurs de Contoso provisionnent une base de données Azure SQL.
 
@@ -169,7 +168,7 @@ Les administrateurs de Contoso provisionnent une base de données Azure SQL.
 - [Obtenir de l’aide](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) pour le provisionnement d’une base de données SQL.
 - [En savoir plus](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) sur les limites de ressources v-Core.
 
-## <a name="step-2-create-an-acr-and-provision-an-azure-container"></a>Étape 2 : Créer un ACR et provisionner un conteneur Azure
+## <a name="step-2-create-an-acr-and-provision-an-azure-container"></a>Étape 2 : Créer un ACR et provisionner un conteneur Azure
 
 Le conteneur Azure est créé à l’aide des fichiers exportés à partir de la machine virtuelle web. Le conteneur est hébergé dans Azure Container Registry (ACR).
 
@@ -403,7 +402,7 @@ Les administrateurs de Contoso convertissent l’application en conteneur à l�
 
 10. Ils valident le code mis à jour et l’envoient (push) vers Azure DevOps Services.
 
-    ![Validation](./media/contoso-migration-rearchitect-container-sql/container9.png)
+    ![Commit](./media/contoso-migration-rearchitect-container-sql/container9.png)
 
 ## <a name="step-8-build-and-release-pipelines-in-azure-devops-services"></a>Étape 8 : Pipelines de build et de mise en production dans Azure DevOps Services
 
@@ -459,7 +458,7 @@ Les administrateurs de Contoso configurent maintenant Azure DevOps Services pour
 
 15. Ils sélectionnent le projet et le pipeline de build à l’aide de la dernière version.
 
-     ![Créer](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
+     ![Build](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
 
 16. Notez que l’éclair sur l’artefact est activé.
 

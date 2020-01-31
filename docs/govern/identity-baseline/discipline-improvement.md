@@ -1,6 +1,5 @@
 ---
 title: Amélioration de la discipline Base de référence des identités
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Amélioration de la discipline Base de référence des identités
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915049"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807187"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Amélioration de la discipline Base de référence des identités
 
@@ -38,8 +37,8 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 **Activités minimales suggérées :**
 
 - Évaluez vos options de [chaîne d’outils d’identité](./toolchain.md) et implémentez une stratégie hybride appropriée pour votre organisation.
-- Développez un brouillon de document d’instructions relatives à l’architecture et distribuez-le aux principales parties prenantes.
-- Formez et impliquez les personnes et les équipes affectées par le développement des instructions relatives à l’architecture.
+- Élaborer un brouillon de recommandations relatives à l’architecture et distribuer ce document aux principales parties prenantes.
+- Formez et impliquez les personnes et les équipes concernées par le développement des instructions relatives à l'architecture.
 
 **Activités potentielles :**
 
@@ -58,7 +57,7 @@ Plusieurs conditions techniques et non techniques sont exigées pour migrer corr
 
 - Envisagez un test pilote avant d’implémenter votre [chaîne d’outils d’identité](./toolchain.md), en vous assurant que cela simplifie autant que possible l’expérience utilisateur.
 - Appliquez les commentaires résultants des tests pilotes dans le prédéploiement. Répétez l’opération jusqu’à ce que les résultats soient acceptables.
-- Mettez à jour le document d’instructions relatives à l’architecture pour inclure des plans de déploiement et d’adoption par les utilisateurs, puis distribuez-les aux principales parties prenantes.
+- Mettez à jour le document d’instructions relatives à l’architecture pour inclure des plans de déploiement et d’adoption par les utilisateurs, puis distribuez-le aux principales parties prenantes.
 - Envisagez d’établir d’un programme à l’adresse des utilisateurs précoces et de déployer vers un nombre limité d’utilisateurs.
 - Continuez de former les personnes et les équipes les plus concernées par les instructions relatives à l’architecture.
 
@@ -89,7 +88,7 @@ La migration est un processus incrémentiel qui porte essentiellement sur le dé
 **Activités minimales suggérées :**
 
 - Migrez votre [chaîne d’outils d’identité](./toolchain.md) du développement vers la production.
-- Mettez à jour le document d’instructions relatives à l’architecture et distribuez-le aux principales parties prenantes.
+- Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
 - Élaborer une documentation et des ressources pédagogiques, des messages de sensibilisation, des incitations et d’autres programmes afin de favoriser l’adoption par les utilisateurs.
 
 **Activités potentielles :**
@@ -114,7 +113,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 - Automatisez les notifications et les rapports pour vous avertir des menaces potentielles.
 - Surveillez l’utilisation du système et la progression de l’adoption par les utilisateurs, et générez des rapports ad hoc.
 - Générez des rapports sur les métriques post-déploiement et distribuez-les aux parties prenantes.
-- Affinez les instructions relatives à l’architecture pour guider les futurs processus d’adoption.
+- Affinez les instructions relatives à l'architecture pour guider les futurs processus d'adoption.
 - Communiquez avec les équipes concernées et formez-les régulièrement pour vous assurer de leur adhésion continue aux instructions relatives à l’architecture.
 
 **Activités potentielles :**

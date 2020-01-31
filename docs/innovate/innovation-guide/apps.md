@@ -1,6 +1,5 @@
 ---
 title: 'Guide d’innovation Azure : Retenir les clients par le biais d’applications'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Apprenez à innover en retenant les clients par le biais d’applications à l’aide d’Azure
 author: billyclaymyersmsft
 ms.author: wimyers
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 09d5828e7b90a7530158b7f031e4f6f25d4b1d96
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 7b6a94830f35f7dde577ba4b7122cdec7e4a711d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251919"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808343"
 ---
 ::: zone target="docs"
 

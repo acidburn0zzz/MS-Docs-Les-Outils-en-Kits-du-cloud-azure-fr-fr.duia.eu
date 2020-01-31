@@ -1,6 +1,5 @@
 ---
 title: 'Innovation cloud : Développer en faisant preuve d’empathie vis à vis du client'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Apprenez à développer en faisant preuve d’empathie vis-à-vis du client.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 406d53bfb322c424737a9b8cec7c028a9833143d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565733"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808547"
 ---
 # <a name="build-with-customer-empathy"></a>Développer en faisant preuve d’empathie vis à vis du client
 
@@ -102,7 +101,7 @@ Quand l’empathie vis-à-vis du client est forte, il doit être facile d’iden
 
 De nombreuses exigences juridiques, de conformité et sectorielles peuvent nécessiter une autre approche. Si les versions publiques d’une solution en développement créent un risque en termes de calendrier des brevets, de protection de la propriété intellectuelle, de fuite de données client ou de violation des exigences de conformité établies, cette approche ne sera peut-être pas appropriée. Quand vous percevez l’existence de tels risques, consultez des conseillers juridiques avant d’adopter une quelconque approche guidée de la gestion des versions.
 
-## <a name="references"></a>Références
+## <a name="references"></a>References
 
 Certains concepts de cet article s’appuient sur les sujets abordés dans l’ouvrage [*The Lean Startup*](http://theleanstartup.com/book) (Eric Ries, Crown Business, 2011).
 

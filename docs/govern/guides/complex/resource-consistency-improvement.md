@@ -1,6 +1,5 @@
 ---
 title: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 66b1d5e414ecf7b1512cb408947bc519e460c471
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 35a77b0837da1b3364516a95b2baaa32e4e2fe6f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683536"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805538"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources
 
@@ -48,8 +47,8 @@ Ce risque métier peut être lié à plusieurs risques techniques :
 5. La configuration des ressources déployées peut ne pas répondre aux attentes en termes de performances.
 6. La journalisation peut ne pas être correctement enregistrée et centralisée pour permettre la résolution des problèmes de performances.
 7. Les stratégies de récupération peuvent échouer ou durer plus longtemps que prévu.
-8. Des processus de déploiement incohérents peuvent entraîner des failles de sécurité pouvant être à l’origine de fuites de données ou d’interruptions.
-9. Des changements de configuration ou des correctifs manqués peuvent entraîner des failles de sécurité pouvant être à l’origine de fuites de données ou d’interruptions.
+8. Des processus de déploiement incohérents peuvent entraîner des failles de sécurité susceptibles de provoquer des fuites de données ou des interruptions.
+9. Des changements de configuration ou des correctifs manqués peuvent entraîner des failles de sécurité susceptibles de provoquer des fuites de données ou des interruptions.
 10. La configuration peut ne pas appliquer les exigences des SLA définis ou les exigences de récupération approuvées.
 11. Des applications ou systèmes d’exploitation déployés peuvent ne pas répondre aux exigences de renforcement de la sécurité des applications et des systèmes d’exploitation.
 12. Il existe un risque d’incohérence en raison du nombre d’équipes travaillant dans le cloud.
@@ -60,7 +59,7 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 
 1. Toutes les ressources déployées doivent être classées par criticité et par classification des données. Les classifications doivent être examinées par l’équipe de gouvernance cloud et le propriétaire de l’application avant le déploiement sur le cloud.
 2. Les sous-réseaux hébergeant des applications critiques doivent être protégés par un pare-feu capable de détecter les intrusions et de répondre aux attaques.
-3. Les outils de gouvernance doivent auditer et appliquer les exigences de configuration réseau définies par l’équipe de base de référence de sécurité.
+3. Les outils de gouvernance doivent auditer et appliquer les exigences de configuration réseau définies par l’équipe de base de référence de la sécurité.
 4. Les outils de gouvernance doivent vérifier que toutes les ressources associées aux applications critiques ou aux données protégées sont incluses dans la surveillance pour l’optimisation et l’épuisement des ressources.
 5. Les outils de gouvernance doivent valider que le niveau approprié de données de journalisation est collecté pour toutes les applications critiques ou données protégées.
 6. Le processus de gouvernance doit valider que la sauvegarde, la restauration et le respect des SLA sont implémentés correctement pour les applications critiques et les données protégées.
@@ -84,7 +83,7 @@ En reprenant l’exemple utilisé dans ce document, nous partons du principe que
 **Abonnement équipe informatique de l’entreprise :** Ajoutez ce qui suit à l’abonnement équipe informatique de l’entreprise, qui joue le rôle d’un hub.
 
 1. En tant que dépendance externe, l’équipe responsable des opérations cloud devra définir des outils de surveillance opérationnelle, des outils de continuité d’activité et reprise d’activité et des outils de correction automatisée. L’équipe de gouvernance cloud peut ensuite prendre en charge les processus de détection nécessaires.
-    1. Ici, l’équipe responsable des opérations cloud a choisi Azure Monitor en tant qu’outil principal pour la surveillance des applications critiques.
+    1. Ici, l’équipe responsable des opérations cloud a choisi Azure Monitor en tant qu’outil principal pour la supervision des applications stratégiques.
     2. Elle a également sélectionné Azure Site Recovery en tant qu’outil principal pour la continuité d’activité et reprise d’activité.
 2. Implémentation d’Azure Site Recovery.
     1. Définissez et déployez un coffre Azure Site Recovery pour les processus de sauvegarde et de reprise d’activité.

@@ -1,6 +1,5 @@
 ---
 title: Prise en main d’un chemin d’accès à la préparation des qualifications
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Prise en main d’un chemin d’accès à la préparation des qualifications
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564211"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800149"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Prise en main d’un chemin d’accès à la préparation des qualifications
 
@@ -29,7 +28,7 @@ Le Cloud Adoption Framework guide les lecteurs tout au long du cycle de vie d’
 - **[Prêt](../ready/suggested-skills.md) :** Développez les compétences nécessaires à la préparation de l’entreprise, de la culture, des personnes et de l’environnement pour les modifications à venir.
 
 - **Adoption :** Les qualifications d’adoption sont adaptées à différents efforts techniques :
-  - **[Migrer](../migrate/expanded-scope/suggested-skills.md) :** Bénéficiez des qualifications nécessaires pour mettre en œuvre le plan de migration cloud.
+  - **[Migration](../migrate/expanded-scope/suggested-skills.md) :** Bénéficiez des qualifications nécessaires pour mettre en œuvre le plan de migration cloud.
   - **Innovation :** Bénéficiez des qualifications nécessaires pour fournir de nouvelles solutions innovantes.
 
 - **Opérer :** Les qualifications en rapport avec le modèle d’exploitation pour l’adoption du cloud sont alignées sur différentes opportunités permettant d’acquérir des qualifications :

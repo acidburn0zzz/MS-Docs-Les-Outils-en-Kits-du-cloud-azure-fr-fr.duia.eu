@@ -1,6 +1,5 @@
 ---
-title: 'Software Defined Networking : Zone DMZ cloud'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'SDN (Software Defined Network) : Zone DMZ cloud'
 description: Cette architecture réseau permet un accès limité entre vos réseaux locaux et ceux basés sur le cloud.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6b96fbae9c3e31fc4c133ce6a19589324a86dd83
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: eee22d6a0322a94ef0968c901642700fdc6247ee
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160033"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806660"
 ---
-# <a name="software-defined-networking-cloud-dmz"></a>Software Defined Networking : Zone DMZ cloud
+# <a name="software-defined-networking-cloud-dmz"></a>SDN (Software Defined Network) : Zone DMZ cloud
 
 L’architecture de réseau DMZ cloud permet un accès limité entre vos réseaux locaux et ceux basés sur le cloud en utilisant un réseau privé virtuel (VPN) pour les connecter. Bien que le modèle DMZ soit couramment utilisé lorsque vous souhaitez sécuriser l’accès externe à un réseau, l’architecture DMZ cloud présentée ici est spécifiquement conçue pour assurer la sécurité de l’accès au réseau local à partir de ressources cloud et inversement.
 

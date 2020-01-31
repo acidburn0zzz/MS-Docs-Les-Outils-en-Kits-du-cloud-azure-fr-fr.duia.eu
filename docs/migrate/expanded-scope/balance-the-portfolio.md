@@ -1,6 +1,5 @@
 ---
 title: Équilibrer le portefeuille
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment équilibrer votre portefeuille cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159914"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803294"
 ---
 # <a name="balance-the-portfolio"></a>Équilibrer le portefeuille
 
@@ -128,4 +127,4 @@ Aucune modification supplémentaire n’est requise pendant les processus de sé
 Revenez à la [liste de vérification d’expansion d’étendue](./index.md) pour vous assurer que votre méthode de migration est entièrement alignée.
 
 > [!div class="nextstepaction"]
-> [Liste de contrôle d’expansion d’étendue](./index.md)
+> [Check-list d’expansion d’étendue](./index.md)

@@ -1,6 +1,5 @@
 ---
 title: Risques d’affaires et motivations associés à la base de référence des identités
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Risques d’affaires et motivations associés à la base de référence des identités
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 13aedd3ef5a596547a6a7bb33102182504bde86f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160119"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807136"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Risques d’affaires et motivations associés à la base de référence des identités
 

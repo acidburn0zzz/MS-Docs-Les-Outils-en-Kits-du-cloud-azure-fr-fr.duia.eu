@@ -1,6 +1,5 @@
 ---
 title: Capacité réseau dépassée
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Les besoins en données dépassent la capacité réseau lors d’une migration.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753495"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803090"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Les besoins en données dépassent la capacité réseau lors d’une migration
 
@@ -23,7 +22,7 @@ Lors d’une migration cloud, les ressources sont répliquées et synchronisées
 
 La majeure partie de cet effort nécessaire dans le cadre de cette expansion de l’étendue se produit au cours des processus de détermination des conditions préalables, d’évaluation et de migration.
 
-## <a name="suggested-prerequisites"></a>Conditions préalables suggérées
+## <a name="suggested-prerequisites"></a>Prérequis suggérés
 
 **Valider les risques liés à la capacité du réseau :** [La rationalisation du patrimoine numérique](../../digital-estate/rationalize.md) est un prérequis fortement recommandé, en particulier s’il existe des problèmes de surcharge de la capacité réseau disponible. Lors de la rationalisation du patrimoine numérique, un [inventaire des ressources numériques](../../digital-estate/inventory.md) est collecté. Cet inventaire doit inclure les exigences de stockage existantes dans le patrimoine numérique. Comme indiqué dans [Risques de réplication : Physique de la réplication](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication), cet inventaire peut être utilisé pour estimer la **taille totale des données de migration**, qui peut être comparée à la **bande passante de migration disponible** totale. Si cette comparaison n’est pas alignée avec le **temps nécessaire pour les changements dans l’entreprise**, cet article peut vous aider à accélérer la migration, en réduisant le temps nécessaire à la migration du centre de données.
 
@@ -81,4 +80,4 @@ Les activités de sécurisation et de gestion ne sont pas susceptibles d’être
 Revenez à la [liste de vérification d’expansion d’étendue](./index.md) pour vous assurer que votre méthode de migration est entièrement alignée.
 
 > [!div class="nextstepaction"]
-> [Liste de contrôle d’expansion d’étendue](./index.md)
+> [Check-list d’expansion d’étendue](./index.md)

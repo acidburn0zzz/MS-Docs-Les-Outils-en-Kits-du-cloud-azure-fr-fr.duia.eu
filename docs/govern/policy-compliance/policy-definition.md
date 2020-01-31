@@ -1,6 +1,5 @@
 ---
 title: Définir la stratégie de l’entreprise en matière de gouvernance cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment établir une stratégie pour refléter et corriger les risques.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 4184ccdd4a0efa06d6a842f7ba1d9cbf0dc77ea6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223732"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806048"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Définir la stratégie de l’entreprise en matière de gouvernance cloud
 

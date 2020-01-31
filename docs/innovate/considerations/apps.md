@@ -1,6 +1,5 @@
 ---
 title: 'Innovation cloud : Impliquer par le biais d’applications'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Introduction à l’innovation cloud : impliquer par le biais d’applications'
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752066"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808564"
 ---
 # <a name="engage-through-applications"></a>Impliquer par le biais d’applications
 

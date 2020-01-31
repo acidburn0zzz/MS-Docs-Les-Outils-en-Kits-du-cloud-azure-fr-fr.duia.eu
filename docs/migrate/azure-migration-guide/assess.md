@@ -1,6 +1,5 @@
 ---
 title: Évaluer le patrimoine numérique
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Évaluer le patrimoine numérique
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 31e76ec1f81bc38b03e8f1e480d083983dc85b14
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 298cfc866e770e2dcd33a22d6cd4713e4053de25
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251418"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807068"
 ---
 # <a name="assess-the-digital-estate"></a>Évaluer le patrimoine numérique
 
