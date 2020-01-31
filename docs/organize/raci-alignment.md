@@ -1,6 +1,5 @@
 ---
 title: Alignement des responsabilités entre les équipes
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Apprenez à aligner les responsabilités entre les équipes.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 40ccd0c17a55a87c84d40abd749bf8e61f891e6c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 87ff20e3e81b8b01e6405984a63a9192184a4fa5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549077"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800693"
 ---
 # <a name="align-responsibilities-across-teams"></a>Aligner les responsabilités entre les équipes
 
@@ -44,7 +43,7 @@ La dernière ligne de chaque tableau (à l’exception du premier) contient un l
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Équipe d’adoption du cloud |Responsable|Responsable|Responsable|Responsable|Responsable|Responsable|Responsable|Responsable|
 
-## <a name="best-practice-minimum-viable-product-mvp"></a>Bonne pratique : produit minimum viable (MVP)
+## <a name="best-practice-minimum-viable-product-mvp"></a>Meilleure pratique : produit minimum viable (MVP)
 
 |  |Livraison de solution  |Alignement de l’entreprise  |Gestion des changements  |Opérations de solution  |Gouvernance |Maturité de plateforme  |Opérations de plateforme  |Automatisation de plateforme  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|

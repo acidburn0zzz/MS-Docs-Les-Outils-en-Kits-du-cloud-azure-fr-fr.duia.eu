@@ -1,6 +1,5 @@
 ---
 title: Réhéberger une application sur des machines virtuelles Azure avec Azure Site Recovery
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment Contoso réhéberge une application locale avec une migration lift-and-shift de machines locales vers Azure, à l’aide du service Azure Site Recovery.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: f38503b0cc998721726845fc1669f40ea8c845e4
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: cb6bb11ee8d87f5ca6069979894de6549bb4a33b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520189"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807323"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>Réhéberger une application locale sur des machines virtuelles Azure
 

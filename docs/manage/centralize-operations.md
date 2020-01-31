@@ -1,6 +1,5 @@
 ---
 title: Centraliser les opérations de gestion
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Conseils sur la centralisation des opérations de gestion
 author: JnHs
 ms.author: jenhayes
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b88a1541a2f96dbd4b8d63572e44d493bce8cc45
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: a02e5804bd2ea18bd385634cbab57b21c8427bba
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979959"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807884"
 ---
 # <a name="centralize-management-operations"></a>Centraliser les opérations de gestion
 

@@ -1,6 +1,5 @@
 ---
 title: Évaluer facilement vos charges de travail locales en vue d’une migration vers Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment Contoso évalue ses ordinateurs locaux pour la migration vers Azure à l’aide d’Azure Migrate et de l’Assistant Migration de données.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 051e52bee9b83160860234f953b19439b64eed97
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566488"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807476"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Évaluer facilement vos charges de travail locales en vue d’une migration vers Azure
 
 Cet article explique comment la société fictive Contoso évalue une application locale pour la migration vers Azure. Dans l’exemple de scénario, l’application SmartHotel360 locale de Contoso est actuellement exécutée sur VMware. Contoso évalue les machines virtuelles de l’application à l’aide du service Azure Migrate et la base de données SQL Server de l’application à l’aide de l’Assistant Migration de données.
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Puisqu’elle envisage d’effectuer une migration vers Azure, la société Contoso doit réaliser une évaluation technique et financière pour déterminer si ses charges de travail locales sont de bonnes candidates à la migration cloud. L’équipe Contoso souhaite évaluer la compatibilité des bases de données et des machines à migrer. Elle souhaite estimer la capacité et les coûts nécessaires à l’exécution des ressources Contoso dans Azure.
 
@@ -98,7 +97,7 @@ Dans ce scénario, Contoso télécharge et exécute l’Assistant Migration de d
   - **OSTICKETWEB** exécute Apache 2 et PHP 7.0.
   - **OSTICKETMYSQL** exécute MySQL 5.7.22.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Contoso et les autres utilisateurs doivent respecter les prérequis suivants pour cette évaluation :
 
@@ -122,16 +121,16 @@ Voici comment Contoso effectue son évaluation :
 > [!div class="checklist"]
 >
 > - **Étape 1 : Télécharger et installer l’Assistant Migration de données.** Contoso prépare l’Assistant Migration de données pour l’évaluation de la base de données SQL Server locale.
-> - **Étape 2 : Évaluer la base de données à l’aide de l’Assistant Migration des données.** Contoso effectue l'évaluation de la base de données et analyse les résultats.
-> - **Étape 3 : Préparer l’évaluation de la machine virtuelle avec Azure Migrate.** Contoso configure les comptes locaux et ajuste les paramètres VMware.
-> - **Étape 4 : Découvrir les machines virtuelles locales avec Azure Migrate.** Contoso crée une machine virtuelle collecteur Azure Migrate. Ensuite, Contoso exécute le collecteur pour découvrir les machines virtuelles dans le cadre de l’évaluation.
-> - **Étape 5 : Préparer l’analyse des dépendances avec Azure Migrate.** Contoso installe les agents Azure Migrate sur les machines virtuelles, afin de voir le mappage des dépendances entre les machines virtuelles.
-> - **Étape 6 : Évaluer les machines virtuelles à l’aide d’Azure Migrate.** Contoso vérifie les dépendances, regroupe les machines virtuelles et lance l’évaluation. Une fois l’évaluation effectuée, Contoso analyse les résultats en vue de préparer la migration.
+> - **Étape 2 : Évaluer la base de données à l’aide de l’Assistant Migration des données.** Contoso effectue l'évaluation de la base de données et analyse les résultats.
+> - **Étape 3 : Préparer l’évaluation de la machine virtuelle avec Azure Migrate.** Contoso configure les comptes locaux et ajuste les paramètres VMware.
+> - **Étape 4 : Découvrir les machines virtuelles locales avec Azure Migrate.** Contoso crée une machine virtuelle collecteur Azure Migrate. Ensuite, Contoso exécute le collecteur pour découvrir les machines virtuelles dans le cadre de l’évaluation.
+> - **Étape 5 : Préparer l’analyse des dépendances avec Azure Migrate.** Contoso installe les agents Azure Migrate sur les machines virtuelles, afin de voir le mappage des dépendances entre les machines virtuelles.
+> - **Étape 6 : Évaluer les machines virtuelles à l’aide d’Azure Migrate.** Contoso vérifie les dépendances, regroupe les machines virtuelles et lance l’évaluation. Une fois l’évaluation effectuée, Contoso analyse les résultats en vue de préparer la migration.
 
     > [!NOTE]
     > Assessments shouldn't just be limited to using tooling to discover information about your environment, you should schedule in time to speak to business owners, end users, other members within the IT department, etc in order to get a full picture of what is happening within the environment and understand things tooling cannot tell you. 
 
-## <a name="step-1-download-and-install-data-migration-assistant"></a>Étape 1 : Télécharger et installer l’Assistant Migration de données
+## <a name="step-1-download-and-install-data-migration-assistant"></a>Étape 1 : Télécharger et installer l’Assistant Migration de données
 
 1. Contoso télécharge l’Assistant Migration de données à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=53595).
     - Vous pouvez installer l’Assistant Migration de données sur toutes les machines pouvant se connecter à l’instance SQL Server. Contoso n’a pas besoin de l’exécuter sur la machine SQL Server.
@@ -139,7 +138,7 @@ Voici comment Contoso effectue son évaluation :
 2. Contoso exécute le fichier d’installation téléchargé (DownloadMigrationAssistant.msi) pour démarrer l’installation.
 3. Dans la page **Terminer**, Contoso sélectionne **Lancer l’Assistant Migration de données Microsoft** avant la fin de l’exécution de l’Assistant.
 
-## <a name="step-2-run-and-analyze-the-database-assessment-for-smarthotel360"></a>Étape 2 : Exécuter et analyser l’évaluation de la base de données pour SmartHotel360
+## <a name="step-2-run-and-analyze-the-database-assessment-for-smarthotel360"></a>Étape 2 : Exécuter et analyser l’évaluation de la base de données pour SmartHotel360
 
 Contoso peut à présent lancer une évaluation pour analyser sa base de données SQL Server locale pour l’application SmartHotel360.
 

@@ -1,6 +1,5 @@
 ---
 title: Guide de supervision du cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vue d’ensemble d’Azure Monitor et de System Center Operations Manager
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 6c2b4521443e76a9d85b35b78af4d5811091fccc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752782"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807578"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Guide de supervision du cloud : Introduction
 
@@ -40,7 +39,7 @@ Ce guide n’est pas un article de procédure pour utiliser ou configurer des se
 
 Si vous n’êtes pas familiarisé avec Azure Monitor et System Center Operations Manager et que vous voulez mieux comprendre ce qui les rend uniques et dans quelle mesure ils sont comparables, consultez [Vue d’ensemble de nos plateformes de supervision](./platform-overview.md).
 
-## <a name="audience"></a>Audience
+## <a name="audience"></a>Public visé
 
 Ce guide est destiné en priorité aux administrateurs d’entreprise, aux services des opérations, de la sécurité et de la conformité informatiques, aux architectes d’application, aux propriétaires de développement de charge de travail et aux propriétaires d’opérations de charge de travail.
 

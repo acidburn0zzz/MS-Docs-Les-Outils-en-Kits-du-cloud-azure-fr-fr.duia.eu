@@ -1,6 +1,5 @@
 ---
 title: Passer en revue vos options de calcul
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Passer en revue vos options de calcul pour les charges de travail Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561877"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799181"
 ---
 # <a name="review-your-compute-options"></a>Passer en revue vos options de calcul
 
@@ -67,13 +66,13 @@ Azure vous permet d’offrir des services à l’échelle dont vous avez besoin 
 
 Certaines options de calcul, telles qu’Azure App Service, sont généralement disponibles dans la plupart des régions Azure. Toutefois, certains services de calcul sont pris en charge uniquement dans des régions spécifiques. Certains types de machines virtuelles et leurs types de stockage associés ont une disponibilité régionale limitée. Avant de choisir les régions dans lesquelles vous allez déployer vos ressources de calcul, nous vous recommandons de consulter la [page Régions](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines)  pour vérifier l’état le plus récent de la disponibilité régionale.
 
-Pour en savoir plus sur l’infrastructure globale Azure, consultez la  [page Régions Azure](https://azure.microsoft.com/global-infrastructure/regions). Vous pouvez également afficher  [les produits disponibles par région](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all) pour obtenir des détails spécifiques sur les services globaux disponibles dans chaque région Azure.
+Pour en savoir plus sur l’infrastructure globale Azure, consultez la  [page Régions Azure](https://azure.microsoft.com/global-infrastructure/regions). Vous pouvez également afficher [les produits disponibles par région](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all) pour obtenir des détails spécifiques sur les services globaux disponibles dans chaque région Azure.
 
 ## <a name="data-residency-and-compliance-requirements"></a>Conditions de résidence et de conformité des données
 
 Des exigences légales et contractuelles relatives au stockage de données s’appliquent souvent à vos charges de travail. Ces exigences peuvent varier en fonction de l’emplacement de votre organisation, de la juridiction du stockage et du traitement des fichiers et des données, et de votre secteur d’activité. Les composants des obligations de données à prendre en compte incluent la classification des données, l’emplacement des données et les responsabilités respectives pour la protection des données dans le cadre du modèle de responsabilité partagée. De nombreuses solutions de calcul dépendent des ressources de stockage liées. Cette exigence peut également influencer vos décisions de calcul. Pour obtenir de l’aide sur la compréhension de ces exigences, consultez le livre blanc  [Assurer la conformité de la résidence et de la sécurité des données avec Azure](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure).
 
-Une partie de vos efforts de conformité peut inclure le contrôle de l’emplacement physique de vos ressources de calcul. Les régions Azure sont organisées en groupes appelés zones géographiques. Une  [zone géographique Azure](https://azure.microsoft.com/global-infrastructure/geographies)  garantit que les exigences de résidence, de souveraineté, de conformité et de résilience des données sont respectées dans les limites géographiques et politiques. Si vos charges de travail sont soumises à une souveraineté des données ou à d’autres exigences de conformité, vous devez déployer vos ressources de stockage dans des régions dans une zone géographique Azure conforme.
+Une partie de vos efforts de conformité peut inclure le contrôle de l’emplacement physique de vos ressources de calcul. Les régions Azure sont organisées en groupes appelés zones géographiques. Une  [zone géographique Azure](https://azure.microsoft.com/global-infrastructure/geographies)  garantit que les exigences de résidence, de souveraineté, de conformité et de résilience des données sont respectées dans les limites géographiques et politiques. Si vos charges de travail sont soumises à une souveraineté des données ou à d’autres exigences de conformité, vous devez déployer vos ressources de stockage dans des régions situées dans une zone géographique Azure conforme.
 
 ## <a name="establish-controls-for-compute-services"></a>Établir des contrôles pour les services de calcul
 

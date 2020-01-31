@@ -1,6 +1,5 @@
 ---
 title: Intégration aux services de gestion de serveurs Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Intégration aux services de gestion de serveurs Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c0b1a3ec7f748f9a9217dde45226ae778a2c78d9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 48c0728c39457a2fa060679460a97c0ddca49c45
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565355"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808003"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>Phase 2 : Intégration aux services de gestion de serveurs Azure
 

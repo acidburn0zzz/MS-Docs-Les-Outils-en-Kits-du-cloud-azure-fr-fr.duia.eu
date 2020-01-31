@@ -1,6 +1,5 @@
 ---
 title: Créer une justification professionnelle pour la migration vers le cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Considérations relatives à l’élaboration d’une justification professionnelle pour la migration vers le cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 629b882c993e85dbb85b04cc9568491bd6e2036d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 36306ab50f4158741f1ff4334c43900c2f657920
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566615"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798585"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Créer une justification professionnelle pour la migration vers le cloud
 

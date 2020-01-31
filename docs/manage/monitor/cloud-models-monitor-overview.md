@@ -1,6 +1,5 @@
 ---
 title: 'Guide de supervision du cloud : Stratégie de supervision pour les modèles de déploiement cloud'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Choisir quand utiliser Azure Monitor ou System Center Operations Manager dans Microsoft Azure
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160248"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807629"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guide de supervision du cloud : Stratégie de supervision pour les modèles de déploiement cloud
 
@@ -73,28 +72,28 @@ Le tableau suivant résume les conditions requises qu’Azure Monitor et que Sys
 
 <!-- markdownlint-disable MD033 -->
 
-|Prérequis | Azure Monitor | Operations Manager |
+|Condition requise | Azure Monitor | Operations Manager |
 |:--|:---|:---|
-|Exigences de l’infrastructure | Non | OUI<br> Nécessite au minimum un serveur d’administration et un serveur SQL Server hébergeant la base de données opérationnelle et la base de données de l’entrepôt de données pour les rapports. La complexité s'accentue lorsque la haute disponibilité et la récupération d'urgence sont requises, de même qu'en présence de machines réparties sur plusieurs sites, de systèmes non fiables et d'autres considérations de conception complexes.|
-|Connectivité limitée - Pas d’Internet<br> ni de réseau isolé | Non | OUI |
-|Connectivité limitée - Accès contrôlé à Internet | OUI | OUI |
-|Connectivité limitée - Déconnexion fréquente | OUI | OUI |
-|Analyse du fonctionnement configurable | Non | OUI |
-| Test de disponibilité des applications web (réseau isolé) | Oui, avec des limitations<br> Azure Monitor a une prise en charge limitée dans ce domaine et nécessite des exceptions de pare-feu personnalisées. | OUI |
-| Test de disponibilité des applications web (distribuées dans le monde entier) | Non | OUI |
-|Superviser les charges de travail de machine virtuelle | Oui, avec des limitations<br> Peut collecter les journaux d’erreurs IIS et SQL Server, les événements Windows et les compteurs de performances. Requiert la création de visualisations, d’alertes et de requêtes personnalisées. | OUI<br> Prend en charge la supervision de la plupart des charges de travail serveur avec les packs d’administration disponibles. Nécessite l’agent Windows Log Analytics ou l’agent Operations Manager sur la machine virtuelle, qui rend compte au groupe d’administration sur le réseau d’entreprise.|
-|Superviser Azure IaaS | OUI | OUI<br> Prend en charge la supervision de la majeure partie de l’infrastructure du réseau d’entreprise. Suit l’état de disponibilité, les métriques et les alertes pour les machines virtuelles Azure, SQL et le stockage via le pack d’administration Azure.|
-|Superviser Azure PaaS | OUI | Oui, avec des limitations<br> En fonction de ce qui est pris en charge dans le pack d’administration Azure. |
-|Supervision des services Azure | OUI<br> | OUI<br> Bien qu'aucune supervision native de l'intégrité des services Azure ne soit aujourd'hui fournie via un pack d'administration, vous pouvez créer des workflows personnalisés pour interroger les alertes d'intégrité des services Azure. Utilisez l’API REST Azure pour recevoir des alertes via vos notifications existantes.|
-|Supervision des applications web modernes | OUI | Non |
+|Exigences de l’infrastructure | Non | Oui<br> Nécessite au minimum un serveur d’administration et un serveur SQL Server hébergeant la base de données opérationnelle et la base de données de l’entrepôt de données pour les rapports. La complexité s'accentue lorsque la haute disponibilité et la récupération d'urgence sont requises, de même qu'en présence de machines réparties sur plusieurs sites, de systèmes non fiables et d'autres considérations de conception complexes.|
+|Connectivité limitée - Pas d’Internet<br> ni de réseau isolé | Non | Oui |
+|Connectivité limitée - Accès contrôlé à Internet | Oui | Oui |
+|Connectivité limitée - Déconnexion fréquente | Oui | Oui |
+|Analyse du fonctionnement configurable | Non | Oui |
+| Test de disponibilité des applications web (réseau isolé) | Oui, avec des limitations<br> Azure Monitor a une prise en charge limitée dans ce domaine et nécessite des exceptions de pare-feu personnalisées. | Oui |
+| Test de disponibilité des applications web (distribuées dans le monde entier) | Non | Oui |
+|Superviser les charges de travail de machine virtuelle | Oui, avec des limitations<br> Peut collecter les journaux d’erreurs IIS et SQL Server, les événements Windows et les compteurs de performances. Requiert la création de visualisations, d’alertes et de requêtes personnalisées. | Oui<br> Prend en charge la supervision de la plupart des charges de travail serveur avec les packs d’administration disponibles. Nécessite l’agent Windows Log Analytics ou l’agent Operations Manager sur la machine virtuelle, qui rend compte au groupe d’administration sur le réseau d’entreprise.|
+|Superviser Azure IaaS | Oui | Oui<br> Prend en charge la supervision de la majeure partie de l’infrastructure du réseau d’entreprise. Suit l’état de disponibilité, les métriques et les alertes pour les machines virtuelles Azure, SQL et le stockage via le pack d’administration Azure.|
+|Superviser Azure PaaS | Oui | Oui, avec des limitations<br> En fonction de ce qui est pris en charge dans le pack d’administration Azure. |
+|Supervision des services Azure | Oui<br> | Oui<br> Bien qu'aucune supervision native de l'intégrité des services Azure ne soit aujourd'hui fournie via un pack d'administration, vous pouvez créer des workflows personnalisés pour interroger les alertes d'intégrité des services Azure. Utilisez l’API REST Azure pour recevoir des alertes via vos notifications existantes.|
+|Supervision des applications web modernes | Oui | Non |
 |Supervision des applications web héritées | Oui, les limitations dépendent du kit de développement logiciel (SDK)<br> Prend en charge la supervision des versions antérieures des applications web .NET et Java. | Oui, avec des limitations |
-|Superviser des conteneurs Azure Kubernetes Service | OUI | Non |
-|Superviser des conteneurs Docker ou Windows | OUI | Non |
-|Analyse des performances réseau | OUI | Oui, avec des limitations<br> Prend en charge les vérifications de disponibilité et collecte des statistiques de base à partir des périphériques réseau à l'aide du protocole SNMP (Simple Network Management Protocol) du réseau d'entreprise.|
-|Analyse de données interactive | OUI | Non<br> S’appuie sur des rapports prédéfinis ou personnalisés de SQL Server Reporting Services, des solutions de visualisation de tiers ou une implémentation de Power BI personnalisée. L’entrepôt de données Operations Manager présente des limitations de performances et de mise à l’échelle. S'intègre aux journaux Azure Monitor comme alternative aux exigences d'agrégation de données. L'intégration s'effectue en configurant le connecteur Log Analytics.|
-|Diagnostics de bout en bout, analyse de la cause racine et résolution des problèmes en temps opportun | OUI | Oui, avec des limitations<br> Prend en charge les diagnostics de bout en bout et la résolution des problèmes uniquement pour l’infrastructure et les applications locales. Utilise d’autres composants System Center ou des solutions de partenaires.|
-|Visualisations interactives (tableaux de bord) | OUI | Oui, avec des limitations<br> Fournit des tableaux de bord essentiels avec la console Web HTML5 ou une expérience avancée de solutions partenaires, telles que Squared Up et Savision. |
-|Intégration avec les outils IT ou DevOps | OUI | Oui, avec des limitations |
+|Superviser des conteneurs Azure Kubernetes Service | Oui | Non |
+|Superviser des conteneurs Docker ou Windows | Oui | Non |
+|Analyse des performances réseau | Oui | Oui, avec des limitations<br> Prend en charge les vérifications de disponibilité et collecte des statistiques de base à partir des périphériques réseau à l'aide du protocole SNMP (Simple Network Management Protocol) du réseau d'entreprise.|
+|Analyse de données interactive | Oui | Non<br> S’appuie sur des rapports prédéfinis ou personnalisés de SQL Server Reporting Services, des solutions de visualisation de tiers ou une implémentation de Power BI personnalisée. L’entrepôt de données Operations Manager présente des limitations de performances et de mise à l’échelle. S'intègre aux journaux Azure Monitor comme alternative aux exigences d'agrégation de données. L'intégration s'effectue en configurant le connecteur Log Analytics.|
+|Diagnostics de bout en bout, analyse de la cause racine et résolution des problèmes en temps opportun | Oui | Oui, avec des limitations<br> Prend en charge les diagnostics de bout en bout et la résolution des problèmes uniquement pour l’infrastructure et les applications locales. Utilise d’autres composants System Center ou des solutions de partenaires.|
+|Visualisations interactives (tableaux de bord) | Oui | Oui, avec des limitations<br> Fournit des tableaux de bord essentiels avec la console Web HTML5 ou une expérience avancée de solutions partenaires, telles que Squared Up et Savision. |
+|Intégration avec les outils IT ou DevOps | Oui | Oui, avec des limitations |
 
 <!-- markdownlint-enable MD033 -->
 

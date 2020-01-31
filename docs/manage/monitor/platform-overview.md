@@ -1,6 +1,5 @@
 ---
 title: 'Guide de supervision du cloud : Vue d’ensemble des plateformes de supervision'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Choisissez quand utiliser Azure Monitor ou System Center Operations Manager dans Microsoft Azure.
 author: mgoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751676"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807595"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Guide de supervision du cloud : Vue d’ensemble des plateformes de supervision
 
@@ -72,7 +71,7 @@ Azure Monitor est un service Logiciel en tant que service (SaaS), où toute l’
 
 ![Diagramme d’Azure Monitor](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
-## <a name="data-collection"></a>Collecte des données
+## <a name="data-collection"></a>Collecte de données
 
 <!-- markdownlint-disable MD024 -->
 

@@ -1,6 +1,5 @@
 ---
 title: Base de référence de la sécurité des processus de conformité à la stratégie
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Base de référence de la sécurité des processus de conformité à la stratégie
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,22 +8,22 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5f5de9c25574e36648930ce6de835d73eb0685fa
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b725a4867ec7e55f6b9d53cdba31c0874d61c80c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221787"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808921"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>Base de référence de la sécurité des processus de conformité à la stratégie
 
-Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent la [base de référence de la sécurité](./index.md). Pour être efficace, une gouvernance de sécurité du cloud implique plusieurs processus manuels récurrents qui visent à détecter les vulnérabilités et à imposer des stratégies de correction de ces risques de sécurité. De fait, l’équipe de gouvernance cloud et les équipes informatiques des parties prenantes intéressées sont régulièrement sollicitées afin de passer en revue et mettre à jour la stratégie et veiller au respect de cette dernière. En outre, de nombreux processus de supervision et d’application continues peuvent être automatisés ou complétés par des outils afin de réduire la charge de gouvernance et accélérer la réponse en cas de manquement à la stratégie.
+Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent la [base de référence de la sécurité](./index.md). Pour être efficace, une gouvernance de sécurité du cloud implique plusieurs processus manuels récurrents qui visent à détecter les vulnérabilités et à imposer des stratégies de correction de ces risques de sécurité. De fait, l’équipe de gouvernance cloud ainsi que les équipes informatiques et métier des parties prenantes intéressées sont régulièrement sollicitées pour examiner et mettre à jour la stratégie, et veiller au respect de cette dernière. En outre, de nombreux processus de supervision et d’application continues peuvent être automatisés ou complétés par des outils afin de réduire la charge de gouvernance et accélérer la réponse en cas de manquement à la stratégie.
 
 ## <a name="planning-review-and-reporting-processes"></a>Processus de planification, de révision et de génération de rapports
 
 Les outils de base de référence de la sécurité du cloud ne peuvent pas surpasser les processus et stratégies qu’ils appuient. Les éléments suivants représentent un ensemble d’exemples de processus généralement impliqués dans la discipline Base de référence de la sécurité. Ces exemples constituent des points de départ pour planifier les processus qui vous permettront de mettre à jour la stratégie de sécurité à mesure que l’entreprise évolue et selon les commentaires des équipes informatiques chargés d’implémenter les mesures de gouvernance.
 
-**Évaluation des risques et planification initiales :** Dans le cadre de l’adoption initiale de la discipline de base de référence de la sécurité, identifiez vos principaux risques métier et tolérances liés à la sécurité du cloud. Utilisez ces informations pour débattre des techniques spécifiques avec les membres de vos équipes informatiques et de sécurité, puis développer un ensemble de stratégies de sécurité de base pour atténuer ces risques et ainsi établir votre stratégie de gouvernance initiale.
+**Évaluation des risques et planification initiales :** Dans le cadre de l’adoption initiale de la discipline de base de référence de la sécurité, identifiez vos principaux risques métier et tolérances liés à la sécurité du cloud. Utilisez ces informations pour débattre des techniques spécifiques avec les membres de vos équipes informatiques et de sécurité, puis développer un ensemble de stratégies de sécurité de base pour atténuer ces risques et ainsi établir votre stratégie de gouvernance initiale.
 
 **Planification du déploiement :** Avant de déployer n’importe quelle charge de travail ou ressource, effectuez une révision de la sécurité afin d’identifier tout nouveau risque et de vous assurer que toutes les exigences de la stratégie d’accès et de sécurité des données sont respectées.
 
@@ -36,7 +35,7 @@ Les outils de base de référence de la sécurité du cloud ne peuvent pas surpa
 
 Ce processus de planification constitue également un moment idéal pour évaluer les lacunes des membres de votre équipe de gouvernance cloud en lien avec les risques, nouveaux ou changeants, associés à la sécurité. Invitez le personnel informatique concerné à participer aux révisions et à la planification en tant que conseillers techniques temporaires ou membres permanents de votre équipe.
 
-**Apprentissage et formation :** Deux fois par mois, offrez des sessions de formation pour vous assurer que le personnel informatique et les développeurs connaissent les dernières exigences en matière de sécurité. Dans le cadre de ce processus, relisez et mettez à jour toute la documentation, les guides et les autres ressources de formation pour vous assurer qu’ils correspondent aux dernières instructions stratégiques de l’entreprise.
+**Apprentissage et formation :** Deux fois par mois, offrez des sessions de formation pour vous assurer que le personnel informatique et les développeurs connaissent les dernières exigences en matière de sécurité. Dans le cadre de ce processus, relisez et mettez à jour toute la documentation, les guides et les autres ressources de formation pour vous assurer qu’ils correspondent aux dernières instructions stratégiques de l’entreprise.
 
 **Révisions d’audit et création de rapports mensuelles :** Tous les mois, effectuez un audit sur tous les déploiements cloud afin de garantir leur alignement continu sur la stratégie de sécurité. Examinez les activités de sécurité avec le personnel informatique, puis identifiez les problèmes de conformité qui n’ont pas encore été pris en charge par le processus d’application et de supervision continues. Cet examen produit un rapport pour l’équipe de la stratégie cloud et chaque équipe d’adoption du cloud afin de communiquer sur l’adhésion générale des parties prenantes à la stratégie. Le rapport est également conservé à des fins d’audit et juridiques.
 

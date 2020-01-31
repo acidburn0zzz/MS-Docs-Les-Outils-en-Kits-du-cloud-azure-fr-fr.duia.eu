@@ -1,6 +1,5 @@
 ---
 title: Optimiser et transformer
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Optimiser et transformer
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d8a7d7d547034492dabd57b75f741d9e6cd27994
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 5d9ec518069023a8db763a9fc21f7c4847053be6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251631"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807000"
 ---
 # <a name="optimize-and-transform"></a>Optimiser et transformer
 
@@ -96,7 +95,7 @@ Les partenaires peuvent utiliser l’espace partenaires pour passer en revue l�
 
 ::: zone-end
 
-# <a name="cost-managementtabmanagecost"></a>[Gestion des coûts](#tab/ManageCost)
+# <a name="cost-managementtabmanagecost"></a>[Cost Management](#tab/ManageCost)
 
 Il est important d’effectuer une analyse et un examen des coûts récurrents. Cela vous donne la possibilité de redimensionner les ressources en fonction de vos besoins pour équilibrer les coûts et la charge de travail.
 
@@ -126,7 +125,7 @@ Vous pouvez également utiliser le **Advisor** et sélectionner l'onglet **Coût
 
 ::: zone target="docs"
 
-- [Tutoriel : Optimiser les coûts à partir de recommandations](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Tutoriel : Optimiser les coûts à partir de recommandations](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
 - [Éviter les frais inattendus avec la gestion de la facturation et des coûts dans Azure](https://docs.microsoft.com/azure/billing/billing-getting-started)
 - [Explorer et analyser les coûts avec l’analyse des coûts](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 

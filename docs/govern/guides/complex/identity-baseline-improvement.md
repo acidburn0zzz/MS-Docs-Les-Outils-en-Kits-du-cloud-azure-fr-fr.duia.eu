@@ -1,6 +1,5 @@
 ---
 title: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence des identités'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence des identités'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8c64507c03a99ef771f7885dc8fbde960c570e4d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7f975f948bc078a80ead4207d755ff67cd5e4f2f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566322"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806286"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence des identités
 
@@ -53,7 +52,7 @@ Les modifications apportées aux états actuel et futur exposent à de nouveaux 
 
 **Dépendances d’identité existantes.** Les dépendances entre des services d’authentification et d’identité existants sont susceptibles de retarder ou d’empêcher la migration de certaines charges de travail vers le cloud. Si les deux centres de données ne peuvent pas être retournés à temps, les frais de location des centres de données s’élèveront à des millions de dollars.
 
-Ce risque métier peut être lié à quelques risques techniques :
+Ce risque métier peut s’associer à quelques risques techniques :
 
 - Il se peut que l’authentification héritée ne soit pas disponible dans le cloud, limitant ainsi le déploiement de certaines applications.
 - Il se peut que la solution d’authentification multifacteur tierce actuelle ne soit pas disponible dans le cloud, limitant ainsi le déploiement de certaines applications.
@@ -94,7 +93,7 @@ L’ajout de ces modifications au MVP de gouvernance permet de traiter bon nombr
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À mesure que l’adoption du cloud se poursuit et offre davantage de valeur aux activités métier, les risques et les besoins en matière de gouvernance cloud changent également. Voici quelques changements susceptibles de se produire. Pour cette entreprise fictive, le prochain déclencheur consiste à inclure des données protégées dans le plan d’adoption du cloud. Cette modification exige de nouveaux contrôles de sécurité.
+À mesure que l’adoption du cloud se poursuit et offre davantage de valeur aux activités métier, les risques et les besoins en matière de gouvernance du cloud changent également. Voici quelques changements susceptibles de se produire. Pour cette entreprise fictive, le prochain déclencheur consiste à inclure des données protégées dans le plan d’adoption du cloud. Cette modification exige de nouveaux contrôles de sécurité.
 
 > [!div class="nextstepaction"]
-> [Améliorer la discipline Base de référence de la sécurité](./security-baseline-improvement.md)
+> [Améliorer la base référence de la sécurité](./security-baseline-improvement.md)

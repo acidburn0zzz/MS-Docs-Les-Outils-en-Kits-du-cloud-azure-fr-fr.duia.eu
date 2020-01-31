@@ -1,6 +1,5 @@
 ---
 title: 'Migration d’ordinateurs mainframe : Assurer la transition d’ordinateurs mainframe vers Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrez des applications d’environnements mainframe vers Azure pour les systèmes qui s’exécutent sur des ordinateurs mainframe.
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8416abd3429a0dafd50eda91323eb74bfb1bf9cd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221526"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808768"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Assurer la transition d’ordinateurs mainframe vers Azure
 

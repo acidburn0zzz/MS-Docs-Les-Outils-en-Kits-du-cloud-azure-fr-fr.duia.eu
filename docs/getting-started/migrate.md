@@ -1,6 +1,5 @@
 ---
 title: Commencer un parcours de migration vers le cloud dans Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Commencer un parcours de migration vers le cloud dans Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c902c2a3f564bd2fcc575c8eb885b52da068826e
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: e5ef9aecfe30cc9b401e9b4ffabe56e50f3afad2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781679"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804450"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Commencer un parcours de migration vers le cloud dans Azure
 

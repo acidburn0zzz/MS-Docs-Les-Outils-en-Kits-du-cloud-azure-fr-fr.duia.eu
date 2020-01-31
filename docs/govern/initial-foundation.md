@@ -1,6 +1,5 @@
 ---
 title: Établir une fondation de gouvernance cloud initiale
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Commencez à utiliser la gouvernance cloud en établissant une fondation de gouvernance cloud initiale.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: aae20779a4009692ebf52602341d81939dee01ea
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 290bffadc608d8ff9d593e5231242e3555732bf3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239536"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803787"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Établir une fondation de gouvernance cloud initiale
 

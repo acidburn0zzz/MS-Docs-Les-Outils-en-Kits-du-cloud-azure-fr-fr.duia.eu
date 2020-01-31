@@ -1,6 +1,5 @@
 ---
 title: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Gestion des coûts'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Gestion des coûts'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad7770a7339cf1fa444442e68d2e13539f272190
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2b66894ca215156aa9688ca1ab458910e8f496f8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566329"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805725"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Gestion des coûts
 
@@ -44,7 +43,7 @@ Des fonctionnalités de contrôle des coûts et de création de rapports doivent
 
 **Contrôle du budget :** les fonctionnalités en libre-service risquent de générer des coûts excessifs et inattendus sur la nouvelle plateforme. Des processus de gouvernance permettant de surveiller les coûts et d’atténuer les risques permanents liés à ceux-ci doivent être en place pour garantir un alignement continu avec le budget prévu.
 
-Ce risque métier peut être associé à quelques risques techniques :
+Ce risque métier peut s’associer à quelques risques techniques :
 
 - Les coûts réels risquent de dépasser ceux prévus initialement dans le plan.
 - Les conditions métier évoluent. Dans ce cas, il peut arriver qu’une fonction métier utilise plus de services cloud que prévu, ce qui se traduit par des anomalies en termes de dépenses. Ces coûts supplémentaires risquent d’être considérés comme des dépassements plutôt que comme des ajustements du plan. En cas de réussite, l’expérience canadienne doit vous aider à traiter ce risque.
@@ -54,7 +53,7 @@ Ce risque métier peut être associé à quelques risques techniques :
 
 Les modifications suivantes apportées à la stratégie contribueront à traiter les nouveaux risques et à guider l’implémentation.
 
-- Chaque semaine, l’équipe de gouvernance cloud doit s’assurer que tous les coûts liés au cloud sont conformes au plan. Chaque mois, des rapports sur les écarts entre les coûts du cloud et ceux prévus par le plan doivent être remis aux responsables informatiques et au département financier. Chaque mois, toutes les mises à jour des coûts liés au cloud et du plan doivent être contrôlées par les responsables informatiques et le service financier.
+- Chaque semaine, l’équipe de gouvernance cloud doit s’assurer que tous les coûts liés au cloud sont conformes au plan. Chaque mois, des rapports sur les écarts entre les coûts du cloud et ceux prévus par le plan doivent être remis aux responsables informatiques et au département financier. Chaque mois, toutes les mises à jour des coûts liés au cloud et prévus par le plan doivent être révisées par les responsables informatiques et le département financier.
 - Tous les coûts doivent être affectés à une fonction opérationnelle à des fins de responsabilisation.
 - Les ressources du cloud doivent être contrôlées en permanence afin de déceler les possibilités d'optimisation.
 - Les outils de gouvernance cloud doivent limiter les options de taille des ressources à une liste approuvée de configurations. Les outils doivent garantir que toutes les ressources peuvent être détectées et suivies par la solution de supervision des coûts.

@@ -1,6 +1,5 @@
 ---
 title: Conseils pour les tests d’entreprise (UAT) pendant la migration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Un processus au sein d’une migration cloud qui se concentre sur les tâches de migration des charges de travail vers le cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0f1ba39ae283b1ab2fdb276310a9490af6bf87b7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4c24ae176d3b8fc8ec4fa504ed406bc32a1c0ab3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836631"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801951"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>Conseils pour les tests d’entreprise (UAT) pendant la migration
 

@@ -1,6 +1,5 @@
 ---
 title: Sécuriser, superviser et gérer les ressources
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Outils de supervision et de gestion sécurisés
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c311e4e789c7e5cc6c3b409fb2a4dbdcbfafe8ea
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 5e0267c5b15e01b9f53e76ba2bc16f95381f81aa
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781842"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801271"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Outils de supervision et de gestion sécurisés
 

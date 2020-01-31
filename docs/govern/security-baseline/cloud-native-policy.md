@@ -1,6 +1,5 @@
 ---
 title: Stratégie cloud native Base de référence de la sécurité
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Stratégie Base de référence de la sécurité Native cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d11dff3ce8900d3dc95e1061af87313eae47a1b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9921e04f0b066023842c2ff9009d9e159b759315
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752535"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808938"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Stratégie cloud native Base de référence de la sécurité
 
@@ -59,7 +58,7 @@ Une stratégie Native cloud destinée aux contrôles réseau peut inclure des ex
 - Le Pare-feu Windows Azure natif protège les hôtes du trafic réseau malveillant par un accès limité aux ports. La nécessité de bloquer (ou de ne pas activer) le trafic direct vers une machine virtuelle avec un protocole SSH/RDP offre un bon exemple de cette stratégie.
 - Des services tels que le pare-feu d’applications web et Azure Application Gateway et Azure DDoS Protection protègent les applications et garantissent la disponibilité des machines virtuelles exécutées dans Azure. Ces fonctionnalités ne doivent pas être désactivées.
 
-### <a name="data-protection"></a>Protection des données
+### <a name="data-protection"></a>Protection de données
 
 Pour assurer la protection des données dans le cloud, l'un des facteurs clés consiste à tenir compte de l'état des données, mais aussi des contrôles disponibles pour chaque état. Dans le cadre des meilleures pratiques de chiffrement et de sécurité des données Azure, les recommandations portent sur les états suivants des données :
 

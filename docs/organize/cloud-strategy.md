@@ -1,6 +1,5 @@
 ---
 title: Fonctionnalités de la stratégie cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Décrit la formation des capacités opérationnelles de la stratégie cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 022afb976a807d1e178bcc5788885bcabc3f1b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17ef8a6b84e16b2baf7a69918051c7f6a8257396
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031178"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800846"
 ---
 # <a name="cloud-strategy-capabilities"></a>Fonctionnalités de la stratégie cloud
 
@@ -22,7 +21,7 @@ L’adoption réussie du cloud doit être conforme aux motivations définies et 
 
 En l’absence d’équipe de stratégie cloud clairement définie, quelqu’un doit quand même pouvoir aligner les activités techniques sur les résultats pour l’entreprise. Cette même personne ou ce même groupe doit également gérer les changements dans le projet. Cette section définit cette fonctionnalité plus en détail.
 
-## <a name="possible-sources-for-this-capability"></a>Sources possibles pour cette fonctionnalité
+## <a name="possible-sources-for-this-capability"></a>Sources possibles pour cette compétence
 
 Cette fonctionnalité est généralement fournie par les types de rôles suivants. Lorsqu’une équipe de stratégie cloud est en place, elle doit inclure un grand nombre des rôles suivants :
 

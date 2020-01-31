@@ -1,6 +1,5 @@
 ---
 title: 'Guide de gouvernance pour les entreprises complexes : Couches de gouvernance multiples'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises complexes : Couches de gouvernance multiples'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5aa48d6561f6d6122c74dcb60e82425b64071304
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222303"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806252"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Guide de gouvernance pour les entreprises complexes : Couches de gouvernance multiples
 

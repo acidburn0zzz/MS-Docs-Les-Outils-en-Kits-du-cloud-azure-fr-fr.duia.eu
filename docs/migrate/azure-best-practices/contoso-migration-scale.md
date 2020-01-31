@@ -1,6 +1,5 @@
 ---
 title: Mettre à l’échelle une migration vers Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment Contoso mène à bien une migration à l’échelle vers Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566445"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807306"
 ---
 # <a name="scale-a-migration-to-azure"></a>Mettre à l’échelle une migration vers Azure
 
@@ -69,7 +68,7 @@ Après avoir défini les axes stratégiques et les objectifs de migration, Conto
 
 Ces phases ne sont pas conduites partout de façon simultanée à dans l’organisation. Chaque projet de migration de Contoso se trouve à une étape différente du processus d’évaluation et de migration. L’optimisation, la sécurité et la gestion sont des tâches qui se répéteront dans le temps.
 
-## <a name="phase-1-assess"></a>Phase 1 : Évaluation
+## <a name="phase-1-assess"></a>Phase 1 : Évaluer
 
 Contoso lance le processus en détectant et en évaluant les applications, les données et l’infrastructure locales. Voici ce que fera Contoso :
 
@@ -225,7 +224,7 @@ Contoso avait déjà [réalisé une preuve de concept](./contoso-migration-rehos
 
 Contoso envisage d’effectuer plusieurs migrations lift-and-shift. Pour s’assurer que cela fonctionne, Site Recovery exécutera une réplication par lots d’environ 100 machines virtuelles à la fois. Pour savoir comment cela fonctionne, Contoso a besoin de planifier la capacité pour la migration Site Recovery proposée.
 
-- Contoso doit collecter des informations sur ses volumes de trafic. notamment :
+- Contoso doit collecter des informations sur ses volumes de trafic. En particulier :
   - Contoso doit déterminer le taux de modification des machines virtuelles à répliquer.
   - Contoso doit aussi tenir compte de la connectivité réseau du site local à Azure.
 - Face aux exigences de capacité et de volume, les équipes doivent allouer suffisamment de bande passante, compte tenu du taux de modification quotidien des données des machines virtuelles en question, pour atteindre son objectif de point de récupération (RPO).
@@ -262,8 +261,8 @@ Contoso doit savoir comment déployer ces composants en tenant compte des consid
 --- | ---
 **Taux de modification quotidien maximal** | Un seul serveur de processus peut prendre en charge un taux de modification quotidien maximal de 2 To. Sachant qu’une machine virtuelle ne peut utiliser qu’un seul serveur de processus, le taux quotidien maximal de modification de données pris en charge pour une machine virtuelle répliquée est de 2 To.
 **Débit maximal** | Un compte standard Stockage Azure peut gérer au maximum 20 000 demandes par seconde, et les opérations d’entrée/sortie par seconde (IOPS) sur une machine virtuelle en cours de réplication doivent se situer dans cette limite. Par exemple, si une machine virtuelle dispose de 5 disques et que chaque disque génère 120 IOPS (taille de 8 Ko) sur la machine virtuelle, la limite de 500 IOPS sur le disque Azure est respectée.<br/><br/> Notez que le nombre de comptes de stockage nécessaires est égal au nombre total d’IOPS de la machine source divisé par 20 000. Un ordinateur répliqué ne peut appartenir qu’à un seul compte de stockage dans Azure.
-**Serveur de configuration** | D’après son estimation de réplication de 100 à 200 machines virtuelles et des [exigences de dimensionnement du serveur de configuration](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server), les équipes Contoso estiment qu’elles ont besoin d’un ordinateur serveur de configuration avec les capacités suivantes :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> En plus des exigences de dimensionnement, Contoso devra vérifier que l’emplacement du serveur de configuration est optimal, à savoir sur le même réseau et le même segment de réseau local que les machines virtuelles qui seront migrées.
-**Serveur de traitement** | Contoso prévoit de déployer un serveur de processus dédié autonome capable de répliquer entre 100 et 200 machines virtuelles :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> Le serveur de processus sera fortement sollicité et doit donc se trouver sur un hôte ESXi capable de gérer les E/S disque, le trafic réseau et l’UC nécessaires à la réplication. Pour cela, Contoso examinera s’il y a lieu d’utiliser un hôte dédié.
+**Serveur de configuration** | D’après son estimation de réplication de 100 à 200 machines virtuelles et des [exigences de dimensionnement du serveur de configuration](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server), les équipes Contoso estiment qu’elles ont besoin d’un ordinateur serveur de configuration avec les capacités suivantes :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> En plus des exigences de dimensionnement, Contoso devra vérifier que l’emplacement du serveur de configuration est optimal, à savoir sur le même réseau et le même segment de réseau local que les machines virtuelles qui seront migrées.
+**Serveur de traitement** | Contoso prévoit de déployer un serveur de processus dédié autonome capable de répliquer entre 100 et 200 machines virtuelles :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> Le serveur de processus sera fortement sollicité et doit donc se trouver sur un hôte ESXi capable de gérer les E/S disque, le trafic réseau et l’UC nécessaires à la réplication. Pour cela, Contoso examinera s’il y a lieu d’utiliser un hôte dédié.
 **Mise en réseau** | Après avoir examiné l’infrastructure VPN de site à site actuelle, Contoso a décidé d’implémenter Azure ExpressRoute. Cette implémentation est cruciale, car elle permettra de réduire la latence et d’améliorer la bande passante pour la région Azure primaire de Contoso (USA Est 2).<br/><br/> **Surveillance :** Contoso devra superviser attentivement les flux de données en provenance du serveur de processus. Si les données surchargent la bande passante réseau, Contoso envisagera de [limiter la bande passante du serveur de processus](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
 **Azure Storage** | Pour la migration, Contoso doit identifier le type et le nombre appropriés de comptes Stockage Azure cibles. Site Recovery réplique les données de machine virtuelle dans le stockage Azure.<br/><br/> Site Recovery peut répliquer dans des comptes de stockage Standard ou Premium (SSD).<br/><br/> Pour prendre une décision concernant le stockage, Contoso doit examiner les [limites de stockage](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) et tenir compte des perspectives de croissance et d’utilisation dans le temps. Compte tenu de la vitesse et de la priorité des migrations, Contoso a décidé d’utiliser des SSD Premium.<br/><br/>
 Contoso a décidé d’utiliser des disques managés pour toutes les machines virtuelles déployées dans Azure. Le nombre d’opérations d’entrée/sortie par seconde (IOPS) dictera le type de disque qui sera utilisé : Standard (HDD ou SSD) ou Premium (SSD).<br/><br/>
@@ -298,7 +297,7 @@ Outre DMS, Contoso peut utiliser d’autres outils et services pour identifier l
 - Elle dispose de scripts qui facilitent les migrations manuelles. Ceux-ci sont disponibles dans le dépôt GitHub.
 - Différents [outils de partenaires](https://azure.microsoft.com/migration/partners) peuvent aussi être utilisés pour la migration.
 
-## <a name="phase-3-optimize"></a>Phase 3 : Optimisation
+## <a name="phase-3-optimize"></a>Phase 3 : Optimiser
 
 Après avoir déplacé les ressources vers Azure, Contoso doit les simplifier pour améliorer les performances et optimiser le retour sur investissement à l’aide d’outils de gestion des coûts. Étant donné qu’Azure est un service facturé à l’utilisation, il est essentiel pour Contoso de comprendre le fonctionnement des systèmes et de vérifier qu’ils sont correctement dimensionnés.
 

@@ -1,6 +1,5 @@
 ---
 title: Guide de décision concernant les régions
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment choisir la région de la plateforme cloud.
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aff6a3129bd93df434737a861f0b5f0daad24bcc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753314"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806711"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
@@ -82,10 +81,10 @@ Le tableau suivant peut vous aider à documenter les résultats des étapes pré
 
 | Région        | Country     | Employés locaux | Utilisateurs externes locaux   | Ressources ou centres de données locaux | Exigences de souveraineté des données |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
-| Amérique du Nord | États-Unis         | OUI             | Partenaires et clients | OUI                         | Non                            |
-| Amérique du Nord | Canada      | Non              | Clients              | OUI                         | OUI                           |
-| Europe        | Allemagne     | OUI             | Partenaires et clients | Non - Réseau uniquement           | OUI                           |
-| Asie-Pacifique  | Corée du Sud | OUI             | Partenaires               | OUI                         | Non                            |
+| Amérique du Nord | États-Unis         | Oui             | Partenaires et clients | Oui                         | Non                            |
+| Amérique du Nord | Canada      | Non              | Clients              | Oui                         | Oui                           |
+| Europe        | Allemagne     | Oui             | Partenaires et clients | Non - Réseau uniquement           | Oui                           |
+| Asie-Pacifique  | Corée du Sud | Oui             | Partenaires               | Oui                         | Non                            |
 
 <!-- markdownlint-disable MD026 -->
 

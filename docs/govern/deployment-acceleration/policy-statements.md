@@ -1,6 +1,5 @@
 ---
 title: Exemples d’instructions de stratégie pour l’accélération du déploiement
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exemples d’instructions de stratégie pour l’accélération du déploiement
 author: alexbuckgit
 ms.author: abuck
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c582b0a6e836f5198724e5675840f3f8085f55dc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752674"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803940"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exemples d’instructions de stratégie pour l’accélération du déploiement
 
-Les instructions de stratégie cloud individuelles sont des recommandations pour la gestion de risques spécifiques identifiés lors de votre processus d’évaluation des risques. Ces instructions doivent fournir un bref récapitulatif des risques, ainsi que des plans établis pour les gérer. Chaque définition d’instruction doit inclure les informations suivantes :
+Les instructions de stratégie cloud individuelles sont des recommandations destinées à traiter des risques spécifiques identifiés lors de votre processus d’évaluation des risques. Ces instructions doivent fournir un bref récapitulatif des risques, ainsi que des plans établis pour les gérer. Chaque définition d’instruction doit inclure les informations suivantes :
 
 - **Risque technique :** un récapitulatif du risque que cette stratégie gérera.
 - **Instruction de stratégie :** Une explication succincte claire des exigences de la stratégie.
@@ -55,7 +54,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques métiers 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Servez-vous des exemples mentionnés dans cet article pour commencer à développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
+Utilisez les exemples mentionnés dans cet article comme point de départ pour développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
 Pour commencer à développer vos instructions de stratégie personnalisées pour la gestion des identités, téléchargez le [modèle de base de référence des identités](../identity-baseline/template.md).
 

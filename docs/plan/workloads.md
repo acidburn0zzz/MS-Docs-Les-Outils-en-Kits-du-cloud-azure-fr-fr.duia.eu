@@ -1,6 +1,5 @@
 ---
 title: Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240198"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799979"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
 
@@ -27,7 +26,7 @@ La limitation du plan à 10 charges de travail favorise l’agilité et l’ali
 
 Dans le contexte d’une adoption du cloud, une charge de travail est un ensemble de ressources informatiques (serveurs, machines virtuelles, applications, données ou appliances) qui soutiennent collectivement un processus défini. Les charges de travail peuvent soutenir plusieurs processus. Elles peuvent également dépendre d’autres ressources partagées ou plateformes étendues. Toutefois, une charge de travail doit avoir des limites définies en ce qui concerne les ressources et les processus qui en dépendent. Souvent, il est possible de visualiser les charges de travail en surveillant le trafic réseau entre les ressources informatiques.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Les entrées stratégiques de la liste des prérequis facilitent grandement les tâches suivantes. Pour obtenir de l’aide sur la collecte des données présentées dans cet article, passez en revue les [prérequis](./prerequisites.md).
 
@@ -88,13 +87,13 @@ Une fois que les priorités initiales ont été définies et que les charges de 
 | Approche d’adoption | Cette adoption est-elle candidate à une migration ou à une innovation ? |         |
 | Chef des opérations d’application | Listez les parties responsables des performances et de la disponibilité de cette charge de travail. |         |
 | Contrats SLA | Listez les contrats de niveau de service (exigences RTO/RPO). |         |
-| Importance | Listez l’importance actuelle de l’application. |         |
+| Caractère critique | Listez l’importance actuelle de l’application. |         |
 | Classification des données | Établissez le classement de la sensibilité des données. |         |
 | Zones géographiques d’exploitation | Listez les zones géographiques dans lesquelles la charge de travail est ou doit être hébergée. |         |
-| APPLICATIONS | Spécifiez la liste initiale ou le nombre initial des applications incluses dans cette charge de travail. |         |
+| Applications | Spécifiez la liste initiale ou le nombre initial des applications incluses dans cette charge de travail. |         |
 | Machines virtuelles | Spécifiez la liste initiale ou le nombre initial des machines virtuelles et des serveurs inclus dans la charge de travail. |         |
 | Sources de données | Spécifiez la liste initiale ou le nombre initial des sources de données incluses dans la charge de travail. |         |
-| Les dépendances | Listez toutes les dépendances de ressources non incluses dans la charge de travail. |         |
+| Les dépendances | répertorie toutes les dépendances de ressources non incluses dans la charge de travail. |         |
 | Zones géographiques du trafic utilisateur | Listez les zones géographiques qui ont un volume important de trafic utilisateur. |         |
 
 ## <a name="confirm-priorities"></a>Confirmer les priorités

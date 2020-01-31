@@ -1,6 +1,5 @@
 ---
 title: Refactoriser une application de bureau de service Linux pour Azure App Service et Azure Database pour MySQL
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment Contoso refactorise une application Linux locale en la migrant vers Azure App Service à l’aide de GitHub pour la couche Web et Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e504d4032fc019af43ec7cb1e8513504196559a2
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2e47647b06da12b9b595f4330767f629121e00a0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024210"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807459"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refactoriser une application Linux vers plusieurs régions à l’aide d’Azure App Service, de Traffic Manager et d’Azure Database pour MySQL
 
@@ -89,7 +88,7 @@ Contoso va effectuer le processus de migration comme suit :
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | Équilibreur de charge qui utilise DNS pour diriger les utilisateurs vers Azure, ou vers des sites web et des services externes. | La tarification est basée sur le nombre de requêtes DNS reçues et sur le nombre de points de terminaison surveillés. | [Plus d’informations](https://azure.microsoft.com/pricing/details/traffic-manager)
 [Azure Database pour MySQL](https://docs.microsoft.com/azure/mysql) | La base de données est basée sur le moteur du serveur MySQL open source. Ils fournissent une base de données MySQL entièrement managée et de classe Entreprise, appuyée par une communauté active, en tant que service pour le développement et le déploiement d’applications. | La tarification est basée sur les exigences de sauvegarde, de stockage et de calcul. [Plus d’informations](https://azure.microsoft.com/pricing/details/mysql)
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Voici ce dont Contoso a besoin pour exécuter ce scénario.
 
@@ -109,13 +108,13 @@ Voici comment Contoso effectue la migration :
 > [!div class="checklist"]
 >
 > - **Étape 1 : Approvisionner Azure App Service.** Les administrateurs de Contoso approvisionnent les applications web dans les régions primaire et secondaire.
-> - **Étape 2 : Configurer Traffic Manager.** Ils configurent Traffic Manager devant les applications web, pour l’équilibrage de charge et le routage du trafic.
-> - **Étape 3 : Approvisionner MySQL.** Dans Azure, ils approvisionnent une instance d’Azure Database pour MySQL.
-> - **Étape 4 : Migrer la base de données.** Ils migrent la base de données à l’aide de MySQL Workbench.
-> - **Étape 5 : Configurer GitHub.** Ils configurent un dépôt GitHub local pour le code et les sites web de l’application.
-> - **Étape 6 : Déployer les applications web.** Ils déploient les applications web à partir de GitHub.
+> - **Étape 2 : Configurer Traffic Manager.** Ils configurent Traffic Manager devant les applications web, pour l’équilibrage de charge et le routage du trafic.
+> - **Étape 3 : Approvisionner MySQL.** Dans Azure, ils approvisionnent une instance d’Azure Database pour MySQL.
+> - **Étape 4 : Migrer la base de données.** Ils migrent la base de données à l’aide de MySQL Workbench.
+> - **Étape 5 : Configurer GitHub.** Ils configurent un dépôt GitHub local pour le code et les sites web de l’application.
+> - **Étape 6 : Déployer les applications web.** Ils déploient les applications web à partir de GitHub.
 
-## <a name="step-1-provision-azure-app-service"></a>Étape 1 : Approvisionner Azure App Service
+## <a name="step-1-provision-azure-app-service"></a>Étape 1 : Approvisionner Azure App Service
 
 Les administrateurs de Contoso approvisionnent deux applications web (une dans chaque région) à l’aide d’Azure App Service.
 
@@ -141,7 +140,7 @@ Les administrateurs de Contoso approvisionnent deux applications web (une dans c
 - Découvrez-en plus sur les [applications web Azure App Service](https://docs.microsoft.com/azure/app-service/overview).
 - Découvrez-en plus sur [Azure App Service sur Linux](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro).
 
-## <a name="step-2-set-up-traffic-manager"></a>Étape 2 : Configurer Traffic Manager
+## <a name="step-2-set-up-traffic-manager"></a>Étape 2 : Configurer Traffic Manager
 
 Les administrateurs de Contoso configurent Traffic Manager pour diriger les requêtes web entrantes vers les applications web qui s’exécutent sur la couche web d’osTicket.
 
@@ -303,11 +302,11 @@ Pour finir, ils configurent la mise à l’échelle automatique pour l’applica
 1. Dans App Service **APP-SRV-EUS2**, ils ouvrent **Unité d’échelle**.
 2. Ils configurent un nouveau paramètre de mise à l’échelle automatique avec une seule règle qui augmente le nombre d’instances d’une unité quand le pourcentage d’utilisation du processeur pour l’instance actuelle est supérieure à 70 % pendant 10 minutes.
 
-    ![Autoscale](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
+    ![Mise à l’échelle automatique](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
 
 3. Ils configurent le même paramètre sur **APP-SRV-CUS** afin de s’assurer que le même comportement s’applique si l’application bascule vers la région secondaire. La seule différence est qu’ils définissent l’instance par défaut à 1, puisque cela concerne uniquement les basculements.
 
-   ![Autoscale](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
+   ![Mise à l’échelle automatique](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
 
 ## <a name="clean-up-after-migration"></a>Nettoyer après la migration
 

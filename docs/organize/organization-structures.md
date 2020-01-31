@@ -1,6 +1,5 @@
 ---
 title: Établir des structures d’équipe
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Établir des structures d’équipe
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8000847a46082be6116abb22e52def03243c69b0
-ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
+ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71811088"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800914"
 ---
 # <a name="establish-team-structures"></a>Établir des structures d’équipe
 

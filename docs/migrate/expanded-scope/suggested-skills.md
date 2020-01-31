@@ -1,6 +1,5 @@
 ---
 title: Préparation aux compétences pour la migration vers le cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Préparation aux compétences pour la migration vers le cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240267"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802937"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Préparation aux compétences pour la migration vers le cloud
 
@@ -68,4 +67,4 @@ Les outils suivants peuvent aider l’équipe à trouver des moyens de sécurise
 Revenez à la [liste de vérification d’expansion d’étendue](./index.md) pour vous assurer que votre méthode de migration est entièrement alignée.
 
 > [!div class="nextstepaction"]
-> [Liste de contrôle d’expansion d’étendue](./index.md)
+> [Check-list d’expansion d’étendue](./index.md)

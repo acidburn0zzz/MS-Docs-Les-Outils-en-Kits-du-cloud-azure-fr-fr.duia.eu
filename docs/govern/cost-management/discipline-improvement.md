@@ -1,6 +1,5 @@
 ---
 title: Amélioration de la discipline de gestion des coûts
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Amélioration de la discipline de gestion des coûts
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1b59121bc0679475079dc1a7b5d3770cc87d7523
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ebd297f4fbebd451f47bbb6b88be56e1ccc489be
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753089"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806473"
 ---
 # <a name="cost-management-discipline-improvement"></a>Amélioration de la discipline de gestion des coûts
 
@@ -83,7 +82,7 @@ La migration est un processus incrémentiel qui porte essentiellement sur le dé
 - Implémenter votre modèle comptable cloud.
 - Veiller à ce que vos budgets reflètent vos dépenses réelles à chaque phase de mise en production et les ajuster si nécessaire.
 - Surveiller les changements apportés aux plans budgétaires et les valider avec les parties prenantes si des approbations supplémentaires sont nécessaires.
-- Mettre à jour les recommandations relatives à l’architecture en fonction des coûts réels.
+- Mettez à jour les recommandations relatives à l’architecture en fonction des coûts réels.
 
 ## <a name="operate-and-post-implementation"></a>Exploitation et post-implémentation
 

@@ -1,6 +1,5 @@
 ---
 title: Exemples de déclarations de stratégie Base de référence des identités
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exemples de déclarations de stratégie Base de référence des identités
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,22 +8,22 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44c0f8693362572e0faf1e39d9f2ec7ba2ff16b9
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: c3804f24db454e4c198494e0024632efdc7d0d53
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160067"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805045"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Exemples de déclarations de stratégie Base de référence des identités
 
-Les déclarations de stratégie cloud individuelles sont des recommandations destinées à traiter des risques spécifiques identifiés lors de votre processus d'évaluation des risques. Ces instructions doivent fournir un bref récapitulatif des risques, ainsi que des plans établis pour les gérer. Chaque définition d’instruction doit inclure les informations suivantes :
+Les instructions de stratégie cloud individuelles sont des recommandations destinées à traiter des risques spécifiques identifiés lors de votre processus d’évaluation des risques. Ces instructions doivent fournir un bref récapitulatif des risques, ainsi que des plans établis pour les gérer. Chaque définition d’instruction doit inclure les informations suivantes :
 
 - **Risque technique :** un récapitulatif du risque que cette stratégie gérera.
 - **Instruction de stratégie :** Une explication succincte claire des exigences de la stratégie.
 - **Options de conception :** Recommandations exploitables, spécifications ou autres conseils que des équipes informatiques et des développeurs peuvent utiliser lors de l’implémentation de la stratégie.
 
-Les exemples d’instructions de stratégie suivants traitent des risques courants liés à l’identité. Ces instructions sont des exemples que vous pouvez réutiliser lorsque vous rédigez des instructions de stratégie pour répondre aux besoins de votre organisation. Ces exemples ne sont pas destinés à être normatifs, et il existe potentiellement plusieurs options de stratégie pour gérer chaque risque identifié. Travaillez en étroite collaboration avec les équipes métier et les équipes informatiques pour identifier les meilleures stratégies pour vos propres risques.
+Les exemples d’instructions de stratégie suivants traitent des risques courants liés à l’identité. Ces énoncés sont des exemples que vous pouvez référencer lorsque vous rédigez des énoncés de stratégie pour répondre aux besoins de votre organisation. Ces exemples ne sont pas destinés à être normatifs, et il existe potentiellement plusieurs options de stratégie pour gérer chaque risque identifié. Travaillez en étroite collaboration avec les équipes métier et les équipes informatiques pour identifier les meilleures stratégies pour vos propres risques.
 
 ## <a name="lack-of-access-controls"></a>Absence de contrôles d'accès
 
@@ -83,7 +82,7 @@ Utilisez les exemples mentionnés dans cet article comme point de départ pour d
 
 Pour commencer à développer vos déclarations de stratégie personnalisées pour la Base de référence des identités, téléchargez le [modèle Base de référence des identités](./template.md).
 
-Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance exploitable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
+Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance actionnable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
 
 Sur la base des risques et de la tolérance, établissez un processus de gouvernance et de communication en lien avec l’adhésion à la stratégie Base de référence des identités.
 

@@ -1,6 +1,5 @@
 ---
 title: Fonctionnalités de la plateforme cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Décrit la formation des capacités opérationnelles de la plateforme
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: faeea7a0e42c45894d82b31becca06562fef94b9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be5e914bd154ec2db0578714d08383c3c8770a5a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032509"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800965"
 ---
 # <a name="cloud-platform-capabilities"></a>Fonctionnalités de la plateforme cloud
 
@@ -68,7 +67,7 @@ Les tâches suivantes sont généralement exécutées régulièrement :
 
 ## <a name="meeting-cadence"></a>Cadence des réunions
 
-L’expertise de la plateforme cloud provient généralement d’une équipe de travail. Attendez-vous à ce que les participants valident la plupart de leurs planifications quotidiennes dans le cadre de la plateforme du cloud. Les contributions ne sont pas limitées aux réunions et aux cycles de commentaires.
+L’expertise de la plateforme cloud provient généralement d’une équipe de travail. Attendez-vous à ce que les participants valident la plupart de leurs planifications quotidiennes dans le cadre de la plateforme du cloud. Les contributions ne sont pas limitées aux réunions et aux cycles de retours d’expérience.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

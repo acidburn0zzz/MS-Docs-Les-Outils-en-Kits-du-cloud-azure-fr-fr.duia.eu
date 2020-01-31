@@ -1,6 +1,5 @@
 ---
 title: Outils de gestion des coûts dans Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Outils de gestion des coûts dans Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3b301f8dfcc50539f4325901cd32553368a0da55
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e35530fbf3a858c000cb78c0c076d7d56d5fbd86
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222639"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806405"
 ---
 # <a name="cost-management-tools-in-azure"></a>Outils de gestion des coûts dans Azure
 
@@ -22,15 +21,15 @@ La [gestion des coûts](./index.md) est l’une des [cinq disciplines de la gouv
 
 La liste suivante énumère les outils natifs Azure qui peuvent contribuer à affiner les stratégies et les processus qui soutiennent cette discipline de gouvernance.
 
-| Outil | [Portail Azure](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview-cost-mgt)  | [Azure EA Content Pack](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
+| Outil | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview-cost-mgt)  | [Azure EA Content Pack](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
 |---------|---------|---------|---------|---------|
-|Contrat Entreprise obligatoire ?     | Non         | Non         | OUI         | Non         |
-|Contrôle du budget     | Non         | OUI         | Non         | OUI         |
-|Suivi des dépenses sur une même ressource    | OUI         | OUI         | OUI         | Non         |
-|Suivi des dépenses sur plusieurs ressources    | Non         | OUI        | OUI         | Non         |
-|Contrôle des dépenses sur une même ressource     | Oui - dimensionnement manuel         | OUI         | Non         | OUI         |
-|Assurer le respect des dépenses sur plusieurs ressources    | Non         | OUI         | Non         | OUI         |
-|Appliquer les métadonnées de comptabilité aux ressources    | Non         | Non         | Non         | OUI         |
-|Surveillance et détection des tendances     | OUI          | OUI        | OUI         | Non         |
-|Détection des anomalies de dépenses     | Non         | OUI        | OUI         | Non        |
-|Communication des écarts     | Non        | OUI        | OUI        | Non        |
+|Contrat Entreprise obligatoire ?     | Non         | Non         | Oui         | Non         |
+|Contrôle du budget     | Non         | Oui         | Non         | Oui         |
+|Suivi des dépenses sur une même ressource    | Oui         | Oui         | Oui         | Non         |
+|Suivi des dépenses sur plusieurs ressources    | Non         | Oui        | Oui         | Non         |
+|Contrôle des dépenses sur une même ressource     | Oui - dimensionnement manuel         | Oui         | Non         | Oui         |
+|Assurer le respect des dépenses sur plusieurs ressources    | Non         | Oui         | Non         | Oui         |
+|Appliquer les métadonnées de comptabilité aux ressources    | Non         | Non         | Non         | Oui         |
+|Surveillance et détection des tendances     | Oui          | Oui        | Oui         | Non         |
+|Détection des anomalies de dépenses     | Non         | Oui        | Oui         | Non        |
+|Communication des écarts     | Non        | Oui        | Oui        | Non        |

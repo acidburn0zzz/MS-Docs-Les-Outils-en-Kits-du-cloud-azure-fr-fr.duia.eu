@@ -1,6 +1,5 @@
 ---
 title: Développer des compétences techniques
-titleSuffix: Microsoft Cloud Adoption Framework in Azure
 description: Introduction au développement de compétences techniques
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7602561bf0b8c1e935a05038cb38155e21a8ab86
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 41280878316a3bb7e78054800e1973ed1d480157
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561666"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798687"
 ---
 # <a name="build-technical-skills"></a>Développer des compétences techniques
 
@@ -25,7 +24,7 @@ Lors des efforts de migration cloud, tous les membres des équipes d’adoption 
 
 [Les utilisateurs](https://docs.microsoft.com/learn/browse/?roles=business-user) professionnels peuvent rencontrer une courbe d’apprentissage abrupte lorsqu’ils sont invités à participer à la planification, au test et à l’adoption de la technologie cloud. Microsoft Learn aide les utilisateurs professionnels avec des modules qui se concentrent sur l’adoption de modèles et d’outils cloud pour mieux gérer l’entreprise via les services cloud.
 
-[Les architectes de solution](https://docs.microsoft.com/learn/browse/?roles=solution-architect) peuvent accéder à des centaines de modules et parcours d’apprentissage. Les rubriques disponibles vont des services de l’infrastructure principale à la transformation avancée de données.
+Les [architectes de solution](https://docs.microsoft.com/learn/browse/?roles=solution-architect) peuvent accéder à des centaines de modules et parcours d’apprentissage. Les rubriques disponibles vont des services de l’infrastructure principale à la transformation avancée de données.
 
 Les [administrateurs](https://docs.microsoft.com/learn/browse/?roles=administrator) ont accès à des modules qui se concentrent sur les notions de base d’Azure, la configuration de conteneurs ou l’administration avancée dans le cloud.
 

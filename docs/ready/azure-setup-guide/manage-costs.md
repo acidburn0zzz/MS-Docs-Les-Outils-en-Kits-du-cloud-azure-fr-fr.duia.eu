@@ -1,6 +1,5 @@
 ---
 title: Gérer les coûts et la facturation de vos ressources Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Comprenez les factures et découvrez comment configurer les budgets et les paiements pour vos ressources Azure.
 author: dchimes
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 51d2ae124089ee1afa07e64b2e72bb1eb608bebb
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 4f0f0d900f75338a33b1873b8d0eac6d91835256
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251685"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799520"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Gérer les coûts et la facturation de vos ressources Azure
 

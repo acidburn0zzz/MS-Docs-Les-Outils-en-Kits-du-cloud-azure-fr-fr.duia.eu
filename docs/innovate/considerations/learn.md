@@ -1,6 +1,5 @@
 ---
 title: 'Innovation cloud : Découvrir'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduction à l’innovation cloud – Apprendre le contenu
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753000"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808428"
 ---
 # <a name="learn-with-customers"></a>Apprendre avec les clients
 
@@ -56,4 +55,4 @@ La prochaine étape pour comprendre cette méthodologie des [Obstacles et défis
 > [!div class="nextstepaction"]
 > [Compréhension des obstacles et défis courants](./challenges.md)
 
-Certains concepts de cet article s’appuient sur les sujets initialement abordés dans l’ouvrage [The Lean Startup](https://theleanstartup.com/book) d’Eric Ries.
+Certains concepts de cet article s’appuient sur les sujets initialement abordés dans l’ouvrage [The Lean Startup](http://theleanstartup.com/book) d’Eric Ries.

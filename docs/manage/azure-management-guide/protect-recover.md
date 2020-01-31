@@ -1,6 +1,5 @@
 ---
 title: Protéger et récupérer dans Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Garantir la stabilité de l’entreprise en diminuant le temps de récupération
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 83ac1abd6ce35b62f64722d101f599726c7b26b3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3e9eadbd246ba38f496d8c74b7bcd3e6ade03685
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565417"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808156"
 ---
 # <a name="protect-and-recover-in-azure"></a>Protéger et récupérer dans Azure
 
@@ -39,7 +38,7 @@ Dans le cas d’un environnement d’entreprise, ce tableau présente le minimum
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-backuptabupdbackupatemanagement"></a>[Sauvegarde Azure](#tab/UpdbackupateManagement)
+## <a name="azure-backuptabupdbackupatemanagement"></a>[Azure Backup](#tab/UpdbackupateManagement)
 
 ::: zone-end
 

@@ -1,6 +1,5 @@
 ---
 title: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence de la sécurité'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence de la sécurité'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 41fba8029eabb570a40d5692374f1cb7e7d7c9b5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753212"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806235"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence de la sécurité
 
@@ -155,7 +154,7 @@ Dans les modifications itératives précédentes apportées à la bonne pratique
     2. Auditez et imposez l'application de chiffrement au repos pour tous les comptes de stockage et tous les fichiers sur les nœuds individuels.
     3. Auditez et imposez l'application de la nouvelle version du groupe de sécurité réseau DMZ.
     4. Auditez et appliquez l’utilisation d’un réseau virtuel et sous-réseau de réseau approuvé par interface réseau.
-    5. Auditez et imposez la limitation des tables de routage définies par l’utilisateur.
+    5. Auditez et appliquez la limitation de tables de routage définies par l’utilisateur.
 6. Blueprint Azure :
     1. Créez un blueprint Azure nommé `protected-data`.
     2. Ajoutez l’homologue de réseau virtuel, le groupe de sécurité réseau et les modèles Azure Security Center au blueprint.

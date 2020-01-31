@@ -1,6 +1,5 @@
 ---
 title: Comprendre l’impact des décisions du marché mondial
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explication du concept de marchés mondiaux
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: af3c9d8b155d2c6a5e861e64b6472effbafcbb6d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548626"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798160"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,7 +43,7 @@ Il est également important de comprendre les modèles d’utilisation des utili
 ## <a name="next-steps"></a>Étapes suivantes
 
 Une fois que les décisions du marché mondial ont été prises et communiquées, l’équipe est prête à [établir des standards techniques](../digital-estate/index.md) à partir de ces métriques.
-Il en résulte un [backlog de transformation ou de migration](..//migrate/migration-considerations/prerequisites/technical-complexity.md).
+Le résultat est constitué d’un [backlog de transformation ou d’un backlog de migration](..//migrate/migration-considerations/prerequisites/technical-complexity.md).
 
 > [!div class="nextstepaction"]
 > [Évaluer le patrimoine numérique](../digital-estate/index.md)
