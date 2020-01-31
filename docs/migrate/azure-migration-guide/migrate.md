@@ -1,6 +1,5 @@
 ---
 title: Migrer les ressources
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrer les ressources
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681761"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807017"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrer des ressources (infrastructure, applications et données)
 
@@ -222,7 +221,7 @@ Cloudamize est un service ISV qui couvre toutes les phases de la stratégie de m
 
 Zerto fournit une réplication virtuelle qui gère à la fois les environnements Microsoft Hyper-V et VMware vSphere.
 
-[En savoir plus](https://www.zerto.com/solutions/use-cases/data-center-migration-software)
+[En savoir plus](https://www.zerto.com/modernize)
 
 ## <a name="carbonite"></a>Carbonite
 
@@ -271,9 +270,9 @@ Azure DevOps fournit toutes les fonctionnalités et l’intégration requises av
 
 Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation aux nouvelles responsabilités de compétences qui accompagnent l’adoption du cloud n’est pas facile. Microsoft Learn offre une approche plus gratifiante de l’apprentissage pratique qui vous permet d’atteindre vos objectifs plus rapidement. Gagnez des points et des niveaux et accomplissez davantage.
 
-Voici un exemple de parcours d’apprentissage personnalisé sur Microsoft Learn qui vient en complément des instructions de configuration pour DevOps dans le framework d’adoption du cloud. 
+Voici un exemple de parcours d’apprentissage personnalisé sur Microsoft Learn qui vient en complément des instructions de configuration pour DevOps dans le framework d’adoption du cloud.
 
-[Générer des applications avec Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) : Collaborez avec d’autres personnes pour créer vos applications en utilisant Azure Pipelines et GitHub. Exécutez des tests automatisés dans votre pipeline pour valider la qualité du code. Analysez votre code source et les composants tiers pour identifier les vulnérabilités potentielles. Définissez plusieurs pipelines qui fonctionnent ensemble pour créer votre application. Créez des applications en utilisant des agents hébergés par Microsoft et vos propres agents de build. 
+[Générer des applications avec Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) : Collaborez avec d’autres personnes pour créer vos applications en utilisant Azure Pipelines et GitHub. Exécutez des tests automatisés dans votre pipeline pour valider la qualité du code. Analysez votre code source et les composants tiers pour identifier les vulnérabilités potentielles. Définissez plusieurs pipelines qui fonctionnent ensemble pour créer votre application. Créez des applications en utilisant des agents hébergés par Microsoft et vos propres agents de build.
 
 # <a name="cost-managementtabmanagecost"></a>[Gestion des coûts](#tab/ManageCost)
 

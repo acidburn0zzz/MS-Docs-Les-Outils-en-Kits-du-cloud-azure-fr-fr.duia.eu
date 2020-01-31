@@ -1,6 +1,5 @@
 ---
 title: Réhéberger une application en la migrant vers des machines virtuelles Azure et des groupes de disponibilité Always On SQL Server
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment Contoso réhéberge une application locale en la migrant vers des machines virtuelles Azure et des groupes de disponibilité Always On SQL Server.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: b5b8710c8545fa2e7c56131ed74a0ea1a3a02f8e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160346"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807425"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Réhéberger une application locale sur des machines virtuelles Azure et des groupes de disponibilité Always On SQL Server
 
@@ -114,7 +113,7 @@ L’équipe d’administrateurs de Contoso migre les machines virtuelles de l’
 
 ![Processus de migration](media/contoso-migration-rehost-vm-sql-ag/migration-process.png)
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Voici ce que doit faire Contoso pour ce scénario.
 
@@ -135,17 +134,17 @@ Voici comment Contoso exécutera la migration :
 > [!div class="checklist"]
 >
 > - **Étape 1 : Préparer un cluster.** créez un cluster pour le déploiement de deux nœuds de machine virtuelle SQL Server dans Azure.
-> - **Étape 2 : Déployer et configurer le cluster.** préparez un cluster Azure SQL Server. Les bases de données sont migrées vers ce cluster existant.
-> - **Étape 3 : Déployer l’équilibreur de charge.** déployez un équilibreur de charge pour équilibrer le trafic vers les nœuds SQL Server.
-> - **Étape 4 : Préparer Azure pour Site Recovery.** créez un compte de stockage Azure pour accueillir les données répliquées et un coffre Recovery Services.
-> - **Étape 5 : Préparer une machine virtuelle VMware locale pour Site Recovery.** préparez des comptes pour la découverte de machines virtuelles et l’installation d’agents. Préparez les machines virtuelles locales afin que les utilisateurs puissent se connecter aux machines virtuelles Azure après la migration.
-> - **Étape 6 : Répliquer les machines virtuelles.** activez la réplication des machines virtuelles sur Azure.
-> - **Étape 7 : Installer l’Assistant Migration de données.** Téléchargez et installez l’Assistant Migration de données.
+> - **Étape 2 : Déployer et configurer le cluster.** préparez un cluster Azure SQL Server. Les bases de données sont migrées vers ce cluster existant.
+> - **Étape 3 : Déployer l’équilibreur de charge.** déployez un équilibreur de charge pour équilibrer le trafic vers les nœuds SQL Server.
+> - **Étape 4 : Préparer Azure pour Site Recovery.** créez un compte de stockage Azure pour accueillir les données répliquées et un coffre Recovery Services.
+> - **Étape 5 : Préparer une machine virtuelle VMware locale pour Site Recovery.** préparez des comptes pour la découverte de machines virtuelles et l’installation d’agents. Préparez les machines virtuelles locales afin que les utilisateurs puissent se connecter aux machines virtuelles Azure après la migration.
+> - **Étape 6 : Répliquer les machines virtuelles.** activez la réplication des machines virtuelles sur Azure.
+> - **Étape 7 : Installer l’Assistant Migration de données.** Téléchargez et installez l’Assistant Migration de données.
 > - **Étape 8 : Migrer la base de données avec DMA.** migrez la base de données vers Azure.
 > - **Étape 9 : Protéger la base de données.** Créez un groupe de disponibilité Always On pour le cluster.
-> - **Étape 10 : Migrer la machine virtuelle d’application web.** Exécutez un test de basculement afin de vérifier que tout fonctionne bien. Procédez ensuite au basculement complet vers Azure.
+> - **Étape 10 : Migrer la machine virtuelle d’application web.** Exécutez un test de basculement afin de vérifier que tout fonctionne bien. Procédez ensuite au basculement complet vers Azure.
 
-## <a name="step-1-prepare-a-sql-server-always-on-availability-group-cluster"></a>Étape 1 : Préparer un cluster de groupes de disponibilité Always On SQL Server
+## <a name="step-1-prepare-a-sql-server-always-on-availability-group-cluster"></a>Étape 1 : Préparer un cluster de groupes de disponibilité Always On SQL Server
 
 Les administrateurs de Contoso configurent le cluster de la façon suivante :
 
@@ -178,7 +177,7 @@ Les administrateurs de Contoso configurent le cluster de la façon suivante :
 - [Obtenir de l’aide](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) pour l’approvisionnement d’une machine virtuelle SQL Server.
 - [En savoir plus sur la](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) configuration de machines virtuelles pour les différentes références SKU de SQL Server.
 
-## <a name="step-2-deploy-and-set-up-the-cluster"></a>Étape 2 : Déployer et configurer le cluster
+## <a name="step-2-deploy-and-set-up-the-cluster"></a>Étape 2 : Déployer et configurer le cluster
 
 Voici comment procèdent les administrateurs de Contoso pour configurer le cluster :
 
@@ -214,7 +213,7 @@ Les administrateurs de Contoso créent un compte de stockage de la façon suivan
 
 Avant de configurer le cluster, les administrateurs prennent un instantané du disque du système d’exploitation sur chaque machine.
 
-![Création d’un instantané](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
+![Créer l’instantané](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
 
 1. Ensuite, elle exécute un script assemblé pour créer le cluster de basculement Windows.
 
@@ -249,7 +248,7 @@ Une fois la solution Always On activée, Contoso peut configurer le groupe de di
 - [En savoir plus sur](https://docs.microsoft.com/windows-server/failover-clustering/deploy-cloud-witness) le témoin de cloud et la configuration d’un compte de stockage pour celui-ci.
 - [Obtenir des instructions](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial) pour la configuration d’un cluster et la création d’un groupe de disponibilité.
 
-## <a name="step-3-deploy-the-azure-load-balancer"></a>Étape 3 : Déployer Azure Load Balancer
+## <a name="step-3-deploy-the-azure-load-balancer"></a>Étape 3 : Déployer Azure Load Balancer
 
 Les administrateurs souhaitent maintenant déployer un équilibreur de charge interne situé devant les nœuds de cluster. L’équilibrage de charge écoute le trafic et le dirige vers le nœud approprié.
 
@@ -308,7 +307,7 @@ La règle est créée comme suit :
 - [Obtenez une vue d’ensemble](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) d’Azure Load Balancer.
 - [En savoir plus sur la](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) création d’un équilibreur de charge.
 
-## <a name="step-4-prepare-azure-for-the-site-recovery-service"></a>Étape 4 : Préparer Azure pour le service Site Recovery
+## <a name="step-4-prepare-azure-for-the-site-recovery-service"></a>Étape 4 : Préparer Azure pour le service Site Recovery
 
 Les composants Azure dont Contoso a besoin pour déployer Site Recovery sont les suivants :
 
@@ -338,7 +337,7 @@ Ils configurent cela comme suit :
 
 [En savoir plus sur la](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) configuration d’Azure pour Site Recovery.
 
-## <a name="step-5-prepare-on-premises-vmware-for-site-recovery"></a>Étape 5 : Préparer VMware en local pour Site Recovery
+## <a name="step-5-prepare-on-premises-vmware-for-site-recovery"></a>Étape 5 : Préparer une machine virtuelle VMware locale pour Site Recovery
 
 Voici ce que les administrateurs de Contoso préparent localement :
 
@@ -393,7 +392,7 @@ De plus, quand elle opèrent un basculement, elle doit vérifier les points suiv
 - [En savoir plus sur la](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) création et l’attribution d’un rôle pour la détection automatique.
 - [En savoir plus sur la](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) création d’un compte pour une installation push du service Mobilité.
 
-## <a name="step-6-replicate-the-on-premises-vms-to-azure-with-site-recovery"></a>Étape 6 : Répliquer les machines virtuelles locales sur Azure avec Site Recovery
+## <a name="step-6-replicate-the-on-premises-vms-to-azure-with-site-recovery"></a>Étape 6 : Répliquer les machines virtuelles locales sur Azure avec Site Recovery
 
 Avant de pouvoir exécuter une migration vers Azure, les administrateurs doivent configurer et activer la réplication.
 
@@ -428,7 +427,7 @@ Les administrateurs de Contoso suivent les étapes ci-dessous :
 
     ![Modèle OVF](./media/contoso-migration-rehost-vm-sql-ag/vcenter-wizard.png)
 
-3. Lors de l’activation de la machine virtuelle pour la première fois, celle-ci démarre dans un environnement d’installation de Windows Server 2016. Contoso accepte le contrat de licence, puis entrent un mot de passe d’administrateur.
+3. Lors de la première activation de la machine virtuelle, celle-ci démarre dans un environnement d’installation Windows Server 2016. Contoso accepte le contrat de licence, puis entrent un mot de passe d’administrateur.
 4. Une fois l’installation terminée, Contoso se connecte à la machine virtuelle en tant qu’administrateur. À la première connexion, l’outil de configuration d’Azure Site Recovery s’exécute par défaut.
 5. Dans l’outil, Contoso spécifie un nom à utiliser pour l’inscription du serveur de configuration dans le coffre.
 6. L’outil vérifie que la machine virtuelle peut se connecter à Azure. Une fois la connexion établie, Contoso se connecte à l’abonnement Azure. Les informations d’identification doivent avoir accès au coffre dans lequel vous souhaitez inscrire le serveur de configuration.
@@ -442,7 +441,7 @@ Les administrateurs de Contoso suivent les étapes ci-dessous :
         ![Sélectionner le coffre Recovery Services](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
 11. Ensuite, elle télécharge puis installe MySQL Server et VMware PowerCLI.
-12. Après la validation, Contoso spécifie le nom de domaine complet (FQDN) ou l’adresse IP du serveur vCenter ou de l’hôte vSphere. On quitte le port par défaut, puis on spécifie un nom convivial pour le serveur vCenter.
+12. Après la validation, Contoso spécifie le nom de domaine complet (FQDN) ou l’adresse IP du serveur vCenter ou de l’hôte vSphere. Contoso quitte le port par défaut, puis spécifient un nom convivial pour le serveur vCenter.
 13. Le compte qu’ils ont créés pour la détection automatique et les informations d’identification utilisées pour installer automatiquement le service Mobilité sont spécifiés. Pour des machines virtuelles Windows, le compte doit disposer des privilèges d’administrateur local sur celles-ci.
 
     ![vCenter](./media/contoso-migration-rehost-vm-sql-ag/cswiz2.png)
@@ -629,7 +628,7 @@ La dernière étape du processus de migration pour Contoso consiste à mettre à
 2. Après avoir mis à jour et enregistré le fichier, elle redémarre IIS sur la machine WEBVM. Pour ce faire, elle entre la commande IISRESET /RESTART à partir d’une invite de commande.
 3. Après le redémarrage d’IIS, l’application utilise la base de données en cours d’exécution sur l’instance SQL MI.
 
-**Besoin de plus d’aide ?**
+**Besoin de plus d’aide ?**
 
 - [En savoir plus sur](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) l’exécution d’un test de basculement.
 - [Découvrez](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) comment créer un plan de récupération.

@@ -1,6 +1,5 @@
 ---
 title: Mettre en place un examen de santé opérationnel
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aide sur les principes opérationnels de base
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868050"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807561"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Mettre en place un examen de santé opérationnel
 

@@ -1,6 +1,5 @@
 ---
 title: Évaluer les options de votre réseau
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Évaluer les options de votre réseau pour les charges de travail Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e75c0386b8d66d6a8d65c047c138a4b24483cd23
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b4450f3f1e151e8234c7b2b5f91c2709270cbcdc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243344"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799129"
 ---
 # <a name="review-your-network-options"></a>Évaluer les options de votre réseau
 

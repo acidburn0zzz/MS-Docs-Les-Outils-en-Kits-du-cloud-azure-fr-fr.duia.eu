@@ -1,6 +1,5 @@
 ---
 title: 'Motivations : Pourquoi migrons-nous vers le cloud ?'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Prise en compte du cloud et migration vers le cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6c774da4fa90c8a6806021b96d0519edebecfc61
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561601"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798143"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +30,7 @@ Les transformations métiers qui sont prises en charge par l’adoption du cloud
 
 | Événements critiques pour l’entreprise | Migration | Innovation |
 |---|---|---|
-| Sortie des centres de données<br/><br/>Fusion, acquisition ou cession<br/><br/>Réduction des dépenses d’investissement<br/><br/>Fin de la prise en charge de technologies stratégiques<br/><br/>Réponse aux changements de conformité réglementaire<br/><br/>Nouvelles exigences de souveraineté des données<br/><br/>Réduction des interruptions et amélioration de la stabilité informatique | Réduction des coûts<br/><br/>Réduction de la complexité liée aux fournisseurs ou aux contraintes techniques<br/><br/>Optimisation des opérations internes<br/><br/>Augmentation de l’agilité de l’entreprise<br/><br/>Préparation à de nouvelles capacités techniques<br/><br/>Adaptation à de nouvelles demandes du marché<br/><br/>Adaptation à de nouvelles demandes géographiques | Préparation à de nouvelles capacités techniques<br/><br/>Développement de nouvelles capacités techniques<br/><br/>Adaptation à de nouvelles demandes du marché<br/><br/>Adaptation à de nouvelles demandes géographiques<br/><br/>Expériences client et engagements améliorés<br/><br/>Transformation de produits ou de services<br/><br/>Lancement sur le marché de nouveaux produits ou services |
+| Sortie du centre de données<br/><br/>Fusion, acquisition ou cession<br/><br/>Réduction des dépenses d’investissement<br/><br/>Fin de la prise en charge de technologies stratégiques<br/><br/>Réponse aux changements liés à la conformité réglementaire<br/><br/>Nouvelles exigences de souveraineté des données<br/><br/>Réduction des interruptions et amélioration de la stabilité informatique | Réduction des coûts<br/><br/>Réduction de la complexité liée aux fournisseurs ou aux contraintes techniques<br/><br/>Optimisation des opérations internes<br/><br/>Augmentation de l’agilité de l’entreprise<br/><br/>Préparation à de nouvelles capacités techniques<br/><br/>Adaptation à de nouvelles demandes du marché<br/><br/>Adaptation à de nouvelles demandes géographiques | Préparation à de nouvelles capacités techniques<br/><br/>Développement de nouvelles capacités techniques<br/><br/>Adaptation à de nouvelles demandes du marché<br/><br/>Adaptation à de nouvelles demandes géographiques<br/><br/>Expériences client et engagements améliorés<br/><br/>Transformation de produits ou de services<br/><br/>Lancement sur le marché de nouveaux produits ou services |
 
 ## <a name="classify-your-motivations"></a>Classer vos motivations
 

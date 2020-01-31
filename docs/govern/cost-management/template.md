@@ -1,6 +1,5 @@
 ---
 title: Modèle Gestion des coûts
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Modèle Gestion des coûts
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2b391db8fd4b54fb4177af9d941ec5246353c627
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 4920a8f1d9cc2d1e1753eb61b2bcc2b1ad6525a6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220744"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806422"
 ---
 # <a name="cost-management-template"></a>Modèle Gestion des coûts
 

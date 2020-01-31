@@ -1,6 +1,5 @@
 ---
 title: Aligner les modèles de coûts sur le patrimoine numérique
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aligner les modèles de coûts sur le patrimoine numérique afin de prévoir les coûts liés au cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: afac61c918f90c21e8d96032199d5e8c1cdfa50c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 30eee82d3afab32890ab00ad82b38106576f33ee
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222626"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804705"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Aligner les modèles de coûts sur le patrimoine numérique afin de prévoir les coûts liés au cloud
 

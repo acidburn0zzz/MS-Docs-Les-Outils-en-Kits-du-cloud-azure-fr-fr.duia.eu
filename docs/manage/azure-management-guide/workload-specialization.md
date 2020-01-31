@@ -1,6 +1,5 @@
 ---
 title: Spécialisation de la charge de travail pour la gestion cloud dans Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Améliorer les opérations de gestion cloud spécifiques à la charge de travail
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ee41e95a8481cd7caeb91d05d4b1420e357aa0f5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752922"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808139"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Spécialisation de la charge de travail pour la gestion cloud
 
@@ -50,7 +49,7 @@ Ces équipes centralisées guident et demandent aux équipes de charge de travai
 
 Des détails supplémentaires sur la charge de travail spécifique sont requis pour fournir des opérations de charge de travail claires. Au cours de la phase d’amélioration permanente, Application Insights sera nécessaire pour la chaîne d’outils de gestion cloud.
 
-|Prérequis|Outil|Objectif|
+|Condition requise|Outil|Objectif|
 |---|---|---|
 |Monitoring des applications|Application Insights|Surveillance et diagnostic pour les applications|
 |Performances, disponibilité et utilisation|Application Insights|Surveillance avancée des applications avec le tableau de bord d’application, les mappages composites, l’utilisation et le suivi|

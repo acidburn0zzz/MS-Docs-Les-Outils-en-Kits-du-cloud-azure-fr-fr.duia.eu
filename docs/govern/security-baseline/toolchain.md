@@ -1,6 +1,5 @@
 ---
 title: Outils de base de référence de la sécurité dans Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explication des outils capables d’améliorer la base de référence de la sécurité dans Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565909"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808802"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Outils de base de référence de la sécurité dans Azure
 
@@ -24,17 +23,17 @@ La liste suivante énumère les outils Azure qui peuvent contribuer au développ
 
 | Outil | [Portail Azure](https://azure.microsoft.com/features/azure-portal) et [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Centre de sécurité Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
 |------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
-| Appliquer des contrôles d’accès aux ressources et à la création de ressources   | OUI                             | Non              | OUI      | Non           | Non                    | Non            |
-| Sécuriser les réseaux virtuels                                    | OUI                             | Non              | Non       | OUI          | Non                    | Non            |
-| Chiffrer les disques virtuels                                     | Non                              | OUI             | Non       | Non           | Non                    | Non            |
-| Chiffrer le stockage et bases de données PaaS                         | Non                              | OUI             | Non       | Non           | Non                    | Non            |
-| Gérer les services d’identité hybride                            | Non                              | Non              | OUI      | Non           | Non                    | Non            |
-| Restreindre les types de ressources autorisés                         | Non                              | Non              | Non       | OUI          | Non                    | Non            |
-| Appliquer des restrictions géo-régionales                          | Non                              | Non              | Non       | OUI          | Non                    | Non            |
-| Surveiller l’intégrité de la sécurité des réseaux et des ressources          | Non                              | Non              | Non       | Non           | OUI                   | OUI           |
-| Détecter les activités malveillantes                                  | Non                              | Non              | Non       | Non           | OUI                   | OUI           |
-| Détecter les vulnérabilités de manière préemptive                        | Non                              | Non              | Non       | Non           | OUI                   | Non            |
-| Configurer la sauvegarde et la récupération d’urgence                     | OUI                             | Non              | Non       | Non           | Non                    | Non            |
+| Appliquer des contrôles d’accès aux ressources et à la création de ressources   | Oui                             | Non              | Oui      | Non           | Non                    | Non            |
+| Sécuriser les réseaux virtuels                                    | Oui                             | Non              | Non       | Oui          | Non                    | Non            |
+| Chiffrer les disques virtuels                                     | Non                              | Oui             | Non       | Non           | Non                    | Non            |
+| Chiffrer le stockage et bases de données PaaS                         | Non                              | Oui             | Non       | Non           | Non                    | Non            |
+| Gérer les services d’identité hybride                            | Non                              | Non              | Oui      | Non           | Non                    | Non            |
+| Restreindre les types de ressources autorisés                         | Non                              | Non              | Non       | Oui          | Non                    | Non            |
+| Appliquer des restrictions géo-régionales                          | Non                              | Non              | Non       | Oui          | Non                    | Non            |
+| Surveiller l’intégrité de la sécurité des réseaux et des ressources          | Non                              | Non              | Non       | Non           | Oui                   | Oui           |
+| Détecter les activités malveillantes                                  | Non                              | Non              | Non       | Non           | Oui                   | Oui           |
+| Détecter les vulnérabilités de manière préemptive                        | Non                              | Non              | Non       | Non           | Oui                   | Non            |
+| Configurer la sauvegarde et la récupération d’urgence                     | Oui                             | Non              | Non       | Non           | Non                    | Non            |
 
 Vous pouvez consulter une liste complète des outils et services de sécurité Azure dans l’article [Services et technologies de sécurité disponibles sur Azure](https://docs.microsoft.com/azure/security/azure-security-services-technologies).
 

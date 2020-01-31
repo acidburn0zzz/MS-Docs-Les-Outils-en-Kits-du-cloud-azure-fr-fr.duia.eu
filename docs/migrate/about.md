@@ -1,6 +1,5 @@
 ---
 title: À propos de la migration cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Contenu d’introduction à la migration cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e98f00f57c8bca0aeb428281b417b2b915213cce
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: f419d6993bbc54b1b35bad6d071092920c4041a4
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781757"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807527"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Migration cloud dans le Framework d’adoption du cloud Microsoft pour Azure
 

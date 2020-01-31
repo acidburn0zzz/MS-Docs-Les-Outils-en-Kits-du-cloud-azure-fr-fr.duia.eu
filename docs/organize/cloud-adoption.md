@@ -1,6 +1,5 @@
 ---
 title: Fonctionnalités d’adoption du cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Décrit la formation des capacités d’adoption du cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2aeda3e6efac30e03a917e790ef619f7a6d74cde
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: fdd8c6234cfc66f4216ce2e6c4bcc8725ad2f079
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753404"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801170"
 ---
 # <a name="cloud-adoption-capabilities"></a>Fonctionnalités d’adoption du cloud
 
 Les fonctionnalités d’adoption du cloud permettent d’implémenter des solutions techniques dans le cloud. Comme tout projet informatique, les personnes qui effectuent réellement le travail en déterminent la réussite. Les équipes qui fournissent les fonctionnalités d’adoption du cloud nécessaires peuvent être composées de plusieurs experts ou partenaires de mise en œuvre.
 
-## <a name="possible-sources-for-this-capability"></a>Sources possibles pour cette fonctionnalité
+## <a name="possible-sources-for-this-capability"></a>Sources possibles pour cette compétence
 
 Les équipes chargées de l’adoption du cloud sont l’équivalent moderne des équipes de mise en œuvre technique ou des équipes de projet. Toutefois, la nature du cloud peut nécessiter une équipe à la structure plus fluide. Certaines équipes se concentrent exclusivement sur la migration cloud, tandis que d’autres équipes se concentrent sur des innovations qui tirent parti des technologies cloud. Certaines équipes incluent une expertise technique large, nécessaire pour les efforts d’adoption importants comme la migration complète d’un centre de données. D’autres équipes ont un objectif technique plus spécifique et peuvent passer d’un projet à l’autre pour atteindre des objectifs spécifiques. Par exemple, une équipe de spécialistes de la plateforme de données qui aident à convertir des machines virtuelles SQL en instances SQL PaaS.
 

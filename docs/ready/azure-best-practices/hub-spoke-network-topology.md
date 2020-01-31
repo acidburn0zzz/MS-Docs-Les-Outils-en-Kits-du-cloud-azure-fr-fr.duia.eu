@@ -1,6 +1,5 @@
 ---
 title: Topologie de réseau hub-and-spoke
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: En savoir plus sur les topologies de réseau hub and spoke.
 author: tracsman
 ms.author: jonor
@@ -11,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 166c45feddd1b6e1ccc17b5301b99e91a3d18e0e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3f0a49675e82727b07c3d285397768de6429e8e8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566783"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800030"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topologie de réseau hub-and-spoke
 
@@ -34,7 +33,7 @@ Les patrimoines cloud plus petits pourraient ne pas bénéficier de la structure
 > - [Implémenter une topologie de réseau hub-and-spoke dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 > - [Implémenter une topologie de réseau hub-and-spoke avec des services partagés dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 ![Exemple de topologie de réseau hub and spoke][1]
 

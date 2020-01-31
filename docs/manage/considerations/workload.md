@@ -1,6 +1,5 @@
 ---
 title: Opérations de charge de travail - Gestion cloud et opérations
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Opérations de charge de travail - Gestion cloud et opérations
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7eca93ba324a0e41f2a04e81a6bfe8994c232fcd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b97cd4963dc19753f0d8216923a376f4d077930a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565041"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807697"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Opérations de charge de travail en gestion cloud
 

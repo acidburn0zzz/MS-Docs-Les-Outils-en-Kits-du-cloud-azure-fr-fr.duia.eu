@@ -1,6 +1,5 @@
 ---
 title: Réhéberger une application de bureau de service Linux sur Azure et Azure Database pour MySQL
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment Contoso réhéberge une application Linux locale en la migrant vers des machines virtuelles Azure et Azure Database pour MySQL.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2a695af758ae7e99a7c2257f3adf4ce5058ae3d
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: d6f812c8f32ec9481942f697151e7ed803654a1b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160322"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807408"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Réhéberger une application Linux locale vers des machines virtuelles Azure et Azure Database pour MySQL
 
@@ -82,7 +81,7 @@ Pour migrer la base de données :
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Le service orchestre et gère la migration et la récupération d’urgence pour les machines virtuelles Azure, les machines virtuelles locales et les serveurs physiques. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement, et entraînent des frais. [En savoir plus](https://azure.microsoft.com/pricing/details/site-recovery) sur les frais et la tarification.
 [Azure Database pour MySQL](https://docs.microsoft.com/azure/mysql) | La base de données est basée sur le moteur du serveur MySQL open source. Il fournit une base de données MySQL complètement managée et de classe Entreprise, appuyée par une communauté active, en tant que service pour le développement et le déploiement d’applications.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Voici ce dont Contoso a besoin pour ce scénario.
 
@@ -104,13 +103,13 @@ Voici comment les administrateurs de Contoso effectuent la migration :
 > [!div class="checklist"]
 >
 > - **Étape 1 : Préparer Azure pour Site Recovery.** Ils créent un compte de stockage Azure pour accueillir les données répliquées, et créent un coffre Recovery Services.
-> - **Étape 2 : Préparer une machine virtuelle VMware locale pour Site Recovery.** Ils préparent des comptes pour la découverte de machines virtuelles et l’installation d’agents. Ils préparent également la connexion aux machines virtuelles Azure après basculement.
-> - **Étape 3 : Approvisionner la base de données.** Dans Azure, ils approvisionnent une instance d’Azure Database pour MySQL.
-> - **Étape 4 : Répliquer les machines virtuelles.** Ils configurent les environnements source et cible de Site Recovery ainsi qu’une stratégie de réplication, puis commencent à répliquer des machines virtuelles sur le stockage Azure.
-> - **Étape 5 : Migrer la base de données.** Ils configurent la migration avec des outils MySQL.
-> - **Étape 6 : Migrer les machines virtuelles avec Site Recovery.** Enfin, ils effectuent un test de basculement pour vérifier que tout fonctionne correctement, puis opèrent un basculement complet pour migrer les machines virtuelles vers Azure.
+> - **Étape 2 : Préparer une machine virtuelle VMware locale pour Site Recovery.** Ils préparent des comptes pour la découverte de machines virtuelles et l’installation d’agents. Ils préparent également la connexion aux machines virtuelles Azure après basculement.
+> - **Étape 3 : Approvisionner la base de données.** Dans Azure, ils approvisionnent une instance d’Azure Database pour MySQL.
+> - **Étape 4 : Répliquer les machines virtuelles.** Ils configurent les environnements source et cible de Site Recovery ainsi qu’une stratégie de réplication, puis commencent à répliquer des machines virtuelles sur le stockage Azure.
+> - **Étape 5 : Migrer la base de données.** Ils configurent la migration avec des outils MySQL.
+> - **Étape 6 : Migrer les machines virtuelles avec Site Recovery.** Enfin, ils effectuent un test de basculement pour vérifier que tout fonctionne correctement, puis opèrent un basculement complet pour migrer les machines virtuelles vers Azure.
 
-## <a name="step-1-prepare-azure-for-the-site-recovery-service"></a>Étape 1 : Préparer Azure pour le service Site Recovery
+## <a name="step-1-prepare-azure-for-the-site-recovery-service"></a>Étape 1 : Préparer Azure pour le service Site Recovery
 
 Contoso a besoin de quelques composants Azure pour Site Recovery :
 
@@ -135,7 +134,7 @@ Les administrateurs de Contoso créent un compte de stockage et un coffre de la 
 
 [En savoir plus sur la](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) configuration d’Azure pour Site Recovery.
 
-## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>Étape 2 : Préparer une machine virtuelle VMware locale pour Site Recovery
+## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>Étape 2 : Préparer une machine virtuelle VMware locale pour Site Recovery
 
 Les administrateurs de Contoso préparent l’infrastructure VMware locale de la façon suivante :
 
@@ -170,7 +169,7 @@ Après le basculement vers Azure, Contoso souhaite pouvoir se connecter aux mach
 
 - Pour accéder via Internet, Contoso active SSH sur la machine virtuelle Linux locale avant la migration. Pour Ubuntu, cette opération peut être effectuée à l’aide de la commande suivante : **Sudo apt-get ssh install -y**.
 - Après basculement, Contoso doit consulter les **diagnostics de démarrage** pour afficher une capture d’écran de la machine virtuelle.
-- Si cela ne fonctionne pas, il doivent vérifier que la machine virtuelle est en cours d’exécution et consulter ces [conseils de dépannage](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
+- Si cela ne fonctionne pas, Contoso doit vérifier que la machine virtuelle est en cours d’exécution et consulter ces [conseils de dépannage](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
 **Besoin de plus d’aide ?**
 
@@ -237,7 +236,7 @@ Les administrateurs de Contoso effectuent les étapes suivantes :
 
     ![Modèle OVF](./media/contoso-migration-rehost-linux-vm-mysql/vcenter-wizard.png)
 
-3. Lors de l’activation de la machine virtuelle pour la première fois, celle-ci démarre dans un environnement d’installation de Windows Server 2016. Contoso accepte le contrat de licence, puis entrent un mot de passe d’administrateur.
+3. Lors de la première activation de la machine virtuelle, celle-ci démarre dans un environnement d’installation Windows Server 2016. Contoso accepte le contrat de licence, puis entrent un mot de passe d’administrateur.
 4. Une fois l’installation terminée, Contoso se connecte à la machine virtuelle en tant qu’administrateur. À la première connexion, l’outil de configuration d’Azure Site Recovery s’exécute par défaut.
 5. Dans l’outil, Contoso spécifie un nom à utiliser pour l’inscription du serveur de configuration dans le coffre.
 6. L’outil vérifie que la machine virtuelle peut se connecter à Azure.

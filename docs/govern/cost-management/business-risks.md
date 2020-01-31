@@ -1,6 +1,5 @@
 ---
 title: Risques métier et motivations associés à Gestion des coûts
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Risques métier et motivations associés à Gestion des coûts
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16408b01e06e29fc2697dbbdd053126d026920f0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753259"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806507"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Risques métier et motivations associés à Gestion des coûts
 

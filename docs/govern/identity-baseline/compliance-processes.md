@@ -1,6 +1,5 @@
 ---
 title: Base de référence de l’identité des processus de conformité à la stratégie
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Base de référence de l’identité des processus de conformité à la stratégie
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 937bf6c4dae8d134b4f140e0a0023d82e5f9e3f9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566211"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807153"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Base de référence de l’identité des processus de conformité à la stratégie
 
@@ -24,7 +23,7 @@ Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent
 
 Les outils de gestion des identités offrent des capacités et des fonctionnalités qui facilitent grandement la gestion des utilisateurs et le contrôle d’accès dans un déploiement cloud. Cependant, ils exigent également des processus et des stratégies bien pensés pour soutenir les objectifs de votre organisation. Les éléments suivants représentent un ensemble d’exemples de processus généralement impliqués dans la discipline Base de référence de l’identité. Ces exemples constituent des points de départ pour planifier les processus qui vous permettront de mettre à jour la stratégie d’identité à mesure que l’entreprise évolue et selon les commentaires des équipes informatiques chargés d’implémenter les mesures de gouvernance.
 
-**Évaluation des risques et planification initiales :** Dans le cadre de l’adoption initiale de la discipline de base de référence de l’identité, identifiez vos principaux risques métier et tolérances liés à la gestion des identités du cloud. Utilisez ces informations pour débattre des techniques spécifiques avec les membres de vos équipes informatiques responsables de la gestion des services d’identité, puis développer un ensemble de stratégies de sécurité de base pour atténuer ces risques et ainsi établir votre stratégie de gouvernance initiale.
+**Évaluation des risques et planification initiales :** Dans le cadre de l’adoption initiale de la discipline de base de référence de l’identité, identifiez vos principaux risques métier et tolérances liés à la gestion des identités du cloud. Utilisez ces informations pour débattre des techniques spécifiques avec les membres de vos équipes informatiques responsables de la gestion des services d’identité, puis développer un ensemble de stratégies de sécurité de base pour atténuer ces risques et ainsi établir votre stratégie de gouvernance initiale.
 
 **Planification du déploiement :** Avant tout déploiement, passez en revue les besoins d’accès pour toutes les charges de travail et élaborez une stratégie de contrôle d’accès qui s’aligne sur la stratégie d’identité d’entreprise établie. Documenter tout écart entre les besoins et la stratégie actuelle afin de déterminer si des mises à jour de la stratégie sont nécessaires, et modifier la stratégie au besoin.
 
@@ -36,9 +35,9 @@ Les outils de gestion des identités offrent des capacités et des fonctionnalit
 
 Ce processus de planification constitue également un moment idéal pour évaluer les lacunes des membres de votre équipe de gouvernance cloud, en lien avec les risques, nouveaux ou changeants, associés à l’identité. Invitez le personnel informatique concerné à participer aux révisions et à la planification en tant que conseillers techniques temporaires ou membres permanents de votre équipe.
 
-**Apprentissage et formation :** Deux fois par mois, offrez des sessions de formation pour vous assurer que le personnel informatique et les développeurs connaissent les dernières exigences en matière de stratégie d’identité. Dans le cadre de ce processus, relisez et mettez à jour toute la documentation, les guides et les autres ressources de formation pour vous assurer qu’ils correspondent aux dernières instructions stratégiques de l’entreprise.
+**Apprentissage et formation :** Deux fois par mois, offrez des sessions de formation pour vous assurer que le personnel informatique et les développeurs connaissent les dernières exigences en matière de stratégie d’identité. Dans le cadre de ce processus, relisez et mettez à jour toute la documentation, les guides et les autres ressources de formation pour vous assurer qu’ils correspondent aux dernières instructions stratégiques de l’entreprise.
 
-**Révisions mensuelles d’audit et de rapport :** Tous les mois, effectuez un audit sur tous les déploiements cloud afin de garantir leur alignement continu sur la stratégie d’identité. Profitez de cet examen pour vérifier l’accès des utilisateurs par rapport aux changements opérationnels afin de vous assurer que les utilisateurs ont un accès correct aux ressources cloud et que les stratégies d’accès telles que le contrôle d’accès en fonction du rôle (RBAC) sont suivies de façon cohérente. Identifiez tous les comptes privilégiés et documentez leur raison d’être. Cette procédure d’examen produit un rapport pour l’équipe de la stratégie cloud et pour chaque équipe d’adoption du cloud, afin de détailler l’adhésion générale des parties prenantes à la stratégie. Le rapport est également conservé à des fins d’audit et juridiques.
+**Révisions d’audit et création de rapports mensuelles :** Tous les mois, effectuez un audit sur tous les déploiements cloud afin de garantir leur alignement continu sur la stratégie d’identité. Profitez de cet examen pour vérifier l’accès des utilisateurs par rapport aux changements opérationnels afin de vous assurer que les utilisateurs ont un accès correct aux ressources cloud et que les stratégies d’accès telles que le contrôle d’accès en fonction du rôle (RBAC) sont suivies de façon cohérente. Identifiez tous les comptes privilégiés et documentez leur raison d’être. Cette procédure d’examen produit un rapport pour l’équipe de la stratégie cloud et pour chaque équipe d’adoption du cloud, afin de détailler l’adhésion générale des parties prenantes à la stratégie. Le rapport est également conservé à des fins d’audit et juridiques.
 
 ## <a name="processes-for-ongoing-monitoring"></a>Processus de surveillance continue
 

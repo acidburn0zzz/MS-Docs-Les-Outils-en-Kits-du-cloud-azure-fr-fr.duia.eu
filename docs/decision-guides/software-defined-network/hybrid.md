@@ -1,6 +1,5 @@
 ---
-title: 'Software Defined Networking : Réseau hybride'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'SDN (Software Defined Network) : Réseau hybride'
 description: Discussion sur la manière dont des réseaux hybrides permettent à vos réseaux virtuels dans le cloud de se connecter à des ressources locales.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 94e285f59442b6632209e1cd6a76c39cfccd337b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 61ce3447a852ec8aa1caa0737b0f3757f0f26450
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837855"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806609"
 ---
-# <a name="software-defined-networking-hybrid-network"></a>Software Defined Networking : Réseau hybride
+# <a name="software-defined-networking-hybrid-network"></a>SDN (Software Defined Network) : Réseau hybride
 
 L’architecture réseau cloud hybride permet aux réseaux virtuels d’accéder à vos ressources et services locaux, et inversement, en utilisant une connexion WAN dédiée telle qu’ExpressRoute ou une autre méthode de connexion permettant de connecter directement les réseaux.
 

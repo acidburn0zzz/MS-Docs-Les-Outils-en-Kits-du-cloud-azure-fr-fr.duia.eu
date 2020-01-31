@@ -1,19 +1,18 @@
 ---
 title: Exécution d’une migration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Exécution d’une migration
+description: Obtenez une vue d’ensemble des articles qui expliquent les différentes activités qui peuvent être impliquées dans la migration d’une charge de travail dans Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 21520edecc7ba874713561672cd0bd38aa96c0a2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62100df7a32ca904454e0df2d7be8c1a860fd611
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818231"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802274"
 ---
 # <a name="execute-a-migration"></a>Exécuter une migration
 
@@ -35,7 +34,7 @@ La responsabilité de l’ensemble du processus de migration revient à l’équ
 
 ## <a name="responsibilities-during-migration"></a>Obligations liées à la migration
 
-Outre la responsabilité d’ensemble, certaines actions doivent être affectées directement à un individu ou à un groupe. Voici quelques-unes des activités qui doivent être confiées à des parties responsables :
+En plus de la responsabilité d’ensemble, certaines actions doivent être affectées directement à un individu ou à un groupe. Voici quelques-unes des activités qui doivent être confiées à des parties responsables :
 
 - **Correction.** Résolvez tous les problèmes de compatibilité empêchant la migration de la charge de travail vers le cloud.
   - Comme indiqué dans l’article des prérequis traitant [de la complexité technique et de la gestion des changements](../prerequisites/technical-complexity.md), vous devez décider à l’avance de la manière dont cette activité doit être exécutée. Déterminez en particulier si la correction sera effectuée par l’équipe d’adoption du cloud durant le même sprint que l’effort de migration réel. Sinon, décidez si un modèle de type « vague » ou « usine » sera utilisé pour effectuer la correction dans une itération séparée. Si certains membres n’ont pas de connaissances élémentaires sur ces processus, il peut être judicieux de revisiter la section sur les [prérequis](../prerequisites/index.md).

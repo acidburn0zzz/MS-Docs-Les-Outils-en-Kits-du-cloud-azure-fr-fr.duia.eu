@@ -1,6 +1,5 @@
 ---
 title: Conseils pour l’élaboration d’un plan de changements opérationnels
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Un processus au sein d’une migration cloud qui se concentre sur les tâches de migration des charges de travail vers le cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 48e670028e26be5a28abf55c7a0565769e17dacf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564596"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801968"
 ---
 # <a name="business-change-plan"></a>Plan de changement pour l’entreprise
 
@@ -65,6 +64,6 @@ Une fois que les changements opérationnels sont documentés et planifiés, les 
 > [!div class="nextstepaction"]
 > [Conseils pour les tests d’entreprise (UAT) pendant la migration](./business-test.md)
 
-## <a name="references"></a>Références
+## <a name="references"></a>References
 
 - Eason, K. (1988) _Information technology and organizational change_, New York : Taylor and Francis.

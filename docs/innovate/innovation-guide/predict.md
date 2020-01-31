@@ -1,6 +1,5 @@
 ---
 title: 'Guide d’innovation Azure : Prédire et influencer'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Apprenez à prédire et influencer à l’aide d’Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 506387c87a714964692dde7c082fa31c981b0c6f
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251832"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808258"
 ---
 ::: zone target="docs"
 
@@ -35,9 +34,9 @@ Le tableau suivant peut vous aider à trouver la meilleure solution, en fonction
 
 |Service  |Modèles prédéfinis  |Créer et expérimenter  |Apprendre et créer avec Python|Compétences requises|
 |---------|---------|---------|---------|---------|
-|Azure Cognitive Services|OUI|Non|Non|Compétences des développeurs et des API|
-|Azure Machine Learning Studio|OUI|OUI|Non|Compréhension générale des algorithmes prédictifs|
-|Service Azure Machine Learning|OUI|OUI|OUI|Scientifique des données|
+|Azure Cognitive Services|Oui|Non|Non|Compétences des développeurs et des API|
+|Azure Machine Learning Studio|Oui|Oui|Non|Compréhension générale des algorithmes prédictifs|
+|Service Azure Machine Learning|Oui|Oui|Oui|Scientifique des données|
 
 ## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Azure Cognitive Services](#tab/CognitiveServices)
 
@@ -51,7 +50,7 @@ Pour utiliser une API Cognitive Services :
 
 1. Dans le [Portail Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts), accédez à **Cognitive Services**.
 2. Sélectionnez **Ajouter** pour trouver une API Cognitive Services dans la Place de marché Azure.
-3. Effectuez l’une des actions suivantes :
+3. Effectuez l'une des opérations suivantes :
    - Si vous connaissez le nom du service que vous souhaitez utiliser, saisissez-le dans la zone **Rechercher dans la Place de marché**.
    - Pour obtenir la liste des API Cognitive Services, cliquez sur le lien **Afficher plus** à côté du titre Cognitive Services.
 

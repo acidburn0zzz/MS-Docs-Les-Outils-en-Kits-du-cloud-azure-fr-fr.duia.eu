@@ -1,6 +1,5 @@
 ---
 title: Recommandations en matière de sécurité Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Quelles sont les recommandations formulées par Microsoft en matière de sécurité ?
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058825"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804909"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +32,7 @@ Ces outils sont conçus pour aider les organisations à répondre aux obligation
 La **Plateforme d'approbation de services (STP)** fournit des informations détaillées et des outils pour répondre à vos besoins d'utilisation de services de cloud computing Microsoft, notamment Azure, Office 365, Dynamics 365 et Windows. La STP rassemble les informations relatives à la sécurité, la réglementation, la conformité et la confidentialité ayant trait à Microsoft Cloud. C’est là que nous publions les informations et les ressources nécessaires à la réalisation d'évaluations des risques en libre-service des services et outils cloud. La STP a été créée pour faciliter le suivi des activités de conformité réglementaire au sein d'Azure, notamment :
 
 - **Gestionnaire de conformité** : Le Gestionnaire de conformité, un outil d'évaluation des risques basé sur les flux de travail dans la Plateforme d'approbation de services Microsoft, vous permet de suivre, d'affecter et de vérifier les activités de conformité réglementaire de votre organisation ayant trait aux services de cloud computing Microsoft, tels que Dynamics 365, Office 365 et Azure. Pour plus d’informations, consultez la section suivante.
-- **Documents de test** : Actuellement, il existe trois catégories de guides qui vous fournissent de nombreuses ressources afin d’évaluer Microsoft Cloud. Ces ressources vous permettre d'en savoir plus sur les opérations de Microsoft en matière de sécurité, de conformité et de confidentialité et vous aident à améliorer les fonctionnalités de protection de vos données. Il s’agit des actions suivantes :
+- **Documents de test** : Actuellement, il existe trois catégories de guides qui vous fournissent de nombreuses ressources afin d’évaluer Microsoft Cloud. Ces ressources vous permettre d'en savoir plus sur les opérations de Microsoft en matière de sécurité, de conformité et de confidentialité et vous aident à améliorer les fonctionnalités de protection de vos données. notamment :
 - **Rapports d’audit :** Les rapports d'audit vous permettent de vous tenir informé des dernières informations relatives à la confidentialité, à la sécurité et à la conformité liées aux services de cloud computing Microsoft. Cela englobe notamment des rapports d'audit ISO, SOC, FedRAMP, des lettres d'accompagnement et des documents relatifs aux audits tiers indépendants des services de cloud computing Microsoft tels que Dynamics 365, Azure, Office 365, etc.
 - **Guides de protection des données** : Les guides de protection des données fournissent des informations sur la manière dont les services de cloud computing Microsoft protègent vos données, ainsi que sur la manière dont vous gérez la sécurité et la conformité des données cloud de votre entreprise. Il s'agit notamment de livres blancs détaillés qui expliquent comment Microsoft conçoit et exploite les services cloud, de FAQ, de rapports d’évaluations de sécurité de fin d’année, de résultats de tests de pénétration et de recommandations pour vous aider à évaluer les risques et à améliorer les fonctionnalités de protection de vos données.
 - **Blueprint de sécurité et de conformité Azure** : Les blueprints fournissent des ressources pour vous aider à créer et à lancer des applications cloud qui vous aident à vous conformer aux réglementations et normes strictes. Avec plus de certifications que tout autre fournisseur de cloud, vous pouvez déployer en toute confiance vos charges de travail critiques sur Azure, avec des blueprints comprenant :
@@ -47,7 +46,7 @@ La **Plateforme d'approbation de services (STP)** fournit des informations déta
   - **Demandes des personnes concernées** : Le RGPD accorde aux particuliers (ou personnes concernées) certains droits en rapport avec le traitement de leurs données personnelles. Ils peuvent notamment corriger des données inexactes, effacer des données ou limiter leur traitement, ainsi que recevoir leurs données et formuler une demande de transmission de ces données à un autre contrôleur.
   - **Violation des données :** Le RGPD impose des exigences de notification pour les contrôleurs et responsables du traitement des données en cas de violation des données personnelles. La STP vous fournit des informations sur la manière dont Microsoft s'efforce de prévenir les violations, détecte une violation, y réagit et vous en informe en tant que contrôleur de données.
   - **Évaluation de l'impact de la protection des données :** Microsoft aide les contrôleurs à effectuer des évaluations d'impact sur la protection des données RGPD. Le RGPD fournit une liste exhaustive de situations dans lesquelles des évaluations d'impact sur la protection des données (DPIA) s'imposent, comme le traitement automatique à des fins de profilage et activités similaires, le traitement à grande échelle de catégories spécifiques de données à caractère personnel et la surveillance systématique à grande échelle d'une zone accessible au public.
-  - **Autres ressources** : En plus des recommandations relatives aux outils décrits dans les sections ci-dessus, la STP fournit également d'autres ressources, comprenant notamment des ressources de conformité régionale, des ressources supplémentaires pour le Centre de sécurité et de conformité, ainsi que des questions fréquemment posées sur la Plateforme d'approbation de services, le Gestionnaire de conformité et la confidentialité /RGPD.
+  - **Autres ressources :** En plus des recommandations relatives aux outils décrits dans les sections ci-dessus, la STP fournit également d'autres ressources, comprenant notamment des ressources de conformité régionale, des ressources supplémentaires pour le Centre de sécurité et de conformité, ainsi que des questions fréquemment posées sur la Plateforme d'approbation de services, le Gestionnaire de conformité et la confidentialité /RGPD.
 - **Conformité régionale** : La STP fournit de nombreux documents de conformité et recommandations liés aux services en ligne Microsoft pour répondre aux exigences de conformité de différentes régions, y compris la République tchèque, la Pologne et la Roumanie.
 
 ## <a name="unique-intelligent-insights"></a>Intelligent Insights

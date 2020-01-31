@@ -1,6 +1,5 @@
 ---
-title: 'Software Defined Networking : Cloud natif'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'SDN (Software Defined Network) : Cloud natif'
 description: Présentation des services de réseau virtuel natifs dans le cloud.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bf585f923a4c8abddeeb56bab4a3a4b8eb370f8d
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160211"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806643"
 ---
-# <a name="software-defined-networking-cloud-native"></a>Software Defined Networking : Cloud natif
+# <a name="software-defined-networking-cloud-native"></a>SDN (Software Defined Network) : Cloud natif
 
 Un réseau virtuel cloud natif est indispensable lors du déploiement de ressources IaaS telles que des machines virtuelles sur une plateforme cloud. L’accès à des réseaux virtuels à partir de sources externes, similaires au web, nécessite un approvisionnement explicite. Ces types de réseaux virtuels prennent en charge la création de sous-réseaux, de règles d’acheminement, de pare-feu virtuels et de dispositifs de gestion du trafic.
 

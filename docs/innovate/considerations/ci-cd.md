@@ -1,6 +1,5 @@
 ---
 title: 'Innovation cloud : Favoriser l’adoption'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Introduction à l’innovation cloud : favoriser l’adoption'
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752107"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808513"
 ---
 # <a name="empower-adoption"></a>Favoriser l’adoption
 
@@ -31,9 +30,9 @@ L’objectif principal de la [méthodologie d’innovation](./index.md) consiste
 
 ![Favoriser l’adoption : le modèle de maturité](../../_images/innovate/empower-adoption-maturity.png)
 
-- [Solution partagée](#shared-solution) : Établissez un référentiel centralisé pour tous les aspects de la solution.
+- [Solution partagée](#shared-solution) : établissez un dépôt centralisé pour tous les aspects de la solution.
 - [Boucles de commentaires](#feedback-loops) : Assurez-vous que les boucles de rétroaction peuvent être gérées de manière cohérente au fil des itérations.
-- [Intégration continue](#continuous-integration) : Générez et consolidez régulièrement la solution.
+- [Intégration continue](#continuous-integration) : développez et consolidez régulièrement la solution.
 - [Test fiable](#reliable-testing) : Validez la qualité de la solution et les modifications attendues pour garantir la fiabilité de vos métriques de test.
 - [Déploiement de la solution](#solution-deployment) : Déployez des solutions pour que l’équipe puisse partager rapidement les modifications avec les clients.
 - [Mesure intégrée](#integrated-measurements) : ajoutez des métriques d’apprentissage à la boucle de rétroaction pour une analyse claire par l’ensemble de l’équipe.

@@ -1,6 +1,5 @@
 ---
 title: Évaluez votre parcours de transformation
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Évaluez votre parcours de transformation
 author: alexbuckgit
 ms.author: abuck
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 413a7023738f510f5b08692a3f88a88cd3333632
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a25e7c9149c14d25f86f7095db8404b85cc95b48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031560"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806524"
 ---
 # <a name="assess-your-transformation-journey"></a>Évaluez votre parcours de transformation
 

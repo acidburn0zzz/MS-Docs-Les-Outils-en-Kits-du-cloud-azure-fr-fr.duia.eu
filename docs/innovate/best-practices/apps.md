@@ -1,6 +1,5 @@
 ---
-title: 'Innovation cloud : outils d’implication par le biais d’applications dans Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'Innovation cloud : Outils d’implication par le biais d’applications dans Azure'
 description: Outils d’implication par le biais d’applications dans Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 96450c838ce6833d77803428272e96d2327747de
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cf37b3555244db05ecd22f9c4421a35e8a0f758e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565875"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808717"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Outils d’implication par le biais d’applications dans Azure
 
@@ -47,7 +46,7 @@ Selon le parcours choisi par l’équipe d’adoption du cloud, Azure fournit de
 - Microsoft Flow
 - Power BI
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 La table des matières sur le côté gauche de cette page met en avant de nombreux articles. Ces articles vous aident à prendre en main chacun des outils de cette chaîne d’outils.
 

@@ -1,6 +1,5 @@
 ---
 title: Qu’est-ce que la comptabilité cloud ?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explication du concept de comptabilité cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 834beb021b394e2d6ffe58723caced7519923b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031901"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806813"
 ---
 <!-- markdownlint-disable MD026 -->
 

@@ -1,6 +1,5 @@
 ---
 title: Établir des itérations et des plans de publication de versions
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Établir des itérations et des plans de publication de versions
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0dbef36d3909f11c1616d2e44c63227959c4ff56
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bdd0150aef6c04b43121b5bef1224bea93191e2c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839175"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800336"
 ---
 # <a name="establish-iterations-and-release-plans"></a>Établir des itérations et des plans de publication de versions
 

@@ -1,6 +1,5 @@
 ---
 title: Plusieurs centres de données
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Plusieurs centres de données
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024790"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803073"
 ---
 # <a name="multiple-datacenters"></a>Plusieurs centres de données
 

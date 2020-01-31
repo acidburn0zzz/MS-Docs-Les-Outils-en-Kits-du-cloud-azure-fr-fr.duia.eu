@@ -1,6 +1,5 @@
 ---
 title: Outils et services de gestion de serveur Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Outils et services de gestion de serveur Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 51564add9bfe50ab494b39344eb24d3079fce000
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565277"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807935"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Outils et services de gestion de serveur Azure
 
@@ -22,8 +21,8 @@ Comme décrit dans la [vue d’ensemble](./index.md) des conseils, la suite de s
 - Migrer
 - Sécuriser
 - Protéger
-- Surveiller
-- Configuration
+- Moniteur
+- Configurer
 - Gouvernance
 
 Les sections suivantes décrivent en bref ces domaines de gestion et contiennent des liens vers du contenu détaillé sur les principaux services Azure qui les prennent en charge.
@@ -54,7 +53,7 @@ Pour plus d’informations, consultez le [tableau complet de la réplication Azu
 
 Pour les données de votre serveur de fichiers, un autre service à prendre en compte est [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning). Ce service vous aide à centraliser les partages de fichiers de votre organisation dans Azure Files tout en préservant la flexibilité, le niveau de performance et la compatibilité d’un serveur de fichiers local. Pour utiliser ce service, suivez les instructions de déploiement d’Azure File Sync.
 
-## <a name="monitor"></a>Surveiller
+## <a name="monitor"></a>Moniteur
 
 [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) fournit une vue de diverses ressources, telles que les applications, les conteneurs et les machines virtuelles. Il collecte également les données de plusieurs sources :
 
@@ -62,7 +61,7 @@ Pour les données de votre serveur de fichiers, un autre service à prendre en c
 - Log Analytics ([journaux d’activité](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) est une fonctionnalité d’Azure Monitor. Son rôle est central pour l’ensemble de la gestion Azure. Il sert de magasin de données pour l’analyse des journaux et pour de nombreux autres services Azure. Le langage de requête est riche et le moteur analytique fournit des informations sur le fonctionnement de vos applications et de vos ressources.
 - Le [Journal d’activité Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) est également une fonctionnalité d’Azure Monitor. Il fournit un insight sur les événements de niveau abonnement qui se produisent dans Azure.
 
-## <a name="configure"></a>Configuration
+## <a name="configure"></a>Configurer
 
 Plusieurs services appartiennent à cette catégorie. Ils peuvent vous aider à :
 
@@ -91,14 +90,14 @@ Pour en savoir plus sur les tarifs des services de gestion Azure, consultez ces 
 
 - [Azure Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery)
 
-- [Sauvegarde Azure](https://azure.microsoft.com/pricing/details/backup)
+- [Azure Backup](https://azure.microsoft.com/pricing/details/backup)
 
 - [Azure Monitor](https://azure.microsoft.com/pricing/details/monitor)
 
 - [Centre de sécurité Azure](https://azure.microsoft.com/pricing/details/security-center)
 
 - [Azure Automation](https://azure.microsoft.com/pricing/details/automation), qui inclut les services suivants :
-  - Configuration de l’état souhaité (DSC)
+  - DSC (Desired State Configuration)
   - Service Azure Update Management
   - Services Azure Change Tracking et Inventory
 

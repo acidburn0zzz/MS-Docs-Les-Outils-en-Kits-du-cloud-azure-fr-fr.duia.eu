@@ -1,6 +1,5 @@
 ---
 title: Guide de décision sur la journalisation et création de rapports
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Découvrez les principaux services pour les migrations Azure : journalisation, création de rapports et supervision.'
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 038137088abe02160fd199cef468ecc5d5756281
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753168"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806762"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 
@@ -34,10 +33,10 @@ Lors de la planification de votre déploiement, vous devez penser à l’emplace
 
 | Question | Cloud natif | Extension locale | Supervision hybride | Agrégation de passerelle |
 |-----|-----|-----|-----|-----|
-| Vous disposez déjà d’une infrastructure de supervision locale ? | Non | OUI | OUI |  Non |
-| Avez-vous des exigences qui empêchent le stockage des données de journal dans des emplacements de stockage externes ? | Non | OUI | Non | Non |
-| Avez-vous besoin d’intégrer la supervision cloud à des systèmes locaux ? | Non | Non | OUI | Non |
-Avez-vous besoin de traiter ou filtrer les données de télémétrie avant de les envoyer à vos systèmes de supervision ? | Non | Non | Non | OUI |
+| Vous disposez déjà d’une infrastructure de supervision locale ? | Non | Oui | Oui |  Non |
+| Avez-vous des exigences qui empêchent le stockage des données de journal dans des emplacements de stockage externes ? | Non | Oui | Non | Non |
+| Avez-vous besoin d’intégrer la supervision cloud à des systèmes locaux ? | Non | Non | Oui | Non |
+Avez-vous besoin de traiter ou filtrer les données de télémétrie avant de les envoyer à vos systèmes de supervision ? | Non | Non | Non | Oui |
 
 ### <a name="cloud-native"></a>Cloud natif
 

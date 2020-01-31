@@ -1,6 +1,5 @@
 ---
 title: Amélioration de la discipline Base de référence de la sécurité
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Amélioration de la discipline Base de référence de la sécurité
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,24 +8,24 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fc7a6bf6553ebc9679aee63a07d6ef3bca847c3a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 316a848e0f9f3f90a2f7badde3166733dce4a4c0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221723"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808904"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Amélioration de la discipline Base de référence de la sécurité
 
 La discipline Base de référence de la sécurité se concentre sur l’établissement de stratégies qui protègent le réseau, les ressources et, plus important encore, les données qui résideront sur la solution d’un fournisseur de services cloud. Parmi les cinq disciplines de la gouvernance cloud, la discipline Base de référence de la sécurité inclut la classification du parc numérique et des données. Elle inclut également la documentation relative aux risques, à la tolérance métier et aux stratégies d’atténuation associées à la sécurité des données, des ressources et du réseau. D'un point de vue technique, cela englobe également la participation aux décisions concernant le [chiffrement](../../decision-guides/encryption/index.md), la [configuration réseau requise](../../decision-guides/software-defined-network/index.md), les [stratégies d'identités hybrides](../../decision-guides/identity/index.md) et les [processus](./compliance-processes.md) utilisés pour développer les stratégies Base de référence de la sécurité du cloud.
 
-Cet article décrit certaines tâches potentielles que votre entreprise peut entreprendre pour mieux développer et faire mûrir la discipline de Base de référence de la sécurité. Ces tâches peuvent être décomposées en phases de planification, de construction, d'adoption et d'exploitation de l'implémentation d'une solution cloud, qui sont ensuite répétées pour permettre le développement d'une [approche incrémentielle de la gouvernance cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
+Cet article décrit certaines tâches potentielles que votre entreprise peut entreprendre pour mieux développer et faire mûrir la discipline de Base de référence de la sécurité. Ces tâches peuvent être décomposées en phases de planification, de construction, d’adoption et d’exploitation de l’implémentation d’une solution cloud, qui sont ensuite répétées pour permettre le développement d’une [approche incrémentielle de la gouvernance cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quatre phases d’adoption](../../_images/govern/adoption-phases.png)
 
 *Figure 1 - Phases d’adoption de l’approche incrémentielle de la gouvernance cloud.*
 
-Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [MVP de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour améliorer la stratégie incrémentielle. Votre équipe de gouvernance cloud devra décider combien investir dans ces activités pour améliorer vos fonctionnalités de gouvernance de Base de référence de la sécurité.
+Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [produit minimum viable (MVP) de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance cloud devra décider combien investir dans ces activités pour améliorer vos fonctionnalités de gouvernance de Base de référence de la sécurité.
 
 > [!CAUTION]
 > Les activités minimales ou potentielles décrites dans cet article ne correspondent pas spécialement à des stratégies d’entreprise spécifiques ou à des exigences de conformité de tiers. Ces conseils visent à favoriser les échanges qui conduiront à un alignement des deux exigences avec un modèle de gouvernance cloud.
@@ -38,7 +37,7 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 **Activités minimales suggérées :**
 
 - Évaluez les options de votre [chaîne d'outils Base de référence de la sécurité](./toolchain.md).
-- Élaborez un brouillon des instructions relatives à l'architecture et distribuez ce document aux principales parties prenantes.
+- Élaborer un brouillon de recommandations relatives à l’architecture et distribuer ce document aux principales parties prenantes.
 - Formez et impliquez les personnes et les équipes concernées par le développement des instructions relatives à l'architecture.
 - Ajoutez des tâches de sécurité classées par ordre de priorité à votre backlog de migration.
 
@@ -64,7 +63,7 @@ Plusieurs conditions techniques et non techniques sont exigées pour migrer corr
 - Implémentez votre [chaîne d’outils Base de référence de la sécurité](./toolchain.md) en la déployant dans le cadre d’une phase de prédéploiement.
 - Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
 - Implémentez des tâches de sécurité sur votre backlog de migration classé par ordre de priorité.
-- Développez une documentation et des ressources pédagogiques, des communications de sensibilisation, des incitations et d'autres programmes afin d'encourager l'adoption par les utilisateurs.
+- Élaborer une documentation et des ressources pédagogiques, des messages de sensibilisation, des incitations et d’autres programmes afin de favoriser l’adoption par les utilisateurs.
 
 **Activités potentielles :**
 

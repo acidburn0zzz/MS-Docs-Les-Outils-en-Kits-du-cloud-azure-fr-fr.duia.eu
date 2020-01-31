@@ -1,6 +1,5 @@
 ---
 title: Stratégie de gouvernance ou de conformité
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Stratégie de gouvernance ou de conformité
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753541"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803124"
 ---
 # <a name="governance-or-compliance-strategy"></a>Stratégie de gouvernance ou de conformité
 

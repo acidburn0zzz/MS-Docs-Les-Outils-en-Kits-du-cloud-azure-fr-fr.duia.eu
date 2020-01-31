@@ -1,6 +1,5 @@
 ---
 title: Quels sont les résultats métier qui sont associés à une transformation ?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explication des résultats métier associés à une transformation cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: faa1728dd72828478a167cf09535bdf9f2ac1a82
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 333e3f2e3be6db16cc8bd6f81360bc5b15f4725e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058870"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798517"
 ---
 <!-- markdownlint-disable MD026 -->
 

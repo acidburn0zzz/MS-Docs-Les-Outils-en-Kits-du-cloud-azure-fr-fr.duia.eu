@@ -1,6 +1,5 @@
 ---
-title: 'Software Defined Networking : PaaS uniquement'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'SDN (Software Defined Network) : PaaS uniquement'
 description: Discussion à propos du modèle « PaaS uniquement » pour le Software Defined Networking dans le cloud.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ca73050c2ca6a753727b7b972a3c1febe4ec9515
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: d61c9562b34453e6a0026a15a2674e3e19854810
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058728"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804824"
 ---
-# <a name="software-defined-networking-paas-only"></a>Software Defined Networking : PaaS uniquement
+# <a name="software-defined-networking-paas-only"></a>SDN (Software Defined Network) : PaaS uniquement
 
 Lorsque vous implémentez une ressource PaaS (platform as a service), le processus de déploiement crée automatiquement un réseau sous-jacent supposé, qui comprend un nombre limité de contrôles sur ce réseau. Ces contrôles incluent, entre autres, l’équilibrage de charge, le blocage des ports et les connexions à d’autres services PaaS.
 

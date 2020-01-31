@@ -1,6 +1,5 @@
 ---
 title: Meilleures pratiques pour la sécurisation et la gestion des charges de travail migrées vers Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Après la migration vers Azure, adoptez les meilleures pratiques pour exploiter, gérer et sécuriser vos charges de travail migrées.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160059"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803838"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Meilleures pratiques pour la sécurisation et la gestion des charges de travail migrées vers Azure
 
@@ -34,7 +33,7 @@ Après la migration, la tâche la plus critique consiste à protéger les charge
 - [Utiliser les journaux d’activité](#best-practice-review-audit-and-security-logs) : Passez en revue vos journaux d’activité d’audit et de sécurité Azure régulièrement.
 - [Réviser les autres fonctionnalités de sécurité](#best-practice-evaluate-other-security-features) : Comprenez et évaluez les fonctionnalités de sécurité avancées d’Azure.
 
-## <a name="best-practice-follow-azure-security-center-recommendations"></a>Meilleure pratique : Suivre les recommandations d’Azure Security Center
+## <a name="best-practice-follow-azure-security-center-recommendations"></a>Bonne pratique : Suivre les recommandations d’Azure Security Center
 
 Microsoft fait tout son possible pour que les administrateurs locataires Azure disposent des informations nécessaires pour activer les fonctionnalités de sécurité qui protègent les charges de travail contre les attaques. Azure Security Center fournit la gestion de la sécurité unifiée. Depuis le Security Center, vous pouvez appliquer des stratégies de sécurité sur l’ensemble des charges de travail, limiter l’exposition aux menaces, détecter et répondre aux attaques. Security Center analyse les ressources et les configurations des locataires Azure et émet des recommandations en matière de sécurité, notamment :
 
@@ -56,14 +55,14 @@ En plus des évaluations et des recommandations, Azure Security Center offre un 
   - Des problèmes de machines virtuelles peuvent se produire indépendamment de l’installation de logiciels. La modification d’un fichier système peut également entraîner une défaillance de la machine virtuelle ou une dégradation des performances. Le Monitoring d’intégrité de fichier examine les fichiers système et les paramètres du registre pour détecter les modifications et vous avertit si quelque chose est mis à jour.
   - Security Center recommande les fichiers à surveiller.
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/security-center/security-center-intro) sur Azure Security Center.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) sur l’accès aux machines virtuelles juste-à-temps.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/security-center/security-center-adaptive-application) sur l’activation des contrôles d’applications adaptatifs.
 - [Prise en main](https://docs.microsoft.com/azure/security-center/security-center-file-integrity-monitoring) du Monitoring d’intégrité de fichier.
 
-## <a name="best-practice-encrypt-data"></a>Meilleure pratique : Chiffrer les données
+## <a name="best-practice-encrypt-data"></a>Bonne pratique : Chiffrer les données
 
 Le chiffrement est une partie importante des pratiques de sécurité d’Azure. S’assurer que le cryptage est activé à tous les niveaux évite que les parties non autorisées accèdent aux données sensibles, notamment les données en transit et au repos.
 
@@ -90,7 +89,7 @@ Contrairement à IaaS où vous gérez vos propres machines virtuelles et votre i
   - TDE permet aux activités de chiffrement d’avoir lieu sans modification au niveau de la couche applicative.
   - TDE peut utiliser les clés de chiffrement fournies par Microsoft ou vous pouvez fournir vos propres clés en utilisant le support Bring Your Own Key.
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview) sur Azure Disk Encryption pour machines virtuelles Iaas.
 - [Activez](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-windows) le chiffrement pour les machines virtuelles IaaS Windows.
@@ -99,7 +98,7 @@ Contrairement à IaaS où vous gérez vos propres machines virtuelles et votre i
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) sur TDE pour Azure SQL Database.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql) sur TDE avec Service Bring Your Own Key (BYOK).
 
-## <a name="best-practice-protect-vms-with-antimalware"></a>Meilleure pratique : Protéger les machines virtuelles avec un logiciel anti-programme malveillant
+## <a name="best-practice-protect-vms-with-antimalware"></a>Bonne pratique : Protéger les machines virtuelles avec un logiciel anti-programme malveillant
 
 En particulier, les anciennes machines virtuelles migrées Azure peuvent ne pas disposer du niveau approprié de logiciel anti-programme malveillant installé. Azure fournit une solution de point de terminaison gratuite qui aide à protéger les machines virtuelles contre les virus, les logiciels espions et autres logiciels malveillants.
 
@@ -110,11 +109,11 @@ En particulier, les anciennes machines virtuelles migrées Azure peuvent ne pas 
 ![Logiciel anti-programme malveillant pour machines virtuelles](./media/migrate-best-practices-security-management/antimalware.png)
 *Logiciel anti-programme malveillant pour machines virtuelles*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/security/azure-security-antimalware) sur Microsoft Antimalware.
 
-## <a name="best-practice-secure-web-apps"></a>Meilleure pratique : Sécuriser les applications web
+## <a name="best-practice-secure-web-apps"></a>Bonne pratique : Sécuriser les applications web
 
 Les applications web migrées sont confrontées à quelques problèmes :
 
@@ -138,7 +137,7 @@ Azure propose quelques solutions :
 ![Sécuriser les applications web](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Consultez une vue d’ensemble](https://docs.microsoft.com/azure/key-vault/key-vault-overview) sur Azure Key Vault.
 - [En savoir plus](https://docs.microsoft.com/azure/application-gateway/waf-overview) sur le pare-feu d’application web.
@@ -146,7 +145,7 @@ Azure propose quelques solutions :
 - [Découvrez comment](https://docs.microsoft.com/azure/key-vault/tutorial-web-application-keyvault) configurer une application web pour lire les secrets de Key Vault.
 - [En savoir plus](https://docs.microsoft.com/azure/application-gateway/waf-overview) sur le pare-feu d’application web.
 
-## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>Meilleure pratique : Examiner les abonnements et les autorisations de ressources
+## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>Bonne pratique : Examiner les abonnements et les autorisations de ressources
 
 Lorsque vous migrez et exécutez vos charges de travail dans Azure, le personnel ayant accès aux charges de travail se déplace. Votre équipe de sécurité doit examiner régulièrement l’accès à vos groupes de locataires et de ressources Azure. Azure propose des offres pour la gestion des identités et la sécurité du contrôle d’accès, y compris le contrôle d’accès en fonction du rôle (RBAC) pour fournir des autorisations d’accès aux ressources Azure.
 
@@ -158,13 +157,13 @@ Lorsque vous migrez et exécutez vos charges de travail dans Azure, le personnel
 ![Contrôle d’accès](./media/migrate-best-practices-security-management/subscription.png)
 *Contrôle d’accès - IAM*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [À propos de](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC.
 - [Découvrez](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) comment gérer les accès à l’aide du contrôle d’accès en fonction du rôle et du portail Azure.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/role-based-access-control/custom-roles) sur les rôles personnalisés.
 
-## <a name="best-practice-review-audit-and-security-logs"></a>Meilleure pratique : Réviser les journaux d’activité d’audit et de sécurité
+## <a name="best-practice-review-audit-and-security-logs"></a>Bonne pratique : Réviser les journaux d’activité d’audit et de sécurité
 
 Azure Active Directory (Azure AD) fournit les journaux d’activité qui apparaissent dans Azure Monitor. Les journaux d’activité de bord capturent les opérations effectuées dans la location Azure, le moment où elles ont eu lieu et qui les a effectuées.
 
@@ -176,12 +175,12 @@ Azure Active Directory (Azure AD) fournit les journaux d’activité qui apparai
 ![Utilisateurs et groupes](./media/migrate-best-practices-security-management/azure-ad.png)
 *Utilisateurs et utilisateurs Azure AD*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor) sur les journaux d’activité Azure AD dans Azure Monitor.
 - [Découvrez comment](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) contrôler les rapports d’activité sur le portail Azure.
 
-## <a name="best-practice-evaluate-other-security-features"></a>Meilleure pratique : Évaluer d’autres fonctionnalités de sécurité
+## <a name="best-practice-evaluate-other-security-features"></a>Bonne pratique : Évaluer d’autres fonctionnalités de sécurité
 
 Azure offre d’autres fonctionnalités de sécurité qui proposent des options de sécurité avancées. Certaines de ces meilleures pratiques nécessitent des licences supplémentaires et des options premium.
 
@@ -204,7 +203,7 @@ Dans cette section, nous recommandons d’adopter quelques bonnes pratiques pour
 - [Superviser l’utilisation des ressources](#best-practice-monitor-resource-usage-and-performance) : Activez la journalisation des diagnostics pour les ressources Azure, créez des alertes et des playbooks pour un dépannage proactif, et utilisez le tableau de bord Azure pour obtenir un affichage unifié sur l’état d’intégrité et le statut de votre déploiement.
 - [Gérer les mises à jour et le support technique](#best-practice-manage-updates) : Comprendre votre plan de support Azure et la façon de le mettre en œuvre, d’obtenir les meilleures pratiques pour maintenir à jour les machines virtuelles et de mettre en place des processus pour la gestion des changements.
 
-## <a name="best-practice-name-resource-groups"></a>Meilleure pratique : Groupes de ressources de nom
+## <a name="best-practice-name-resource-groups"></a>Bonne pratique : Groupes de ressources de nom
 
 Afin d’améliorer la productivité et l’efficacité, assurez-vous que vos groupes de ressources ont des noms significatifs que les administrateurs et les membres de l’équipe du support technique peuvent facilement reconnaître et utiliser.
 
@@ -218,18 +217,18 @@ Afin d’améliorer la productivité et l’efficacité, assurez-vous que vos gr
 
 - [Apprenez-en](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) plus sur les conventions d’affectation de noms.
 
-## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Meilleure pratique : Implémenter les verrous de suppression pour les groupes de ressources
+## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Bonne pratique : Implémenter les verrous de suppression pour les groupes de ressources
 
 La dernière chose dont vous pouvez vous passer est qu’un groupe de ressources disparaisse parce qu’il a été supprimé accidentellement. Nous vous recommandons d’implémenter des verrous de suppression pour que cela ne se produise pas.
 
 ![Supprimer des verrous](./media/migrate-best-practices-security-management/locks.png)
 *Supprimer des verrous*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Découvrez comment](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) verrouiller les ressources pour empêcher les modifications inattendues.
 
-## <a name="best-practice-understand-resource-access-permissions"></a>Meilleure pratique : Comprendre les autorisations d’accès aux ressources
+## <a name="best-practice-understand-resource-access-permissions"></a>Bonne pratique : Comprendre les autorisations d’accès aux ressources
 
 Un propriétaire d’abonnement a accès à tous les groupes de ressources et ressources de votre abonnement.
 
@@ -238,11 +237,11 @@ Un propriétaire d’abonnement a accès à tous les groupes de ressources et re
   - Associez les ressources ayant un cycle de vie similaire. Idéalement, vous ne devriez pas avoir besoin de déplacer une ressource lorsque vous devez supprimer un groupe de ressources complet.
   - Les ressources qui prennent en charge une fonction ou une charge de travail doivent être regroupées pour simplifier leur gestion.
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Découvrez](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise) comment organiser les abonnements et les groupes de ressources.
 
-## <a name="best-practice-tag-resources-effectively"></a>Meilleure pratique : Baliser des ressources efficacement
+## <a name="best-practice-tag-resources-effectively"></a>Bonne pratique : Baliser des ressources efficacement
 
 Il est fréquent que l’utilisation d’un seul nom de groupe de ressources lié aux ressources ne permette de fournir suffisamment de métadonnées pour une mise en œuvre efficace de mécanismes, tels que la facturation interne ou la gestion au sein d’un abonnement.
 
@@ -254,37 +253,37 @@ Il est fréquent que l’utilisation d’un seul nom de groupe de ressources li�
 ![Balisage](./media/migrate-best-practices-security-management/tagging.png)
 *Balisage*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) sur le balisage et les limitations des balises.
 - [Révisez](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags#powershell) les exemples PowerShell et de l’interface de ligne de commande pour configurer le balisage et pour appliquer les balises d’un groupe de ressources à ses ressources.
 - [Consultez](https://www.azurefieldnotes.com/2016/07/18/azure-resource-tagging-best-practices) les meilleures pratiques du balisage Azure.
 
-## <a name="best-practice-implement-blueprints"></a>Meilleure pratique : Implémenter des blueprints
+## <a name="best-practice-implement-blueprints"></a>Bonne pratique : Implémenter des blueprints
 
 À l’instar d’un plan, « blueprint » en anglais, qui permet aux ingénieurs et architectes de décrire les paramètres de conception d’un projet, Azure Blueprint permet aux architectes cloud et aux groupes de l’informatique centrale de définir un ensemble reproductible de ressources Azure qui implémentent et respectent les normes, modèles et exigences d’une organisation. En utilisant Azure Blueprints, les équipes de développement peuvent rapidement construire et créer de nouveaux environnements qui répondent aux exigences de conformité organisationnelle et qui ont un ensemble de composants intégrés, tels que la mise en réseau, visant à accélérer le développement et la livraison.
 
 - Utilisez des blueprints pour orchestrer le déploiement des groupes de ressources, des modèles Azure Resource Manager et des affectations de rôles et de stratégies.
 - Les blueprints sont stockés dans une base de données Azure Cosmos distribuée de façon globale. Les objets Blueprint sont répliqués dans plusieurs régions Azure. La réplication offre une faible latence, une haute disponibilité et un accès cohérent au blueprint, quelle que soit la région dans laquelle un blueprint déploie les ressources.
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/governance/blueprints/overview) sur les blueprints.
 - [Révisez](https://azure.microsoft.com/blog/customizing-azure-blueprints-to-accelerate-ai-in-healthcare) un exemple de blueprint utilisé pour accélérer l’IA dans le secteur de la santé.
 
-## <a name="best-practice-review-azure-reference-architectures"></a>Meilleure pratique : Réviser les architectures de référence Azure
+## <a name="best-practice-review-azure-reference-architectures"></a>Bonne pratique : Réviser les architectures de référence Azure
 
 Construire des charges de travail sécurisées, évolutives et gérables dans Azure peut s’avérer décourageant. Avec les changements continus, il peut être difficile de suivre les différentes fonctionnalités pour un environnement optimal. Il peut être utile d’avoir une référence pour en tirer des leçons lors de la conception et de la migration de vos charges de travail. Azure et ses partenaires Azure ont construit plusieurs exemples d’architectures de référence pour différents types d’environnements. Ces exemples sont conçus pour vous fournir des idées dont vous pouvez tirer des leçons et sur lesquelles vous pouvez vous appuyer.
 
 Les architectures de référence sont organisées par scénario. Elles contiennent les meilleures pratiques et des conseils sur la gestion, la disponibilité, l’évolutivité et la sécurité.
 Azure App Service Environment fournit un environnement entièrement isolé et dédié dans lequel exécuter des applications Azure App Service, notamment des applications Web Windows et Linux, des conteneurs Docker, des Mobile Apps et des fonctions. App Service ajoute la puissance d’Azure à votre application grâce à la sécurité, l’équilibrage de charge, la mise à l’échelle automatique et la gestion automatisée. Vous pouvez également bénéficier de ses fonctionnalités DevOps, notamment le déploiement continu à partir d’Azure DevOps et GitHub, la gestion des packages, les environnements intermédiaires et les certificats SSL. App Service est utile pour les applications qui ont besoin d’une isolation et d’un accès réseau sécurisé, et pour celles qui utilisent de grandes quantités de mémoire et d’autres ressources qui ont besoin d’être mises à l’échelle.
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/architecture/reference-architectures) sur les architectures de référence Azure.
 - [Révisez](https://docs.microsoft.com/azure/architecture/example-scenario) les exemples de scénarios Azure
 
-## <a name="best-practice-manage-resources-with-azure-management-groups"></a>Meilleure pratique : Gérer les ressources avec les groupes d’administration Azure
+## <a name="best-practice-manage-resources-with-azure-management-groups"></a>Bonne pratique : Gérer les ressources avec les groupes d’administration Azure
 
 Si votre organisation dispose de plusieurs abonnements, vous avez besoin de gérer l’accès, les stratégies et la conformité de ceux-ci. Les groupes d’administration Azure fournissent un niveau d’étendue au-delà des abonnements.
 
@@ -299,11 +298,11 @@ Le diagramme suivant montre un exemple de création d’une hiérarchie pour la 
 ![Groupes d’administration](./media/migrate-best-practices-security-management/management-groups.png)
 *Groupes d’administration*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/governance/management-groups/index) sur l’organisation de ressources en groupes d’administration.
 
-## <a name="best-practice-deploy-azure-policy"></a>Meilleure pratique : Déployer Azure Policy
+## <a name="best-practice-deploy-azure-policy"></a>Bonne pratique : Déployer Azure Policy
 
 Azure Policy est un service d’Azure que vous utilisez pour créer, affecter et gérer des stratégies.
 
@@ -315,12 +314,12 @@ Azure Policy est un service d’Azure que vous utilisez pour créer, affecter et
 ![Azure Policy](./media/migrate-best-practices-security-management/policy.png)
 *Azure Policy*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Consultez une vue d’ensemble](https://docs.microsoft.com/azure/governance/policy/overview) d’Azure Policy.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) sur la création et la gestion des stratégies pour appliquer la conformité.
 
-## <a name="best-practice-implement-a-bcdr-strategy"></a>Meilleure pratique : Implémenter une stratégie BCDR
+## <a name="best-practice-implement-a-bcdr-strategy"></a>Bonne pratique : Implémenter une stratégie BCDR
 
 La planification de la continuité d’activité et reprise d’activité (BCDR) est un exercice essentiel que vous devez effectuer dans le cadre du processus de planification de la migration vers Azure. En termes juridiques, votre contrat peut comporter une clause de force majeure qui excuse les obligations dues à une force plus importante comme les ouragans ou les tremblements de terre. Cependant, vous devez faire en sorte que les services continuent de fonctionner et de se rétablir au besoin en cas d’urgence. Votre capacité à le faire peut faire ou défaire l’avenir de votre entreprise.
 
@@ -342,7 +341,7 @@ Dans la plupart des cas, une charge de travail locale est supprimée après la m
 
 Pour les charges de travail exécutées sur des machines virtuelles Azure IaaS, pensez à ces solutions de sauvegarde :
 
-- **Sauvegarde Azure :** Fournit des sauvegardes cohérentes avec les applications pour les machines virtuelles Azure Linux et Windows.
+- **Sauvegarde Azure :** Fournit des sauvegardes cohérentes avec les applications pour les machines virtuelles Azure Linux et Windows.
 - **Captures instantanées du stockage :** Prend des captures instantanées du stockage blob.
 
 #### <a name="azure-backup"></a>Sauvegarde Azure
@@ -360,7 +359,7 @@ Pour des raisons de sécurité, Azure Backup chiffre les données en transit à 
 ![Sauvegarde Azure](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Sauvegarde Azure*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) sur les différents types de sauvegardes.
 - [Planifiez une infrastructure de sauvegarde](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction) pour les machines virtuelles Azure.
@@ -399,12 +398,12 @@ Site Recovery réplique des machines virtuelles d’une région primaire à une 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
 *Site Recovery*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Révisez](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) les scénarios de récupération d’urgence des machines virtuelles Azure.
 - [Découvrez comment](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-replicate-after-migration) configurer la récupération d’urgence pour une machine virtuelle Azure après la migration.
 
-## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Meilleure pratique : Utiliser des disques managés et des groupes à haute disponibilité
+## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Bonne pratique : Utiliser des disques managés et des groupes à haute disponibilité
 
 Azure utilise des groupes à haute disponibilité pour regrouper logiquement les machines virtuelles et pour isoler les machines virtuelles d’un groupe d’autres ressources. Les machines virtuelles d’un groupe à haute disponibilité sont réparties sur plusieurs domaines d’erreur avec des sous-systèmes séparés, pour se protéger contre les défaillances locales, et elles sont également réparties sur plusieurs domaines de mise à jour de sorte que toutes les machines virtuelles d’un groupe redémarrent en même temps.
 
@@ -417,13 +416,13 @@ Les disques managés Azure simplifient la gestion des disques des machines virtu
 ![Disques managés](./media/migrate-best-practices-security-management/managed-disks.png)
 *Disques managés*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Consultez une vue d’ensemble](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) sur les disques managés.
 - [Découvrez comment](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) convertir des disques en disques managés.
 - [Découvrez comment](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability) gérer la disponibilité des machines virtuelles Windows dans Azure.
 
-## <a name="best-practice-monitor-resource-usage-and-performance"></a>Meilleure pratique : Superviser l’utilisation des ressources et les performances
+## <a name="best-practice-monitor-resource-usage-and-performance"></a>Bonne pratique : Superviser l’utilisation des ressources et les performances
 
 Vous avez peut-être déplacé vos charges de travail vers Azure pour ses immenses capacités de mise à l’échelle. Cependant, le déplacement de votre charge de travail ne signifie pas qu’Azure implémentera automatiquement la mise à l’échelle. Par exemple :
 
@@ -438,14 +437,14 @@ Ces deux cas ont des résolutions différentes, mais, pour chacun d’eux, vous 
 ![Azure Monitor](./media/migrate-best-practices-security-management/monitor.png)
 *Azure Monitor*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Découvrez](https://docs.microsoft.com/azure/azure-monitor/overview) Azure Monitor.
 - [Adoptez les meilleures pratiques](https://docs.microsoft.com/azure/architecture/best-practices/monitoring) pour l’analyse et les diagnostics.
 - [Découvrez](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling) la mise à l’échelle automatique.
 - [Découvrez comment](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) router les données Azure vers un outil SIEM.
 
-## <a name="best-practice-enable-diagnostic-logging"></a>Meilleure pratique : Activer la journalisation des diagnostics
+## <a name="best-practice-enable-diagnostic-logging"></a>Bonne pratique : Activer la journalisation des diagnostics
 
 Les ressources Azure génèrent un bon nombre de métriques de journalisation et de données de télémétrie.
 
@@ -456,12 +455,12 @@ Les ressources Azure génèrent un bon nombre de métriques de journalisation et
 ![Journalisation des diagnostics](./media/migrate-best-practices-security-management/diagnostics.png)
 *Journalisation des diagnostics*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) sur la collecte et l’utilisation des données de journal.
 - [Découvrez les opérations prises en charge](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-diagnostic-logs-schema) pour la journalisation des diagnostics.
 
-## <a name="best-practice-set-up-alerts-and-playbooks"></a>Meilleure pratique : Configurer les alertes et les playbooks
+## <a name="best-practice-set-up-alerts-and-playbooks"></a>Bonne pratique : Configurer les alertes et les playbooks
 
 Alors que la journalisation des diagnostics est activée pour les ressources Azure, vous pouvez commencer à utiliser les données de journalisation pour créer des alertes personnalisées.
 
@@ -473,12 +472,12 @@ Alors que la journalisation des diagnostics est activée pour les ressources Azu
 ![Alertes](./media/migrate-best-practices-security-management/alerts.png)
 *Alertes*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Découvrez-en plus sur](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-alerts) les alertes.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/security-center/security-center-playbooks) sur les playbooks de sécurité qui répondent aux alertes Security Center.
 
-## <a name="best-practice-use-the-azure-dashboard"></a>Meilleure pratique : Utiliser le tableau de bord Azure
+## <a name="best-practice-use-the-azure-dashboard"></a>Bonne pratique : Utiliser le tableau de bord Azure
 
 Le portail Azure est une seule console unifiée qui permet de créer, gérer et surveiller tout, de simples applications web à des applications de cloud complexes. Il comprend un tableau de bord personnalisable et des options d’accessibilité.
 
@@ -488,12 +487,12 @@ Le portail Azure est une seule console unifiée qui permet de créer, gérer et 
 ![Tableau de bord Azure](./media/migrate-best-practices-security-management/dashboard.png)
 *Tableau de bord Azure*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Découvrez comment](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards) créer un tableau de bord.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-structure) sur la structure de tableau de bord.
 
-## <a name="best-practice-understand-support-plans"></a>Meilleure pratique : Comprendre les plans de support
+## <a name="best-practice-understand-support-plans"></a>Bonne pratique : Comprendre les plans de support
 
 À un moment donné, vous devrez collaborer avec votre personnel de soutien ou le personnel du support technique Microsoft. Il est essentiel de disposer d’un ensemble de stratégies et de procédures de support lors de scénarios, tels que la récupération d’urgence. De plus, vos administrateurs et votre personnel de support doivent être formés à l’implémentation de ces stratégies.
 
@@ -503,12 +502,12 @@ Le portail Azure est une seule console unifiée qui permet de créer, gérer et 
 ![Plans de support](./media/migrate-best-practices-security-management/support.png)
 *Plans de support*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Consultez une vue d’ensemble](https://azure.microsoft.com/support/options) des plans de support Azure.
 - [Apprenez-en davantage](https://azure.microsoft.com/support/legal/sla) sur les contrats de niveau de service (SLA).
 
-## <a name="best-practice-manage-updates"></a>Meilleure pratique : Gérer les mises à jour
+## <a name="best-practice-manage-updates"></a>Bonne pratique : Gérer les mises à jour
 
 Le maintien à jour des machines virtuelles Azure avec les dernières mises à jour du système d’exploitation et du logiciel est une tâche énorme. La capacité de faire émerger toutes les machines virtuelles, de déterminer les mises à jour dont elles ont besoin et d’envoyer (push) automatiquement ces mises à jour est extrêmement utile.
 
@@ -520,7 +519,7 @@ Le maintien à jour des machines virtuelles Azure avec les dernières mises à j
 ![Mises à jour de la machine virtuelle](./media/migrate-best-practices-security-management/updates.png)
 *Mises à jour*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/automation/automation-update-management) sur la gestion des mises à jour dans Azure.
 - [Découvrez comment](https://docs.microsoft.com/azure/automation/oms-solution-updatemgmt-sccmintegration) intégrer System Center Configuration Manager à Update Management.
@@ -544,14 +543,14 @@ Azure possède une solution Suivi des modifications dans Azure Automation :
 ![Gestion des changements](./media/migrate-best-practices-security-management/change.png)
 *Gestion des changements*
 
-**En savoir plus :**
+**En savoir plus :**
 
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/automation/automation-change-tracking) sur le Suivi des modifications.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/automation/automation-intro) sur les fonctionnalités d’Azure Automation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Passez en revue d’autres meilleures pratiques :
+Passez en revue d’autres meilleures pratiques :
 
 - [Meilleures pratiques](./migrate-best-practices-networking.md) relatives au réseau après la migration.
 - [Meilleures pratiques](./migrate-best-practices-costs.md) relatives à la gestion des coûts après la migration.

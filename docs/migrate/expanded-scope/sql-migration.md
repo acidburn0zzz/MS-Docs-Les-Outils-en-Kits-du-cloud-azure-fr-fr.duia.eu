@@ -1,6 +1,5 @@
 ---
 title: Accélérer la migration en migrant une instance de SQL Server
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: La migration d’instances entières peut accélérer les efforts de migration de la charge de travail.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
-ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
+ms.openlocfilehash: 5b2190456e63c0e1da39f064e34d63eebbf4d998
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "75328920"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802988"
 ---
 # <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Accélérer la migration en migrant plusieurs bases de données ou serveurs SQL entiers
 

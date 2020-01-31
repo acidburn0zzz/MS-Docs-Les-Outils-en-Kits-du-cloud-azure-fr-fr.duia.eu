@@ -1,6 +1,5 @@
 ---
 title: Métriques, indicateurs et tolérance au risque de la base de référence des identités
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métriques, indicateurs et tolérance au risque de la base de référence des identités
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5002d278e833873a2077538c848bc5e7f47131d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220429"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806031"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Métriques, indicateurs et tolérance au risque de la base de référence des identités
 
@@ -39,7 +38,7 @@ Voici quelques exemples de métriques utiles que vous devez rassembler pour mieu
 - **Revendications d’autorisation.** Nombre de réussites et d’échecs des tentatives effectuées par les utilisateurs pour accéder aux ressources.
 - **Comptes compromis.** Nombre de comptes d’utilisateur qui ont été compromis.
 
-## <a name="risk-tolerance-indicators"></a>Indicateurs de tolérance aux risques
+## <a name="risk-tolerance-indicators"></a>Indicateurs de tolérance au risque
 
 Les risques liés à la Base de référence des identités sont principalement liés à la complexité de l’infrastructure d’identité de votre organisation. Si tous vos utilisateurs et groupes sont gérés en utilisant un seul annuaire ou fournisseur d’identité cloud natif avec une intégration minimale à d’autres services, votre niveau de risque est probablement faible. Cependant, comme les besoins de votre entreprise doivent normalement s’accroître, vos systèmes de Base de référence des identités devront probablement prendre en charge des scénarios plus complexes, comme plusieurs annuaires prenant en charge votre organisation interne ou la fédération avec des fournisseurs d’identité externes. À mesure que ces systèmes deviennent plus complexes, le risque augmente.
 

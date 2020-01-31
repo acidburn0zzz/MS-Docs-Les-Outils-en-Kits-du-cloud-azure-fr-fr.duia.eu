@@ -1,6 +1,5 @@
 ---
 title: Évaluer les ressources avant la migration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Évaluer les ressources avant la migration
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 76862bfbc4a88d34edb3dddb6281b5c435e6be73
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753462"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802495"
 ---
 # <a name="assess-assets-prior-to-migration"></a>Évaluer les ressources avant la migration
 
@@ -40,7 +39,7 @@ L’équipe d’adoption du cloud est responsable de l’ensemble du processus d
 
 ## <a name="responsibilities-during-assessment"></a>Obligations liées à l’évaluation
 
-Outre la responsabilité d’ensemble, certaines actions doivent être affectées directement à un individu ou à un groupe. Voici quelques-unes des activités qui doivent être confiées à des parties responsables :
+En plus de la responsabilité d’ensemble, certaines actions doivent être affectées directement à un individu ou à un groupe. Voici quelques-unes des activités qui doivent être confiées à des parties responsables :
 
 - **Priorité de l’entreprise.** L’équipe comprend le but de la migration de cette charge de travail, notamment tout impact prévu sur l’entreprise.
   - Un membre de l’équipe de stratégie cloud doit assumer la responsabilité finale de cette activité, sous la direction de l’équipe d’adoption du cloud.

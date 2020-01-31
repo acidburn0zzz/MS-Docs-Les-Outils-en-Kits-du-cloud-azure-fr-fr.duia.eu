@@ -1,6 +1,5 @@
 ---
 title: Modèle d'accélération du déploiement
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Modèle d'accélération du déploiement
 author: alexbuckgit
 ms.author: abuck
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 96b10c0c5494325c2cd7b46c1415dfd544932962
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 210abd5fe90810dea0d4da65422b2db8d66b4c26
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223601"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806354"
 ---
 # <a name="deployment-acceleration-template"></a>Modèle d'accélération du déploiement
 
-La première étape de l'implémentation d'une modification consiste à communiquer autour de la modification désirée. Il en est de même lors de la modification des pratiques de gouvernance. Le modèle ci-dessous sert de point de départ pour documenter et communiquer les déclarations de stratégie qui régissent les problèmes de configuration et de déploiement dans le cloud. Ce modèle décrit également les critères qui peuvent vous avoir amené à créer les déclarations de stratégie documentées.
+La première étape de l’implémentation d’une modification consiste à communiquer autour de la modification désirée. Il en est de même lors de la modification des pratiques de gouvernance. Le modèle ci-dessous sert de point de départ pour documenter et communiquer les déclarations de stratégie qui régissent les problèmes de configuration et de déploiement dans le cloud. Ce modèle décrit également les critères qui peuvent vous avoir amené à créer les déclarations de stratégie documentées.
 
 À mesure que vos discussions progressent, utilisez la structure de ce modèle comme modèle pour capturer les risques métier, les tolérances aux risques, les processus de conformité et les outils nécessaires pour définir les déclarations de stratégie d’accélération du déploiement de votre organisation.
 

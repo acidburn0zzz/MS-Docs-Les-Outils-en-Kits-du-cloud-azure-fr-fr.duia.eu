@@ -1,6 +1,5 @@
 ---
 title: Utiliser Terraform pour créer vos zones d’atterrissage
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Apprenez à utiliser Terraform pour créer vos zones d’atterrissage.
 author: arnaudlh
 ms.author: arnaul
@@ -8,12 +7,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 54fa496c7b97231a8ad8cc7150717bb942bf07a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753755"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798976"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Utiliser Terraform pour créer vos zones d’atterrissage
 
@@ -27,7 +26,7 @@ La zone d’atterrissage de base du Framework d’adoption du cloud pour Terrafo
 
 La réutilisation des composants est un principe fondamental de l’infrastructure en tant que code. Les modules jouent un rôle déterminant dans la définition des normes et la cohérence du déploiement des ressources à l’échelle de chaque environnement. Les modules utilisés pour déployer cette première zone d’atterrissage sont disponibles dans le [registre Terraform](https://registry.terraform.io/search?q=aztfmod) officiel.
 
-## <a name="architecture-diagram"></a>Diagramme de l’architecture
+## <a name="architecture-diagram"></a>Diagramme de l'architecture
 
 La première zone d’atterrissage déploie les composants suivants dans votre abonnement :
 
@@ -83,7 +82,7 @@ Les décisions suivantes sont représentées dans la zone d’atterrissage Terra
 
 L’ensemble suivant de balises minimales doit être présent sur toutes les ressources et tous les groupes de ressources :
 
-| Nom de la balise | Description | Clé | Exemple de valeur |
+| Nom de la balise | Description | Clé | Valeur d'exemple |
 |--|--|--|--|
 | Unité commerciale | Division de niveau supérieur de votre entreprise qui est propriétaire de l’abonnement ou de la charge de travail auxquels la ressource appartient. | BusinessUnit | FINANCE, MARKETING, {Product Name}, CORP, SHARED |
 | Cost Center | Centre de coût comptable associé à cette ressource.| CostCenter | Number |
@@ -189,7 +188,7 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 Une fois que vous avez examiné la configuration, vous pouvez la déployer comme vous le feriez pour déployer un environnement Terraform. Nous vous recommandons d’utiliser le rover, qui est un conteneur Docker qui permet le déploiement à partir de Windows, Linux ou MacOS. Vous pouvez vous familiariser avec le [référentiel rover GitHub](https://github.com/aztfmod/rover).
 

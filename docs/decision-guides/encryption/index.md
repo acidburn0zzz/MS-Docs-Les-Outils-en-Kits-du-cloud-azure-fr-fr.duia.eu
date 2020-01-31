@@ -1,6 +1,5 @@
 ---
 title: Guide de décision concernant le chiffrement
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment utiliser le chiffrement comme un service principal lors des migrations vers Azure.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df170713e10460d9e928837a99287be0afd5805
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753351"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807051"
 ---
 # <a name="encryption-decision-guide"></a>Guide de décision concernant le chiffrement
 
@@ -36,11 +35,11 @@ Les systèmes modernes de gestion des clés comme Azure Key Vault prennent en ch
 
 Si vous planifiez une migration vers le cloud, le tableau suivant peut vous aider à choisir comment stocker et gérer les clés de chiffrement, les certificats et les secrets qui sont critiques pour la création de déploiements cloud sécurisés et faciles à gérer :
 
-| Question | Cloud natif | Bring Your Own Key (BYOK) | Hold Your Own Key |
+| Question | Cloud natif | BYOK (Bring Your Own Key) | Hold Your Own Key |
 |---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
-| Manque-t-il un système centralisé de gestion des secrets et des clés à votre organisation ?                                                                    | OUI          | Non     | Non          |
-| Devrez-vous restreindre la création de clés et de secrets sur les appareils locaux lors de l’utilisation de ces clés dans le cloud ? | Non           | OUI    | Non          |
-| Votre organisation a-t-elle mis en place des règles ou des stratégies qui empêchent le stockage hors site des clés ?                | Non           | Non     | OUI         |
+| Manque-t-il un système centralisé de gestion des secrets et des clés à votre organisation ?                                                                    | Oui          | Non     | Non          |
+| Devrez-vous restreindre la création de clés et de secrets sur les appareils locaux lors de l’utilisation de ces clés dans le cloud ? | Non           | Oui    | Non          |
+| Votre organisation a-t-elle mis en place des règles ou des stratégies qui empêchent le stockage hors site des clés ?                | Non           | Non     | Oui         |
 
 ### <a name="cloud-native"></a>Cloud natif
 
@@ -51,7 +50,7 @@ L’utilisation d’un système natif de gestion des clés dans le cloud suppose
 - Vous faites confiance à la solution cloud de gestion des clés pour créer, gérer et héberger les secrets et les clés de votre organisation.
 - Vous avez activé l’ensemble des applications et des services locaux qui ont besoin des services de chiffrement ou des secrets pour accéder au système de gestion des clés dans le cloud.
 
-### <a name="bring-your-own-key"></a>Bring Your Own Key (BYOK)
+### <a name="bring-your-own-key"></a>BYOK (Bring Your Own Key)
 
 Avec une approche de type Bring Your Own Key, vous générez des clés sur du matériel HSM dédié au sein de votre environnement local, puis vous transférez ces clés de manière sécurisée vers un système de gestion basé sur le cloud tel qu’Azure Key Vault en vue de les utiliser avec vos ressources hébergées dans le cloud.
 

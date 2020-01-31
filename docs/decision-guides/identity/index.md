@@ -1,6 +1,5 @@
 ---
 title: Guide de décision concernant l’identité
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment utiliser l’identité comme un service principal lors des migrations vers Azure.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b447330368823947bfe027036b14c3a6c1fb94f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753193"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807102"
 ---
 # <a name="identity-decision-guide"></a>Guide de décision concernant l’identité
 
@@ -34,10 +33,10 @@ La gestion des identités basée sur le cloud est un processus itératif. Pour u
 
 | Question | Base de référence cloud | Synchronisation de répertoires | Services de domaines hébergés dans le cloud | Services de fédération Active Directory (AD FS) |
 |------|------|------|------|------|
-| À l’heure actuelle, vous manque-t-il un service d’annuaire local ? | OUI | Non | Non | Non |
-| Vos charges de travail doivent-elles utiliser un ensemble commun d’utilisateurs et de groupes dans l’environnement cloud et l’environnement local ? | Non | OUI | Non | Non |
-| Vos charges de travail dépendent-elles des mécanismes d’authentification hérités, tels NTLM ou Kerberos ? | Non | Non | OUI | OUI |
-| Avez-vous besoin de l’authentification unique auprès de plusieurs fournisseurs d’identité ? | Non | Non | Non | OUI |
+| À l’heure actuelle, vous manque-t-il un service d’annuaire local ? | Oui | Non | Non | Non |
+| Vos charges de travail doivent-elles utiliser un ensemble commun d’utilisateurs et de groupes dans l’environnement cloud et l’environnement local ? | Non | Oui | Non | Non |
+| Vos charges de travail dépendent-elles des mécanismes d’authentification hérités, tels NTLM ou Kerberos ? | Non | Non | Oui | Oui |
+| Avez-vous besoin de l’authentification unique auprès de plusieurs fournisseurs d’identité ? | Non | Non | Non | Oui |
 
 Dans le cadre de la planification de votre migration vers Azure, vous devez déterminer la meilleure méthode pour intégrer votre gestion des identités et les services d’identité cloud. Les paragraphes suivants illustrent des scénarios d’intégration courants.
 
