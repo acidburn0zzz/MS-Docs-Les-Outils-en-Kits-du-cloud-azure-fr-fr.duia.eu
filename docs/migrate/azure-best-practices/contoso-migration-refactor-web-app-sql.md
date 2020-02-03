@@ -1,6 +1,5 @@
 ---
 title: Refactoriser une application en la migrant vers Azure App Service et Azure SQL Database
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment Contoso réhéberge une application locale en la migrant vers une application web Azure App Service et une base de données Azure SQL Server.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0d0fa87d424cbdf33e2b8516dd43b5156b55756
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 35a64b9f42df3737e186d25a43ecad457010607d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566573"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807442"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refactoriser une application locale vers une application web Azure App Service et une base de données Azure SQL
 
@@ -102,7 +101,7 @@ Contoso évalue la conception proposée en dressant une liste des avantages et d
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Créez des applications cloud performantes en utilisant une plateforme entièrement gérée. | Coût en fonction de la taille, de l’emplacement et de la durée d’utilisation. [Plus d’informations](https://azure.microsoft.com/pricing/details/app-service/windows)
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Fournit un pipeline d’intégration et de déploiement continus (CI/CD) pour le développement d’applications. Le pipeline démarre avec un dépôt Git pour la gestion du code de l’application, un système de build pour la production de packages et d’autres artefacts de build, et un système Release Management pour le déploiement de modifications sur les environnements de production, de test et de développement.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Voici ce dont Contoso a besoin pour exécuter ce scénario :
 
@@ -122,13 +121,13 @@ Voici comment Contoso exécutera la migration :
 > [!div class="checklist"]
 >
 > - **Étape 1 : Approvisionner une instance SQL Database dans Azure.** Contoso approvisionne une instance SQL dans Azure. Une fois le site web de l’application migré vers Azure, l’application web du service WCF pointe sur cette instance.
-> - **Étape 2 : Migrer la base de données avec DMA.** Contoso migre la base de données de l’application à l’aide de l’Assistant Migration de données.
-> - **Étape 3 : Approvisionner des applications web.** Contoso provisionne les deux applications web.
-> - **Étape 4 : Configurer Azure DevOps.** Contoso crée un projet Azure DevOps et importe le dépôt Git.
-> - **Étape 5 : Configurer des chaînes de connexion.** Contoso configure les chaînes de connexion afin que l’application web du niveau web, l’application web du service WCF et l’instance SQL puissent communiquer.
-> - **Étape 6 : Configurer des pipelines de build et de mise en production.** Pour terminer, Contoso configure des pipelines de build et de mise en production pour créer l’application et la déployer sur deux applications web distinctes.
+> - **Étape 2 : Migrer la base de données avec DMA.** Contoso migre la base de données de l’application à l’aide de l’Assistant Migration de données.
+> - **Étape 3 : Approvisionner des applications web.** Contoso provisionne les deux applications web.
+> - **Étape 4 : Configurer Azure DevOps.** Contoso crée un projet Azure DevOps et importe le dépôt Git.
+> - **Étape 5 : Configurer des chaînes de connexion.** Contoso configure les chaînes de connexion afin que l’application web du niveau web, l’application web du service WCF et l’instance SQL puissent communiquer.
+> - **Étape 6 : Configurer des pipelines de build et de mise en production.** Pour terminer, Contoso configure des pipelines de build et de mise en production pour créer l’application et la déployer sur deux applications web distinctes.
 
-## <a name="step-1-provision-an-azure-sql-database"></a>Étape 1 : Provisionner une base de données Azure SQL
+## <a name="step-1-provision-an-azure-sql-database"></a>Étape 1 : Provisionner une base de données Azure SQL
 
 1. Les administrateurs Contoso choisissent de créer une base de données SQL Database dans Azure.
 
@@ -160,7 +159,7 @@ Voici comment Contoso exécutera la migration :
 - [Obtenir de l’aide](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) pour le provisionnement d’une base de données SQL.
 - [En savoir plus](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) sur les limites de ressources v-Core.
 
-## <a name="step-2-migrate-the-database-with-dma"></a>Étape 2 : Migrer la base de données avec le DMA
+## <a name="step-2-migrate-the-database-with-dma"></a>Étape 2 : Migrer la base de données avec le DMA
 
 Les administrateurs Contoso vont migrer la base de données SmartHotel360 avec DMA.
 
@@ -243,7 +242,7 @@ Contoso doit générer l’infrastructure et les pipelines DevOps pour l’appli
 
     ![Se connecter à un projet](./media/contoso-migration-refactor-web-app-sql/devops1.png)
 
-4. Une fois le référentiel cloné sur la machine du développeur, ils ouvrent le fichier Solution de l’application. L’application web et le service wcf ont chacun un projet distinct dans le fichier.
+4. Une fois le dépôt cloné sur la machine du développeur, ils ouvrent le fichier Solution de l’application. L’application web et le service wcf ont chacun un projet distinct dans le fichier.
 
     ![Fichier solution](./media/contoso-migration-refactor-web-app-sql/vsts4.png)
 
@@ -319,7 +318,7 @@ Les administrateurs de Contoso configurent maintenant Azure DevOps pour lancer l
 
 12. Dans le pipeline > **Artefacts**, ils sélectionnent **+Ajouter un artefact**, puis ils choisissent de générer avec le pipeline **ContosoSmarthotel360Refactor**.
 
-     ![Créer](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![Build](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. Ils sélectionnent l’éclair qui se trouve sur l’artefact coché pour activer le déclencheur de déploiement continu.
 

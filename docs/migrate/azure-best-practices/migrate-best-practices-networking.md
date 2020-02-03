@@ -1,6 +1,5 @@
 ---
 title: Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Après une migration vers Azure, adoptez les meilleures pratiques pour apprendre à configurer le réseau pour vos charges de travail migrées.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753618"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803872"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
 
@@ -37,7 +36,7 @@ Azure fournit des réseaux virtuels (VNet) :
 
 Lorsque vous planifiez votre topologie de réseau virtuel, vous devez penser à la manière d’organiser les espaces d’adressage IP, d’implémenter un réseau hub-and-spoke, de segmenter les réseaux virtuels en sous-réseaux, de configurer le serveur DNS et d’implémenter les zones de disponibilité Azure.
 
-## <a name="best-practice-plan-ip-addressing"></a>Meilleure pratique : Planifier l’adressage IP
+## <a name="best-practice-plan-ip-addressing"></a>Bonne pratique : Planifier l’adressage IP
 
 Lorsque vous créez des réseaux virtuels dans le cadre de votre migration, il est important de planifier l’espace d’adressage IP de vos réseaux virtuels.
 
@@ -52,7 +51,7 @@ Lorsque vous créez des réseaux virtuels dans le cadre de votre migration, il e
 - [Lisez](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) la FAQ relative à la mise en réseau.
 - [Découvrez](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) les limites de la mise en réseau.
 
-## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Meilleure pratique : Implémenter une topologie de réseau hub-and-spoke
+## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bonne pratique : Implémenter une topologie de réseau hub-and-spoke
 
 Une topologie de réseau hub-and-spoke isole des charges de travail tout en partageant des services tels que l’identité et la sécurité.
 
@@ -76,7 +75,7 @@ Tenez compte des éléments suivants :
 - Obtenir des recommandations de réseau pour l’exécution de machines virtuelles [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) et [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) dans Azure.
 - [En savoir plus](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) sur le peering de réseaux virtuels.
 
-## <a name="best-practice-design-subnets"></a>Meilleure pratique : conception des sous-réseaux
+## <a name="best-practice-design-subnets"></a>Bonne pratique : conception des sous-réseaux
 
 Pour garantir une forme d’isolation à l’intérieur d’un réseau virtuel, vous devez le segmenter en un ou plusieurs sous-réseaux et allouer une partie de l’espace d’adressage du réseau virtuel à chaque sous-réseau.
 
@@ -102,7 +101,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Machines virtuelles de base de données
 - [En savoir plus](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation) sur la conception des sous-réseaux.
 - [Découvrez comment](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) une société fictive (Contoso) a préparé son infrastructure réseau en vue d’une migration.
 
-## <a name="best-practice-set-up-a-dns-server"></a>Meilleure pratique : sélection d’un serveur DNS
+## <a name="best-practice-set-up-a-dns-server"></a>Bonne pratique : sélection d’un serveur DNS
 
 Azure ajoute par défaut un serveur DNS lorsque vous déployez un réseau virtuel. Cela vous permet de créer des réseaux virtuels et de déployer des ressources rapidement. Toutefois, ce serveur DNS fournit uniquement des services aux ressources qui se trouvent sur ce réseau virtuel. Si vous souhaitez connecter plusieurs réseaux virtuels entre eux, ou vous connecter à un serveur local à partir de réseaux virtuels, vous avez besoin de fonctionnalités de résolution de noms supplémentaires. Par exemple, vous devrez peut-être utiliser Active Directory pour résoudre les noms DNS entre des réseaux virtuels. Pour ce faire, vous devez déployer votre propre serveur DNS personnalisé dans Azure.
 
@@ -120,9 +119,9 @@ Azure ajoute par défaut un serveur DNS lorsque vous déployez un réseau virtue
 **En savoir plus :**
 
 - [En savoir plus sur](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) la résolution de noms lorsque vous utilisez votre propre serveur DNS.
-- [En savoir plus sur](../../ready/azure-best-practices/naming-and-tagging.md) les règles et restrictions d’affectation de noms DNS.
+- [En savoir plus sur](../../ready/azure-best-practices/naming-and-tagging.md) les règles et restrictions de nommage DNS.
 
-## <a name="best-practice-set-up-availability-zones"></a>Meilleure pratique : Configurer des zones de disponibilité
+## <a name="best-practice-set-up-availability-zones"></a>Bonne pratique : Configurer des zones de disponibilité
 
 Les zones de disponibilité augmentent la haute disponibilité de manière à protéger les applications et les données contre les défaillances de centre de données.
 
@@ -156,7 +155,7 @@ Pour une migration réussie, il est essentiel de connecter les réseaux d’entr
 
 - [En savoir plus](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) sur la mise en réseau de cloud hybride.
 
-## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>Meilleure pratique : implémentation d’un VPN de site à site à haute disponibilité
+## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>Bonne pratique : implémentation d’un VPN de site à site à haute disponibilité
 
 Pour implémenter un VPN de site à site, vous devez configurer une passerelle VPN dans Azure.
 
@@ -194,7 +193,7 @@ Lorsque vous configurez un VPN de site à site, procédez comme suit :
 - [En savoir plus](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) sur les références SKU de passerelle.
 - [En savoir plus](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-bgp-overview) sur la configuration de BGP avec les passerelles VPN Azure.
 
-### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>Meilleure pratique : configuration d’une passerelle pour les passerelles VPN
+### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>Bonne pratique : configuration d’une passerelle pour les passerelles VPN
 
 Lorsque vous créez une passerelle VPN dans Azure, vous devez utiliser un sous-réseau spécial nommé GatewaySubnet. Lorsque vous créez ce sous-réseau, tenez compte de ces meilleures pratiques :
 
@@ -207,7 +206,7 @@ Lorsque vous créez une passerelle VPN dans Azure, vous devez utiliser un sous-r
 
 - [Utilisez cet outil](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) pour déterminer votre espace d’adressage IP.
 
-## <a name="best-practice-implement-azure-virtual-wan-for-branch-offices"></a>Meilleure pratique : implémentation d’Azure Virtual WAN pour les succursales
+## <a name="best-practice-implement-azure-virtual-wan-for-branch-offices"></a>Bonne pratique : implémentation d’Azure Virtual WAN pour les succursales
 
 Dans le cas de plusieurs connexions VPN, le service réseau Azure Virtual WAN offre une connectivité de branche à branche optimisée et automatisée via Azure.
 
@@ -218,7 +217,7 @@ Dans le cas de plusieurs connexions VPN, le service réseau Azure Virtual WAN of
 **En savoir plus :** 
 [En savoir plus](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) sur Azure Virtual WAN.
 
-### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>Meilleure pratique : Implémentation d’ExpressRoute pour les connexions stratégiques
+### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>Bonne pratique : Implémentation d’ExpressRoute pour les connexions stratégiques
 
 Le service Azure ExpressRoute étend votre infrastructure locale dans le cloud Microsoft en créant des connexions privées entre le centre de données virtuel Azure et des réseaux locaux.
 
@@ -235,7 +234,7 @@ Le déploiement de connexions ExpressRoute implique généralement la souscripti
 - [Lire une présentation](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) d’ExpressRoute.
 - [En savoir plus](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about) sur ExpressRoute Direct.
 
-### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Meilleure pratique : optimisation du routage ExpressRoute avec les communautés BGP
+### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Bonne pratique : optimisation du routage ExpressRoute avec les communautés BGP
 
 En présence de plusieurs circuits ExpressRoute, vous pouvez vous connecter à Microsoft par le biais de plusieurs chemins d’accès. Par conséquent, le routage peut ne pas être optimal et votre trafic peut emprunter un chemin d’accès plus long pour atteindre Microsoft ; Microsoft peut faire de même pour atteindre votre réseau. Plus le chemin d’accès réseau est long, plus la latence est élevée. La latence a un impact direct sur les performances d’application ainsi que sur l’expérience utilisateur.
 
@@ -287,7 +286,7 @@ Microsoft partage avec vous la responsabilité de la sécurisation des réseaux 
 - [Obtenir une vue d’ensemble](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) sur les meilleures pratiques pour la sécurité réseau.
 - [Découvrez comment](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security) concevoir des réseaux sécurisés.
 
-## <a name="best-practice-implement-an-azure-perimeter-network"></a>Meilleure pratique : implémentation d’un réseau de périmètre Azure
+## <a name="best-practice-implement-an-azure-perimeter-network"></a>Bonne pratique : implémentation d’un réseau de périmètre Azure
 
 Bien que Microsoft investisse fortement dans la protection de l’infrastructure cloud, vous devez également protéger vos services cloud et vos groupes de ressources. Une approche multicouche de la sécurité constitue la meilleure défense. La mise en place d’un réseau de périmètre constitue une partie importante de cette stratégie de défense.
 
@@ -308,7 +307,7 @@ La figure suivante montre un exemple de réseau de périmètre à sous-réseau u
 
 - [En savoir plus](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) sur le déploiement d’un réseau de périmètre entre Azure et votre centre de données local.
 
-## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Meilleure pratique : filtrage du trafic de réseau virtuel avec des groupes de sécurité réseau
+## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Bonne pratique : filtrage du trafic de réseau virtuel avec des groupes de sécurité réseau
 
 Les groupes de sécurité réseau (NSG) contiennent plusieurs règles de sécurité entrantes et sortantes qui filtrent le trafic entre des ressources. Le filtrage peut se faire par source et par adresse IP de destination, par port et par protocole.
 
@@ -320,7 +319,7 @@ Les groupes de sécurité réseau (NSG) contiennent plusieurs règles de sécuri
 - Les connexions existantes ne sont pas interrompues quand vous supprimez une règle de sécurité ayant activé le flux. Les flux de trafic sont interrompus quand les connexions sont arrêtées et qu’aucun trafic ne transite dans un sens ou dans l’autre pendant au moins quelques minutes.
 - Lorsque vous créez des groupes de sécurité réseau, créez-en aussi peu que possible, mais autant que nécessaire.
 
-### <a name="best-practice-secure-northsouth-and-eastwest-traffic"></a>Meilleure pratique : sécurisation du trafic nord/sud et est/ouest
+### <a name="best-practice-secure-northsouth-and-eastwest-traffic"></a>Bonne pratique : sécurisation du trafic nord/sud et est/ouest
 
 Pour sécuriser des réseaux virtuels, il est important de prendre en compte les vecteurs d’attaque.
 
@@ -349,7 +348,7 @@ Les balises de service permettent d’automatiser l’attribution d’une règle
 - [En savoir plus](https://docs.microsoft.com/azure/virtual-network/security-overview) sur les groupes de sécurité réseau.
 - [En savoir plus](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) sur les balises de service disponibles pour les groupes de sécurité réseau.
 
-## <a name="best-practice-use-application-security-groups"></a>Meilleure pratique : utilisation de groupes de sécurité d’application
+## <a name="best-practice-use-application-security-groups"></a>Bonne pratique : utilisation de groupes de sécurité d’application
 
 Les groupes de sécurité d’application vous permettent de configurer la sécurité réseau comme le prolongement naturel d’une structure d’application.
 
@@ -388,7 +387,7 @@ Allow-Database-BusinessLogic | Autoriser le trafic du groupe de sécurité d’a
 
 - [En savoir plus](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups) sur les groupes de sécurité d’application.
 
-### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>Meilleure pratique : sécurisation de l’accès aux services PaaS à l’aide de points de terminaison de service de réseau virtuel
+### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>Bonne pratique : sécurisation de l’accès aux services PaaS à l’aide de points de terminaison de service de réseau virtuel
 
 Les points de terminaison de service de réseau virtuel étendent l’espace d’adressage IP et l’identité de votre réseau virtuel au service via une connexion directe.
 
@@ -403,7 +402,7 @@ Les points de terminaison de service de réseau virtuel étendent l’espace d�
 
 - [En savoir plus](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) sur les points de terminaison de service de réseau virtuel.
 
-## <a name="best-practice-control-public-ip-addresses"></a>Meilleure pratique : contrôle des adresses IP publiques
+## <a name="best-practice-control-public-ip-addresses"></a>Bonne pratique : contrôle des adresses IP publiques
 
 Les adresses IP publiques dans Azure peuvent être associées à des machines virtuelles, à des équilibreurs de charge, à des passerelles d’application et à des passerelles VPN.
 
@@ -424,7 +423,7 @@ Les adresses IP publiques dans Azure peuvent être associées à des machines vi
 
 Azure propose des fonctionnalités de sécurité de plateforme simples d’utilisation, qui fournissent des moyens efficaces de contrer les attaques réseau courantes. Parmi ces fonctionnalités, citons le Pare-feu Azure, le pare-feu d’applications web et Network Watcher.
 
-## <a name="best-practice-deploy-azure-firewall"></a>Meilleure pratique : déploiement du Pare-feu Azure
+## <a name="best-practice-deploy-azure-firewall"></a>Bonne pratique : déploiement du Pare-feu Azure
 
 Pare-feu Azure est un service de sécurité réseau informatique et managé qui protège vos ressources de réseau virtuel. Il s’agit d’un pare-feu managé avec état intégral, doté d’une haute disponibilité intégrée et d’une extensibilité illimitée dans le cloud.
 
@@ -444,7 +443,7 @@ Pare-feu Azure est un service de sécurité réseau informatique et managé qui 
 - [Obtenir une vue d’ensemble](https://docs.microsoft.com/azure/firewall/overview) du Pare-feu Azure.
 - [En savoir plus](https://docs.microsoft.com/azure/firewall/fqdn-tags) sur les balises FQDN.
 
-## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>Meilleure pratique : Déployer un pare-feu d’applications web (WAF)
+## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>Bonne pratique : Déployer un pare-feu d’applications web (WAF)
 
 Les applications Web sont de plus en plus la cible d’attaques malveillantes qui exploitent des vulnérabilités connues. L’injection de code SQL et les attaques de script site à site (XSS) sont des exemples d’attaques courantes. Empêcher ces attaques dans le code d’application peut se révéler difficile et nécessiter une maintenance rigoureuse, des mises à jour correctives ainsi que la surveillance au niveau de plusieurs couches de la topologie de l’application. Un pare-feu d’applications web centralisé facilite grandement la gestion de la sécurité et permet aux administrateurs de l’application de se protéger contre les menaces ou les intrusions. Un pare-feu d’applications web peut réagir plus rapidement à une menace de sécurité en corrigeant des vulnérabilités connues dans un emplacement central plutôt que de sécuriser individuellement les applications web. Les passerelles d’application existantes peuvent être facilement converties en une passerelle d’application avec un pare-feu d’applications web.
 
@@ -462,7 +461,7 @@ Le pare-feu d’applications web (WAF) est une fonctionnalité d’Azure Applica
 - [En savoir plus](https://docs.microsoft.com/azure/application-gateway/waf-overview) sur le pare-feu d’applications web.
 - [En savoir plus](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration) sur les limites et exclusions du pare-feu d’applications web.
 
-## <a name="best-practice-implement-azure-network-watcher"></a>Meilleure pratique : implémentation d’Azure Network Watcher
+## <a name="best-practice-implement-azure-network-watcher"></a>Bonne pratique : implémentation d’Azure Network Watcher
 
 Azure Network Watcher fournit des outils permettant de surveiller les ressources et les communications dans un réseau virtuel Azure. Par exemple, vous pouvez surveiller les communications entre une machine virtuelle et un point de terminaison (une autre machine virtuelle ou un FQDN, par exemple), afficher les ressources et leurs relations dans un réseau virtuel, ou diagnostiquer des problèmes de trafic réseau.
 
@@ -489,7 +488,7 @@ Pour les topologies de réseau plus complexes, vous pouvez utiliser des produits
 - Les NVA renforcent la sécurité et les fonctions réseau du réseau virtuel. Elles peuvent être déployées pour différentes applications : les pare-feu à haute disponibilité, la prévention d’intrusion, la détection d’intrusion, les pare-feu d’applications web (WAF), l’optimisation WAN, le routage, l’équilibrage de charge, le VPN, la gestion des certificats, Active Directory et l’authentification multifacteur.
 - Les appliances virtuelles réseau sont disponibles auprès de nombreux fournisseurs sur la  [Place de marché Azure](https://azuremarketplace.microsoft.com).
 
-## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>Meilleure pratique : implémentation de pare-feu et d’appliances virtuelles réseau dans des réseaux hub
+## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>Bonne pratique : implémentation de pare-feu et d’appliances virtuelles réseau dans des réseaux hub
 
 Dans le hub, le réseau de périmètre (disposant d’un accès à Internet) est normalement managé par le biais d’un pare-feu Azure, une batterie de pare-feu ou des pare-feu d’applications web (WAF). Voici un comparatif :
 
