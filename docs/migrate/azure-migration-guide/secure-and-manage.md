@@ -1,6 +1,6 @@
 ---
 title: Sécuriser et gérer
-description: Sécuriser et gérer
+description: Explorez plus en détail les méthodes de sécurité et de gestion que vous pouvez utiliser pour gérer votre environnement après avoir migré vers Azure.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6490c9dec38755fcb271774d00471b2a22888fd1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1af3ed5ea3b9291263a5ad8da43c65d51570651e
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806966"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994095"
 ---
 # <a name="secure-and-manage"></a>Sécuriser et gérer
 

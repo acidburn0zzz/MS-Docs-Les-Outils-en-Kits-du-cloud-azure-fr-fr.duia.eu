@@ -1,6 +1,6 @@
 ---
 title: Optimiser et transformer
-description: Optimiser et transformer
+description: Cette partie du Guide de migration Azure couvre les aspects de l’optimisation, notamment la révision de la conception de la solution, la bonne taille des services et l’analyse des coûts.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5d9ec518069023a8db763a9fc21f7c4847053be6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807000"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994161"
 ---
 # <a name="optimize-and-transform"></a>Optimiser et transformer
 
