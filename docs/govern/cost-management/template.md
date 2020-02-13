@@ -1,6 +1,6 @@
 ---
 title: Modèle Gestion des coûts
-description: Modèle Gestion des coûts
+description: Utilisez ce modèle comme référence pour capturer les risques métier, les tolérances aux risques, les processus de conformité et les outils nécessaires pour définir les déclarations de stratégie Gestion des coûts de votre organisation.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4920a8f1d9cc2d1e1753eb61b2bcc2b1ad6525a6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a44912caaf2a79c505f0f6825471baaa7888e957
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806422"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173270"
 ---
 # <a name="cost-management-template"></a>Modèle Gestion des coûts
 

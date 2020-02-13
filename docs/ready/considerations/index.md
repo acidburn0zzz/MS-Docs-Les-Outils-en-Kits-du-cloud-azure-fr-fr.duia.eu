@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 152f8c13184ae367f982b6188d21f3dca2849cd1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eb0dc016bcfe7778727b5a61e392e3dd3581539
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799078"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173368"
 ---
 # <a name="landing-zone-considerations"></a>Considérations relatives aux zones d’accueil
 
@@ -28,19 +28,19 @@ Toutes les zones d’accueil fournissent une structure aux options d’hébergem
 
 - **[Décisions en matière de calcul](./compute-options.md)** . Afin de réduire la complexité opérationnelle, alignez les options de calcul avec l’objectif de la zone d’accueil. Cette décision peut être appliquée à l’aide de chaînes d’outils d’automatisation, telles que des initiatives Azure Policy et des blueprints de zone d’accueil.
 - **[Décisions en matière de stockage](./storage-options.md)** . Choisissez la solution de stockage Azure appropriée pour prendre en charge vos besoins en charges de travail.
-- **[Décisions en matière de réseau](./networking-options.md).** Choisissez les services, outils et architectures réseau qui prendront en charge les besoins de votre organisation en termes de charge de travail, de gouvernance et de connectivité.
+- **[Décisions en matière de réseau](./networking-options.md).** Choisissez les services, outils et architectures réseau qui prendront en charge les besoins de votre organisation concernant la charge de travail, la gouvernance et la connectivité.
 - **[Décisions en matière de base de données](./data-options.md)** . Identifiez la technologie de base de données qui convient le mieux à vos besoins en termes de charge de travail.
 
 ## <a name="azure-fundamentals"></a>Fondamentaux Azure
 
-Chaque zone d’accueil fait partie d’une solution plus large ayant comme objectif d’organiser les ressources dans un environnement cloud. Les fondamentaux Azure sont les éléments constitutifs essentiels pour l’organisation.
+Chaque zone d’accueil fait partie d’une solution plus large ayant comme objectif d’organiser les ressources dans un environnement cloud. Pour une organisation, les fondamentaux Azure sont des éléments constitutifs essentiels.
 
 - **[Concepts fondamentaux Azure](./fundamental-concepts.md).** Découvrez les concepts fondamentaux et les termes utilisés pour organiser les ressources dans Azure et quel est le lien entre les différents concepts.
 - **[Guide de décision pour la cohérence des ressources](../../decision-guides/resource-consistency/index.md)** . Une fois que vous avez compris tous les fondamentaux, le guide de décision concernant l’organisation des ressources peur vous aider à prendre des décisions permettant de structurer la zone d’accueil.
 
 ## <a name="governance-considerations"></a>Considérations sur la gouvernance
 
-Les méthodologies de gouvernance du Framework d’adoption du cloud établissent un processus pour régir l’environnement dans son ensemble. Toutefois, il existe de nombreux cas d’usage qui nécessitent de prendre des décisions de gouvernance spécifiques et différentes pour chaque zone d’accueil. Dans de nombreux scénarios, les bases de référence de gouvernance sont appliquées zone d’accueil par zone d’accueil, même si elles sont établies de manière holistique. Cela est vrai pour les quelques premières zones d’accueil déployées par une organisation.
+Les méthodologies de gouvernance du Framework d’adoption du cloud établissent un processus pour régir l’environnement dans son ensemble. Toutefois, il existe de nombreux cas d’usage qui nécessitent de prendre des décisions de gouvernance différentes pour chaque zone d’atterrissage. En effet, dans de nombreux scénarios, une base de référence de gouvernance différente est appliquée pour chacune des zones d’atterrissage, même si les bases de référence sont établies de manière globale. Cela est vrai pour les quelques premières zones d’accueil déployées par une organisation.
 
 Les articles suivants vous aideront à prendre des décisions liées à la gouvernance concernant votre zone d’accueil. Vous pouvez factoriser chaque décision dans vos bases de référence de gouvernance.
 

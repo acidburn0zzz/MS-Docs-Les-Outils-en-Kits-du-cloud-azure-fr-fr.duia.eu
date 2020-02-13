@@ -1,6 +1,6 @@
 ---
 title: Modèle Base de référence des identités
-description: Modèle Base de référence des identités
+description: Téléchargez le modèle de référence d’identité pour documenter et communiquer les instructions de stratégie qui régissent les services d’identité dans le cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c1f8e752f1952890880eb30f9f1911d83fca6a40
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6b17a4aaaaa26d7cc1be33dd95f6a8905e1adc2b
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807204"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173193"
 ---
 # <a name="identity-baseline-template"></a>Modèle Base de référence des identités
 
