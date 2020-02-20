@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 603e26d5fc8405e29d163bc0585bc0ce3cd5093f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
+ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804484"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413202"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Activer la réussite lors des parcours d’adoption du cloud
 
@@ -69,7 +69,7 @@ En plus du Framework d’adoption du cloud, Microsoft couvre des sujets supplém
                     </div>
                     <div class="cardText">
                         <h3>Architecture fiable (résilience)</h3>
-                        <p>Concevoir une application fiable dans le cloud est un processus différent du développement d’applications traditionnelles. Par le passé, vous avez peut-être acheté du matériel plus performant pour augmenter votre puissance de traitement, selon une approche de scale-up. Dans un environnement cloud, cela se fait par un scale-out. Au lieu d’essayer d’empêcher toutes les défaillances, l’objectif est de réduire les répercussions d’une défaillance potentielle au niveau de chaque composant.</p>
+                        <p>Concevoir une application fiable dans le cloud est un processus différent du développement d’applications traditionnelles. Vous aviez peut-être l’habitude d’acheter des niveaux de matériel haut de gamme redondants pour réduire le risque de panne d’une plateforme d’application entière. Dans le cloud, nous anticipons les pannes. Au lieu d’essayer d’empêcher toutes les défaillances, l’objectif est de réduire les répercussions d’une défaillance potentielle au niveau de chaque composant.</p>
                     </div>
                 </div>
             </div>
