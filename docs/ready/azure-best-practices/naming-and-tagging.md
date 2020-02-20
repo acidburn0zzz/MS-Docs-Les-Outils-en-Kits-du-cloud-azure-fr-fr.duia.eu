@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: b61c9a9ffd778e657854b4da1269eebdb762c73b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c85f4423ea61346e8692fd19ced0d53242733284
+ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799843"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77213590"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Conventions de nommage et de catégorisation recommandées
 
@@ -37,13 +37,13 @@ Votre stratégie de nommage et de catégorisation doit inclure des détails comm
 - Le côté métier de cette stratégie garantit que les noms et les étiquettes des ressources incluent les informations organisationnelles nécessaires pour identifier les équipes. Utilisez une ressource avec les propriétaires de l’entreprise qui sont responsables des coûts des ressources.
 - Le côté opérationnel garantit que les noms et les balises incluent des informations que les équipes informatiques utilisent pour identifier la charge de travail, l’application, l’environnement, le caractère critique et d’autres informations utiles pour la gestion des ressources.
 
-### <a name="resource-naming"></a>Nommage des ressources
+### <a name="resource-naming"></a>Affectation de noms aux ressources
 
-Une convention de nommage efficace assemble des noms de ressources en utilisant des informations importantes sur les ressources en tant que parties du nom d’une ressource. Par exemple, en utilisant les [conventions de nommage recommandées](#sample-naming-convention), une ressource IP publique pour une charge de travail SharePoint de production est nommée comme suit : `pip-sharepoint-prod-westus-001`.
+Une convention d’affectation de noms efficace assemble des noms de ressources en utilisant des informations importantes sur les ressources en tant que parties du nom d’une ressource. Par exemple, en utilisant les [conventions de nommage recommandées](#sample-naming-convention), une ressource IP publique pour une charge de travail SharePoint de production est nommée comme suit : `pip-sharepoint-prod-westus-001`.
 
 À partir du nom, vous pouvez rapidement identifier le type de la ressource, sa charge de travail associée, son environnement de déploiement et la région Azure qui l’héberge.
 
-#### <a name="naming-scope"></a>Étendue de nommage
+#### <a name="naming-scope"></a>Étendue de l’affectation de noms
 
 Tous les types de ressources Azure ont une étendue qui définit le niveau à partir duquel les noms de ressources doivent être uniques. Une ressource doit avoir un nom unique dans son étendue.
 
@@ -51,11 +51,11 @@ Par exemple, un réseau virtuel possède une étendue de groupe de ressources, c
 
 Certains noms de ressources, tels que les services PaaS avec des points de terminaison publics ou des étiquettes DNS de machine virtuelle, ont des étendues globales, ce qui signifie qu’ils doivent être uniques sur l’ensemble de la plateforme Azure.
 
-Les noms de ressources ont des longueurs limitées. L’équilibrage du contexte incorporé dans un nom avec sa portée et sa longueur est important lorsque vous élaborez vos conventions de nommage. Pour obtenir plus d’informations sur les règles de nommage et connaître les caractères autorisés, les étendues et les longueurs de noms pour les types de ressources, consultez [Conventions de nommage pour les ressources Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming).
+Les noms de ressources ont des longueurs limitées. L’équilibrage du contexte incorporé dans un nom avec sa portée et sa longueur est important lorsque vous élaborez vos conventions d’affectation de noms. Pour obtenir plus d’informations sur les règles d’affectation de noms et connaître les caractères autorisés, les étendues et les longueurs de noms pour les types de ressources, consultez [Conventions d’affectation de noms pour les ressources Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming).
 
 #### <a name="recommended-naming-components"></a>Composants de noms recommandés
 
-Lorsque vous construisez votre convention de nommage, identifiez les informations clés que vous souhaitez refléter dans un nom de ressource. Des informations différentes s’appliquent à différents types de ressources. La liste suivante fournit des exemples d’informations utiles lorsque vous construisez des noms de ressources.
+Lorsque vous construisez votre convention d’affectation de noms, identifiez les informations clés que vous souhaitez refléter dans un nom de ressource. Des informations différentes s’appliquent à différents types de ressources. La liste suivante fournit des exemples d’informations utiles lorsque vous construisez des noms de ressources.
 
 Veillez à ce que la longueur des composants de noms soit courte pour éviter de dépasser les limites de longueur de nom des ressources.
 
@@ -71,7 +71,7 @@ Veillez à ce que la longueur des composants de noms soit courte pour éviter de
 
 Chaque charge de travail peut être composée de plusieurs ressources et services individuels. L’incorporation de préfixes de type de ressource dans vos noms de ressources facilite l’identification visuelle des composants de l’application ou du service.
 
-La liste suivante répertorie les préfixes de type de ressource Azure recommandés à utiliser lorsque vous définissez vos conventions de nommage.
+La liste suivante répertorie les préfixes de type de ressource Azure recommandés à utiliser lorsque vous définissez vos conventions d’affectation de noms.
 
 | Type de ressource                       | Préfixe de nom de ressource |
 | ----------------------------------- | -------------------- |
@@ -122,7 +122,7 @@ La liste suivante répertorie les préfixes de type de ressource Azure recommand
 | Azure Stream Analytics              | asa-                 |
 | Azure Data Factory                  | adf-                 |
 | Event Hub                           | evh-                 |
-| IoT Hub                             | iot-                 |
+| hub IOT                             | iot-                 |
 | Notification Hubs                   | ntf-                 |
 | Espace de noms Notification Hubs         | ntfns-               |
 
@@ -144,12 +144,12 @@ Les balises que vous appliquez aux ressources et celles qui sont requises ou fac
 | Environnement               | Environnement de déploiement de l’application, de la charge de travail ou du service.                                                                                                                                              | _Env_             | _Prod_, _Dev_, _QA_, _Stage_, _Test_                    |
 | Nom du propriétaire                | Propriétaire de l’application, de la charge de travail ou du service.                                                                                                                                                                | _Propriétaire_           | _{email}_                                       |
 | Nom du demandeur            | Utilisateur qui a demandé la création de cette application.                                                                                                                                                          | _Requestor_       | _{email}_                                       |
-| Classe du service             | Niveau du contrat de niveau de service de l’application, de la charge de travail ou du service.                                                                                                                                       | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, _Gold_                     |
+| Classe du service             | Niveau du contrat de niveau de service de l’application, de la charge de travail ou du service.                                                                                                                                       | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, git _Gold_                     |
 | Date de début du projet | Date à laquelle l’application, la charge de travail ou le service ont été déployés pour la première fois.                                                                                                                                           | _StartDate_       | _{date}_                                        |
 
-## <a name="sample-naming-convention"></a>Exemple de convention de nommage
+## <a name="sample-naming-convention"></a>Exemple de convention d’affectation de noms
 
-La section suivante fournit des exemples de modèles de nommage pour les types de ressources Azure courants qui sont déployés au cours d’un déploiement de cloud d’entreprise.
+La section suivante fournit des exemples de modèles d’affectation de noms pour les types de ressources Azure courants qui sont déployés au cours d’un déploiement de cloud d’entreprise.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -157,13 +157,13 @@ La section suivante fournit des exemples de modèles de nommage pour les types d
 
 | Type de ressource   | Étendue                        | Format                                             | Exemples                                     |
 |--------------|------------------------------|----------------------------------------------------|----------------------------------------------|
-| Subscription | Compte/contrat Entreprise | \<Unité commerciale\>-\<Type d’abonnement\>-\<\#\#\#\> | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul> |
+| Abonnement | Compte/contrat Entreprise | \<Unité commerciale\>-\<Type d’abonnement\>-\<\#\#\#\> | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul> |
 
 ### <a name="resource-groups"></a>Groupes de ressources
 
 | Type de ressource     | Étendue        | Format                                                     | Exemples                                                                            |
 |----------------|--------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Resource group | Subscription | rg-\<Nom de l’application ou du service\>-\<Type d’abonnement\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
+| Resource group | Abonnement | rg-\<Nom de l’application ou du service\>-\<Type d’abonnement\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
 
 ### <a name="virtual-networking"></a>Réseau virtuel
 
@@ -253,5 +253,5 @@ La section suivante fournit des exemples de modèles de nommage pour les types d
 | Azure Stream Analytics             | Resource group | asa-\<Nom de l’application\>-\<Environnement\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
 | Azure IoT Hub                      | Global         | iot-\<Nom de l’application\>-\<Environnement\>   | <ul><li>iot-navigator-prod </li><li>iot-emissions-dev</li></ul>     |
 | Hubs d'événements Azure                   | Global         | evh-\<Nom de l’application\>-\<Environnement\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
-| Azure Notification Hubs            | Resource group | ntf-\<Nom de l’application\>-Environnement\<   | <ul><li>ntf-navigator-prod </li><li>ntf-emissions-dev</li></ul>     |
-| Espace de noms d’Azure Notification Hubs  | Global         | ntfns-\<Nom de l’application\>-Environnement\< | <ul><li>ntfns-navigator-prod </li><li>ntfns-emissions-dev</li></ul> |
+| Azure Notification Hubs            | Resource group | ntf-\<Nom de l’application\>-\<Environnement\>   | <ul><li>ntf-navigator-prod </li><li>ntf-emissions-dev</li></ul>     |
+| Espace de noms d’Azure Notification Hubs  | Global         | ntfns-\<Nom de l’application\>-\<Environnement\> | <ul><li>ntfns-navigator-prod </li><li>ntfns-emissions-dev</li></ul> |
