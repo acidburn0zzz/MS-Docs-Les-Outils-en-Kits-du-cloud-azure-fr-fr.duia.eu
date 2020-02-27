@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173382"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567739"
 ---
 # <a name="assess-the-digital-estate"></a>Évaluer le patrimoine numérique
 
@@ -24,7 +24,7 @@ Les ressources de cette section vous aideront à évaluer votre environnement af
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="toolstabtools"></a>[outils](#tab/Tools)
+# <a name="tools"></a>[outils](#tab/Tools)
 
 Les outils suivants vous aident à évaluer votre environnement pour déterminer la pertinence de la migration et la meilleure approche à utiliser. Afin d’obtenir des informations utiles sur le choix des bons outils pour prendre en charge vos efforts de migration, consultez le [guide de décision sur les outils de migration du Framework d’adoption du cloud](../../decision-guides/migrate-decision-guide/index.md).
 
@@ -51,7 +51,7 @@ Pour commencer par une évaluation de la migration de serveur à l’aide d’Az
 
 ::: zone target="chromeless"
 
-::: form action="Blade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
+::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Pour utiliser la visualisation des dépendances, vous devez télécharger et ins
 - [Utilisation de la solution Service Map dans Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate et Service Map : Visualisation des dépendances](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="scenarios-and-stakeholderstabscenarios"></a>[Scénarios et parties prenantes](#tab/Scenarios)
+# <a name="scenarios-and-stakeholders"></a>[Scénarios et parties prenantes](#tab/Scenarios)
 
 ## <a name="scenarios"></a>Scénarios
 
@@ -105,7 +105,7 @@ La mise en place d’une équipe centrale de stratégie cloud, construite autour
 
 Pour plus d’informations sur la façon de préparer votre organisation aux efforts de migration cloud, consultez l’article du Framework d’adoption du cloud sur [l’alignement initial de l’organisation](../../plan/initial-org-alignment.md).
 
-# <a name="timelinestabtimelines"></a>[Chronologies](#tab/Timelines)
+# <a name="timelines"></a>[Chronologies](#tab/Timelines)
 
 D’une manière générale, les clients estiment que le scénario de migration couvert par ce guide peut être réalisé en un à six mois.
 
@@ -117,7 +117,7 @@ Voici quelques-uns des facteurs à prendre en compte lors de l’évaluation de 
 - **Gestion des changements :** Votre entreprise a-t-elle des exigences spécifiques concernant l’implémentation et l’approbation des modifications ?
 - **Réglementations sectorielles :** Devez-vous vous conformer aux réglementations du segment ou secteur d’activité ?
 
-# <a name="cost-managementtabmanagecost"></a>[Cost Management](#tab/ManageCost)
+# <a name="cost-management"></a>[Cost Management](#tab/ManageCost)
 
 L’évaluation de votre environnement est l’occasion idéale d’inclure une étape d’analyse des coûts. À l’aide des données collectées par les activités d’évaluation, vous devez être en mesure d’analyser et de prédire les coûts. Cette prédiction des coûts doit tenir compte à la fois des coûts du service de consommation et des coûts ponctuels (tels que l’augmentation de l’entrée de données).
 
