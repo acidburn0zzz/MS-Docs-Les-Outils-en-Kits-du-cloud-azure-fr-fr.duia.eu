@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806949"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629281"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Établir un modèle de fonctionnement pour le cloud
 
@@ -23,7 +23,7 @@ Ces efforts d’adoption sont relativement faciles à suivre et à mesurer, mêm
 
 **Si l’adoption décrit ce que vous effectuez, le modèle de fonctionnement définit les acteurs et modalités sous-jacents favorisant l’adoption.**
 
-Selon Satya Nadella, **« la culture mange la stratégie pour le petit déjeuner »** . Le modèle de fonctionnement est l’incarnation de la culture informatique, capturée dans de nombreux processus mesurables. Quand le cloud repose sur un modèle de fonctionnement fort, la culture conduit à la stratégie, accélérant l’adoption et la réalisation des valeurs métier. À l’inverse, quand l’adoption réussit mais qu’il n’existe aucun modèle de fonctionnement, les retours peuvent être impressionnants mais de très courte durée. Pour une réussite à long terme, il est vital que l’adoption et les modèles de fonctionnement progressent en parallèle.
+« La culture mange la stratégie pour le petit déjeuner. » Le modèle de fonctionnement est l’incarnation de la culture informatique, capturée dans de nombreux processus mesurables. Quand le cloud repose sur un modèle de fonctionnement fort, la culture conduit à la stratégie, accélérant l’adoption et la réalisation des valeurs métier. À l’inverse, quand l’adoption réussit mais qu’il n’existe aucun modèle de fonctionnement, les retours peuvent être impressionnants mais de très courte durée. Pour une réussite à long terme, il est vital que l’adoption et les modèles de fonctionnement progressent en parallèle.
 
 ## <a name="establish-your-operating-model"></a>Établir votre modèle de fonctionnement
 

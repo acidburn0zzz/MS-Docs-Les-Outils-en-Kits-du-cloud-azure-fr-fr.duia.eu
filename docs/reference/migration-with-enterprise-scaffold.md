@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798789"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629247"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
 
@@ -338,7 +338,7 @@ La composante finale du modèle de référence de structure Azure est essentiell
 
 ### <a name="azure-virtual-datacenter"></a>Centre de données virtuel Azure
 
-Azure met à votre disposition à la fois des fonctionnalités internes et des fonctionnalités tierces issues de notre vaste réseau de partenaires qui vous permettent d’avoir une posture de sécurité efficace. Plus important encore, Microsoft communique des bonnes pratiques et des recommandations via le [centre de données virtuel Azure](./networking-vdc.md). Quand vous passez d’une charge de travail unique à plusieurs charges de travail qui utilisent des fonctionnalités hybrides, les recommandations du centre de données virtuel vous indiquent comment mettre en place un réseau flexible capable de croître en même temps que vos charges de travail Azure.
+Azure met à disposition les fonctionnalités internes et tierces de notre vaste réseau de partenaires qui vous permettent d’avoir une posture de sécurité efficace. Plus important encore, Microsoft communique des bonnes pratiques et des recommandations via le [centre de données virtuel Azure](./networking-vdc.md). Quand vous passez d’une charge de travail unique à plusieurs charges de travail qui utilisent des fonctionnalités hybrides, les recommandations du centre de données virtuel vous indiquent comment mettre en place un réseau flexible capable de croître en même temps que vos charges de travail Azure.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

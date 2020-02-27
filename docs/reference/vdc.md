@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bc20624beb0d3a088d119bf0f75c1e1881d37fce
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566670"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629213"
 ---
 # <a name="azure-virtual-datacenter"></a>Centre de données virtuel Azure
 
@@ -36,8 +36,8 @@ ms.locfileid: "73566670"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Centre de données virtuel Azure : perspective réseau</a></h3>
-        <p>Cet article en ligne fournit une vue d’ensemble des modèles et des conceptions de réseau qui permettent de balayer les inquiétudes de nombreux clients concernant la mise à l’échelle, les performances et la sécurité de l’architecture lorsque ces clients envisagent une migration massive vers le cloud.</p>
+        <h3><a href="./networking-vdc.md">Centre de données virtuel : perspective réseau</a></h3>
+        <p>Cette vue d’ensemble des modèles et conceptions réseau répond aux problèmes de mise à l’échelle architecturale, de performance et de sécurité auxquels les clients sont confrontés quand ils planifient une migration cloud à grande échelle.</p>
     </td>
 </tr>
 <tr>

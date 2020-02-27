@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799333"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567756"
 ---
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
@@ -22,7 +22,7 @@ L’organisation de vos ressources informatiques est essentielle pour sécuriser
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchytabazuremanagmentgroupsandhierarchy"></a>[Hiérarchie et groupes d’administration Azure](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Hiérarchie et groupes d’administration Azure](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure fournit quatre niveaux d’étendue de la gestion : groupes d’administration, abonnements, groupes de ressources et ressources. L’illustration suivante montre les relations entre ces niveaux.
 
@@ -121,7 +121,7 @@ Créez un groupe de ressources pour regrouper des ressources comme les applicati
 
 ::: zone-end
 
-# <a name="naming-standardstabnamingstandards"></a>[Conventions de nommage](#tab/NamingStandards)
+# <a name="naming-standards"></a>[Conventions de nommage](#tab/NamingStandards)
 
 Adoptez des conventions standard en matière d’affectation de noms pour identifier les ressources dans le Portail Azure, sur les factures et dans les scripts. Votre stratégie de nommage doit inclure des détails commerciaux et opérationnels dans les noms de ressources :
 
@@ -142,11 +142,11 @@ Le tableau suivant présente les modèles d’affectation de noms pour quelques 
 
 | Entité | Étendue | Longueur | Casse | Caractères valides | Modèle suggéré | Exemple |
 | --- | --- | --- | --- | --- | --- | --- |
-|Resource group |Subscription |1-90 |Insensible à la casse |Alphanumériques, trait de soulignement, parenthèses, trait d’union, point (sauf à la fin) et caractères Unicode |`<service short name>-<environment>-rg` |`profx-prod-rg` |
+|Resource group |Abonnement |1-90 |Insensible à la casse |Alphanumériques, trait de soulignement, parenthèses, trait d’union, point (sauf à la fin) et caractères Unicode |`<service short name>-<environment>-rg` |`profx-prod-rg` |
 |Groupe à haute disponibilité |Resource group |1-80 |Insensible à la casse |Alphanumériques, trait de soulignement et trait d’union |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |Tag |Entité associée |512 (nom), 256 (valeur) |Insensible à la casse |Alphanumérique |`"key" : "value"` |`"department" : "Central IT"` |
 
-# <a name="resource-tagstabresourcetags"></a>[Balises de ressource](#tab/ResourceTags)
+# <a name="resource-tags"></a>[Balises de ressource](#tab/ResourceTags)
 
 Les étiquettes sont utiles pour identifier rapidement vos ressources et groupes de ressources. Vous appliquez des balises à vos ressources Azure pour les organiser de façon logique par catégories. Chaque balise se compose d’un nom et d’une valeur. Par exemple, vous pouvez appliquer le nom « Environnement » et la valeur « Production » à toutes les ressources en production. Les balises doivent inclure le contexte de la charge de travail ou de l’application associée à la ressource, les exigences opérationnelles et les informations de propriété.
 
@@ -156,7 +156,7 @@ Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses.
 
 - **Métadonnées et documentation :** Les administrateurs peuvent facilement voir les détails des ressources sur lesquelles ils travaillent en appliquant une balise comme « PropriétaireProjet ».
 - **Automatisation :** Il se peut que vous ayez des scripts s’exécutant régulièrement qui effectuent une action basée sur une valeur de balise telle que « HeureArrêt » ou « DateDéprovisionnement ».
-- **Facturation :** les étiquettes peuvent apparaître sur votre facture. Vous pouvez utiliser des balises comme « CentreCoûts » ou « FacturerÀ » pour faciliter la segmentation de votre facture.
+- **Optimisation des coûts :** Vous pouvez allouer des ressources aux équipes et aux ressources qui sont responsables du coût. Dans Azure Cost Management, vous pouvez appliquer l’étiquette de centre de coût comme filtre pour obtenir les frais basés sur l’utilisation d’une équipe ou d’un département.
 
 Chaque ressource ou groupe de ressources peut inclure un maximum de 50 paires nom/valeur de balise. Cette limitation s’applique uniquement aux balises directement appliquées au groupe de ressources ou à la ressource.
 

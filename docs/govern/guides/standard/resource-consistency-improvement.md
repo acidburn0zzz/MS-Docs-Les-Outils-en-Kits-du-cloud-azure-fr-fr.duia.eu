@@ -1,6 +1,6 @@
 ---
-title: 'Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources'
-description: 'Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources'
+title: 'Gouvernance pour les entreprises standard : Améliorer la cohérence des ressources'
+description: Améliorez la base de référence de la gouvernance et atténuez les risques liés à la gouvernance des ressources en ajoutant des contrôles de récupération, de taille et de supervision dans le Framework d’adoption du cloud pour Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aa752e83dd5e83da101600c756fe7b878015c1db
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 366f5034a89529e65325a8afd2cf0275dcec02e4
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805997"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567671"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources
 
