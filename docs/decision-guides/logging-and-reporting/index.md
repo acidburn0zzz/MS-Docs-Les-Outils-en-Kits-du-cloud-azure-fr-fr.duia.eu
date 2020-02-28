@@ -1,6 +1,6 @@
 ---
 title: Guide de décision sur la journalisation et création de rapports
-description: 'Découvrez les principaux services pour les migrations Azure : journalisation, création de rapports et supervision.'
+description: Développez une stratégie de journalisation, de création de rapports et de supervision de base pour vérifier que votre organisation atteint ses objectifs de disponibilité, de sécurité et de conformité aux stratégies.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 038137088abe02160fd199cef468ecc5d5756281
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806762"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707660"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 

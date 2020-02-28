@@ -1,6 +1,6 @@
 ---
 title: Guide de décision concernant les régions
-description: Découvrez comment choisir la région de la plateforme cloud.
+description: Découvrez les régions dans lesquelles la plateforme cloud est disponible ainsi que les facteurs et caractéristiques susceptibles d’affecter vos sélections de régions Azure.
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: aff6a3129bd93df434737a861f0b5f0daad24bcc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d8545d000d817aa8d6bcaa40a67a157ca5e57669
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806711"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708493"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
