@@ -1,6 +1,6 @@
 ---
 title: Guide de décision pour l’application de la stratégie
-description: Apprenez-en davantage sur les abonnements d’application de stratégie en tant que priorité de conception essentielle dans les migrations Azure.
+description: Utilisez le Framework d’adoption du cloud pour Azure afin de découvrir les abonnements d’application de stratégie comme priorité de conception essentielle dans les migrations Azure.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8bc458fa480112c1b1a5748d042c9e439933f47f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2a5976d1aa1bb4ae0b1e8a0d810ae0acddabd883
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806728"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170985"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guide de décision pour l’application de la stratégie
 

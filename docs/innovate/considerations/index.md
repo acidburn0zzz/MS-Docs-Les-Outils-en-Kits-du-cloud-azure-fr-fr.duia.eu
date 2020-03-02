@@ -1,18 +1,18 @@
 ---
 title: Innovation dans l’économie numérique
-description: Découvrez la théorie directrice de l’innovation cloud dans le Framework d’adoption du cloud.
+description: Concentrons-nous sur la compréhension des besoins des clients et sur la création rapide d’innovations qui déterminent la manière dont vos clients interagissent avec vos produits.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 87d47fa7e6f28f41c7edc98525cadabe65b99d48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808462"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171172"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innovation dans l’économie numérique
 
