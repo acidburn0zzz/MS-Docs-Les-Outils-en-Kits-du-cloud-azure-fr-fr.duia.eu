@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bc80c33569cdb0980885ebba9c87d52e0aa87b7d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707983"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222580"
 ---
 # <a name="encryption-decision-guide"></a>Guide de décision concernant le chiffrement
 
@@ -52,12 +52,12 @@ L’utilisation d’un système natif de gestion des clés dans le cloud suppose
 
 ### <a name="bring-your-own-key"></a>BYOK (Bring Your Own Key)
 
-Avec une approche de type Bring Your Own Key, vous générez des clés sur du matériel HSM dédié au sein de votre environnement local, puis vous transférez ces clés de manière sécurisée vers un système de gestion basé sur le cloud tel qu’Azure Key Vault en vue de les utiliser avec vos ressources hébergées dans le cloud.
+Avec une approche de type BYOK (Bring Your Own Key), vous générez des clés sur du matériel HSM dédié au sein de votre environnement local, puis vous transférez ces clés de manière sécurisée vers un système de gestion basé sur le cloud tel qu’Azure Key Vault en vue de les utiliser avec vos ressources hébergées dans le cloud.
 
-**Conditions nécessaires à l’approche Bring Your Own Key :** La génération de clés locales et leur utilisation avec un système de gestion des clés basé sur le cloud supposent que :
+**Conditions nécessaires à l’approche Bring Your Own Key** : La génération de clés locales et leur utilisation avec un système de gestion des clés basé sur le cloud supposent que :
 
 - Vous faites confiance à l’infrastructure sous-jacente de sécurité et de contrôle d’accès de la plateforme cloud pour héberger et utiliser vos clés et vos secrets.
-- Vos applications et vos services hébergés dans le cloud peuvent accéder aux clés et aux secrets, et les utiliser de manière fiable et sécurisée.
+- Vos applications ou services hébergés dans le cloud peuvent accéder aux clés et aux secrets, et les utiliser de manière fiable et sécurisée.
 - Vous êtes obligé, par une stratégie réglementaire ou organisationnelle, de créer et de gérer les secrets et les clés de votre organisation localement.
 
 ### <a name="on-premises-hold-your-own-key"></a>Locale (Hold Your Own Key, HYOK)
@@ -128,7 +128,7 @@ Pour plus d’informations sur le chiffrement et la gestion des clés dans Azure
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Lors d’un processus d’adoption cloud, le chiffrement ne représente qu’une partie des composants d’infrastructure qui nécessitent des décisions architecturales. Consultez la [vue d’ensemble sur les guides de décision](../index.md) pour en savoir plus sur les autres schémas et modèles utilisés lors des décisions de conception pour d’autres types d’infrastructure.
+Lors d’un processus d’adoption cloud, le chiffrement ne représente qu’une partie des composants d’infrastructure qui nécessitent des décisions architecturales. Pour en savoir plus sur les autres schémas et modèles utilisés lors des décisions de conception pour d’autres types d’infrastructure, consultez la [vue d’ensemble sur les guides de décision](../index.md).
 
 > [!div class="nextstepaction"]
 > [Guides de décision concernant l’architecture](../index.md)

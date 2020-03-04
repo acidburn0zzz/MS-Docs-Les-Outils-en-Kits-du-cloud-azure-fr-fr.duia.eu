@@ -7,13 +7,13 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 10/14/2019
-ms.openlocfilehash: 280445bda3f95694fec5f1b5cc2659021a8ffc20
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.date: 02/28/2020
+ms.openlocfilehash: 7bbdcdbdad1e00947d20f701ff6a81a465a09248
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170917"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223766"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework d’adoption du cloud Microsoft pour Azure
 
@@ -159,7 +159,7 @@ Gestion des opérations pour les solutions cloud et hybrides.
 
 ## <a name="understand-the-lifecycle"></a>Comprendre le cycle de vie
 
-Chacune des phases capturées ci-dessus fait partie d’un large cycle de vie d’adoption du cloud. L’image suivante relie chaque phase pour illustrer le cycle de vie global. Le Framework d’adoption du cloud est un framework de cycle de vie complet qui prend en charge les clients tout au long de chaque phase.
+Chacune des méthodologies capturées ci-dessus fait partie d’un large cycle de vie d’adoption du cloud. L’image suivante relie chaque méthodologie pour illustrer le cycle de vie global. Le Framework d’adoption du cloud est un framework du cycle de vie complet qui guide les clients tout au long des différentes phases de l’adoption en leur fournissant des méthodologies comme approches spécifiques pour surmonter les blocages courants.
 
 ![Vue d’ensemble du Framework d’adoption du cloud](./_images/caf-overview.png)
 

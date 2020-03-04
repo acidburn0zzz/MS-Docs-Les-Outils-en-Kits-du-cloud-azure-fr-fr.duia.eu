@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 04058077ed9fc739a063e75d0da4effb4c784436
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: b38408033231a4ac1d8debe889117c2f5220c676
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171376"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223662"
 ---
+<!-- cspell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+
 # <a name="mainframe-migration-overview"></a>Vue d’ensemble de la migration d’ordinateurs mainframe
 
 De nombreuses entreprises et organisations ont beaucoup à gagner lorsqu’elles migrent tout ou partie de leurs charges de travail, applications et bases de données mainframe vers le cloud. Azure offre des fonctionnalités de type mainframe à l’échelle du cloud, sans les inconvénients des ordinateurs mainframe.
@@ -34,13 +36,13 @@ Ces conseils aident les organisations informatiques à se lancer dans la convers
 
 Les ordinateurs mainframe ont été conçus à la fin des années 1950 en tant que serveurs de montée en puissance pour exécuter un grand nombre de transactions en ligne et le traitement par lots. C’est pourquoi les ordinateurs mainframe disposent de logiciels pour les formulaires de transactions en ligne (parfois appelées les écrans verts) et de systèmes d’entrée/sortie hautes performances pour traiter des lots.
 
-Les ordinateurs mainframe ont la réputation d’être extrêmement fiables et disponibles, et sont connus pour leur capacité à exécuter des transactions en ligne et des traitements par lots très volumineux. Une transaction provient d’un élément de traitement initié par une demande unique, généralement générée par un utilisateur sur un terminal. Les transactions peuvent également provenir de plusieurs sources, y compris des pages web, des stations de travail à distance et des applications dans d’autres systèmes d’information. Une transaction peut également être déclenchée automatiquement à une heure donnée, comme le montre l’illustration suivante.
+Les ordinateurs mainframe sont connus pour leur grande fiabilité et leur haute disponibilité ainsi que pour leur capacité à exécuter des transactions en ligne et des traitements par lots très volumineux. Une transaction provient d’un élément de traitement initié par une demande unique, généralement générée par un utilisateur sur un terminal. Les transactions peuvent également provenir de plusieurs sources, y compris des pages web, des stations de travail à distance et des applications dans d’autres systèmes d’information. Une transaction peut également être déclenchée automatiquement à une heure donnée, comme le montre l’illustration suivante.
 
 ![Composants d’une architecture mainframe IBM classique](../../_images/mainframe-migration/mainframe-architecture.png)
 
 Une architecture mainframe IBM classique inclut généralement ces composants :
 
-- **Systèmes frontaux :** Les utilisateurs peuvent initier des transactions à partir de terminaux, de pages web ou de stations de travail à distance. Les applications mainframe affichent souvent des interfaces utilisateur personnalisées qui peuvent être conservées après la migration vers Azure. Les émulateurs de terminaux sont toujours utilisés pour accéder aux applications mainframe. Ils sont également appelés des terminaux à écran vert.
+- **Systèmes frontaux :** Les utilisateurs peuvent initier des transactions à partir de terminaux, de pages web ou de stations de travail à distance. Les applications mainframe affichent souvent des interfaces utilisateur personnalisées qui peuvent être conservées après la migration vers Azure. Les émulateurs de terminaux (également appelés terminaux à écran vert) sont toujours utilisés pour accéder aux applications mainframe.
 
 - **Couche Application :** Les ordinateurs mainframe incluent généralement un système de contrôle des informations client (CICS), une suite de gestion des transactions majeure pour ordinateurs mainframe IBM z/OS (souvent utilisée avec IBM Information Management System, IMS) et un gestionnaire de transactions utilisant les messages. Les systèmes de traitement par lots gèrent les mises à jour de données à débit élevé pour de gros volumes d’enregistrements de compte.
 

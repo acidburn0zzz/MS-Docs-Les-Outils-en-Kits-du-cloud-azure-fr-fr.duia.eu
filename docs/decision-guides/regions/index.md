@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d8545d000d817aa8d6bcaa40a67a157ca5e57669
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 00dfa6c1caed189d9d9b1d27525344b5101c2af0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708493"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222596"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
 Azure est disponible dans de nombreuses régions du monde. Comme chaque [région Azure](https://azure.microsoft.com/global-infrastructure/regions) a un ensemble de caractéristiques spécifiques, le choix de la région à utiliser est extrêmement important.
 
 1. **Services disponibles :** Les services déployés dans chaque région varient selon différents facteurs. La région que vous choisissez pour déployer votre charge de travail doit offrir le service souhaité. Pour plus d’informations sur les services disponibles dans chaque région, consultez [Disponibilité des produits par région](https://azure.microsoft.com/global-infrastructure/services).
-1. **Capacité :** Chaque région présente une capacité maximale. Même si cette capacité est généralement peu perceptible pour l’utilisateur final, elle peut affecter les types d’abonnements, les types de services pouvant être déployés par ces abonnements et les circonstances dans lesquelles ces déploiements sont possibles. Il s’agit d’un concept différent de celui des quotas d’abonnement. Si vous envisagez une migration massive de centres de données vers Azure, il peut être utile de consulter votre équipe de terrain ou votre gestionnaire de comptes local Azure pour vérifier que vous pouvez effectuer votre déploiement à l’échelle requise.
+1. **Capacité :** Chaque région présente une capacité maximale. Même si cette capacité est généralement peu perceptible pour l’utilisateur final, elle peut impacter les types d’abonnements disponibles, les types de services déployables par ces abonnements et les circonstances dans lesquelles ces déploiements sont possibles. Il s’agit d’un concept différent de celui des quotas d’abonnement. Si vous planifiez une migration massive de centres de données vers Azure, il peut être utile de consulter votre équipe de terrain ou administrateur de comptes Azure local pour vérifier que vous pouvez effectuer votre déploiement à l’échelle requise.
 1. **Contraintes :** Certaines contraintes affectent le déploiement de services dans certaines régions. Par exemple, certaines régions sont disponibles uniquement en tant que destinations de sauvegarde ou de basculement. Les [exigences de souveraineté des données](https://azure.microsoft.com/global-infrastructure/geographies) représentent d’autres contraintes qu’il est important de noter.
 1. **Souveraineté :** Certaines régions sont dédiées à des entités souveraines spécifiques. Même si toutes les régions sont des régions Azure, ces régions souveraines sont totalement isolées du reste d’Azure, elles ne sont pas nécessairement gérées par Microsoft et peuvent être limitées à certains types de clients. Ces régions souveraines sont les suivantes :
     1. [Azure Chine](https://azure.microsoft.com/global-infrastructure/china)

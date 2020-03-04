@@ -3,16 +3,16 @@ title: Check-list pour le cadre étendu d’une migration cloud
 description: Check-list pour le cadre étendu d’une migration cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6a7a59ba62204d43b7085ab3dbd6b934d6aaccc1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba6c768f98e3b74b0478fef0a86e6d8ac5537f1c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803107"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222326"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Cadre étendu pour une migration cloud
 
@@ -26,14 +26,13 @@ La check-list suivante décrit des situations complexes qui peuvent nécessiter 
 
 ### <a name="business-driven-scope-expansion"></a>Expansion du cadre basée sur l’activité
 
-- **[Équilibrage du portefeuille](./balance-the-portfolio.md) :** L’équipe de stratégie cloud souhaite investir davantage dans la migration (réhébergement des charges de travail et des applications existantes avec un minimum de modifications) ou dans l’innovation (refactorisation ou recréation des charges de travail et des applications à l’aide d’une technologie cloud moderne). Souvent, la clé du succès réside dans l’équilibre entre ces deux priorités. Dans ce guide, le thème de l’équilibrage du portefeuille de l’adoption cloud est courant, car il est présent dans tous les processus de migration.
 - **[Prise en charge des marchés internationaux](../../decision-guides/regions/index.md) :** L’entreprise est implantée dans plusieurs zones géographiques qui ont chacune des exigences de souveraineté des données différentes. Pour répondre à ces exigences, d’autres considérations viennent s’ajouter aux prérequis et à la répartition des ressources pendant la migration.
 
 ### <a name="technology-driven-scope-expansion"></a>Expansion du cadre basée sur la technologie
 
 - **[Migration VMware](./vmware-host.md) :** la migration des hôtes VMware peut accélérer le processus de migration global. Chaque hôte VMware migré peut déplacer plusieurs charges de travail vers le cloud à l’aide d’une approche lift-and-shift. Après la migration, ces machines virtuelles et charges de travail peuvent rester dans VMware ou être migrées vers des fonctionnalités cloud modernes.
 - **[Migration de SQL Server](./sql-migration.md) :** la migration de serveurs SQL peut accélérer le processus de migration global. Chaque SQL Server migré peut déplacer plusieurs bases de données et services, ce qui peut accélérer plusieurs charges de travail.
-- **[Centres de données multiples](./multiple-datacenters.md) :** la migration de plusieurs centres de données rend la migration très complexe. Durant les processus d’évaluation, de migration, d’optimisation et de gestion, d’autres considérations sont abordées pour préparer des environnements plus complexes.
+- **[Centres de données multiples](./multiple-datacenters.md) :** la migration de plusieurs centres de données rend la migration beaucoup plus complexe. Durant les processus d’évaluation, de migration, d’optimisation et de gestion, d’autres considérations sont abordées pour préparer des environnements plus complexes.
 - **[Besoins des données qui dépassent la capacité réseau](./network-capacity-exceeded.md) :** Les entreprises choisissent souvent de passer au cloud, car elles ne sont plus satisfaites de la capacité, de la rapidité ou de la stabilité d’un centre de données existant. Malheureusement, ces mêmes contraintes compliquent le processus de migration, en nécessitant une planification supplémentaire lors des processus de migration et d’évaluation.
 - **[Stratégie de gouvernance ou de conformité](./governance-or-compliance.md) :** quand la gouvernance et la conformité sont essentielles à la réussite d’une migration, un alignement supplémentaire entre les équipes de gouvernance informatique et l’équipe d’adoption du cloud est nécessaire.
 
@@ -43,7 +42,7 @@ Ces scénarios sont abordés dans les différents articles de cette section du F
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Parcourez la table des matières située sur la gauche pour répondre à certains besoins ou pour effectuer des changements de cadre. Autre option : la première amélioration du cadre de la liste ([Équilibrage du portefeuille](./balance-the-portfolio.md)) est un bon point de départ pour passer en revue ces scénarios.
+Parcourez la table des matières située sur la gauche pour répondre à certains besoins ou pour effectuer des changements de cadre. Autre option : la première amélioration du cadre de la liste ([Prise en charge des marchés internationaux](../../decision-guides/regions/index.md)) est un bon point de départ pour passer en revue ces scénarios.
 
 > [!div class="nextstepaction"]
-> [Équilibrage du portefeuille](./balance-the-portfolio.md)
+> [Prise en charge des marchés internationaux](../../decision-guides/regions/index.md)

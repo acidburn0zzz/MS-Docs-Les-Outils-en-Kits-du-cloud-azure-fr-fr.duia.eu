@@ -42,9 +42,11 @@ items:
             href: strategy/financial-models.md
           - name: Comprendre la comptabilité cloud
             href: strategy/cloud-accounting.md
+          - name: Équilibrer le portefeuille
+            href: strategy/balance-the-portfolio.md
       - name: Premier projet d’adoption du cloud
         href: strategy/first-adoption-project.md
-      - name: Compétences suggérées
+      - name: Compétences relatives à la stratégie
         href: strategy/suggested-skills.md
   - name: Plan
     items:
@@ -70,7 +72,7 @@ items:
         items:
           - name: Vue d’ensemble
             href: plan/plan-intro.md
-          - name: Conditions préalables requises
+          - name: Prérequis
             href: plan/prerequisites.md
           - name: Déployer le modèle sur Azure DevOps
             href: plan/template.md
@@ -84,10 +86,16 @@ items:
             href: plan/iteration-paths.md
           - name: Estimer les chronologies
             href: plan/timelines.md
-      - name: Compétences suggérées
-        href: plan/suggested-skills.md
-      - name: S’adapter pour le cloud
-        href: plan/adapt-roles-skills-processes.md
+      - name: Plan de préparation des compétences
+        items:
+          - name: Établir un plan de préparation
+            href: plan/adapt-roles-skills-processes.md
+          - name: Mapper les rôles et les compétences
+            href: plan/suggested-skills.md
+      - name: Meilleures pratiques
+        items:
+          - name: Évaluation du patrimoine numérique dans Azure
+            href: plan/contoso-migration-assessment.md
   - name: Ready
     items:
       - name: Vue d’ensemble
@@ -108,32 +116,46 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: Rester à jour sur Azure
             href: ready/azure-setup-guide/staying-current.md
-          - name: Déployer une zone d’accueil de migration
-            href: ready/azure-setup-guide/migration-landing-zone.md
-      - name: Considérations relatives aux zones d’accueil
+      - name: Première zone d’accueil
+        items:
+          - name: "Qu’est-ce qu’une zone d’accueil\_?"
+            href: ready/landing-zone/index.md
+          - name: Choisir votre première zone d’accueil
+            href: ready/landing-zone/first-landing-zone.md
+          - name: Blueprint de zone d’accueil de la migration
+            href: ready/landing-zone/migrate-landing-zone.md
+          - name: Zones d’atterrissage Terraform
+            href: ready/landing-zone/terraform-landing-zone.md
+      - name: Étendre la zone d’accueil
         items:
           - name: Vue d’ensemble
             href: ready/considerations/index.md
-          - name: Concepts fondamentaux Azure
-            href: ready/considerations/fundamental-concepts.md
-          - name: Passer en revue les options de calcul
-            href: ready/considerations/compute-options.md
-          - name: Passer en revue les options de réseau
-            href: ready/considerations/networking-options.md
-          - name: Passer en revue les options de stockage
-            href: ready/considerations/storage-options.md
-          - name: Passer en revue les options de données
-            href: ready/considerations/data-options.md
-          - name: Contrôles de l’accès en fonction du rôle
-            href: ready/considerations/roles.md
-          - name: Créer une cohérence de cloud hybride
-            href: ready/considerations/hybrid-consistency.md
-      - name: Étendue supplémentaire
-        items:
-          - name: Zones d’atterrissage Terraform
-            href: ready/expanded-scope/terraform-landing-zone.md
-          - name: Sécurité des limites du réseau
-            href: reference/networking-vdc.md
+          - name: Considérations générales relatives aux zones d’accueil
+            items:
+              - name: Concepts fondamentaux Azure
+                href: ready/considerations/fundamental-concepts.md
+              - name: Passer en revue les options de calcul
+                href: ready/considerations/compute-options.md
+              - name: Passer en revue les options de réseau
+                href: ready/considerations/networking-options.md
+              - name: Passer en revue les options de stockage
+                href: ready/considerations/storage-options.md
+              - name: Passer en revue les options de données
+                href: ready/considerations/data-options.md
+              - name: Contrôles de l’accès en fonction du rôle
+                href: ready/considerations/roles.md
+              - name: Créer une cohérence de cloud hybride
+                href: ready/considerations/hybrid-consistency.md
+          - name: Améliorer la sécurité des zones d’accueil (données sensibles)
+            items:
+              - name: Implémentation d’une architecture réseau hybride sécurisée dans Azure
+                href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Bonnes pratiques pour la sécurité du contrôle d’accès et de gestion des identités Azure
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Bonnes pratiques pour la sécurité des réseaux Azure
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Bonnes pratiques pour la sécurité des opérations Azure
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
       - name: Meilleures pratiques
         items:
           - name: Vue d’ensemble
@@ -146,6 +168,8 @@ items:
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: Mise en réseau
             items:
+              - name: Sécurité des limites du réseau
+                href: reference/networking-vdc.md
               - name: Planifier des réseaux virtuels
                 href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Bonnes pratiques pour la sécurité réseau
@@ -188,7 +212,7 @@ items:
                 href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Surveiller l’utilisation et les dépenses
                 href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-      - name: Compétences suggérées
+      - name: Compétences relatives à la préparation et aux zones d’accueil
         href: ready/suggested-skills.md
   - name: Adopter
     items:
@@ -200,91 +224,41 @@ items:
             items:
               - name: Avant de commencer
                 href: migrate/azure-migration-guide/index.md
-              - name: Composants requis pour la migration Azure
-                href: migrate/azure-migration-guide/prerequisites.md
-              - name: Évaluer votre patrimoine numérique
+              - name: Évaluer chaque charge de travail et affiner les plans
                 href: migrate/azure-migration-guide/assess.md
               - name: Migrer les ressources de charge de travail
                 href: migrate/azure-migration-guide/migrate.md
+              - name: 'Tester, optimiser et promouvoir'
+                href: migrate/azure-migration-guide/optimize-and-transform.md
               - name: Mécanismes de contrôle des coûts axés sur la migration
                 href: migrate/azure-migration-guide/manage-costs.md
-              - name: Optimiser et transformer
-                href: migrate/azure-migration-guide/optimize-and-transform.md
-              - name: Sécuriser et gérer
-                href: migrate/azure-migration-guide/secure-and-manage.md
               - name: Obtenir une assistance
                 href: migrate/azure-migration-guide/assistance.md
-          - name: Étendue supplémentaire
-            items:
-              - name: Liste de contrôle de l’étendue supplémentaire
-                href: migrate/expanded-scope/index.md
-              - name: Équilibrer le portefeuille
-                href: migrate/expanded-scope/balance-the-portfolio.md
-              - name: Préparation des compétences
-                href: migrate/expanded-scope/suggested-skills.md
-              - name: Migration de l’hôte VMware
-                href: migrate/expanded-scope/vmware-host.md
-              - name: Migration de SQL Server
-                href: migrate/expanded-scope/sql-migration.md
-              - name: Plusieurs centres de données
-                href: migrate/expanded-scope/multiple-datacenters.md
-              - name: Besoins des données qui dépassent la capacité réseau
-                href: migrate/expanded-scope/network-capacity-exceeded.md
-              - name: Gouvernance et conformité
-                href: migrate/expanded-scope/governance-or-compliance.md
-          - name: Meilleures pratiques
+          - name: Scénarios de migration
             items:
               - name: Vue d’ensemble
-                href: migrate/azure-best-practices/index.md
-              - name: Évaluation des charges de travail
+                href: migrate/azure-best-practices/contoso-migration-overview.md
+              - name: Charges de travail Windows Server
                 items:
-                  - name: Évaluer les charges de travail locales
-                    href: migrate/azure-best-practices/contoso-migration-assessment.md
-              - name: Migration des charges de travail
+                  - name: Réhéberger une application Windows sur des machines virtuelles Azure
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
+                  - name: Réarchitecturer une application Windows avec des conteneurs et Azure SQL
+                    href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
+              - name: Charges de travail Linux
                 items:
-                  - name: Configurer la mise en réseau pour les charges de travail migrées
-                    href: migrate/azure-best-practices/migrate-best-practices-networking.md
-                  - name: Migration d’applications
-                    items:
-                      - name: Vue d’ensemble
-                        href: migrate/azure-best-practices/contoso-migration-overview.md
-                      - name: Déployer une infrastructure de migration
-                        href: migrate/azure-best-practices/contoso-migration-infrastructure.md
-                      - name: Charges de travail Windows Server
-                        items:
-                          - name: Réhéberger une application Windows sur des machines virtuelles Azure
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
-                          - name: Réarchitecturer une application Windows avec des conteneurs et Azure SQL
-                            href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
-                      - name: Charges de travail Linux
-                        items:
-                          - name: Réhéberger une application Linux sur des machines virtuelles Azure
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
-                          - name: Réhéberger une application Linux sur des machines virtuelles Azure et Azure Database pour MySQL
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
-                      - name: Charges de travail SQL Server
-                        items:
-                          - name: Ré-héberger une application sur des machines virtuelles Azure et sur Azure SQL Database Managed Instance
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
-                          - name: Réhéberger une application sur des machines virtuelles Azure et des groupes de disponibilité SQL Server AlwaysOn
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
-                      - name: Applications ASP.NET/PHP/Java
-                        items:
-                          - name: Refactoriser une application sur Azure App Service et Azure SQL Database
-                            href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                          - name: Refactoriser une application Linux sur Azure App Service et Azure Database pour MySQL
-                            href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
-                          - name: Regénérer une application dans Azure
-                            href: migrate/azure-best-practices/contoso-migration-rebuild.md
-                          - name: Migrer TFS vers Azure DevOps Services
-                            href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
-                      - name: Mettre à l’échelle une migration
-                        href: migrate/azure-best-practices/contoso-migration-scale.md
-              - name: Migration des hôtes VMware
+                  - name: Réhéberger une application Linux sur des machines virtuelles Azure
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
+                  - name: Réhéberger une application Linux sur des machines virtuelles Azure et Azure Database pour MySQL
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
+                  - name: Refactoriser une application Linux sur Azure App Service et Azure Database pour MySQL
+                    href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
+              - name: Hôtes VMware
                 items:
                   - name: Vue d’ensemble
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: Conditions préalables requises
+                  - name: Considérations relatives à la migration d’hôtes VMWare
+                    href: migrate/expanded-scope/vmware-host.md
+                  - name: Prérequis
                     items:
                       - name: Sécuriser votre environnement
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -336,7 +310,35 @@ items:
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Configurer Private Cloud comme site de reprise d’activité avec VMware SRM
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Migrer des plateformes de données
+              - name: Applications ASP.NET
+                items:
+                  - name: Refactoriser une application sur Azure App Service et Azure SQL Database
+                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
+                  - name: Regénérer une application dans Azure
+                    href: migrate/azure-best-practices/contoso-migration-rebuild.md
+                  - name: Migrer TFS vers Azure DevOps Services
+                    href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
+              - name: Applications Java
+                items:
+                  - name: Options de migration
+                    href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Spring vers Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat vers Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat vers les conteneurs sur AKS
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: WebLogic vers Machines virtuelles Azure
+                    href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: SQL Server
+                items:
+                  - name: Considérations relatives à la migration de serveurs SQL Server
+                    href: migrate/expanded-scope/sql-migration.md
+                  - name: Ré-héberger une application sur des machines virtuelles Azure et sur Azure SQL Database Managed Instance
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
+                  - name: Réhéberger une application sur des machines virtuelles Azure et des groupes de disponibilité SQL Server AlwaysOn
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
+              - name: Plateformes de données
                 items:
                   - name: Vue d’ensemble
                     href: migrate/azure-best-practices/sql-migration.md
@@ -420,7 +422,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Migrer Oracle vers Azure Database pour PostgreSQL en ligne
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Migrer des ordinateurs mainframe
+              - name: Ordinateurs mainframe
                 items:
                   - name: Vue d’ensemble
                     href: infrastructure/mainframe-migration/index.md
@@ -430,49 +432,53 @@ items:
                     href: infrastructure/mainframe-migration/migration-strategies.md
                   - name: Migration d’applications d’un environnement mainframe
                     href: infrastructure/mainframe-migration/application-strategies.md
-              - name: Optimiser les charges de travail
-                items:
-                  - name: Évaluation des coûts et dimensionnement des charges de travail
-                    href: migrate/azure-best-practices/migrate-best-practices-costs.md
-              - name: Sécuriser et gérer les charges de travail
+              - name: Migrer des charges de travail sécurisées
                 items:
                   - name: Sécurisation et gestion des charges de travail après la migration
                     href: migrate/azure-best-practices/migrate-best-practices-security-management.md
-                  - name: Bonnes pratiques supplémentaires
-                    items:
-                      - name: Meilleures pratiques en matière de sécurité pour les bases de données Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Bonnes pratiques pour la sécurité du contrôle d’accès et de gestion des identités Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Bonnes pratiques pour la sécurité des réseaux Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Bonnes pratiques pour la sécurité des opérations Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Bonnes pratiques pour Azure PaaS
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Bonnes pratiques pour la sécurité Azure Service Fabric
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Meilleures pratiques pour la sécurité des machines virtuelles Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Implémentation d’une architecture réseau hybride sécurisée dans Azure
-                        href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Meilleures pratiques relatives à la sécurité IoT
-                        href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Sécurisation des bases de données PaaS dans Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Sécurisation des applications mobiles et web PaaS avec Azure App Service
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Sécurisation des applications mobiles et web PaaS à l’aide du stockage Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Meilleures pratiques de sécurité pour les charges de travail IaaS dans Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-          - name: Considérations relatives à la migration
+                  - name: Meilleures pratiques en matière de sécurité pour les bases de données Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Bonnes pratiques pour Azure PaaS
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Bonnes pratiques pour la sécurité Azure Service Fabric
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Meilleures pratiques pour la sécurité des machines virtuelles Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Meilleures pratiques relatives à la sécurité IoT
+                    href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Sécurisation des bases de données PaaS dans Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Sécurisation des applications mobiles et web PaaS avec Azure App Service
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Sécurisation des applications mobiles et web PaaS à l’aide du stockage Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Meilleures pratiques de sécurité pour les charges de travail IaaS dans Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: Meilleures pratiques
+            items:
+              - name: Vue d’ensemble
+                href: migrate/azure-best-practices/index.md
+              - name: Centres de données multiples
+                href: migrate/expanded-scope/multiple-datacenters.md
+              - name: Besoins des données qui dépassent la capacité réseau
+                href: migrate/expanded-scope/network-capacity-exceeded.md
+              - name: Configurer la mise en réseau pour les charges de travail migrées
+                href: migrate/azure-best-practices/migrate-best-practices-networking.md
+              - name: Déployer une infrastructure de migration
+                href: migrate/azure-best-practices/contoso-migration-infrastructure.md
+              - name: Optimiser le coût des charges de travail migrées
+                href: migrate/azure-best-practices/migrate-best-practices-costs.md
+              - name: Mettre à l’échelle une migration
+                href: migrate/azure-best-practices/contoso-migration-scale.md
+              - name: Gouvernance et conformité
+                href: migrate/expanded-scope/governance-or-compliance.md
+          - name: Améliorations de processus
             items:
               - name: Vue d’ensemble
                 href: migrate/migration-considerations/index.md
-              - name: Conditions préalables requises
+              - name: Prérequis
                 items:
                   - name: Vue d’ensemble
                     href: migrate/migration-considerations/prerequisites/index.md
@@ -486,9 +492,9 @@ items:
                     href: migrate/migration-considerations/prerequisites/technical-complexity.md
                   - name: Révision du backlog de migration
                     href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
-              - name: Évaluer les ressources et les charges de travail
+              - name: Processus d’évaluation
                 items:
-                  - name: Évaluer les ressources avant la migration
+                  - name: "Valider les hypothèses d’évaluation avant la migration - Ajouter un ajustement\_R"
                     href: migrate/migration-considerations/assess/index.md
                   - name: Conserver l’alignement des priorités
                     href: migrate/migration-considerations/assess/business-priorities.md
@@ -496,7 +502,7 @@ items:
                     href: migrate/migration-considerations/assess/evaluate.md
                   - name: Concevoir l’architecture des charges de travail
                     href: migrate/migration-considerations/assess/architect.md
-                  - name: Estimer les coûts du cloud
+                  - name: Mettre à jour et affiner les estimations du cloud initiales
                     href: migrate/migration-considerations/assess/estimate.md
                   - name: Comprendre les options de partenariat
                     href: migrate/migration-considerations/assess/partnership-options.md
@@ -504,7 +510,7 @@ items:
                     href: migrate/migration-considerations/assess/release-iteration-backlog.md
                   - name: Approuver les changements de l’architecture
                     href: migrate/migration-considerations/assess/approve.md
-              - name: Migrer des ressources individuelles
+              - name: Processus de migration
                 items:
                   - name: Vue d’ensemble
                     href: migrate/migration-considerations/migrate/index.md
@@ -518,7 +524,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Indexer les charges de travail
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: Optimiser et promouvoir des charges de travail
+              - name: 'Processus de test, d’optimisation et de promotion'
                 items:
                   - name: Vue d’ensemble
                     href: migrate/migration-considerations/optimize/index.md
@@ -536,10 +542,8 @@ items:
                     href: migrate/migration-considerations/optimize/decommission.md
                   - name: Mener des rétrospectives
                     href: migrate/migration-considerations/optimize/retrospective.md
-              - name: Sécuriser et gérer les charges de travail en production
-                items:
-                  - name: Vue d’ensemble
-                    href: migrate/migration-considerations/secure-and-manage/index.md
+          - name: Compétences relatives à la migration
+            href: migrate/expanded-scope/suggested-skills.md
       - name: Innover
         items:
           - name: Vue d’ensemble
@@ -560,39 +564,7 @@ items:
                 href: innovate/innovation-guide/devices.md
               - name: Prédire et influencer
                 href: innovate/innovation-guide/predict.md
-          - name: Considérations
-            items:
-              - name: Vue d’ensemble
-                href: innovate/considerations/index.md
-              - name: Consensus sur la valeur métier
-                href: innovate/business-value.md
-              - name: Adoption par le client
-                items:
-                  - name: Boucles de rétroaction
-                    href: innovate/considerations/adoption.md
-                  - name: Développer en faisant preuve d’empathie vis à vis du client
-                    href: innovate/considerations/build.md
-                  - name: Mesure de l’impact sur le client
-                    href: innovate/considerations/measure.md
-                  - name: Apprendre avec les clients
-                    href: innovate/considerations/learn.md
-                  - name: Défis et blocages des clients
-                    href: innovate/considerations/challenges.md
-              - name: Invention numérique
-                items:
-                  - name: Développer des inventions numériques
-                    href: innovate/considerations/invention.md
-                  - name: Démocratiser les données
-                    href: innovate/considerations/data.md
-                  - name: Impliquer par le biais d’applications
-                    href: innovate/considerations/apps.md
-                  - name: Favoriser l’adoption
-                    href: innovate/considerations/ci-cd.md
-                  - name: Interagir avec les appareils
-                    href: innovate/considerations/devices.md
-                  - name: Prédire et influencer
-                    href: innovate/considerations/predict.md
-          - name: Bonnes pratiques en matière d’innovation
+          - name: Meilleures pratiques
             items:
               - name: Vue d’ensemble et chaîne d’outils Azure
                 href: innovate/best-practices/index.md
@@ -860,6 +832,38 @@ items:
                         href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Rendre opérationnel ML Services sur Azure HDInsight
                         href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: Améliorations de processus
+            items:
+              - name: Vue d’ensemble
+                href: innovate/considerations/index.md
+              - name: Consensus sur la valeur métier
+                href: innovate/business-value.md
+              - name: Adoption par le client
+                items:
+                  - name: Boucles de rétroaction
+                    href: innovate/considerations/adoption.md
+                  - name: Développer en faisant preuve d’empathie vis à vis du client
+                    href: innovate/considerations/build.md
+                  - name: Mesure de l’impact sur le client
+                    href: innovate/considerations/measure.md
+                  - name: Apprendre avec les clients
+                    href: innovate/considerations/learn.md
+                  - name: Défis et blocages des clients
+                    href: innovate/considerations/challenges.md
+              - name: Invention numérique
+                items:
+                  - name: Développer des inventions numériques
+                    href: innovate/considerations/invention.md
+                  - name: Démocratiser les données
+                    href: innovate/considerations/data.md
+                  - name: Impliquer par le biais d’applications
+                    href: innovate/considerations/apps.md
+                  - name: Favoriser l’adoption
+                    href: innovate/considerations/ci-cd.md
+                  - name: Interagir avec les appareils
+                    href: innovate/considerations/devices.md
+                  - name: Prédire et influencer
+                    href: innovate/considerations/predict.md
   - name: Gouvernance
     items:
       - name: Vue d’ensemble
@@ -1186,7 +1190,7 @@ items:
         href: organize/cost-conscious-organization.md
       - name: Antimodèles - Fiefs informatiques et silos informatiques
         href: organize/fiefdoms-silos.md
-  - name: Informations de référence
+  - name: Ressources
     items:
       - name: Feuille de route du Framework d’adoption du cloud
         href: reference/index.md
@@ -1244,5 +1248,5 @@ items:
         href: reference/vdc.md
       - name: Fonctionnement d’Azure
         href: getting-started/what-is-azure.md
-  - name: Centre des architectures Azure
-    href: 'https://docs.microsoft.com/azure/architecture'
+      - name: Centre des architectures Azure
+        href: 'https://docs.microsoft.com/azure/architecture'

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707660"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222769"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 
@@ -44,7 +44,7 @@ Si votre organisation ne dispose pas à l’heure actuelle de systèmes de créa
 
 Dans ce scénario, toutes les données de journal sont enregistrées et stockées dans le cloud, tandis que les outils de journalisation et création de rapports, qui traitent les informations et les mettent en évidence auprès de l’équipe informatique, sont fournis par la plateforme Azure et Azure Monitor.
 
-Les solutions de journalisation personnalisées basées sur Azure Monitor peuvent être implémentées ad hoc pour chaque abonnement ou charge de travail, dans des déploiements plus petits ou expérimentaux. Par ailleurs, elles sont organisées de manière centralisée afin de superviser les données de journal de tout votre patrimoine cloud.
+Les solutions de journalisation personnalisées basées sur Azure Monitor peuvent être implémentées en fonction des besoins pour chaque abonnement ou charge de travail dans des déploiements plus petits ou expérimentaux. Ces solutions sont organisées de manière centralisée pour superviser les données des journaux dans l’ensemble de votre patrimoine cloud.
 
 **Conditions nécessaires pour le cloud natif :** Les conditions suivantes sont nécessaires à l’utilisation d’un système de création de rapports et de journalisation cloud natif :
 

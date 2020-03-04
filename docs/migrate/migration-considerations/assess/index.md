@@ -1,20 +1,20 @@
 ---
-title: Évaluer les ressources avant la migration
-description: Évaluer les ressources avant la migration
+title: Valider les hypothèses d’évaluation avant la migration
+description: Valider les hypothèses d’évaluation avant la migration
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 76862bfbc4a88d34edb3dddb6281b5c435e6be73
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802495"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222275"
 ---
-# <a name="assess-assets-prior-to-migration"></a>Évaluer les ressources avant la migration
+# <a name="validate-assessment-assumptions-before-migration"></a>Valider les hypothèses d’évaluation avant la migration
 
 Bon nombre de vos charges de travail existantes sont des candidates idéales pour la migration vers le cloud, mais toutes les ressources ne sont pas compatibles avec les plateformes cloud et certaines charges de travail ne tirent aucun profit de l’hébergement dans le cloud. La [planification du patrimoine numérique](../../../digital-estate/index.md) vous permet de générer un [backlog de migration](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing) global des charges de travail potentielles à migrer. Toutefois, cet effort de planification est global. Il s’appuie sur des hypothèses formulées par l’équipe de stratégie cloud et n’explore pas en profondeur les considérations techniques.
 
@@ -44,11 +44,14 @@ En plus de la responsabilité d’ensemble, certaines actions doivent être affe
 - **Priorité de l’entreprise.** L’équipe comprend le but de la migration de cette charge de travail, notamment tout impact prévu sur l’entreprise.
   - Un membre de l’équipe de stratégie cloud doit assumer la responsabilité finale de cette activité, sous la direction de l’équipe d’adoption du cloud.
 - **Alignement des parties prenantes.** L’équipe aligne les attentes et les priorités avec les parties prenantes internes, identifiant ainsi les critères de réussite de la migration. À quoi ressemble une migration réussie ?
+- **Rationalisation optimisée.** Les hypothèses initiales sont évaluées par rapport à la rationalisation. Une [approche de rationalisation](../../../digital-estate/rationalize.md) différente doit-elle être utilisée pour la migration de cette charge de travail spécifique ?
+- **Décisions de modernisation.** Quelle que soit la décision de rationalisation, les diverses ressources dans la charge de travail doivent-elles être modernisées pour tirer parti des solutions PaaS ?
 - **Coût.** Le coût de l’architecture cible a été estimé et le budget global ajusté.
 - **Prise en charge de la migration.** L’équipe a décidé de la manière dont le travail technique de la migration sera effectué, notamment pour déterminer qui du partenaire ou de Microsoft sera chargé du support.
 - **Évaluation.** La charge de travail est évaluée pour déterminer sa compatibilité et ses dépendances.
   - Cette activité doit être confiée à un expert en la matière qui connaît bien l’architecture et les opérations de la charge de travail candidate.
 - **Architecte.** L’équipe a convenu de l’architecture finale pour la charge de travail migrée.
+- **Outils de migration.** Selon les approches de modernisation et d’architecture, différents outils de migration sont disponibles pour automatiser la migration. Avec l’architecture proposée, cette migration utilisera-t-elle les [outils de migration](../../../decision-guides/migrate-decision-guide/index.md) les plus adaptés ?
 - **Alignement du backlog.** L’équipe d’adoption du cloud passe en revue les exigences et s’engage à migrer la charge de travail candidate. Après l’engagement, le backlog des versions et celui des itérations doivent être mis à jour en conséquence.
 - **Structure de répartition du travail ou rétroplanning.** L’équipe établit un calendrier des principales étapes afin d’identifier les objectifs de finalisation des processus de planification, d’implémentation et d’examen.
 - **Approbation finale.** Tous les approbateurs nécessaires ont examiné le plan et ont approuvé l’approche en matière de migration de la ressource.
