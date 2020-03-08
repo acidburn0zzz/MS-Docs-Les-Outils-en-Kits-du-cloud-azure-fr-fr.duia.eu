@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6fcd5892eb9d13b61cbaa697731718e1ca8ce3eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708153"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892444"
 ---
 # <a name="architectural-decision-guides"></a>Guides de décision en matière d'architecture
 
@@ -42,8 +42,6 @@ Chacune des catégories suivantes représente une technologie de base de tout d�
 [Chiffrement](./encryption/index.md) : Sécurisez vos données sensibles à l’aide du chiffrement pour se conformer aux exigences de stratégie de sécurité et de conformité de votre entreprise.
 
 [Journalisation et création de rapports](./logging-and-reporting/index.md) : Surveillez les données de journal générées par les ressources cloud. L’analyse des données vous renseigne sur l’intégrité des opérations, de la maintenance et du statut de conformité des charges de travail.
-
-[Aide sur le choix de la région](./regions/index.md) : Discussion sur les critères de décision à considérer pour déterminer la région de placement des ressources au sein de la plateforme Azure.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

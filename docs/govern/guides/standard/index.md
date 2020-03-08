@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 481a617d3a09ae1f81fe313dd557314aed8f4f29
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 2ab2fa1cce7e779538137302a326ca49a291ad28
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706843"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892094"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guide de gouvernance pour les entreprises standard
 
@@ -42,7 +42,7 @@ Chaque application doit être déployée dans la zone appropriée du groupe d’
 2. Deux abonnements, un pour les charges de travail de production et un autre pour les charges de travail de non-production.
 3. Une [nomenclature cohérente](../../../ready/azure-best-practices/naming-and-tagging.md) doit être appliquée à chaque niveau de cette hiérarchie de regroupement.
 4. Les groupes de ressources doivent être déployés de manière à prendre en compte le cycle de vie de leur contenu : tous les contenus développés ensemble sont gérés ensemble et mis hors service ensemble. Pour plus d’informations sur les bonnes pratiques relatives aux groupes de ressources, consultez [cette page](../../../decision-guides/resource-consistency/index.md).
-5. Le [choix de la région](../../../decision-guides/regions/index.md) est extrêmement important, notamment pour la mise en place du réseau, de la supervision et de l’audit pour le basculement/la restauration automatique. Il convient également de vérifier que les [références SKU nécessaires](https://azure.microsoft.com/global-infrastructure/services) sont disponibles dans les régions privilégiées.
+5. Le [choix de la région](../../../migrate/azure-best-practices/multiple-regions.md) est extrêmement important, notamment pour la mise en place du réseau, de la supervision et de l’audit pour le basculement/la restauration automatique. Il convient également de vérifier que les [références SKU nécessaires](https://azure.microsoft.com/global-infrastructure/services) sont disponibles dans les régions privilégiées.
 
 Voici un exemple de modèle utilisé :
 
