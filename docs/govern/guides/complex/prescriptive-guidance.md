@@ -1,6 +1,6 @@
 ---
-title: 'Guide de gouvernance pour les entreprises complexes : Explication des conseils'
-description: Découvrez les bonnes pratiques pour la gouvernance dans des entreprises complexes.
+title: 'Gouvernance pour les entreprises complexes : Explication des conseils'
+description: Utilisez le Framework d’adoption du cloud pour Azure afin d’établir un produit minimum viable (MVP, minimum viable product) pour la gouvernance qui reflète les bonnes pratiques que doit observer une entreprise complexe.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e733db73ce5a77d4b1e81f052804b7a49da4aad5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806269"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709207"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Guide de gouvernance pour les entreprises complexes : Explication des conseils
 

@@ -1,18 +1,18 @@
 ---
-title: Collecter des données d’inventaire pour un patrimoine numérique
-description: Description du processus de collecte des données d’inventaire pour un patrimoine numérique
+title: Données d’inventaire pour un patrimoine numérique
+description: Apprenez à dresser une liste d’inventaire des ressources informatiques qui prennent en charge des fonctions métier spécifiques en vue d’être analysées et rationalisées ultérieurement.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 013a47725113ee76a7ba64b54a70cce714829290
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1735c5e6f818f727cee3e28f11fbaf31610de8d8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804569"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170084"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Collecter des données d’inventaire pour un patrimoine numérique
 

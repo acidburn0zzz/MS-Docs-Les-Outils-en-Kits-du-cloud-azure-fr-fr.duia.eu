@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6f812c8f32ec9481942f697151e7ed803654a1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807408"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223017"
 ---
+<!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
+
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Réhéberger une application Linux locale vers des machines virtuelles Azure et Azure Database pour MySQL
 
 Cet article explique comment la société fictive Contoso réhéberge une application Apache/MySQL/PHP (LAMP) à deux niveaux et basée sur Linux, en la migrant d’un emplacement local vers Azure à l’aide de machines virtuelles Azure et d’Azure Database pour MySQL.
@@ -81,7 +83,7 @@ Pour migrer la base de données :
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Le service orchestre et gère la migration et la récupération d’urgence pour les machines virtuelles Azure, les machines virtuelles locales et les serveurs physiques. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement, et entraînent des frais. [En savoir plus](https://azure.microsoft.com/pricing/details/site-recovery) sur les frais et la tarification.
 [Azure Database pour MySQL](https://docs.microsoft.com/azure/mysql) | La base de données est basée sur le moteur du serveur MySQL open source. Il fournit une base de données MySQL complètement managée et de classe Entreprise, appuyée par une communauté active, en tant que service pour le développement et le déploiement d’applications.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Voici ce dont Contoso a besoin pour ce scénario.
 
@@ -165,7 +167,7 @@ Le service Mobilité doit être installé sur chaque machine virtuelle que Conto
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Préparer la connexion aux machines virtuelles Azure après le basculement
 
-Après le basculement vers Azure, Contoso souhaite pouvoir se connecter aux machines virtuelles Azure. Pour ce faire, les administrateurs de Contoso doivent effectuer les opérations suivantes :
+Après le basculement vers Azure, Contoso souhaite se connecter aux machines virtuelles Azure. Pour ce faire, les administrateurs de Contoso doivent effectuer les opérations suivantes :
 
 - Pour accéder via Internet, Contoso active SSH sur la machine virtuelle Linux locale avant la migration. Pour Ubuntu, cette opération peut être effectuée à l’aide de la commande suivante : **Sudo apt-get ssh install -y**.
 - Après basculement, Contoso doit consulter les **diagnostics de démarrage** pour afficher une capture d’écran de la machine virtuelle.
@@ -214,7 +216,7 @@ Pour pouvoir migrer la machine virtuelle web vers Azure, les administrateurs de 
 
 ### <a name="confirm-deployment-planning"></a>Confirmer la planification d’un déploiement
 
-Pour continuer, Contoso confirme que la planification du déploiement est terminée en sélectionnant **Yes, I have done it** (Oui, c’est fait). Dans ce scénario, Contoso ne migre qu’une seule machine virtuelle et n’a pas besoin de planification du déploiement.
+Pour continuer, ils doivent confirmer la fin de l’opération en sélectionnant **Yes, I have done it** (Oui, je l’ai fait). Contoso ne fait que migrer une seule machine virtuelle dans ce scénario, ce qui ne nécessite pas de planifier un déploiement.
 
 ### <a name="set-up-the-source-environment"></a>Configurer l’environnement source
 
@@ -442,7 +444,7 @@ L’application étant en cours d’exécution, Contoso doit à présent rendre 
 L’équipe de sécurité de Contoso examine la machine virtuelle et la base de données afin d’identifier d’éventuels problèmes de sécurité.
 
 - Elle examine les groupes de sécurité réseau (NSG) pour la machine virtuelle, afin de contrôler l’accès. Contoso utilise des groupes de sécurité réseau pour s’assurer que seul le trafic autorisé vers l’application puisse passer.
-- L’équipe prend en considération la sécurisation des données sur les disques de machine virtuelle à l’aide d’Azure Disk Encryption et d’Azure Key Vault.
+- L’équipe prend en considération la sécurisation des données sur les disques de machine virtuelle en utilisant le chiffrement de disque et Azure Key Vault.
 - La communication entre la machine virtuelle et l’instance de base de données n’est pas configurée pour SSL. Contoso doit faire cela pour s’assurer que le trafic de base de données ne puisse pas être piraté.
 
 Pour plus d’informations, consultez les [Meilleures pratiques de sécurité pour les charges de travail IaaS dans Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).

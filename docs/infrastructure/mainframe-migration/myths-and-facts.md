@@ -1,18 +1,18 @@
 ---
-title: 'Migration d’ordinateurs mainframe : Mythes et réalités'
-description: Migrez des applications d’environnements mainframe vers Azure, infrastructure fiable, hautement disponible et scalable pour les systèmes qui s’exécutent sur des ordinateurs mainframe.
+title: 'Migration de mainframe : mythes et réalités'
+description: Apprenez à faire la distinction entre les mythes et la réalité concernant les mainframes, et évaluez les charges de travail mainframe qui sont les mieux adaptées à Azure.
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e3e14bca45f8e5531e663c76b346f295ccb64319
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808751"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171308"
 ---
 # <a name="mainframe-myths-and-facts"></a>Mythes et réalités concernant les ordinateurs mainframe
 

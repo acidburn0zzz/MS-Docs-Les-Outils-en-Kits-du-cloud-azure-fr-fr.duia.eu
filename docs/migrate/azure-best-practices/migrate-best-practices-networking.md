@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803872"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225577"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
 
@@ -119,7 +119,7 @@ Azure ajoute par défaut un serveur DNS lorsque vous déployez un réseau virtue
 **En savoir plus :**
 
 - [En savoir plus sur](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) la résolution de noms lorsque vous utilisez votre propre serveur DNS.
-- [En savoir plus sur](../../ready/azure-best-practices/naming-and-tagging.md) les règles et restrictions de nommage DNS.
+- [En savoir plus sur](../../ready/azure-best-practices/naming-and-tagging.md) les règles et restrictions d’affectation de noms DNS.
 
 ## <a name="best-practice-set-up-availability-zones"></a>Bonne pratique : Configurer des zones de disponibilité
 
@@ -377,7 +377,7 @@ NIC4 | AsgDb
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | Autoriser le trafic internet vers les serveurs web. Le trafic entrant à partir d’internet est refusé par la règle de sécurité par défaut DenyAllInbound, donc aucune règle supplémentaire n’est nécessaire pour les groupes de sécurité d’application AsgLogic ou AsgDb. | Priorité : 100<br/><br/> Source : Internet<br/><br/> Port source : *<br/><br/> Destination : AsgWeb<br/><br/> Port de destination : 80<br/><br/> Protocole : TCP<br/><br/> Accès : Autoriser.
 Deny-Database-All | Étant donné que la règle de sécurité par défaut AllowVNetInBound autorise toutes les communications entre les ressources dans le même réseau virtuel, cette règle est nécessaire pour refuser le trafic à partir de toutes les ressources. | Priorité : 120<br/><br/> Source : *<br/><br/> Port source : *<br/><br/> Destination : AsgDb<br/><br/> Port de destination : 1433<br/><br/> Protocole : Tous<br/><br/> Accès : Refuser.
-Allow-Database-BusinessLogic | Autoriser le trafic du groupe de sécurité d’application AsgLogic vers le groupe de sécurité d’application AsgDb. La priorité de cette règle est supérieure à la règle Deny-Database-All et est traitée en premier, c’est pourquoi le trafic en provenance du groupe de sécurité d’application AsgLogic est autorisé et tout autre trafic est bloqué. | Priorité : 110<br/><br/> Source : AsgLogic<br/><br/> Port source : *<br/><br/> Destination : AsgDb<br/><br/> Port de destination : 1433<br/><br/> Protocole : TCP<br/><br/> Accès : Autoriser.
+Allow-Database-BusinessLogic | Autoriser le trafic du groupe de sécurité d’application AsgLogic vers le groupe de sécurité d’application AsgDb. Cette règle étant prioritaire par rapport à la règle Deny-Database-All, elle est traitée en premier. Par conséquent, le trafic en provenance du groupe de sécurité d’application AsgLogic est autorisé et tout le trafic restant est bloqué. | Priorité : 110<br/><br/> Source : AsgLogic<br/><br/> Port source : *<br/><br/> Destination : AsgDb<br/><br/> Port de destination : 1433<br/><br/> Protocole : TCP<br/><br/> Accès : Autoriser.
 
 <!--markdownlint-enable MD033 -->
 

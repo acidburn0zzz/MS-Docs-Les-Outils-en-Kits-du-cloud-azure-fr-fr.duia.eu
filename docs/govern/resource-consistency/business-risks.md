@@ -1,6 +1,6 @@
 ---
-title: Risques métier et motivations associés à la cohérence des ressources
-description: Risques métier et motivations associés à la cohérence des ressources
+title: Risques métier associés à la cohérence des ressources
+description: Utilisez le Framework d’adoption du cloud pour Azure pour comprendre ce qu’est, pour un client type, l’adoption d’une discipline de cohérence des ressources dans le cadre d’une stratégie de gouvernance cloud.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e1c4723aa52c20c16dbfa883d7e8566292ca54b3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90959045d877c313576540c3f0288eff8c136b5f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807221"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706861"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Risques métier et motivations associés à la cohérence des ressources
 

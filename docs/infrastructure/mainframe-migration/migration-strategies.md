@@ -1,19 +1,21 @@
 ---
-title: 'Migration d’ordinateurs mainframe : Assurer la transition d’ordinateurs mainframe vers Azure'
-description: Migrez des applications d’environnements mainframe vers Azure pour les systèmes qui s’exécutent sur des ordinateurs mainframe.
+title: Migrer des applications de mainframes vers Azure
+description: Obtenez des conseils techniques pour passer d’une plateforme mainframe aux capacités de stockage et de calcul hyperscale d’Azure dans un environnement à haute disponibilité.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808768"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223631"
 ---
+<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Assurer la transition d’ordinateurs mainframe vers Azure
 
 Plateforme alternative permettant l’exécution d’applications mainframe classiques, Azure offre des capacités de stockage et de calcul hyperscale dans un environnement à haute disponibilité. Vous bénéficiez de la valeur et de l’agilité d’une plateforme cloud moderne sans les coûts associés à un environnement mainframe.
@@ -59,7 +61,7 @@ La fonctionnalité de couplage effectue un calcul fortement couplé, alors que l
 
 Les clients dotés d’un ordinateur mainframe gèrent généralement des sites de récupération d’urgence ou font appel à un fournisseur de services mainframe indépendant pour les situations d’urgence. La synchronisation avec un site de récupération d’urgence s’effectue habituellement via des copies de données hors connexion. Dans les deux cas, les coûts sont élevés.
 
-Quoique très coûteuse, la géoredondance automatisée est aussi disponible via la fonctionnalité de couplage mainframe. Elle est généralement réservée aux systèmes stratégiques. En revanche, Azure propose des options de [sauvegarde](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), de [récupération](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) et de [redondance](https://docs.microsoft.com/azure/storage/common/storage-redundancy) économiques et faciles à implémenter au niveau local ou régional ou via la géoredondance.
+La géoredondance automatisée est également disponible via la fonctionnalité de couplage mainframe. Cette approche est coûteuse et est généralement réservée aux systèmes stratégiques. En revanche, Azure propose des options de [sauvegarde](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), de [récupération](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) et de [redondance](https://docs.microsoft.com/azure/storage/common/storage-redundancy) économiques et faciles à implémenter au niveau local ou régional ou via la géoredondance.
 
 ## <a name="storage"></a>Stockage
 

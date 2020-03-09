@@ -1,18 +1,18 @@
 ---
-title: 'Innovation cloud : Outils permettant de favoriser l’adoption dans Azure'
-description: Outils permettant de favoriser l’adoption dans Azure
+title: Outils d’innovation favorisant l’adoption
+description: Découvrez les outils Azure basés sur la méthodologie d’innovation permettant d’éliminer les points de friction et de favoriser l’adoption de façon progressive, à mesure que les hypothèses gagnent à maturité.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 01961b514f5640d73150504ea65ee9af2fec17b2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 20dc6aa263e8f7a381809335b4af9b4f4de84dc6
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808700"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171291"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Outils permettant de favoriser l’adoption dans Azure
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b5b8710c8545fa2e7c56131ed74a0ea1a3a02f8e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807425"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222955"
 ---
-# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Réhéberger une application locale sur des machines virtuelles Azure et des groupes de disponibilité Always On SQL Server
+# <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Réhéberger une application locale avec des machines virtuelles Azure et des groupes de disponibilité Always On SQL Server
 
-Cet article explique comment la société fictive Contoso réhéberge une application Windows .NET à deux niveaux qui s’exécute sur des machines virtuelles VMware dans le cadre d’une migration vers Azure. Contoso effectue une migration de la machine virtuelle frontale de l’application vers une machine virtuelle Azure et de la base de données de l’application vers une machine virtuelle Azure SQL Server s’exécutant dans un cluster de basculement Windows Server avec des groupes de disponibilité Always On SQL Server.
+Cet article montre comment la société fictive Contoso rehéberge une application Windows .NET à deux niveaux qui s’exécute sur des machines virtuelles VMware dans le cadre d’une migration vers Azure. Contoso effectue une migration de la machine virtuelle frontale de l’application vers une machine virtuelle Azure et de la base de données de l’application vers une machine virtuelle Azure SQL Server s’exécutant dans un cluster de basculement Windows Server avec des groupes de disponibilité Always On SQL Server.
 
 L’application SmartHotel360 utilisée dans cet exemple est fournie au format open source. Si vous souhaitez l’utiliser à des fins de test, vous pouvez la télécharger à partir de [GitHub](https://github.com/Microsoft/SmartHotel360).
 
@@ -27,8 +27,8 @@ L’équipe informatique a travaillé en étroite collaboration avec des partena
 
 - **Répondre à la croissance de l’entreprise.** Contoso étant en croissance, son infrastructure et ses systèmes locaux subissent une pression.
 - **Gagner en efficacité.** Contoso doit supprimer les procédures inutiles et rationaliser les processus pour les développeurs et les utilisateurs. L’entreprise a besoin d’une informatique rapide et doit éviter de perdre du temps ou d’argent en répondant plus rapidement aux exigences des clients.
-- **Gagner en agilité.** le service informatique de Contoso doit être plus réactif face aux besoins de l’entreprise. Elle doit être en mesure de réagir plus rapidement que l’évolution du marché pour réussir dans une économie mondiale. L’informatique ne doit pas devenir une entrave à l’activité.
-- **Mise à l’échelle** à mesure que l’entreprise croît, le service informatique de Contoso doit fournir des systèmes capables de croître au même rythme.
+- **Gagner en agilité.** le service informatique de Contoso doit être plus réactif face aux besoins de l’entreprise. Elle doit réagir plus vite pour s’adapter aux évolutions du marché et réussir dans une économie globalisée. L’informatique ne doit pas devenir une entrave à l’activité.
+- **Mise à l’échelle** Le service informatique de Contoso doit prévoir des systèmes capables d’évoluer au même rythme que l’entreprise.
 
 ## <a name="migration-goals"></a>Objectifs de la migration
 
@@ -37,8 +37,8 @@ L’équipe cloud de Contoso a épinglé les objectifs de cette migration. Ces o
 - Après la migration, l’application dans Azure devra offrir les mêmes performances qu’aujourd’hui dans l’environnement VMware. L’application restera tout aussi vitale dans le cloud que localement.
 - Contoso ne souhaite pas investir dans cette application. Elle est importante pour l’activité mais, sous sa forme actuelle, Contoso veut simplement la migrer de manière sécurisée vers le cloud.
 - La base de données locale de l’application a connu des problèmes de disponibilité. Contoso souhaite qu’elle soit déployée dans Azure en tant que cluster de haute disponibilité, avec des fonctionnalités de basculement.
-- Contoso souhaite mettre à niveau de sa plateforme SQL Server 2008 R2 actuelle vers SQL Server 2017.
-- Contoso ne souhaite pas utiliser Azure SQL Database pour cette application et recherche des alternatives.
+- Contoso souhaite mettre à niveau sa plateforme SQL Server 2008 R2 actuelle vers SQL Server 2017.
+- Contoso cherche des alternatives à Azure SQL Database pour cette application.
 
 ## <a name="solution-design"></a>Conception de la solution
 
@@ -113,7 +113,7 @@ L’équipe d’administrateurs de Contoso migre les machines virtuelles de l’
 
 ![Processus de migration](media/contoso-migration-rehost-vm-sql-ag/migration-process.png)
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Voici ce que doit faire Contoso pour ce scénario.
 
@@ -368,7 +368,7 @@ Le service Mobilité doit être installé sur chaque machine virtuelle.
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Préparer la connexion aux machines virtuelles Azure après le basculement
 
-Après le basculement, Contoso souhaite pouvoir se connecter à des machines virtuelles Azure. Pour ce faire, les administrateurs effectuent les opérations suivantes avant la migration :
+Après le basculement, Contoso souhaite se connecter à des machines virtuelles Azure. Pour ce faire, les administrateurs de Contoso effectuent les étapes suivantes avant la migration :
 
 1. Pour l’accès via Internet :
 
@@ -384,7 +384,7 @@ Après le basculement, Contoso souhaite pouvoir se connecter à des machines vir
 
 De plus, quand elle opèrent un basculement, elle doit vérifier les points suivants :
 
-- Aucune mise à jour de Windows ne peut être en attente sur la machine virtuelle lors du déclenchement d’un basculement. Autrement, les utilisateurs ne pourront pas se connecter à la machine virtuelle avant la fin de la mise à jour.
+- Aucune mise à jour de Windows ne peut être en attente sur la machine virtuelle lors du déclenchement d’un basculement. Autrement, les utilisateurs se trouveront dans l’impossibilité de se connecter à la machine virtuelle tant que la mise à jour ne sera pas terminée.
 - Après basculement, on peut consulter les **diagnostics de démarrage** pour afficher une capture d’écran de la machine virtuelle. Si cela ne fonctionne pas, il faut vérifier que la machine virtuelle est en cours d’exécution et consulter ces [conseils de dépannage](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
 **Besoin de plus d’aide ?**
@@ -405,7 +405,7 @@ Avant de pouvoir exécuter une migration vers Azure, les administrateurs doivent
 
 ### <a name="confirm-deployment-planning"></a>Confirmer la planification d’un déploiement
 
-Pour continuer, il faut confirmer que la planification du déploiement est terminée en sélectionnant **Yes, I have done it** (Oui, c’est fait). Dans ce scénario, Contoso ne migre qu’une machine virtuelle et n’a pas besoin de planification du déploiement.
+Pour continuer, il faut confirmer que la planification du déploiement est terminée en sélectionnant **Yes, I have done it** (Oui, c’est fait). Dans ce scénario, Contoso ne fait que migrer une machine virtuelle et n’a pas besoin de planifier le déploiement.
 
 ### <a name="set-up-the-source-environment"></a>Configurer l’environnement source
 

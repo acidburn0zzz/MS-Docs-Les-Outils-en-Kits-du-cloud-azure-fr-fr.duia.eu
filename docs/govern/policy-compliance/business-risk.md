@@ -1,18 +1,18 @@
 ---
 title: Comprendre le risque opérationnel pendant la migration cloud
-description: Comprendre le risque opérationnel pendant la migration cloud
+description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir des processus de gestion des risques qui vous aideront à évaluer, comprendre, atténuer et corriger les risques liés à la migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 801420d31c5f1bbfef20ac610e06f7501bce5e6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 729a359f5ea44d77c691acb0a22477eed7cecb44
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806133"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709428"
 ---
 <!-- markdownlint-disable MD026 -->
 

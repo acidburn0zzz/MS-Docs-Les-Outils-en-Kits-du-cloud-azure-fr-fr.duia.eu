@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807510"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223134"
 ---
+<!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+
 # <a name="deploy-a-migration-infrastructure"></a>Déployer une infrastructure de migration
 
 Cet article explique comment la société fictive Contoso prépare son infrastructure locale pour la migration, configure une infrastructure Azure en vue de la migration et exécute les activités dans un environnement hybride. Lorsque vous utilisez cet exemple pour vous aider à planifier vos propres efforts de migration d’infrastructure, gardez les points suivants à l’esprit :
@@ -52,11 +54,11 @@ Voici un diagramme montrant l’infrastructure locale actuelle de Contoso.
 
 - Contoso dispose d’un centre de données principal situé dans la ville de New York dans l’Est des États-Unis.
 - Il y a trois branches locales supplémentaires aux États-Unis.
-- Le centre de données principal est connecté à Internet via une connexion Ethernet Fiber Metro (500 Mbits/s).
+- Le centre de données principal est connecté à Internet avec une connexion Ethernet Fiber Metro (500 Mbits/s).
 - Chaque branche est connectée localement à Internet via des connexions de qualité professionnelle, avec des tunnels VPN IPSec vers le centre de données principal. Cela permet au réseau entier d’être connecté en permanence et optimise la connexion Internet.
 - Le centre de données principal est entièrement virtualisé avec VMware. Contoso a deux hôtes de virtualisation ESXi 6.5 gérés par vCenter Server 6.5.
 - Contoso utilise Active Directory pour la gestion des identités, et des serveurs DNS sur le réseau interne.
-- Les contrôleurs de domaine dans le centre de données s’exécutent sur des machines virtuelles VMware. Les contrôleurs de domaine au niveau des branches locales s’exécutent sur des serveurs physiques.
+- Les contrôleurs de domaine du centre de données s’exécutent sur des machines virtuelles VMware. Les contrôleurs de domaine au niveau des branches locales s’exécutent sur des serveurs physiques.
 
 ## <a name="step-1-buy-and-subscribe-to-azure"></a>Étape 1 : Acheter et s’abonner à Azure
 
@@ -76,7 +78,7 @@ Contoso va de pair avec un [Contrat Entreprise (EA)](https://azure.microsoft.com
 Après avoir payé pour Azure, Contoso doit déterminer comment gérer les abonnements. Comme Contoso a signé un Contrat Entreprise, l’entreprise peut configurer autant d’abonnements Azure qu’elle le souhaite.
 
 - L’inscription d’une entreprise Azure définit la forme et l’utilisation des services Azure en son sein et la structure de gouvernance principale.
-- Dans un premier temps, Contoso a déterminé une structure (appelée structure d’entreprise) pour l’accord de mise en œuvre d’entreprise. Contoso a utilisé [cet article](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance) pour comprendre et concevoir cette structure.
+- Dans un premier temps, Contoso a déterminé une structure (appelée structure d’entreprise) pour l’accord de mise en œuvre d’entreprise. Contoso s’est appuyé sur la [structure d’entreprise Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance) pour mieux comprendre comment concevoir une structure.
 - Pour l’instant, Contoso a décidé d’utiliser une approche fonctionnelle pour gérer ses abonnements.
   - Dans l’entreprise, un seul service informatique contrôle le budget Azure. Ce sera le seul groupe avec des abonnements.
   - Contoso étendra ce modèle à l’avenir pour que d’autres groupes d’entreprise (services) puissent être ajoutés dans l’inscription de l’entreprise.
@@ -87,7 +89,7 @@ Après avoir payé pour Azure, Contoso doit déterminer comment gérer les abonn
 
 ### <a name="examine-licensing"></a>Examiner les licences
 
-Une fois les abonnements configurés, Contoso peut examiner les licences Microsoft. La stratégie de licence dépend des ressources que Contoso veut migrer vers Azure et de la façon dont les machines virtuelles et services Azure sont sélectionnés et déployés.
+Une fois les abonnements configurés, Contoso peut examiner les licences Microsoft. La stratégie de licence dépend des ressources que Contoso veut migrer vers Azure et de la façon dont les machines virtuelles et les services Azure sont sélectionnés et déployés.
 
 #### <a name="azure-hybrid-benefit"></a>Azure Hybrid Benefit
 
@@ -348,16 +350,16 @@ Voici comment Contoso a décidé d’implémenter une connectivité hybride :
 
 ### <a name="design-the-azure-network-infrastructure"></a>Concevoir l’infrastructure réseau Azure
 
-Il est essentiel pour Contoso de mettre en place des réseaux de façon à garantir la sécurité et la scalabilité de son déploiement hybride. Pour cela, Contoso adopte une approche à long terme et conçoit des réseaux virtuels résilients et prêts pour l’entreprise. [En savoir plus](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) sur la planification de réseaux virtuels.
+Contoso doit veiller à ce que sa configuration réseau autorise un déploiement hybride sécurisé et scalable. Pour cela, Contoso adopte une approche à long terme et conçoit des réseaux virtuels résilients et prêts pour l’entreprise. [En savoir plus](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) sur la planification de réseaux virtuels.
 
-Pour connecter les deux régions, Contoso a décidé d’implémenter un modèle de réseau hub à hub :
+Pour connecter les deux régions, Contoso implémente un modèle de réseau de hub à hub :
 
 - Dans chaque région, Contoso utilisera un modèle hub-and-spoke.
 - Pour connecter des réseaux et des hubs, Contoso utilisera le Peering de réseau Azure.
 
 #### <a name="network-peering"></a>Peering de réseau
 
-Azure fournit un réseau de peering pour connecter des réseaux virtuels et des hubs. Le peering global permet d’établir des connexions entre des réseaux virtuels/hubs de différentes régions. Le peering local connecte des réseaux virtuels d’une même région. Le Peering de réseaux virtuels offre plusieurs avantages :
+Le peering de réseau Azure connecte les réseaux virtuels et les hubs. Le peering mondial permet d’établir des connexions entre les réseaux virtuels ou les hubs de différentes régions. Le peering local connecte des réseaux virtuels d’une même région. Le peering de réseaux virtuels offre plusieurs avantages :
 
 - Le trafic réseau entre les réseaux virtuels homologués est privé.
 - Le trafic entre les réseaux virtuels reste sur le réseau principal de Microsoft. Aucun chiffrement et aucune connexion Internet publique, ni passerelle ne sont nécessaires pour que les réseaux virtuels communiquent.
@@ -471,7 +473,7 @@ La région USA Centre est la région secondaire de Contoso. Voici comment Contos
   - VNET-PROD-CUS. Ce réseau virtuel est un réseau de production, semblable à VNET-PROD_EUS2.
   - VNET-ASR-CUS. Ce réseau virtuel servira d’emplacement dans lequel les machines virtuelles sont créées après le basculement depuis le site local, ou d’emplacement pour les machines virtuelles Azure qui ont basculé de la région principale vers la région secondaire. Ce réseau est similaire aux réseaux de production, mais il ne comporte aucun contrôleur de domaine.
   - Chaque réseau virtuel de la région possède son propre espace d’adressage, sans chevauchement. Contoso configure le routage sans NAT.
-- **Sous-réseaux :** les sous-réseaux seront structurés de la même façon que ceux de la région USA Est 2, à la différence que Contoso n’a pas besoin de sous-réseau pour les contrôleurs de domaine.
+- **Sous-réseaux :** les sous-réseaux seront conçus de la même façon que ceux de la région USA Est 2, à la différence que Contoso n’a pas besoin de sous-réseau pour les contrôleurs de domaine.
 
 Les réseaux virtuels de la région USA Centre sont résumés dans le tableau suivant.
 
@@ -557,14 +559,14 @@ Lorsque vous déployez des ressources dans des réseaux virtuels, vous avez deux
 
 Les administrateurs de Contoso ont décidé que le service Azure DNS n’est pas un bon choix dans l’environnement hybride. Ils préfèrent plutôt utiliser les serveurs DNS locaux.
 
-- Comme il s’agit d’un réseau hybride, toutes les machines virtuelles locales et dans Azure doivent être capables de résoudre les noms afin de fonctionner correctement. Cela signifie que des paramètres DNS personnalisés doivent être appliqués à tous les réseaux virtuels.
+- S’agissant d’un réseau hybride, toutes les machines virtuelles locales et Azure doivent pouvoir résoudre les noms pour fonctionner correctement. Cela signifie que des paramètres DNS personnalisés doivent être appliqués à tous les réseaux virtuels.
 - Actuellement, Contoso a déployé des contrôleurs de domaine dans ses centres de données et ses filiales. Ses serveurs DNS principaux sont CONTOSODC1(172.16.0.10) et CONTOSODC2(172.16.0.1)
 - Quand les réseaux virtuels sont déployés, les contrôleurs de domaine locaux sont configurés pour être utilisés comme serveurs DNS dans les réseaux.
 - Pour cette configuration, lorsque vous utilisez un DNS personnalisé sur le réseau virtuel, vous devez ajouter l’adresse IP des programmes de résolution récursifs d’Azure (168.63.129.16) à la liste DNS. Pour cela, Contoso configure les paramètres du serveur DNS sur chaque réseau virtuel. Par exemple, les paramètres du DNS personnalisé pour le réseau virtuel VNET-HUB-EUS2 se présenteraient ainsi :
 
     ![Système DNS personnalisé](./media/contoso-migration-infrastructure/custom-dns.png)
 
-Outre les contrôleurs de domaine locaux, Contoso implémente quatre autres contrôleurs pour prendre en charge les réseaux Azure, deux pour chaque région. Voici les éléments que Contoso déploie dans Azure.
+En plus des contrôleurs de domaine locaux, Contoso implémente quatre contrôleurs de domaine supplémentaires pour prendre en charge les réseaux Azure, deux pour chaque région. Voici les éléments que Contoso déploie dans Azure.
 
 **Région** | **DC** | **Réseau virtuel** | **Sous-réseau** | **Adresse IP**
 --- | --- | --- | --- | ---
@@ -795,9 +797,9 @@ Azure Disk Encryption est intégré à Azure Key Vault, ce qui permet de contrô
 
 Dans cet article, Contoso a configuré une infrastructure Azure et une stratégie pour l’abonnement Azure, l’identité hybride, la reprise d’activité, la mise en réseau, la gouvernance et la sécurité.
 
-Les étapes effectuées ici par Contoso ne sont pas toutes requises pour une migration vers le cloud. Dans ce cas, l’entreprise souhaitait planifier une infrastructure réseau adaptée à tous les types de migrations, tout en étant sécurisée, résiliente et scalable.
+Les étapes effectuées ici ne sont pas toutes indispensables pour une migration cloud. Dans ce cas, Contoso avait prévu une infrastructure réseau capable de gérer tout type de migration tout en étant sécurisée, résiliente et scalable.
 
-Une fois cette infrastructure en place, elle est prête à tester la migration.
+Avec cette infrastructure, la société Contoso est prête à passer à l’étape suivante et à tester la migration.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

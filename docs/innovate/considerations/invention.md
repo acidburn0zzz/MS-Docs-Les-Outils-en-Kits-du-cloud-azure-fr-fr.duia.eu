@@ -1,18 +1,18 @@
 ---
-title: 'Innovation cloud : Développer des inventions numériques'
-description: Introduction à l’innovation dans le cloud – Développement d’inventions numériques
+title: Développer des inventions numériques innovantes
+description: Trouvez un juste équilibre entre invention et adoption pour développer des inventions numériques sans perdre de vue l’objectif d’adoption du client par l’empathie.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4011f34f61ec41d4ec30be8b9ee8c5cb203f930a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4ddc8c0e479aaf0feee928249919edf9899ce40f
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808445"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171189"
 ---
 # <a name="develop-digital-inventions"></a>Développer des inventions numériques
 

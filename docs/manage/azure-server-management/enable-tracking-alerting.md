@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0cd8776c71eae22fdb7a7894b656a3dc1948e45c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4581c865f3dd928df91e7e1eef97a0ea341e4ccb
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808105"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223499"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Activer le suivi et les alertes pour les changements critiques
 
 Les services Change Tracking et Inventory d’Azure fournissent des alertes sur l’état de la configuration de votre environnement hybride et sur les modifications apportées à cet environnement. Ils peuvent faire des rapports sur les modifications de fichiers, de services, de logiciels et de registres critiques susceptibles d’affecter vos serveurs déployés.
 
-Par défaut, le service d’inventaire Azure Automation ne supervise pas les fichiers ou les paramètres de registre. La solution fournit une liste de clés de Registre que nous vous recommandons de superviser. Pour voir cette liste, accédez à votre compte Automation dans le portail Azure, puis sélectionnez **Inventorier** > **Modifier les paramètres**.
+Par défaut, le service d’inventaire Azure Automation ne supervise pas les fichiers ou les paramètres de registre. La solution fournit une liste de clés de Registre que nous vous recommandons de superviser. Pour voir cette liste, accédez à votre compte Automation sur le portail Azure, puis sélectionnez **Inventorier** > **Modifier les paramètres**.
 
 ![Capture d’écran de l’affichage de l’inventaire Azure Automation dans le portail Azure](./media/change-tracking1.png)
 

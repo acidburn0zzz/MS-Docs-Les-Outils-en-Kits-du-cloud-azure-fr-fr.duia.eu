@@ -1,6 +1,6 @@
 ---
 title: Méthodologie de gouvernance cloud
-description: Appréhendez les notions élémentaires de la méthodologie pilotant la gouvernance cloud dans le Framework d’adoption du cloud.
+description: Utilisez une approche de gouvernance incrémentielle basée sur un produit minimum viable (MVP) pour prendre en charge les stratégies d’entreprise et passer rapidement à l’adoption du cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807085"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709088"
 ---
 # <a name="cloud-governance-methodology"></a>Méthodologie de gouvernance cloud
 

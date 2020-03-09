@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3e9eadbd246ba38f496d8c74b7bcd3e6ade03685
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 908b2c8b07f66d53264e78432e07736a426d1be9
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808156"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223537"
 ---
 # <a name="protect-and-recover-in-azure"></a>Protéger et récupérer dans Azure
 
@@ -38,7 +38,7 @@ Dans le cas d’un environnement d’entreprise, ce tableau présente le minimum
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-backuptabupdbackupatemanagement"></a>[Azure Backup](#tab/UpdbackupateManagement)
+## <a name="azure-backup"></a>[Azure Backup](#tab/UpdbackupateManagement)
 
 ::: zone-end
 
@@ -46,7 +46,7 @@ Sauvegarde Azure vous permet de sauvegarder, protéger et récupérer vos donné
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Activer la sauvegarde pour une machine virtuelle Azure
 
-1. Dans le Portail Azure, sélectionnez **Machines virtuelles**, puis la machine virtuelle que vous souhaitez répliquer.
+1. Dans le portail Azure, sélectionnez **Machines virtuelles**, puis la machine virtuelle que vous souhaitez répliquer.
 1. Dans le volet **Opérations**, sélectionnez **Sauvegarde**.
 1. Créez ou sélectionnez un coffre Recovery Services Azure existant.
 1. Sélectionnez **Créer (ou modifier) une nouvelle stratégie**.
@@ -69,7 +69,7 @@ Sauvegarde Azure vous permet de sauvegarder, protéger et récupérer vos donné
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 ::: zone-end
 
@@ -87,7 +87,7 @@ Les étapes suivantes décrivent le processus d’utilisation de Site Recovery p
 
 ### <a name="enable-replication-for-the-azure-vm"></a>Activer la réplication des machines virtuelles Azure
 
-1. Dans le Portail Azure, sélectionnez **Machines virtuelles**, puis la machine virtuelle que vous souhaitez répliquer.
+1. Dans le portail Azure, sélectionnez **Machines virtuelles**, puis la machine virtuelle que vous souhaitez répliquer.
 1. Dans le volet **Opérations**, sélectionnez **Récupération d’urgence**.
 1. Sélectionnez **Configurer la récupération d’urgence** > **Région cible** et choisissez la région cible vers laquelle vous allez effectuer la réplication.
 1. Pour ce démarrage rapide, acceptez les valeurs par défaut pour toutes les autres options.

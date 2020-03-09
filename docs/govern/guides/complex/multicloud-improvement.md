@@ -1,6 +1,6 @@
 ---
-title: 'Guide de gouvernance pour les entreprises complexes : Amélioration multicloud'
-description: 'Guide de gouvernance pour les entreprises complexes : Amélioration multicloud'
+title: 'Gouvernance pour les entreprises complexes : Amélioration multicloud'
+description: Utilisez Cloud Adoption Framework pour Azure afin d’en savoir plus sur l’utilisation de plusieurs clouds et sur la façon d’intégrer des organisations multiclouds pour les entreprises complexes.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9f4b11023e8b345283054c0ddede132f10664632
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805589"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223924"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Guide de gouvernance pour les entreprises complexes : Amélioration multicloud
 
@@ -31,7 +31,7 @@ Depuis, certains changements ont eu lieu et ceux-ci vont avoir un impact sur la 
 
 - L’identité est contrôlée par une instance locale d’Active Directory. L’identité hybride est facilitée grâce à la réplication vers Azure Active Directory.
 - Les opérations informatiques ou opérations cloud sont principalement gérées par Azure Monitor et les autres fonctionnalités d’automatisation associées.
-- La solution de continuité d’activité et reprise d’activité (BCDR) est contrôlée par des instances Azure Vault.
+- La continuité d’activité et reprise d’activité (BCDR) sont contrôlées par des instances Azure Vault.
 - Azure Security Center est utilisé pour superviser les attaques et les violations de sécurité.
 - Azure Security Center et Azure Monitor sont tous les deux utilisés pour superviser la gouvernance du cloud.
 - Azure Blueprints, Azure Policy et des groupes d’administration sont utilisés pour automatiser la conformité à la stratégie.

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 17f2395a435d8a29202595caec17932b406a1303
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c5dc7212fc20914fddaa7bd8777a5fec5f49e811
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806932"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225414"
 ---
 # <a name="central-it-capabilities"></a>Fonctionnalités de l’informatique centralisée
 
@@ -108,7 +108,7 @@ Cependant, une de ses équipes d’adoption du cloud exige à présent un enviro
 
 **Classification :** Étant donné que l’équipe chargée de l’adoption du cloud gérait les premières étapes de création d’une nouvelle solution et n’avait pas de données sensibles ou de besoins en support stratégique, les ressources de l’environnement étaient classées comme étant à faible risque et non critiques. Une classification efficace est un signe de maturité dans l’informatique centralisée. La classification de l’ensemble des ressources et des environnements permet d’obtenir des stratégies plus claires.
 
-**Négociation :** La classification seule n’est pas suffisante. Des services partagés ont été implémentés pour exploiter de manière cohérente des ressources sensibles et stratégiques. La modification des règles compromettrait les stratégies de gouvernance et de conformité conçues pour les ressources qui nécessitent une protection accrue. L’adoption ne peut pas se produire au détriment de la stabilité, de la sécurité ou de la gouvernance. Cela a conduit à une négociation avec l’équipe d’adoption pour répondre à des questions spécifiques. Une équipe DevOps dirigée par l’entreprise sera-t-elle en mesure de fournir la gestion des opérations pour cet environnement ? Cette solution nécessite-t-elle un accès direct à d’autres ressources internes ? Si l’équipe chargée de l’adoption du cloud est à l’aise avec ces compromis, le trafic d’entrée peut être possible.
+**Négociation :** La classification seule n’est pas suffisante. Des services partagés ont été implémentés pour exploiter de manière cohérente des ressources sensibles et stratégiques. La modification des règles compromettrait les stratégies de gouvernance et de conformité conçues pour les ressources qui nécessitent une protection accrue. L’adoption ne peut pas se produire au détriment de la stabilité, de la sécurité ou de la gouvernance. Cela a conduit à une négociation avec l’équipe d’adoption pour répondre à des questions spécifiques. Une équipe DevOps dirigée par l’entreprise peut-elle se charger de la gestion des opérations pour cet environnement ? Cette solution nécessite-t-elle un accès direct à d’autres ressources internes ? Si l’équipe chargée de l’adoption du cloud est à l’aise avec ces compromis, le trafic d’entrée peut être possible.
 
 **Isolation :** Étant donné que l’entreprise peut fournir sa propre gestion des opérations en cours et que la solution n’est pas dépendante du trafic direct vers d’autres ressources internes, elle peut être coordonnée dans un nouvel abonnement. Cet abonnement est également ajouté à un nœud distinct de la nouvelle hiérarchie des groupes d’administration.
 

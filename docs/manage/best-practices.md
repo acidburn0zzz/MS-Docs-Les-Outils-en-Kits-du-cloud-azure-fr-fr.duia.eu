@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fbdeccc3ed1c1acb516f9aceadc3d8dc8732030
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.openlocfilehash: b426acdc4ae88a88acd295758be4e2d4a6b85dc0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213607"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223257"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Établir des pratiques de gestion opérationnelle dans le cloud
 
@@ -39,7 +39,7 @@ Ces deux bonnes pratiques s'articulent autour d'une méthodologie de gestion des
 - **Conformité opérationnelle :** Une gestion régulière de la configuration, du dimensionnement, du coût et des performances des ressources est essentielle pour assurer les performances attendues.
 - **Protection et récupération :** La réduction des interruptions d'activité et l'accélération de la récupération permettent à l'entreprise d'éviter les pertes de performances et les impacts négatifs sur son chiffre d'affaires. La détection et la récupération sont des aspects essentiels de cette discipline.
 - **Opérations de plateforme :** Tous les environnements informatiques contiennent un ensemble de plateformes couramment utilisées. Ces plateformes peuvent inclure des magasins de données de type SQL Server ou Azure HDInsight. D'autres plateformes courantes peuvent inclure des solutions de conteneur comme Azure Kubernetes Service (AKS). Quelle que soit la plateforme, la maturité des opérations de plateforme est ciblée sur la personnalisation des opérations en fonction de la façon dont les plateformes communes sont déployées, configurées et utilisées par les charges de travail.
-- **Opérations de charge de travail :** Au niveau le plus élevé de la maturité opérationnelle, les équipes des opérations cloud sont en mesure de paramétrer des opérations pour les charges de travail qui sont essentielles à la réussite de l'entreprise. Pour ces charges de travail hautement stratégiques, les données disponibles peuvent aider à automatiser la correction, le dimensionnement ou la protection des charges de travail en fonction de leur utilisation.
+- **Opérations de charge de travail :** Au plus haut niveau de maturité opérationnelle, les équipes en charge des opérations cloud peuvent adapter les opérations aux charges de travail critiques. Pour ces charges de travail, les données disponibles peuvent aider à automatiser la correction, le dimensionnement ou la protection des charges de travail en fonction de leur utilisation.
 
 Vous pouvez consulter des conseils supplémentaires comme le [Framework de révision de la conception (nom de code : Principes de conception dans le cloud)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview) pour vous aider à prendre des décisions architecturales détaillées concernant chaque charge de travail, dans les disciplines décrites précédemment.
 

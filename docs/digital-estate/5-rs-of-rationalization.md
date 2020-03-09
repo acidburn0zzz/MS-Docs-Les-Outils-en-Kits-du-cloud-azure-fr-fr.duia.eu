@@ -1,6 +1,6 @@
 ---
 title: Rationalisation du cloud
-description: Passez en revue les options disponibles pour rationaliser un patrimoine numérique.
+description: Découvrez le processus de rationalisation cloud, qui consiste à évaluer les ressources pour déterminer la meilleure façon de migrer ou moderniser chaque ressource présente dans le cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/16/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 1a74487a77388e6260c177096d9563dbe6646cf2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 74a384cd3bf5688979a848423e0740ff15f08a34
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806558"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170152"
 ---
 # <a name="cloud-rationalization"></a>Rationalisation du cloud
 

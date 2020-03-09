@@ -1,18 +1,18 @@
 ---
-title: Définir la stratégie de l’entreprise en matière de gouvernance cloud
-description: Découvrez comment établir une stratégie pour refléter et corriger les risques.
+title: Définir une stratégie d’entreprise de gouvernance cloud
+description: Utilisez Cloud Adoption Framework pour Azure afin d’apprendre à établir une stratégie qui gère les risques connus et les tolérances au risque dans votre parcours de la transformation cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94e49d8f6682d4f5edb6b1d00bd93d47ba600bc8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806048"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706674"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Définir la stratégie de l’entreprise en matière de gouvernance cloud
 
@@ -32,7 +32,7 @@ L’image ci-dessus illustre la relation entre les risques métiers, la stratég
 
 La gouvernance cloud est le fruit d’un travail d’adoption sur le long terme, car une vraie transformation durable ne se fait pas du jour au lendemain. Vous avez peu de chances d’obtenir des résultats satisfaisants si vous essayez de fournir une gouvernance cloud complète avant de prendre en charge les modifications clés de la stratégie d’entreprise, et si vous utilisez une méthode rapide et agressive. Nous vous recommandons plutôt d’opter pour une approche incrémentielle.
 
-Ce qui est différent dans notre Framework d’adoption du cloud, c’est le cycle d’achat et sa capacité à réaliser une transformation authentique. Comme il n’existe pas d’obligation à acquérir des dépenses d’investissement importantes, les ingénieurs peuvent commencer plus tôt l’expérimentation et l’adoption. Dans la plupart des cultures d’entreprise, le fait de faire tomber cette barrière financière à l’adoption peut aboutir à des boucles de rétroaction plus courtes, une croissance naturelle et une exécution incrémentielle.
+Ce qui est différent dans Cloud Adoption Framework, c’est le cycle d’achat et sa capacité à réaliser une transformation authentique. Comme il n’existe pas d’obligation à acquérir des dépenses d’investissement importantes, les ingénieurs peuvent commencer plus tôt l’expérimentation et l’adoption. Dans la plupart des cultures d’entreprise, le fait de faire tomber cette barrière financière à l’adoption peut aboutir à des boucles de rétroaction plus courtes, une croissance naturelle et une exécution incrémentielle.
 
 Le passage au cloud implique de changer la gouvernance. Dans beaucoup d’organisations, la transformation de la stratégie d’entreprise permet d’améliorer la gouvernance et d’augmenter les taux de conformité. Ces optimisations sont possibles grâce aux changements incrémentiels de stratégie et à l’application automatique de ces derniers. Pour ce faire, vous disposez de capacités nouvellement définies, que vous pouvez configurer avec votre fournisseur de services cloud.
 
@@ -49,7 +49,7 @@ La gouvernance est un processus continu. Vous devez régulièrement examiner vot
 
 Les stratégies d’informatique cloud établissent des exigences, des normes et des objectifs que le personnel de votre service informatique et vos systèmes automatisés devront prendre en charge. Les décisions de cette stratégie constituent un facteur primordial dans la conception de votre [architecture cloud](./governance-alignment.md) et la façon dont vous mettrez en œuvre les [processus d’adhésion à votre stratégie](./processes.md).
 
-Les instructions de stratégie cloud individuelles sont des recommandations destinées à traiter des risques spécifiques identifiés lors de votre processus d’évaluation des risques. Bien que ces stratégies puissent être intégrées dans la documentation de votre stratégie d’entreprise générale, les énoncés de la stratégie cloud dont il est question dans les lignes directrices du Framework d’adoption du cloud constituent davantage un résumé des risques et des plans pour y faire face. Chaque définition doit inclure les informations suivantes :
+Les instructions de stratégie cloud individuelles sont des recommandations destinées à traiter des risques spécifiques identifiés lors de votre processus d’évaluation des risques. Bien que ces stratégies puissent être intégrées dans la documentation de votre stratégie d’entreprise générale, les énoncés de la stratégie cloud dont il est question dans les lignes directrices du Cloud Adoption Framework constituent davantage un résumé des risques et des plans pour y faire face. Chaque définition doit inclure les informations suivantes :
 
 - **Risque métier :** un récapitulatif du risque que cette stratégie gérera.
 - **Instruction de stratégie :** une explication succincte claire des exigences de la stratégie.

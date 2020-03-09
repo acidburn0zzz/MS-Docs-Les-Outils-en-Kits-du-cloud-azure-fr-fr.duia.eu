@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a900ca61f957f941728829208cf72bc8f2aba601
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800319"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222156"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planifier l’adoption du cloud
 
@@ -22,7 +22,7 @@ Un plan est une exigence essentielle pour assurer la réussite de l’adoption d
 
 Les plans d’adoption du cloud commencent par une stratégie bien définie. Au minimum, la stratégie doit décrire les motivations, les résultats opérationnels et les justifications métier de l’adoption du cloud. Ces retours positifs sont ensuite équilibrés par l’effort nécessaire pour les réaliser.
 
-Cet effort commence par le patrimoine numérique (proposé ou existant), qui convertit la stratégie en charges de travail et ressources plus tangibles. Vous pouvez ensuite mapper ces éléments tangibles au travail technique. À partir de là, des personnes compétentes dans une structure organisationnelle appropriée peuvent exécuter le travail technique. Le plan d’adoption du cloud combine tous ces thèmes en un seul plan qui peut être prévu, budgété, implémenté et géré au moyen de pratiques de gestion de projet agiles. Cette série d’articles vous aide à créer le plan et fournit quelques modèles qui vous faciliteront la tâche.
+Cet effort commence par le patrimoine numérique (proposé ou existant), qui convertit la stratégie en charges de travail et ressources plus tangibles. Vous pouvez ensuite mapper ces éléments tangibles au travail technique. À partir de là, des personnes compétentes dans une structure organisationnelle appropriée peuvent exécuter le travail technique. Le plan d’adoption du cloud combine ces thèmes en un seul plan qui peut être prévu, budgété, implémenté et géré au moyen de pratiques de gestion de projet agiles. Cette série d’articles vous aide à créer le plan et fournit quelques modèles qui vous faciliteront la tâche.
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>Passer d’une planification séquentielle à une planification itérative
 

@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
-ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
+ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77599970"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222642"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Meilleures pratiques pour l’évaluation des coûts et le dimensionnement des charges de travail migrées vers Azure
 
@@ -85,7 +85,7 @@ Vous avez le choix entre différentes options lorsque vous déployez des machine
 
 Le paramétrage et la gestion de stockage local (SAN ou NAS) et des réseaux qui les prennent en charge peuvent s’avérer coûteux et fastidieux. Les données (de stockage) de fichier sont généralement migrées vers le cloud pour simplifier les tâches opérationnelles et de gestion. Microsoft fournit plusieurs options pour déplacer des données vers Azure, et vous devez prendre des décisions concernant ces options. Choisir le type de stockage approprié pour les données de votre entreprise peut vous faire économiser plusieurs milliers d’euros chaque mois. Tenez compte des points suivants :
 
-- Les données auxquelles vous n’accédez pas souvent et qui ne sont pas vitales pour l’entreprise ne doivent pas forcément être placées sur le stockage plus coûteux.
+- Les données auxquelles vous n’accédez pas souvent et qui ne sont pas vitales pour l’entreprise ne doivent pas forcément être placées sur le stockage le plus coûteux.
 - À l’inverse, les données critiques pour l’entreprise doivent se trouver sur les options de stockage de niveau supérieur.
 - Lors de la planification de la migration, effectuez un inventaire des données et classez-les par ordre d’importance, afin de les mapper vers le stockage le plus approprié. Tenez compte du budget et des coûts, ainsi que des performances. Le coût ne doit pas nécessairement être le principal facteur de prise de décision. L’option la moins coûteuse peut exposer la charge de travail à des pertes de performances et à moins de disponibilité.
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808173"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223526"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Spécialisation de la plateforme pour la gestion cloud
 
@@ -55,7 +55,7 @@ La spécialisation de la plateforme consiste en une exécution disciplinée des 
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="improve-system-designtabsystemsdesign"></a>[Améliorer la conception du système](#tab/SystemsDesign)
+## <a name="improve-system-design"></a>[Améliorer la conception du système](#tab/SystemsDesign)
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Une fois que la conception du système se sera améliorée, revenez à cet artic
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="automated-remediationtabautomatedremediation"></a>[Correction automatisée](#tab/AutomatedRemediation)
+## <a name="automated-remediation"></a>[Correction automatisée](#tab/AutomatedRemediation)
 
 ::: zone-end
 
@@ -103,7 +103,7 @@ Pour obtenir des conseils sur la correction automatisée, consultez [Azure Autom
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="scale-the-solution-with-a-service-catalogtabservicecatalog"></a>[Mettre à l’échelle la solution avec un catalogue de services](#tab/ServiceCatalog)
+## <a name="scale-the-solution-with-a-service-catalog"></a>[Mettre à l’échelle la solution avec un catalogue de services](#tab/ServiceCatalog)
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ Pour obtenir des instructions sur la publication dans un catalogue de services, 
 
 1. Dans le Portail Azure, sélectionnez **Centre d’applications managées (préversion)** .
 2. Dans le volet **Parcourir**, sélectionnez **Applications du catalogue de services**.
-3. Cliquez sur **+ Ajouter** pour choisir une définition d’application à partir du catalogue de services de votre société.
+3. Sélectionnez **+ Ajouter** pour choisir une définition d’application à partir du catalogue de services de votre société.
 
 Toutes les applications gérées que vous traitez sont affichées.
 
@@ -153,7 +153,7 @@ Toutes les applications gérées que vous traitez sont affichées.
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="continuous-improvementtabcontinuousimprovement"></a>[Amélioration continue](#tab/ContinuousImprovement)
+## <a name="continuous-improvement"></a>[Amélioration continue](#tab/ContinuousImprovement)
 
 ::: zone-end
 

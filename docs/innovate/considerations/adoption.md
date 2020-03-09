@@ -1,18 +1,18 @@
 ---
-title: Créer des partenariats avec les clients dans le cadre de la boucle de rétroaction développer-mesurer-apprendre
-description: Apprenez à créer des partenariats avec les clients dans le cadre de la boucle de rétroaction développer-mesurer-apprendre.
+title: Boucle de rétroaction développer-mesurer-apprendre
+description: Créez des partenariats clients en faisant preuve d’empathie auprès des clients, en mesurant l’impact sur ces derniers et en apprenant auprès d’eux.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6dc67f308ea257500e71661585b172f7d3deb61a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1f41d4f918cb4d8ca460e0d629ccffc4df9f5688
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808598"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170679"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Créer des partenariats avec les clients dans le cadre de la boucle de rétroaction développer-mesurer-apprendre
 

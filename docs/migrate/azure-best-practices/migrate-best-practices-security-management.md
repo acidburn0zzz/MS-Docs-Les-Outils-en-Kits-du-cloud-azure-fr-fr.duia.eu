@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cef5746f8ab3368150ddcc328a8d929853dfb253
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803838"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222681"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Meilleures pratiques pour la sécurisation et la gestion des charges de travail migrées vers Azure
 
@@ -152,7 +152,7 @@ Lorsque vous migrez et exécutez vos charges de travail dans Azure, le personnel
 - RBAC attribue des autorisations d’accès aux principaux de sécurité. Les principaux de sécurité représentent les utilisateurs, les groupes (ensemble d’utilisateurs), les principaux de service (identité utilisée par les applications et les services) et les identités managées (identité Azure Active Directory managée automatiquement par Azure).
 - La fonctionnalité RBAC peut assigner des rôles aux principaux de sécurité, tels que le propriétaire, le contributeur et le lecteur, et assigner des définitions de rôles (ensemble d’autorisations) qui définissent les opérations pouvent être effectuées par les rôles.
 - La fonctionnalité RBAC peut aussi établir une étendue qui définit les limites d’un rôle. L’étendue peut être définie à plusieurs niveaux, notamment un groupe d’administration, un abonnement, un groupe de ressources ou une ressource.
-- Assurez-vous que les administrateurs avec accès Azure ne peuvent accéder qu’aux ressources que vous voulez autoriser. Si les rôles prédéfinis dans Azure ne sont pas assez précis, vous pouvez créer des rôles personnalisés pour séparer et limiter les autorisations d’accès.
+- Veillez à ce que les administrateurs avec accès Azure ne puissent accéder qu’aux ressources que vous voulez autoriser. Si les rôles prédéfinis dans Azure ne sont pas assez précis, vous pouvez créer des rôles personnalisés pour séparer et limiter les autorisations d’accès.
 
 ![Contrôle d’accès](./media/migrate-best-practices-security-management/subscription.png)
 *Contrôle d’accès - IAM*
@@ -405,13 +405,13 @@ Site Recovery réplique des machines virtuelles d’une région primaire à une 
 
 ## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Bonne pratique : Utiliser des disques managés et des groupes à haute disponibilité
 
-Azure utilise des groupes à haute disponibilité pour regrouper logiquement les machines virtuelles et pour isoler les machines virtuelles d’un groupe d’autres ressources. Les machines virtuelles d’un groupe à haute disponibilité sont réparties sur plusieurs domaines d’erreur avec des sous-systèmes séparés, pour se protéger contre les défaillances locales, et elles sont également réparties sur plusieurs domaines de mise à jour de sorte que toutes les machines virtuelles d’un groupe redémarrent en même temps.
+Azure utilise des groupes à haute disponibilité pour regrouper logiquement les machines virtuelles et pour isoler les machines virtuelles d’un groupe d’autres ressources. Les machines virtuelles d’un groupe à haute disponibilité sont réparties sur plusieurs domaines d’erreur avec des sous-systèmes distincts, ce qui assure une protection contre les pannes locales. Les machines virtuelles sont aussi réparties sur plusieurs domaines de mise à jour, ce qui évite un redémarrage simultané de toutes les machines virtuelles du groupe.
 
-Les disques managés Azure simplifient la gestion des disques des machines virtuelles Azure IaaS, en gérant les comptes de stockage associés aux disques de machines virtuelles.
+Les disques managés Azure simplifient la gestion des disques pour les machines virtuelles Azure en gérant les comptes de stockage associés aux disques de machines virtuelles.
 
-- Nous vous recommandons d’utiliser des disques managés si possible. Vous spécifiez simplement le type de stockage que vous souhaitez utiliser et la taille de disque dont vous avez besoin, et Azure crée et gère le disque pour vous en arrière-plan.
+- Utilisez des disques managés dans la mesure du possible. Vous avez simplement à spécifier le type de stockage à utiliser et la taille de disque dont vous avez besoin, et Azure crée et gère le disque à votre place.
 - Vous pouvez convertir des disques existants en disques managés.
-- Vous devez créer des machines virtuelles dans des groupes à haute disponibilité pour la résilience et la haute disponibilité. Lorsque des arrêts planifiés ou imprévus surviennent, les groupes à haute disponibilité garantissent qu’au moins une de vos machines virtuelles du groupe reste disponible.
+- Vous devez créer des machines virtuelles dans des groupes à haute disponibilité pour la résilience et la haute disponibilité. Quand des arrêts planifiés ou imprévus surviennent, les groupes à haute disponibilité garantissent qu’au moins une de vos machines virtuelles du groupe reste disponible.
 
 ![Disques managés](./media/migrate-best-practices-security-management/managed-disks.png)
 *Disques managés*

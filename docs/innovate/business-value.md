@@ -1,18 +1,18 @@
 ---
-title: Créer un consensus autour de la valeur métier de l’innovation cloud
-description: Apprenez à créer un consensus autour de la valeur métier de l’innovation cloud.
+title: Créer un consensus autour de la valeur métier de l’innovation
+description: Utilisez le Framework d’adoption du cloud pour Azure pour apprendre à créer un consensus autour de la définition de la valeur métier de l’innovation du cloud des parties prenantes.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: caf36d701973c7ad8be64d0d5164b70ae3af5f75
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3fe7533ce7bedb03ef466bad65c5a9a7bfc299fc
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808581"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171206"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Créer un consensus autour de la valeur métier de l’innovation
 

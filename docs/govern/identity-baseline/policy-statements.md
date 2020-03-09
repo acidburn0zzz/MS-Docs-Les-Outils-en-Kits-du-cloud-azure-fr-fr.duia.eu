@@ -1,6 +1,6 @@
 ---
 title: Exemples de déclarations de stratégie Base de référence des identités
-description: Exemples de déclarations de stratégie Base de référence des identités
+description: Utilisez le Framework d’adoption du cloud pour Azure pour obtenir des exemples de déclarations de stratégie de base de référence des identités qui peuvent vous aider à élaborer des déclarations de stratégie.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c3804f24db454e4c198494e0024632efdc7d0d53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d4c69bafe9bf0dc0bfdb060455c82d3b3a638a47
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805045"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223835"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Exemples de déclarations de stratégie Base de référence des identités
 
@@ -46,7 +46,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>Absence de comptes de gestion partagés entre l'infrastructure locale et le cloud
 
-**Risque technique :** les membres du personnel de gestion ou d'administration informatique qui possèdent un compte au sein de votre infrastructure Active Directory locale peuvent ne pas disposer d'un accès suffisant aux ressources du cloud et ne pas être en mesure de résoudre efficacement les problèmes opérationnels ou de sécurité.
+**Risque technique :** Les membres du personnel de gestion ou d’administration informatique qui possèdent un compte au sein de votre infrastructure Active Directory locale peuvent ne pas disposer d’un accès suffisant aux ressources cloud et ne pas pouvoir résoudre efficacement les problèmes opérationnels ou de sécurité.
 
 **Instruction de stratégie :** Tous les groupes de l’infrastructure Active Directory locale qui disposent de privilèges élevés doivent être mappés vers un rôle RBAC approuvé.
 

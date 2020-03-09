@@ -1,6 +1,6 @@
 ---
-title: 'Guide d’innovation Azure : Retenir les clients par le biais d’applications'
-description: Apprenez à innover en retenant les clients par le biais d’applications à l’aide d’Azure
+title: 'Innovation Azure : Impliquer par le biais d’applications'
+description: Découvrez les services Azure qui vous aideront à moderniser facilement vos applications web et vos API existantes, ainsi qu’à créer des applications cloud natives.
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7b6a94830f35f7dde577ba4b7122cdec7e4a711d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ad638c667a75561dfbdb9827413249ebc93fd9dc
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808343"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171070"
 ---
 ::: zone target="docs"
 
@@ -34,7 +34,7 @@ Avec un modèle de conteneur standard ouvert, la création de microservices ou l
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="deliver-value-fastertabdelivervaluefaster"></a>[Offrir de la valeur plus rapidement](#tab/DeliverValueFaster)
+# <a name="deliver-value-faster"></a>[Offrir de la valeur plus rapidement](#tab/DeliverValueFaster)
 
 L’un des avantages des solutions informatiques est la possibilité de recueillir des commentaires plus rapidement et de commencer à fournir de la valeur à votre utilisateur. Qu’il s’agisse d’un client externe ou d’un utilisateur de votre propre entreprise, plus vite vous pouvez obtenir des commentaires sur vos applications, mieux c’est.
 
@@ -131,7 +131,7 @@ Visual Studio App Center fournit également un service de notification qui vo
 - [Documentation du Kit Azure SDK pour Go](https://docs.microsoft.com/azure/go)
 - [Solutions DevOps](https://azure.microsoft.com/solutions/devops)
 
-# <a name="create-cloud-native-appstabcloudnative"></a>[Créer des applications cloud natives](#tab/CloudNative)
+# <a name="create-cloud-native-apps"></a>[Créer des applications cloud natives](#tab/CloudNative)
 
 <!-- markdownlint-disable MD026 -->
 
@@ -287,7 +287,7 @@ Azure Red Hat OpenShift permet un déploiement flexible en libre-service de clus
 
 **Accédez à [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)**
 
-# <a name="isolate-points-of-failuretabisolatepointsoffailure"></a>[Isoler les points d’échec](#tab/IsolatePointsOfFailure)
+# <a name="isolate-points-of-failure"></a>[Isoler les points d’échec](#tab/IsolatePointsOfFailure)
 
 Lorsque vous commencez à quitter la phase de test initiale, évaluez les façons d’isoler et de supprimer les points de défaillance. En raison de la nature distribuée de la plateforme cloud Azure, vous pouvez concevoir votre application de manière à réduire les défaillances tout en améliorant également le niveau de performance.
 

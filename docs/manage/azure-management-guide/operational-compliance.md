@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9df0d1e36cbd926725ec5622087b57a2b8eae9ce
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 991c0f8423053b1a79f437b452b64c789c867c3e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808190"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223551"
 ---
+<!-- cSpell:ignore WSUS -->
+
 # <a name="operational-compliance-in-azure"></a>Conformité opérationnelle au sein d’Azure
 
 La _conformité opérationnelle_ est la deuxième discipline d’une base de référence de gestion cloud.
@@ -40,7 +42,7 @@ Dans le cas d’un environnement d’entreprise, ce tableau présente le minimum
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="update-managementtabupdatemanagement"></a>[Gestion des mises à jour](#tab/UpdateManagement)
+## <a name="update-management"></a>[Gestion des mises à jour](#tab/UpdateManagement)
 
 ::: zone-end
 
@@ -89,7 +91,7 @@ Pour appliquer une stratégie à un groupe de ressources :
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+## <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 ::: zone-end
 
@@ -133,7 +135,7 @@ Pour plus d'informations, consultez les rubriques suivantes :
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
+## <a name="azure-blueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
 ::: zone-end
 
@@ -188,7 +190,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 
 1. Accédez à **Blueprints - Définitions de blueprints**.
 1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
-1. Passez en revue la définition de blueprint et sélectionnez **Publier le blueprint**.
+1. Passez en revue la définition de blueprint, puis sélectionnez **Publier le blueprint**.
 1. Dans la zone **Version**, entrez une version, par exemple « 1.0 ».
 1. Dans la zone **Notes de changement**, entrez vos notes.
 1. Sélectionnez **Publier**.
@@ -201,7 +203,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 
 1. Accédez à [Blueprints - Définitions de blueprints](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
-1. Passez en revue la définition de blueprint et sélectionnez **Publier le blueprint**.
+1. Passez en revue la définition de blueprint, puis sélectionnez **Publier le blueprint**.
 1. Dans la zone **Version**, entrez une version, par exemple « 1.0 ».
 1. Dans la zone **Notes de changement**, entrez vos notes.
 1. Sélectionnez **Publier**.

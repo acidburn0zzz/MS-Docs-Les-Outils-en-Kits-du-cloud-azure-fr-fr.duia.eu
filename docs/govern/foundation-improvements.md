@@ -1,6 +1,6 @@
 ---
 title: Améliorer votre fondation de gouvernance cloud initiale
-description: Découvrez comment améliorer de façon incrémentielle votre fondation de gouvernance cloud initiale.
+description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir comment améliorer progressivement la fondation de votre gouvernance cloud initiale.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/13/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1b46157e134967095cff9ff84bcfb5b826a22bae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 050d9cdfd2069a4d7da2e411233f6a60f270eb10
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805810"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706606"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Améliorer votre fondation de gouvernance cloud initiale
 

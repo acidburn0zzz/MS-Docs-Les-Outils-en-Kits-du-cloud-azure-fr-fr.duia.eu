@@ -1,18 +1,18 @@
 ---
-title: 'Innovation cloud : Impliquer par le biais d’applications'
-description: 'Introduction à l’innovation cloud : impliquer par le biais d’applications'
+title: Impliquer via des applications pour l’invention numérique
+description: Découvrez comment créer des solutions d’application pour modeler les données et créer des expériences qui impliquent les clients et favorisent l’innovation.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c326461435123b8093c86590baa4461f5048f4df
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808564"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170662"
 ---
 # <a name="engage-through-applications"></a>Impliquer par le biais d’applications
 

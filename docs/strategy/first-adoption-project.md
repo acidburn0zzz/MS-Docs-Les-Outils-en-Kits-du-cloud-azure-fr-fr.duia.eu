@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798177"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225251"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Pour étayer les critères précédents, cette liste fournit un exemple de premi
 
 Voici d’autres exemples de projets de première adoption :
 
-- **Continuité de l’activité et reprise d’activité :** Au-delà d’Azure Site Recovery, vous pouvez implémenter plusieurs stratégies de continuité de l’activité et de reprise d’activité en tant que premier projet.
+- **Continuité d’activité et reprise d’activité (BCDR)**  : Au-delà d’Azure Site Recovery, vous pouvez implémenter plusieurs stratégies BCDR en tant que premier projet.
 - **Non-production :** Déployez une instance de non-production d’une charge de travail.
 - **Archive :** Le stockage froid peut imposer des contraintes au centre de ressources. Le déplacement de ces données vers le cloud constitue un atout fiable.
 - **Fin du support :** La migration des ressources ayant atteint la fin du support constitue un autre atout qui renforce les compétences techniques. Cela peut également permettre de faire des économies sur les coûts onéreux des contrats de support ou des frais de licence.

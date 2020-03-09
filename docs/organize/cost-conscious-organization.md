@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 42025e9e7459aae8731b6269d6bc5512acde64e4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800897"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225397"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Construire une organisation sensible aux coûts
 
@@ -45,7 +45,7 @@ L’élaboration d’une sensibilisation aux coûts dans le cadre des efforts d�
 
 - **Responsabilité financière :** Des budgets doivent être établis entre les équipes de stratégie cloud, de [gouvernance cloud](./cloud-governance.md) et d’[adoption du cloud](./cloud-adoption.md) en fonction des activités d’adoption attendues. Quand des écarts par rapport au budget se produisent, l’équipe de stratégie cloud et l’équipe de gouvernance cloud doivent s’associer pour déterminer rapidement la meilleure marche à suivre pour les corriger.
 
-- **Optimisation :** Pendant les efforts d’optimisation, l’équipe de stratégie cloud peut représenter l’investissement et la valeur de retour de charges de travail spécifiques. Si une charge de travail a une valeur stratégique ou un impact financier sur l’entreprise, les efforts d’optimisation des coûts doivent être supervisés de près. S’il n’existe aucun impact stratégique sur l’organisation et aucun coût inhérent aux faibles performances d’une charge de travail, l’équipe de stratégie cloud peut approuver la sur-optimisation. Pour prendre ces décisions, l’équipe doit être en mesure de voir les coûts par projet.
+- **Optimisation :** Pendant les efforts d’optimisation, l’équipe de stratégie cloud peut représenter l’investissement et la valeur de retour de charges de travail spécifiques. Si une charge de travail a une valeur stratégique ou un impact financier sur l’entreprise, les efforts d’optimisation des coûts doivent être supervisés de près. S’il n’existe aucun impact stratégique sur l’organisation et aucun coût inhérent aux faibles performances d’une charge de travail, l’équipe de stratégie cloud peut approuver la suroptimisation. Pour prendre ces décisions, l’équipe doit être en mesure de voir les coûts par projet.
 
 ## <a name="cloud-adoption-team"></a>Équipe d’adoption du cloud
 

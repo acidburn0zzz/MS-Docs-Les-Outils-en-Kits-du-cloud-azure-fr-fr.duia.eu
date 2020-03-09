@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807306"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222826"
 ---
 # <a name="scale-a-migration-to-azure"></a>Mettre à l’échelle une migration vers Azure
 
@@ -102,7 +102,7 @@ Problèmes de sécurité | O/N | Existe-t-il des problèmes de sécurité connus
 Dans le cadre du processus d’évaluation, Contoso doit déterminer où s’exécutent les applications et identifier les dépendances et les connexions entre les serveurs d’applications. Contoso mappe l’environnement en étapes.
 
 1. Dans un premier temps, Contoso cherche à déterminer comment les serveurs et les machines se mappent aux applications, emplacements réseau et groupes individuels.
-2. Ces informations permettent à Contoso d’identifier clairement les applications qui ont peu de dépendances et qui peuvent donc être migrées rapidement.
+2. Ces informations permettent à Contoso d’identifier clairement les applications qui ont peu de dépendances et qui peuvent être migrées rapidement.
 3. Contoso peut se servir du mappage pour identifier les dépendances et les communications plus complexes entre les serveurs d’applications. Contoso peut ensuite regrouper logiquement ces serveurs pour représenter les applications, puis élaborer une stratégie de migration en fonction de ces groupes.
 
 Une fois le mappage terminé, Contoso peut vérifier que tous les composants d’application sont identifiés et pris en compte au moment d’établir le plan de migration.

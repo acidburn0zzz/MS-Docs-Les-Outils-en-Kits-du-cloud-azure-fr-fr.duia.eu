@@ -1,6 +1,6 @@
 ---
-title: 'Guide d’innovation Azure : Démocratiser les données'
-description: Apprenez à démocratiser des données à l’aide d’Azure
+title: 'Innovation Azure : Démocratiser les données'
+description: Découvrez Azure Data Catalog, Azure Data Share, ainsi que d’autres outils qui améliorent la découverte et la compréhension des données.
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 481430ca45d2d4a63f4d1777bd2c34409a2e7851
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f7f3ca7d99d4a1d553c888a8d3fd58a2616b64e8
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808292"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223445"
 ---
+<!-- cspell:ignore Fcatalogs Faccounts FEnvironments -->
+
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-democratize-data"></a>Guide d’innovation Azure : Démocratiser les données
@@ -32,7 +34,7 @@ L’une des premières étapes de démocratisation des données consiste à amé
 
 Les services Azure qui fournissent le traitement des données, comme Azure Time Series Insights et Stream Analytics, sont d’autres fonctionnalités que les clients et partenaires exploitent avec succès pour leurs besoins en matière d’innovation.
 
-# <a name="catalogtabcatalog"></a>[Catalogue](#tab/Catalog)
+# <a name="catalog"></a>[Catalogue](#tab/Catalog)
 
 ## <a name="azure-data-catalog"></a>Azure Data Catalog
 
@@ -69,7 +71,7 @@ Pour créer un Azure Data Catalog pour votre organisation :
 
 ::: zone-end
 
-# <a name="sharetabshare"></a>[Partager](#tab/Share)
+# <a name="share"></a>[Partager](#tab/Share)
 
 ## <a name="azure-data-share"></a>Azure Data Share
 
@@ -106,7 +108,7 @@ Pour créer un partage de données :
 
 ::: zone-end
 
-# <a name="insightstabinsights"></a>[Insights](#tab/Insights)
+# <a name="insights"></a>[Insights](#tab/Insights)
 
 ## <a name="azure-time-series-insights"></a>Azure Time Series Insights
 

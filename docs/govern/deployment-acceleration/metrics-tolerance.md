@@ -1,6 +1,6 @@
 ---
 title: Métriques et indicateurs de tolérance au risque liée à l’accélération du déploiement
-description: Quantifiez la tolérance au risque métier liée à l’accélération du déploiement dans le Framework d’adoption du cloud pour Azure.
+description: Utilisez le Framework d’adoption du cloud pour Azure pour quantifier la tolérance au risque métier liée à l’accélération du déploiement.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18efcb5d46041a0fa87327832c0a4d819d0917b5
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 83772d82d6f439bcd25382e21738ed01ef411596
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567705"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170951"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Métriques d’accélération du déploiement, indicateurs et tolérance au risque
 

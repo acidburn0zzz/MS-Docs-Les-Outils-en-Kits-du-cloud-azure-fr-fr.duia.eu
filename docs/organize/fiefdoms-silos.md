@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 41f23244119358a3356f65f6050572e4a8c787c1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800812"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222292"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimodèles organisationnels : Silos et fiefs
 
@@ -59,7 +59,7 @@ Même dans les cultures toxiques, les efforts du CCoE et de l’équipe de gouve
 
 ## <a name="it-silos"></a>Silos d’informations
 
-Les membres d’un silo d’informations se définissent vraisemblablement eux-mêmes par leur appartenance à un petit nombre de fournisseurs informatiques ou à un domaine de spécialisation technique. Attention de ne pas les confondre avec les fiefs. Les silos d’informations ont tendance à être légitimés par le confort et la passion. Ils sont généralement plus faciles à maîtriser que les motivations induites par la peur inhérentes aux fiefs.
+Les membres d’un silo d’informations se définissent vraisemblablement eux-mêmes par leur appartenance à un petit nombre de fournisseurs informatiques ou à un domaine de spécialisation technique. Attention à ne pas confondre les silos avec les fiefs informatiques. Les silos ont tendance à être légitimés par le confort et la passion. Ils sont souvent plus faciles à maîtriser que les motivations induites par la peur inhérentes aux fiefs.
 
 Cet antimodèle émerge souvent d’une passion commune pour une solution spécifique. Les silos d’informations sont alors renforcés par les compétences avancées de l’équipe faisant suite à l’investissement dans cette solution spécifique. Cette compétence supérieure peut constituer un accélérateur pour les efforts d’adoption du cloud si la résistance au changement peut être surmontée. Elle peut aussi devenir un blocage majeur si les silos sont décomposés ou si les membres de l’équipe ne peuvent pas évaluer avec précision leurs possibilités. Heureusement, les silos d’informations sont souvent surmontables sans nécessiter de changements significatifs dans l’organigramme de l’entreprise.
 
@@ -67,7 +67,7 @@ Cet antimodèle émerge souvent d’une passion commune pour une solution spéci
 
 Les approches suivantes permettent de traiter les silos d’informations. La meilleure approche dépend de la cause racine de la résistance.
 
-**Créez des équipes virtuelles :** La section relative à la [préparation de l’organisation](./index.md) dans le framework d’adoption du cloud décrit une structure multicouche pour l’intégration et la définition de quatre équipes virtuelles. L’un des avantages de cette structure est la visibilité et l’inclusion dans toute l’organisation. L’introduction d’un [centre d’excellence du cloud](./cloud-center-of-excellence.md) permet de constituer une équipe ambitieuse et influente que les meilleurs ingénieurs auront envie d’intégrer. Ce centre va créer de nouvelles affinités entre les solutions qui ne sont pas liées par des contraintes d’organigramme et qui vont permettre d’inclure les meilleurs ingénieurs recueillis par des silos d’informations.
+**Créez des équipes virtuelles :** La section relative à la [préparation de l’organisation](./index.md) dans Cloud Adoption Framework décrit une structure multicouche pour l’intégration et la définition de quatre équipes virtuelles. L’un des avantages de cette structure est la visibilité et l’inclusion dans toute l’organisation. L’introduction d’un [centre d’excellence du cloud](./cloud-center-of-excellence.md) permet de constituer une équipe ambitieuse et influente que les meilleurs ingénieurs auront envie d’intégrer. Ce centre va créer de nouvelles affinités entre les solutions qui ne sont pas liées par des contraintes d’organigramme et qui vont permettre d’inclure les meilleurs ingénieurs recueillis par des silos d’informations.
 
 L’introduction d’une [équipe de stratégie cloud](./cloud-strategy.md) va créer une visibilité immédiate des contributions relatives aux efforts d’adoption du cloud. Quand les silos d’informations luttent pour la séparation, cette visibilité peut motiver les responsables informatiques et les dirigeants de l’entreprise à prendre en charge correctement ces membres d’équipe résistants. Ce processus permet d’accéder rapidement à l’engagement et au soutien des parties prenantes.
 
@@ -79,7 +79,7 @@ Pendant l’évaluation de la solution concurrente, utilisez les pratiques décr
 
 **Évitez les « cloisonnements » :** Les équipes qui dirigent l’adoption du cloud trouvent qu’il est facile de repousser les limites en explorant de nouvelles solutions cloud natives. Le chemin vers la suppression des cloisonnements est alors à moitié fait. Toutefois, cette mentalité peut renforcer encore plus les silos d’informations. Forcer le changement trop rapidement et sans respect des cultures existantes peut créer des frictions malsaines et entraîner une résistance naturelle.
 
-Quand les silos d’informations commencent à résister, il est important de ne pas cloisonner vos propres solutions. Gardez à l’esprit cette vérité simple : une solution cloud native n’est pas toujours la meilleure. Envisagez des solutions hybrides susceptibles d’offrir une opportunité d’extension des investissements existants du silo d’informations à l’avenir.
+Quand les silos d’informations commencent à résister, il est important de ne pas « cloisonner » vos propres solutions. Gardez à l’esprit cette vérité simple : une solution cloud native n’est pas toujours la meilleure. Envisagez des solutions hybrides susceptibles d’offrir une opportunité d’extension des investissements existants du silo d’informations à l’avenir.
 
 Tenez également compte des versions cloud de la solution que l’équipe du silo d’informations utilise actuellement. Expérimentez ces solutions et confrontez-vous au point de vue de ceux qui évoluent dans le silo d’informations. Au minimum, vous obtiendrez une nouvelle perspective. Dans de nombreuses situations, vous pouvez gagner suffisamment de respect de la part du silo d’informations pour en réduire la résistance.
 

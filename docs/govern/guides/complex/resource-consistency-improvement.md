@@ -1,6 +1,6 @@
 ---
-title: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources'
-description: 'Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources'
+title: 'Gouvernance pour les entreprises complexes : Améliorer la discipline de cohérence des ressources'
+description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir les contrôles de récupération, de dimensionnement et de supervision permettant d’améliorer la base de référence de la gouvernance et atténuer les risques.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 35a77b0837da1b3364516a95b2baaa32e4e2fe6f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d7148df4bb06a0dc4ca035b89f7077888fb7306c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805538"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708935"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Cohérence des ressources
 

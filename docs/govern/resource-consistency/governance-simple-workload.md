@@ -1,6 +1,6 @@
 ---
 title: Conception de gouvernance pour une charge de travail simple
-description: Instructions pour configurer les contrôles de gouvernance Azure afin de permettre à un utilisateur de déployer une charge de travail simple.
+description: Découvrez le processus de conception d’un modèle de gouvernance des ressources dans Azure pour subvenir aux besoins d’une seule équipe et d’une charge de travail simple. 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: efdca4c5848e8815166fd2ddf308d40ae62f75a1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803855"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223722"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Conception de gouvernance pour une charge de travail simple
 
@@ -47,7 +47,7 @@ Notre administrateur général Azure AD crée le compte de **propriétaire de l
 ![L’administrateur général Azure AD crée le compte de propriétaire de la charge de travail](../../_images/govern/design/governance-1-2.png)
 *Figure 2 - L’administrateur général Azure AD crée le compte d’utilisateur du propriétaire de la charge de travail.*
 
-Vous ne serez en mesure d’assigner une autorisation d’accès aux ressources que lorsque cet utilisateur sera ajouté à un **abonnement**, c’est donc ce que vous allez faire dans les deux sections suivantes.
+Vous ne pouvez pas assigner d’autorisation d’accès aux ressources tant que cet utilisateur n’a pas été ajouté à un **abonnement**. C’est donc ce que vous allez faire dans les deux sections suivantes.
 
 ## <a name="resource-management-scope"></a>Étendue de la gestion des ressources
 

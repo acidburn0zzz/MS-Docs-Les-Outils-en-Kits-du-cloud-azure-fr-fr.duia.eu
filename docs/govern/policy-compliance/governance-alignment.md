@@ -1,18 +1,18 @@
 ---
-title: Aligner votre guide de conception de gouvernance cloud sur la stratégie d’entreprise
-description: Aligner votre guide de conception de gouvernance cloud sur la stratégie d’entreprise
+title: Aligner la conception de gouvernance sur la stratégie d’entreprise
+description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir comment établir des choix d’architecture et des modèles de conception qui répondent à vos besoins en matière de stratégie.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 522ab305b7538be303909a13d27879b3e98d2f67
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b68710606f0b361caec66e390e3ac826c1944a2e
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805368"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708391"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Aligner votre guide de conception de gouvernance cloud sur la stratégie d’entreprise
 

@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173411"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222224"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="establish-team-structures"></a>Établir des structures d’équipe
 
 Chaque fonctionnalité cloud est fournie par un utilisateur lors de chaque effort d’adoption du cloud. Ces affectations et structures d’équipe peuvent se développer de façon organique ou être intentionnellement conçues pour correspondre à une structure d’équipe définie.
@@ -60,7 +62,7 @@ Les sections suivantes décrivent une structure organisationnelle éprouvée et 
 
 ## <a name="central-it"></a>Équipe informatique centrale
 
-Au fur et à mesure que l’adoption évolue, l’équipe de gouvernance cloud peut avoir du mal à suivre le rythme de l’innovation de plusieurs équipes d’adoption du cloud. C’est particulièrement vrai dans les environnements avec des exigences élevées en matière de conformité, d’exploitation ou de sécurité. À ce stade, il est courant pour les entreprises de transférer les responsabilités du cloud à une équipe informatique centrale existante. Si cette équipe est en mesure de réévaluer les outils, les processus et les personnes afin de mieux soutenir l’adoption du cloud à l’échelle, l’inclusion de l’équipe informatique centrale peut apporter une valeur ajoutée significative. Faire appel à des experts de l’exploitation, de l’automatisation, de la sécurité et de l’administration pour moderniser l’informatique centrale peut favoriser des innovations opérationnelles efficaces.
+Au fur et à mesure que l’adoption évolue, l’équipe de gouvernance cloud peut avoir du mal à suivre le rythme de l’innovation de plusieurs équipes d’adoption du cloud. C’est particulièrement vrai dans les environnements avec des exigences élevées en matière de conformité, d’exploitation ou de sécurité. À ce stade, il est courant pour les entreprises de transférer les responsabilités du cloud à une équipe informatique centrale existante. Si cette équipe peut réévaluer les outils, les processus et les personnes afin de mieux soutenir l’adoption du cloud à grande échelle, l’inclusion de l’équipe informatique centrale peut apporter une valeur ajoutée significative. Faire appel à des experts de l’exploitation, de l’automatisation, de la sécurité et de l’administration pour moderniser l’informatique centrale peut favoriser des innovations opérationnelles efficaces.
 
 ![Adoption du cloud avec un modèle informatique central](../_images/ready/org-ready-central-it.png)
 

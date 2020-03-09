@@ -1,18 +1,18 @@
 ---
-title: 'Innovation cloud : Azure Database Migration Service'
-description: Innovation cloud – Azure Database Migration Service
+title: Outils d’innovation pour migrer des données
+description: Découvrez Azure Database Migration Service et d’autres outils permettant de migrer et moderniser des données afin de les préparer aux inventions et innovations du cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 44ebe7e28eea56d1b7e61b5926a9588f4c985ae1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cd4009e8201cf6267e9da297ce13987cb025139e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808666"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171274"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Collecter des données dans le cadre de la migration et de la modernisation de sources de données existantes
 

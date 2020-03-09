@@ -1,6 +1,6 @@
 ---
 title: Effectuer une révision de stratégie cloud
-description: Découvrez comment effectuer une révision de la stratégie cloud.
+description: Découvrez comment moderniser les stratégies informatiques d’entreprise existantes pour assurer un niveau de gestion des risques équivalent pour les ressources basées sur le cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 48e4e759435178e346e08233afeca95ab065711e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e4235830eee8e57581214f3eabb46c32ebcf975b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805062"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709122"
 ---
 <!-- markdownlint-disable MD026 -->
 

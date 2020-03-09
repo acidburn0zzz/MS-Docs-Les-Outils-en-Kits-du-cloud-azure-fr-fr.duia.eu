@@ -1,6 +1,6 @@
 ---
-title: 'Guide de gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité'
-description: 'Guide de gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité'
+title: 'Gouvernance pour les entreprises standard : Améliorer la discipline de base de référence de la sécurité'
+description: Utilisez le Framework d’adoption du cloud pour Azure pour en savoir plus sur l’ajout de contrôles de sécurité qui prennent en charge le déplacement de données protégées vers le cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ef4d58cb871ea290f8489e806a4b78f32a9d8b3d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2e9dbaf3bb92893e4eb737964da3f1b0c3a056ad
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807119"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707711"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité
 

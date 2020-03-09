@@ -1,6 +1,6 @@
 ---
-title: Risques métier et motivations associés à la Base de référence de la sécurité
-description: Risques métier et motivations associés à la Base de référence de la sécurité
+title: Risques métier liés à la base de référence de la sécurité
+description: Appréhendez et découvrez des exemples de clients types qui adoptent une discipline de base de référence de la sécurité dans le cadre d’une stratégie de gouvernance cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d1bf5ef10ec3acd936ba4e66cca374e8365018a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3bef524646e6be5ca6cd0b638b9614af389972f9
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808955"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709020"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Risques métier et motivations associés à la Base de référence de la sécurité
 

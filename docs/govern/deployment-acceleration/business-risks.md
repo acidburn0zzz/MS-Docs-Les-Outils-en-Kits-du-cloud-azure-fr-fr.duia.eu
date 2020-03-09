@@ -1,6 +1,6 @@
 ---
 title: Risques métier liés à l’accélération du déploiement
-description: Comprenez les risques métier liés à la discipline Accélération du déploiement, qui peuvent être utilisés dans la stratégie de gouvernance du Framework d’adoption du cloud Microsoft pour Azure.
+description: Utilisez le Framework d’adoption du cloud pour Azure pour comprendre les risques métier liés à la discipline d’accélération du déploiement, qui peut être utilisée dans la stratégie de gouvernance.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7f56bc9181226b0f0fe03fbcf08a061af33099f
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: dc80f889442fd7139e9f3930da1304d1a25e3e98
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567688"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171427"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivations et risques métier en matière d'accélération du déploiement
 

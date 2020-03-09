@@ -1,6 +1,6 @@
 ---
-title: 'Guide de gouvernance pour les entreprises complexes : Couches de gouvernance multiples'
-description: 'Guide de gouvernance pour les entreprises complexes : Couches de gouvernance multiples'
+title: 'Gouvernance pour les entreprises complexes : gouvernance multicouche'
+description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir des niveaux de complexité supérieurs avec la présence de plusieurs couches de gouvernance dans les grandes entreprises.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5aa48d6561f6d6122c74dcb60e82425b64071304
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5d7dc2163777cb931d6c4c57eb7b1fb276e6a0fd
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806252"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709190"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Guide de gouvernance pour les entreprises complexes : Couches de gouvernance multiples
 

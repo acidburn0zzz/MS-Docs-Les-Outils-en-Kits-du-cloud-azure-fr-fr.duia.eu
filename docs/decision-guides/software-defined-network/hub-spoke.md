@@ -1,6 +1,6 @@
 ---
 title: 'SDN (Software Defined Network) : Hub-and-spoke'
-description: Présentation des services de réseau virtuel natifs dans le cloud.
+description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir comment la mise en réseau hub-and-spoke organise votre infrastructure réseau en plusieurs réseaux virtuels connectés.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a24ccb7f382e03b3eb0138e94e6b02954c36bd87
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9138a686aedd3ba54352280b557b6ac622df6a46
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806626"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708578"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>SDN (Software Defined Network) : Hub-and-spoke
 

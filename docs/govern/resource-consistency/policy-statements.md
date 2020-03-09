@@ -1,6 +1,6 @@
 ---
 title: Déclarations de stratégie de cohérence des ressources
-description: Déclarations de stratégie de cohérence des ressources
+description: Utilisez le Framework d’adoption du cloud pour Azure pour obtenir des exemples de déclarations de stratégie de cohérence des ressources qui vous aideront à élaborer les déclarations de stratégie de votre organisation.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e997dee318d0d6799167de4f4c61a93c814c548
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4222639ddb82da88cc95600ad2c6731b541f9f35
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807255"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708136"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Déclarations de stratégie de cohérence des ressources
 

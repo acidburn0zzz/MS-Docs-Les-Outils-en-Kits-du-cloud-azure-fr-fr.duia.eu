@@ -1,18 +1,18 @@
 ---
-title: Déployer une charge de travail de base
-description: Décrit comment déployer une charge de travail de base sur Azure
+title: Déployer une charge de travail de base sur Azure
+description: Découvrez les principaux composants de l’infrastructure cloud et les charges de travail de base, comme les applications web de base, les machines virtuelles uniques et les réseaux virtuels.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b4d5821e7ed29efeea5dd7e6a59b7e4afd86f0e0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e720fb698e0eecb53942bb5d7be99df5e923451e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808734"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170696"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Déployer une charge de travail de base sur Azure
 

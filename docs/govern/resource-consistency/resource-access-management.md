@@ -1,6 +1,6 @@
 ---
 title: Gestion de l’accès aux ressources dans Azure
-description: 'Présentation des constructions de gestion des accès aux ressources dans Azure : Azure Resource Manager, abonnements, groupes de ressources et ressources'
+description: Appréhendez les concepts de gestion d’accès aux ressources Azure comme Azure Resource Manager, les abonnements, les groupes de ressources et les ressources.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e32151fc39f22e4dcb2a9ab40b24f351b11775e7
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: 009630e45eec28a12828f7651b353c1a5015ab2b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629298"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709445"
 ---
 # <a name="resource-access-management-in-azure"></a>Gestion de l’accès aux ressources dans Azure
 

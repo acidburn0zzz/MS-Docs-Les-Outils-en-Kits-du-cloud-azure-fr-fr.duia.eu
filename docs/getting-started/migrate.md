@@ -1,28 +1,28 @@
 ---
 title: Commencer un parcours de migration vers le cloud dans Azure
-description: Commencer un parcours de migration vers le cloud dans Azure.
+description: Obtenez des recommandations complètes pour transférer des charges de travail d’application héritées dans le cloud à l’aide de technologies cloud innovantes.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e5ef9aecfe30cc9b401e9b4ffabe56e50f3afad2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804450"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223976"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Commencer un parcours de migration vers le cloud dans Azure
 
-Utilisez le Framework d’adoption du cloud Microsoft pour Azure afin d’entamer un parcours de migration cloud. Ce framework fournit une aide complète sur la transition des charges de travail d’application héritées à l’aide de technologies novatrices basées sur le cloud.
+Utilisez Microsoft Cloud Adoption Framework pour Azure afin d’entamer un parcours de migration cloud. Ce framework fournit une aide complète sur la transition des charges de travail d’application héritées à l’aide de technologies novatrices basées sur le cloud.
 
 ## <a name="executive-summary"></a>Résumé
 
-Le Framework d’adoption du cloud aide les clients à effectuer un parcours d’adoption simplifié dans le cloud. Ce framework contient des informations détaillées qui couvrent un parcours d’adoption du cloud de bout en bout, en commençant par les résultats opérationnels ciblés, puis en alignant la préparation et l’évaluation du cloud à l’aide d’objectifs stratégiques clairement définis. Ces résultats sont obtenus via un chemin défini pour l’adoption du cloud. Avec l’adoption basée sur la migration, le chemin défini se concentre principalement sur la migration des charges de travail locales vers le cloud. Parfois, ce parcours comprend la modernisation des charges de travail pour augmenter le retour sur investissement de l’effort de migration.
+Cloud Adoption Framework aide les clients à effectuer un parcours d’adoption simplifié dans le cloud. Ce framework contient des informations détaillées qui couvrent un parcours d’adoption du cloud de bout en bout, en commençant par les résultats opérationnels ciblés, puis en alignant la préparation et l’évaluation du cloud à l’aide d’objectifs stratégiques clairement définis. Ces résultats sont obtenus via un chemin défini pour l’adoption du cloud. Avec l’adoption basée sur la migration, le chemin défini se concentre principalement sur la migration des charges de travail locales vers le cloud. Parfois, ce parcours comprend la modernisation des charges de travail pour augmenter le retour sur investissement de l’effort de migration.
 
-Ce framework est principalement conçu pour les architectes cloud et les équipes de stratégie cloud qui dirigent les efforts d’adoption du cloud. Toutefois, de nombreuses rubriques de ce framework sont pertinentes pour d’autres rôles au sein de l’entreprise et des services informatiques. Les architectes cloud servent souvent de facilitateurs pour faire participer chacun des rôles pertinents. Ce récapitulatif est conçu pour préparer les différents rôles avant de faciliter les conversations.
+Ce framework est principalement conçu pour les architectes cloud et les équipes de stratégie cloud qui dirigent les efforts d’adoption du cloud. Cependant, de nombreuses sujets contenus dans ce framework présentent un intérêt pour d’autres rôles au sein de l’entreprise et des services informatiques. Les architectes cloud servent souvent de facilitateurs pour faire participer chacun des rôles pertinents. Ce récapitulatif est conçu pour préparer les différents rôles avant de faciliter les conversations.
 
 > [!NOTE]
 > Cette aide est en préversion publique. La terminologie, les approches et l’aide fournies sont minutieusement testées par les clients, les partenaires et les équipes Microsoft au cours de cette préversion. Ainsi, la table des matières et l’aide peuvent changer légèrement au fil du temps.
@@ -49,13 +49,13 @@ Si tous les participants sont préparés à l’effort de migration en ayant con
 
 ## <a name="migration-approach"></a>Approche de migration
 
-Le Framework d’adoption du cloud établit une construction générale basée sur les concepts de planification, de préparation et d’adoption pour regrouper les types d’effort nécessaires à une adoption du cloud. Ce récapitulatif s’appuie sur ce flux général afin d’établir des processus itératifs permettant de regrouper les efforts d’optimisation lift-and-shift et les efforts de modernisation en une seule approche pour toutes les activités de migration cloud.
+Cloud Adoption Framework établit une construction générale basée sur les concepts de planification, de préparation et d’adoption pour regrouper les types d’effort nécessaires à une adoption du cloud. Ce récapitulatif s’appuie sur ce flux général afin d’établir des processus itératifs permettant de regrouper les efforts d’optimisation lift-and-shift et les efforts de modernisation en une seule approche pour toutes les activités de migration cloud.
 
 Cette approche comporte deux méthodologies ou domaines prioritaires : Stratégie/planification cloud et implémentation cloud. La [motivation](#motivations) ou le résultat opérationnel souhaité pour une migration cloud détermine souvent l’investissement qu’une équipe doit fournir dans [la stratégie et la planification](#cloud-strategy-and-planning) ainsi que dans l’[implémentation](#cloud-implementation). Ces motivations peuvent également influencer les décisions pour une exécution séquentielle ou parallèle.
 
 ## <a name="cloud-implementation"></a>Implémentation cloud
 
-L’implémentation cloud est un processus itératif de migration et de modernisation du patrimoine numérique, en fonction des résultats opérationnels ciblés et des contrôles de gestion des changements. À chaque itération, les charges de travail sont migrées ou modernisées en fonction de la stratégie et de la planification. Les décisions relatives aux modèles IaaS, PaaS ou hybrides sont prises pendant la phase d’évaluation pour optimiser le contrôle et l’exécution. De ces décisions dépendent les outils utilisés durant la phase de migration. Ce modèle peut être utilisé avec une stratégie et une planification minimales. Toutefois, pour garantir les meilleurs rendements commerciaux possibles, il est fortement recommandé que les services informatiques et les entreprises s’alignent sur une stratégie et une planification claires afin de guider les activités d’implémentation.
+L’implémentation cloud est un processus itératif destiné à migrer et à moderniser le patrimoine numérique, en harmonie avec les résultats opérationnels ciblés et les contrôles de gestion des changements. À chaque itération, les charges de travail sont migrées ou modernisées en fonction de la stratégie et de la planification. Les décisions relatives aux modèles IaaS, PaaS ou hybrides sont prises pendant la phase d’évaluation de la [méthodologie de migration](../migrate/index.md) pour optimiser le contrôle et l’exécution. Ces décisions détermineront les outils qui seront utilisés à chaque itération de la phase de migration d’une même méthodologie. Ce modèle peut être utilisé avec une stratégie et une planification minimales. Cependant, pour garantir les meilleurs retours opérationnels, les services informatiques et l’entreprise doivent s’aligner sur une stratégie et un plan clairs afin de guider les activités d’implémentation.
 
 ![Méthodologie d’implémentation cloud du Framework d’adoption du cloud](../_images/operational-transformation-migrate.png)
 
@@ -124,7 +124,7 @@ Les technologies migrées vers le cloud se développent constamment au fur et à
 
 - Windows et SQL Server
 - Bases de données Linux et OSS (open source)
-- Bases de données non structurées/NoSQL
+- Bases de données non structurées et NoSQL
 - SAP sur Azure
 - Analytics (Data Warehouse, Data Lake)
 

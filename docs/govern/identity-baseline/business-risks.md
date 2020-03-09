@@ -1,6 +1,6 @@
 ---
-title: Risques d’affaires et motivations associés à la base de référence des identités
-description: Risques d’affaires et motivations associés à la base de référence des identités
+title: Risques métier liés à la base de référence des identités
+description: Appréhendez et découvrez des exemples de clients types qui adoptent une discipline de base de référence des identités dans le cadre d’une stratégie de gouvernance cloud. 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 13aedd3ef5a596547a6a7bb33102182504bde86f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8969a2f3cfef80f814f7dae63982e66558a35425
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807136"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709326"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Risques d’affaires et motivations associés à la base de référence des identités
 

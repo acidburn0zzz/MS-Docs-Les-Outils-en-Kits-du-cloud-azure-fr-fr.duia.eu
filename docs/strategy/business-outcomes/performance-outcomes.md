@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8a8c3b471787e1bc189a0d1f0abe2e2d84447e7c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8810b4ab2ce78dd2add8a424518717392305346a
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806830"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222082"
 ---
 # <a name="examples-of-performance-outcomes"></a>Exemples de résultats de performances
 
@@ -28,7 +28,7 @@ Transformez votre entreprise et réduisez les coûts grâce à une infrastructur
 
 - **Exemple 1 :** Une société de services travaillait avec un fournisseur d’hébergement qui hébergeait plusieurs ressources d’infrastructure opérationnelle. Ces systèmes ont subi des pannes fréquentes et ont connu des performances médiocres. La société a migré ses ressources vers Azure pour tirer parti du contrat de niveau de service et des contrôles de performances du cloud. Le temps d’arrêt subi a coûté environ 15 000 USD par minute de panne. Avec quatre à huit heures d’interruption par mois, il était facile de justifier cette transformation organisationnelle.
 
-- **Exemple 2 :** Une société d’investissement de consommateurs se trouvait dans les premières étapes d’un effort d’innovation pour les applications prenant en charge le cloud. Les processus agiles et DevOps évoluaient bien, mais les performances de l’application étaient irrégulières. Dans le cadre d’une transformation plus mature, l’entreprise a lancé un programme pour surveiller et automatiser le dimensionnement en fonction des besoins d’utilisation. La société a pu éliminer les problèmes de dimensionnement à l’aide des outils de gestion des performances Azure, ce qui a entraîné une augmentation surprenante des transactions de 5 %.
+- **Exemple 2 :** Une société d’investissement de consommateurs se trouvait dans les premières étapes d’un effort d’innovation pour les applications prenant en charge le cloud. Les processus agiles et DevOps évoluaient bien, mais les performances de l’application étaient irrégulières. Dans le cadre d’une transformation plus mature, l’entreprise a lancé un programme pour surveiller et automatiser le dimensionnement en fonction des besoins d’utilisation. La société a éliminé les problèmes de dimensionnement à l’aide des outils de gestion des performances Azure, ce qui a entraîné une augmentation surprenante des transactions de 5 %.
 
 ## <a name="reliability"></a>Fiabilité
 
@@ -40,7 +40,7 @@ Sauvegarde Azure est une solution simple qui réduit vos coûts d’infrastructu
 
 Azure Site Recovery simplifie le test de la récupération d’urgence en répliquant les applications entre les régions Azure. Vous pouvez également répliquer des machines virtuelles VMware et Hyper-V et des serveurs physiques locaux sur Azure pour qu’ils restent disponibles en cas de défaillance du site principal. Et vous pouvez récupérez les charges de travail sur le site principal lorsqu’il fonctionne à nouveau.
 
-- **Exemple :** Une société de pétrole et de gaz a utilisé des technologies Azure pour implémenter une récupération de site complète. L’entreprise a choisi de ne pas adopter pleinement le cloud pour les opérations quotidiennes, mais les fonctionnalités de récupération d’urgence et de continuité des activités du cloud ont continué de protéger son centre de données. Tandis qu’un ouragan se formait à des centaines de kilomètres, son partenaire d’implémentation a commencé la récupération du site vers Azure. Avant même que la tempête n’arrive, toutes les ressources critiques s’exécutaient dans Azure, évitant ainsi tout temps d’arrêt.
+- **Exemple :** Une société de pétrole et de gaz a utilisé des technologies Azure pour implémenter une récupération de site complète. L’entreprise a choisi de ne pas adopter pleinement le cloud pour les opérations quotidiennes. Toutefois, les fonctionnalités de continuité d’activité et de reprise d’activité du cloud ont continué de protéger son centre de données. Tandis qu’un ouragan se formait à des centaines de kilomètres, son partenaire d’implémentation a commencé la récupération du site vers Azure. Avant même que la tempête n’arrive, toutes les ressources critiques s’exécutaient dans Azure, évitant ainsi tout temps d’arrêt.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

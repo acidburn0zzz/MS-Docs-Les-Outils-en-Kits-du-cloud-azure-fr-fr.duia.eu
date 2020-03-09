@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807612"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223240"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Guide de supervision du cloud : Collecte des données appropriées
 
@@ -23,7 +23,7 @@ Pour observer l’intégrité et la disponibilité de votre solution cloud, vous
 
 Planifiez la supervision et la migration avec soin. Commencez par inclure le propriétaire du service de supervision, le responsable de l’exploitation et d’autres personnes associées pendant la phase de planification, et continuez à les impliquer tout au long du cycle de développement et de publication. Leur but premier sera de développer une configuration de supervision basée sur les critères suivants :
 
-- Quelle est la composition du service, et ces dépendances sont-elles supervisées aujourd’hui ? Si oui, plusieurs outils sont-ils impliqués ? Y a-t-il une opportunité de consolider sans introduire de risques ?
+- Quelle est la composition du service ? Ces dépendances sont-elles supervisées aujourd’hui ? Si oui, plusieurs outils sont-ils impliqués ? Y a-t-il une opportunité de consolider sans introduire de risques ?
 - Quel est le contrat SLA du service, et comment puis-je le mesurer et le communiquer ?
 - À quoi doit ressembler le tableau de bord du service quand un incident se produit ? À quoi doit ressembler le tableau de bord pour le propriétaire du service et pour l’équipe qui assure le support du service ?
 - Quelles sont les métriques produites par la ressource que je dois superviser ?  

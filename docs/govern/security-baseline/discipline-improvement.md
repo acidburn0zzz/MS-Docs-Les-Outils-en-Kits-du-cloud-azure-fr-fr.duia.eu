@@ -1,6 +1,6 @@
 ---
 title: Amélioration de la discipline Base de référence de la sécurité
-description: Amélioration de la discipline Base de référence de la sécurité
+description: Découvrez les tâches qu’une entreprise peut effectuer pour développer et faire évoluer sa discipline de base de référence de la sécurité dans chaque phase d’adoption du cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 316a848e0f9f3f90a2f7badde3166733dce4a4c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0d5f2e2c1032c77ceb56b187aa9f2bcee02262eb
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808904"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707388"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Amélioration de la discipline Base de référence de la sécurité
 

@@ -1,6 +1,6 @@
 ---
-title: Activer la réussite des clients lors des parcours d’adoption du cloud
-description: Activer la réussite des clients tout au long des parcours d’adoption du cloud
+title: Favoriser la réussite du parcours d’adoption du cloud
+description: Aidez-vous du Framework d’adoption du cloud gratuit et en libre-service et d’autres outils pour prendre des décisions d’adoption du cloud qui assureront la réussite de vos clients.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
-ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
+ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413202"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170169"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Activer la réussite lors des parcours d’adoption du cloud
 

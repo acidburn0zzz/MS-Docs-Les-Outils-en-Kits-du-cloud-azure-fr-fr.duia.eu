@@ -7,13 +7,15 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4450f3f1e151e8234c7b2b5f91c2709270cbcdc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 199eedb6c9365f273588fae79b134298e8b60c6e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799129"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225379"
 ---
+<!-- cSpell:ignore paas NVAs VPNs -->
+
 # <a name="review-your-network-options"></a>Évaluer les options de votre réseau
 
 La conception et l’implémentation des fonctionnalités de mise en réseau Azure sont un élément essentiel de vos efforts d’adoption du cloud. Vous devez prendre des décisions en matière de conception réseau pour prendre en charge correctement les charges de travail et les services qui seront hébergés dans le cloud. Les produits et services de mise en réseau Azure prennent en charge un large éventail de fonctionnalités de mise en réseau. La façon dont vous structurez ces services et les architectures de mise en réseau que vous choisissez dépend des exigences en matière de charge de travail, de gouvernance et de connectivité de votre organisation.
@@ -72,14 +74,14 @@ Après avoir identifié les services de mise en réseau Azure dont vous avez bes
 
 Le tableau suivant récapitule les principaux scénarios pris en charge par ces modèles :
 
-| **Scénario** | **Architecture réseau suggérée**
-| --- | --- |
-| Toutes les charges de travail hébergées dans Azure et déployées sur votre zone d’accueil sont entièrement basées sur PaaS, ne nécessitent pas de réseau virtuel et ne font pas partie d’un effort d’adoption du cloud plus étendu qui inclut des ressources IaaS. | [PaaS uniquement](../../decision-guides/software-defined-network/paas-only.md) |
-| Vos charges de travail hébergées par Azure déploient des ressources IaaS telles que des machines virtuelles ou nécessitent un réseau virtuel, mais ne nécessitent pas de connectivité à votre environnement local. | [Cloud natif](../../decision-guides/software-defined-network/cloud-native.md) |
-| Vos charges de travail hébergées dans Azure nécessitent un accès limité aux ressources locales, mais vous devez traiter les connexions au cloud comme non approuvées. | [Zone DMZ cloud](../../decision-guides/software-defined-network/cloud-dmz.md) |
-| Vos charges de travail hébergées dans Azure nécessitent un accès limité aux ressources locales, et vous envisagez d’implémenter des stratégies de sécurité matures et une connectivité sécurisée entre le cloud et votre environnement local. | [Hybride](../../decision-guides/software-defined-network/hybrid.md) |
-| Vous devez déployer et gérer un grand nombre de machines virtuelles et de charges de travail , tout en dépassant les [limites d’abonnement Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits), vous devez partager des services entre les abonnements, ou vous avez besoin d’une structure plus segmentée pour la séparation en fonction du rôle, de l’application ou des autorisations. | [Hub-and-spoke](../../decision-guides/software-defined-network/hub-spoke.md) |
-| Vous avez de nombreuses filiales qui doivent se connecter les unes aux autres et à Azure. | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| **Scénario**                                                                                                                                                                                                                                                                                                                        | **Architecture réseau suggérée**                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Toutes les charges de travail hébergées dans Azure et déployées sur votre zone d’atterrissage sont entièrement basées sur PaaS, ne nécessitent pas de réseau virtuel et ne font pas partie d’un effort d’adoption du cloud plus étendu qui inclut des ressources IaaS.                                                                                                                        | [PaaS uniquement](../../decision-guides/software-defined-network/paas-only.md)            |
+| Vos charges de travail hébergées par Azure déploient des ressources IaaS telles que des machines virtuelles ou nécessitent un réseau virtuel, mais ne nécessitent pas de connectivité à votre environnement local.                                                                                                                                          | [Cloud natif](../../decision-guides/software-defined-network/cloud-native.md)      |
+| Vos charges de travail hébergées dans Azure nécessitent un accès limité aux ressources locales, mais vous devez traiter les connexions au cloud comme non approuvées.                                                                                                                                                                                           | [Zone DMZ cloud](../../decision-guides/software-defined-network/cloud-dmz.md)            |
+| Vos charges de travail hébergées dans Azure nécessitent un accès limité aux ressources locales, et vous envisagez d’implémenter des stratégies de sécurité matures et une connectivité sécurisée entre le cloud et votre environnement local.                                                                                                                         | [Hybride](../../decision-guides/software-defined-network/hybrid.md)                  |
+| Vous devez déployer et gérer un grand nombre de machines virtuelles et de charges de travail , tout en dépassant les [limites d’abonnement Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits), vous devez partager des services entre les abonnements, ou vous avez besoin d’une structure plus segmentée pour la séparation en fonction du rôle, de l’application ou des autorisations. | [Hub-and-spoke](../../decision-guides/software-defined-network/hub-spoke.md)        |
+| Vous avez de nombreuses filiales qui doivent se connecter les unes aux autres et à Azure.                                                                                                                                                                                                                                                       | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
 
 ### <a name="azure-virtual-datacenter"></a>Centre de données virtuel Azure
 

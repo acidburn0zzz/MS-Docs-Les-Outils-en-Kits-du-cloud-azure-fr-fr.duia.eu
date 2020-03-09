@@ -1,6 +1,6 @@
 ---
-title: 'Guide de gouvernance pour les entreprises complexes : Scénario de prise en charge'
-description: Ce scénario établit un cas d’utilisation de la gouvernance au cours du parcours d’adoption du cloud d’une entreprise complexe.
+title: 'Gouvernance pour les entreprises complexes : Scénario de prise en charge'
+description: Utilisez le Framework d’adoption du cloud pour Azure pour d’établir un cas d’usage de la gouvernance dans le parcours d’adoption du cloud de votre entreprise complexe.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae1940c1cc522cd917b2b0293d60b630007537c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805555"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706912"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Guide de gouvernance pour les entreprises complexes : Scénario de prise en charge
 

@@ -1,18 +1,18 @@
 ---
-title: 'Innovation cloud : Prédire et influencer'
-description: Introduction à l’innovation cloud - Prédire et influencer
+title: Prédire et influencer le comportement des clients
+description: Utilisez la modélisation prédictive pour développer des capacités prédictives via les données, les insights, les modèles, les prédictions et les interactions.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e299025afcbf1066411f8d4792fe739663d46c74
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808394"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171104"
 ---
 # <a name="predict-and-influence"></a>Prédire et influencer
 

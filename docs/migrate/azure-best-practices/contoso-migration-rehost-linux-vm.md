@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b629cc932b54b7ef7c633cefc847ac3263477674
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 12d69eee9fa52d6c7aef4b7b71b654808928ace4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807340"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222987"
 ---
+<!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
+
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>réhéberger une application Linux locale sur des machines virtuelles Azure
 
 Cet article explique comment la société fictive Contoso réhéberge une application Apache MySQL PHP (LAMP) à deux niveaux et basée sur Linux à l’aide de machines virtuelles IaaS Azure.
@@ -90,7 +92,7 @@ Contoso effectuera la migration comme suit :
 --- | --- | ---
 [Migration de serveur Azure Migrate](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | Le service orchestre et gère la migration de vos applications et charges de travail locales, ainsi que les instances de machine virtuelle AWS/GCP. | Lors de la réplication vers Azure, des frais sur le Stockage Azure sont facturés. Des machines virtuelles Azure sont créées en cas de basculement, et entraînent des frais. [En savoir plus](https://azure.microsoft.com/pricing/details/azure-migrate) sur les frais et la tarification.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Voici ce dont Contoso a besoin pour ce scénario.
 
@@ -142,7 +144,7 @@ La configuration est effectuée´comme suit :
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Préparer la connexion aux machines virtuelles Azure après le basculement
 
-Après le basculement vers Azure, Contoso souhaite pouvoir se connecter aux machines virtuelles répliquées dans Azure. Pour cela, les administrateurs de Contoso doivent effectuer quelques opérations :
+Après le basculement vers Azure, Contoso souhaite se connecter aux machines virtuelles répliquées dans Azure. Pour ce faire, les administrateurs de Contoso doivent suivre ces étapes :
 
 - Pour accéder aux machines virtuelles par Internet, ils activent SSH sur la machine virtuelle Linux locale avant la migration. Pour Ubuntu, cette opération peut être effectuée à l’aide de la commande suivante : **Sudo apt-get ssh install -y**.
 - Après avoir opéré la migration (basculement), ils peuvent consulter les **Diagnostics de démarrage** pour afficher une capture d’écran de la machine virtuelle.
@@ -158,7 +160,7 @@ Les administrateurs de Contoso peuvent exécuter une migration vers Azure, ils d
 
 Une fois la découverte terminée, vous pouvez commencer la réplication des machines virtuelles VMware sur Azure.
 
-1. Dans le projet Azure Migrate > **Serveurs**, **Azure Migrate : Server Migration**, cliquez sur **Répliquer**.
+1. Dans le projet Azure Migrate > **Serveurs**, **Azure Migrate : Server Migration**, sélectionnez **Répliquer**.
 
     ![Répliquer des machines virtuelles](./media/contoso-migration-rehost-linux-vm/select-replicate.png)
 
@@ -175,14 +177,14 @@ Une fois la découverte terminée, vous pouvez commencer la réplication des mac
 
     ![Sélectionner l’évaluation](./media/contoso-migration-rehost-linux-vm/select-assessment.png)
 
-5. Dans **Machines virtuelles**, recherchez les machines virtuelles en fonction des besoins et cochez chaque machine virtuelle que vous souhaitez migrer. Cliquez ensuite sur **Suivant : Paramètres de la cible**.
+5. Dans **Machines virtuelles**, recherchez les machines virtuelles en fonction des besoins et cochez chaque machine virtuelle que vous souhaitez migrer. Ensuite, sélectionnez **Next: Paramètres de la cible**.
 
 6. Dans **Paramètres de la cible**, sélectionnez l’abonnement et la région cible vers laquelle vous allez migrer, puis spécifiez le groupe de ressources dans lequel les machines virtuelles Azure résideront après la migration. Dans **Réseau virtuel**, sélectionnez le réseau virtuel/sous-réseau Azure auquel les machines virtuelles Azure seront jointes après la migration.
 
 7. Dans **Azure Hybrid Benefit**, sélectionnez ce qui suit :
 
-    - Sélectionnez **Non** si vous ne souhaitez pas appliquer Azure Hybrid Benefit. Cliquez ensuite sur **Suivant**.
-    - Sélectionnez **Oui** si vous avez des machines Windows Server couvertes par des abonnements Software Assurance ou Windows Server actifs et que vous souhaitez appliquer l’avantage aux machines que vous migrez. Cliquez ensuite sur **Suivant**.
+    - Sélectionnez **Non** si vous ne souhaitez pas appliquer Azure Hybrid Benefit. Sélectionnez ensuite **Suivant**.
+    - Sélectionnez **Oui** si vous avez des machines Windows Server couvertes par des abonnements Software Assurance ou Windows Server actifs et que vous souhaitez appliquer l’avantage aux machines que vous migrez. Sélectionnez ensuite **Suivant**.
 
 8. Dans **Capacité de calcul**, vérifiez le nom, la taille, le type de disque du système d’exploitation et le groupe à haute disponibilité de la machine virtuelle. Les machines virtuelles doivent satisfaire aux [exigences d’Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements).
 
@@ -190,11 +192,11 @@ Une fois la découverte terminée, vous pouvez commencer la réplication des mac
     - **Disque du système d’exploitation :** spécifiez le disque du système d’exploitation (démarrage) pour la machine virtuelle. Le disque du système d’exploitation est le disque qui contient le chargeur de démarrage et le programme d’installation du système d’exploitation.
     - **Groupe à haute disponibilité :** si la machine virtuelle doit se trouver dans un groupe à haute disponibilité Azure après la migration, spécifiez-le ici. Ce groupe doit figurer dans le groupe de ressources cible que vous spécifiez pour la migration.
 
-9. Dans **Disques**, indiquez si les disques de machine virtuelle doivent être répliqués sur Azure, puis sélectionnez le type de disque (SSD/HDD standard ou disques managés Premium) dans Azure. Cliquez ensuite sur **Suivant**.
+9. Dans **Disques**, indiquez si les disques de machine virtuelle doivent être répliqués sur Azure, puis sélectionnez le type de disque (SSD/HDD standard ou disques managés Premium) dans Azure. Sélectionnez ensuite **Suivant**.
     - Vous pouvez exclure des disques de la réplication.
     - Si vous excluez des disques, ils ne seront pas présents sur la machine virtuelle Azure après la migration.
 
-10. Dans **Passer en revue et démarrer la réplication**, passez en revue les paramètres, puis cliquez sur **Répliquer** pour démarrer la réplication initiale pour les serveurs.
+10. Dans **Passer en revue et démarrer la réplication**, examinez les paramètres, puis sélectionnez **Répliquer** pour lancer la réplication initiale des serveurs.
 
 > [!NOTE]
 > Vous pouvez mettre à jour les paramètres de réplication à tout moment avant le démarrage de la réplication, dans **Gérer** > **Réplication des machines**. Vous ne pouvez pas changer les paramètres après le démarrage de la réplication.
@@ -205,18 +207,18 @@ Les administrateurs de Contoso exécutent un test rapide de basculement, puis un
 
 ### <a name="run-a-test-failover"></a>Exécuter un test de basculement
 
-1. Dans **Objectifs de migration** > **Serveurs** > **Azure Migrate : Server Migration**, cliquez sur **Tester les serveurs migrés**.
+1. Dans **Objectifs de migration** > **Serveurs** > **Azure Migrate : Server Migration**, sélectionnez **Tester les serveurs migrés**.
 
      ![Tester les serveurs migrés](./media/contoso-migration-rehost-linux-vm/test-migrated-servers.png)
 
-2. Cliquez avec le bouton droit sur la machine virtuelle à tester, puis cliquez sur **Migration de test**.
+2. Cliquez avec le bouton droit sur la machine virtuelle à tester, puis sélectionnez **Migration de test**.
 
     ![Migration de test](./media/contoso-migration-rehost-linux-vm/test-migrate.png)
 
 3. Dans **Migration de test**, sélectionnez le réseau virtuel Azure dans lequel la machine virtuelle Azure se trouvera après la migration. Nous vous recommandons d’utiliser un réseau virtuel hors production.
 4. Le travail **Migration de test** démarre. Supervisez le travail dans les notifications du portail.
 5. Une fois la migration terminée, affichez la machine virtuelle Azure migrée dans **Machines virtuelles** dans le portail Azure. Le nom de la machine a le suffixe **-Test**.
-6. Une fois le test terminé, cliquez avec le bouton droit sur la machine virtuelle Azure dans **Réplication des machines**, puis cliquez sur **Nettoyer la migration de test**.
+6. Une fois le test terminé, cliquez avec le bouton droit sur la machine virtuelle Azure dans **Réplication des machines**, puis sélectionnez **Nettoyer la migration de test**.
 
     ![Nettoyer la migration](./media/contoso-migration-rehost-linux-vm/clean-up.png)
 
@@ -224,7 +226,7 @@ Les administrateurs de Contoso exécutent un test rapide de basculement, puis un
 
 Les administrateurs de Contoso peuvent à présent opérer un basculement complet pour achever la migration.
 
-1. Dans le projet Azure Migrate > **Serveurs** > **Azure Migrate : Server Migration**, cliquez sur **Réplication de serveurs**.
+1. Dans le projet Azure Migrate > **Serveurs** > **Azure Migrate : Server Migration**, sélectionnez **Réplication de serveurs**.
 
     ![Réplication de serveurs](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
@@ -237,7 +239,7 @@ Les administrateurs de Contoso peuvent à présent opérer un basculement comple
 
 ### <a name="connect-the-vm-to-the-database"></a>Connecter la machine virtuelle à la base de données
 
-La dernière étape du processus de migration consiste pour les administrateurs de Contoso à mettre à jour la chaîne de connexion de l’application pour qu’elle pointe vers la base de données de l’application s’exécutant sur la machine virtuelle **OSTICKETMYSQL**.
+La dernière étape du processus de migration consiste pour les administrateurs de Contoso à mettre à jour la chaîne de connexion de l’application pour la faire pointer vers la base de données d’application s’exécutant sur la machine virtuelle **OSTICKETMYSQL**.
 
 1. Ils établissent une connexion SSH à la machine virtuelle **OSTICKETWEB** à l’aide de Putty ou d’un autre client SSH. La machine virtuelle étant privée, Contoso établit la connexion en utilisant l’adresse IP privée.
 

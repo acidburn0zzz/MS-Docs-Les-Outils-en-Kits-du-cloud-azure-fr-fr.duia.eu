@@ -1,6 +1,6 @@
 ---
 title: Exemples d’instructions de stratégie pour l’accélération du déploiement
-description: Exemples d’instructions de stratégie pour l’accélération du déploiement
+description: Utilisez le Framework d’adoption du cloud pour Azure pour obtenir des exemples de déclarations de stratégie d’accélération du déploiement qui vous aideront à élaborer des déclarations de stratégie.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c582b0a6e836f5198724e5675840f3f8085f55dc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9e25c81e2811bcefa238366462db3d2c66184b08
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803940"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708952"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exemples d’instructions de stratégie pour l’accélération du déploiement
 

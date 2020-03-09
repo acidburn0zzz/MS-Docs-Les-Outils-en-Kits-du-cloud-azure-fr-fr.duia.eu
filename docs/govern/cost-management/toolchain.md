@@ -1,6 +1,6 @@
 ---
 title: Outils de gestion des coûts dans Azure
-description: Outils de gestion des coûts dans Azure
+description: Découvrez comment les outils natifs Azure peuvent contribuer à affiner les stratégies et les processus qui vont dans le sens de la discipline de gouvernance de la gestion des coûts.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e35530fbf3a858c000cb78c0c076d7d56d5fbd86
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 70014352d4b7f64f5c73a0fda96ef453f1a77176
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806405"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708782"
 ---
 # <a name="cost-management-tools-in-azure"></a>Outils de gestion des coûts dans Azure
 

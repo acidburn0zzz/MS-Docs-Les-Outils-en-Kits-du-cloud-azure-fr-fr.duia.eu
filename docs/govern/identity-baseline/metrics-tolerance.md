@@ -1,6 +1,6 @@
 ---
-title: Métriques, indicateurs et tolérance au risque de la base de référence des identités
-description: Métriques, indicateurs et tolérance au risque de la base de référence des identités
+title: Métriques et indicateurs de tolérance au risque liée à la base de référence des identités.
+description: Utilisez Cloud Adoption Framework pour Azure afin de savoir comment quantifier la tolérance au risque métier liée à la base de référence des identités.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f5002d278e833873a2077538c848bc5e7f47131d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9d50e40ba5877eab0f2aa904f2bcc1e984c309ca
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806031"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223877"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Métriques, indicateurs et tolérance au risque de la base de référence des identités
 
@@ -53,7 +53,7 @@ Une fois que vous avez une base de référence, établissez des seuils minimaux 
 - **Déclencheur de fédération.** Une entreprise implémentant la fédération d’identités avec _x_ systèmes de Base de référence des identités externes peut tirer un bénéfice d’un investissement dans la discipline Base de référence des identités pour garantir une stratégie d’organisation cohérente entre les membres de la fédération.
 - **Déclencheur d’accès avec privilèges élevés.** Une entreprise, avec plus de _x %_ des utilisateurs ayant des autorisations élevées pour des outils de gestion et des ressources, peut envisager d’investir dans la discipline Base de référence des identités pour réduire le risque d’un provisionnement excessif par inadvertance de l’accès accordé aux utilisateurs.
 - **Déclencheur RBAC.** Une entreprise, avec moins de _x %_ de ressources utilisant les méthodes de contrôle d’accès en fonction du rôle (RBAC), peut envisager d’investir dans la discipline Base de référence des identités pour identifier des moyens optimisés d’affecter aux utilisateurs l’accès aux ressources.
-- **Déclencheur d’échec d’authentification.** Une entreprise où les échecs d’authentification représentent plus de _x %_ des tentatives peut investir dans la discipline Base de référence des identités pour garantir que les méthodes d’authentification ne sont pas soumises à des attaques externes, et que les utilisateurs sont en mesure d’utiliser correctement les méthodes d’authentification.
+- **Déclencheur d’échec d’authentification.** Une entreprise où les échecs d’authentification représentent plus de _x %_ des tentatives a tout intérêt à investir dans la discipline Base de référence des identités pour garantir que les méthodes d’authentification ne sont pas soumises à des attaques externes, et que les utilisateurs peuvent s’authentifier correctement.
 - **Déclencheur d’échec d’autorisation.** Une entreprise où les tentatives d’accès sont rejetées dans une proportion supérieure à _x %_ peut investir dans la discipline Base de référence des identités pour améliorer l’application et la mise à jour des contrôles d’accès, et pour identifier les tentatives d’accès potentiellement malveillantes.
 - **Déclencheur de compte compromis.** Une entreprise avec plusieurs comptes compromis doit investir dans la discipline Base de référence des identités pour améliorer la robustesse et la sécurité des mécanismes d’authentification et pour améliorer les mécanismes de correction des risques liés aux comptes compromis.
 

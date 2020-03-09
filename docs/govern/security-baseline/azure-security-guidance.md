@@ -1,6 +1,6 @@
 ---
 title: Recommandations en matière de sécurité Azure
-description: Quelles sont les recommandations formulées par Microsoft en matière de sécurité ?
+description: Utilisez la Plateforme d’approbation de services Microsoft et le Gestionnaire de conformité pour satisfaire les obligations de conformité complexes et améliorer la protection des données.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab126c3638edd18d76c579bbf4d1958621546a76
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804909"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709530"
 ---
 <!-- markdownlint-disable MD026 -->
 

@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629247"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225305"
 ---
+<!-- cSpell:ignore rodend subscope ITSM -->
+
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
 
 > [!NOTE]
@@ -47,7 +49,7 @@ La structure d’entreprise peut constituer le fondement de chaque nouvel abonne
 >
 L’illustration suivante présente les composants de la structure. Celle-ci est basée sur un plan solide de la hiérarchie de gestion et des abonnements. Les piliers en sont des stratégies Resource Manager et des normes d’affectation de noms fortes. Le reste de la structure est constitué des fonctionnalités Azure de base qui habilitent et connectent un environnement sécurisé et facile à gérer.
 
-![Structure d’entreprise](../_images/reference/scaffoldv2.png)
+![Structure d’entreprise](../_images/reference/scaffold-v2.png)
 
 ## <a name="define-your-hierarchy"></a>Définition de votre hiérarchie
 
@@ -269,7 +271,7 @@ Ces informations peuvent être consultées et traitées à plusieurs niveaux et 
 
 Un des changements majeurs auxquels vous serez confronté en passant d’un cloud local au cloud public est le passage de dépenses d’investissement (acheter du matériel) à des dépenses d’exploitation (payer pour le service que vous utilisez). Cette transition nécessite également une gestion plus précise de vos coûts. L’avantage du cloud est que vous pouvez agir foncièrement et positivement sur le coût d’un service que vous utilisez, simplement en l’arrêtant ou en le redimensionnant quand vous n’en avez pas besoin. La gestion délibérée des coûts dans le cloud est une meilleure pratique à laquelle les clients expérimentés s’adonnent quotidiennement.
 
-Microsoft met à votre disposition plusieurs outils pour visualiser, suivre et gérer les coûts. Nous vous proposons aussi un ensemble complet d’API pour vous permettre de personnaliser la gestion des coûts et de l’intégrer à vos propres outils et tableaux de bord. Ces outils sont plus ou moins regroupés dans les fonctionnalités du portail Azure et des fonctionnalités externes.
+Microsoft fournit plusieurs outils pour visualiser, suivre et gérer les coûts. Nous vous proposons aussi un ensemble complet d’API pour vous permettre de personnaliser la gestion des coûts et de l’intégrer à vos propres outils et tableaux de bord. Ces outils sont plus ou moins regroupés dans les fonctionnalités du portail Azure et des fonctionnalités externes.
 
 ### <a name="azure-portal-capabilities"></a>Fonctionnalités du portail Azure
 

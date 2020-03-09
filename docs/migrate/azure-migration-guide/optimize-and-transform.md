@@ -1,28 +1,34 @@
 ---
-title: Optimiser et transformer
+title: Optimiser et promouvoir
 description: Cette partie du Guide de migration Azure couvre les aspects de l’optimisation, notamment la révision de la conception de la solution, la bonne taille des services et l’analyse des coûts.
 author: matticusau
 ms.author: mlavery
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994161"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222502"
 ---
-# <a name="optimize-and-transform"></a>Optimiser et transformer
+<!-- cSpell:ignore Fservers Fdatabases -->
 
-Maintenant que vous avez migré vos services vers Azure, la phase suivante consiste à passer en revue la solution pour rechercher les domaines d’optimisation possibles. Cela peut inclure la révision de la conception de la solution, le bon dimensionnement des services et l’analyse des coûts.
+<!-- markdownlint-disable MD025 DOCSMD001 -->
+
+# <a name="test-optimize-and-promote"></a>Tester, optimiser et promouvoir
+
+Maintenant que vous avez migré vos services vers Azure, la phase suivante consiste à passer en revue la solution pour rechercher les domaines d’optimisation possibles. Cet effort peut comprendre la révision de la conception de la solution, le redimensionnement des services et l’analyse des coûts.
 
 Cette phase est également une opportunité d’optimiser votre environnement et d’effectuer d’éventuelles transformations de l’environnement. Par exemple, vous avez peut-être effectué une migration de type « réhébergement », et maintenant que vos services s’exécutent sur Azure, vous pouvez revisiter la configuration des solutions ou des services consommés, et éventuellement effectuer une « refactorisation » pour moderniser et augmenter les capacités de votre solution.
 
-# <a name="right-size-assetstaboptimize"></a>[Ressources de bonne taille](#tab/optimize)
+Le reste de cet article se concentre sur les outils permettant d’optimiser la charge de travail migrée. Une charge de travail est prête à être promue en production lorsque l’équilibre a été atteint entre les performances et les coûts. Pour obtenir des conseils sur les options de promotion, consultez les articles sur l’amélioration des processus dans [Optimiser et promouvoir](../migration-considerations/optimize/index.md).
+
+# <a name="right-size-assets"></a>[Ressources de bonne taille](#tab/optimize)
 
 Tous les services Azure qui fournissent un modèle de coût basé sur la consommation peuvent être redimensionnés à l’aide du portail Azure, de l’interface CLI ou de PowerShell. La première étape dans le bon dimensionnement d’un service consiste à passer en revue ses métriques d’utilisation. Le service Azure Monitor permet d’accéder à ces métriques. Vous devrez peut-être configurer la collecte des métriques pour le service que vous analysez et attendre un certain temps pour collecter des données significatives en fonction de vos modèles de charge de travail.
 
@@ -48,8 +54,7 @@ Toutefois, pour les machines virtuelles créées ou migrées à l’aide d’aut
 1. Sélectionnez **Taille** et la nouvelle taille souhaitée dans la liste. Vous devrez peut-être ajuster les filtres pour trouver la taille dont vous avez besoin.
 1. Sélectionnez **Redimensionner**.
 
-Notez que le redimensionnement des machines virtuelles de production risque de provoquer des interruptions de service. Essayez d’appliquer le bon dimensionnement pour vos machines virtuelles avant de les promouvoir en production.
-
+Le redimensionnement des machines virtuelles de production peut provoquer des interruptions de service. Essayez d’appliquer le bon dimensionnement pour vos machines virtuelles avant de les promouvoir en production.
 
 ::: zone target="chromeless"
 
@@ -95,7 +100,7 @@ Les partenaires peuvent utiliser l’espace partenaires pour passer en revue l�
 
 ::: zone-end
 
-# <a name="cost-managementtabmanagecost"></a>[Cost Management](#tab/ManageCost)
+# <a name="cost-management"></a>[Cost Management](#tab/ManageCost)
 
 Il est important d’effectuer une analyse et un examen des coûts récurrents. Cela vous donne la possibilité de redimensionner les ressources en fonction de vos besoins pour équilibrer les coûts et la charge de travail.
 

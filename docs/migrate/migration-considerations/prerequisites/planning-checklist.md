@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801407"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222241"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Check-list de planification de l’environnement de migration : valider la préparation de l’environnement avant la migration
 
 En première étape du processus de migration, vous devez créer l’environnement approprié dans le cloud pour recevoir, héberger et prendre en charge la migration des ressources. Cet article fournit une liste des éléments à valider dans l’environnement actuel avant la migration.
 
-La check-list suivante s’aligne sur les instructions fournies dans la [section Prêt](../../../ready/index.md) du Framework d’adoption du cloud. Consultez cette section pour obtenir des instructions concernant l’exécution des éléments suivants.
+La check-list suivante s’aligne sur les instructions fournies dans la [section Prêt](../../../ready/index.md) de Cloud Adoption Framework. Consultez cette section pour obtenir des instructions concernant l’exécution des éléments suivants.
 
 ## <a name="effort-type-assumption"></a>Hypothèse relative au type d’effort
 
@@ -26,7 +26,11 @@ Cet article et cette check-list adoptent une approche de _réhébergement_ ou de
 
 ## <a name="governance-alignment"></a>Alignement de la gouvernance
 
-La première décision, qui est aussi et la plus importante, concernant n’importe quel environnement prêt à la migration est le choix de l’alignement de la gouvernance. Un consensus a-t-il été atteint en ce qui concerne l’alignement de la gouvernance avec la base de la migration ? Au minimum, l’équipe chargée de l’adoption du cloud doit déterminer si cette migration est accueillie dans un seul environnement avec une gouvernance limitée, une fabrique d’environnements avec une gouvernance complète ou une variante intermédiaire. Pour plus d’options et de conseils sur l’alignement de la gouvernance, consultez l’article relatif à l’[alignement de la gouvernance et la conformité](../../expanded-scope/governance-or-compliance.md).
+La première décision, qui est aussi et la plus importante, concernant n’importe quel environnement prêt à la migration est le choix de l’alignement de la gouvernance. Un consensus a-t-il été atteint en ce qui concerne l’alignement de la gouvernance avec la base de la migration ? Au minimum, l’équipe chargée de l’adoption du cloud doit déterminer si cette migration est accueillie dans un seul environnement avec une gouvernance limitée, une fabrique d’environnements avec une gouvernance complète ou une variante intermédiaire. Pour obtenir des conseils supplémentaires sur l’alignement de la gouvernance, consultez [Méthodologie de gouvernance](../../../govern/index.md).
+
+## <a name="operations-management-alignment"></a>Alignement de la gestion des opérations
+
+Avant d’effectuer la migration des ressources vers le cloud, il est important de comprendre les exigences ou les contraintes relatives à la gestion des opérations. L’environnement de migration doit inclure au moins toutes les implémentations nécessaires au respect de la base de référence des opérations. Pour obtenir des conseils supplémentaires sur l’alignement des opérations, consultez [Méthodologie de gestion](../../../manage/index.md).
 
 ## <a name="cloud-readiness-implementation"></a>Implémentation de la préparation au cloud
 

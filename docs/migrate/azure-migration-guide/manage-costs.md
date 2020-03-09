@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8486d4de8b6055d6d0741d008c10a405c27b8f92
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803515"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222653"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mécanismes de contrôle des coûts axés sur la migration
 
@@ -34,7 +34,7 @@ Les processus décrits dans cet article peuvent également nécessiter un parten
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="estimate-vm-costs-prior-to-migrationtabestimatevmcosts"></a>[Estimer les coûts d’une machine virtuelle avant la migration](#tab/EstimateVMCosts)
+# <a name="estimate-vm-costs-prior-to-migration"></a>[Estimer les coûts d’une machine virtuelle avant la migration](#tab/EstimateVMCosts)
 
 Avant la migration de toute ressource (infrastructure, application ou données), il est possible d’estimer les coûts et d’affiner le dimensionnement en fonction des critères de performance observés pour ces ressources. L’estimation des coûts a deux objectifs : elle permet de contrôler les coûts et fournit un point de contrôle pour s’assurer que les budgets actuels tiennent compte des exigences de niveaux de performance nécessaires.
 
@@ -54,13 +54,13 @@ Ces calculatrices de coûts manuels peuvent être utilisées de manière autonom
 Azure Migrate calcule les **estimations de coût mensuel** en fonction des données capturées par le collecteur et la carte de service. Les étapes suivantes chargeront les estimations de coût :
 
 1. Accédez à Évaluation Azure Migrate dans le portail.
-2. Dans la page **Vue d’ensemble** du projet, sélectionnez **+Créer une évaluation**.
-3. Cliquez sur **Tout afficher** pour passer en revue les propriétés de l’évaluation.
-4. Créez le groupe et spécifiez un nom de groupe.
-5. Sélectionnez les machines que vous souhaitez ajouter au groupe.
-6. Cliquez sur **Créer une évaluation** pour créer le groupe et l’évaluation.
-7. Une fois l’évaluation créée, affichez-la dans Vue d’ensemble > Tableau de bord.
-8. Dans la section Détails de l’évaluation de la navigation du portail, sélectionnez **Détails des coûts**.
+1. Dans la page **Vue d’ensemble** du projet, sélectionnez **+Créer une évaluation**.
+1. Sélectionnez **Tout afficher** pour passer en revue les propriétés de l’évaluation.
+1. Créez le groupe et spécifiez un nom de groupe.
+1. Sélectionnez les machines que vous souhaitez ajouter au groupe.
+1. Sélectionnez **Créer une évaluation** pour créer le groupe et l’évaluation.
+1. Une fois l’évaluation créée, affichez-la dans Vue d’ensemble > Tableau de bord.
+1. Dans la section Détails de l’évaluation de la navigation du portail, sélectionnez **Détails des coûts**.
 
 L’estimation obtenue, illustrée ci-dessous, identifie les coûts mensuels du calcul et du stockage, qui représentent souvent la plus grande partie des coûts du cloud.
 
@@ -70,9 +70,9 @@ L’estimation obtenue, illustrée ci-dessous, identifie les coûts mensuels du 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
 - [Configurer et passer en revue une évaluation avec Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Pour un plan plus complet relatif à la gestion des coûts sur un grand nombre de ressources (infrastructure, applications et données), consultez le [modèle de gouvernance du Framework d’adoption du cloud](../../govern/guides/index.md). En particulier, des conseils sur la [discipline de Cost Management](../../govern/cost-management/index.md) et l’[amélioration de Cost Management dans le guide de gouvernance pour les entreprises complexes](../../govern/guides/complex/cost-management-improvement.md).
+- Pour un plan plus complet relatif à la gestion des coûts sur un grand nombre de ressources (infrastructure, applications et données), consultez le [modèle de gouvernance de Cloud Adoption Framework](../../govern/guides/index.md). En particulier, des conseils sur la [discipline de Cost Management](../../govern/cost-management/index.md) et l’[amélioration de Cost Management dans le guide de gouvernance pour les entreprises complexes](../../govern/guides/complex/cost-management-improvement.md).
 
-# <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Estimer et optimiser les coûts des machines virtuelles pendant et après la migration](#tab/EstimateOptimize)
+# <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[Estimer et optimiser les coûts des machines virtuelles pendant et après la migration](#tab/EstimateOptimize)
 
 L’estimation des coûts avant la migration offre une cible solide pour les attentes en matière de coûts. Elle permet également de tenir compte des besoins de chaque ressource (infrastructure, applications et données) à migrer en matière de niveaux de performance et de coût. Toutefois, cela reste une estimation. Une fois la ressource migrée et en charge, des calculs de coûts plus précis peuvent être effectués, en fonction de la charge réelle ou synthétisée.
 
@@ -94,7 +94,7 @@ Configuration requise : Le reste de cet onglet part du principe que le lecteur 
 
 Les étapes suivantes chargeront les données d’analyse des coûts d’Azure Cost Management pour vos abonnements :
 
-1. Accédez à **Cost Management + facturation** dans le portail. Si vous ne voyez pas Cost Management + facturation dans le volet gauche, cliquez sur **Tous les services**. Dans le volet du menu de services, sous **Surveillance et gestion**, cliquez sur **Cost Management + facturation**.
+1. Accédez à **Cost Management + facturation** dans le portail. Si vous ne voyez pas « Gestion des coûts + facturation » dans le volet gauche, sélectionnez **Tous les services**. Dans le volet du menu de services, sous **Surveillance et gestion**, sélectionnez **Gestion des coûts + facturation**.
 2. Dans Cost Management + facturation, sélectionnez **Cost Management** dans le panneau de navigation de gauche pour commencer l’analyse et l’optimisation des coûts du cloud.
 3. Dans Cost Management, sélectionnez **Analyse des coûts**.
     a. Utilisez le paramètre **Étendue** pour passer à une autre étendue dans l’analyse des coûts.
@@ -107,13 +107,13 @@ Cette analyse vous permettra d’examiner les coûts totaux, le budget (le cas �
 - Pour plus d’informations sur Azure Advisor, consultez [Réduire les coûts de service grâce à Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Pour plus d’informations sur Azure Cost Management, consultez [Comprendre et utiliser les étendues](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) et [Explorer et analyser les coûts avec l’analyse des coûts](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
-# <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Astuces et conseils pour optimiser les coûts](#tab/TipsTricks)
+# <a name="tips-and-tricks-to-optimize-costs"></a>[Astuces et conseils pour optimiser les coûts](#tab/TipsTricks)
 
 Outre les outils mentionnés dans cet article, il existe des astuces et conseils qui peuvent vous aider à réduire rapidement les coûts globaux du cloud. Voici quelques conseils de haut niveau à connaître :
 
 ## <a name="avoid-unnecessary-spending"></a>Éviter les dépenses inutiles
 
-La plupart des ressources (infrastructure, applications et données) dans un centre de données existant peuvent théoriquement être migrées vers le cloud. Toutefois, cela ne signifie pas qu’elles devraient l’être. Pendant l’évaluation de chaque charge de travail, vérifiez que la charge de travail doit être migrée. L’article du Framework d’adoption du cloud sur la [rationalisation incrémentielle](../../digital-estate/rationalize.md) peut aider à déterminer les ressources qui doivent être migrées.
+La plupart des ressources (infrastructure, applications et données) dans un centre de données existant peuvent théoriquement être migrées vers le cloud. Toutefois, cela ne signifie pas qu’elles devraient l’être. Pendant l’évaluation de chaque charge de travail, vérifiez que la charge de travail doit être migrée. L’article Cloud Adoption Framework sur la [rationalisation incrémentielle](../../digital-estate/rationalize.md) peut aider à déterminer les ressources qui doivent être migrées.
 
 ## <a name="reduce-waste"></a>Réduire le gaspillage
 

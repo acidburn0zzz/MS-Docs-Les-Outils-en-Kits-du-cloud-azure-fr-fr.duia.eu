@@ -1,6 +1,6 @@
 ---
-title: 'Guide d’innovation Azure : Interagir par le biais des appareils'
-description: Guide d’innovation Azure - Interagir par le biais des appareils
+title: 'Innovation Azure : Interagir via des appareils'
+description: Découvrez comment Azure fournit un framework pour la création de solutions d’entreprise immersives et efficaces via des appareils de périphérie connectés et perceptifs.
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5063d22cee1a2711bc3dd4c2d052df2870b61c5a
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808309"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171019"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Les clients Azure utilisent un ensemble de systèmes et d’appareils connectés
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="global-scale-iot-servicetabiothub"></a>[Service IoT à l’échelle mondiale](#tab/IoTHub)
+## <a name="global-scale-iot-service"></a>[Service IoT à l’échelle mondiale](#tab/IoTHub)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -101,7 +101,7 @@ Pour créer des services IoT Hub Device Provisioning :
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="azure-digital-twinstabdigitaltwins"></a>[Azure Digital Twins](#tab/DigitalTwins)
+## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 Créez des expériences à intelligence spatiale réutilisables et extrêmement scalables qui relient les données de streaming entre le monde numérique et le monde physique. Améliorez votre engagement client à l’aide de modèles complets d’environnements physiques. Générez des graphes d’intelligence spatiale afin de modéliser les relations et les interactions entre les personnes, les espaces et les appareils. Interrogez les données à partir d’un espace physique plutôt que des capteurs disparates.
 
@@ -136,7 +136,7 @@ Pour créer Azure Digital Twins :
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="location-intelligencetabazuremaps"></a>[Intelligence géographique](#tab/AzureMaps)
+## <a name="location-intelligence"></a>[Intelligence géographique](#tab/AzureMaps)
 
 En plus des fonctionnalités de localisation traditionnelles, telles que la proximité, le trafic et le routage, le service Azure Maps permet aux entreprises de créer des solutions à l’aide de l’intelligence de localisation en temps réel, alimentée par des partenaires de technologie de mobilité de classe mondiale **TomTom** et **Moovit**. Intégrez facilement des fonctionnalités avancées de localisation et de mobilité dans vos applications avec les services géospatiaux.
 
@@ -169,7 +169,7 @@ Pour utiliser l’intelligence géographique :
 
 ::: zone-end
 
-## <a name="spatial-experiencestabspatial"></a>[Expériences spatiales](#tab/spatial)
+## <a name="spatial-experiences"></a>[Expériences spatiales](#tab/spatial)
 
 Azure Spatial Anchors permet aux développeurs de travailler sur des plateformes de réalité mixte afin de percevoir les espaces, de désigner des points d’intérêt précis et de rappeler ces mêmes points d’intérêt sur les appareils pris en charge.
 
@@ -204,7 +204,7 @@ Pour utiliser les expériences spatiales :
 
 ::: zone-end
 
-## <a name="azure-remote-renderingtabremoterender"></a>[Azure Remote Rendering](#tab/RemoteRender)
+## <a name="azure-remote-rendering"></a>[Azure Remote Rendering](#tab/RemoteRender)
 
 Restituez du contenu 3D interactif de haute qualité et diffusez-le sur vos appareils en temps réel. Les charges de travail de rendu sont principalement utilisées pour les effets spéciaux (VFX) dans l’industrie du multimédia et du divertissement. Le rendu est également utilisé dans de nombreux autres secteurs comme la publicité, la vente au détail, le pétrole et le gaz et la fabrication.
 

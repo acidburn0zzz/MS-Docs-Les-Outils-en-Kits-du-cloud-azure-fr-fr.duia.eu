@@ -1,6 +1,6 @@
 ---
-title: Conception de gouvernance dans Azure pour plusieurs équipes
-description: Instructions pour configurer les contrôles de gouvernance Azure pour plusieurs équipes, plusieurs charges de travail et plusieurs environnements.
+title: Conception de gouvernance multi-équipe dans Azure
+description: Trouvez des conseils pour configurer des contrôles de gouvernance Azure pour plusieurs équipes, plusieurs charges de travail et plusieurs environnements.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804297"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223890"
 ---
+<!-- cSpell:ignore netops -->
+
 # <a name="governance-design-for-multiple-teams"></a>Conception de gouvernance pour plusieurs équipes
 
 Ce guide a pour but de vous aider à comprendre comment concevoir un modèle de gouvernance des ressources dans Azure, destiné à prendre en plusieurs équipes, charges de travail et environnements. Vous allez commencer par passer en revue plusieurs exigences de gouvernance hypothétiques, puis étudier plusieurs exemples d’implémentation qui répondent à ces exigences.
@@ -127,7 +129,7 @@ Notez que dans ce modèle, **l’administrateur de services fédérés** est moi
 ![Abonnement avec les groupes de ressources A et B](../../_images/govern/design/governance-2-16.png)
 *Figure 5 - Abonnement avec un administrateur de service et deux propriétaires de charges de travail auxquels le rôle de propriétaire intégré a été attribué.*
 
-Toutefois, étant donné que le **propriétaire de la charge de travail A** et le **propriétaire de la charge de travail B** se sont vu attribuer le rôle de propriétaire intégré dans l’étendue de l’abonnement, chacun d’eux a hérité du rôle de propriétaire intégré pour le groupe de ressources de l’autre. Cela signifie que non seulement chaque propriétaire dispose d’un accès complet aux ressources de l’autre, mais qu’il a également la possibilité de déléguer l’accès administratif aux groupes de ressources de l’autre. Par exemple, le **propriétaire de la charge de travail B** a le droit d’ajouter n’importe quel autre utilisateur au **groupe de ressources A** et peut lui attribuer le rôle de son choix, y compris le rôle de propriétaire intégré.
+Toutefois, étant donné que le **propriétaire de la charge de travail A** et le **propriétaire de la charge de travail B** se sont vu attribuer le rôle de propriétaire intégré dans l’étendue de l’abonnement, chacun d’eux a hérité du rôle de propriétaire intégré pour le groupe de ressources de l’autre. Cela signifie que non seulement ils ont chacun un accès complet aux ressources de l’autre, mais ils peuvent aussi déléguer l’accès en gestion à leurs groupes de ressources respectifs. Par exemple, le **propriétaire de la charge de travail B** a le droit d’ajouter n’importe quel autre utilisateur au **groupe de ressources A** et peut lui attribuer le rôle de son choix, y compris le rôle de propriétaire intégré.
 
 Si vous comparez chaque exemple aux exigences, vous pouvez voir que les deux exemples prennent en charge un seul utilisateur approuvé dans l’étendue de l’abonnement, lequel dispose de l’autorisation d’accorder des droits d’accès aux ressources aux deux propriétaires de charges de travail. Aucun des deux propriétaires de charges de travail ne disposait par défaut d’un accès à la gestion des ressources et devait demander à **l’administrateur de services fédérés** de lui attribuer explicitement les autorisations nécessaires. En revanche, seul le premier exemple répond à notre besoin d’isoler les ressources associées à chaque charge de travail, de telle sorte qu’aucun propriétaire d’une charge de travail n’ait accès aux ressources d’une autre charge de travail.
 
@@ -160,7 +162,7 @@ Le **Propriétaire de l’abonnement** peut à présent créer des **groupes de 
 Voyons tout d’abord un exemple de modèle de gestion des ressources utilisant un seul abonnement. Il faut commencer par aligner les groupes de ressources sur les trois environnements. Deux options s'offrent à vous :
 
 1. Aligner chaque environnement sur un seul groupe de ressources. Toutes les ressources de l’infrastructure partagée sont déployées sur un seul groupe de ressources de **l’infrastructure partagée**. Toutes les ressources associées aux charges de travail de développement sont déployées sur un seul groupe de ressources de **développement**. Toutes les ressources associées aux charges de travail de production sont déployées dans un seul groupe de ressources de **production** pour l’environnement de **production**.
-2. Créer des groupes de ressources distincts pour chaque charge de travail, en utilisant une convention de nommage et des balises pour aligner les groupes de ressources sur chacun des trois environnements.
+2. Créer des groupes de ressources distincts pour chaque charge de travail, en utilisant une convention d’affectation de noms et des balises pour aligner les groupes de ressources sur chacun des trois environnements.
 
 Commençons par examiner la première option. Vous allez utiliser le modèle d’autorisations dont il a été question dans la section précédente, avec un seul administrateur de services fédérés d’abonnement qui crée des groupes de ressources et y ajoute des utilisateurs disposant du rôle de **contributeur** ou de **lecteur** intégré.
 
@@ -185,7 +187,7 @@ Commençons par examiner la première option. Vous allez utiliser le modèle d�
 10. Le deuxième **propriétaire de la charge de travail** crée un sous-réseau dans le réseau virtuel **prod-vnet**, puis ajoute deux machines virtuelles. Le deuxième **propriétaire de la charge de travail** applique les balises *environment* et *managedBy* à chaque ressource.
     ![Création de sous-réseaux](../../_images/govern/design/governance-3-8.png)
 
-Cet exemple de modèle de gestion de ressources nous permet de gérer les ressources dans les trois environnements dont nous avons besoin. Les ressources de l’infrastructure partagée sont protégées, car un seul utilisateur de l’abonnement possède l’autorisation d’accéder à ces ressources. Chacun des propriétaires de charges de travail est en mesure d’utiliser les ressources de l’infrastructure partagée sans disposer d’autorisations particulières sur les ressources partagées proprement dites. Toutefois, ce modèle de gestion ne répond pas à l’exigence impliquant d’isoler les charges de travail, puisque chacun des deux **propriétaires de charges de travail** est en mesure d’accéder aux ressources associées à la charge de travail de l’autre propriétaire.
+Cet exemple de modèle de gestion de ressources nous permet de gérer les ressources dans les trois environnements dont nous avons besoin. Les ressources de l’infrastructure partagée sont protégées, car un seul utilisateur de l’abonnement a l’autorisation d’accéder à ces ressources. Chacun des propriétaires de charge de travail peut utiliser les ressources de l’infrastructure partagée sans avoir la moindre autorisation sur les ressources partagées proprement dites. Cependant, ce modèle de gestion ne répond pas à l’exigence d’isolation des charges de travail, car les deux **propriétaires de charge de travail** peuvent accéder aux ressources de la charge de travail de l’autre.
 
 Il existe un autre élément important à prendre en compte avec ce modèle, qui peut ne pas sembler évident de prime abord. Dans l’exemple, c’est le **propriétaire de la charge de travail app1** qui a demandé la connexion du peering réseau avec le réseau virtuel **hub-vnet** afin d’obtenir une connectivité en local. L’utilisateur des **opérations réseau** a évalué cette demande compte tenu des ressources déployées avec cette charge de travail. Lorsque le **propriétaire de l’abonnement** a ajouté le **propriétaire de la charge de travail app2** avec le rôle de **contributeur**, cet utilisateur disposait des droits d’accès administratif sur toutes les ressources du groupe de ressources  **prod-rg**.
 
@@ -193,15 +195,15 @@ Il existe un autre élément important à prendre en compte avec ce modèle, qui
 
 Autrement dit, le **propriétaire de la charge de travail app2** disposait de l’autorisation de déployer son propre sous-réseau avec des machines virtuelles dans le réseau virtuel **prod-vnet**. Par défaut, ces machines virtuelles ont désormais accès au réseau local. L’utilisateur des **opérations réseau** n’a pas connaissance de ces machines et n’a pas approuvé leur connectivité au niveau local.
 
-Voyons maintenant le cas d’un abonnement unique avec plusieurs groupes de ressources pour différents environnements et charges de travail. Notez que dans l’exemple précédent, les ressources pour chaque environnement étaient facilement identifiables, car elles se trouvaient dans le même groupe de ressources. Maintenant que vous n’avez plus ce regroupement, il vous faut utiliser une convention de nommage de groupe de ressources pour proposer ces fonctionnalités.
+Voyons maintenant le cas d’un abonnement unique avec plusieurs groupes de ressources pour différents environnements et charges de travail. Notez que dans l’exemple précédent, les ressources pour chaque environnement étaient facilement identifiables, car elles se trouvaient dans le même groupe de ressources. Maintenant que vous n’avez plus ce regroupement, il vous faut utiliser une convention d’affectation des noms de groupe de ressources pour proposer ces fonctionnalités.
 
-1. Les ressources de **l’infrastructure partagée** auront toujours un groupe de ressources distinct dans ce modèle, qui reste le même. Chaque charge de travail a besoin de deux groupes de ressources (un pour l’environnement de **développement** et un pour l’environnement de **production**). Pour la première charge de travail, le **propriétaire de l’abonnement** crée deux groupes de ressources. Le premier s’appelle **app1-prod-rg** et le deuxième s’appelle **app1-dev-rg**. Comme indiqué précédemment, cette convention de nommage identifie les ressources comme étant associées à la première charge de travail, **app1**, et soit à l’environnement **dev** soit à l’environnement **prod**. Là encore, le propriétaire de l’*abonnement* ajoute le **propriétaire de la charge de travail app1** au groupe de ressources avec le rôle de **contributeur**.
+1. Les ressources de **l’infrastructure partagée** auront toujours un groupe de ressources distinct dans ce modèle, qui reste le même. Chaque charge de travail a besoin de deux groupes de ressources (un pour l’environnement de **développement** et un pour l’environnement de **production**). Pour la première charge de travail, le **propriétaire de l’abonnement** crée deux groupes de ressources. Le premier s’appelle **app1-prod-rg** et le deuxième s’appelle **app1-dev-rg**. Comme indiqué précédemment, cette convention d’affectation de noms identifie les ressources comme étant associées à la première charge de travail, **app1**, et soit à l’environnement **dev** soit à l’environnement **prod**. Là encore, le propriétaire de l’*abonnement* ajoute le **propriétaire de la charge de travail app1** au groupe de ressources avec le rôle de **contributeur**.
     ![Ajout de contributeurs](../../_images/govern/design/governance-3-12.png)
 2. De la même façon que dans le premier exemple, le **propriétaire de la charge de travail app1** déploie un réseau virtuel nommé **app1-prod-vnet** dans l’environnement de **production** et un autre réseau virtuel nommé **app1-dev-vnet** dans l’environnement de **développement**. Là encore, le **propriétaire de la charge de travail app1** envoie une demande à l’utilisateur des **opérations réseau** afin de créer une connexion de peering. Notez que le **propriétaire de la charge de travail app1** ajoute les mêmes balises que dans le premier exemple et que le compteur de limite indique qu’il ne reste que 997 réseaux virtuels dans l’abonnement.
     ![Création d’une connexion d’appairage](../../_images/govern/design/governance-3-13.png)
 3. Le **propriétaire de l’abonnement** crée deux groupes de ressources pour le **propriétaire de la charge de travail app2**. En suivant les mêmes conventions que pour le **propriétaire de la charge de travail app1**, les groupes de ressources sont nommés **app2-prod-rg** et **app2-dev-rg**. Le **propriétaire de l’abonnement** ajoute le **propriétaire de la charge de travail app2** à chacun des groupes de ressources avec le rôle de **contributeur**.
     ![Ajout de contributeurs](../../_images/govern/design/governance-3-14.png)
-4. Le *propriétaire de la charge de travail App2* déploie des réseaux virtuels et des machines virtuelles sur les groupes de ressources en utilisant les mêmes conventions de nommage. Les balises sont ajoutées et le compteur de limite indique qu’il reste 995 réseaux virtuels dans *l’abonnement*.
+4. Le *propriétaire de la charge de travail App2* déploie des réseaux virtuels et des machines virtuelles sur les groupes de ressources en utilisant les mêmes conventions d’affectation de noms. Les balises sont ajoutées et le compteur de limite indique qu’il reste 995 réseaux virtuels dans *l’abonnement*.
     ![Déploiement de réseaux virtuels et de machines virtuelles](../../_images/govern/design/governance-3-15.png)
 5. Le *propriétaire de la charge de travail App2* envoie une demande à l’utilisateur des *opérations réseau* pour appairer les réseaux virtuels *app2-prod-vnet* et *hub-vnet*. L’utilisateur des *opérations réseau* crée la connexion de peering.
     ![Création d’une connexion d’appairage](../../_images/govern/design/governance-3-16.png)
@@ -210,7 +212,7 @@ Le modèle de gestion qui en résulte est similaire au premier exemple, mais pr�
 
 - Chacune des deux charges de travail est isolée par charge de travail et par environnement.
 - Ce modèle a besoin de deux réseaux virtuels de plus que le premier exemple de modèle. Bien que cela ne fasse pas grande différence dans le cas de deux charges de travail, la limite théorique imposée au nombre de charges de travail pour ce modèle est de 24.
-- Les ressources ne sont plus regroupées dans un seul groupe de ressources pour chaque environnement. Le regroupement des ressources suppose de comprendre les conventions de nommage utilisées pour chaque environnement.
+- Les ressources ne sont plus regroupées dans un seul groupe de ressources pour chaque environnement. Le regroupement des ressources suppose de comprendre les conventions d’affectation de noms utilisées pour chaque environnement.
 - Chacune des connexions des réseaux virtuels appairés a été vérifiée et approuvée par l’utilisateur des *opérations réseau*.
 
 Voyons maintenant le cas d’un modèle de gestion des ressources utilisant plusieurs abonnements. Dans ce modèle, vous allez aligner chacun des trois environnements sur un abonnement distinct : un abonnement de **services partagés**, un abonnement de **production** et un abonnement de **développement**. Les aspects à prendre en compte pour ce modèle sont similaires à ceux d’un modèle qui utilise un seul abonnement. Par conséquent, vous allez devoir déterminer la manière dont vous allez aligner les groupes de ressources sur les charges de travail. Vous savez déjà que la création d’un groupe de ressources pour chaque charge de travail permettait d’isoler les charges de travail, aussi vous allez rester fidèles à ce modèle dans cet exemple.

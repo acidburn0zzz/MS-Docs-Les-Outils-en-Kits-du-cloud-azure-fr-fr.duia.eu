@@ -1,6 +1,6 @@
 ---
-title: 'Guide d’innovation Azure : Préparer les commentaires des clients'
-description: Préparer les commentaires des clients
+title: 'Innovation Azure : Se préparer aux commentaires'
+description: Découvrez comment utiliser Azure Tools pour collecter des commentaires d’ordre quantitatif et qualitatif sur les applications web et les API hébergées dans GitHub.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808360"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171087"
 ---
 ::: zone target="docs"
 
@@ -39,7 +39,7 @@ Avant d’intégrer des retours d’informations, vous devez disposer d’un ré
 
 Chacun des outils suivants dans Azure s’intègre à (ou est compatible avec) des projets hébergés dans GitHub :
 
-## <a name="quantitative-feedback-for-web-appstabquantitative-apps"></a>[Commentaires quantitatifs pour les applications web](#tab/Quantitative-Apps)
+## <a name="quantitative-feedback-for-web-apps"></a>[Commentaires quantitatifs pour les applications web](#tab/Quantitative-Apps)
 
 Application Insights est un outil d’analyse qui fournit des commentaires quantitatifs presque en temps réel sur l’utilisation de votre application. Ces commentaires peuvent vous aider à tester et valider votre hypothèse actuelle pour façonner la fonctionnalité suivante ou le récit utilisateur dans votre backlog.
 
@@ -74,7 +74,7 @@ Pour afficher les données relatives à vos applications, accédez au [Portail A
 - [Bien démarrer avec Azure Monitor Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 - [Créer un tableau de bord de télémétrie](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
 
-## <a name="quantitative-feedback-for-apistabquantitative-apis"></a>[Commentaires quantitatifs pour les API](#tab/Quantitative-APIs)
+## <a name="quantitative-feedback-for-apis"></a>[Commentaires quantitatifs pour les API](#tab/Quantitative-APIs)
 
 L’économie connectée change la façon dont les entreprises innovent. Les marchés et les secteurs sont perturbés plus rapidement que jamais. La perturbation prend de nombreuses formes et les entreprises doivent s’adapter au _dilemme_  : définir le rythme des modifications sans se heurter à une activité commerciale.
 
@@ -116,7 +116,7 @@ Pour ouvrir les services Gestion des API, accédez au [Portail Azure](https://ms
 
 - [Utiliser Azure Monitor pour obtenir des commentaires sur les API](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
 
-## <a name="qualitative-feedbacktabqualitative"></a>[Commentaires qualitatifs](#tab/Qualitative)
+## <a name="qualitative-feedback"></a>[Commentaires qualitatifs](#tab/Qualitative)
 
 Le backlog (ou tableau) est l’emplacement où les commentaires sont enregistrés en tant que récits utilisateur. C’est également là que le travail associé est suivi en tant que tâches actionnables. Azure Boards peut être intégré directement dans GitHub, ce qui permet une expérience transparente entre la gestion du travail de commentaires et tout code source.
 
@@ -154,7 +154,7 @@ Ces articles vous aideront à centraliser et à gérer les commentaires en utili
 - [Prise en main d’Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 - [Azure Boards and GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
-## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Fermer la boucle avec des pipelines](#tab/pipelines)
+## <a name="close-the-loop-with-pipelines"></a>[Fermer la boucle avec des pipelines](#tab/pipelines)
 
 Le fait d’agir sur les commentaires ne signifie pas toujours ajouter la fonctionnalité demandée par le client. Toutefois, chaque point de données doit entraîner une modification. Cette modification peut être un changement de votre point de vue. Il peut également s’agir d’une modification technique totalement différente de celle demandée. Dans les deux cas, les pipelines et les outils de déploiement comme Azure Pipelines vous permettent de publier rapidement ces modifications afin qu’elles puissent être transmises fréquemment avec le client.
 

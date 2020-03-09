@@ -1,6 +1,6 @@
 ---
-title: 'Guide de gouvernance pour les entreprises standard : Stratégie d’entreprise initiale sous-tendant la stratégie de gouvernance'
-description: 'Guide de gouvernance pour les entreprises standard : Stratégie d’entreprise initiale sous-tendant la stratégie de gouvernance'
+title: 'Gouvernance pour les entreprises standard : Première politique de l’entreprise'
+description: Utilisez le Framework d’adoption du cloud pour Azure pour définir la position de gouvernance initiale, les risques à un stade précoce, les déclarations de stratégie initiales et les processus à mettre en œuvre dès le début.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 33c73a13fc49f6e7b70d9b2e2e0dfd01844f1fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 64f04fe32445f79f36fe3846f16e3296e9424130
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806167"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170934"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Guide de gouvernance pour les entreprises standard : Stratégie d’entreprise initiale sous-tendant la stratégie de gouvernance
 

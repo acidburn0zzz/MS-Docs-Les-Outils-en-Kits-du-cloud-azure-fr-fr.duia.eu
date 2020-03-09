@@ -1,18 +1,18 @@
 ---
-title: 'Innovation cloud : Favoriser l’adoption'
-description: 'Introduction à l’innovation cloud : favoriser l’adoption'
+title: Favoriser l’adoption avec l’invention numérique
+description: Utilisez le modèle de maturité de la méthodologie d’innovation pour réduire les points de friction qui ralentissent l’adoption, tout en maintenant les bonnes pratiques en place.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808513"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223493"
 ---
 # <a name="empower-adoption"></a>Favoriser l’adoption
 
@@ -45,7 +45,7 @@ Comme précisé dans [Mesure de l’impact client](./measure.md), la validation 
 
 Lorsque vous effectuez la mise à l’échelle de l’innovation, il n’existe pas d’outil plus précieux qu’une base de code partagée pour la solution. Malheureusement, il n’existe aucun moyen de prédire quelle itération ou MVP constituera la combinaison gagnante. C’est pourquoi il n’est jamais trop tôt pour établir une base de code ou un référentiel partagé. Il s’agit du [pic technique](./build.md#reduce-complexity-and-delay-technical-spikes) qui ne doit jamais être retardé. Au fur et à mesure que l’équipe itère au sein de plusieurs solutions MVP, un référentiel partagé permet de faciliter la collaboration et le développement accéléré. Lorsque les modifications apportées ralentissent les métriques d’apprentissage, la contrôle de version vous de restaurer une version antérieure et plus efficace de la solution.
 
-[GitHub](https://guides.github.com) est l’outil de gestion de dépôts de code le plus utilisé. Il vous permet de créer rapidement un dépôt de code partagé. Vous pouvez également utiliser la fonctionnalité [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) d’Azure DevOps pour créer un dépôt [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) ou [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc).
+[GitHub](https://guides.github.com) est l’outil de gestion de dépôts de code le plus utilisé. Il vous permet de créer un dépôt de code partagé en quelques étapes. Vous pouvez également utiliser la fonctionnalité [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) d’Azure DevOps pour créer un dépôt [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) ou [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc).
 
 ## <a name="feedback-loops"></a>Boucles de rétroaction
 
@@ -61,7 +61,7 @@ Chaque commentaire constitue une solution potentielle aux besoins des clients. P
 
 Dans l’intégration continue, les modifications du code sont fréquemment fusionnées dans la branche principale. Les processus de génération et de test automatisés garantissent que le code de la branche principale est toujours de qualité production. Cela garantit que les développeurs travaillent ensemble pour développer des solutions partagées qui proposent des boucles de commentaires précises et fiables.
 
-Azure DevOps et [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) offrent des fonctionnalités d’intégration continue en quelques clics, pour GitHub ou divers autres référentiels.
+Azure DevOps et [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) permettent d’assurer une intégration continue en quelques étapes dans GitHub ou divers autres référentiels.
 Apprenez-en plus sur l’[intégration continue](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration) ou découvrez le [labo pratique](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration). Il existe également des architectures de solution permettant d’accélérer la création de vos [pipelines CI/CD avec Azure DevOps](https://azure.microsoft.com/solutions/devops).
 
 ## <a name="reliable-testing"></a>Test fiable

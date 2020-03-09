@@ -1,18 +1,18 @@
 ---
-title: 'Innovation cloud : Démocratiser les données'
-description: Introduction à l’innovation cloud – Démocratiser les données
+title: Démocratiser les données avec l’invention numérique
+description: Découvrez le processus de démocratisation, qui consiste à mettre les données entre les bonnes mains pour tester des hypothèses et favoriser l’innovation.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 158c3e25bac2124312a8ceaf3ac5500a58246f48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1ee86c13d94f62770e21e3a8208e9c0695725ba5
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808496"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170220"
 ---
 # <a name="democratize-data"></a>Démocratiser les données
 
