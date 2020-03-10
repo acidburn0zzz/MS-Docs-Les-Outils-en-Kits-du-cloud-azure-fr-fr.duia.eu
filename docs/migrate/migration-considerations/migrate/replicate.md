@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b37cea7b912cb4d65f9b1b119787e96b2f698d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802019"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337821"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ La réplication est le principal moteur des efforts de migration. Il s’agit du
 
 ## <a name="required-prerequisites-to-replication"></a>Conditions préalables requises pour la réplication
 
-Avant la réplication, la *nouvelle plateforme* et le nouveau matériel doivent être préparés pour recevoir les copies binaires. L’article sur les [conditions préalables](../prerequisites/index.md) présente les conditions minimales requises pour créer une plateforme sécurisée, robuste et performante pour recevoir les réplicas binaires.
+Avant la réplication, la *nouvelle plateforme* et le nouveau matériel doivent être préparés pour recevoir les copies binaires. L’article concernant les [prérequis](../prerequisites/index.md) présente les conditions minimales requises pour créer une plateforme sécurisée, robuste et hautes performances en vue de recevoir les réplicas binaires.
 
 Les *binaires sources* doivent également être préparés pour la réplication et la synchronisation. Les articles sur l’évaluation, l’architecture et la correction traitent chacun des actions nécessaires pour s’assurer que le fichier binaire source est prêt pour la réplication et la synchronisation.
 
