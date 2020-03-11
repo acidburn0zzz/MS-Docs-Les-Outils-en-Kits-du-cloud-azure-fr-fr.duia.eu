@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170169"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892240"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Activer la réussite lors des parcours d’adoption du cloud
 
@@ -22,7 +22,7 @@ Le Framework d’adoption du cloud est un outil en libre-service gratuit qui gui
 Tout au long de ce Framework, l’activation est un thème fondamental. La liste de vérification suivante présente les principes fondamentaux de l’adoption du cloud garantissant que le parcours d’adoption est considéré comme concluant par l’informatique et l’entreprise :
 
 - **Planifier :** établir des [résultats métiers](../strategy/business-outcomes/index.md) clairs, un [plan de parc numérique](../digital-estate/index.md) clairement défini et des [backlogs d’adoption](../migrate/migration-considerations/prerequisites/migration-backlog-review.md) bien compris.
-- **Prêt :** garantir la disponibilité du personnel grâce [aux compétences et aux plans de formation](../ready/technical-skills.md).
+- **Prêt :** garantir la disponibilité du personnel grâce [aux compétences et aux plans de formation](../ready/suggested-skills.md).
 - **Opérer :** définir un modèle d’exploitation gérable pour guider les activités pendant et longtemps après l’adoption.
   - **[Organiser](../organize/index.md) :** aligner les personnes et les équipes pour fournir des opérations et une adoption appropriées en matière de cloud.
   - **Gouverner** : aligner les [disciplines de gouvernance](../govern/index.md) appropriées pour appliquer de manière cohérente la gestion des coûts, l’atténuation des risques, la conformité et les bases de référence de la sécurité tout au long de l’adoption du cloud.
@@ -77,7 +77,7 @@ En plus du Framework d’adoption du cloud, Microsoft couvre des sujets supplém
     </a>
 </li>
 <li style="display: flex; flex-direction: column;">
-    <a href="../ready/technical-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../ready/suggested-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

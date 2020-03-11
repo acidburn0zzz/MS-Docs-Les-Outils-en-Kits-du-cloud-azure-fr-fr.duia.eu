@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cd4009e8201cf6267e9da297ce13987cb025139e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 1f6d7545814f51f79a45b619f73dab857ac582d3
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171274"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891987"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Collecter des données dans le cadre de la migration et de la modernisation de sources de données existantes
 
@@ -57,5 +57,3 @@ Nous vous suggérons de décider du temps d’arrêt acceptable pour votre entre
 |PostgreSQL|Azure Database pour PostgreSQL|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MongoDB|API Mongo d’Azure Cosmos DB|Database Migration Service|Hors connexion|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|API Mongo d’Azure Cosmos DB|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|Différentes options de plateforme en tant que service (PaaS) et d’IaaS|L’outil d’un partenaire ou Azure Migrate|Hors connexion ou en ligne|[Arbre de décision](../../migrate/expanded-scope/data-oracle-migration.md)|
-|Différentes options de bases de données NoSQL|Cosmo DB ou options IaaS|Migrations procédurales ou Azure Migrate|Hors connexion ou en ligne|[Arbre de décision](../../migrate/expanded-scope/data-no-sql-migration.md)|

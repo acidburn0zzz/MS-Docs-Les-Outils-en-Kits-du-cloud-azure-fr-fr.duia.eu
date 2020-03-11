@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806847"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023835"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exemples de résultats comptables
 
@@ -55,6 +55,8 @@ Le cloud computing peut réduire les dépenses d’investissement liées à l’
 - **Exemple no 1 :** Le centre de données d’une entreprise consomme un pourcentage important du budget informatique annuel. Le département informatique choisit d’effectuer une migration cloud et de transformer les ressources de ce centre de données vers des solutions IaaS (Infrastructure as a Service), ce qui génère une réduction des coûts de trois ans.
 - **Exemple no 2 :** Une société de portefeuille a récemment acquis une nouvelle entreprise. Dans le cadre de l’acquisition, les termes du contrat indiquent que la nouvelle entité doit être supprimée des centres de données dans les six mois. Si elle ne le fait pas, elle entraîne une pénalité de 1 million d’euros/mois au profit de la société de portefeuille. Le déplacement des ressources numériques vers le cloud dans le cadre d’une migration cloud pourrait permettre une mise hors service rapide des anciennes ressources.
 - **Exemple no 3 :** Une société qui s’occupe de la gestion des impôts sur le revenu de particuliers réalise 70 pour cent de son chiffre d’affaires annuel au cours des trois premiers mois de l’année. Le reste de l’année, son important investissement dans l’informatique est relativement peu utilisé. Une migration cloud permettrait au département informatique de déployer la capacité de traitement/hébergement nécessaire pour ces trois mois. Pendant les 9 mois restants, les coûts IaaS pourraient être considérablement réduits en diminuant la surface du système informatique.
+
+<!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>Exemple : Coverdell
 

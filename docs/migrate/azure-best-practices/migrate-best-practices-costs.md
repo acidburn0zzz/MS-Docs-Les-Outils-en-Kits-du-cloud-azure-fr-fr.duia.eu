@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 783652f1f469333c97ebd50673a3d42e1a9741d7
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222642"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892580"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Meilleures pratiques pour l’évaluation des coûts et le dimensionnement des charges de travail migrées vers Azure
 
@@ -241,9 +241,9 @@ Dans Cost Management, vous pouvez :
 **En savoir plus :**
 
 - [Obtenez une vue d’ensemble](https://docs.microsoft.com/azure/cost-management/overview) d’Azure Cost Management.
-- [Apprenez à optimiser](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices) votre investissement dans le cloud avec Azure Cost Management.
+- [Apprenez à optimiser](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) votre investissement dans le cloud avec Azure Cost Management.
 - [Apprenez à utiliser](https://docs.microsoft.com/azure/cost-management/use-reports) les rapports Azure Cost Management.
-- [Obtenez un tutoriel](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) sur l’optimisation des coûts à partir de recommandations.
+- [Obtenez un tutoriel](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) sur l’optimisation des coûts à partir de recommandations.
 - [Examinez](https://docs.microsoft.com/rest/api/consumption/budgets) l’API Azure Consumption.
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Bonne pratique : surveiller l’utilisation des ressources
@@ -260,7 +260,7 @@ Dans Azure, vous payez pour ce que vous utilisez, lorsque les ressources sont co
 
 - Obtenez une vue d’ensemble d’[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) et d’[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
 - [Obtenez](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) des recommandations sur les coûts de la part d’Advisor.
-- [Découvrez comment [optimiser les coûts à partir des recommandations](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) et [éviter les frais imprévus](https://docs.microsoft.com/azure/billing/billing-getting-started).
+- [Découvrez comment [optimiser les coûts à partir des recommandations](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) et [éviter les frais imprévus](https://docs.microsoft.com/azure/billing/billing-getting-started).
 - En savoir plus sur le [kit d’outils Azure Resource Optimization (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Bonne pratique : implémenter des budgets de groupe de ressources
@@ -273,7 +273,7 @@ Souvent, les groupes de ressources sont utilisés pour représenter des limites 
 **En savoir plus :**
 
 - [Apprenez à gérer](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) les coûts avec Azure Budgets.
-- [Suivez un tutoriel](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json) pour créer et gérer un budget Azure.
+- [Suivez un tutoriel](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json) pour créer et gérer un budget Azure.
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>Bonne pratique : optimiser la rétention d’Azure Monitor
 

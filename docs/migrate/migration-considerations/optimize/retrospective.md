@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 759bd75a134b1f5a5992f038a33693f632b86b03
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1bf3c79b95c748880e5d560003aa65acb1949c48
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801509"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891901"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,10 +47,3 @@ Des équipes très efficaces ne se contentent pas d’organiser des réunions r�
 Cette nouvelle croissance est représentée de la façon la plus tangible dans les changements apportés au backlog de mise en production ou d’itération.
 
 La rétrospective marque la fin d’une mise en production ou d’une itération, car les équipes acquièrent de l’expérience, en tirent des enseignements et [ajustent les backlogs de mise en production et d’itération](../assess/release-iteration-backlog.md) pour tenir compte des nouveaux processus et nouvelles expériences à tester. Cela démarre l’itération suivante dans les processus de migration.
-
-## <a name="next-steps"></a>Étapes suivantes
-
-La section [Sécuriser et gérer](../secure-and-manage/index.md) de ce contenu peut aider le lecteur à se préparer à la transition de la migration aux opérations.
-
-> [!div class="nextstepaction"]
-> [Outils de supervision et de gestion sécurisés](../secure-and-manage/index.md)
