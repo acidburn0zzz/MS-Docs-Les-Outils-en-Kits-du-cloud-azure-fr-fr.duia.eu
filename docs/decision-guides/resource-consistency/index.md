@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: df1299c091c994e143fdc8102590c823f2974ac2
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bb84d0f7ce6c29d52b1aebb54a456634cb942182
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708714"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892393"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guide de décision pour la cohérence des ressources
 
@@ -40,7 +40,7 @@ Les groupes de ressources servent de conteneurs pour les ressources ayant un cyc
 Si vous avez répondu _non_ à l’une ou plusieurs de ces questions, vous devez placer la ressource en question ailleurs, dans un autre groupe de ressources.
 
 > [!IMPORTANT]
-> Les groupes de ressources sont également spécifiques à la région. Toutefois, il arrive fréquemment que des ressources se trouvent dans des régions différentes au sein du même groupe de ressources, car elles sont gérées ensemble comme décrit ci-dessus. Pour plus d’informations sur la sélection des régions, consultez le [Guide de décision concernant les régions](../regions/index.md).
+> Les groupes de ressources sont également spécifiques à la région. Toutefois, il arrive fréquemment que des ressources se trouvent dans des régions différentes au sein du même groupe de ressources, car elles sont gérées ensemble comme décrit ci-dessus. Pour plus d’informations sur la sélection des régions, consultez [Plusieurs régions](../../migrate/azure-best-practices/multiple-regions.md).
 
 ## <a name="deployment-consistency"></a>Cohérence du déploiement
 
