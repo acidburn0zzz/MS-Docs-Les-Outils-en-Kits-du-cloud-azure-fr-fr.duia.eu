@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0b37500652606e3a1018b3b93c03aae546827eff
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 762c302bf52473ae917ab5c59c589225f1c5f0ac
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799401"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023993"
 ---
+<!-- cSpell:ignore timleyden tileyden -->
+
 # <a name="monitoring-and-reporting-in-azure"></a>Supervision et création de rapports dans Azure
 
 Azure offre de nombreux services qui, ensemble, fournissent une solution complète pour la collecte, l’analyse et l’action sur les données de télémétrie de vos applications et des ressources Azure qui les prennent en charge. De plus, ces services peuvent être étendus à la supervision des ressources locales critiques et fournir ainsi un environnement de supervision hybride.
 
-# <a name="azure-monitortabazuremonitor"></a>[Azure Monitor](#tab/AzureMonitor)
+# <a name="azure-monitor"></a>[Azure Monitor](#tab/AzureMonitor)
 
 Azure Monitor fournit un seul hub unifié pour toutes les données de supervision et de diagnostic dans Azure. Vous pouvez l’utiliser pour obtenir une visibilité sur l’ensemble de vos ressources. Grâce à Azure Monitor, vous pouvez rechercher et résoudre les problèmes et optimiser le niveau de performance. Vous pouvez également comprendre le comportement des clients.
 
@@ -51,13 +53,15 @@ Pour en savoir plus, consultez la [documentation d’Azure Monitor](https://docs
 
 ::: zone target="chromeless"
 
+<!-- markdownlint-disable DOCSMD001 -->
+
 ## <a name="action"></a>Action
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview]" submitText="Explore Azure Monitor" :::
 
 ::: zone-end
 
-# <a name="azure-service-healthtabazureservicehealth"></a>[Azure Service Health](#tab/AzureServiceHealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 Azure Service Health fournit un affichage personnalisé de l’intégrité des services et régions Azure que vous utilisez. Service Health publie des informations sur les problèmes actuels qui sont utiles pour comprendre l’impact sur vos ressources. Des mises à jour régulières vous tiennent informé de la résolution des problèmes.
 
@@ -95,7 +99,7 @@ Pour plus d’informations, consultez la [documentation d’Azure Service Health
 
 ::: zone-end
 
-# <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
+# <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
 Azure Advisor est un conseiller personnalisé gratuit basé dans le cloud qui vous aide à suivre et à implémenter de bonnes pratiques pour les déploiements Azure. Il analyse la configuration de vos ressources et les données de télémétrie d’utilisation et suggère des solutions qui peuvent vous aider à optimiser votre environnement. Les recommandations sont réparties selon les catégories suivantes :
 
@@ -125,7 +129,7 @@ Pour en savoir plus, consultez la [documentation d’Azure Advisor](https://docs
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Centre de sécurité Azure](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Centre de sécurité Azure](#tab/AzureSecurityCenter)
 
 Azure Security Center joue également un rôle important dans votre stratégie de supervision. Il peut vous aider à superviser la sécurité de vos machines, réseaux, systèmes de stockage, services de données et applications. Security Center fournit la détection avancée des menaces en utilisant l’apprentissage automatique et l’analytique comportementale pour aider à identifier les menaces actives ciblant vos ressources Azure. Il met également à disposition une protection contre les menaces qui bloque les programmes malveillants ou autres codes indésirables et réduit la surface d’exposition aux attaques par force brute et autres attaques réseau.
 

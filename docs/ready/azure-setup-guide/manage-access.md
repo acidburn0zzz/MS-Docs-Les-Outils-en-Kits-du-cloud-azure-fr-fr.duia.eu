@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 83f9461302af6710464b8c7e81a866cfc25d5852
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 86988a83b0c68bea60d0cceff5a168e2b2b08fd5
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799588"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024058"
 ---
+<!-- cSpell:ignore LijuKodicheraJayadevan Fsubscriptions Fresource -->
+
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Gérer l’accès à votre environnement Azure avec des contrôles d’accès en fonction du rôle
 
 La gestion des personnes autorisées à accéder à vos ressources et abonnements Azure constitue une partie importante de votre stratégie de gouvernance Azure, et l’attribution de droits d’accès et de privilèges en fonction des groupes est une bonne pratique. Le traitement des groupes plutôt que des utilisateurs individuels simplifie la maintenance des stratégies d’accès, offre une gestion cohérente des accès entre les équipes et réduit les erreurs de configuration. Le contrôle d’accès en fonction du rôle (RBAC) Azure est la principale méthode de gestion de l’accès dans Azure.
