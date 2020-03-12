@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1b0104767c58e31f6ae31cae511d2aa1dc60dd73
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337941"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092388"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Quels sont les résultats métier qui sont associés à une transformation ?
 
-Les transformations les mieux réussies commencent toujours par une idée de résultat. L’adoption du cloud peut être coûteuse et fastidieuse. Pour réussir, il est essentiel d’obtenir le bon niveau de soutien du service informatique et des autres services de l’entreprise. Le [framework des résultats métier](../index.md) Microsoft a été conçu pour aider les clients à identifier des résultats métier qui sont concis, définis et qui génèrent des résultats ou des changements observables au niveau des performances, selon une mesure précise.
+Les transformations les mieux réussies commencent toujours par une idée de résultat. L’adoption du cloud peut être coûteuse et fastidieuse. Pour réussir, il est essentiel d’obtenir le bon niveau de soutien du service informatique et des autres services de l’entreprise. Cet article a été conçu pour aider les clients à identifier des résultats métier qui sont concis, définis et qui génèrent des résultats ou des changements observables au niveau des performances, selon une mesure précise.
 
 Pendant une transformation cloud, le fait de parler en termes de résultats métier permet la transparence et le partenariat entre les services. Le framework des résultats métier commence par un modèle simple qui permet aux équipes techniques de documenter la transformation et de parvenir à un consensus. Ce modèle peut être utilisé par plusieurs parties prenantes afin de recueillir divers résultats métier, pouvant chacun être influencé par une transformation de l’entreprise. N’hésitez pas à utiliser ce modèle au format électronique ou mieux encore, à le dessiner sur un tableau, pour que les responsables et les différentes parties prenantes discutent des résultats à obtenir.
 

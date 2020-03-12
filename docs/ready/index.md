@@ -1,6 +1,6 @@
 ---
 title: Préparer pour l’adoption du cloud
-description: Préparer l’environnement pour l’adoption du cloud à venir
+description: Découvrez comment créer une zone d’atterrissage pour héberger les charges de travail que vous envisagez de créer ou de migrer dans le cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: cd4b29823636cfaa758d0568d3298bc146a00eb8
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892478"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092532"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Passez en revue le guide de configuration Azure pour vous familiariser avec les 
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/migrate-landing-zone.md">
+        <a href="./landing-zone/first-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -59,7 +59,7 @@ Passez en revue le guide de configuration Azure pour vous familiariser avec les 
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Première zone d’accueil</h3>
-Évaluez le blueprint de zone d’accueil de migration du Framework d’adoption du cloud. Utilisez ce blueprint afin de créer votre première zone d’accueil prête à la migration, pour un apprentissage et une expérimentation rapides.
+Choisissez l’option de zone d’atterrissage la mieux adaptée pour établir un point de départ basé sur le code pour votre environnement.
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@ Passez en revue le guide de configuration Azure pour vous familiariser avec les 
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Développer le blueprint</h3>
-Utilisez les considérations relatives à la zone d’accueil pour identifier et apporter les modifications nécessaires au modèle de blueprint.
+                            <h3>Étendre la zone d’accueil</h3>
+Répondez aux exigences de votre plan d’adoption du cloud en matière de plateforme en développant la première zone d’atterrissage.
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ Utilisez les considérations relatives à la zone d’accueil pour identifier et
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Meilleures pratiques</h3>
-Validez les modifications de zone d’accueil par rapport aux sections de Bonnes pratiques, afin de garantir la configuration correcte de vos zones d’accueil actuelles et futures.
+Validez les modifications de zone d’atterrissage par rapport aux bonnes pratiques pour garantir la bonne configuration de vos zones d’atterrissage actuelles et futures.
                         </div>
                     </div>
                 </div>

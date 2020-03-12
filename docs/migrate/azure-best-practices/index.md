@@ -1,29 +1,46 @@
 ---
 title: Bonnes pratiques pour la migration Azure
-description: Introduction aux bonnes pratiques pour la migration Azure
+description: Découvrez comment implémenter les outils nécessaires pour vous conformer aux bonnes pratiques en matière de migration cloud à l’aide du Cloud Adoption Framework pour Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5cc4a0cfdfe605fdd374055e782db2f0ce47c13f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90ec573d59c88187081fd640d9eb769977b787cf
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807289"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091418"
 ---
-# <a name="azure-migration-best-practices"></a>Bonnes pratiques pour la migration Azure
+# <a name="best-practices-for-cloud-migration"></a>Bonnes pratiques pour la migration cloud
 
-Azure fournit plusieurs outils pour exécuter une migration. Cette section du Framework d’adoption du cloud est conçue pour aider les lecteurs à implémenter ces outils conformément aux bonnes pratiques de migration. Ces bonnes pratiques sont alignées sur l’un des processus du modèle de migration du Framework d’adoption du cloud illustré ci-dessous.
+Nous vous recommandons d’utiliser le [Guide de migration Azure](../azure-migration-guide/index.md) dans le Cloud Adoption Framework comme point de départ si vous souhaitez migrer vers Azure. Ce guide décrit les outils et les approches de base pour la migration des machines virtuelles vers le cloud. Cette section du Cloud Adoption Framework couvre une série de bonnes pratiques qui vont au-delà des outils de base natifs du cloud.
 
-Développez un processus dans la table des matières sur la gauche pour voir les bonnes pratiques généralement requises pendant ce même processus.
+## <a name="cloud-migration-best-practice-checklist"></a>Liste de contrôle des bonnes pratiques en matière de migration cloud
 
-![Modèle de migration du Framework d’adoption du cloud](../../_images/operational-transformation-migrate.png)
+La liste de contrôle suivante décrit des situations complexes qui peuvent nécessiter l’étendue du cadre de la migration, au-delà des instructions du [guide de migration Azure](../azure-migration-guide/index.md).
 
-> [!NOTE]
-> La planification du patrimoine numérique et l’évaluation des ressources représentent deux niveaux différents de planification et d’évaluation de la migration :
->
-> - **Planification du patrimoine numérique** : Vous planifiez ou rationalisez le patrimoine numérique pendant la planification pour établir un backlog de migration global. Toutefois, ce plan est basé sur des hypothèses et des détails qui doivent être validés avant de pouvoir migrer une charge de travail.
-> - **Évaluation des ressources :** Vous évaluez les ressources individuelles d’une charge de travail avant sa migration pour estimer la compatibilité cloud et comprendre l’architecture et les contraintes de taille. Ce processus valide les premières hypothèses et fournit les détails nécessaires pour migrer une ressource individuelle.
+### <a name="business-driven-scope-expansion"></a>Expansion du cadre basée sur l’activité
+
+- **[Prise en charge des marchés internationaux](./multiple-regions.md) :** L’entreprise est implantée dans plusieurs zones géographiques qui ont chacune des exigences de souveraineté des données différentes. Pour répondre à ces exigences, d’autres considérations viennent s’ajouter aux prérequis et à la répartition des ressources pendant la migration.
+
+### <a name="technology-driven-scope-expansion"></a>Expansion du cadre basée sur la technologie
+
+- **[Migration VMware](./vmware-host.md) :** la migration des hôtes VMware peut accélérer le processus de migration global. Chaque hôte VMware migré peut déplacer plusieurs charges de travail vers le cloud à l’aide d’une approche lift-and-shift. Après la migration, ces machines virtuelles et charges de travail peuvent rester dans VMware ou être migrées vers des fonctionnalités cloud modernes.
+- **[Migration de SQL Server](./sql-migration.md) :** la migration de serveurs SQL peut accélérer le processus de migration global. Chaque SQL Server migré peut déplacer plusieurs bases de données et services, ce qui peut accélérer plusieurs charges de travail.
+- **[Centres de données multiples](./multiple-datacenters.md) :** la migration de plusieurs centres de données rend la migration beaucoup plus complexe. Durant les processus d’évaluation, de migration, d’optimisation et de gestion, d’autres considérations sont abordées pour préparer des environnements plus complexes.
+- **[Besoins des données qui dépassent la capacité réseau](./network-capacity-exceeded.md) :** Les entreprises choisissent souvent de passer au cloud, car elles ne sont plus satisfaites de la capacité, de la rapidité ou de la stabilité d’un centre de données existant. Malheureusement, ces mêmes contraintes compliquent le processus de migration, en nécessitant une planification supplémentaire lors des processus de migration et d’évaluation.
+- **[Stratégie de gouvernance ou de conformité](./governance-or-compliance.md) :** quand la gouvernance et la conformité sont essentielles à la réussite d’une migration, un alignement supplémentaire entre les équipes de gouvernance informatique et l’équipe d’adoption du cloud est nécessaire.
+
+Si l’une de ces situations complexes est présente dans votre scénario, cette section du Framework d’adoption du cloud vous fournira probablement le type de conseils dont vous avez besoin pour adapter correctement le cadre lors d’un processus de migration.
+
+Ces scénarios sont abordés dans les différents articles de cette section du Framework d’adoption du cloud.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Parcourez la table des matières située sur la gauche pour répondre à certains besoins ou pour effectuer des changements de cadre. Autre option : la première amélioration du cadre de la liste ([Prise en charge des marchés internationaux](./multiple-regions.md)) est un bon point de départ pour passer en revue ces scénarios.
+
+> [!div class="nextstepaction"]
+> [Prise en charge des marchés internationaux](./multiple-regions.md)

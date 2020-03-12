@@ -1,6 +1,6 @@
 ---
 title: Introduction au modèle d’exploitation
-description: Découvrez le modèle de fonctionnement du Framework d’adoption du cloud.
+description: Découvrez comment établir un modèle de fonctionnement pour le cloud à l’aide du Cloud Adoption Framework pour Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: 9080bbafb2877e58c1a69cfe264657a33cfd4d98
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629281"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094041"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Établir un modèle de fonctionnement pour le cloud
 

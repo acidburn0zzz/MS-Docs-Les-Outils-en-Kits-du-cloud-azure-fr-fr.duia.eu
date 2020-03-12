@@ -1,18 +1,18 @@
 ---
 title: Valider les hypothèses d’évaluation avant la migration
-description: Valider les hypothèses d’évaluation avant la migration
+description: Découvrez comment valider les hypothèses d’évaluation avant de commencer la migration vers le cloud à l’aide du Cloud Adoption Framework pour Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 30cc06e28477c70987c7e8dc23300e3e0a184dd2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222275"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094114"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>Valider les hypothèses d’évaluation avant la migration
 
@@ -62,7 +62,7 @@ En plus de la responsabilité d’ensemble, certaines actions doivent être affe
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Grâce aux connaissances générales que vous venez d’acquérir sur le processus d’évaluation, vous pouvez à présent [aligner les priorités de l’entreprise](./business-priorities.md).
+Grâce aux connaissances générales que vous venez d’acquérir sur le processus d’évaluation, vous pouvez à présent [classifier les charges de travail](./classify.md).
 
 > [!div class="nextstepaction"]
-> [Aligner les priorités de l’entreprise](./business-priorities.md)
+> [Classifier les charges de travail](./classify.md)

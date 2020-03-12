@@ -42,12 +42,14 @@ items:
             href: strategy/financial-models.md
           - name: Comprendre la comptabilité cloud
             href: strategy/cloud-accounting.md
-          - name: Équilibrer le portefeuille
-            href: strategy/balance-the-portfolio.md
       - name: Premier projet d’adoption du cloud
         href: strategy/first-adoption-project.md
       - name: Considérations supplémentaires
         items:
+          - name: Équilibrer les priorités concurrentes
+            href: strategy/balance-competing-priorities.md
+          - name: Équilibrer le portefeuille
+            href: strategy/balance-the-portfolio.md
           - name: Marchés internationaux
             href: strategy/global-markets.md
       - name: Compétences relatives à la stratégie
@@ -256,7 +258,7 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
               - name: Hôtes VMware
                 items:
-                  - name: Vue d’ensemble
+                  - name: Considérations relatives au réhébergement de VMWare
                     href: migrate/azure-best-practices/vmware-host.md
                   - name: Prérequis
                     items:
@@ -496,6 +498,8 @@ items:
                 items:
                   - name: "Valider les hypothèses d’évaluation avant la migration - Ajouter un ajustement\_R"
                     href: migrate/migration-considerations/assess/index.md
+                  - name: Classifier les charges de travail
+                    href: migrate/migration-considerations/assess/classify.md
                   - name: Conserver l’alignement des priorités
                     href: migrate/migration-considerations/assess/business-priorities.md
                   - name: Évaluer la préparation des charges de travail
@@ -524,7 +528,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Indexer les charges de travail
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: 'Processus de test, d’optimisation et de promotion'
+              - name: Processus de promotion
                 items:
                   - name: Vue d’ensemble
                     href: migrate/migration-considerations/optimize/index.md
@@ -1194,6 +1198,8 @@ items:
     items:
       - name: Feuille de route du Framework d’adoption du cloud
         href: reference/index.md
+      - name: Nouveautés
+        href: reference/whats-new.md
       - name: Modèle de fonctionnement
         items:
           - name: Vue d’ensemble
