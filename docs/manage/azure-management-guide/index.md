@@ -9,18 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341757"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140284"
 ---
-# <a name="azure-management-guide-before-you-start"></a>Guide de gestion Azure : Avant de commencer
-
-
 ::: zone target="docs"
 
+# <a name="azure-management-guide-before-you-start"></a>Guide de gestion Azure : Avant de commencer
 
 > [!NOTE]
 > Ce guide est un point de départ pour les conseils d’innovation dans le Framework d’adoption du cloud. Il est également disponible dans le Centre de démarrage rapide Azure. Découvrez le conseil plus loin dans cet article pour obtenir un lien vers le Centre de démarrage rapide Azure.

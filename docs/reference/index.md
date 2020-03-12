@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: d43097c940bcb6afb6b816dc4f8a533021d304fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798653"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140567"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>Feuille de route du Framework d’adoption du cloud
 
@@ -45,7 +45,7 @@ Le cloud change radicalement la façon dont les entreprises se procurent et util
 
 Le Framework d’adoption du cloud est une structure globale qui couvre les étapes de planification, de préparation et d’adoption des phases de migration et d’innovation pour l’adoption du cloud, avec des conseils sur la gouvernance et l’exploitation.
 
-Le Framework est maintenant en disponibilité générale (GA). Toutefois, nous développons encore activement ce framework en collaboration avec les clients, les partenaires et les équipes internes. Pour encourager les partenariats, le contenu est publié dès qu’il est disponible. Ces versions publiques permettent de tester, de valider et d’affiner petit à petit les recommandations. 
+Le Framework est maintenant en disponibilité générale (GA). Toutefois, nous développons encore activement ce framework en collaboration avec les clients, les partenaires et les équipes internes. Pour encourager les partenariats, le contenu est publié dès qu’il est disponible. Ces versions publiques permettent de tester, de valider et d’affiner petit à petit les recommandations.
 
 Pour réussir l’adoption du cloud, le client doit préparer son personnel, ses technologies et ses processus à la transformation numérique. Le Framework d’adoption du cloud comprend une section détaillant les parcours d’adoption globaux, à la fois la migration et l’innovation, sous forme de vue d’ensemble pour les clients. Cette section se compose des phases suivantes dans le parcours d’adoption :
 

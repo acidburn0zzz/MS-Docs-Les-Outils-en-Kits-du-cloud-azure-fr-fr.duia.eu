@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 99bcfee8f72250c156178117b368af62eb8a68c9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892410"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140686"
 ---
 # <a name="subscription-decision-guide"></a>Guide de décision concernant les abonnements
 
@@ -55,7 +55,7 @@ Dès que vous êtes prêt à déployer une charge de travail dans un environneme
 
 À mesure qu’une organisation ajoute de nouvelles charges de travail au cloud, un changement de propriété des abonnements ou une simple séparation des responsabilités peut entraîner la présence de plusieurs abonnements dans les groupes d’administration de production et de non-production. Bien que cette approche fournisse une séparation de base des charges de travail, elle ne tire pas vraiment parti du modèle d’héritage pour appliquer automatiquement des stratégies sur un sous-ensemble de vos abonnements.
 
-![Modèle de séparation des charges de travail](../../_images/ready/management-group-hierarchy.png)
+![Modèle de séparation des charges de travail](../../_images/ready/management-group-hierarchy-v2.png)
 
 ### <a name="application-category-pattern"></a>Modèle de catégorie d’application
 
