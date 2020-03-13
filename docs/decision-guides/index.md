@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 9552ba8b168e79f247916ae86f8e7721282baddb
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892444"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140233"
 ---
 # <a name="architectural-decision-guides"></a>Guides de décision en matière d'architecture
 
@@ -37,7 +37,7 @@ Chacune des catégories suivantes représente une technologie de base de tout d�
 
 [Identification des ressources](./resource-tagging/index.md) : Organisez vos ressources cloud de manière à ce qu’elles prennent en charge les modèles de facturation, les approches en matière de comptabilité cloud, le management, et qu’elles optimisent l’utilisation des ressources et les coûts. L'identification des ressources requiert un schéma d'attribution de noms et de métadonnées cohérent et bien organisé.
 
-[SDN (Software Defined Network)](./software-defined-network/index.md) : Déployez des charges de travail sécurisées dans le cloud moyennant le déploiement rapide et la modification des fonctionnalités de mise en réseau virtualisées. Les réseaux à définition logicielle peuvent prendre en charge des flux de travail agiles, isoler des ressources et intégrer des systèmes basés sur le cloud à votre infrastructure informatique existante.
+[SDN (Software Defined Network)](./software-defined-network/index.md) : Déployez des charges de travail sécurisées dans le cloud moyennant le déploiement rapide et la modification des fonctionnalités de mise en réseau virtualisées. Les réseaux à définition logicielle peuvent prendre en charge des workflows agiles, isoler des ressources et intégrer des systèmes basés sur le cloud à votre infrastructure informatique existante.
 
 [Chiffrement](./encryption/index.md) : Sécurisez vos données sensibles à l’aide du chiffrement pour se conformer aux exigences de stratégie de sécurité et de conformité de votre entreprise.
 
