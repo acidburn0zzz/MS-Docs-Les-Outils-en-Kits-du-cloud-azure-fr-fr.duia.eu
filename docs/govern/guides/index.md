@@ -10,11 +10,11 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: 51f24653998ab3cd4cf7fd043b487e4d7c1ccc5b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709224"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312201"
 ---
 # <a name="cloud-governance-guides"></a>Guides de gouvernance cloud
 

@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171172"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312269"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innovation dans l’économie numérique
 

@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5eb0ab5c264e8abf842f37e03b5c61b43ade9936
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 62a101b8c9dd957a8eae2279f77c5cf0c4381796
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222789"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312235"
 ---
+<!-- cSpell:ignore Kerberos NTLM SAML -->
+
 # <a name="identity-decision-guide"></a>Guide de décision concernant l’identité
 
 Dans tous les environnements (local, hybride ou cloud uniquement), le service informatique doit contrôler les administrateurs, les utilisateurs et les groupes qui ont accès aux ressources. Les services de gestion des identités et des accès (IAM) vous permettent de gérer le contrôle des accès dans le cloud.
