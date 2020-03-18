@@ -1,18 +1,18 @@
 ---
-title: Impact commercial - Gestion cloud et opérations
-description: Impact commercial - Gestion cloud et opérations
+title: Impact commercial en gestion cloud
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à déterminer et comprendre l’impact potentiel des pannes ou de la détérioration des performances sur votre entreprise.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3447fcf081af559dd778bf342b0ec95b02fc7562
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: bdd45861141b8fe69f8c13a49bdb6d387acd12ba
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807799"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341179"
 ---
 # <a name="business-impact-in-cloud-management"></a>Impact commercial en gestion cloud
 

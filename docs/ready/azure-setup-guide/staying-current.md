@@ -1,6 +1,6 @@
 ---
-title: Rester à jour sur Azure au rythme de l’évolution du cloud
-description: Découvrez comment rester à jour et gérer les modifications sur Azure au rythme de l’évolution du cloud.
+title: Rester à jour sur Azure
+description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir comment rester à jour et gérer les changements qui se produisent au rythme de l’évolution du cloud.
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222048"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341978"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Rester informé sur Microsoft Azure
 

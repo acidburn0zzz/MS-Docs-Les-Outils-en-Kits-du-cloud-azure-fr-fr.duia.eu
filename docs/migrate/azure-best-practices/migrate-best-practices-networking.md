@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225577"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892699"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
 
@@ -40,7 +40,7 @@ Lorsque vous planifiez votre topologie de réseau virtuel, vous devez penser à 
 
 Lorsque vous créez des réseaux virtuels dans le cadre de votre migration, il est important de planifier l’espace d’adressage IP de vos réseaux virtuels.
 
-- Pour chaque réseau virtuel, vous devez attribuer un espace d’adressage qui ne dépasse pas une plage CIDR de /16. Les réseaux virtuels permettent d’utiliser 65 536 adresses IP, et le fait d’affecter un préfixe inférieur à /16 entraînerait une perte d’adresses IP. Il est important de ne pas gaspiller les adresses IP, même si elles se trouvent dans les plages privées définies par la RFC 1918.
+- Pour chaque réseau virtuel, vous devez attribuer un espace d’adressage qui ne dépasse pas une plage CIDR de /16. Les réseaux virtuels permettent d’utiliser 65 536 adresses IP. Si vous attribuez un préfixe plus petit que /16, par exemple /15 qui comporte 131 072 adresses, vous ne pouvez pas utiliser ailleurs les adresses IP excédentaires. Il est important de ne pas gaspiller les adresses IP, même si elles se trouvent dans les plages privées définies par la RFC 1918.
 - L’espace d’adressage de réseaux virtuels ne doit pas chevaucher les plages du réseau local.
 - La traduction d’adresses réseau (NAT) ne doit pas être utilisée.
 - Le chevauchement des adresses peut être à l’origine de problèmes de connexion aux réseaux et de dysfonctionnement du routage. Si des réseaux se chevauchent, vous devez reconcevoir le réseau ou utiliser la traduction d’adresses réseau (NAT).

@@ -1,6 +1,6 @@
 ---
-title: Organiser vos ressources Azure efficacement
-description: Meilleures pratiques pour organiser efficacement vos ressources Azure afin d’en faciliter la gestion.
+title: Organiser efficacement les ressources Azure
+description: Découvrez les bonnes pratiques permettant d’organiser efficacement vos ressources Azure pour en faciliter la gestion.
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567756"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024009"
 ---
+<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
 L’organisation de vos ressources informatiques est essentielle pour sécuriser, gérer et suivre les coûts relatifs à vos charges de travail. Pour organiser vos ressources, utilisez les hiérarchies d’administration au sein de la plateforme Azure, implémentez des conventions d’affectation de noms bien pensées et appliquez la catégorisation des ressources.
@@ -156,7 +158,7 @@ Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses.
 
 - **Métadonnées et documentation :** Les administrateurs peuvent facilement voir les détails des ressources sur lesquelles ils travaillent en appliquant une balise comme « PropriétaireProjet ».
 - **Automatisation :** Il se peut que vous ayez des scripts s’exécutant régulièrement qui effectuent une action basée sur une valeur de balise telle que « HeureArrêt » ou « DateDéprovisionnement ».
-- **Optimisation des coûts :** Vous pouvez allouer des ressources aux équipes et aux ressources qui sont responsables du coût. Dans Azure Cost Management, vous pouvez appliquer l’étiquette de centre de coût comme filtre pour obtenir les frais basés sur l’utilisation d’une équipe ou d’un département.
+- **Optimisation des coûts :** Dans Azure Cost Management, vous pouvez appliquer une étiquette de centre de coûts en tant que filtre pour signaler des frais d’utilisation relatifs à une équipe ou un service.
 
 Chaque ressource ou groupe de ressources peut inclure un maximum de 50 paires nom/valeur de balise. Cette limitation s’applique uniquement aux balises directement appliquées au groupe de ressources ou à la ressource.
 

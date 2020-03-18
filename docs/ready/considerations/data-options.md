@@ -1,19 +1,21 @@
 ---
 title: Passer en revue vos options de données
-description: Passer en revue vos options de données pour les charges de travail Azure.
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à déterminer les exigences relatives aux données dans le cadre de l’hébergement de vos charges de travail.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 434fb0982b0749a6fcb117b86d8cf3bb6335f13a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5fdafdfd9bfccd86e7ddcc1ee08afdf561d4e680
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806881"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093738"
 ---
+<!-- cSpell:ignore HDFS -->
+
 # <a name="review-your-data-options"></a>Passer en revue vos options de données
 
 Lorsque vous préparez votre environnement de zone d’accueil pour votre adoption du cloud, vous devez déterminer la configuration requise en données pour l’hébergement de vos charges de travail. Les produits et services de base de données d’Azure prennent en charge un large éventail de scénarios et de fonctionnalités pour le stockage de données. La façon dont vous configurez votre environnement de zone d’accueil pour prendre en charge votre configuration requise en données dépend des exigences techniques, métier et de gouvernance des charges de travail.
@@ -35,7 +37,7 @@ Répondez aux questions suivantes sur vos charges de travail pour vous aider à 
 - **Vos charges de travail utiliseront-elles SQL Server ?** Dans Azure, vous pouvez exécuter vos charges de travail dans les instances [SQL Server basées sur IaaS sur des machines virtuelles Azure](https://azure.microsoft.com/services/virtual-machines/sql-server) ou sur le [service hébergé Azure SQL Database basé sur PaaS](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview). Le choix de l’option à utiliser est principalement une question de savoir si vous souhaitez gérer votre base de données, appliquer des correctifs et effectuer des sauvegardes, ou si vous souhaitez déléguer ces opérations à Azure. Dans certains scénarios, des problèmes de compatibilité peuvent nécessiter l’utilisation de SQL Server hébergé par IaaS. Pour plus d’informations sur la façon de choisir l’option appropriée pour vos charges de travail, consultez [Choisir l’option SQL Server appropriée dans Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas).
 - **Vos charges de travail utiliseront-elles le stockage de base de données clé/valeur ?** [Le cache Azure pour Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) offre une solution de stockage de données clé/valeur mise en cache et à hautes performances qui peut alimenter des applications rapides et évolutives. [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) fournit également des fonctionnalités de stockage clé/valeur à usage général.
 - **Vos charges de travail utiliseront-elles des données de document ou de graphique ?** [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) est un service de base de données multimodèle qui prend en charge un large éventail de types de données et d’API. Azure Cosmos DB fournit également des fonctionnalités de base de données pour documents et graphiques.
-- **Vos charges de travail utiliseront-elles des données de familles de colonnes ?** [Apache HBase dans Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview) est basé sur Apache Hadoop. Il prend en charge de grandes quantités de données non structurées et semi-structurées dans une base de données sans schéma, organisée par familles de colonnes.
+- **Vos charges de travail utiliseront-elles des données de familles de colonnes ?** [Apache HBase dans Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview) est basé sur Apache Hadoop. Il prend en charge de grandes quantités de données non structurées et semi-structurées dans une base de données sans schéma organisée par familles de colonnes.
 - **Vos charges de travail nécessiteront-elles des fonctionnalités Analytique données de grande capacité ?** Vous pouvez utiliser [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) pour stocker et interroger efficacement des données structurées à l’échelle du pétaoctet. Pour les charges de travail Big Data non structurées, vous pouvez utiliser [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) pour stocker et analyser des fichiers de plusieurs pétaoctets et des milliards d’objets.
 - **Vos charges de travail nécessiteront-elles des fonctionnalités de moteur de recherche ?** Vous pouvez utiliser [Recherche Azure](https://docs.microsoft.com/azure/search/search-what-is-azure-search) pour créer des index de recherche informatiques basés sur l’intelligence artificielle, qui peuvent être intégrés à vos applications.
 - **Vos charges de travail utiliseront-elles des données de série chronologique ?** [Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-overview) est conçu pour stocker, visualiser et interroger de grandes quantités de données de série chronologique, comme celles générées par les appareils IoT.
@@ -47,17 +49,17 @@ Répondez aux questions suivantes sur vos charges de travail pour vous aider à 
 
 Le tableau suivant illustre quelques configurations requises des scénarios d’utilisation courants et les services de base de données recommandés pour les gérer :
 
-| **Scénario** | **Service de données** |
-|-----|-----|
-| J’ai besoin d’une base de données multimodèle distribuée à l’échelle mondiale avec prise en charge des choix NoSQL. | [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) |
-| J’ai besoin d’une base de données relationnelle complètement managée qui s’approvisionne rapidement, est mise à l’échelle immédiatement et inclut des fonctionnalités de sécurité et d’intelligence intégrées. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) |
-| J’ai besoin d’une base de données relationnelle MySQL évolutive et complètement managée avec une haute disponibilité et une sécurité intégrées, sans coût supplémentaire. | [Azure Database pour MySQL](https://docs.microsoft.com/azure/mysql/overview) |
-| J’ai besoin d’une base de données relationnelle PostgreSQL évolutive et complètement managée avec une haute disponibilité et une sécurité intégrées, sans coût supplémentaire. | [Base de données Azure pour PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) |
-| J’ai l’intention d’héberger des applications SQL Server d’entreprise dans le cloud et d’avoir le contrôle total du système d’exploitation du serveur. | [SQL Server sur les machines virtuelles](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
-| J’ai besoin d’un entrepôt de données élastique complètement managé proposant une sécurité à chaque niveau d’échelle, sans coût supplémentaire. | [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
-| J’ai besoin de ressources de stockage Data Lake qui peuvent prendre en charge les clusters Hadoop ou les données HDFS. | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) |
-| J’ai besoin d’un débit élevé et d’un accès cohérent et à faible latence pour mes données afin de prendre en charge des applications rapides et évolutives. | [Cache Azure pour Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) |
-| J’ai besoin d’une base de données relationnelle MariaDB évolutive et complètement managée avec une haute disponibilité et une sécurité intégrées, sans coût supplémentaire. | [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/overview) |
+| **Scénario**                                                                                                                            | **Service de données**                                                                                                                                  |
+|-----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| J’ai besoin d’une base de données multimodèle distribuée à l’échelle mondiale avec prise en charge des choix NoSQL.                                                     | [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)                                                                        |
+| J’ai besoin d’une base de données relationnelle complètement managée qui s’approvisionne rapidement, est mise à l’échelle immédiatement et inclut des fonctionnalités de sécurité et d’intelligence intégrées. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)                                               |
+| J’ai besoin d’une base de données relationnelle MySQL évolutive et complètement managée avec une haute disponibilité et une sécurité intégrées, sans coût supplémentaire.           | [Azure Database pour MySQL](https://docs.microsoft.com/azure/mysql/overview)                                                                       |
+| J’ai besoin d’une base de données relationnelle PostgreSQL évolutive et complètement managée avec une haute disponibilité et une sécurité intégrées, sans coût supplémentaire.      | [Base de données Azure pour PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)                                                             |
+| J’ai l’intention d’héberger des applications SQL Server d’entreprise dans le cloud et d’avoir le contrôle total du système d’exploitation du serveur.                                        | [SQL Server sur les machines virtuelles](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
+| J’ai besoin d’un entrepôt de données élastique complètement managé proposant une sécurité à chaque niveau d’échelle, sans coût supplémentaire.                               | [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is)                               |
+| J’ai besoin de ressources de stockage Data Lake qui peuvent prendre en charge les clusters Hadoop ou les données HDFS.                                         | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake)                                                                                |
+| J’ai besoin d’un débit élevé et d’un accès cohérent et à faible latence pour mes données afin de prendre en charge des applications rapides et évolutives.                           | [Cache Azure pour Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview)                                                    |
+| J’ai besoin d’une base de données relationnelle MariaDB évolutive et complètement managée avec une haute disponibilité et une sécurité intégrées, sans coût supplémentaire.         | [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/overview)                                                                   |
 
 ## <a name="regional-availability"></a>Disponibilité régionale
 

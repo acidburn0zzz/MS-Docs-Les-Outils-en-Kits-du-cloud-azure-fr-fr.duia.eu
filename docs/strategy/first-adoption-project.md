@@ -1,18 +1,18 @@
 ---
 title: Premier projet d’adoption du cloud
-description: En savoir plus sur l’implémentation de votre premier projet d’adoption du cloud.
+description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir les processus d’adoption du cloud et le fonctionnement des charges de travail hébergées dans le cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225251"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092505"
 ---
 <!-- markdownlint-disable MD026 -->
 

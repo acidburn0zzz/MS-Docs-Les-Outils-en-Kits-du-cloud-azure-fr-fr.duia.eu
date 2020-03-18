@@ -1,18 +1,18 @@
 ---
 title: Évaluer les options de votre réseau
-description: Évaluer les options de votre réseau pour les charges de travail Azure.
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à identifier les fonctionnalités réseau dont votre zone d’atterrissage a besoin pour prendre en charge les charges de travail Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 199eedb6c9365f273588fae79b134298e8b60c6e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 71c3a135a89d3ff09cf8511ca619c47db21e1ac9
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225379"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093157"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 

@@ -1,6 +1,6 @@
 ---
-title: Spécialisation de la plateforme pour la gestion cloud dans Azure
-description: Améliorez les opérations de gestion cloud spécifiques à la plateforme.
+title: Plateformes spécialisées pour la gestion cloud
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’améliorer les opérations de gestion cloud spécifiques à la plateforme, notamment la conception du système et la correction automatisée.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 12643d3e26620760e9a13e29936617bfb246fe29
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223526"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341740"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Spécialisation de la plateforme pour la gestion cloud
 

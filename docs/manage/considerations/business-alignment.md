@@ -1,18 +1,18 @@
 ---
-title: "Alignement de l'entreprise : Gestion et opérations du cloud"
-description: Alignement des activités - Gestion cloud et opérations
+title: Alignement commercial dans la gestion cloud
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à mieux gérer vos opérations cloud et à développer un alignement commercial plus strict.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 114589d11b5e915400832d3d61a3ba91ca9d89fc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807867"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341434"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Créer un alignement des activités en gestion cloud
 

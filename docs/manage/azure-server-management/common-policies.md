@@ -1,18 +1,18 @@
 ---
 title: Exemples de stratégies Azure Policy courantes
-description: Exemples de stratégies Azure Policy courantes
+description: Utilisez le Cloud Adoption Framework pour Azure afin de garantir la conformité aux exigences des stratégies de gouvernance en créant des stratégies à l’aide d’applets de commande PowerShell.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7020ffed2395d6c22f835d66cd1c539b525f37c3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2048a302c717ba51b674e50ffdcfe334ba14e101
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808122"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094765"
 ---
 # <a name="common-azure-policy-examples"></a>Exemples de stratégies Azure Policy courantes
 

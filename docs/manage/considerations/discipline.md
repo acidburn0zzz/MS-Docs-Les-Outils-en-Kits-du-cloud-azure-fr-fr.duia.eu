@@ -1,18 +1,18 @@
 ---
-title: Nivellement de la gestion pour les différentes disciplines de gestion cloud
-description: L’article traite du nivellement de la gestion pour les différentes disciplines de gestion cloud.
+title: Niveaux de gestion dans la gestion cloud
+description: Découvrez comment restreindre les options de gestion cloud à un ensemble cohérent de processus et d’outils que vous pouvez proposer pour les charges de travail hébergées dans le cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d6bd93d65c7db0972a6b2a0b55c8ee9bef1417f3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 18a75ed46e247394aadc0caccd53988314553bcf
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807816"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341417"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Nivellement de la gestion pour les différentes disciplines de gestion cloud
 

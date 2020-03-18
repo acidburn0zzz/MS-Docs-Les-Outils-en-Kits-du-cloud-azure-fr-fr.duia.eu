@@ -1,18 +1,18 @@
 ---
-title: Prise en main d’un chemin d’accès à la préparation des qualifications
-description: Prise en main d’un chemin d’accès à la préparation des qualifications
+title: Bien démarrer la préparation des compétences
+description: Grâce à la préparation des compétences, menez à bien l’adoption des services cloud en aidant l’organisation à comprendre et à assimiler les changements associés.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800149"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892682"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Prise en main d’un chemin d’accès à la préparation des qualifications
 
@@ -28,7 +28,7 @@ Le Cloud Adoption Framework guide les lecteurs tout au long du cycle de vie d’
 - **[Prêt](../ready/suggested-skills.md) :** Développez les compétences nécessaires à la préparation de l’entreprise, de la culture, des personnes et de l’environnement pour les modifications à venir.
 
 - **Adoption :** Les qualifications d’adoption sont adaptées à différents efforts techniques :
-  - **[Migration](../migrate/expanded-scope/suggested-skills.md) :** Bénéficiez des qualifications nécessaires pour mettre en œuvre le plan de migration cloud.
+  - **[Migration](../migrate/suggested-skills.md) :** Bénéficiez des qualifications nécessaires pour mettre en œuvre le plan de migration cloud.
   - **Innovation :** Bénéficiez des qualifications nécessaires pour fournir de nouvelles solutions innovantes.
 
 - **Opérer :** Les qualifications en rapport avec le modèle d’exploitation pour l’adoption du cloud sont alignées sur différentes opportunités permettant d’acquérir des qualifications :

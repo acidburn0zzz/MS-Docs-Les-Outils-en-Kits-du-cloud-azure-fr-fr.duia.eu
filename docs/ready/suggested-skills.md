@@ -1,18 +1,18 @@
 ---
 title: Chemin d’accès à la préparation des qualifications
-description: Vue d’ensemble du chemin d’accès à la préparation des qualifications
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à développer les compétences nécessaires à votre parcours de migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8116c653656d2b5f20150aaf447225616e2657a6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f714931624eab819fafcf086e42d3ab765c13eed
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798772"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092919"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Chemin d’accès à la préparation des qualifications durant la phase Prêt d’un parcours de migration
 

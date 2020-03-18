@@ -1,6 +1,6 @@
 ---
 title: Base de référence de gestion améliorée dans Azure
-description: Améliorations courantes de la ligne de base de gestion
+description: Utilisez le Cloud Adoption Framework pour Azure afin de prendre connaissance des innovations apportées à la base de référence de gestion.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ad40011769152d906481fe8ffba5dead3f6b0ae5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0ff06bb935a55c45c12748903c83d976bcbb14e0
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808241"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092337"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Base de référence de gestion améliorée dans Azure
 
@@ -60,7 +60,7 @@ Ce tableau présente quelques processus, outils et effets potentiels courants co
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-automationtabazureautomation"></a>[Azure Automation](#tab/AzureAutomation)
+## <a name="azure-automation"></a>[Azure Automation](#tab/AzureAutomation)
 
 ::: zone-end
 
@@ -95,7 +95,7 @@ Pour créer ou gérer des runbooks :
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-security-centertabazuresecuritycenter"></a>[Centre de sécurité Azure](#tab/AzureSecurityCenter)
+## <a name="azure-security-center"></a>[Centre de sécurité Azure](#tab/AzureSecurityCenter)
 
 ::: zone-end
 

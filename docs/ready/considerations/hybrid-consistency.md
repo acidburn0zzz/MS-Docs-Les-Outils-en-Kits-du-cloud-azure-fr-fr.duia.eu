@@ -1,18 +1,18 @@
 ---
 title: Créer une cohérence de cloud hybride
-description: Définition de l’approche pour créer une cohérence de cloud hybride.
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à définir l’approche qui permet de créer un cloud hybride cohérent.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 95dfcf1dea3a6b1734f770609ced4c9b2c0b069b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7b2433b787683cf8ecaaf4a1f7a858aa18bf682c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799095"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093042"
 ---
 # <a name="create-hybrid-cloud-consistency"></a>Créer une cohérence de cloud hybride
 

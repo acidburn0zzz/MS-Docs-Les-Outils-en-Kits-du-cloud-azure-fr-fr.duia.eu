@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b451ec6f58a684bd4fb5998f1915dc79761b7a44
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 04293b0e0d30ae1eaa85f4c86c6c7d70b2cfac82
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228584"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092977"
 ---
 # <a name="first-landing-zone"></a>Première zone d’accueil
 
@@ -33,7 +33,8 @@ C. Certains plans d’adoption du cloud sont régis par des exigences de conform
 
 D. Quand un partenaire fournit des services gérés continus ou s’il s’est engagé par contrat à fournir le plan d’adoption, il fournit généralement sa propre zone d’atterrissage. L’utilisation de la zone d’atterrissage d’un partenaire peut accélérer les efforts d’adoption et garantir la cohérence des exigences de gestion opérationnelle. Toutefois, pour garantir l’alignement, vous devez tenir compte de la gouvernance interne et des exigences de sécurité.
 
-E. Les équipes d’adoption dont l’objectif à mi-parcours (sous 24 mois) est d’**héberger plus de 1 000 ressources (applications, infrastructure ou ressources de données) dans le cloud** doivent accéder au NorthStar du Cloud Adoption Framework pour obtenir des instructions sur l’architecture de la plateforme et les zones d’atterrissage. Northstar est une feuille de route plus avancée qui comprend des implémentations d’architecture de plateforme d’état cible et des implémentations de référence. Cette feuille de route intègre certains aspects des méthodologies parallèles, telles que la gouvernance et les opérations permettant de mieux se préparer à une adoption stratégique, sécurisée, complexe et gouvernée par la conformité.
+> [!NOTE]
+> Avant de passer à une approche basée sur le code et la refactorisation, les lecteurs doivent se familiariser avec les [priorités en concurrence derrière cette décision](../../strategy/balance-competing-priorities.md#balance-during-ready). Quand vous choisissez une approche de zone d’atterrissage, vous devez bien comprendre l’équilibre nécessaire entre « Délai d’adoption » et « Opérations à long terme ».
 
 ## <a name="choosing-a-first-landing-zone"></a>Choix d’une première zone d’atterrissage
 
@@ -49,7 +50,7 @@ Le tableau suivant présente les mêmes zones d’atterrissage, mais d’un poin
 | Zone d’atterrissage                                 | Hub                          | Spoke    | Modèle cloud | Technology      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
 | [CAF Migrate](./migrate-landing-zone.md)     | Refactorisation nécessaire            | Inclus | Azure uniquement  | Azure Blueprint |
-| [CAF Terraform](./terraform-landing-zone.md) | Inclus dans le module NorthStar | Inclus | Multicloud  | Terraform       |
+| [CAF Terraform](./terraform-landing-zone.md) | Inclus dans le module VDC       | Inclus | Multicloud  | Terraform       |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

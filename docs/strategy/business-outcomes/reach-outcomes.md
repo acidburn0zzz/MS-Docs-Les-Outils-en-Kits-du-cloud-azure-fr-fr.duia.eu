@@ -1,18 +1,18 @@
 ---
 title: Exemples de résultats de portée globale
-description: Exemples de résultats de portée globale
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’appréhender les résultats du point de vue global dans le contexte d’une transformation cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 94129d863d524b6ff618835c271c14756487e587
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: c4fa1d608f62497869c0498ba82cbdce649af1e2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225232"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092458"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exemples de résultats de portée globale
 

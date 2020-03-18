@@ -1,6 +1,6 @@
 ---
-title: 'Guide de supervision du cloud : Stratégie de supervision pour les modèles de déploiement cloud'
-description: Choisir quand utiliser Azure Monitor ou System Center Operations Manager dans Microsoft Azure
+title: Stratégie de supervision pour les modèles de déploiement cloud
+description: Utilisez le Cloud Adoption Framework pour Azure afin de savoir quelle stratégie de supervision utiliser pour la gestion cloud.
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3b6434937816255269bda41c422099a07a25f5bc
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807629"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341825"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guide de supervision du cloud : Stratégie de supervision pour les modèles de déploiement cloud
 

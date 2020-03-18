@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 95087aeda19eb87759bc09f605c42c706d79aac2
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171087"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891951"
 ---
 ::: zone target="docs"
 
@@ -76,7 +76,7 @@ Pour afficher les données relatives à vos applications, accédez au [Portail A
 
 ## <a name="quantitative-feedback-for-apis"></a>[Commentaires quantitatifs pour les API](#tab/Quantitative-APIs)
 
-L’économie connectée change la façon dont les entreprises innovent. Les marchés et les secteurs sont perturbés plus rapidement que jamais. La perturbation prend de nombreuses formes et les entreprises doivent s’adapter au _dilemme_  : définir le rythme des modifications sans se heurter à une activité commerciale.
+L’économie connectée change la façon dont les entreprises innovent. Les marchés et les secteurs sont perturbés plus rapidement que jamais. La perturbation prend de nombreuses formes et les entreprises doivent s’adapter au _dilemme de l’innovateur_ : définir le rythme des changements sans se heurter à l’activité commerciale.
 
 Les entreprises utilisent des API en externe pour modifier la façon dont elles interagissent avec leurs clients et partenaires. En interne, elles utilisent des API pour connecter en toute transparence des parties distinctes de l’entreprise. L’économie d’API fonctionne sur quatre supports fondamentaux : les réseaux sociaux, la mobilité, l’analyse et le cloud. Les applications et les services peuvent être liés rapidement et à moindre coût pour créer une proposition de valeur étendue.
 
@@ -124,8 +124,7 @@ Le backlog (ou tableau) est l’emplacement où les commentaires sont enregistr�
 
 ### <a name="action"></a>Action
 
-Azure Boards et Azure Pipelines requièrent un portail distinct de GitHub et d’Azure.
-Pour prendre en main l’un de ces outils, accédez à [Azure DevOps](https://dev.azure.com).
+Azure Boards et Azure Pipelines requièrent un portail distinct de GitHub et d’Azure. Bien démarrer avec [Azure DevOps](https://dev.azure.com).
 
 ::: zone-end
 

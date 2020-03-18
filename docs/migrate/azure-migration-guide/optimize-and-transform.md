@@ -1,6 +1,6 @@
 ---
 title: Optimiser et promouvoir
-description: Cette partie du Guide de migration Azure couvre les aspects de l’optimisation, notamment la révision de la conception de la solution, la bonne taille des services et l’analyse des coûts.
+description: Découvrez comment passer en revue la solution pour rechercher d’éventuels domaines d’optimisation, notamment en ce qui concerne la conception, le dimensionnement des services et l’analyse des coûts.
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3b7d6437e9e066497f55f8ce0bd601e7c53854f0
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: ab8ff4d3b73e38a0d88455fa675870da6a7f22ef
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892461"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094816"
 ---
 <!-- cSpell:ignore Fservers Fdatabases -->
 

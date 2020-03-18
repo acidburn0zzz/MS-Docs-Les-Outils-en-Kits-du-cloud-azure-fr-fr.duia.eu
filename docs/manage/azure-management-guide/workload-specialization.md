@@ -1,6 +1,6 @@
 ---
-title: Spécialisation de la charge de travail pour la gestion cloud dans Azure
-description: Améliorer les opérations de gestion cloud spécifiques à la charge de travail
+title: Charges de travail spécialisées pour la gestion cloud
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’en savoir plus sur les opérations spécialisées de gestion cloud des charges de travail.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ee41e95a8481cd7caeb91d05d4b1420e357aa0f5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7108f90ac19e5a566e068e3292d2fab8bd1b7e3d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808139"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341723"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Spécialisation de la charge de travail pour la gestion cloud
 

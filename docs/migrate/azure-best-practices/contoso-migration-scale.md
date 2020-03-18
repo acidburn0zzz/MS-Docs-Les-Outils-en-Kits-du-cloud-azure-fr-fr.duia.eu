@@ -1,6 +1,6 @@
 ---
 title: Mettre à l’échelle une migration vers Azure
-description: Découvrez comment Contoso mène à bien une migration à l’échelle vers Azure.
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à planifier et effectuer une migration à grande échelle vers Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/08/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222826"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091934"
 ---
 # <a name="scale-a-migration-to-azure"></a>Mettre à l’échelle une migration vers Azure
 

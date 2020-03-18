@@ -1,18 +1,18 @@
 ---
 title: Qu’est-ce que la comptabilité cloud ?
-description: Explication du concept de comptabilité cloud
+description: Utilisez le Cloud Adoption Framework pour Azure afin de prendre connaissance des modèles de comptabilité cloud courants pour l’informatique au début du parcours de votre migration cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806813"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092856"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ Le cloud change la façon dont les coûts sont comptabilisés par le service inf
 
 Il est souvent juste de considérer l’informatique comme un centre de coûts. Dans le modèle de comptabilité informatique classique, l’informatique consolide le pouvoir d’achat de toutes les ressources informatiques. Comme nous l’avons souligné dans l’article sur les [modèles financiers](./financial-models.md), la consolidation du pouvoir d’achat peut inclure les licences logicielles, les frais récurrents des licences CRM, l’achat de postes de travail pour les employés ainsi que d’autres coûts importants.
 
-Quand l’informatique sert de centre de coûts, sa valeur est largement perçue sous l’angle de la gestion des approvisionnements. En raison de cette perception, il est difficile pour le conseil d’administration ou les autres dirigeants de comprendre la véritable valeur de l’informatique. Les coûts d’approvisionnement tendent à fausser la perception de l’informatique en l’emportant sur toute autre valeur ajoutée par l’organisation. Cette vision explique pourquoi l’informatique est souvent associée aux responsabilités du directeur financier ou du directeur de l’exploitation. Cette perception de l’informatique est limitée, voire réductrice.
+Quand l’informatique sert de centre de coûts, sa valeur est largement perçue sous l’angle de la gestion des approvisionnements. En raison de cette perception, il est difficile pour le conseil d’administration ou les autres dirigeants de comprendre la véritable valeur de l’informatique. Les coûts d’approvisionnement tendent à fausser la perception de l’informatique en l’emportant sur toute autre valeur ajoutée par l’organisation. Cette vision des choses explique pourquoi l’informatique est souvent associée aux responsabilités du directeur financier ou du directeur d’exploitation. Cette perception de l’informatique est limitée, voire réductrice.
 
 ## <a name="central-it-accounting-profit-center-model"></a>Comptabilité du service informatique central (modèle de centre de profits)
 

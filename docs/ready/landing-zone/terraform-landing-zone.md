@@ -7,22 +7,22 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 52abb490ed3364945bef887a8ed7f144f7dca14a
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e6cfe951c3b499d101ed29208b2beba0c9867c48
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228612"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023901"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud Hashicorp's vCPUs eastasia southeastasia lalogs tfvars -->
+<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Utiliser Terraform pour créer vos zones d’atterrissage
 
-Azure fournit des services natifs pour le déploiement de vos zones d’atterrissage. D’autres outils tiers peuvent également vous aider à cet effet. Terraform de Hashicorp est l’un des outils que les clients et les partenaires utilisent souvent pour déployer des zones d’atterrissage. Cette section montre comment utiliser une zone d’atterrissage prototype pour déployer des fonctionnalités de base de journalisation, de comptabilité et de sécurité pour un abonnement Azure.
+Azure fournit des services natifs pour le déploiement de vos zones d’atterrissage. D’autres outils tiers peuvent également vous aider à cet effet. Terraform de HashiCorp est le type d’outil que les clients et les partenaires utilisent souvent pour déployer des zones d’atterrissage. Cette section montre comment utiliser une zone d’atterrissage prototype pour déployer des fonctionnalités de base de journalisation, de comptabilité et de sécurité pour un abonnement Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Objectif de la zone d’atterrissage
 
-La zone d’atterrissage fondamentale de Cloud Adoption Framework pour Terraform comporte un ensemble limité de responsabilités et de fonctionnalités permettant d’assurer la journalisation, la comptabilité et la sécurité. Cette zone d’atterrissage utilise des composants standard connus sous le nom de modules Terraform pour garantir la cohérence entre les ressources déployées dans l’environnement.
+La zone d’atterrissage de base du Framework d’adoption du cloud pour Terraform comporte un ensemble limité de responsabilités et de fonctionnalités permettant d’assurer la journalisation, la comptabilité et la sécurité. Cette zone d’atterrissage utilise des composants standard connus sous le nom de modules Terraform pour garantir la cohérence entre les ressources déployées dans l’environnement.
 
 ## <a name="use-standard-modules"></a>Utiliser des modules standard
 

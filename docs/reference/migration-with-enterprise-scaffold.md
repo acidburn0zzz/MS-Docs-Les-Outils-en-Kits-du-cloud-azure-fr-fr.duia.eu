@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225305"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023948"
 ---
-<!-- cSpell:ignore rodend subscope ITSM -->
+<!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
 
 > [!NOTE]
-> La structure d’entreprise Azure a été intégrée au framework d’adoption du cloud Microsoft. Le contenu de cet article est maintenant représenté dans la section [Prêt](../ready/index.md) du nouveau framework. Cet article sera déprécié début 2020. Pour commencer à utiliser le nouveau processus, reportez-vous à la [Vue d’ensemble Prêt](../ready/index.md), à la [création de votre première zone d’atterrissage](../ready/azure-setup-guide/migration-landing-zone.md) et aux [considérations relatives aux zones d’atterrissage](../ready/considerations/index.md).
+> La structure d’entreprise Azure a été intégrée au framework d’adoption du cloud Microsoft. Le contenu de cet article est maintenant représenté dans la section [Prêt](../ready/index.md) du nouveau framework. Cet article sera déprécié début 2020. Pour commencer à utiliser le nouveau processus, reportez-vous à la [Vue d’ensemble Prêt](../ready/index.md), à la [création de votre première zone d’atterrissage](../ready/landing-zone/migrate-landing-zone.md) et aux [considérations relatives aux zones d’atterrissage](../ready/considerations/index.md).
 
 Les entreprises adoptent de plus en plus le cloud public en raison de son agilité et de la flexibilité. Elles s’appuient sur les points forts du cloud pour générer des revenus et optimiser l’utilisation des ressources dans le cadre de leur activité. Microsoft Azure offre une multitude de services et de fonctionnalités que les entreprises assemblent comme des modules pour gérer un large éventail de charges de travail et d’applications.
 
@@ -77,7 +77,7 @@ Les trois modèles courants pour les inscriptions Azure sont :
 
   ![Le modèle géographique](../_images/reference/geographic.png)
 
-Bien que chacun de ces modèles ait sa place, le modèle **division** est de plus en plus adopté pour sa souplesse quand il s’agit de modéliser le modèle de coût d’une organisation et de représenter l’étendue du contrôle. Le groupe Microsoft Core Engineering and Operations a créé un sous-ensemble efficace du modèle **division** (niveaux **Fédéral**, **État** et **Local**). Pour plus d’informations, consultez [Organisation des abonnements et des groupes de ressources dans l’entreprise](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
+Bien que chacun de ces modèles ait sa place, le modèle **division** est de plus en plus adopté pour sa souplesse quand il s’agit de modéliser le modèle de coût d’une organisation et de représenter l’étendue du contrôle. Le groupe Microsoft Core Engineering and Operations a créé un sous-ensemble efficace du modèle **division** (niveaux **Fédéral**, **État** et **Local**). Pour plus d’informations, consultez [Organisation des abonnements et des groupes de ressources dans l’entreprise](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
 
 ### <a name="azure-management-groups"></a>Groupes d’administration Azure
 
@@ -314,7 +314,7 @@ L’automatisation est une tâche à temps plein qui deviendra rapidement l’un
 
 ## <a name="templates-and-devops"></a>Modèles et DevOps
 
-Comme nous l’avons souligné dans la section Automatiser, votre objectif en tant qu’organisation doit être de provisionner les ressources à l’aide de scripts et de modèles sous contrôle de code source et de limiter la configuration interactive de vos environnements. Cette approche d’« infrastructure en tant que code » couplée à un processus DevOps rigoureux pour le déploiement continu peut assurer la cohérence et réduire la dérive dans vos environnements. Pratiquement toutes les ressources Azure peuvent être déployées à l’aide de [modèles JSON Azure Resource Manager ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) en combinaison avec PowerShell ou l’interface CLI multiplateforme d’Azure et des outils comme Terraform de Hashicorp (qui bénéficie d’une prise en charge de premier ordre et qui est intégré à Azure Cloud Shell).
+Comme nous l’avons souligné dans la section Automatiser, votre objectif en tant qu’organisation doit être de provisionner les ressources à l’aide de scripts et de modèles sous contrôle de code source et de limiter la configuration interactive de vos environnements. Cette approche d’« infrastructure en tant que code » couplée à un processus DevOps rigoureux pour le déploiement continu peut assurer la cohérence et réduire la dérive dans vos environnements. Pratiquement toutes les ressources Azure peuvent être déployées à l’aide de [modèles JSON Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) en combinaison avec PowerShell ou l’interface CLI multiplateforme d’Azure et des outils comme Terraform de HashiCorp (qui bénéficie d’une prise en charge de premier ordre et qui est intégré avec Azure Cloud Shell).
 
 Certains articles comme [Bonnes pratiques pour utiliser des modèles Azure Resource Manager](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) font un excellent exposé sur les bonnes pratiques et les enseignements tirés de la mise en œuvre d’une approche DevOps sur des modèles Azure Resource Manager avec la chaîne d’outils [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts). Prenez le temps de développer un ensemble de modèles en fonction des besoins spécifiques de votre organisation, ainsi que des pipelines de livraison continue avec les chaînes d’outils DevOps (comme Azure DevOps, Jenkins, Bamboo, TeamCity et Concourse), en particulier pour vos environnements de production et d’assurance qualité. Il existe une grande bibliothèque de [modèles de démarrage rapide Azure](https://github.com/Azure/azure-quickstart-templates) sur GitHub qui peuvent vous servir de point de départ pour les modèles, et vous pouvez rapidement créer des pipelines de livraison basés sur le cloud avec Azure DevOps.
 

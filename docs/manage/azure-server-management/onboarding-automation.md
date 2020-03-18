@@ -1,18 +1,18 @@
 ---
 title: Automatiser l’intégration
-description: Automatiser l’intégration
+description: Utilisez les exemples de fichiers d’intégration pour faciliter l’automatisation du déploiement de vos services de gestion de serveur Azure dans un but d’amélioration de l’efficacité.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808020"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094629"
 ---
 # <a name="automate-onboarding"></a>Automatiser l’intégration
 

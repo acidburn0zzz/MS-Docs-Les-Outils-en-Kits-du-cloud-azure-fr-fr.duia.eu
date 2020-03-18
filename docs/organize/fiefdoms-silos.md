@@ -1,6 +1,6 @@
 ---
 title: Silos et fiefs
-description: Comprenez les antimodèles des silos et des fiefs.
+description: Découvrez les contre-modèles qui peuvent entraver l’esprit de croissance au sein des organisations. Plus précisément, découvrez les contre-modèles représentés par les silos et les fiefs.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 396e183e0e0af791c514e29b755c0b04a791f3a1
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222292"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093804"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimodèles organisationnels : Silos et fiefs
 
@@ -67,7 +67,7 @@ Cet antimodèle émerge souvent d’une passion commune pour une solution spéci
 
 Les approches suivantes permettent de traiter les silos d’informations. La meilleure approche dépend de la cause racine de la résistance.
 
-**Créez des équipes virtuelles :** La section relative à la [préparation de l’organisation](./index.md) dans Cloud Adoption Framework décrit une structure multicouche pour l’intégration et la définition de quatre équipes virtuelles. L’un des avantages de cette structure est la visibilité et l’inclusion dans toute l’organisation. L’introduction d’un [centre d’excellence du cloud](./cloud-center-of-excellence.md) permet de constituer une équipe ambitieuse et influente que les meilleurs ingénieurs auront envie d’intégrer. Ce centre va créer de nouvelles affinités entre les solutions qui ne sont pas liées par des contraintes d’organigramme et qui vont permettre d’inclure les meilleurs ingénieurs recueillis par des silos d’informations.
+**Créez des équipes virtuelles :** La section relative à la [préparation de l’organisation](./index.md) dans le framework d’adoption du cloud décrit une structure multicouche pour l’intégration et la définition de quatre équipes virtuelles. L’un des avantages de cette structure est la visibilité et l’inclusion dans toute l’organisation. L’introduction d’un [centre d’excellence du cloud](./cloud-center-of-excellence.md) permet de constituer une équipe ambitieuse et influente que les meilleurs ingénieurs auront envie d’intégrer. Ce centre va créer de nouvelles affinités entre les solutions qui ne sont pas liées par des contraintes d’organigramme et qui vont permettre d’inclure les meilleurs ingénieurs recueillis par des silos d’informations.
 
 L’introduction d’une [équipe de stratégie cloud](./cloud-strategy.md) va créer une visibilité immédiate des contributions relatives aux efforts d’adoption du cloud. Quand les silos d’informations luttent pour la séparation, cette visibilité peut motiver les responsables informatiques et les dirigeants de l’entreprise à prendre en charge correctement ces membres d’équipe résistants. Ce processus permet d’accéder rapidement à l’engagement et au soutien des parties prenantes.
 

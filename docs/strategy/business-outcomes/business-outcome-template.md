@@ -1,18 +1,18 @@
 ---
 title: Comment utiliser le modèle de résultat opérationnel
-description: Explication du modèle de résultat opérationnel
+description: Apprenez à tirer parti du modèle de résultat opérationnel pour capturer les résultats opérationnels utilisés dans le développement de stratégies relatives au parcours de transformation des clients.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 53e925a7ccf036e03b73bb888fa112549a65433e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 243a75f8aa5352299e0730a91f462fbf935a2f2f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798551"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092935"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Comment utiliser le modèle de résultat opérationnel
 
@@ -24,7 +24,7 @@ Téléchargez la [feuille de calcul du modèle de résultats opérationnels](htt
 
 ## <a name="use-the-business-outcome-template"></a>Utiliser le modèle de résultat opérationnel
 
-Présentation par Kate Johnson à la Microsoft Digital Transformation Academy, les résultats opérationnels se concentrent sur trois sujets :
+Dans ce modèle, les résultats opérationnels sont axés principalement sur trois aspects :
 
 - Alignement sur les parties prenantes ou les décisionnaires d’entreprise
 - Compréhension des axes stratégiques et des objectifs de l’entreprise

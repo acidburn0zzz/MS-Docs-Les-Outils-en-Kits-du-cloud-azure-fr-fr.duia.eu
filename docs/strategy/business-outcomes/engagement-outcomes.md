@@ -1,18 +1,18 @@
 ---
-title: Exemples de résultats au niveau de l’engagement client
-description: Exemples de résultats au niveau de l’engagement client
+title: Exemples de résultats liés à l’engagement client
+description: Découvrez des exemples d’engagement client pour bien comprendre les besoins des clients et l’écosystème qui les entoure au cours du parcours de transformation de leur entreprise.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1c2bab06607147f5d0fe40ff714e6adb81e2a013
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 6d9e5096c0b3a7adbf8a814479db5fba6359cca0
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225117"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337948"
 ---
 <!-- cSpell:ignore Exak -->
 

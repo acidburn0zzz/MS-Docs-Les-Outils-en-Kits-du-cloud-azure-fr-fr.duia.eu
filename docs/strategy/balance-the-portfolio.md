@@ -3,22 +3,22 @@ title: Équilibrer le portefeuille
 description: Découvrez les stratégies pour équilibrer la migration, l’innovation et l’expérimentation pour tirer le meilleur parti des vos efforts de migration vers le cloud.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/25/2020
+ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
-ms.subservice: migrate
-ms.openlocfilehash: b41a550583628c1246a0663c99509498f0786d70
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.subservice: strategy
+ms.openlocfilehash: 938250f20725540049bca831ff4c12b975b134a5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228592"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092402"
 ---
 <!-- cSpell:ignore CSAT -->
 
 # <a name="balance-the-portfolio"></a>Équilibrer le portefeuille
 
-L’adoption du cloud est un effort de gestion de portefeuille qui est adroitement déguisé en implémentation technique. Comme n’importe quel exercice de gestion de portefeuille, l’équilibre du portefeuille est essentiel. À un niveau stratégique, cela signifie équilibrer la migration, l’innovation et l’expérimentation pour tirer le meilleur parti du cloud. Lorsque l’effort d’adoption du cloud va trop loin dans une direction ou une autre, la complexité se retrouve dans l’effort de migration. Cet article guide le lecteur à travers les approches pour atteindre un équilibre dans le portefeuille.
+L’adoption du cloud est un effort de gestion de portefeuille, habilement déguisé en implémentation technique. Comme n’importe quel exercice de gestion de portefeuille, l’équilibre du portefeuille est essentiel. À un niveau stratégique, cela signifie équilibrer la migration, l’innovation et l’expérimentation pour tirer le meilleur parti du cloud. Quand l’effort d’adoption du cloud va trop loin dans une direction, la complexité va de pair. Cet article guide le lecteur à travers les approches pour atteindre un équilibre dans le portefeuille.
 
 ## <a name="general-scope-expansion"></a>Expansion de l’étendue générale
 
@@ -26,9 +26,7 @@ L’équilibrage du portefeuille est intrinsèquement stratégique. Par conséqu
 
 ### <a name="document-business-outcomes"></a>Documenter les résultats opérationnels
 
-Avant d’équilibrer le portefeuille, il est important de documenter et de partager les résultats métier dans le cadre de l’effort de migration cloud. Pour quelques exemples de résultats métier généraux relatifs aux migrations cloud, consultez le [résumé de la migration cloud](../getting-started/migrate.md).
-
-Le tableau suivant peut vous aider à documenter et à partager les résultats métier souhaités. Il est important de noter que la plupart des entreprises recherchent plusieurs résultats à la fois. L’importance de cet exercice consiste à clarifier les résultats qui sont le plus directement liés à l’effort de migration cloud :
+Avant d’équilibrer le portefeuille, il est important de documenter et de partager les résultats opérationnels dans le cadre de l’effort de migration cloud. Le tableau suivant peut vous aider à documenter et à partager les résultats métier souhaités. Il est important de noter que la plupart des entreprises recherchent plusieurs résultats à la fois. L’importance de cet exercice consiste à clarifier les résultats qui sont le plus directement liés à l’effort de migration cloud :
 
 |Résultat  |Mesuré par  |Objectif  |Délai d’exécution  |Priorité pour cet effort  |
 |---------|---------|---------|---------|---------|
@@ -38,9 +36,9 @@ Le tableau suivant peut vous aider à documenter et à partager les résultats m
 |Améliorer l’expérience client     |Satisfaction client (CSAT)         |Amélioration de 10 %         |12 mois         |No 4         |
 
 > [!IMPORTANT]
-> Le tableau ci-dessus est un exemple fictif et ne doit pas être utilisé pour définir des priorités. Dans de nombreux cas, ce tableau peut être considéré comme un anti-modèle en plaçant les économies de coûts au-dessus de l’expérience client.
+> Le tableau ci-dessus est un exemple fictif et ne doit pas être utilisé pour définir des priorités. Dans de nombreux cas, ce tableau peut être considéré comme un contre-modèle quand les économies de coûts se situent au-dessus de l’expérience utilisateur du client.
 
-Le tableau ci-dessus peut représenter avec précision les priorités des équipes de stratégie cloud et d’adoption du cloud qui supervisent une migration cloud. En raison de contraintes à terme, cette équipe insiste davantage sur la réduction des coûts informatiques et donne la priorité à une sortie de centre de données pour atteindre les réductions souhaitées en matière de coûts informatiques. Toutefois, en documentant les priorités en concurrence dans ce tableau, l’équipe d’adoption du cloud est habilitée à aider l’équipe de stratégie cloud à identifier les possibilités de mieux aligner l’implémentation de la stratégie globale du portefeuille.
+Le tableau ci-dessus peut représenter avec précision les priorités de l’équipe de stratégie cloud et de l’équipe d’adoption du cloud. En raison de contraintes à terme, cette équipe insiste davantage sur la réduction des coûts informatiques et donne la priorité à une sortie de centre de données pour atteindre les réductions souhaitées en matière de coûts informatiques. Toutefois, en documentant les priorités en concurrence dans ce tableau, l’équipe d’adoption du cloud est habilitée à aider l’équipe de stratégie cloud à identifier les possibilités de mieux aligner l’implémentation de la stratégie globale du portefeuille.
 
 ### <a name="move-fast-while-maintaining-balance"></a>Déplacer rapidement tout en maintenant l’équilibre
 
@@ -65,15 +63,9 @@ Si la réponse à ces deux questions est « oui », il est conseillé de _ne p
 
 Si la réponse à l’une des questions est « non », il peut être judicieux d’établir un plan d’hébergement de la charge de travail jusqu’à ce qu’elle puisse être mise hors service. Ce plan peut inclure le déplacement des ressources vers un centre de données à moindre coût ou un autre centre de données, ce qui permettrait également de réduire les coûts et de quitter un centre de données.
 
-## <a name="suggested-prerequisites"></a>Prérequis suggérés
+## <a name="adopt-process-changes"></a>Adopter les changements de processus
 
-Les prérequis spécifiés dans le guide de référence doivent toujours être suffisants pour traiter ce sujet complexe. Toutefois, l’inventaire des ressources et le patrimoine numérique doivent être mis en surbrillance et en caractères gras parmi ces prérequis, car ces données serviront de base aux activités suivantes.
-
-## <a name="assess-process-changes"></a>Évaluer les changements de processus
-
-Équilibrer le portefeuille nécessite une analyse qualitative supplémentaire au cours du processus d’évaluation, ce qui permettra à simplifier la rationalisation du portefeuille.
-
-### <a name="suggested-action-during-the-assess-process"></a>Action suggérée pendant le processus d’évaluation
+L’équilibrage du portefeuille nécessite une analyse qualitative supplémentaire durant le processus d’adoption, ce qui contribue à la rationalisation du portefeuille.
 
 D’après les données du tableau figurant dans la section relative à la [documentation des résultats métier](#document-business-outcomes) ci-dessus, il existe un risque probable que le portefeuille s’oriente trop vers un modèle d’exécution axé sur la migration. Si l’expérience client était la priorité la plus élevée, un portefeuille axé sur les innovations serait plus probable. Ni l’un ni l’autre n’est bon ou mauvais, mais une trop grande inclinaison dans une direction entraîne généralement une diminution des rendements, ajoute une complexité inutile et augmente le temps d’exécution lié aux efforts d’adoption du cloud.
 
@@ -102,8 +94,6 @@ Ces questions ne doivent pas être l’étendue de l’analyse qualitative effec
 
 Pendant la migration, les activités d’équilibrage du portefeuille peuvent avoir un impact négatif sur la vélocité de la migration (vitesse à laquelle les ressources sont migrées). Les instructions suivantes expliquent pourquoi et comment aligner le travail afin d’éviter les interruptions de l’effort de migration.
 
-### <a name="suggested-action-during-the-migrate-process"></a>Action suggérée pendant le processus de migration
-
 La rationalisation des portefeuilles nécessite une diversité d’efforts techniques. Il est tentant pour les équipes d’adoption du cloud de faire correspondre la diversité de ce portefeuille aux efforts de migration. Les parties prenantes de l’entreprise demandent souvent à une seule équipe d’adoption du cloud de traiter l’intégralité du backlog de migration. Il s’agit rarement d’une approche souhaitable et, dans de nombreux cas, cela peut être contre-productif.
 
 Ces différents efforts doivent être répartis entre deux équipes d’adoption du cloud ou plus. En utilisant un modèle à deux équipes comme exemple de mode d’exécution, l’équipe 1 est l’équipe de migration, et l’équipe 2 est l’équipe d’innovation. Pour les efforts plus importants, ces équipes peuvent être segmentées davantage pour résoudre d’autres approches, telles que les efforts de remplacement/PaaS ou la refactorisation mineure. L’exemple suivant présente les qualifications et les rôles nécessaires pour un réhébergement, une refactorisation ou une refactorisation mineure :
@@ -115,18 +105,3 @@ Ces différents efforts doivent être répartis entre deux équipes d’adoption
 **Refactorisation mineure :** Certaines applications peuvent être modernisées avec une refactorisation mineure au niveau des données ou de l’application. Ce travail oblige les membres de l’équipe à déployer des données sur des plateformes de données informatiques ou à apporter des modifications mineures à la configuration de l’application. Cela peut nécessiter un support limité des experts en matière de développement d’applications ou de données. Toutefois, ce travail est similaire au travail effectué par les implémenteurs informatiques lors du déploiement d’applications tierces. Ce travail peut facilement s’aligner sur l’équipe de migration cloud ou celle de stratégie cloud. Bien que cet effort ne soit pas aussi rapide qu’une migration de réhébergement, il prend moins de temps que les efforts de refactorisation.
 
 Lors de la migration, les efforts devraient être segmentés des trois manières répertoriées ci-dessus et fournis par l’équipe appropriée dans l’itération appropriée. Même si vous devez diversifier le portefeuille, veillez également à ce que les efforts restent très concentrés et séparés.
-
-## <a name="optimize-and-promote-process-changes"></a>Changements aux processus d’optimisation et de promotion
-
-Aucune modification supplémentaire n’est requise pendant les processus d’optimisation et de promotion au cours de l’effort de migration.
-
-## <a name="secure-and-manage-process-changes"></a>Changements aux processus de sécurisation et de gestion
-
-Aucune modification supplémentaire n’est requise pendant les processus de sécurisation et de gestion au cours de l’effort de migration.
-
-## <a name="next-steps"></a>Étapes suivantes
-
-Revenez à la [liste de vérification d’expansion d’étendue](./index.md) pour vous assurer que votre méthode de migration est entièrement alignée.
-
-> [!div class="nextstepaction"]
-> [Check-list d’expansion d’étendue](./index.md)

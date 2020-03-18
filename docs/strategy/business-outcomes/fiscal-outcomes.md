@@ -1,6 +1,6 @@
 ---
 title: Exemples de résultats comptables
-description: Exemples de résultats comptables
+description: Utilisez le Cloud Adoption Framework pour Azure afin de percevoir les résultats opérationnels dans le contexte d’une transformation cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 4f9ec4df29469f17f6c057f8d3c0308c66cf1ba5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023835"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092878"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exemples de résultats comptables
 

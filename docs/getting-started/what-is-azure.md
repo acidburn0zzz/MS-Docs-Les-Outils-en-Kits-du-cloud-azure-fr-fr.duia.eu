@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: f74e5f6fa5abc263af73fcf69b489de6518c9e37
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 39373c0f2c4c7d96613fd10d5734a2826b6f1933
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78169914"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892062"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Azure est tout simplement une vaste collection de serveurs et de matériel rése
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous comprenez le fonctionnement interne d’Azure, poursuivez votre apprentissage avec la gouvernance des ressources cloud.
+Découvrez plus en détail l’adoption du cloud avec [Microsoft Cloud Adoption Framework pour Azure](https://docs.microsoft.com/azure/cloud-adoption-framework).
 
 > [!div class="nextstepaction"]
-> [En savoir plus sur la gouvernance des ressources](../govern/resource-consistency/what-is-governance.md)
+> [En savoir plus sur Microsoft Cloud Adoption Framework pour Azure](https://docs.microsoft.com/azure/cloud-adoption-framework)

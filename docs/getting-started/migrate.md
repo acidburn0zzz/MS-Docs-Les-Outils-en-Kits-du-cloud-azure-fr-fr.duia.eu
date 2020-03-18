@@ -7,20 +7,20 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223976"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094439"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Commencer un parcours de migration vers le cloud dans Azure
 
-Utilisez Microsoft Cloud Adoption Framework pour Azure afin d’entamer un parcours de migration cloud. Ce framework fournit une aide complète sur la transition des charges de travail d’application héritées à l’aide de technologies novatrices basées sur le cloud.
+Utilisez le Framework d’adoption du cloud Microsoft pour Azure afin d’entamer un parcours de migration cloud. Ce framework fournit une aide complète sur la transition des charges de travail d’application héritées à l’aide de technologies novatrices basées sur le cloud.
 
 ## <a name="executive-summary"></a>Résumé
 
-Cloud Adoption Framework aide les clients à effectuer un parcours d’adoption simplifié dans le cloud. Ce framework contient des informations détaillées qui couvrent un parcours d’adoption du cloud de bout en bout, en commençant par les résultats opérationnels ciblés, puis en alignant la préparation et l’évaluation du cloud à l’aide d’objectifs stratégiques clairement définis. Ces résultats sont obtenus via un chemin défini pour l’adoption du cloud. Avec l’adoption basée sur la migration, le chemin défini se concentre principalement sur la migration des charges de travail locales vers le cloud. Parfois, ce parcours comprend la modernisation des charges de travail pour augmenter le retour sur investissement de l’effort de migration.
+Le Framework d’adoption du cloud aide les clients à effectuer un parcours d’adoption simplifié dans le cloud. Ce framework contient des informations détaillées qui couvrent un parcours d’adoption du cloud de bout en bout, en commençant par les résultats opérationnels ciblés, puis en alignant la préparation et l’évaluation du cloud à l’aide d’objectifs stratégiques clairement définis. Ces résultats sont obtenus via un chemin défini pour l’adoption du cloud. Avec l’adoption basée sur la migration, le chemin défini se concentre principalement sur la migration des charges de travail locales vers le cloud. Parfois, ce parcours comprend la modernisation des charges de travail pour augmenter le retour sur investissement de l’effort de migration.
 
 Ce framework est principalement conçu pour les architectes cloud et les équipes de stratégie cloud qui dirigent les efforts d’adoption du cloud. Cependant, de nombreuses sujets contenus dans ce framework présentent un intérêt pour d’autres rôles au sein de l’entreprise et des services informatiques. Les architectes cloud servent souvent de facilitateurs pour faire participer chacun des rôles pertinents. Ce récapitulatif est conçu pour préparer les différents rôles avant de faciliter les conversations.
 
@@ -49,7 +49,7 @@ Si tous les participants sont préparés à l’effort de migration en ayant con
 
 ## <a name="migration-approach"></a>Approche de migration
 
-Cloud Adoption Framework établit une construction générale basée sur les concepts de planification, de préparation et d’adoption pour regrouper les types d’effort nécessaires à une adoption du cloud. Ce récapitulatif s’appuie sur ce flux général afin d’établir des processus itératifs permettant de regrouper les efforts d’optimisation lift-and-shift et les efforts de modernisation en une seule approche pour toutes les activités de migration cloud.
+Le Framework d’adoption du cloud établit une construction générale basée sur les concepts de planification, de préparation et d’adoption pour regrouper les types d’effort nécessaires à une adoption du cloud. Ce récapitulatif s’appuie sur ce flux général afin d’établir des processus itératifs permettant de regrouper les efforts d’optimisation lift-and-shift et les efforts de modernisation en une seule approche pour toutes les activités de migration cloud.
 
 Cette approche comporte deux méthodologies ou domaines prioritaires : Stratégie/planification cloud et implémentation cloud. La [motivation](#motivations) ou le résultat opérationnel souhaité pour une migration cloud détermine souvent l’investissement qu’une équipe doit fournir dans [la stratégie et la planification](#cloud-strategy-and-planning) ainsi que dans l’[implémentation](#cloud-implementation). Ces motivations peuvent également influencer les décisions pour une exécution séquentielle ou parallèle.
 
@@ -57,13 +57,13 @@ Cette approche comporte deux méthodologies ou domaines prioritaires : Stratég
 
 L’implémentation cloud est un processus itératif destiné à migrer et à moderniser le patrimoine numérique, en harmonie avec les résultats opérationnels ciblés et les contrôles de gestion des changements. À chaque itération, les charges de travail sont migrées ou modernisées en fonction de la stratégie et de la planification. Les décisions relatives aux modèles IaaS, PaaS ou hybrides sont prises pendant la phase d’évaluation de la [méthodologie de migration](../migrate/index.md) pour optimiser le contrôle et l’exécution. Ces décisions détermineront les outils qui seront utilisés à chaque itération de la phase de migration d’une même méthodologie. Ce modèle peut être utilisé avec une stratégie et une planification minimales. Cependant, pour garantir les meilleurs retours opérationnels, les services informatiques et l’entreprise doivent s’aligner sur une stratégie et un plan clairs afin de guider les activités d’implémentation.
 
-![Méthodologie d’implémentation cloud du Framework d’adoption du cloud](../_images/operational-transformation-migrate.png)
+![Méthodologie d’implémentation cloud du Cloud Adoption Framework](../_images/migrate/methodology.png)
 
 L’objectif de cet effort est la migration ou la modernisation des charges de travail. Une charge de travail est une collection d’infrastructures, d’applications et de données qui prend collectivement en charge un objectif métier commun ou l’exécution d’un processus métier commun. Les exemples de charges de travail peuvent inclure des éléments tels qu’une application métier, une solution de paie RH, une solution CRM, un workflow d’approbation de document financier ou une solution pour le décisionnel. Les charges de travail peuvent également inclure des ressources techniques partagées, par exemple un entrepôt de données qui prend en charge plusieurs autres solutions. Dans certains cas, une charge de travail peut être représentée par une seule ressource, par exemple un serveur, une application ou une plateforme de données autonome.
 
 Les migrations cloud sont souvent considérées comme un seul projet au sein d’un programme plus vaste visant à simplifier les opérations informatiques, leurs coûts ou leur complexité. La méthodologie de l’implémentation cloud permet d’aligner les efforts techniques d’une série de migrations de charges de travail sur les valeurs métier plus générales décrites dans la stratégie et la planification cloud.
 
-**Bien démarrer :** Pour bien démarrer avec une implémentation cloud, le [Guide de migration Azure](../migrate/azure-migration-guide/index.md) et le [Guide de configuration Azure](../ready/azure-setup-guide/index.md) décrivent les outils et processus généraux nécessaires à la réussite d’une implémentation cloud. La migration de votre première charge de travail à l’aide de ces guides va aider l’équipe à surmonter les courbes d’apprentissage initiales au début du processus de planification. Vous devez ensuite prendre en compte la [liste de contrôle d’étendue supplémentaire](../migrate/expanded-scope/index.md), les [bonnes pratiques de la migration](../migrate/azure-best-practices/index.md) ainsi que les [considérations relatives à la migration](../migrate/migration-considerations/index.md) pour aligner l’aide de base de référence aux contraintes, processus, structures d’équipe et objectifs uniques de votre effort.
+**Bien démarrer :** Pour démarrer une implémentation cloud, utilisez le [Guide de migration Azure](../migrate/azure-migration-guide/index.md) et le [Guide de configuration Azure](../ready/azure-setup-guide/index.md). Tous deux décrivent les outils et processus généraux nécessaires à la réussite d’une implémentation cloud. La migration de votre première charge de travail à l’aide de ces guides va aider l’équipe à surmonter les courbes d’apprentissage initiales au début du processus de planification. Vous devez ensuite prendre en compte certains aspects supplémentaires liés aux [bonnes pratiques pour la migration](../migrate/azure-best-practices/index.md) et aux [considérations relatives à la migration](../migrate/migration-considerations/index.md) afin d’aligner l’aide de base de référence sur les contraintes, les processus, les structures d’équipe et les objectifs spécifiques à votre effort.
 
 ## <a name="cloud-strategy-and-planning"></a>Stratégie et planification cloud
 

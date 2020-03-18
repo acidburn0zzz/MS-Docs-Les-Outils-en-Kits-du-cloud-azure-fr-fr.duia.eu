@@ -1,6 +1,6 @@
 ---
 title: Prérequis pour migrer vers Azure
-description: Prérequis pour migrer vers Azure
+description: Utilisez le Cloud Adoption Framework pour Azure afin de comprendre comment vous préparer à la migration Azure et quels sont les prérequis nécessaires à la réussite d’un projet de migration.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9baf2c9fdd307125e80fa77d8b2be54bec15b931
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806983"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094788"
 ---
 ::: zone target="chromeless"
 
-# <a name="prerequisites"></a>Conditions préalables requises
+# <a name="prerequisites"></a>Prérequis
 
 ::: zone-end
 
@@ -30,7 +30,7 @@ ms.locfileid: "76806983"
 
 Les ressources de cette section vous aideront à préparer votre environnement actuel pour la migration vers Azure.
 
-# <a name="overviewtaboverview"></a>[Vue d'ensemble](#tab/Overview)
+# <a name="overview"></a>[Vue d'ensemble](#tab/Overview)
 
 Les raisons d’une migration vers Azure incluent la suppression des risques associés au matériel hérité, la réduction des dépenses d’investissement, la libération d’espace dans un centre de données et la réalisation rapide du retour sur investissement (ROI).
 
@@ -58,7 +58,7 @@ L’objectif de ce parcours de migration est d’atteindre les objectifs suivant
 > - [Windows Server 2008 et Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008).
 > - [SQL Server 2008 et SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008).
 
-# <a name="understand-migration-approachestabapproach"></a>[Comprendre les approches de migration](#tab/Approach)
+# <a name="understand-migration-approaches"></a>[Comprendre les approches de migration](#tab/Approach)
 
 La stratégie et les outils que vous utilisez pour migrer une application vers Azure dépendent en grande partie de vos motivations métier, exigences technologiques et chronologies. Ils nécessitent également une compréhension approfondie de la charge de travail et des ressources (infrastructure, applications et données) réelles en cours de migration.
 
@@ -73,7 +73,7 @@ Lors de l’évaluation des charges de travail pour la migration, identifiez les
 - [Guide de décision sur les outils de migration du Framework d’adoption du cloud](../../decision-guides/migrate-decision-guide/index.md)
 - [Les 5 R de la rationalisation](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklisttabchecklist"></a>[Check-list de planification](#tab/Checklist)
+# <a name="planning-checklist"></a>[Check-list de planification](#tab/Checklist)
 
 Avant de commencer une migration, vous devez remplir certains prérequis. Les détails exacts de ces activités varient en fonction de l’environnement en cours de migration. En règle générale, la check-list suivante s’applique :
 

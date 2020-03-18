@@ -1,6 +1,6 @@
 ---
 title: Comment obtenir de l’aide
-description: Comment obtenir de l’aide lors de votre parcours vers Azure
+description: Découvrez comment obtenir de l’assistance durant votre processus de migration Azure. Une assistance appropriée peut vous aider à accélérer vos efforts de migration.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 479a9433f8768c701aa198e32fe2c9fcc295a61f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c7aa485429a8d6a6cdb4d0d18622d6e7cd570e9c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803481"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094228"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76803481"
 
 Nous savons que l’obtention du bon support au bon moment accélérera vos efforts de migration. Passez en revue les moyens d’assistance ci-dessous pour trouver celui qui répondra à vos besoins.
 
-# <a name="support-planstabsupportplans"></a>[Plans de support](#tab/SupportPlans)
+# <a name="support-plans"></a>[Plans de support](#tab/SupportPlans)
 
 ## <a name="microsoft-support"></a>Support Microsoft
 
@@ -101,7 +101,7 @@ Les communautés en ligne suivantes fournissent un support technique communautai
 
 ::: zone-end
 
-# <a name="partnerstabpartners"></a>[Partenaires](#tab/Partners)
+# <a name="partners"></a>[Partenaires](#tab/Partners)
 
 ## <a name="azure-solutions-partner"></a>Partenaire de solutions Azure
 

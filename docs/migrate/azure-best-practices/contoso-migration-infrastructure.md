@@ -1,6 +1,6 @@
 ---
 title: Déployer une infrastructure de migration
-description: Découvrez comment Contoso configure une infrastructure Azure pour la migration vers Azure.
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à travers un exemple caractéristique comment configurer une infrastructure Azure pour la migration vers Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/1/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 34d2c96adeb476b3129464566a315c2ada9eab67
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223134"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092432"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 

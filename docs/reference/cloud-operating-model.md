@@ -1,6 +1,6 @@
 ---
-title: Le modèle Cloud Operating Model est désormais le Framework d’adoption du cloud Microsoft pour Azure
-description: En savoir plus sur l’utilisation des pratiques du Cloud Operating Model dans le cadre du Framework d’adoption du cloud.
+title: Le modèle COM (Cloud Operating Model) devient désormais le Cloud Adoption Framework pour Azure
+description: 'Utilisez le Cloud Adoption Framework pour Azure afin de répondre aux questions liées à l’accélération de l’adoption du cloud : « quoi, pourquoi et comment ».'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048138"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023864"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Le modèle Cloud Operating Model fait désormais partie du Framework d’adoption du cloud Microsoft pour Azure
 
-Début 2018, Microsoft a publié le modèle COM (Cloud Operating Model). Le COM était un guide qui permettait aux clients de comprendre les **éléments** et les **raisons** de la transformation numérique. Cela permettait aux clients d’avoir une idée de tous les domaines qui devaient être traités : stratégie d’entreprise, stratégie de culture et stratégie de technologie. Ce qui n’était pas inclus dans le COM était les _procédures spécifiques_, ce qui laissait aux clients l’impression de ne pas savoir quelles étaient les étapes suivantes.
+Début 2018, Microsoft a publié le modèle COM (Cloud Operating Model). Le COM était un guide qui permettait aux clients de comprendre les **éléments** et les **raisons** de la transformation numérique. Cela permettait aux clients d’avoir une idée de tous les domaines qui devaient être traités : stratégie d’entreprise, stratégie de culture et stratégie de technologie. Les étapes spécifiques du _guide pratique_ n’étaient pas incluses dans le COM (Cloud Operating Model), ce qui donnait aux clients l’impression de ne pas savoir quelles étaient les étapes suivantes.
 
 En octobre 2018, nous avons commencé à examiner tous les modèles qui étaient apparus au sein de la communauté Microsoft et nous avons trouvé environ 60 modèles d’adoption du cloud. Une équipe Microsoft globale a été créée avec pour mission de regrouper tous ces éléments sous la forme d’un « produit » d’ingénierie dédié, avec des implémentations définies entre les services, les ventes et le marketing. Cet effort a abouti à la création d’un modèle unique, le Framework d’adoption du cloud Microsoft pour Azure, conçu pour aider les clients à comprendre les différents **éléments** et les **raisons** et à fournir des conseils unifiés sur **comment** les aider à accélérer l’adoption du cloud. L’objectif de ce projet est de créer une approche Microsoft unique pour l’adoption du cloud.
 
@@ -59,7 +59,7 @@ Au niveau décisionnel, le Framework d’adoption du cloud a été simplifié, a
 
 Les trois phases de l’adoption sont les suivantes :
 
-- **Planification :** Développer le plan de l’entreprise pour guider l’adoption du cloud en fonction des résultats pour l’entreprise.
+- **Planifier :** Développer le plan de l’entreprise pour guider l’adoption du cloud en fonction des résultats pour l’entreprise.
 - **Prêt :** Préparer les personnes, l’organisation et l’environnement technique à l’exécution du plan d’adoption.
 - **Adoption :** Stratégie technique nécessaire à l’exécution d’un plan d’adoption spécifique, conformément à un parcours d’adoption spécifique, pour atteindre les résultats fixés pour l’entreprise.
 

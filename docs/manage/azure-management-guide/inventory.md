@@ -1,6 +1,6 @@
 ---
 title: Inventaire et visibilité dans Azure
-description: Découvrez comment configurer l’inventaire, la supervision, la création de rapports et les alertes pour votre environnement de gestion Azure.
+description: Découvrez les outils qui fournissent à la fois un inventaire ainsi qu’une visibilité de l’état d’exécution de l’inventaire pour collecter des données opérationnelles.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42c7ea0b9647015f8ac049710905c8349d073093
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: da3675484c04c9c02384fcbbc0337accff2aaffe
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808207"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092132"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventaire et visibilité dans Azure
 
@@ -44,7 +44,7 @@ Dans le cas d’un environnement d’entreprise, le tableau suivant présente le
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-service-healthtabazureservicehealth"></a>[Azure Service Health](#tab/AzureServiceHealth)
+## <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 ::: zone-end
 
@@ -91,7 +91,7 @@ Pour plus d’informations, consultez la [documentation d’Azure Service Health
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="log-analyticstablog-analytics"></a>[Log Analytics](#tab/Log-Analytics)
+## <a name="log-analytics"></a>[Log Analytics](#tab/Log-Analytics)
 
 ::: zone-end
 
@@ -120,7 +120,7 @@ Pour plus d’informations, consultez la [documentation relative à la création
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-monitortabazure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
+## <a name="azure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
 
 ::: zone-end
 
@@ -166,7 +166,7 @@ Pour en savoir plus, consultez la [documentation d’Azure Monitor](https://docs
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="onboard-solutionstabconfigure-solutions"></a>[Solutions intégrées](#tab/Configure-solutions)
+## <a name="onboard-solutions"></a>[Solutions intégrées](#tab/Configure-solutions)
 
 ::: zone-end
 

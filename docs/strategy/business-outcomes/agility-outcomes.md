@@ -1,24 +1,24 @@
 ---
 title: Exemples de résultats souhaités en termes d’agilité
-description: Exemples de résultats souhaités en termes d’agilité
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’évaluer la position sur le marché et l’environnement concurrentiel de votre entreprise.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 05ff2e7f3e611d789ed289474ff13e0ed58bf0fb
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798500"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092949"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exemples de résultats souhaités en termes d’agilité
 
 Comme indiqué dans la [vue d’ensemble sur les résultats pour l’entreprise](./index.md), plusieurs résultats potentiels de l’entreprise peuvent servir de base pour les conversations sur parcours de transformation avec l’entreprise. Cet article se concentre sur la mesure métier la plus opportune : l’agilité métier. Bien comprendre la position de votre entreprise sur le marché et le paysage concurrentiel peut vous aider à structurer les résultats de l’entreprise qui sont la cible du parcours de transformation de celle-ci.
 
-Traditionnellement, les responsables de l’investissement et les équipes informatiques ont été considérés comme une source de stabilité dans les processus stratégiques essentiels. C’est toujours le cas. Peu d’entreprises peuvent fonctionner correctement lorsque leur plateforme informatique est instable. Toutefois, dans le monde actuel, les attentes sont plus grandes. Le service informatique peut s’étendre au-delà d’un centre de coût simple en établissant un partenariat avec l’entreprise pour offrir des avantages sur le marché. De nombreux responsables de l’informatique et dirigeants partent du principe que la stabilité est simplement une ligne de base pour le service informatique. Pour ces dirigeants, l’agilité métier est la mesure de la contribution du service informatique à l’activité.
+Traditionnellement, les responsables des investissements et les équipes informatiques sont considérés comme une source de stabilité dans les processus stratégiques critiques. C’est toujours le cas. Peu d’entreprises peuvent fonctionner correctement lorsque leur plateforme informatique est instable. Toutefois, dans le monde actuel, les attentes sont plus grandes. Le service informatique peut s’étendre au-delà d’un centre de coût simple en établissant un partenariat avec l’entreprise pour offrir des avantages sur le marché. De nombreux responsables des investissements et autres dirigeants partent du principe que la stabilité est simplement une base de référence pour l’informatique. Pour ces dirigeants, l’agilité métier est la mesure de la contribution du service informatique à l’activité.
 
 <!-- markdownlint-disable MD026 -->
 
@@ -39,6 +39,8 @@ Pendant les efforts d’innovation dans le cloud, le Time-to-market est une mesu
 ### <a name="aurora-health-care"></a>Aurora Health Care
 
 le système de santé transforme les services en ligne en expérience numérique conviviale. Pour transformer ses services numériques, Aurora Health Care a migré ses sites web vers la plateforme Microsoft Azure et adopté une stratégie d’innovation continue.
+
+<!-- cSpell:ignore Jamey Shiels -->
 
 > « En tant qu’équipe, nous nous concentrons sur les solutions de haute qualité et la vitesse. Le choix d’Azure a été une décision source de transformation pour nous. »  
 > Jamey Shiels  

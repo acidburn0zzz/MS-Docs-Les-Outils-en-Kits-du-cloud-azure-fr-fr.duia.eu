@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898111"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094833"
 ---
+<!-- cSpell:ignore HDFS databox VHDX -->
+
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Les besoins en données dépassent la capacité réseau lors d’une migration
 
 Lors d’une migration cloud, les ressources sont répliquées et synchronisées sur le réseau entre le centre de données existant et le cloud. Il n’est pas rare que les exigences de taille des données existantes de différentes charges de travail dépassent la capacité du réseau. Dans ce type de scénario, le processus de migration peut être radicalement ralenti ou, dans certains cas, complètement interrompu. Le guide qui suit étendra la portée du [guide de migration Azure](../azure-migration-guide/index.md) pour fournir une solution qui permet de contourner les limitations du réseau.
@@ -28,7 +30,7 @@ La majeure partie de cet effort nécessaire dans le cadre de cette expansion de 
 
 **Transfert hors connexion de banques de données indépendantes :** Le diagramme ci-dessous présente des exemples de transferts de données en ligne et hors ligne avec Azure Data Box. Ces approches peuvent être utilisées pour envoyer des volumes importants de données vers le cloud avant la migration de la charge de travail. Dans un transfert de données hors connexion, les données source sont copiées sur une Azure Data Box, qui est ensuite physiquement livrée à Microsoft pour le transfert dans un compte de stockage Azure en tant que fichier ou objet blob. Ce processus peut être utilisé pour envoyer des données qui ne sont pas directement liées à une charge de travail spécifique, avant d’autres efforts de migration. Cela réduit la quantité de données qui doivent être expédiées sur le réseau, afin d’effectuer une migration respectant les contraintes réseau.
 
-Cette approche peut être utilisée pour transférer des données HDFS, des sauvegardes, des archives, des serveurs de fichiers, des applications, etc. Les conseils techniques existants expliquent comment utiliser cette approche pour transférer des données à partir [d’un magasin HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster), de disques à l’aide de [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest), ou du [service de copie de données](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) vers Data Box.
+Cette approche peut être utilisée pour transférer des données depuis des systèmes HDFS, des sauvegardes, des archives, des serveurs de fichiers et des applications. Les conseils techniques existants expliquent comment utiliser cette approche pour transférer des données à partir [d’un magasin HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster), de disques à l’aide de [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest), ou du [service de copie de données](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) vers Data Box.
 
 Il existe également des [solutions de partenaires tiers](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) qui utilisent Azure Data Box pour une migration « Seed and Feed », où un volume important de données est déplacé lors d’un transfert hors connexion, mais est ensuite synchronisé à une échelle plus faible sur le réseau.
 

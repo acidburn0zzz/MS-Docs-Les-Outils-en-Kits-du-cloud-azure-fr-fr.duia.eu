@@ -1,18 +1,18 @@
 ---
-title: Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
-description: Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
+title: Hiérarchiser et définir les charges de travail pour l’adoption du cloud
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799979"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341910"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
 
@@ -26,7 +26,7 @@ La limitation du plan à 10 charges de travail favorise l’agilité et l’ali
 
 Dans le contexte d’une adoption du cloud, une charge de travail est un ensemble de ressources informatiques (serveurs, machines virtuelles, applications, données ou appliances) qui soutiennent collectivement un processus défini. Les charges de travail peuvent soutenir plusieurs processus. Elles peuvent également dépendre d’autres ressources partagées ou plateformes étendues. Toutefois, une charge de travail doit avoir des limites définies en ce qui concerne les ressources et les processus qui en dépendent. Souvent, il est possible de visualiser les charges de travail en surveillant le trafic réseau entre les ressources informatiques.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Les entrées stratégiques de la liste des prérequis facilitent grandement les tâches suivantes. Pour obtenir de l’aide sur la collecte des données présentées dans cet article, passez en revue les [prérequis](./prerequisites.md).
 

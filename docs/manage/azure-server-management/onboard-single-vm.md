@@ -1,18 +1,18 @@
 ---
-title: Activer les services de gestion de serveur sur une seule machine virtuelle à des fins d’évaluation
-description: Activer les services de gestion de serveur sur une seule machine virtuelle à des fins d’évaluation
+title: Activer les services de gestion de serveur sur une machine virtuelle
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à activer les services de gestion de serveur Azure sur une seule machine virtuelle.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d73b9f5a13150b0c3b13feff3f21a765a36ac4a8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d79539e6708a46a905e1b69a4d6bd186eaff2d0f
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808037"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341689"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>Activer les services de gestion de serveur sur une seule machine virtuelle à des fins d’évaluation
 

@@ -1,6 +1,6 @@
 ---
-title: Gouvernance, sécurité et conformité dans Azure
-description: Apprenez à configurer la gouvernance, la sécurité et la conformité pour votre environnement Azure.
+title: Gouvernance, sécurité et conformité Azure
+description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir comment configurer la gouvernance, la sécurité et la conformité de votre environnement Azure.
 author: tvuylsteke
 ms.author: kfollis
 ms.date: 09/27/2019
@@ -9,18 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c38edb9a5723d99974f5f472453bf4b88ee07bb3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 89de72cb85cc4c763d443ae9cc1114b648ab72c4
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799605"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024086"
 ---
+<!-- cSpell:ignore tvuylsteke >
+
+<!-- markdownlint-disable MD024 MD025 -->
+
 # <a name="governance-security-and-compliance-in-azure"></a>Gouvernance, sécurité et conformité dans Azure
 
 Lorsque vous établissez une stratégie d’entreprise et planifiez vos stratégies de gouvernance, vous pouvez utiliser des outils et des services tels que Azure Policy, Azure Blueprints et Azure Security Center pour appliquer et automatiser les décisions de gouvernance de votre organisation. Avant de commencer votre planification de la gouvernance, utilisez l’[outil Governance Benchmark](https://cafbaseline.com) pour identifier les lacunes potentielles dans l’approche de gouvernance cloud de votre organisation. Pour plus d’informations sur la façon de développer des processus de gouvernance, consultez l’[aide du Framework d’adoption du cloud pour Azure au sujet de la gouvernance](../../govern/index.md).
 
-# <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
+# <a name="azure-blueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
 Azure Blueprints permet aux architectes cloud et aux groupes centraux responsables des technologies de l’information de définir un ensemble reproductible de ressources Azure qui implémentent et respectent les normes, modèles et exigences d’une organisation. Azure Blueprints permet aux équipes de développement de créer et mettre en place rapidement de nouveaux environnements et d’avoir confiance en leur conformité aux exigences de l’organisation à l’aide d’un ensemble de composants intégrés, comme la mise en réseau, visant à accélérer le développement et la livraison.
 
@@ -41,8 +45,8 @@ Pour créer un blueprint :
 1. Dans la section **Créer un blueprint**, sélectionnez **Créer**.
 1. Filtrez la liste des blueprints pour sélectionner le blueprint approprié.
 1. Entrez le **Nom du blueprint**, puis sélectionnez l’**Emplacement de définition** approprié.
-1. Cliquez sur **Suivant : Artefacts >>** et examinez les artefacts inclus dans le blueprint.
-1. Cliquez sur **Enregistrer le brouillon**.
+1. Sélectionnez **Suivant : Artefacts >>** , puis examinez les artefacts inclus dans le blueprint.
+1. Sélectionnez **Enregistrer le brouillon**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -54,8 +58,8 @@ Pour créer un blueprint :
 1. Dans la section **Créer un blueprint**, sélectionnez **Créer**.
 1. Filtrez la liste des blueprints pour sélectionner le blueprint approprié.
 1. Entrez le **Nom du blueprint**, puis sélectionnez l’**Emplacement de définition** approprié.
-1. Cliquez sur **Suivant : Artefacts >>** et examinez les artefacts inclus dans le blueprint.
-1. Cliquez sur **Enregistrer le brouillon**.
+1. Sélectionnez **Suivant : Artefacts >>** , puis examinez les artefacts inclus dans le blueprint.
+1. Sélectionnez **Enregistrer le brouillon**.
 
 ::: zone-end
 
@@ -67,7 +71,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 
 1. Accédez à **Blueprints - Définitions de blueprints**.
 1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
-1. Passez en revue la définition de blueprint et sélectionnez **Publier le blueprint**.
+1. Passez en revue la définition de blueprint, puis sélectionnez **Publier le blueprint**.
 1. Spécifiez une **Version** (par exemple, _1.0_) et les **Notes de changement** éventuelles, puis sélectionnez **Publier**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
@@ -78,7 +82,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 
 1. Accédez à [Blueprints - Définitions de blueprints](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Sélectionnez la définition de blueprint que vous avez créée dans les étapes précédentes.
-1. Passez en revue la définition de blueprint et sélectionnez **Publier le blueprint**.
+1. Passez en revue la définition de blueprint, puis sélectionnez **Publier le blueprint**.
 1. Spécifiez une **Version** (par exemple, _1.0_) et les **Notes de changement** éventuelles, puis sélectionnez **Publier**.
 
 ::: zone-end
@@ -95,7 +99,7 @@ Pour plus d'informations, consultez les rubriques suivantes :
 
 ::: zone-end
 
-# <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+# <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 Azure Policy est un service utilisé pour créer, attribuer et gérer des stratégies. Ces stratégies appliquent des règles à vos ressources afin qu’elles restent conformes aux standards et aux contrats de niveau de service de l’entreprise. Azure Policy analyse vos ressources pour identifier celles qui ne sont pas conformes aux stratégies que vous implémentez. Par exemple, vous pouvez disposer d’une stratégie qui n’autorise que les machines virtuelles d’une certaine taille à s’exécuter dans votre environnement. Une fois implémentée, cette stratégie évalue les machines virtuelles existantes dans votre environnement ainsi que toutes les nouvelles machines virtuelles qui y sont déployées. L’évaluation de la stratégie génère des événements de conformité que vous pouvez utiliser à des fins de supervision et de création de rapports.
 
@@ -129,12 +133,12 @@ Pour appliquer une stratégie à un groupe de ressources :
 
 Pour plus d'informations, consultez les rubriques suivantes :
 
-- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/governance/policy)
 - [Framework d’adoption du cloud : Guide de décision pour l’application des stratégies](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Centre de sécurité Azure](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Centre de sécurité Azure](#tab/AzureSecurityCenter)
 
 Azure Security Center joue un rôle important dans votre stratégie de gouvernance. Il vous aide à assurer un haut niveau de sécurité, car il :
 
