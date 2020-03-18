@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: cf3f64e8fd059ec847591a9f86f41e68aee0fd40
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223631"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140516"
 ---
-<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+<!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Assurer la transition d’ordinateurs mainframe vers Azure
 

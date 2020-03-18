@@ -7,16 +7,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 03920802d2ee483154f789a6f353fd1642ccaf98
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 312be5ae3b716ad8d6aa609749bcbb615f6ef1c5
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094461"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140420"
 ---
+<!-- cSpell:ignore jenhayes -->
+
 # <a name="centralize-management-operations"></a>Centraliser les opérations de gestion
 
-Pour la plupart des organisations, l’utilisation d’un seul locataire Azure Active Directory (Azure AD) pour tous les utilisateurs simplifie les opérations de gestion et réduit les coûts de maintenance. Cela est dû au fait que toutes les tâches de gestion peuvent être effectuées par des utilisateurs désignés, des groupes d’utilisateurs ou des principaux de service au sein de ce locataire. 
+Pour la plupart des organisations, l’utilisation d’un seul locataire Azure Active Directory (Azure AD) pour tous les utilisateurs simplifie les opérations de gestion et réduit les coûts de maintenance. Cela est dû au fait que toutes les tâches de gestion peuvent être effectuées par des utilisateurs désignés, des groupes d’utilisateurs ou des principaux de service au sein de ce locataire.
 
 Nous vous recommandons d’utiliser un seul locataire Azure AD pour votre organisation si possible. Toutefois, il peut arriver qu’une organisation soit amenée à gérer plusieurs locataires Azure AD pour les raisons suivantes :
 

@@ -1,19 +1,19 @@
 ---
 title: Rationaliser le patrimoine numérique
-description: Évaluez vos ressources numériques pour déterminer la meilleure façon de les héberger dans le cloud.
+description: La rationalisation du cloud vise à évaluer les ressources numériques et à déterminer la meilleure façon de les héberger dans le cloud.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c618e6c1cf83199ae55df44397e07f3755fbb1f8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804552"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312720"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 
@@ -83,7 +83,7 @@ Dans un environnement local traditionnel, il est rare que l’hébergement de re
 
 Toutefois, lorsque vous passez à un modèle de comptabilité dans le cloud, la mise hors service des ressources peut vous permettre de réaliser d’importantes économies au niveau des coûts d’exploitation annuels et des premiers efforts de migration.
 
-Après l’analyse quantitative, il n’est pas rare que les organisations mettent hors service 20 % (voire plus) de leur patrimoine numérique. Nous vous recommandons d’effectuer une analyse qualitative plus approfondie avant une telle décision. Une fois la confirmation acquise, la mise hors service de ces ressources peut vous permettre d’atteindre pour la première fois un retour sur investissement dans le cadre de la migration vers le cloud. Dans de nombreux cas, c’est l’un des plus importants facteurs de réduction des coûts. Par conséquent, il est recommandé que l’équipe de stratégie cloud supervise la validation et la mise hors service des ressources parallèlement à la phase de développement du processus de migration, afin d’obtenir un retour sur investissement plus rapide.
+Après l’analyse quantitative, il n’est pas rare que les organisations mettent hors service 20 % (voire plus) de leur patrimoine numérique. Nous vous recommandons d’effectuer une analyse qualitative plus approfondie avant d’agir. Une fois la confirmation acquise, la mise hors service de ces ressources peut vous permettre d’obtenir un premier retour sur investissement suite à la migration dans le cloud. Il s’agit souvent de l’un des plus importants facteurs de réduction des coûts. Par conséquent, l’équipe de stratégie cloud doit superviser la validation et la mise hors service des ressources, parallèlement à l’exécution de la [méthodologie de migration](../migrate/index.md), afin d’obtenir un retour sur investissement rapide.
 
 ### <a name="program-adjustments"></a>Ajustements du programme
 

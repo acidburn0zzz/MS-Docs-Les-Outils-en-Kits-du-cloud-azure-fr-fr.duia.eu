@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a7f03ce1f83d59fdcfe2b2ce696b6b591b8d0655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341927"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140601"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan d’adoption du cloud et Azure DevOps
 
-Azure DevOps est l’ensemble des outils basés sur le cloud pour les clients Azure qui gèrent des projets itératifs. Il comprend également des outils permettant de gérer les pipelines de déploiement et d’autres aspects importants de DevOps. 
+Azure DevOps est l’ensemble des outils basés sur le cloud pour les clients Azure qui gèrent des projets itératifs. Il comprend également des outils permettant de gérer les pipelines de déploiement et d’autres aspects importants de DevOps.
 
 Dans cet article, vous allez apprendre à déployer rapidement un backlog sur Azure DevOps en utilisant un modèle de plan d’adoption du cloud. Ce modèle aligne les efforts d’adoption du cloud sur un processus standardisé basé sur les recommandations fournies dans le Framework d’adoption du cloud.
 

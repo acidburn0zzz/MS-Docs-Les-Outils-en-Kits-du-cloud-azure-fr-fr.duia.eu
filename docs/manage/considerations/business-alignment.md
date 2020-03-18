@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: ee88c1fc88e5c678f7356aa15b473d0fe61eaa2d
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341434"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140652"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Créer un alignement des activités en gestion cloud
 
@@ -22,7 +22,7 @@ Dans les environnements locaux, les ressources informatiques (applications, mach
 
 Lorsque vous procédez à l’alignement des activités, la première chose à faire est de vérifier l’alignement des termes utilisés. L’équipe chargée de la gestion informatique, comme la plupart des équipes d’ingénierie, a accumulé de nombreux termes de jargon ou très techniques. De tels termes peuvent entraîner une confusion du côté des parties prenantes et compliquer la mise en correspondance des services de gestion avec la valeur commerciale.
 
-Heureusement, la mise en œuvre d’une stratégie d’adoption cloud et d’un plan d’adoption cloud fournit un cadre idéal pour le remappage de ces termes. Elle crée également des opportunités pour repenser les engagements relatifs à la gestion opérationnelle, en partenariat avec l’entreprise. La série d’articles suivants décrit cette nouvelle approche à travers trois termes qui peuvent faciliter les conversations avec les parties prenantes d’entreprise : 
+Heureusement, la mise en œuvre d’une stratégie d’adoption cloud et d’un plan d’adoption cloud fournit un cadre idéal pour le remappage de ces termes. Elle crée également des opportunités pour repenser les engagements relatifs à la gestion opérationnelle, en partenariat avec l’entreprise. La série d’articles suivants décrit cette nouvelle approche à travers trois termes qui peuvent faciliter les conversations avec les parties prenantes d’entreprise :
 
 - **[État critique](./criticality.md)**  : Mise en correspondance des charges de travail avec les processus métier. Classement de la criticité pour mieux définir les investissements.
 - **[Impact](./impact.md) :** Compréhension de l’impact des pannes potentielles pour faciliter l’évaluation du retour sur investissement pour la gestion cloud.

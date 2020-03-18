@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341910"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140618"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
 
@@ -21,6 +21,8 @@ L’établissement de priorités claires et exploitables est l’un des secrets 
 Au lieu de cela, nous vous recommandons de confier à votre équipe la tâche de hiérarchiser et documenter minutieusement les 10 premières charges de travail. Une fois que l’implémentation du plan d’adoption a commencé, l’équipe peut établir la liste des 10 charges de travail suivantes de plus haute priorité. Cette approche fournit suffisamment d’informations pour planifier les itérations suivantes.
 
 La limitation du plan à 10 charges de travail favorise l’agilité et l’alignement des priorités à mesure que les critères métier évoluent. Cette approche donne également de l’espace à l’équipe d’adoption du cloud pour apprendre et affiner ses estimations. Plus important encore, elle abolit l’usage d’une planification approfondie, tel un obstacle à des changements opérationnels efficaces.
+
+<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-a-workload"></a>Qu’est-ce qu’une charge de travail ?
 

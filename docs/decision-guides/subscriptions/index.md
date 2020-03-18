@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140686"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508030"
 ---
 # <a name="subscription-decision-guide"></a>Guide de décision concernant les abonnements
 
@@ -49,7 +49,7 @@ Un seul abonnement par compte peut s’avérer suffisant pour les organisations 
 
 Dès que vous êtes prêt à déployer une charge de travail dans un environnement de production, vous devez ajouter un abonnement supplémentaire. Cela vous permet de conserver vos données de production et autres ressources hors de vos environnements de développement/test. Vous pouvez aussi appliquer facilement deux différents ensembles de stratégies sur les ressources dans les deux abonnements.
 
-![Modèle d’abonnement de production et de non-production](../../_images/ready/basic-subscription-model.png)
+![Modèle d’abonnement de production et de non-production](../../_images/ready/initial-subscription-model.png)
 
 ### <a name="workload-separation-pattern"></a>Modèle de séparation des charges de travail
 
