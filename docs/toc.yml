@@ -2,6 +2,8 @@ items:
   - name: Framework d’adoption du cloud
     href: index.md
     pdf_name: Microsoft Cloud Adoption Framework for Azure
+  - name: Nouveautés
+    href: getting-started/whats-new.md
   - name: Prise en main
     items:
       - name: Commencer un parcours de migration

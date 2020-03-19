@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 475b9e944188384a72cb3b8670a1ff607e7895f6
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 2092d93a8a661495e98e1f6878616278d3fbfb66
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140403"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508064"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "79140403"
 
 L’organisation des ressources cloud est l’une des tâches les plus importantes du service informatique, sauf si tous vos déploiements sont simples. L’organisation de vos ressources remplit trois objectifs principaux :
 
-- **Gestion des ressources :** Votre équipe informatique devra trouver rapidement les ressources associées aux charges de travail, aux environnements, aux groupes de propriété ou autres informations importantes. L’organisation des ressources est essentielle à l’affectation des rôles organisationnels et aux autorisations d’accès pour la gestion des ressources.
+- **Gestion des ressources** : Votre équipe informatique devra trouver rapidement les ressources associées aux charges de travail, aux environnements, aux groupes de propriété ou autres informations importantes. L’organisation des ressources est essentielle à l’affectation des rôles organisationnels et aux autorisations d’accès pour la gestion des ressources.
 - **Automatisation :** En plus de faciliter la gestion des ressources pour le personnel informatique, un bon modèle organisationnel vous permet de tirer parti de l’automatisation dans le cadre de la création de ressources, de la supervision des opérations et de la création de processus DevOps.
 - **Comptabilité :** Pour informer les groupes métier de leur consommation de ressources cloud, le service informatique doit d’abord connaître les ressources qui sont utilisées par les charges de travail et les différentes équipes. Pour prendre en charge les approches telles que la facturation de type chargeback/showback, les ressources cloud doivent être organisées de manière à refléter leur propriété et leur utilisation.
 
