@@ -1,18 +1,18 @@
 ---
-title: Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
-description: Après une migration vers Azure, adoptez les meilleures pratiques pour apprendre à configurer le réseau pour vos charges de travail migrées.
+title: Configurer le réseau pour les charges de travail migrées vers Azure
+description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir les bonnes pratiques relatives à la configuration du réseau pour vos charges de travail migrées.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892699"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312150"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
 

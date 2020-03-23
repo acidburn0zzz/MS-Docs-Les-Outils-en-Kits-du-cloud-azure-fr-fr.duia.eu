@@ -1,18 +1,18 @@
 ---
-title: Préserver les priorités de l’entreprise durant un processus de transformation à long terme
-description: Préservez les priorités de l’entreprise durant un processus de transformation à long terme.
+title: Priorités de l’entreprise durant un processus de transformation
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à maintenir l’alignement de l’entreprise durant le processus de transformation à long terme.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2a48dad8cb7d64b766dc5b9a445aeda4245854e7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: df41ee9dfe94d0279f8a0c29982e8aff2dd83782
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802716"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312048"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>Priorités de l’entreprise : Maintien de l’alignement
 

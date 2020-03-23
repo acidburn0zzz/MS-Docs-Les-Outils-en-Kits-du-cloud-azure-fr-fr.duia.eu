@@ -1,18 +1,18 @@
 ---
-title: Comment les rétrospectives contribuent-elles à créer une mentalité de croissance ?
-description: Un processus au sein d’une migration cloud qui se concentre sur les tâches de migration des charges de travail vers le cloud.
+title: Créer une mentalité de croissance avec des rétrospectives
+description: Découvrez comment les rétrospectives contribuent à créer une mentalité de croissance et permettent aux équipes de créer une croissance durable.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1bf3c79b95c748880e5d560003aa65acb1949c48
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: d56330f1a4dcfd2057a945d53f7a0f7365b0b600
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78891901"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311776"
 ---
 <!-- markdownlint-disable MD026 -->
 

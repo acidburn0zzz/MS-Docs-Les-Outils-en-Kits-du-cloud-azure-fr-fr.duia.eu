@@ -1,6 +1,6 @@
 ---
 title: Structure d’entreprise Azure
-description: Décrit une structure d’entreprise pouvant permettre de garantir un environnement sécurisé et géreable.
+description: La structure d’entreprise Azure devient le Framework d’adoption du cloud Microsoft pour Azure. Apprenez à répondre au besoin de gouvernance et à l’équilibrer avec le besoin d’agilité.
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023948"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311606"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 565cb0d97fc764375f708d8e3db8f2a1c0a852e4
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094833"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508370"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -46,7 +46,7 @@ Si la connectivité à Azure est disponible, une analyse doit être effectuée a
 
 ### <a name="suggested-action-during-the-assess-process"></a>Action suggérée pendant le processus d’évaluation
 
-**Analyse de la capacité du réseau :** Lorsque les exigences de transfert de données liées aux charges de travail sont exposées à un risque de dépassement de la capacité du réseau, l’équipe d’adoption cloud ajoute une tâche d’analyse supplémentaire au processus d’évaluation, appelée analyse de la capacité du réseau. Au cours de cette analyse, un membre de l’équipe possédant une expertise en matière de réseau local et de connectivité réseau estime la quantité de capacité réseau disponible et le temps requis pour le transfert des données. Cette capacité disponible est alors comparée aux besoins de stockage de toutes les ressources à migrer pour la version actuelle. Si les besoins en matière de stockage dépassent la bande passante disponible, les ressources prenant en charge la charge de travail sont sélectionnées pour le transfert hors connexion.
+**Analyse de la capacité du réseau :** Lorsque les exigences de transfert de données liées aux charges de travail sont exposées à un risque de dépassement de la capacité du réseau, l’équipe d’adoption cloud ajoute une tâche d’analyse supplémentaire au processus d’évaluation, appelée analyse de la capacité du réseau. Au cours de cette analyse, un membre de l’équipe possédant une expertise en matière de réseau local et de connectivité réseau estime la quantité de capacité réseau disponible et le temps requis pour le transfert des données. Cette capacité disponible est alors comparée aux besoins de stockage de toutes les ressources à migrer pour la version actuelle. Si les besoins en matière de stockage dépassent la bande passante disponible, les ressources prenant en charge la charge de travail sont sélectionnées pour le transfert hors connexion.
 
 > [!IMPORTANT]
 > À la fin de l’analyse, le plan de version devra peut-être être mis à jour pour refléter le temps nécessaire à l’envoi, à la restauration et à la synchronisation des ressources à transférer hors connexion.
@@ -59,7 +59,7 @@ Lorsque vous utilisez des mécanismes de transfert hors connexion, les [processu
 
 ### <a name="suggested-action-during-the-migrate-process"></a>Action suggérée pendant le processus de migration
 
-**Copie du stockage :** Cette approche peut être utilisée pour transférer des données HDFS, des sauvegardes, des archives, des serveurs de fichiers, des applications, etc. Les conseils techniques existants expliquent comment utiliser cette approche pour transférer des données à partir [d’un magasin HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster), de disques à l’aide de [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest), ou du [service de copie de données](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) vers Data Box.
+**Copie du stockage :** Cette approche peut être utilisée pour transférer les données HDFS, de sauvegardes, d’archives, de serveurs de fichiers ou d’applications. Les conseils techniques existants expliquent comment utiliser cette approche pour transférer des données à partir [d’un magasin HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster), de disques à l’aide de [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest), ou du [service de copie de données](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) vers Data Box.
 
 Il existe également des [solutions de partenaires tiers](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) qui utilisent Azure Data Box pour une migration « Seed and Sync », où un volume important de données est déplacé lors d’un transfert hors connexion, mais est ensuite synchronisé à une échelle plus faible sur le réseau.
 

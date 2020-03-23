@@ -1,18 +1,18 @@
 ---
-title: Meilleures pratiques pour l’évaluation des coûts et le dimensionnement des charges de travail migrées vers Azure
-description: Découvrez les meilleures pratiques pour l’évaluation des coûts et le dimensionnement des charges de travail migrées vers Azure.
+title: Évaluation des coûts et dimensionnement des charges de travail migrées vers Azure
+description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir les bonnes pratiques en matière d’évaluation des coûts et de dimensionnement des charges de travail migrées vers Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 783652f1f469333c97ebd50673a3d42e1a9741d7
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892580"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508404"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Meilleures pratiques pour l’évaluation des coûts et le dimensionnement des charges de travail migrées vers Azure
 
@@ -191,7 +191,7 @@ Avec des instances de machines virtuelles réservées Azure, vous prépayez l’
 
 Il est inévitable, à terme, d’avoir plusieurs abonnements Azure. Par exemple, vous aurez peut-être besoin d’un abonnement supplémentaire pour séparer les limites de développement et de production, ou votre plateforme peut exiger un abonnement distinct pour chaque client. La possibilité d’agréger les rapports de données de tous les abonnements sur une plateforme unique est une fonctionnalité très utile.
 
-Pour ce faire, vous pouvez utiliser les API Azure Cost Management. Ensuite, après l’agrégation des données dans une source unique (comme Azure SQL), vous pouvez utiliser des outils tels que Power BI pour exposer les données agrégées. Vous pouvez créer des rapports d’abonnements agrégés et des rapports granulaires. Par exemple, pour les utilisateurs qui ont besoin d’informations proactives de gestion des coûts, vous pouvez créer des vues spécifiques pour les coûts, en fonction des services, des groupes de ressources, etc. Vous n’avez pas besoin de leur accorder un accès total aux données de facturation Azure.
+Pour ce faire, vous pouvez utiliser les API Azure Cost Management. Ensuite, après l’agrégation des données dans une source unique (comme Azure SQL), vous pouvez utiliser des outils tels que Power BI pour exposer les données agrégées. Vous pouvez créer des rapports d’abonnements agrégés et des rapports granulaires. Par exemple, pour les utilisateurs qui ont besoin d’informations proactives de gestion des coûts, vous pouvez créer des vues spécifiques pour les coûts en fonction du service, du groupe de ressources ou d’autres informations. Vous n’avez pas besoin de leur accorder un accès total aux données de facturation Azure.
 
 **En savoir plus :**
 

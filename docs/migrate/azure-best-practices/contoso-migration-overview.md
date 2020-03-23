@@ -1,18 +1,18 @@
 ---
-title: Vue d’ensemble d’exemples de migration d’application pour Azure
-description: Fournit une vue d’ensemble des exemples de migration d’application inclus dans le cadre de la section Migration du Framework d’adoption du cloud.
+title: Exemples de migration d’application pour Azure
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à migrer l’infrastructure locale vers le cloud Microsoft Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ecb6cfc10b88490269b50a5fe6bec7d2c3277d7b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807374"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312768"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Modèles et exemples de migration d’application
 
@@ -28,7 +28,7 @@ Dans le cadre de la stratégie de cloud hybride, Azure fournit toujours plus de 
 
 ## <a name="migration-patterns"></a>Modèles de migration
 
-Les stratégies pour la migration vers le cloud sont classées sous quatre grands modèles : réhébergement, refactorisation, réarchitecture ou régénération. La stratégie que vous adoptez dépend des facteurs qui pilotent votre activité et des objectifs de la migration. Vous pouvez adopter plusieurs modèles. Par exemple, vous pouvez choisir de réhéberger des applications simples ou des applications qui ne sont pas essentielles pour votre activité, mais réarchitecturer celles qui sont plus complexes et vitales pour l’entreprise. Examinons ces modèles.
+Les stratégies pour la migration vers le cloud sont classées sous quatre grands modèles : réhébergement, refactorisation, réarchitecture ou régénération. La stratégie que vous adoptez dépend des facteurs qui pilotent votre activité et des objectifs de la migration. Vous pouvez adopter plusieurs modèles. Par exemple, vous pouvez choisir de réhéberger des applications simples ou des applications qui ne sont pas essentielles à votre activité et de réarchitecturer les applications plus complexes et vitales pour l’entreprise. Examinons ces modèles.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -36,14 +36,14 @@ Les stratégies pour la migration vers le cloud sont classées sous quatre grand
 --- | --- | ---
 **Réhébergement** | Souvent appelé migration _lift-and-shift_. Cette option ne nécessite pas de modifications du code et vous permet de migrer rapidement vos applications existantes vers Azure. Chaque application est migrée en l’état, pour profiter des avantages du cloud, sans les risques et les coûts associés aux modifications du code. | Quand vous devez déplacer rapidement des applications dans le cloud.<br/><br/> Quand vous voulez déplacer une application sans la modifier.<br/><br/> Quand vos applications sont architecturées de façon à tirer parti de l’extensibilité de l’[IaaS Azure](https://azure.microsoft.com/overview/what-is-iaas) après la migration.<br/><br/> Quand des applications sont importantes pour votre activité, mais que vous n’avez pas besoin de modifications immédiates de leurs fonctionnalités.
 **Refactorisation** | Souvent appelée « réempaquetage », la refactorisation nécessite des modifications minimales des applications pour qu’elles puissent se connecter au [PaaS Azure](https://azure.microsoft.com/overview/what-is-paas) et utiliser des offres cloud.<br/><br/> Par exemple, vous pouvez migrer vos applications existantes vers Azure App Service ou Azure Kubernetes Service.<br/><br/> Vous pouvez aussi refactoriser vos bases de données relationnelles et non relationnelles en options telles qu’Azure SQL Database Managed Instance, Azure Database pour MySQL, Azure Database pour PostgreSQL ou Azure Cosmos DB. | Si votre application peut être facilement repackagée pour fonctionner dans Azure.<br/><br/> Si vous voulez appliquer des pratiques DevOps innovantes fournie par Azure, ou si vous envisagez d’utiliser DevOps avec une stratégie de conteneur pour les charges de travail.<br/><br/> Pour la refactorisation, vous devez penser à la portabilité de votre base de code existante et à la disponibilité des compétences en développement.
-**Réarchitecture** | La réarchitecture pour la migration porte principalement sur la modification et l’extension des fonctionnalités et de la base de code de l’application, avec comme objectif d’optimiser l’architecture de l’application pour la scalabilité du cloud.<br/><br/> Par exemple, vous pouvez décomposer une application monolithique en un groupe de microservices qui fonctionnent ensemble et sont facilement mis à l’échelle.<br/><br/> Vous pouvez aussi réarchitecturer vos bases de données relationnelles et non relationnelles vers une solution de base de données complètement managée, comme Azure SQL Database Managed Instance, Azure Database pour MySQL, Azure Database pour PostgreSQL et Azure Cosmos DB. | Quand votre application nécessite des révisions majeures pour incorporer de nouvelles fonctionnalités, ou pour fonctionner efficacement sur une plateforme cloud.<br/><br/> Quand vous voulez utiliser des investissements faits dans des applications existantes, répondre à des exigences d’extensibilité, appliquer des pratiques Azure DevOps innovantes et minimiser l’utilisation de machines virtuelles.
+**Réarchitecture** | La réarchitecture pour la migration porte principalement sur la modification et l’extension des fonctionnalités et de la base de code de l’application, avec comme objectif d’optimiser l’architecture de l’application pour la scalabilité du cloud.<br/><br/> Par exemple, vous pouvez décomposer une application monolithique en un groupe de microservices qui fonctionnent ensemble et sont facilement mis à l’échelle.<br/><br/> Vous pouvez aussi réarchitecturer vos bases de données relationnelles et non relationnelles vers une solution de base de données complètement managée, comme Azure SQL Database Managed Instance, Azure Database pour MySQL, Azure Database pour PostgreSQL et Azure Cosmos DB. | Quand votre application nécessite des révisions majeures pour incorporer de nouvelles fonctionnalités, ou pour fonctionner efficacement sur une plateforme cloud.<br/><br/> Quand vous voulez utiliser des investissements faits dans des applications existantes, répondre à des exigences de scalabilité, appliquer des pratiques DevOps innovantes et minimiser l’utilisation de machines virtuelles.
 **Recréation** | La recréation va encore plus loin en recréant une application à partir de rien, en utilisant les technologies du cloud Azure.<br/><br/> Par exemple, vous pouvez créer des applications entièrement nouvelles avec des technologies [cloud natives](https://azure.com/cloudnative) comme Azure Functions, Azure AI, Azure SQL Database Managed Instance et Azure Cosmos DB. | Quand vous voulez un développement rapide, et que les applications existantes ont des fonctionnalités et une durée de vie limitées.<br/><br/> Quand vous êtes prêt à accélérer l’innovation pour votre activité (notamment les pratiques DevOps fournies par Azure), à créer de nouvelles applications en utilisant les technologies cloud natives et à tirer parti des avancées de l’IA, de Blockchain et d’IoT.
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="migration-example-articles"></a>Articles d’exemples de migration
 
-Les articles de cette section fournissent des exemples de plusieurs scénarios de migration courants. Chacun de ces exemples comprend des informations générales et des scénarios de déploiement détaillés qui illustrent comment configurer une infrastructure de migration et évaluer l’adéquation des ressources locales pour la migration. D’autres articles seront ajoutés à cette section au fil du temps.
+Cette section propose des exemples de plusieurs scénarios de migration courants. Chaque exemple comprend des informations générales et des scénarios de déploiement détaillés qui montrent comment configurer une infrastructure de migration et évaluer l’adéquation des ressources locales à la migration. D’autres articles seront ajoutés à cette section au fil du temps.
 
 ![Projets courants de migration/modernisation](./media/migration-patterns.png)
 
@@ -58,7 +58,7 @@ Les articles de la série sont résumés ci-dessous.
 
 **Article** | **Détails**
 --- | ---
-[Évaluer les ressources locales à migrer vers Azure](./contoso-migration-assessment.md) | Cet article explique comment exécuter l’évaluation d’une application locale s’exécutant sur VMware. Dans l’exemple, un exemple d’organisation évalue les machines virtuelles de l’application à l’aide du service Azure Migrate, et la base de données SQL Server de l’application à l’aide de l’Assistant Migration de données.
+[Évaluer les ressources locales à migrer vers Azure](../../plan/contoso-migration-assessment.md) | Cet article de bonnes pratiques dans la méthodologie de planification explique comment évaluer une application locale qui s’exécute sur VMware. Dans cet article, un exemple d’organisation évalue des machines virtuelles de l’application à l’aide du service Azure Migrate et la base de données SQL Server de l’application à l’aide de l’Assistant Migration de données.
 
 ### <a name="infrastructure"></a>Infrastructure
 
@@ -84,7 +84,7 @@ Les articles de la série sont résumés ci-dessous.
 
 **Article** | **Détails**
 --- | ---
-[Réhéberger une application sur une machine virtuelle Azure et SQL Database Managed Instance](./contoso-migration-rehost-vm-sql-managed-instance.md) | Cet article fournit un exemple de migration lift-and-shift vers Azure pour une application locale. Cela implique la migration de la machine virtuelle frontale de l’application à l’aide d’[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview), et la base de données de l’application vers une instance Azure SQL Database Managed Instance à l’aide d’[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+[Réhéberger une application sur une machine virtuelle Azure et SQL Database Managed Instance](./contoso-migration-rehost-vm-sql-managed-instance.md) | Cet article fournit un exemple de migration lift-and-shift vers Azure pour une application locale. Cette opération implique la migration de la machine virtuelle front-end de l’application à l’aide d’[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) et celle de la base de données de l’application vers une instance Azure SQL Database Managed Instance à l’aide d’[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 [Réhéberger une application sur des machines virtuelles Azure et dans un groupe de disponibilité SQL Server Always On](./contoso-migration-rehost-vm-sql-ag.md) | Cet exemple explique comment migrer une application et des données à l’aide de machines virtuelles SQL Server hébergées sur Azure. Il utilise Site Recovery pour migrer les machines virtuelles de l’application, et Azure Database Migration Service pour migrer la base de données de l’application vers un cluster SQL Server protégé par un groupe de disponibilité Always On.
 
 ### <a name="aspnet-php-and-java-apps"></a>Applications ASP.NET, PHP et Java

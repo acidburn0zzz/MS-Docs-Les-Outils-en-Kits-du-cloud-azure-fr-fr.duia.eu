@@ -1,22 +1,25 @@
 ---
-title: Configurer les services de gestion de serveur Azure pour un abonnement
-description: Configurer les services de gestion de serveur Azure pour un abonnement
+title: Configurer le service pour un abonnement
+description: Découvrez comment configurer les services de gestion de serveur Azure pour un abonnement en déployant des agents de service sur vos serveurs et en activant des solutions de gestion.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808088"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312736"
 ---
+<!-- cSpell:ignore VMUUID kusto -->
+
 # <a name="configure-azure-server-management-services-at-scale"></a>Configurer les services de gestion de serveur Azure à l’échelle
 
 Vous devez effectuer ces deux tâches pour intégrer les services de gestion de serveur Azure dans vos serveurs :
+
 - Déployer des agents de service sur vos serveurs
 - Activer les solutions de gestion
 
@@ -74,7 +77,7 @@ Après que vous avez terminé l’Assistant, l’attribution de stratégie est d
 > [!NOTE]
 > Créez l’[espace de travail Log Analytics et le compte Azure Automation](./prerequisites.md#create-a-workspace-and-automation-account) requis avant d’intégrer les services de gestion de serveur Azure dans les serveurs.
 
-Pour les serveurs locaux, vous devez télécharger et installer manuellement [l’agent Log Analytics et l’agent de dépendances Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) et les configurer pour qu’ils se connectent à l’espace de travail correct. Vous devez spécifier l’ID de l’espace de travail et les informations de clé. Pour obtenir ces informations, accédez à votre espace de travail Log Analytics dans le Portail Azure et sélectionnez **Paramètres** > **Paramètres avancés**.
+Pour les serveurs locaux, vous devez télécharger et installer manuellement [l’agent Log Analytics et l’agent de dépendances Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) et les configurer pour qu’ils se connectent à l’espace de travail correct. Vous devez spécifier l’ID de l’espace de travail et les informations de clé. Pour obtenir ces informations, accédez à votre espace de travail Log Analytics sur le portail Azure, puis sélectionnez **Paramètres** > **Paramètres avancés**.
 
 ![Capture d’écran des paramètres avancés de l’espace de travail Log Analytics dans le Portail Azure](./media/onboarding-on-premises.png)
 
@@ -139,7 +142,7 @@ Le [Journal d’activité Azure](https://docs.microsoft.com/azure/azure-monitor/
 
 Pour mettre en œuvre cette solution :
 
-1. Dans le Portail Azure, ouvrez **Tous les services** et sélectionnez **Gestion + gouvernance** > **Solutions**.
+1. Sur le portail Azure, ouvrez **Tous les services**, puis sélectionnez **Gestion + gouvernance** > **Solutions**.
 2. Dans l’affichage **Solutions**, sélectionnez **Ajouter**.
 3. Recherchez **Activity Log Analytics** et sélectionnez-le.
 4. Sélectionnez **Create** (Créer).
@@ -152,7 +155,7 @@ La solution Azure Log Analytics Agent Health fait des rapports sur l’intégrit
 
 Pour mettre en œuvre cette solution :
 
-1. Dans le Portail Azure, ouvrez **Tous les services** et sélectionnez **Gestion + gouvernance** > **Solutions**.
+1. Sur le portail Azure, ouvrez **Tous les services**, puis sélectionnez **Gestion + gouvernance** > **Solutions**.
 2. Dans l’affichage **Solutions**, sélectionnez **Ajouter**.
 3. Recherchez **Azure Log Analytics Agent Health** et sélectionnez-le.
 4. Sélectionnez **Create** (Créer).
@@ -167,7 +170,7 @@ La solution Antimalware Assessment vous aide à identifier les serveurs infecté
 
 Pour mettre en œuvre cette solution :
 
-1. Dans le Portail Azure, ouvrez **Tous les services** et sélectionnez **Gestion + gouvernance** > **Solutions**.
+1. Sur le portail Azure, ouvrez **Tous les services**, puis sélectionnez **Gestion + gouvernance** > **Solutions**.
 2. Dans l’affichage **Solutions**, sélectionnez **Ajouter**.
 3. Recherchez et sélectionnez **Antimalware Assessment**.
 4. Sélectionnez **Create** (Créer).
@@ -178,7 +181,7 @@ Une fois la création terminée, l’instance de ressource de l’espace de trav
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor pour machines virtuelles
 
-Vous pouvez activer [Azure Monitor pour machines virtuelles](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) via la page d’affichage de l’instance de machine virtuelle, comme décrit dans [Activer les services de gestion sur une seule machine virtuelle à des fins d’évaluation](./onboard-single-vm.md). Vous ne devez pas activer les solutions directement à partir de la page **Solutions** comme vous le faites pour les autres solutions décrites dans cet article. Pour les déploiements à grande échelle, il peut être plus aisé d’utiliser l’[automatisation](./onboarding-automation.md) pour activer les solutions appropriées dans l’espace de travail. 
+Vous pouvez activer [Azure Monitor pour machines virtuelles](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) via la page d’affichage de l’instance de machine virtuelle, comme décrit dans [Activer les services de gestion sur une seule machine virtuelle à des fins d’évaluation](./onboard-single-vm.md). Vous ne devez pas activer les solutions directement à partir de la page **Solutions** comme vous le faites pour les autres solutions décrites dans cet article. Pour les déploiements à grande échelle, il peut être plus aisé d’utiliser l’[automatisation](./onboarding-automation.md) pour activer les solutions appropriées dans l’espace de travail.
 
 ### <a name="azure-security-center"></a>Azure Security Center
 

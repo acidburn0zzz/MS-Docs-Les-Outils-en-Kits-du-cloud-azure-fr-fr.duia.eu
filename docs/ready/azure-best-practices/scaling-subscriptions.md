@@ -1,28 +1,28 @@
 ---
-title: Mise à l’échelle avec plusieurs abonnements Azure
-description: Découvrez comment mettre à l’échelle avec plusieurs abonnements Azure.
+title: Mise à l’échelle avec des abonnements Azure
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à développer une stratégie de mise à l’échelle avec plusieurs abonnements Azure.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: b734446a4bac7d8db12119b2248aece9a3377d37
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337749"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508387"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>Mettre à l’échelle avec plusieurs abonnements Azure
 
-Les organisations ont souvent besoin de plusieurs abonnements Azure en raison de ressources limitées et d’autres considérations de gouvernance. Il est important de disposer d’une stratégie de mise à l’échelle de vos abonnements.
+Les organisations ont souvent besoin de plusieurs abonnements Azure en raison de ressources limitées et d’autres considérations de gouvernance. Il est important de définir une stratégie de mise à l’échelle de vos abonnements.
 
 ## <a name="production-and-nonproduction-workloads"></a>Charges de travail de production et non-production
 
 Lors du déploiement de votre première charge de travail de production dans Azure, vous devez commencer avec deux abonnements : un pour votre environnement de production et l’autre pour votre environnement de non-production (développement/test).
 
-![Un modèle d’abonnement de base indiquant des clés à côté des cases intitulées « Production » et « Non-production »](../../_images/ready/basic-subscription-model.png)
+![Un modèle d’abonnement de base indiquant des clés à côté des cases intitulées « Production » et « Non-production »](../../_images/ready/initial-subscription-model.png)
 
 Nous vous recommandons cette approche pour plusieurs raisons :
 
@@ -62,7 +62,7 @@ Vous pouvez déplacer de nombreux types de ressources d’un abonnement à un au
 
 ## <a name="manage-multiple-subscriptions"></a>Gérer des abonnements multiples
 
-Si vous disposez de quelques abonnements seulement, les gérer de manière indépendante est relativement simple. Cependant, si vous avez un grand nombre d’abonnements, vous devriez envisager de créer une hiérarchie de groupes d’administration pour simplifier la gestion de vos abonnements et de vos ressources.
+Si vous disposez de quelques abonnements seulement, les gérer de manière indépendante est relativement simple. Cependant, si vous avez un grand nombre d’abonnements, créez une hiérarchie de groupes d’administration pour simplifier la gestion de vos abonnements et de vos ressources.
 
 Les groupes d’administration permettent une gestion efficace des accès, des stratégies et de la conformité des abonnements d’une organisation. Chaque groupe d’administration est un conteneur pour un ou plusieurs abonnements.
 
@@ -71,7 +71,7 @@ Les groupes d’administration sont organisés dans une hiérarchie unique. Vous
 Azure fournit quatre niveaux d’étendue de la gestion : groupes d’administration, abonnements, groupes de ressources et ressources. Tout accès ou stratégie appliqué à un niveau de la hiérarchie est hérité par les niveaux inférieurs. Le propriétaire d’une ressource ou d’un abonnement ne peut pas modifier une stratégie héritée. Cette limitation permet d’améliorer la gouvernance.
 
 > [!NOTE]
-> Notez que l’héritage des balises n’est pas disponible actuellement, mais qu’il le sera bientôt.
+> Notez que l’héritage des balises n’est pas actuellement pris en charge, mais qu’il le sera bientôt.
 
 En vous appuyant sur ce modèle d’héritage, vous pouvez organiser les abonnements dans votre hiérarchie de façon à ce que chaque abonnement suive les stratégies et les contrôles de sécurité appropriés.
 
@@ -79,11 +79,11 @@ En vous appuyant sur ce modèle d’héritage, vous pouvez organiser les abonnem
 
 Toute attribution d’accès et de stratégie au groupe d’administration racine s’appliquent à toutes les ressources du répertoire. Examinez attentivement les éléments que vous définissez au niveau de cette étendue. Incluez uniquement les affectations dont vous avez besoin.
 
-Lorsque vous définissez initialement votre hiérarchie de groupes d’administration, vous devez d’abord créer le groupe d’administration racine. Vous déplacez ensuite tous les abonnements existants dans le répertoire vers le groupe d’administration racine. Les nouveaux abonnements sont toujours créés dans le groupe d’administration racine. Vous pouvez les déplacer ultérieurement vers un autre groupe d’administration.
+Quand vous définissez votre hiérarchie de groupes d’administration, vous devez d’abord créer le groupe d’administration racine. Vous déplacez ensuite tous les abonnements existants dans le répertoire vers le groupe d’administration racine. Les nouveaux abonnements sont toujours créés dans le groupe d’administration racine. Vous pouvez les déplacer ultérieurement vers un autre groupe d’administration.
 
-Lorsque vous déplacez un abonnement vers un groupe d’administration existant, il hérite des stratégies et des attributions de rôle de la hiérarchie de groupes d’administration au-dessus de lui. Une fois que vous avez établi plusieurs abonnements pour vos charges de travail Azure, vous devez créer des abonnements supplémentaires pour contenir les services Azure partagés par d’autres abonnements.
+Quand vous déplacez un abonnement vers un groupe d’administration existant, il hérite des stratégies et des attributions de rôle de la hiérarchie de groupes d’administration au-dessus de lui. Une fois que vous avez établi plusieurs abonnements pour vos charges de travail Azure, vous devez créer des abonnements supplémentaires pour contenir les services Azure partagés par d’autres abonnements.
 
-![Exemple d’une hiérarchie de groupes d’administration](../../_images/ready/management-group-hierarchy.png)
+![Exemple d’une hiérarchie de groupes d’administration](../../_images/ready/management-group-hierarchy-v2.png)
 
 Pour plus d’informations, consultez [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/governance/management-groups).
 

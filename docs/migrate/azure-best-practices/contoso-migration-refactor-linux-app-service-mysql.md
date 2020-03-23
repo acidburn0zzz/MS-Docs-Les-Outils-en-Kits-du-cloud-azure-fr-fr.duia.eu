@@ -1,18 +1,18 @@
 ---
-title: Refactoriser une application de bureau de service Linux pour Azure App Service et Azure Database pour MySQL
-description: Découvrez comment Contoso refactorise une application Linux locale en la migrant vers Azure App Service à l’aide de GitHub pour la couche Web et Azure SQL Database.
+title: Refactoriser une application Linux sur Azure App Service et Azure Database pour MySQL
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à refactoriser une application de bureau de service Linux sur Azure App Service et Azure Database pour MySQL.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2e47647b06da12b9b595f4330767f629121e00a0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807459"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311487"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refactoriser une application Linux vers plusieurs régions à l’aide d’Azure App Service, de Traffic Manager et d’Azure Database pour MySQL
 
@@ -88,7 +88,7 @@ Contoso va effectuer le processus de migration comme suit :
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | Équilibreur de charge qui utilise DNS pour diriger les utilisateurs vers Azure, ou vers des sites web et des services externes. | La tarification est basée sur le nombre de requêtes DNS reçues et sur le nombre de points de terminaison surveillés. | [Plus d’informations](https://azure.microsoft.com/pricing/details/traffic-manager)
 [Azure Database pour MySQL](https://docs.microsoft.com/azure/mysql) | La base de données est basée sur le moteur du serveur MySQL open source. Ils fournissent une base de données MySQL entièrement managée et de classe Entreprise, appuyée par une communauté active, en tant que service pour le développement et le déploiement d’applications. | La tarification est basée sur les exigences de sauvegarde, de stockage et de calcul. [Plus d’informations](https://azure.microsoft.com/pricing/details/mysql)
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Voici ce dont Contoso a besoin pour exécuter ce scénario.
 

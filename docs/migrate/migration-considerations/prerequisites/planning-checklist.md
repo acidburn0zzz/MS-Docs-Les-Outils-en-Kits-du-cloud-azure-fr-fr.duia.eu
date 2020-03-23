@@ -1,24 +1,24 @@
 ---
 title: Check-list de planification de l’environnement de migration
-description: Valider la préparation de l’environnement avant la migration
+description: Utilisez la check-list de planification de l’environnement de migration pour valider l’état de préparation de l’environnement avant la migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: c428edaa37924b7e72bb0b9b86537d6cce5b241b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222241"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311980"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Check-list de planification de l’environnement de migration : valider la préparation de l’environnement avant la migration
 
 En première étape du processus de migration, vous devez créer l’environnement approprié dans le cloud pour recevoir, héberger et prendre en charge la migration des ressources. Cet article fournit une liste des éléments à valider dans l’environnement actuel avant la migration.
 
-La check-list suivante s’aligne sur les instructions fournies dans la [section Prêt](../../../ready/index.md) de Cloud Adoption Framework. Consultez cette section pour obtenir des instructions concernant l’exécution des éléments suivants.
+La check-list suivante s’aligne sur les instructions fournies dans la [section Prêt](../../../ready/index.md) du Framework d’adoption du cloud. Consultez cette section pour obtenir des instructions concernant l’exécution des éléments suivants.
 
 ## <a name="effort-type-assumption"></a>Hypothèse relative au type d’effort
 

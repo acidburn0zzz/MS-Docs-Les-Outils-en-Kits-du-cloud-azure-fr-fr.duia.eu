@@ -1,6 +1,6 @@
 ---
-title: Réhéberger une application locale en migrant vers des machines virtuelles Azure et Azure SQL Database Managed Instance
-description: Découvrez comment Contoso réhéberge une application locale sur des machines virtuelles Azure et Azure SQL Database Managed Instance.
+title: Réhéberger sur Azure et Azure SQL Database Managed Instance
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à réhéberger une application locale sur des machines virtuelles Azure à l’aide d’Azure SQL Database Managed Instance.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223074"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311963"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>réhéberger une application locale sur une machine virtuelle Azure et SQL Database Managed Instance
 

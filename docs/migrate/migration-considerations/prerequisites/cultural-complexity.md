@@ -1,18 +1,18 @@
 ---
-title: 'Se préparer à la complexité culturelle : alignement des rôles et des responsabilités'
-description: Préparez-vous à la complexité culturelle en alignant les rôles et les responsabilités.
+title: 'Complexité culturelle : alignement des rôles et des responsabilités'
+description: Utilisez le Cloud Adoption Framework pour Azure dans le but d’anticiper la complexité culturelle en alignant les rôles et les responsabilités et de favoriser la clarté durant le processus de migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 56956443bc681cc0c7e00ea13babb55a26280192
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801492"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311793"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Se préparer à la complexité culturelle : alignement des rôles et des responsabilités
 

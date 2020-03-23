@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709360"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508115"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Amélioration de la discipline Base de référence des identités
 
@@ -119,7 +119,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 **Activités potentielles :**
 
 - Effectuez des audits périodiques des stratégies d’identité et des pratiques d’adhésion.
-- Veillez à ce que l’authentification multifacteur et la détection de connexion anormale soient toujours activées pour les comptes d’utilisateur sensibles (PDG, directeur financier, vice-président, etc.).
+- Veillez à ce que l’authentification multifacteur et la détection de connexion anormale soient toujours activées pour les comptes d’utilisateur sensibles (comme les comptes des cadres de l’entreprise).
 - Recherchez régulièrement des acteurs malveillants et des violations de données, en particulier en lien à des fraudes en matière d’identité, telles que des prises de contrôle éventuelles de comptes d’administrateur.
 - Configurez un outil de surveillance et de génération de rapports.
 - Envisagez une intégration plus étroite avec les systèmes de sécurité et de prévention des fraudes.

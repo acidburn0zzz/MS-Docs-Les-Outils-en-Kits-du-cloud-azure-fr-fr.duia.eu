@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 00dfa6c1caed189d9d9b1d27525344b5101c2af0
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 65e2331dca7756306c875dae092faaaf41030765
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898119"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508336"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
@@ -174,7 +174,7 @@ Répondre à la complexité globale pendant l’optimisation et la promotion peu
 
 **Optimisation pré-test :** Les tests d’automatisation initiaux peuvent identifier les opportunités d’optimisation potentielles, comme avec tout effort de migration. Dans le cas de charges de travail globales, il est important de tester la charge de travail dans chaque région de façon indépendante, car des modifications mineures de la configuration du réseau ou du centre de données Azure cible peuvent affecter les performances.
 
-**Plan de changements dans l’entreprise :** Pour les scénarios de migration complexes, vous devez créer un plan de changements dans l’entreprise pour communiquer clairement sur les changements effectués dans les processus métier, les expériences utilisateur et sur la chronologie des efforts nécessaires pour intégrer les changements. Dans le cas d’efforts de migration globaux, le plan doit inclure des considérations pour les utilisateurs finaux dans chaque zone géographique affectée.
+**Plan de changements dans l’entreprise :** Pour les scénarios de migration complexes, vous devez créer un plan de changements dans l’entreprise pour communiquer clairement sur les changements effectués dans les processus métier, les expériences utilisateur et sur la chronologie des efforts nécessaires pour intégrer les changements. Dans le cas d’efforts de migration globaux, le plan doit inclure des considérations pour les utilisateurs finaux dans chaque zone géographique affectée.
 
 **Tests en entreprise :** Conjointement au plan de changements dans l’entreprise, des tests d’entreprise peuvent être nécessaires dans chaque région pour garantir les performances et le respect des modèles de routage réseau modifiés.
 

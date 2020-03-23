@@ -1,18 +1,18 @@
 ---
-title: 'Engagement commercial : Gestion et opérations du cloud'
-description: 'Engagement commercial : Gestion et opérations du cloud'
+title: Engagement commercial dans la gestion cloud
+description: Calculez les retours futurs de la classification et l’impact des interruptions sur différentes charges de travail afin de prendre des décisions et des engagements métier plus éclairés.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4827ca2aac045b105beed9c15de366311092a7f2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807850"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312704"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Engagement commercial dans la gestion cloud
 

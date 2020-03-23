@@ -1,6 +1,6 @@
 ---
 title: Mécanismes de contrôle des coûts axés sur la migration
-description: Découvrez comment configurer les budgets et les paiements, et comprenez les factures pour vos ressources Azure.
+description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir comment configurer les budgets et les paiements, et comprendre le fonctionnement de la facturation de vos ressources Azure.
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b220929fd6348909b8f06f7a537e1052c459d24d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222653"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312116"
 ---
+<!-- cSpell:ignore bandersmsft -->
+
 # <a name="migration-focused-cost-control-mechanisms"></a>Mécanismes de contrôle des coûts axés sur la migration
 
 Le cloud introduit quelques changements dans la façon dont nous travaillons, quel que soit notre rôle dans l’équipe technologique. Le coût est un excellent exemple de cette évolution. Dans le passé, seuls les responsables financiers et informatiques étaient concernés par le coût des ressources informatiques (infrastructure, applications et données). Le cloud permet à tous les membres de l’équipe informatique de prendre des décisions qui améliorent le support de l’utilisateur final et d’agir en conséquence. Toutefois, ce pouvoir s’accompagne de la responsabilité d’être conscient des coûts lors de la prise de décision.
@@ -45,7 +47,7 @@ Pour les calculs de coûts manuels, il existe deux calculatrices pratiques qui p
 - La [calculatrice de tarification](https://azure.microsoft.com/pricing/calculator) Azure fournit des estimations de coûts qui s’appuient sur les produits Azure entrés manuellement.
 - Parfois, les décisions requièrent une comparaison des coûts futurs du cloud et des coûts locaux actuels. La [calculatrice du coût total de possession (TCO)](https://azure.microsoft.com/pricing/tco/calculator) peut fournir cette comparaison.
 
-Ces calculatrices de coûts manuels peuvent être utilisées de manière autonome pour prévoir les dépenses et les économies potentielles. Elles peuvent également être utilisées conjointement avec les outils de prévision des coûts d’Azure Migrate pour ajuster les attentes en matière de coûts selon les architectures alternatives ou les contraintes de niveaux de performance.
+Ces calculatrices de coûts manuels peuvent être utilisées de manière autonome pour prévoir les dépenses et les économies potentielles. Vous pouvez également les utiliser conjointement avec les outils de prévision des coûts d’Azure Migrate pour ajuster les attentes en matière de coûts selon les architectures alternatives ou les contraintes de niveaux de performance.
 
 ## <a name="azure-migrate-calculations"></a>Calculs d’Azure Migrate
 
@@ -70,7 +72,7 @@ L’estimation obtenue, illustrée ci-dessous, identifie les coûts mensuels du 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
 - [Configurer et passer en revue une évaluation avec Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Pour un plan plus complet relatif à la gestion des coûts sur un grand nombre de ressources (infrastructure, applications et données), consultez le [modèle de gouvernance de Cloud Adoption Framework](../../govern/guides/index.md). En particulier, des conseils sur la [discipline de Cost Management](../../govern/cost-management/index.md) et l’[amélioration de Cost Management dans le guide de gouvernance pour les entreprises complexes](../../govern/guides/complex/cost-management-improvement.md).
+- Pour un plan plus complet relatif à la gestion des coûts sur un grand nombre de ressources (infrastructure, applications et données), consultez le [modèle de gouvernance du Framework d’adoption du cloud](../../govern/guides/index.md). En particulier, des conseils sur la [discipline de Cost Management](../../govern/cost-management/index.md) et l’[amélioration de Cost Management dans le guide de gouvernance pour les entreprises complexes](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[Estimer et optimiser les coûts des machines virtuelles pendant et après la migration](#tab/EstimateOptimize)
 
@@ -113,7 +115,7 @@ Outre les outils mentionnés dans cet article, il existe des astuces et conseils
 
 ## <a name="avoid-unnecessary-spending"></a>Éviter les dépenses inutiles
 
-La plupart des ressources (infrastructure, applications et données) dans un centre de données existant peuvent théoriquement être migrées vers le cloud. Toutefois, cela ne signifie pas qu’elles devraient l’être. Pendant l’évaluation de chaque charge de travail, vérifiez que la charge de travail doit être migrée. L’article Cloud Adoption Framework sur la [rationalisation incrémentielle](../../digital-estate/rationalize.md) peut aider à déterminer les ressources qui doivent être migrées.
+La plupart des ressources (infrastructure, applications et données) dans un centre de données existant peuvent théoriquement être migrées vers le cloud. Toutefois, cela ne signifie pas qu’elles devraient l’être. Pendant l’évaluation de chaque charge de travail, vérifiez que la charge de travail doit être migrée. L’article du Framework d’adoption du cloud sur la [rationalisation incrémentielle](../../digital-estate/rationalize.md) peut aider à déterminer les ressources qui doivent être migrées.
 
 ## <a name="reduce-waste"></a>Réduire le gaspillage
 

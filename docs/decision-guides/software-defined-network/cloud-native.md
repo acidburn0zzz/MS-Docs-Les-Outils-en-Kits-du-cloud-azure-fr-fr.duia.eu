@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 250f78bb0287e30615aee4b2cfb1234823197f56
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e0903b816dbbdf6d227870d8bae99fd585d1734e
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222670"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140318"
 ---
 # <a name="software-defined-networking-cloud-native"></a>SDN (Software Defined Network) : Cloud natif
 
 Un réseau virtuel cloud natif est indispensable quand il s’agit de déployer des ressources IaaS, comme des machines virtuelles, sur une plateforme cloud. L’accès à des réseaux virtuels à partir de sources externes, similaires au web, nécessite un approvisionnement explicite. Ces types de réseaux virtuels prennent en charge la création de sous-réseaux, de règles d’acheminement, de pare-feu virtuels et de dispositifs de gestion du trafic.
 
-Un réseau virtuel cloud natif ne dépend pas de ressources locales ou d’autres ressources non cloud de votre organisation pour prendre en charge les charges de travail hébergées dans le cloud. Toutes les ressources requises sont approvisionnées soit dans le réseau virtuel, soit à l’aide d’offres PaaS gérées.
+Un réseau virtuel natif dans le cloud ne dépend pas de ressources locales ou d’autres ressources non-cloud de votre organisation pour prendre en charge les charges de travail hébergées dans le cloud. Toutes les ressources requises sont approvisionnées soit dans le réseau virtuel, soit à l’aide d’offres PaaS gérées.
 
 ## <a name="cloud-native-assumptions"></a>Conditions nécessaires pour le cloud natif
 

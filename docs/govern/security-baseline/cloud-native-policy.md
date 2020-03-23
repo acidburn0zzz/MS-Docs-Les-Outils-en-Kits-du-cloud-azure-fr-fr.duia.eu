@@ -8,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ce5b1a77396479b2621afab5cac025b983f14469
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 121e2a04eee6f9f977f4bb826fcb7ff712794cd3
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223735"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508047"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Stratégie cloud native Base de référence de la sécurité
 
-La discipline [Base de référence de la sécurité](./index.md) est l’une des [cinq disciplines de la gouvernance cloud](../governance-disciplines.md). Elle se concentre sur les sujets généraux liés à la sécurité, comme la protection du réseau, les ressources numériques, les données, etc. Comme indiqué dans le [Guide de révision des stratégies](../policy-compliance/cloud-policy-review.md), Cloud Adoption Framework comprend trois niveaux d’exemples de stratégies : cloud native, d’entreprise et conforme au principe de conception cloud pour chacune des disciplines. Cet article traite de l’exemple de stratégie Native Cloud pour la discipline Base de référence de la sécurité.
+La discipline [Base de référence de la sécurité](./index.md) est l’une des [cinq disciplines de la gouvernance cloud](../governance-disciplines.md). Elle se concentre sur les sujets généraux liés à la sécurité, comme la protection du réseau, les ressources numériques et les données. Comme indiqué dans le [Guide de révision des stratégies](../policy-compliance/cloud-policy-review.md), le Framework d’adoption du cloud comprend trois niveaux d’exemples de stratégies : cloud native, d’entreprise et conforme au principe de conception cloud pour chacune des disciplines. Cet article traite de l’exemple de stratégie Native Cloud pour la discipline Base de référence de la sécurité.
 
 > [!NOTE]
 > Microsoft n'est pas en position d'imposer une stratégie d'entreprise ou une stratégie informatique. Cet article vous aide à vous préparer à une révision de stratégie interne. Il est supposé que cet exemple de stratégie sera étendu, validé et testé sur votre stratégie d'entreprise avant toute tentative d'utilisation. Il est déconseillé d’utiliser cet exemple de stratégie en l’état.

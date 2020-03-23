@@ -1,18 +1,18 @@
 ---
-title: Planification des prérequis pour les services de gestion de serveur Azure
-description: Outils et planification des prérequis pour les services de gestion de serveur Azure
+title: Planification des services de gestion de serveur Azure
+description: Découvrez les outils et préparez les ressources nécessaires pour gérer les services de gestion de serveur Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 934263f5c143d021ce97125f025f96d8ae6f338f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807969"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312780"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Phase 1 : Planification des prérequis pour les services de gestion de serveur Azure
 
@@ -97,7 +97,7 @@ Pour créer un espace de travail Log Analytics à l’aide du portail Azure, con
 > [!NOTE]
 > Lorsque vous créez un compte Automation à l’aide du portail Azure, par défaut, le portail tente de créer des comptes d’identification pour Azure Resource Manager et les ressources du modèle de déploiement Classic. Si vous n’avez pas de machines virtuelles classiques dans votre environnement et que vous n’êtes pas coadministrateur de l’abonnement, le portail crée un compte d’identification pour Resource Manager, mais génère une erreur lors du déploiement du compte d’identification Classic. Si vous n’envisagez pas de prendre en charge les ressources classiques, vous pouvez ignorer cette erreur.
 >
-> Vous pouvez également créer des comptes d’identification à l’aide de [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell).
+> Vous pouvez également créer des comptes d’identification à l’aide de [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

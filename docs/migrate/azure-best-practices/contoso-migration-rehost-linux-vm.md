@@ -1,6 +1,6 @@
 ---
-title: réhéberger une application Linux locale sur des machines virtuelles Azure
-description: Découvrez comment Contoso réhéberge une application Linux locale en la migrant vers des machines virtuelles Azure.
+title: Réhéberger une application Linux locale sur des machines virtuelles Azure
+description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à réhéberger une application Linux locale en la migrant vers des machines virtuelles Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 12d69eee9fa52d6c7aef4b7b71b654808928ace4
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b44a5d9c8e0447488abd500afeaa70fb87a819b1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222987"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311946"
 ---
 <!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
 

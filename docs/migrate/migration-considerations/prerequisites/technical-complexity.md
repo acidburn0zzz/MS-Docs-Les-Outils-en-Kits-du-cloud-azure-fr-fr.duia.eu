@@ -1,19 +1,21 @@
 ---
-title: 'Se préparer à la complexité technique : gestion agile des changements'
-description: Préparation de la complexité technique – gestion agile des changements
+title: Se préparer à la complexité de la gestion agile des changements
+description: Utilisez le Cloud Adoption Framework pour Azure afin de préparer les architectes du cloud à participer à une conversation avec les gestionnaires de projet dans le but d’expliquer le concept de la gestion des changements.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 73cbd084e79589de68e359ad4dc88b639d92f9df
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801339"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311827"
 ---
+<!-- cSpell:ignore ITSM TOGAF -->
+
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Se préparer à la complexité technique : gestion agile des changements
 
 Lorsque l’ensemble d’un centre de données peut être mis hors service et recréé avec une seule ligne de code, les processus traditionnels éprouvent des difficultés à suivre le rythme. Les conseils fournis dans le cadre du Framework d’adoption du cloud s’appuient sur des pratiques telles que la gestion des services informatiques (ITSM), l’Open Group Architecture Framework (TOGAF) et d’autres. Toutefois, pour garantir l’agilité et la réactivité aux changements opérationnels, cette infrastructure façonnent ces pratiques de manière à s’adapter aux méthodologies agiles et aux approches DevOps.

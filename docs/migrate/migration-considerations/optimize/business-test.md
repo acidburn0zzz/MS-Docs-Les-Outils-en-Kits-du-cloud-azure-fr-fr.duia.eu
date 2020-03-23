@@ -1,18 +1,18 @@
 ---
-title: Conseils pour les tests d’entreprise (UAT) pendant la migration
-description: Un processus au sein d’une migration cloud qui se concentre sur les tâches de migration des charges de travail vers le cloud.
+title: Conseils pour les tests d’entreprise pendant la migration
+description: Découvrez comment utiliser des tests d’entreprise pour vérifier que les performances d’une solution sont conformes aux attentes et n’entravent pas les processus métier.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c24ae176d3b8fc8ec4fa504ed406bc32a1c0ab3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 675eda4aeb2109c21c2e3f47a100a985fd6e2861
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801951"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311750"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>Conseils pour les tests d’entreprise (UAT) pendant la migration
 
