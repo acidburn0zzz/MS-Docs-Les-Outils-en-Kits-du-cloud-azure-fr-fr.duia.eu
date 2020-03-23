@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2c9b932bd1a9500b7308fa24be65a12e46221a99
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 1727bb9c77298663f30e6205a9a3230ce65be3c1
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228588"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069749"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -32,7 +32,7 @@ Avant d’utiliser le blueprint de zone d’atterrissage de migration Cloud Adop
 
 La zone d’atterrissage initiale est associée aux hypothèses ou contraintes suivantes. Si ces hypothèses s’alignent sur vos contraintes, vous pouvez utiliser le blueprint pour créer votre première zone d’accueil. Le blueprint peut également être étendu pour créer un blueprint de zone d’accueil qui réponde à vos contraintes uniques.
 
-- **Limites d’abonnement :** Cet effort d’adoption ne doit pas dépasser les [limites d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits). Deux indicateurs courants sont un excès de 25 000 machines virtuelles ou 10 000 processeurs virtuels.
+- **Limites d’abonnement :** Cet effort d’adoption ne doit pas dépasser les [limites d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Conformité :** Aucune exigence de tiers en matière de conformité n’est nécessaire dans cette zone d’accueil.
 - **Complexité architecturale :** La complexité architecturale ne nécessite pas d’abonnements de production supplémentaires.
 - **Services partagés :** Aucun des services partagés existants dans Azure ne nécessite que cet abonnement soit traité comme un spoke dans une architecture hub and spoke.
