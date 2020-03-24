@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b7a6081f37899f11716eca07b7e6a371bcefcc94
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: a27ef0d432fc0aad64211e9b2228d4f82387f854
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337892"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069808"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Une métrique encore plus précieuse est le nombre de tableaux de bord créés �
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois les métriques d’apprentissage alignées, vous pouvez commencer à [évaluer le patrimoine numérique](../digital-estate/index.md) par rapport à ces métriques. Le résultat est constitué d’un [backlog de transformation ou d’un backlog de migration](../migrate/migration-considerations/prerequisites/technical-complexity.md).
+Une fois les métriques d’apprentissage alignées, vous êtes prêt à commencer à [effectuer une analyse de rentabilisation](cloud-migration-business-case.md) à délivrer par rapport à ces métriques. 
 
 > [!div class="nextstepaction"]
-> [Évaluer le patrimoine numérique](../digital-estate/index.md)
+> [Effectuer l’analyse de rentabilisation du cloud](cloud-migration-business-case.md)
