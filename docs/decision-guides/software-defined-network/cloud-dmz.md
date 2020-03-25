@@ -2,18 +2,18 @@
 title: 'SDN (Software Defined Network) : Zone DMZ cloud'
 description: Découvrez l’architecture de réseau DMZ cloud, qui autorise un accès limité entre vos réseaux locaux et ceux basés sur le cloud moyennant l’utilisation d’un réseau privé virtuel.
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ca545c662f7249b8afeb1c750f6b07bd274c1c02
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc9963118d8f69fd78f9cf5d84f5c140c200aec5
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708612"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225851"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>SDN (Software Defined Network) : Zone DMZ cloud
 

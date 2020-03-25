@@ -2,18 +2,18 @@
 title: 'SDN (Software Defined Network) : Cloud natif'
 description: Utilisez Cloud Adoption Framework pour Azure afin de découvrir les réseaux virtuels cloud natifs, qui sont indispensables pour déployer des machines virtuelles dans le cloud.
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e0903b816dbbdf6d227870d8bae99fd585d1734e
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 5fc722b46c860fff1880d864604993bf02c05447
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140318"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225751"
 ---
 # <a name="software-defined-networking-cloud-native"></a>SDN (Software Defined Network) : Cloud natif
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 28762d3540124b40bd3db4d7bd431033a1c25b5f
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 2b255d85b8df33f712238d0457a0e78a5481801d
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337973"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225715"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Créer une justification professionnelle pour la migration vers le cloud
 
@@ -68,7 +68,7 @@ Nous pouvons décomposer cette équation afin d’obtenir une vue spécifique à
 
 ## <a name="migration-specific-initial-investment"></a>Investissement initial pour la migration
 
-- Les fournisseurs de cloud comme Azure proposent des outils de calcul pour estimer le montant des investissements dans le cloud. La [calculatrice de prix Azure](https://azure.microsoft.com/pricing) en est un exemple.
+- Les fournisseurs de cloud comme Azure proposent des outils de calcul pour estimer le montant des investissements dans le cloud. La [calculatrice de prix Azure](https://azure.com/calculator) en est un exemple.
 - Certains fournisseurs de cloud proposent également des calculatrices du delta des coûts. La [calculatrice du TCO (coût total de possession) Azure](https://azure.com/tco) en est un exemple.
 - Pour des structures de coûts plus détaillées, effectuez plutôt une [planification du patrimoine numérique](../digital-estate/index.md).
 - Estimez le coût de la migration.
