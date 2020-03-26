@@ -1140,6 +1140,8 @@ items:
                 href: manage/monitor/alerting.md
               - name: Vue d’ensemble des plateformes de supervision
                 href: manage/monitor/platform-overview.md
+              - name: Compétences relatives à la surveillance
+                href: manage/monitor/suggested-skills.md
           - name: Centraliser les opérations de gestion
             href: manage/centralize-operations.md
           - name: Mettre en place un examen de santé opérationnel
