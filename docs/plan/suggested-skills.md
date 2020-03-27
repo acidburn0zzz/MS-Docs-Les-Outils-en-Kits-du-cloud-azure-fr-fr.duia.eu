@@ -3,16 +3,16 @@ title: Bien démarrer la préparation des compétences
 description: Grâce à la préparation des compétences, menez à bien l’adoption des services cloud en aidant l’organisation à comprendre et à assimiler les changements associés.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 29c4f2aac24c80fcec877e5645dbe61363af5983
+ms.sourcegitcommit: a1209c9dab369171e1fe0cdc6a58e3f6ae6a8f22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892682"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80261468"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Prise en main d’un chemin d’accès à la préparation des qualifications
 
@@ -34,6 +34,7 @@ Le Cloud Adoption Framework guide les lecteurs tout au long du cycle de vie d’
 - **Opérer :** Les qualifications en rapport avec le modèle d’exploitation pour l’adoption du cloud sont alignées sur différentes opportunités permettant d’acquérir des qualifications :
   - **Gouverner** : Bénéficiez des qualifications nécessaires pour régir l’environnement cloud.
   - **Gestion** Bénéficiez des qualifications nécessaires pour régir l’environnement cloud.
+  - **[Superviser](../manage/monitor/suggested-skills.md) :** Bénéficiez des qualifications nécessaires pour superviser un environnement cloud.
 
 Chacun des parcours d’apprentissage précédents partage des opportunités sur plusieurs types de médias pour optimiser l’acquisition de connaissances.
 

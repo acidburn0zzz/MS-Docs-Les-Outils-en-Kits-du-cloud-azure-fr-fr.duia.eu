@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341978"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225800"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Rester informé sur Microsoft Azure
 
@@ -51,11 +51,15 @@ Les ressources suivantes peuvent vous aider à rester à jour sur Azure :
 
 Pour avoir des informations plus complètes qui expliquent comment rester à jour sur Azure, consultez les ressources répertoriées ici :
 
-- [Azure Charts](https://azurecharts.com/)
-  - Cette visualisation non officielle affiche toutes les mises à jour Azure effectuées au cours des six derniers mois. Elle comprend d’autres graphiques et utilitaires utiles pour vous aider à suivre les modifications apportées à Azure.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Vidéos hebdomadaires dans lesquelles interviennent les ingénieurs qui développent Azure. Ils y présentent des démonstrations, répondent aux questions et partagent des informations.
   - Abonnez-vous via [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
-- [Azure Weekly](https://azureweekly.info)
-  - Ce bulletin d’informations est une ressource non officielle proposée par [endjin](https://endjin.com). Il comprend un résumé des principales informations de la semaine sur Microsoft Azure. Il comprend également un contenu historique intéressant.
+- [Azure Charts](https://azurecharts.com/)*
+  - Cette visualisation affiche toutes les mises à jour Azure effectuées au cours des six derniers mois. Elle comprend d’autres graphiques et utilitaires utiles pour vous aider à suivre les modifications apportées à Azure.
+- [AzAdvertizer](https://www.azadvertizer.net/)*
+  - Suivi des modifications et des versions sur les fonctionnalités de gouvernance Azure (par exemple, Azure Policy, initiatives de stratégie, alias de stratégie et RBAC).
+- [Azure Weekly](https://azureweekly.info)*
+  - Ce bulletin d’informations fourni par [endjin](https://endjin.com) comprend un résumé des principales actualités de la semaine sur Microsoft Azure. Il comprend également un contenu historique intéressant.
   - Abonnez-vous par [e-mail](https://azureweekly.info).
+
+\* *Ces ressources sont fournies par la communauté et ne sont pas officiellement gérées par Microsoft.*
