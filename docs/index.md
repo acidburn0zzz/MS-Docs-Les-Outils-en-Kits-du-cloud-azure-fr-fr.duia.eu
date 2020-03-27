@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 02/28/2020
-ms.openlocfilehash: 4a6bd2f6a14d4726695f76a776c01a421931005c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 7e98461d0cba205f05400d0ffd8b9ae64c0b69d5
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091985"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356861"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework d’adoption du cloud Microsoft pour Azure
 
@@ -182,6 +182,8 @@ Chaque section du Framework d’adoption du cloud représente une spécialisatio
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Utilisation du framework d’adoption du cloud Microsoft pour Azure
 
 Si votre entreprise commence juste à utiliser Azure, commencez par lire [Bien démarrer avec le Framework d’adoption du cloud](./getting-started/migrate.md). Cette vue d’ensemble fournit de bonnes pratiques sur la transformation numérique de votre entreprise, en vous guidant à chaque étape du processus.
+
+<!-- test:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
 > [Prise en main](./getting-started/migrate.md)
