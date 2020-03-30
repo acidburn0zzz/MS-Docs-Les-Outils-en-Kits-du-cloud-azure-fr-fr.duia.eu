@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e17ab7acd3813929fc05915908108b1cd634d5f0
-ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
+ms.openlocfilehash: 8b55a99194ef6032905c7495206adeb8fa72ebfb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80299053"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354479"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -43,8 +43,8 @@ Vous découvrirez comment effectuer les actions suivantes :
 > - **Gérer les accès :** utilisez le contrôle d’accès en fonction du rôle pour vous assurer que les utilisateurs disposent uniquement des autorisations dont ils ont vraiment besoin.
 > - **Gérer les coûts et la facturation :** déterminez le type de votre abonnement, comprenez le mode de facturation et découvrez comment contrôler vos coûts.
 > - **Planifier la gouvernance, la sécurité et la conformité** : appliquez et automatisez des stratégies et des paramètres de sécurité qui vous aident à respecter les obligations légales applicables.
-> - **Utiliser la supervision et les rapports :** bénéficiez d’une visibilité des ressources pour mieux identifier et résoudre les problèmes, optimiser les performances ou obtenir des insights sur le comportement des clients.
-> - **Rester informé sur Azure** : suivez les mises à jour de produits afin de pouvoir adopter une approche proactive de la gestion des changements.
+> - **Utiliser la supervision et les rapports :** bénéficiez d’une visibilité des ressources pour identifier et résoudre les problèmes, optimiser les performances ou obtenir des insights sur le comportement des clients.
+> - **Rester informé sur Azure** : suivez les mises à jour des produits afin de pouvoir adopter une approche proactive de la gestion des changements.
 
 ::: zone target="docs"
 

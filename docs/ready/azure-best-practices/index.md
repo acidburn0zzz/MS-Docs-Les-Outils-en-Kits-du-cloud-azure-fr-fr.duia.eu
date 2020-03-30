@@ -1,31 +1,32 @@
 ---
 title: Meilleures pratiques de préparation pour Azure
-description: Découvrez comment aider votre équipe à établir et à préparer votre environnement Azure au moyen de bonnes pratiques et autres conseils.
+description: Découvrez des bonnes pratiques et d’autres conseils pour aider votre équipe à établir et préparer votre environnement Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d44d3981824c9599151391cd3b7e3550ac31cd6
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aecef0bbbdc88b2f95d6a93efeb496cf2d787a45
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093567"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354644"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Meilleures pratiques de préparation pour Azure
 
-Une grande partie de la préparation à l’adoption du cloud consiste à fournir au personnel les compétences techniques nécessaires pour commencer un effort d’adoption du cloud et à préparer votre environnement cible de migration pour les ressources et les charges de travail que vous déplacerez vers le cloud. Lisez ces bonnes pratiques et autres conseils pour aider votre équipe à préparer votre environnement Azure.
+La préparation au cloud nécessite de donner au personnel les compétences techniques nécessaires pour commencer un travail d’adoption du cloud et pour préparer votre environnement cible de migration pour les ressources et les charges de travail que vous déplacerez dans le cloud. Lisez ces bonnes pratiques et autres conseils pour aider votre équipe à préparer votre environnement Azure.
 
 ## <a name="azure-fundamentals"></a>Fondamentaux Azure
 
 Organisez et déployez vos ressources dans l’environnement Azure.
 
 - [Concepts fondamentaux Azure](../considerations/fundamental-concepts.md). Découvrez les principaux concepts et termes relatifs à Azure, et la manière dont ces concepts sont liés les uns aux autres.
-- [Conventions de nommage et de catégorisation recommandées](../azure-best-practices/naming-and-tagging.md). Passez en revue les recommandations détaillées relatives au nommage et la catégorisation de vos ressources. Celles-ci sont conçues pour prendre en charge les efforts d’adoption du cloud en entreprise.
-- [Mise à l’échelle avec plusieurs abonnements Azure](../azure-best-practices/scaling-subscriptions.md). Apprenez-en davantage sur les stratégies de mise à l’échelle avec plusieurs abonnements Azure.
-- [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Découvrez comment les groupes d’administration Azure peuvent aider à gérer les ressources, les rôles, les stratégies et le déploiement parmi plusieurs abonnements.
+- [Créez vos abonnements initiaux](./initial-subscriptions.md). Établissez un ensemble initial d’abonnements Azure pour commencer votre adoption du cloud.
+- [Mettez à l’échelle votre environnement Azure avec plusieurs abonnements](../azure-best-practices/scale-subscriptions.md). Comprenez les raisons et les stratégies pour créer des abonnements supplémentaires afin de mettre à l’échelle votre environnement Azure.
+- [Organiser vos ressources avec des groupes d’administration Azure](../azure-best-practices/organize-subscriptions.md). Découvrez comment les groupes d’administration Azure peuvent aider à gérer les ressources, les rôles, les stratégies et le déploiement parmi plusieurs abonnements.
+- [Suivez les conventions de nommage et d’étiquetage recommandées](../azure-best-practices/naming-and-tagging.md). Passez en revue les recommandations détaillées relatives au nommage et la catégorisation de vos ressources. Celles-ci sont conçues pour prendre en charge les efforts d’adoption du cloud en entreprise.
 - [Créer une cohérence de cloud hybride](../considerations/hybrid-consistency.md). Créez des solutions cloud hybrides qui offrent les avantages de l’innovation du cloud tout en conservant la plupart des aspects pratiques de la gestion locale.
 
 ## <a name="networking"></a>Mise en réseau

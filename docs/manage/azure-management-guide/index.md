@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble de la gestion Azure
-description: Découvrez le Framework d’adoption du cloud pour Azure avec ces informations sur les outils de base nécessaires à la gestion des environnements de production Azure.
+description: Découvrez le Framework d’adoption du cloud pour Azure grâce à ces informations sur les outils de base nécessaires à la gestion des environnements de production Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,19 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 6e9b83784d2fdaaca7ae4a55ccd977d266b6193d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140284"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356488"
 ---
 ::: zone target="docs"
 
 # <a name="azure-management-guide-before-you-start"></a>Guide de gestion Azure : Avant de commencer
-
-> [!NOTE]
-> Ce guide est un point de départ pour les conseils d’innovation dans le Framework d’adoption du cloud. Il est également disponible dans le Centre de démarrage rapide Azure. Découvrez le conseil plus loin dans cet article pour obtenir un lien vers le Centre de démarrage rapide Azure.
 
 ::: zone-end
 
@@ -31,7 +28,7 @@ ms.locfileid: "79140284"
 
 ::: zone-end
 
-Le guide de gestion Azure aide les clients Azure à créer une base de référence de gestion afin d’établir une cohérence des ressources dans Azure. Ce guide décrit les outils de base requis pour tout environnement de production Azure, en particulier les environnements qui hébergent des données sensibles. Pour plus d’informations et pour découvrir les bonnes pratiques et les considérations liées à la préparation de votre environnement cloud, consultez la [section de préparation du Framework d’adoption du cloud](../index.md).
+Le guide de gestion Azure aide les clients Azure à créer une base de référence de gestion afin d’établir une cohérence des ressources dans Azure. Ce guide décrit les outils de base requis pour tout environnement de production Azure, en particulier les environnements qui hébergent des données sensibles. Pour plus d’informations et pour découvrir les bonnes pratiques et les considérations liées à la préparation de votre environnement cloud, consultez la [section de préparation](../index.md) du Framework d’adoption du cloud.
 
 ## <a name="scope-of-this-guide"></a>Portée de ce guide
 
@@ -51,9 +48,6 @@ Ce guide vous apprend à établir des outils pour une base de référence de ges
 Une base de référence de gestion est l’ensemble minimal d’outils et de processus qui doit être appliqué à chaque ressource d’un environnement. Plusieurs options supplémentaires peuvent être incluses dans la base de référence de gestion. Les prochains articles permettent d’accélérer les fonctionnalités de gestion cloud en se concentrant sur les options minimales nécessaires, et non pas sur toutes les options disponibles.
 
 ::: zone target="docs"
-
-> [!TIP]
-> Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [Centre de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure, puis sélectionnez **Azure Management Guide** (Guide de gestion Azure). puis suivez les instructions pas à pas.
 
 Étape suivante : [Inventaire et visibilité](./inventory.md).
 
