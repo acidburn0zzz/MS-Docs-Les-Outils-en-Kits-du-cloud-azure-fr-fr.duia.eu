@@ -3,16 +3,16 @@ title: Résultats métier des parcours de transformation
 description: Utilisez le Framework d’adoption du cloud pour Azure pour comprendre les résultats métier associés aux transformations du cloud.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 03/27/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 646ac9da914939a63b9bd4a5cb73ae2899263823
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092388"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392515"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Vous trouverez ci-dessous des résultats métier qui déclenchent généralement
 
 ## <a name="sample-outcomes-by-category"></a>Exemples de résultats par catégorie
 
-La plupart des employés techniques sont complètement étrangers aux résultats métier. Pour les aider, Microsoft met à disposition un ensemble d’exemples de résultats métier dans le [framework des résultats métier](../index.md). Utilisez ces exemples pour expliquer les résultats métier qui peuvent être obtenus après une transformation.
+La plupart des employés techniques sont complètement étrangers aux résultats métier. Pour en faciliter la traduction, nous organisons un ensemble d’exemples de résultats métier. Vous pouvez utiliser les exemples suivants pour expliquer et démontrer les résultats métier qui sont basés sur les transformations actuelles.
 
 Pour vous aider à trouver plus facilement des résultats métier, nous les avons répartis en catégories. Cette approche a tendance à générer des conversations de recherche de consensus entre les divisions.
 
