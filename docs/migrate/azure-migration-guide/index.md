@@ -4,17 +4,17 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour découv
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5c9c4b5477537cd71947e8ddbeff5a64eeb378c4
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: e0cb1779836edce3571a081ae44794aeb8bc06b8
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311878"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432981"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Guide de migration Azure : Avant de commencer
 
