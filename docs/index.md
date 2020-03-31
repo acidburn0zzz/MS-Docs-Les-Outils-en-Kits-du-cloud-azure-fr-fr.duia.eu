@@ -1,19 +1,20 @@
 ---
 title: Framework d’adoption du cloud Microsoft pour Azure
 description: Obtenez les outils, les conseils et les explications qui vous aideront à modeler les stratégies et à aboutir aux résultats métier souhaités dans toutes les phases du cycle de vie de l’adoption du cloud.
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 02/28/2020
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
 layout: LandingPage
-ms.topic: landing-page
-author: BrianBlanchard
-ms.date: 02/28/2020
-ms.openlocfilehash: 7e98461d0cba205f05400d0ffd8b9ae64c0b69d5
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: a2bfb5458355c1efecb1785504b1a5398a4f01b9
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356861"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425990"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework d’adoption du cloud Microsoft pour Azure
 
