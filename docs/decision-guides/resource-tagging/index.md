@@ -4,16 +4,16 @@ description: Découvrez les approches et options de nommage et d’étiquetage l
 author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2092d93a8a661495e98e1f6878616278d3fbfb66
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: cda5b1ee78dd3cf0a67fa6207835b52522e5405c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508064"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431429"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 

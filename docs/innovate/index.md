@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 4b596fc83cf3d0b9a951287e052215622f6ee6b2
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171121"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427421"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovation cloud dans le Framework d’adoption du cloud
 
@@ -126,7 +126,7 @@ Voici quelques exemples de parcours d’apprentissage spécifiques aux rôles su
 
 [Créer des applications serverless](https://docs.microsoft.com/learn/paths/create-serverless-applications) : Azure Functions permet de créer des systèmes de calcul à la demande basés sur les événements, qui peuvent être déclenchés par divers événements externes. Découvrez comment tirer parti des fonctions pour exécuter une logique côté serveur et créer des architectures serverless.
 
-Pour découvrir des parcours d’apprentissage supplémentaires, parcourez le [catalogue Learn](/learn/browse). Utilisez le filtre **Rôles** pour aligner les parcours d’apprentissage avec votre rôle.
+Pour découvrir des parcours d’apprentissage supplémentaires, parcourez le [catalogue Learn](https://docs.microsoft.com/learn/browse). Utilisez le filtre **Rôles** pour aligner les parcours d’apprentissage avec votre rôle.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

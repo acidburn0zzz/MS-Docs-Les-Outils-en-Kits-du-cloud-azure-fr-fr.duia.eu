@@ -4,15 +4,15 @@ description: Comprenez le plan normatif que fournit cette section du Framework d
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c6afdfe05a9245d729b17d1d56f3c64ffa6107bd
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: ae03aa1186aab3503f8d5397e5d397f0fa086b26
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341672"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426541"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Vue d’ensemble des services de gestion de serveurs Azure
 
