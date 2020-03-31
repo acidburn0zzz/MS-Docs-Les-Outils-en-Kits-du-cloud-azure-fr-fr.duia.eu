@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cb514ea2395deef91e6eca802de630ad77926823
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706912"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357096"
 ---
+<!-- cSpell:ignore CDO's CIO's -->
+
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Guide de gouvernance pour les entreprises complexes : Scénario de prise en charge
 
 Le scénario suivant établit un cas d’usage de la [gouvernance au cours du parcours d’adoption du cloud d’une grande entreprise complexe](./index.md). Avant de suivre les recommandations de ce guide, il est important de comprendre les hypothèses et le raisonnement qui sont reflétés dans ce scénario. Vous pouvez ensuite mieux aligner la stratégie de gouvernance au cheminement de votre propre organisation dans l’adoption du cloud.

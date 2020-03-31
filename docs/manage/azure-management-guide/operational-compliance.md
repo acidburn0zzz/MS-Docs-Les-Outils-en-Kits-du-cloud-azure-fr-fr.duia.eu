@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a76ca679b8c61e96b8bc8552b8ffbcaa0822e46a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 18c3c81fdd756e90e729387c7030c64e8a87a056
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094722"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356443"
 ---
 <!-- cSpell:ignore WSUS -->
 
@@ -60,8 +60,8 @@ Pour plus d'informations, consultez [Solution Gestion des mises à jour](https:/
 >
 > Il existe deux approches pour l’intégration :
 >
-> - [Machine virtuelle unique](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
-> - [Abonnement entier](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+> - [Machine virtuelle unique](../../manage/azure-server-management/onboard-single-vm.md)
+> - [Abonnement entier](../../manage/azure-server-management/onboard-at-scale.md)
 >
 > Vous devez suivre une de ces approches avant de procéder à la gestion des mises à jour.
 
@@ -69,7 +69,7 @@ Pour plus d'informations, consultez [Solution Gestion des mises à jour](https:/
 
 Pour appliquer une stratégie à un groupe de ressources :
 
-1. Accédez à [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Accédez à [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Sélectionnez **Comptes Automation**, puis choisissez un des comptes répertoriés.
 1. Sélectionnez **Gestion de la configuration**.
 1. L’**inventaire**, la **gestion des modifications** et la **configuration d’état** peuvent être utilisés pour contrôler l’état et la conformité opérationnelle des machines virtuelles gérées.
@@ -78,7 +78,7 @@ Pour appliquer une stratégie à un groupe de ressources :
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

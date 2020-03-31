@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 06e1bafa4a4a4c1ed88bb29d6787fec95fbd956b
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: ffe9e81eb0bdd2d3a859885d6b01bd61abd9f719
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170118"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355387"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Aligner les modèles de coûts sur le patrimoine numérique afin de prévoir les coûts liés au cloud
 
@@ -25,6 +25,6 @@ Les outils de tarifs Azure vous permettent de gérer vos dépenses cloud avec tr
 
 - [Outil de calcul du coût total de possession](https://azure.microsoft.com/pricing/tco/calculator) : Réduisez le coût total de possession de votre infrastructure locale avec la plateforme cloud Azure. Utilisez la calculatrice du coût total de possession Azure pour estimer les économies que vous pouvez réaliser en effectuant la migration de vos charges de travail d’application vers Azure. Entrez une brève description de votre environnement local pour obtenir un rapport instantanément.
 
-- [Calculatrice de prix Azure](https://azure.microsoft.com/pricing) : Estimez votre facture mensuelle à l’aide de notre calculatrice de prix. Suivez l’utilisation réelle de votre compte et consultez votre facture à tout moment dans le portail de facturation. Configurez des e-mails d’alerte automatiques pour être informé lorsque vos dépenses dépassent le montant que vous aviez configuré.
+- [Calculatrice de prix Azure](https://azure.microsoft.com/pricing/calculator) : Estimez votre facture mensuelle à l’aide de notre calculatrice de prix. Suivez l’utilisation réelle de votre compte et consultez votre facture à tout moment dans le portail de facturation. Configurez des e-mails d’alerte automatiques pour être informé lorsque vos dépenses dépassent le montant que vous aviez configuré.
 
 - [Azure Cost Management](https://azure.microsoft.com/services/cost-management) : Azure Cost Management, sous licence Cloudyn, filiale de Microsoft, est une solution de gestion des coûts multicloud qui vous permet d’utiliser et de gérer Azure et d’autres ressources cloud efficacement. Collectez les données sur la facturation et l’utilisation du cloud via les API Azure, Amazon Web Services et Google Cloud Platform. Avec ces données, vous bénéficiez d’une visibilité complète sur la consommation des ressources et sur les coûts de chaque plateforme cloud dans une seule et même vue. Supervisez en continu la consommation cloud ainsi que les tendances relatives aux coûts. Suivez les dépenses cloud réelles en les comparant à votre budget pour éviter les dépassements. Détectez les anomalies de dépense et les utilisations inefficaces. Utilisez les données d’historique pour améliorer la précision de vos prévisions concernant l’utilisation et les dépenses liées au cloud.

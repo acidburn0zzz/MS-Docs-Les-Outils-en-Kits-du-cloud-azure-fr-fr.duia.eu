@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 35cd68a317ae3c4d49c961d020d6e803f387741d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171308"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356868"
 ---
+<!-- cSpell:ignore njray nanra chargebacks IPLs -->
+
 # <a name="mainframe-myths-and-facts"></a>Mythes et réalités concernant les ordinateurs mainframe
 
 Les ordinateurs mainframe occupent une place importante dans l’histoire de l’informatique et restent viables pour des charges de travail très spécifiques. La plupart des gens s’accordent à dire que les ordinateurs mainframe constituent une plateforme éprouvée avec des procédures d’exploitation depuis longtemps établies qui en font des environnements robustes et fiables. Le logiciel s’exécute en fonction de l’utilisation, mesurée en MIPS (million d’instructions par seconde) et des rapports d’utilisation complets sont disponibles pour la rétrofacturation.

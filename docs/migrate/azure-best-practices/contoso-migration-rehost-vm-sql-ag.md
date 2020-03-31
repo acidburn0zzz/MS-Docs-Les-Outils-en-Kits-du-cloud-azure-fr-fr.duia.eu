@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bc530c3f97b26a519198ef7b9ddc1fce967fbed6
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 67b0db7d1f85ef38972df273c1fa722f426d208d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311538"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356214"
 ---
+<!-- cSpell:ignore NSGs WEBVM SQLVM contosoadmin contosohost contosodc contosovmsacc cswiz vcenter iisreset inetpub SQLAOG shaog sourcedb SQLAOGAVSET contosocloudwitness BEPOOL MSSQLSERVER alwayson -->
+
 # <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Réhéberger une application locale avec des machines virtuelles Azure et des groupes de disponibilité Always On SQL Server
 
 Cet article montre comment la société fictive Contoso rehéberge une application Windows .NET à deux niveaux qui s’exécute sur des machines virtuelles VMware dans le cadre d’une migration vers Azure. Contoso effectue une migration de la machine virtuelle frontale de l’application vers une machine virtuelle Azure et de la base de données de l’application vers une machine virtuelle Azure SQL Server s’exécutant dans un cluster de basculement Windows Server avec des groupes de disponibilité Always On SQL Server.

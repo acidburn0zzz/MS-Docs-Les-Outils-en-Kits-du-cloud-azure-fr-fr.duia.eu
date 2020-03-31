@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c4fa1d608f62497869c0498ba82cbdce649af1e2
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 43cec9da3a49bb755f6fa35c757f5e7aaf342db1
+ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092458"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80299127"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exemples de résultats de portée globale
 
@@ -30,7 +30,7 @@ Le développement sur un nouveau marché peut être l’un des résultats métie
 
 ## <a name="data-sovereignty"></a>Souveraineté des données
 
-Les opérations sur de nouveaux marchés introduisent des contraintes de gouvernance supplémentaires. Le RGPD est un exemple de critère de gouvernance qui peut entraîner un recours important à des investissements. Azure propose des offres de conformité qui aident les clients à répondre aux obligations de conformité dans les secteurs réglementés et les différents marchés mondiaux. Pour plus d’informations, consultez [Présentation de la conformité Microsoft Azure](https://aka.ms/AzureCompliance).
+Les opérations sur de nouveaux marchés introduisent des contraintes de gouvernance supplémentaires. Le RGPD est un exemple de critère de gouvernance qui peut entraîner un recours important à des investissements. Azure propose des offres de conformité qui aident les clients à répondre aux obligations de conformité dans les secteurs réglementés et les différents marchés mondiaux. Pour plus d’informations, consultez [Présentation de la conformité Microsoft Azure](https://azure.microsoft.com/overview/trusted-cloud/compliance/).
 
 - **Exemple :** Un fournisseur d’utilitaires basé aux États-Unis a reçu un contrat pour fournir des utilitaires au Canada. La Loi sur la souveraineté des données du Canada exige que les données canadiennes soient conservées au Canada. Cette société s’est déployée dans le cadre d’un effort d’innovation cloud pendant des années. Par conséquent, ses logiciels ont pu être déployés via des processus DevOps entièrement scriptés. Avec quelques modifications mineures apportées à la base de code, la société a pu déployer une copie de travail du code sur un centre de données Azure au Canada, en répondant à la souveraineté des données et en conservant le client.
 

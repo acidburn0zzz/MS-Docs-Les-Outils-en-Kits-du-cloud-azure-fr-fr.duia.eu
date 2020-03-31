@@ -1,6 +1,5 @@
 ---
 title: Développement et déploiement d’applications
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez comment utiliser Kubernetes dans le Cloud Adoption Framework pour le développement et l’architecture d’applications.
 author: sabbour
 ms.author: asabbour
@@ -8,13 +7,15 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 54d1af4e3f4c0669548638451544de9c6678481a
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 6ad36a6dfbce83b23bfcee382ff44daeb9db5f7f
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226703"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392764"
 ---
+<!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
+
 # <a name="application-development-and-deployment"></a>Développement et déploiement d’applications
 
 Examinez les modèles et les pratiques de développement d’applications, configurez les pipelines DevOps et implémentez les bonnes pratiques SRE (Site Reliability Engineering).
@@ -59,7 +60,7 @@ Lors de la préparation de l’application pour la production, vous devez implé
 > | Liste de contrôle  | Ressources                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Configurez des contrôles d’intégrité de préparation et d’activité.** Kubernetes utilise des contrôles de préparation et d’activité pour savoir quand votre application est prête à recevoir le trafic et quand elle doit être redémarrée. Si vous ne définissez pas ces contrôles, Kubernetes ne pourra pas déterminer si votre application est opérationnelle.   | [Liveness and readiness checks](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes) (Contrôles de préparation et d’activité) |
-> | **Configurez la journalisation, la supervision de l’application et les alertes.** La supervision de vos conteneurs est cruciale, particulièrement lorsque vous exécutez un cluster de production à grande échelle, avec plusieurs applications.  La méthode de journalisation recommandée pour les applications conteneurisées consiste à écrire dans les flux de sortie standard (stdout) et d’erreur standard (stderr).   | [Logging in Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/logging) (Journalisation dans Kubernetes) <br/> [Bien démarrer avec la supervision et les alertes pour Kubernetes (vidéo)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Azure Monitor pour conteneurs](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Activer et consulter les journaux d'activité du nœud principal Kubernetes dans Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/view-master-logs)  <br/> [Afficher les journaux, métriques de pod et événements Kubernetes en temps réel](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-livedata-overview) |
+> | **Configurez la journalisation, la supervision de l’application et les alertes.** La surveillance de vos conteneurs est cruciale, particulièrement lorsque vous exécutez un cluster de production à grande échelle, avec plusieurs applications.  La méthode de journalisation recommandée pour les applications conteneurisées consiste à écrire dans les flux de sortie standard (stdout) et d’erreur standard (stderr).   | [Logging in Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/logging) (Journalisation dans Kubernetes) <br/> [Bien démarrer avec la supervision et les alertes pour Kubernetes (vidéo)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Azure Monitor pour conteneurs](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Activer et consulter les journaux d'activité du nœud principal Kubernetes dans Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/view-master-logs)  <br/> [Afficher les journaux, métriques de pod et événements Kubernetes en temps réel](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-livedata-overview) |
 > | **Définissez les besoins en ressources pour l’application.** L’un des principaux moyens de gérer les ressources de calcul au sein d’un cluster Kubernetes consiste à utiliser des requêtes et des limites de pod. Ces requêtes et limites indiquent au planificateur Kubernetes quelles ressources de calcul attribuer à un pod.     | [Définir&nbsp;les&nbsp;requêtes&nbsp;et&nbsp;limites&nbsp;de ressources de pod](https://docs.microsoft.com/azure/aks/developer-best-practices-resource-management) |
 > | **Configurez les exigences de mise à l’échelle des applications.** Kubernetes prend en charge la mise à l’échelle horizontale automatique des pods pour ajuster le nombre de pods dans un déploiement en fonction de l’utilisation du processeur ou d’autres métriques. Pour que vous puissiez utiliser le programme de mise à l’échelle automatique, tous les conteneurs de vos pods doivent avoir des requêtes et limites de processeur définies.    | [Configurer le programme de mise à l’échelle automatique horizontale de pod](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale#autoscale-pods) |
 > | **Déployez des applications à l’aide de DevOps et d’un pipeline automatisé.**  L’automatisation complète de toutes les étapes entre la validation du code et le déploiement de production permet aux équipes de se concentrer sur la création du code, et élimine la surcharge et le risque d’erreur humaine lors des étapes banales et manuelles. Le déploiement de nouveau code est plus rapide et moins risqué, ce qui aide les équipes à devenir plus agiles, plus productives et plus confiantes quant à leur code en cours d’exécution.    | [Faire évoluer vos activités DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices) <br/> [Configuration d’un pipeline de build Kubernetes (vidéo)](https://www.youtube.com/watch?v=5irsAdKoEBU&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=6) <br/> [Centre de déploiement pour Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/deployment-center-launcher) <br/> [GitHub Actions pour un déploiement sur Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/kubernetes-action) <br/>  [CI/CD vers Azure Kubernetes Service avec Jenkins](https://docs.microsoft.com/azure/aks/jenkins-continuous-deployment) |

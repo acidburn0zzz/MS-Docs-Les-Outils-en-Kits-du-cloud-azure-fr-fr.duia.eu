@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7108f90ac19e5a566e068e3292d2fab8bd1b7e3d
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: e2eac3d49f38a8b15ed822e177afb224afa20270
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341723"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356435"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Spécialisation de la charge de travail pour la gestion cloud
 
@@ -79,7 +79,7 @@ Application Insights contient différents types d’options pour la surveillance
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/microsoft.insights%2Fcomponents]" submitText="Monitor applications" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Insights%2FComponents]" submitText="Monitor applications" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

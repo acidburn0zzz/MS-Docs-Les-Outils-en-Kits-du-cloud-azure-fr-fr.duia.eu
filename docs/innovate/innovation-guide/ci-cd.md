@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 748825e01646b687f49e66ccb975f866312c9310
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 6e0e0ddb2284a238274f9e5cc579e164a4378004
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171053"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356641"
 ---
 ::: zone target="docs"
 
@@ -87,7 +87,7 @@ Pour créer un projet DevOps :
 2. Sélectionnez **Créer un projet DevOps**.
 3. Sélectionnez **Runtime, framework et service**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Project" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

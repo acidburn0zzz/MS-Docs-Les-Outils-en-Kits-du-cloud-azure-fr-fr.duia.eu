@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0ff06bb935a55c45c12748903c83d976bcbb14e0
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 223d6bf040987b7266d284d9175b588d08806c9f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092337"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356515"
 ---
+<!-- cSpell:ignore ITSMC -->
+
 # <a name="enhanced-management-baseline-in-azure"></a>Base de référence de gestion améliorée dans Azure
 
 Les trois premières disciplines de gestion cloud décrivent une base de référence de gestion. Les articles précédents de ce guide ont décrit un produit viable minimal (MVP) pour les services de gestion cloud, appelé ligne de base de gestion. Cet article décrit quelques-unes des améliorations courantes apportées à la ligne de base.
@@ -74,7 +76,7 @@ L’unité de code de base pour fournir une correction automatisée est le runbo
 
 Pour créer ou gérer des runbooks :
 
-1. Accédez à [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Accédez à [Azure Automation](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Sélectionnez **Comptes Automation**, puis choisissez un des comptes répertoriés.
 1. Allez à **Automatisation de processus**.
 1. Les options présentées vous permettent de créer ou de gérer des runbooks, des planifications et d’autres fonctionnalités de correction automatisée.
@@ -83,7 +85,7 @@ Pour créer ou gérer des runbooks :
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

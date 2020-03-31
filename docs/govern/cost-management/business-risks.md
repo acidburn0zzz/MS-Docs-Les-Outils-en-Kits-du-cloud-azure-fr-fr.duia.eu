@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 544c425e94e9fa2cc4a687608f0dece80b3e9251
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 38fb0523b2c5915a351223fdb603dbb0cacbf602
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707881"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357144"
 ---
+<!-- cSpell:ignore prepurchases -->
+
 # <a name="cost-management-motivations-and-business-risks"></a>Risques métier et motivations associés à Gestion des coûts
 
 Cet article décrit les raisons pour lesquelles les clients adoptent une discipline Gestion des coûts au sein d’une stratégie de gouvernance cloud. Des exemples sur les risques métier conduisant à la rédaction d’instructions de stratégie sont également présentés.

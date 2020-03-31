@@ -4,15 +4,15 @@ description: Découvrez en quoi les zones d’atterrissage constituent les élé
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/20/2019
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c08efda381eeaf713f79393f2959127d8a96970b
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: b0e8aefdf265fdb1376135c8bc66e2798416dee2
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092535"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392682"
 ---
 # <a name="landing-zone-considerations"></a>Considérations relatives aux zones d’accueil
 

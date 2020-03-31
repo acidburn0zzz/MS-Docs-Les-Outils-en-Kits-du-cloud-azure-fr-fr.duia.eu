@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 86988a83b0c68bea60d0cceff5a168e2b2b08fd5
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 5fedbb5164da05b166d8a42d8d1ceaf43ee95185
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024058"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354446"
 ---
-<!-- cSpell:ignore LijuKodicheraJayadevan Fsubscriptions Fresource -->
+<!-- cSpell:ignore LijuKodicheraJayadevan -->
 
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Gérer l’accès à votre environnement Azure avec des contrôles d’accès en fonction du rôle
 
@@ -46,7 +46,7 @@ Pour accorder à un utilisateur l’accès à un groupe de ressources :
 1. Sélectionnez **+ Ajouter** > **Ajouter une attribution de rôle**.
 1. Sélectionnez un rôle, puis attribuez l’accès à un utilisateur, un groupe ou un principal de service.
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" ::: form-end
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources/Subscriptions/ResourceGroups]" submitText="Go to resource groups" ::: form-end
 
 **Accorder l’accès à un abonnement :**
 
@@ -68,7 +68,7 @@ Pour accorder à un utilisateur l’accès à un abonnement :
 
 Pour accorder à un utilisateur l’accès à un groupe de ressources :
 
-1. Accédez à [Groupes de ressources](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups).
+1. Accédez à [Groupes de ressources](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
 1. Sélectionnez un groupe de ressources.
 1. Sélectionnez **Contrôle d’accès (IAM)** .
 1. Sélectionnez **+ Ajouter** > **Ajouter une attribution de rôle**.

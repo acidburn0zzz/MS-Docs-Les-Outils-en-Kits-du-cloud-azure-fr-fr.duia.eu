@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3ba4cc99b210784c7503085234c25c1d9a0ae634
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fe1bed4da302041998ec09efd2224be3d94fe3aa
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79507996"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356724"
 ---
 # <a name="measure-for-customer-impact"></a>Mesure de l’impact sur le client
 
@@ -70,5 +70,7 @@ Ces types de regroupements vous aident à valider les métriques d’apprentissa
 
 > [!div class="nextstepaction"]
 > [Apprendre avec les clients](./learn.md)
+
+<!-- cSpell:ignore Ries -->
 
 Certains concepts de cet article s’appuient sur les sujets initialement abordés dans l’ouvrage [The Lean Startup](http://theleanstartup.com/book) d’Eric Ries.

@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d674cfe0378613530adb329ae21b9c379742e91
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 2de71f5a28da4b6ec7c876f26f929b3e0e6de425
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312082"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353836"
 ---
+<!-- cSpell:ignore architected ITIL -->
+
 # <a name="approve-architecture-changes-before-migration"></a>Approuver les changements de l’architecture avant la migration
 
 Pendant le processus d’évaluation de la migration, chaque charge de travail est évaluée, conçue et estimée pour développer un plan d’état futur pour la charge de travail. Certaines charges de travail peuvent être migrées vers le cloud sans aucune modification de l’architecture. Maintenir la configuration et l’architecture locales peut réduire les risques et rationaliser le processus de migration. Malheureusement, toutes les applications ne peuvent pas s’exécuter dans le cloud sans modification de l’architecture. Lorsque des changements d’architecture sont requis, cet article peut vous aider à classer la modification et fournir des conseils sur les activités d’approbation appropriées.

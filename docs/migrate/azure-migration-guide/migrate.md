@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312337"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353895"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -215,7 +215,7 @@ Plusieurs outils de migration tiers et services de fournisseur de logiciel indé
 
 UnifyCloud est un service ISV qui fournit des outils permettant d’automatiser l’évaluation, la migration et la modernisation.
 
-[En savoir plus](https://www.unifycloud.com/)
+[En savoir plus](https://www.unifycloud.com)
 
 ## <a name="cloudamize"></a>Cloudamize
 
@@ -278,7 +278,7 @@ Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation 
 
 Voici un exemple de parcours d’apprentissage personnalisé sur Microsoft Learn qui vient en complément des instructions de configuration pour DevOps dans le framework d’adoption du cloud.
 
-[Générer des applications avec Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) : Collaborez avec d’autres personnes pour créer vos applications en utilisant Azure Pipelines et GitHub. Exécutez des tests automatisés dans votre pipeline pour valider la qualité du code. Analysez votre code source et les composants tiers pour identifier les vulnérabilités potentielles. Définissez plusieurs pipelines qui fonctionnent ensemble pour créer votre application. Créez des applications en utilisant des agents hébergés par Microsoft et vos propres agents de build.
+[Générer des applications avec Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops) : Collaborez avec d’autres personnes pour créer vos applications en utilisant Azure Pipelines et GitHub. Exécutez des tests automatisés dans votre pipeline pour valider la qualité du code. Analysez votre code source et les composants tiers pour identifier les vulnérabilités potentielles. Définissez plusieurs pipelines qui fonctionnent ensemble pour créer votre application. Créez des applications en utilisant des agents hébergés par Microsoft et vos propres agents de build.
 
 # <a name="cost-management"></a>[Gestion des coûts](#tab/ManageCost)
 

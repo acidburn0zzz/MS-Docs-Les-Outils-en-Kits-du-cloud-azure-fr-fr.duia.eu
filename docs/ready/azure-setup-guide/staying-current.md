@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225800"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353808"
 ---
+<!-- cSpell:ignore jelledruyts andym endjin -->
+
 # <a name="stay-current-with-microsoft-azure"></a>Rester informé sur Microsoft Azure
 
 Les plateformes cloud telles que Microsoft Azure changent plus rapidement que ce à quoi de nombreuses organisations sont habituées. Ce rythme de changements signifie que les organisations doivent adapter leurs équipes et processus à un nouveau rythme. Si vous êtes chargé d’aider votre organisation à s’adapter au changement, vous pouvez parfois vous sentir débordé. Les ressources référencées dans cette section peuvent être utiles pour rester à jour.
@@ -54,9 +56,9 @@ Pour avoir des informations plus complètes qui expliquent comment rester à jou
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Vidéos hebdomadaires dans lesquelles interviennent les ingénieurs qui développent Azure. Ils y présentent des démonstrations, répondent aux questions et partagent des informations.
   - Abonnez-vous via [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
-- [Azure Charts](https://azurecharts.com/)*
+- [Azure Charts](https://azurecharts.com)*
   - Cette visualisation affiche toutes les mises à jour Azure effectuées au cours des six derniers mois. Elle comprend d’autres graphiques et utilitaires utiles pour vous aider à suivre les modifications apportées à Azure.
-- [AzAdvertizer](https://www.azadvertizer.net/)*
+- [AzAdvertizer](https://www.azadvertizer.net)*
   - Suivi des modifications et des versions sur les fonctionnalités de gouvernance Azure (par exemple, Azure Policy, initiatives de stratégie, alias de stratégie et RBAC).
 - [Azure Weekly](https://azureweekly.info)*
   - Ce bulletin d’informations fourni par [endjin](https://endjin.com) comprend un résumé des principales actualités de la semaine sur Microsoft Azure. Il comprend également un contenu historique intéressant.

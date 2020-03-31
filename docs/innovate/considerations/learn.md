@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a7b717b9a8d4e81ac6dc644e51593d89e6fc3089
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312756"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356705"
 ---
+<!-- cSpell:ignore Satya Nadella Ries -->
+
 # <a name="learn-with-customers"></a>Apprendre avec les clients
 
 Nos clients actuels sont notre meilleure ressource d’apprentissage. Leur partenariat nous aide à [développer en faisant preuve d’empathie vis-à-vis du client](./build.md) pour trouver la meilleure solution en fonction de leurs besoins. Ils permettent également de créer une solution de produit viable (MVP) minimale en générant des mesures à partir desquelles nous [mesurons l’impact sur les clients](./measure.md). Dans cet article, nous décrirons comment apprendre avec et à l’aide de nos clients partenaires.

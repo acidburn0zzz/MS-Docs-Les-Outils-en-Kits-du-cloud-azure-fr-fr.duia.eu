@@ -1,19 +1,18 @@
 ---
 title: Considérations relatives aux zones d’accueil Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Découvrez en quoi les zones d’accueil constituent les éléments constitutifs de tout environnement d’adoption du cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04293b0e0d30ae1eaa85f4c86c6c7d70b2cfac82
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 594f10968e45477895fcc5dcd1b2a95d16d7c861
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092977"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392650"
 ---
 # <a name="first-landing-zone"></a>Première zone d’accueil
 

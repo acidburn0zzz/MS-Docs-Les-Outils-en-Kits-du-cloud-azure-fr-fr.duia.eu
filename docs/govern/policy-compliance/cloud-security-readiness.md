@@ -7,13 +7,15 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ec888ba0c21187e71e825ff24aaadf068dc2a191
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: dc82f4d8ad21bcbb9d36b00fbdad1f91d6d4ec2c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709411"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356942"
 ---
+<!-- cSpell:ignore CISO -->
+
 # <a name="ciso-cloud-readiness-guide"></a>Guide de préparation au cloud pour un Chef de la sécurité des systèmes d’information
 
 Recommandations de Microsoft comme le fait que le Framework d’adoption du cloud n’est pas en mesure de déterminer ou de guider les contraintes de sécurité uniques des milliers d’entreprises prises en charge par cette documentation. Lors de la migration vers le cloud, le rôle du Responsable de la sécurité des systèmes d’information ou du Bureau de la sécurité des systèmes d’information (CISO) n’est pas supplanté par les technologies cloud. Bien au contraire, le Chef de la sécurité des systèmes d’information (CISO) et le bureau du CISO s’enracinent et s’intègrent davantage. Ce guide part du principe que le lecteur est familiarisé avec les processus CISO et qu’il cherche à moderniser ces processus pour permettre la transformation cloud.

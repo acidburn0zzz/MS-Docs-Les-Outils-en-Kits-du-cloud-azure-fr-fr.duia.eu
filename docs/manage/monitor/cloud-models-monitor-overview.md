@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5513187c65aebc7ae01825bdafa0f175f277c745
-ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
+ms.openlocfilehash: 7dc47021b2b4a3d9e697566332bf602d9166e712
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80069739"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356256"
 ---
+<!-- cSpell:ignore savision -->
+
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guide de supervision du cloud : Stratégie de supervision pour les modèles de déploiement cloud
 
 Cet article inclut notre stratégie de supervision recommandée pour chacun des modèles de déploiement cloud, en fonction des critères suivants :

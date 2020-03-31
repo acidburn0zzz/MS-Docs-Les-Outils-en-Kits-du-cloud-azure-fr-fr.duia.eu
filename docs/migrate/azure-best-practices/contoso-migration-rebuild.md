@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 45d5a27e6d7ba933c82bc41825e76cf8f7830767
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223089"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356354"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
 
@@ -293,7 +293,7 @@ Les administrateurs de Contoso doivent à présent procéder comme suit :
 - Déployer les microservices sur le cluster AKS.
 - Dans un premier temps, ils mettent à jour les chaînes de connexion en fonction des microservices à l’aide d’Azure DevOps. Ensuite, ils configurent un nouveau pipeline de mise en production Azure DevOps pour déployer les microservices.
 - Les instructions de cette section utilisent le référentiel [SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend).
-- Certains paramètres de configuration (par exemple Active Directory B2C) ne sont pas évoqués dans cet article. Pour plus d’informations sur ces paramètres, consultez le référentiel ci-dessus.
+- Certains paramètres de configuration (par exemple Active Directory B2C) ne sont pas évoqués dans cet article. Pour plus d’informations sur ces paramètres, consultez le référentiel ci-dessus.
 
 Ils créent le pipeline :
 
@@ -634,6 +634,6 @@ Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation 
 
 Voici quelques exemples de parcours d’apprentissage personnalisés sur Microsoft Learn en ligne avec l’application Contoso SmartHotel360 dans Azure.
 
-[Déployer un site web sur Azure avec Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/) : Web Apps dans Azure vous permet de publier et de gérer votre site web facilement sans avoir à utiliser les ressources réseau, stockage ou serveurs sous-jacents. Vous pouvez donc vous concentrer sur les fonctionnalités de votre site web et vous appuyer sur la plateforme Azure robuste pour fournir un accès sécurisé à votre site.
+[Déployer un site web sur Azure avec Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service) : Web Apps dans Azure vous permet de publier et de gérer votre site web facilement sans avoir à utiliser les ressources réseau, stockage ou serveurs sous-jacents. Vous pouvez donc vous concentrer sur les fonctionnalités de votre site web et vous appuyer sur la plateforme Azure robuste pour fournir un accès sécurisé à votre site.
 
-[Traitez et classifiez les images avec les services Azure Cognitive Vision](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/) : Azure Cognitive Services propose des fonctionnalités prédéfinies pour activer la vision par ordinateur dans vos applications. Découvrez comment utiliser les services Cognitive Vision pour détecter des visages, étiqueter et classifier des images, et identifier des objets.
+[Traitez et classifiez les images avec les services Azure Cognitive Vision](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services) : Azure Cognitive Services propose des fonctionnalités prédéfinies pour activer la vision par ordinateur dans vos applications. Découvrez comment utiliser les services Cognitive Vision pour détecter des visages, étiqueter et classifier des images, et identifier des objets.

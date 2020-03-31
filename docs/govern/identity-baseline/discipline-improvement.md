@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508115"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356995"
 ---
+<!-- cSpell:ignore offboarding preintegration -->
+
 # <a name="identity-baseline-discipline-improvement"></a>Amélioration de la discipline Base de référence des identités
 
 La discipline Base de référence des identités se concentre sur les manières d’établir des stratégies qui garantissent la cohérence et la continuité des identités utilisateurs, quel que soit le fournisseur de cloud hébergeant l’application ou la charge de travail. Dans les cinq disciplines de la gouvernance cloud, la Base de référence des identités inclut des décisions concernant la [stratégie d’identité hybride](../../decision-guides/identity/index.md), l’évaluation et l’extension de référentiels d’identités, l’implémentation de l’authentification unique (même authentification), l’audit et la surveillance des utilisations non autorisées ou des acteurs malveillants. Dans certains cas, elle peut également impliquer des décisions pour moderniser, consolider ou intégrer plusieurs fournisseurs d’identité.

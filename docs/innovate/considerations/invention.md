@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4ddc8c0e479aaf0feee928249919edf9899ce40f
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f9303adc183596f93c822224e5098549a533a153
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171189"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356732"
 ---
 # <a name="develop-digital-inventions"></a>Développer des inventions numériques
 
@@ -22,7 +22,7 @@ Comme décrit dans [Innovation dans l'économie numérique](./index.md), l'innov
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>Résumé de chaque discipline d’invention numérique
 
-Les disciplines suivantes ne sont pas *toutes* nécessaires pour stimuler l’innovation dans un cas donné. L’article [Développer en faisant preuve d’empathie vis-à-vis du client](./build.md), fournit des conseils pour tester une hypothèse à chaque itération. En définissant la sortie de chaque itération en tant que [produit viable minimal (MVP)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance#minimum-viable-product-mvp-for-policy), cela devrait vous permettre d’impliquer le moins de disciplines possible.
+Les disciplines suivantes ne sont pas *toutes* nécessaires pour stimuler l’innovation dans un cas donné. L’article [Développer en faisant preuve d’empathie vis-à-vis du client](./build.md), fournit des conseils pour tester une hypothèse à chaque itération. En définissant la sortie de chaque itération en tant que [produit viable minimal (MVP)](../../govern/policy-compliance/index.md), cela devrait vous permettre d’impliquer le moins de disciplines possible.
 
 - **[Démocratiser les données](./data.md) :** En mettant les données entre les mains des clients, des partenaires et des employés, vous encouragez l’observation innovante. Ingérez, centralisez, gouvernez et partagez les données.
 - **[Impliquer par le biais d’applications ](./apps.md):** Les utilisateurs accèdent à la connaissance par le biais d’applications et d’expériences. Donnez aux développeurs professionnels et citoyens les moyens de créer rapidement des applications.

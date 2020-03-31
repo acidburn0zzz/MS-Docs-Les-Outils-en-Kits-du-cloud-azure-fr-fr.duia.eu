@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 67ea91e503290c8fee37f3d36770fbbea1b336b4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312752"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356797"
 ---
 # <a name="build-with-customer-empathy"></a>Développer en faisant preuve d’empathie vis à vis du client
 
@@ -102,6 +102,8 @@ Quand l’empathie vis-à-vis du client est forte, il doit être facile d’iden
 De nombreuses exigences juridiques, de conformité et sectorielles peuvent nécessiter une autre approche. Si les versions publiques d’une solution en développement créent un risque en termes de calendrier des brevets, de protection de la propriété intellectuelle, de fuite de données client ou de violation des exigences de conformité établies, cette approche ne sera peut-être pas appropriée. Quand vous percevez l’existence de tels risques, consultez des conseillers juridiques avant d’adopter une quelconque approche guidée de la gestion des versions.
 
 ## <a name="references"></a>References
+
+<!-- cSpell:ignore Ries -->
 
 Certains concepts de cet article s’appuient sur les sujets abordés dans l’ouvrage [*The Lean Startup*](http://theleanstartup.com/book) (Eric Ries, Crown Business, 2011).
 
