@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce937c6e3c173d829a311b838e33ede754a0f173
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708799"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392480"
 ---
 # <a name="cost-management-template"></a>Modèle Gestion des coûts
 
@@ -24,11 +24,7 @@ La première étape de l’implémentation d’une modification consiste à comm
 > [!IMPORTANT]
 > Ce modèle est un exemple limité. Avant de mettre à jour ce modèle pour l’adapter à vos besoins, vous devez passer en revue les étapes suivantes pour définir une discipline Gestion des coûts efficace dans votre stratégie de gouvernance du cloud.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx">Télécharger le modèle de discipline de gouvernance</a>
-
-<!-- markdownlint-enable MD033 -->
+[Télécharger le modèle de discipline de gouvernance](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

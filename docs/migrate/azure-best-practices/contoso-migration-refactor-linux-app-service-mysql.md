@@ -7,13 +7,15 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 988d7524941b49821cd96546cc3adafe317dff8a
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311487"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356251"
 ---
+<!-- cSpell:ignore contosohost contosodc vcenter DBHOST DBUSER WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager CNAME -->
+
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refactoriser une application Linux vers plusieurs régions à l’aide d’Azure App Service, de Traffic Manager et d’Azure Database pour MySQL
 
 Cet article explique comment la société fictive Contoso refactorise une application Apache MySQL PHP (LAMP) à deux niveaux et basée sur Linux, en la migrant d’un emplacement local vers Azure à l’aide d’Azure App Service avec intégration de GitHub et Azure Database pour MySQL.
@@ -72,7 +74,7 @@ Voici l’architecture proposée :
 
 Contoso va effectuer le processus de migration comme suit :
 
-1. Dans un premier temps, les administrateurs de Contoso configurent l’infrastructure Azure, notamment l’approvisionnement d’Azure App Service, la configuration de Traffic Manager et l’approvisionnement d’une instance Azure Database pour MySQL.
+1. Dans un premier temps, les administrateurs de Contoso configurent l’infrastructure Azure, notamment le provisionnement d’Azure App Service, la configuration de Traffic Manager et le provisionnement d’une instance Azure Database pour MySQL.
 2. Après avoir préparé Azure, ils migrent la base de données à l’aide de MySQL Workbench.
 3. Une fois la base de données en cours d’exécution dans Azure, ils configurent un dépôt privé GitHub pour Azure App Service avec livraison continue et le chargent avec l’application osTicket.
 4. Dans le portail Azure, ils chargent l’application de GitHub vers le conteneur Docker exécutant Azure App Service.

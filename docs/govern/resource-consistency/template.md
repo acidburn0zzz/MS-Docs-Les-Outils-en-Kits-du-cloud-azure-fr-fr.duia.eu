@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72e4de691e083aad1df53f6a13e46c2c7fb907e4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 378fa753a2b4ca793d8ad13de8d0c7ed4ec44dfa
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709547"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392615"
 ---
 # <a name="resource-consistency-template"></a>Modèle de cohérence des ressources
 
@@ -24,11 +24,7 @@ La première étape de l’implémentation d’une modification consiste à comm
 > [!IMPORTANT]
 > Ce modèle est un exemple limité. Avant de mettre à jour ce modèle pour l’adapter à vos besoins, vous devez passer en revue les étapes suivantes pour définir une discipline cohérence des ressources efficace dans votre stratégie de gouvernance du cloud.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx">Télécharger le modèle de discipline de gouvernance</a>
-
-<!-- markdownlint-enable MD033 -->
+[Télécharger le modèle de discipline de gouvernance](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

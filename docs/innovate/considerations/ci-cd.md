@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223493"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356761"
 ---
+<!-- cSpell:ignore deprioritize -->
+
 # <a name="empower-adoption"></a>Favoriser l’adoption
 
 Le test ultime de l’innovation est la réaction du client à votre invention. L’hypothèse est-elle avérée ? Les clients utilisent-ils la solution ? Est-elle mise à l’échelle pour répondre aux besoins du pourcentage d’utilisateurs souhaité ? Plus important encore, les utilisateurs continuent-ils de revenir ? Aucune de ces questions ne peut être posée tant que la solution de produit minimum viable (MVP) n’a pas été déployée. Dans cet article, nous allons nous concentrer sur la discipline de la favorisation de l’adoption.
@@ -43,7 +45,7 @@ Pour réduire les pics techniques, supposez que la maturité sera initialement f
 
 Comme précisé dans [Mesure de l’impact client](./measure.md), la validation positive de toute hypothèse requiert une itération et une détermination. Vous échouerez plus souvent que vous ne réussirez au cours de n’importe quel cycle d’innovation. Ceci est normal. Toutefois, lorsqu’un besoin du client, l’hypothèse et la solution sont alignés à grande échelle, le monde change rapidement.
 
-Lorsque vous effectuez la mise à l’échelle de l’innovation, il n’existe pas d’outil plus précieux qu’une base de code partagée pour la solution. Malheureusement, il n’existe aucun moyen de prédire quelle itération ou MVP constituera la combinaison gagnante. C’est pourquoi il n’est jamais trop tôt pour établir une base de code ou un référentiel partagé. Il s’agit du [pic technique](./build.md#reduce-complexity-and-delay-technical-spikes) qui ne doit jamais être retardé. Au fur et à mesure que l’équipe itère au sein de plusieurs solutions MVP, un référentiel partagé permet de faciliter la collaboration et le développement accéléré. Lorsque les modifications apportées ralentissent les métriques d’apprentissage, la contrôle de version vous de restaurer une version antérieure et plus efficace de la solution.
+Quand vous effectuez la mise à l’échelle de l’innovation, il n’existe pas d’outil plus précieux qu’une base de code partagée pour la solution. Malheureusement, il n’existe aucun moyen de prédire quelle itération ou MVP constituera la combinaison gagnante. C’est pourquoi il n’est jamais trop tôt pour établir un dépôt ou une base de code partagé. Il s’agit du [pic technique](./build.md#reduce-complexity-and-delay-technical-spikes) qui ne doit jamais être retardé. Au fur et à mesure que l’équipe itère au sein de plusieurs solutions MVP, un référentiel partagé permet de faciliter la collaboration et le développement accéléré. Lorsque les modifications apportées ralentissent les métriques d’apprentissage, la contrôle de version vous de restaurer une version antérieure et plus efficace de la solution.
 
 [GitHub](https://guides.github.com) est l’outil de gestion de dépôts de code le plus utilisé. Il vous permet de créer un dépôt de code partagé en quelques étapes. Vous pouvez également utiliser la fonctionnalité [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) d’Azure DevOps pour créer un dépôt [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) ou [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc).
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 56c7d171d46813d7175e93759be10ce1423115b0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311827"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355169"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 
@@ -43,7 +43,7 @@ Cet acronyme n’est pas destiné à servir de base à une adhérence rigide, ma
 
 ## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Backlog de migration : Alignement des priorités de l’entreprise et du calendrier
 
-Le backlog de migration vous permet de suivre votre portefeuille de haut niveau des charges de travail migrables. Avant la migration, l’équipe de stratégie cloud et celle chargée de l’adoption du cloud sont encouragées à passer en revue le [patrimoine numérique](../../../digital-estate/index.md) actuel et à accepter une liste des charges de travail à migrer classées par ordre de priorité. Cette liste constitue la base du backlog initial de migration.
+Le backlog de migration vous permet de suivre votre portefeuille de niveau supérieur des charges de travail pouvant être migrées. Avant la migration, l’équipe de stratégie cloud et celle chargée de l’adoption du cloud sont encouragées à passer en revue le [patrimoine numérique](../../../digital-estate/index.md) actuel et à accepter une liste des charges de travail à migrer classées par ordre de priorité. Cette liste constitue la base du backlog initial de migration.
 
 Initialement, il est peu probable que les charges de travail du backlog de migration répondent aux critères INVEST décrits dans la section précédente. Au lieu de cela, elles servent à regrouper logiquement des ressources à partir d’un inventaire initial en tant qu’espace réservé en vue d’une tâche future. Ces espaces réservés peuvent ne pas être techniquement exacts, mais ils servent de base pour la coordination avec l’entreprise.
 

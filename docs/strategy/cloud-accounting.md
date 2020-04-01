@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4458cdb4cf5b63a6ed8bb6cb2d17020c948d0702
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092856"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354078"
 ---
+<!-- cSpell:ignore CIOs -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-cloud-accounting"></a>Qu’est-ce que la comptabilité cloud ?
@@ -58,7 +60,7 @@ Ce modèle offre un équilibre entre un véritable modèle de facturation intern
 
 Le choix des modèles de comptabilité est crucial dans la conception du système. Le choix du modèle de comptabilité peut affecter les stratégies d’abonnement, les standards de nommage, les standards d’étiquetage ainsi que les conceptions de stratégie et de blueprint.
 
-Une fois que vous avez vu avec l’entreprise les décisions à prendre concernant le modèle de comptabilité cloud et les [marchés mondiaux](./global-markets.md), vous avez suffisamment d’informations pour [développer une fondation Azure](../ready/index.md).
+Une fois que vous avez vu avec l’entreprise les décisions à prendre concernant le modèle de comptabilité cloud et les [marchés mondiaux](./global-markets.md), vous disposez de suffisamment d’informations pour [choisir votre premier projet d’adoption du cloud](./first-adoption-project.md).
 
 > [!div class="nextstepaction"]
-> [Développer une fondation Azure](../ready/index.md)
+> [Choisir votre premier projet d’adoption du cloud](./first-adoption-project.md)

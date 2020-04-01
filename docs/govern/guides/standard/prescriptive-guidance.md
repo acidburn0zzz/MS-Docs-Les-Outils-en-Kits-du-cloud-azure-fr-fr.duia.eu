@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709309"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357053"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Guide de gouvernance pour les entreprises standard : Explication des conseils
 
@@ -50,7 +50,7 @@ L’équipe de gouvernance cloud est responsable des décisions et implémentati
 
 ### <a name="subscription-design"></a>Conception de l’abonnement
 
-La décision sur la conception de l’abonnement à utiliser détermine la façon dont les abonnements Azure sont structurés, et la façon dont les groupes d’administration Azure sont utilisés pour gérer efficacement l’accès, les stratégies et la conformité de ces abonnements. Dans ce scénario, l’équipe de gouvernance a choisi le modèle de conception d’abonnement [production et non-production](../../../decision-guides/subscriptions/index.md#production-and-nonproduction-pattern).
+La décision sur la conception de l’abonnement à utiliser détermine la façon dont les abonnements Azure sont structurés, et la façon dont les groupes d’administration Azure sont utilisés pour gérer efficacement l’accès, les stratégies et la conformité de ces abonnements. Dans ce scénario, l’équipe de gouvernance a établi des abonnements pour les charges de travail de production et de non-production (modèle de conception d’abonnement [production-and-nonproduction](../../../ready/azure-best-practices/initial-subscriptions.md)).
 
 - Il est peu probable que les département doivent intervenir dans ce processus. Les déploiements sont en principe limités au sein d’une même unité de facturation. Au stade de l’adoption, il se peut même qu’il n’y ait pas de contrat entreprise pour centraliser la facturation. Il est probable que ce niveau d’adoption soit géré par un seul abonnement Azure avec paiement à l’utilisation.
 - Indépendamment de l’utilisation du portail EA ou de l’existence d’un contrat entreprise, un modèle d’abonnement doit quand même être défini et convenu afin de minimiser le nombre de demandes administratives ne portant pas sur la facturation.

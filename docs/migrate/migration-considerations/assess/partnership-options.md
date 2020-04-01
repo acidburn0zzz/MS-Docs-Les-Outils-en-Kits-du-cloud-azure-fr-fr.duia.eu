@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 0d7207ce5073d1e3e67e2164774ee0da0eddc784
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311861"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355303"
 ---
+<!-- cSpell:ignore CSPs MSPs -->
+
 # <a name="understand-partnership-options"></a>Comprendre les options de partenariat
 
 Pendant la migration, l’équipe d’adoption cloud réalise la migration effective des charges de travail vers le cloud. À la différence des tâches collaboratives et de résolution des problèmes lors de la définition du [patrimoine numérique](../../../digital-estate/index.md) ou de la création de l’infrastructure cloud de base, la migration tend à être une série de tâches d’exécution répétitives. Au-delà des aspects répétitifs, il existe probablement des efforts de test et de réglage qui nécessitent une connaissance poussée du fournisseur cloud choisi. La nature répétitive de ce processus peut parfois être mieux gérée par un partenaire, ce qui réduit la surcharge pour le personnel à plein temps. En outre, les partenaires peuvent être en mesure de proposer des connaissances techniques approfondies lorsque les processus répétitifs rencontrent des anomalies d’exécution.
@@ -96,7 +98,7 @@ Les fournisseurs de solutions certifiés Microsoft se spécialisent dans la four
 Obtenez l’aide de partenaires proposant des solutions Azure prêtes à l'emploi ou personnalisées, et des partenaires qui vous aideront à déployer et à gérer ces solutions :
 
 - **[Trouvez un partenaire de solutions cloud](https://www.microsoft.com/solution-providers/home).** Un CSP certifié peut vous aider à tirer pleinement parti du cloud en évaluant les objectifs de l’entreprise en matière d’adoption cloud, en identifiant la solution cloud adaptée aux besoins de l’entreprise et en aidant l’entreprise à devenir plus agile et efficace.
-- **[Trouvez un partenaire proposant un service managé](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** Un partenaire de service managé Azure (MSP) aide une entreprise à passer vers Azure en la guidant dans tous les aspects du parcours vers le cloud. De la consultation à la gestion des migrations et des opérations, les MSP cloud montrent aux clients tous les avantages offerts par l’adoption du cloud. Ils jouent également le rôle d’un guichet unique pour l’expérience de support au quotidien, d’approvisionnement et de facturation, le tout avec un modèle de paiement à l’utilisation flexible (PAYG).
+- **[Trouvez un partenaire proposant un service managé](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** Un partenaire de service managé Azure (MSP) aide une entreprise à passer vers Azure en la guidant dans tous les aspects du parcours vers le cloud. De la consultation à la gestion des migrations et des opérations, les MSP cloud montrent aux clients tous les avantages offerts par l’adoption du cloud. Ils jouent également le rôle de solution centralisée pour les opérations courantes de support, de provisionnement et de facturation, le tout avec un modèle commercial de paiement à l’utilisation flexible.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

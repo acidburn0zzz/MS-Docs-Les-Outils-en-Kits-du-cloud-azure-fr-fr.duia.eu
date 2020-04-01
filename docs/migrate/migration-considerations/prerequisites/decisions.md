@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 07856662f95a588f252c78e8a3dd67eba6e8163c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d90e1fa73029d87d1f699e1a0651a63368bf3b21
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094065"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355193"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -54,7 +54,7 @@ Avant de prendre des décisions susceptibles d’avoir un impact à long terme s
 
 Dans toute migration d’envergure (plus de 250 machines virtuelles), la migration des ressources est effectuée à l’aide de diverses options de transition, présentées dans les 5 R de la rationalisation : *réhébergement*, *refactorisation*, *réarchitecture*, *régénération* et *remplacement*.
 
-Certaines charges de travail sont modernisées à l’aide d’ un processus de *régénération* ou de *réarchitecture*, créant ainsi des applications plus modernes avec de nouvelles capacités techniques et fonctionnalités. D’autres ressources passent par un processus de *refactorisation*, par exemple un déplacement vers des conteneurs ou d’autres approches opérationnelles et d’hébergement plus modernes qui ne modifient pas nécessairement le code base des solutions. En règle générale, les machines virtuelles et autres ressources mieux établies passent par un processus de *réhébergement*, en transférant ces ressources du centre de données vers le cloud. Certaines charges de travail pourraient faire l’objet d’une migration vers le cloud, mais doivent plutôt être *remplacées* par des services cloud basés sur les services (SaaS) qui répondent aux mêmes besoins métier, par exemple en utilisant Office 365 comme alternative à la migration des instances Exchange Server.
+Certaines charges de travail sont modernisées à l’aide d’ un processus de *régénération* ou de *réarchitecture*, créant ainsi des applications plus modernes avec de nouvelles capacités techniques et fonctionnalités. D’autres ressources passent par un processus de *refactorisation*, par exemple un déplacement vers des conteneurs ou d’autres approches opérationnelles et d’hébergement plus modernes qui ne modifient pas nécessairement la base de code des solutions. En règle générale, les machines virtuelles et autres ressources mieux établies passent par un processus de *réhébergement*, en transférant ces ressources du centre de données vers le cloud. Certaines charges de travail pourraient faire l’objet d’une migration vers le cloud, mais doivent plutôt être *remplacées* par des services cloud basés sur les services (SaaS) qui répondent aux mêmes besoins métier, par exemple en utilisant Office 365 comme alternative à la migration des instances Exchange Server.
 
 Dans la plupart des scénarios, un événement métier crée une fonction de forçage qui entraîne la migration temporaire d’un pourcentage élevé de ressources à l’aide du processus de *réhébergement*, suivie d’une transition secondaire plus importante à l’aide de l’une des autres stratégies de migration, une fois qu’elles se trouvent dans le cloud. Ce processus est communément appelé *transition cloud*.
 

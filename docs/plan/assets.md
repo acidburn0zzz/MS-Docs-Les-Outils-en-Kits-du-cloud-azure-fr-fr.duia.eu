@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c7e90c1536b2911f8301b1a97f8731139976b4f1
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 7cefe7d64dbda13321b362f298c1ac45aa99ebcc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342063"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354944"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Aligner les ressources sur des charges de travail hiérarchisées
 
-La charge de travail est une description conceptuelle d’un ensemble de ressources : les machines virtuelles, les applications et les sources de données. L’article précédent intitulé [Hiérarchiser et définir des charges de travail](./workloads.md) a donné des conseils pour la collecte des données qui définiront la charge de travail. Avant la migration, quelques entrées techniques de cette liste nécessitent une validation supplémentaire. Cet article permet de valider les entrées suivantes :
+La charge de travail est une description conceptuelle d’un ensemble de ressources : les machines virtuelles, les applications et les sources de données. L’article précédent, intitulé [Définir et hiérarchiser](./workloads.md), a fourni des conseils concernant la collecte des données qui définiront la charge de travail. Avant la migration, quelques entrées techniques de cette liste nécessitent une validation supplémentaire. Cet article permet de valider les entrées suivantes :
 
 - **Applications :** répertorie toutes les applications incluses dans cette charge de travail.
 - **Machines virtuelles et serveurs :** répertorie l’ensemble des machines virtuelles ou serveurs inclus dans la charge de travail.

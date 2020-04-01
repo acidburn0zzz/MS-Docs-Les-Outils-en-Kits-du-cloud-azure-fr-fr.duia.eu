@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8555770721a1c00f40ca66a6f7c65adc635cec59
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094439"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357235"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Commencer un parcours de migration vers le cloud dans Azure
 
@@ -25,7 +25,7 @@ Le Framework d’adoption du cloud aide les clients à effectuer un parcours d�
 Ce framework est principalement conçu pour les architectes cloud et les équipes de stratégie cloud qui dirigent les efforts d’adoption du cloud. Cependant, de nombreuses sujets contenus dans ce framework présentent un intérêt pour d’autres rôles au sein de l’entreprise et des services informatiques. Les architectes cloud servent souvent de facilitateurs pour faire participer chacun des rôles pertinents. Ce récapitulatif est conçu pour préparer les différents rôles avant de faciliter les conversations.
 
 > [!NOTE]
-> Cette aide est en préversion publique. La terminologie, les approches et l’aide fournies sont minutieusement testées par les clients, les partenaires et les équipes Microsoft au cours de cette préversion. Ainsi, la table des matières et l’aide peuvent changer légèrement au fil du temps.
+> Cette aide est en préversion publique. La terminologie, les approches et l’aide fournies sont minutieusement testées par les clients, les partenaires et les équipes Microsoft au cours de cette préversion. Ainsi, la table des matières et les conseils peuvent changer légèrement au fil du temps.
 
 ## <a name="motivations"></a>Motivations
 
@@ -148,3 +148,5 @@ Le Framework d’adoption du cloud est une solution de cycle de vie. Il est con�
 > [Gérer](../manage/index.md)
 >
 > [Organiser](../organize/index.md)
+
+<!-- test:ignoreNextStep -->

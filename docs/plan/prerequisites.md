@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f229515b39c69fa0e9e6c840810720bca4e12dc6
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f1c35b41f267887c62b2568583b929657517c87e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342046"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354876"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Vérification de la configuration pour un plan d’adoption du cloud efficace
 
@@ -40,7 +40,7 @@ Ces questions sont essentielles à la précision du plan d’adoption du cloud. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que l’équipe est à l’aise avec les entrées stratégiques et les entrées pour la rationalisation du patrimoine numérique, l’étape suivante de la [hiérarchisation des charges de travail](./workloads.md) peut commencer.
+[Déployez le modèle de plan d’adoption du cloud](./template.md) sur Azure DevOps.
 
 > [!div class="nextstepaction"]
-> [Définir et hiérarchiser les charges de travail](./workloads.md)
+> [Déployer le modèle sur Azure DevOps](./template.md)

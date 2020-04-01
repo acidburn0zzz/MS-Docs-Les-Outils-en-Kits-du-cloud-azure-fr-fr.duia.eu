@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 6b479ac5bd347cda081dc55dbabdc4fbd46d5b11
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311963"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356168"
 ---
+<!-- cSpell:ignore IISRESET WEBVM SQLVM SQLMI contosodc contosohost contosovmsacc cswiz vcenter WEBMV sourcedb -->
+
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>réhéberger une application locale sur une machine virtuelle Azure et SQL Database Managed Instance
 
 Cet article explique comment la société fictive Contoso migre une application frontale Windows .NET à deux niveaux qui s’exécute sur des machines virtuelles VMware vers une machine virtuelle Azure à l’aide du service Azure Site Recovery. Il explique également la façon dont Contoso migre la base de données d’application vers Azure SQL Database Managed Instance.

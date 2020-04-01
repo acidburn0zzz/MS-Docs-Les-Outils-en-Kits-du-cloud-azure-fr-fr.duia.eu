@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4281638b7badf9b672ba3a38d2daa847b7604e7e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094629"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356387"
 ---
 # <a name="automate-onboarding"></a>Automatiser l’intégration
 
@@ -43,7 +43,7 @@ Les fichiers décrits dans le tableau suivant sont utilisés dans cet exemple. V
 | WorkspaceSolutions.json | Modèle Resource Manager, qui active les solutions souhaitées dans l’espace de travail Log Analytics. |
 | ScopeConfig.json | Modèle Resource Manager qui utilise le modèle d’abonnement pour les serveurs locaux avec la solution Change Tracking. L’utilisation du modèle de consentement est facultative. |
 | Enable-VMInsightsPerfCounters.ps1 | Script PowerShell, qui active les insights de machines virtuelles pour les serveurs et configure les compteurs de performances. |
-| ChangeTracking-Filelist.json | Modèle Resource Manager qui définit la liste des fichiers qui seront surveillés par Change Tracking. |
+| ChangeTracking-FileList.json | Modèle Resource Manager qui définit la liste des fichiers qui seront surveillés par Change Tracking. |
 
 Utilisez la commande suivante pour exécuter New-AMSDeployment. ps1 :
 

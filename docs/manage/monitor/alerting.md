@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: c6f48ae433746906d64023bd72f34c21a3163373
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091285"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356306"
 ---
+<!-- cSpell:ignore kusto multiresource multisignal -->
+
 # <a name="cloud-monitoring-guide-alerting"></a>Guide de supervision du cloud : Génération d’alertes
 
 Pendant des années, les organisations informatiques ont rencontré des difficultés pour combattre la lassitude liée aux alertes créées par les outils de supervision déployés dans l’entreprise. De nombreux systèmes génèrent un grand volume d’alertes souvent considérées comme non significatives, tandis que d’autres sont pertinentes, mais sont négligées ou ignorées. En conséquence, les opérations assurées par le département informatique et les développeurs ont eu du mal à respecter la qualité de niveau de service promise aux clients internes ou externes. Il est essentiel de comprendre l’état de votre infrastructure et de vos applications pour en garantir la fiabilité. Vous devez identifier les causes rapidement de façon à minimiser la dégradation et les interruptions du service, ou pour réduire l’effet ou le nombre d’incidents.

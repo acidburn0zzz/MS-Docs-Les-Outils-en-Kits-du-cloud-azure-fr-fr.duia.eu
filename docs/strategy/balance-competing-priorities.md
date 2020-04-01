@@ -1,18 +1,18 @@
 ---
 title: Équilibrer les priorités concurrentes
-description: Découvrir les stratégies d’équilibrage des priorités concurrentes
+description: Découvrez les stratégies d’équilibrage des priorités concurrentes.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ba70687627e81b58eb76cd69838abf1ebcdb6489
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a0524d8e7cd48f3b93191d9633bb57b10fb2261b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312716"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353695"
 ---
 # <a name="balance-competing-priorities"></a>Équilibrer les priorités concurrentes
 
@@ -40,8 +40,8 @@ L’objectif principal de la méthodologie de stratégie est de développer l’
 
 **Priorités concurrentes** :
 
-- **Profondeur de la justification** : Avant de pouvoir prendre une direction stratégique, les parties prenantes exigent souvent une analyse financière approfondie et une justification métier complète. Malheureusement, la collecte et l’analyse des données peuvent engendrer des délais.
-- **Délai avant l’impact commercial** : Inversement, les parties prenantes sont souvent tenues pour responsables de l’obtention de résultats métier dans des délais d’exécution fixés. Les opérations d’analyse et d’évaluation qui prennent du temps peuvent mettre en danger l’obtention de ces résultats avant même le début du travail technique.
+- **Profondeur de la justification :** Avant de pouvoir prendre une direction stratégique, les parties prenantes exigent souvent une analyse financière approfondie et une justification métier complète. Malheureusement, la collecte et l’analyse des données peuvent engendrer des délais.
+- **Délai avant l’impact commercial :** Inversement, les parties prenantes sont souvent tenues pour responsables de l’obtention de résultats métier dans des délais d’exécution fixés. Les opérations d’analyse et d’évaluation qui prennent du temps peuvent mettre en danger l’obtention de ces résultats avant même le début du travail technique.
 
 **Étendue minimale** : Pour parvenir à cet équilibre, les parties prenantes doivent entamer des discussions au début du processus. La méthodologie de stratégie suggère de limiter l’étendue de l’alignement durant ces premiers efforts. Dans l’approche suggérée, les parties prenantes tentent de s’aligner autour d’un ensemble de motivations de base, de résultats mesurables et d’une justification métier générale. Il est suggéré aux parties prenantes de s’engager rapidement sur un petit nombre de projets initiaux ou de pilotes pour mettre en avant les opportunités d’apprentissage requises.
 
@@ -137,3 +137,10 @@ Les priorités concurrentes énumérées tout au long de cet article reflètent 
 **Étendue minimale** : La plupart des organisations sont confrontées à un ensemble naturel d’évolutions au fil du temps. La méthodologie d’organisation décrit la série d’évolutions la plus courante. Nous suggérons aux équipes de s’efforcer de passer à une structure Centre d’excellence de cloud pour mettre en place des approches de contrôle délégué.
 
 **Exemple d’étendue développée** : Il existe de nombreuses situations qui déclenchent la nécessité d’un contrôle centralisé. Les exigences de conformité tierces et l’exposition temporaire à la sécurité sont deux exemples déclenchant un contrôle centralisé. Dans ces situations, il est généralement nécessaire d’établir des stratégies de limitation et des contrôles rigides et fixes. Cependant, pour assurer la continuité de l’innovation et de l’adoption, les équipes informatiques centrales sont encouragées à mettre en œuvre ces contrôles en fonction de l’aspect critique et de la sensibilité de chaque charge de travail. Le fait de créer des environnements avec moins de contrôles, mais avec une étendue ou un profil de risque réduit, offre une certaine flexibilité même lorsque des contrôles sont nécessaires.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Découvrez comment [équilibrer la migration, l’innovation et l’expérimentation](./balance-the-portfolio.md) pour optimiser la valeur de vos efforts de migration vers le cloud.
+
+> [!div class="nextstepaction"]
+> [Équilibrage du portefeuille](./balance-the-portfolio.md)

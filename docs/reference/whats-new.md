@@ -7,12 +7,12 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 0e93f0279ba210be594b3b5af40cf16657f224e3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a3e316d49acaaee00d5ecd10efac9aa15c2dbd49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79095381"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353687"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework"></a>Nouveautés de Microsoft Cloud Adoption Framework
 
@@ -39,7 +39,7 @@ La première zone d’atterrissage a été retirée du guide de préparation pou
 - [Première zone d’atterrissage](../ready/landing-zone/first-landing-zone.md) : S’étend sur la comparaison des différentes zones d’atterrissage
 - [Zone d’atterrissage de migration](../ready/landing-zone/migrate-landing-zone.md) : Déplacement de l’article précédent sur le blueprint de zone d’atterrissage, pour séparer la définition du blueprint du CAF (Cloud Adoption Framework) de la sélection de la première zone d’atterrissage, et fournir ainsi davantage d’options de zone d’atterrissage.
 - Article sur la [zone d’atterrissage Terraform](../ready/landing-zone/terraform-landing-zone.md) : Déplacement de la section « Étendue supplémentaire » de la méthodologie de préparation vers la nouvelle section « Zone d’atterrissage » de la méthodologie de préparation, pour traiter de Terraform, un élément très important de la conversation sur la zone d’atterrissage.
-- Regroupement des considérations générales sur les zones d’atterrissage dans la table des matières sous « Considérations générales relatives aux zones d’accueil »
+- Regroupement des considérations générales sur les zones d’atterrissage dans la table des matières sous « Considérations générales relatives aux zones d’atterrissage ».
 - Déplacement des bonnes pratiques de sécurité de la méthodologie de migration vers une nouvelle section de zone d’atterrissage intitulée « Améliorer la sécurité des zones d’accueil (données sensibles) » pour exposer ces conseils d’aide aux lecteurs plus tôt dans le cycle de vie.
 
 ### <a name="refinements-to-the-azure-migration-guide"></a>Améliorations apportées au guide de migration Azure

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 267408d4634bbed9c6bb9c8884e2af395f5df4d9
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337837"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353487"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,8 +42,7 @@ Il est également important de comprendre les modèles d’utilisation des utili
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que les décisions du marché mondial ont été prises et communiquées, l’équipe est prête à [établir des standards techniques](../digital-estate/index.md) à partir de ces métriques.
-Le résultat est constitué d’un [backlog de transformation ou d’un backlog de migration](..//migrate/migration-considerations/prerequisites/technical-complexity.md).
+Découvrez les [compétences nécessaires au cours de la phase de stratégie](./suggested-skills.md) de votre parcours d’adoption du cloud.
 
 > [!div class="nextstepaction"]
-> [Évaluer le patrimoine numérique](../digital-estate/index.md)
+> [Compétences relatives à la stratégie](./suggested-skills.md)

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a6b859de12681e93912f934f6aa5e55c42fcfb9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c5d7da3d1dd447063879c786d59840f256c418e1
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171393"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392605"
 ---
 # <a name="deployment-acceleration-template"></a>Modèle d'accélération du déploiement
 
@@ -24,11 +24,7 @@ La première étape de l’implémentation d’une modification consiste à comm
 > [!IMPORTANT]
 > Ce modèle est un exemple limité. Avant de mettre à jour ce modèle pour l'adapter à vos besoins, vous devez passer en revue les étapes suivantes afin de définir une discipline Accélération du déploiement efficace dans votre stratégie de gouvernance du cloud.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx">Télécharger le modèle de discipline de gouvernance</a>
-
-<!-- markdownlint-enable MD033 -->
+[Télécharger le modèle de discipline de gouvernance](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

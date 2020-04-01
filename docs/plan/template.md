@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: fb35c059f3c3c6c9485d70a78a2c3fa1b49dc10d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140601"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354775"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan d’adoption du cloud et Azure DevOps
 
@@ -30,7 +30,7 @@ Pour déployer le plan d’adoption du cloud, ouvrez [Azure DevOps Demo Generato
 4. Sélectionnez **Créer un projet** pour créer un projet sur votre locataire, en fonction du modèle de plan. Une barre de progression indique votre progression vers le déploiement du projet.
 5. Une fois le déploiement terminé, sélectionnez **Accéder au projet** pour afficher votre nouveau projet.
 
-Une fois que votre projet a été créé, poursuivez la lecture de cette série d’articles pour voir comment modifier le modèle pour l’aligner sur votre plan d’adoption du cloud.
+Une fois que votre projet a été créé, poursuivez la lecture de cette série d’articles pour découvrir comment modifier le modèle afin vous aligner sur votre plan d’adoption du cloud.
 
 Pour obtenir de l’aide et des conseils supplémentaires sur cet outil, consultez [Azure DevOps Services Demo Generator](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops).
 

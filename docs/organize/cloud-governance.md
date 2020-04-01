@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7569d0718f7b25625cc40887af81edda53ff0b1e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: be9d5e49fe4c03335fc28636616f97812d1d2312
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093889"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355008"
 ---
 # <a name="cloud-governance-capabilities"></a>Compétences de gouvernance cloud
 
@@ -90,7 +90,7 @@ Si cette différence est subtile, il s’agit néanmoins d’une distinction imp
 
 Les gardiens du cloud commencent à utiliser des approches de gouvernance plus avancées pour accélérer le déploiement de la plateforme et aider les équipes à répondre librement à leurs besoins environnementaux, pour une adoption plus rapide. Des exemples de ces fonctions plus avancées s’illustrent dans les améliorations incrémentielles apportées au MVP de gouvernance, comme l’[amélioration de la base de référence de sécurité](../govern/guides/complex/security-baseline-improvement.md).
 
-**Accélérateurs cloud :** Les gardiens et les dépositaires du cloud récoltent naturellement des scripts et des automatisations qui accélèrent le déploiement des environnements, des plateformes, voire même des composants de diverses applications. L’organisation et le partage de ces scripts en plus des responsabilités de gouvernance centralisées développent un degré élevé de respect pour ces architectes au sein du service informatique.
+**Accélérateurs cloud :** Les gardiens et les dépositaires du cloud récoltent naturellement des scripts et des processus automatisés qui accélèrent le déploiement des environnements, des plateformes, voire même des composants de diverses applications. L’organisation et le partage de ces scripts en plus des responsabilités de gouvernance centralisées développent un degré élevé de respect pour ces architectes au sein du service informatique.
 
 Ces praticiens de la gouvernance qui partagent ouvertement leurs scripts organisés facilitent la livraison rapide de projets technologiques et l’incorporation de la gouvernance dans l’architecture des charges de travail. Cette influence sur les charges de travail et la prise en charge de bons modèles de conception élèvent les accélérateurs cloud à un niveau supérieur de spécialisation de gouvernance.
 

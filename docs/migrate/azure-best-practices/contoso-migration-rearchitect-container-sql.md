@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 37bf2a4d96cc1f60b351f40f6a2c51c2ea1dcf95
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 83a5c356f5144700173fa4df593e313e44e3172f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311640"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356361"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
 
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Réarchitecturer une application locale dans un conteneur Azure et Azure SQL Database
 
-Cet article explique comment la société fictive Contoso réarchitecture une application Windows .NET à deux niveaux qui s’exécute sur des machines virtuelles VMware dans le cadre d’une migration vers Azure. Contoso migre la machine virtuelle frontale de l’application vers un conteneur Microsoft Azure et la base de données de l’application vers une base de données Azure SQL.
+Cet article explique comment la société fictive Contoso reconçoit une application Windows .NET à deux niveaux qui s’exécute sur des machines virtuelles VMware dans le cadre d’une migration vers Azure. Contoso migre la machine virtuelle frontale de l’application vers un conteneur Microsoft Azure et la base de données de l’application vers une base de données Azure SQL.
 
 L’application SmartHotel360 utilisée dans cet exemple est fournie au format open source. Si vous souhaitez l’utiliser à des fins de test, vous pouvez la télécharger à partir de [GitHub](https://github.com/Microsoft/SmartHotel360).
 

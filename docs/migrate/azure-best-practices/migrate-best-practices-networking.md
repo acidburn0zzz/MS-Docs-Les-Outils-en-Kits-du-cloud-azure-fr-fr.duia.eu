@@ -7,13 +7,15 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312150"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354122"
 ---
+<!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
+
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Meilleures pratiques de configuration du réseau pour les charges de travail migrées vers Azure
 
 Lorsque vous envisagez et concevez un projet de migration, l’une des étapes les plus importantes, au-delà de la migration proprement dite, réside dans la conception et l’implémentation du réseau Azure. Cet article décrit les meilleures pratiques pour la mise en réseau lors d’une migration vers des implémentations IaaS et PaaS dans Azure.
@@ -177,7 +179,7 @@ Lorsque vous configurez un VPN de site à site, procédez comme suit :
 - Vous devez créer une passerelle VPN, spécifier le type de passerelle (VPN) et indiquer si la passerelle est basée sur un routage ou sur une stratégie. Un VPN basé sur le routage est considéré comme ayant de meilleures capacités et comme étant plus durable.
 - Vous devez créer une passerelle de réseau local en local et configurer votre appareil VPN local.
 - Vous devez créer une connexion de VPN de site à site de basculement entre la passerelle de réseau virtuel et l’appareil en local. L’utilisation d’un VPN basé sur un routage autorise les connexions actif/passif ou actif/actif vers Azure. Un VPN basé sur un routage prend également en charge simultanément les connexions site à site (depuis n’importe quel ordinateur) et point à site (depuis un seul ordinateur).
-- Vous devez spécifier la référence SKU de la passerelle que vous souhaitez utiliser. Cela dépendra de vos besoins en charges de travail, de vos débits, de vos fonctionnalités et de vos contrats de niveau de service.
+- Vous devez spécifier la référence SKU de la passerelle que vous souhaitez utiliser. Cela dépendra vos exigences de charges de travail, de votre débit, de vos fonctionnalités et de vos contrats SLA (contrats de niveau de service).
 - Le protocole BGP (Border Gateway Protocol) est une fonctionnalité en option que vous pouvez utiliser avec Azure ExpressRoute et avec vos passerelles VPN basées sur un routage pour propager vos itinéraires BGP locaux sur vos réseaux virtuels.
 
 ![VPN](./media/migrate-best-practices-networking/vpn.png)

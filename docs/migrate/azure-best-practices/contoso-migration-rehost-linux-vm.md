@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b44a5d9c8e0447488abd500afeaa70fb87a819b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3130494f151897d005a5ded28268d056f15bd15c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311946"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355965"
 ---
 <!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
 
@@ -290,7 +290,7 @@ L’application étant en cours d’exécution, Contoso doit à présent rendre 
 
 ### <a name="security"></a>Sécurité
 
-L’équipe de sécurité de Contoso examine les machines virtuelles OSTICKETWEB les OSTICKETMYSQL pour détecter d’éventuels problèmes de sécurité.
+L’équipe de sécurité de Contoso examine les machines virtuelles OSTICKETWEB et OSTICKETMYSQL pour détecter d’éventuels problèmes de sécurité.
 
 - L’équipe examine les groupes de sécurité réseau (NSG) des machines virtuelles pour en contrôler l’accès. Contoso utilise des groupes de sécurité réseau pour s’assurer que seul le trafic autorisé vers l’application puisse passer.
 - L’équipe prend également en considération la sécurisation des données sur les disques de machine virtuelle à l’aide de Disk Encryption et d’Azure Key Vault.

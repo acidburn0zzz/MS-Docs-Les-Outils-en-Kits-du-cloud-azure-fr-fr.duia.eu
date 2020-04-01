@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171410"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356840"
 ---
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+
 # <a name="mainframe-application-migration"></a>Migration d’applications d’un environnement mainframe
 
 Quand elles entreprennent de migrer des applications d’un environnement mainframe vers Azure, la plupart des équipes informatiques adoptent une approche pragmatique : elles réutilisent le maximum de ressources possible, puis elles débutent un déploiement échelonné où certaines applications sont réécrites ou remplacées.
@@ -30,7 +32,7 @@ La migration d’applications engage généralement une ou plusieurs des straté
 
 - **Remplacement :** cette approche remplace les fonctionnalités du mainframe par des options équivalentes dans le cloud. SaaS (software as a service) est une option disponible : elle utilise une solution créée spécifiquement pour répondre à un besoin de l’entreprise, comme la finance, les ressources humaines, la fabrication ou la planification des ressources métier. En outre, il existe maintenant de nombreuses applications métier capables de résoudre des problématiques qui étaient auparavant gérées par des solutions mainframe personnalisées.
 
-Vous devez commencer par planifier les charges de travail que vous souhaitez migrer en priorité, puis déterminer les prérequis pour déplacer les ressources associées (les applications, les codes base hérités et les bases de données).
+Vous devez commencer par planifier les charges de travail que vous souhaitez migrer en priorité, puis déterminer les prérequis pour déplacer les ressources associées (applications, bases de code hérité et bases de données).
 
 ## <a name="mainframe-emulation-in-azure"></a>Émulation de mainframe dans Azure
 

@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ce9ce90d429064eeb8e848fd203aec11d042e539
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312800"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354535"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Suivi des coûts dans les unités commerciales, les environnements ou les projets
 
@@ -24,7 +24,7 @@ ms.locfileid: "79312800"
 
 Le contrôle des coûts, de la même façon que la gouvernance et d’autres constructions de gestion, dépend d’un environnement bien managé. L’établissement d’un tel environnement (et particulièrement un environnement complexe) requiert des processus cohérents dans la classification et l’organisation de toutes les ressources.
 
-Les ressources incluent l’ensemble des machines virtuelles, des sources de données et des applications déployées dans le cloud. Azure fournit plusieurs mécanismes de classification et d’organisation des ressources. Les options de [mise à l’échelle avec plusieurs abonnements Azure](../azure-best-practices/scaling-subscriptions.md) permettent d’organiser les ressources en fonction de plusieurs critères pour établir un environnement bien managé. Cet article se concentre sur l’application des concepts fondamentaux d’Azure pour fournir une visibilité des coûts du cloud.
+Les ressources incluent l’ensemble des machines virtuelles, des sources de données et des applications déployées dans le cloud. Azure fournit plusieurs mécanismes de classification et d’organisation des ressources. La rubrique [Organiser et gérer vos abonnements Azure](../azure-best-practices/organize-subscriptions.md) fournit les informations sur l’organisation des ressources en fonction de plusieurs critères afin d’établir un environnement bien managé. Cet article se concentre sur l’application des concepts fondamentaux d’Azure pour fournir une visibilité des coûts du cloud.
 
 ### <a name="classification"></a>classification ;
 
@@ -58,15 +58,16 @@ Le diagramme montre les meilleures pratiques, mais n’inclut pas les options su
 
 Le reste de cet article suppose l’utilisation de l’approche recommandée dans le diagramme précédent. Toutefois, les articles suivants peuvent vous aider à appliquer l’approche à une organisation de ressources qui correspond le mieux à votre entreprise :
 
-- [Mise à l’échelle avec plusieurs abonnements Azure](../azure-best-practices/scaling-subscriptions.md)
-- [Déploiement d’un MVP de gouvernance pour gérer les standards en matière d’environnements bien managés](../../govern/guides/complex/index.md)
+- [Mettre à l’échelle votre environnement Azure avec plusieurs abonnements](../azure-best-practices/scale-subscriptions.md)
+- [Organiser et gérer vos abonnements Azure](../azure-best-practices/organize-subscriptions.md)
+- [Déployer un MVP de gouvernance pour gérer les standards en matière d’environnements bien managés](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Fournir le niveau approprié en matière d’accès aux coûts
 
 La gestion des coûts est une activité d’équipe. La section du Framework d’adoption du cloud relative à la préparation de l’organisation définit un petit nombre d’équipes principales et décrit la façon dont ces équipes prennent en charge les efforts d’adoption du cloud. Cet article développe les définitions d’équipe afin de définir l’étendue et les rôles à attribuer aux membres de chaque équipe pour obtenir le niveau de visibilité approprié des données de gestion des coûts.
 
-- Les *rôles* définissent ce qu’un utilisateur peut faire sur plusieurs ressources.
-- L’*étendue* définit les ressources (utilisateur, groupe, principal de service ou identité managée) sur lesquelles un utilisateur peut intervenir.
+- Les **rôles** définissent ce qu’un utilisateur peut faire sur plusieurs ressources.
+- L’**étendue** définit les ressources (utilisateur, groupe, principal de service ou identité managée) sur lesquelles un utilisateur peut intervenir.
 
 En règle générale et à titre de meilleure pratique, nous vous suggérons de disposer d’un modèle basé sur le privilège minimum pour affecter des personnes à différents rôles et étendues.
 

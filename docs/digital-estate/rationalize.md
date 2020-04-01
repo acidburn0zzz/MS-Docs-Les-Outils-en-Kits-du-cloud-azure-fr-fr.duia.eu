@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 042487ce2c579f581547e4942785cbbba659ad5e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312720"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357274"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 
@@ -124,8 +124,8 @@ Parallèlement à la rationalisation continue, l’équipe chargée de l’adopt
 - Renforcer ses compétences au sujet de la plateforme du fournisseur de cloud.
 - Définir les services principaux (et les standards Azure) qui sont nécessaires à une vision à long terme.
 - Mieux comprendre comment les opérations peuvent être amenées à évoluer lors de la transformation.
-- Comprendre les risques commerciaux inhérents ainsi que la tolérance de l’entreprise à de tels risques
-- Établir une ligne de base ou un produit minimum viable (MVP) pour la gouvernance, en fonction de la tolérance de l’entreprise aux risques inhérents
+- Comprendre les risques commerciaux inhérents ainsi que la tolérance de l’entreprise à ces risques.
+- Établir une base de référence ou un produit minimum viable (MVP) pour la gouvernance, en fonction de la tolérance de l’entreprise aux risques inhérents.
 
 ## <a name="release-planning"></a>Planification de la mise en production
 

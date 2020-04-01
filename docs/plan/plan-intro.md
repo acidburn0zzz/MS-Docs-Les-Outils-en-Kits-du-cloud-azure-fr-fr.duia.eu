@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3b91a6beaa04a74b03282394da7c8c3ab26587cb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093556"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354871"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planifier l’adoption du cloud
 
@@ -36,9 +36,9 @@ Cette série d’articles décrit chaque étape de la procédure visant à tradu
 
 1. **Configuration requise :** Vérifiez que toutes les étapes prérequises ont été effectuées avant de créer votre plan.
 2. **Définir et hiérarchiser les charges de travail** : Classez par ordre de priorité vos 10 premières charges de travail pour établir un backlog d’adoption initial.
-3. **Aligner les ressources :** Identifiez les ressources (proposées ou existantes) requises pour prendre en charge les charges de travail hiérarchisées.
-4. **Passer en revue la rationalisation :** Examinez les décisions de rationalisation pour affiner les choix de chemin d’adoption : migrer ou innover.
-5. **Définir les itérations et les versions :** Les *itérations* sont les blocs de temps alloués pour le travail. Les *versions* sont la définition du travail à effectuer avant de déclencher une modification des processus de production.
+3. **Aligner les ressources sur les charges de travail :** Identifiez les ressources (proposées ou existantes) requises pour prendre en charge les charges de travail hiérarchisées.
+4. **Passer en revue les décisions de rationalisation :** Examinez les décisions de rationalisation pour affiner les choix de chemin d’adoption : migrer ou innover.
+5. **Établir des itérations et des plans de mise en production :** Les *itérations* sont les blocs de temps alloués pour le travail. Les *versions* sont la définition du travail à effectuer avant de déclencher une modification des processus de production.
 6. **Estimer les chronologies** : Établissez des chronologies approximatives pour la planification des versions, en fonction des estimations initiales.
 
 ## <a name="next-steps"></a>Étapes suivantes

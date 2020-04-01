@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7b2433b787683cf8ecaaf4a1f7a858aa18bf682c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 68b360af15f6a2537fb077202373c846365266d2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093042"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353656"
 ---
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
+
 # <a name="create-hybrid-cloud-consistency"></a>Créer une cohérence de cloud hybride
 
 Cet article vous guide dans les approches générales pour la création de la cohérence de cloud hybride.
@@ -51,7 +53,7 @@ Azure et Azure Stack offrent de nouveaux cas d’utilisation hybride pour les ap
 
 - **Solutions edge et déconnectées.** Afin de répondre aux besoins de latence et de connectivité, les utilisateurs peuvent traiter les données localement dans Azure Stack, puis les agréger dans Azure pour une analytique plus poussée. Ils peuvent utiliser une logique d’application commune sur les deux systèmes. De nombreux clients sont intéressés par ce scénario de périphérie entre différents contextes, notamment les sites de production, les bateaux de croisière et les sites miniers.
 - **Applications cloud conformes à diverses réglementations.** Les clients peuvent développer et déployer des applications dans Azure, en profitant de l’entière flexibilité de déployer localement sur Azure Stack pour répondre aux exigences réglementaires ou stratégiques. Le code n’a pas besoin d’être modifié. Les exemples d’applications incluent l’audit global, les rapports financiers, les opérations de change, les jeux en ligne et les notes de frais. Les clients cherchent parfois à déployer des instances différentes de la même application sur Azure ou Azure Stack, selon les exigences techniques et professionnelles. Même si Azure satisfait à la plupart des exigences, Azure Stack complète l’approche de déploiement si nécessaire.
-- **Modèle d’application cloud en local.** Les clients peuvent utiliser les services web Azure, les conteneurs ainsi que les architectures serverless et de microservice pour mettre à jour et étendre des applications existantes ou en créer. Vous pouvez utiliser des processus DevOps cohérents sur Azure dans le cloud et sur Azure Stack en local. Il existe un intérêt croissant pour la modernisation des applications, notamment des applications stratégiques de base.
+- **Modèle d’application cloud en local.** Les clients peuvent utiliser les services web, conteneurs, microservices et architectures serverless Azure pour mettre à jour et étendre des applications existantes ou en générer de nouvelles. Vous pouvez utiliser des processus DevOps cohérents sur Azure dans le cloud et sur Azure Stack en local. Il existe un intérêt croissant pour la modernisation des applications, notamment des applications stratégiques de base.
 
 Vous disposez de deux options pour déployer Azure Stack :
 
@@ -61,6 +63,8 @@ Vous disposez de deux options pour déployer Azure Stack :
 ## <a name="azure-stack-one-cloud-ecosystem"></a>Écosystème cloud Azure Stack
 
 Vous pouvez accélérer les initiatives Azure Stack avec l’écosystème Azure complet :
+
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
 
 - Azure garantit que la plupart des applications et services certifiés pour Azure fonctionnent sur Azure Stack. Plusieurs éditeurs de logiciels indépendants étendent leurs solutions sur Azure Stack. Ces éditeurs de logiciels indépendants sont notamment Bitnami, Docker, Kemp Technologies, Pivotal Cloud Foundry, Red Hat Enterprise Linux et SUSE Linux.
 - Vous pouvez décider qu’Azure Stack doit être fourni et utilisé comme un service complètement managé. Plusieurs partenaires recevront des offres de services managés sur Azure et Azure Stack sous peu. Ces partenaires sont Tieto, Yourhosting, Revera, Pulsant et NTT. Ces partenaires fournissent des services gérés pour Azure via le programme fournisseur de solutions cloud (CSP). Ils étendent leurs offres pour y inclure des solutions hybrides.

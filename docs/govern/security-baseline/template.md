@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5341abc29fffdfebca60acc3db44bb846aada0d9
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ed3e9a193a33ab89ac7a421dcbc1a89a55ffc9b6
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707167"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392786"
 ---
 # <a name="security-baseline-template"></a>Modèle Base de référence de la sécurité
 
@@ -24,11 +24,7 @@ Lorsque vos discussions avancent, utilisez la structure de ce modèle comme mod�
 > [!IMPORTANT]
 > Ce modèle est un exemple limité. Avant de mettre à jour ce modèle pour l’adapter à vos besoins, vous devez passer en revue les étapes suivantes pour définir une discipline Base de référence de la sécurité efficace dans votre stratégie de gouvernance cloud.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx">Télécharger le modèle de discipline de gouvernance</a>
-
-<!-- markdownlint-enable MD033 -->
+[Télécharger le modèle de discipline de gouvernance](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

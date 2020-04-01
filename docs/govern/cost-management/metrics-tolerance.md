@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 221a29db7eb68acc6ffd5b52a0b01c1769e00222
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708816"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357177"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Mesures, indicateurs et tolérance au risque de Cost Management
 
@@ -34,7 +34,7 @@ Voici quelques exemples de métriques utiles que vous devez rassembler pour mieu
 
 ## <a name="risk-tolerance-indicators"></a>Indicateurs de tolérance au risque
 
-Au cours des déploiements précoces à petite échelle, tels que le développement/les tests ou les premières charges de travail expérimentales, Cost Management est susceptible de présenter un risque relativement faible. Au fur et à mesure que les ressources sont déployées, le risque augmente, et la tolérance au risque de l’entreprise est susceptible de diminuer. De plus, à mesure que les équipes d’adoption du cloud ont la possibilité de configurer ou de déployer des ressources dans le cloud, le risque augmente et la tolérance diminue. À l’inverse, le développement d’une discipline Cost Management nécessite des collaborateurs de la phase d’adoption du cloud pour le déploiement de nouvelles technologies plus innovantes.
+Au cours des déploiements précoces à petite échelle, tels que le développement/les tests ou les premières charges de travail expérimentales, Cost Management est susceptible de présenter un risque relativement faible. À mesure que des ressources sont déployées, le risque augmente et la tolérance au risque de l’entreprise est susceptible de diminuer. De plus, à mesure que les équipes d’adoption du cloud ont la possibilité de configurer ou de déployer des ressources dans le cloud, le risque augmente et la tolérance diminue. À l’inverse, le développement d’une discipline Cost Management nécessite des collaborateurs de la phase d’adoption du cloud pour le déploiement de nouvelles technologies plus innovantes.
 
 Lors des premières étapes de l’adoption du cloud, vous collaborez avec votre entreprise pour déterminer une base de référence de tolérance au risque. Une fois que vous disposez d’une base de référence, vous devez déterminer les critères qui déclenchent un investissement dans la discipline Cost Management. Ces critères seront probablement différents pour chaque organisation.
 

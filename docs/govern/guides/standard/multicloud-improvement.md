@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a83e2b8a0892e216106890e0bed0066be527e974
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a9c09aaf915a7f008cde80ebdc050ee95bbf7430
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709258"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357015"
 ---
+<!-- cSpell:ignore MPLS -->
+
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Guide de gouvernance pour les entreprises standard : Amélioration multicloud
 
 Cet article fait progresser le scénario en ajoutant des contrôles à l’adoption multi-cloud.
@@ -32,7 +34,7 @@ Dans la phase précédente de ce scénario, l’entreprise avait commencé à en
 Depuis, certains changements ont eu lieu et ceux-ci vont avoir un impact sur la gouvernance :
 
 - L’identité est contrôlée par une instance locale d’Active Directory. L’identité hybride est facilitée grâce à la réplication vers Azure Active Directory.
-- Les opérations informatiques ou opérations cloud sont principalement gérées par Azure Monitor et les autres automatisations associées.
+- Les opérations informatiques ou opérations cloud sont principalement gérées par Azure Monitor et des processus automatisés associés.
 - La récupération d'urgence et la continuité de l’activité sont contrôlées par des instances Azure Vault.
 - Azure Security Center est utilisé pour superviser les attaques et les violations de sécurité.
 - Azure Security Center et Azure Monitor sont tous les deux utilisés pour superviser la gouvernance du cloud.

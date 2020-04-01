@@ -7,13 +7,15 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 124f8943b7014f7f9fffeb39d464f3ad28e85816
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9fe6cd29e6bff2ea9d969c715aec65d608f0b23e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341706"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356411"
 ---
+<!-- cSpell:ignore HKEY kusto -->
+
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Activer le suivi et les alertes pour les changements critiques
 
 Les services Change Tracking et Inventory d’Azure fournissent des alertes sur l’état de la configuration de votre environnement hybride et sur les modifications apportées à cet environnement. Ils peuvent faire des rapports sur les modifications de fichiers, de services, de logiciels et de registres critiques susceptibles d’affecter vos serveurs déployés.
@@ -36,7 +38,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ![Capture d’écran de l’éditeur de requête Log Analytics dans le portail Azure](./media/change-tracking2.png)
 
-Cette requête recherche les modifications apportées au contenu des fichiers dont le chemin d’accès contient le mot « hosts ». Vous pouvez également rechercher un fichier spécifique en changeant le paramètre du chemin. (Par exemple, `FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`.)
+Cette requête recherche les changements apportés au contenu des fichiers dont le chemin contient le mot « hosts ». Vous pouvez également rechercher un fichier spécifique en changeant le paramètre du chemin. (Par exemple, `FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`.)
   
 Une fois que la requête a retourné les résultats, sélectionnez **Nouvelle règle d’alerte** pour ouvrir l’éditeur de règles d’alerte. Vous pouvez également accéder à cet éditeur via Azure Monitor dans le portail Azure.
 

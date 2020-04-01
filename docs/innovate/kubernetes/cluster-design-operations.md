@@ -1,6 +1,5 @@
 ---
 title: Conception et opérations de cluster
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Apprenez-en davantage sur Kubernetes dans le Cloud Adoption Framework pour la conception et les opérations de cluster.
 author: sabbour
 ms.author: asabbour
@@ -8,13 +7,15 @@ ms.topic: guide
 ms.date: 12/16/2019
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5b5aafd1c9470b566395201a46c75d96581306bd
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226699"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392732"
 ---
+<!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
+
 # <a name="cluster-design-and-operations"></a>Conception et opérations de cluster
 
 Identifiez la configuration du cluster et la conception du réseau. Garantissez la scalabilité future en automatisant le provisionnement de l’infrastructure. Assurez une haute disponibilité en planifiant la continuité d’activité et la reprise d’activité.
@@ -22,6 +23,8 @@ Identifiez la configuration du cluster et la conception du réseau. Garantissez 
 ## <a name="plan-train-and-proof"></a>Planifier, former et vérifier
 
 Pour bien démarrer, la liste de contrôle et les ressources ci-dessous vous aideront à planifier la conception du cluster. Vous devez pouvoir répondre à ces questions :
+
+<!-- markdownlint-disable MD033 -->
 
 > [!div class="checklist"]
 >
@@ -34,7 +37,7 @@ Pour bien démarrer, la liste de contrôle et les ressources ci-dessous vous aid
 >
 > | Liste de contrôle  | Ressources |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Identifiez les considérations relatives à la conception réseau.** Familiarisez-vous avec les considérations relatives à la conception du réseau de clusters, comparez les modèles de réseau et choisissez le plug-in de mise en réseau Kubernetes adapté à vos besoins.    | [Kubenet et Azure Container Networking Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Utiliser la mise en réseau kubenet avec vos propres plages d’adresses IP dans Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Configurer un réseau Azure CNI dans AKS (Azure Kubernetes Service)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Conception d’un réseau sécurisé pour un cluster AKS]](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
+> | **Identifiez les considérations relatives à la conception réseau.** Familiarisez-vous avec les considérations relatives à la conception du réseau de clusters, comparez les modèles de réseau et choisissez le plug-in de mise en réseau Kubernetes adapté à vos besoins.    | [Kubenet et Azure Container Networking Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Utiliser la mise en réseau kubenet avec vos propres plages d’adresses IP dans Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Configurer un réseau Azure CNI dans AKS (Azure Kubernetes Service)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Conception d’un réseau sécurisé pour un cluster AKS](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
 > | **Créez plusieurs pools de nœuds.** Pour prendre en charge les applications qui ont des exigences de calcul ou de stockage différentes, vous pouvez éventuellement configurer votre cluster avec plusieurs pools de nœuds. Par exemple, utilisez des pools de nœuds supplémentaires afin de fournir des GPU pour les applications nécessitant beaucoup de ressources système ou d’accéder à un stockage SSD hautes performances.   | [Créer et gérer plusieurs pools de nœuds pour un cluster dans Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
 > | **Déterminez les exigences en matière de disponibilité.** Pour offrir un niveau de disponibilité plus élevé à vos applications, les clusters peuvent être répartis sur plusieurs zones de disponibilité. Ces zones représentent des centres de données physiquement séparés au sein d’une région donnée. Quand les composants du cluster sont répartis sur plusieurs zones, votre cluster est capable de tolérer une défaillance dans l’une de ces zones. Vos applications et vos opérations de gestion restent disponibles même si un centre de données complet rencontre un problème.   | [Créer un cluster Azure Kubernetes Service (AKS) qui utilise des zones de disponibilité](https://docs.microsoft.com/azure/aks/availability-zones) |
 

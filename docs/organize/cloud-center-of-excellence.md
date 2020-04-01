@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ab3ff18d25d8a4e6ee9403236d101f98a9a6dd04
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cfd554aaa2252e9a7569fd2a56af05c3c40e8163
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092655"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355044"
 ---
+<!-- cSpell:ignore ccoe deprioritize -->
+
 # <a name="cloud-center-of-excellence"></a>Centre d’excellence de cloud
 
 L’agilité commerciale et technique est un objectif fondamental de la plupart des organisations informatiques. Un centre d’excellence de cloud (CCoE) est une fonction qui crée un équilibre entre vitesse et stabilité.
@@ -59,7 +61,7 @@ Le CCoE est une fonction composée de quatre équipes très sollicitées. Il est
 
 ## <a name="solutions-and-controls"></a>Solutions et contrôles
 
-Chaque membre du CCoE est chargé de comprendre les contraintes, les risques et les protections nécessaires qui ont conduit à l’ensemble actuel des contrôles informatiques. Les efforts collectifs du CCoE devraient transformer cette compréhension en solutions ou en contrôles natifs (ou hybrides) du cloud, qui permettent d’obtenir les résultats métier souhaités en libre-service. Au fur et à mesure que des solutions sont créées, elles sont partagées avec diverses équipes sous forme de contrôles ou d’automatismes qui servent de garde-fous pour divers efforts. Ces garde-fous permettent d’orienter les activités gratuites des différentes équipes, tout en déléguant des responsabilités aux participants dans les différents efforts de migration ou d’innovation.
+Chaque membre du CCoE est chargé de comprendre les contraintes, les risques et les protections nécessaires qui ont conduit à l’ensemble actuel des contrôles informatiques. Les efforts collectifs du CCoE devraient transformer cette compréhension en solutions ou en contrôles natifs (ou hybrides) du cloud, qui permettent d’obtenir les résultats métier souhaités en libre-service. À mesure que des solutions sont créées, elles sont partagées avec diverses équipes sous forme de contrôles ou de processus automatisés qui servent de garde-fous pour divers efforts. Ces garde-fous permettent d’orienter les activités gratuites des différentes équipes, tout en déléguant des responsabilités aux participants dans les différents efforts de migration ou d’innovation.
 
 Exemples de cette transition :
 

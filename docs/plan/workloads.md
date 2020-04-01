@@ -1,20 +1,20 @@
 ---
-title: Hiérarchiser et définir les charges de travail pour l’adoption du cloud
-description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud.
+title: Définir et hiérarchiser les charges de travail pour l’adoption du cloud
+description: Utilisez Cloud Adoption Framework pour Azure afin de découvrir comment définir et hiérarchiser les charges de travail pour un plan d’adoption du cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140618"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354700"
 ---
-# <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Hiérarchiser et définir les charges de travail pour un plan d’adoption du cloud
+# <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Définir et hiérarchiser les charges de travail pour un plan d’adoption du cloud
 
 L’établissement de priorités claires et exploitables est l’un des secrets de la réussite de l’adoption du cloud. Il est naturel d’être tenté de consacrer du temps à définir toutes les charges de travail qui pourraient potentiellement être affectées lors de l’adoption du cloud. Toutefois, cela s’avère contreproductif, notamment au début du processus d’adoption.
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: bbd50e5e2ddda9489f0fc7a90a546ef41fd86ade
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312708"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357112"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Guide de gouvernance pour les entreprises complexes : Explication des conseils
 
@@ -50,7 +50,7 @@ L’équipe de gouvernance cloud est responsable des décisions et implémentati
 
 ### <a name="subscription-design"></a>Conception de l’abonnement
 
-La décision sur la conception de l’abonnement à utiliser détermine la façon dont les abonnements Azure sont structurés, et la façon dont les groupes d’administration Azure sont utilisés pour gérer efficacement l’accès, les stratégies et la conformité de ces abonnements. Dans ce scénario, l’équipe de gouvernance a choisi le modèle de conception d’abonnement **[Mixte](../../../decision-guides/subscriptions/index.md#mixed-patterns)** .
+La décision sur la conception de l’abonnement à utiliser détermine la façon dont les abonnements Azure sont structurés, et la façon dont les groupes d’administration Azure sont utilisés pour gérer efficacement l’accès, les stratégies et la conformité de ces abonnements. Dans ce scénario, l’équipe de gouvernance a choisi une **[stratégie d’abonnement mixte](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** .
 
 - Comme les nouvelles requêtes pour des ressources Azure augmentent, un « Département » doit être établi pour chacune des grandes unités commerciales dans chaque géographie opérationnelle. Dans chacun de ces départements, des « abonnements » doivent être créés pour chaque archétype d’application.
 - Un archétype d’application est un moyen de regrouper des applications dont les besoins sont similaires. Voici quelques exemples communs : Applications avec des données protégées, applications régies (telles que HIPAA ou FedRAMP), applications à faible risque, applications avec des dépendances locales, applications SAP ou autre mainframe dans Azure, ou applications qui étendent localement des applications SAP ou mainframe. Chaque organisation a ses propres besoins, en fonction des classifications de données et des types d’applications qui alimentent l’entreprise. Le mappage des dépendances de l’investissement numérique peut aider à définir les archétypes d’application dans une organisation.

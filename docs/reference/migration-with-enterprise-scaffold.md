@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311606"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353751"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -77,7 +77,7 @@ Les trois modèles courants pour les inscriptions Azure sont :
 
   ![Le modèle géographique](../_images/reference/geographic.png)
 
-Bien que chacun de ces modèles ait sa place, le modèle **division** est de plus en plus adopté pour sa souplesse quand il s’agit de modéliser le modèle de coût d’une organisation et de représenter l’étendue du contrôle. Le groupe Microsoft Core Engineering and Operations a créé un sous-ensemble efficace du modèle **division** (niveaux **Fédéral**, **État** et **Local**). Pour plus d’informations, consultez [Organisation des abonnements et des groupes de ressources dans l’entreprise](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
+Bien que chacun de ces modèles ait sa place, le modèle **division** est de plus en plus adopté pour sa souplesse quand il s’agit de modéliser le modèle de coût d’une organisation et de représenter l’étendue du contrôle. Le groupe Microsoft Core Engineering and Operations a créé un sous-ensemble efficace du modèle **division** (niveaux **Fédéral**, **État** et **Local**). Pour plus d’informations, consultez [Organisation de vos abonnements et groupes de ressources](../ready/azure-best-practices/organize-subscriptions.md).
 
 ### <a name="azure-management-groups"></a>Groupes d’administration Azure
 

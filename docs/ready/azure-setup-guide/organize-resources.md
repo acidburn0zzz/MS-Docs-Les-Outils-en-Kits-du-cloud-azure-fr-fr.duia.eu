@@ -9,29 +9,30 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024009"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354339"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
 # <a name="organize-your-azure-resources"></a>Organiser vos ressources Azure
 
-L’organisation de vos ressources informatiques est essentielle pour sécuriser, gérer et suivre les coûts relatifs à vos charges de travail. Pour organiser vos ressources, utilisez les hiérarchies d’administration au sein de la plateforme Azure, implémentez des conventions d’affectation de noms bien pensées et appliquez la catégorisation des ressources.
+L’organisation de vos ressources informatiques est essentielle pour sécuriser, gérer et suivre les coûts relatifs à vos charges de travail. Pour organiser vos ressources, définissez une hiérarchie des groupes d’administration, suivez une convention de nommage mûrement réfléchie et appliquez l’identification des ressources.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
+<!-- cSpell:disable-next-line -->
 # <a name="azure-management-groups-and-hierarchy"></a>[Hiérarchie et groupes d’administration Azure](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure fournit quatre niveaux d’étendue de la gestion : groupes d’administration, abonnements, groupes de ressources et ressources. L’illustration suivante montre les relations entre ces niveaux.
 
-   ![Diagramme illustrant les relations de la hiérarchie d’administration](./media/organize-resources/scope-levels.png)
+   ![Diagramme illustrant la relation des niveaux hiérarchiques d’administration](./media/organize-resources/scope-levels.png)
 
 - **Groupes d’administration :** Ces groupes sont des conteneurs qui vous permettent de gérer plus facilement l’accès, la stratégie et la conformité pour plusieurs abonnements. Tous les abonnements dans un groupe d’administration héritent automatiquement des conditions appliquées à ce groupe d’administration.
-- **Abonnements :** Un abonnement regroupe les comptes d’utilisateur et les ressources qui ont été créées par ces derniers. Chaque abonnement a des limites ou quotas sur la quantité de ressources que vous pouvez créer et utiliser. Les organisations peuvent utiliser des abonnements pour gérer les coûts et les ressources qui sont créées par les utilisateurs, les équipes ou les projets.
+- **Abonnements :** Un abonnement associe de façon logique les comptes d’utilisateur et les ressources qui ont été créées par ces derniers. Chaque abonnement a des limites ou quotas sur la quantité de ressources que vous pouvez créer et utiliser. Les organisations peuvent utiliser des abonnements pour gérer les coûts et les ressources qui sont créées par les utilisateurs, les équipes ou les projets.
 - **Groupes de ressources :** Un groupe de ressources est un conteneur logique dans lequel les ressources Azure comme les applications web, les bases de données et les comptes de stockage sont déployées et gérées.
 - **Ressources :** les ressources sont des instances de services que vous créez, telles que des machines virtuelles, un stockage ou des bases de données SQL.
 
@@ -41,9 +42,9 @@ Vous pouvez appliquer des paramètres d’administration, tels que des stratégi
 
 En règle générale, il est judicieux d’appliquer les paramètres critiques à des niveaux supérieurs et les exigences spécifiques au projet à des niveaux inférieurs. Par exemple, vous voudrez vous assurer que toutes les ressources de votre organisation sont déployées dans certaines régions. Pour ce faire, appliquez une stratégie à l’abonnement qui spécifie les emplacements autorisés. Lorsque les autres utilisateurs de votre organisation ajouteront de nouveaux groupes de ressources et des ressources, les emplacements autorisés seront automatiquement appliqués. Pour en savoir plus sur les stratégies, consultez la section de ce guide consacrée à la gouvernance, à la sécurité et à la conformité.
 
-Si vous disposez de quelques abonnements seulement, il est relativement simple de les gérer de manière indépendante. Si le nombre d’abonnements que vous utilisez augmente, envisagez de créer une hiérarchie de groupes d’administration pour simplifier la gestion de vos abonnements et de vos ressources. Pour plus d’informations sur la gestion de plusieurs abonnements, consultez [Mise à l’échelle avec plusieurs abonnements Azure](../azure-best-practices/scaling-subscriptions.md).
+Si vous disposez de quelques abonnements seulement, il est relativement simple de les gérer de manière indépendante. Si le nombre d’abonnements que vous utilisez augmente, envisagez de créer une hiérarchie de groupes d’administration pour simplifier la gestion de vos abonnements et de vos ressources. Pour plus d’informations, consultez [Organiser et gérer vos abonnements Azure](../azure-best-practices/organize-subscriptions.md).
 
-Planifiez votre stratégie de conformité en collaboration avec les personnes qui, dans vos organisations, ont un rôle dans les domaines suivants : sécurité et conformité, administration informatique, architecture d’entreprise, réseau, finances et approvisionnement.
+Planifiez votre stratégie de conformité en collaboration avec les personnes qui, dans votre organisation, ont un rôle dans les domaines suivants : sécurité et conformité, administration informatique, architecture d’entreprise, réseau, finances et provisionnement.
 
 ::: zone target="docs"
 
@@ -80,9 +81,11 @@ Créez un groupe de ressources pour regrouper des ressources comme les applicati
 Pour plus d'informations, consultez les rubriques suivantes :
 
 - [Notions de base d’Azure](../considerations/fundamental-concepts.md)
-- [Mise à l’échelle avec plusieurs abonnements Azure](../azure-best-practices/scaling-subscriptions.md)
-- [Comprendre la gestion des accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Créer vos abonnements initiaux](../azure-best-practices/initial-subscriptions.md)
+- [Créez des abonnements Azure supplémentaires pour mettre à l’échelle votre environnement Azure](../azure-best-practices/scale-subscriptions.md)
+- [Organiser et gérer vos abonnements Azure](../azure-best-practices/organize-subscriptions.md)
 - [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Comprendre la gestion des accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Limites du service d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
@@ -125,13 +128,13 @@ Créez un groupe de ressources pour regrouper des ressources comme les applicati
 
 # <a name="naming-standards"></a>[Conventions de nommage](#tab/NamingStandards)
 
-Adoptez des conventions standard en matière d’affectation de noms pour identifier les ressources dans le Portail Azure, sur les factures et dans les scripts. Votre stratégie de nommage doit inclure des détails commerciaux et opérationnels dans les noms de ressources :
+Adoptez des conventions de nommage standard pour identifier les ressources dans le portail Azure, sur un relevé de facturation dans des scripts d’automatisation. Votre stratégie de nommage doit inclure des détails commerciaux et opérationnels dans les noms de ressources :
 
 - Le côté commercial de cette stratégie doit s’assurer que les noms de ressources incluent les informations organisationnelles nécessaires pour identifier les équipes. Utilisez une ressource avec les propriétaires de l’entreprise qui sont responsables des coûts des ressources.
 
 - Le côté opérationnel doit s’assurer que les noms incluent les informations dont les équipes informatiques ont besoin. Utilisez les détails qui identifient la charge de travail, l’application, l’environnement, le caractère critique et d’autres informations utiles pour la gestion des ressources.
 
-Différents types de ressources peuvent se distinguer en matière de limites de longueur et de caractères autorisés, dont la plupart sont répertoriés dans l’[article Conventions d’affectation de noms](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) des meilleures pratiques Azure. Pour obtenir plus d’informations et des recommandations visant spécifiquement à prendre en charge les efforts de l’entreprise dans le cadre de l’adoption du cloud, consultez l’[aide du Framework d’adoption du cloud au sujet de l’attribution de noms et de la catégorisation](../azure-best-practices/naming-and-tagging.md).
+Les différents types de ressources ont des [règles et restrictions de nommage](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules) différentes. Pour obtenir plus d’informations et des recommandations visant spécifiquement à prendre en charge les efforts de l’entreprise dans le cadre de l’adoption du cloud, consultez l’[aide du Framework d’adoption du cloud au sujet de l’attribution de noms et de la catégorisation](../azure-best-practices/naming-and-tagging.md).
 
 Le tableau suivant présente les modèles d’affectation de noms pour quelques exemples de types de ressources Azure.
 
@@ -170,7 +173,7 @@ Pour obtenir d’autres recommandations et exemples de catégorisation, consulte
 
 Pour appliquer une étiquette à un groupe de ressources :
 
-1. Accédez à [Groupes de ressources](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups).
+1. Accédez à [Groupes de ressources](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups).
 1. Sélectionnez un groupe de ressources.
 1. Sélectionnez **Attribuer des étiquettes**.
 1. Entrez un nouveau nom et une nouvelle valeur, ou sélectionnez un nom et une valeur existants dans la liste déroulante.
@@ -194,6 +197,6 @@ Pour appliquer une étiquette à un groupe de ressources :
 1. Sélectionner **Étiquettes**.
 1. Entrez un nouveau nom et une nouvelle valeur, ou sélectionnez un nom et une valeur existants.
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" :::
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups]" submitText="Go to resource groups" :::
 
 ::: zone-end

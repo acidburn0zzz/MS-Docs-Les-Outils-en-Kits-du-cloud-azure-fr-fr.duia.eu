@@ -7,18 +7,18 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c96039183f50d0ff189dab04defda4fd1ba2e4fc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709496"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356920"
 ---
 # <a name="evaluate-risk-tolerance"></a>Évaluer la tolérance au risque
 
 Chaque décision commerciale engendre de nouveaux risques. Tout investissement s'accompagne d'un risque de perte. Les nouveaux produits ou services engendrent des risques de défaillance du marché. Toute modification apportée aux produits ou services actuels peut se traduire par une réduction de la part de marché. La transformation cloud n’apporte aucune solution magique aux risques encourus quotidiennement par les entreprises. Au contraire, les solutions connectées (cloud ou locales) introduisent de nouveaux risques. Le déploiement de ressources dans une installation connectée au réseau accroît également les menaces potentielles en exposant les points faibles de la sécurité à une communauté mondiale beaucoup plus large. Heureusement, les fournisseurs de cloud sont conscients de l’évolution et de l’augmentation de ces risques. Ils investissent fortement afin de réduire et de gérer les risques auxquels leurs clients sont exposés.
 
-Cet article n'est pas consacré aux risques liés au cloud. Il se concentre sur les risques métier associés aux différentes formes de transformation cloud. Plus bas, nous nous pencherons sur les moyens dont disposent les entreprises pour évaluer la tolérance au risque.
+Cet article n'est pas consacré aux risques liés au cloud. Il se concentre sur les risques métier associés aux différentes formes de transformation cloud. Plus loin dans cet article, nous nous pencherons sur les moyens dont disposent les entreprises pour évaluer la tolérance au risque.
 
 <!-- markdownlint-disable MD026 -->
 

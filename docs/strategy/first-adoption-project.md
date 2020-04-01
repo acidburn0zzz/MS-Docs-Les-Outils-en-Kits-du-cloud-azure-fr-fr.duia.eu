@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 063fc4074a7b5972b6b2938abdcb90937412e832
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092505"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353544"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -66,7 +66,7 @@ Voici d’autres exemples de projets de première adoption :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que le premier projet d’adoption du cloud a commencé, l’équipe chargée de la stratégie cloud peut se tourner vers le [plan d’adoption du cloud](../plan/index.md) à plus long terme.
+Découvrez les stratégies d’[équilibrage des priorités concurrentes](./balance-competing-priorities.md).
 
 > [!div class="nextstepaction"]
-> [Créer votre plan d’adoption du cloud](../plan/index.md)
+> [Équilibrer les priorités concurrentes](./balance-competing-priorities.md)

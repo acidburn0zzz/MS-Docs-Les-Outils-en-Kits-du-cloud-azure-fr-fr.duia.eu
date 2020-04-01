@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb278c284a0f72a530eb4b84ecd3137b997933ac
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fc0c52932b15a0987f78e853c3b3756d27629ae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508353"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353490"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -105,3 +105,10 @@ Ces différents efforts doivent être répartis entre deux équipes d’adoption
 **Refactorisation mineure :** Certaines applications peuvent être modernisées avec une refactorisation mineure au niveau des données ou de l’application. Ce travail oblige les membres de l’équipe à déployer des données sur des plateformes de données informatiques ou à apporter des modifications mineures à la configuration de l’application. Cela peut nécessiter un support limité des experts en matière de développement d’applications ou de données. Toutefois, ce travail est similaire au travail effectué par les implémenteurs informatiques lors du déploiement d’applications tierces. Ce travail peut facilement s’aligner sur l’équipe de migration cloud ou celle de stratégie cloud. Bien que cet effort ne soit pas aussi rapide qu’une migration de réhébergement, il prend moins de temps que les efforts de refactorisation.
 
 Lors de la migration, les efforts devraient être segmentés des trois manières répertoriées ci-dessus et fournis par l’équipe appropriée dans l’itération appropriée. Même si vous devez diversifier le portefeuille, veillez également à ce que les efforts restent très concentrés et séparés.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Découvrez comment les [décisions du marché mondial](./global-markets.md) peuvent affecter votre parcours de transformation.
+
+> [!div class="nextstepaction"]
+> [Comprendre les marchés mondiaux](./global-markets.md)

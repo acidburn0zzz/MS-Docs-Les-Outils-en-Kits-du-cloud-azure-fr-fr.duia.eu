@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f092bb99cb16a6dd3c79c04d29fa7aac318c913f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0805868195912807c50a49d781928865f2f82ca9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092804"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355231"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Corriger les ressources avant la migration
 
@@ -36,7 +36,7 @@ Dans tous les environnements d’entreprise existe une dette technique. Dans une
 
 Lorsqu’un centre de données est correctement entretenu et mis à jour et qu’il reçoit les correctifs appropriés, il est peu probable qu’il soit nécessaire de le corriger. Les environnements riches en corrections tendent à être courants dans les grandes entreprises, les organisations qui ont subi une importante réduction des effectifs informatiques, certains environnements de services managés hérités et les environnements riches en acquisitions. Dans chacun de ces types d’environnements, la correction peut consommer une grande partie de l’effort de migration. Lorsque les tâches de correction suivantes apparaissent fréquemment et nuisent à la vitesse ou à la cohérence de la migration, il peut être judicieux de scinder la correction en un effort et une équipe parallèles (de la même façon que l’adoption du cloud et la gouvernance cloud s’exécutent en parallèle).
 
-- **Mises à niveau fréquentes de l’hôte.** Quand un grand nombre d’hôtes doivent être mis à niveau pour terminer la migration d’une charge de travail, l’équipe de migration risque de subir des retards. Il peut être judicieux de libérer les applications concernées et de traiter les corrections avant d’inclure les applications concernées dans les mises en production planifiées.
+- **Mises à niveau fréquentes de l’hôte.** Quand un grand nombre d’hôtes doivent être mis à niveau pour terminer la migration d’une charge de travail, l’équipe de migration risque de subir des retards. Il peut être judicieux de libérer les applications concernées et de traiter les étapes de correction avant d’inclure les applications concernées dans des mises en production planifiées.
 - **Mise à niveau fréquente du système d’exploitation invité.** Les grandes entreprises ont généralement des serveurs s’exécutant sur des versions obsolètes de Linux ou Windows. Outre les risques de sécurité évidents liés à l’exploitation d’un système d’exploitation obsolète, il existe également des problèmes d’incompatibilité qui empêchent la migration des charges de travail concernées. Quand un grand nombre de machines virtuelles requièrent une correction du système d’exploitation, il peut être judicieux de répartir ces efforts dans une itération parallèle.
 - **Modifications majeures du code.** Les applications personnalisées plus anciennes peuvent nécessiter beaucoup plus de modifications pour les préparer au déploiement PaaS. Dans ce cas, il peut être judicieux de les supprimer entièrement du backlog de migration et de les gérer dans un programme complètement séparé.
 
