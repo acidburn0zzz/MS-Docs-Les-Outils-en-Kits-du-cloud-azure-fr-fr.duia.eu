@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 28cc70af615aa8df17ad7b4047f23b0df324b2db
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311623"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356287"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -37,7 +37,7 @@ L’équipe cloud de Contoso a épinglé les objectifs de la migration vers Azur
 - Les données d’élément de travail et l’historique de l’année dernière doivent être migrés.
 - Ils ne souhaitent pas configurer de nouveaux noms et mots de passe d’utilisateur. Toutes les attributions système actuelles doivent être conservées.
 - Ils souhaitent passer de Team Foundation Version Control (TFVC) à Git pour le contrôle de code source.
-- La transition vers Git sera une migration « tip » consistant à importer uniquement la dernière version du code source. Elle aura lieu durant un temps d’arrêt, quand tout travail sera interrompu lors du déplacement de la base de code. Ils comprennent que seul l’historique de la branche maître en cours sera disponible après la migration.
+- La transition vers Git sera une migration « tip » consistant à importer uniquement la dernière version du code source. Elle aura lieu pendant un temps d’arrêt, quand tout travail sera interrompu lors du déplacement de la base de code. Ils comprennent que seul l’historique de la branche maître en cours sera disponible après la migration.
 - Ils sont préoccupés par la modification et souhaitent le tester avant de procéder à une migration complète. Ils souhaitent conserver l’accès à TFS, même après la migration vers Azure DevOps Services.
 - Ils ont plusieurs collections et souhaitent commencer avec l’une d’elles ne contenant quelques projets afin de mieux comprendre le processus.
 - Ils comprennent que les collections TFS sont une relation de un à un avec des organisations Azure DevOps Services, de sorte qu’elles ont plusieurs URL. Toutefois, cela correspond à leur modèle actuel de séparation pour les bases de code et les projets.
