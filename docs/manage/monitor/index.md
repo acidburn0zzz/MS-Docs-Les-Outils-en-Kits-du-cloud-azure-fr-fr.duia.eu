@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 1cb25ad399c790a3dfbdd6c55119a50165f36196
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
+ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426058"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80606568"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Guide de supervision du cloud : Introduction
 
@@ -31,9 +31,9 @@ Toutefois, les équipes informatiques préfèrent continuer à utiliser les outi
 
 Ce guide est une référence détaillée pour aider les directeurs informatiques d’entreprise, les décideurs d’entreprise, les architectes d’application et les développeurs d’application à comprendre ce qui suit :
 
-* Les plateformes de supervision Azure, avec une présentation et une comparaison de leurs fonctionnalités.
-* La solution la plus adaptée pour superviser des charges de travail hybrides, privées et natives Azure.
-* L’approche recommandée de supervision de bout en bout de l’infrastructure et des applications, notamment les solutions pouvant être déployées pour la migration des charges de travail courantes vers Azure.
+- Les plateformes de supervision Azure, avec une présentation et une comparaison de leurs fonctionnalités.
+- La solution la plus adaptée pour superviser des charges de travail hybrides, privées et natives Azure.
+- L’approche recommandée de supervision de bout en bout de l’infrastructure et des applications, notamment les solutions pouvant être déployées pour la migration des charges de travail courantes vers Azure.
 
 Ce guide n’est pas un article de procédure pour utiliser ou configurer des services et solutions Azure individuels, mais il les référence comme sources quand ils sont applicables ou disponibles. Après la lecture de ce guide, vous saurez comment utiliser une charge de travail en suivant les bonnes pratiques et modèles suivants.
 
@@ -47,21 +47,21 @@ Ce guide est destiné en priorité aux administrateurs d’entreprise, aux servi
 
 Cet article fait partie d’une série. Les articles suivants sont destinés à être lus ensemble, dans l’ordre suivant :
 
-* Introduction (cet article)
-* [Stratégie de supervision pour les modèles de déploiement cloud](./cloud-models-monitor-overview.md)
-* [Collecte des données appropriées](./data-collection.md)
-* [Alertes](./alerting.md)
+- Introduction (cet article)
+- [Stratégie de supervision pour les modèles de déploiement cloud](./cloud-models-monitor-overview.md)
+- [Collecte des données appropriées](./data-collection.md)
+- [Alertes](./alerting.md)
 
 ## <a name="products-and-services"></a>Produits et services
 
 Quelques logiciels et services sont disponibles pour vous aider à superviser et à gérer diverses ressources hébergées dans Azure, votre réseau d’entreprise ou d’autres fournisseurs de cloud. Il s'agit de :
 
-* System Center Operations Manager
-* Azure Monitor, qui comprend maintenant Log Analytics et Application Insights
-* Azure Policy et Azure Blueprints
-* Azure Automation
-* Azure Logic Apps
-* Hubs d'événements Azure
+- System Center Operations Manager
+- Azure Monitor, qui comprend maintenant Log Analytics et Application Insights
+- Azure Policy et Azure Blueprints
+- Azure Automation
+- Azure Logic Apps
+- Hubs d'événements Azure
 
 Cette première version du guide couvre nos plateformes de supervision actuelles : Azure Monitor et System Center Operations Manager. Elle décrit également la stratégie recommandée pour superviser chacun des modèles de déploiement dans le cloud. Il couvre aussi la première série de recommandations en supervision, en commençant par la collecte de données et les alertes.
 
