@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: 353cf2effa8158634f93299c504bd3c069b5d11b
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: de34df16a5c709ac5cffbdb355f70c60c8a18c25
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093732"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527692"
 ---
 # <a name="manage-organizational-alignment"></a>Gérer l’alignement organisationnel
 
@@ -77,7 +77,7 @@ Comprendre les fonctionnalités cloud nécessaires à l’adoption et au fonctio
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Établir des équipes</h3>
-Définir les équipes qui fourniront les diverses fonctionnalités cloud. Des options de bonnes pratiques sont listées pour référence.
+Définir les équipes qui fourniront les diverses fonctionnalités cloud. Plusieurs options de bonnes pratiques sont listées pour référence.
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ Définir les équipes qui fourniront les diverses fonctionnalités cloud. Des op
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Matrice RACI</h3>
-Une définition claire de chaque rôle est un aspect important de tout modèle d’exploitation. Tirez parti de la matrice RACI fournie pour attribuer les rôles de responsabilité, de consultation et d’information à chacune des équipes pour les diverses fonctions du modèle d’exploitation cloud.
+Une définition claire de chaque rôle est un aspect important de tout modèle d’exploitation. Utilisez la matrice RACI fournie pour attribuer les rôles de responsabilité, de consultation et d’information à chacune des équipes pour les diverses fonctions du modèle d’exploitation cloud.
                         </div>
                     </div>
                 </div>

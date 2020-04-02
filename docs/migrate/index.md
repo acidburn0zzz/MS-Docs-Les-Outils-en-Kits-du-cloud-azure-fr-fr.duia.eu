@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c4ee7491fb5fbfa549dfe82c82e720f51188a25c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 10fa2bf0f63351adbf50c04b2725090d0c350d2d
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312303"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527761"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migration cloud dans le Framework d’adoption du cloud
 
@@ -37,7 +37,7 @@ Pour vous préparer à cette phase du cycle d’adoption du cloud, le framework 
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Migrer votre première charge de travail</h3>
-Tirez parti du Guide de migration d’Azure pour vous familiariser avec les outils Azure natifs et une approche de la migration.
+Utilisez le Guide de migration d’Azure pour vous familiariser avec les outils Azure natifs et une approche de la migration.
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ Tirez parti du Guide de migration d’Azure pour vous familiariser avec les outi
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Scénarios de migration</h3>
-Tirez parti d’outils et d’approches de migration supplémentaires pour agir sur d’autres scénarios de migration.
+Utilisez d’autres outils et approches de migration pour suivre d’autres scénarios de migration.
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ Tirez parti d’outils et d’approches de migration supplémentaires pour agir 
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Meilleures pratiques</h3>
+                            <h3>Bonnes pratiques</h3>
 Répondez aux besoins de migration courants via l’application de bonnes pratiques cohérentes.
                         </div>
                     </div>

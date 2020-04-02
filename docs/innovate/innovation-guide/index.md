@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 46f730847f3c61a77ae9be4304939ff1a8f84ad1
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 77183556afb043ef7e71a57c14f372f522684094
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80427075"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527325"
 ---
 ::: zone target="docs"
 
@@ -39,7 +39,7 @@ Dans ce guide, vous allez apprendre à :
 >
 > - **Gérer les commentaires des clients :** configurez des outils et des processus pour gérer la boucle de rétroaction développer-mesurer-apprendre en utilisant GitHub et Azure DevOps.
 > - **Démocratiser les données :** les données seules peuvent être suffisantes pour proposer des solutions innovantes à vos clients. Déployez des options de données courantes dans Azure.
-> - **Impliquer par le biais d’applications :** certaines innovations demandent une expérience engageante. Tirez parti des plateformes d’applications natives du cloud pour créer des expériences engageantes.
+> - **Impliquer par le biais d’applications :** certaines innovations demandent une expérience engageante. Utilisez des plateformes d’applications natives du cloud pour créer des expériences engageantes.
 > - **Favoriser l’adoption :** l’invention est intéressante, mais un plan de réduction des frictions est nécessaire pour favoriser et adapter l’adoption. Déployez une base pour CI/CD, DevOps et d’autres facilitateurs d’adoption.
 > - **Interagir par le biais des appareils :** créez des expériences ambiantes pour rapprocher vos applications et vos données de la demande des clients. Les expériences d’IoT, de réalité mixte et mobiles sont plus faciles avec Azure.
 > - **Prédire et influencer :** recherchez des modèles dans les données. Utilisez ces modèles pour prédire et influencer les comportements des clients à l’aide d’outils d’analyse prédictive basés sur Azure.

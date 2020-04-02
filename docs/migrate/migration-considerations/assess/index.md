@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b9e39f4f0c86239c3c1d249fdb08dbce2c9f4daa
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429440"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527683"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>Valider les hypothèses d’évaluation avant la migration
 
@@ -45,7 +45,7 @@ En plus de la responsabilité d’ensemble, certaines actions doivent être affe
   - Un membre de l’équipe de stratégie cloud doit assumer la responsabilité finale de cette activité, sous la direction de l’équipe d’adoption du cloud.
 - **Alignement des parties prenantes.** L’équipe aligne les attentes et les priorités avec les parties prenantes internes, identifiant ainsi les critères de réussite de la migration. À quoi ressemble une migration réussie ?
 - **Rationalisation optimisée.** Les hypothèses initiales sont évaluées par rapport à la rationalisation. Une [approche de rationalisation](../../../digital-estate/rationalize.md) différente doit-elle être utilisée pour la migration de cette charge de travail spécifique ?
-- **Décisions de modernisation.** Quelle que soit la décision de rationalisation, les diverses ressources dans la charge de travail doivent-elles être modernisées pour tirer parti des solutions PaaS ?
+- **Décisions de modernisation.** Quelle que soit la décision de rationalisation, les diverses ressources dans la charge de travail doivent-elles être modernisées pour utiliser des solutions PaaS ?
 - **Coût.** Le coût de l’architecture cible a été estimé et le budget global ajusté.
 - **Prise en charge de la migration.** L’équipe a décidé de la manière dont le travail technique de la migration sera effectué, notamment pour déterminer qui du partenaire ou de Microsoft sera chargé du support.
 - **Évaluation.** La charge de travail est évaluée pour déterminer sa compatibilité et ses dépendances.

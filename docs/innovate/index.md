@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: d23c97ab3d1bc5c25617792d53f147654eb33daa
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80427421"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527613"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovation cloud dans le Framework d’adoption du cloud
 
@@ -59,7 +59,7 @@ Avant de choisir des solutions techniques, identifiez comment une nouvelle innov
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Guide d’innovation Azure</h3>
-Azure inclut divers outils cloud qui peuvent accélérer le déploiement de solutions innovantes. Selon votre hypothèse, vous pouvez envisager différentes combinaisons d’outils. Nous vous suggérons de créer un produit minimum viable (MVP) avec des outils de base.
+Azure inclut des outils cloud pour accélérer le déploiement de solutions innovantes. Selon votre hypothèse, vous pouvez envisager différentes combinaisons d’outils. Nous vous suggérons de créer un produit minimum viable (MVP) avec des outils de base.
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ Voici quelques exemples de parcours d’apprentissage spécifiques aux rôles su
 
 [Administrer les conteneurs dans Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure) : Azure Container Instances (ACI) constitue le moyen le plus rapide et le plus facile d’exécuter des conteneurs dans Azure. Ce parcours d’apprentissage vous apprend à créer et gérer vos conteneurs, et à utiliser ACI pour fournir une mise à l’échelle élastique pour Kubernetes.
 
-[Créer des applications serverless](https://docs.microsoft.com/learn/paths/create-serverless-applications) : Azure Functions permet de créer des systèmes de calcul à la demande basés sur les événements, qui peuvent être déclenchés par divers événements externes. Découvrez comment tirer parti des fonctions pour exécuter une logique côté serveur et créer des architectures serverless.
+[Créer des applications serverless](https://docs.microsoft.com/learn/paths/create-serverless-applications) : Azure Functions permet de créer des systèmes de calcul à la demande basés sur les événements, qui peuvent être déclenchés par divers événements externes. Découvrez comment utiliser des fonctions pour exécuter une logique côté serveur et créer des architectures serverless.
 
 Pour découvrir des parcours d’apprentissage supplémentaires, parcourez le [catalogue Learn](https://docs.microsoft.com/learn/browse). Utilisez le filtre **Rôles** pour aligner les parcours d’apprentissage avec votre rôle.
 
