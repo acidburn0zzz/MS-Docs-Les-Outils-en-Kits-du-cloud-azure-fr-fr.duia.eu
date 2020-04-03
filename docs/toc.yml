@@ -1,5 +1,5 @@
 items:
-  - name: Cloud Adoption Framework
+  - name: Framework d’adoption du cloud
     href: index.md
     pdf_name: Microsoft Cloud Adoption Framework for Azure
   - name: Nouveautés
@@ -157,13 +157,13 @@ items:
           - name: Améliorer la sécurité des zones d’accueil (données sensibles)
             items:
               - name: Implémentation d’une architecture réseau hybride sécurisée dans Azure
-                href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Bonnes pratiques pour la sécurité du contrôle d’accès et de gestion des identités Azure
-                href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Bonnes pratiques pour la sécurité des réseaux Azure
-                href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Bonnes pratiques pour la sécurité des opérations Azure
-                href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
       - name: Meilleures pratiques
         items:
           - name: Vue d’ensemble
