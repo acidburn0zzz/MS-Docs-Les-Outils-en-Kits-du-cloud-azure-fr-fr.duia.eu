@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e0cb1779836edce3571a081ae44794aeb8bc06b8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432981"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636506"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Guide de migration Azure : Avant de commencer
 
@@ -55,7 +55,7 @@ Bien que les outils abordés dans ce guide prennent en charge un large éventail
 - Le mappage des dépendances des composants à migrer est simple à définir.
 - Votre secteur d’activité a une réglementation minimale pour cette migration.
 
-Si l’une de ces conditions ne s’applique pas à votre situation, tournez-vous plutôt vers le [guide pour un cadre étendu](../expanded-scope/index.md). Nous vous recommandons également de demander une assistance auprès d’une de nos équipes ou d’un de nos partenaires Microsoft pour effectuer des migrations nécessitant le guide pour un cadre étendu. Les clients qui sont engagés avec Microsoft ou des partenaires certifiés réussissent mieux dans ces scénarios. Vous trouverez plus d’informations sur la demande d’assistance dans ce guide.
+Si l’une de ces conditions ne s’applique pas à votre situation, tournez-vous plutôt vers les [bonnes pratiques de migration cloud](../azure-best-practices/index.md). Nous vous recommandons également de demander une assistance auprès d’une de nos équipes ou d’un de nos partenaires Microsoft pour effectuer des migrations plus complexes. Les clients qui sont engagés avec Microsoft ou des partenaires certifiés réussissent mieux dans ces scénarios. Vous trouverez plus d’informations sur la demande d’assistance dans ce guide.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -63,6 +63,6 @@ Si l’une de ces conditions ne s’applique pas à votre situation, tournez-vou
 
 Pour plus d'informations, consultez les pages suivantes :
 
-- [Guide pour un cadre étendu](../expanded-scope/index.md)
+- [Bonnes pratiques pour la migration cloud](../azure-best-practices/index.md)
 
 ::: zone-end

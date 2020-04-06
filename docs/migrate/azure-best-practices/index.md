@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 22f2718775b194196f65672f0cbc1712d0a3a4ac
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a7affd1d64e80cfdf85504ed62960de78a4a34a5
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433544"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636380"
 ---
 # <a name="best-practices-for-cloud-migration"></a>Bonnes pratiques pour la migration cloud
 
 Nous vous recommandons d’utiliser le [Guide de migration Azure](../azure-migration-guide/index.md) dans le Cloud Adoption Framework comme point de départ si vous souhaitez migrer vers Azure. Ce guide décrit les outils et les approches de base pour la migration des machines virtuelles vers le cloud. Cette section du Cloud Adoption Framework couvre une série de bonnes pratiques qui vont au-delà des outils de base natifs du cloud.
 
-## <a name="cloud-migration-best-practice-checklist"></a>Liste de contrôle des bonnes pratiques en matière de migration cloud
+## <a name="cloud-migration-best-practices-checklist"></a>Check-list des bonnes pratiques de migration cloud
 
 La liste de contrôle suivante décrit des situations complexes qui peuvent nécessiter l’étendue du cadre de la migration, au-delà des instructions du [guide de migration Azure](../azure-migration-guide/index.md).
 
