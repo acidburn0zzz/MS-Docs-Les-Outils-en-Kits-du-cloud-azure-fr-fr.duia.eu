@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04386ec98ed0ecb6269c53a60f64bc73f148b12f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: ba284cca38d1ce494792cce3d130d65a6240f4e1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434852"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996345"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guide de décision pour la cohérence des ressources
 
@@ -29,7 +29,7 @@ La cohérence du déploiement, du regroupement et de la gestion des ressources c
 
 ## <a name="basic-grouping"></a>Regroupement de base
 
-Dans Azure, les [groupes de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) sont un mécanisme d’organisation des ressources de base permettant de regrouper logiquement les ressources dans un abonnement.
+Dans Azure, les [groupes de ressources](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) sont un mécanisme d’organisation des ressources de base permettant de regrouper logiquement les ressources dans un abonnement.
 
 Les groupes de ressources servent de conteneurs pour les ressources ayant un cycle de vie commun ainsi que des contraintes de gestion partagées telles que les exigences en matière de stratégie ou de contrôle d’accès en fonction du rôle (RBAC). Les groupes de ressources ne peuvent pas être imbriqués et les ressources ne peuvent appartenir qu’à un seul groupe de ressources. Toutes les actions du plan de contrôle agissent sur l’ensemble des ressources contenues dans un groupe de ressources. Par exemple, la suppression d’un groupe de ressources supprime également toutes les ressources dans ce groupe. Pour déterminer le modèle à privilégier pour la gestion des groupes de ressources, il convient de se poser les questions suivantes :
 
@@ -46,7 +46,7 @@ Si vous avez répondu _non_ à l’une ou plusieurs de ces questions, vous devez
 
 S’appuyant sur le mécanisme de regroupement des ressources de base, la plateforme Azure offre un système permettant d’utiliser des modèles de déploiement de vos ressources dans l’environnement cloud. Vous pouvez utiliser des modèles pour créer une organisation et des conventions de nommage cohérentes lors du déploiement des charges de travail, en appliquant ces aspects de la conception du déploiement et de la gestion de vos ressources.
 
-Les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) vous permettent de déployer vos ressources de façon répétée et cohérente en utilisant une configuration prédéterminée et une structure de groupes de ressources. Les modèles Resource Manager vous aident à définir un ensemble de standards qui serviront de base à vos déploiements.
+Les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) vous permettent de déployer vos ressources de façon répétée et cohérente en utilisant une configuration prédéterminée et une structure de groupes de ressources. Les modèles Resource Manager vous aident à définir un ensemble de standards qui serviront de base à vos déploiements.
 
 Par exemple, vous pouvez disposer d’un modèle standard pour déployer une charge de travail de serveur web qui contient deux machines virtuelles en tant que serveurs web combinés à un équilibreur de charge qui répartit le trafic entre les serveurs. Vous pouvez ensuite réutiliser ce modèle pour créer un groupe de machines virtuelles structurellement identiques et un équilibreur de charge chaque fois que ce type de charge de travail est nécessaire. Il vous suffit ensuite de modifier le nom du déploiement et les adresses IP concernées.
 

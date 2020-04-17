@@ -4,15 +4,15 @@ description: Appréhendez les risques métier associés aux différentes formes 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c96039183f50d0ff189dab04defda4fd1ba2e4fc
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6f49ee7c8aa63af1d7826a817cc2fae28357caba
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356920"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80430743"
 ---
 # <a name="evaluate-risk-tolerance"></a>Évaluer la tolérance au risque
 

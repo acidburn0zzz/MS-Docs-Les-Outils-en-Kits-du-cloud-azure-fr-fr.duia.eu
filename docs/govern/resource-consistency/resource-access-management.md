@@ -4,16 +4,16 @@ description: Appréhendez les concepts de gestion d’accès aux ressources Azur
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 009630e45eec28a12828f7651b353c1a5015ab2b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: d07d0c000cc80a74c1c604ca03a20145c43cf916
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709445"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997317"
 ---
 # <a name="resource-access-management-in-azure"></a>Gestion de l’accès aux ressources dans Azure
 
@@ -32,7 +32,7 @@ Dans Azure, le terme _ressource_ fait référence à une entité gérée par Azu
 
 ## <a name="what-is-an-azure-resource-group"></a>Qu’est-ce qu’un groupe de ressources Azure ?
 
-Chaque ressource dans Azure doit appartenir à un [groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Un groupe de ressources est simplement une construction logique qui regroupe plusieurs ressources afin qu’elles puissent être gérées en tant qu’entité unique _en fonction du cycle de vie et des aspects de sécurité_. Par exemple, des ressources qui partagent un cycle de vie similaire, tels que les ressources d’une [application multi-niveau](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), peuvent être créées ou supprimées en tant que groupe. En d’autres termes, toutes les ressources créées ensemble, gérées ensemble et dépréciées ensemble sont regroupées dans un groupe de ressources.
+Chaque ressource dans Azure doit appartenir à un [groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups). Un groupe de ressources est simplement une construction logique qui regroupe plusieurs ressources afin qu’elles puissent être gérées en tant qu’entité unique _en fonction du cycle de vie et des aspects de sécurité_. Par exemple, des ressources qui partagent un cycle de vie similaire, tels que les ressources d’une [application multi-niveau](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), peuvent être créées ou supprimées en tant que groupe. En d’autres termes, toutes les ressources créées ensemble, gérées ensemble et dépréciées ensemble sont regroupées dans un groupe de ressources.
 
 ![Diagramme d’un groupe de ressources contenant une ressource](../../_images/govern/design/governance-1-10.png)
 *Figure 2 - Un groupe de ressources contient une ressource.*
@@ -58,7 +58,7 @@ La figure suivante montre trois clients : [PowerShell](https://docs.microsoft.c
 ![Diagramme des clients Azure se connectant à l’API Azure Resource Manager](../../_images/govern/design/governance-1-13.png)
 *Figure 5 - Les clients Azure se connectent à l’API RESTful Azure Resource Manager.*
 
-Bien que ces clients se connectent à Azure Resource Manager à l’aide de l’API RESTful, Azure Resource Manager n’inclut pas de fonctionnalités permettant de gérer directement les ressources. Au lieu de cela, la plupart des types de ressources Azure ont leur propre [fournisseur de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
+Bien que ces clients se connectent à Azure Resource Manager à l’aide de l’API RESTful, Azure Resource Manager n’inclut pas de fonctionnalités permettant de gérer directement les ressources. Au lieu de cela, la plupart des types de ressources Azure ont leur propre [fournisseur de ressources](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#terminology).
 
 ![Fournisseurs de ressources Azure](../../_images/govern/design/governance-1-14.png)
 *Figure 6 - Fournisseurs de ressources Azure.*
@@ -96,7 +96,7 @@ Le contrôle suivant vérifie que la requête est autorisée sous les paramètre
 ![Stratégie de ressource Azure](../../_images/govern/design/governance-1-19.png)
 *Figure 11. Stratégie de ressource Azure.*
 
-Le contrôle suivant consiste à vérifier que la requête ne dépasse pas une [limite d’abonnement Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits). Par exemple, chaque abonnement dispose d’une limite de 980 groupes de ressources par abonnement. Si une requête pour déployer un groupe de ressources supplémentaire est reçue lorsque la limite a été atteinte, elle est refusée.
+Le contrôle suivant consiste à vérifier que la requête ne dépasse pas une [limite d’abonnement Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits). Par exemple, chaque abonnement dispose d’une limite de 980 groupes de ressources par abonnement. Si une requête pour déployer un groupe de ressources supplémentaire est reçue lorsque la limite a été atteinte, elle est refusée.
 
 ![Limites des ressources Azure](../../_images/govern/design/governance-1-20.png)
 *Figure 12. Limites des ressources Azure.*

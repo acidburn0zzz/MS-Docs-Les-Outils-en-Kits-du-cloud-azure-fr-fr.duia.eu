@@ -4,15 +4,15 @@ description: Découvrez les stratégies permettant de réhéberger, mettre hors 
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356840"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80425808"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
 

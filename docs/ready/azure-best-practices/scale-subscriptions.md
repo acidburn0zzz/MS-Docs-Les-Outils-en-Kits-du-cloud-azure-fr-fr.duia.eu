@@ -4,15 +4,15 @@ description: Utilisez Cloud Adoption Framework pour Azure afin de découvrir com
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dd052e42bc9685701df831878c12ed37ed42395c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 465f1771232f8df7226773fb8055052a846cacca
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80359862"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997965"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>Créer des abonnements supplémentaires pour mettre à l’échelle votre environnement Azure
 
@@ -26,7 +26,7 @@ D’autres considérations peuvent nécessiter des abonnements supplémentaires.
 
 ## <a name="technical-considerations"></a>Considérations techniques
 
-**Limites d’abonnement :** Les abonnements ont des limites définies pour certains types de ressources. Par exemple, le nombre de réseaux virtuels dans un abonnement est limité. Quand un abonnement approche ces limites, vous devez créer un autre abonnement et y placer des ressources supplémentaires. Pour plus d’informations, consultez [Azure subscription and service limits (Limites de service et d’abonnement Azure)](https://docs.microsoft.com/azure/azure-subscription-service-limits#general-limits).
+**Limites d’abonnement :** Les abonnements ont des limites définies pour certains types de ressources. Par exemple, le nombre de réseaux virtuels dans un abonnement est limité. Quand un abonnement approche ces limites, vous devez créer un autre abonnement et y placer des ressources supplémentaires. Pour plus d’informations, consultez [Azure subscription and service limits (Limites de service et d’abonnement Azure)](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#general-limits).
 
 **Ressources de modèle classique :** Si vous utilisez Azure depuis un certain temps, vous avez peut-être des ressources qui ont été créées à l’aide du modèle de déploiement classique. Les stratégies Azure, le contrôle d’accès en fonction du rôle, le regroupement de ressources et les étiquettes ne peuvent pas être appliqués aux ressources du modèle classique. Vous devez déplacer ces ressources dans des abonnements qui contiennent uniquement des ressources de modèle classique.
 
@@ -47,7 +47,7 @@ Pour découvrir d’autres considérations sur la mise à l’échelle de vos ab
 
 ## <a name="moving-resources-between-subscriptions"></a>Déplacement de ressources entre des abonnements
 
-À mesure que votre modèle d’abonnement se développe, vous pouvez décider que certaines ressources appartiennent à d’autres abonnements. De nombreux types de ressources peuvent être déplacés d’un abonnement vers un autre. Vous pouvez également utiliser des déploiements automatisés pour recréer des ressources dans un autre abonnement. Pour plus d’informations, consultez [Déplacer des ressources Azure vers un autre groupe de ressources ou abonnement](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
+À mesure que votre modèle d’abonnement se développe, vous pouvez décider que certaines ressources appartiennent à d’autres abonnements. De nombreux types de ressources peuvent être déplacés d’un abonnement vers un autre. Vous pouvez également utiliser des déploiements automatisés pour recréer des ressources dans un autre abonnement. Pour plus d’informations, consultez [Déplacer des ressources Azure vers un autre groupe de ressources ou abonnement](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription).
 
 ## <a name="tips-for-creating-new-subscriptions"></a>Conseils pour la création de nouveaux abonnements
 

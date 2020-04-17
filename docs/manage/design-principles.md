@@ -4,15 +4,15 @@ description: Découvrez comment appliquer les principes de conception et les opt
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a5861b23e5cc408957f922472dd6ee863c7c13fa
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 6049c11e1c80ab13ea5429582dae662ef1937983
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341043"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80430071"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Appliquer des principes de conception et des opérations avancées
 

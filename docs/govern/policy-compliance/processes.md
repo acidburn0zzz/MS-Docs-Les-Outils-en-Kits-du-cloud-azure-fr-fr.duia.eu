@@ -4,16 +4,16 @@ description: Créez une stratégie et des processus pour faire en sorte que votr
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 760015fc72cd893cb14dd39d9a9b3078d304da97
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: b7bdcd96786a232ef810794cf93546275a9603b0
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709462"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80430808"
 ---
 <!-- markdownlint-disable MD026 -->
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3dc3071fbba6d8b33ccf7fd75a0f451160481fc5
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 18151d68f425f5fa6d966e847b1f6131cb8f838b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433114"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996005"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guide de décision concernant le SDN (Software Defined Networking)
 
@@ -63,7 +63,7 @@ En savoir plus sur les principales architectures réseau définies par le logici
 Pour plus d’informations sur le SDN (Software-Defined Networking) dans Azure, consultez :
 
 - [Réseau virtuel Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) : sur Azure, la capacité fondamentale du SDN est fournie par un réseau virtuel Azure, qui agit comme un cloud analogue aux réseaux physiques locaux. Les réseaux virtuels servent également de limite d’isolement par défaut entre les ressources de la plate-forme.
-- [Meilleures pratiques Azure pour la sécurité réseau](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices). suggestions de l’équipe Azure Security sur la façon de configurer vos réseaux virtuels pour minimiser les vulnérabilités de sécurité.
+- [Meilleures pratiques Azure pour la sécurité réseau](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices). suggestions de l’équipe Azure Security sur la façon de configurer vos réseaux virtuels pour minimiser les vulnérabilités de sécurité.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

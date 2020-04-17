@@ -4,15 +4,15 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour apprend
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fe7533ce7bedb03ef466bad65c5a9a7bfc299fc
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: a03abe234773139e291679e986452702e849c33e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171206"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997221"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Créer un consensus autour de la valeur métier de l’innovation
 
@@ -64,7 +64,7 @@ Il n’est pas rare que les réponses aux questions une et deux ne coïncident p
 
 - **Opportunité d’hypothèse :** souvent, différentes parties prenantes et équipes de développement présentent des attentes excessives vis-à-vis d’une solution. Des attentes peu réalistes peuvent être un signe que l’hypothèse est trop vague. Suivez les conseils pour [développer une solution en faisant preuve d’empathie vis-à-vis du client](./considerations/build.md) afin d’élaborer une hypothèse plus claire.
 - **Opportunité de développement :** il est possible que les équipes soient mal alignées parce qu’elles ne sont pas d’accord sur la façon de répondre aux besoins du client. Ce désaccord indique généralement que l’équipe est [retardée par un pic d’évolution technique prématuré](./considerations/build.md#reduce-complexity-and-delay-technical-spikes). Pour que l’équipe reste concentrée sur le client, commencez la première itération et développez un petit produit minimum viable (MVP) pour traiter une partie de l’hypothèse. Pour plus d’informations sur la façon d’aider l’équipe à avancer, consultez [Développer des inventions numériques](./considerations/invention.md).
-- **Opportunité de formation :** L’une ou l’autre équipe peut être mal alignée, car elle doit satisfaire à des exigences techniques approfondies et à des exigences fonctionnelles étendues. Ceci peut aboutir à une opportunité de formation aux méthodologies agiles. Quand la culture de l’équipe n’est pas prête pour les processus agiles, innover et suivre le rythme du marché peut représenter un défi.  Pour connaître les ressources de formation sur l’approche DevOps et les pratiques agiles, consultez :
+- **Opportunité de formation :** L’une ou l’autre équipe peut être mal alignée, car elle doit satisfaire à des exigences techniques approfondies et à des exigences fonctionnelles étendues. Ceci peut aboutir à une opportunité de formation aux méthodologies agiles. Quand la culture de l’équipe n’est pas prête pour les processus agiles, innover et suivre le rythme du marché peut représenter un défi. Pour connaître les ressources de formation sur l’approche DevOps et les pratiques agiles, consultez :
   - [Faire évoluer vos activités DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Générer des applications avec Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
   - [Déployer des applications avec Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)

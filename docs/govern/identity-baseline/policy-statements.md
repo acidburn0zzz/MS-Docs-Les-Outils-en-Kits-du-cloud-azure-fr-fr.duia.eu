@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour obtenir
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d4c69bafe9bf0dc0bfdb060455c82d3b3a638a47
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: c3543299d323c8be6bf7ee88d6e9205c307e24f9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223835"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997435"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Exemples de déclarations de stratégie Base de référence des identités
 
@@ -42,7 +42,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 - Un modèle d’accès à privilège minimum sera appliqué à toutes les ressources impliquées dans des applications stratégiques ou des données protégées.
 - Les autorisations élevées doivent rester une exception, et toute exception de ce type doit être communiquée à l’équipe de gouvernance cloud. Les exceptions seront régulièrement vérifiées.
 
-**Options de conception potentielles** : consultez les [Meilleures pratiques d’Azure Identity Management](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) pour implémenter une stratégie de contrôle d’accès en fonction du rôle (RBAC) qui restreint l’accès selon les principes [à savoir](https://wikipedia.org/wiki/Need_to_know) et [sécurité à privilège minimum](https://wikipedia.org/wiki/Principle_of_least_privilege).
+**Options de conception potentielles** : consultez les [Meilleures pratiques d’Azure Identity Management](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) pour implémenter une stratégie de contrôle d’accès en fonction du rôle (RBAC) qui restreint l’accès selon les principes [à savoir](https://wikipedia.org/wiki/Need_to_know) et [sécurité à privilège minimum](https://wikipedia.org/wiki/Principle_of_least_privilege).
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>Absence de comptes de gestion partagés entre l'infrastructure locale et le cloud
 

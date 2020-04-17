@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour défini
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 64f04fe32445f79f36fe3846f16e3296e9424130
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 20282136ad3a7132e9a4458723db3fda5160eeb9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170934"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434286"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Guide de gouvernance pour les entreprises standard : Stratégie d’entreprise initiale sous-tendant la stratégie de gouvernance
 

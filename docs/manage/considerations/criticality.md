@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de comprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2c3d5a71025e821b9554e2a8d99223c7e6b0712b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341451"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80426460"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Criticité pour l’entreprise en gestion cloud
 

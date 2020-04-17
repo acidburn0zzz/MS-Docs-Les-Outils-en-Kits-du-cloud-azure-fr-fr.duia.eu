@@ -4,15 +4,15 @@ description: Définissez le flux client souhaité et établissez des métriques 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe1bed4da302041998ec09efd2224be3d94fe3aa
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 49377f419a8b5315a9f4a544fca37579b6dfbcaa
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356724"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427397"
 ---
 # <a name="measure-for-customer-impact"></a>Mesure de l’impact sur le client
 

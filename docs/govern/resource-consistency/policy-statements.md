@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour obtenir
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4222639ddb82da88cc95600ad2c6731b541f9f35
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9e0a64a2f0b2c1c9a948c142a28fca0c9d534804
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708136"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997324"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Déclarations de stratégie de cohérence des ressources
 
@@ -38,7 +38,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques commer
   - Environnement
 - Les outils de gouvernance doivent valider le marquage associé aux coûts, à la criticité, aux SLA, aux applications et aux environnements. Toutes les valeurs doivent être alignées avec les valeurs prédéfinies gérées par l’équipe de gouvernance.
 
-**Options de conception potentielles** : Dans Azure, les [balises de métadonnées de nom-valeur standard](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) sont prises en charge pour la plupart des types de ressources. [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) est utilisé pour appliquer des balises spécifiques lors de la création de ressources.
+**Options de conception potentielles** : Dans Azure, les [balises de métadonnées de nom-valeur standard](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) sont prises en charge pour la plupart des types de ressources. [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) est utilisé pour appliquer des balises spécifiques lors de la création de ressources.
 
 ## <a name="ungoverned-subscriptions"></a>Abonnements non régis
 

@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’en savoir 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38f7c2f6fc5be0cdad9a963fcf7f0fbb65937d3d
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341581"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434074"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Outils et services de gestion de serveur Azure
 
@@ -21,7 +21,7 @@ Comme décrit dans la [vue d’ensemble](./index.md) des conseils, la suite de s
 - Migrer
 - Sécuriser
 - Protéger
-- Moniteur
+- Superviser
 - Configurer
 - Gouvernance
 
@@ -53,7 +53,7 @@ Pour plus d’informations, consultez le [tableau complet de la réplication Azu
 
 Pour les données de votre serveur de fichiers, un autre service à prendre en compte est [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning). Ce service vous aide à centraliser les partages de fichiers de votre organisation dans Azure Files tout en préservant la flexibilité, le niveau de performance et la compatibilité d’un serveur de fichiers local. Pour utiliser ce service, suivez les instructions de déploiement d’Azure File Sync.
 
-## <a name="monitor"></a>Moniteur
+## <a name="monitor"></a>Superviser
 
 [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) fournit une vue de diverses ressources, telles que les applications, les conteneurs et les machines virtuelles. Il collecte également les données de plusieurs sources :
 
@@ -73,7 +73,7 @@ Plusieurs services appartiennent à cette catégorie. Ils peuvent vous aider à�
 
 Ces services sont essentiels à la prise en charge des opérations en cours :
 
-- [Update Management](/azure/automation/automation-update-management) automatise le déploiement des correctifs dans votre environnement, y compris le déploiement sur des instances de système d’exploitation qui s’exécutent en dehors d’Azure. Il prend en charge les systèmes d’exploitation Windows et Linux et assure le suivi de la non-conformité et des principales vulnérabilités du système d’exploitation provoquées par des correctifs manquants.
+- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management) automatise le déploiement des correctifs dans votre environnement, y compris le déploiement sur des instances de système d’exploitation qui s’exécutent en dehors d’Azure. Il prend en charge les systèmes d’exploitation Windows et Linux et assure le suivi de la non-conformité et des principales vulnérabilités du système d’exploitation provoquées par des correctifs manquants.
 - Les services [Change Tracking et Inventory](https://docs.microsoft.com/azure/automation/change-tracking) fournissent un insight sur les logiciels qui s’exécutent dans votre environnement et mettent en surbrillance toutes les modifications qui se sont produites.
 - [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) vous permet d’exécuter des scripts Python et PowerShell ou des runbooks pour automatiser des tâches dans votre environnement. Lorsque vous utilisez Automation avec le [Runbook Worker hybride](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker), vous pouvez également étendre vos runbooks à vos ressources locales.
 - [Azure Automation State Configuration](https://docs.microsoft.com/azure/automation/automation-dsc-overview) vous permet d’envoyer (push) des configurations DSC (Desired State Configuration) PowerShell directement à partir d’Azure. DSC vous permet également de surveiller et de préserver des configurations pour des systèmes d’exploitation invités et des charges de travail.

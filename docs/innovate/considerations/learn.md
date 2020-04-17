@@ -4,15 +4,15 @@ description: Apprenez avec et auprès des partenaires clients de façon à crée
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a7b717b9a8d4e81ac6dc644e51593d89e6fc3089
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 80eba5ddb0d92bef638cb2925515268818c50735
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356705"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427411"
 ---
 <!-- cSpell:ignore Satya Nadella Ries -->
 

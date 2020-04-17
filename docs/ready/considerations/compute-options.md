@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b2712867c8b5dbdf79e5f235ebd45fe02ae4bf20
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 6b868c97cf5334e515ee44b0415d212175d4c26f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092560"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997536"
 ---
 # <a name="review-your-compute-options"></a>Passer en revue vos options de calcul
 
@@ -27,7 +27,7 @@ Pour chaque application ou service que vous allez déployer dans votre environne
 ![Arbre de décision pour les services de calcul Azure](../../_images/ready/compute-decision-tree.png)
 
 > [!NOTE]
-> En savoir plus sur l’évaluation des options de calcul pour l’ensemble de vos applications et services dans le [guide de l’architecture des applications Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview).
+> En savoir plus sur l’évaluation des options de calcul pour l’ensemble de vos applications et services dans le [guide de l’architecture des applications Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).
 
 ### <a name="key-questions"></a>Questions clés
 

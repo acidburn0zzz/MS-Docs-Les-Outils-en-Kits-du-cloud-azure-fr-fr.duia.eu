@@ -4,17 +4,17 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’améliorer
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 12643d3e26620760e9a13e29936617bfb246fe29
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 421e079d1d219818670328db208a2269bf1dcfdb
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341740"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80426767"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Spécialisation de la plateforme pour la gestion cloud
 

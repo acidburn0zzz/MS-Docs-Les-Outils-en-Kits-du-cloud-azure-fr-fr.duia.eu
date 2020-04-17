@@ -4,15 +4,15 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour trouver
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a1201c3e1bf05f7fc704b1a12744d8f031607169
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9c261154f502fa96b053caead0ea999697a6f6b4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356816"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433425"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>Outils permettant de prédire et d’influencer les données dans Azure
 

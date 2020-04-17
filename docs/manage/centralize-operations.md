@@ -4,15 +4,15 @@ description: Découvrez comment centraliser les opérations de gestion à l’ai
 author: JnHs
 ms.author: jenhayes
 ms.date: 09/27/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 312be5ae3b716ad8d6aa609749bcbb615f6ef1c5
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 12b1a578c98a2c870306d9bc5b3587477adbb3d3
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140420"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80430347"
 ---
 <!-- cSpell:ignore jenhayes -->
 

@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de voir commen
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fd8db03a28c5372ad5ca796607a079ffdcbe4f92
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 117f8bebd157069703add28348667abe88ddf96e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355282"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432433"
 ---
 # <a name="business-change-plan"></a>Plan de changement pour l’entreprise
 

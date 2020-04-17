@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 81140a69d3d024159c62b499de2e69cd57eb3d1f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3d0a4e06a2aaa21f191130b937790408abf16952
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709241"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434292"
 ---
 # <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Guide pour les entreprises standard : Améliorer la discipline Gestion des coûts
 

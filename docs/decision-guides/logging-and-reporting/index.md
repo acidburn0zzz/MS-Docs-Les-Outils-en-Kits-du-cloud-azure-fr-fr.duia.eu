@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: deb432528c541fa17b9849d4c2b587740d7e36dd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434905"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996326"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 
@@ -118,8 +118,8 @@ La prise en charge de la journalisation multicloud nécessite souvent d’avoir 
 
 - Une plateforme unifiée servant à collecter la télémétrie d’application, la télémétrie d’hôte (par exemple, les machines virtuelles), les métriques de conteneur, les métriques de plateforme Azure et les journaux des événements.
 - Visualisation, requêtes, alertes et outils d’analyse. Ce service peut fournir des insights sur les machines virtuelles, les systèmes d’exploitation invités, les réseaux virtuels et les événements d’application de charge de travail.
-- Les [API REST](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-rest-api-walkthrough) pour l’intégration à des services externes et pour l’automatisation des services de supervision et d’alerte
-- [Intégration](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-partners) avec de nombreux fournisseurs tiers connus.
+- Les [API REST](https://docs.microsoft.com/azure/azure-monitor/platform/rest-api-walkthrough) pour l’intégration à des services externes et pour l’automatisation des services de supervision et d’alerte
+- [Intégration](https://docs.microsoft.com/azure/azure-monitor/platform/partners) avec de nombreux fournisseurs tiers connus.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

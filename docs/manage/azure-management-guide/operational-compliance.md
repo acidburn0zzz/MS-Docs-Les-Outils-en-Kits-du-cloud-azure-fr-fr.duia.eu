@@ -4,17 +4,17 @@ description: Découvrez comment garantir la stabilité de l’entreprise par la 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 18c3c81fdd756e90e729387c7030c64e8a87a056
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: bb09c780a38576b8f4c8154290b4ca4b6cae7309
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356443"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80426777"
 ---
 <!-- cSpell:ignore WSUS -->
 

@@ -4,15 +4,15 @@ description: Calculez les retours futurs de la classification et l’impact des 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4c86c6c079cb19497b7c0f19e8b8fa9166226780
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312704"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997151"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Engagement commercial dans la gestion cloud
 
@@ -57,7 +57,7 @@ La ligne de base de la gestion des opérations sert de point de départ à valid
 
 Dans un environnement local traditionnel, le coût de la gestion de l’environnement est généralement considéré comme un coût irrécupérable détenu par les opérations informatiques. Dans le cloud, la gestion est une décision intentionnelle avec un impact budgétaire direct. Les coûts de chaque fonction de gestion peuvent être plus directement attribués à chaque charge de travail déployée dans le cloud. Cette approche permet un meilleur contrôle, mais elle crée une exigence pour les équipes d’exploitation cloud et les équipes de stratégie cloud de s’engager en premier lieu dans un accord sur les responsabilités.
 
-Les organisations peuvent également choisir de [sous-traiter certaines de leurs fonctions de gestion en cours avec un fournisseur de services](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Ces fournisseurs de services peuvent utiliser [Azure Lighthouse](https://azure.com/lighthouse) pour offrir aux organisations un contrôle plus précis de l’octroi de l’accès à leurs ressources, ainsi qu’une meilleure visibilité des actions effectuées par les fournisseurs de services.
+Les organisations peuvent également choisir de [sous-traiter certaines de leurs fonctions de gestion en cours avec un fournisseur de services](https://aka.ms/adopt/partneroffers). Ces fournisseurs de services peuvent utiliser [Azure Lighthouse](https://azure.microsoft.com/services/azure-lighthouse) pour offrir aux organisations un contrôle plus précis de l’octroi de l’accès à leurs ressources, ainsi qu’une meilleure visibilité des actions effectuées par les fournisseurs de services.
 
 - **Responsabilité déléguée** : comme il n’est pas nécessaire de centraliser et de prévoir une surcharge de gestion opérationnelle, les opérations informatiques de nombreuses organisations envisagent de nouvelles approches. L’une des approches courantes est appelée _responsabilité déléguée_. Dans un modèle de centre d’excellence cloud, les opérations de plateforme et l’automatisation de plateforme fournissent des outils de gestion libre-service qui peuvent être utilisés par les équipes d’exploitation, indépendamment d’une équipe centrale des opérations informatiques. Cette approche donne aux parties prenantes de l’entreprise le contrôle total des budgets liés à la gestion. Elle permet également à l’équipe du centre d’excellence de cloud (CCoE) de garantir qu’un nombre minimal de barrières de sécurité ont été correctement implémentées. Dans ce modèle, l’informatique agit comme un courtier et un guide pour aider l’entreprise à prendre des décisions judicieuses. Les opérations métier supervisent les opérations quotidiennes des charges de travail dépendantes.
 

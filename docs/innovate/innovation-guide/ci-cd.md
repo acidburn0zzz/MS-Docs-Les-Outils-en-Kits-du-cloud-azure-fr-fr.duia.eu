@@ -4,17 +4,17 @@ description: Aidez les équipes de développeurs à créer des applications prod
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6e0e0ddb2284a238274f9e5cc579e164a4378004
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d4c09f7e92f0c023b641148987a1dad0459e91e5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356641"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809029"
 ---
 ::: zone target="docs"
 
@@ -145,4 +145,4 @@ Le développement de jeux est un exemple de secteur qui adopte LiveOps aujourd�
 
 PlayFab offre des outils et services LiveOps différenciés et à marge élevée pour améliorer la rentabilité et étendre la durée de vie des jeux. PlayFab n’est dépendant d’aucun appareil ou plateforme, et peut être facilement intégré à des fournisseurs d’identité, tels que Facebook ou Steam, à des plateformes de stockage pour orchestrer le commerce et à des plateformes d’appareils comme iOS, Android, Xbox et PlayStation. Le patrimoine de données Azure permet à PlayFab de fournir des services intelligents pour aider nos clients à améliorer leurs jeux et à prendre des décisions avisées, à acquérir et à conserver des joueurs et à apprendre plus rapidement en réalisant plus d’expériences et en itérant plus rapidement.
 
-**Accédez à la [documentation Azure PlayFab](https://docs.microsoft.com/gaming/playfab/personas/liveops/liveops)**
+**Accédez à la [documentation Azure PlayFab](https://docs.microsoft.com/gaming/playfab)**

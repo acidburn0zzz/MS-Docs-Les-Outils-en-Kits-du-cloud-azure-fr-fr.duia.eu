@@ -4,15 +4,15 @@ description: Découvrez une approche permettant d’investir dans les opération
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 43399d4d84d824f03a7fb19da493223f3baea717
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 92453f3323a2479160bd7bd45e6ef5101c1d9f1b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341247"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80430130"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Opérations de charge de travail en gestion cloud
 

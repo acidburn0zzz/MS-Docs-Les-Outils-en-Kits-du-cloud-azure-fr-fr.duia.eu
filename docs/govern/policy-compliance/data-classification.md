@@ -4,16 +4,16 @@ description: La classification des données vous permet de déterminer et d’af
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1680a78af449731ea7e15525d3e276998a73c0d4
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ffa318f44a6fe3a856598581ca7cc2de37fbd6f5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223784"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997362"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ La liste ci-dessous répertorie les classifications utilisées par Microsoft. En
 
 Les balises de ressource sont une bonne approche suggérée pour le stockage des métadonnées, et vous pouvez utiliser ces balises pour appliquer des informations de classification aux ressources déployées. Bien que le marquage des ressources cloud par classification ne remplace pas le processus formel de classification des données, il s’agit d’un outil précieux pour la gestion des ressources et l’application de la stratégie. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) offre une excellente solution pour classer les _données_, et ce, quel que soit leur emplacement (en local, dans Azure ou ailleurs). Considérez-le comme s’inscrivant dans une stratégie de classification globale.
 
-Pour plus d’informations sur le balisage des ressources dans Azure, consultez [Organisation des ressources Azure à l'aide de balises](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
+Pour plus d’informations sur le balisage des ressources dans Azure, consultez [Organisation des ressources Azure à l'aide de balises](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

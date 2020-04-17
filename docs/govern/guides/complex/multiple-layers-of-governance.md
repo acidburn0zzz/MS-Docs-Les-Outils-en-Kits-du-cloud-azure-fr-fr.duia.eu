@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour découv
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5d7dc2163777cb931d6c4c57eb7b1fb276e6a0fd
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 36c2653876f0d254a282a7f7ed3abaee2ca82656
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709190"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434399"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Guide de gouvernance pour les entreprises complexes : Couches de gouvernance multiples
 

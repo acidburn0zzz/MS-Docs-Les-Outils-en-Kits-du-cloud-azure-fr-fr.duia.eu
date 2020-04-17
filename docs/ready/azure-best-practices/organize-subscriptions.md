@@ -4,15 +4,15 @@ description: Utilisez Cloud Adoption Framework pour Azure afin découvrir commen
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e874c518537232104d9bbddbdf8e84841239e56b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 79ba055381ccdcb5a70fb24f5da3554a8652fc97
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80359866"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80998015"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>Organiser et gérer plusieurs abonnements Azure
 
@@ -65,7 +65,7 @@ Passez en revue les ressources suivantes pour en savoir plus sur l’organisatio
 
 - [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/governance/management-groups)
 - [Élever l’accès pour gérer tous les abonnements et groupes d’administration Azure](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
-- [Déplacer des ressources Azure vers un autre groupe de ressources ou un autre abonnement.](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)
+- [Déplacer des ressources Azure vers un autre groupe de ressources ou un autre abonnement.](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

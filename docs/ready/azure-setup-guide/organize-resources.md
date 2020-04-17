@@ -4,17 +4,17 @@ description: Découvrez les bonnes pratiques permettant d’organiser efficaceme
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b47f0e3cf6c69bbdf3d5c8260ad4094312e1bea2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354339"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997550"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -24,8 +24,7 @@ L’organisation de vos ressources informatiques est essentielle pour sécuriser
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-<!-- cSpell:disable-next-line -->
-# <a name="azure-management-groups-and-hierarchy"></a>[Hiérarchie et groupes d’administration Azure](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Hiérarchie et groupes d’administration Azure](#tab/AzureManagementGroupsAndHierarchy)
 
 Azure fournit quatre niveaux d’étendue de la gestion : groupes d’administration, abonnements, groupes de ressources et ressources. L’illustration suivante montre les relations entre ces niveaux.
 
@@ -86,7 +85,7 @@ Pour plus d'informations, consultez les rubriques suivantes :
 - [Organiser et gérer vos abonnements Azure](../azure-best-practices/organize-subscriptions.md)
 - [Organiser vos ressources avec des groupes d’administration Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Comprendre la gestion des accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
-- [Limites du service d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits)
+- [Limites du service d’abonnement](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -161,7 +160,7 @@ Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses.
 
 - **Métadonnées et documentation :** Les administrateurs peuvent facilement voir les détails des ressources sur lesquelles ils travaillent en appliquant une balise comme « PropriétaireProjet ».
 - **Automatisation :** Il se peut que vous ayez des scripts s’exécutant régulièrement qui effectuent une action basée sur une valeur de balise telle que « HeureArrêt » ou « DateDéprovisionnement ».
-- **Optimisation des coûts :** Dans Azure Cost Management, vous pouvez appliquer une étiquette de centre de coûts en tant que filtre pour signaler des frais d’utilisation relatifs à une équipe ou un service.
+- **Optimisation des coûts :** Vous pouvez allouer des ressources aux équipes et aux ressources qui sont responsables du coût. Dans Azure Cost Management, vous pouvez appliquer l’étiquette de centre de coût comme filtre pour obtenir les frais basés sur l’utilisation d’une équipe ou d’un département.
 
 Chaque ressource ou groupe de ressources peut inclure un maximum de 50 paires nom/valeur de balise. Cette limitation s’applique uniquement aux balises directement appliquées au groupe de ressources ou à la ressource.
 
@@ -173,14 +172,14 @@ Pour obtenir d’autres recommandations et exemples de catégorisation, consulte
 
 Pour appliquer une étiquette à un groupe de ressources :
 
-1. Accédez à [Groupes de ressources](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups).
+1. Accédez à [Groupes de ressources](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
 1. Sélectionnez un groupe de ressources.
 1. Sélectionnez **Attribuer des étiquettes**.
 1. Entrez un nouveau nom et une nouvelle valeur, ou sélectionnez un nom et une valeur existants dans la liste déroulante.
 
 ## <a name="learn-more"></a>En savoir plus
 
-Pour en savoir plus, consultez [Organiser vos ressources Azure à l’aide d’étiquettes](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
+Pour en savoir plus, consultez [Organiser vos ressources Azure à l’aide d’étiquettes](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ::: zone-end
 

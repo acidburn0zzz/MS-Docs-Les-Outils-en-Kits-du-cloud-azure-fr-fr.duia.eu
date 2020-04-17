@@ -4,17 +4,17 @@ description: Explorez plus en détail les méthodes de sécurité et de gestion 
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7e9dd472d2913979211959d1f230bf4fb9c33cba
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222486"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432932"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -46,7 +46,7 @@ Azure Monitor optimise la disponibilité et les performances de vos applications
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure Service Health](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/serviceHealth)
 
 Azure Service Health vous fournit des directives et un support personnalisés quand vous êtes confrontés à des problèmes dans le cadre des services Azure. Il peut vous avertir, vous aider à comprendre l’impact des problèmes et vous tenir informer de la résolution du problème. Il peut également vous aider à préparer une maintenance planifiée et des modifications pouvant avoir une incidence sur la disponibilité de vos ressources.
 
@@ -149,7 +149,7 @@ Sauvegarde Azure est le service Azure qui vous permet de sauvegarder (ou de prot
 
 ::: zone-end
 
-# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
 Plus haut dans ce guide, nous avons abordé la manière dont Azure Site Recovery peut être utilisé dans le cadre de l’exécution de la migration. Mais le service forme également un composant essentiel dans votre stratégie de récupération d’urgence une fois la migration terminée.
 

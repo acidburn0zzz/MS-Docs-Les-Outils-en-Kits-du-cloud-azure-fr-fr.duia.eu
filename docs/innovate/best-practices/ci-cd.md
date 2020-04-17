@@ -4,15 +4,15 @@ description: Découvrez les outils Azure basés sur la méthodologie d’innovat
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 20dc6aa263e8f7a381809335b4af9b4f4de84dc6
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 1688bf914e8cf0ef9882c13b73164d9980f844cd
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171291"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80425583"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Outils permettant de favoriser l’adoption dans Azure
 

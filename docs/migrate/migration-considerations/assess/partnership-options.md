@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0d7207ce5073d1e3e67e2164774ee0da0eddc784
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 5ce9b9144921ec3407fdd0b12b84183fd6e9ee52
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355303"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119869"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -42,7 +42,7 @@ Si votre organisation planifie une migration Azure par elle-même, Microsoft est
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
-[FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azure) fournit une assistance directe d’experts Azure qui travaillent main dans la main avec des partenaires pour aider les clients à créer des solutions Azure rapidement et en toute confiance. FastTrack propose des meilleures pratiques et des outils à partir de véritables expériences client pour guider les clients, de l’installation, de la configuration et du développement à la production de solutions Azure, avec notamment :
+[FastTrack for Azure](https://azure.microsoft.com/programs/azure-fasttrack) fournit une assistance directe d’experts Azure qui travaillent main dans la main avec des partenaires pour aider les clients à créer des solutions Azure rapidement et en toute confiance. FastTrack propose des meilleures pratiques et des outils à partir de véritables expériences client pour guider les clients, de l’installation, de la configuration et du développement à la production de solutions Azure, avec notamment :
 
 - Migration de centre de données
 - Windows Server sur Azure

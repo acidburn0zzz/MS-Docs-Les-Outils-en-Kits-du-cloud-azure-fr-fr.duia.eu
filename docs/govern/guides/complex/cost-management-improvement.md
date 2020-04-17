@@ -1,19 +1,19 @@
 ---
-title: 'Gouvernance pour les entreprises complexes : Améliorer la discipline de gestion des coûts'
+title: 'Gouvernance pour les entreprises complexes : Améliorer la discipline Gestion des coûts'
 description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir comment ajouter des contrôles de coût à un produit minimum viable (MVP, minimum viable product) de gouvernance.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b44f153c9e14f1425aa3bb1374c60243c9a3c326
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: f65118884e4bac8b62d3857008ccd5ad126656b9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709037"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80808991"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Gestion des coûts
 

@@ -4,17 +4,17 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’en savoir 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e2eac3d49f38a8b15ed822e177afb224afa20270
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 06389b972ee01079a3927515c95d3f3ae3cab3de
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356435"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80426568"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Spécialisation de la charge de travail pour la gestion cloud
 

@@ -4,15 +4,15 @@ description: Découvrez comment déployer rapidement un backlog sur Azure DevOps
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: fb35c059f3c3c6c9485d70a78a2c3fa1b49dc10d
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: f8ced104862d27c01c2d63ecbcb4af15deded343
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354775"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434000"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan d’adoption du cloud et Azure DevOps
 

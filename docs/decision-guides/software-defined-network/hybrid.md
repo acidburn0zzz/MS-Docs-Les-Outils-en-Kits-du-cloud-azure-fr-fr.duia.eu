@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour découv
 author: rotycenh
 ms.author: abuck
 ms.date: 02/11/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6155018134054aa66c16dbf5988ed00d6d7a6143
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 6ccc459f1d708964afdc7c25cefdf314c44a6e02
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225664"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433140"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>SDN (Software Defined Network) : Réseau hybride
 

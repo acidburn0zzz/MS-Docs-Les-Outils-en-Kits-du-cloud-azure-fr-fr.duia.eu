@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour découv
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 149fe69eaa89fcc1b0ee7715dad8e4c46dadc963
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3c5d6d187e72217c16ca380f6ef433560b647574
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708765"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434562"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Processus de conformité à la stratégie Accélération du déploiement
 

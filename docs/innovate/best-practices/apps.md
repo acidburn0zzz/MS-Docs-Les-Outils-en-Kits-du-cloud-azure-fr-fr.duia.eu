@@ -4,15 +4,15 @@ description: Découvrez les outils Azure permettant d’accélérer le développ
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 701c4634aab8e2a9abb06356a929ae90c1b5a864
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 8ff62f3a508fa033f882101b13fd85f90526bab3
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171325"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80425575"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Outils d’implication par le biais d’applications dans Azure
 

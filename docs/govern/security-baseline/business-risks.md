@@ -4,16 +4,16 @@ description: Appréhendez et découvrez des exemples de clients types qui adopte
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3bef524646e6be5ca6cd0b638b9614af389972f9
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 40b92c15af9ea4677d049cc76902d33e6807f139
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709020"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433624"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Risques métier et motivations associés à la Base de référence de la sécurité
 

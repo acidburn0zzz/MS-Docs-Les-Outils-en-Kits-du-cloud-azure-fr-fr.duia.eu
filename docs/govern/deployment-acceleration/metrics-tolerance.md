@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour quantif
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 83772d82d6f439bcd25382e21738ed01ef411596
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 14ae08de4bb0ce82e4ba0d5ce0225c0597ee67b4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170951"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434526"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Métriques d’accélération du déploiement, indicateurs et tolérance au risque
 

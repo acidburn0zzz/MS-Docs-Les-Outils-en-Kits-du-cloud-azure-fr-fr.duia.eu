@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/06/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6210750d5c11d4ebca55d4c96c7a87d03ca87355
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6cce3a3aafc62926c7e53d611cb4c94ae2496ac2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357128"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434449"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 

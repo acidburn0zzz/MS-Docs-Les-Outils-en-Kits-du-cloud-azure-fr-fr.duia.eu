@@ -4,15 +4,15 @@ description: Découvrez comment évaluer la préparation d’une charge de trava
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3065dfa39af189c5275f966e758fe49004f4de00
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4321cf289bcab6fbee061fbff27d45fd8d695eac
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094784"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432797"
 ---
 # <a name="evaluate-workload-readiness"></a>Évaluer la préparation des charges de travail
 

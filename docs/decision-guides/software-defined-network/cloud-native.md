@@ -4,16 +4,16 @@ description: Utilisez Cloud Adoption Framework pour Azure afin de découvrir les
 author: rotycenh
 ms.author: abuck
 ms.date: 02/11/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5fc722b46c860fff1880d864604993bf02c05447
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 9bc19716cc0122ea95672b4a48d6536a77fb5fe3
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225751"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996195"
 ---
 # <a name="software-defined-networking-cloud-native"></a>SDN (Software Defined Network) : Cloud natif
 
@@ -41,4 +41,4 @@ Les autres problèmes que votre équipe chargée de l’adoption du cloud doit p
 Pour plus d’informations sur les réseaux virtuels cloud natifs sur la plateforme Azure, consultez :
 
 - [Réseau virtuel Azure : guides pratiques](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Les réseaux virtuels Azure nouvellement créés sont natifs du cloud par défaut. Aidez-vous de ces guides pour planifier la conception et le déploiement de vos réseaux virtuels.
-- [Limites d’abonnement : Mise en réseau](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Chaque réseau virtuel et les ressources connectées existent dans un même abonnement. Ces ressources sont soumises aux limites de l’abonnement.
+- [Limites d’abonnement : Mise en réseau](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Chaque réseau virtuel et les ressources connectées existent dans un même abonnement. Ces ressources sont soumises aux limites de l’abonnement.

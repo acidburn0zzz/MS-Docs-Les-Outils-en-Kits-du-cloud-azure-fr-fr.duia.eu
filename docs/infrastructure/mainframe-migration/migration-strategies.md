@@ -4,15 +4,15 @@ description: Obtenez des conseils techniques pour passer d’une plateforme main
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cf3f64e8fd059ec847591a9f86f41e68aee0fd40
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 0f57483ed09ec87422773c6a2fb53e2785a0a24e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140516"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80425521"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 

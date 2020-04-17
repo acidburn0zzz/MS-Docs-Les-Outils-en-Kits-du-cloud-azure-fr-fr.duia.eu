@@ -4,16 +4,16 @@ description: 'Découvrez les caractéristiques et les exigences des différentes
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 13fef27afdc4ca7622924f3890b72d1847e833c0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: a384647cd25e871c444a59fc7388f4007df335d9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222626"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80431034"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Approches de la planification du patrimoine numérique
 

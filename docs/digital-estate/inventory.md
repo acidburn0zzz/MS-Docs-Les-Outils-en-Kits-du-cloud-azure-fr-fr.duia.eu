@@ -4,15 +4,15 @@ description: Apprenez à dresser une liste d’inventaire des ressources informa
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 1735c5e6f818f727cee3e28f11fbaf31610de8d8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 186013e2f626be18f0cef8beea66d638be9a793c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170084"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434829"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Collecter des données d’inventaire pour un patrimoine numérique
 

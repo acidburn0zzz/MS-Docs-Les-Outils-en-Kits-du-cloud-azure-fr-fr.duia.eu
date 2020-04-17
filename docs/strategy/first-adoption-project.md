@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 063fc4074a7b5972b6b2938abdcb90937412e832
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 86acc05f9eaf38193db6c0f1ad1c708ed810c7be
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353544"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396018"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -46,7 +46,7 @@ Le premier projet d’adoption de votre équipe va probablement entraîner un d�
 
 Pour étayer les critères précédents, cette liste fournit un exemple de premier projet pour chaque catégorie de motivation :
 
-- **Événements métier critiques :** Quand la motivation principale est un événement métier critique, l’implémentation d’un outil tel qu’[Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) peut constituer un bon premier projet. Durant la migration, vous pouvez utiliser cet outil pour migrer rapidement les ressources du centre de données. Toutefois, au cours du premier projet, vous pouvez être amené à l’utiliser simplement comme outil de reprise d’activité, ce qui réduit les dépendances à l’égard des ressources de reprise après sinistre dans le centre de données.
+- **Événements métier critiques :** Quand la motivation principale est un événement métier critique, l’implémentation d’un outil tel qu’[Azure Site Recovery](../migrate/azure-migration-guide/migrate.md#azure-site-recovery) peut constituer un bon premier projet. Durant la migration, vous pouvez utiliser cet outil pour migrer rapidement les ressources du centre de données. Toutefois, au cours du premier projet, vous pouvez être amené à l’utiliser simplement comme outil de reprise d’activité, ce qui réduit les dépendances à l’égard des ressources de reprise après sinistre dans le centre de données.
 
 - **Motivations de la migration :** Quand la migration est la principale motivation, il est sage de commencer par la migration d’une charge de travail non critique. Le [Guide de configuration Azure](../ready/azure-setup-guide/index.md) et le [Guide de migration Azure](../migrate/azure-migration-guide/index.md) peuvent vous aider à migrer votre première charge de travail.
 

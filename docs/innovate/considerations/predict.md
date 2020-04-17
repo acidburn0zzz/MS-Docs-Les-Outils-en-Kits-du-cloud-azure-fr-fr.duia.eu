@@ -4,15 +4,15 @@ description: Utilisez la modélisation prédictive pour développer des capacit�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e299025afcbf1066411f8d4792fe739663d46c74
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: bbbed6fd267a6cac7b052c28a0b902c233d74374
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171104"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427371"
 ---
 # <a name="predict-and-influence"></a>Prédire et influencer
 

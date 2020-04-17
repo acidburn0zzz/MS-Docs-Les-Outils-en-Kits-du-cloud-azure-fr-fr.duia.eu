@@ -4,15 +4,15 @@ description: Découvrez la méthodologie d’innovation, approche destinée à v
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: d77ecb0dbd7fbcd606c73a11f4a8c4db4aac5428
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6b0366edd92043d08ecb314cd6f17751ef4b40b2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357216"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434770"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Innover via l’adoption du cloud
 

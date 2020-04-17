@@ -4,16 +4,16 @@ description: Découvrez comment les outils natifs Azure peuvent contribuer à af
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0aa9525a42e62012e1aa5913d9f806cc2a40e2f0
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 368d2811bb54ef373be8df036d96452023891b83
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709394"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434956"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Base de référence des identités dans Azure
 
@@ -46,7 +46,7 @@ Quand vous choisissez cette méthode, Azure AD gère le processus de connexion d
 
 Quand vous choisissez cette méthode, Azure AD transfère le processus d’authentification à un système d’authentification approuvée distinct, par exemple les services de fédération Active Directory (AD FS) ou un service de fédération tiers sécurisé, pour valider le mot de passe de l’utilisateur.
 
-L’article [Choisir la méthode d’authentification adaptée à Azure Active Directory](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) propose un arbre de décision pour vous aider à choisir la meilleure solution pour votre organisation.
+L’article [Choisir la méthode d’authentification adaptée à Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) propose un arbre de décision pour vous aider à choisir la meilleure solution pour votre organisation.
 
 Le tableau suivant énumère les outils natifs qui peuvent aider à faire mûrir les stratégies et les processus qui supportent cette discipline de gouvernance.
 

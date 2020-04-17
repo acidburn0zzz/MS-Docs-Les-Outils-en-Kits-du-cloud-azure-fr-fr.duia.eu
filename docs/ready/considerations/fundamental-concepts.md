@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8c30f859d90e2fca26fbcd6c70db3c662d56b8a1
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: ed8d8511cbdac9996ff61688b4e6d783877e9d9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353649"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997516"
 ---
 # <a name="azure-fundamental-concepts"></a>Concepts fondamentaux Azure
 
@@ -60,7 +60,7 @@ Azure définit trois types de rôles pour l’administration des abonnements, de
 - Rôles de contrôle d’accès en fonction du rôle (RBAC) Azure
 - Rôles d’administrateur Azure Active Directory (Azure AD)
 
-Le rôle d’administrateur de compte pour un abonnement Azure est attribué au compte e-mail utilisé pour créer l’abonnement Azure. L’administrateur de compte est le responsable de la facturation de l’abonnement. L’administrateur de compte peut gérer les détails de l’abonnement dans le [Centre des comptes Azure](https://account.azure.com/Subscriptions).
+Le rôle d’administrateur de compte pour un abonnement Azure est attribué au compte e-mail utilisé pour créer l’abonnement Azure. L’administrateur de compte est le responsable de la facturation de l’abonnement. L’administrateur de compte peut gérer les détails de l’abonnement dans le [Centre des comptes Azure](https://account.azure.com/subscriptions).
 
 Par défaut, le rôle d’administrateur de service pour un abonnement est également affecté au compte e-mail utilisé pour créer l’abonnement Azure. L’administrateur de service dispose des autorisations d’accès à l’abonnement équivalentes au rôle de propriétaire RBAC. L’Administrateur de service a également un accès complet au portail Azure. L’administrateur de compte peut modifier l’administrateur de service en lui attribuant un autre compte e-mail.
 
@@ -85,7 +85,7 @@ Les ressources suivantes fournissent des informations détaillées sur les conce
 
 - [Fonctionnement d’Azure](../../getting-started/what-is-azure.md)
 - [Gestion de l’accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
-- [Présentation d’Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Présentation d’Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
 - [Contrôle d’accès en fonction du rôle (RBAC) pour les ressources Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [Qu’est-ce qu’Azure Active Directory ?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Associer ou ajouter un abonnement Azure à votre locataire Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
