@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 73373e5cc56ef7e5804151171a22ad9f541f1cd3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb95c03b392017fb866fdfe929fffc317e4e67b0
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094688"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809103"
 ---
 # <a name="guest-configuration-policy"></a>Stratégie Guest Configuration
 
@@ -27,7 +27,7 @@ Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "G
 > [!NOTE]
 > La fonctionnalité Guest Configuration est régulièrement mise à jour pour pouvoir prendre en charge d’autres jeux de stratégies. Vérifiez régulièrement les nouvelles stratégies prises en charge et évaluez leur utilité.
 
-<!-- TODO: Update these links when available. 
+<!-- TODOBACKLOG: Update these links when available. 
 
 By default, we recommend that you enable the following policies:
 

@@ -4,16 +4,16 @@ description: Téléchargez le modèle de référence d’identité pour document
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 71b16800dde767b7b257e4ac8bb63cf4083ddd23
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: a5fb50a35c064ca72a04301122b0799a5d09999e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392355"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80429882"
 ---
 # <a name="identity-baseline-template"></a>Modèle Base de référence des identités
 

@@ -4,16 +4,16 @@ description: Découvrez les principes de base de la structure interne et du fonc
 author: alexbuckgit
 ms.author: abuck
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 6cc61ff3b6dee171983ceef94c77d3aab715b2c7
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 91bfb288c841dbfaa367120d7c904642a3d9fb38
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357169"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434748"
 ---
 <!-- markdownlint-disable MD026 -->
 

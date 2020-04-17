@@ -4,16 +4,16 @@ description: Découvrez les tâches qu’une entreprise peut effectuer pour dév
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c5406a11fa2d0f5cd2f561c162a344564501486f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 97f8a82295a8eff5614c965ba583fcbf8d50f501
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708748"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434588"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Amélioration de la discipline Accélération du déploiement
 

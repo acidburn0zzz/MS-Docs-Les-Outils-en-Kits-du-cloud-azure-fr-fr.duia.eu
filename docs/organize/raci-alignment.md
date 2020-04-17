@@ -4,16 +4,16 @@ description: Découvrez comment aligner les responsabilités entre les équipes 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bd95aec82e3135222184ded49a7fc013f95a05e4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: af2ecfdfb10aa56993d893ef9bcc7152f4f3d702
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354949"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80428288"
 ---
 <!-- cSpell:ignore ccoe -->
 

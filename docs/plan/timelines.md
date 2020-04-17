@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 885d5c46099c0e161449aeae3f9c1203a2949728
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3731564f5f481f62cd461a9742eb8416e182b550
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092642"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427876"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Chronologies d’un plan d’adoption du cloud
 

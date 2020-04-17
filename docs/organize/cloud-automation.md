@@ -4,16 +4,16 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de comprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f519425d83691db0b55ea6aa9d84b7371f632ac0
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8e35ed2cdd90b51e13a29b0709f44ad395e9e0fb
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093920"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80428616"
 ---
 # <a name="cloud-automation-capabilities"></a>Fonctionnalités d’automatisation du cloud
 

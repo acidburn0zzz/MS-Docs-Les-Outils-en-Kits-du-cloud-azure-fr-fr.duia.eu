@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: aa544540c0bebb001f9256527a5f0ba388801c3c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 90a6718c028023e1bae101b35fff873dd47e4ab2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354805"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427956"
 ---
 # <a name="review-rationalization-decisions"></a>Passer en revue les décisions de rationalisation
 

@@ -4,16 +4,16 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 75077ee51cb5962c6553032e071fe0cc54505f6a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: fc5097eb5a6bb0c0400c0789ea197d0472f858ea
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092725"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80428551"
 ---
 # <a name="cloud-operation-capabilities"></a>Capacités opérationnelles du cloud
 

@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5fdafdfd9bfccd86e7ddcc1ee08afdf561d4e680
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: c9fa27ac671b17414a114a43f5224dd0e87de9d2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093738"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432119"
 ---
 <!-- cSpell:ignore HDFS -->
 

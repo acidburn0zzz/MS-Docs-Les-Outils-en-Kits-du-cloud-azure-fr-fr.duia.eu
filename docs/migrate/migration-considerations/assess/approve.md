@@ -4,15 +4,15 @@ description: Apprenez à classifier les changements de l’architecture quand il
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2de71f5a28da4b6ec7c876f26f929b3e0e6de425
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d59f2d92f6777cd3210de715eb0de217fe9abce8
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353836"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432918"
 ---
 <!-- cSpell:ignore architected ITIL -->
 

@@ -4,16 +4,16 @@ description: Découvrez le processus de conception d’un modèle de gouvernance
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: efdca4c5848e8815166fd2ddf308d40ae62f75a1
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: f7a9f455c302c6cbdee843f04a8d1b48f56940a1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223722"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809035"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Conception de gouvernance pour une charge de travail simple
 
@@ -29,7 +29,7 @@ Dans la phase préparatoire à l’adoption, notre objectif est de déployer une
 Avant de commencer la conception du modèle de gouvernance, il est important de comprendre comment Azure est concédé sous licence. En effet, les comptes d’administration associés à votre licence Azure ont le plus haut niveau d’accès à toutes vos ressources Azure. Ces comptes d’administration constituent la base de votre modèle de gouvernance.
 
 > [!NOTE]
-> Si votre organisation dispose déjà d’un [contrat entreprise Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) qui n’inclut pas Azure, Azure peut être ajouté en effectuant un engagement financier initial. Pour plus d’informations, consultez [Gestion des licences Azure pour l’entreprise](https://azure.microsoft.com/pricing/enterprise-agreement).
+> Si votre organisation dispose déjà d’un [contrat entreprise Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise) qui n’inclut pas Azure, Azure peut être ajouté en effectuant un engagement financier initial. Pour plus d’informations, consultez [Gestion des licences Azure pour l’entreprise](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Lorsqu’Azure a été ajouté au Contrat Entreprise de votre organisation, cette dernière a été invitée à créer un **compte Azure**. Pendant le processus de création du compte, un **propriétaire de compte Azure** a été créé, ainsi qu’un locataire Azure Active Directory (Azure AD) avec un compte **d’administrateur général**. Un client Azure AD est une construction logique qui représente une instance d’Azure AD dédiée et sécurisée.
 
@@ -102,7 +102,7 @@ Le **propriétaire de la charge de travail** hérite du rôle de propriétaire a
 
 Apprenons maintenant à implémenter le modèle de gouvernance conçu précédemment.
 
-Pour commencer, votre organisation nécessite un compte Azure. Si votre organisation dispose déjà d’un [contrat entreprise Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) qui n’inclut pas Azure, Azure peut être ajouté en effectuant un engagement financier initial. Pour plus d’informations, consultez [Gestion des licences Azure pour l’entreprise](https://azure.microsoft.com/pricing/enterprise-agreement).
+Pour commencer, votre organisation nécessite un compte Azure. Si votre organisation dispose déjà d’un [contrat entreprise Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise) qui n’inclut pas Azure, Azure peut être ajouté en effectuant un engagement financier initial. Pour plus d’informations, consultez [Gestion des licences Azure pour l’entreprise](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Lors de la création de votre compte Azure, vous devez spécifier une personne de votre organisation comme étant le **propriétaire du compte** Azure. Un client Azure Active Directory (Azure AD) est ensuite créé par défaut. Le **propriétaire du compte** Azure doit [créer le compte d’utilisateur](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory) de la personne **propriétaire de la charge de travail** de votre organisation.
 

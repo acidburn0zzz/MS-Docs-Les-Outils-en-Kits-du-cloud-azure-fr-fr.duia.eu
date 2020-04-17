@@ -4,15 +4,15 @@ description: Découvrez comment utiliser des tests d’entreprise pour vérifier
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 675eda4aeb2109c21c2e3f47a100a985fd6e2861
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 15ab13f8d5797921e125c3b397b44213afcde249
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311750"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432372"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>Conseils pour les tests d’entreprise (UAT) pendant la migration
 

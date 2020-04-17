@@ -4,16 +4,16 @@ description: Découvrez les tâches qu’une entreprise peut effectuer pour dév
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0d5f2e2c1032c77ceb56b187aa9f2bcee02262eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 234136b777107c93e7ea26b9a183c1ec34b75e24
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707388"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120099"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Amélioration de la discipline Base de référence de la sécurité
 
@@ -46,13 +46,13 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 - Définissez un schéma de classification des données.
 - Menez un processus de planification du parc numérique pour dresser l'inventaire des ressources informatiques qui alimentent actuellement vos processus métier et les opérations associées.
 - Menez une [révision des stratégies](../../govern/policy-compliance/cloud-policy-review.md) pour entamer le processus de modernisation des stratégies de sécurité informatique existantes, et définissez des stratégies MVP pour répondre aux risques connus.
-- Passez en revue les consignes de sécurité de votre plateforme cloud. Pour Azure, vous les trouverez sur la [Plateforme d'approbation de services Microsoft](https://www.microsoft.com/trustcenter/stp/default.aspx).
-- Déterminez si votre stratégie Base de référence de la sécurité inclut un [Cycle de vie de développement de la sécurité](https://www.microsoft.com/securityengineering/sdl).
+- Passez en revue les consignes de sécurité de votre plateforme cloud. Pour Azure, vous les trouverez sur la [Plateforme d'approbation de services Microsoft](https://servicetrust.microsoft.com).
+- Déterminez si votre stratégie Base de référence de la sécurité inclut un [Cycle de vie de développement de la sécurité](https://www.microsoft.com/en-us/securityengineering/sdl).
 - Évaluez les risques métier liés au réseau, aux données et aux ressources en fonction des trois versions suivantes et déterminez la tolérance de votre organisation vis-à-vis de ces risques.
 - Consultez le rapport Microsoft consacré aux [principales tendances en matière de cybersécurité](https://www.microsoft.com/security/operations/security-intelligence-report) pour obtenir un aperçu du paysage de la sécurité actuel.
 - Envisagez de développer un rôle [Security DevOps](https://www.microsoft.com/en-us/securityengineering/devsecops) au sein de votre organisation.
 
-<!-- "en-us" location is required for the URL above. -->
+<!-- "en-us" location is required for the URLs above. -->
 
 ## <a name="build-and-predeployment"></a>Génération et prédéploiement
 
@@ -119,5 +119,5 @@ Maintenant que vous vous êtes familiarisé avec le concept de gouvernance de la
 
 > [!div class="nextstepaction"]
 > [En savoir plus sur les consignes de sécurité relatives à Azure](./azure-security-guidance.md)
-> [Présentation de la sécurité Azure](https://docs.microsoft.com/azure/security/azure-security)
+> [Présentation de la sécurité Azure](https://docs.microsoft.com/azure/security/fundamentals/overview)
 > [En savoir plus sur la journalisation, la création de rapports et la supervision](../../decision-guides/logging-and-reporting/index.md)

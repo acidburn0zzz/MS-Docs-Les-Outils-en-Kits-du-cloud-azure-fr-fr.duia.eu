@@ -4,15 +4,15 @@ description: Découvrez comment configurer les services de gestion de serveur Az
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 9647b2e7a32cd1374390e8849b62b41580284163
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312736"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809155"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -38,7 +38,7 @@ Toutes les solutions de gestion décrites dans [Outils et services d’administr
 
 Azure Policy dispose d’une [initiative de stratégie](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives) intégrée qui inclut l’agent Log Analytics et [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), requis par Azure Monitor pour machines virtuelles.
 
-<!-- TODO: Add these when available.
+<!-- TODOBACKLOG: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.
 - [Preview]: Enable Azure Monitor for VMs.
  -->

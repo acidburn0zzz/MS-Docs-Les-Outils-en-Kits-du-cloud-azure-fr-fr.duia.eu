@@ -4,15 +4,15 @@ description: Découvrez comment ajuster les efforts pour mesurer et communiquer 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9173909afb7ffe625a28ec72255c15540dcf7c63
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: a26ad28c5cd91225f02d5824690bc2d409bbd55f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353521"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433733"
 ---
 <!-- markdownlint-disable MD026 -->
 

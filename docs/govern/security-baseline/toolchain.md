@@ -4,16 +4,16 @@ description: Découvrez comment les outils natifs Azure peuvent contribuer à af
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 85b0d88d4a275c7215a498b95e0af6717bfac169
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 53321f274480094d5ff9db91f282a825594536fc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707065"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997232"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Outils de base de référence de la sécurité dans Azure
 
@@ -21,7 +21,7 @@ La discipline [Base de référence de la sécurité](./index.md) est l’une des
 
 La liste suivante énumère les outils Azure qui peuvent contribuer au développement des stratégies et des processus soutenant cette discipline de base de référence de la sécurité.
 
-| Outil | [Portail Azure](https://azure.microsoft.com/features/azure-portal) et [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Centre de sécurité Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
+| Outil | [Portail Azure](https://azure.microsoft.com/features/azure-portal) et [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Centre de sécurité Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
 |------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
 | Appliquer des contrôles d’accès aux ressources et à la création de ressources   | Oui                             | Non              | Oui      | Non           | Non                    | Non            |
 | Sécuriser les réseaux virtuels                                    | Oui                             | Non              | Non       | Oui          | Non                    | Non            |
@@ -35,8 +35,8 @@ La liste suivante énumère les outils Azure qui peuvent contribuer au développ
 | Détecter les vulnérabilités de manière préemptive                        | Non                              | Non              | Non       | Non           | Oui                   | Non            |
 | Configurer la sauvegarde et la récupération d’urgence                     | Oui                             | Non              | Non       | Non           | Non                    | Non            |
 
-Vous pouvez consulter une liste complète des outils et services de sécurité Azure dans l’article [Services et technologies de sécurité disponibles sur Azure](https://docs.microsoft.com/azure/security/azure-security-services-technologies).
+Vous pouvez consulter une liste complète des outils et services de sécurité Azure dans l’article [Services et technologies de sécurité disponibles sur Azure](https://docs.microsoft.com/azure/security/fundamentals/services-technologies).
 
 Il est également courant pour les clients d’utiliser des outils tiers pour faciliter les activités de base de référence de la sécurité. Pour plus d’informations, consultez l’article [Intégrer les solutions de sécurité dans Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-partner-integration).
 
-En plus des outils de sécurité, le [Microsoft Trust Center](https://www.microsoft.com/trustcenter/guidance/risk-assessment) contient de nombreux conseils, rapports et documents connexes qui peuvent vous aider à effectuer des évaluations des risques dans le cadre de votre processus de planification de migration.
+En plus des outils de sécurité, le [Microsoft Trust Center](https://www.microsoft.com/microsoft-365/business/compliance-solutions#office-KeyMessages-k3j63yo) contient de nombreux conseils, rapports et documents connexes qui peuvent vous aider à effectuer des évaluations des risques dans le cadre de votre processus de planification de migration.

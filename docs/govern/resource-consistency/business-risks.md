@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour compren
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 90959045d877c313576540c3f0288eff8c136b5f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3eff0f6130adc35d8c087d385d42b06e141f3c64
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706861"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433494"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Risques métier et motivations associés à la cohérence des ressources
 

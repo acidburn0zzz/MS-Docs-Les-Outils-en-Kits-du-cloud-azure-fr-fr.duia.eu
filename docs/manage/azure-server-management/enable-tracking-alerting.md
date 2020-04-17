@@ -4,15 +4,15 @@ description: Activez le suivi et les alertes liés aux changements critiques dan
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fe6cd29e6bff2ea9d969c715aec65d608f0b23e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: c973dfbdf7cb4fede3520465b2192b7f821cec1d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356411"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434144"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 

@@ -4,15 +4,15 @@ description: Commencez votre adoption d’Azure en créant vos abonnements initi
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4e2a538c91328e7153f7f5ed37d07b8dbbeb4ea0
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: ba648a2e26085b8a13b698097c54d184c27f8fff
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80359882"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433327"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Créer vos abonnements Azure initiaux
 

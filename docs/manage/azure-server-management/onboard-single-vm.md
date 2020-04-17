@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d79539e6708a46a905e1b69a4d6bd186eaff2d0f
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 38285bfe7ebc713d186e6e952b119637161d12ce
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341689"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80426522"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>Activer les services de gestion de serveur sur une seule machine virtuelle à des fins d’évaluation
 

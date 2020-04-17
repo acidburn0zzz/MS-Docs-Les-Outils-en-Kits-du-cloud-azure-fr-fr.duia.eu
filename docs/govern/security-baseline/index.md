@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 75a0212628c41f82ceccd198c87e69d430b74258
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 5e2549c252b8fddf6cd549215704300a764f4040
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707422"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997269"
 ---
 # <a name="security-baseline-discipline-overview"></a>Présentation de la discipline Base de référence de la sécurité
 
@@ -25,7 +25,7 @@ La base de référence de la sécurité est l’une des [cinq disciplines de la 
 
 Cet article décrit l’approche à adopter pour élaborer une discipline Base de référence de la sécurité dans le cadre de votre stratégie de gouvernance cloud. Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Cependant, les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés au sein de votre équipe de sécurité et votre équipe informatique, en particulier les responsables techniques chargés de l’implémentation de la mise en réseau, du chiffrement et des services d’identité.
 
-Prendre les bonnes décisions en matière de sécurité est un point essentiel pour réussir vos déploiements dans le cloud et favoriser votre succès commercial. Si votre organisation manque d’expertise interne en matière de cybersécurité, envisagez de faire appel à des consultants de sécurité externes dans le cadre de cette discipline. Envisagez également de faire appel aux [Services de conseil Microsoft](https://www.microsoft.com/enterprise/services), au service d’adoption du cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou à des experts externes pour aborder les préoccupations liées à cette discipline.
+Prendre les bonnes décisions en matière de sécurité est un point essentiel pour réussir vos déploiements dans le cloud et favoriser votre succès commercial. Si votre organisation manque d’expertise interne en matière de cybersécurité, envisagez de faire appel à des consultants de sécurité externes dans le cadre de cette discipline. Envisagez également de faire appel aux [Services de conseil Microsoft](https://www.microsoft.com/industry/services/consulting), au service d’adoption du cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou à des experts externes pour aborder les préoccupations liées à cette discipline.
 
 ## <a name="policy-statements"></a>Policy statements
 

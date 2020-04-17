@@ -4,15 +4,15 @@ description: Utilisez Cloud Adoption Framework pour Azure afin de découvrir com
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4cbf0c7760ed2c471e1b462ae2712c544e9d0e8c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8e3ed4ff6457c0e9d00777f94c812097f0b742e9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355499"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80429391"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Gérer les modifications dans un effort de migration incrémentiel
 

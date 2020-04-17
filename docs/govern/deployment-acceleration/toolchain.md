@@ -4,16 +4,16 @@ description: Découvrez comment les outils natifs Azure peuvent contribuer à af
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ee1c81fe5bada0fa435a598db2f79dc0b23b4392
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 434f8118d075c907d543f344c26c99c10cbc9bb4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709003"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995470"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Outils d'accélération du déploiement dans Azure
 
@@ -23,7 +23,7 @@ Les opérateurs, gardiens et architectes du cloud qui s'intéressent à la gouve
 
 La liste suivante énumère les outils Azure qui peuvent contribuer à faire mûrir les stratégies et les processus soutenant cette discipline de gouvernance.
 
-|  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Groupes d'administration Azure](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) | [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management) |
+|  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Groupes d'administration Azure](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) | [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 |Implémentation de stratégies d’entreprise     |Oui |Non  |Non  |Non | Non |Non |
 |Application de stratégies dans les abonnements     |Obligatoire |Oui  |Non  |Non | Non |Non |
@@ -35,7 +35,7 @@ La liste suivante énumère les outils Azure qui peuvent contribuer à faire mû
 
 Les outils supplémentaires suivants peuvent s'avérer nécessaires pour atteindre des objectifs spécifiques en matière d'accélération du déploiement. Ces outils sont souvent utilisés en dehors de l'équipe de gouvernance, mais restent considérés comme un aspect de la discipline Accélération du déploiement.
 
-|  | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops/index) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+|  | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|
 |Déploiement manuel (ressource unique)     | Oui | Oui  | Non  | Pas efficace | Non | Oui |
 |Déploiement manuel (environnement complet)     | Pas efficace | Oui | Non  | Pas efficace | Non | Oui |

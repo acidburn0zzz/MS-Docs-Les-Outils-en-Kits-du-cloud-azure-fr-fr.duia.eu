@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour compren
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3e8c51da7dc0e45ee2722681872ca851ee385656
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: dcfa6596d61233efa83bc6a1c6977a2ebe4ad510
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709071"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433480"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Amélioration de la discipline Cohérence des ressources
 

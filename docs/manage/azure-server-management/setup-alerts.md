@@ -4,15 +4,15 @@ description: Découvrez comment utiliser les services de gestion de serveur Azur
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3525b8d84ee6dd54072a4fed401114578de7fcb3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: ecc0dd8b3a91461d5c5d1dd1ce4c062646d974fb
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094480"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80430497"
 ---
 # <a name="set-up-basic-alerts"></a>Configurer des alertes de base
 

@@ -4,24 +4,24 @@ description: Découvrez comment séparer les tâches au sein de votre équipe et
 author: rotycenh
 ms.author: brblanch
 ms.date: 11/28/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: c4777f062725a74a98233bfe6851180d70bdfbf8
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092450"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997926"
 ---
 # <a name="role-based-access-control"></a>Contrôle d’accès en fonction du rôle
 
 Les droits d’accès et les privilèges en fonction du groupe sont une bonne pratique. Le traitement des groupes plutôt que des utilisateurs individuels simplifie la maintenance des stratégies d’accès, offre une gestion cohérente des accès entre les équipes et réduit les erreurs de configuration. L’attribution et la suppression d’utilisateurs dans les groupes appropriés facilitent l’actualisation continue des privilèges d’un utilisateur spécifique. Le [contrôle d’accès en fonction du rôle (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) Azure offre une gestion précise de l’accès aux ressources et organisée autour des rôles d’utilisateur.
 
-Pour obtenir une vue d’ensemble des pratiques RBAC recommandées dans le cadre d’une stratégie d’identité et de sécurité, consultez les [meilleures pratiques en matière de sécurité du contrôle d’accès et de gestion des identités Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
+Pour obtenir une vue d’ensemble des pratiques RBAC recommandées dans le cadre d’une stratégie d’identité et de sécurité, consultez les [meilleures pratiques en matière de sécurité du contrôle d’accès et de gestion des identités Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices#use-role-based-access-control).
 
 ## <a name="overview-of-role-based-access-control"></a>Vue d’ensemble du contrôle d’accès en fonction du rôle
 
@@ -38,7 +38,7 @@ Lorsque vous planifiez votre stratégie de contrôle d’accès, utilisez un mod
 ![Modèle suggéré pour l’utilisation du RBAC](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> Plus les autorisations que vous définissez sont spécifiques ou détaillées, plus il est probable que vos contrôles d’accès deviennent complexes et difficiles à gérer. Cela est particulièrement vrai lorsque la taille de votre parc cloud augmente. Évitez les autorisations spécifiques aux ressources. Au lieu de cela, [utilisez des groupes d’administration](https://docs.microsoft.com/azure/governance/management-groups) pour un contrôle d’accès au niveau de l’entreprise et des [groupes de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) pour un contrôle d’accès au sein d’abonnements. Évitez également les autorisations spécifiques à des utilisateurs. Au lieu de cela, attribuez l’accès à des [groupes dans Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
+> Plus les autorisations que vous définissez sont spécifiques ou détaillées, plus il est probable que vos contrôles d’accès deviennent complexes et difficiles à gérer. Cela est particulièrement vrai lorsque la taille de votre parc cloud augmente. Évitez les autorisations spécifiques aux ressources. Au lieu de cela, [utilisez des groupes d’administration](https://docs.microsoft.com/azure/governance/management-groups) pour un contrôle d’accès au niveau de l’entreprise et des [groupes de ressources](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) pour un contrôle d’accès au sein d’abonnements. Évitez également les autorisations spécifiques à des utilisateurs. Au lieu de cela, attribuez l’accès à des [groupes dans Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
 ## <a name="use-built-in-rbac-roles"></a>Utiliser des rôles RBAC intégrés
 

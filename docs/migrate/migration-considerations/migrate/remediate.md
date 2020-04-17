@@ -4,15 +4,15 @@ description: Découvrez comment corriger les ressources que vous jugez incompati
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0805868195912807c50a49d781928865f2f82ca9
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8cc66b6995cf9221c81254974196c7839313045a
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355231"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80429366"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Corriger les ressources avant la migration
 

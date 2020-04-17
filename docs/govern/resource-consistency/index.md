@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 93064d0c3feb8b9ee129c404e58e8d0485dcdfe5
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ab79e6e0d55c8b7928e53415920c7ed285b625d8
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706963"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997382"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Présentation de la discipline Cohérence des ressources
 
@@ -25,7 +25,7 @@ La cohérence des ressources est l’une des [cinq disciplines de la gouvernance
 
 Cette section du Framework d’adoption du cloud explique comment développer une discipline Cohérence des ressources dans le cadre de votre stratégie de gouvernance cloud. Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Cependant, les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés des équipes informatiques responsables de l’implémentation et de l’administration de vos solutions de cohérence des ressources.
 
-Si votre organisation manque d’expertise interne en matière de stratégies Cohérence des ressources, envisagez de faire appel à des consultants externes pour y remédier. Envisagez également de faire appel aux [Services de conseil Microsoft](https://www.microsoft.com/enterprise/services), au service d’adoption du cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou à des experts de l’adoption du cloud externes pour aborder les thèmes relatifs à l’organisation, au suivi et à l’optimisation de vos ressources basées sur le cloud.
+Si votre organisation manque d’expertise interne en matière de stratégies Cohérence des ressources, envisagez de faire appel à des consultants externes pour y remédier. Envisagez également de faire appel aux [Services de conseil Microsoft](https://www.microsoft.com/industry/services/consulting), au service d’adoption du cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou à des experts de l’adoption du cloud externes pour aborder les thèmes relatifs à l’organisation, au suivi et à l’optimisation de vos ressources basées sur le cloud.
 
 ## <a name="policy-statements"></a>Policy statements
 

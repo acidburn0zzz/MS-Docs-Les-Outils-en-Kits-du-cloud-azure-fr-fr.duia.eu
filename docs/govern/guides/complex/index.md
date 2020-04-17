@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 45c32c1d6f4a20f956748da935303eb2e8b60552
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4ca434bd7812c3752c7905286d70add6353b9d81
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434472"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396216"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guide de gouvernance pour les entreprises complexes
 
@@ -52,7 +52,7 @@ Chaque application doit être déployée dans la zone appropriée du groupe d’
 
 Ces modèles autorisent la croissance sans compliquer inutilement la hiérarchie.
 
-[!INCLUDE [governance-of-resources](../../../../includes/caf-governance-of-resources.md)]
+[!INCLUDE [governance-of-resources](../../../../includes/governance-of-resources.md)]
 
 <!-- See comments for suggestion to possibly add here -->
 

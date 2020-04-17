@@ -4,15 +4,15 @@ description: Créez des partenariats clients en faisant preuve d’empathie aupr
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1f41d4f918cb4d8ca460e0d629ccffc4df9f5688
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 8afb39bdad3b521d3470e2e5eaca3f64a81061c0
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170679"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433410"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Créer des partenariats avec les clients dans le cadre de la boucle de rétroaction développer-mesurer-apprendre
 

@@ -4,16 +4,16 @@ description: Utilisez Cloud Adoption Framework pour Azure afin de savoir comment
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d50e40ba5877eab0f2aa904f2bcc1e984c309ca
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 5af612501dd2fb8bb73ada0e9dfcd4f3ee784e35
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223877"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433528"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Métriques, indicateurs et tolérance au risque de la base de référence des identités
 
