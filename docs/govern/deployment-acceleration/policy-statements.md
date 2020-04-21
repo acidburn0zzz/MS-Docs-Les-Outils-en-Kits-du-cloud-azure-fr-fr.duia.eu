@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour obtenir
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e25c81e2811bcefa238366462db3d2c66184b08
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 18eef9f270e4c9ab8b2ee31268e46f0d4d929e34
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708952"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995525"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exemples d’instructions de stratégie pour l’accélération du déploiement
 
@@ -31,7 +31,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques métiers 
 
 **Instruction de stratégie :** dans la mesure du possible, toutes les ressources déployées dans le cloud doivent être déployées à l’aide de modèles ou de scripts d’automatisation.
 
-**Options de conception potentielles** : les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) proposent une approche de type « infrastructure en tant que code » pour déployer vos ressources sur Azure. Vous pouvez également utiliser [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview), qui vous offre un outil cohérent pour le déploiement local et dans le cloud.
+**Options de conception potentielles** : les [modèles Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) permettent d’utiliser l’infrastructure en tant que code pour déployer vos ressources sur Azure. Vous pouvez également utiliser [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview), qui vous offre un outil cohérent pour le déploiement local et dans le cloud.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Manque de visibilité sur les problèmes du système
 

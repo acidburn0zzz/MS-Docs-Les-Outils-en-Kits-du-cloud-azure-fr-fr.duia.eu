@@ -1,21 +1,21 @@
 ---
 title: Déployer une infrastructure de migration
-description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à travers un exemple caractéristique comment configurer une infrastructure Azure pour la migration vers Azure.
-author: BrianBlanchard
-ms.author: brblanch
-ms.date: 10/1/2018
+description: Découvrez comment Contoso configure une infrastructure Azure pour la migration vers Azure.
+author: deltadan
+ms.author: abuck
+ms.date: 04/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8520295a1496d1c44f6372d766ea766c7ba1973c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 049de2f62bd2b5bc5720ea1788de7be5d3492b13
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356289"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120587"
 ---
-<!-- cSpell:ignore CSPs domainname IPAM CIDR untrust RRAS contosodc sysvol ITIL NSGs ASGs -->
+<!-- cSpell:ignore deltadan CSPs untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
 # <a name="deploy-a-migration-infrastructure"></a>Déployer une infrastructure de migration
 
@@ -42,9 +42,9 @@ Avant de pouvoir effectuer la migration vers Azure, Contoso doit impérativement
 Avant d’examiner l’infrastructure, nous vous conseillons de lire quelques informations générales sur les fonctionnalités Azure abordées dans cet article :
 
 - Plusieurs options sont disponibles pour l’achat d’un accès Azure, notamment le paiement à l’utilisation, les Contrats Entreprise (EA), les licences Open de revendeurs Microsoft ou de Partenaires Microsoft appelés fournisseurs de solutions cloud (CSP). En savoir plus sur les [options d’achat](https://azure.microsoft.com/pricing/purchase-options) et la façon dont les [abonnements Azure sont organisés](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
-- Obtenez une vue d’ensemble de la [gestion de l'identité et de l'accès](https://www.microsoft.com/trustcenter/security/identity) Azure. En particulier, découvrez [Azure AD et l’extension d’Active Directory local vers le cloud](https://docs.microsoft.com/azure/active-directory/identity-fundamentals). Il existe un livre électronique téléchargeable très utile sur la [gestion de l’identité et de l’accès (IAM) dans un environnement hybride](https://azure.microsoft.com/resources/hybrid-cloud-identity).
+- Obtenez une vue d’ensemble de la [gestion de l'identité et de l'accès](https://www.microsoft.com/security/business/identity) Azure. En particulier, découvrez [Azure AD et l’extension d’Active Directory local vers le cloud](https://docs.microsoft.com/azure/active-directory/identity-fundamentals). Il existe un livre électronique téléchargeable très utile sur la [gestion de l’identité et de l’accès (IAM) dans un environnement hybride](https://azure.microsoft.com/resources/hybrid-cloud-identity).
 - Azure fournit une infrastructure réseau fiable avec des options de connectivité hybride. Obtenez une vue d’ensemble de la [mise en réseau et du contrôle d’accès réseau](https://docs.microsoft.com/azure/security/security-network-overview).
-- Obtenez une présentation de la [sécurité Azure](https://docs.microsoft.com/azure/security/azure-security) et plus d’informations sur la création d’un plan pour la [gouvernance](https://docs.microsoft.com/azure/security/governance-in-azure).
+- Obtenez une présentation de la [sécurité Azure](https://docs.microsoft.com/azure/security/fundamentals/overview) et plus d’informations sur la création d’un plan pour la [gouvernance](https://docs.microsoft.com/azure/governance).
 
 ## <a name="on-premises-architecture"></a>Architecture locale
 
@@ -55,7 +55,7 @@ Voici un diagramme montrant l’infrastructure locale actuelle de Contoso.
 - Contoso dispose d’un centre de données principal situé dans la ville de New York dans l’Est des États-Unis.
 - Il y a trois branches locales supplémentaires aux États-Unis.
 - Le centre de données principal est connecté à Internet avec une connexion Ethernet Fiber Metro (500 Mbits/s).
-- Chaque branche est connectée localement à Internet via des connexions de qualité professionnelle, avec des tunnels VPN IPSec vers le centre de données principal. Cela permet au réseau entier d’être connecté en permanence et optimise la connexion Internet.
+- Chaque branche est connectée localement à Internet via des connexions de qualité professionnelle, avec des tunnels VPN IPSec vers le centre de données principal. Cette approche permet au réseau entier d’être connecté en permanence et optimise la connexion Internet.
 - Le centre de données principal est entièrement virtualisé avec VMware. Contoso a deux hôtes de virtualisation ESXi 6.5 gérés par vCenter Server 6.5.
 - Contoso utilise Active Directory pour la gestion des identités, et des serveurs DNS sur le réseau interne.
 - Les contrôleurs de domaine du centre de données s’exécutent sur des machines virtuelles VMware. Les contrôleurs de domaine au niveau des branches locales s’exécutent sur des serveurs physiques.
@@ -66,7 +66,7 @@ Contoso doit savoir comment acheter Azure, créer des abonnements et obtenir une
 
 ### <a name="buy-azure"></a>Acheter Azure
 
-Contoso va de pair avec un [Contrat Entreprise (EA)](https://azure.microsoft.com/pricing/enterprise-agreement). Cela implique un engagement financier initial en faveur d’Azure, permettant à Contoso d’obtenir d’importants avantages, notamment des options flexibles de facturation et des tarifs optimisés.
+Contoso s’inscrit dans un [Contrat Entreprise (EA)](https://azure.microsoft.com/pricing/enterprise-agreement). Ce contrat implique un engagement financier initial en faveur d’Azure, permettant à Contoso d’obtenir d’importants avantages, notamment des options flexibles de facturation et des tarifs optimisés.
 
 - Contoso a estimé ses dépenses Azure annuelles. Quand l’entreprise a signé le contrat, Contoso a payé la première année en totalité.
 - Contoso doit utiliser tous les services dans l’année, sous peine de perdre les sommes versées.
@@ -107,7 +107,7 @@ Les charges de travail prévisibles sont celles qui doivent toujours être dispo
 
 ![Instance réservée](./media/contoso-migration-infrastructure/reserved-instance.png)
 
-En contrepartie de l’utilisation d’instances réservées pour des instances de machine virtuelle spécifiques qui doivent être gérées sur de longues périodes, Contoso peut bénéficier à la fois d’une remise et d’une capacité hiérarchisée. Grâce aux [instances réservées Azure](https://azure.microsoft.com/pricing/reserved-vm-instances) et à Azure Hybrid Benefit, Contoso peut économiser jusqu'à 82 % sur le tarif d’un paiement à l'utilisation (avril 2018).
+En contrepartie de l’utilisation d’instances réservées pour des instances de machine virtuelle spécifiques qui doivent être gérées sur de longues périodes, Contoso peut bénéficier à la fois d’une remise et d’une capacité hiérarchisée. Grâce aux [instances réservées Azure](https://azure.microsoft.com/pricing/reserved-vm-instances) et à Azure Hybrid Benefit, Contoso peut économiser jusqu'à 82 % sur le tarif d’un paiement à l'utilisation (avril 2018).
 
 ## <a name="step-2-manage-hybrid-identity"></a>Étape 2 : Gérer l’identité hybride
 
@@ -117,7 +117,7 @@ L’octroi et le contrôle de l’accès utilisateur à des ressources Azure ave
 - L’entreprise crée pour cela un annuaire Active Directory basé sur Azure.
 - Comme Contoso n’a pas Office 365, l’entreprise doit provisionner un nouveau Azure AD.
 - Office 365 utilise Azure AD pour la gestion des utilisateurs. Si Contoso utilisait Office 365, l’entreprise aurait déjà un locataire Azure AD pouvant servir de répertoire principal.
-- [Découvrez plus en détail](https://support.office.com/article/understanding-office-365-identity-and-azure-active-directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9) Azure AD pour Office 365 et [l’ajout d’un abonnement](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory) à un locataire Azure AD existant.
+- Découvrez plus en détail [Azure AD pour Office 365](https://docs.microsoft.com/office365/enterprise/about-office-365-identity) et l’[ajout d’un abonnement à un locataire Azure AD existant](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory).
 
 ### <a name="create-an-azure-ad"></a>Créer une application Azure AD
 
@@ -129,7 +129,7 @@ Contoso utilise l’édition Azure Active Directory Free incluse avec un abonnem
     ![Créer une application Azure AD](./media/contoso-migration-infrastructure/azure-ad-create.png)
 
     > [!NOTE]
-    > L’annuaire créé a un nom de domaine initial au format **nom_de_domaine.onmicrosoft.com**. Ce nom ne peut pas être changé ni supprimé. Au lieu de cela, Contoso doit ajouter son nom de domaine inscrit à Azure AD.
+    > L’annuaire créé a un nom de domaine initial au format **nom-domaine.onmicrosoft.com**. Ce nom ne peut pas être changé ni supprimé. Au lieu de cela, Contoso doit ajouter son nom de domaine inscrit à Azure AD.
 
 ### <a name="add-the-domain-name"></a>Ajouter le nom de domaine
 
@@ -265,7 +265,7 @@ Contoso a choisi USA Est 2 (en Virginie) comme région primaire et USA Centre (
 
 Dans la perspective d’un environnement hybride, Contoso doit prévoir la mise en place d’une stratégie de résilience et de reprise d’activité dans la conception de la région. Généralement, les stratégies vont d’une seule région de déploiement, qui s’appuie sur les fonctionnalités de la plateforme Azure comme les domaines d’erreur et le jumelage régional pour résilience, à un modèle Active-Active complet dans lequel les services cloud et la base de données sont déployés et desservent les utilisateurs de deux régions.
 
-Contoso a opté pour une solution intermédiaire. L’entreprise va déployer des applications et des ressources dans une région primaire, en conservant une copie complète de l’infrastructure dans la région secondaire afin d’avoir une sauvegarde complète en cas de défaillance totale d’une application ou à l’échelle d’une région.
+Contoso a opté pour une solution intermédiaire. L’entreprise va déployer des applications et des ressources dans une région primaire, en conservant une copie complète de l’infrastructure dans la région secondaire afin d’avoir une sauvegarde complète si une défaillance totale d’une application ou à l’échelle d’une région se produit.
 
 ### <a name="set-up-availability"></a>Configurer la disponibilité
 
@@ -290,7 +290,7 @@ Les zones de disponibilité contribuent à protéger les applications et les don
 
 Contoso va déployer des zones de disponibilité en fonction des besoins des applications en termes de scalabilité, de haute disponibilité et de résilience. [Plus d’informations](https://docs.microsoft.com/azure/availability-zones/az-overview)
 
-### <a name="set-up-backup"></a>Configurer la sauvegarde
+### <a name="configure-backup"></a>Configurer une sauvegarde
 
 **Sauvegarde Azure :**
 
@@ -298,11 +298,11 @@ Sauvegarde Azure vous permet de sauvegarder et de restaurer des disques de machi
 
 - Sauvegarde Azure permet de sauvegarder automatiquement des images de disque de machine virtuelle, stockées dans le stockage Azure.
 - Les sauvegardes sont cohérentes avec les applications, garantissant la cohérence transactionnelle des données sauvegardées et le démarrage des applications après leur restauration.
-- Sauvegarde Azure prend en charge le stockage localement redondant (LRS) pour répliquer plusieurs copies de vos données de sauvegarde au sein d’un centre de données, en cas de défaillance matérielle locale.
-- En cas de panne régionale, Sauvegarde Azure prend également en charge le stockage géoredondant (GRS) en répliquant vos données de sauvegarde dans une région secondaire jumelée.
+- Sauvegarde Azure prend en charge le stockage localement redondant (LRS) pour répliquer plusieurs copies de vos données de sauvegarde au sein d’un centre de données si une défaillance matérielle locale se produit.
+- Si une panne régionale se produit, Sauvegarde Azure prend également en charge le stockage géoredondant (GRS) en répliquant vos données de sauvegarde dans une région secondaire jumelée.
 - Sauvegarde Azure chiffre les données en transit à l’aide d’AES 256. Les données sauvegardées au repos sont chiffrées à l’aide de [Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
-Contoso utilise Sauvegarde Azure avec GRS sur toutes les machines virtuelles de production pour s’assurer que les données de charge de travail sont sauvegardées et peuvent être restaurées rapidement en cas de panne ou d’interruption. [Plus d’informations](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
+Contoso utilise Sauvegarde Azure avec GRS sur toutes les machines virtuelles de production pour s’assurer que les données de charge de travail sont sauvegardées et peuvent être restaurées rapidement si une panne ou une autre interruption se produit. Pour plus d’informations, consultez [Vue d’ensemble de Sauvegarde Azure](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
 
 ### <a name="set-up-disaster-recovery"></a>Configurer une récupération d'urgence
 
@@ -384,7 +384,7 @@ Dans chaque région, Contoso déploiera des réseaux virtuels à différentes fi
 
 Dans le modèle « hub et spoke » que Contoso a choisi, l’entreprise doit réfléchir au routage du trafic provenant de son centre de données local et d’Internet. Voici comment Contoso a décidé de gérer le routage pour les hubs des régions USA Centre et USA Est 2 :
 
-- Contoso crée un réseau appelé « c inverse », car il s’agit du chemin suivi par les paquets entre le réseau entrant et le réseau sortant.
+- Contoso crée un réseau qui autorise le trafic à partir d’Internet et de son réseau d’entreprise à l’aide d’un VPN vers Azure.
 - L’architecture réseau a deux limites, une zone de périmètre frontend non approuvée et une zone backend approuvée.
 - Un pare-feu disposera d’une carte réseau dans chaque zone afin de contrôler l’accès aux zones de confiance.
 - À partir d'Internet :
@@ -402,22 +402,21 @@ Dans le modèle « hub et spoke » que Contoso a choisi, l’entreprise doit ré
 
 Avec un réseau et une topologie de routage en place, Contoso est prêt à configurer les réseaux et sous-réseaux Azure.
 
-- Contoso implémentera un réseau privé de classe A dans Azure (0.0.0.0 à 127.255.255.255). Cette solution fonctionne, car son infrastructure locale actuelle a un espace d’adressage privé de classe B 172.160.0/16 pour éviter tout risque de chevauchement entre les plages d’adresses.
-- L’entreprise va déployer des réseaux virtuels dans les régions primaire et secondaire.
+- Contoso implémentera un réseau privé de classe A dans Azure 10.0.0.0/8. Cette solution fonctionne, car son infrastructure locale actuelle a un espace d’adressage privé de classe B 172.160.0.0/16 pour éviter tout risque de chevauchement entre les plages d’adresses.
+- Contoso va déployer des réseaux virtuels à la fois dans les régions primaire et secondaire.
 - Contoso utilise une convention de nommage qui inclut le préfixe **VNET** et l’abréviation de région **EUS2** ou **CUS**. Avec cette norme, les réseaux de hubs seront nommés **VNET-HUB-EUS2** (USA Est 2) et **VNET-HUB-CUS** (USA Centre).
-- Comme Contoso n’a pas de [solution IPAM](https://docs.microsoft.com/windows-server/networking/technologies/ipam/ipam-top), l’entreprise doit planifier le routage réseau sans NAT.
 
 #### <a name="virtual-networks-in-east-us-2"></a>Réseaux virtuels dans USA Est 2
 
 USA Est 2 est la région principale que Contoso utilisera pour déployer des services et des ressources. Voici comment Contoso va structurer les réseaux :
 
-- **Hub :** le réseau virtuel hub dans la région USA Est 2 est le point central de connectivité principale vers le centre de données local.
-- **Réseaux virtuels :** les réseaux virtuels spoke dans la région USA Est 2 peuvent servir à isoler les charges de travail, si nécessaire. En plus du réseau virtuel hub, Contoso disposera de deux réseaux virtuels spoke dans la région USA Est 2 :
+- **Hub :** le réseau virtuel hub dans la région USA Est 2 est considéré comme connectivité principale vers le centre de données local.
+- **Réseaux virtuels :** les réseaux virtuels spoke dans la région USA Est 2 peut servir à isoler les charges de travail, si nécessaire. En plus du réseau virtuel hub, Contoso disposera de deux réseaux virtuels spoke dans la région USA Est 2 :
   - **VNET-DEV-EUS2**. Ce réseau virtuel fournit à l’équipe de développement et de test un réseau entièrement fonctionnel pour ses projets de développement. Il sert de zone de production pilote et s’appuie sur l’infrastructure de production pour fonctionner.
     - **VNET-PROD-EUS2**. les composants de production Azure IaaS seront placés dans ce réseau.
   - Chaque réseau virtuel possède son propre espace d’adressage unique, sans chevauchement. Contoso veut configurer le routage sans NAT.
 - **Sous-réseaux :**
-  - Il y aura un sous-réseau dans chaque réseau pour chaque niveau d’application
+  - Il y aura un sous-réseau dans chaque réseau pour chaque niveau d’application.
   - Chaque sous-réseau du réseau de production aura un sous-réseau correspondant dans le réseau virtuel de développement.
   - En outre, le réseau de production comporte un sous-réseau pour les contrôleurs de domaine.
 
@@ -468,12 +467,12 @@ Les composants IaaS Azure sont situés dans le réseau de production. Chaque niv
 
 La région USA Centre est la région secondaire de Contoso. Voici comment Contoso va structurer les réseaux :
 
-- **Hub :** le réseau virtuel hub de la région USA Est 2 est le point central de connectivité vers le centre de données local, et les réseaux virtuels spoke de la région USA Est 2 peuvent être utilisés pour isoler des charges de travail si nécessaire, gérées séparément des autres spokes.
+- **Hub :** le réseau virtuel hub de la région USA Centre est considéré comme le point de connectivité secondaire vers le centre de données local, et les réseaux virtuels spoke de la région USA Centre peuvent être utilisés pour isoler des charges de travail si nécessaire, gérées séparément des autres spokes.
 - **Réseaux virtuels :** Contoso a deux réseaux virtuels dans la région USA Centre :
-  - VNET-PROD-CUS. Ce réseau virtuel est un réseau de production, semblable à VNET-PROD_EUS2.
+  - VNET-PROD-CUS. Ce réseau virtuel est un réseau de production et peut être considéré comme un hub secondaire.
   - VNET-ASR-CUS. Ce réseau virtuel servira d’emplacement dans lequel les machines virtuelles sont créées après le basculement depuis le site local, ou d’emplacement pour les machines virtuelles Azure qui ont basculé de la région principale vers la région secondaire. Ce réseau est similaire aux réseaux de production, mais il ne comporte aucun contrôleur de domaine.
   - Chaque réseau virtuel de la région possède son propre espace d’adressage, sans chevauchement. Contoso configure le routage sans NAT.
-- **Sous-réseaux :** les sous-réseaux seront conçus de la même façon que ceux de la région USA Est 2, à la différence que Contoso n’a pas besoin de sous-réseau pour les contrôleurs de domaine.
+- **Sous-réseaux :** les sous-réseaux seront conçus de la même façon que ceux de la région USA Est 2,
 
 Les réseaux virtuels de la région USA Centre sont résumés dans le tableau suivant.
 
@@ -531,7 +530,7 @@ Pour toutes les connexions depuis les réseaux virtuels spoke via le hub et jusq
 
 ##### <a name="domain-controller"></a>Contrôleur de domaine
 
-Pour les contrôleurs de domaine du réseau VNET-PROD-EUS2, Contoso souhaite que le trafic passe entre le réseau hub/production EUS2 et sur la connexion VPN vers le site local. Pour ce faire, les administrateurs de Contoso doivent autoriser ce qui suit :
+Pour les contrôleurs de domaine du réseau VNET-PROD-EUS2, Contoso souhaite que le trafic passe entre le réseau hub/production EUS2 et sur la connexion VPN vers le site local. Pour ce faire, les administrateurs de Contoso doivent autoriser ce qui suit :
 
 1. **Autoriser le trafic transféré** et **autoriser les configurations de transit par passerelle** sur la connexion jumelée. Dans notre exemple, il s’agit de la connexion VNET-HUB-EUS2 vers VNET-PROD-EUS2.
 
@@ -559,9 +558,9 @@ Lorsque vous déployez des ressources dans des réseaux virtuels, vous avez deux
 
 Les administrateurs de Contoso ont décidé que le service Azure DNS n’est pas un bon choix dans l’environnement hybride. Ils préfèrent plutôt utiliser les serveurs DNS locaux.
 
-- S’agissant d’un réseau hybride, toutes les machines virtuelles locales et Azure doivent pouvoir résoudre les noms pour fonctionner correctement. Cela signifie que des paramètres DNS personnalisés doivent être appliqués à tous les réseaux virtuels.
-- Actuellement, Contoso a déployé des contrôleurs de domaine dans ses centres de données et ses filiales. Ses serveurs DNS principaux sont CONTOSODC1(172.16.0.10) et CONTOSODC2(172.16.0.1)
-- Quand les réseaux virtuels sont déployés, les contrôleurs de domaine locaux sont configurés pour être utilisés comme serveurs DNS dans les réseaux.
+- Comme il s’agit d’un réseau hybride, toutes les machines virtuelles locales et dans Azure doivent être capables de résoudre les noms afin de fonctionner correctement. Cela signifie que des paramètres DNS personnalisés doivent être appliqués à tous les réseaux virtuels.
+- Actuellement, Contoso a déployé des contrôleurs de domaine dans ses centres de données et ses filiales. Ses serveurs DNS principaux sont CONTOSODC1 (172.16.0.10) et CONTOSODC2 (172.16.0.1).
+- Une fois que les réseaux virtuels sont déployés, les contrôleurs de domaine locaux sont configurés comme serveurs DNS dans les réseaux.
 - Pour cette configuration, lorsque vous utilisez un DNS personnalisé sur le réseau virtuel, vous devez ajouter l’adresse IP des programmes de résolution récursifs d’Azure (168.63.129.16) à la liste DNS. Pour cela, Contoso configure les paramètres du serveur DNS sur chaque réseau virtuel. Par exemple, les paramètres du DNS personnalisé pour le réseau virtuel VNET-HUB-EUS2 se présenteraient ainsi :
 
     ![Système DNS personnalisé](./media/contoso-migration-infrastructure/custom-dns.png)
@@ -705,7 +704,7 @@ Pour suivre les ressources à mesure qu’elles sont ajoutées, il sera de plus 
 
 En plus de fournir des informations sur les ressources et les propriétaires, les balises permettront à Contoso d’agréger et de regrouper des ressources, et d’utiliser ces données à des fins de facturation interne.
 
-Contoso doit visualiser ses ressources Azure de façon pertinente pour l’entreprise. Par exemple, selon un rôle ou un service. Notez que les ressources ne doivent pas nécessairement appartenir au même groupe de ressources pour partager une balise. Contoso créera une taxonomie d’étiquette simple afin que tout le monde utilise les mêmes étiquettes.
+Contoso doit visualiser ses ressources Azure de façon pertinente pour l’entreprise, comme par rôle ou département. Notez que les ressources ne doivent pas nécessairement appartenir au même groupe de ressources pour partager une balise. Contoso créera une taxonomie d’étiquette afin que tout le monde utilise les mêmes étiquettes.
 
 **Nom de la balise** | **Valeur**
 --- | ---
@@ -731,7 +730,7 @@ Contoso doit prendre en compte quelques aspects :
 
 - **Azure Security Center :** Azure Security Center fournit des fonctionnalités unifiées de gestion de la sécurité et de protection avancée contre les menaces sur l’ensemble des charges de travail cloud hybrides. Avec Security Center, vous pouvez appliquer des stratégies de sécurité sur l’ensemble de vos charges de travail, limiter votre exposition aux menaces, détecter et répondre aux attaques. [Plus d’informations](https://docs.microsoft.com/azure/security-center/security-center-intro)
 - **Groupes de sécurité réseau (NSG) :** un NSG est un filtre (pare-feu) qui contient la liste des règles de sécurité qui, une fois appliquées, autorisent ou rejettent le trafic réseau vers les ressources connectées aux réseaux virtuels Azure. [Plus d’informations](https://docs.microsoft.com/azure/virtual-network/security-overview)
-- **Chiffrement des données :** Azure Disk Encryption est une fonctionnalité qui vous permet de chiffrer vos disques de machine virtuelle IaaS Windows et Linux. [Plus d’informations](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest)
+- **Chiffrement des données :** Azure Disk Encryption est une fonctionnalité qui vous permet de chiffrer vos disques de machine virtuelle IaaS Windows et Linux. [Plus d’informations](https://docs.microsoft.com/azure/security/fundamentals/encryption-atrest)
 
 ### <a name="work-with-the-azure-security-center"></a>Utiliser le Centre de sécurité Azure
 
