@@ -4,21 +4,21 @@ description: Lancez la migration vers Azure en identifiant les outils approprié
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353895"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396017"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
-# <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrer des ressources (infrastructure, applications et données)
+# <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Déployer des charges de travail et des ressources (infrastructure, applications et données)
 
 Pendant cette phase du parcours, vous utilisez la sortie de la phase d’évaluation pour initier la migration de l’environnement. Ce guide vous aide à identifier les outils appropriés pour atteindre un état « terminé », notamment les outils natifs, tiers et de gestion de projet.
 
@@ -130,7 +130,7 @@ Une fois que vous avez inscrit le fournisseur de ressources, vous pouvez créer 
 1. Sélectionnez **+Créer une ressource** et recherchez **Azure Database Migration Service** dans la marketplace.
 1. Exécutez l’Assistant **Créer un service de migration**, puis sélectionnez **Créer**.
 
-Le service est maintenant prêt à migrer les bases de données sources prises en charge (par exemple, SQL Server, MySQL, PostgreSQL ou MongoDb).
+Le service est maintenant prêt à migrer les bases de données sources prises en charge (par exemple, SQL Server, MySQL, PostgreSQL ou MongoDB).
 
 ::: zone target="chromeless"
 
@@ -262,7 +262,7 @@ Microsoft propose également les outils de gestion de projet suivants, qui peuve
 - [Microsoft Planner](https://tasks.office.com) : Moyen simple et visuel d’organiser le travail d’équipe.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software) : Gestion de projets et de portefeuilles, gestion de la capacité des ressources, gestion financière, gestion des feuilles de présence et des calendriers.
 - [Microsoft Teams](https://products.office.com/microsoft-teams) : Outil de collaboration et de communication pour les équipes. Teams intègre également Planner et d’autres outils pour améliorer la collaboration.
-- [Azure DevOps](https://dev.azure.com) : Le modèle de planification du Framework d’adoption du cloud n’est pas requis pour l’utilisation d’Azure DevOps. Vous pouvez utiliser le service sans le modèle pour gérer votre infrastructure sous forme de code ou utiliser les éléments de travail et les tableaux pour gérer les projets. À mesure que vous gagnez en expérience, votre organisation peut tirer parti des fonctionnalités CI/CD.
+- [Azure DevOps Services](https://azure.microsoft.com/services/devops) : Le modèle de planification de Cloud Adoption Framework n’est pas requis pour l’utilisation d’Azure DevOps. Vous pouvez utiliser le service sans le modèle pour gérer votre infrastructure sous forme de code ou utiliser les éléments de travail et les tableaux pour gérer les projets. À mesure que vous gagnez en expérience, votre organisation peut tirer parti des fonctionnalités CI/CD.
 
 Ce ne sont pas les seuls outils disponibles. De nombreux autres outils tiers sont largement utilisés dans la communauté de gestion de projet.
 

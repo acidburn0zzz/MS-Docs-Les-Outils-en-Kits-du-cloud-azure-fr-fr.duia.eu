@@ -4,15 +4,15 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour appréh
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5fa02af8464a63488e77b69226cb02d38ceca5d7
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170611"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527659"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Obstacles et défis courants à l’innovation
 
@@ -40,7 +40,7 @@ La liste suivante donne des précisions sur certains des défis les plus courant
 
 Avant l’adoption généralisée du cloud, les cycles d’invention qui dépendaient des technologies de l’information étaient laborieux et fastidieux. Les cycles d’approvisionnement et de provisionnement retardaient souvent les premières étapes cruciales vers de nouvelles solutions. Le coût des solutions DevOps et des retours d’informations a retardé la capacité des équipes à collaborer à l’idéation et à l’invention à un stade précoce. Les coûts liés aux environnements des développeurs et aux plateformes de données empêchaient quiconque de participer à la création de solutions, à l’exception des développeurs professionnels hautement qualifiés.
 
-Le cloud a résolu un grand nombre de ces défis liés à l’invention en fournissant un approvisionnement automatisé en libre-service, des outils de développement et de déploiement légers et des opportunités pour les développeurs professionnels et les développeurs citoyens de coopérer à la création rapide de solutions. L’exploitation du cloud dans le cadre de l’innovation réduit considérablement les défis des clients et les obstacles à l’invention dans l’équation d’innovation.
+Le cloud a résolu un grand nombre de ces défis liés à l’invention en fournissant un approvisionnement automatisé en libre-service, des outils de développement et de déploiement légers et des opportunités pour les développeurs professionnels et les développeurs citoyens de coopérer à la création rapide de solutions. L’utilisation du cloud dans le cadre de l’innovation réduit considérablement les défis des clients et les obstacles à l’invention dans l’équation d’innovation.
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Défis liés à l’invention dans une économie numérique
 

@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6e5296ac6350df0d6894ad740a70e49a5ee7eae0
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 43dfb9f6d5b5715b7f9aca08e19ed0f7c14dc6de
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354172"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120001"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Meilleures pratiques pour l’évaluation des coûts et le dimensionnement des charges de travail migrées vers Azure
 
@@ -140,20 +140,20 @@ Les comptes de stockage peuvent utiliser différents types de redondance pour la
 
 **Type** | **Détails** | **Utilisation**
 --- | --- | ---
-**Stockage localement redondant (LRS)** | Protège contre une panne locale grâce à une réplication, au sein d’une unité de stockage unique, vers un domaine de mise à jour et un domaine d'erreur distincts. Conserve plusieurs copies de vos données dans un centre de données. Fournit une durabilité d’au moins 99,999999999 % (11 9\'s) pour les objets sur une année donnée. | Envisagez cette option si votre application stocke les données qui peuvent être recréées facilement.
-**Stockage redondant interzone (ZRS)** | Protège contre une panne du centre de données grâce à une réplication sur trois clusters de stockage dans une même région. Chaque cluster de stockage est séparé physiquement des autres et se trouve dans sa propre zone de disponibilité. Fournit une durabilité d’au minimum 99,9999999999 % (12 9\'s) pour les objets sur une année donnée, en conservant plusieurs copies de vos données dans plusieurs centres de données ou régions. | Envisagez cette option si vous avez besoin de cohérence, de durabilité et de haute disponibilité. Vous ne serez peut-être pas à l’abri d’un sinistre régional, lorsque plusieurs zones sont affectées définitivement.
-**Stockage géoredondant (GRS)** | Protège contre une panne dans l’ensemble de la région en répliquant les données vers une région secondaire à des centaines de kilomètres de la région principale. Fournit une durabilité d’au moins 99,99999999999999 % (16 9\'s) pour les objets sur une année donnée. | Les données de réplica ne sont disponibles que si Microsoft lance un basculement vers la région secondaire. En cas de basculement, les accès en lecture et écriture sont disponibles.
-**Stockage géographiquement redondant avec accès en lecture (RA-GRS)** | Semblable à GRS. Fournit une durabilité d’au moins 99,99999999999999 % (16 9\'s) pour les objets sur une année donnée. | Fournit une disponibilité de lecture de 99,99 % en autorisant l’accès en lecture à partir de la région secondaire utilisée pour GRS.
+**Stockage localement redondant (LRS)** | Protège contre une panne locale grâce à une réplication, au sein d’une unité de stockage unique, vers un domaine de mise à jour et un domaine d'erreur distincts. Conserve plusieurs copies de vos données dans un centre de données. Offre une durabilité des objets d’au moins 99,999999999 % (9 « neuf ») sur une année donnée. | Envisagez cette option si votre application stocke les données qui peuvent être recréées facilement.
+**Stockage redondant interzone (ZRS)** | Protège contre une panne du centre de données grâce à une réplication sur trois clusters de stockage dans une même région. Chaque cluster de stockage est séparé physiquement des autres et se trouve dans sa propre zone de disponibilité. Fournit une durabilité d’au minimum 99,9999999999 % (12 « neuf ») pour les objets sur une année donnée, en conservant plusieurs copies de vos données dans plusieurs centres de données ou régions. | Envisagez cette option si vous avez besoin de cohérence, de durabilité et de haute disponibilité. Vous ne serez peut-être pas à l’abri d’un sinistre régional, lorsque plusieurs zones sont affectées définitivement.
+**Stockage géoredondant (GRS)** | Protège contre une panne dans l’ensemble de la région en répliquant les données vers une région secondaire à des centaines de kilomètres de la région principale. Offre une durabilité des objets d’au moins 99,99999999999999 % (16 « neuf ») sur une année donnée. | Les données de réplica ne sont disponibles que si Microsoft lance un basculement vers la région secondaire. En cas de basculement, les accès en lecture et écriture sont disponibles.
+**Stockage géographiquement redondant avec accès en lecture (RA-GRS)** | Semblable à GRS. Offre une durabilité des objets d’au moins 99,99999999999999 % (16 « neuf ») sur une année donnée. | Fournit une disponibilité de lecture de 99,99 % en autorisant l’accès en lecture à partir de la région secondaire utilisée pour GRS.
 
 **En savoir plus :**
 
 - [Passez en revue](https://azure.microsoft.com/pricing/details/storage) la tarification du stockage Azure.
 - [Apprenez-en plus](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) sur Azure Import/Export pour la migration de grandes quantités de données vers des fichiers et des objets blob Azure.
-- [Comparez](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) les types de données pour le stockage sur disque, les objets blobs et le fichiers.
+- [Comparez](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=/azure/storage/blobs/toc.json) les types de données pour le stockage sur disque, les objets blobs et le fichiers.
 - [Apprenez-en plus](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) sur les niveaux d’accès.
-- [Passez en revue](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) les différents types de comptes de stockage.
-- Apprenez-en plus sur la [redondance du stockage](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), et [GRS en lecture seule](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-to-data-in-the-secondary-region).
-- [Apprenez-en plus](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) sur les fichiers Azure.
+- [Passez en revue](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=/azure/storage/blobs/toc.json) les différents types de comptes de stockage.
+- En savoir plus sur la [redondance du stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-redundancy), y compris LRS, ZRS, GRS et GRS en lecture seule.
+- Apprenez-en plus sur [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Bonne pratique : Tirer parti des avantages d’Azure Hybrid
 
@@ -240,11 +240,11 @@ Dans Cost Management, vous pouvez :
 
 **En savoir plus :**
 
-- [Obtenez une vue d’ensemble](https://docs.microsoft.com/azure/cost-management/overview) d’Azure Cost Management.
-- [Apprenez à optimiser](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) votre investissement dans le cloud avec Azure Cost Management.
-- [Apprenez à utiliser](https://docs.microsoft.com/azure/cost-management/use-reports) les rapports Azure Cost Management.
-- [Obtenez un tutoriel](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json) sur l’optimisation des coûts à partir de recommandations.
-- [Examinez](https://docs.microsoft.com/rest/api/consumption/budgets) l’API Azure Consumption.
+- Obtenez une vue d’ensemble d’[Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview).
+- Apprenez à [optimiser votre investissement dans le cloud avec Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices).
+- Apprenez à [utiliser les rapports Azure Cost Management](https://docs.microsoft.com/azure/cost-management/use-reports).
+- Obtenez un [tutoriel sur l’optimisation des coûts à partir de recommandations](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json).
+- Examinez l’[API Azure Consumption](https://docs.microsoft.com/rest/api/consumption/budgets).
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Bonne pratique : surveiller l’utilisation des ressources
 
@@ -287,7 +287,7 @@ Lorsque vous déplacez des ressources dans Azure et activez la journalisation de
 
 **En savoir plus :**
 
-- [Apprenez-en plus sur](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs) la surveillance de l’utilisation et l’estimation des coûts.
+- [Apprenez-en plus sur](https://docs.microsoft.com/azure/azure-monitor/platform/usage-estimated-costs) la surveillance de l’utilisation et l’estimation des coûts.
 
 ## <a name="best-practice-optimize-storage"></a>Bonne pratique : optimiser le stockage
 

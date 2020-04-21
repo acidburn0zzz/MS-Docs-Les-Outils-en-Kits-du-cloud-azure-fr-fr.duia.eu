@@ -4,22 +4,22 @@ description: Découvrez les tâches qu’une entreprise peut effectuer pour dév
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1d32b70c2c07ee341e03a020cd0010c8763d4cdc
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 02d76581a49f58358d624ded4add1af180964f16
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708833"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120388"
 ---
 # <a name="cost-management-discipline-improvement"></a>Amélioration de la discipline de gestion des coûts
 
 La discipline Gestion des coûts vise à lever les principaux risques métier liés aux dépenses à engager pour l’hébergement des charges de travail cloud. Parmi les Cinq disciplines de la gouvernance cloud, la gestion des coûts est impliquée dans le contrôle des coûts et l’utilisation des ressources cloud dans l’optique de créer et maintenir un cycle de coûts planifié.
 
-Cet article décrit les tâches que votre entreprise est susceptible d’effectuer pour développer et affiner la discipline de gestion des coûts. Ces tâches peuvent être décomposées en phases de planification, de construction, d’adoption et d’exploitation de l’implémentation d’une solution cloud, qui sont ensuite répétées pour permettre le développement d’une [approche incrémentielle de la gouvernance cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
+Cet article décrit les tâches que votre entreprise est susceptible d’effectuer pour développer et affiner la discipline de gestion des coûts. Ces tâches peuvent être divisées en phases de planification, de création, d’adoption et d’exploitation de l’implémentation d’une solution cloud. Les tâches sont ensuite répétées pour permettre le développement d’une [approche incrémentielle de la gouvernance cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quatre phases d’adoption](../../_images/govern/adoption-phases.png)
 
@@ -107,7 +107,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous êtes au fait du concept de gouvernance des identités cloud, examinez la [chaîne d’outils de gestion des coûts](./toolchain.md) pour identifier les outils et les fonctionnalités Azure dont vous aurez besoin pour cultiver la discipline de gouvernance de gestion des coûts sur la plateforme Azure.
+Maintenant que vous comprenez le concept de gouvernance des coûts du cloud, passez en revue les [meilleures pratiques en matière de gestion des coûts](./best-practices.md) pour trouver des moyens de réduire vos dépenses globales.
 
 > [!div class="nextstepaction"]
-> [Chaîne d’outils de gestion des coûts pour Azure](./toolchain.md)
+> [Meilleures pratiques en matière de gestion des coûts](./best-practices.md)

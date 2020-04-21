@@ -4,16 +4,16 @@ description: Utilisez ces exemples de structures d’équipe courantes pour trou
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: f01499141c85b1baca2b19f2ce6a8ed15163c4a9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222224"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995172"
 ---
 <!-- cSpell:ignore ccoe -->
 
