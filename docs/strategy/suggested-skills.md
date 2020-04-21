@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’en savoir 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092826"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997503"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Chemin de préparation aux compétences durant la phase de planification d’un parcours de migration
 
@@ -63,7 +63,7 @@ Pendant la phase de préparation, le personnel technique crée une zone d’accu
 - [Mise en réseau Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking) : découvrez les principes fondamentaux de la mise en réseau Azure et de quelle façon cette dernière permet d’améliorer la résilience et de réduire la latence.
 - [Options de calcul Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute) : apprenez-en davantage sur les services de calcul Azure.
 - [Sécuriser les ressources avec RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac) : Utilisez le RBAC pour sécuriser des ressources.
-- [Options de stockage de données](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index) : découvrez les avantages du stockage de données Azure.
+- [Options de stockage de données](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure) : découvrez les avantages du stockage de données Azure.
 
 ## <a name="organizational-skills"></a>Compétences organisationnelles
 
@@ -82,13 +82,13 @@ Microsoft et ses partenaires offrent un large éventail d’options pour que tou
 
 - [Microsoft IT Pro Center](https://www.microsoft.com/itpro). Fait office de ressource en ligne gratuite pour vous aider à mettre en correspondance votre parcours de carrière dans le cloud. Découvrez ce que les experts du secteur suggèrent pour votre rôle cloud et les qualifications nécessaires pour y parvenir. Suivez un programme de formation à votre rythme pour acquérir les qualifications dont vous avez le plus besoin pour rester compétent.
 
-Nous vous recommandons d’obtenir la reconnaissance officielle de vos connaissances sur Azure au moyen des [examens et formations de certification Microsoft Azure](https://www.microsoft.com/learning/azure-certification.aspx).
+Nous vous recommandons d’obtenir la reconnaissance officielle de vos connaissances sur Azure au moyen des [examens et formations de certification Microsoft Azure](https://www.microsoft.com/learning/certification-overview.aspx).
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation aux nouvelles compétences et responsabilités qui accompagnent l’adoption du cloud n’est pas facile. Microsoft Learn offre une approche plus gratifiante de l’apprentissage pratique qui vous permet d’atteindre vos objectifs plus rapidement. Gagnez des points, des niveaux et accomplissez davantage !
 
-Voici un exemple de parcours d’apprentissage personnalisé qui s’aligne sur la portion Stratégie de l’infrastructure d’adoption du Cloud.
+Voici un exemple de parcours d’apprentissage personnalisé qui s’aligne sur la portion Stratégie du Cloud Adoption Framework.
 
 [Découvrez la valeur métier de Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure) : Cette expérience d’apprentissage vous fera découvrir un parcours qui commence en vous indiquant comment la transformation numérique et la puissance du cloud peuvent transformer votre entreprise. Nous allons aborder la façon dont les services cloud Microsoft Azure peuvent alimenter votre organisation sur une plateforme cloud approuvée. Enfin, nous conclurons en vous montrant comment rendre ce parcours réel pour votre organisation.
 

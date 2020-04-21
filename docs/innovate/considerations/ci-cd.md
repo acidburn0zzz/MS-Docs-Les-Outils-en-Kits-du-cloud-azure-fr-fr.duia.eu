@@ -4,15 +4,15 @@ description: Utilisez le modèle de maturité de la méthodologie d’innovation
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356761"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120553"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -39,7 +39,7 @@ L’objectif principal de la [méthodologie d’innovation](./index.md) consiste
 - [Déploiement de la solution](#solution-deployment) : Déployez des solutions pour que l’équipe puisse partager rapidement les modifications avec les clients.
 - [Mesure intégrée](#integrated-measurements) : ajoutez des métriques d’apprentissage à la boucle de rétroaction pour une analyse claire par l’ensemble de l’équipe.
 
-Pour réduire les pics techniques, supposez que la maturité sera initialement faible pour chacun de ces principes. Toutefois, vous pouvez préparer les outils et les processus qui peuvent être mis à l’échelle à mesure que ces opérations deviennent plus précises. Dans Azure, [GitHub](https://guides.github.com) et [Azure DevOps](https://docs.microsoft.com/azure/devops) permettent aux petites équipes de rencontrer peu de problèmes lors de leur prise en main. Ces équipes peuvent croître pour inclure jusqu’à plusieurs milliers de développeurs travaillant sur des solutions de mise à l’échelle et qui testent des centaines d’hypothèses d’utilisateurs. Le reste de cet article illustre l’approche « Prévoir grand, commencer petit » pour favoriser l’adoption sur chacun de ces principes.
+Pour réduire les pics techniques, supposez que la maturité sera initialement faible pour chacun de ces principes. Toutefois, vous pouvez préparer les outils et les processus qui peuvent être mis à l’échelle à mesure que ces opérations deviennent plus précises. Dans Azure, [GitHub](https://guides.github.com) et [Azure DevOps](https://docs.microsoft.com/azure/devops) permettent aux petites équipes de rencontrer peu de problèmes lors de leur prise en main. Ces équipes peuvent croître pour inclure jusqu’à plusieurs milliers de développeurs travaillant sur des solutions de mise à l’échelle et qui testent des centaines d’hypothèses d’utilisateurs. Le reste de cet article illustre l’approche « prévoir grand, commencer petit » pour favoriser l’adoption sur chacun de ces principes.
 
 ## <a name="shared-solution"></a>Solution partagée
 

@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour défini
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: af39421f89b8aacb3bae1f759631ee72adda40cd
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 470c84385606f1f7c5c36ec8e72b348aa6d4d8a5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709156"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995409"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Guide de gouvernance pour les entreprises complexes : Stratégie d’entreprise initiale sous-tendant la stratégie de gouvernance
 
@@ -43,7 +43,7 @@ La tolérance au risque actuelle est élevée et l’envie d’investir dans la 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Cette stratégie d’entreprise prépare l’équipe de gouvernance cloud à implémenter le MVP de gouvernance, qui constituera la base de l’adoption. L’étape suivante consiste à implémenter ce MVP.
+Cette stratégie d’entreprise prépare l’équipe de gouvernance cloud à implémenter le MVP de gouvernance en tant que base de l’adoption. L’étape suivante consiste à implémenter ce MVP.
 
 > [!div class="nextstepaction"]
 > [Explication des bonnes pratiques](./prescriptive-guidance.md)

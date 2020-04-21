@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 2df963beba9087f8f3bfc2faf850eb384cd507a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 014d5da585b48754f9cee59431aea92b5047f551
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093766"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396199"
 ---
 # <a name="initial-organization-alignment"></a>Alignement initial de l’organisation
 
@@ -30,7 +30,7 @@ Pour créer un équilibre entre vitesse et contrôle, nous vous recommandons, au
 
 Il est intuitivement compréhensible que les tâches d’adoption du cloud doivent être exécutées par des humains. Par conséquent, peu de gens seront surpris de voir qu’il est nécessaire de mettre en place une équipe chargée de l’adoption du cloud. Toutefois, les néophytes en matière de cloud n’apprécieront peut-être pas pleinement l’importance d’une équipe de gouvernance cloud. Ce défi surgit souvent au début des cycles d’adoption. L’équipe de gouvernance cloud fournit les contrôles nécessaires pour garantir que l’adoption du cloud n’exposera pas l’entreprise à de nouveaux risques. Lorsque des risques doivent être pris, cette équipe garantit l’implémentation de processus et de contrôles appropriés pour atténuer ou gérer ces risques.
 
-Pour en savoir plus sur l’adoption du cloud, la gouvernance cloud et d’autres fonctionnalités de ce type, consultez la brève section sur la [compréhension des fonctionnalités cloud requises](../organize/index.md?#understand-required-cloud-capabilities).
+Pour plus d’informations sur l’adoption du cloud, la gouvernance cloud et d’autres fonctionnalités de ce type, consultez la brève section sur la [compréhension des fonctionnalités cloud requises](../organize/index.md#understand-required-cloud-capabilities).
 
 ## <a name="map-people-to-capabilities"></a>Mapper les personnes sur les fonctionnalités
 

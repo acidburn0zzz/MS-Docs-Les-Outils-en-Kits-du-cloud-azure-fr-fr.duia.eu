@@ -4,18 +4,18 @@ description: Découvrez les topologies réseau hub-and-spoke pour gérer de mani
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: a2827273aa3fd28478c2615610f74f32b155a299
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 5ab24d655327584bd1f6363ac439c1ffcacaccec
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092597"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995114"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "79092597"
 *Hub-and-spoke* est un modèle de réseau visant à gérer de manière plus efficace les besoins de communication ou de sécurité courants. Il permet également d’éviter les limitations des abonnements Azure. Ce modèle répond aux préoccupations suivantes :
 
 - **Réduction des coûts et amélioration de la gestion**. En centralisant les services qui peuvent être partagés par plusieurs charges de travail (comme les appliances virtuelles réseau et les serveurs DNS) en un seul endroit, le service informatique est capable de réduire les ressources et efforts de gestion redondants.
-- **Dépassement des limites des abonnements**. Pour exécuter les charges de travail informatiques volumineuses, il se peut que vous ayez besoin d’utiliser davantage de ressources que le quota autorisé par un abonnement Azure unique. Vous avez la possibilité de dépasser ces limites en effectuant le peering des réseaux virtuels de charge de travail issus de différents abonnements à un hub central. Pour plus d’informations, consultez [Limites des abonnements](https://docs.microsoft.com/azure/azure-subscription-service-limits).
+- **Dépassement des limites des abonnements**. Pour exécuter les charges de travail informatiques volumineuses, il se peut que vous ayez besoin d’utiliser davantage de ressources que le quota autorisé par un abonnement Azure unique. Vous avez la possibilité de dépasser ces limites en effectuant le peering des réseaux virtuels de charge de travail issus de différents abonnements à un hub central. Pour plus d’informations, consultez [Limites des abonnements Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 - **Séparation des problèmes**. Vous pouvez déployer des charges de travail individuelles entre les équipes informatiques centrales et celles dédiées aux charges de travail.
 
 Les patrimoines cloud plus petits pourraient ne pas bénéficier de la structure et des capacités ajoutées offertes par ce modèle. Toutefois, il est préférable d’adopter une architecture de mise en réseau hub-and-spoke en cas d’efforts plus important d’adoption cloud et d’une des préoccupations mentionnées précédemment.
@@ -62,7 +62,7 @@ Les rayons permettent également de séparer et d’activer différents groupes 
 
 Dans Azure, chacun des composants, quel qu’en soit le type, est déployé dans un abonnement Azure. L’isolement des composants Azure dans différents abonnements Azure peut satisfaire aux exigences de différents métiers, telles que la configuration de niveaux différenciés d’accès et d’autorisation.
 
-Une implémentation hub and spoke unique peut monter en puissance en un grand nombre de spokes. Mais comme pour tout système informatique, les plateformes ont des limites. Le déploiement du hub est lié à un abonnement Azure spécifique, qui comporte des restrictions et des limites. Le nombre maximal d’appairages de réseaux virtuels est un bon exemple. Pour plus d’informations, consultez [Abonnement Azure et limites, quotas et contraintes de service](https://docs.microsoft.com/azure/azure-subscription-service-limits).
+Une implémentation hub and spoke unique peut monter en puissance en un grand nombre de spokes. Mais comme pour tout système informatique, les plateformes ont des limites. Le déploiement du hub est lié à un abonnement Azure spécifique, qui comporte des restrictions et des limites. Le nombre maximal d’appairages de réseaux virtuels est un bon exemple. Pour plus d’informations, consultez [Azure subscription and service limits (Limites de service et d’abonnement Azure)](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
 Dans les cas où ces limites peuvent poser problème, vous pouvez procéder à la montée en puissance de l’architecture en faisant évoluer un modèle hub-and-spoke unique vers un cluster constitué de plusieurs hubs et spokes. Vous pouvez interconnecter plusieurs hubs dans une ou plusieurs régions Azure à l’aide du Peering de réseaux virtuels, d’Azure ExpressRoute, d’un WAN virtuel ou d’un VPN site à site.
 

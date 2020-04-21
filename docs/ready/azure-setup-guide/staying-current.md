@@ -4,17 +4,17 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir 
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d0c3379da2962236dfb64ff45a5a9495b8a3fc36
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353808"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80808783"
 ---
 <!-- cSpell:ignore jelledruyts andym endjin -->
 
@@ -59,9 +59,9 @@ Pour avoir des informations plus complètes qui expliquent comment rester à jou
 - [Azure Charts](https://azurecharts.com)*
   - Cette visualisation affiche toutes les mises à jour Azure effectuées au cours des six derniers mois. Elle comprend d’autres graphiques et utilitaires utiles pour vous aider à suivre les modifications apportées à Azure.
 - [AzAdvertizer](https://www.azadvertizer.net)*
-  - Suivi des modifications et des versions sur les fonctionnalités de gouvernance Azure (par exemple, Azure Policy, initiatives de stratégie, alias de stratégie et RBAC).
+  - Suivi des modifications et des versions sur les fonctionnalités de gouvernance Azure, telles qu’Azure Policy, les initiatives de stratégie, les alias de stratégie et le contrôle d’accès en fonction du rôle (RBAC).
 - [Azure Weekly](https://azureweekly.info)*
   - Ce bulletin d’informations fourni par [endjin](https://endjin.com) comprend un résumé des principales actualités de la semaine sur Microsoft Azure. Il comprend également un contenu historique intéressant.
   - Abonnez-vous par [e-mail](https://azureweekly.info).
 
-\* *Ces ressources sont fournies par la communauté et ne sont pas officiellement gérées par Microsoft.*
+\* _Ces ressources sont fournies par la communauté et ne sont pas officiellement gérées par Microsoft._

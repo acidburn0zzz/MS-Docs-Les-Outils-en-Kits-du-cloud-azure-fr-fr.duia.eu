@@ -7,13 +7,15 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 594f10968e45477895fcc5dcd1b2a95d16d7c861
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 04816ede2d9c46e60baef88652551e647049bd99
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392650"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120686"
 ---
+<!-- cSpell:ignore CAF -->
+
 # <a name="first-landing-zone"></a>Première zone d’accueil
 
 L’infrastructure as code (IaC) est une transition naturelle durant la plupart des opérations d’adoption du cloud. Le déploiement de vos premières zones d’atterrissage dans le cloud est généralement la première étape du passage à un environnement basé sur le code. Cet article vous aidera à comprendre la notion de _zone d’atterrissage_ et à déterminer laquelle de ces zones est la mieux adaptée à vos besoins d’adoption.
@@ -37,7 +39,7 @@ D. Quand un partenaire fournit des services gérés continus ou s’il s’est e
 
 ## <a name="choosing-a-first-landing-zone"></a>Choix d’une première zone d’atterrissage
 
-La sélection de la première zone d’atterrissage dépend d’un certain nombre de variables. Le tableau suivant comprend certaines options concernant les premières zones d’atterrissage, ainsi que des variables qui peuvent aider à la prise de décision.
+La sélection de la première zone d’atterrissage dépend de plusieurs variables. Le tableau suivant comprend certaines options concernant les premières zones d’atterrissage, ainsi que des variables qui peuvent aider à la prise de décision.
 
 | Zone d’atterrissage                                 | Expérience cloud  | Scale             | Heure de découverte | Prêt pour la production | Hybride             | Données sensibles     | Stratégique   | Conformité         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|

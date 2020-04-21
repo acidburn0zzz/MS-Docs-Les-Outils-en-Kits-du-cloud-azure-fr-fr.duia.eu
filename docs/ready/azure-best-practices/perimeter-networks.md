@@ -4,18 +4,18 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 802660021dd9ae3a861b51ae4dee6e14b9671ef2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093243"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120192"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -28,17 +28,17 @@ Pour que les réseaux de périmètre soient efficaces, les paquets entrants doiv
 Les réseaux de périmètre utilisent les fonctionnalités et services Azure suivants :
 
 - [des réseaux virtuels][virtual-networks], [des itinéraires définis par l’utilisateur][user-defined-routes] et [des groupes de sécurité réseau][network-security-groups]
-- [Appliances virtuelles réseau (NVA)][NVA]
+- [Appliances virtuelles réseau (NVA)][network-virtual-appliances]
 - [Équilibrage de charge Azure][ALB]
 - [Azure Application Gateway][AppGW] et [WAF (pare-feu d’applications web)][AppGWWAF]
 - [Adresses IP publiques][PIP]
 - [Azure Front Door][AFD] avec [pare-feu d’applications web][AFDWAF]
-- [Pare-feu Azure][AzFW]
+- [Pare-feu Azure][azure-firewall]
 
 > [!NOTE]
 > Les architectures de référence Azure fournissent des exemples de modèles que vous pouvez utiliser pour implémenter vos propres réseaux de périmètre :
 >
-> - [Implémenter une zone DMZ entre Azure et votre centre de données local](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
+> - [Implémenter une zone DMZ entre Azure et votre centre de données local](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [Implémenter une zone DMZ entre Azure et Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 En règle générale, votre équipe centrale d’informatique et de sécurité est responsable de la définition des conditions requises pour le fonctionnement de vos réseaux de périmètre.
@@ -59,7 +59,7 @@ Dans un exemple de réseau hub and spoke, garantir que le trafic généré par l
 
 ## <a name="azure-firewall"></a>Pare-feu Azure
 
-[Pare-feu Azure][AzFW] est un service informatique managé qui aide à protéger vos ressources de réseau virtuel Azure. Il s’agit d’un pare-feu managé avec état intégral, doté d’une haute disponibilité intégrée et d’une extensibilité illimitée dans le cloud. Vous pouvez créer, appliquer et consigner des stratégies de connectivité réseau et d’application de façon centralisée entre les abonnements et les réseaux virtuels.
+[Pare-feu Azure][azure-firewall] est un service informatique managé qui aide à protéger vos ressources de réseau virtuel Azure. Il s’agit d’un pare-feu managé avec état intégral, doté d’une haute disponibilité intégrée et d’une extensibilité illimitée dans le cloud. Vous pouvez créer, appliquer et consigner des stratégies de connectivité réseau et d’application de façon centralisée entre les abonnements et les réseaux virtuels.
 
 Le service Pare-feu Azure utilise une adresse IP publique statique pour vos ressources de réseau virtuel. Il permet aux pare-feu externes d’identifier le trafic provenant de votre réseau virtuel. Le service est interopérable avec Azure Monitor pour l’enregistrement et les analyses.
 
@@ -69,7 +69,7 @@ Les réseaux de périmètre disposant d’un accès à Internet sont généralem
 
 Les différents métiers utilisent habituellement de nombreuses applications web. Ces applications ont tendance à comporter diverses vulnérabilités face aux attaques potentielles. Un pare-feu d’applications web détecte les attaques contre les applications web (HTTP/HTTPS) de façon plus approfondie qu’un pare-feu générique. Contrairement à la technologie de pare-feu classique, les pare-feu d’applications web intègrent un ensemble de fonctionnalités spécifiques pour aider à protéger les serveurs web internes contre les menaces.
 
-Une instance de Pare-feu Azure et un pare-feu d’[appliance virtuelle réseau][NVA] utilisent un plan d’administration commun avec un ensemble de règles de sécurité pour aider à protéger les charges de travail hébergées dans les spokes et à contrôler l’accès aux réseaux locaux. Le Pare-feu Azure dispose d’une extensibilité intégrée, alors que les pare-feu NVA peuvent être manuellement mis à l’échelle derrière un équilibreur de charge.
+Une instance de Pare-feu Azure et un pare-feu [d’appliance virtuelle réseau][NVA] utilisent un plan d’administration commun avec un ensemble de règles de sécurité pour aider à protéger les charges de travail hébergées dans les spokes et à contrôler l’accès aux réseaux locaux. Le Pare-feu Azure dispose d’une extensibilité intégrée, alors que les pare-feu NVA peuvent être manuellement mis à l’échelle derrière un équilibreur de charge.
 
 Une batterie de pare-feu est généralement équipée de logiciels moins spécialisés qu’un WAF, mais dispose d’un champ d’application plus vaste permettant de filtrer et d’inspecter n’importe quel type de trafic en entrée et en sortie. Si vous utilisez une approche NVA, vous pouvez rechercher et déployer le logiciel à partir de la Place de marché Azure.
 
@@ -114,8 +114,8 @@ Les données de télémétrie en temps réel sont disponibles par le biais d’a
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[network-virtual-appliances]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[azure-firewall]: https://docs.microsoft.com/azure/firewall/overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
