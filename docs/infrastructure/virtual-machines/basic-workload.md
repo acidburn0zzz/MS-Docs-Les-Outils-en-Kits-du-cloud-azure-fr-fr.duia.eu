@@ -4,15 +4,15 @@ description: Découvrez les principaux composants de l’infrastructure cloud et
 author: alexbuckgit
 ms.author: abuck
 ms.date: 12/31/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e720fb698e0eecb53942bb5d7be99df5e923451e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 34673307e33ab8ae9dad979fa3fa958c84be310c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170696"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997713"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Déployer une charge de travail de base sur Azure
 

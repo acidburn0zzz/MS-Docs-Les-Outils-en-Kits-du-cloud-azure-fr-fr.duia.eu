@@ -4,21 +4,21 @@ description: Développez une compréhension de la dépendance au sein de votre o
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9a08c2f5fcf799bb6e1f37cd52b3d7e18724618e
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 3480d0411e1a16eed18d14859cbb997706ccccb4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341026"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527627"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Opérations de plateforme en gestion cloud
 
 Une base de référence de gestion cloud qui comprend [l’inventaire et la visibilité](./inventory.md), [la conformité opérationnelle](./operational-compliance.md) et [la protection et la récupération](./protect.md) fournit dans certains cas un niveau de gestion cloud suffisant pour la plupart des charges de travail d’un portefeuille informatique. Toutefois, elle suffit rarement pour l’intégralité du portefeuille. Cet article s’appuie sur les opérations de portefeuille, qui correspondent le plus souvent à l’étape d’après dans la gestion cloud.
 
-Une étude rapide des ressources du portefeuille informatique met en évidence des motifs dans les charges de travail prises en charge. Ces charges de travail comprennent plusieurs plateformes courantes. En fonction des décisions techniques qui ont été prises au sein de l’entreprise, ces plateformes peuvent être très différentes.
+Une étude rapide des ressources du portefeuille informatique met en évidence des motifs dans les charges de travail prises en charge. Ces charges de travail comprennent des plateformes courantes. En fonction des décisions techniques qui ont été prises au sein de l’entreprise, ces plateformes peuvent être très différentes.
 
 Certaines organisations présentent une forte dépendance envers SQL Server, Oracle ou d’autres plateformes de données open source. Dans d’autres, les points communs se trouvent au niveau des plateformes d’hébergement des machines virtuelles ou des conteneurs. D’autres encore peuvent avoir une dépendance commune à des applications ou à des systèmes ERP (Enterprise Resource Planning) comme SAP ou Oracle.
 

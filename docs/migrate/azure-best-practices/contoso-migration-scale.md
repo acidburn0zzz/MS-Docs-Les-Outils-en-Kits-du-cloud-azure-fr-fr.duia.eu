@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: b1fceb8a7b54ce88917f6feaef6ea70f5aa2f023
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 2cbbff8565ceaead94c9612bba6042ddc5b858a9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355636"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120657"
 ---
-<!-- cSpell:ignore Hanu Scalr VHDs autosnooze unsnooze -->
+<!-- cSpell:ignore VHDs autosnooze unsnooze HANU SCALR -->
 
 # <a name="scale-a-migration-to-azure"></a>Mettre à l’échelle une migration vers Azure
 
@@ -61,18 +61,11 @@ Après avoir planifié et configuré une [infrastructure Azure](./contoso-migrat
 
 ## <a name="migration-process"></a>Processus de migration
 
-Après avoir défini les axes stratégiques et les objectifs de migration, Contoso envisage un processus de migration à quatre volets :
+À présent que Contoso a clairement défini les objectifs stratégiques et de migration, elle peut suivre la [méthodologie de migration](../index.md), en s’appuyant sur les vagues de migration et les sprints de migration pour planifier et exécuter les efforts de migration de façon itérative.
 
-- **Phase 1 : Évaluer.** Identifier les ressources actuelles et déterminer si elles se prêtent à une migration vers Azure.
-- **Phase 2 : Migrer.** Déplacer les ressources vers Azure. La façon dont les applications et les objets seront déplacés vers Azure dépendra des applications elles-mêmes et des objectifs de l’entreprise.
-- **Phase 3 : Optimiser.** Après avoir déplacé les ressources vers Azure, Contoso doit les améliorer et les rationnaliser pour en optimiser les performances et l’efficacité.
-- **Phase 4 : Sécuriser et gérer.** Maintenant que tout est en place, Contoso tire parti de la sécurité Azure, des ressources et des services de gestion pour régir, sécuriser et superviser ses applications cloud dans Azure.
+## <a name="plan"></a>Plan
 
-Ces phases ne sont pas conduites partout de façon simultanée à dans l’organisation. Chaque projet de migration de Contoso se trouve à une étape différente du processus d’évaluation et de migration. L’optimisation, la sécurité et la gestion sont des tâches qui se répéteront dans le temps.
-
-## <a name="phase-1-assess"></a>Phase 1 : Évaluer
-
-Contoso lance le processus en détectant et en évaluant les applications, les données et l’infrastructure locales. Voici ce que fera Contoso :
+Contoso lance le processus de planification en détectant et en évaluant les applications, les données et l’infrastructure locales. Voici ce que fera Contoso :
 
 - Contoso doit détecter les applications, mapper les dépendances entre les applications et établir l’ordre et la priorité de migration.
 - Au cours de l’évaluation, Contoso prévoit d’établir un inventaire complet des applications et des ressources. Parallèlement au nouvel inventaire, Contoso utilisera et mettra à jour la base de données de gestion de configuration (CMDB) existante, ainsi que le catalogue de services.
@@ -142,22 +135,24 @@ Contoso choisit l’outil qui lui permettra de détecter, évaluer et établir l
 
 Le service Azure Migrate permet de détecter et d’évaluer les machines virtuelles VMware locales en vue de préparer une migration vers Azure. Voici les actions qu’effectue Azure Migrate :
 
-1. Découvrir : Détecter les machines virtuelles VMware locales.
+1. **Découvrir :** Détecter les machines virtuelles VMware locales.
     - Azure Migrate prend en charge la détection à partir de plusieurs serveurs vCenter (en série) et peut exécuter des détections dans différents projets Azure Migrate.
     - Azure Migrate assure la détection au moyen d’une machine virtuelle VMware exécutant Migrate Collector. Le même collecteur peut détecter les machines virtuelles sur différents serveurs vCenter et envoyer des données à différents projets.
-2. Évaluation de l’état de préparation : Évaluez si les machines locales se prêtent à une exécution dans Azure. L’évaluation comprend les éléments suivants :
-    - Recommandations de taille : Obtenez des suggestions de taille pour les machines virtuelles Azure, en fonction de l’historique des performances des machines virtuelles locales.
-    - Coûts mensuels estimés : obtenez les coûts estimés pour l’exécution de machines locales dans Azure.
-3. Identifier les dépendances : Visualisez les dépendances des ordinateurs locaux pour créer des groupes d’ordinateurs optimaux pour l’évaluation et la migration.
+
+2. **Évaluer la préparation :** Évaluez si les machines locales se prêtent à une exécution dans Azure. L’évaluation comprend les éléments suivants :
+    - **Recommandations de taille :** Obtenez des suggestions de taille pour les machines virtuelles Azure, en fonction de l’historique des performances des machines virtuelles locales.
+    - **Coûts mensuels estimés :** obtenez les coûts estimés pour l’exécution de machines locales dans Azure.
+
+3. **Identifier les dépendances :** Visualisez les dépendances des ordinateurs locaux pour créer des groupes d’ordinateurs optimaux pour l’évaluation et la migration.
 
 ![Azure Migrate](./media/contoso-migration-scale/azure-migrate.png)
 
-##### <a name="migrate-at-scale"></a>Migrer à l’échelle
+**Migrer à grande échelle :**
 
 Contoso doit utiliser Azure Migrate correctement en raison de l’échelle de cette migration.
 
 - Avec Azure Migrate, Contoso procèdera à une évaluation application par application. Azure Migrate retournera ainsi les données au portail Azure en temps voulu.
-- Les administrateurs de Contoso se documentent sur la façon d’effectuer un [déploiement à l’échelle avec Azure Migrate](https://docs.microsoft.com/azure/migrate/how-to-scale-assessment).
+- Les administrateurs Contoso apprennent à [déployer Azure Migrate à grande échelle](https://docs.microsoft.com/azure/migrate/scale-hyper-v-assessment).
 - Contoso prend note des limites d’Azure Migrate résumées dans le tableau suivant.
 
 **Action** | **Limite**
@@ -200,7 +195,7 @@ Contoso a le choix entre quatre stratégies de migration globales.
 **Réhébergement** | Souvent appelée migration _lift-and-shift_, cette option sans code permet de migrer rapidement les applications existantes vers Azure.<br/><br/> Les applications sont migrées en l’état, avec les avantages du cloud et sans les risques ou les coûts associés aux modifications de code. | Contoso peut réhéberger les applications moins stratégiques, qui ne nécessitent pas de modifications de code.
 **Refactorisation** | Également appelée « repackaging », cette stratégie demande peu de modifications du code ou de la configuration de l’application pour connecter cette dernière à Azure PaaS et tirer le meilleur parti des capacités du cloud. | Contoso peut refactoriser les applications stratégiques afin qu’elles conservent les mêmes fonctionnalités de base, mais en les déplaçant pour qu’elles s’exécutent sur une plateforme Azure telle qu’Azure App Service.<br/><br/> Cela demande peu de modifications de code.<br/><br/> En revanche, Contoso devra assurer la maintenance d’une plateforme de machines virtuelles, car elle ne sera pas gérée par Microsoft.
 **Réarchitecture** | Cette stratégie consiste à modifier ou à étendre la base de code d’une application de façon à optimiser son architecture et ainsi profiter des fonctionnalités du cloud et de la mise à l’échelle.<br/><br/> Elle permet d’en faire une application moderne dotée d’une architecture résiliente, hautement scalable et déployable de façon indépendante.<br/><br/> Les services Azure peuvent accélérer le processus, mettre à l’échelle les applications en toute confiance et gérer ces dernières en toute simplicité.
-**Recréation** | Cette stratégie consiste à regénérer entièrement une application à l’aide de technologies cloud natives.<br/><br/> La plateforme Azure en tant que service (PaaS) propose un environnement complet de développement et de déploiement dans le cloud. Elle élimine en partie le coût et la complexité des licences logicielles et évite d’avoir à recourir à une infrastructure applicative sous-jacente, à des intergiciels (middleware) et à d’autres ressources. | Contoso peut réécrire entièrement les applications critiques pour tirer parti des technologies cloud comme l’informatique serverless ou les microservices.<br/><br/> Contoso gérera les applications et les services qu’elle développe et Azure gérera tout le reste.
+**Recréation** | Cette approche consiste à regénérer entièrement une application à l’aide de technologies cloud natives.<br/><br/> La plateforme Azure en tant que service (PaaS) propose un environnement complet de développement et de déploiement dans le cloud. Elle élimine en partie le coût et la complexité des licences logicielles et évite d’avoir à recourir à une infrastructure applicative sous-jacente, à des intergiciels (middleware) et à d’autres ressources. | Contoso peut réécrire entièrement les applications critiques pour tirer parti des technologies cloud comme l’informatique serverless ou les microservices.<br/><br/> Contoso gérera les applications et les services qu’elle développe et Azure gérera tout le reste.
 
 <!--markdownlint-enable MD033 -->
 
@@ -210,36 +205,39 @@ Les données doivent aussi être prises en considération, surtout au vu du volu
 
 Contoso utilise essentiellement une paire de services et d’outils Azure pour la migration :
 
+- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) : Service de migration de machines virtuelles locales et d’autres ressources vers Azure.
 - [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) : Orchestre la récupération d’urgence et migre les machines virtuelles locales vers Azure.
 - [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) : Migre les bases de données locales comme SQL Server, MySQL et Oracle vers Azure.
 
-#### <a name="azure-site-recovery"></a>Azure Site Recovery
+<!-- markdownlint-disable MD024 -->
 
-Azure Site Recovery est le service Azure de base quand il s’agit d’orchestrer la récupération d’urgence et la migration au sein d’Azure et des sites locaux vers Azure.
+#### <a name="azure-migrate"></a>Azure Migrate
 
-1. Site Recovery autorise et orchestre la réplication de vos sites locaux vers Azure.
+Azure Migrate est le service Azure de base quand il s’agit d’orchestrer la migration au sein d’Azure et des sites locaux vers Azure.
+
+1. Azure Migrate orchestre la réplication de vos emplacements locaux vers Azure.
 2. Dès lors que la réplication est configurée et qu’elle s’exécute, les machines locales peuvent être basculées vers Azure, ce qui marque la fin de la migration.
 
-Contoso avait déjà [réalisé une preuve de concept](./contoso-migration-rehost-vm.md) pour voir si Site Recovery pouvait les aider à migrer vers le cloud.
+Contoso avait déjà [réalisé une preuve de concept](./contoso-migration-rehost-vm.md) pour vérifier si Azure Migrate pouvait les aider à migrer vers le cloud.
 
-##### <a name="use-site-recovery-at-scale"></a>Utiliser Site Recovery à l’échelle
+##### <a name="use-azure-migrate-at-scale"></a>Utiliser Azure Migrate à grande échelle
 
-Contoso envisage d’effectuer plusieurs migrations lift-and-shift. Pour s’assurer que cela fonctionne, Site Recovery exécutera une réplication par lots d’environ 100 machines virtuelles à la fois. Pour savoir comment cela fonctionne, Contoso a besoin de planifier la capacité pour la migration Site Recovery proposée.
+Contoso envisage d’effectuer plusieurs migrations lift-and-shift. Pour s’assurer que cela fonctionne, Migrate exécutera une réplication par lots d’environ 100 machines virtuelles à la fois. Pour savoir comment cela fonctionne, Contoso a besoin de planifier la capacité pour la migration proposée.
 
 - Contoso doit collecter des informations sur ses volumes de trafic. En particulier :
   - Contoso doit déterminer le taux de modification des machines virtuelles à répliquer.
   - Contoso doit aussi tenir compte de la connectivité réseau du site local à Azure.
 - Face aux exigences de capacité et de volume, les équipes doivent allouer suffisamment de bande passante, compte tenu du taux de modification quotidien des données des machines virtuelles en question, pour atteindre son objectif de point de récupération (RPO).
-- Enfin, elles doivent déterminer le nombre de serveurs qu’il faudra pour exécuter les composants Site Recovery nécessaires au déploiement.
+- Enfin, elles doivent déterminer le nombre de serveurs qu’il faudra pour exécuter les composants Migrate nécessaires au déploiement.
 
 ###### <a name="gather-on-premises-information"></a>Collecter les informations locales
 
-Contoso peut utiliser l’outil [Planificateur de déploiement Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-deployment-planner) pour effectuer ces étapes :
+Contoso peut utiliser Azure Migrate :
 
 - Contoso peut utiliser cet outil pour profiler à distance les machines virtuelles sans aucune répercussion sur l’environnement de production. Cela permet de cerner les besoins en bande passante et stockage pour la réplication et le basculement.
 - Contoso peut exécuter l’outil sans installer de composants Site Recovery en local.
 - L’outil collecte des informations sur les machines virtuelles compatibles et incompatibles, le nombre de disques par machine virtuelle et l’activité des données par disque. De même, il identifie les besoins en bande passante réseau, ainsi que l’infrastructure Azure nécessaires au succès de la réplication et du basculement.
-- Contoso doit veiller à exécuter l’outil de planification sur des ordinateurs Windows Server qui ont la configuration minimale requise pour le serveur de configuration Site Recovery. Le serveur de configuration est un ordinateur Site Recovery qui est nécessaire à la réplication des machines virtuelles VMware locales.
+- Contoso doit veiller à exécuter l’outil de planification sur une machine Windows Server qui ont la configuration minimale requise pour le serveur de configuration Site Recovery. Le serveur de configuration est un ordinateur Site Recovery qui est nécessaire à la réplication des machines virtuelles VMware locales.
 
 ###### <a name="identify-site-recovery-requirements"></a>Identifier la configuration requise pour Site Recovery
 
@@ -262,7 +260,7 @@ Contoso doit savoir comment déployer ces composants en tenant compte des consid
 **Composant** | **Besoins en capacité**
 --- | ---
 **Taux de modification quotidien maximal** | Un seul serveur de processus peut prendre en charge un taux de modification quotidien maximal de 2 To. Sachant qu’une machine virtuelle ne peut utiliser qu’un seul serveur de processus, le taux quotidien maximal de modification de données pris en charge pour une machine virtuelle répliquée est de 2 To.
-**Débit maximal** | Un compte standard Stockage Azure peut gérer au maximum 20 000 demandes par seconde, et les opérations d’entrée/sortie par seconde (IOPS) sur une machine virtuelle en cours de réplication doivent se situer dans cette limite. Par exemple, si une machine virtuelle dispose de 5 disques et que chaque disque génère 120 IOPS (taille de 8 Ko) sur la machine virtuelle, la limite de 500 IOPS sur le disque Azure est respectée.<br/><br/> Notez que le nombre de comptes de stockage nécessaires est égal au nombre total d’IOPS de la machine source divisé par 20 000. Un ordinateur répliqué ne peut appartenir qu’à un seul compte de stockage dans Azure.
+**Débit maximal** | Un compte standard Stockage Azure peut gérer au maximum 20 000 demandes par seconde, et les opérations d’entrée/sortie par seconde (IOPS) sur une machine virtuelle en cours de réplication doivent se situer dans cette limite. Par exemple, si une machine virtuelle dispose de 5 disques et que chaque disque génère 120 IOPS (taille de 8 Ko) sur la machine virtuelle, la limite de 500 IOPS sur le disque Azure est respectée.<br/><br/> Le nombre de comptes de stockage nécessaires est égal au nombre total d’IOPS de la machine source divisé par 20 000. Un ordinateur répliqué ne peut appartenir qu’à un seul compte de stockage dans Azure.
 **Serveur de configuration** | D’après son estimation de réplication de 100 à 200 machines virtuelles et des [exigences de dimensionnement du serveur de configuration](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server), les équipes Contoso estiment qu’elles ont besoin d’un ordinateur serveur de configuration avec les capacités suivantes :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> En plus des exigences de dimensionnement, Contoso devra vérifier que l’emplacement du serveur de configuration est optimal, à savoir sur le même réseau et le même segment de réseau local que les machines virtuelles qui seront migrées.
 **Serveur de traitement** | Contoso prévoit de déployer un serveur de processus dédié autonome capable de répliquer entre 100 et 200 machines virtuelles :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> Le serveur de processus sera fortement sollicité et doit donc se trouver sur un hôte ESXi capable de gérer les E/S disque, le trafic réseau et l’UC nécessaires à la réplication. Pour cela, Contoso examinera s’il y a lieu d’utiliser un hôte dédié.
 **Mise en réseau** | Après avoir examiné l’infrastructure VPN de site à site actuelle, Contoso a décidé d’implémenter Azure ExpressRoute. Cette implémentation est cruciale, car elle permettra de réduire la latence et d’améliorer la bande passante pour la région Azure primaire de Contoso (USA Est 2).<br/><br/> **Surveillance :** Contoso devra superviser attentivement les flux de données en provenance du serveur de processus. Si les données surchargent la bande passante réseau, Contoso envisagera de [limiter la bande passante du serveur de processus](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
@@ -299,7 +297,7 @@ Outre DMS, Contoso peut utiliser d’autres outils et services pour identifier l
 - Elle dispose de scripts qui facilitent les migrations manuelles. Ceux-ci sont disponibles dans le dépôt GitHub.
 - Différents [outils de partenaires](https://azure.microsoft.com/migration/partners) peuvent aussi être utilisés pour la migration.
 
-## <a name="phase-3-optimize"></a>Phase 3 : Optimiser
+## <a name="ready-for-production"></a>Prêt pour la production
 
 Après avoir déplacé les ressources vers Azure, Contoso doit les simplifier pour améliorer les performances et optimiser le retour sur investissement à l’aide d’outils de gestion des coûts. Étant donné qu’Azure est un service facturé à l’utilisation, il est essentiel pour Contoso de comprendre le fonctionnement des systèmes et de vérifier qu’ils sont correctement dimensionnés.
 
@@ -307,12 +305,12 @@ Après avoir déplacé les ressources vers Azure, Contoso doit les simplifier po
 
 Pour exploiter au mieux son investissement cloud, Contoso entend tirer parti de l’outil gratuit Azure Cost Management.
 
-- Cette solution sous licence conçue par Cloudyn, filiale de Microsoft, permet à Contoso de gérer ses dépenses cloud avec précision et en toute transparence. Cette solution propose des outils pour surveiller, répartir et réduire les coûts liés au cloud.
+- Cette solution permet à Contoso de gérer les dépenses cloud avec transparence et précision. Cette solution propose des outils pour surveiller, répartir et réduire les coûts liés au cloud.
 - Azure Cost Management fournit des rapports de tableau de bord simples qui facilitent la répartition des coûts, la rétrofacturation et la facturation interne.
 - Azure Cost Management permet d’optimiser les dépenses cloud en identifiant les ressources sous-utilisées, ce qui permettra à Contoso de les gérer et de les ajuster.
-- [En savoir plus](https://docs.microsoft.com/azure/cost-management/overview) sur Azure Cost Management.
+- Apprenez-en davantage sur [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview).
 
-![la gestion des coûts ;](./media/contoso-migration-scale/cost-management.png)
+![Gestion des coûts Azure](./media/contoso-migration-scale/cost-management.png)
 
 ### <a name="native-tools"></a>Outils natifs
 
@@ -351,7 +349,7 @@ Contoso a besoin d’une visibilité sur l’intégrité et les performances des
 
 - Grâce à ces outils, Contoso pourra facilement collecter des données provenant de sources et bénéficier d’insights détaillés. Par exemple, Contoso peut mesurer l’utilisation de l’UC, de la mémoire et du disque des machines virtuelles, afficher les dépendances des applications et du réseau au niveau des diverses machines virtuelles et suivre les performances des applications.
 - Contoso se servira de ces outils de supervision du cloud pour prendre des mesures et s’intégrer à des solutions de service.
-- [En savoir plus](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview) sur la supervision Azure.
+- [En savoir plus](https://docs.microsoft.com/azure/azure-monitor/overview) sur la supervision Azure.
 
 ### <a name="business-continuity-and-disaster-recovery"></a>Continuité d’activité et reprise d’activité
 
@@ -364,4 +362,4 @@ Contoso aura besoin d’une stratégie de continuité d’activité et de repris
 
 ## <a name="conclusion"></a>Conclusion
 
-Dans cet article, la société Contoso a établi des plans pour effectuer une migration Azure à l’échelle. Elle a divisé le processus de migration en quatre étapes, à savoir : évaluation, migration, optimisation, puis sécurité et gestion une fois la migration terminée. S’il est particulièrement important d’envisager un projet de migration dans son ensemble, le processus migration des systèmes d’une organisation doit être décomposé sous forme de classifications et de numéros qui font sens pour l’entreprise. En évaluant les données et en appliquant des classifications, le projet peut être décomposé en une série de migrations de plus petite taille, qui peuvent s’exécuter rapidement et en toute sécurité. La somme de ces petites migrations se transforme rapidement et avec succès en une migration d’envergure vers Azure.
+Dans cet article, la société Contoso a établi des plans pour effectuer une migration Azure à l’échelle. Elle a divisé le processus de migration en quatre étapes, à savoir : évaluation, migration, optimisation, puis sécurité et gestion une fois la migration terminée. S’il est particulièrement important d’envisager un projet de migration dans son ensemble, le processus de migration des systèmes d’une organisation doit être décomposé sous forme de classifications et de numéros qui font sens pour l’entreprise. En évaluant les données et en appliquant des classifications, le projet peut être décomposé en une série de migrations de plus petite taille, qui peuvent s’exécuter rapidement et en toute sécurité. La somme de ces petites migrations se transforme rapidement et avec succès en une migration d’envergure vers Azure.

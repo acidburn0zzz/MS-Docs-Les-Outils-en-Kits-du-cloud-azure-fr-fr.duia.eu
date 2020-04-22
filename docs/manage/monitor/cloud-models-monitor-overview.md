@@ -4,16 +4,16 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de savoir quel
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7dc47021b2b4a3d9e697566332bf602d9166e712
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356256"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527075"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -160,7 +160,7 @@ Cette stratégie offre une visibilité de la couche réseau, sans recourir à SN
 
 ### <a name="monitor-with-azure-monitor"></a>Surveiller avec Azure Monitor
 
-Bien que la migration vers le cloud présente de nombreux défis, elle comporte également un certain nombre d'opportunités. Elle permet à votre organisation de migrer à partir d'un ou plusieurs outils de supervision d'entreprise locaux pour réduire les dépenses d'investissement et les coûts d'exploitation, ainsi que pour tirer parti des avantages d'une plateforme de supervision cloud telle qu'Azure Monitor à l'échelle du cloud. Examinez vos besoins en matière de supervision et d'alertes, la configuration des outils de supervision existants, et les charges de travail qui migrent vers le cloud. Une fois votre plan finalisé, configurez Azure Monitor.
+Bien que la migration vers le cloud présente de nombreux défis, elle offre également des opportunités. Elle permet à votre organisation de migrer à partir d'un ou plusieurs outils de supervision d'entreprise locaux pour réduire les dépenses d'investissement et les coûts d'exploitation, ainsi que pour tirer parti des avantages d'une plateforme de supervision cloud telle qu'Azure Monitor à l'échelle du cloud. Examinez vos besoins en matière de supervision et d'alertes, la configuration des outils de supervision existants, et les charges de travail qui migrent vers le cloud. Une fois votre plan finalisé, configurez Azure Monitor.
 
 - Supervisez l'infrastructure et les applications hybrides, à partir d'une architecture simple ou multiniveau dans laquelle les composants sont hébergés entre Azure, d'autres fournisseurs de services cloud et votre réseau d'entreprise. Les composants peuvent inclure une ou plusieurs machines virtuelles, plusieurs machines virtuelles placées dans un groupe à haute disponibilité ou un groupe de machines virtuelles identiques, ou une application en conteneur déployée sur Azure Kubernetes Service (AKS) et exécutée sur des conteneurs Windows Server ou Linux.
 

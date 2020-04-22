@@ -4,15 +4,15 @@ description: Classifiez vos charges de travail quand vous effectuez une évaluat
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/03/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8f912891bf90d0ecef29727d7d7a067d442234fc
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0708c394cca50c64813b7eea04a1239586c825af
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79095389"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527714"
 ---
 # <a name="workload-classification-before-migration"></a>Classification des charges de travail avant la migration
 
@@ -24,7 +24,7 @@ Dans cet article, nous suggérons spécifiquement d’ajouter des informations r
 
 ## <a name="data-sensitivity"></a>Sensibilité des données
 
-Comme indiqué dans l’article sur la [classification des données](../../../govern/policy-compliance/data-classification.md), le processus de classification des données mesure l’impact d’une fuite de données sur l’entreprise ou les clients. Les équipes de gouvernance et de sécurité tirent profit de la sensibilité ou de la classification des données en tant qu’indicateur des risques de sécurité. Durant l’évaluation, l’équipe d’adoption du cloud doit évaluer la classification des données pour chaque charge de travail ciblée dans le cadre de la migration. Elle doit également partager cette classification avec les équipes du support technique. Les charges de travail qui concernent strictement les « données publiques » n’ont pas forcément d’impact sur les équipes du support technique. Toutefois, à mesure que les données se rapprochent de l’extrémité « hautement confidentielle » du spectre, les équipes de gouvernance et de sécurité ont probablement intérêt à participer à l’évaluation de la charge de travail.
+Comme indiqué dans l’article sur la [classification des données](../../../govern/policy-compliance/data-classification.md), le processus de classification des données mesure l’impact d’une fuite de données sur l’entreprise ou les clients. Les équipes de gouvernance et de sécurité utilisent la sensibilité ou la classification des données en tant qu’indicateur des risques de sécurité. Durant l’évaluation, l’équipe d’adoption du cloud doit évaluer la classification des données pour chaque charge de travail ciblée dans le cadre de la migration. Elle doit également partager cette classification avec les équipes du support technique. Les charges de travail qui concernent strictement les « données publiques » n’ont pas forcément d’impact sur les équipes du support technique. Toutefois, à mesure que les données se rapprochent de l’extrémité « hautement confidentielle » du spectre, les équipes de gouvernance et de sécurité ont probablement intérêt à participer à l’évaluation de la charge de travail.
 
 Collaborez avec vos équipes de sécurité et de gouvernance le plus tôt possible pour définir les éléments suivants :
 

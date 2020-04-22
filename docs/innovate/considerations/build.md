@@ -4,15 +4,15 @@ description: Apprenez à créer des solutions qui favorisent l’innovation à t
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 67ea91e503290c8fee37f3d36770fbbea1b336b4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: f961fa2b20fc5fc8fe2670b05b5a66d9e99c0805
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356797"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120615"
 ---
 # <a name="build-with-customer-empathy"></a>Développer en faisant preuve d’empathie vis à vis du client
 

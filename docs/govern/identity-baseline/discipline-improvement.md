@@ -4,16 +4,16 @@ description: Découvrez les tâches qu’une entreprise peut effectuer pour dév
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 254abb817b89e34e9e92fb2b9eb949784e269601
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356995"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995221"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -72,7 +72,7 @@ Plusieurs conditions techniques et non techniques sont exigées pour migrer corr
 - Envisagez d’utiliser les modèles d’accès suivants :
   - Modèle [Accès le moins privilégié](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models).
   - Modèle d’accès [Base de référence des identités privilégiées](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure).
-- Finalisez tous les détails de la pré-intégration et réexaminez les [meilleures pratiques en matière d’identités](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices).
+- Finalisez tous les détails de la pré-intégration et réexaminez les [meilleures pratiques en matière d’identités](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices).
   - Activez l’identité unique, l’authentification unique (SSO) ou l’authentification unique transparente.
   - Configurez l’authentification multifacteur pour les administrateurs.
   - Consolidez ou intégrez les fournisseurs d’identité si nécessaire.

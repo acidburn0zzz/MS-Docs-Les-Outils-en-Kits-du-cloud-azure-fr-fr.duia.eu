@@ -4,16 +4,16 @@ description: Découvrez les régions dans lesquelles la plateforme cloud est dis
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65e2331dca7756306c875dae092faaaf41030765
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: ff04f94c8f6dbf023f706ac3c66778fdc89c3437
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508336"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80998071"
 ---
 # <a name="azure-regions"></a>Régions Azure
 

@@ -4,16 +4,16 @@ description: Découvrez des recommandations détaillées sur le nommage et la ca
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/05/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 2ebb04a09c6c14b44e0237c2530144c69014f5b4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 5091fe94347773d5b1d6bf4397438b31b3c25f9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354519"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120206"
 ---
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "80354519"
 
 Organisez vos ressources cloud pour prendre en charge les exigences en matière de gestion des opérations et de comptabilité. Le respect de conventions bien définies de nommage et d’étiquetage des métadonnées permet de localiser et de gérer rapidement les ressources. Ces conventions vous aident également à associer les coûts d’utilisation du cloud à des équipes commerciales par le biais de mécanismes comptables de récupération des données de facturation et de facturation interne.
 
-L’article [Règles de nommage et restrictions pour les ressources Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) du Centre des architectures Azure fournit des conseils généraux sur les restrictions des plateformes. La discussion suivante étend cette aide avec des recommandations plus détaillées visant spécialement à accompagner les efforts d’adoption du cloud d’entreprise.
+Azure définit les [règles de nommage et les restrictions pour les ressources Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules). Ce guide fournit des recommandations détaillées pour prendre en charge les efforts d’adoption du cloud d’entreprise.
 
 Le changement des noms de ressource peut être difficile. Mettez en place une convention de nommage complète avant de commencer tout déploiement important du cloud.
 
@@ -53,7 +53,7 @@ Par exemple, un réseau virtuel possède une étendue de groupe de ressources, c
 
 Certains noms de ressources, tels que les services PaaS avec des points de terminaison publics ou des étiquettes DNS de machine virtuelle, ont des étendues globales, ce qui signifie qu’ils doivent être uniques sur l’ensemble de la plateforme Azure.
 
-Les noms de ressources ont des longueurs limitées. L’équilibrage du contexte incorporé dans un nom avec sa portée et sa longueur est important lorsque vous élaborez vos conventions d’affectation de noms. Pour obtenir plus d’informations sur les règles d’affectation de noms et connaître les caractères autorisés, les étendues et les longueurs de noms pour les types de ressources, consultez [Conventions d’affectation de noms pour les ressources Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming).
+Les noms de ressources ont des longueurs limitées. L’équilibrage du contexte incorporé dans un nom avec sa portée et sa longueur est important lorsque vous élaborez vos conventions d’affectation de noms. Pour plus d’informations, consultez les [règles de nommage et les restrictions](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules).
 
 ### <a name="recommended-naming-components"></a>Composants de noms recommandés
 
@@ -75,7 +75,7 @@ Chaque charge de travail peut être composée de plusieurs ressources et service
 
 La liste suivante répertorie les préfixes de type de ressource Azure recommandés à utiliser lorsque vous définissez vos conventions d’affectation de noms.
 
-<!-- cSpell:disable -->
+<!-- cSpell:ignore apim snet traf vmss stvm arcm ntfns sqldb psql sqldw sqlstrdb ssimp srch hbase appi migr -->
 
 ### <a name="general"></a>Général
 
@@ -227,7 +227,7 @@ Les balises que vous appliquez aux ressources et celles qui sont requises ou fac
 
 La section suivante fournit des exemples de noms pour les types de ressources Azure courants dans un déploiement de cloud d’entreprise.
 
-<!-- cSpell:disable -->
+<!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
 
 <!-- markdownlint-disable MD024 MD033 -->
 
@@ -245,15 +245,15 @@ La section suivante fournit des exemples de noms pour les types de ressources Az
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Réseau virtuel              | Resource group  | vnet-\<Type d’abonnement\>-\<Région\>-\<\#\#\#\>                     | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                      |
 | Subnet                       | Réseau virtuel | snet-\<abonnement\>-\<sous-région\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                      |
-| Interfaces réseau      | Resource group  | nic-\<\#\#\>-\<nom de la machine virtuelle\>-\<abonnement\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
+| Interfaces réseau      | Resource group  | nic-\<\#\#\>-\<vm name\>-\<subscription\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
 | Adresse IP publique            | Resource group  | pip-\<nom de la machine virtuelle ou de l’application\>-\<Environnement\>-\<sous-région\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                              |
 | Équilibrage de charge                | Resource group  | lb-\<nom de l’application ou rôle\>\<Environnement\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
-| Groupe de sécurité réseau | Sous-réseau ou carte réseau   | nsg-\<Nom de la stratégie ou de l’application\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsbloked-001</li></ul>             |
+| Groupe de sécurité réseau | Sous-réseau ou carte réseau   | nsg-\<Nom de la stratégie ou de l’application\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsblocked-001</li></ul>             |
 | Passerelle de réseau local        | Passerelle virtuelle | lgw-\<Type d’abonnement\>-\<Région\>-\<\#\#\#\>                      | <ul><li>lgw-shared-eastus2-001 </li><li>lgw-prod-westus-001 </li><li>lgw-client-eastus2-001</li></ul>                         |
 | Passerelle de réseau virtuel      | Réseau virtuel | vgw-\<Type d’abonnement\>-\<Région\>-\<\#\#\#\>                      | <ul><li>vgw-shared-eastus2-001 </li><li>vgw-prod-westus-001 </li><li>vgw-client-eastus2-001</li></ul>                         |
 | Connexion de site à site      | Resource group  | cn-\<nom de la passerelle locale\>-to-\<nom de la passerelle virtuelle\>                | <ul><li>cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001 </li><li>cn-lgw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | Connexion VPN               | Resource group  | cn-\<abonnment1\>\<région1\>-to-\<abonnement2\>\<région2\>-     | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                  |
-| Table de routage                  | Resource group  | route-\<Nom de la table de routage\>                                           | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
+| Table de routage                  | Resource group  | route-\<Nom de la table de routage\>                                           | <ul><li>route-navigator</li><li>route-sharepoint</li></ul>                                                        |
 | Étiquette DNS                    | Global          | \<Un enregistrement de machine virtuelle\>.[\<région\>.cloudapp.azure.com]                   | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                                      |
 
 ### <a name="example-names-compute-and-web"></a>Exemples de noms : Calcul et web
@@ -261,7 +261,7 @@ La section suivante fournit des exemples de noms pour les types de ressources Az
 | Type de ressource                  | Étendue          | Format                                                              | Exemples                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Machine virtuelle             | Resource group | vm\<nom de la stratégie ou de l’application\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
-| Compte de stockage de machine virtuelle          | Global         | stvm\<type de niveau de performance\>\<nom de l’application ou du produit\>\<région\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
+| Compte de stockage de machine virtuelle          | Global         | stvm\<type de performance\>\<nom de l’application ou du produit\>\<région\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
 | Application web                     | Global         | app-\<Nom de l’application\>-\<Environnement\>-\<\#\#\#\>.[{azurewebsites.net}]   | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul>                   |
 | Conteneur de fonctions                | Global         | func-\<Nom de l’application\>-\<Environnement\>-\<\#\#\#\>.[{azurewebsites.net}]  | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul>                 |
 | service cloud               | Global         | cld-\<Nom de l’application\>-\<Environnement\>-\<\#\#\#\>.[{cloudapp.net}]        | <ul><li>cld-navigator-prod-001.azurewebsites.net </li><li>cld-accountlookup-dev-001.azurewebsites.net</li></ul>                   |

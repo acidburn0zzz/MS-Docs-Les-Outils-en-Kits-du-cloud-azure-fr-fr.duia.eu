@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: de9fd12afe7445c5cdd3b4ae8c1eba9c7cb07f19
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 16f73a03abf0469b37f907cdfbc62e2309d948af
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357062"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120303"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence de la sécurité
 
@@ -123,7 +123,7 @@ Les nouvelles bonnes pratiques se répartissent en deux catégories : informati
 6. Intégrez des objets de stratégie de groupe (GPO) par le biais d'une configuration d'état souhaité (DSC) :
     1. Conversion GPO vers DSC - Le [projet de gestion de la base de référence Microsoft](https://github.com/Microsoft/BaselineManagement) dans GitHub peut accélérer cet effort. Veillez à stocker DSC dans le référentiel, parallèlement aux modèles Resource Manager.
     2. Déployez la configuration d’état souhaité Azure Automation sur plusieurs instances de l'abonnement informatique d'entreprise. Azure Automation peut être utilisé pour appliquer la configuration d'état souhaité aux machines virtuelles déployées dans des abonnements pris en charge au sein du groupe d’administration.
-    3. La feuille de route actuelle prévoit de permettre les stratégies de configuration personnalisée invité. Une fois cette fonctionnalité disponible, l’utilisation d’Azure Automation dans le cadre de cette meilleure pratique ne sera plus requise.
+    3. La feuille de route actuelle vise à autoriser les stratégies de configuration personnalisée invité. Une fois cette fonctionnalité disponible, l’utilisation d’Azure Automation dans le cadre de cette meilleure pratique ne sera plus requise.
 
 **Application d’une plus grande gouvernance dans le cadre d’un abonnement d’adoption cloud (Spoke) :** En s’appuyant sur l’`Corporate IT Subscription`, des modifications mineures apportées au MVP de gouvernance et appliquées à chaque abonnement dédié à la prise en charge des archétypes d’application peuvent contribuer à une amélioration rapide.
 

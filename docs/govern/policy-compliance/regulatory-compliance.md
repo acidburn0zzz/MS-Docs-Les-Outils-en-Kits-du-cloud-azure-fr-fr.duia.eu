@@ -4,20 +4,20 @@ description: Découvrez les règles de conformité en vigueur dans divers secteu
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e5cfa035efe2fd3dd45b29edec53bfff2c7914f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 22e74aabc56ae25d0448bf321c645449e4989668
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709377"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809128"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Présentation de la conformité réglementaire
 
-Il s’agit d’un article introductif sur la conformité réglementaire. Il ne vise donc pas l’implémentation d’une stratégie de conformité. Des informations plus détaillées sur les [offres de conformité Azure](https://aka.ms/allcompliance) sont disponibles dans le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter/default.aspx). En outre, toute la documentation téléchargeable est disponible à certains clients Azure sur le [portail d’approbation de services Microsoft](https://servicetrust.microsoft.com).
+Il s’agit d’un article introductif sur la conformité réglementaire. Il ne vise donc pas l’implémentation d’une stratégie de conformité. Des informations plus détaillées sur les [offres de conformité Azure](https://aka.ms/allcompliance) sont disponibles dans le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center). En outre, toute la documentation téléchargeable est disponible à certains clients Azure sur le [portail d’approbation de services Microsoft](https://servicetrust.microsoft.com).
 
 La conformité réglementaire fait référence à la discipline et au processus consistant à garantir qu’une entreprise respecte les lois appliquées par les organes directeurs dans sa zone géographique ou les lois imposées par les normes du secteur volontairement adoptées. Pour la conformité réglementaire informatique, les personnes et les processus supervisent les systèmes de l’entreprise dans le but de détecter et d’empêcher les violations de stratégies et de procédures établies par ces lois, règlements et normes en vigueur. Cette notion concerne une un large éventail de processus d’application et de supervision. En fonction du secteur et de la zone géographique, ces processus peuvent être longs et complexes.
 
@@ -49,7 +49,7 @@ Pour aider les clients à répondre à leurs propres obligations en matière de 
 
 Les offres de conformité Azure sont basées sur divers types de garanties, notamment des certifications, attestations, validations, autorisations et évaluations officielles créées par des sociétés d’audit tierces indépendantes, ainsi que des modifications contractuelles, des auto-évaluations et des documents de conseils pour les clients créés par Microsoft. Chaque description d’offre de ce document fournit une instruction mise à jour indiquant quels services Azure orientés client se trouvent dans le champ d’application de l’évaluation, et donne des liens vers des ressources téléchargeables pour aider les clients à gérer leurs obligations en matière de conformité.
 
-Des informations plus détaillées sur les offres de conformité Azure sont disponible dans le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter/compliance/complianceofferings). En outre, toute la documentation téléchargeable est disponible à certains clients Azure sur le [portail d’approbation de services](https://servicetrust.microsoft.com) dans les sections suivantes :
+Le centre de gestion de la confidentialité Microsoft fournit des informations plus détaillées sur les [offres de conformité Azure](https://www.microsoft.com/trust-center/compliance/compliance-overview). En outre, toute la documentation téléchargeable est disponible à certains clients Azure sur le [portail d’approbation de services](https://servicetrust.microsoft.com) dans les sections suivantes :
 
 - **Rapports d’audit :** Comprend les sections relatives aux rapports FedRAMP, d’évaluation GRC, ISO, PCI DSS et SOC.
 - **Ressources de protection des données :** Inclut des guides de conformité, des questions fréquentes (FAQ), des livres blancs, ainsi que des sections sur les tests d’intrusion et les évaluations de sécurité.

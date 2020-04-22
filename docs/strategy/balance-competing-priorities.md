@@ -4,15 +4,15 @@ description: Découvrez les stratégies d’équilibrage des priorités concurre
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a0524d8e7cd48f3b93191d9633bb57b10fb2261b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 768007ea6b745eab76f6ae6e255287490da93ec1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353695"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119672"
 ---
 # <a name="balance-competing-priorities"></a>Équilibrer les priorités concurrentes
 
@@ -43,9 +43,9 @@ L’objectif principal de la méthodologie de stratégie est de développer l’
 - **Profondeur de la justification :** Avant de pouvoir prendre une direction stratégique, les parties prenantes exigent souvent une analyse financière approfondie et une justification métier complète. Malheureusement, la collecte et l’analyse des données peuvent engendrer des délais.
 - **Délai avant l’impact commercial :** Inversement, les parties prenantes sont souvent tenues pour responsables de l’obtention de résultats métier dans des délais d’exécution fixés. Les opérations d’analyse et d’évaluation qui prennent du temps peuvent mettre en danger l’obtention de ces résultats avant même le début du travail technique.
 
-**Étendue minimale** : Pour parvenir à cet équilibre, les parties prenantes doivent entamer des discussions au début du processus. La méthodologie de stratégie suggère de limiter l’étendue de l’alignement durant ces premiers efforts. Dans l’approche suggérée, les parties prenantes tentent de s’aligner autour d’un ensemble de motivations de base, de résultats mesurables et d’une justification métier générale. Il est suggéré aux parties prenantes de s’engager rapidement sur un petit nombre de projets initiaux ou de pilotes pour mettre en avant les opportunités d’apprentissage requises.
+**Étendue minimale** : Pour parvenir à cet équilibre, les parties prenantes doivent entamer des discussions au début du processus. La méthodologie de stratégie suggère de limiter l’étendue de l’alignement durant ces premiers efforts. Dans l’approche suggérée, les parties prenantes tentent de s’aligner autour d’un ensemble de motivations de base, de résultats mesurables et d’une justification métier générale. Les parties prenantes doivent s’engager rapidement sur un petit nombre de projets initiaux ou de pilotes pour mettre en avant les opportunités d’apprentissage requises.
 
-**Exemple d’étendue développée** : Si l’analyse métier initiale indique un risque élevé d’impact négatif sur l’entreprise, les parties prenantes peuvent être contraintes de ralentir et d’évaluer avec prudence une analyse plus poussée durant la justification métier.
+**Exemple d’étendue développée** : Si l’analyse métier initiale indique un risque élevé d’influence négative sur l’entreprise, les parties prenantes peuvent être contraintes de ralentir et d’évaluer avec prudence une analyse plus poussée durant la justification métier.
 
 ## <a name="balance-during-plan"></a>Équilibre pendant la planification
 
@@ -56,7 +56,7 @@ L’objectif principal de la méthodologie de stratégie est de développer l’
 - La **profondeur de la planification initiale** concernant l’implémentation technique dans le cloud contient souvent un grand nombre d’hypothèses. Cela est particulièrement vrai si l’équipe a des lacunes en matière de compétences, si l’environnement souffre de décalages dans le domaine de la découverte ou si les états finaux sur le plan architectural ne sont pas clairement définis. Toutes ces hypothèses sont courantes dans les plans détaillés d’adoption du cloud. La mise en place d’expérimentations, de pilotes et d’analyses qualitatives est nécessaire pour éliminer ces hypothèses.
 - Les **décisions techniques différées** reposent sur le fait que plus la décision technique peut être retardée, plus elle est précise. Le respect des principes de planification de produit agile contribue à retarder les décisions techniques. Elles sont donc prises au bon moment, avec suffisamment d’informations. Toutefois, cette approche entraîne un degré d’ambiguïté nettement plus élevé dans le plan initial.
 
-**Étendue minimale** : Des approches de développement de produit agile sont suggérées pour favoriser des actions rapides dans des plans gérables. La méthodologie de planification recommande les étapes suivantes pour atteindre cet équilibre. Inventoriez l’ensemble de l’espace numérique à l’aide d’outils de découverte automatisés, mais utilisez la rationalisation incrémentielle pour planifier les 1 à 3 prochains mois de travail. Veillez au bon alignement de l’organisation pour pouvoir agir rapidement. Créez un plan de préparation des compétences pour l’équipe affectée. Tirez parti du modèle de plan d’adoption du cloud pour déployer rapidement un backlog initial.
+**Étendue minimale** : Des approches de développement de produit agile sont suggérées pour favoriser des actions rapides dans des plans gérables. La méthodologie de planification recommande les étapes suivantes pour atteindre cet équilibre. Inventoriez l’ensemble de l’espace numérique à l’aide d’outils de découverte automatisés, mais utilisez la rationalisation incrémentielle pour planifier les 1 à 3 prochains mois de travail. Veillez au bon alignement de l’organisation pour pouvoir agir rapidement. Créez un plan de préparation des compétences pour l’équipe affectée. Utilisez le modèle de plan d’adoption du cloud pour déployer rapidement un backlog initial.
 
 **Exemple d’étendue développée** : Parfois, la mise en place d’un plan d’adoption du cloud peut répondre à un événement commercial urgent ou à fort impact. Quand la réussite passe par le déplacement d’un grand nombre de ressources pendant une période fixe, les étapes ci-dessus sont souvent suivies d’un effort de planification plus soutenu. La clé du succès dans ces scénarios est de planifier suffisamment pour lancer la procédure, puis de planifier l’engagement complet. Cette approche réduit la probabilité d’un blocage des résultats métier causé par la planification.
 
@@ -84,7 +84,7 @@ Lors des efforts de migration, il est courant pour les équipes d’adoption de 
 
 **Étendue minimale** : Lors des étapes préliminaires de planification, utilisez l’option de réhébergement pour la planification. Sachez toutefois que cette option est une hypothèse métier initiale et non une décision technique. Dans la méthodologie de migration, il est à prévoir que l’équipe d’adoption conteste cette hypothèse pour chaque charge de travail migrée. Cette méthodologie suit les étapes d’évaluation, de migration et de promotion pour chaque charge de travail, groupe ou charge de travail créant une fabrique de migration. Pendant la phase d’évaluation, l’équipe d’adoption évalue l’adéquation technique et l’architecture de chaque charge de travail. Ce travail d’évaluation entraîne rarement une approche « lift-and-shift » pure, car la plupart des composants de l’architecture ont tendance à être sélectionnés pour refactorisation et modernisation.
 
-**Exemple d’étendue développée** : Pour les charges de travail critiques ou très sensibles, comme celles émanant d’un ordinateur mainframe ou d’une application de microservices multiniveau, une évaluation plus approfondie de la charge de travail peut être nécessaire pendant la phase d’évaluation. Dans ces situations de réarchitecture, il est recommandé aux clients d’utiliser Azure Architecture Review et Azure Architecture Framework pour affiner les exigences de la charge de travail pendant l’évaluation.
+**Exemple d’étendue développée** : Pour les charges de travail critiques ou très sensibles, comme celles émanant d’un ordinateur mainframe ou d’une application de microservices multiniveau, une évaluation plus approfondie de la charge de travail peut être nécessaire pendant la phase d’évaluation. Dans ces situations de réarchitecture, les clients doivent utiliser Azure Architecture Review et Azure Architecture Framework pour affiner les exigences de la charge de travail pendant l’évaluation.
 
 ## <a name="balance-during-innovate"></a>Équilibre pendant l’innovation
 
@@ -97,7 +97,7 @@ Une véritable innovation orientée client crée des priorités concurrentes ent
 
 **Étendue minimale** : La méthodologie d’innovation montre comment intégrer stratégie et plans grâce à un consensus sur la valeur métier. Le guide présente des outils cloud natifs qui peuvent accélérer chaque discipline d’innovation, puis accompagne les bonnes pratiques en vue de leur implémentation. Enfin, la section sur les améliorations de processus montre les approches à suivre pour développer l’empathie envers les clients tout en respectant les plans et les stratégies du parcours d’adoption du cloud. Cette approche se concentre sur la mise en œuvre de solutions d’innovation en réduisant le plus possible la part de la technologie.
 
-**Exemple d’étendue développée** : Parfois, une innovation peut dépendre de charges de travail critiques hautement sensibles. Lorsque le « client » est un utilisateur interne, l’effort de développement peut être à la fois critique et hautement sensible au cours des premières itérations. Dans ces scénarios, il est conseillé aux équipes d’adoption d’exploiter Azure Architecture Review et Azure Architecture Framework pour évaluer la conception architecturale avancée au début du processus.
+**Exemple d’étendue développée** : Parfois, une innovation peut dépendre de charges de travail critiques hautement sensibles. Lorsque le « client » est un utilisateur interne, l’effort de développement peut être à la fois critique et hautement sensible au cours des premières itérations. Dans ces scénarios, les équipes d’adoption doivent s’appuyer sur Azure Architecture Review et Azure Architecture Framework pour évaluer la conception architecturale avancée au début du processus.
 
 ## <a name="balance-during-govern"></a>Équilibre pendant la gouvernance
 
@@ -118,12 +118,12 @@ Le modèle économique du service informatique en matière de gestion des opéra
 
 **Priorités concurrentes** :
 
-- Vastes investissements : La vision traditionnelle de la gestion des opérations consiste à investir de manière égale dans la prévention des pannes, la reprise rapide et la supervision de l’environnement. Cette approche peut être coûteuse et parfois faire double emploi avec les produits de prise en charge mis à disposition par le fournisseur de cloud.
-- Pas d’opérations/opérations réduites : Tirez parti des outils d’exploitation natifs du cloud pour minimiser les tâches répétitives et récurrentes précédemment réalisées par des employés à temps plein. La réduction de ces dépendances opérationnelles dans le modèle de gestion des opérations libère ces employés pour générer plus de valeur. Seule, cette approche peut conduire à une prise en charge inadéquate des opérations.
+- **Investissements étendus :** La vision traditionnelle de la gestion des opérations consiste à investir de manière égale dans la prévention des pannes, la reprise rapide et la supervision de l’environnement. Cette approche peut être coûteuse et parfois faire double emploi avec les produits de prise en charge mis à disposition par le fournisseur de cloud.
+- **Aucun OPS ni faible OPS :** Utilisez les outils d’exploitation natifs du cloud pour minimiser les tâches répétitives et récurrentes précédemment réalisées par des employés à temps plein. La réduction de ces dépendances opérationnelles dans le modèle de gestion des opérations libère ces employés pour générer plus de valeur. Seule, cette approche peut conduire à une prise en charge inadéquate des opérations.
 
 **Étendue minimale** : La méthodologie de gestion suggère d’établir une base de référence de gestion « no-ops » (pas d’opérations) native dans le cloud. Étant donné que cette base de référence ne permet pas de répondre à tous les besoins métier, collaborez avec l’entreprise pour définir des engagements et mieux aligner les investissements. Développez la base de référence pour répondre aux besoins communs de toutes les charges de travail. Instruisez ensuite aux équipes responsables des plateformes ou de charges de travail spécifiques de mettre en œuvre des solutions bien gérées dans un environnement bien géré.
 
-**Exemple d’étendue développée** : Dans la plupart des environnements, le pourcentage de charges de travail dont la valeur métier justifie des investissements importants de la part du service informatique dans les opérations est faible. Dans ces scénarios, l’équipe informatique peut s’appuyer sur Azure Architecture Review et Azure Architecture Framework pour mener des opérations plus approfondies.
+**Exemple d’étendue développée** : Dans la plupart des environnements, le pourcentage de charges de travail dont la valeur métier justifie des investissements importants de la part du service informatique dans les opérations est faible. Dans ces scénarios, l’équipe informatique peut utiliser Azure Architecture Review et Azure Architecture Framework pour mener des opérations plus approfondies.
 
 ## <a name="balance-during-organize"></a>Équilibre pendant l’organisation
 

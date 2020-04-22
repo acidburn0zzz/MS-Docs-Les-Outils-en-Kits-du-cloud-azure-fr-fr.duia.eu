@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3680af7b55012d0fbfbe0feac632e92b178aa8d2
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 134026b963602448e145cf118378977a4b03de58
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354219"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396182"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -93,12 +93,12 @@ Contrairement à IaaS où vous gérez vos propres machines virtuelles et votre i
 
 **En savoir plus :**
 
-- [Apprenez-en davantage](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview) sur Azure Disk Encryption pour machines virtuelles Iaas.
-- [Activez](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-windows) le chiffrement pour les machines virtuelles IaaS Windows.
-- [Apprenez-en davantage](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) sur Azure Storage Service Encryption pour les données au repos.
-- [Lisez](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault) une présentation d’Always Encrypted.
-- [Apprenez-en davantage](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) sur TDE pour Azure SQL Database.
-- [Apprenez-en davantage](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql) sur TDE avec Service Bring Your Own Key (BYOK).
+- En savoir plus sur [Azure Disk Encryption pour les machines virtuelles et les groupes de machines virtuelles identiques](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
+- Activez [Azure Disk Encryption pour les machines virtuelles Windows](https://docs.microsoft.com/azure/virtual-machines/windows/disk-encryption-overview).
+- En savoir plus sur [Azure Storage Service Encryption pour les données au repos](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
+- Lisez une [présentation d’Always Encrypted](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault).
+- En savoir plus sur [Transparent Data Encryption pour SQL Database et Azure Synapse](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql).
+- En savoir plus sur [Transparent Data Encryption Azure SQL avec une clé managée par le client](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql).
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>Bonne pratique : Protéger les machines virtuelles avec un logiciel anti-programme malveillant
 
@@ -113,7 +113,7 @@ En particulier, les anciennes machines virtuelles migrées Azure peuvent ne pas 
 
 **En savoir plus :**
 
-- [Apprenez-en davantage](https://docs.microsoft.com/azure/security/azure-security-antimalware) sur Microsoft Antimalware.
+- En savoir plus sur [Microsoft Antimalware pour Azure Cloud Services et les machines virtuelles](https://docs.microsoft.com/azure/security/fundamentals/antimalware).
 
 ## <a name="best-practice-secure-web-apps"></a>Bonne pratique : Sécuriser les applications web
 
@@ -188,7 +188,7 @@ Azure offre d’autres fonctionnalités de sécurité qui proposent des options 
 
 - **Implémenter les unités administratives (AU) d’Azure AD.** Déléguer des tâches administratives au personnel du support peut s’avérer délicat par un simple contrôle d’accès de base Azure. L’attribution d’accès au personnel du support en vue d’administrer tous les groupes Azure AD n’est peut-être pas l’approche idéale pour la sécurité de l’organisation. L’utilisation d’AU vous permet de séparer les ressources Azure dans des conteneurs de la même manière que les unités d’organisation (OU) locales. Pour utiliser AU, l’administrateur de l’UA doit posséder une licence AD Azure Premium. [Plus d’informations](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units)
 - **Utiliser l’authentification multifacteur.** Si vous possédez une licence premium Azure AD, vous pouvez activer et appliquer l’authentification multifacteur sur vos comptes d’administrateur. L’hameçonnage est le moyen le plus courant de compromettre l’identité des comptes. Une fois qu’une personne malveillante possède des informations d’identification de compte d’administration, rien ne l’empêche d’entreprendre des actions de grande envergure, telles que la suppression de tous vos groupes de ressources. Vous pouvez établir l’authentification multifacteur de plusieurs façons, y compris par e-mail, application d’authentification ou message texte sur téléphone. En tant qu’administrateur, vous pouvez choisir l’option la moins intrusive. La fonctionnalité d’authentification multifacteur s’intègre à l’analyse des menaces et aux stratégies d’accès conditionnel pour exiger aléatoirement une réponse à un défi d’authentification multifacteur. Apprenez-en davantage sur les [conseils de sécurité](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices) et sur la [configuration](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices) de l’authentification multifacteur (MFA).
-- **Implémenter l’accès conditionnel.** Dans la plupart des petites et moyennes entreprises, les administrateurs Azure et l’équipe du support technique sont probablement situés dans une même région géographique. Dans ce cas, la plupart des connexions proviendront des mêmes zones. Si les adresses IP de ces emplacements sont assez statiques, il est logique que vous ne puissiez pas voir les connexions administrateur si vous vous trouvez à l’extérieur de ces zones. Même si une personne malveillante distante compromet les informations d’identification d’un administrateur, vous pouvez implémenter des fonctionnalités de sécurité comme l’accès conditionnel associé à la fonctionnalité d’authentification multifacteur pour empêcher la connexion à partir d’emplacements distants ou à partir d’emplacements usurpés à l’aide d’adresses IP aléatoires. [Apprenez-en davantage](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)sur l’accès conditionnel, et [révisez les meilleures pratiques](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices) pour l’accès conditionnel dans Azure AD.
+- **Implémenter l’accès conditionnel.** Dans la plupart des petites et moyennes entreprises, les administrateurs Azure et l’équipe du support technique sont probablement situés dans une même région géographique. Dans ce cas, la plupart des connexions proviendront des mêmes zones. Si les adresses IP de ces emplacements sont assez statiques, il est logique que vous ne puissiez pas voir les connexions administrateur si vous vous trouvez à l’extérieur de ces zones. Même si une personne malveillante distante compromet les informations d’identification d’un administrateur, vous pouvez implémenter des fonctionnalités de sécurité comme l’accès conditionnel associé à la fonctionnalité d’authentification multifacteur pour empêcher l’ouverture de session à partir d’emplacements distants ou à partir d’emplacements usurpés à l’aide d’adresses IP aléatoires. [Apprenez-en davantage](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)sur l’accès conditionnel, et [révisez les meilleures pratiques](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices) pour l’accès conditionnel dans Azure AD.
 - **Révisez les autorisations pour les applications d’entreprise.** Au fil du temps, les administrateurs sélectionnent les liens Microsoft et tiers sans connaître l’impact de ceux-ci sur l’organisation. Les liens peuvent afficher des écrans de consentement qui attribuent des autorisations aux applications Azure et peuvent fournir un accès en lecture des données Azure AD, voire un accès complet en gestion de l’ensemble de votre abonnement Azure. Vous devez régulièrement passer en revue les applications pour lesquelles vos administrateurs et utilisateurs ont autorisé l’accès aux ressources Azure. Assurez-vous que ces applications n’ont que les autorisations nécessaires. De plus, tous les trimestres ou tous les semestres, vous pouvez envoyer un email aux utilisateurs avec un lien vers les pages d’application afin qu’ils sachent à quelles applications ils ont attribué l’accès à leurs données d’organisation. [Apprenez-en plus](https://docs.microsoft.com/azure/active-directory/manage-apps/application-types) sur les types d’applications et sur la [façon de contrôler](https://docs.microsoft.com/azure/active-directory/manage-apps/remove-user-or-group-access-portal) les affectations d’applications dans Azure AD.
 
 ## <a name="managed-migrated-workloads"></a>Charges de travail migrées gérées
@@ -217,7 +217,7 @@ Afin d’améliorer la productivité et l’efficacité, assurez-vous que vos gr
 
 **En savoir plus :**
 
-- [Apprenez-en](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) plus sur les conventions d’affectation de noms.
+- En savoir plus sur les [Conventions d'affectation de noms](../../ready/azure-best-practices/naming-and-tagging.md).
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Bonne pratique : Implémenter les verrous de suppression pour les groupes de ressources
 
@@ -257,8 +257,8 @@ Il est fréquent que l’utilisation d’un seul nom de groupe de ressources li�
 
 **En savoir plus :**
 
-- [Apprenez-en davantage](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) sur le balisage et les limitations des balises.
-- [Révisez](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags#powershell) les exemples PowerShell et de l’interface de ligne de commande pour configurer le balisage et pour appliquer les balises d’un groupe de ressources à ses ressources.
+- [Apprenez-en davantage](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) sur le balisage et les limitations des balises.
+- [Révisez](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources#powershell) les exemples PowerShell et de l’interface de ligne de commande pour configurer le balisage et pour appliquer les balises d’un groupe de ressources à ses ressources.
 - [Consultez](https://www.azurefieldnotes.com/2016/07/18/azure-resource-tagging-best-practices) les meilleures pratiques du balisage Azure.
 
 ## <a name="best-practice-implement-blueprints"></a>Bonne pratique : Implémenter des blueprints
@@ -302,7 +302,7 @@ Le diagramme suivant montre un exemple de création d’une hiérarchie pour la 
 
 **En savoir plus :**
 
-- [Apprenez-en davantage](https://docs.microsoft.com/azure/governance/management-groups/index) sur l’organisation de ressources en groupes d’administration.
+- [Apprenez-en davantage](https://docs.microsoft.com/azure/governance/management-groups) sur l’organisation de ressources en groupes d’administration.
 
 ## <a name="best-practice-deploy-azure-policy"></a>Bonne pratique : Déployer Azure Policy
 
@@ -381,7 +381,7 @@ Les machines virtuelles Azure sont stockés en tant qu’objets blob de pages da
 - [Apprenez-en](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots) davantage sur la création d’un instantané d’objet blob.
 - [Passez en revue un exemple de scénario](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup) pour la sauvegarde de stockage d’objets blob.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete) sur la suppression réversible.
-- [Reprise d’activité après sinistre et basculement forcé (préversion) dans Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Reprise d’activité après sinistre et basculement forcé (préversion) dans Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=/azure/storage/blobs/toc.json)
 
 #### <a name="third-party-backup"></a>Sauvegarde tierce
 
@@ -459,8 +459,8 @@ Les ressources Azure génèrent un bon nombre de métriques de journalisation et
 
 **En savoir plus :**
 
-- [Apprenez-en davantage](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) sur la collecte et l’utilisation des données de journal.
-- [Découvrez les opérations prises en charge](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-diagnostic-logs-schema) pour la journalisation des diagnostics.
+- [Apprenez-en davantage](https://docs.microsoft.com/azure/azure-monitor/platform/platform-logs-overview) sur la collecte et l’utilisation des données de journal.
+- [Découvrez les opérations prises en charge](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema) pour la journalisation des diagnostics.
 
 ## <a name="best-practice-set-up-alerts-and-playbooks"></a>Bonne pratique : Configurer les alertes et les playbooks
 
@@ -476,7 +476,7 @@ Alors que la journalisation des diagnostics est activée pour les ressources Azu
 
 **En savoir plus :**
 
-- [Découvrez-en plus sur](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-alerts) les alertes.
+- [Découvrez-en plus sur](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview) les alertes.
 - [Apprenez-en davantage](https://docs.microsoft.com/azure/security-center/security-center-playbooks) sur les playbooks de sécurité qui répondent aux alertes Security Center.
 
 ## <a name="best-practice-use-the-azure-dashboard"></a>Bonne pratique : Utiliser le tableau de bord Azure

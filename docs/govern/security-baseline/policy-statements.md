@@ -4,16 +4,16 @@ description: Aidez-vous de ces exemples de déclarations de stratégie de base d
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 02a1c18a73b784cb9245ed7c83d86c21c0690148
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707205"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997246"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Exemples d’instructions de stratégie de base de référence de la sécurité
 
@@ -31,7 +31,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques courants 
 
 **Instruction de stratégie :** Toutes les ressources déployées doivent être classées par criticité et par classification des données. Les classifications doivent être examinées par l’équipe de gouvernance cloud et le propriétaire de l’application avant le déploiement dans le cloud.
 
-**Option de conception potentielle :** Établissez des [normes de balisage des ressources](../../decision-guides/resource-tagging/index.md) et vérifiez que le service informatique les applique systématiquement à toutes les ressources déployées à l’aide de [balises de ressources Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
+**Option de conception potentielle :** Établissez des [normes de balisage des ressources](../../decision-guides/resource-tagging/index.md) et vérifiez que le service informatique les applique systématiquement à toutes les ressources déployées à l’aide de [balises de ressources Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ## <a name="data-encryption"></a>Chiffrement des données
 
@@ -39,7 +39,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques courants 
 
 **Instruction de stratégie :** Toutes les données protégées doivent être chiffrées au repos.
 
-**Option de conception potentielle :** Consultez l’article [Vue d’ensemble du chiffrement Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) pour voir comment le chiffrement des données au repos est effectué sur la plateforme Azure. Il convient également de prendre en considération d’autres contrôles comme ceux liés au chiffrement des données de compte et le contrôle sur le mode de modification des paramètres des comptes de stockage.
+**Option de conception potentielle :** Consultez l’article [Vue d’ensemble du chiffrement Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) pour voir comment le chiffrement des données au repos est effectué sur la plateforme Azure. Il convient également de prendre en considération d’autres contrôles comme ceux liés au chiffrement des données de compte et le contrôle sur le mode de modification des paramètres des comptes de stockage.
 
 ## <a name="network-isolation"></a>Isolement réseau
 

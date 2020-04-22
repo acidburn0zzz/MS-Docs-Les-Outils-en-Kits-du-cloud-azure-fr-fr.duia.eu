@@ -4,15 +4,15 @@ description: Obtenez des recommandations complètes pour transférer des charges
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8555770721a1c00f40ca66a6f7c65adc635cec59
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 866c269257581ab99d70fc0eb6296963edd154f2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357235"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995699"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Commencer un parcours de migration vers le cloud dans Azure
 
@@ -77,7 +77,7 @@ La stratégie et la planification cloud correspondent à une méthodologie qui m
 
 La méthodologie relative à la stratégie et la planification cloud du Framework d’adoption du cloud repose sur une approche incrémentielle de l’implémentation cloud qui s’aligne sur les stratégies technologiques agiles, une maturité culturelle basée sur le désir de croissance et les stratégies axées sur les résultats opérationnels. Cette méthodologie comprend les composants généraux suivants qui guident l’implémentation de chaque stratégie.
 
-Comme illustré dans l’image ci-dessus, ce framework aligne les décisions stratégiques sur un petit nombre de processus contenus, qui fonctionnent dans un modèle itératif. Bien qu’ils soient décrits dans un document linéaire, chacun des processus suivants est censé arriver à maturité parallèlement aux itérations de l’implémentation cloud. Les liens de chaque processus vont permettre de définir l’état final et les moyens d’évoluer vers l’état final souhaité :
+Comme illustré dans l’image ci-dessus, ce framework aligne les décisions stratégiques sur un petit nombre de processus contenus qui fonctionnent dans un modèle itératif. Bien qu’ils soient décrits dans un document linéaire, chacun des processus suivants est censé arriver à maturité parallèlement aux itérations de l’implémentation cloud. Les liens de chaque processus vont permettre de définir l’état final et les moyens d’évoluer vers l’état final souhaité :
 
 - **[Planification](../strategy/index.md) :** Quand l’implémentation technique est alignée sur des objectifs stratégiques clairs, il est beaucoup plus facile de mesurer et d’aligner la réussite de ces objectifs sur plusieurs efforts d’implémentation cloud, quelles que soient les décisions techniques.
 - **[Prêt](../ready/index.md) :** La préparation de l’entreprise, de la culture, des personnes et de l’environnement aux changements à venir contribue au succès de chaque effort et accélère les projets d’implémentation et de changement.

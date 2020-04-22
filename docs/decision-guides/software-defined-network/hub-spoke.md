@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour découv
 author: rotycenh
 ms.author: abuck
 ms.date: 02/11/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a52615d5b43f7fdd196bcfd473c1aa3fe43d005
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 36c9b9cc749f1feddff64c64717849fe5dfbe3b9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225783"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996109"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>SDN (Software Defined Network) : Hub-and-spoke
 
@@ -26,7 +26,7 @@ L’intégralité du trafic qui entre ou sort des réseaux spoke pour la charge 
 Ce modèle vise à résoudre chacun des problèmes suivants :
 
 - **Réduction des coûts et amélioration de la gestion**. En centralisant les services qui peuvent être partagés par plusieurs charges de travail (comme les appliances virtuelles réseau et les serveurs DNS) en un seul endroit, le service informatique est capable de réduire la redondance des ressources et les efforts de gestion sur plusieurs charges de travail.
-- **Dépassement des limites des abonnements**. Pour exécuter les charges de travail volumineuses dans le cloud, il se peut que vous ayez besoin d’utiliser davantage de ressources que le quota autorisé par un abonnement Azure unique (consultez les [limites d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits)). Vous avez la possibilité de dépasser ces limites en effectuant le peering des réseaux virtuels de charge de travail issus de différents abonnements à un hub central.
+- **Dépassement des limites de l’abonnement**. Pour exécuter les charges de travail informatiques volumineuses, il se peut que vous ayez besoin d’utiliser davantage de ressources que le quota autorisé par un seul abonnement Azure. Vous avez la possibilité de dépasser ces limites en effectuant le peering des réseaux virtuels de charge de travail issus de différents abonnements à un hub central. Pour plus d’informations, consultez [Limites de mise en réseau d’Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits).
 - **Séparation des problèmes.** Vous avez la possibilité de déployer des charges de travail individuelles entre les équipes informatiques centrales et celles dédiées aux charges de travail.
 
 Le schéma suivant présente un exemple d’architecture hub-and-spoke comprenant une connectivité hybride centralisée.

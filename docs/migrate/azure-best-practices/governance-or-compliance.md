@@ -4,15 +4,15 @@ description: Stratégie de gouvernance ou de conformité
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0526b85e52e203163942050716e5cabd4fc84ff3
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 35e7f2a09dd1421f0d57808658a96135dcf8e947
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355565"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997599"
 ---
 # <a name="governance-or-compliance-strategy"></a>Stratégie de gouvernance ou de conformité
 
@@ -28,7 +28,7 @@ La configuration de l’environnement Azure de base peut changer considérableme
 
 **Approche de gouvernance courante :** Pour la plupart des organisations, le [modèle de gouvernance du Framework d’adoption du cloud](../../govern/guides/index.md) est une approche suffisante qui consiste implémenter un produit minimum viable (MVP), suivi d’itérations ciblées de la maturité de gouvernance pour traiter les risques tangibles identifiés dans le plan d’adoption. Cette approche fournit le minimum d’outils nécessaire pour établir une gouvernance cohérente, de sorte que l’équipe puisse comprendre les outils. Elle développe ensuite ces outils pour résoudre les préoccupations courantes de gouvernance.
 
-**Blueprints de conformité ISO 27001 :** Pour les clients qui doivent adhérer aux normes de conformité ISO, les [exemples de blueprint de services partagés ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) peuvent servir de MVP plus efficace pour produire des contraintes de gouvernance plus riches plus tôt dans le processus itératif. L’[exemple App Service Environment/SQL Database ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) se développe sur le blueprint pour mapper les contrôles et déployer une architecture commune pour un environnement d’application. Des blueprints de conformité supplémentaires seront référencés ici à mesure de leur publication.
+**Blueprints de conformité ISO 27001 :** Pour les clients qui doivent adhérer aux normes de conformité ISO, les [exemples de blueprint de services partagés ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared) peuvent servir de MVP plus efficace pour produire des contraintes de gouvernance plus riches plus tôt dans le processus itératif. L’[exemple App Service Environment/SQL Database ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) se développe sur le blueprint pour mapper les contrôles et déployer une architecture commune pour un environnement d’application. Des blueprints de conformité supplémentaires seront référencés ici à mesure de leur publication.
 
 **Centre de données virtuel :** Un point de départ de gouvernance plus robuste peut être nécessaire. Dans de tels cas, examinez le [Centre de données virtuel (VDC) Azure](../../reference/vdc.md). Cette approche est généralement conseillée lors d’un projet d’adoption à l’échelle de l’entreprise, en particulier si ce projet dépasse 10 000 ressources. C’est également la meilleure option pour les scénarios de gouvernance complexes lorsqu’une des conditions suivantes est requise : exigences de conformité étendues de la part de tiers, expertise approfondie du domaine, ou parité avec des stratégies de gouvernance et des exigences de conformité informatique éprouvées.
 
@@ -68,7 +68,7 @@ Au cours de ce processus, le plan du projet doit inclure du temps alloué à l�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-En guise d’élément final sur la [check-list d’expansion d’étendue](./index.md), revenez à la check-list et réévaluez les exigences d’étendue supplémentaires pour l’effort de migration.
+En guise d’élément final sur la [check-list des meilleures pratiques de migration](./index.md), revenez à la check-list et réévaluez les exigences d’étendue supplémentaires pour l’effort de migration.
 
 > [!div class="nextstepaction"]
-> [Check-list d’expansion d’étendue](./index.md)
+> [Check-list des meilleures pratiques de migration](./index.md)

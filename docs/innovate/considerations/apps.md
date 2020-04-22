@@ -4,15 +4,15 @@ description: Découvrez comment créer des solutions d’application pour modele
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c482c6a9642e1de3f28bbe650da6fa43cf9229be
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356769"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120507"
 ---
 # <a name="engage-through-applications"></a>Impliquer par le biais d’applications
 
@@ -35,7 +35,7 @@ Dans une perspective d’innovation, tout développement d’application doit co
 
 Les développeurs professionnels représentent un composant vital de l’innovation. Quand une hypothèse se révèle exacte à grande échelle, les développeurs professionnels doivent stabiliser la solution et la préparer en vue d’un développement à grande échelle. La plupart des principes auxquels cet article fait référence nécessitent un support de la part de développeurs professionnels. Malheureusement, les tendances actuelles suggèrent qu’il y a une demande de développeurs professionnels dépassant le nombre de développeurs disponibles. En outre, quand un développement professionnel est nécessaire, le coût et le rythme de l’innovation peuvent se révéler moins favorables. En réponse à ces défis, les développeurs citoyens offrent un moyen d’adapter les efforts de développement et d’accélérer les premiers tests d’hypothèse.
 
-L’utilisation de développeurs citoyens peut être une approche viable et efficace quand les premières hypothèses peuvent être validées à l’aide d’outils tels que [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) pour les interfaces d’application, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) pour les processus et les prédictions, [Microsoft Flow](https://docs.microsoft.com/flow) pour les workflows et [Power BI](https://docs.microsoft.com/power-bi) pour la consommation de données.
+L’utilisation de développeurs citoyens peut être une approche viable et efficace quand les premières hypothèses peuvent être validées à l’aide d’outils tels que [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) pour les interfaces d’application, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) pour les processus et les prédictions, [Microsoft Power Automate](https://docs.microsoft.com/power-automate) pour les workflows et [Power BI](https://docs.microsoft.com/power-bi) pour la consommation de données.
 
 > [!NOTE]
 > Quand vous vous appuyez sur des développeurs citoyens pour tester les hypothèses, il est recommandé d’obtenir un support, une revue et de l’aide auprès de développeurs professionnels. Une fois qu’une hypothèse est validée à grande échelle, un processus de transition de l’application vers un modèle de programmation plus robuste accélère les retours sur l’innovation. L’implication de développeurs professionnels dès les premières définitions de processus peut conduire à des transitions plus fluides par la suite.
@@ -103,7 +103,7 @@ Si vous essayez de mettre à l’échelle ou de répondre à une demande mondial
 
 Plus il y a de composants à gérer dans une solution, plus l’itération de la solution sera lente. Cela signifie que vous pouvez accélérer l’innovation en réduisant l’impact des opérations sur la bande passante disponible.
 
-Pour préparer les nombreuses itérations nécessaires à la fourniture d’une solution innovante, il est important de réfléchir à l’avance. Par exemple, minimisez les charges opérationnelles au début du processus en privilégiant les options serverless. Dans Azure, [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) et les [conteneurs](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql) peuvent représenter des options d’application serverless.
+Pour préparer les nombreuses itérations nécessaires à la fourniture d’une solution innovante, il est important de réfléchir à l’avance. Par exemple, minimisez les charges opérationnelles au début du processus en privilégiant les options serverless. Dans Azure, [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) et les [conteneurs](https://docs.microsoft.com/azure/containers) peuvent représenter des options d’application serverless.
 
 En parallèle, Azure fournit des options de données de transaction serverless qui réduisent également la surcharge. Le [catalogue de produits Azure](https://docs.microsoft.com/azure) fournit des options de base de données qui hébergent des données sans avoir besoin d’une plateforme de données complète.
 

@@ -4,15 +4,15 @@ description: Découvrez le processus de démocratisation, qui consiste à mettre
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1ee86c13d94f62770e21e3a8208e9c0695725ba5
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 878127e904adb28b873f642bb7d8ef152d7e63ff
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170220"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997192"
 ---
 # <a name="democratize-data"></a>Démocratiser les données
 
@@ -43,7 +43,7 @@ Les principaux outils permettant de partager des données directement avec les c
 
 Le partage de données peut rapidement produire un PMV utilisable dans le cadre des conversations avec les clients. Toutefois, pour transformer ces données partagées en connaissances utiles et exploitables, il en faut généralement un peu plus. Une fois qu'une hypothèse a été validée par le partage des données, la phase suivante du développement est généralement la gouvernance des données.
 
-La gouvernance des données est un vaste sujet qui pourrait nécessiter son propre cadre dédié. Ce degré de granularité dépasse la portée du [Framework d'adoption du cloud](../../index.md). Toutefois, certains aspects de la gouvernance des données doivent être pris en compte dès que l'hypothèse du client est validée. Par exemple :
+La gouvernance des données est un vaste sujet qui pourrait nécessiter son propre framework. Ce degré de granularité dépasse la portée du [Framework d'adoption du cloud](../../index.md). Toutefois, certains aspects de la gouvernance des données doivent être pris en compte dès que l'hypothèse du client est validée. Par exemple :
 
 - **Les données partagées sont-elles sensibles ?** [Les données doivent être classées secrètes](../../govern/policy-compliance/data-classification.md) avant d’être partagées publiquement afin de protéger les intérêts des clients et de l’entreprise.
 - **Si les données sont sensibles, ont-elles été sécurisées ?** La protection des données sensibles doit être obligatoire pour toutes les données démocratisées. L’exemple de la charge de travail axée sur la [sécurisation des solutions de données](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) fournit quelques références relatives à la sécurisation des données.

@@ -3,16 +3,16 @@ title: Conception et opérations de cluster
 description: Apprenez-en davantage sur Kubernetes dans le Cloud Adoption Framework pour la conception et les opérations de cluster.
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 12/16/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392732"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527177"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -77,5 +77,5 @@ Maintenant que l’application est en production, comment faire pour optimiser v
 > | Liste de contrôle  | Ressources |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Mettez automatiquement à l’échelle un cluster pour répondre aux demandes applicatives.** Pour suivre le rythme des demandes de l’application, vous devrez peut-être ajuster le nombre de nœuds qui exécutent vos charges de travail automatiquement à l’aide du programme de mise à l’échelle automatique de cluster. | [Configurer le programme de mise à l’échelle automatique de cluster Kubernetes](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
-> | **Planifiez la continuité d’activité et la reprise d’activité.** Planifiez le déploiement multirégion, créez un plan de migration de stockage, et activez la géoréplication pour les images conteneur. | [Bonnes pratiques pour les déploiements multirégions](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Géoréplication Azure Container Registry](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
+> | **Planifiez la continuité d’activité et la reprise d’activité.** Planifiez le déploiement multirégion, créez un plan de migration de stockage, et activez la géoréplication pour les images conteneur. | [Meilleures pratiques pour les déploiements dans les régions](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Géoréplication Azure Container Registry](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
 > | **Configurez la supervision et le dépannage à grande échelle.** Configurez les alertes et la supervision des applications dans Kubernetes. Découvrez la configuration par défaut, comment intégrer des métriques plus sophistiquées, et comment ajouter vos propres fonctions personnalisées de supervision et d’alerte pour faire fonctionner votre application de manière fiable. | [Bien démarrer avec la supervision et les alertes pour Kubernetes (vidéo)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Configurer des alertes à l’aide d’Azure Monitor pour les conteneurs](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Examiner les journaux de diagnostic pour les composants principaux](https://docs.microsoft.com/azure/aks/view-master-logs) <br/> [Diagnostics Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |

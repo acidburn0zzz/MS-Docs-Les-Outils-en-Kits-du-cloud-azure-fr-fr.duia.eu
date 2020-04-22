@@ -4,15 +4,15 @@ description: Découvrez comment évaluer et optimiser vos ressources cloud pour 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b0b49d2785de8cee4c08395f6a2893436fd0aa9e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: c7d375ed8d4d126cfb38b4cd2fde30b1d36526a6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092777"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995131"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Évaluer et redimensionner les ressources cloud
 
@@ -35,7 +35,7 @@ Pendant la migration, utilisez des hypothèses et expérimentez le dimensionneme
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Évaluation et optimisation avec Azure Cost Management
 
-[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview), concédé sous licence par Cloudyn, une filiale Microsoft, gère les dépenses cloud avec transparence et précision. Ce service analyse, évalue, alloue et optimise les coûts du cloud.
+[Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) gère les dépenses cloud avec transparence et précision. Ce service analyse, évalue, alloue et optimise les coûts du cloud.
 
 Les données d’historique peuvent aider à gérer les coûts en analysant l’utilisation et les coûts dans le temps pour identifier les tendances, qui sont ensuite utilisées pour prévoir les dépenses futures. La gestion des coûts propose aussi des rapports d’estimation des coûts très utiles. La répartition des coûts permet de gérer les coûts en analysant les coûts en fonction des stratégies de balisage. La répartition des coûts dans la rétrofacturation et la facturation interne met en évidence l’utilisation des ressources et les coûts associés dans le but d’influencer les comportements de consommation ou de facturer les clients du locataire. Le contrôle d’accès facilite la gestion des coûts en autorisant les utilisateurs et les équipes à accéder uniquement aux données de gestion des coûts dont ils ont besoin. La gestion des coûts est aussi facilitée par les alertes, qui vous avertissent automatiquement en cas de dépenses inhabituelles ou excessives. Les alertes peuvent aussi être envoyées automatiquement à d’autres parties prenantes en cas d’anomalies de dépenses et de risques de dépenses excessives. Plusieurs rapports prennent en charge les alertes basées sur les seuils budgétaires et de coûts.
 

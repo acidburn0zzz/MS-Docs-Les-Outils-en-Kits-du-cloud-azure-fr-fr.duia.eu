@@ -4,16 +4,16 @@ description: Utilisez une approche de gouvernance incrémentielle basée sur un 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 2738d623e863ae78903d3f20d60561349ef0d21e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709088"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997418"
 ---
 # <a name="cloud-governance-methodology"></a>Méthodologie de gouvernance cloud
 

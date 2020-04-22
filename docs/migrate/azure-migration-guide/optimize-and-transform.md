@@ -4,21 +4,21 @@ description: Découvrez comment passer en revue la solution pour rechercher d’
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: eff32a369c55011cea8fb8ace2e7bfae28680eda
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8ac8887f849704610822429a2b5e49833a78487c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353865"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119724"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
-# <a name="test-optimize-and-promote"></a>Tester, optimiser et promouvoir
+# <a name="release-workloads-test-optimize-and-handoff"></a>Mettre en production les charges de travail (tester, optimiser et transfert)
 
 Maintenant que vous avez migré vos services vers Azure, la phase suivante consiste à passer en revue la solution pour rechercher les domaines d’optimisation possibles. Cet effort peut comprendre la révision de la conception de la solution, le redimensionnement des services et l’analyse des coûts.
 

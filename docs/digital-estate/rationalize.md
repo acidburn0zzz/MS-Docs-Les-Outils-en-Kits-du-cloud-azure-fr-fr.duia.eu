@@ -4,16 +4,16 @@ description: La rationalisation du cloud vise à évaluer les ressources numéri
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 042487ce2c579f581547e4942785cbbba659ad5e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 70b4d0ee295f06db68090551fac02fd205111c60
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357274"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995716"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 
@@ -143,7 +143,7 @@ Les équipes chargées de l’adoption du cloud et l’équipe de stratégie clo
 
 Une fois que les deux équipes sont d’accord sur les critères d’analyse qualitative, l’évaluation peut devenir une tâche au sein de chaque itération. En général, deux ou trois mises en production sont nécessaires pour atteindre un consensus sur les critères d’évaluation.
 
-Une fois que l’évaluation est déplacée vers les processus d’exécution incrémentielle de la migration, l’équipe chargée de l’adoption du cloud peut reproduire l’évaluation et l’architecture plus rapidement. À ce stade, l’équipe de stratégie cloud n’est plus impliquée, ce qui allège sa charge de travail. Elle peut également se concentrer sur la priorité des applications qui ne sont pas encore en production, ce qui permet un bon alignement sur les conditions fluctuantes du marché.
+Une fois que l’évaluation est déplacée vers les processus d’exécution incrémentielle de la migration, l’équipe chargée de l’adoption du cloud peut reproduire l’évaluation et l’architecture plus rapidement. À ce stade, l’équipe des stratégies cloud n’est plus impliquée, ce qui lui évite de perdre du temps. Elle peut également se concentrer sur la priorité des applications qui ne sont pas encore en production, permettant ainsi un bon alignement sur les conditions fluctuantes du marché.
 
 Toutes les applications classées par ordre de priorité ne seront pas prêtes pour la migration. L’ordre de priorité est susceptible de changer une analyse qualitative plus approfondie ayant mis en lumière des événements commerciaux et des dépendances nécessitant un chargement de priorité du backlog. Certaines mises en production peuvent regrouper un petit nombre de charges de travail. D’autres peuvent ne contenir qu’une seule charge de travail.
 

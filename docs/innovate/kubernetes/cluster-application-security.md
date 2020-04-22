@@ -3,16 +3,16 @@ title: Sécurité des clusters et des applications
 description: Apprenez-en davantage sur Kubernetes dans le Cloud Adoption Framework pour la sécurité des clusters et des applications.
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 03/20/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 64a7f4097a75b54ef4f91b5889fa31fc3b98d61a
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: c7d27fb64e03358876eb8384c09e3add5f5c433e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392745"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527239"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -60,7 +60,7 @@ Lors de la préparation de l’application pour la production, vous devez implé
 > | **Sécurisez le trafic réseau entre les pods avec des stratégies réseau.** Appliquez le principe du privilège minimum pour contrôler le flux du trafic réseau entre les pods du cluster. | [Sécuriser le trafic entre les pods avec des stratégies réseau](https://docs.microsoft.com/azure/aks/use-network-policies) |
 > | **Limitez l’accès au serveur d’API à l’aide d’adresses IP autorisées.** Améliorez la sécurité du cluster et réduisez la surface d’attaque en limitant l’accès au serveur d’API à un ensemble limité de plages d’adresses IP. | [Sécuriser l’accès au serveur d’API](https://docs.microsoft.com/azure/aks/api-server-authorized-ip-ranges) |
 > | **Limitez le trafic de sortie du cluster.** Découvrez les ports et adresses à autoriser pour limiter le trafic de sortie du cluster. Vous pouvez utiliser le Pare-feu Azure ou une appliance de pare-feu tierce pour sécuriser votre trafic de sortie et définir ces ports et adresses requis. | [Contrôler le trafic de sortie pour les nœuds de cluster dans AKS](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
-> | **Sécurisez le trafic avec un pare-feu d’applications web (WAF).** Tirez parti d’Azure Application Gateway comme contrôleur d’entrée pour les clusters Kubernetes.  | [Configurer Azure Application Gateway comme contrôleur d’entrée](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
+> | **Sécurisez le trafic avec un pare-feu d’applications web (WAF).** Utilisez Azure Application Gateway comme contrôleur d’entrée pour les clusters Kubernetes.  | [Configurer Azure Application Gateway comme contrôleur d’entrée](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **Appliquez des mises à jour de sécurité et de noyau aux nœuds Worker.** Familiarisez-vous avec l’expérience de mise à jour des nœuds AKS Pour protéger vos clusters, les mises à jour de sécurité sont appliquées automatiquement aux nœuds Linux dans AKS. Ces mises à jour incluent des correctifs de sécurité ou des mises à jour du noyau. Certaines de ces mises à jour nécessitent un redémarrage du nœud pour terminer le processus. | [Utiliser kured afin de redémarrer automatiquement les nœuds pour appliquer les mises à jour](https://docs.microsoft.com/azure/aks/node-updates-kured) |
 > | **Configurez une solution d’analyse de conteneur et de cluster.** Analysez les conteneurs envoyés dans Azure Container Registry et obtenez une visibilité accrue des nœuds de cluster, du trafic cloud et des contrôles de sécurité. | [Intégration d’Azure Container Registry avec Security Center](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Intégration d’Azure Kubernetes Service à Security Center](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 

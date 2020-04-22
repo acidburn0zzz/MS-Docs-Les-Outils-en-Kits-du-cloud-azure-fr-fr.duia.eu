@@ -3,19 +3,19 @@ title: Migrer une application vers Azure App Service et SQL Database
 description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à refactoriser une application en la migrant vers Azure App Service et Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 04/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: site-recovery
-ms.openlocfilehash: 86a7dc6a0754ece24c8d18dca847bde0e93b5345
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+services: azure-migrate
+ms.openlocfilehash: ed5c0edf9ad7132c51311641d054bcfa9d9b0315
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311997"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997055"
 ---
-<!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
+<!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refactoriser une application locale vers une application web Azure App Service et une base de données Azure SQL
 
@@ -41,8 +41,8 @@ L’équipe cloud de Contoso a épinglé les objectifs de cette migration. Ces o
 
 **Configuration requise** | **Détails**
 --- | ---
-**Application** | L’application dans Azure restera aussi critique qu’aujourd’hui.<br/><br/> Elle doit offrir le même niveau de performance qu’actuellement dans VMware.<br/><br/> L’équipe ne souhaite pas investir dans l’application. Pour l’instant, les administrateurs veulent simplement déplacer l’application de façon sécurisée vers le cloud.<br/><br/> L’équipe veut cesser de prendre en charge Windows Server 2008 R2, sur lequel l’application s’exécute actuellement.<br/><br/> L’équipe veut aussi passer de SQL Server 2008 R2 à une plateforme de base de données PaaS moderne, de façon à réduire les tâches de gestion.<br/><br/> Contoso souhaite tirer parti autant que possible de son investissement dans les licences SQL Server et dans Software Assurance.<br/><br/> En outre, Contoso veut limiter les risques liés à un point de défaillance unique sur le niveau web.
-**Limitations** | L’application consiste en une application ASP.NET et un service WCF (Windows Communication Foundation) s’exécutant sur la même machine virtuelle. Ils veulent fractionner cela en deux applications web utilisant Azure App Service.
+**Application** | L’application dans Azure restera aussi critique qu’aujourd’hui.<br/><br/> Elle doit offrir le même niveau de performance qu’actuellement dans VMware.<br/><br/> L’équipe ne souhaite pas investir dans l’application. Pour l’instant, les administrateurs veulent déplacer l’application de façon sécurisée vers le cloud.<br/><br/> L’équipe veut cesser de prendre en charge Windows Server 2008 R2, sur lequel l’application s’exécute actuellement.<br/><br/> L’équipe veut aussi passer de SQL Server 2008 R2 à une plateforme de base de données PaaS moderne, de façon à réduire les tâches de gestion.<br/><br/> Contoso souhaite tirer parti autant que possible de son investissement dans les licences SQL Server et dans Software Assurance.<br/><br/> En outre, Contoso veut limiter les risques liés à un point de défaillance unique sur le niveau web.
+**Limitations** | L’application consiste en une application ASP.NET et un service WCF (Windows Communication Foundation) s’exécutant sur la même machine virtuelle. Ils veulent répartir ces composants dans deux applications web avec Azure App Service.
 **Microsoft Azure** | Contoso veut déplacer l’application vers Azure, mais ne veut pas l’exécuter sur des machines virtuelles. Contoso veut utiliser des services PaaS d’Azure pour les couches Web et Données.
 **DevOps** | Contoso veut passer à un modèle DevOps, en utilisant Azure DevOps pour les builds et les pipelines de mise en production.
 
@@ -64,7 +64,8 @@ Après avoir défini précisément les objectifs et exigences, Contoso conçoit 
 
 - Pour la couche Base de données de l’application, Contoso a comparé Azure SQL Database à SQL Server en se basant sur [cet article](https://docs.microsoft.com/azure/sql-database/sql-database-features). Contoso a choisi d’utiliser Azure SQL Database pour plusieurs raisons :
   - Azure SQL Database est un service managé de base de données relationnelle. Il offre des performances prévisibles à plusieurs niveaux de service, et ne nécessite pratiquement aucune administration. Ses avantages sont une extensibilité dynamique sans aucun temps d’arrêt, une optimisation intelligente intégrée, ainsi qu’une scalabilité et une disponibilité globales.
-  - Contoso peut utiliser l’Assistant Migration de données (DMA) facile d’utilisation pour évaluer et migrer la base de données locale vers SQL Azure.
+  - Contoso peut utiliser l’Assistant Migration de données (DMA) facile d’utilisation pour évaluer la base de données locale vers SQL Azure.
+  - Contoso peut utiliser Azure Database Migration Service (DMS) pour migrer les bases de données locales vers Azure SQL.
   - Grâce à Software Assurance, Contoso peut échanger les licences existantes contre des réductions de tarif sur SQL Database, en utilisant Azure Hybrid Benefit pour SQL Server. Cela pourrait leur permettre de réaliser jusqu’à 30 % d’économies.
   - Azure SQL Database fournit des fonctionnalités de sécurité, telles que le chiffrement permanent, le masquage dynamique des données, la sécurité au niveau des lignes et la détection des menaces.
 - Pour le niveau web de l’application, Contoso a décidé d’utiliser Azure App Service. Ce service PaaS permet de déployer l’application avec seulement quelques changements de configuration. Contoso utilisera Visual Studio pour apporter les modifications et déployer deux applications web. L’une pour le site web, et l’autre pour le service WCF.
@@ -78,27 +79,28 @@ Contoso évalue la conception proposée en dressant une liste des avantages et d
 
 **Considération** | **Détails**
 --- | ---
-**Avantages** | Le code de l’application SmartHotel360 ne nécessite pas de modification avant sa migration vers Azure.<br/><br/> Contoso peut tirer parti de son investissement dans Software Assurance en utilisant Azure Hybrid Benefit tant pour SQL Server que pour Windows Server.<br/><br/> Après la migration, Windows Server 2008 R2 ne devra plus être pris en charge. [Plus d’informations](https://support.microsoft.com/lifecycle)<br/><br/> Contoso peut configurer la couche web de l’application avec plusieurs instances, pour qu’elle ne constitue plus un point de défaillance unique.<br/><br/> La base de données ne dépendra plus de SQL Server 2008 R2, qui est une version déjà ancienne.<br/><br/> SQL Database répond aux exigences techniques. Contoso a évalué la base de données locale à l’aide de l’Assistant Migration de données et a établit qu’elle était compatible.<br/><br/> Azure SQL Database intègre une tolérance de panne que Contoso n’aura pas à configurer. Cela signifie que la couche Données n’est plus un point de basculement unique.
-**Inconvénients** | Azure App Service ne prend en charge le déploiement que d’une seule application pour chaque application web. Cela signifie que deux applications web doivent être approvisionnées (l’une pour le site web et l’autre pour le service WCF).<br/><br/> Si Contoso utilise l’Assistant Migration de données au lieu d’Azure Database Migration Service pour migrer sa base de données, elle ne disposera pas d’une infrastructure prête pour la migration de bases de données à l’échelle. Contoso devra créer une autre région pour garantir le basculement en cas d’indisponibilité de la région principale.
+**Avantages** | Le code de l’application SmartHotel360 ne nécessite pas de modification avant sa migration vers Azure.<br/><br/> Contoso peut tirer parti de son investissement dans Software Assurance en utilisant Azure Hybrid Benefit tant pour SQL Server que pour Windows Server.<br/><br/> Après la migration, Windows Server 2008 R2 ne devra plus être pris en charge. Pour plus d’informations, consultez [Stratégie de cycle de vie Microsoft](https://aka.ms/lifecycle).<br/><br/> Contoso peut configurer la couche web de l’application avec plusieurs instances, pour qu’elle ne constitue plus un point de défaillance unique.<br/><br/> La base de données ne dépendra plus de SQL Server 2008 R2, qui est une version déjà ancienne.<br/><br/> SQL Database répond aux exigences techniques. Contoso a évalué la base de données locale à l’aide de l’Assistant Migration de données et a établit qu’elle était compatible.<br/><br/> Azure SQL Database intègre une tolérance de panne que Contoso n’a pas besoin de configurer. Cela signifie que la couche Données n’est plus un point de basculement unique.<br/><br/> Si Contoso utilise Azure Database Migration Service pour migrer sa base de données, elle ne disposera pas d’une infrastructure prête pour la migration de bases de données à l’échelle.
+**Inconvénients** | Azure App Service ne prend en charge le déploiement que d’une seule application pour chaque application web. Cela signifie que deux applications web doivent être approvisionnées (l’une pour le site web et l’autre pour le service WCF).<br/><br/>
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="proposed-architecture"></a>Architecture proposée
 
-![Architecture du scénario](media/contoso-migration-refactor-web-app-sql/architecture.png)
+![Architecture du scénario](./media/contoso-migration-refactor-web-app-sql/architecture.png)
 
 ### <a name="migration-process"></a>Processus de migration
 
-1. Contoso provisionne une instance SQL Azure et y migre la base de données SmartHotel360.
+1. Contoso provisionne une instance SQL Azure et y migre la base de données SmartHotel360 avec Azure Database Migration Service (DMS).
 2. Contoso approvisionne et configure des applications web et y déploie l’application SmartHotel360.
 
-    ![Processus de migration](media/contoso-migration-refactor-web-app-sql/migration-process.png)
+    ![Processus de migration](./media/contoso-migration-refactor-web-app-sql/migration-process.png)
 
 ### <a name="azure-services"></a>Services Azure
 
 **Service** | **Description** | **Coût**
 --- | --- | ---
 [Assistant Migration de données (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso utilisera DMA pour évaluer et détecter les problèmes de compatibilité susceptibles de perturber les fonctionnalités de sa base de données dans Azure. DMA évalue la parité des fonctionnalités entre SQL sources et cibles, et recommande des améliorations des performances et de la fiabilité. | Cet outil est téléchargeable gratuitement.
+[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service permet une migration fluide à partir de plusieurs sources de base de données vers des plateformes de données Azure, avec un temps d’arrêt minimal. | Apprenez-en davantage sur les [régions prises en charge](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) et sur la [tarification de Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | Service de base de données cloud relationnelle entièrement managé et intelligent. | Coût en fonction des fonctionnalités, du débit et de la taille. [Plus d’informations](https://azure.microsoft.com/pricing/details/sql-database/managed)
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Créez des applications cloud performantes en utilisant une plateforme entièrement gérée. | Coût en fonction de la taille, de l’emplacement et de la durée d’utilisation. [Plus d’informations](https://azure.microsoft.com/pricing/details/app-service/windows)
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Fournit un pipeline d’intégration et de déploiement continus (CI/CD) pour le développement d’applications. Le pipeline démarre avec un dépôt Git pour la gestion du code de l’application, un système de build pour la production de packages et d’autres artefacts de build, et un système Release Management pour le déploiement de modifications sur les environnements de production, de test et de développement.
@@ -123,7 +125,7 @@ Voici comment Contoso exécutera la migration :
 > [!div class="checklist"]
 >
 > - **Étape 1 : Approvisionner une instance SQL Database dans Azure.** Contoso approvisionne une instance SQL dans Azure. Une fois le site web de l’application migré vers Azure, l’application web du service WCF pointe sur cette instance.
-> - **Étape 2 : Migrer la base de données avec DMA.** Contoso migre la base de données de l’application à l’aide de l’Assistant Migration de données.
+> - **Étape 2 : Évaluer la base de données avec Azure Database Assistant Migration (DMA) et migrer le service DMS (Database Migration Service).** Contoso évalue la base de données pour la migration, puis migre la base de données d’application avec le service Azure Data Migration Service.
 > - **Étape 3 : Approvisionner des applications web.** Contoso provisionne les deux applications web.
 > - **Étape 4 : Configurer Azure DevOps.** Contoso crée un projet Azure DevOps et importe le dépôt Git.
 > - **Étape 5 : Configurer des chaînes de connexion.** Contoso configure les chaînes de connexion afin que l’application web du niveau web, l’application web du service WCF et l’instance SQL puissent communiquer.
@@ -133,82 +135,52 @@ Voici comment Contoso exécutera la migration :
 
 1. Les administrateurs Contoso choisissent de créer une base de données SQL Database dans Azure.
 
-    ![Provisionner SQL](media/contoso-migration-refactor-web-app-sql/provision-sql1.png)
+    ![Provisionner SQL](./media/contoso-migration-refactor-web-app-sql/provision-sql1.png)
 
 2. Ils spécifient un nom de base de données correspondant à la base de données en cours d’exécution sur la machine virtuelle locale (**SmartHotel.Registration**). Ils placent la base de données dans le groupe de ressources ContosoRG. Il s’agit du groupe de ressources qu’ils utilisent pour les ressources de production dans Azure.
 
-    ![Provisionner SQL](media/contoso-migration-refactor-web-app-sql/provision-sql2.png)
+    ![Provisionner SQL](./media/contoso-migration-refactor-web-app-sql/provision-sql2.png)
 
 3. Ils configurent une nouvelle instance de SQL Server (**sql-smarthotel-eus2**) dans la région primaire.
 
-    ![Provisionner SQL](media/contoso-migration-refactor-web-app-sql/provision-sql3.png)
+    ![Provisionner SQL](./media/contoso-migration-refactor-web-app-sql/provision-sql3.png)
 
 4. Ils définissent le niveau tarifaire pour qu’il corresponde à leurs besoins en matière de serveur et de base de données. Et ils choisissent d’économiser de l’argent avec Azure Hybrid Benefit, car ils ont déjà une licence SQL Server.
-5. Pour le dimensionnement, ils utilisent un achat basé sur v-Core, et définissent les limites de leurs exigences attendues.
+5. Pour le dimensionnement, ils utilisent un achat basé sur vCore, et définissent les limites de leurs exigences attendues.
 
-    ![Provisionner SQL](media/contoso-migration-refactor-web-app-sql/provision-sql4.png)
+    ![Provisionner SQL](./media/contoso-migration-refactor-web-app-sql/provision-sql4.png)
 
 6. Ils créent ensuite l’instance de base de données.
 
-    ![Provisionner SQL](media/contoso-migration-refactor-web-app-sql/provision-sql5.png)
+    ![Provisionner SQL](./media/contoso-migration-refactor-web-app-sql/provision-sql5.png)
 
 7. Une fois l’instance créée, ils ouvrent la base de données et notent les informations dont ils auront besoin quand ils utiliseront l’Assistant Migration de données pour la migration.
 
-    ![Provisionner SQL](media/contoso-migration-refactor-web-app-sql/provision-sql6.png)
+    ![Provisionner SQL](./media/contoso-migration-refactor-web-app-sql/provision-sql6.png)
 
 **Besoin de plus d’aide ?**
 
 - [Obtenir de l’aide](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) pour le provisionnement d’une base de données SQL.
-- [En savoir plus](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) sur les limites de ressources v-Core.
+- [En savoir plus](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) sur les limites de ressources vCore.
 
-## <a name="step-2-migrate-the-database-with-dma"></a>Étape 2 : Migrer la base de données avec le DMA
+## <a name="step-2-assess-the-database-with-database-migration-assistant-dma-and-migrate-with-azure-database-migration-service-dms"></a>Étape 2 : Évaluer la base de données avec l’Assistant Migration de base de données (DMA) et la migrer avec Azure Database Migration Service (DMS)
 
-Les administrateurs Contoso vont migrer la base de données SmartHotel360 avec DMA.
+Les administrateurs Contoso évaluent la base de données à l’aide de l’Assistant Migration de base de données (DMA), puis la migrent à l’aide d’Azure Database Migration Services (DMS) conformément au [tutoriel de migration pas à pas](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online). Ils peuvent effectuer des migrations en ligne, hors connexion et hybrides (préversion).
 
-### <a name="install-dma"></a>Installer DMA
+En résumé, vous devez effectuer les opérations suivantes :
 
-1. Télécharger l’outil à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=53595) sur la machine virtuelle locale SQL Server (**SQLVM**).
-2. Exécuter le programme d’installation (DownloadMigrationAssistant.msi) sur la machine virtuelle.
-3. Dans la page **Terminer**, sélectionner **Lancer l’Assistant Migration de données Microsoft** avant la fin de l’exécution de l’Assistant.
-
-### <a name="migrate-the-database-with-dma"></a>Migrer la base de données avec le DMA
-
-1. Dans DMA, ils créent un projet (**SmartHotelDB**), puis sélectionnent **Migration**.
-2. Ils sélectionnent le type de serveur source **SQL Server** et la cible **Azure SQL Database**.
-
-    ![DMA](media/contoso-migration-refactor-web-app-sql/dma-1.png)
-
-3. Dans les détails de la migration, ils ajoutent **SQLVM** comme serveur source, et la base de données **SmartHotel.Registration**.
-
-     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-2.png)
-
-4. Ils reçoivent un message d’erreur qui semble être associé à l’authentification. Toutefois, après examen, le problème résulte de la présence d’un point (.) dans le nom de la base de données. Pour résoudre ce problème, ils décident de provisionner une nouvelle base de données SQL en utilisant le nom **SmartHotel-Registration**. Quand ils réexécutent DMA, ils peuvent sélectionner **SmartHotel-Registration** et continuer avec l’Assistant.
-
-    ![DMA](media/contoso-migration-refactor-web-app-sql/dma-3.png)
-
-5. Dans **Sélectionner des objets**, ils sélectionnent les tables de base de données et génèrent un script SQL.
-
-    ![DMA](media/contoso-migration-refactor-web-app-sql/dma-4.png)
-
-6. Une fois que DMA a créé le script, ils sélectionnent **Déployer le schéma**.
-
-    ![DMA](media/contoso-migration-refactor-web-app-sql/dma-5.png)
-
-7. DMA vérifie que le déploiement a réussi.
-
-    ![DMA](media/contoso-migration-refactor-web-app-sql/dma-6.png)
-
-8. À présent, ils commencent la migration.
-
-    ![DMA](media/contoso-migration-refactor-web-app-sql/dma-7.png)
-
-9. Une fois la migration terminée, les administrateurs Contoso peuvent vérifier que la base de données est en cours d’exécution sur l’instance SQL Azure.
-
-    ![DMA](media/contoso-migration-refactor-web-app-sql/dma-8.png)
-
-10. Ils suppriment la base de données SQL supplémentaire **SmartHotel.Registration** dans le portail Azure.
-
-    ![DMA](media/contoso-migration-refactor-web-app-sql/dma-9.png)
+- Utiliser l’Assistant Migration de base de données (DMA) pour détecter et résoudre les problèmes de migration de la base de données.
+- Créer un service Azure Database Migration Service (DMS) avec une référence SKU `Premium` connectée au réseau virtuel.
+- Vous assurer que le service Azure Database Migration Service (DMS) peut accéder au SQL Server à distance via le réseau virtuel. Cela implique de s’assurer que tous les ports entrants sont autorisés entre Azure et SQL Server au niveau du réseau virtuel, du VPN réseau et de la machine qui héberge SQL Server.
+- Configurer Azure Database Migration Service :
+  - Créez un projet de migration.
+  - Ajoutez une source (base de données locale).
+  - Sélectionnez une cible.
+  - Sélectionnez la ou les bases de données à migrer.
+  - Configurez les paramètres avancés.
+  - Démarrez la réplication.
+  - Résolvez les erreurs.
+  - Effectuez le dernier basculement.
 
 ## <a name="step-3-provision-web-apps"></a>Étape 3 : Approvisionner des applications web
 
@@ -216,15 +188,15 @@ La base de données étant migrée, les administrateurs Contoso peuvent maintena
 
 1. Ils sélectionnent **Application web** dans le portail.
 
-    ![Application web](media/contoso-migration-refactor-web-app-sql/web-app1.png)
+    ![Application web](./media/contoso-migration-refactor-web-app-sql/web-app1.png)
 
 2. Ils fournissent un nom pour l’application (**SHWEB-EUS2**), exécutent celle-ci sur Windows, puis la placent dans le groupe de ressources de production **ContosoRG**. Ils créent une application web et un plan Azure App Service.
 
-    ![Application web](media/contoso-migration-refactor-web-app-sql/web-app2.png)
+    ![Application web](./media/contoso-migration-refactor-web-app-sql/web-app2.png)
 
 3. Une fois l’application web approvisionnée, ils répètent le processus pour créer une application web pour le service WCF (**SHWCF-EUS2**)
 
-    ![Application web](media/contoso-migration-refactor-web-app-sql/web-app3.png)
+    ![Application web](./media/contoso-migration-refactor-web-app-sql/web-app3.png)
 
 4. Cela fait, ils accèdent à l’adresse des applications pour vérifier si celles-ci ont été correctement créées.
 
@@ -232,11 +204,11 @@ La base de données étant migrée, les administrateurs Contoso peuvent maintena
 
 Contoso doit générer l’infrastructure et les pipelines DevOps pour l’application. Pour cela, les administrateurs Contoso créent un projet DevOps, importent le code, puis configurent les pipelines de build et de mise en production.
 
-1. Dans le compte Azure DevOps de Contoso, ils créent un projet (**ContosoSmartHotelRefactor**), puis sélectionnent **Git** pour la gestion de version.
+1. Dans l’organisation Azure DevOps de Contoso, ils créent un projet (**ContosoSmartHotelRefactor**), puis sélectionnent **Git** pour la gestion de version.
 
     ![Nouveau projet](./media/contoso-migration-refactor-web-app-sql/vsts1.png)
 
-2. Ils importent le dépôt Git qui détient actuellement leur code d’application. Il se trouve dans un [dépôt public](https://github.com/Microsoft/SmartHotel360-internal-booking-apps) que vous pouvez télécharger.
+2. Ils importent le dépôt Git qui détient actuellement leur code d’application. Il se trouve dans un [référentiel GitHub public](https://github.com/Microsoft/SmartHotel360-Registration) que vous pouvez télécharger.
 
     ![Télécharger le code d’application](./media/contoso-migration-refactor-web-app-sql/vsts2.png)
 
@@ -255,15 +227,15 @@ Les administrateurs Contoso doivent faire en sorte que les applications web et l
 1. Dans l’application web pour le service WCF (**SHWCF-EUS2**) > **Paramètres** > **Paramètres de l'application**, ils ajoutent une nouvelle chaîne de connexion nommée **DefaultConnection**.
 2. La chaîne de connexion est extraite de la base de données **SmartHotel-Registration**, et doit être mise à jour avec les informations d’identification correctes.
 
-    ![Chaîne de connexion](media/contoso-migration-refactor-web-app-sql/string1.png)
+    ![Chaîne de connexion](./media/contoso-migration-refactor-web-app-sql/string1.png)
 
 3. Dans Visual Studio, ils ouvrent le projet **SmartHotel.Registration.wcf** à partir du fichier solution. La section **connectionStrings** du fichier web.config pour le service WCF SmartHotel.Registration.Wcf doit être mise à jour avec la chaîne de connexion.
 
-     ![Chaîne de connexion](media/contoso-migration-refactor-web-app-sql/string2.png)
+     ![Chaîne de connexion](./media/contoso-migration-refactor-web-app-sql/string2.png)
 
 4. La section **client** du fichier web.config pour SmartHotel.Registration.Web doit être modifiée de façon à ce qu’elle pointe vers le nouvel emplacement du service WCF. Il s’agit de l’URL de l’application web WCF qui héberge le point de terminaison de service.
 
-    ![Chaîne de connexion](media/contoso-migration-refactor-web-app-sql/strings3.png)
+    ![Chaîne de connexion](./media/contoso-migration-refactor-web-app-sql/strings3.png)
 
 5. Une fois les modifications apportées au code, les administrateurs doivent valider les modifications. À l’aide de Team Explorer dans Visual Studio, ils effectuent la validation et la synchronisation.
 
@@ -322,7 +294,7 @@ Les administrateurs de Contoso configurent maintenant Azure DevOps pour lancer l
 
      ![Build](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
-13. Ils sélectionnent l’éclair qui se trouve sur l’artefact coché pour activer le déclencheur de déploiement continu.
+13. Ils vérifient que l’éclair qui se trouve sur l’artefact est coché pour activer le déclencheur de déploiement continu.
 
      ![Éclair](./media/contoso-migration-refactor-web-app-sql/pipeline13.png)
 
@@ -391,13 +363,13 @@ Avec les ressources migrées dans Azure, Contoso doit rendre sa nouvelle infrast
 - Contoso doit examiner les besoins de sauvegarde de la base de données Azure SQL. [Plus d’informations](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)
 - Contoso doit aussi découvrir comment gérer les sauvegardes et les restaurations de SQL Database. [Découvrez plus d’informations](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) sur les sauvegardes automatiques.
 - Contoso doit envisager d’implémenter des groupes de basculement afin de fournir un basculement régional pour la base de données. [Plus d’informations](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)
-- Pour la résilience de l’application web, Contoso doit envisager son déploiement dans les régions principales USA Est 2 et USA Centre. Contoso peut configurer Traffic Manager pour garantir le basculement en cas de pannes régionales.
+- Pour la résilience de l’application web, Contoso doit envisager son déploiement dans les régions principales USA Est 2 et USA Centre. Contoso peut configurer Traffic Manager pour garantir le basculement pendant les pannes régionales.
 
 ### <a name="licensing-and-cost-optimization"></a>Gestion des licences et optimisation des coûts
 
 - Une fois toutes les ressources déployées, Contoso doit affecter des balises Azure en fonction de la [planification de son infrastructure](./contoso-migration-infrastructure.md#set-up-tagging).
 - Toutes les licences sont intégrées dans le coût des services PaaS que Contoso consomme. Cela sera déduit de l’Accord Entreprise.
-- Contoso va activer Azure Cost Management sous licence de Cloudyn, une filiale de Microsoft. Il s’agit d’une solution de gestion des coûts multicloud qui vous aide à utiliser et à gérer Azure ainsi que d’autres ressources cloud. [En savoir plus](https://docs.microsoft.com/azure/cost-management/overview) sur Azure Cost Management.
+- Contoso utilise [Azure Cost Management](https://azure.microsoft.com/services/cost-management) pour s’assurer qu’ils ne dépassent pas les budgets établis par leur direction informatique.
 
 ## <a name="conclusion"></a>Conclusion
 

@@ -4,16 +4,16 @@ description: Découvrez comment moderniser les stratégies informatiques d’ent
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4235830eee8e57581214f3eabb46c32ebcf975b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 244444057561118c2e3f2b7a574bfdfb529f0978
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709122"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997407"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -23,7 +23,7 @@ Une révision de stratégie cloud constitue la première étape de la [maturité
 
 ## <a name="why-perform-a-cloud-policy-review"></a>Pourquoi procéder à une révision de politique cloud ?
 
-La plupart des entreprises gèrent les services informatiques via l’exécution de processus alignés avec des stratégies directrices. Dans les petites entreprises, ces stratégies peuvent sembler anecdotiques et les processus sont vaguement définis. À mesure qu’une entreprise grandit, les stratégies et les processus ont tendance à être documentés de façon plus précise et exécutés de manière plus cohérente.
+La plupart des entreprises gèrent les services informatiques via l’exécution de processus qui sont alignés avec des stratégies directrices. Dans les petites entreprises, ces stratégies peuvent sembler anecdotiques et les processus sont vaguement définis. À mesure qu’une entreprise grandit, les stratégies et les processus ont tendance à être documentés de façon plus précise et exécutés de manière plus cohérente.
 
 Tandis que les stratégies informatiques d’entreprise gagnent en maturité, les dépendances aux décisions techniques prises par le passé ont tendance à s’infiltrer dans les stratégies directrices. Par exemple, il est courant de voir que les processus de récupération d’urgence incluent une stratégie qui impose des sauvegardes sur bande hors site. Cette inclusion suppose une dépendance à un type de technologie (sauvegardes sur bande) qui n’est peut-être plus la solution la plus pertinente.
 

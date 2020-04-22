@@ -4,16 +4,16 @@ description: La structure d’entreprise Azure devient le Framework d’adoption
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e276f6fd504ec0417ec15504cda52682d67bcba6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353751"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119786"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -117,7 +117,7 @@ Le premier pilier de la structure est une norme d’attribution de noms cohéren
 > [!TIP]
 > Pour les conventions de dénomination :
 >
-> - Passez en revue et adoptez autant que possible les [modèles et pratiques recommandées](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming). Ces recommandations vous aident à choisir une norme d’attribution de noms explicite et fournissent de nombreux exemples.
+> - Passez en revue et adoptez les [Conventions de nommage et de catégorisation recommandées](../ready/azure-best-practices/naming-and-tagging.md) dans la mesure du possible. Ces recommandations vous aident à choisir une norme d’attribution de noms explicite et fournissent de nombreux exemples.
 > - Utilisation de stratégies Resource Manager pour appliquer des normes de nommage.
 >
 > Ne perdez pas de vue qu’il est difficile de changer les noms par la suite et que les quelques minutes passées ici vous éviterons des problèmes plus tard.
@@ -126,7 +126,7 @@ Vos normes d’affectation de noms doivent viser les ressources les plus utilis�
 
 ### <a name="resource-tags"></a>Balises de ressource
 
-Les balises de ressource sont en parfaite adéquation avec les normes d’affectation de noms. Plus vous ajoutez des ressources aux abonnement, plus il est important de les classer logiquement pour les besoins de la facturation, de la gestion et de l’exploitation. Pour plus d’informations, consultez [Organisation des ressources Azure à l’aide de balises](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
+Les balises de ressource sont en parfaite adéquation avec les normes d’affectation de noms. Plus vous ajoutez des ressources aux abonnement, plus il est important de les classer logiquement pour les besoins de la facturation, de la gestion et de l’exploitation. Pour plus d’informations, consultez [Organisation des ressources Azure à l’aide de balises](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 > [!IMPORTANT]
 > Les balises peuvent contenir des informations personnelles et être visées par les dispositions du RGPD. Planifiez soigneusement la gestion de vos balises. Si vous recherchez des informations générales sur le RGPD, consultez la section RGPD du [Portail d’approbation de services](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
@@ -182,9 +182,9 @@ Lorsque vous implémentez l’accès en fonction du rôle, vous avez tout intér
 - Suivez le principe de l’octroi des **privilèges minimum** nécessaires pour exécuter le travail prévu.
 
 > [!IMPORTANT]
->Envisagez d’utiliser les fonctionnalités [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) et l’[accès conditionnel](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) pour améliorer la sécurité et la visibilité des actions d’administration dans vos abonnements Azure. Ces fonctionnalités sont celles d’une licence Azure AD Premium valide (selon le cas) et visent à mieux sécuriser et gérer votre identité. Azure AD PIM permet un accès administratif « juste-à-temps » avec le workflow d’approbation, ainsi qu’un audit complet des activations et des activités d’administrateur. Azure Multi-Factor Authentication est une autre fonctionnalité critique qui permet une vérification en deux étapes pour se connecter au portail Azure. En l’associant aux contrôles d’accès conditionnel, vous pouvez gérer efficacement vos risques de compromission.
+>Envisagez d’utiliser les fonctionnalités [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) et l’[accès conditionnel](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) pour améliorer la sécurité et la visibilité des actions d’administration dans vos abonnements Azure. Ces fonctionnalités sont celles d’une licence Azure AD Premium valide (selon le cas) et visent à mieux sécuriser et gérer votre identité. Azure AD PIM permet un accès administratif « juste-à-temps » avec le workflow d’approbation, ainsi qu’un audit complet des activations et des activités d’administrateur. Azure Multi-Factor Authentication est une autre fonctionnalité critique qui permet une vérification en deux étapes pour ouvrir une session sur le Portail Microsoft Azure. En l’associant aux contrôles d’accès conditionnel, vous pouvez gérer efficacement vos risques de compromission.
 
-L’une des meilleures stratégies d’atténuation des risques que vous puissiez adopter et qui devrait être considérée comme obligatoire pour chaque déploiement consiste à planifier et à préparer vos contrôles d’identité et d’accès et à suivre les bonnes pratiques de gestion des identités Azure ([lien](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)).
+L’une des meilleures stratégies d’atténuation des risques que vous puissiez adopter et qui devrait être considérée comme obligatoire pour chaque déploiement consiste à planifier et à préparer vos contrôles d’identité et d’accès et à suivre les [bonnes pratiques de gestion des identités Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices).
 
 ## <a name="security"></a>Sécurité
 
@@ -236,7 +236,7 @@ Ces informations peuvent être consultées et traitées à plusieurs niveaux et 
 
 - **Alertes :** Vous pouvez collecter chaque journal, événement et métrique auprès des ressources Azure, mais s’il n’est pas possible d’être notifié de l’existence de conditions et d’actions critiques, ces données peuvent uniquement être utilisées à des fins historiques et forensiques. Les alertes Azure vous notifient de façon proactive de l’existence de conditions que vous définissez dans toutes vos applications et votre infrastructure. Vous créez des règles d’alerte pour les journaux d’activité, les événements et les métriques qui utilisent des groupes d’actions afin de notifier des ensembles de destinataires. Les groupes d’actions permettent aussi d’automatiser les corrections en utilisant des actions externes comme des webhooks pour exécuter des runbooks Azure Automation et Azure Functions.
 
-- **Tableaux de bord :** Les tableaux de bord vous permettent d’agréger les vues de supervision et de combiner les données dans l’ensemble des ressources et des abonnements pour vous donner un aperçu de la télémétrie des ressources Azure à l’échelle de l’entreprise. Vous pouvez créer et configurer vos propres vues et les partager avec d’autres utilisateurs. Par exemple, vous pouvez créer un tableau de bord constitué de plusieurs vignettes pour les différents administrateurs de base de données afin de fournir des informations dans tous les services de base de données Azure, notamment Azure SQL DB, Azure DDB pour PostgreSQL et Azure DB pour MySQL.
+- **Tableaux de bord :** Les tableaux de bord vous permettent d’agréger les vues de supervision et de combiner les données dans l’ensemble des ressources et des abonnements pour vous donner un aperçu de la télémétrie des ressources Azure à l’échelle de l’entreprise. Vous pouvez créer et configurer vos propres vues et les partager avec d’autres utilisateurs. Par exemple, vous pouvez créer un tableau de bord constitué de plusieurs vignettes pour les différents administrateurs de base de données afin de fournir des informations dans tous les services de base de données Azure, notamment Azure SQL Database, Azure DB pour PostgreSQL et Azure DB pour MySQL.
 
 - **Metrics Explorer :** Les métriques sont des valeurs numériques générées par les ressources Azure (comme % CPU ou E/S de disque) qui fournissent des insights sur le fonctionnement et les performances de vos ressources. À l’aide de Metrics Explorer, vous pouvez définir et envoyer les métriques qui vous intéressent à Log Analytics à des fins d’agrégation et d’analyse.
 
@@ -277,10 +277,10 @@ Microsoft fournit plusieurs outils pour visualiser, suivre et gérer les coûts.
 
 Il s’agit d’outils destinés à fournir des informations instantanées sur les coûts et à vous permettre de pendre des mesures.
 
-- **Coût des ressources d’abonnement :** Située dans le portail, la vue [Analyse des coûts Azure](https://docs.microsoft.com/azure/cost-management/overview) vous donne un aperçu rapide de vos coûts ainsi que des informations sur les dépenses quotidiennes par ressource ou groupe de ressources.
-- **Azure Cost Management :** Ce produit est le résultat du rachat de Cloudyn par Microsoft. Il vous permet de gérer et d’analyser vos dépenses Azure et ce que vous dépensez auprès d’autres fournisseurs de clouds publics. Il existe des niveaux gratuits et payants, offrant un grande quantité de fonctionnalités, comme indiqué dans la [présentation](https://docs.microsoft.com/azure/cost-management/overview).
-- **Budgets et groupes d’actions Azure :** Jusqu’à récemment, la détermination du coût d’un service et les réponses à y apporter étaient un exercice plutôt manuel. Avec l’introduction des budgets Azure et des API correspondantes, il est maintenant possible de créer des actions (comme dans [cet exemple](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)) quand les coûts atteignent un seuil. Par exemple, arrêter un groupe de ressources de « test » dès qu’il atteint 100 % de son budget ou [autre exemple].
-- **Azure Advisor** : connaître le coût d’un service est une chose, savoir exploiter ces informations en est une autre. [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) vous fait des suggestions quant aux mesures à prendre pour réaliser des économies, améliorer la fiabilité ou même accroître la sécurité.
+- **Coût des ressources d’abonnement :** Située dans le portail, la vue [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) vous donne un aperçu rapide de vos coûts ainsi que des informations sur les dépenses quotidiennes par ressource ou groupe de ressources.
+- **Azure Cost Management :** Ce produit vous permet de gérer et d’analyser vos dépenses Azure et ce que vous dépensez auprès d’autres fournisseurs de clouds publics. Il existe des niveaux gratuits et payants, offrant un grande quantité de fonctionnalités.
+- **Budgets et groupes d’actions Azure :** Jusqu’à récemment, la détermination du coût d’un service et les réponses à y apporter étaient un exercice plutôt manuel. Avec l’introduction des budgets Azure et des API correspondantes, il est maintenant possible de créer des actions (comme dans [cet exemple](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)) quand les coûts atteignent un seuil. Par exemple, vous pouvez arrêter un groupe de ressources de « test » dès qu’il atteint 100 % de son budget.
+- **Azure Advisor :** Connaître le coût d’un service est une chose, savoir exploiter ces informations en est une autre. [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) vous fait des suggestions quant aux mesures à prendre pour réaliser des économies, améliorer la fiabilité ou même accroître la sécurité.
 
 ### <a name="external-cost-management-tools"></a>Outils de gestion des coûts externes
 

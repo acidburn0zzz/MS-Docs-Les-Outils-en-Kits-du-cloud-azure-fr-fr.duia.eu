@@ -4,27 +4,27 @@ description: Préparation aux compétences pour la supervision du cloud
 author: BrianBlanchard
 ms.author: magoedte
 ms.date: 03/23/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe1dcc215c318ef35c7a1d19af50b1451eb1935d
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356224"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120544"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
 # <a name="skills-readiness-for-cloud-monitoring"></a>Préparation aux compétences pour la supervision du cloud
 
-Pendant la phase de planification de votre parcours de migration, l’objectif est de développer les plans nécessaires pour guider l’implémentation. Les plans doivent également inclure la manière dont vous opérerez ces charges de travail avant qu’elles soient transférées ou publiées en production, et non après. Les parties prenantes de l’entreprise s’attendent à ce que vous leur fournissiez des services précieux, et sans interruption. Les membres du personnel informatique se rendent compte qu’ils ont besoin d’acquérir de nouvelles compétences et de s’adapter afin de pouvoir tirer parti des services Azure intégrés pour superviser efficacement les ressources dans les environnements Azure et hybrides.
+Pendant la phase de planification de votre parcours de migration, l’objectif est de développer les plans nécessaires pour guider l’implémentation. Les plans doivent également inclure la manière dont vous opérerez ces charges de travail avant qu’elles soient transférées ou publiées en production, et non après. Les parties prenantes de l’entreprise s’attendent à ce que vous leur fournissiez des services précieux, et sans interruption. Les membres du personnel informatique se rendent compte qu’ils ont besoin d’acquérir de nouvelles compétences et de s’adapter afin d’utiliser les services Azure intégrés pour superviser efficacement les ressources dans les environnements Azure et hybrides.
 
 L’acquisition des qualifications nécessaires peut être accélérée grâce aux parcours d’apprentissage suivants :
 
 - L’introduction à [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) décrit les concepts de base de la gestion et du déploiement de ressources Azure. Le personnel informatique qui gère l’expérience de supervision au sein de l’entreprise doit comprendre les étendues de gestion, le contrôle d’accès en fonction du rôle (RBAC), l’utilisation de modèles Azure Resource Manager et la gestion des ressources à l’aide d’Azure CLI et d’Azure PowerShell.
 
-- Découvrez comment sécuriser des ressources à l’aide d’une stratégie, du contrôle d’accès en fonction du rôle et d’autres services Azure en consultant [Implémenter une sécurité pour la gestion des ressources dans Azure](https://docs.microsoft.com//learn/paths/implement-resource-mgmt-security).
+- Découvrez comment sécuriser des ressources à l’aide d’une stratégie, du contrôle d’accès en fonction du rôle et d’autres services Azure en consultant [Implémenter une sécurité pour la gestion des ressources dans Azure](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security).
 
 - L’introduction à [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) explique comment utiliser Azure Policy pour créer, attribuer et gérer des stratégies. Azure Policy peut déployer et configurer les agents Azure Monitor, activer la supervision avec Azure Monitor pour machines virtuelles et Azure Security Center, déployer des paramètres de diagnostic, auditer les paramètres de configuration d’invité, et ainsi de suite.
 
@@ -39,7 +39,7 @@ L’acquisition des qualifications nécessaires peut être accélérée grâce a
 
   - [Microsoft Azure IaaS Monitoring and Management](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started) (Gestion et supervision IaaS Microsoft Azure) explique comment utiliser Azure Monitor pour effectuer une supervision de base des charges de travail exécutées sur IaaS.
 
-  - [Monitoring Microsoft Azure Resources and Workloads](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) (Supervision des ressources et charges de travail Microsoft Azure) explique comment utiliser les outils de supervision Microsoft Azure pour superviser les ressources réseau Azure (ainsi que les ressources locales).
+  - [Monitoring Microsoft Azure Resources and Workloads](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) (Supervision des ressources et charges de travail Microsoft Azure) explique comment utiliser les outils de supervision Microsoft Azure pour superviser les ressources réseau Azure ainsi que les ressources locales.
 
   - [Microsoft Azure DevOps Engineer: Optimize Feedback Mechanisms](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) (Ingénieur Microsoft Azure DevOps : Optimiser les mécanismes de commentaires) vous aide à vous préparer à utiliser Azure Monitor, notamment Application Insights et Log Analytics, pour superviser et optimiser vos applications web.
 
@@ -57,7 +57,7 @@ Microsoft et ses partenaires offrent un large éventail d’options pour que tou
 
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro) : Fait office de ressource en ligne gratuite pour vous aider à mettre en correspondance votre parcours de carrière dans le cloud. Découvrez ce que les experts du secteur suggèrent pour votre rôle cloud et les qualifications nécessaires pour y parvenir. Suivez un programme de formation à votre rythme pour acquérir les qualifications dont vous avez le plus besoin pour rester compétent.
 
-Obtenez la reconnaissance officielle de vos connaissances sur Azure au moyen des [examens et formations de certification Microsoft Azure]( https://www.microsoft.com/learning/azure-certification.aspx).
+Obtenez la reconnaissance officielle de vos connaissances sur Azure au moyen des [examens et formations de certification Microsoft Azure]( https://www.microsoft.com/learning/certification-overview.aspx).
 
 ## <a name="azure-devops-and-project-management"></a>Gestion de projets et DevOps Azure
 
@@ -77,7 +77,7 @@ Pour plus d’informations, consultez les articles suivants :
 
 ## <a name="other-considerations"></a>Autres considérations
 
-Les clients éprouvent souvent des difficultés à gérer, tenir à jour et délivrer les résultats professionnels attendus pour les services que l’équipe informatique est chargée de délivrer. La supervision est considérée comme un élément clé de la gestion de l’infrastructure et de l’entreprise, avec un accent spécifique sur la mesure de la qualité du service et de l’expérience client.  Pour atteindre ces objectifs, posez de solides fondations à l’aide d’ITSM et de DevOps. Cela aidera l’équipe de supervision à développer la manière dont elle gère, délivre et prend en charge le service de supervision. L’adoption d’un framework ITSM permet à l’équipe de supervision d’assumer le rôle de fournisseur et d’obtenir une reconnaissance en tant qu’activateur d’entreprise fiable en s’alignant sur les objectifs stratégiques et les besoins de l’organisation.
+Les clients éprouvent souvent des difficultés à gérer, tenir à jour et délivrer les résultats professionnels attendus pour les services que l’équipe informatique est chargée de délivrer. La supervision est considérée comme un élément clé de la gestion de l’infrastructure et de l’entreprise, avec un accent spécifique sur la mesure de la qualité du service et de l’expérience client. Pour atteindre ces objectifs, posez de solides fondations à l’aide d’ITSM et de DevOps. Cela aidera l’équipe de supervision à développer la manière dont elle gère, délivre et prend en charge le service de supervision. L’adoption d’un framework ITSM permet à l’équipe de supervision d’assumer le rôle de fournisseur et d’obtenir une reconnaissance en tant qu’activateur d’entreprise fiable en s’alignant sur les objectifs stratégiques et les besoins de l’organisation.
 
 Pour comprendre les mises à jour apportées au framework ITSM le plus populaire, consultez le [livre blanc sur ITIL v4 et le cloud computing](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud), qui est axé sur la manière de combiner les recommandations ITIL existantes aux bonnes pratiques DevOps, Agile et Lean. Pensez également à l’[architecture de référence IT4IT](https://www.opengroup.org/it4it), qui fournit un blueprint de remplacement pour la transformation des services informatiques à l’aide d’un framework agnostique du point de vue des processus.
 

@@ -4,15 +4,15 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin de comprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b4c39b0a55485335e65bee9a5e6be2fe5fe22279
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353487"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997752"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ Le cloud ouvre de nouvelles opportunités à l’échelle mondiale. Les obstacle
 
 ## <a name="data-sovereignty"></a>Souveraineté des données
 
-De nombreuses régions géopolitiques ont établi des réglementations relatives à la souveraineté des données. Ces réglementations limitent l’emplacement de stockage des données, la nature des données qui peuvent quitter le pays d’origine ainsi que le type de données collecté auprès des habitants de la région concernée. Avant d’utiliser une solution cloud dans une zone géographique étrangère, vous devez comprendre comment le fournisseur de cloud gère la souveraineté des données. Pour plus d’informations sur l’approche d’Azure concernant chaque zone géographique, cliquez [ici](https://azure.microsoft.com/global-infrastructure/geographies). Pour plus d’informations sur la conformité dans Azure, consultez [La confidentialité chez Microsoft](https://www.microsoft.com/trustcenter/privacy) dans le Centre de gestion de la confidentialité Microsoft.
+De nombreuses régions géopolitiques ont établi des réglementations relatives à la souveraineté des données. Ces réglementations limitent l’emplacement de stockage des données, la nature des données qui peuvent quitter le pays d’origine ainsi que le type de données collecté auprès des habitants de la région concernée. Avant d’utiliser une solution cloud dans une zone géographique étrangère, vous devez comprendre comment le fournisseur de cloud gère la souveraineté des données. Pour plus d’informations sur l’approche d’Azure concernant chaque zone géographique, consultez [Zones géographiques d’Azure](https://azure.microsoft.com/global-infrastructure/geographies). Pour plus d’informations sur la conformité dans Azure, consultez [La confidentialité chez Microsoft](https://www.microsoft.com/trust-center/privacy) dans le Centre de gestion de la confidentialité Microsoft.
 
 Le reste de cet article suppose qu’un conseiller juridique a examiné et approuvé les opérations pouvant être effectuées dans un pays étranger.
 

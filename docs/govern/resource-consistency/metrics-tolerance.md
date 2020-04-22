@@ -4,16 +4,16 @@ description: Utilisez le Framework d’adoption du cloud pour Azure pour quantif
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75a0e1f06b2a5a2734cc386e02200ec06d707d7b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9e7cf8bec88178908caeae27742e5fbc92155003
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356907"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997354"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
@@ -32,7 +32,7 @@ Chaque organisation a ses propres scénarios opérationnels, mais les éléments
 - **Ressources sous-utilisées.** Nombre de ressources où les capacités de mémoire, d’UC et de réseau sont toutes constamment sous-utilisées.
 - **Épuisement des ressources.** Nombre de ressources où les capacités de mémoire, d’UC et de réseau sont épuisées par la charge.
 - **Âge de la ressource.** Temps écoulé depuis que la ressource a été déployée ou modifiée pour la dernière fois.
-- **Machines virtuelles en état critique.** Nombre de machines virtuelles déployées où un ou plusieurs problèmes critiques ont été détectés, qui doivent être corrigés afin de restaurer la fonctionnalité normale attendue.
+- **Machines virtuelles en état critique.** Nombre de machines virtuelles déployées où un ou plusieurs problèmes critiques ont été détectés et doivent être corrigés afin de restaurer la fonctionnalité normale attendue.
 - **Alertes par gravité.** Nombre total d’alertes sur une ressource déployée, décomposées selon la gravité.
 - **Liens réseau défectueux.** Nombre de ressources confrontées à des problèmes de connectivité réseau.
 - **Points de terminaison de service défectueux.** Nombre de problèmes avec des points de terminaison réseau externes.

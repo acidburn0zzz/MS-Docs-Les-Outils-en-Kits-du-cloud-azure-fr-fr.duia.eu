@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 067e84e433fa995c79b588698240afea06e54660
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354122"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120016"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -49,9 +49,9 @@ Lorsque vous créez des réseaux virtuels dans le cadre de votre migration, il e
 
 **En savoir plus :**
 
-- [Consultez une présentation](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) des réseaux virtuels Azure.
-- [Lisez](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) la FAQ relative à la mise en réseau.
-- [Découvrez](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) les limites de la mise en réseau.
+- Obtenez une [vue d’ensemble du réseau virtuel Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
+- Consultez le [FAQ sur les réseaux virtuels Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq).
+- En savoir plus sur les [limites de mise en réseau Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits).
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bonne pratique : Implémenter une topologie de réseau hub-and-spoke
 
@@ -131,7 +131,7 @@ Les zones de disponibilité augmentent la haute disponibilité de manière à pr
 - Chaque zone de disponibilité est composée d’un ou de plusieurs centres de données équipés d’une alimentation, d’un système de refroidissement et d’un réseau indépendants.
 - Pour garantir la résilience, un minimum de trois zones distinctes sont activées dans toutes les régions.
 - La séparation physique des zones de disponibilité dans une région protège les applications et les données des défaillances dans le centre de données.
-- Les services redondants interzone répliquent vos applications et données entre des zones de disponibilité pour les protéger contre des points uniques de panne. - - Avec les zones de disponibilité, Azure propose des contrats de niveau de service qui garantissent une disponibilité des machines virtuelles de 99,99 %.
+- Les services redondants interzone répliquent vos applications et données entre des zones de disponibilité pour les protéger contre des points uniques de panne. - - Avec les zones de disponibilité, Azure propose des contrats de niveau de service qui garantissent une disponibilité des machines virtuelles de 99,99 %.
 
     ![Zone de disponibilité](./media/migrate-best-practices-networking/availability-zone.png) *Zone de disponibilité*
 
@@ -285,7 +285,7 @@ Microsoft partage avec vous la responsabilité de la sécurisation des réseaux 
 
 **En savoir plus :**
 
-- [Obtenir une vue d’ensemble](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) sur les meilleures pratiques pour la sécurité réseau.
+- [Obtenir une vue d’ensemble](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices) sur les meilleures pratiques pour la sécurité réseau.
 - [Découvrez comment](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security) concevoir des réseaux sécurisés.
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>Bonne pratique : implémentation d’un réseau de périmètre Azure
@@ -307,7 +307,7 @@ La figure suivante montre un exemple de réseau de périmètre à sous-réseau u
 
 **En savoir plus :**
 
-- [En savoir plus](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) sur le déploiement d’un réseau de périmètre entre Azure et votre centre de données local.
+- En savoir plus sur le [déploiement d’un réseau de périmètre entre Azure et votre centre de données local](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
 
 ## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Bonne pratique : filtrage du trafic de réseau virtuel avec des groupes de sécurité réseau
 
@@ -511,7 +511,7 @@ Nous vous recommandons d’utiliser un ensemble de Pare-feu Azure (ou d’applia
 
 **En savoir plus :**
 
-- [En savoir plus](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) sur l’utilisation d’appliances virtuelles réseau dans un réseau virtuel Azure.
+- [En savoir plus](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) sur l’utilisation d’appliances virtuelles réseau dans un réseau virtuel Azure.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

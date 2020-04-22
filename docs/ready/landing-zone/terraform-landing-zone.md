@@ -4,29 +4,29 @@ description: Apprenez à utiliser Terraform pour créer vos zones d’atterrissa
 author: arnaudlh
 ms.author: arnaul
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 76fdd8232cff0b90f12c18cc32a32538e6570197
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: fd5f3ca69312156c705857bb91968ea40cd3a867
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354156"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997804"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Utiliser Terraform pour créer vos zones d’atterrissage
 
-Azure fournit des services natifs pour le déploiement de vos zones d’atterrissage. D’autres outils tiers peuvent également vous aider à cet effet. Terraform de HashiCorp est le type d’outil que les clients et les partenaires utilisent souvent pour déployer des zones d’atterrissage. Cette section montre comment utiliser une zone d’atterrissage prototype pour déployer des fonctionnalités de base de journalisation, de comptabilité et de sécurité pour un abonnement Azure.
+Azure fournit des services natifs pour le déploiement de vos zones d’atterrissage. D’autres outils tiers peuvent également vous aider à cet effet. Terraform de HashiCorp est le type d’outil que les clients et les partenaires utilisent souvent pour déployer des zones d’atterrissage. Cette section montre comment utiliser un exemple de zone d’atterrissage pour déployer des fonctionnalités de base de gouvernance, de comptabilité et de sécurité pour un abonnement Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Objectif de la zone d’atterrissage
 
-La zone d’atterrissage de base du Framework d’adoption du cloud pour Terraform comporte un ensemble limité de responsabilités et de fonctionnalités permettant d’assurer la journalisation, la comptabilité et la sécurité. Cette zone d’atterrissage utilise des composants standard connus sous le nom de modules Terraform pour garantir la cohérence entre les ressources déployées dans l’environnement.
+La zone d’atterrissage de base du Framework d’adoption du cloud pour Terraform comporte des éléments permettant d’assurer la journalisation, la comptabilité et la sécurité. Cette zone d’atterrissage utilise des composants standard connus sous le nom de modules Terraform pour garantir la cohérence entre les ressources déployées dans l’environnement.
 
 ## <a name="use-standard-modules"></a>Utiliser des modules standard
 
-La réutilisation des composants est un principe fondamental de l’infrastructure en tant que code. Les modules jouent un rôle déterminant dans la définition des normes et la cohérence du déploiement des ressources à l’échelle de chaque environnement. Les modules utilisés pour déployer cette première zone d’atterrissage sont disponibles dans le [registre Terraform](https://registry.terraform.io/search?q=aztfmod) officiel.
+La réutilisation des composants est un principe fondamental de l’infrastructure en tant que code. Les modules jouent un rôle déterminant dans la définition des normes et la cohérence du déploiement des ressources à l’échelle de chaque environnement. Les modules utilisés pour déployer cette première zone d’atterrissage sont disponibles dans le [registre Terraform](https://registry.terraform.io/modules/aztfmod) officiel.
 
 ## <a name="architecture-diagram"></a>Diagramme de l'architecture
 
@@ -54,7 +54,7 @@ Avant d’utiliser la zone d’atterrissage de base du Framework d’adoption du
 
 Les hypothèses ou contraintes suivantes ont été prises en compte lors de la définition de cette zone d’atterrissage initiale. Si ces hypothèses s’alignent sur vos contraintes, vous pouvez utiliser le blueprint pour créer votre première zone d’accueil. Le blueprint peut également être étendu pour créer un blueprint de zone d’accueil qui réponde à vos contraintes uniques.
 
-- **Limites d’abonnement :** Il est peu probable que cet effort d’adoption dépasse les [limites d’abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits). Deux indicateurs courants sont un excès de 25 000 machines virtuelles ou 10 000 processeurs virtuels.
+- **Limites d’abonnement :** Il est peu probable que cet effort d’adoption dépasse les [limites d’abonnement](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits). Deux indicateurs courants sont un excès de 25 000 machines virtuelles ou 10 000 processeurs virtuels.
 - **Conformité :** Aucune exigence de tiers en matière de conformité n’est requise pour cette zone d’atterrissage.
 - **Complexité architecturale :** La complexité architecturale ne nécessite pas d’abonnements de production supplémentaires.
 - **Services partagés :** Aucun des services partagés existants dans Azure ne nécessite que cet abonnement soit traité comme un spoke dans une architecture hub and spoke.
@@ -69,7 +69,7 @@ Les décisions suivantes sont représentées dans la zone d’atterrissage Terra
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enregistrement et surveillance | L’espace de travail Azure Monitor Log Analytics est utilisé. Un compte de stockage de diagnostics et un Event Hub sont provisionnés.                                                                                                                                                        |                                                                                                                                                                                                                                                                 |
 | Réseau                | N/A : le réseau est implémenté dans une autre zone d’atterrissage.                                                                                                                                                                                                                    | [Décisions en matière de mise en réseau](../considerations/networking-options.md)                                                                                                                                                                                                 |
-| Identité               | Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory.                                                                                                                                                                        | [Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)                                                                                                                               |
+| Identité               | Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory.                                                                                                                                                                        | [Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)                                                                                                                               |
 | Stratégie                 | Cette zone d’atterrissage indique actuellement qu’aucune stratégie Azure ne doit être appliquée.                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
 | Conception de l’abonnement    | N/A : conçu pour un abonnement de production unique.                                                                                                                                                                                                                     | [Créer des abonnements initiaux](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | Groupes de ressources        | N/A : conçu pour un abonnement de production unique.                                                                                                                                                                                                                     | [Abonnements de mise à l’échelle](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
@@ -97,7 +97,7 @@ Cet ensemble minimal d’étiquettes doit se trouver dans toutes les ressources 
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Personnaliser et déployer votre première zone d’atterrissage
 
-Vous pouvez [cloner votre zone d’atterrissage de base Terraform](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). Démarrez facilement avec la zone d’atterrissage en modifiant les variables Terraform. Dans notre exemple, nous utilisons **blueprint_foundations.sandbox.auto.tfvars**, de sorte que Terraform définit automatiquement les valeurs de ce fichier pour vous.
+Vous pouvez [cloner votre zone d’atterrissage de base Terraform](https://github.com/azure/caf-terraform-landingzones). Démarrez facilement avec la zone d’atterrissage en modifiant les variables Terraform. Dans notre exemple, nous utilisons **blueprint_foundations.sandbox.auto.tfvars**, de sorte que Terraform définit automatiquement les valeurs de ce fichier pour vous.
 
 Examinons les différentes sections variables.
 
@@ -192,7 +192,7 @@ security_center = {
 
 ## <a name="get-started"></a>Bien démarrer
 
-Une fois que vous avez examiné la configuration, vous pouvez la déployer comme vous le feriez pour déployer un environnement Terraform. Nous vous recommandons d’utiliser le rover, qui est un conteneur Docker qui permet le déploiement à partir de Windows, Linux ou MacOS. Vous pouvez vous familiariser avec le [référentiel rover GitHub](https://github.com/aztfmod/rover).
+Une fois que vous avez examiné la configuration, vous pouvez la déployer comme vous le feriez pour déployer un environnement Terraform. Nous vous recommandons d’utiliser le rover, qui est un conteneur Docker qui permet le déploiement à partir de Windows, Linux ou macOS. Vous pouvez commencer à utiliser les [zones d’atterrissage](https://github.com/azure/caf-terraform-landingzones).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -206,4 +206,4 @@ La superposition de zones d’atterrissage est une bonne pratique pour découple
 De futures architectures de référence démontreront ce concept pour une topologie hub-and-spoke.
 
 > [!div class="nextstepaction"]
-> [Examiner l’échantillon de la zone d’atterrissage Terraform de base](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Examiner l’échantillon de la zone d’atterrissage Terraform de base](https://github.com/azure/caf-terraform-landingzones)

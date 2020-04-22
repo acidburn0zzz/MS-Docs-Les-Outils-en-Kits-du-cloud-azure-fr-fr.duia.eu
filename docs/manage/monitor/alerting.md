@@ -4,16 +4,16 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: MGoedtel
 ms.author: magoedte
 ms.date: 06/26/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 5a3879e4b1d5a076e1869100471afbf4f7cd046e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356306"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997671"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -120,9 +120,9 @@ Si vous n’utilisez pas Azure Monitor pour machines virtuelles, créez des aler
 
 Utilisées ensemble, ces fonctionnalités permettent de gagner du temps en minimisant les notifications d’alerte et la gestion des alertes sous-jacentes.
 
-### <a name="alerts-limitations"></a>Limitations des alertes
+### <a name="limits-on-alerts"></a>Limites sur les alertes
 
-Veuillez noter les [limitations](https://docs.microsoft.com/azure/azure-subscription-service-limits#azure-monitor-limits) sur le nombre d’alertes que vous pouvez créer. Vous pouvez faire augmenter certaines limites (mais pas toutes) en appelant le support technique.
+Veuillez noter les [limites sur le nombre d’alertes que vous pouvez créer](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-monitor-limits). Vous pouvez faire augmenter certaines limites (mais pas toutes) en appelant le support technique.
 
 ### <a name="best-query-experience"></a>Meilleure expérience des requêtes
 

@@ -4,16 +4,16 @@ description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 00cf24b493bbeacae5e3f3d35d2951cbe838219e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d24c5076bd7843f6f4559e901144be6ba3a33ca4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094011"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120288"
 ---
 # <a name="central-it-capabilities"></a>Fonctionnalités de l’informatique centralisée
 
@@ -59,7 +59,7 @@ Les tâches suivantes sont généralement exécutées régulièrement :
 - Surveillez les plans d’adoption et la progression par rapport au [backlog de migration classé par ordre de priorité](../migrate/migration-considerations/assess/release-iteration-backlog.md).
 - Identifiez et hiérarchisez les modifications de plateforme requises pour prendre en charge le backlog de migration.
 - Servez de couche intermédiaire ou de traduction entre les besoins en matière d’adoption du cloud et les équipes informatiques existantes.
-- Faites appel aux équipes informatiques existantes pour accélérer les fonctionnalités de la plateforme et encourager l’adoption.
+- Tirez parti des équipes informatiques existantes pour accélérer les fonctionnalités de la plateforme et encourager l’adoption.
 
 ### <a name="technical-tasks"></a>Tâches techniques
 

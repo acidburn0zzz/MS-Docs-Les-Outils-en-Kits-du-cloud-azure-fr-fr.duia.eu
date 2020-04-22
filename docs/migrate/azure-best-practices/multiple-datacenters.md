@@ -4,15 +4,15 @@ description: Plusieurs centres de données
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 2ee44d3e83dde52e03dbe2dffca7edc51899da0e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898131"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80636426"
 ---
 # <a name="multiple-datacenters"></a>Plusieurs centres de données
 
@@ -66,7 +66,7 @@ Les processus de sécurisation et de gestion devraient rester inchangés par cet
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Revenez à la [check-list d’expansion d’étendue](./index.md) pour vous assurer que votre méthode de migration est entièrement alignée.
+Revenez à la [check-list des meilleures pratiques de migration](./index.md) pour vous assurer que votre méthode de migration est entièrement alignée.
 
 > [!div class="nextstepaction"]
-> [Check-list d’expansion d’étendue](./index.md)
+> [Check-list des meilleures pratiques de migration](./index.md)

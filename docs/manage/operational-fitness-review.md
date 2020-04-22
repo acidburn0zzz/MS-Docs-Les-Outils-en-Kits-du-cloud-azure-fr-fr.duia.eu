@@ -4,15 +4,15 @@ description: Établissez un processus d’évaluation de l’adéquation opérat
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9bc4e2bb9b39a83ab8829ea4a12cd1bb019bf0c3
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f1eeae9e59da365b066ba78a8eb024448bf9815b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341808"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120111"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Mettre en place un examen de santé opérationnel
 
@@ -44,7 +44,7 @@ Pendant ce processus, la principale considération porte sur les fonctionnalité
 
 Les exigences _non fonctionnelles_ se rapportent quant à elles à des propriétés comme la [disponibilité](https://docs.microsoft.com/azure/architecture/checklist/availability), la [résilience](https://docs.microsoft.com/azure/architecture/resiliency) et la [scalabilité](https://docs.microsoft.com/azure/architecture/checklist/scalability) du service. Ces propriétés diffèrent des exigences fonctionnelles, car elles n’affectent pas directement les fonctions finales du service. Elles concernent en revanche les performances et la continuité du service.
 
-Vous pouvez spécifier certaines exigences non fonctionnelles dans les conditions d'un Contrat de niveau de service (SLA). Par exemple, vous pouvez exprimer la continuité du service sous forme de pourcentage de disponibilité : « disponible 99,99 % du temps ». D’autres exigences non fonctionnelles sont plus difficiles à définir et sont susceptibles de changer en fonction de l’évolution des besoins de production. Par exemple, un service orienté consommateurs risque de se retrouver face à des exigences de débit imprévues après une forte hausse de popularité.
+Vous pouvez spécifier certaines exigences non fonctionnelles dans les conditions d'un Contrat de niveau de service (SLA). Par exemple, vous pouvez exprimer la continuité du service sous forme de pourcentage de disponibilité : « Disponible 99,99 % du temps ». D’autres exigences non fonctionnelles sont plus difficiles à définir et sont susceptibles de changer en fonction de l’évolution des besoins de production. Par exemple, un service orienté consommateurs risque de se retrouver face à des exigences de débit imprévues après une forte hausse de popularité.
 
 > [!NOTE]
 > Pour plus d'informations sur les exigences en matière de résilience, consultez [Conception d'applications Azure fiables](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). Cet article contient des explications sur des concepts tels que l'objectif de point de récupération (RPO), l'objectif de temps de récupération (RTO) et les contrats SLA.
@@ -81,7 +81,7 @@ Il est important de souligner que ces métriques doivent refléter directement l
 
 La phase de passage en revue des services est essentielle dans le processus de passage en revue de l’adéquation opérationnelle. Elle comprend ces étapes :
 
-1. **Mettre en place des métriques de service**. Utilisez les métriques de carte de performance pour superviser les services et garantir qu’ils répondent aux attentes métier. La supervision des services est essentielle. Si vous ne pouvez pas superviser un ensemble de services relativement aux exigences non fonctionnelles, envisagez d’afficher en rouge les métriques de carte de performance correspondantes. La première étape pour y remédier consiste à implémenter le monitoring du service en question. Par exemple, si l’entreprise attend d’un service qu’il fonctionne avec une disponibilité de 99,99 %, mais qu’aucune télémétrie de production n’est en place pour en mesurer la disponibilité, partez du principe que vous ne répondez pas à cette exigence.
+1. **Mettre en place des métriques de service**. Utilisez les métriques de carte de performance pour superviser les services et garantir qu’ils répondent aux attentes métier. La supervision des services est essentielle. Si vous ne pouvez pas superviser un ensemble de services relativement aux exigences non fonctionnelles, envisagez d’afficher en rouge les métriques de carte de performance correspondantes. La première étape pour y remédier consiste à implémenter le monitoring du service en question. Par exemple, si l’entreprise attend d’un service qu’il fonctionne avec une disponibilité de 99,99 %, mais qu’aucune télémétrie de production n’est en place pour en mesurer la disponibilité, partez du principe que vous ne répondez pas à cette exigence.
 
 2. **Prévoir des mesures de correction**. Pour chaque opération de service dont les métriques se trouvent sous le seuil acceptable, calculez ce que coûterait une correction du service permettant d’y remédier. Si ce coût est supérieur au revenu attendu du service, prenez en compte les coûts intangibles, comme l’expérience utilisateur. Par exemple, si les clients ont des difficultés à passer une commande en utilisant le service, ils risquent de choisir à la place un concurrent.
 

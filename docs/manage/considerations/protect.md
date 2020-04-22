@@ -4,15 +4,15 @@ description: Découvrez l’importance de la préparation à une éventuelle int
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f46fb65572d319e2dc9a4a779cd205bbe476908b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78340993"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527585"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Protéger et récupérer dans la gestion cloud
 
@@ -62,7 +62,7 @@ Pour en savoir plus sur ce processus de réflexion, consultez [Discipline d’op
 
 ### <a name="protect-and-recover-vms"></a>Protection et récupération des machines virtuelles
 
-La plupart des charges de travail ont une certaine dépendance envers les machines virtuelles, qui hébergent différents aspects de la solution. Pour que la charge de travail prenne en charge un processus d’entreprise après une défaillance du système, un certain nombre de machines virtuelles doivent être récupérées rapidement.
+La plupart des charges de travail ont une certaine dépendance envers les machines virtuelles, qui hébergent différents aspects de la solution. Pour que la charge de travail prenne en charge un processus d’entreprise après une défaillance du système, certaines machines virtuelles doivent être récupérées rapidement.
 
 Chaque minute de temps d’arrêt de ces machines virtuelles peut provoquer une perte de chiffre d’affaires ou une rentabilité réduite. Lorsque le temps d’arrêt des machines virtuelles a un impact direct sur le rendement budgétaire de l’entreprise, le RTO est très important. Les machines virtuelles peuvent être récupérées plus rapidement grâce à la réplication sur un site secondaire et à la récupération automatisée. Ce modèle est appelé mode de récupération chaud/tiède. Au plus haut niveau de récupération, les machines virtuelles peuvent être répliquées sur un site secondaire entièrement fonctionnel. Cette approche plus coûteuse est appelée mode de récupération à chaud ou à haute disponibilité.
 

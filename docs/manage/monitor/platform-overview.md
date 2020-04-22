@@ -4,16 +4,16 @@ description: Obtenez une vue d’ensemble générale de deux plateformes de supe
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5e4effaccc04ba3b534a75394f17d758141c387e
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140550"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527165"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -63,7 +63,7 @@ Les fonctionnalités des services qui faisaient partie d’OMS n’ont pas chang
 
 ### <a name="operations-manager"></a>Operations Manager
 
-Operations Manager nécessite une infrastructure et une maintenance significatives pour prendre en charge un groupe d’administration, qui est une unité de fonctionnalités de base. Au minimum, un groupe d’administration se compose d’un ou plusieurs serveurs d’administration, d’une instance serveur SQL Server hébergeant la base de données de l’entrepôt de données opérationnelles et celles utilisées pour les rapports, et d’agents. La complexité de la conception d’un groupe d’administration dépend d’un certain nombre de facteurs, comme l’étendue des charges de travail à superviser, et du nombre d’appareils ou d’ordinateurs qui prennent en charge les charges de travail. Si vous avez besoin d’une haute disponibilité et de la résilience du site, comme c’est généralement le cas avec les plateformes de supervision d’entreprise, les exigences en matière d’infrastructure et la maintenance associée peuvent croître considérablement.
+Operations Manager nécessite une infrastructure et une maintenance significatives pour prendre en charge un groupe d’administration, qui est une unité de fonctionnalités de base. Au minimum, un groupe d’administration se compose d’un ou plusieurs serveurs d’administration, d’une instance serveur SQL Server hébergeant la base de données de l’entrepôt de données opérationnelles et celles utilisées pour les rapports, et d’agents. La complexité de la conception d’un groupe d’administration dépend de plusieurs facteurs, comme l’étendue des charges de travail à superviser, et du nombre d’appareils ou d’ordinateurs qui prennent en charge les charges de travail. Si vous avez besoin d’une haute disponibilité et de la résilience du site, comme c’est généralement le cas avec les plateformes de supervision d’entreprise, les exigences en matière d’infrastructure et la maintenance associée peuvent croître considérablement.
 
 ![Diagramme d’un groupe d’administration Operations Manager](./media/monitoring-management-guidance-cloud-and-on-premises/operations-manager-management-group-optimized.svg)
 
