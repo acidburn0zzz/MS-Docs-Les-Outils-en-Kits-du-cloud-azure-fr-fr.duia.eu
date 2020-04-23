@@ -3,17 +3,17 @@ title: Migration cloud
 description: Découvrez comment établir les processus itératifs pour évaluer, migrer, optimiser, sécuriser et gérer les charges de travail que vous voulez migrer dans le cloud.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 04/04/2020
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 8d110115bf56dfa0fd40e4e26f9c1dde065d0209
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.openlocfilehash: b341996c45c4a0c5b7d8467419c3117f939afa20
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80636475"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120754"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migration cloud dans le Framework d’adoption du cloud
 
@@ -106,62 +106,38 @@ La migration est une activité exigeant de nombreux processus. À mesure que les
 
 Cette méthodologie et les étapes ci-dessus s’appuient sur les hypothèses suivantes :
 
+- La méthodologie régissant les sprints de migration s’inscrit dans les vagues de migration ou les versions qui sont définies à l’aide des méthodologies de planification, préparation et adoption. Dans chaque sprint de migration, un lot de charges de travail est migré vers le cloud.
 - Avant de migrer des charges de travail, au moins une [zone de destination](../ready/index.md) a été identifiée, configurée et déployée pour répondre aux besoins du plan d’adoption du cloud à court terme.
-- La migration est généralement associée aux termes _lift and shift_ ou _réhébergement_. Cette méthodologie et les étapes ci-dessus sont basées sur la conviction qu’aucun centre de données (et très peu de charges de travail) ne doit être migré selon une approche de réhébergement pure. Si de nombreuses charges de travail peuvent être réhébergées, les clients choisissent néanmoins plus souvent de moderniser des ressources spécifiques au sein de chaque charge de travail. Au cours de ce processus itératif, l’équilibre entre la rapidité et la modernisation est un point de discussion courant.
+- La migration est généralement associée aux termes _lift and shift_ ou _réhébergement_. Cette méthodologie et les étapes ci-dessus sont basées sur la conviction qu’aucun centre de données et peu de charges de travail ne doivent être migrés selon une approche de réhébergement pure. Si de nombreuses charges de travail peuvent être réhébergées, les clients choisissent néanmoins plus souvent de moderniser des ressources spécifiques au sein de chaque charge de travail. Au cours de ce processus itératif, l’équilibre entre la rapidité et la modernisation est un point de discussion courant.
 
-## <a name="iterative-migration-process"></a>Processus itératif de migration
+## <a name="migration-effort"></a>Effort de migration
 
-La migration vers le cloud se compose essentiellement de quatre phases simples : évaluer, migrer, optimiser, et sécuriser et gérer. Cette section du Framework d’adoption du cloud explique comment optimiser les résultats de chaque phase du processus et aligner ces phases avec votre plan d’adoption du cloud. Le graphique suivant illustre ces phases dans une approche itérative :
+L’effort nécessaire pour migrer des charges de travail est généralement divisé en trois phases : évaluation, déploiement et mise en production. Cette section du Cloud Adoption Framework enseigne aux lecteurs comment optimiser le retour de chaque phase requise pour migrer une charge de travail en production.
 
-![Modèle de migration du Framework d’adoption du cloud](../_images/migrate/methodology.png)
+Dans une itération standard de deux semaines, une équipe de migration expérimentée peut effectuer ce processus pour 2 à 5 charges de travail de faible-moyenne complexité. Les charges de travail plus complexes telles que SAP peuvent nécessiter plusieurs itérations de deux semaines pour achever les trois phases de l’effort de migration. L’expérience et la complexité ont un impact significatif sur les chronologies et la vélocité de la migration.
 
-## <a name="create-a-balanced-cloud-portfolio"></a>Créer un portefeuille cloud équilibré
+![Effort de migration du Cloud Adoption Framework](../_images/migrate/methodology.png)
 
-Tout portefeuille technologique équilibré est constitué d’un mélange de ressources dans différents états. La mise hors service est planifiée pour certaines applications et celles-ci font donc l’objet d’un support minimal. D’autres applications ou ressources font l’objet d’un support de l’ordre de la simple maintenance, mais les fonctionnalités de ces solutions sont stables. Pour des processus métier plus récents, les conditions changeantes du marché vont probablement pousser à une amélioration ou à une modernisation en continu des fonctionnalités. Quand des opportunités de générer de nouveaux flux de revenus se présentent, de nouvelles applications ou ressources sont introduites dans l’environnement. À chaque étape du cycle de vie d’une ressource, l’impact d’un investissement sur le chiffre d’affaires et sur les bénéfices va changer. Plus la phase du cycle de vie est tardive, moins il est probable qu’une nouvelle fonctionnalité ou un travail de modernisation va générer un fort retour sur investissement.
+Les points suivants fournissent une vue d’ensemble des phases de ce processus (illustrées ci-dessus) :
 
-Le cloud fournit différents mécanismes d’adoption, chacun avec des degrés similaires d’investissement et de retour. La création d’applications cloud natives peut considérablement réduire les dépenses d’exploitation. Une fois qu’une application cloud native est publiée, l’itération du développement de nouvelles fonctionnalités et solutions peut être plus rapide. La modernisation d’une application peut procurer des avantages similaires en supprimant les contraintes héritées de l’existant associées aux modèles de développement locaux. Malheureusement, ces deux approches sont fastidieuses et dépendent de la taille, des compétences et de l’expérience des équipes de développement des logiciels. Souvent, les développeurs ne sont pas là où ils voudraient être : les personnes avec les compétences et le talent nécessaires pour moderniser des applications préféreraient créer de nouvelles applications. Dans un marché contraint par les ressources humaines, les projets de modernisation à grande échelle peuvent être impactés négativement par la satisfaction et le talent des employés. Dans un portefeuille équilibré, cette approche doit être réservée aux applications qui recevraient des améliorations significatives des fonctionnalités si elles restaient locales.
+- **Évaluer les charges de travail :** Évaluez les charges de travail pour estimer les coûts, la modernisation et les outils de déploiement. Ce processus se concentre sur la validation ou la remise en question des hypothèses formulées au cours de découvertes et d’évaluations précédentes en examinant de plus près les options de rationalisation. C’est également au cours de cette phase que les modèles et les dépendances des utilisateurs sont étudiés plus en détail pour vérifier que les charges de travail atteindront les objectifs techniques après la migration.
+- **Déployer les charges de travail :** Une fois les charges de travail évaluées, les fonctionnalités existantes de ces charges de travail sont répliquées (ou améliorées) dans le cloud. Ceci peut impliquer un _lift-and-shift_ ou un _réhébergement_ dans le cloud. Mais le plus souvent au cours de cette phase, de nombreuses ressources prenant en charge ces charges de travail sont modernisées pour tirer parti des avantages du cloud.
+- **Mettre en production les charges de travail :** Une fois les fonctionnalités répliquées dans le cloud, les charges de travail peuvent être testées, optimisées, documentées et mises en production pour les opérations en cours. Durant ce processus, il est essentiel de passer en revue les charges de travail migrées et de les transmettre aux équipes de gouvernance, de gestion des opérations et de sécurité pour assurer la prise en charge continue de ces charges de travail.
 
-## <a name="envision-an-end-state"></a>Prévoir un état final
+> [!NOTE]
+> Dans certaines des premières itérations de l’effort de migration, il est courant de limiter l’étendue à une seule charge de travail. Cette approche maximise la rétention des compétences et donne à l’équipe plus de temps pour expérimenter et apprendre.
+> [!NOTE]
+> Lors de la création d’une fabrique de migration, certaines équipes peuvent choisir de répartir chacune des phases ci-dessus entre plusieurs équipes et/ou sprints. Cette approche peut améliorer la répétabilité et accélérer les efforts de migration.
 
-Un parcours efficace a besoin d’une destination cible. Élaborez une vision globale de l’état final avant d’entreprendre la première étape. Cette infographie présente un point de départ constitué d’applications, de données et d’une infrastructure existantes, qui définit l’existant numérique. Pendant le processus de migration, chaque ressource subit une transition via une des options figurant à droite.
+## <a name="migration-waves"></a>Vagues de migration
 
-## <a name="migration-implementation"></a>Implémentation de la migration
+Les itérations de migration confèrent une valeur technique en migrant les ressources et les charges de travail. Une vague de migration est la plus petite collection de charges de travail fournissant une valeur métier tangible et mesurable. Chaque itération doit se terminer dans un rapport détaillant les efforts techniques réalisés. Toutefois, les changements d’ordre métier et la planification stratégique se produisent généralement à un niveau légèrement supérieur. Au fur et à mesure que l’équipe d’adoption du cloud participe à l’effort de migration, l’équipe de stratégie cloud se concentre sur la planification des 1 à 2 vagues de migration suivantes. L’équipe de stratégie cloud suit également les progrès techniques sous la forme d’une métrique d’apprentissage pour mieux comprendre les chronologies associées à la réalisation de la valeur métier. À cet égard, les vagues de migration constituent l’approche itérative de gestion des changements pour faire le suivi des résultats métier, des personnes et des chronologies.
 
-Ces articles décrivent deux parcours, chacun avec un objectif similaire: migrer un pourcentage important des ressources existantes vers Azure. Cependant, les résultats métier et l’état actuel vont influencer considérablement les processus nécessaires pour y arriver. Ces écarts subtils aboutissent à des deux approches radicalement différentes pour atteindre un état final similaire.
-
-![Modèle de migration du Framework d’adoption du cloud](../_images/migrate/methodology.png)
-
-Pour guider une exécution incrémentielle pendant la transition vers l’état final, ce modèle sépare la migration selon deux aspects.
-
-**Préparation de la migration :** Établir un backlog approximatif de la migration principalement basé sur l’état actuel et sur les résultats souhaités.
-
-- **Résultats métier :** Les objectifs métier principaux pilotant cette migration.
-- **Estimation de l’existant numérique** : Une estimation approximative du nombre et de la condition des charges de travail à migrer.
-- **Rôles et responsabilités :** Une définition claire de la structure de l’équipe, de la séparation des responsabilités et des exigences quant aux accès.
-- **Exigences de la gestion du changement :** La cadence, les processus et la documentation nécessaires pour passer en revue et approuver les changements.
-
-Ces entrées initiales déterminent le backlog de la migration. Le résultat du backlog de la migration est une liste hiérarchisée des applications à migrer vers le cloud. Cette liste détermine l’exécution du processus de migration cloud. Au fil du temps, elle va aussi augmenter pour inclure une grande partie de la documentation nécessaire pour gérer le changement.
-
-**Processus de migration :** Chaque activité de la migration cloud est contenue dans un des processus suivants, car elle concerne le backlog de la migration.
-
-- **Évaluer :** Évaluer une ressource existante et établir un plan pour la migration de la ressource.
-- **Migrer :** Répliquer la fonctionnalité d’une ressource dans le cloud.
-- **Optimiser :** Équilibrer les performances, le coût, les accès et la capacité opérationnelle d’une ressource cloud.
-- **Sécuriser et gérer :** Vérifier qu’une ressource cloud est prête pour les opérations courantes.
-
-Les informations collectées pendant le développement d’un backlog de migration déterminent la complexité et le niveau du travail nécessaire au sein du processus de migration cloud lors de chaque itération et pour chaque version de la fonctionnalité.
-
-## <a name="transition-to-the-end-state"></a>Transition vers l’état final
-
-L’objectif est d’une migration vers le cloud sans heurts et en partie automatisée. Le processus de migration utilise les outils fournis par un fournisseur cloud pour répliquer et organiser rapidement les ressources dans le cloud. Après vérification, une simple modification du réseau redirige les utilisateurs vers la solution cloud. Pour de nombreux cas d’usage, la technologie pour atteindre cet objectif est largement disponible. Des exemples de cas montrent la rapidité avec laquelle 10 000 machines virtuelles peuvent être répliquées dans Azure.
-
-Cependant, une approche incrémentielle de la migration reste nécessaire. Dans la plupart des environnements, la longue liste des machines virtuelles à migrer doit être décomposée en unités de travail plus petites pour que la migration réussisse. De nombreux facteurs limitent le nombre de machines virtuelles qui peuvent être migrées au cours d’une période donnée. La vitesse du trafic réseau sortant est une des quelques limites techniques ; la plupart des limites sont imposées par la capacité de l’entreprise à valider et à s’adapter aux changements.
-
-L’approche incrémentielle de la migration du Framework d’adoption du cloud facilite la création d’un plan incrémentiel qui reflète et documente les limitations techniques et culturelles. L’objectif de ce modèle est de maximiser la rapidité de la migration tout en minimisant la surcharge de travail pour le département informatique et pour l’entreprise. Vous trouverez ci-après deux exemples d’exécution d’une migration incrémentielle basée sur le backlog de la migration.
+Comme indiqué dans le graphique de la section précédente, les processus se trouvant dans la [méthodologie de planification](../plan/index.md), la [méthodologie de préparation](../ready/index.md) et, dans certains cas, la [méthodologie de stratégie](../strategy/index.md) du Cloud Adoption Framework fournissent des conseils sur la planification et la gestion des vagues de migration. La gestion de ces vagues permet de hiérarchiser et de définir l’effort de migration à fournir par les équipes techniques.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Commencez par vous familiariser avec le [Guide de migration Azure](./azure-migration-guide/index.md)
+Les étapes « Bien démarrer » ci-dessus ainsi que les instructions disponibles dans la méthodologie de migration vous aideront à développer des compétences pour améliorer l’exécution des processus au sein de chaque sprint de migration. Le [guide de migration Azure](./azure-migration-guide/index.md) est une série d’articles décrivant les outils et les approches les plus couramment utilisés durant votre première vague de migration.
 
 > [!div class="nextstepaction"]
 > [Guide de migration Azure](./azure-migration-guide/index.md)

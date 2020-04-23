@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: cc095a1751e945ca18763757582a6cd27b65d72a
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527683"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119763"
 ---
-# <a name="validate-assessment-assumptions-before-migration"></a>Valider les hypothèses d’évaluation avant la migration
+# <a name="assess-workloads-and-validate-assumptions-before-migration"></a>Évaluer les charges de travail et valider les hypothèses avant la migration
 
 Bon nombre de vos charges de travail existantes sont des candidates idéales pour la migration vers le cloud, mais toutes les ressources ne sont pas compatibles avec les plateformes cloud et certaines charges de travail ne tirent aucun profit de l’hébergement dans le cloud. La [planification du patrimoine numérique](../../../digital-estate/index.md) vous permet de générer un [backlog de migration](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing) global des charges de travail potentielles à migrer. Toutefois, cet effort de planification est global. Il s’appuie sur des hypothèses formulées par l’équipe de stratégie cloud et n’explore pas en profondeur les considérations techniques.
 

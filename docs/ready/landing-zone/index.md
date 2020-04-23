@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 907cb23b61ffada1a97abe87545ed7d4cdd7d56a
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 4ad4f5d1b5e3352d308ae31db1cc86bb87eb5b76
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392585"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120066"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,9 @@ L’infrastructure as code (IaC) est une transition naturelle durant la plupart 
 
 ## <a name="landing-zone-definition"></a>Définition de la zone d’accueil
 
-Une zone d’accueil est l’élément constitutif de tout environnement d’adoption du cloud. Le terme _zone d’accueil_ fait référence à une construction logique qui capture tous les prérequis à l’adoption du cloud souhaitée.
+Une zone atterrissage est un environnement permettant d’héberger vos charges de travail qui sont préprovisionnées par le biais de code. Elle comprend des fonctionnalités de base reposant sur un ensemble défini de services cloud et de bonnes pratiques pour assurer votre réussite.
+
+Plus précisément, une zone atterrissage est l’élément constitutif de tout environnement d’adoption du cloud. Le terme _zone d’accueil_ fait référence à une construction logique qui capture tous les prérequis à l’adoption du cloud souhaitée.
 
 **Étendue :** une zone d’accueil pleinement opérationnelle prend en compte toutes les ressources de plateforme requises pour répondre aux besoins d’adoption du client.
 
@@ -36,7 +38,7 @@ Une zone d’accueil est l’élément constitutif de tout environnement d’ado
 
 Les zones d’accueil ne sont pas obligatoirement différentes pour les environnements d’adoption IaaS et PaaS. Toutefois, les zones d’accueil sont spécialement conçues pour prendre en charge le plan d’adoption qui est conforme à la stratégie d’abonnement. La prise en charge du plan d’adoption peut nécessiter l’utilisation de plusieurs zones d’accueil avec une combinaison de composants requis.
 
-L’objectif et l’étendue du plan d’adoption global du cloud définissent « l’ossature » requise. D’autres exigences en matière de gouvernance, de conformité, de sécurité et de gestion opérationnelle sont généralement ajoutées à l’étendue initiale des zones d’accueil. Durant les premières phases de l’adoption, les zones d’accueil peuvent nécessiter une « ossature » plus légère en raison des exigences définies et des risques acceptables.  Quand il y a plusieurs zones d’accueil, la pratique courante est que chaque zone d’accueil dépende des hubs qui fournissent les contrôles requis par le biais d’un modèle de services partagés.
+L’objectif et l’étendue du plan d’adoption global du cloud définissent « l’ossature » requise. D’autres exigences en matière de gouvernance, de conformité, de sécurité et de gestion opérationnelle sont généralement ajoutées à l’étendue initiale des zones d’accueil. Durant les premières phases de l’adoption, les zones d’accueil peuvent nécessiter une « ossature » plus légère en raison des exigences définies et des risques acceptables. Quand il y a plusieurs zones d’accueil, la pratique courante est que chaque zone d’accueil dépende des hubs qui fournissent les contrôles requis par le biais d’un modèle de services partagés.
 
 ## <a name="related-terms"></a>Termes connexes
 
@@ -48,7 +50,7 @@ L’objectif et l’étendue du plan d’adoption global du cloud définissent �
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour commencer à utiliser des zones d’accueil, [choisissez votre première zone d’accueil](./first-landing-zone.md).
+Avant de commencer à utiliser votre première zone d’atterrissage, il est important de comprendre les [principes de refactorisation](./refactor.md) qui guident cette approche.
 
 > [!div class="nextstepaction"]
-> [Choisir votre première zone d’accueil](./first-landing-zone.md)
+> [Refactoriser des zones d’atterrissage](./refactor.md)

@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f078f3fb989c6db9ca14371c2fadd17805d4d3a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 0d83ccc83397153619bc7ca99881c6a2775ab1a3
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432272"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120688"
 ---
-# <a name="optimize-migrated-workloads"></a>Optimiser les charges de travail migrées
+# <a name="release-workloads"></a>Mettre en production les charges de travail
 
-Après avoir migré une charge de travail vers le cloud (ressources connexes incluses), vous devez la préparer pour la promouvoir et l’utiliser en production. Au cours de ce processus, des activités préparent la charge de travail, dimensionnent les ressources dépendantes et préparent l’entreprise à l’entrée en production de la charge de travail cloud migrée.
+Après avoir déployé une collection de charges de travail et leurs ressources connexes sur le cloud, vous devez les préparer en vue de la mise en production. Au cours de cette phase de l’effort de migration, la collection de charges de travail fait l’objet d’un test de charge. Les charges de travail sont ensuite testées dans l’entreprise, puis optimisées et documentées. Après examen et approbation des déploiements de charges de travail par les équipes métier et informatiques, ces charges de travail peuvent être mises en production ou transmises aux équipes en charge de la gouvernance, de la sécurité et des opérations pour les opérations en cours.
 
-L’optimisation a pour but de préparer une charge de travail migrée afin de la promouvoir en vue d’une utilisation en production.
+La « mise en production des charges de travail » a pour but de préparer des charges de travail migrées afin de les promouvoir en vue d’une utilisation en production.
 
 ## <a name="definition-of-done"></a>Définition de « *terminé* »
 

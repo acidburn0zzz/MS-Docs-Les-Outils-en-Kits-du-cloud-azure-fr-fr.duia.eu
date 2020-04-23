@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 82ded4af4d3014187e012dbc7d371237d519b4ca
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 115b79d41c4f7d0c2c9b27db0d42b61e1ee45dee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392422"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119688"
 ---
-# <a name="execute-a-migration"></a>Exécuter une migration
+# <a name="deploy-workloads"></a>Déployer les charges de travail
 
-Une fois qu’une charge de travail a été évaluée, vous pouvez la migrer dans le cloud. Cette série d’articles explique les différentes activités qui peuvent être impliquées dans l’exécution d’une migration.
+Une fois les charges de travail évaluées, elles peuvent être déployées dans le cloud ou placées en préproduction en vue de leur mise en production. Cette série d’articles explique les différentes activités qui peuvent être impliquées dans cette phase de l’effort de migration.
 
 ## <a name="objective"></a>Objectif
 
