@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c701d49a80ea0ec087f26f792b7ffe8dbd4c061f
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 9e12f76251b635c76c23a195b6d60cd0ea4d070c
+ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392495"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81646831"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -21,6 +21,39 @@ ms.locfileid: "80392495"
 Voici la liste des changements récemment apportés au Cloud Adoption Framework.
 
 Ce framework est le fruit d’une collaboration entre les clients, les partenaires et les équipes internes de Microsoft. Les nouveautés et les mises à jour sont publiées dès qu’elles sont disponibles. De cette façon, vous pouvez tester, valider et affiner les conseils à nos côtés. Nous vous encourageons à faire équipe avec nous afin de développer le Cloud Adoption Framework pour Azure.
+
+## <a name="april-14-2020"></a>14 avril 2020
+
+Nous avons rassemblé tous les outils et modèles d’adoption du cloud à un même emplacement pour faciliter leur recherche. 
+
+| Article | Description |
+|----------|-------------|
+| [Outils et modèles](../reference/tools-templates.md) | Recherchez les outils, modèles et évaluations susceptibles de vous aider à accélérer votre parcours d’adoption du cloud. | 
+
+## <a name="april-4-2020"></a>4 avril 2020
+
+Itération continue de l’affinement des conseils de migration et d’aide pour un alignement plus étroit avec les commentaires des clients, des partenaires Microsoft et des programmes Microsoft internes.
+
+### <a name="migrate-updates"></a>Migrer des mises à jour
+
+| Article                                                                                                                 | Description                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Méthodologie de migration](../migrate/index.md)                       | Ces modifications simplifient les phases de l’effort de migration (évaluer des charges de travail, déployer des charges de travail et libérer des charges de travail). Les modifications suppriment également les informations relatives au backlog de migration. Le fait de supprimer ces informations et de faire référence aux méthodologies Plan (planification), Ready (prêt) et Adopt (adoption) crée à la place une flexibilité pour différents programmes d’adoption du cloud afin de mieux les adapter à la méthodologie.  |
+| Mise à jour de la table des matières                       | La table des matières pour le Guide de migration Azure et les améliorations de processus ont été mises à jour pour refléter les modifications apportées à la méthodologie.  |
+
+### <a name="ready-updates"></a>Mises à jour de la préparation
+
+| Article                                                                                                                 | Description                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Refactoriser des zones d’atterrissage](../ready/landing-zone/refactor.md)                       | **Nouvel article :** À partir des ateliers Ready, cet article illustre la théorie de la prise en main d’un modèle initial, l’utilisation d’arbres de décision et la refactorisation pour développer la zone d’atterrissage et la migration vers un état futur de la préparation des entreprises. |
+| [Étendre votre zone d’atterrissage](../ready/considerations/index.md)                       | **Nouvel article :** S’appuie sur la section des itérations parallèles de l’article de refactorisation pour montrer comment les différents types d’expansions de zones d’atterrissage incorporeront des principes partagés dans la plateforme de prise en charge. (Le contenu d’origine de cette vue d’ensemble a été déplacé vers le nœud [Considérations de base sur l’atterrissage](../ready/considerations/basic-considerations.md) dans la table des matières.) |
+| [Développement piloté par les tests des zones d’atterrissage](../ready/considerations/test-driven-development.md)                       | **Nouvel article :** L’approche de refactorisation est grandement améliorée grâce à l’adoption d’un cycle de développement piloté par les tests pour guider le développement et la refactorisation des zones d’atterrissage. |
+| [TDD des zones d’atterrissage dans Azure](../ready/considerations/azure-test-driven-development.md)                       | **Nouvel article :** Les outils de gouvernance Azure fournissent une plateforme complète pour les cycles TDD ou les tests Rouge/Vert. |
+| [Améliorer la sécurité des zones d’atterrissage](../ready/considerations/landing-zone-security.md)                       | **Nouvel article :** Vue d’ensemble des meilleures pratiques dans cette section, avec un lien vers le cycle TDD. |
+| [Améliorer les opérations de zone d’atterrissage](../ready/considerations/landing-zone-operations.md)                       | **Nouvel article :** Liste des meilleures pratiques de la méthodologie de gestion, avec une transition vers cette approche modulaire pour améliorer les opérations, la fiabilité et les performances. |
+| [Améliorer la gouvernance des zones d’atterrissage](../ready/considerations/landing-zone-governance.md)                       | **Nouvel article :** Liste des meilleures pratiques liées à la méthodologie de gouvernance, avec une transition vers cette approche modulaire pour améliorer la gouvernance, la gestion des coûts et la mise à l’échelle. |
+| [Démarrer à l’échelle de l’entreprise](../ready/considerations/enterprise-scale.md)                       | **Nouvel article :** Illustrez une approche qui montre les différences dans le processus, lorsqu’un client commence par des modèles de zone d’atterrissage à l’échelle de l’entreprise. Cet article aide les clients à comprendre les qualificateurs qui prendront en charge cette décision. |
+| Mise à jour de la table des matières                       | La table des matières a été mise à jour pour refléter les nouveaux articles.  |
 
 ## <a name="march-27-2020"></a>27 mars 2020
 
@@ -42,7 +75,7 @@ Nous avons ajouté des instructions qui incluent les outils, les programmes et l
 
 | Article                                                                                     | Description                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Développement et déploiement d’applications](../innovate/kubernetes/application-development.md) | **Nouvel article :** Fournit des check-lists, des ressources et des bonnes pratiques pour la planification du développement d’applications, la configuration de pipelines DevOps et l’implémentation de l’ingénierie de fiabilité des sites pour Kubernetes. |
+| [Développement et déploiement d’applications](../innovate/kubernetes/application-development.md) | **Nouvel article :** Fournit des check-lists, des ressources et des bonnes pratiques pour la planification du développement d’applications, la configuration de pipelines CI/CD et l’implémentation de l’ingénierie de fiabilité des sites pour Kubernetes. |
 | [Conception et opérations de cluster](../innovate/kubernetes/cluster-design-operations.md) | **Nouvel article :** Fournit des check-lists, des ressources et des bonnes pratiques pour la configuration de clusters, la conception de réseau, la scalabilité durable, la continuité de l’activité et la reprise de l’activité après sinistre pour Kubernetes. |
 | [Sécurité des clusters et des applications](../innovate/kubernetes/cluster-application-security.md) | **Nouvel article :** Fournit des check-lists, des ressources et des bonnes pratiques pour la planification de la sécurité, la production et la mise à l’échelle Kubernetes. |
 
