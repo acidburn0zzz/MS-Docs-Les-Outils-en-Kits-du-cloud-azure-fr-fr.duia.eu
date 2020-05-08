@@ -3,16 +3,16 @@ title: Préparation aux compétences pour la supervision du cloud
 description: Préparation aux compétences pour la supervision du cloud
 author: BrianBlanchard
 ms.author: magoedte
-ms.date: 03/23/2020
+ms.date: 05/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe76729b4a845d71629d7d24d4bdd3110fa6ab9a
+ms.sourcegitcommit: 5058bc57cb53701ac409959b46767ae6fd56ba93
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120544"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82861433"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -37,13 +37,13 @@ L’acquisition des qualifications nécessaires peut être accélérée grâce a
 
 - Découvrez comment [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) vous aide à voir la disponibilité et les performances de vos applications et services à partir d’un emplacement unique. Pluralsight offre les cours suivants pour vous aider :
 
-  - [Microsoft Azure IaaS Monitoring and Management](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started) (Gestion et supervision IaaS Microsoft Azure) explique comment utiliser Azure Monitor pour effectuer une supervision de base des charges de travail exécutées sur IaaS.
-
-  - [Monitoring Microsoft Azure Resources and Workloads](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) (Supervision des ressources et charges de travail Microsoft Azure) explique comment utiliser les outils de supervision Microsoft Azure pour superviser les ressources réseau Azure ainsi que les ressources locales.
+  - [Monitoring Microsoft Azure Resources and Workloads](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) (Supervision des ressources et charges de travail Microsoft Azure) explique comment utiliser les outils de supervision Microsoft Azure pour superviser les ressources réseau Azure ainsi que les ressources locales.
 
   - [Microsoft Azure DevOps Engineer: Optimize Feedback Mechanisms](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) (Ingénieur Microsoft Azure DevOps : Optimiser les mécanismes de commentaires) vous aide à vous préparer à utiliser Azure Monitor, notamment Application Insights et Log Analytics, pour superviser et optimiser vos applications web.
 
   - [Microsoft Azure Database Monitoring Playbook](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) (Playbook sur la supervision Microsoft Azure Database) explique comment implémenter et utiliser la supervision d’Azure SQL Database, Azure SQL Data Warehouse et Azure Cosmos DB.
+
+  - [Instrumenter des applications avec Azure Monitor Application Insights](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument) est un cours approfondi sur l’utilisation du kit SDK Application Insights pour collecter la télémétrie et les événements d’une application avec les composants Angular et Node.js.
 
 - Avec [Azure Arc pour serveurs](https://docs.microsoft.com/azure/azure-arc/servers/overview), découvrez comment gérer vos machines Windows et Linux hébergées en dehors d’Azure de la même façon que vous gérez des machines virtuelles Azure natives.
 
