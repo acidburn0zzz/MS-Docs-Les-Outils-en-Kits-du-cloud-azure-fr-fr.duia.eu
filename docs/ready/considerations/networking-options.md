@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bc14bb03f048ab335cd836c6a4a520b8df0ccad8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c310bb6bf7bf2054f315d80c5bddf75871edef09
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997971"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223061"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -59,10 +59,10 @@ La mise en réseau Azure est composée de plusieurs produits et services qui fou
 | J’ai besoin de réponses DNS ultra-rapides et d’une ultra haute disponibilité pour tous mes besoins en matière de domaine. | [DNS Azure](https://docs.microsoft.com/azure/dns) |
 | Je dois accélérer la distribution de contenu à large bande passante aux clients du monde entier, des applications et du contenu stocké à la vidéo en streaming. | [Azure Content Delivery Network](https://docs.microsoft.com/azure/cdn) |
 | Je dois protéger mes applications Azure contre les attaques DDoS. | [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) |
-| Je dois distribuer le trafic de manière optimale aux services dans les régions Azure du monde entier, tout en offrant une disponibilité et une adaptabilité élevées. | [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager)<br/>[Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| Je dois distribuer le trafic de manière optimale aux services dans les régions Azure du monde entier, tout en offrant une disponibilité et une adaptabilité élevées. | [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager) <br><br> [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
 | Je dois ajouter une connectivité réseau privée pour accéder aux services cloud Microsoft à partir de mes réseaux d’entreprise, comme s’ils se trouvaient en local et résidaient dans mon propre centre de données. | [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute) |
 | Je veux surveiller et diagnostiquer les conditions au niveau d’un réseau. | [Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher) |
-| J’ai besoin de fonctionnalités de pare-feu natives, avec une haute disponibilité et une extensibilité cloud illimitée intégrées, et sans aucune maintenance. | [Pare-feu Azure](https://docs.microsoft.com/azure/firewall) |
+| J’ai besoin de fonctionnalités de pare-feu natives, avec une haute disponibilité et une extensibilité cloud illimitée intégrées, et sans aucune maintenance. | [Pare-feu Azure](https://docs.microsoft.com/azure/firewall/overview) |
 | Je dois connecter des bureaux, des emplacements de vente et des sites en toute sécurité. | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan) |
 | J’ai besoin d’un point de livraison évolutif et à sécurité augmentée pour des applications web globales basées sur les microservices. | [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
 
@@ -74,14 +74,17 @@ Après avoir identifié les services de mise en réseau Azure dont vous avez bes
 
 Le tableau suivant récapitule les principaux scénarios pris en charge par ces modèles :
 
-| **Scénario**                                                                                                                                                                                                                                                                                                                        | **Architecture réseau suggérée**                                                  |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Toutes les charges de travail hébergées dans Azure et déployées sur votre zone d’atterrissage sont entièrement basées sur PaaS, ne nécessitent pas de réseau virtuel et ne font pas partie d’un effort d’adoption du cloud plus étendu qui inclut des ressources IaaS.                                                                                                                        | [PaaS uniquement](../../decision-guides/software-defined-network/paas-only.md)            |
-| Vos charges de travail hébergées par Azure déploient des ressources IaaS telles que des machines virtuelles ou nécessitent un réseau virtuel, mais ne nécessitent pas de connectivité à votre environnement local.                                                                                                                                          | [Cloud natif](../../decision-guides/software-defined-network/cloud-native.md)      |
-| Vos charges de travail hébergées dans Azure nécessitent un accès limité aux ressources locales, mais vous devez traiter les connexions au cloud comme non approuvées.                                                                                                                                                                                           | [Zone DMZ cloud](../../decision-guides/software-defined-network/cloud-dmz.md)            |
-| Vos charges de travail hébergées dans Azure nécessitent un accès limité aux ressources locales, et vous envisagez d’implémenter des stratégies de sécurité matures et une connectivité sécurisée entre le cloud et votre environnement local.                                                                                                                         | [Hybride](../../decision-guides/software-defined-network/hybrid.md)                  |
+| **Scénario**                                                                                                                                                                                                                                                                                                                                                          | **Architecture réseau suggérée**                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Toutes les charges de travail hébergées dans Azure et déployées sur votre zone d’atterrissage sont entièrement basées sur PaaS, ne nécessitent pas de réseau virtuel et ne font pas partie d’un effort d’adoption du cloud plus étendu qui inclut des ressources IaaS.                                                                                                                                                          | [PaaS uniquement](../../decision-guides/software-defined-network/paas-only.md)            |
+| Vos charges de travail hébergées par Azure déploient des ressources IaaS telles que des machines virtuelles ou nécessitent un réseau virtuel, mais ne nécessitent pas de connectivité à votre environnement local.                                                                                                                                                                            | [Cloud natif](../../decision-guides/software-defined-network/cloud-native.md)      |
+| Vos charges de travail hébergées dans Azure nécessitent un accès limité aux ressources locales, mais vous devez traiter les connexions au cloud comme non approuvées.                                                                                                                                                                                                                             | [Zone DMZ cloud](../../decision-guides/software-defined-network/cloud-dmz.md)            |
+| Vos charges de travail hébergées dans Azure nécessitent un accès limité aux ressources locales, et vous envisagez d’implémenter des stratégies de sécurité matures et une connectivité sécurisée entre le cloud et votre environnement local.                                                                                                                                                           | [Hybride](../../decision-guides/software-defined-network/hybrid.md)                  |
 | Vous devez déployer et gérer un grand nombre de machines virtuelles et de charges de travail , tout en dépassant les [limites d’abonnement Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits), vous devez partager des services entre les abonnements, ou vous avez besoin d’une structure plus segmentée pour la séparation en fonction du rôle, de l’application ou des autorisations. | [Hub-and-spoke](../../decision-guides/software-defined-network/hub-spoke.md)        |
-| Vous avez de nombreuses filiales qui doivent se connecter les unes aux autres et à Azure.                                                                                                                                                                                                                                                       | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| Vous avez de nombreuses filiales qui doivent se connecter les unes aux autres et à Azure.                                                                                                                                                                                                                                                                                         | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Centre de données virtuel Azure
 
@@ -97,6 +100,6 @@ En plus de l’utilisation de l’un de ces modèles d’architecture, si le gro
 
 Dans le cadre de votre processus de conception réseau, consultez les articles suivants :
 
-- [Planification des réseaux virtuels](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Découvrez comment planifier des réseaux virtuels selon vos besoins en isolation, connectivité et emplacements.
-- [Meilleures pratiques Azure pour la sécurité réseau](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Découvrez les meilleures pratiques Azure qui peuvent vous aider à améliorer la sécurité de votre réseau.
-- [Meilleures pratiques pour la mise en réseau lorsque vous migrez des charges de travail vers Azure](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Obtenez des conseils supplémentaires sur la façon d’implémenter la mise en réseau Azure pour prendre en charge les charges de travail IaaS et PaaS.
+- [Planification des réseaux virtuels](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Découvrez comment planifier des réseaux virtuels selon vos besoins en isolation, connectivité et emplacements.
+- [Meilleures pratiques Azure pour la sécurité réseau](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Découvrez les meilleures pratiques Azure qui peuvent vous aider à améliorer la sécurité de votre réseau.
+- [Meilleures pratiques pour la mise en réseau lorsque vous migrez des charges de travail vers Azure](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Obtenez des conseils supplémentaires sur la façon d’implémenter la mise en réseau Azure pour prendre en charge les charges de travail IaaS et PaaS.

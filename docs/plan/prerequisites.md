@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e723e16c039bace12c0a4e5e97c8e6635875732d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 413953f6da2eece12a54aa708fb4daa466d9959d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427981"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223403"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Vérification de la configuration pour un plan d’adoption du cloud efficace
 
-L’efficacité du plan est équivalente aux données qui y sont placées. Pour que le plan d’adoption du cloud soit efficace, il existe deux catégories d’entrées : *stratégique* et *tactique*. Les sections suivantes décrivent les points de données minimum requis dans chaque catégorie.
+L’efficacité du plan est équivalente aux données qui y sont placées. Pour que le plan d’adoption du cloud soit efficace, il existe deux catégories d’entrées : _stratégique_ et _tactique_. Les sections suivantes décrivent les points de données minimum requis dans chaque catégorie.
 
 ## <a name="strategic-inputs"></a>Entrées stratégiques
 

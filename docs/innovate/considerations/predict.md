@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bbbed6fd267a6cac7b052c28a0b902c233d74374
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5f9217e64919198feb2b55cf068ca3dc5133309e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427371"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222434"
 ---
 # <a name="predict-and-influence"></a>Prédire et influencer
 
-Il existe deux catégories d’applications dans l’économie numérique : *historiques* et *prédictives*. Seule l’utilisation de données historiques, notamment de données quasi en temps réel, permet de satisfaire à de nombreuses exigences des clients. À l’heure actuelle, la plupart des solutions se concentrent principalement sur l’agrégation des données. Ensuite, elles traitent et partagent ces données avec le client, sous la forme d’une expérience numérique ou ambiante.
+Il existe deux catégories d’applications dans l’économie numérique : _historiques_ et _prédictives_. Seule l’utilisation de données historiques, notamment de données quasi en temps réel, permet de satisfaire à de nombreuses exigences des clients. À l’heure actuelle, la plupart des solutions se concentrent principalement sur l’agrégation des données. Ensuite, elles traitent et partagent ces données avec le client, sous la forme d’une expérience numérique ou ambiante.
 
 Comme la modélisation prédictive devient de plus en plus rentable et facile d’accès, les clients exigent des expériences visionnaires modernes afin d’améliorer les prises de décisions et les actions. Cependant, cette demande n’aboutit pas toujours à une solution prédictive. Dans la plupart des cas, un affichage historique peut fournir suffisamment de données pour éclairer le client lors de ses prises de décision.
 
@@ -32,7 +32,7 @@ Diverses applications et expériences ambiantes utilisent des données pour fair
 
 ## <a name="develop-predictive-capabilities"></a>Développer des capacités prédictives
 
-Les solutions dotées de fonctionnalités de prédiction exactes présentent généralement cinq caractéristiques principales : *des données*, *des insights*, *des modèles*, *des prédictions* et *des interactions*. Tous ces éléments sont nécessaires pour développer des capacités prédictives. Comme toutes les grandes innovations, le développement de capacités prédictives nécessite un [engagement dans l’itération](./index.md#commitment-to-iteration). Dans chaque itération, une ou plusieurs des caractéristiques suivantes ont évolué pour valider des hypothèses clients de plus en plus complexes.
+Les solutions dotées de fonctionnalités de prédiction exactes présentent généralement cinq caractéristiques principales : _des données_, _des insights_, _des modèles_, _des prédictions_ et _des interactions_. Tous ces éléments sont nécessaires pour développer des capacités prédictives. Comme toutes les grandes innovations, le développement de capacités prédictives nécessite un [engagement dans l’itération](./index.md#commitment-to-iteration). Dans chaque itération, une ou plusieurs des caractéristiques suivantes ont évolué pour valider des hypothèses clients de plus en plus complexes.
 
 ![Procédure de développement des capacités prédictives](../../_images/innovate/predict-and-influence.png)
 

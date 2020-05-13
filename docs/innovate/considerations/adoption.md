@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8afb39bdad3b521d3470e2e5eaca3f64a81061c0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3dc7eeb2a8727fd1787265b408d1f930f3d76c11
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433410"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222483"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Créer des partenariats avec les clients dans le cadre de la boucle de rétroaction développer-mesurer-apprendre
 
@@ -24,7 +24,7 @@ Quelle que soit leur taille, les entreprises qui prospèrent dans l'économie nu
 
 ## <a name="the-build-measure-learn-feedback-loop"></a>Boucle de rétroaction développer-mesurer-apprendre
 
-Comme décrit dans [Innovation dans l'économie numérique](./index.md), l'innovation nécessite un équilibre entre *invention* et *adoption*. Les commentaires des clients et les partenariats sont les moteurs de l'adoption. En transformant vos clients en fidèles partenaires au cours des cycles d'innovation, vous pouvez réaliser de meilleurs produits et gagner plus rapidement du terrain sur le marché.
+Comme décrit dans [Innovation dans l'économie numérique](./index.md), l'innovation nécessite un équilibre entre _invention_ et _adoption_. Les commentaires des clients et les partenariats sont les moteurs de l'adoption. En transformant vos clients en fidèles partenaires au cours des cycles d'innovation, vous pouvez réaliser de meilleurs produits et gagner plus rapidement du terrain sur le marché.
 
 ![Schéma de la boucle de rétroaction développer-mesurer-apprendre](../../_images/innovate/bml-feedback-loop.png)
 

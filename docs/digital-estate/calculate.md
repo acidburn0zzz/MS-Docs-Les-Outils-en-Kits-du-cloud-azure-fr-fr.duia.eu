@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: fb9793f34815aca5b714a2862b733287e233d88f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dd96aaba22713a0dce733d379b44eeaae386e81
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81479358"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222689"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Aligner les modèles de coûts sur le patrimoine numérique afin de prévoir les coûts liés au cloud
 
@@ -21,7 +21,7 @@ Après avoir rationalisé un patrimoine numérique, vous pouvez l’aligner sur 
 
 Les outils de tarifs Azure vous permettent de gérer vos dépenses cloud avec transparence et précision afin que vous puissiez tirer le meilleur parti d’Azure et des autres clouds. Ces outils permettent de superviser, d’allouer et d’optimiser les dépenses cloud afin d’accélérer les investissements en toute confiance.
 
-- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) : Azure Migrate est sans doute l’approche la plus économique pour l’alignement sur un modèle de coût. Vous pouvez réaliser un [inventaire](./inventory.md), une [rationalisation limitée](./rationalize.md) et le calcul des coûts pour votre patrimoine numérique à l’aide d’un seul et même outil.
+- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) : Azure Migrate est sans doute l’approche la plus économique pour l’alignement sur un modèle de coût. Vous pouvez réaliser un [inventaire](./inventory.md), une [rationalisation limitée](./rationalize.md) et le calcul des coûts pour votre patrimoine numérique à l’aide d’un seul et même outil.
 
 - [Outil de calcul du coût total de possession](https://azure.microsoft.com/pricing/tco/calculator) : Réduisez le coût total de possession de votre infrastructure locale avec la plateforme cloud Azure. Utilisez la calculatrice du coût total de possession Azure pour estimer les économies que vous pouvez réaliser en effectuant la migration de vos charges de travail d’application vers Azure. Entrez une brève description de votre environnement local pour obtenir un rapport instantanément.
 
