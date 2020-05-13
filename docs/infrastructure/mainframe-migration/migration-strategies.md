@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0f57483ed09ec87422773c6a2fb53e2785a0a24e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3d50dc6ec4a2c20b7d73bd2f0cc0ed3414e24581
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425521"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217640"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
@@ -23,6 +23,8 @@ Plateforme alternative permettant l’exécution d’applications mainframe clas
 Cette section fournit des recommandations techniques pour assurer la transition d’une plateforme mainframe vers Azure.
 
 ![Ordinateur mainframe et Azure](../../_images/mainframe-migration/make-the-switch.png)
+
+<!-- docsTest:ignore "vs. vCPUs" -->
 
 ## <a name="mips-vs-vcpus"></a>MIPS contre processeurs virtuels
 
@@ -61,7 +63,7 @@ La fonctionnalité de couplage effectue un calcul fortement couplé, alors que l
 
 Les clients dotés d’un ordinateur mainframe gèrent généralement des sites de récupération d’urgence ou font appel à un fournisseur de services mainframe indépendant pour les situations d’urgence. La synchronisation avec un site de récupération d’urgence s’effectue habituellement via des copies de données hors connexion. Dans les deux cas, les coûts sont élevés.
 
-La géoredondance automatisée est également disponible via la fonctionnalité de couplage mainframe. Cette approche est coûteuse et est généralement réservée aux systèmes stratégiques. En revanche, Azure propose des options de [sauvegarde](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), de [récupération](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) et de [redondance](https://docs.microsoft.com/azure/storage/common/storage-redundancy) économiques et faciles à implémenter au niveau local ou régional ou via la géoredondance.
+La géoredondance automatisée est également disponible via la fonctionnalité de couplage mainframe. Cette approche est coûteuse et est généralement réservée aux systèmes stratégiques. En revanche, Azure propose des options de [sauvegarde](https://docs.microsoft.com/azure/backup/backup-overview), de [récupération](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) et de [redondance](https://docs.microsoft.com/azure/storage/common/storage-redundancy) économiques et faciles à implémenter au niveau local ou régional ou via la géoredondance.
 
 ## <a name="storage"></a>Stockage
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9647ec56145d54537541ee70bbdb2280c9cae2ac
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 126699d4d5e8d69f230047f16654d5ccb635a8e2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426817"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216722"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventaire et visibilité dans Azure
 
@@ -26,16 +26,16 @@ Cette discipline vient en premier, car il est essentiel de collecter les donnée
 
 Dans le cas d’un environnement d’entreprise, le tableau suivant présente le minimum suggéré pour une base de référence de gestion.
 
-|Process  |Outil  |Objectif  |
-|---------|---------|---------|
-|Surveiller l’intégrité des services Azure|Azure Service Health|Intégrité, performances et diagnostics pour les services s’exécutant dans Azure|
-|Centralisation des journaux|Log Analytics|Journalisation centralisée pour tous les objectifs de visibilité|
-|Surveillance de la centralisation|Azure Monitor|Surveillance centralisée des données opérationnelles et des tendances|
-|Inventaire de machine virtuelle et suivi des modifications|Suivi des modifications et inventaire Azure|Inventorier les machines virtuelles et surveiller les modifications au niveau du système d’exploitation invité|
-|Supervision des abonnements|Journaux d’activité|Surveillance des modifications au niveau de l’abonnement|
-|Surveillance du système d’exploitation invité|Azure Monitor pour machines virtuelles|Surveillance des modifications et des performances des machines virtuelles|
-|Analyse du réseau|Azure Network Watcher|Surveillance des modifications et des performances du réseau|
-|Supervision DNS|DNS Analytics|Sécurité, performances et opérations de DNS|
+| Process | Outil | Objectif |
+|---|---|---|
+| Surveiller l’intégrité des services Azure | Azure Service Health | Intégrité, performances et diagnostics pour les services s’exécutant dans Azure |
+| Centralisation des journaux | Log Analytics | Journalisation centralisée pour tous les objectifs de visibilité |
+| Surveillance de la centralisation | Azure Monitor | Surveillance centralisée des données opérationnelles et des tendances |
+| Inventaire de machine virtuelle et suivi des modifications | Suivi des modifications et inventaire Azure | Inventorier les machines virtuelles et surveiller les modifications au niveau du système d’exploitation invité |
+| Supervision des abonnements | Journaux d’activité | Surveillance des modifications au niveau de l’abonnement |
+| Surveillance du système d’exploitation invité | Azure Monitor pour machines virtuelles | Surveillance des modifications et des performances des machines virtuelles |
+| Analyse du réseau | Azure Network Watcher | Surveillance des modifications et des performances du réseau |
+| Supervision DNS | DNS Analytics | Sécurité, performances et opérations de DNS |
 
 ::: zone target="docs"
 

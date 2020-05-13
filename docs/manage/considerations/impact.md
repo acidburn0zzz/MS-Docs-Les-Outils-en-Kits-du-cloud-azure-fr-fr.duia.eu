@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3e7c74a1d2afa880a0bdec5215b2237e8261ec79
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17951fef2a93d4c592cc620e4f8aa14ba0c11c58
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426361"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217351"
 ---
 # <a name="business-impact-in-cloud-management"></a>Impact commercial en gestion cloud
 
@@ -20,13 +20,13 @@ Supposez le meilleur, préparez-vous au pire. Dans le cadre de la gestion inform
 
 ![Impact des interruptions](../../_images/manage/time-value-impact.png)
 
-Pour obtenir une comparaison équitable de la façon dont les différentes charges de travail du portefeuille sont impactées, il est recommandé d’utiliser une métrique Temps/Valeur. La métrique Temps/Heure montre l’impact négatif d’une panne de charge de travail. En règle générale, cet impact est enregistré sous la forme d’une perte directe sur le chiffre d’affaires ou sur le chiffre d’affaires d’exploitation au cours d’une panne. Pour être plus précis, le montant des pertes de revenus pour une unité de temps est calculé. La métrique Temps/Valeur la plus courante est *Impact par heure*, qui mesure les pertes de revenus d’exploitation par heure de panne.
+Pour obtenir une comparaison équitable de la façon dont les différentes charges de travail du portefeuille sont impactées, il est recommandé d’utiliser une métrique Temps/Valeur. La métrique Temps/Heure montre l’impact négatif d’une panne de charge de travail. En règle générale, cet impact est enregistré sous la forme d’une perte directe sur le chiffre d’affaires ou sur le chiffre d’affaires d’exploitation au cours d’une panne. Pour être plus précis, le montant des pertes de revenus pour une unité de temps est calculé. La métrique Temps/Valeur la plus courante est _Impact par heure_, qui mesure les pertes de revenus d’exploitation par heure de panne.
 
 Plusieurs approches de calcul de l’impact peuvent être utilisées. Vous pouvez appliquer les options disponibles dans les sections suivantes pour obtenir des résultats similaires. Il est important d’utiliser la même approche pour chaque charge de travail lorsque vous calculez les pertes protégées d’un portefeuille.
 
 ## <a name="start-with-estimates"></a>Commencer par les estimations
 
-Les modèles d’exploitation actuels peuvent compliquer la détermination d’un impact précis. Heureusement, peu de systèmes ont besoin d’un calcul des pertes extrêmement précis. Dans l’étape précédente, *Classifier l’état critique*, il a été suggéré que toutes les charges de travail démarrent par défaut avec un *état critique moyen*. Les charges de travail de l’état critique moyen reçoivent généralement un niveau standard de support de gestion, avec un impact relativement faible sur les coûts d’exploitation. C’est seulement lorsqu’une charge de travail nécessite des ressources de gestion opérationnelle supplémentaires qu’un impact financier précis est nécessaire.
+Les modèles d’exploitation actuels peuvent compliquer la détermination d’un impact précis. Heureusement, peu de systèmes ont besoin d’un calcul des pertes extrêmement précis. Dans l’étape précédente, _Classifier l’état critique_, il a été suggéré que toutes les charges de travail démarrent par défaut avec un _état critique moyen_. Les charges de travail de l’état critique moyen reçoivent généralement un niveau standard de support de gestion, avec un impact relativement faible sur les coûts d’exploitation. C’est seulement lorsqu’une charge de travail nécessite des ressources de gestion opérationnelle supplémentaires qu’un impact financier précis est nécessaire.
 
 Pour toutes les charges de travail standardisées, l’impact commercial est une variable de priorité lorsque vous récupérez vos systèmes pendant une panne. En dehors de ces situations assez rares, l’impact commercial modifie très peu, voire pas du tout, la gestion des opérations.
 
@@ -54,7 +54,7 @@ Lorsque vous calculez des pertes en appliquant des données historiques, vous po
 
 Si vous utilisez le [classeur de gestion des operations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud, procéder comme suit :
 
-- Chaque entreprise doit mettre à jour chacune des charges de travail présentées sous les onglets *Exemple* et *Nettoyer le modèle* avec *Impact Temps/Valeur* de chaque charge de travail. Par défaut, *Impact Temps/Valeur* représente les pertes projetées par heure, associées à une panne de charge de travail.
+- Chaque entreprise doit mettre à jour chacune des charges de travail présentées sous les onglets _Exemple_ et _Nettoyer le modèle_ avec *Impact Temps/Valeur* de chaque charge de travail. Par défaut, *Impact Temps/Valeur* représente les pertes projetées par heure, associées à une panne de charge de travail.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

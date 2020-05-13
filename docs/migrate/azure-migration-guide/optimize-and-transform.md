@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8ac8887f849704610822429a2b5e49833a78487c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17ba2d635e702faedec3c3441c5171c88d8fc59e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119724"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217130"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
@@ -98,7 +98,7 @@ Les partenaires peuvent utiliser l’espace partenaires pour passer en revue l�
 
 ::: zone-end
 
-# <a name="cost-management"></a>[Cost Management](#tab/ManageCost)
+# <a name="cost-management"></a>[Gestion des coûts](#tab/ManageCost)
 
 Il est important d’effectuer une analyse et un examen des coûts récurrents. Cela vous donne la possibilité de redimensionner les ressources en fonction de vos besoins pour équilibrer les coûts et la charge de travail.
 

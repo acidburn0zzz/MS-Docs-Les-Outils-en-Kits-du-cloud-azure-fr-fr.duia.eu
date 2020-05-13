@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f4b6b2d5d944e3176b2f36ef713955a4c29324f9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67145b6c5da9c7da740771acfea38ba97e6f8a9c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426570"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217453"
 ---
 <!-- cSpell:ignore siterecovery -->
 
@@ -28,10 +28,10 @@ Dans [Conformité opérationnelle dans Azure](./operational-compliance.md), l’
 
 Dans le cas d’un environnement d’entreprise, ce tableau présente le minimum suggéré pour toute ligne de base de gestion :
 
-|Process  |Outil  |Objectif  |
-|---------|---------|---------|
-|Protection des données|Sauvegarde Azure|Sauvegardez des données et des machines virtuelles dans le cloud.|
-|Protéger l'environnement|Azure Security Center|Renforcer la sécurité et fournir une protection avancée contre les menaces pour vos charges de travail hybrides.|
+| Process                 | Outil                  | Objectif                                                                                  |
+| ----------------------- | --------------------- | ---------------------------------------------------------------------------------------- |
+| Protection des données            | Sauvegarde Azure          | Sauvegardez des données et des machines virtuelles dans le cloud.                                          |
+| Protéger l'environnement | Azure Security Center | Renforcer la sécurité et fournir une protection avancée contre les menaces pour vos charges de travail hybrides. |
 
 ::: zone target="docs"
 
@@ -64,7 +64,7 @@ Sauvegarde Azure vous permet de sauvegarder, protéger et récupérer vos donné
 
 ::: zone target="docs"
 
-[Vue d'ensemble](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
+[Vue d'ensemble](https://docs.microsoft.com/azure/backup/backup-overview)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 

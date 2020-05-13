@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3f6d5cbc2485a8e5a3752f24659e8873abb40a8d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 074762c6d02c6da1cd6812064e20f63a44aa4bd7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430613"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217283"
 ---
 # <a name="common-azure-policy-examples"></a>Exemples de stratégies Azure Policy courantes
 
@@ -32,7 +32,7 @@ La conformité aux réglementations et aux stratégies dépend souvent du contr�
 Pour trouver cette stratégie dans le portail, recherchez « emplacement » dans la page de définition de stratégie. Ou exécutez cette cmdlet pour rechercher la stratégie :
 
 ```powershell
-Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*location*") }
+Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn') -and ($_.Properties.displayName -like '*location*') }
 ```
 
 Le script suivant montre comment attribuer la stratégie. Modifiez la valeur de `$SubscriptionID` pour qu’elle pointe vers l’abonnement auquel vous souhaitez affecter la stratégie. Avant d’exécuter le script, utilisez la cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) pour vous connecter.
@@ -46,7 +46,7 @@ $scope = "/subscriptions/$SubscriptionID"
 $AllowedLocationPolicy = Get-AzPolicyDefinition -Name "e56962a6-4747-49cd-b67b-bf8b01975c4c"
 
 #Replace the locations with the ones you want to specify.
-$policyParam = '{"listOfAllowedLocations":{"value":["eastus","westus"]}}'
+$policyParam = '{ "listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyParam
 ```
 
@@ -70,7 +70,7 @@ Azure offre un large éventail de tailles de machines virtuelles qui prennent en
 
 ### <a name="deploy-antimalware"></a>Déployer un logiciel anti-programme malveillant
 
-Vous pouvez utiliser cette stratégie pour déployer une extension Microsoft *IaaSAntimalware* avec une configuration par défaut sur les machines virtuelles qui ne sont pas protégées par un logiciel anti-programme malveillant.
+Vous pouvez utiliser cette stratégie pour déployer une extension Microsoft _IaaSAntimalware_ avec une configuration par défaut sur les machines virtuelles qui ne sont pas protégées par un logiciel anti-programme malveillant.
 
 Le GUID de la stratégie est `2835b622-407b-4114-9198-6f7064cbe0dc`.
 
