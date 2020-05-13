@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ddf148a71baba3a7675a9e5bb77eb44d07fe0354
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527659"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224100"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Obstacles et défis courants à l’innovation
 
@@ -32,9 +32,9 @@ La liste suivante donne des précisions sur certains des défis les plus courant
 
 ### <a name="internal-challenges"></a>Défis internes
 
-- **Sélection des innovations candidates :** En investissant dans l’innovation, les entreprises saines génèrent une quantité infinie d’inventions potentielles. Bon nombre d’entre eux créent des analyses de rentabilisation convaincantes qui suggèrent des rendements élevés et génèrent des feuilles de calcul attrayantes en matière de justification métier. Comme décrit dans l’article sur le développement, *développer en faisant preuve d’empathie vis-à-vis du client* doit avoir la priorité sur l’invention qui est basée uniquement sur les projections de gain. Si aucune empathie vis-à-vis du client n’est visible dans la proposition, l’adoption à long terme est peu probable.
+- **Sélection des innovations candidates :** En investissant dans l’innovation, les entreprises saines génèrent une quantité infinie d’inventions potentielles. Bon nombre d’entre eux créent des analyses de rentabilisation convaincantes qui suggèrent des rendements élevés et génèrent des feuilles de calcul attrayantes en matière de justification métier. Comme décrit dans l’article sur le développement, _développer en faisant preuve d’empathie vis-à-vis du client_ doit avoir la priorité sur l’invention qui est basée uniquement sur les projections de gain. Si aucune empathie vis-à-vis du client n’est visible dans la proposition, l’adoption à long terme est peu probable.
 - **Équilibrage du portefeuille :** La plupart des mises en œuvre technologiques ne visent pas à changer le marché ou à améliorer la vie des clients. Dans le service informatique moyen, plus de 80 % des charges de travail sont conservées pour l’automatisation des processus de base. Grâce à la facilité d’innovation, il est tentant d’innover et de réorganiser ces solutions. La plupart du temps, ces charges de travail peuvent obtenir des retours similaires ou meilleurs en migrant ou en modernisant la solution, sans modification de la logique métier principale ou des processus de données. Équilibrez votre portefeuille pour favoriser les stratégies d’innovation qui peuvent être _développées_ en faisant preuve d’une empathie évidente vis-à-vis du client (interne ou externe). Pour toutes les autres charges de travail, suivez un chemin de migration vers la rentabilité financière.
-- **Maintien de l’attention et protection des priorités :** Lorsque vous avez pris un engagement en matière d’innovation, il est important de maintenir l’attention de votre équipe. Lors de la première itération d’une phase de *développement*, il est relativement facile de garder une équipe enthousiaste quant aux possibilités de changer l’avenir de vos clients. Toutefois, cette première version du MVP n’est qu’un début. La véritable innovation vient avec chaque cycle de développement, de mesure et d’apprentissage, en apprenant des retours d’informations afin de produire une meilleure solution. En tant que leader dans tout processus d’innovation, vous devez veiller à garder l’équipe concentrée et à maintenir vos priorités en matière d’innovation tout au long des itérations de développement ultérieures moins convaincantes.
+- **Maintien de l’attention et protection des priorités :** Lorsque vous avez pris un engagement en matière d’innovation, il est important de maintenir l’attention de votre équipe. Lors de la première itération d’une phase de _développement_, il est relativement facile de garder une équipe enthousiaste quant aux possibilités de changer l’avenir de vos clients. Toutefois, cette première version du MVP n’est qu’un début. La véritable innovation vient avec chaque cycle de développement, de mesure et d’apprentissage, en apprenant des retours d’informations afin de produire une meilleure solution. En tant que leader dans tout processus d’innovation, vous devez veiller à garder l’équipe concentrée et à maintenir vos priorités en matière d’innovation tout au long des itérations de développement ultérieures moins convaincantes.
 
 ## <a name="invention-challenges"></a>Défis liés à l’invention
 

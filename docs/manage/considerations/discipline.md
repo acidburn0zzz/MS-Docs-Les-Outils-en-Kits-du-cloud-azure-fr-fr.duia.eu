@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6033f12b1604818fef4c70f1863b7a99fb4c51e6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9571de511bbe037a35703f4ee64ef00edbe1745f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809068"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223998"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Nivellement de la gestion pour les différentes disciplines de gestion cloud
 
@@ -32,7 +32,7 @@ Pour commencer, envisagez d’établir les niveaux de gestion indiqués dans le 
 - **Spécialisation de charge de travail :** Pour les charges de travail qui sont véritablement critiques, une gestion plus approfondie, et donc plus coûteuse, peut être justifiée. La spécialisation de la charge de travail applique les données de télémétrie de la charge de travail pour déterminer des approches plus avancées concernant la gestion quotidienne. Ces mêmes données permettent souvent d’identifier les améliorations devant être apportées à l’automatisation, au déploiement et à la conception, en vue d’atteindre un plus haut niveau de stabilité, de fiabilité et de résilience, par rapport à ce que permet une gestion opérationnelle seule.
 - **Non pris en charge :** Il est tout aussi important de communiquer les processus de gestion communs qui ne seront pas fournis par le biais de disciplines de gestion cloud pour les charges de travail classifiées comme non prises en charge ou non critiques.
 
-Les organisations peuvent également choisir d’[externaliser les fonctions associées à un ou plusieurs de ces niveaux de gestion à un fournisseur de services](https://aka.ms/adopt/partneroffers). Ces fournisseurs de services peuvent utiliser [Azure Lighthouse](https://azure.com/lighthouse) pour fournir une plus grande précision et une plus grande transparence.
+Les organisations peuvent également choisir d’[externaliser les fonctions associées à un ou plusieurs de ces niveaux de gestion à un fournisseur de services](https://aka.ms/adopt/partneroffers). Ces fournisseurs de services peuvent utiliser [Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/overview) pour fournir une plus grande précision et une plus grande transparence.
 
 Les autres articles de cette série décrivent des processus qui sont généralement communs à chacune de ces disciplines.
 De même, le [Guide de gestion Azure](../azure-management-guide/index.md) présente des outils qui peuvent aider à chacun de ces processus. Si vous souhaitez obtenir de l’aide pour la création de votre base de référence de gestion, commencez par lire le guide de gestion Azure. Après avoir établi la base de référence, cette série d’articles et les bonnes pratiques qui les accompagnent, peuvent vous aider à étendre votre base de référence afin de définir d’autres niveaux de gestion.
@@ -41,7 +41,7 @@ De même, le [Guide de gestion Azure](../azure-management-guide/index.md) prése
 
 Chaque niveau de gestion suggéré peut faire appel à diverses disciplines de gestion cloud. Toutefois, le mappage est conçu pour faciliter la recherche des processus et des outils suggérés permettant d’offrir le niveau de gestion cloud le mieux adapté.
 
-Dans la plupart des cas, le *niveau de base de référence de gestion* mentionné plus haut est constitué de processus et d’outils provenant des disciplines suivantes. Dans chaque cas, quelques processus et outils sont présentés afin de montrer les *améliorations apportées aux fonctions de base de référence*.
+Dans la plupart des cas, le _niveau de base de référence de gestion_ mentionné plus haut est constitué de processus et d’outils provenant des disciplines suivantes. Dans chaque cas, quelques processus et outils sont présentés afin de montrer les _améliorations apportées aux fonctions de base de référence_.
 
 - **Inventaire et visibilité :** La base de référence de gestion doit inclure au minimum un moyen d’inventorier les ressources, et fournir une visibilité sur l’état d’exécution de chaque ressource.
 - **Conformité opérationnelle :** Une gestion régulière de la configuration, du dimensionnement, du coût et des performances des ressources est essentielle pour garantir les performances attendues et le bon fonctionnement de la base de référence de gestion.

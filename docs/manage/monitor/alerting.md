@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5a3879e4b1d5a076e1869100471afbf4f7cd046e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 33aaab94c1f6758f6b77be62ab7a70ed2f6bc1ee
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997671"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223828"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -80,12 +80,14 @@ Azure Monitor prend en charge l’intégration à d’autres plateformes de supe
 
 En général, les [solutions de gestion](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory) stockent leurs données dans le magasin de journaux Azure. Les deux exceptions sont Azure Monitor pour machines virtuelles et Azure Monitor pour conteneurs. Le tableau suivant décrit l’expérience des alertes basée sur le type de données particulier et sur l’emplacement où il est stocké.
 
-Solution| Type de données | Comportement des alertes
-:---|:---|:---
-Azure Monitor pour des conteneurs | Les données des performances moyennes calculées à partir des nœuds et des pods sont écrites dans le magasin de métriques. | Créez des alertes de métrique si vous voulez être alerté en fonction de la variation des performances d’utilisation mesurées et agrégées sur une période donnée.
-|| Les données de performances calculées qui utilisent des centiles provenant de nœuds, de contrôleurs, de conteneurs et de pods sont écrites dans le magasin de journaux. Les journaux de conteneur et les informations d’inventaire sont également écrits dans le magasin de journaux. | Créez des alertes de requête de journal si vous voulez être alerté en fonction de la variation de l’utilisation mesurée des clusters et des conteneurs. Les alertes de requête de journal peuvent également être configurées en fonction des nombres de phases de pods et des nombres de nœuds d’état.
-Azure Monitor pour machines virtuelles | Les critères d’intégrité sont des métriques écrites dans le magasin de métriques. | Des alertes sont générées quand l’état d’intégrité passe d’une condition saine à une condition non saine. Cette alerte prend seulement en charge les groupes d’actions configurés pour envoyer des notifications par SMS ou par e-mail.
-|| Les données du journal de performances du système d’exploitation de mappage et invité sont écrites dans le magasin de journaux. | Créez des alertes de requête de journal.
+| Solution | Type de données | Comportement des alertes |
+|---| ---| --- |
+| Azure Monitor pour des conteneurs | Les données des performances moyennes calculées à partir des nœuds et des pods sont écrites dans le magasin de métriques. | Créez des alertes de métrique si vous voulez être alerté en fonction de la variation des performances d’utilisation mesurées et agrégées sur une période donnée. |
+| | Les données de performances calculées qui utilisent des centiles provenant de nœuds, de contrôleurs, de conteneurs et de pods sont écrites dans le magasin de journaux. Les journaux de conteneur et les informations d’inventaire sont également écrits dans le magasin de journaux. | Créez des alertes de requête de journal si vous voulez être alerté en fonction de la variation de l’utilisation mesurée des clusters et des conteneurs. Les alertes de requête de journal peuvent également être configurées en fonction des nombres de phases de pods et des nombres de nœuds d’état. |
+Azure Monitor pour machines virtuelles | Les critères d’intégrité sont des métriques écrites dans le magasin de métriques. | Des alertes sont générées quand l’état d’intégrité passe d’une condition saine à une condition non saine. Cette alerte prend seulement en charge les groupes d’actions configurés pour envoyer des notifications par SMS ou par e-mail. |
+| | Les données du journal de performances du système d’exploitation de mappage et invité sont écrites dans le magasin de journaux. | Créez des alertes de requête de journal. |
+
+<!-- docsTest:ignore "speed driven" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>Vitesse la plus rapide pilotée par le coût
 

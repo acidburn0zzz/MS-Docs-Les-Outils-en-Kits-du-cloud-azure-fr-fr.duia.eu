@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 45eda399229361d9a2bd762ec6c8d8624e3a0742
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b3c963341e7e13020cb4e67fca29db14569fa6b3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997127"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223947"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Inventaire et visibilité en gestion cloud
 

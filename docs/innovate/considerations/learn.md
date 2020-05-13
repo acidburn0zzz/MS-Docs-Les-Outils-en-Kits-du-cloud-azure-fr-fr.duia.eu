@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 80eba5ddb0d92bef638cb2925515268818c50735
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bdc4f36460acdb86e1bee55969044ad03b198285
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427411"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224117"
 ---
 <!-- cSpell:ignore Satya Nadella Ries -->
 
@@ -45,7 +45,7 @@ Peu de gens pourraient nier la transformation radicale qui est survenue au sein 
 - **Apprentissage continu :** L’orientation client et l’empathie vis-à-vis du client découlent d’un état d’esprit « J’apprends-tout ». La méthode Innover a pour objectif tout apprendre et non tout savoir.
 - **État d’esprit d’un débutant :** Faites preuve d’empathie en abordant chaque conversation avec l’état d’esprit d’un débutant. Que vous soyez novice dans votre domaine ou ayez 30 ans d’expérience, partez du principe que vous en savez peu et que vous avez beaucoup à apprendre.
 - **Écoutez davantage :** Les clients veulent faire équipe avec vous. Malheureusement, un ego qui vous pousse à vouloir avoir raison fait obstacle à ce partenariat. Pour en savoir plus au-delà des mesures, parlez-en moins et écoutez plus.
-- **Encouragez les autres :** Ne vous contentez pas d’écouter ; profitez de ce que vous *dites* pour encourager les autres. Dans chaque réunion, trouvez des moyens d’obtenir les différents points de vue des personnes susceptibles de ne pas les partager spontanément.
+- **Encouragez les autres :** Ne vous contentez pas d’écouter ; profitez de ce que vous **dites** pour encourager les autres. Dans chaque réunion, trouvez des moyens d’obtenir les différents points de vue des personnes susceptibles de ne pas les partager spontanément.
 - **Partagez le code :** Lorsque nous pensons que notre obligation est de nous approprier une base de code, nous perdons de vue le véritable pouvoir de l’innovation. Mettez l’accent sur l’appropriation et l’obtention de résultats pour vos clients. Partagez votre code (publiquement avec le monde ou en privé avec votre entreprise) pour avoir différentes perspectives de la solution et de la base de code.
 - **Remettez en question ce qui fonctionne :** La réussite ne signifie pas nécessairement que vous faites preuve d’une véritable empathie vis-à-vis du client. Évitez d’avoir des idées toutes faites et un parti pris sur le travail préalablement effectué. Recherchez l’apprentissage dans les métriques positives et négatives en impliquant vos clients dans le processus.
 - **Soyez inclusif :** Travaillez dur pour avoir différentes perspectives de la combinaison. De nombreuses variables peuvent diviser les êtres humains en groupes séparés. Les normes culturelles, les comportements passés, le sexe, la religion, l’orientation sexuelle, voire les capacités physiques. La véritable innovation survient lorsque nous nous mettons au défi de dépasser nos différences et d’œuvrer délibérément à inclure tous nos clients, partenaires et collègues.
