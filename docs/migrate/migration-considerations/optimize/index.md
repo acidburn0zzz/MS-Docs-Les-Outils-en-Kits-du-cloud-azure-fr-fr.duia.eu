@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0d83ccc83397153619bc7ca99881c6a2775ab1a3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1e101a75d3b13cc8cbcb6512d6a0a8b29674d5aa
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120688"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214206"
 ---
 # <a name="release-workloads"></a>Mettre en production les charges de travail
 
@@ -20,7 +20,7 @@ Après avoir déployé une collection de charges de travail et leurs ressources 
 
 La « mise en production des charges de travail » a pour but de préparer des charges de travail migrées afin de les promouvoir en vue d’une utilisation en production.
 
-## <a name="definition-of-done"></a>Définition de « *terminé* »
+## <a name="definition-of-_done_"></a>Définition de « _terminé_ »
 
 Le processus d’optimisation est terminé quand une charge de travail est correctement configurée, dimensionnée et déployée en production.
 

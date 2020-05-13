@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d34a97e24e681732de7d171e7add84a0d5e51281
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe1e6edb7f0c5480a4ae20e639471218ae9805e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426330"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223964"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>Gestion et opérations informatiques dans le cloud
 
@@ -27,6 +27,8 @@ Lorsque l’entreprise génère de nouvelles solutions technologiques, elle a un
 ## <a name="cloud-management"></a>Gestion de cloud
 
 Le modèle de fonctionnement informatique traditionnel s’est avéré suffisant pendant plus de 20 ans. Toutefois, ce modèle, devenu obsolète, est moins souhaitable que les alternatives privilégiant le cloud. Lorsque les équipes de gestion informatique adoptent le cloud, elles ont la possibilité de repenser ce modèle et de générer une plus grande valeur ajoutée pour l’entreprise. Cette série d’articles décrit un modèle modernisé de la gestion informatique.
+
+<!-- cSpell:ignore caf -->
 
 ![Méthodologie de gestion dans le Framework d’adoption du cloud](../../_images/manage/caf-manage.png)
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7d22bb4b4bae04366c61686862d1ae437185886d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eec9c7ae36dbe92142226e78afcdd465e4aa66a2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433515"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224219"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ Dans la gouvernance traditionnelle et incrémentielle, la stratégie d’entrepr
 
 ![Gouvernance d’entreprise et disciplines de gouvernance](../../_images/operational-transformation-govern-highres.png)
 
-*Figure 1 - Gouvernance d’entreprise et disciplines de gouvernance.*
+_Figure 1 : Gouvernance d’entreprise et disciplines de gouvernance._
 
 L’image ci-dessus montre les interactions qu’il existe entre les risques métier, la stratégie, la conformité, la supervision et l’application afin de créer une stratégie de gouvernance. Ensuite, vous sont présentées les cinq disciplines de la gouvernance cloud pour élaborer votre stratégie.
 
@@ -53,6 +53,8 @@ Avec l’approche incrémentielle de la gouvernance cloud, il existe parfois une
 ## <a name="minimum-viable-product-mvp-for-policy"></a>Produit minimum viable (MVP) pour la stratégie
 
 Pour faire émerger le partenariat entre l’équipe de gouvernance cloud et les équipes d’adoption du cloud, la première étape est un accord concernant le MVP de stratégie. Votre MVP de gouvernance cloud doit reconnaître que les risques métier sont faibles au début, mais vont probablement croître à mesure que votre organisation adopte plus de services cloud au fil du temps.
+
+<!-- cSpell:ignore HBI -->
 
 Par exemple, le risque métier est faible pour une entreprise de déployer cinq machines virtuelles qui ne contiennent aucune donnée HBI (High Business Impact). Plus tard dans le processus d’adoption, lorsque l’entreprise a atteint 1 000 machines virtuelles et qu’elle commence à déplacer les données HBI, le risque métier augmente.
 

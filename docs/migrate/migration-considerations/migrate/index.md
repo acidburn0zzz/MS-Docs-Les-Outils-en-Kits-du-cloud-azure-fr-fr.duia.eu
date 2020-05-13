@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 115b79d41c4f7d0c2c9b27db0d42b61e1ee45dee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6325e577453598bee8092ee3ba49c6dc1057c9e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119688"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214223"
 ---
 # <a name="deploy-workloads"></a>Déployer les charges de travail
 
@@ -22,11 +22,11 @@ Une fois les charges de travail évaluées, elles peuvent être déployées dans
 
 L’objectif d’une migration consiste à migrer une charge de travail unique vers le cloud.
 
-## <a name="definition-of-done"></a>Définition de « *terminé* »
+## <a name="definition-of-_done_"></a>Définition de « _terminé_ »
 
 La phase de migration est terminée quand une charge de travail, comprenant toutes les ressources nécessaires à son fonctionnement, est en préproduction et est prête à être testée dans le cloud. Durant le processus d’optimisation, la charge de travail est préparée en vue de son utilisation en production.
 
-Cette définition de « *terminé* » peut varier en fonction des processus de test et de publication. Le prochain article de cette série traite du [choix d’un modèle de promotion](./promotion-models.md) et peut vous aider à déterminer le meilleur moment de promouvoir une charge de travail migrée en vue d’une utilisation en production.
+Cette définition de « _terminé_ » peut varier en fonction des processus de test et de publication. Le prochain article de cette série traite du [choix d’un modèle de promotion](./promotion-models.md) et peut vous aider à déterminer le meilleur moment de promouvoir une charge de travail migrée en vue d’une utilisation en production.
 
 ## <a name="accountability-during-migration"></a>Responsabilité de la migration
 
