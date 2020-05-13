@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 54a2892ed657c08ee6c984798a61c1ff10716257
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120553"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219748"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -26,7 +26,7 @@ Il existe quelques problématiques clés pour l’adoption qui peuvent être ré
 
 Comme précisé dans [Mesure de l’impact client](./measure.md), la validation positive de toute hypothèse requiert une itération et une détermination. Vous échouerez plus souvent que vous ne réussirez au cours de n’importe quel cycle d’innovation. Ceci est normal. Toutefois, lorsqu’un besoin du client, l’hypothèse et la solution sont alignés à grande échelle, le monde change rapidement. Cet article vise à réduire les [pics techniques](./build.md#reduce-complexity-and-delay-technical-spikes) qui ralentissent l’innovation, tout en garantissant que quelques bonnes pratiques solides sont en place. Cela permet à l’équipe de se préparer au succès, tout en répondant aux besoins actuels des clients.
 
-## <a name="empowering-adoption-the-maturity-model"></a>Favoriser l’adoption : le modèle de maturité
+## <a name="empower-adoption-the-maturity-model"></a>Favoriser l’adoption : le modèle de maturité
 
 L’objectif principal de la [méthodologie d’innovation](./index.md) consiste à créer des partenariats avec les clients et à accélérer les boucles de commentaires, ce qui entraînera des innovations sur le marché. L’image et les sections qui suivent décrivent les implémentations initiales qui prendront en charge la méthodologie.
 
@@ -92,7 +92,7 @@ Investir trop tôt peut entraîner une perte de temps. Plus important encore, ce
 
 ## <a name="integrated-measurements"></a>Mesures intégrées
 
-En [mesurant l’impact client](./measure.md), il est important de comprendre comment les clients réagissent aux modifications apportées à la solution. Ces données, appelées *télémétrie*, fournissent des insights sur les actions effectuées par un utilisateur (ou un groupe d’utilisateurs) lors de l’utilisation de la solution. À partir de ces données, il est facile d’obtenir une validation quantitative de l’hypothèse. Ces métriques peuvent ensuite être utilisées pour ajuster la solution et générer des informations plus précises. Ces modifications plus subtiles permettent de faire passer la solution initiale dans les itérations suivantes, ce qui permet au final de répéter l’adoption à grande échelle.
+En [mesurant l’impact client](./measure.md), il est important de comprendre comment les clients réagissent aux modifications apportées à la solution. Ces données, appelées _télémétrie_, fournissent des insights sur les actions effectuées par un utilisateur (ou un groupe d’utilisateurs) lors de l’utilisation de la solution. À partir de ces données, il est facile d’obtenir une validation quantitative de l’hypothèse. Ces métriques peuvent ensuite être utilisées pour ajuster la solution et générer des informations plus précises. Ces modifications plus subtiles permettent de faire passer la solution initiale dans les itérations suivantes, ce qui permet au final de répéter l’adoption à grande échelle.
 
 Dans Azure, [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) fournit les outils et l’interface permettant de collecter et d’examiner les données de l’expérience client. Vous pouvez appliquer ces observations et insights pour affiner le backlog à l’aide d'[Azure Boards](https://docs.microsoft.com/azure/devops/boards).
 

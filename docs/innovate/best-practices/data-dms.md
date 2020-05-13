@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: afaedb0607ecf4b1195578dc72e756616c6384d4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1f1060ba4df7dfb398a94f8611901612e1ecf60d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425511"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219782"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Collecter des données dans le cadre de la migration et de la modernisation de sources de données existantes
 
@@ -46,14 +46,14 @@ Dans le cas d’une migration hors connexion, le temps d’arrêt de l’applica
 
 Nous vous suggérons de décider du temps d’arrêt acceptable pour votre entreprise et de tester une migration hors connexion. Ceci permet de vérifier si la durée de la restauration correspond à un temps d’arrêt acceptable. Si la durée de la restauration est inacceptable, effectuez une migration en ligne.
 
-|Source  |Cible  |Outil  |Type de migration  |Assistance  |
-|---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|Database Migration Service|Hors connexion|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL Database|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Azure SQL Database Managed Instance|Database Migration Service|Hors connexion|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Azure SQL Database Managed Instance|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
-|SQL Server RDS|Azure SQL Database ou instance gérée d’Azure SQL Database|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
-|MySQL|Azure Database pour MySQL|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
-|PostgreSQL|Azure Database pour PostgreSQL|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
-|MongoDB|API Mongo d’Azure Cosmos DB|Database Migration Service|Hors connexion|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
-|MongoDB|API Mongo d’Azure Cosmos DB|Database Migration Service|En ligne|[Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
+| Source  | Cible  | Outil  | Type de migration | Assistance |
+|---|---|---|---|---|
+| SQL Server | Azure SQL Database | Database Migration Service | Hors connexion | [Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
+| SQL Server | Azure SQL Database | Database Migration Service | En ligne | [Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online) |
+| SQL Server | Azure SQL Database Managed Instance | Database Migration Service | Hors connexion | [Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance) |
+| SQL Server | Azure SQL Database Managed Instance | Database Migration Service | En ligne | [Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online) |
+| SQL Server RDS | Azure SQL Database ou instance gérée d’Azure SQL Database | Database Migration Service | En ligne | [Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |
+| MySQL | Azure Database pour MySQL | Database Migration Service | En ligne | [Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online) |
+| PostgreSQL | Azure Database pour PostgreSQL | Database Migration Service | En ligne | [Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| MongoDB | API Mongo d’Azure Cosmos DB | Database Migration Service | Hors connexion | [Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db) |
+| MongoDB | API Mongo d’Azure Cosmos DB | Database Migration Service | En ligne | [Didacticiel](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online) |

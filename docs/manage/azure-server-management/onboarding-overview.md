@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f83678c1a2b3387155b9fa908c54e81670daf8ae
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0396ccaf952bc9d7812304af5d1d9c9952b751cc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426505"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219629"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>Phase 2 : Intégration aux services de gestion de serveurs Azure
 
@@ -38,7 +38,7 @@ Le schéma suivant illustre le modèle de déploiement recommandé pour les serv
 
 ![Schéma du modèle de déploiement recommandé](./media/recommended-deployment.png)
 
-Comme indiqué dans le schéma précédent, l’agent Log Analytics a une configuration d’*inscription automatique* et d’*adhésion* pour les serveurs locaux :
+Comme indiqué dans le schéma précédent, l’agent Log Analytics a une configuration d’_inscription automatique_ et d’_adhésion_ pour les serveurs locaux :
 
 - **Inscription automatique :** Lorsque l’agent Log Analytics est installé sur un serveur et configuré pour se connecter à un espace de travail, les solutions activées sur cet espace de travail sont automatiquement appliquées au serveur.
 - **Accepter :** Même si l’agent est installé et connecté à l’espace de travail, la solution n’est pas appliquée, sauf si elle est ajoutée à la configuration d’étendue du serveur dans l’espace de travail.
