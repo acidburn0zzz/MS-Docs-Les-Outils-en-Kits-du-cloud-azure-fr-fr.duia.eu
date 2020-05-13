@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe86c196e03e8908d3c9bb409cc3896286729015
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9b73743b9616d01a92b570f0022bdb72fd0372bf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429069"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215889"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Se préparer à la complexité culturelle : alignement des rôles et des responsabilités
 
@@ -47,14 +47,14 @@ Chaque processus au sein de la discussion sur les principes de migration du Fram
 
 | Process | Activité | Description | Partie responsable |
 |---------|---------|---------|---------|
-| Configuration requise | Patrimoine numérique | Alignez l’inventaire existant sur les hypothèses de base, en fonction des résultats métier. | équipe de stratégie cloud |
-| Configuration requise | Backlog de migration | Classez par ordre de priorité la séquence des charges de travail à migrer. | équipe de stratégie cloud |
-| Évaluer | Architecture | Défiez les hypothèses initiales pour définir l’architecture cible en fonction des métriques d’utilisation. | équipe d’adoption du cloud |
-| Évaluer | Approbation | Approuvez l’architecture proposée. | équipe de stratégie cloud |
-| Migrer | Accès à la réplication | Accès aux ressources et hôtes locaux existants pour établir des processus de réplication. | équipe d’adoption du cloud |
-| Optimiser | Ready | Vérifiez que le système répond aux exigences en matière de niveau de performance et de coût avant la promotion. | équipe d’adoption du cloud |
-| Optimiser | Promouvoir | Autorisations pour promouvoir une charge de travail en production et rediriger le trafic de production. | équipe d’adoption du cloud |
-| Sécuriser et gérer | Transition d’opérations | Documentez les systèmes de production avant les opérations de production. | équipe d’adoption du cloud |
+| Configuration requise | Patrimoine numérique | Alignez l’inventaire existant sur les hypothèses de base, en fonction des résultats métier. | Équipe de stratégie cloud |
+| Configuration requise | Backlog de migration | Classez par ordre de priorité la séquence des charges de travail à migrer. | Équipe de stratégie cloud |
+| Évaluer | Architecture | Défiez les hypothèses initiales pour définir l’architecture cible en fonction des métriques d’utilisation. | Équipe d’adoption du cloud |
+| Évaluer | Approbation | Approuvez l’architecture proposée. | Équipe de stratégie cloud |
+| Migrer | Accès à la réplication | Accès aux ressources et hôtes locaux existants pour établir des processus de réplication. | Équipe d’adoption du cloud |
+| Optimiser | Ready | Vérifiez que le système répond aux exigences en matière de niveau de performance et de coût avant la promotion. | Équipe d’adoption du cloud |
+| Optimiser | Promouvoir | Autorisations pour promouvoir une charge de travail en production et rediriger le trafic de production. | Équipe d’adoption du cloud |
+| Sécuriser et gérer | Transition d’opérations | Documentez les systèmes de production avant les opérations de production. | Équipe d’adoption du cloud |
 
 > [!CAUTION]
 > Pour ces activités, les autorisations et les privilèges influencent de manière importante la partie responsable, qui doit avoir un accès direct aux systèmes de production dans l’environnement existant ou doit disposer d’un moyen de sécuriser l’accès par d’autres intervenants responsables. Déterminer ce tiers responsable influence directement la stratégie de promotion pendant les processus de migration et d’optimisation.

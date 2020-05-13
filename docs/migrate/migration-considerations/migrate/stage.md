@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f6d45943ac8545083ce8d31215488b433a3ad00b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 40a0899a10e242e98ed16aa2bcbfdbd55f65afc2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432460"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216076"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>Comprendre les activités de préproduction pendant une migration
 
-Comme décrit dans l’article sur les modèles de promotion, la *préproduction* est le point auquel les ressources ont été migrées vers le cloud. Toutefois, elles ne sont pas encore prêtes à être promues en production. Il s’agit souvent de la dernière étape du processus de migration. Après la mise en préproduction, la charge de travail est gérée par une équipe chargée des opérations informatiques ou du cloud pour la préparer à l’utilisation en production.
+Comme décrit dans l’article sur les modèles de promotion, la _préproduction_ est le point auquel les ressources ont été migrées vers le cloud. Toutefois, elles ne sont pas encore prêtes à être promues en production. Il s’agit souvent de la dernière étape du processus de migration. Après la mise en préproduction, la charge de travail est gérée par une équipe chargée des opérations informatiques ou du cloud pour la préparer à l’utilisation en production.
 
 ## <a name="deliverables"></a>Livrables
 

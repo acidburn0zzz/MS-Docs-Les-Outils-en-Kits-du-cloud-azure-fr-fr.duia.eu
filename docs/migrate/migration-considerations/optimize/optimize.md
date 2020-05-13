@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c7d375ed8d4d126cfb38b4cd2fde30b1d36526a6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17edc2b008421648a195ab82878d82dcb791bfaa
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995131"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215944"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Évaluer et redimensionner les ressources cloud
 
@@ -26,7 +26,7 @@ Dans le cloud, les modèles de comptabilité et d’approvisionnement éliminent
 
 ## <a name="should-assets-be-optimized-during-or-after-the-migration"></a>Les ressources doivent-elles être optimisées pendant ou après la migration ?
 
-Quand une ressource doit-elle être optimisée, &mdash;pendant ou après la migration ? La réponse simple est *les deux*. Toutefois, cela n’est pas tout à fait exact. Pour expliquer comment procéder, observez les deux scénarios de base pour l’optimisation du dimensionnement des ressources :
+Quand une ressource doit-elle être optimisée, &mdash;pendant ou après la migration ? La réponse simple est _les deux_. Toutefois, cela n’est pas tout à fait exact. Pour expliquer comment procéder, observez les deux scénarios de base pour l’optimisation du dimensionnement des ressources :
 
 - **Redimensionnement planifié.** Souvent, une ressource est clairement surchargée et sous-exploitée et doit être redimensionnée lors du déploiement. Déterminer si une ressource a été redimensionnée avec succès dans ce cas requiert un test d’acceptation utilisateur après la migration. Si un utilisateur expérimenté ne note pas de pertes de performances ou de fonctionnalités pendant le test, vous pouvez conclure que la ressource a été dimensionnée avec succès.
 - **Optimisation.** Dans les cas où la nécessité de l’optimisation est incertaine, les équipes informatiques doivent utiliser une approche reposant sur les données pour la gestion de la taille des ressources. À l’aide des évaluations des performances de la ressource, une équipe informatique peut prendre des décisions éclairées quant à la taille, aux services, à l’échelle et à l’architecture les plus appropriés pour une solution. L’équipe peut ensuite redimensionner et tester les théories sur les performances après la migration.

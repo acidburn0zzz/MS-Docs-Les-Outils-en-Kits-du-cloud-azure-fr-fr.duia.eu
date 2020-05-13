@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a597a76e1d42d08c3800fd2f3831729bf53f10f1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dea3f98b73c6df7c6b667da56411c78cb02d581
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432877"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215481"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>Priorités de l’entreprise : Maintien de l’alignement
 
-Une *transformation* est souvent définie comme un changement spectaculaire ou spontané. Au niveau du tableau, un changement peut ressembler à une transformation spectaculaire. Toutefois, pour ceux qui travaillent dans le processus de changement d’une organisation, une transformation est un peu trompeuse. Sous la surface, une transformation est mieux décrite sous la forme d’une série de transitions correctement exécutées d’un état à un autre.
+Une _transformation_ est souvent définie comme un changement spectaculaire ou spontané. Au niveau du tableau, un changement peut ressembler à une transformation spectaculaire. Toutefois, pour ceux qui travaillent dans le processus de changement d’une organisation, une transformation est un peu trompeuse. Sous la surface, une transformation est mieux décrite sous la forme d’une série de transitions correctement exécutées d’un état à un autre.
 
 La durée nécessaire à la rationalisation ou à la transition d’une charge de travail varie en fonction de la complexité technique impliquée. Toutefois, même lorsque ce processus peut être appliqué rapidement à une seule charge de travail ou à un seul groupe d’applications, il faut du temps pour produire des changements substantiels parmi une base d’utilisateurs. Il faut davantage de temps pour que les changements se propagent dans les différentes couches de processus métier existants. Si l’on s’attend à ce que la transformation façonne les modèles de comportement des consommateurs, les résultats peuvent prendre plus de temps à produire des résultats significatifs.
 

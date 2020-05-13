@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29b6c03b7529ee0ca719272802e5920853593289
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3e1134d6ea4538a6b0f4c26418c0009d3810a25a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80392704"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216654"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Établir des pratiques de gestion opérationnelle dans le cloud
 
@@ -28,6 +28,8 @@ Les solutions de gestion des opérations modernes créent une vue multicloud des
 ## <a name="cloud-operations"></a>Opérations cloud
 
 Ces deux bonnes pratiques s'articulent autour d'une méthodologie de gestion des opérations basée sur l'état futur, comme l'illustre le diagramme suivant :
+
+<!-- cSpell:ignore caf -->
 
 ![Méthodologie de gestion dans le Framework d’adoption cloud](../_images/manage/caf-manage.png)
 

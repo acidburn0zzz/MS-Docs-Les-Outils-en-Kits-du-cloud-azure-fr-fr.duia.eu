@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2ad912c7bc2e61465a81e278714f5018c2373f7f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8c31b25b7c5ce75ab1b4c1ed3b76e9a1dfcb7422
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429229"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215906"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Préparer une application migrée pour la promotion en production
 
@@ -29,7 +29,7 @@ La transformation se produit lorsque des utilisateurs professionnels ou des clie
 
 ## <a name="final-technical-readiness-tests"></a>Tests finaux de la préparation technique
 
-*Prêt* est la dernière étape avant la mise en production. Cela signifie qu’il s’agit également de la dernière possibilité de tester la charge de travail. Voici quelques tests recommandés au cours de cette phase :
+_Prêt_ est la dernière étape avant la mise en production. Cela signifie qu’il s’agit également de la dernière possibilité de tester la charge de travail. Voici quelques tests recommandés au cours de cette phase :
 
 - **Test de l’isolement réseau.** Testez et surveillez le trafic pour vous assurer d’une isolation appropriée et de l’absence de vulnérabilités inattendues sur le réseau. Vérifiez également qu’aucun routage de réseau à interrompre pendant le basculement n’est confronté à un trafic inattendu.
 - **Test des dépendances.** Vérifiez que toutes les dépendances d’applications de charge de travail ont été migrées et sont accessibles à partir des ressources migrées.
