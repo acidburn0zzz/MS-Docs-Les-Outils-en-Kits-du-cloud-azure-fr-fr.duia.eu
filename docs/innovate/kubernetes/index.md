@@ -4,16 +4,15 @@ description: Découvrez Kubernetes dans le Cloud Adoption Framework.
 author: sabbour
 ms.author: asabbour
 ms.date: 12/16/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-layout: LandingPage
-ms.openlocfilehash: e0956145f2fe0ccc0a38212194ae14f25a28991d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 15e1d020d00bfd2c1b8c8ddb4b0e60e4e98407fd
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80392717"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398855"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 
@@ -29,63 +28,10 @@ Pour vous préparer à cette phase du cycle d’adoption du cloud, utilisez les 
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./application-development.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Développement et déploiement d’applications</h3>
-Examinez les modèles et les pratiques de développement d’applications, configurez les pipelines DevOps et implémentez les bonnes pratiques SRE (Site Reliability Engineering).
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./cluster-design-operations.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Conception et opérations de cluster</h3>
-Identifiez la configuration du cluster et la conception du réseau. Scalabilité future en automatisant le provisionnement de l’infrastructure. Assurez une haute disponibilité en planifiant la continuité d’activité et la reprise d’activité.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./cluster-application-security.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Sécurité des clusters et des applications</h3>
-Familiarisez-vous avec les bases de sécurité de Kubernetes. Passez en revue la configuration sécurisée des clusters et les conseils en matière de sécurité des applications.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| <br> ![Icône de l’élément 1](../../_images/icons/1.png) | [Développement et déploiement d’applications](./application-development.md) : Examinez les modèles et les pratiques de développement d’applications, configurez les pipelines DevOps et implémentez les bonnes pratiques SRE (Site Reliability Engineering). |
+| <br> ![Icône de l’élément 2](../../_images/icons/2.png) | [Conception et opérations de cluster](./cluster-design-operations.md) : Identifiez la configuration du cluster et la conception du réseau. Scalabilité future en automatisant le provisionnement de l’infrastructure. Assurez une haute disponibilité en planifiant la continuité d’activité et la reprise d’activité. |
+| <br> ![Icône de l’élément 3](../../_images/icons/3.png) | [Sécurité des clusters et des applications](./cluster-application-security.md) : Familiarisez-vous avec les bases de sécurité de Kubernetes. Passez en revue la configuration sécurisée des clusters et les conseils en matière de sécurité des applications. |
+
 <!-- markdownlint-enable MD033 -->
