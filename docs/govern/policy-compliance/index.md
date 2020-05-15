@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eec9c7ae36dbe92142226e78afcdd465e4aa66a2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 63eeb2cbcaa278934ba107114057f911604883f2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224219"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399522"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Cet article décrit les principales activités qui peuvent vous aider à façonn
 
 Dans la gouvernance traditionnelle et incrémentielle, la stratégie d’entreprise crée la définition pratique de la gouvernance. La plupart des actions de gouvernance informatique cherchent à implémenter la technologie afin de superviser, appliquer, exécuter et automatiser ces stratégies d’entreprise. La gouvernance cloud s’appuie sur des concepts similaires.
 
-![Gouvernance d’entreprise et disciplines de gouvernance](../../_images/operational-transformation-govern-highres.png)
+![Gouvernance d’entreprise et disciplines de gouvernance](../../_images/operational-transformation-govern-large.png)
 
 _Figure 1 : Gouvernance d’entreprise et disciplines de gouvernance._
 
