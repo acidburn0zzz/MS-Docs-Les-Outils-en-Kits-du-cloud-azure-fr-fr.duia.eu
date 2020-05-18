@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d07d652b0b38eacf881de496e93805ce19706a4f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e2bc8643ce1af2493d5a81477a81cf1c0ea9f4f8
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222468"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398839"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovation cloud dans le Framework d’adoption du cloud
 
@@ -26,10 +26,10 @@ Pour vous préparer à cette phase du cycle d’adoption du cloud, le framework 
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | [Consensus sur la valeur métier](./business-value.md) : Avant de choisir des solutions techniques, identifiez comment une nouvelle innovation peut générer de la valeur métier. Mappez cette valeur à votre stratégie cloud. Dans cette méthodologie incrémentielle, la valeur métier est représentée par une hypothèse sur les besoins des clients.                                |
-| ![2](../_images/icons/2.png)     | [Guide d’innovation Azure](./innovation-guide/index.md) : Azure inclut des outils cloud pour accélérer le déploiement de solutions innovantes. Selon votre hypothèse, vous pouvez envisager différentes combinaisons d’outils. Nous vous suggérons de créer un produit minimum viable (MVP) avec des outils de base.                                |
-| ![3](../_images/icons/3.png)     | [Bonnes pratiques](./best-practices/index.md) : Vos décisions architecturales doivent respecter les bonnes pratiques relatives à chaque outil de la chaîne d’outils. Le respect de ces instructions vous permet d’accélérer le développement de solutions et de fournir une référence pour des conceptions architecturales solides.                                |
-| ![4](../_images/icons/4.png)      | [Boucles de commentaires](./considerations/adoption.md) : À chaque itération, les solutions en cours de développement offrent à vos équipes un moyen d’apprendre aux côtés de leurs clients. Des boucles de rétroaction rapides et précises avec vos clients peuvent vous aider à effectuer des tests, à réaliser des mesures et à apprendre, ainsi qu’à réduire au final l’impact du délai de la mise sur le marché. Découvrez comment Azure et GitHub accélèrent les boucles de rétroaction.                        |
+| <br> ![1](../_images/icons/1.png)     | [Consensus sur la valeur métier](./business-value.md) : Avant de choisir des solutions techniques, identifiez comment une nouvelle innovation peut générer de la valeur métier. Mappez cette valeur à votre stratégie cloud. Dans cette méthodologie incrémentielle, la valeur métier est représentée par une hypothèse sur les besoins des clients.                                |
+| <br> ![2](../_images/icons/2.png)     | [Guide d’innovation Azure](./innovation-guide/index.md) : Azure inclut des outils cloud pour accélérer le déploiement de solutions innovantes. Selon votre hypothèse, vous pouvez envisager différentes combinaisons d’outils. Nous vous suggérons de créer un produit minimum viable (MVP) avec des outils de base.                                |
+| <br>![3](../_images/icons/3.png)     | [Bonnes pratiques](./best-practices/index.md) : Vos décisions architecturales doivent respecter les bonnes pratiques relatives à chaque outil de la chaîne d’outils. Le respect de ces instructions vous permet d’accélérer le développement de solutions et de fournir une référence pour des conceptions architecturales solides.                                |
+| <br>![4](../_images/icons/4.png)      | [Boucles de commentaires](./considerations/adoption.md) : À chaque itération, les solutions en cours de développement offrent à vos équipes un moyen d’apprendre aux côtés de leurs clients. Des boucles de rétroaction rapides et précises avec vos clients peuvent vous aider à effectuer des tests, à réaliser des mesures et à apprendre, ainsi qu’à réduire au final l’impact du délai de la mise sur le marché. Découvrez comment Azure et GitHub accélèrent les boucles de rétroaction.                        |
 
 ## <a name="innovation-summary"></a>Résumé de l’innovation
 

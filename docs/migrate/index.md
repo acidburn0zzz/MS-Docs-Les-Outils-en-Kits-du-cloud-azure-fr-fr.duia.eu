@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8a1c601108befd2dbbb32a6b24d72a1b0852d081
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3cdc9b294fddad6e7d77fb8a3229a372f24ca69c
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219527"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400304"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migration cloud dans le Framework d’adoption du cloud
 
@@ -24,10 +24,10 @@ Pour vous préparer à cette phase du cycle d’adoption du cloud, nous vous rec
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[Migrer votre première charge de travail](./azure-migration-guide/index.md) : Utilisez le Guide de migration d’Azure pour vous familiariser avec les outils Azure natifs et une approche de la migration.                                |
-| ![2](../_images/icons/2.png)     | <br>[Scénarios de migration](./azure-best-practices/index.md) : Utilisez d’autres outils et approches de migration pour suivre d’autres scénarios de migration.                                |
-| ![3](../_images/icons/3.png)     | <br>[Bonnes pratiques](./azure-best-practices/index.md) : Répondez aux besoins de migration courants via l’application de bonnes pratiques cohérentes.                                |
-| ![4](../_images/icons/4.png)      | <br>[Améliorations de processus](./migration-considerations/index.md) : La migration est une activité exigeant de nombreux processus. À mesure que les efforts de migration augmentent, utilisez ces améliorations des processus pour évaluer et faire évoluer différents aspects de la migration.                        |
+| <br> ![1](../_images/icons/1.png)     | [Migrer votre première charge de travail](./azure-migration-guide/index.md) : Utilisez le Guide de migration d’Azure pour vous familiariser avec les outils Azure natifs et une approche de la migration.                                |
+| <br> ![2](../_images/icons/2.png)     | [Scénarios de migration](./azure-best-practices/index.md) : Utilisez d’autres outils et approches de migration pour suivre d’autres scénarios de migration.                                |
+| <br> ![3](../_images/icons/3.png)     | [Bonnes pratiques](./azure-best-practices/index.md) : Répondez aux besoins de migration courants via l’application de bonnes pratiques cohérentes.                                |
+| <br> ![4](../_images/icons/4.png)      | [Améliorations de processus](./migration-considerations/index.md) : La migration est une activité exigeant de nombreux processus. À mesure que les efforts de migration augmentent, utilisez ces améliorations des processus pour évaluer et faire évoluer différents aspects de la migration.                        |
 
 <!-- markdownlint-enable MD033 -->
 

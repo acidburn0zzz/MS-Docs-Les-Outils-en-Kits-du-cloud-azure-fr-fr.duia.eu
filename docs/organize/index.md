@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4d34515e2e109e77e18a129b490e6c7e1faee593
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2a8bdf2e19d9db6912f66937a0053ee6102cbeac
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222060"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401027"
 ---
 # <a name="manage-organizational-alignment"></a>Gérer l’alignement organisationnel
 
@@ -25,10 +25,10 @@ Les exercices suivants vous aideront lors du processus de création de zone d’
 
 | | |
 |---|---|
-| ![1](../_Images/icons/1.png)     | <br>[Type de structure](#structure-type) : Définir le type de structure organisationnelle qui correspond le mieux à votre modèle d’exploitation.                                |
-| ![2](../_Images/icons/2.png)     | <br>[Fonctions cloud](#understand-required-cloud-functions) : Comprendre les fonctionnalités cloud nécessaires à l’adoption et au fonctionnement du cloud.                                |
-| ![3](../_Images/icons/3.png)     | <br>[Structures d’équipe matures](./organization-structures.md) : Définissez les équipes qui peuvent fournir différentes fonctions cloud.                                |
-| ![4](../_Images/icons/4.png)      | [Matrice RACI](./raci-alignment.md) : Une définition claire de chaque rôle est un aspect important de tout modèle d’exploitation. Utilisez la matrice RACI fournie pour attribuer les rôles de responsabilité, de consultation et d’information à chacune des équipes pour les diverses fonctions du modèle d’exploitation cloud.                        |
+| <br> ![1](../_Images/icons/1.png)     | [Type de structure](#structure-type) : Définir le type de structure organisationnelle qui correspond le mieux à votre modèle d’exploitation.                                |
+| <br> ![2](../_Images/icons/2.png)     | [Fonctions cloud](#understand-required-cloud-functions) : Comprendre les fonctionnalités cloud nécessaires à l’adoption et au fonctionnement du cloud.                                |
+| <br> ![3](../_Images/icons/3.png)     | [Structures d’équipe matures](./organization-structures.md) : Définissez les équipes qui peuvent fournir différentes fonctions cloud.                                |
+| <br> ![4](../_Images/icons/4.png)      | [Matrice RACI](./raci-alignment.md) : Une définition claire de chaque rôle est un aspect important de tout modèle d’exploitation. Utilisez la matrice RACI fournie pour attribuer les rôles de responsabilité, de consultation et d’information à chacune des équipes pour les diverses fonctions du modèle d’exploitation cloud.                        |
 
 ## <a name="structure-type"></a>Type de structure
 
