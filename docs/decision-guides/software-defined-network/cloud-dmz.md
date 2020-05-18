@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2241e1f4e6f738ce435e6cbedfe686a4ed85e1de
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 66419aa1ec4ebf7a1513ae064edd3b24e98758b9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996225"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224287"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>SDN (Software Defined Network) : Zone DMZ cloud
 
@@ -36,7 +36,7 @@ Le déploiement d’une zone DMZ cloud comprend les hypothèses suivantes :
 
 Lors de l’examen de l’implémentation d’une architecture de réseau virtuel DMZ cloud, votre équipe chargée de l’adoption du cloud doit prendre en compte les problèmes suivants :
 
-- La connexion de réseaux locaux avec des réseaux cloud augmente la complexité de vos exigences de sécurité. Même si les connexions entre les réseaux cloud et l’environnement local sont sécurisées, vous devez toujours veiller à la sécurité des ressources cloud. Toutes les adresses IP publiques créées pour accéder aux charges de travail basées dans le cloud doivent être correctement sécurisées à l’aide d’une [zone DMZ publique](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) ou d’un [pare-feu Azure](https://docs.microsoft.com/azure/firewall).
+- La connexion de réseaux locaux avec des réseaux cloud augmente la complexité de vos exigences de sécurité. Même si les connexions entre les réseaux cloud et l’environnement local sont sécurisées, vous devez toujours veiller à la sécurité des ressources cloud. Toutes les adresses IP publiques créées pour accéder aux charges de travail basées dans le cloud doivent être correctement sécurisées à l’aide d’une [zone DMZ publique](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) ou d’un [pare-feu Azure](https://docs.microsoft.com/azure/firewall/overview).
 - L’architecture DMZ cloud sert souvent de tremplin, pendant que la sécurité de la connectivité est renforcée et que la stratégie de sécurité est alignée entre les réseaux locaux et cloud, ce qui permet une plus large adoption de l’architecture de mise en réseau hybride à grande échelle. Toutefois, elle peut également s’appliquer aux déploiements isolés avec des besoins spécifiques en matière de sécurité, d’identité et de connectivité que satisfait l’approche DMZ cloud.
 
 ## <a name="learn-more"></a>En savoir plus

@@ -1,6 +1,6 @@
 ---
 title: Base de référence de la sécurité des processus de conformité à la stratégie
-description: Découvrez dans le Framework d’adoption du cloud pour Azure une approche de création de processus qui vont dans le sens d’une discipline de gouvernance de base de référence des identités.
+description: Découvrez une approche de création de processus qui prennent en charge une discipline Base de référence de sécurité.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fb47ce9aea9baa27404ad927cee344cb0a9fec6c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ab2033046f0f03ca897cf87d71267a069865a8dc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433602"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219833"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>Base de référence de la sécurité des processus de conformité à la stratégie
 
-Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent la [base de référence de la sécurité](./index.md). Pour être efficace, une gouvernance de sécurité du cloud implique plusieurs processus manuels récurrents qui visent à détecter les vulnérabilités et à imposer des stratégies de correction de ces risques de sécurité. De fait, l’équipe de gouvernance cloud ainsi que les équipes informatiques et métier des parties prenantes intéressées sont régulièrement sollicitées pour examiner et mettre à jour la stratégie, et veiller au respect de cette dernière. En outre, de nombreux processus de supervision et d’application continues peuvent être automatisés ou complétés par des outils afin de réduire la charge de gouvernance et accélérer la réponse en cas de manquement à la stratégie.
+Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent la [discipline Base de référence de la sécurité](./index.md). Pour être efficace, une gouvernance de sécurité du cloud implique plusieurs processus manuels récurrents qui visent à détecter les vulnérabilités et à imposer des stratégies de correction de ces risques de sécurité. De fait, l’équipe de gouvernance cloud ainsi que les équipes informatiques et métier des parties prenantes intéressées sont régulièrement sollicitées pour examiner et mettre à jour la stratégie, et veiller au respect de cette dernière. En outre, de nombreux processus de supervision et d’application continues peuvent être automatisés ou complétés par des outils afin de réduire la charge de gouvernance et accélérer la réponse en cas de manquement à la stratégie.
 
 ## <a name="planning-review-and-reporting-processes"></a>Processus de planification, de révision et de génération de rapports
 
@@ -39,9 +39,9 @@ Ce processus de planification constitue également un moment idéal pour évalue
 
 **Révisions d’audit et création de rapports mensuelles :** Tous les mois, effectuez un audit sur tous les déploiements cloud afin de garantir leur alignement continu sur la stratégie de sécurité. Examinez les activités de sécurité avec le personnel informatique, puis identifiez les problèmes de conformité qui n’ont pas encore été pris en charge par le processus d’application et de supervision continues. Cet examen produit un rapport pour l’équipe de la stratégie cloud et chaque équipe d’adoption du cloud afin de communiquer sur l’adhésion générale des parties prenantes à la stratégie. Le rapport est également conservé à des fins d’audit et juridiques.
 
-## <a name="ongoing-monitoring-processes"></a>Processus de supervision continue
+## <a name="processes-for-ongoing-monitoring"></a>Processus de surveillance continue
 
-Votre stratégie de gouvernance de sécurité réussit si l’état actuel et passé de votre infrastructure cloud est clairement identifiable. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet de l’intégrité et de l’activité de vos ressources cloud, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance continus décrits ci-dessus exigent que vous fournissiez des données de qualité afin d’être capable de modifier la stratégie pour protéger votre infrastructure au mieux face à l’évolution des menaces et des exigences en matière de sécurité.
+Une stratégie ligne de base de sécurité réussit si l’état actuel et passé de votre infrastructure cloud est clairement identifiable. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet de l’intégrité et de l’activité de vos ressources cloud, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance continus décrits ci-dessus exigent que vous fournissiez des données de qualité afin d’être capable de modifier la stratégie pour protéger votre infrastructure au mieux face à l’évolution des menaces et des exigences en matière de sécurité.
 
 Assurez-vous que vos équipes de sécurité et informatiques ont mis en place des systèmes de supervision automatisés pour votre infrastructure cloud recueillant les données de journaux d’activité pertinentes dont vous avez besoin pour évaluer les risques. Soyez proactif dans le cadre de la surveillance de ces systèmes afin d’assurer la détection et l’atténuation rapides des violations potentielles des stratégies, et assurez-vous que votre stratégie de supervision est conforme aux besoins en matière de sécurité.
 
@@ -60,7 +60,7 @@ Les déclencheurs et mesures d’application ci-après fournissent des exemples 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle de gestion cloud](./template.md), documentez les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
+Utilisez le [modèle de discipline Base de référence de sécurité](./template.md) pour documenter les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
 
 Pour obtenir des conseils sur l’exécution des stratégies de gestion cloud en harmonie avec les plans d’adoption, consultez l’article sur l’amélioration de la discipline.
 

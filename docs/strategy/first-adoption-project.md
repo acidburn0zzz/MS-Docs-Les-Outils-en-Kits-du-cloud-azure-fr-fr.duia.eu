@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 86acc05f9eaf38193db6c0f1ad1c708ed810c7be
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 31c0335cd4f1a6d8ef8e4793e3f6fb4fa383d339
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396018"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221482"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -20,15 +20,17 @@ ms.locfileid: "81396018"
 
 Il existe une courbe d’apprentissage et un engagement de délai pour la planification de l’adoption du cloud. Même pour les équipes expérimentées, une bonne planification prend du temps : le temps nécessaire pour aligner les parties prenantes, le temps nécessaire pour collecter et analyser les données, le temps nécessaire pour valider les décisions à long terme ainsi que le temps nécessaire pour aligner les personnes, les processus et la technologie. Dans les efforts d’adoption les plus productifs, la planification progresse parallèlement à l’adoption. Elle s’améliore à chaque version et à chaque migration de charge de travail vers le cloud. Il est important de comprendre la différence entre un plan d’adoption du cloud et une stratégie d’adoption du cloud. Vous avez besoin d’une stratégie bien définie pour faciliter et guider l’implémentation d’un plan d’adoption du cloud.
 
-Le Framework d’adoption du cloud pour Azure décrit les processus d’adoption du cloud et le fonctionnement des charges de travail hébergées dans le cloud. Chacun des processus des phases de définition de stratégie, de planification, de préparation, d’adoption et d’exploitation nécessite de légères extensions des compétences techniques, commerciales et opérationnelles. Certaines de ces compétences peuvent provenir d’un apprentissage dirigé. Mais beaucoup d’entre elles sont acquises de manière efficace via une expérience pratique.
+<!-- docsTest:ignore "Strategy, Plan, Ready, Adopt, and Operate phases" -->
+
+Le Framework d’adoption du cloud pour Azure décrit les processus d’adoption du cloud et le fonctionnement des charges de travail hébergées dans le cloud. Chacun des processus des phases de stratégie, de planification, de préparation, d’adoption et d’exploitation nécessite de légères extensions des compétences techniques, commerciales et opérationnelles. Certaines de ces compétences peuvent provenir d’un apprentissage dirigé. Mais beaucoup d’entre elles sont acquises de manière efficace via une expérience pratique.
 
 Le démarrage d’un premier processus d’adoption parallèlement au développement de la planification offre certains avantages :
 
-- Établir un état d’esprit axé sur la croissance pour encourager l’apprentissage et l’exploration
-- Permettre à l’équipe de développer les compétences nécessaires
-- Créer des situations qui encouragent de nouvelles approches de la collaboration
-- Identifier les lacunes au niveau des compétences et les besoins potentiels au niveau du partenariat
-- Fournir des entrées concrètes à la planification
+- Établir un état d’esprit axé sur la croissance pour encourager l’apprentissage et l’exploration.
+- Permettre à l’équipe de développer les compétences nécessaires.
+- Créer des situations qui encouragent de nouvelles approches de la collaboration.
+- Identifier les lacunes au niveau des compétences et les besoins potentiels au niveau du partenariat.
+- Fournir des entrées concrètes à la planification.
 
 ## <a name="first-project-criteria"></a>Premier critère de projet
 
@@ -62,7 +64,7 @@ Voici d’autres exemples de projets de première adoption :
 - **Développement/Test :** Supprimez les développements/tests des environnements locaux pour fournir aux développeurs le contrôle, l’agilité et les fonctionnalités du libre-service.
 - **Applications simples (moins de cinq) :** Modernisez et migrez une application simple pour acquérir rapidement une expérience de développement et d’exploitation.
 - **Labs de performances :** Quand vous avez besoin de performances à grande échelle dans un environnement lab, utilisez le cloud pour provisionner rapidement et à moindre coût ces labs sur une brève période.
-- **Plateforme de données :** Création d’un lac de données avec une capacité de calcul scalable pour les charges de travail d’analytique, de rapport ou de machine learning, et migration vers des bases de données managées à l’aide de méthodes de création d’image mémoire et de restauration ou de services de migration de données.
+- **Plateforme de données :** Création d’un lac de données avec une capacité de calcul scalable pour les charges de travail d’analytique, de rapport ou de machine learning, et migration vers des bases de données managées à l’aide de méthodes de création d’image mémoire et de restauration ou de services de migration de données.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

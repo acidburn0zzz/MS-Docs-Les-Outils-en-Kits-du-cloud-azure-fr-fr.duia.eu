@@ -1,6 +1,6 @@
 ---
 title: Base de référence de l’identité des processus de conformité à la stratégie
-description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir une approche de création de processus qui vont dans le sens d’une discipline de gouvernance de base de référence des identités.
+description: Utilisez Cloud Adoption Framework pour Azure afin de découvrir une approche de création de processus qui vont dans le sens d’une discipline Base de référence de l’identité.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75f85ef971bdf96fe14f1ddc72462edafbfd8473
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0837950a32a57fba595166c1b78c18aea0385417
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433084"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214461"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Base de référence de l’identité des processus de conformité à la stratégie
 
-Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent la [base de référence de l’identité](./index.md). Une gouvernance efficace de l’identité commence par des processus manuels récurrents qui guident l’adoption et la révision des stratégies d’identité. De fait, l’équipe de gouvernance cloud ainsi que les équipes informatiques et métier des parties prenantes intéressées sont régulièrement sollicitées pour examiner et mettre à jour la stratégie, et veiller au respect de cette dernière. En outre, de nombreux processus de supervision et d’application continues peuvent être automatisés ou complétés par des outils afin de réduire la charge de gouvernance et accélérer la réponse en cas de manquement à la stratégie.
+Cet article décrit une approche des processus d’adhésion à la stratégie qui gouvernent la [discipline Base de référence de l’identité](./index.md). Une gouvernance efficace de l’identité commence par des processus manuels récurrents qui guident l’adoption et la révision des stratégies d’identité. De fait, l’équipe de gouvernance cloud ainsi que les équipes informatiques et métier des parties prenantes intéressées sont régulièrement sollicitées pour examiner et mettre à jour la stratégie, et veiller au respect de cette dernière. En outre, de nombreux processus de supervision et d’application continues peuvent être automatisés ou complétés par des outils afin de réduire la charge de gouvernance et accélérer la réponse en cas de manquement à la stratégie.
 
 ## <a name="planning-review-and-reporting-processes"></a>Processus de planification, de révision et de génération de rapports
 
@@ -41,7 +41,7 @@ Ce processus de planification constitue également un moment idéal pour évalue
 
 ## <a name="processes-for-ongoing-monitoring"></a>Processus de surveillance continue
 
-Votre stratégie de gouvernance d’identité réussit si l’état actuel et passé de vos systèmes d’identité est clairement identifiable. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet du déploiement de votre cloud, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance en cours évoqués précédemment exigent des données de qualité pour s’assurer que la stratégie peut être modifiée afin de répondre à l’évolution des besoins de votre entreprise.
+La réussite d’une stratégie Base de référence de l’identité dépend de la visibilité de l’état actuel et passé des systèmes d’identité. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet du déploiement de votre cloud, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance en cours évoqués précédemment exigent des données de qualité pour s’assurer que la stratégie peut être modifiée afin de répondre à l’évolution des besoins de votre entreprise.
 
 Assurez-vous que vos équipes informatiques ont implémenté des systèmes de supervision automatisés pour vos services d’identité recueillant les journaux d’activité et les informations d’audit dont vous avez besoin pour évaluer les risques. Soyez proactif dans le cadre de la surveillance de ces systèmes afin d’assurer la détection et l’atténuation rapides des violations potentielles des stratégies, et assurez-vous que tout changement apporté à votre infrastructure d’identité se reflète dans votre stratégie de surveillance.
 
@@ -57,7 +57,7 @@ Les déclencheurs et mesures d’application ci-après fournissent des exemples 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle de gestion cloud](./template.md), documentez les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
+Utilisez le [modèle de discipline Base de référence de l’identité](./template.md) pour documenter les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
 
 Pour obtenir des conseils sur l’exécution des stratégies de gestion cloud en harmonie avec les plans d’adoption, consultez l’article sur l’amélioration de la discipline.
 

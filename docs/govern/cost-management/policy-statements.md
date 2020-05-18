@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7908dfe5a4ab63d37f97296cf8b830f358a2f4ea
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d686d50b98cbdef31c48d27f20d1c66f942e0818
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434646"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220496"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Exemples d’instructions de la stratégie de gestion des coûts
 
@@ -29,7 +29,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 **Risque métier :** Critères actuels qui ne garantissent pas que l’équipe de gouvernance investisse dans une discipline Gestion des coûts. Toutefois, vous prévoyez un tel investissement à l’avenir.
 
-**Instruction de stratégie :** Vous devez associer toutes les ressources déployées dans le cloud à une unité de facturation et à une application/charge de travail. Cette stratégie garantit que les futurs efforts de gestion des coûts seront efficaces.
+**Instruction de stratégie :** Vous devez associer toutes les ressources déployées dans le cloud à une unité de facturation et à une application/charge de travail. Cette stratégie permet de garantir l’efficacité de votre discipline Gestion des coûts.
 
 **Options de conception :** Pour en savoir plus sur la manière d’établir une base pérenne, consultez les discussions sur la création d’un MVP de gouvernance dans les [guides de conception exploitables](../guides/index.md), qui font partie des recommandations du Framework d’adoption du cloud.
 
@@ -39,7 +39,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 **Instruction de stratégie :** Tout déploiement cloud doit être affecté à une unité de facturation avec un budget approuvé et un mécanisme de limites budgétaires.
 
-**Options de conception :** Dans Azure, le budget peut être contrôlé avec [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/manage-budgets)
+**Options de conception :** Dans Azure, le budget peut être contrôlé avec [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/manage-budgets).
 
 ## <a name="underutilization"></a>Sous-utilisation
 
@@ -49,7 +49,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 **Options de conception :**
 
-- Dans Azure, les dépenses planifiées versus les dépenses réelles peuvent être gérées dans [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
+- Dans Azure, les dépenses planifiées versus les dépenses réelles peuvent être gérées dans [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 - Il existe plusieurs options pour regrouper les ressources par unité de facturation. Dans Azure, un [modèle de cohérence des ressources](../../decision-guides/resource-consistency/index.md) doit être choisi en collaboration avec l’équipe de gouvernance et appliqué à toutes les ressources.
 
 ## <a name="overprovisioned-assets"></a>Ressources surapprovisionnées
@@ -78,7 +78,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 Utilisez les exemples mentionnés dans cet article comme point de départ pour développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
-Pour commencer à développer vos instructions de stratégie personnalisées pour la gestion des coûts, téléchargez le [modèle de gestion des coûts](./template.md).
+Pour commencer à développer vos instructions de stratégie personnalisées pour la gestion des coûts, téléchargez le [modèle de stratégie de gestion des coûts](./template.md).
 
 Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance actionnable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5ce9b9144921ec3407fdd0b12b84183fd6e9ee52
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cc30b67d0103b60ff0b53187caef007063ca7efb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119869"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214257"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -33,7 +33,7 @@ Lors de la planification, de la génération ou de la migration, une entreprise 
 
 Si votre organisation planifie une migration Azure par elle-même, Microsoft est toujours là pour vous aider tout au long du parcours. Pour faciliter le suivi de la migration vers Azure, Microsoft et ses partenaires ont développé un ensemble complet d’architectures, de guides, d’outils et de services pour réduire les risques et accélérer la migration des machines virtuelles, des applications et des bases de données. Ces outils et services prennent en charge un large choix de systèmes d’exploitation, de langages de programmation, d’infrastructures et de bases de données.
 
-- **Outils d’évaluation et de migration.** Azure fournit un large éventail d’outils à utiliser dans différentes phases pour votre transformation cloud, notamment l’évaluation de votre infrastructure existante. Pour plus d’informations, reportez-vous à la section « Évaluation » du chapitre « Migration » qui suit.
+- **Outils d’évaluation et de migration.** Azure fournit un large éventail d’outils à utiliser dans différentes phases pour votre transformation cloud, notamment l’évaluation de votre infrastructure existante. Pour plus d’informations, consultez la section « Évaluation » du chapitre « Migration » qui suit.
 - **[Framework d’adoption du cloud Microsoft](../../index.md).** Cette infrastructure présente une approche structurée de l’adoption et de la migration vers le cloud. Elle est basée sur les meilleures pratiques pour de nombreux contrats client pris en charge par Microsoft et est organisée en une série d’étapes, de l’architecture et de la conception à l’implémentation. À chaque étape, des recommandations vous aideront pour la conception de l’architecture de votre application.
 - **[Modèles de conception cloud](https://docs.microsoft.com/azure/architecture/patterns).** Azure fournit des modèles de conception cloud utiles pour créer des charges de travail fiables, évolutives et sécurisées dans le cloud. Chaque modèle décrit le problème traité par le modèle, les aspects à prendre en compte pour l’application du modèle et un exemple basé sur Azure. La plupart des modèles incluent des exemples ou des extraits de code qui montrent comment implémenter le modèle sur Azure. Cependant, ils sont appropriés pour n’importe quel système distribué, qu’il soit hébergé sur Azure ou sur d’autres plateformes cloud.
 - **[Principes de base du cloud](https://docs.microsoft.com/azure/architecture/guide).** Les notions fondamentales vous aident à découvrir les approches de base de l’implémentation des concepts fondamentaux. Ce guide permet aux techniciens de réfléchir à des solutions qui vont au-delà d’un seul service Azure.
@@ -61,9 +61,9 @@ Si votre organisation planifie une migration Azure par elle-même, Microsoft est
 - Données distribuées à l’échelle mondiale
 - IoT***
 
-*Préversion limitée aux États-Unis, au Canada, au Royaume-Uni et en Europe Ouest
+\* Préversion limitée aux États-Unis, au Canada, au Royaume-Uni et en Europe de l’Ouest.
 
-**Préversion limitée au Royaume-Uni et en Europe Ouest
+** Préversion limitée au Royaume-Uni et en Europe de l’Ouest.
 
 ***Disponible dans de la deuxième partie de l’exercice 2019
 
@@ -93,7 +93,7 @@ Si vous avez des questions ou besoin d’aide, [créez une demande de support](h
 
 ## <a name="azure-solutions-partner"></a>Partenaire de solutions Azure
 
-Les fournisseurs de solutions certifiés Microsoft se spécialisent dans la fourniture de solutions client basées sur la technologie Microsoft dans le monde entier. Optimisez vos activités dans le cloud avec l’aide d’un partenaire expérimenté.
+Les fournisseurs de solutions certifiés par Microsoft sont spécialisés dans les solutions client modernes qui s’appuient sur les technologies Microsoft dans le monde entier. Optimisez vos activités dans le cloud avec l’aide d’un partenaire expérimenté.
 
 Obtenez l’aide de partenaires proposant des solutions Azure prêtes à l'emploi ou personnalisées, et des partenaires qui vous aideront à déployer et à gérer ces solutions :
 

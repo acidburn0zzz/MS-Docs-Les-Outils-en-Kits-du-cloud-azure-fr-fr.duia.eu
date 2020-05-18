@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 39d8f559bfcd8e7df1a957d7af0488c85ea36876
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a8b8a6c043a5a9b5f666d4a9e1d31d4990ff6380
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429973"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223794"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Guide de supervision du cloud : Collecte des données appropriées
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f6dfc621d20f2f2d3135e99be197e3fdfd315bdc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 401acfb2a0689fe54d43c29a8ab32a8d6e218670
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425409"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219765"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Outils permettant d’interagir avec des appareils dans Azure
 
@@ -33,10 +33,16 @@ Ce type d’invention numérique peut être réalisé sur la base de l’un des 
 
 Dans Azure, vous utilisez fréquemment les outils suivants pour accélérer l’invention numérique pour chaque niveau de solution ambiante ci-dessus. Ces outils sont regroupés selon l’expérience nécessaire pour réduire la complexité de l’alignement des outils sur cette expérience.
 
-- Expérience mobile : Azure App Service, PowerApps, Microsoft Flow, Intune
-- Réalité mixte : Unity, Azure Spatial Anchors, HoloLens
-- Réalité intégrée : Azure IoT Hub, Azure Sphere, Kinect DK
-- Réalité ajustée : cloud IoT à appareil, Azure Digital Twins + HoloLens
+<!-- markdownlint-disable MD033 -->
+
+| Category | Outils |
+|---|---|
+| Expériences mobiles | <li> Azure App Service <li> PowerApps <li> Microsoft Flow <li> Intune |
+| Réalité mixte | <li> Unity <li> Azure Spatial Anchors <li> HoloLens |
+| Réalité intégrée | <li> Azure IoT Hub <li> Azure Sphere <li> Azure Kinect DK |
+| Réalité ajustée | <li> Cloud IoT vers appareil <li> Azure Digital Twins + HoloLens |
+
+<!--markdownlint-enable MD033 -->
 
 ## <a name="get-started"></a>Bien démarrer
 

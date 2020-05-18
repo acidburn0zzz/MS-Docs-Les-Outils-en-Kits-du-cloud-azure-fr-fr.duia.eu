@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 18151d68f425f5fa6d966e847b1f6131cb8f838b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8f90848374e4d427ac814c6e24547999ba3dde66
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996005"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215158"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guide de décision concernant le SDN (Software Defined Networking)
 
@@ -23,11 +23,11 @@ La mise en réseau définie par logiciel (ou SDN, pour Software Defined Networki
 
 ![Options de mise en réseau, de la moins complexe à la plus complexe, dans l’ordre des liens ci-dessous](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Passer à : [PaaS uniquement](./paas-only.md) | [Natif cloud](./cloud-native.md) | [Zone DMZ cloud](./cloud-dmz.md) [Hybride](./hybrid.md) | [Modèle hub-and-spoke](./hub-spoke.md) | [En savoir plus](#learn-more)
+Passer à : [PaaS uniquement](./paas-only.md) | [Natif cloud](./cloud-native.md) | [Zone DMZ cloud](./cloud-dmz.md) | [Hybride](./hybrid.md) | [Modèle hub-and-spoke](./hub-spoke.md) | [En savoir plus](#learn-more)
 
 Le SDN fournit plusieurs options avec différents degrés de complexité et de tarification. Le guide de découverte ci-dessus fournit une référence pour personnaliser rapidement ces options afin de s’aligner au mieux sur des stratégies commerciales et technologiques spécifiques.
 
-Le point d’inflexion de ce guide dépend de plusieurs décisions clés que votre équipe de stratégie cloud a prises avant de prendre des décisions sur l’architecture réseau. Les plus importantes sont les décisions concernant votre [définition du patrimoine numérique](../../digital-estate/index.md) et votre [conception de l’abonnement](../subscriptions/index.md) (ce qui peut également nécessiter des données provenant de décisions prises dans le cadre de votre comptabilité cloud et de vos stratégies sur les marchés mondiaux).
+Le point d’inflexion de ce guide dépend de plusieurs décisions clés que votre équipe de stratégie cloud a prises avant de prendre des décisions sur l’architecture réseau. Les plus importantes sont les décisions concernant la [définition de votre patrimoine numérique](../../digital-estate/index.md) et votre [conception de l’abonnement](../subscriptions/index.md), ce qui peut également exiger des données provenant de décisions prises dans le cadre de votre comptabilité cloud et de vos stratégies sur les marchés mondiaux.
 
 Les petits déploiements inférieurs à 1 000 VM dans une seule région sont moins susceptibles d’être fortement affectés par ce point d’inflexion. Inversement, des efforts d’adoption importants avec plus de 1 000 machines virtuelles, de multiples unités commerciales ou de multiples marchés géopolitiques pourraient être considérablement affectés par votre décision SDN et ce point d’inflexion clé.
 
@@ -50,10 +50,10 @@ Lors de la planification de l’architecture de réseau virtuel ou de la combina
 
 ## <a name="virtual-networking-architectures"></a>Architectures de réseaux virtuels
 
-En savoir plus sur les principales architectures réseau définies par le logiciel :
+Découvrez plus en détail les principales architectures SDN (Software-Defined Networking) :
 
 - **[PaaS uniquement](./paas-only.md) :** La plupart des produits PaaS (Platform as a Service) prennent en charge un ensemble limité de fonctions réseau intégrées et peuvent ne pas nécessiter un réseau à définition logicielle explicitement défini pour répondre aux besoins de charge de travail.
-- **[Natif cloud](./cloud-native.md) :** Une architecture native cloud gère les charges de travail basées sur le cloud, au moyen de réseaux virtuels reposant sur les fonctionnalités réseau à définition logicielle par défaut de la plateforme cloud, sans avoir recours à des ressources locales ou externes.
+- **[Natif cloud](./cloud-native.md) :** Une architecture native cloud gère les charges de travail cloud au moyen de réseaux virtuels reposant sur les fonctionnalités SDN (Software-Defined Networking) par défaut de la plateforme cloud, sans avoir recours à des ressources locales ou externes.
 - **[Zone DMZ cloud](./cloud-dmz.md) :** Prend en charge une connectivité limitée entre votre réseau local et votre réseau cloud, sécurisée par l’implémentation d’une zone démilitarisée contrôlant étroitement le trafic entre les deux environnements.
 - **[Hybride](./hybrid.md) :** L’architecture de réseau cloud hybride permet aux réseaux virtuels d’environnements cloud approuvés d’accéder à vos ressources locales, et vice versa.
 - **[Hub-and-spoke](./hub-spoke.md) :** L’architecture hub-and-spoke vous permet de gérer de manière centralisée la connectivité externe et les services partagés, d’isoler les charges de travail individuelles et de surmonter les limites d’abonnement potentielles.
@@ -63,11 +63,11 @@ En savoir plus sur les principales architectures réseau définies par le logici
 Pour plus d’informations sur le SDN (Software-Defined Networking) dans Azure, consultez :
 
 - [Réseau virtuel Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) : sur Azure, la capacité fondamentale du SDN est fournie par un réseau virtuel Azure, qui agit comme un cloud analogue aux réseaux physiques locaux. Les réseaux virtuels servent également de limite d’isolement par défaut entre les ressources de la plate-forme.
-- [Meilleures pratiques Azure pour la sécurité réseau](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices). suggestions de l’équipe Azure Security sur la façon de configurer vos réseaux virtuels pour minimiser les vulnérabilités de sécurité.
+- [Meilleures pratiques Azure pour la sécurité réseau](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices). Recommandations de l’équipe Azure Security sur la configuration des réseaux virtuels nécessaire pour réduire les failles de sécurité.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Le réseau à définition logicielle n’est qu’un des composants de l’infrastructure centrale nécessitant des décisions architecturales lors d’un processus d’adoption cloud. Consultez la [vue d’ensemble sur les guides de décision](../index.md) pour en savoir plus sur les autres schémas et modèles utilisés lors des décisions de conception pour d’autres types d’infrastructure.
+Le SDN (Software-Defined Networking) n’est qu’un des composants de l’infrastructure centrale qui réclament des décisions architecturales lors d’un processus d’adoption cloud. Consultez la [vue d’ensemble sur les guides de décision](../index.md) pour en savoir plus sur les autres schémas et modèles utilisés lors des décisions de conception pour d’autres types d’infrastructure.
 
 > [!div class="nextstepaction"]
 > [Guides de décision concernant l’architecture](../index.md)

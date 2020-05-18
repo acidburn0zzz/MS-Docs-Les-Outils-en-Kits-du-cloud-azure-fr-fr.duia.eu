@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 515ae94c2feedbc7b111ec786551a4680a69f561
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f7675852a6d9b59e0d06873fee028b701dc729e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996022"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215049"
 ---
 # <a name="subscription-decision-guide"></a>Guide de décision concernant les abonnements
 
@@ -27,7 +27,7 @@ L’adoption d’Azure commence par la création d’un abonnement Azure, son as
 - [Créez des abonnements supplémentaires](../../ready/azure-best-practices/scale-subscriptions.md) pour mettre à l’échelle votre environnement Azure.
 - [Organisez et gérez vos abonnements](../../ready/azure-best-practices/organize-subscriptions.md) en utilisant des groupes d’administration Azure.
 
-## <a name="modeling-your-organization"></a>Modélisation de votre organisation
+## <a name="model-your-organization"></a>Modélisation de l’organisation
 
 Chaque organisation étant différente, les groupes d’administration Azure sont conçus pour être flexibles. La modélisation de votre patrimoine cloud afin de refléter la hiérarchie de votre organisation vous permet de définir et d’appliquer des stratégies à des niveaux supérieurs de la hiérarchie. Elle s’appuie sur l’héritage pour garantir que ces stratégies sont appliquées automatiquement aux groupes d’administration plus bas dans la hiérarchie. Bien que les abonnements puissent être déplacés entre différents groupes d’administration, il est utile de concevoir une hiérarchie de groupes d’administration initiale qui reflète les besoins anticipés de votre organisation.
 
@@ -48,14 +48,14 @@ Tenez compte des stratégies de conception d’abonnement suivantes pour répond
 
 ### <a name="application-category-strategy"></a>Stratégie de catégorie d’application
 
-À mesure que l’encombrement cloud d’une organisation augmente, des abonnements supplémentaires sont généralement créés pour prendre en charge les applications présentant des différences fondamentales en matière de criticité métier, d’exigences de conformité, de contrôles d’accès ou de besoins en protection des données. En s’appuyant sur les abonnements « production » et « non-production », les abonnements prenant en charge ces catégories d’application sont classés selon les cas sous le groupe d’administration de production ou de non-production. Ces abonnements sont généralement détenus et administrés par le personnel chargé des opérations informatiques à un niveau centralisé.
+À mesure que l’encombrement cloud d’une organisation augmente, des abonnements supplémentaires sont généralement créés pour prendre en charge les applications présentant des différences fondamentales en matière de criticité métier, d’exigences de conformité, de contrôles d’accès ou de besoins en protection des données. En s’appuyant sur les abonnements « production » et « non-production », les abonnements prenant en charge ces catégories d’application sont classés selon les cas sous le groupe d’administration de production ou de non-production. Ces abonnements sont généralement détenus et administrés par le personnel chargé de l’exploitation informatique centrale.
 
-![Stratégie de catégorie d’application](../../_images/infra-subscriptions/application.png)
+![Stratégie de catégorie d’application](../../_images\decision-guides\decision-guide-subscriptions-hierarchy.png)
 
 Chaque organisation classe ses applications différemment, souvent en séparant les abonnements en fonction des applications ou des services, ou en suivant des archétypes d’application. Cette classification est souvent conçue pour prendre en charge les charges de travail qui sont susceptibles de consommer la plupart des ressources d’un abonnement, ou des charges de travail critiques distinctes pour garantir qu’elles ne sont pas en concurrence avec d’autres charges de travail dans les limites de l’abonnement. Voici quelques charges de travail qui peuvent justifier l’utilisation d’un abonnement distinct :
 
 - Les charges de travail critiques
-- Les applications s’inscrivant dans le « coût des marchandises vendues » (COGS, Cost of Goods Sold) de votre entreprise. Exemple : chaque instance du widget de la société X contient un module Azure IoT qui envoie des données de télémétrie. Ceci peut nécessiter un abonnement dédié à des fins de comptabilité/gouvernance dans le cadre du COGS.
+- Les applications s’inscrivant dans le _coût des marchandises vendues_ (COGS) de votre entreprise. Exemple : chaque instance du widget de la société X contient un module Azure IoT qui envoie des données de télémétrie. Ceci peut nécessiter un abonnement dédié à des fins de comptabilité/gouvernance dans le cadre du COGS.
 - Les applications soumises à des réglementations (HIPAA ou FedRAMP, par exemple).
 
 ### <a name="functional-strategy"></a>Stratégie fonctionnelle
@@ -70,11 +70,11 @@ Le modèle d’unité opérationnelle regroupe les abonnements et les comptes en
 
 Pour les organisations internationales, le modèle géographique regroupe les abonnements et les comptes en fonction des zones géographiques, en utilisant une hiérarchie de groupes d’administration.
 
-## <a name="mixing-subscription-strategies"></a>Combinaison des stratégies d’abonnement
+## <a name="mix-subscription-strategies"></a>Combinaison des stratégies d’abonnement
 
 Les hiérarchies de groupes d’administration peuvent avoir jusqu’à six niveaux de profondeur. Ceci vous offre la flexibilité nécessaire pour créer une hiérarchie qui combine plusieurs de ces stratégies afin de répondre aux besoins de votre organisation. Par exemple, le diagramme ci-dessous montre une hiérarchie organisationnelle qui combine une stratégie d’unité organisationnelle avec une stratégie géographique.
 
-![Stratégie d’abonnement mixte](../../_images/infra-subscriptions/mixed.png)
+![Stratégie d’abonnement mixte](../../_images\decision-guides\decision-guide-subscriptions-hierarchy-mixed.png)
 
 ## <a name="related-resources"></a>Ressources associées
 

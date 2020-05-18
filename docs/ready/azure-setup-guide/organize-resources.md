@@ -1,6 +1,6 @@
 ---
 title: Organiser efficacement les ressources Azure
-description: Découvrez les bonnes pratiques permettant d’organiser efficacement vos ressources Azure pour en faciliter la gestion.
+description: Comprenez les bonnes pratiques pour organiser efficacement vos ressources Azure afin de simplifier la gestion des ressources.
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: b47f0e3cf6c69bbdf3d5c8260ad4094312e1bea2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3d0afed921d11b16b1d33de311df1144aea6d4a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997550"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221941"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -146,9 +146,9 @@ Le tableau suivant présente les modèles d’affectation de noms pour quelques 
 
 | Entité | Étendue | Longueur | Casse | Caractères valides | Modèle suggéré | Exemple |
 | --- | --- | --- | --- | --- | --- | --- |
-|Resource group |Abonnement |1-90 |Insensible à la casse |Alphanumériques, trait de soulignement, parenthèses, trait d’union, point (sauf à la fin) et caractères Unicode |`<service short name>-<environment>-rg` |`profx-prod-rg` |
-|Groupe à haute disponibilité |Resource group |1-80 |Insensible à la casse |Alphanumériques, trait de soulignement et trait d’union |`<service-short-name>-<context>-as` |`profx-sql-as` |
-|Tag |Entité associée |512 (nom), 256 (valeur) |Insensible à la casse |Alphanumérique |`"key" : "value"` |`"department" : "Central IT"` |
+| Resource group | Abonnement | 1-90 | Insensible à la casse | Alphanumériques, trait de soulignement, parenthèses, trait d’union, point (sauf à la fin) et caractères Unicode | `<service short name>-<environment>-rg` | `profx-prod-rg` |
+| Groupe à haute disponibilité | Resource group | 1-80 | Insensible à la casse | Alphanumériques, trait de soulignement et trait d’union | `<service-short-name>-<context>-as` | `profx-sql-as` |
+| Tag | Entité associée | 512 (nom), 256 (valeur) | Insensible à la casse | Alphanumérique | `"key" : "value"` | `"department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[Balises de ressource](#tab/ResourceTags)
 
@@ -164,7 +164,7 @@ Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses.
 
 Chaque ressource ou groupe de ressources peut inclure un maximum de 50 paires nom/valeur de balise. Cette limitation s’applique uniquement aux balises directement appliquées au groupe de ressources ou à la ressource.
 
-Pour obtenir d’autres recommandations et exemples de catégorisation, consultez l’[aide du Framework d’adoption du cloud au sujet de la catégorisation](../azure-best-practices/naming-and-tagging.md).
+Pour obtenir d’autres recommandations et exemples de catégorisation, consultez [Conventions de nommage et de catégorisation recommandées](../azure-best-practices/naming-and-tagging.md) dans Cloud Adoption Framework.
 
 ::: zone target="docs"
 
@@ -172,7 +172,7 @@ Pour obtenir d’autres recommandations et exemples de catégorisation, consulte
 
 Pour appliquer une étiquette à un groupe de ressources :
 
-1. Accédez à [Groupes de ressources](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
+1. Accédez à [Groupes de ressources](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
 1. Sélectionnez un groupe de ressources.
 1. Sélectionnez **Attribuer des étiquettes**.
 1. Entrez un nouveau nom et une nouvelle valeur, ou sélectionnez un nom et une valeur existants dans la liste déroulante.

@@ -1,18 +1,18 @@
 ---
 title: Développer des inventions numériques pour l’innovation
-description: Utilisez le Framework d’adoption du cloud pour Azure afin de vous appuyer sur la méthodologie d’innovation et créer un chaîne d’outils pour l’invention numérique.
+description: Utilisez le Framework d’adoption du cloud pour Azure afin de vous appuyer sur la méthodologie d’innovation et créer une chaîne d’outils pour l’invention numérique.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 746e4cf6dd9aac69ce6ed5bc6505e739b503d4df
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ebdb349954a675b9a277f10f6b34984f12aef489
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434119"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222672"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>Développer des inventions numériques dans Azure
 
@@ -30,8 +30,8 @@ Commencez avec la page de présentation qui se réfère au type d’invention nu
 
 Voici les types d’invention numérique figurant dans cette série d’articles :
 
-- [Démocratiser les données](./data.md) : outils de partage de données pour répondre aux besoins des clients en matière d’informations
-- [impliquer par le biais d’applications](./apps.md) : outils permettant de créer des applications qui impliquent les clients au-delà des données brutes
-- [Favoriser l’adoption](./ci-cd.md) : outils pour accélérer l’adoption par les clients grâce à la prise en charge numérique de vos cycles développer-mesurer-apprendre
-- [Interagir avec les appareils](./devices.md) : outils permettant de créer différents niveaux d’expérience ambiante pour vos clients
-- [Prédire et influencer](./predict.md) : outils d’analyse prédictive et d’intégration de leurs résultats dans des applications
+- [Démocratiser les données](./data.md) : outils de partage de données pour répondre aux besoins des clients en matière d’informations.
+- [impliquer par le biais d’applications](./apps.md) : outils permettant de créer des applications qui impliquent les clients au-delà des données brutes.
+- [Favoriser l’adoption](./ci-cd.md) : outils pour accélérer l’adoption par les clients grâce à la prise en charge numérique de vos cycles développer-mesurer-apprendre.
+- [Interagir avec les appareils](./devices.md) : outils permettant de créer différents niveaux d’expérience ambiante pour vos clients.
+- [Prédire et influencer](./predict.md) : outils d’analyse prédictive et d’intégration de leurs résultats dans des applications.

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8e634d4e471995d569f21aacccdb0b535d9c0b5b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9db4b6a6f068e2939248804b693a9600bf7b9625
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708918"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220853"
 ---
 # <a name="evaluate-corporate-policy"></a>Évaluer la stratégie d’entreprise
 
@@ -26,7 +26,12 @@ ms.locfileid: "77708918"
         <div class="cardPadding" style="padding-bottom:10px;">
             <div class="card" style="padding-bottom:10px;">
                 <div class="cardText" style="padding-left:0px;">
-Toute modification apportée à des processus métier ou à des plates-formes technologiques présente un risque pour l’entreprise. Les équipes de gouvernance cloud, dont les membres sont parfois appelés les gardiens du cloud, sont chargées de minimiser ces risques tout en évitant d’interrompre l’adoption et l’innovation.<br/><br/>Toutefois, la gouvernance cloud ne requiert pas uniquement une implémentation technique. De subtiles modifications dans le scénario de l’entreprise ou ses stratégies peuvent changer de manière significative les efforts d’adoption. Avant l’implémentation, il est important de regarder au-delà de l’informatique pour définir la stratégie d’entreprise.<br/><br/>
+Toute modification apportée à des processus métier ou à des plates-formes technologiques présente un risque pour l’entreprise. Les équipes de gouvernance cloud, dont les membres sont parfois appelés les gardiens du cloud, sont chargées de minimiser ces risques tout en évitant d’interrompre l’adoption et l’innovation.
+<br>
+<br>
+Toutefois, la gouvernance cloud ne requiert pas uniquement une implémentation technique. De subtiles modifications dans le scénario de l’entreprise ou ses stratégies peuvent changer de manière significative les efforts d’adoption. Avant l’implémentation, il est important de regarder au-delà de l’informatique pour définir la stratégie d’entreprise.
+<br>
+<br>
                 </div>
             </div>
         </div>
@@ -39,8 +44,8 @@ Toute modification apportée à des processus métier ou à des plates-formes te
                 <div class="card" style="padding-bottom:10px;">
                     <div class="cardText" style="padding-left:0px;">
 <img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
-<br/>
-<i>Figure 1 - Visuel de la stratégie d’entreprise et les cinq disciplines de la gouvernance cloud.</i>
+<br>
+<i> Figure 1 : Visuel de la stratégie d’entreprise et les cinq disciplines de la gouvernance cloud. </i>
                     </div>
                 </div>
             </div>

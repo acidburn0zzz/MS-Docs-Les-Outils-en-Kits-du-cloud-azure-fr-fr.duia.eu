@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f7207b71f88bb311d28c8d1794dde7fddc425a30
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2fd3bfb329131e2ec344131ba3e2cbf8bc189a8f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433299"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219731"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Expériences ambiantes : Interagir avec les appareils
 
-Dans [Développer en faisant preuve d’empathie vis-à-vis du client](./build.md), nous avons abordé les trois tests de la véritable innovation : résoudre un besoin client, inciter le client à revenir et mettre à l’échelle une base de cohortes de clients. Chaque test de votre hypothèse nécessite des efforts et des itérations sur l’approche à adopter. Cet article donne un aperçu de certaines approches avancées visant à réduire ces effort par le biais d’*expériences ambiantes*. En interagissant avec des appareils au lieu d’une application, le client peut être plus susceptible de se tourner d’abord vers votre solution.
+Dans [Développer en faisant preuve d’empathie vis-à-vis du client](./build.md), nous avons abordé les trois tests de la véritable innovation : résoudre un besoin client, inciter le client à revenir et mettre à l’échelle une base de cohortes de clients. Chaque test de votre hypothèse nécessite des efforts et des itérations sur l’approche à adopter. Cet article donne un aperçu de certaines approches avancées visant à réduire ces effort par le biais d’_expériences ambiantes_. En interagissant avec des appareils au lieu d’une application, le client peut être plus susceptible de se tourner d’abord vers votre solution.
 
 ## <a name="ambient-experiences"></a>Expériences ambiantes
 
@@ -24,7 +24,7 @@ Une expérience ambiante est une expérience numérique qui se réfère à l’e
 
 Dans l’économie numérique, la vie est pleine de distractions. Nous sommes tous bombardés de messages visuels et verbaux, que ce soit sur les réseaux sociaux, par e-mail ou sur Internet, chacun d’eux présentant un risque de distraction. Ce risque augmente à chaque seconde qui s’écoule entre le moment où le besoin du client se fait sentir et le moment où il trouve une solution. D’innombrables clients sont perdus dans ce bref laps de temps. Pour favoriser une augmentation de la récurrence de l’adoption, vous devez réduire le nombre de distractions en réduisant le temps consacré à trouver une solution (TTS).
 
-## <a name="interacting-with-devices"></a>Interaction avec des appareils
+## <a name="interact-with-devices"></a>Interagir avec les appareils
 
 Une expérience web standard est la technique de développement d’applications la plus couramment utilisée pour répondre aux besoins d’un client. Cette approche suppose que le client se trouve devant son ordinateur. Si votre client exprime invariablement un besoin lorsqu’il se trouve devant son ordinateur portable, créez une application web. Cette application web fournira une expérience ambiante pour ce client, dans ce scénario. Toutefois, nous savons que ce scénario est de moins en moins probable à notre époque.
 
@@ -45,7 +45,7 @@ Dans la première étape de l’expérience ambiante, l’utilisateur s’éloig
 
 Lorsque les clients sont mobiles et changent fréquemment d’emplacement, cela peut représenter la forme d’expérience ambiante la plus pertinente pour une solution particulière. Au cours de la dernière décennie, l’innovation a souvent été déclenchée par l’intégration de solutions existantes à une expérience mobile.
 
-Azure App Services est un excellent exemple de cette approche. Lors des premières itérations, la [fonctionnalité d’application web d’Azure App Services](https://docs.microsoft.com/azure/app-service/overview) peut être utilisée pour tester l’hypothèse. À mesure que les hypothèses deviennent plus complexes, la [fonctionnalité d’application mobile d’Azure App Services](https://docs.microsoft.com/azure/app-service-mobile) peut étendre l’application web pour l’exécuter sur diverses plateformes mobiles.
+Azure App Service est un excellent exemple de cette approche. Lors des premières itérations, la [fonctionnalité d’application web d’Azure App Service](https://docs.microsoft.com/azure/app-service/overview) peut être utilisée pour tester l’hypothèse. À mesure que les hypothèses deviennent plus complexes, la [fonctionnalité d’application mobile d’Azure App Service](https://docs.microsoft.com/azure/app-service-mobile) peut étendre l’application web pour l’exécuter sur diverses plateformes mobiles.
 
 ## <a name="mixed-reality"></a>Réalité mixte
 
@@ -74,7 +74,7 @@ Vous pouvez utiliser ces trois outils pour collecter des données sur l’enviro
 
 ## <a name="adjusted-reality"></a>Réalité ajustée
 
-La forme d’expérience ambiante la plus avancée est la réalité ajustée, souvent appelée *intelligence ambiante*. La réalité ajustée est une approche qui consiste à utiliser les informations de votre solution pour modifier la réalité du client sans que ce dernier ait à interagir directement avec une application. Dans cette approche, l’application que vous avez créée initialement pour prouver votre hypothèse pourrait ne plus être pertinente. Au lieu de cela, les appareils de l’environnement aident à moduler les entrées et les sorties pour répondre aux besoins des clients.
+La forme d’expérience ambiante la plus avancée est la réalité ajustée, souvent appelée _intelligence ambiante_. La réalité ajustée est une approche qui consiste à utiliser les informations de votre solution pour modifier la réalité du client sans que ce dernier ait à interagir directement avec une application. Dans cette approche, l’application que vous avez créée initialement pour prouver votre hypothèse pourrait ne plus être pertinente. Au lieu de cela, les appareils de l’environnement aident à moduler les entrées et les sorties pour répondre aux besoins des clients.
 
 Les assistants virtuels et les enceintes connectées offrent d’excellents exemples de réalité ajustée. Seule, une enceinte connectée est un exemple de réalité intégrée simple. Mais en ajoutant un éclairage intelligent et un détecteur de mouvement à une solution d’enceinte connectée, il devient facile de créer une solution de base qui allume les lumières lorsque vous entrez dans une pièce.
 

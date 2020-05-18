@@ -1,6 +1,6 @@
 ---
-title: 'Gouvernance pour les entreprises standard : Améliorer la discipline de base de référence de la sécurité'
-description: Utilisez le Framework d’adoption du cloud pour Azure pour en savoir plus sur l’ajout de contrôles de sécurité qui prennent en charge le déplacement de données protégées vers le cloud.
+title: 'Gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité'
+description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir comment ajouter des contrôles de sécurité qui prennent en charge le déplacement de données protégées vers le cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9078c8e01a7b711a18ecf83a1243da3813fc5afd
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0835bf4fd7aa7f1fb08c8018f8fe2987726eacbf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431046"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219901"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité
 
@@ -77,7 +77,7 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 7. Les outils de gouvernance doivent auditer et appliquer les exigences de configuration réseau définies par l’équipe Gestion de la sécurité.
 8. Les outils de gouvernance doivent limiter le déploiement des machines virtuelles seulement avec des images approuvées.
 9. Quand c’est possible, la gestion de la configuration des nœuds doit appliquer les exigences de la stratégie à la configuration de tous les systèmes d’exploitation invités.
-10. Les outils de gouvernance doivent veiller à ce que les mises à jour automatiques soient activées sur toutes les ressources déployées. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas mises à jour automatiquement doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
+10. Les outils de gouvernance doivent veiller à ce que les mises à jour automatiques soient activées sur toutes les ressources déployées. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas automatiquement mises à jour doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
 11. La création de nouveaux abonnements ou de groupes d’administration pour les applications critiques ou les données protégées nécessite un examen par l’équipe de gouvernance du cloud pour vérifier que le blueprint approprié est affecté.
 12. Un modèle d’accès de moindre privilège doit être appliqué aux groupes d’administration ou aux abonnements qui contiennent des applications critiques ou des données protégées.
 13. Les tendances et les attaques susceptibles d’affecter les déploiements cloud doivent être régulièrement examinées par l’équipe Sécurité de façon à fournir des mises à jour aux outils de gestion de la sécurité utilisés dans le cloud.
@@ -107,7 +107,7 @@ Cette conception du produit minimum viable (MVP) de la gouvernance va changer de
     1. Auditez et imposez l’utilisation exclusive de rôles RBAC Azure standard.
     2. Auditez et imposez le chiffrement au repos pour tous les comptes de stockage et tous les fichiers sur les nœuds individuels.
     3. Auditez et imposez l’application d’un groupe de sécurité réseau à toutes les cartes réseau et à tous les sous-réseaux. Les équipes Réseau et Sécurité informatique définissent le groupe de sécurité réseau.
-    4. Auditez et imposez l’utilisation d’un sous-réseau approuvé et d’une interface réseau par réseau virtuel.
+    4. Auditez et appliquez l’utilisation d’un réseau virtuel et sous-réseau de réseau approuvé par interface réseau.
     5. Auditez et appliquez la limitation de tables de routage définies par l’utilisateur.
     6. Appliquez les stratégies intégrées pour la configuration des invités comme suit :
         1. Vérifiez que les serveurs web Windows utilisent des protocoles de communication sécurisés.
@@ -131,4 +131,4 @@ L’ajout des processus et des modifications ci-dessus au produit minimum viable
 À mesure que l’adoption du cloud se poursuit et offre davantage de valeur aux activités métier, les risques et les besoins en matière de gouvernance du cloud changent également. Pour la société fictive utilisée dans ce guide, l’étape suivante consiste à prendre en charge les charges de travail critiques. C’est ici que les contrôles de cohérence des ressources sont nécessaires.
 
 > [!div class="nextstepaction"]
-> [Amélioration de la cohérence des ressources](./resource-consistency-improvement.md)
+> [Améliorer la discipline Cohérence des ressources](./resource-consistency-improvement.md)

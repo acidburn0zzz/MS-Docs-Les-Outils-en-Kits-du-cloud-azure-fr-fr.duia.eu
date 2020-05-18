@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e8846d265fff84a1ccea62193c01ed0b706b3637
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 65d1ac327bc5a36e1dca12ab121825751be3b53f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428158"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214240"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Aligner les ressources sur des charges de travail hiérarchisées
 
@@ -25,7 +25,7 @@ La charge de travail est une description conceptuelle d’un ensemble de ressour
 
 Plusieurs options s’offrent à vous pour assembler ces données. Voici quelques-unes des approches les plus courantes.
 
-## <a name="alternative-inputs-migrate-modernize-innovate"></a>Entrées alternatives : Migrer, Moderniser, Innover
+## <a name="alternative-inputs-migrate-modernize-innovate"></a>Entrées alternatives : Migrer, moderniser, innover
 
 L’objectif des points de données précédents est de capturer des dépendances et des efforts techniques relatifs comme aide à la hiérarchisation. Selon la transition souhaitée, vous pouvez rassembler des points de données alternatifs pour prendre en charge la hiérarchisation appropriée.
 
@@ -33,7 +33,7 @@ L’objectif des points de données précédents est de capturer des dépendance
 
 **Moderniser :** lorsque l’objectif d’une charge de travail est de moderniser des applications ou d’autres ressources, ces points de données restent de solides mesures de la complexité. Toutefois, il peut être judicieux d’ajouter une entrée pour les opportunités de modernisation à la documentation relative à la charge de travail.
 
-**Innovation :** lorsque les données ou la logique métier subissent une modification importante au cours d’un effort d’adoption du cloud, elles sont considérées comme une transformation de type *Innover*. Il en va de même lorsque vous créez de nouvelles données ou une nouvelle logique métier. Pour les scénarios de type Innover, la migration des ressources représente probablement le plus petit effort requis. Pour ces scénarios, l’équipe doit concevoir un ensemble d’entrées de données techniques pour mesurer la complexité relative.
+**Innovation :** lorsque les données ou la logique métier subissent une modification importante au cours d’un effort d’adoption du cloud, elles sont considérées comme une transformation de type _Innover_. Il en va de même lorsque vous créez de nouvelles données ou une nouvelle logique métier. Pour les scénarios de type Innover, la migration des ressources représente probablement le plus petit effort requis. Pour ces scénarios, l’équipe doit concevoir un ensemble d’entrées de données techniques pour mesurer la complexité relative.
 
 ## <a name="azure-migrate"></a>Azure Migrate
 

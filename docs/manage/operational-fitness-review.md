@@ -7,22 +7,22 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f1eeae9e59da365b066ba78a8eb024448bf9815b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2ee786e1a9c7f6b4cb4699aec01d647cabc37827
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120111"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223658"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Mettre en place un examen de santé opérationnel
 
-Dès lors que votre entreprise commence à exécuter des charges de travail dans Azure, l’étape suivante consiste à établir un processus de *passage en revue de l’adéquation opérationnelle*. Ce processus énumère, implémente et passe en revue de façon itérative les *exigences non fonctionnelles* pour ces charges de travail. Ces exigences non fonctionnelles sont liées au comportement opérationnel attendu du service.
+Dès lors que votre entreprise commence à exécuter des charges de travail dans Azure, l’étape suivante consiste à établir un processus de _passage en revue de l’adéquation opérationnelle_. Ce processus énumère, implémente et passe en revue de façon itérative les _exigences non fonctionnelles_ pour ces charges de travail. Ces exigences non fonctionnelles sont liées au comportement opérationnel attendu du service.
 
 Il existe cinq catégories principales d’exigences non fonctionnelles, qui sont appelées [piliers de la qualité des logiciels](https://docs.microsoft.com/azure/architecture/guide/pillars) :
 
 - Extensibilité
 - Disponibilité
-- Résilience, incluant la continuité d’activité et de la reprise d’activité
+- Résilience (incluant la continuité d’activité et de la reprise d’activité)
 - Gestion
 - Sécurité
 
@@ -38,7 +38,7 @@ Les processus suivis par Microsoft forment la base des processus décrits dans c
 
 ## <a name="understand-the-problem"></a>Comprendre le problème
 
-Comme vous l’avez découvert dans [Bien démarrer](../getting-started/migrate.md), la première étape de la transformation numérique d’une entreprise consiste à identifier les problèmes métier à résoudre avec l’adoption d’Azure. L’étape suivante est de déterminer une solution générale au problème, comme la migration d’une charge de travail dans le cloud, ou l’adaptation d’un service local existant pour y inclure des fonctionnalités cloud. Enfin, vous devez concevoir et implémenter la solution.
+Comme indiqué dans [Prise en main : Accélération de la migration](../get-started/migrate.md), la première étape de la transformation numérique d’une entreprise consiste à identifier les problèmes métier à résoudre avec l’adoption d’Azure. L’étape suivante est de déterminer une solution générale au problème, comme la migration d’une charge de travail dans le cloud, ou l’adaptation d’un service local existant pour y inclure des fonctionnalités cloud. Enfin, vous devez concevoir et implémenter la solution.
 
 Pendant ce processus, la principale considération porte sur les fonctionnalités du service : l’ensemble des spécifications _fonctionnelles_ que vous voulez que le service effectue. Prenons par exemple un service de livraison de produits. Plusieurs fonctionnalités sont nécessaires : déterminer les lieux de départ et de destination du produit, assurer son suivi au cours de la livraison, et envoyer des notifications au client.
 
@@ -55,7 +55,7 @@ L’élément clé pour préserver les performances et la continuité des servic
 
 ![Vue d’ensemble du processus de passage en revue de l’adéquation opérationnelle](../_images/manage/ofr-flow.png)
 
-À haut niveau, le processus se compose de deux phases. Dans la *phase des prérequis*, les exigences sont établies, puis mises en correspondance avec les services qui les prennent en charge. Cette phase se produit peu fréquemment, peut-être une fois par an ou à l’introduction de nouvelles opérations. Le résultat de la phase des prérequis est utilisé dans la *phase des flux*. Cette dernière est plus fréquente (périodicité mensuelle, par exemple).
+À haut niveau, le processus se compose de deux phases. Dans la _phase des prérequis_, les exigences sont établies, puis mises en correspondance avec les services qui les prennent en charge. Cette phase se produit peu fréquemment, peut-être une fois par an ou à l’introduction de nouvelles opérations. Le résultat de la phase des prérequis est utilisé dans la _phase des flux_. Cette dernière est plus fréquente (périodicité mensuelle, par exemple).
 
 ### <a name="prerequisites-phase"></a>La phase des prérequis
 
@@ -63,7 +63,7 @@ Les étapes de cette phase capturent les exigences associées à un passage en r
 
 1. **Identifier les opérations d’entreprise critiques**. Identifiez les opérations stratégiques de l’entreprise. Les opérations d’entreprise sont indépendantes des fonctions de service de soutien. En d’autres termes, elles représentent les activités réelles que doit effectuer l’entreprise et elles sont prises en charge par un ensemble de services informatiques.
 
-    Le terme *stratégique* (ou *critique pour l’entreprise*) reflète un impact grave pour l’entreprise si l’opération est empêchée. Par exemple, un revendeur en ligne peut avoir une opération métier, comme « permettre à un client d’ajouter un article au panier » ou « traiter un paiement par carte de crédit ». Si une de ces opérations échoue, un client ne peut pas mener à bien la transaction et l’entreprise ne peut pas réaliser de ventes.
+    Le terme _stratégique_ (ou _critique pour l’entreprise_) reflète un impact grave pour l’entreprise si l’opération est empêchée. Par exemple, un revendeur en ligne peut avoir une opération métier, comme « permettre à un client d’ajouter un article au panier » ou « traiter un paiement par carte de crédit ». Si une de ces opérations échoue, un client ne peut pas mener à bien la transaction et l’entreprise ne peut pas réaliser de ventes.
 
 1. **Faire correspondre les opérations aux services**. Établissez un mappage des opérations métier aux services qui les prennent en charge. Dans l'exemple du panier d'achats ci-dessus, plusieurs services peuvent être impliqués, comme un service de gestion des stocks et un service de panier d'achats. Pour traiter un paiement par carte de crédit, un service de paiement local peut interagir avec un service tiers de traitement des paiements.
 
@@ -71,7 +71,7 @@ Les étapes de cette phase capturent les exigences associées à un passage en r
 
     Prenez aussi en compte les dépendances entre les services locaux et les services Azure. Dans l’exemple de panier d’achats, le service de gestion des stocks d’inventaire peut être hébergé localement et recevoir des données entrées par les employés d’un entrepôt physique. Cependant, il peut stocker des données hors site dans un service Azure, comme [Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction) ou dans une base de données, comme [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction).
 
-À partir de ces activités est produite une série *d’indicateurs de tableau de bord* pour les opérations de service. Le tableau de bord mesure des critères tels que la disponibilité, l'extensibilité et la récupération d'urgence. Les métriques de tableau de bord expriment les critères opérationnels que le service doit respecter. Elles peuvent être exprimées à un niveau de granularité adapté au fonctionnement du service.
+À partir de ces activités est produite une série _d’indicateurs de tableau de bord_ pour les opérations de service. Le tableau de bord mesure des critères tels que la disponibilité, l'extensibilité et la récupération d'urgence. Les métriques de tableau de bord expriment les critères opérationnels que le service doit respecter. Elles peuvent être exprimées à un niveau de granularité adapté au fonctionnement du service.
 
 Le tableau de bord doit être exprimé en termes simples pour faciliter la discussion entre les responsables des résultats d’entreprise et les ingénieurs. Par exemple, une métrique de tableau de bord relative à l'extensibilité peut comporter un code couleur simple. Le vert indique que les critères définis sont remplis, le jaune qu'ils ne sont pas remplis mais qu'une correction planifiée est en cours d'implémentation, et le rouge qu'ils ne sont pas remplis et qu'aucun plan ni aucune action n'est en cours.
 

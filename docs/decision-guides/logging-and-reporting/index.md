@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e462f0a20daddaf87eda4c77999cb2680dea643e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996326"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224372"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 
@@ -101,7 +101,7 @@ Si vous n’avez pas un besoin essentiel de maintenir un système de supervision
 
 Ce scénario est une mise en miroir de l’approche centralisée locale : les charges de travail basées sur le cloud envoient des données de télémétrie directement à Azure Monitor, tandis que les applications et les services locaux envoient des données de télémétrie directement à Azure Monitor ou agrègent les données localement pour qu’elles soient ingérées par Azure Monitor à intervalles réguliers. Azure Monitor vous sert ensuite de système principal de création de rapports et de supervision pour l’ensemble de votre parc informatique.
 
-Postulats concernant la supervision hybride basée sur le cloud : Les postulats suivants sont admis lorsque l’on utilise un système de création de rapports et de journalisation basé sur le cloud pour la supervision hybride :
+**Postulats concernant la supervision hybride basée sur le cloud :** Les postulats suivants sont admis lorsque l’on utilise un système de création de rapports et de journalisation basé sur le cloud pour la supervision hybride :
 
 - Vous n’êtes pas dépendant des systèmes de supervision locaux existants.
 - Vos charges de travail n’imposent pas d’exigences stratégiques ou réglementaires quant au stockage des données de journal en local.

@@ -3,17 +3,16 @@ title: Préparer pour l’adoption du cloud
 description: Découvrez comment créer une zone d’atterrissage pour héberger les charges de travail que vous envisagez de créer ou de migrer dans le cloud.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
-ms.topic: landing-page
+ms.date: 05/04/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-layout: LandingPage
-ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3cbadad8cef926084b76170fe6f820eb6629a6bf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79092532"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223029"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -21,96 +20,15 @@ ms.locfileid: "79092532"
 
 Avant de commencer l’adoption, vous devez créer une zone d’accueil pour héberger les charges de travail que vous envisagez de créer ou de migrer dans le cloud. Cette section du framework fournit un guide à la création d’une telle zone d’accueil.
 
-## <a name="landing-zone-exercises"></a>Exercices de zone d’accueil
-
 Les exercices suivants vous aideront lors du processus de création de zone d’accueil afin de prendre en charge l’adoption du cloud.
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-setup-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Guide de configuration d’Azure</h3>
-Passez en revue le guide de configuration Azure pour vous familiariser avec les outils et approches nécessaires lors de la création d’une zone d’accueil.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/first-landing-zone.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Première zone d’accueil</h3>
-Choisissez l’option de zone d’atterrissage la mieux adaptée pour établir un point de départ basé sur le code pour votre environnement.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./considerations/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Étendre la zone d’accueil</h3>
-Répondez aux exigences de votre plan d’adoption du cloud en matière de plateforme en développant la première zone d’atterrissage.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Meilleures pratiques</h3>
-Validez les modifications de zone d’atterrissage par rapport aux bonnes pratiques pour garantir la bonne configuration de vos zones d’atterrissage actuelles et futures.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Guide de configuration Azure](./azure-setup-guide/index.md) : Passez en revue le guide de configuration Azure pour vous familiariser avec les outils et approches nécessaires lors de la création d’une zone d’accueil.                                |
+| ![2](../_images/icons/2.png)     | <br>[Première zone d’atterrissage](./landing-zone/first-landing-zone.md) : Choisissez l’option de zone d’atterrissage la mieux adaptée pour établir un point de départ basé sur le code pour votre environnement.                                |
+| ![3](../_images/icons/3.png)     | <br>[Étendre la zone d’accueil](./considerations/index.md) : Répondez aux exigences de votre plan d’adoption du cloud en matière de plateforme en développant la première zone d’atterrissage.                                |
+| ![4](../_images/icons/4.png)      | <br>[Bonnes pratiques](./azure-best-practices/index.md) : Validez les modifications de zone d’atterrissage par rapport aux bonnes pratiques pour garantir la bonne configuration de vos zones d’atterrissage actuelles et futures.                        |
 
-<!-- markdownlint-enable MD033 -->
-
-## <a name="next-steps"></a>Étapes suivantes
-
-Préparez-vous pour l’adoption du cloud en consultant le [guide de configuration Azure](./azure-setup-guide/index.md).
-
-> [!div class="nextstepaction"]
-> [Guide de configuration Azure](./azure-setup-guide/index.md)
+Au minimum, préparez-vous pour l’adoption du cloud en consultant le [guide de configuration Azure](./azure-setup-guide/index.md).

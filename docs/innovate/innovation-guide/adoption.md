@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e8ccc7dcefb1fe2fe194e743fe139819ab29b01f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: db526c15a4e33f9531a404c8c257d9c6b5b90261
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120492"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222315"
 ---
 ::: zone target="docs"
 
@@ -64,7 +64,7 @@ Pour afficher des données quantitatives sur vos applications :
 
 ::: zone target="docs"
 
-Pour afficher les données relatives à vos applications, accédez au [Portail Azure](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents).
+Pour afficher les données relatives à vos applications, accédez au [Portail Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents).
 
 ::: zone-end
 
@@ -108,7 +108,7 @@ Pour afficher des données quantitatives sur vos API :
 
 ::: zone target="docs"
 
-Pour ouvrir les services Gestion des API, accédez au [Portail Azure](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService).
+Pour ouvrir les services Gestion des API, accédez au [Portail Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService).
 
 ::: zone-end
 
@@ -177,7 +177,7 @@ Pour afficher les déploiements actuels dans votre pipeline :
 
 ::: zone target="docs"
 
-Pour afficher vos applications dans App Service, accédez au [Portail Azure](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites).
+Pour afficher vos applications dans App Service, accédez au [Portail Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites).
 
 ::: zone-end
 

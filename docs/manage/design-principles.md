@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6049c11e1c80ab13ea5429582dae662ef1937983
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 41134eacc0fbb5356fdff1a56dc292465e6e8750
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430071"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223879"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Appliquer des principes de conception et des opérations avancées
 
@@ -99,7 +99,7 @@ Pour obtenir des conseils sur la correction automatisée, consultez [Azure Autom
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>Mettre à l’échelle la solution avec un catalogue de services
 
-L’élément indispensable à la spécialisation de plateforme et aux opérations de plateforme est un catalogue de services bien géré. C’est ainsi que les améliorations apportées à la conception et à la correction des systèmes sont mises à l’échelle dans un environnement. L’équipe de plateforme cloud et l’équipe d’automatisation cloud s’associent pour créer des solutions reproductibles convenant aux plateformes les plus courantes dans n’importe quel environnement. Toutefois, si ces solutions ne sont pas exploitées de manière cohérente, la gestion cloud peut offrir un peu plus qu’une offre de base de référence.
+L’élément indispensable à la spécialisation de plateforme et aux opérations de plateforme est un catalogue de services bien géré. C’est ainsi que les améliorations apportées à la conception et à la correction des systèmes sont mises à l’échelle dans un environnement. L’équipe de plateforme cloud et l’équipe d’automatisation cloud s’associent pour créer des solutions reproductibles convenant aux plateformes les plus courantes dans n’importe quel environnement. Cependant, si ces solutions ne sont pas exploitées de manière cohérente, la gestion cloud peut offrir un peu plus qu’une offre de base de référence.
 
 Pour accroître l’adoption et réduire la charge de maintenance de toutes les plateformes optimisées, la plateforme doit être ajoutée à un catalogue de services. Chaque application du catalogue peut être déployée pour un usage interne via le catalogue de services ou en tant qu’offre de la Place de marché pour les utilisateurs externes.
 
@@ -107,7 +107,7 @@ Pour obtenir des informations sur la publication dans un catalogue de services, 
 
 ### <a name="continuous-improvement"></a>Amélioration continue
 
-La spécialisation de plateforme et les opérations de plateforme dépendent de boucles de commentaires efficaces entre les équipes chargées de l’adoption, de la plateforme, de l’automatisation et de la gestion. Le fait de baser ces boucles de commentaires sur des données permet à chaque équipe de prendre des décisions éclairées. Pour que les opérations de plateforme puissent respecter leurs engagements métier à long terme, il est important de tirer parti des insights propres à la plateforme centralisée. Étant donné que les conteneurs et SQL Server sont les plateformes gérées de manière centralisée qui sont les plus couramment utilisées, consultez les articles suivant, qui vous aideront à vous familiariser avec la collecte de données en vue d’une amélioration continue :
+La spécialisation de plateforme et les opérations de plateforme dépendent de boucles de commentaires efficaces entre les équipes chargées de l’adoption, de la plateforme, de l’automatisation et de la gestion. Le fait de baser ces boucles de commentaires sur des données permet à chaque équipe de prendre des décisions éclairées. Pour que les opérations de plateforme puissent respecter leurs engagements métier à long terme, il est important de tirer parti des insights propres à la plateforme centralisée. Étant donné que les conteneurs et SQL Server sont les plateformes gérées de manière centralisée qui sont les plus couramment utilisées, consultez les articles suivants, qui vous aideront à vous familiariser avec la collecte de données en vue d’une amélioration continue :
 
 - [Performances du conteneur](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [Performances de la base de données PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)

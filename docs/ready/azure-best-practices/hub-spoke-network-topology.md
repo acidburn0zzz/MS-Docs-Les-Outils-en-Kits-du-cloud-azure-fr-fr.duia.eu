@@ -8,20 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 5ab24d655327584bd1f6363ac439c1ffcacaccec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995114"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215566"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
 # <a name="hub-and-spoke-network-topology"></a>Topologie de réseau hub-and-spoke
 
-*Hub-and-spoke* est un modèle de réseau visant à gérer de manière plus efficace les besoins de communication ou de sécurité courants. Il permet également d’éviter les limitations des abonnements Azure. Ce modèle répond aux préoccupations suivantes :
+_Hub-and-spoke_ est un modèle de réseau visant à gérer de manière plus efficace les besoins de communication ou de sécurité courants. Il permet également d’éviter les limitations des abonnements Azure. Ce modèle répond aux préoccupations suivantes :
 
 - **Réduction des coûts et amélioration de la gestion**. En centralisant les services qui peuvent être partagés par plusieurs charges de travail (comme les appliances virtuelles réseau et les serveurs DNS) en un seul endroit, le service informatique est capable de réduire les ressources et efforts de gestion redondants.
 - **Dépassement des limites des abonnements**. Pour exécuter les charges de travail informatiques volumineuses, il se peut que vous ayez besoin d’utiliser davantage de ressources que le quota autorisé par un abonnement Azure unique. Vous avez la possibilité de dépasser ces limites en effectuant le peering des réseaux virtuels de charge de travail issus de différents abonnements à un hub central. Pour plus d’informations, consultez [Limites des abonnements Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
@@ -30,7 +29,7 @@ ms.locfileid: "80995114"
 Les patrimoines cloud plus petits pourraient ne pas bénéficier de la structure et des capacités ajoutées offertes par ce modèle. Toutefois, il est préférable d’adopter une architecture de mise en réseau hub-and-spoke en cas d’efforts plus important d’adoption cloud et d’une des préoccupations mentionnées précédemment.
 
 > [!NOTE]
-> Le site Architectures de référence Azure contient des exemples de modèles que vous pouvez utiliser comme base pour l’implémentation de vos propres réseaux hub-and-spoke :
+> Le site des architectures de référence Azure contient des exemples de modèles qui peuvent vous servir de base pour implémenter vos propres réseaux hub-and-spoke :
 >
 > - [Implémenter une topologie de réseau hub-and-spoke dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 > - [Implémenter une topologie de réseau hub-and-spoke avec des services partagés dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
@@ -39,7 +38,7 @@ Les patrimoines cloud plus petits pourraient ne pas bénéficier de la structure
 
 ![Exemple de topologie de réseau hub and spoke][1]
 
-Comme indiqué dans le diagramme, Azure prend en charge deux types de conception hub and spoke. Il prend en charge la communication, les ressources partagées et la stratégie de sécurité centralisée (« hub de réseau virtuel » dans le diagramme), ou un type de réseau étendu virtuel (« Virtual WAN » dans le diagramme) pour les communications de branche à branche à grande échelle et de branche à Azure.
+Comme indiqué dans le diagramme, Azure prend en charge deux types de conception hub and spoke. Il gère la communication, les ressources partagées et la stratégie de sécurité centralisée (« hub de réseau virtuel » sur le diagramme), ou un type de réseau WAN virtuel (« réseau WAN virtuel » sur le diagramme) pour les communications à grande échelle de branche à branche et de branche à Azure.
 
 Un hub est une zone réseau centrale qui contrôle et inspecte le trafic d’entrée ou de sortie entre les zones : Internet, le réseau local et des spokes. La topologie hub and spoke offre à votre service informatique un moyen efficace d’appliquer des stratégies de sécurité à un emplacement central. Elle réduit également les risques de configuration incorrecte et d’exposition.
 
@@ -48,7 +47,7 @@ Le hub contient souvent les composants de service courants que les spokes consom
 - Infrastructure Windows Server Active Directory, nécessaire à l’authentification utilisateur des tiers qui souhaitent accéder aux charges de travail du spoke à partir de réseaux non approuvés. Elle inclut les services de fédération Active Directory (AD FS) associés.
 - Service DNS destiné à résoudre le nommage pour la charge de travail dans les spokes et permettant d’accéder aux ressources locales et sur Internet si le service [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) n’est pas utilisé.
 - Infrastructure à clé publique (PKI) permettant d’implémenter l’authentification unique sur les charges de travail.
-- Contrôle de flux du trafic TCP et UDP entre les zones du réseau à rayons et Internet.
+- Contrôle de flux du trafic TCP et UDP entre les zones du réseau spoke et Internet.
 - Contrôle de flux entre les rayons et les ressources locales.
 - Si nécessaire, contrôle de flux entre un rayon et un autre.
 
@@ -84,6 +83,6 @@ Il est également possible d’interconnecter des rayons à un rayon jouant le r
 
 <!-- images -->
 
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Exemple de haut niveau de hub-and-spoke"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Cluster de concentrateurs et de rayons"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Rayon à rayon"
+[1]: ../../_Images/azure-best-practices/network-hub-spoke-high-level.png "Exemple de haut niveau de réseau hub-and-spoke"
+[2]: ../../_Images/azure-best-practices/network-hub-spokes-cluster.png "Cluster de réseaux hub-and-spoke"
+[3]: ../../_Images/azure-best-practices/network-spoke-to-spoke.png "Spoke-to-spoke"

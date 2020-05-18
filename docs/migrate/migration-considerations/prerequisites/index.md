@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ddbd2374cea98d08760e53eba885171aa854ed17
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 500df8bb2ff239a34b2eb87dbe9f6eb2f215c005
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429024"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222077"
 ---
 # <a name="prerequisites-for-migration"></a>Prérequis pour la migration
 
@@ -26,10 +26,10 @@ L’objectif est de vérifier l’état de préparation des parties métier, cul
 
 Avant de lancer une migration vers le cloud, passez en revue les conseils associés aux étapes [Planifier](../../../strategy/index.md) et [Préparer](../../../ready/index.md) du Framework d’adoption du cloud pour vérifier que votre organisation est disposée à participer aux processus d’adoption du cloud et de migration vers le cloud. Examinez en particulier les impératifs de l’entreprise et les résultats attendus qui sous-tendent la migration :
 
-- [Prise en main : Migrer](../../../getting-started/migrate.md)
+- [Prise en main : Accélérer la migration](../../../get-started/migrate.md)
 - [Pourquoi migrons-nous vers le cloud ?](../../../strategy/motivations.md)
 
-## <a name="definition-of-done"></a>Définition de « *terminé* »
+## <a name="definition-of-_done_"></a>Définition de « _terminé_ »
 
 Les prérequis sont terminés quand les conditions suivantes sont satisfaites :
 
@@ -38,7 +38,7 @@ Les prérequis sont terminés quand les conditions suivantes sont satisfaites :
 - **État de préparation de la partie technique.** La zone d’accueil (ou espace d’hébergement alloué dans le cloud) qui recevra les ressources migrées répond à la configuration minimale requise pour héberger la première charge de travail migrée.
 
 > [!CAUTION]
-> La préparation est essentielle à la réussite d’une migration. Cependant, une préparation excessive peut conduire à une *paralysie de l’analyse*, où trop de temps consacré à la planification peut sérieusement retarder un effort de migration. Les processus et prérequis définis dans cette section sont destinés à vous aider à prendre des décisions, mais veillez à ce qu’ils ne vous empêchent pas de faire des progrès significatifs.
+> La préparation est essentielle à la réussite d’une migration. Cependant, une préparation excessive peut conduire à une _paralysie de l’analyse_, où trop de temps consacré à la planification peut sérieusement retarder un effort de migration. Les processus et prérequis définis dans cette section sont destinés à vous aider à prendre des décisions, mais veillez à ce qu’ils ne vous empêchent pas de faire des progrès significatifs.
 >
 > Choisissez une charge de travail relativement simple pour votre migration initiale. Utilisez les processus décrits dans cette section pour planifier et implémenter cette première migration. Ce premier effort de migration va rapidement démontrer les principes du cloud à votre équipe et les forcer à se familiariser avec son fonctionnement. À mesure que votre équipe acquiert de l’expérience, intégrez ces enseignements lors de migrations plus vastes et plus complexes.
 

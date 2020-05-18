@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4e26787fb2125dd2784698b06171e898dd7ac55
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396017"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214478"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Déployer des charges de travail et des ressources (infrastructure, applications et données)
 
-Pendant cette phase du parcours, vous utilisez la sortie de la phase d’évaluation pour initier la migration de l’environnement. Ce guide vous aide à identifier les outils appropriés pour atteindre un état « terminé », notamment les outils natifs, tiers et de gestion de projet.
+Pendant cette phase du parcours, vous utilisez la sortie de la phase d’évaluation pour lancer la migration de l’environnement. Ce guide aide à identifier les outils appropriés pour atteindre un état terminé, notamment des outils natifs, tiers et de gestion de projet.
 
 <!-- markdownlint-disable MD025 -->
 
@@ -270,7 +270,7 @@ Ce ne sont pas les seuls outils disponibles. De nombreux autres outils tiers son
 
 À mesure que vous migrez vers les technologies cloud, vous avez la possibilité de configurer votre organisation pour DevOps et CI/CD. Même si votre organisation gère uniquement l’infrastructure, lorsque vous commencez à gérer votre infrastructure sous forme de code et à utiliser les modèles et pratiques du secteur pour DevOps, vous pouvez commencer à augmenter votre agilité par le biais des pipelines CI/CD. Cela vous permet de vous adapter plus rapidement aux scénarios de modification, de croissance, de mise en production et même de récupération.
 
-Azure DevOps fournit toutes les fonctionnalités et l’intégration requises avec Azure, des environnements locaux ou même d’autres clouds. Pour plus d’informations, consultez [Azure DevOps](https://azure.microsoft.com/services/devops). Pour un entraînement guidé, consultez [CI et CD avec Azure DevOps – Démarrage rapide](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+Azure DevOps fournit toutes les fonctionnalités et l’intégration requises avec Azure, des environnements locaux ou même d’autres clouds. Pour plus d’informations, consultez [Azure DevOps](https://azure.microsoft.com/services/devops). Pour une formation encadrée, consultez [CI/CD avec Azure DevOps – Démarrage rapide](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
 ## <a name="suggested-skills"></a>Compétences suggérées
 
@@ -282,4 +282,4 @@ Voici un exemple de parcours d’apprentissage personnalisé sur Microsoft Learn
 
 # <a name="cost-management"></a>[Gestion des coûts](#tab/ManageCost)
 
-Lorsque vous migrez des ressources vers votre environnement cloud, il est important d’analyser régulièrement les coûts. Cela vous permet d’éviter des frais d’utilisation inattendus, car le processus de migration peut imposer des conditions d’utilisation supplémentaires sur vos services. Vous pouvez également redimensionner les ressources, le cas échéant, pour équilibrer le coût et la charge de travail (sujet abordé plus en détail dans la section **[Optimiser et transformer](./optimize-and-transform.md)** ).
+Lorsque vous migrez des ressources vers votre environnement cloud, il est important d’analyser régulièrement les coûts. Cela vous permet d’éviter des frais d’utilisation inattendus, car le processus de migration peut imposer des conditions d’utilisation supplémentaires sur vos services. Vous pouvez également redimensionner les ressources en fonction des besoins pour équilibrer le coût et la charge de travail, sujet abordé plus en détail dans la section [Optimisation et transformation](./optimize-and-transform.md)**.

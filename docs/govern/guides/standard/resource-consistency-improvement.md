@@ -1,5 +1,5 @@
 ---
-title: 'Gouvernance pour les entreprises standard : Améliorer la cohérence des ressources'
+title: 'Gouvernance pour les entreprises standard : Améliorer la discipline Cohérence des ressources'
 description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir comment améliorer la base de référence de la gouvernance et ajouter des contrôles de récupération, de dimensionnement et de supervision afin d’atténuer les risques.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6228bc4a2f4a2217ab7cd226ace5075c91a52dfc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7297e568f2fe16a2e499217af47d091c88544559
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434209"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219918"
 ---
-# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guide de gouvernance pour les entreprises standard : Amélioration de la cohérence des ressources
+# <a name="standard-enterprise-governance-guide-improve-the-resource-consistency-discipline"></a>Guide de gouvernance pour les entreprises standard : Améliorer la discipline Cohérence des ressources
 
 Cet article fait progresser le scénario en ajoutant des contrôles de cohérence des ressources, afin de prendre en charge des applications stratégiques.
 
@@ -63,12 +63,12 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 
 1. Toutes les ressources déployées doivent être classées par criticité et par classification des données. Les classifications doivent être examinées par l’équipe de gouvernance cloud et le propriétaire de l’application avant le déploiement sur le cloud.
 2. Les sous-réseaux hébergeant des applications critiques doivent être protégés par un pare-feu capable de détecter les intrusions et de répondre aux attaques.
-3. Les outils de gouvernance doivent auditer et appliquer les exigences de configuration réseau définies par l’équipe de gestion de la sécurité.
+3. Les outils de gouvernance doivent auditer et appliquer les exigences de configuration réseau définies par l’équipe Gestion de la sécurité.
 4. Les outils de gouvernance doivent vérifier que toutes les ressources associées aux applications critiques ou aux données protégées sont incluses dans la surveillance pour l’optimisation et l’épuisement des ressources.
 5. Les outils de gouvernance doivent valider que le niveau approprié de données de journalisation est collecté pour toutes les applications critiques ou données protégées.
 6. Le processus de gouvernance doit valider que la sauvegarde, la restauration et le respect des SLA sont implémentés correctement pour les applications critiques et les données protégées.
 7. Les outils de gouvernance doivent limiter les déploiements des machines virtuelles aux images approuvées uniquement.
-8. Les outils de gouvernance doivent faire en sorte d’empêcher les mises à jour automatiques sur toutes les ressources déployées qui prennent en charge les applications critiques. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas mises à jour automatiquement doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
+8. Les outils de gouvernance doivent faire en sorte d’empêcher les mises à jour automatiques sur toutes les ressources déployées qui prennent en charge les applications critiques. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas automatiquement mises à jour doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
 9. Les outils de gouvernance doivent valider le marquage associé aux coûts, à la criticité, aux SLA, aux applications et aux classifications des données. Toutes les valeurs doivent être alignées avec les valeurs prédéfinies gérées par l’équipe de gouvernance.
 10. Les processus de gouvernance doivent inclure des audits, à intervalles réguliers, au point de déploiement pour garantir la cohérence entre toutes les ressources.
 11. Les tendances et les attaques susceptibles d’affecter les déploiements cloud doivent être régulièrement examinées par l’équipe Sécurité de façon à fournir des mises à jour aux outils de gestion de la sécurité utilisés dans le cloud.
@@ -104,7 +104,7 @@ Cette section de l’article va modifier la conception du MVP de gouvernance, af
     1. Créez un modèle Resource Manager pour déployer le pare-feu avec les configurations nécessaires.
 8. Blueprint Azure :
     1. Créez un blueprint Azure nommé `protected-data`.
-    2. Ajoutez les modèles de pare-feu et Azure Vault au blueprint.
+    2. Ajoutez les modèles de pare-feu et de coffre Azure Recovery Services au blueprint.
     3. Ajoutez les nouvelles stratégies pour les abonnements de données protégées.
     4. Publiez le blueprint dans les groupes d’administration qui hébergeront des applications stratégiques.
     5. Appliquez le nouveau blueprint à chaque abonnement affecté, en plus des blueprints existants.
@@ -118,4 +118,4 @@ Ces processus et modifications supplémentaires du MVP de gouvernance permettent
 À mesure que l’adoption du cloud se poursuit et offre davantage de valeur aux activités métier, les risques et les besoins en matière de gouvernance du cloud changent également. Pour l’entreprise fictive dont il est question dans ce guide, la prochaine échéance surviendra lorsque le déploiement comptera plus de 100 ressources sur le cloud, ou lorsque les dépenses mensuelles s’élèveront à plus de 1 000 USD. Une fois ces seuils atteints, l’équipe de gouvernance cloud ajoutera des contrôles de gestion des coûts.
 
 > [!div class="nextstepaction"]
-> [Amélioration de la gestion des coûts](./cost-management-improvement.md)
+> [Améliorer la discipline Gestion des coûts](./cost-management-improvement.md)

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0503ba04a97362b63c6e616b79d1153f3ba691c2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120507"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224168"
 ---
 # <a name="engage-through-applications"></a>Impliquer par le biais d’applications
 
@@ -28,8 +28,8 @@ Les équipes capables de répondre plus rapidement et plus précisément aux ret
 
 Dans une perspective d’innovation, tout développement d’application doit commencer par un dépôt de code partagé. [GitHub](https://guides.github.com) est l’outil de gestion de dépôts de code le plus utilisé. Il vous permet de créer rapidement un dépôt de code partagé. [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) est également un ensemble d’outils de gestion de versions dans Azure DevOps Services que vous pouvez utiliser pour gérer votre code. Azure Repos offre deux types de gestion de version :
 
-- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) : gestion de version distribuée
-- [Team Foundation Version Control (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) : gestion de versions centralisée
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) : gestion de version distribuée.
+- [Team Foundation Version Control (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) : gestion de versions centralisée.
 
 ## <a name="citizen-developers"></a>Développeurs citoyens
 
@@ -50,7 +50,7 @@ Quand une application ou une expérience est nécessaire pour répondre à un be
 
 ### <a name="infusing-intelligence"></a>Infusion de l’intelligence
 
-Le Machine Learning et l’intelligence artificielle sont de plus en plus accessibles aux développeurs. De par la vaste disponibilité des API courantes, dotées de fonctionnalités prédictives, les développeurs bénéficient d’un accès étendu aux données et aux prédictions et peuvent ainsi répondre plus efficacement aux besoins du client.
+Le Machine Learning et l’IA sont de plus en plus accessibles aux développeurs. De par la vaste disponibilité des API courantes, dotées de fonctionnalités prédictives, les développeurs bénéficient d’un accès étendu aux données et aux prédictions et peuvent ainsi répondre plus efficacement aux besoins du client.
 
 L’ajout d’intelligence à une solution ouvre la voie à la reconnaissance vocale, à la traduction de texte, à la vision par ordinateur et même à la recherche visuelle. Grâce à ces fonctionnalités étendues, il est plus facile pour les développeurs de générer des solutions qui tirent parti de l’intelligence pour créer une expérience interactive et moderne.
 
@@ -82,18 +82,18 @@ L’extension d’une solution est une forme courante de modernisation. Cette ap
 
 - La logique métier existante doit répondre au besoin existant du client (ou y répondre quasiment).
 - Une expérience améliorée répondrait mieux aux besoins d’une cohorte de clients spécifique.
-- La logique métier nécessaire à la solution de produit minimum viable (MVP) a été centralisée, généralement par le biais d’une approche [multiniveau](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), [microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), basée sur des services web ou basée sur des API. Cette approche consiste à wrapper la solution existante avec une nouvelle expérience hébergée dans le cloud. Cette solution est probablement disponible dans Azure App Services.
+- La logique métier nécessaire à la solution de produit minimum viable (MVP) a été centralisée, généralement par le biais d’une approche [multiniveau](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), [microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), basée sur des services web ou basée sur des API. Cette approche consiste à wrapper la solution existante avec une nouvelle expérience hébergée dans le cloud. Cette solution est probablement disponible dans Azure App Service.
 
 ### <a name="rebuild-an-existing-solution"></a>Regénérer une solution existante
 
-Si une application ne peut pas être étendue facilement, il peut être nécessaire de refactoriser la solution. Dans le cadre de cette approche, la charge de travail est migrée vers le cloud. Une fois la migration de l’application effectuée, certaines parties de l’application sont modifiées ou dupliquées en tant que services web ou [microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices) déployés parallèlement avec la solution existante. La solution parallèle basée sur les services peut être traitée comme une solution étendue. Cette approche consiste simplement à wrapper la solution existante avec une nouvelle expérience hébergée dans le cloud. Cette solution est probablement disponible dans Azure App Services.
+Si une application ne peut pas être étendue facilement, il peut être nécessaire de refactoriser la solution. Dans le cadre de cette approche, la charge de travail est migrée vers le cloud. Une fois la migration de l’application effectuée, certaines parties de l’application sont modifiées ou dupliquées en tant que services web ou [microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices) déployés parallèlement avec la solution existante. La solution parallèle basée sur les services peut être traitée comme une solution étendue. Cette approche consiste simplement à wrapper la solution existante avec une nouvelle expérience hébergée dans le cloud. Cette solution est probablement disponible dans Azure App Service.
 
 > [!CAUTION]
-> La refactorisation ou la réorganisation des solutions ou la centralisation de la logique métier peut rapidement déclencher un [spike technique](./build.md#reduce-complexity-and-delay-technical-spikes) chronophage,au lieu d’une source de valeur client. Il s’agit d’un risque pour l’innovation, particulièrement au début de la validation de l’hypothèse. En faisant preuve d’un peu de créativité dans la conception d’une solution, il doit être possible de créer un MVP n’impliquant pas la refactorisation de solutions existantes. Il est recommandé de retarder la refactorisation jusqu’à ce que l’hypothèse initiale puisse être validée à grande échelle.
+> La refactorisation ou la réorganisation des solutions ou la centralisation de la logique métier peut rapidement déclencher un [spike technique](./build.md#reduce-complexity-and-delay-technical-spikes) chronophage, au lieu d’une source de valeur client. Il s’agit d’un risque pour l’innovation, particulièrement au début de la validation de l’hypothèse. En faisant preuve d’un peu de créativité dans la conception d’une solution, il doit être possible de créer un MVP n’impliquant pas la refactorisation de solutions existantes. Il est recommandé de retarder la refactorisation jusqu’à ce que l’hypothèse initiale puisse être validée à grande échelle.
 
 ## <a name="operating-model-innovations"></a>Innovations relatives aux modèles de fonctionnement
 
-En plus des approches modernes et novatrices de la création d’applications, il y a eu des innovations notables dans les *opérations* d’application. Ces approches ont engendré de nombreux mouvements organisationnels. L’un des plus importants est le modèle de fonctionnement du [centre d’excellence du cloud](../../organize/cloud-center-of-excellence.md). Quand elles sont complètes et matures, les équipes commerciales peuvent fournir leur propre support opérationnel pour une solution.
+En plus des approches modernes et novatrices de la création d’applications, il y a eu des innovations notables dans les _opérations_ d’application. Ces approches ont engendré de nombreux mouvements organisationnels. L’un des plus importants est le modèle de fonctionnement du [centre d’excellence du cloud](../../organize/cloud-center-of-excellence.md). Quand elles sont complètes et matures, les équipes commerciales peuvent fournir leur propre support opérationnel pour une solution.
 
 Le type de modèle de gestion opérationnelle en libre-service, que l’on trouve dans un centre d’excellence du cloud, offre des contrôles plus stricts et des itérations plus rapides au sein de l’environnement de la solution. Pour accomplir ces buts, la responsabilité et le contrôle des opérations sont transférés à l’équipe commerciale.
 

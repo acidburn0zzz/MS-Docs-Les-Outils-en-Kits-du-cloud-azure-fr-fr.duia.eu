@@ -1,5 +1,5 @@
 ---
-title: 'Gouvernance pour les entreprises standard : Améliorer la discipline de gestion des coûts'
+title: 'Gouvernance pour les entreprises standard : Améliorer la discipline Gestion des coûts'
 description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir comment ajouter des contrôles de coût à un produit minimum viable (MVP, minimum viable product) de gouvernance.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3d0a4e06a2aaa21f191130b937790408abf16952
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1c25a98eaa63e6cd6f71ac571ec4e006ad7c4946
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434292"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219935"
 ---
-# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Guide pour les entreprises standard : Améliorer la discipline Gestion des coûts
+# <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>Guide de gouvernance pour les entreprises standard : Améliorer la discipline Gestion des coûts
 
 Cet article fait progresser le scénario en ajoutant des contrôles de coûts au MVP de gouvernance.
 
 ## <a name="advancing-the-narrative"></a>Développement du scénario
+
+<!-- docsTest:ignore DR -->
 
 L'adoption a dépassé l'indicateur de tolérance des coûts défini dans le MVP de la gouvernance. Il s'agit d'une bonne chose car cela correspond aux migrations entreprises depuis le centre de données de récupération d'urgence. L’augmentation des dépenses justifie désormais un investissement en temps de la part de l’équipe de gouvernance cloud.
 
@@ -36,7 +38,7 @@ Depuis, certains changements ont eu lieu et ceux-ci vont avoir un impact sur la 
 
 ### <a name="incrementally-improve-the-future-state"></a>Améliorer progressivement l’état futur
 
-Des fonctionnalités de contrôle des coûts et de création de rapports doivent être ajoutées à la solution cloud. Le service informatique fait toujours office de chambre de compensation des coûts. Cela signifie que les achats informatiques continuent à financer les services cloud. Les rapports devraient cependant lier les frais d’exploitation directs aux fonctions qui absorbent les coûts du cloud. Ce modèle est appelé « Show Back » en termes de comptabilité cloud.
+Des fonctionnalités de contrôle des coûts et de création de rapports doivent être ajoutées à la solution cloud. Le service informatique fait toujours office de chambre de compensation des coûts. Cela signifie que les achats informatiques continuent à financer les services cloud. Les rapports devraient cependant lier les frais d’exploitation directs aux fonctions qui absorbent les coûts du cloud. Ce modèle est appelé _showback_ en termes de comptabilité cloud.
 
 Les modifications apportées aux états actuel et futur exposent à de nouveaux risques qui nécessiteront de nouvelles instructions de stratégie.
 

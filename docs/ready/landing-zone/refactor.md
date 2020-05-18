@@ -8,15 +8,13 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d984808a6389b38a53be4b07b2e6a984e5b30227
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc5263b1f9dfcbdb0d5c14e79e5de976fdd59818
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122070"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221805"
 ---
-<!-- cSpell:ignore CAF -->
-
 # <a name="refactor-landing-zones"></a>Refactorisation des zones d’atterrissage
 
 La zone d’atterrissage est un environnement permettant d’héberger vos charges de travail, **qui sont préprovisionnées par le biais de code**. Étant donné que l’infrastructure de zone d’atterrissage est définie dans le code, elle peut être refactorisée comme n’importe quel autre code base. La refactorisation est un processus qui consiste à modifier ou à restructurer le code source afin d’optimiser le résultat de ce code sans changer son rôle ou sa fonction principale.
@@ -29,11 +27,11 @@ La méthodologie Ready utilise le concept de refactorisation pour accélérer la
 
 Lorsque les clients adoptent le cloud, les considérations relatives aux zones d’atterrissage représentent le point de blocage le plus courant pour l’adoption et les résultats liés au cloud. Les clients ont tendance pencher vers l’un des deux points de blocage suivants. La plupart du temps, les équipes penchent vers l’un de ces deux points de blocage, ce qui entraîne des blocages culturels qui compliquent l’adoption.
 
-Les deux points de blocage principaux prennent racine dans une seule et même conviction, à savoir que l’environnement cloud et les centres de centres existants doivent être en parité ou presque au niveau des fonctionnalités des opérations, de la gouvernance et de la sécurité. Il s’agit d’un objectif à long terme. Mais la difficulté vient de l’équilibre délicat entre le moment où vous atteignez cet objectif et la rapidité requise pour arriver à des résultats commerciaux concrets.
+Les deux points de blocage principaux prennent racine dans une seule et même conviction, à savoir que l’environnement cloud et les centres de centres existants doivent être en parité ou presque au niveau des fonctionnalités des opérations, de la gouvernance et de la sécurité. Il s’agit d’un objectif à long terme. Cependant, la difficulté vient de l’équilibre délicat entre le moment où vous atteignez cet objectif et la rapidité requise pour arriver à des résultats commerciaux concrets.
 
 ### <a name="blocker-acting-too-soon"></a>Point de blocage : Action trop précoce
 
-Il a fallu des années et des efforts importants pour atteindre le niveau actuel de sécurité, de gouvernance et d’opérations dans les centres de données actuels. Il a également fallu des observations, des formations et une certaine personnalisation pour répondre aux contraintes uniques de cet environnement. La réplication des mêmes procédures et configurations prend du temps. Atteindre 100 % dans la parité des fonctionnalités peut également entraîner des performances médiocres de l’environnement qui s’exécute dans le cloud. Cette approche par parité est généralement synonyme de surcoûts non planifiés significatifs dans l’environnement cloud. Il est vivement recommandé aux clients de ne pas tenter d’appliquer les exigences actuelles en matière d’état à un environnement futur comme jalon précoce. Ce modèle est rarement la bonne solution.
+Il a fallu des années et des efforts importants pour atteindre le niveau actuel de sécurité, de gouvernance et d’opérations dans les centres de données actuels. Il a également fallu des observations, des formations et une certaine personnalisation pour répondre aux contraintes uniques de cet environnement. La réplication des mêmes procédures et configurations prend du temps. Atteindre 100 % dans la parité des fonctionnalités peut également entraîner des performances médiocres de l’environnement qui s’exécute dans le cloud. Cette approche par parité est généralement synonyme de surcoûts non planifiés significatifs dans l’environnement cloud. N’essayez pas d’appliquer les exigences actuelles en matière d’état à un environnement futur comme jalon précoce. Une telle approche s’avère rarement rentable.
 
 ![Point de blocage courant : Action trop précoce](../../_images/ready/blocker-act-too-soon.png)
 
@@ -62,7 +60,7 @@ Le concept de refactorisation d’une zone d’atterrissage est simple en théor
 
 ## <a name="development-approach"></a>Approche de développement
 
-L’avantage d’une approche basée sur la refactorisation est la possibilité de créer des chemins d’itération parallèles pour le développement. L’image ci-dessous fournit un exemple de deux chemins d’itération parallèles : Adoption du cloud et plateforme cloud. Ces deux chemins progressent à leur propre rythme, avec un risque minime de se convertir en point de blocage venant perturber les activités de ces deux équipes. L’alignement sur le plan d’adoption et les garde-fous de refactorisation constituent un ensemble d’accords sur les jalons, ce qui définit des dépendances d’état claires pour le futur.
+L’avantage d’une approche basée sur la refactorisation est la possibilité de créer des chemins d’itération parallèles pour le développement. L’image ci-dessous fournit un exemple de deux chemins d’itération parallèles : adoption du cloud et plateforme cloud. Ces deux chemins progressent à leur propre rythme, avec un risque minime de se convertir en point de blocage venant perturber les activités de ces deux équipes. L’alignement sur le plan d’adoption et les garde-fous de refactorisation constituent un ensemble d’accords sur les jalons, ce qui définit des dépendances d’état claires pour le futur.
 
 ![Itération parallèle de la zone d’atterrissage](../../_images/ready/iterations.png)
 

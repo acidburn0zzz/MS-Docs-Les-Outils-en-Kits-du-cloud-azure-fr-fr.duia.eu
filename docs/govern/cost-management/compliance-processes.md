@@ -1,6 +1,6 @@
 ---
 title: Processus de conformité à la stratégie Gestion des coûts
-description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir une approche de création de processus qui vont dans le sens d’une discipline de gouvernance de gestion des coûts.
+description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir une approche de création de processus qui vont dans le sens d’une discipline de gestion des coûts.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1dc9a438a502a63c6c989f822330acd2ee7cef5f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 85df89eb5cf17631e63441a806ab15bcfd94c326
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434683"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220683"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Processus de conformité à la stratégie Gestion des coûts
 
-Cet article présente une approche permettant de créer des processus qui appuient une discipline de gouvernance [Gestion des coûts](./index.md). Pour être efficace, une gouvernance des coûts du cloud implique plusieurs processus manuels récurrents qui visent à entrer en conformité avec la stratégie. De fait, l’équipe de gouvernance cloud et les parties prenantes intéressées sont régulièrement sollicitées afin de passer en revue et mettre à jour la stratégie et veiller au respect de cette dernière. En outre, de nombreux processus de supervision et d’application continues peuvent être automatisés ou complétés par des outils afin de réduire la charge de gouvernance et accélérer la réponse en cas de manquement à la stratégie.
+Cet article présente une approche permettant de créer des processus qui appuient une [discipline Gestion des coûts](./index.md) efficace. Pour être efficace, une gouvernance des coûts du cloud implique plusieurs processus manuels récurrents qui visent à entrer en conformité avec la stratégie. De fait, l’équipe de gouvernance cloud et les parties prenantes intéressées sont régulièrement sollicitées afin de passer en revue et mettre à jour la stratégie et veiller au respect de cette dernière. En outre, de nombreux processus de supervision et d’application continues peuvent être automatisés ou complétés par des outils afin de réduire la charge de gouvernance et accélérer la réponse en cas de manquement à la stratégie.
 
 ## <a name="planning-review-and-reporting-processes"></a>Processus de planification, de révision et de génération de rapports
 
@@ -43,7 +43,7 @@ Ces processus de base permettent d’ajuster les dépenses et d’établir les f
 
 ## <a name="processes-for-ongoing-monitoring"></a>Processus de surveillance continue
 
-La réussite des stratégies de gouvernance Gestion des coûts dépend du degré de visibilité sur les dépenses de cloud passées, en cours et prévues. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet de vos coûts existants, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance continus décrits ci-dessus exigent que vous fournissiez des données de qualité afin d’être capable de modifier la stratégie pour protéger votre infrastructure au mieux face à l’évolution des besoins métiers et l’utilisation du cloud.
+La réussite des stratégies Gestion des coûts dépend du degré de visibilité sur les dépenses de cloud passées, en cours et prévues. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet de vos coûts existants, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance continus décrits ci-dessus exigent que vous fournissiez des données de qualité afin d’être capable de modifier la stratégie pour protéger votre infrastructure au mieux face à l’évolution des besoins métiers et l’utilisation du cloud.
 
 Assurez-vous que vos équipes informatiques ont implémenté des systèmes automatisés pour surveiller vos dépenses et votre utilisation du cloud, et identifier les écarts inattendus par rapport aux prévisions de coûts. Mettez en place des systèmes de rapports et d’alertes pour garantir une détection et une atténuation rapides des potentielles violations de stratégie.
 
@@ -58,9 +58,9 @@ Voici quelques exemples de déclencheurs :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle de gestion cloud](./template.md), documentez les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
+À l’aide du [modèle de discipline Gestion des coûts](./template.md), documentez les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
 
-Pour obtenir des conseils sur l’exécution des stratégies de gestion cloud en harmonie avec les plans d’adoption, consultez l’article sur l’amélioration de la discipline Gestion des coûts.
+Pour obtenir des conseils sur l’exécution des stratégies de Gestion des coûts en harmonie avec les plans d’adoption, consultez l’article sur l’amélioration de la discipline Gestion des coûts.
 
 > [!div class="nextstepaction"]
 > [Amélioration de la discipline Gestion des coûts](./discipline-improvement.md)

@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3c83e40ab6d08b461095385ac58cf64d74da86a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 369e12abcf0325ed44719ccb76bf0032b611f8f1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708969"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220428"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Vue d’ensemble de la discipline Accélération du déploiement
 
-L’accélération du déploiement est l’une des [cinq disciplines de la gouvernance du cloud](../governance-disciplines.md) dans le [modèle de gouvernance du Framework d’adoption du cloud](../index.md). Cette discipline met l'accent sur les moyens d'établir des stratégies pour régir la configuration ou le déploiement des ressources. Dans les cinq disciplines de la gouvernance du cloud, l’accélération du déploiement inclut le déploiement, l’alignement de la configuration et la réutilisabilité des scripts. Des activités manuelles ou des activités DevOps entièrement automatisées peuvent être utilisées. Dans les deux cas, les stratégies sont en grande partie similaires. Au fur et à mesure que cette discipline mûrit, l’équipe de gouvernance du cloud peut jouer le rôle de partenaire dans les stratégies DevOps et de déploiement, en accélérant les déploiements et en éliminant les freins à l’adoption du cloud, grâce à la mise en œuvre de ressources réutilisables.
+L’accélération du déploiement est l’une des [cinq disciplines de la gouvernance du cloud](../governance-disciplines.md) dans le [modèle de gouvernance du Framework d’adoption du cloud](../index.md). Cette discipline met l'accent sur les moyens d'établir des stratégies pour régir la configuration ou le déploiement des ressources. Dans les cinq disciplines de la discipline Gouvernance du cloud, l’accélération du déploiement inclut le déploiement, l’alignement de la configuration et la réutilisabilité des scripts. Des activités manuelles ou des activités DevOps entièrement automatisées peuvent être utilisées. Dans les deux cas, les stratégies sont en grande partie similaires. Au fur et à mesure que cette discipline mûrit, l’équipe de gouvernance du cloud peut jouer le rôle de partenaire dans les stratégies DevOps et de déploiement, en accélérant les déploiements et en éliminant les freins à l’adoption du cloud, grâce à la mise en œuvre de ressources réutilisables.
 
 Cet article décrit le processus d’accélération du déploiement qu’une entreprise expérimente durant les phases de planification, de construction, d’adoption et d’exploitation d’une solution cloud. Il est impossible pour tout un document de prendre en compte les exigences d’une organisation. En tant que telle, chaque section de cet article décrit les activités minimales et potentielles suggérées. L’objectif initial de ces activités est de vous aider à créer un [produit minimum viable (MVP) de stratégie](../policy-compliance/index.md#minimum-viable-product-mvp-for-policy), mais aussi à établir un framework pour une amélioration de la [stratégie incrémentielle](../policy-compliance/index.md#incremental-policy-growth). L’équipe de gouvernance du cloud doit décider combien investir dans ces activités pour améliorer l’accélération du déploiement.
 
@@ -52,14 +52,15 @@ Les six étapes suivantes vous aideront à définir des stratégies de gouvernan
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Accélération du déploiement</h3>
-                        <p class="x-hidden-focus">Télécharger le modèle pour documenter une discipline Accélération du déploiement</p>
+                        <h3>Modèle de discipline Accélération du déploiement</h3>
+                        <p class="x-hidden-focus">Télécharger le modèle pour documenter une discipline Accélération du déploiement.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -70,7 +71,7 @@ Les six étapes suivantes vous aideront à définir des stratégies de gouvernan
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Risques commerciaux</h3>
+                        <h3>Risques métier</h3>
                         <p class="x-hidden-focus">Appréhendez les motivations et les risques généralement associés à la discipline Accélération du déploiement.</p>
                     </div>
                 </div>
@@ -128,7 +129,7 @@ Les six étapes suivantes vous aideront à définir des stratégies de gouvernan
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Maturité</h3>
-                        <p class="x-hidden-focus">Adéquation de la maturité de la gestion du cloud avec les phases d’adoption du cloud.</p>
+                        <p class="x-hidden-focus">Alignez la maturité de la gestion du cloud avec les phases d’adoption du cloud.</p>
                     </div>
                 </div>
             </div>

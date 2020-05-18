@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 36c9b9cc749f1feddff64c64717849fe5dfbe3b9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f3291bb1a5ef114b2ae790bb1a3c82eaf382c37e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996109"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215124"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>SDN (Software Defined Network) : Hub-and-spoke
 
@@ -50,7 +50,7 @@ Les architectures hub-and-spoke sont généralement implémentées avec des rés
 
 ## <a name="learn-more"></a>En savoir plus
 
-Pour obtenir des exemples illustrant l’implémentation des réseaux hub-and-spoke dans Azure, consultez les rubriques suivantes sur le site des architectures de référence Azure :
+Pour voir des architectures de référence montrant comment implémenter des réseaux hub-and-spoke sur Azure, consultez :
 
 - [Implémenter une topologie de réseau hub-and-spoke dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 - [Implémenter une topologie de réseau hub-and-spoke avec des services partagés dans Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)

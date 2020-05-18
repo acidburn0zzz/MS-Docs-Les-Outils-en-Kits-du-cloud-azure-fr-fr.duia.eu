@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99f4b2ec0a9a92c9f919a005667558ebc2a036c6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0ce3b5ee28983851e97c10360cf6707b4e3c17d1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998026"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214512"
 ---
 <!-- cSpell:ignore bandersmsft -->
 
@@ -44,7 +44,7 @@ Avant la migration de toute ressource (infrastructure, application ou données),
 
 Pour les calculs de coûts manuels, il existe deux calculatrices pratiques qui peuvent fournir une estimation rapide des coûts en fonction de l’architecture de la charge de travail à migrer.
 
-- La [calculatrice de tarification](https://azure.microsoft.com/pricing/calculator) Azure fournit des estimations de coûts qui s’appuient sur les produits Azure entrés manuellement.
+- La [calculatrice de prix Azure](https://azure.microsoft.com/pricing/calculator) fournit des estimations de coûts pour les produits Azure sélectionnés.
 - Parfois, les décisions requièrent une comparaison des coûts futurs du cloud et des coûts locaux actuels. La [calculatrice du coût total de possession (TCO)](https://azure.microsoft.com/pricing/tco/calculator) peut fournir cette comparaison.
 
 Ces calculatrices de coûts manuels peuvent être utilisées de manière autonome pour prévoir les dépenses et les économies potentielles. Vous pouvez également les utiliser conjointement avec les outils de prévision des coûts d’Azure Migrate pour ajuster les attentes en matière de coûts selon les architectures alternatives ou les contraintes de niveaux de performance.
@@ -66,8 +66,9 @@ Azure Migrate calcule les **estimations de coût mensuel** en fonction des donn�
 
 L’estimation obtenue, illustrée ci-dessous, identifie les coûts mensuels du calcul et du stockage, qui représentent souvent la plus grande partie des coûts du cloud.
 
-![Affichage Détails des coûts](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
-*Figure 1 - Image de l’affichage Détails des coûts d’une évaluation dans Azure Migrate.*
+![Vue Détails des coûts](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
+
+_Figure 1 : Image de la vue Détails des coûts d’une évaluation dans Azure Migrate_
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
@@ -92,14 +93,14 @@ Les étapes suivantes fournissent des recommandations de coût pour les ressourc
 
 Azure Cost Management peut fournir une vision plus holistique des habitudes de dépenses, notamment un affichage détaillé des coûts et des tendances des dépenses dans le temps. Pour les migrations volumineuses ou complexes, cet affichage peut fournir les insights nécessaires pour prendre des décisions de gestion des coûts à grande échelle.
 
-Configuration requise : Le reste de cet onglet part du principe que le lecteur a terminé la configuration d’Azure Cost Management dans le cadre du guide de configuration Azure. Pour plus d’informations sur la configuration d’Azure Cost Management, consultez cet [article dans le guide de configuration Azure](../../ready/azure-setup-guide/manage-costs.md). Une fois les données remplies, suivez les étapes suivantes pour estimer les coûts mensuels en fonction des données collectées.
+Configuration requise : Le reste de cet onglet part du principe que le lecteur a terminé la configuration d’Azure Cost Management dans le cadre du guide de configuration Azure. Pour plus d’informations sur la configuration d’Azure Cost Management, consultez [Gestion des coûts et de la facturation des ressources Azure](../../ready/azure-setup-guide/manage-costs.md) dans le Guide de configuration d’Azure. Une fois les données remplies, suivez les étapes suivantes pour estimer les coûts mensuels en fonction des données collectées.
 
 Les étapes suivantes chargeront les données d’analyse des coûts d’Azure Cost Management pour vos abonnements :
 
 1. Accédez à **Cost Management + facturation** dans le portail. Si vous ne voyez pas « Gestion des coûts + facturation » dans le volet gauche, sélectionnez **Tous les services**. Dans le volet du menu de services, sous **Surveillance et gestion**, sélectionnez **Gestion des coûts + facturation**.
 2. Dans Cost Management + facturation, sélectionnez **Cost Management** dans le panneau de navigation de gauche pour commencer l’analyse et l’optimisation des coûts du cloud.
 3. Dans Cost Management, sélectionnez **Analyse des coûts**.
-    a. Utilisez le paramètre **Étendue** pour passer à une autre étendue dans l’analyse des coûts.
+    1. Utilisez le paramètre **Étendue** pour passer à une autre étendue dans l’analyse des coûts.
 
 Cette analyse vous permettra d’examiner les coûts totaux, le budget (le cas échéant) et les coûts cumulés. Chaque calcul peut être affiché par service, par ressource et dans le temps. Plus important encore, les coûts peuvent être analysés par balise. Le nommage et la catégorisation appropriés des ressources (infrastructure, applications et données) constituent le point de départ fondamental de tous les processus de gouvernance et de gestion des coûts. Des balises appropriées permettent une meilleure gestion des coûts et des impacts plus clairs des optimisations des niveaux de performance et des coûts.
 
@@ -131,7 +132,7 @@ Parlez avec le représentant de votre compte Microsoft pour comprendre comment v
 
 ## <a name="azure-reservations"></a>Réservations Azure
 
-Les [réservations Azure](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) vous permettent de prépayer un ou trois ans de capacité de calcul de machine virtuelle ou de SQL Database. Le prépaiement vous permet d’obtenir une remise sur les ressources que vous utilisez. Avec un engagement initial d’une durée de 1 ou 3 ans, les réservations Azure réduisent considérablement (jusqu’à 72 % par rapport au tarif du paiement à l’utilisation) les coûts de calcul de vos machines virtuelles ou de votre base de données SQL. Les réservations permettent de bénéficier d’une remise sur la facturation et n’ont aucune incidence sur l’état de runtime de vos machines virtuelles ou bases de données SQL.
+Les [réservations Azure](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations) vous permettent de prépayer un ou trois ans de capacité de calcul de machine virtuelle ou de SQL Database. Le prépaiement vous permet d’obtenir une remise sur les ressources que vous utilisez. Avec un engagement initial d’un ou trois ans, les réservations réduisent considérablement (jusqu’à 72 % par rapport au tarif du paiement à l’utilisation) les coûts de calcul des machines virtuelles ou des bases de données SQL. Les réservations permettent de bénéficier d’une remise sur la facturation et n’ont aucune incidence sur l’état de runtime de vos machines virtuelles ou bases de données SQL.
 
 ## <a name="use-azure-hybrid-benefit"></a>Utiliser Azure Hybrid Benefit
 

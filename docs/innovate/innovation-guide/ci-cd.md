@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d4c09f7e92f0c023b641148987a1dad0459e91e5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8ba2926d702b12234dd81f93cb6820352c0fbf58
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809029"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222264"
 ---
 ::: zone target="docs"
 
@@ -28,7 +28,7 @@ ms.locfileid: "80809029"
 
 ::: zone-end
 
-Vous savez que l’innovation est essentielle au succès des entreprises. Il n’est pas possible d’innover uniquement grâce à l’introduction de nouvelles technologies. Vous devez vous concentrer sur la prise en charge des personnes qui catalysent la modification et la création de la nouvelle valeur que vous cherchez. *Les développeurs* se trouvent au centre de la transformation numérique et leur permettre d’obtenir davantage d’informations nécessite une plus grande rapidité de développement. Pour mettre en place de l’énergie créative des équipes de développeurs, vous devez les aider à devenir plus productifs, faire qu’ils favorisent une collaboration mondiale et sécurisée et qu’ils fassent tomber les barrières pour mettre à l’échelle l’innovation.
+Vous savez que l’innovation est essentielle au succès des entreprises. Il n’est pas possible d’innover uniquement grâce à l’introduction de nouvelles technologies. Vous devez vous concentrer sur la prise en charge des personnes qui catalysent la modification et la création de la nouvelle valeur que vous cherchez. _Les développeurs_ se trouvent au centre de la transformation numérique et leur permettre d’obtenir davantage d’informations nécessite une plus grande rapidité de développement. Pour mettre en place de l’énergie créative des équipes de développeurs, vous devez les aider à devenir plus productifs, faire qu’ils favorisent une collaboration mondiale et sécurisée et qu’ils fassent tomber les barrières pour mettre à l’échelle l’innovation.
 
 ## <a name="generate-value"></a>Générer des valeurs
 
@@ -77,6 +77,7 @@ Azure DevOps fournit des outils de qualité pour tous les développeurs. Les ser
 
 ::: zone target="chromeless"
 
+<!-- docsTest:ignore "Azure DevOps Projects" -->
 <!-- markdownlint-disable DOCSMD001 -->
 
 ### <a name="action"></a>Action
@@ -87,7 +88,7 @@ Pour créer un projet DevOps :
 2. Sélectionnez **Créer un projet DevOps**.
 3. Sélectionnez **Runtime, framework et service**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

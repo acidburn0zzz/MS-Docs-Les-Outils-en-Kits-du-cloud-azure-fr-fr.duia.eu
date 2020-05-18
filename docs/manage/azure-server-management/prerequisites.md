@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1eaa3abcef760d31d2107ddf1922b13d52e8441c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6671b194d5969be75283378d571b85bd679a7953
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434094"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219646"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Phase 1 : Planification des prérequis pour les services de gestion de serveur Azure
 
@@ -52,10 +52,10 @@ Les exemples de ce guide partent du principe qu’il s’agit d’un déploiemen
 
 Quand vous préparez les espaces de travail et les comptes dont vous avez besoin pour l’intégration des services de gestion, envisagez les problèmes suivants :
 
-- **Zones géographiques Azure et conformité réglementaire :** Les régions Azure sont organisées en *zones géographiques*. Une [zone géographique Azure](https://azure.microsoft.com/global-infrastructure/geographies) garantit que les conditions de résidence, de souveraineté, de conformité et de résilience des données sont respectées dans les limites géographiques. Si vos charges de travail sont soumises à une souveraineté des données ou à d’autres exigences de conformité, les comptes d’espace de travail et Automation doivent être déployés dans des régions appartenant à la même région géographique Azure que les ressources de charge de travail qu’ils prennent en charge.
+- **Zones géographiques Azure et conformité réglementaire :** Les régions Azure sont organisées en _zones géographiques_. Une [zone géographique Azure](https://azure.microsoft.com/global-infrastructure/geographies) garantit que les conditions de résidence, de souveraineté, de conformité et de résilience des données sont respectées dans les limites géographiques. Si vos charges de travail sont soumises à une souveraineté des données ou à d’autres exigences de conformité, les comptes d’espace de travail et Automation doivent être déployés dans des régions appartenant à la même région géographique Azure que les ressources de charge de travail qu’ils prennent en charge.
 - **Nombre d’espaces de travail :** Comme principe directeur, créez le nombre minimal d’espaces de travail requis par zone géographique Azure. Nous vous recommandons d’utiliser au moins un espace de travail pour chaque zone géographique Azure où se trouvent vos ressources de calcul ou de stockage. Cet alignement initial permet d’éviter des problèmes réglementaires lorsque vous migrez des données vers différentes zones géographiques.
 - **Conservation et limitation des données :** Vous devrez peut-être également prendre en compte les stratégies de conservation des données ou les exigences de limitation des données lors de la création d’espaces de travail ou de comptes Automation. Pour en savoir plus sur ces principes et sur les points supplémentaires à prendre en compte lors de la planification de vos espaces de travail, consultez [Gérer les données du journal et les espaces de travail dans Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
-- **Mappage des régions :** La liaison d’un espace de travail Log Analytics et d’un compte Azure Automation n’est prise en charge qu’entre certaines régions Azure. Par exemple, si l’espace de travail log Analytics est hébergé dans la région *EastUS*, le compte Automation lié doit être créé dans la région *EastUS2* pour être utilisé avec les services de gestion. Si vous avez un compte Automation qui a été créé dans une autre région, il ne peut pas créer un lien vers un espace de travail dans la région *EastUS*. Le choix de la région de déploiement peut avoir un impact significatif sur les exigences en matière de zones géographiques Azure. Consultez le [tableau des mappages des régions](https://docs.microsoft.com/azure/automation/how-to/region-mappings) pour déterminer la région qui doit héberger vos espaces de travail et vos comptes Automation.
+- **Mappage des régions :** La liaison d’un espace de travail Log Analytics et d’un compte Azure Automation n’est prise en charge qu’entre certaines régions Azure. Par exemple, si l’espace de travail log Analytics est hébergé dans la région `EastUS`, le compte Automation lié doit être créé dans la région `EastUS2` pour être utilisé avec les services de gestion. Si vous avez un compte Automation qui a été créé dans une autre région, il ne peut pas créer un lien vers un espace de travail dans la région `EastUS`. Le choix de la région de déploiement peut avoir un impact significatif sur les exigences en matière de zones géographiques Azure. Consultez le [tableau des mappages des régions](https://docs.microsoft.com/azure/automation/how-to/region-mappings) pour déterminer la région qui doit héberger vos espaces de travail et vos comptes Automation.
 - **Multirésidence de l’espace de travail :** L’agent Azure Log Analytics prend en charge la multirésidence dans certains scénarios, mais il fait face à plusieurs limitations et défis lors de l’exécution dans cette configuration. À moins que Microsoft ait recommandé d’utiliser la multirésidence pour votre scénario, nous vous déconseillons de le configurer sur l’agent Log Analytics.
 
 ## <a name="resource-placement-examples"></a>Exemples de placement des ressources

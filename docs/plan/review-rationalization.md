@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 90a6718c028023e1bae101b35fff873dd47e4ab2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 74d072210721212881ed7c9e8b17bcc2ce38573a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427956"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223386"
 ---
 # <a name="review-rationalization-decisions"></a>Passer en revue les décisions de rationalisation
 
@@ -25,7 +25,7 @@ Pour valider les décisions de rationalisation, utilisez les questions suivantes
 
 ## <a name="innovation-indicators"></a>Indicateurs d’innovation
 
-Si l’examen conjoint des questions suivantes aboutit à une réponse « Oui », une charge de travail peut être plus avantageuse pour l’innovation. Une telle charge de travail n’est pas migrée via un modèle lift-and-shift ou de modernisation. Au lieu de cela, la logique métier ou les structures de données seraient recréées en tant qu’application nouvelle ou remaniée. Cette approche peut éventuellement demander plus d’efforts et de temps. Toutefois, une charge de travail renforçant de façon significative le rendement de l’entreprise justifie un tel investissement.
+Si l’examen conjoint des questions suivantes aboutit à une réponse affirmative, une charge de travail peut être plus avantageuse pour l’innovation. Une telle charge de travail n’est pas migrée via un modèle lift-and-shift ou de modernisation. Au lieu de cela, la logique métier ou les structures de données seraient recréées en tant qu’application nouvelle ou remaniée. Cette approche peut éventuellement demander plus d’efforts et de temps. Toutefois, une charge de travail renforçant de façon significative le rendement de l’entreprise justifie un tel investissement.
 
 - Les applications figurant dans cette charge de travail génèrent-elles une différenciation sur le marché ?
 - Existe-t-il un investissement proposé ou approuvé visant à améliorer les expériences associées aux applications dans cette charge de travail ?
@@ -51,7 +51,7 @@ La migration est un moyen plus rapide et économique d’adopter le cloud. Toute
 - La réduction de la complexité opérationnelle pour cette charge de travail est-elle un objectif dans le cadre de cet effort ?
 - L’innovation est-elle limitée par l’architecture ou les processus d’exploitation informatique actuels ?
 
-Si la réponse à l’une de ces questions est « Oui », vous devez envisager un modèle de migration pour cette charge de travail. Cette recommandation est vraie même si la charge de travail est un candidat d’innovation.
+Si la réponse à l’une de ces questions est « oui », vous devez envisager un modèle de migration pour cette charge de travail. Cette recommandation est vraie même si la charge de travail est un candidat d’innovation.
 
 Les défis liés à la complexité opérationnelle, aux coûts, aux performances et à la stabilité peuvent nuire au rendement de l’entreprise. Vous pouvez mettre à profit le cloud pour créer rapidement des améliorations liées à ces défis. Là où cela s’applique, nous vous suggérons d’utiliser l’approche de migration pour stabiliser dans un premier temps la charge de travail. Ensuite, approfondissez les opportunités d’innovation grâce à l’agilité et la stabilité de l’environnement cloud. Cette approche favorise des retours à court terme et réduit le coût nécessaire pour induire des changements à long terme.
 

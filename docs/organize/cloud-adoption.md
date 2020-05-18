@@ -1,31 +1,29 @@
 ---
-title: Fonctionnalités d’adoption du cloud
-description: Utilisez le Cloud Adoption Framework pour Azure afin de comprendre la formation des capacités d’adoption du cloud et de doter vos équipes de manière appropriée.
+title: Présentation des fonctions d’adoption du cloud
+description: Découvrez comment les fonctions d’adoption du cloud donnent accès à des solutions techniques vous permettant de composer vos équipes de façon appropriée.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 3169fd430ad24526557bb80163c16eff814c618f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ac8307d3af159f3d6d35ccf2ded55f77786a33d7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428650"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215872"
 ---
-# <a name="cloud-adoption-capabilities"></a>Fonctionnalités d’adoption du cloud
+# <a name="cloud-adoption-functions"></a>Fonctions d’adoption du cloud
 
-Les fonctionnalités d’adoption du cloud permettent d’implémenter des solutions techniques dans le cloud. Comme tout projet informatique, les personnes qui effectuent réellement le travail en déterminent la réussite. Les équipes qui fournissent les fonctionnalités d’adoption du cloud nécessaires peuvent être composées de plusieurs experts ou partenaires de mise en œuvre.
-
-## <a name="possible-sources-for-this-capability"></a>Sources possibles pour cette compétence
+Les fonctions d’adoption du cloud permettent d’implémenter des solutions techniques dans le cloud. Comme tout projet informatique, les personnes qui effectuent réellement le travail en déterminent la réussite. Les équipes qui assurent les fonctions d’adoption du cloud nécessaires peuvent être composées de plusieurs experts ou partenaires d’implémentation.
 
 Les équipes chargées de l’adoption du cloud sont l’équivalent moderne des équipes de mise en œuvre technique ou des équipes de projet. Toutefois, la nature du cloud peut nécessiter une équipe à la structure plus fluide. Certaines équipes se concentrent exclusivement sur la migration cloud, tandis que d’autres équipes se concentrent sur des innovations qui tirent parti des technologies cloud. Certaines équipes incluent une expertise technique large, nécessaire pour les efforts d’adoption importants comme la migration complète d’un centre de données. D’autres équipes ont un objectif technique plus spécifique et peuvent passer d’un projet à l’autre pour atteindre des objectifs spécifiques. Par exemple, une équipe de spécialistes de la plateforme de données qui aident à convertir des machines virtuelles SQL en instances SQL PaaS.
 
-Quel que soit le type ou le nombre d’équipes chargées de l’adoption du cloud, la fonctionnalité d’adoption du cloud est fournie par des experts en informatique ou en analyse commerciale ou par des partenaires de mise en œuvre.
+Quel que soit le type ou le nombre d’équipes chargées de l’adoption du cloud, les fonctionnalités nécessaires pour l’adoption du cloud sont fournies par des experts en informatique ou en analyse d’entreprise ou par des partenaires d’implémentation.
 
-Selon les résultats souhaités par l’entreprise, les aptitudes nécessaires pour fournir des capacités complètes d’adoption du cloud peuvent être fournies par les services suivants :
+Selon les résultats opérationnels souhaités, les compétences nécessaires pour assurer des fonctions complètes d’adoption du cloud peuvent être les suivantes :
 
 - Personnes en charge de l’implémentation de l’infrastructure
 - Ingénieurs DevOps
@@ -35,36 +33,54 @@ Selon les résultats souhaités par l’entreprise, les aptitudes nécessaires p
 
 Pour une collaboration et une efficacité optimales, nous recommandons que les équipes chargées de l’adoption du cloud se composent en moyenne de six personnes. Ces équipes doivent s’organiser de façon autonome d’un point de vue technique. Nous recommandons vivement que ces équipes incluent également une expertise en matière de gestion de projet, avec une expérience approfondie dans les modèles agile, Scrum ou autres modèles itératifs. Cette équipe est plus efficace lorsqu’elle est gérée à l’aide d’une hiérarchie à plat.
 
-## <a name="key-responsibilities"></a>Responsabilités principales
+## <a name="preparation"></a>Préparation
 
-Le besoin principal de toute fonctionnalité d’adoption du cloud est la mise en œuvre en temps réel des solutions techniques présentées dans le plan d’adoption, en fonction des exigences de gouvernance et des résultats pour l’entreprise, en tirant parti de la technologie, des outils et solutions d’automatisation mis à la disposition de l’équipe.
+- [Création d’un compte Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account) : La première étape pour utiliser Azure est de créer un compte.
+- [Portail Azure](https://docs.microsoft.com/learn/modules/tour-azure-portal): Découvrez les fonctionnalités du portail et des services Azure, et personnalisez le portail.
+- [Présentation d’Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) : Bien démarrer avec Azure. Créez et configurez votre première machine virtuelle dans le cloud.
+- [Notions de base d’Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer) : Découvrez les concepts du cloud, familiarisez-vous avec les avantages, comparez et confrontez les stratégies de base et explorez l’éventail des services disponibles dans Azure.
+- Consultez la [méthodologie Migration](../migrate/index.md).
+
+## <a name="minimum-scope"></a>Étendue minimale
+
+L’équipe chargée de la migration cloud constitue le noyau de tous les efforts de migration cloud. Cette équipe pilote les modifications techniques qui permettent l’adoption du cloud. Selon les objectifs de l’effort d’adoption, cette équipe peut comprendre des membres aux compétences diverses qui s’occupent d’un large éventail de tâches techniques et commerciales.
+
+Au minimum, l’étendue de l’équipe comprend les aspects suivants :
+
+- [Rationalisation du patrimoine numérique](../digital-estate/index.md)
+- Examen, validation et progression du [backlog de migration classé par ordre de priorité](../migrate/migration-considerations/assess/release-iteration-backlog.md)
+- Exécution de la [première charge de travail](../digital-estate/rationalize.md#select-the-first-workload) comme opportunité d’apprentissage.
+
+## <a name="deliverable"></a>Livrable
+
+Le besoin principal pour une fonction d’adoption du cloud est l’implémentation rapide et de qualité des solutions techniques présentées dans le plan d’adoption. Ces solutions doivent s’aligner sur les exigences de gouvernance et les résultats opérationnels, et tirer parti de la technologie, des outils et des solutions d’automatisation disponibles pour l’équipe.
 
 **Tâches de planification précoces :**
 
-- Exécuter la [rationalisation du patrimoine numérique](../digital-estate/index.md)
-- Examiner, valider et faire avancer le backlog [de migration par priorité](../migrate/migration-considerations/assess/release-iteration-backlog.md)
-- Commencer l’exécution de [la première charge de travail](../digital-estate/rationalize.md#select-the-first-workload) en tant qu’opportunité de formation
+- Exécuter la [rationalisation du patrimoine numérique](../digital-estate/index.md).
+- Examiner, valider et faire avancer le [backlog de migration classé par ordre de priorité](../migrate/migration-considerations/assess/release-iteration-backlog.md).
+- Commencer l’exécution de la [première charge de travail](../digital-estate/rationalize.md#select-the-first-workload) comme opportunité d’apprentissage.
 
 **Tâches mensuelles en cours :**
 
-- Superviser le [processus de gestion des changements](../migrate/migration-considerations/prerequisites/technical-complexity.md)
-- Gérer les [backlogs de mise en production et de sprint](../migrate/migration-considerations/assess/release-iteration-backlog.md)
-- Créer et tenir à jour la zone d’adoption conformément aux exigences de gouvernance
-- Exécuter les tâches techniques définies dans les [backlogs des sprints](../migrate/migration-considerations/assess/release-iteration-backlog.md)
+- Superviser les [processus de gestion des changements](../migrate/migration-considerations/prerequisites/technical-complexity.md).
+- Gérer les [backlogs de mise en production et de sprint](../migrate/migration-considerations/assess/release-iteration-backlog.md).
+- Créer et maintenir la zone d’atterrissage d’adoption conformément aux exigences de gouvernance.
+- Exécuter les tâches techniques définies dans les [backlogs de sprint](../migrate/migration-considerations/assess/release-iteration-backlog.md).
 
-## <a name="team-cadence"></a>Cadence de l’équipe
+**Cadence des réunions :**
 
-Nous vous recommandons que les équipes qui assurent les fonctionnalités d’adoption du cloud se consacrent à cet effort à plein temps.
+Nous recommandons que les équipes qui assurent les fonctions d’adoption du cloud se consacrent à cet effort à temps plein.
 
 Il est préférable que ces équipes se réunissent tous les jours de manière autonome. L’objectif de ces réunions quotidiennes est de mettre à jour rapidement le backlog et de communiquer ce qui a été effectué, ce qui doit être fait aujourd’hui et les différents points de blocage et tout ce qui nécessite un support externe supplémentaire.
 
-Le calendrier de mise en production et la durée des itérations sont propres à chaque entreprise. Toutefois, la durée moyenne semble être une plage d’une à quatre semaines par itération. Quelle que soit la cadence des itérations et des mises en production, nous vous recommandons que l’équipe rencontre toutes les équipes qui l’assistent à la fin de chaque mise en production afin de communiquer le résultat de cette mise en production et de réorganiser les efforts restants. De même, il est utile à l’équipe de se retrouver à la fin de chaque sprint, avec l’équipe du [centre d’excellence du cloud](./cloud-center-of-excellence.md) ou l’[équipe de gouvernance du cloud](./cloud-governance.md), afin que les équipes restent alignées sur les efforts et les besoins communs.
+Le calendrier de mise en production et la durée des itérations sont propres à chaque entreprise. Toutefois, la durée moyenne semble être une plage d’une à quatre semaines par itération. Quelle que soit la cadence des itérations et des mises en production, nous vous recommandons que l’équipe rencontre toutes les équipes qui l’assistent à la fin de chaque mise en production afin de communiquer le résultat de cette mise en production et de réorganiser les efforts restants. De même, il est intéressant que l’équipe organise une réunion à la fin de chaque sprint avec l’équipe du centre d’excellence cloud ou l’équipe chargée de la gouvernance cloud, afin de rester alignée sur les efforts et les besoins de support communs.
 
-Certaines des tâches techniques associées à l’adoption du cloud peuvent devenir répétitives. Les membres de l’équipe doivent tourner tous les 3 à 6 mois pour éviter les problèmes de satisfaction des employés et tenir les compétences à jour. Un siège tournant dans le [centre d’excellence du cloud](./cloud-center-of-excellence.md) ou l’[équipe de gouvernance du cloud](./cloud-governance.md) peut offrir une excellente opportunité de préserver la motivation des employés et d’exploiter de nouvelles innovations.
+Certaines des tâches techniques associées à l’adoption du cloud peuvent devenir répétitives. Les membres de l’équipe doivent tourner tous les 3 à 6 mois pour éviter les problèmes de satisfaction des employés et tenir les compétences à jour. Un roulement dans le centre d’excellence cloud ou l’équipe chargée de la gouvernance cloud peut offrir un excellent moyen de préserver la motivation des employés et de mobiliser de nouvelles innovations.
+
+Découvrez plus en détail la fonction d’un [centre d’excellence cloud](./cloud-center-of-excellence.md) ou d’une [équipe chargée de la gouvernance cloud](./cloud-governance.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-L’adoption est intéressante, mais l’adoption anarchique peut produire des résultats inattendus. L’alignement des [fonctionnalités de gouvernance du cloud](./cloud-governance.md) accélère l’adoption et les meilleures pratiques,tout en réduisant les risques commerciaux et techniques.
-
-> [!div class="nextstepaction"]
-> [Aligner les compétences de gouvernance du cloud](./cloud-governance.md)
+- [Créer une équipe chargée de l’adoption du cloud](../get-started/team/cloud-adoption.md)
+- Alignez les efforts d’adoption du cloud avec les [fonctions de gouvernance cloud](./cloud-governance.md) pour accélérer l’adoption et implémenter les meilleures pratiques, tout en réduisant les risques métier et techniques.

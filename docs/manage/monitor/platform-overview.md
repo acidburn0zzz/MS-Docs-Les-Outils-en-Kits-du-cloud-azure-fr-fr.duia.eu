@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 45645ec900c4c85c4dd7698f6d5861027dae8bf6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527165"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223743"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -45,7 +45,7 @@ Lors de la conférence Microsoft Ignite de 2018, nous avons annoncé que la marq
 - **Application Insights**, pour la supervision des applications.
 - **Log Analytics**, comme emplacement principal pour la collecte et l’analyse des données de journal.
 - Un nouveau **service d’alerte unifié** qui regroupait les mécanismes d’alerte de chacun des autres services mentionnés précédemment.  
-- **Azure Network Watcher** pour la supervision, le diagnostic et l’affichage des métriques pour les ressources d’un réseau virtuel Azure.
+- **Azure Network Watcher** pour la supervision, le diagnostic et l’affichage des métriques pour les ressources d’un réseau virtuel.
 
 ## <a name="the-story-of-operations-management-suite-oms"></a>Histoire d’Operations Management Suite (OMS)
 

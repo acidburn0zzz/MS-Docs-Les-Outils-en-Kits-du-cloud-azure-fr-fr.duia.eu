@@ -7,18 +7,18 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a76a09e40fc11511213c0f496c9332ba9a05962f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 218dbe7cdc4be8e98b4c8ef3fd20ebd865a58a84
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997842"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222893"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
 # <a name="deploy-a-migration-landing-zone"></a>Déployer une zone d’accueil de migration
 
-*Zone d’accueil de migration* est un terme utilisé pour décrire un environnement qui a été approvisionné et préparé pour héberger des charges de travail qui sont migrées vers Azure à partir d’un environnement local.
+Une _Zone d’accueil de migration_ est un environnement qui a été approvisionné et préparé pour héberger des charges de travail qui sont migrées vers Azure à partir d’un environnement local.
 
 ## <a name="deploy-the-first-landing-zone"></a>Déployer votre première zone d’atterrissage
 
@@ -48,7 +48,7 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 | Outils de migration              | Azure Site Recovery sera déployé et un projet Azure Migrate sera créé.                | [Guide de décision sur les outils de migration](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | Enregistrement et surveillance       | L’espace de travail Operational Insights et le compte de stockage des diagnostics seront approvisionnés.                |                                                                                                                                                                                                                                                                                       |
 | Réseau                      | Un réseau virtuel sera créé avec des sous-réseaux pour la passerelle, le pare-feu, le jumpbox et la zone d’accueil.  | [Décisions en matière de mise en réseau](../considerations/networking-options.md)                                                                                                                                                                                                                       |
-| Identité                     | Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory. | [Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) |
+| Identité                     | Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory. | [Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | Stratégie                       | Ce blueprint suppose actuellement qu’aucune stratégie Azure ne doit être appliquée.                        |                                                                                                                                                                                                                                                                                       |
 | Conception de l’abonnement          | N/A : conçu pour un abonnement de production unique.                                              | [Créer des abonnements initiaux](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | Groupes de ressources              | N/A : conçu pour un abonnement de production unique.                                              | [Abonnements de mise à l’échelle](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
@@ -61,7 +61,7 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>Personnaliser ou déployer une zone d’atterrissage
 
-Découvrez plus d’informations et téléchargez un exemple de référence du blueprint de zone d’atterrissage de migration afin de le déployer ou de le personnaliser à partir des [exemples Azure Blueprint][deploy-sample].
+Découvrez plus d’informations et téléchargez un exemple de référence du blueprint de zone d’atterrissage de migration du framework d’adoption du cloud afin de le déployer ou de le personnaliser à partir des [exemples Azure Blueprint][deploy-sample].
 
 > [!div class="nextstepaction"]
 > [Déployer l’exemple de blueprint][deploy-sample]

@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 067e84e433fa995c79b588698240afea06e54660
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 75a89a0020b4c0ae7ab336ab0d3789bf5096dab7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120016"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222400"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -50,8 +50,8 @@ Lorsque vous créez des réseaux virtuels dans le cadre de votre migration, il e
 **En savoir plus :**
 
 - Obtenez une [vue d’ensemble du réseau virtuel Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
-- Consultez le [FAQ sur les réseaux virtuels Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq).
-- En savoir plus sur les [limites de mise en réseau Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits).
+- Lisez les [Questions fréquentes (FAQ) sur les réseaux virtuels Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq).
+- En savoir plus sur les [limites de mise en réseau Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bonne pratique : Implémenter une topologie de réseau hub-and-spoke
 
@@ -69,7 +69,7 @@ Tenez compte des éléments suivants :
 - Les réseaux virtuels hub-and-spoke peuvent être implémentés dans des groupes de ressources différents, voire dans des abonnements différents. Quand vous appairez des réseaux virtuels de différents abonnements, les abonnements peuvent être associés au même locataire Azure Active Directory (Azure AD) ou à un locataire différent. Cela permet de décentraliser la gestion de chaque charge de travail, tout en partageant les services gérés dans le réseau hub.
 
 ![Gestion des changements](./media/migrate-best-practices-networking/hub-spoke.png)
-*Topologie hub-and-spoke*
+_Topologie hub-and-spoke_
 
 **En savoir plus :**
 
@@ -92,11 +92,11 @@ Pour garantir une forme d’isolation à l’intérieur d’un réseau virtuel, 
 
 Le tableau présente un exemple de réseau virtuel avec un espace d’adressage de 10.245.16.0/20 segmenté en sous-réseaux, dans le cadre d’une migration planifiée.
 
-**Sous-réseau** | **CIDR** | **Adresses** | **Utilisation**
---- | --- | --- | ---
-DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | Machines virtuelles frontales/de couche web
-DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | Machines virtuelles de niveau application
-DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Machines virtuelles de base de données
+| **Sous-réseau** | **CIDR** | **Adresses** | **Utilisation** |
+| --- | --- | --- | --- |
+| DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | Machines virtuelles frontales/de couche web |
+| DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | Machines virtuelles de niveau application |
+| DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Machines virtuelles de base de données |
 
 **En savoir plus :**
 
@@ -108,7 +108,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Machines virtuelles de base de données
 Azure ajoute par défaut un serveur DNS lorsque vous déployez un réseau virtuel. Cela vous permet de créer des réseaux virtuels et de déployer des ressources rapidement. Toutefois, ce serveur DNS fournit uniquement des services aux ressources qui se trouvent sur ce réseau virtuel. Si vous souhaitez connecter plusieurs réseaux virtuels entre eux, ou vous connecter à un serveur local à partir de réseaux virtuels, vous avez besoin de fonctionnalités de résolution de noms supplémentaires. Par exemple, vous devrez peut-être utiliser Active Directory pour résoudre les noms DNS entre des réseaux virtuels. Pour ce faire, vous devez déployer votre propre serveur DNS personnalisé dans Azure.
 
 - Les serveurs DNS d’un réseau virtuel peuvent transférer des requêtes DNS vers le programme de résolution récursive dans Azure. Cela vous permet de résoudre les noms d’hôte au sein de ce réseau virtuel. Par exemple, un contrôleur de domaine exécuté dans Azure peut répondre aux requêtes DNS concernant ses propres domaines et transférer toutes les autres requêtes vers Azure.
-- Le transfert DNS permet aux machines virtuelles de voir vos ressources locales (par le biais du contrôleur de domaine) et les noms d’hôte fournis par Azure (à l’aide du redirecteur). Les programmes de résolution récursive d’Azure sont accessibles via l’adresse IP virtuelle 168.63.129.16.
+- Le transfert DNS permet aux machines virtuelles de voir vos ressources locales (par le biais du contrôleur de domaine) et les noms d’hôte fournis par Azure (à l’aide du redirecteur). Les programmes de résolution récursive d’Azure sont accessibles via l’adresse IP virtuelle `168.63.129.16`.
 - Le transfert DNS permet aussi la résolution DNS entre réseaux virtuels et permet à vos ordinateurs locaux de résoudre les noms d’hôte fournis par Azure.
   - Pour résoudre le nom d’hôte d’une machine virtuelle, la machine virtuelle du serveur DNS doit résider dans le même réseau virtuel et être configurée pour rediriger les requêtes de nom d’hôte vers Azure.
   - Comme le suffixe DNS est différent dans chaque réseau virtuel, vous pouvez utiliser des règles de redirection conditionnelles pour envoyer les requêtes DNS au réseau virtuel approprié en vue de la résolution.
@@ -116,7 +116,7 @@ Azure ajoute par défaut un serveur DNS lorsque vous déployez un réseau virtue
 - Les serveurs DNS spécifiés pour une interface réseau ou un service cloud ont la priorité sur les serveurs DNS spécifiés pour le réseau virtuel.
 - Dans le modèle de déploiement Azure Resource Manager, vous pouvez spécifier des serveurs DNS pour un réseau virtuel et une interface réseau, mais la meilleure pratique consiste à utiliser le paramètre uniquement sur les réseaux virtuels.
 
-    ![Serveurs DNS](./media/migrate-best-practices-networking/dns2.png) *Serveurs DNS pour un réseau virtuel*
+    ![Serveurs DNS](./media/migrate-best-practices-networking/dns2.png) _Serveurs DNS pour un réseau virtuel_
 
 **En savoir plus :**
 
@@ -133,14 +133,14 @@ Les zones de disponibilité augmentent la haute disponibilité de manière à pr
 - La séparation physique des zones de disponibilité dans une région protège les applications et les données des défaillances dans le centre de données.
 - Les services redondants interzone répliquent vos applications et données entre des zones de disponibilité pour les protéger contre des points uniques de panne. - - Avec les zones de disponibilité, Azure propose des contrats de niveau de service qui garantissent une disponibilité des machines virtuelles de 99,99 %.
 
-    ![Zone de disponibilité](./media/migrate-best-practices-networking/availability-zone.png) *Zone de disponibilité*
+    ![Zone de disponibilité](./media/migrate-best-practices-networking/availability-zone.png) _Zone de disponibilité_
 
 - Vous pouvez planifier et générer une haute disponibilité dans votre architecture de migration par la colocalisation de vos ressources de calcul, de stockage, de mise en réseau et de données dans une zone et une réplication de ces ressources dans d’autres zones. Les services Azure qui prennent en charge les zones de disponibilité sont classés en deux catégories :
-  - Services zonaux : vous associez une ressource à une zone spécifique. Par exemple, machines virtuelles, disques managés, adresses IP.
-  - Services redondants interzone : la ressource est automatiquement répliquée sur plusieurs zones. Par exemple, stockage redondant interzone, Azure SQL Database.
+  - **Services zonaux :** Vous associez une ressource à une zone spécifique, comme des machines virtuelles, des disques managés ou des adresses IP.
+  - **Services redondants interzone :** La ressource est répliquée automatiquement entre les zones, comme le stockage redondant interzone ou Azure SQL Database.
 - Vous pouvez déployer une charge Azure standard équilibrée avec les charges de travail sur Internet ou les couches applicatives, pour assurer une tolérance de panne zonale.
 
-    ![Équilibreur de charge](./media/migrate-best-practices-networking/load-balancer.png) *Équilibreur de charge*
+    ![Équilibreur de charge](./media/migrate-best-practices-networking/load-balancer.png) _Équilibreur de charge_
 
 **En savoir plus :**
 
@@ -183,7 +183,7 @@ Lorsque vous configurez un VPN de site à site, procédez comme suit :
 - Le protocole BGP (Border Gateway Protocol) est une fonctionnalité en option que vous pouvez utiliser avec Azure ExpressRoute et avec vos passerelles VPN basées sur un routage pour propager vos itinéraires BGP locaux sur vos réseaux virtuels.
 
 ![VPN](./media/migrate-best-practices-networking/vpn.png)
-*VPN site à site*
+_VPN site à site_
 
 **En savoir plus :**
 
@@ -260,7 +260,7 @@ Imaginez à présent que vous déployiez un service Azure (par exemple, Azure Ap
   - Votre réseau WAN peut supposer que les deux préfixes sont plus proches de la région USA Est que de la région USA Ouest, et donc acheminer les utilisateurs des deux bureaux vers le circuit ExpressRoute de la région USA Est, ce qui influence négativement l’expérience des utilisateurs du bureau de Los Angeles.
 
 ![VPN](./media/migrate-best-practices-networking/bgp1.png)
-*Connexion non optimisée par les communautés BGP*
+_Connexion non optimisée par les communautés BGP_
 
 **Solution :**
 
@@ -273,7 +273,7 @@ Pour optimiser le routage pour les utilisateurs des deux bureaux, vous devez sav
 - Avec cette configuration, dès lors que les deux chemins d’accès à Microsoft sont disponibles, les utilisateurs de Los Angeles se connecteront à la région Azure USA Ouest à l’aide du circuit de l’ouest, et les utilisateurs de New York se connecteront à la région Azure USA Est à l’aide du circuit de l’est. Le routage est optimisé des deux côtés.
 
 ![VPN](./media/migrate-best-practices-networking/bgp2.png)
-*Connexion optimisée par les communautés BGP*
+_Connexion optimisée par les communautés BGP_
 
 **En savoir plus :**
 
@@ -303,7 +303,7 @@ Bien que Microsoft investisse fortement dans la protection de l’infrastructure
 La figure suivante montre un exemple de réseau de périmètre à sous-réseau unique dans un réseau d’entreprise, avec deux limites de sécurité.
 
 ![VPN](./media/migrate-best-practices-networking/perimeter.png)
-*Déploiement d’un réseau de périmètre*
+_Déploiement d’un réseau de périmètre_
 
 **En savoir plus :**
 
@@ -361,25 +361,25 @@ Les groupes de sécurité d’application vous permettent de configurer la sécu
 **Exemple :**
 
 ![Groupe de sécurité d’application](./media/migrate-best-practices-networking/asg.png)
-*Exemple de groupe de sécurité d’application*
+_Exemple de groupe de sécurité d’application_
 
-**Interface réseau** | **Groupe de sécurité d’application**
---- | ---
-NIC1 | AsgWeb
-NIC2 | AsgWeb
-NIC3 | AsgLogic
-NIC4 | AsgDb
+| **Interface réseau** | **Groupe de sécurité d’application** |
+| --- | --- |
+| NIC1 | AsgWeb |
+| NIC2 | AsgWeb |
+| NIC3 | AsgLogic |
+| NIC4 | AsgDb |
 
 - Dans notre exemple, chaque interface réseau appartient à un seul groupe de sécurité d’application, mais une interface peut en réalité appartenir à plusieurs groupes, dans les limites imposées par Azure.
 - Aucune de ces interfaces réseau ne dispose d’un groupe de sécurité réseau associé. NSG1 est associé aux deux sous-réseaux et contient les règles suivantes.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Nom de la règle** | **Objectif** | **Détails**
---- | --- | ---
-Allow-HTTP-Inbound-Internet | Autoriser le trafic internet vers les serveurs web. Le trafic entrant à partir d’internet est refusé par la règle de sécurité par défaut DenyAllInbound, donc aucune règle supplémentaire n’est nécessaire pour les groupes de sécurité d’application AsgLogic ou AsgDb. | Priorité : 100<br/><br/> Source : Internet<br/><br/> Port source : *<br/><br/> Destination : AsgWeb<br/><br/> Port de destination : 80<br/><br/> Protocole : TCP<br/><br/> Accès : Autoriser.
-Deny-Database-All | Étant donné que la règle de sécurité par défaut AllowVNetInBound autorise toutes les communications entre les ressources dans le même réseau virtuel, cette règle est nécessaire pour refuser le trafic à partir de toutes les ressources. | Priorité : 120<br/><br/> Source : *<br/><br/> Port source : *<br/><br/> Destination : AsgDb<br/><br/> Port de destination : 1433<br/><br/> Protocole : Tous<br/><br/> Accès : Refuser.
-Allow-Database-BusinessLogic | Autoriser le trafic du groupe de sécurité d’application AsgLogic vers le groupe de sécurité d’application AsgDb. Cette règle étant prioritaire par rapport à la règle Deny-Database-All, elle est traitée en premier. Par conséquent, le trafic en provenance du groupe de sécurité d’application AsgLogic est autorisé et tout le trafic restant est bloqué. | Priorité : 110<br/><br/> Source : AsgLogic<br/><br/> Port source : *<br/><br/> Destination : AsgDb<br/><br/> Port de destination : 1433<br/><br/> Protocole : TCP<br/><br/> Accès : Autoriser.
+| **Nom de la règle** | **Objectif** | **Détails** |
+| --- | --- | --- |
+| Allow-HTTP-Inbound-Internet | Autoriser le trafic internet vers les serveurs web. Le trafic entrant à partir d’internet est refusé par la règle de sécurité par défaut DenyAllInbound, donc aucune règle supplémentaire n’est nécessaire pour les groupes de sécurité d’application AsgLogic ou AsgDb. | Priorité : 100 <br><br> Source : Internet <br><br> Port source : \* <br><br> Destination : AsgWeb <br><br> Port de destination : 80 <br><br> Protocole : TCP <br><br> Accès : Autoriser. |
+| Deny-Database-All | Étant donné que la règle de sécurité par défaut AllowVNetInBound autorise toutes les communications entre les ressources dans le même réseau virtuel, cette règle est nécessaire pour refuser le trafic à partir de toutes les ressources. | Priorité : 120 <br><br> Source : \* <br><br> Port source : \* <br><br> Destination : AsgDb <br><br> Port de destination : 1433 <br><br> Protocole : Tous <br><br> Accès : Refuser. |
+| Allow-Database-BusinessLogic | Autoriser le trafic du groupe de sécurité d’application AsgLogic vers le groupe de sécurité d’application AsgDb. Cette règle étant prioritaire par rapport à la règle Deny-Database-All, elle est traitée en premier. Par conséquent, le trafic en provenance du groupe de sécurité d’application AsgLogic est autorisé et tout le trafic restant est bloqué. | Priorité : 110 <br><br> Source : AsgLogic <br><br> Port source : \* <br><br> Destination : AsgDb <br><br> Port de destination : 1433 <br><br> Protocole : TCP <br><br> Accès : Autoriser. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -398,7 +398,7 @@ Les points de terminaison de service de réseau virtuel étendent l’espace d�
 - Une fois les points de terminaison de service activés dans votre réseau virtuel, vous pouvez sécuriser les ressources du service Azure en ajoutant une règle de réseau virtuel aux ressources du service. Ainsi, votre sécurité est améliorée grâce à la suppression complète de l’accès Internet public aux ressources et à l’autorisation du trafic uniquement à partir de votre réseau virtuel.
 
 ![Points de terminaison de service](./media/migrate-best-practices-networking/endpoint.png)
-*Points de terminaison de service*
+_Points de terminaison de service_
 
 **En savoir plus :**
 
@@ -430,7 +430,7 @@ Azure propose des fonctionnalités de sécurité de plateforme simples d’utili
 Pare-feu Azure est un service de sécurité réseau informatique et managé qui protège vos ressources de réseau virtuel. Il s’agit d’un pare-feu managé avec état intégral, doté d’une haute disponibilité intégrée et d’une extensibilité illimitée dans le cloud.
 
 ![Points de terminaison de service](./media/migrate-best-practices-networking/firewall.png)
-*Pare-feu Azure*
+_Pare-feu Azure_
 
 - Le Pare-feu Azure peut créer, appliquer et consigner des stratégies de connectivité réseau et d’application de façon centralisée entre les abonnements et les réseaux virtuels.
 - Le Pare-feu Azure utilise une adresse IP publique statique pour vos ressources de réseau virtuel, ce qui permet aux pare-feu situés à l’extérieur d’identifier le trafic provenant de votre réseau virtuel.
@@ -442,8 +442,8 @@ Pare-feu Azure est un service de sécurité réseau informatique et managé qui 
 
 **En savoir plus :**
 
-- [Obtenir une vue d’ensemble](https://docs.microsoft.com/azure/firewall/overview) du Pare-feu Azure.
-- [En savoir plus](https://docs.microsoft.com/azure/firewall/fqdn-tags) sur les balises FQDN.
+- Lisez la [vue d’ensemble du Pare-feu Azure](https://docs.microsoft.com/azure/firewall/overview).
+- En savoir plus sur les [balises FQDN dans le pare-feu Azure](https://docs.microsoft.com/azure/firewall/fqdn-tags).
 
 ## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>Bonne pratique : Déployer un pare-feu d’applications web (WAF)
 
@@ -468,7 +468,7 @@ Le pare-feu d’applications web (WAF) est une fonctionnalité d’Azure Applica
 Azure Network Watcher fournit des outils permettant de surveiller les ressources et les communications dans un réseau virtuel Azure. Par exemple, vous pouvez surveiller les communications entre une machine virtuelle et un point de terminaison (une autre machine virtuelle ou un FQDN, par exemple), afficher les ressources et leurs relations dans un réseau virtuel, ou diagnostiquer des problèmes de trafic réseau.
 
 ![Network Watcher](./media/migrate-best-practices-networking/network-watcher.png)
-*Network Watcher*
+_Network Watcher_
 
 - Network Watcher vous permet de superviser et diagnostiquer les problèmes réseau sans vous connecter à vos machines virtuelles.
 - Vous pouvez déclencher la capture de paquets en définissant des alertes et bénéficiez d’un accès à des informations en temps réel sur le niveau de performance au niveau du paquet. Quand vous identifiez un problème, vous pouvez l’examiner en détail.
@@ -488,19 +488,19 @@ Pour les topologies de réseau plus complexes, vous pouvez utiliser des produits
 
 - Une NVA est une machine virtuelle qui exécute une fonction réseau, telle qu’un pare-feu, l’optimisation du WAN ou une autre fonction réseau.
 - Les NVA renforcent la sécurité et les fonctions réseau du réseau virtuel. Elles peuvent être déployées pour différentes applications : les pare-feu à haute disponibilité, la prévention d’intrusion, la détection d’intrusion, les pare-feu d’applications web (WAF), l’optimisation WAN, le routage, l’équilibrage de charge, le VPN, la gestion des certificats, Active Directory et l’authentification multifacteur.
-- Les appliances virtuelles réseau sont disponibles auprès de nombreux fournisseurs sur la  [Place de marché Azure](https://azuremarketplace.microsoft.com).
+- Les appliances virtuelles réseau sont disponibles auprès de nombreux fournisseurs sur la [Place de marché Azure](https://azuremarketplace.microsoft.com).
 
 ## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>Bonne pratique : implémentation de pare-feu et d’appliances virtuelles réseau dans des réseaux hub
 
 Dans le hub, le réseau de périmètre (disposant d’un accès à Internet) est normalement managé par le biais d’un pare-feu Azure, une batterie de pare-feu ou des pare-feu d’applications web (WAF). Voici un comparatif :
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Type de pare-feu** | **Détails**
---- | ---
-WAF | Les applications web sont courantes et ont tendance à être sujettes à des vulnérabilités et à des attaques potentielles.<br/><br/> Les WAF sont conçues pour détecter les attaques contre les applications web (HTTP/HTTPS), d’une manière plus précise qu’avec un pare-feu générique.<br/><br/> Contrairement à la technologie de pare-feu classique, les WAF intègrent un ensemble de fonctionnalités spécifiques pour protéger les serveurs web internes contre les menaces.
-Pare-feu Azure | Comme les batteries de pare-feu NVA, le Pare-feu Azure utilise un mécanisme d’administration commune et un ensemble de règles de sécurité pour protéger les charges de travail hébergées dans les réseaux spoke et pour contrôler l’accès aux réseaux locaux.<br/><br/> Le Pare-feu Azure dispose d’une extensibilité intégrée.
-Pare-feu NVA | Comme le Pare-feu Azure, les batteries de pare-feu NVA utilisent un mécanisme d’administration commune et un ensemble de règles de sécurité pour protéger les charges de travail hébergées dans les réseaux spoke, et pour contrôler l’accès aux réseaux locaux.<br/><br/> Les pare-feu NVA peuvent être mis à l’échelle manuellement derrière un équilibreur de charge.<br/><br/> Bien qu’une batterie de pare-feu soit équipée de logiciels moins spécialisés qu’un WAF, elle dispose d’un plus vaste champ d’application permettant de filtrer et d’inspecter n’importe quel type de trafic en entrée et en sortie.<br/><br/> Les pare-feu NVA sont disponibles sur la Place de marché Azure.
+| **Type de pare-feu** | **Détails** |
+| --- | --- |
+| WAF | Les applications web sont courantes et ont tendance à être sujettes à des vulnérabilités et à des attaques potentielles. <br><br> Les WAF sont conçues pour détecter les attaques contre les applications web (HTTP/HTTPS), d’une manière plus précise qu’avec un pare-feu générique. <br><br> Contrairement à la technologie de pare-feu classique, les WAF intègrent un ensemble de fonctionnalités spécifiques pour protéger les serveurs web internes contre les menaces. |
+| Pare-feu Azure | Comme les batteries de pare-feu NVA, le Pare-feu Azure utilise un mécanisme d’administration commune et un ensemble de règles de sécurité pour protéger les charges de travail hébergées dans les réseaux spoke et pour contrôler l’accès aux réseaux locaux. <br><br> Le Pare-feu Azure dispose d’une extensibilité intégrée. |
+| Pare-feu NVA | Comme le Pare-feu Azure, les batteries de pare-feu NVA utilisent un mécanisme d’administration commune et un ensemble de règles de sécurité pour protéger les charges de travail hébergées dans les réseaux spoke, et pour contrôler l’accès aux réseaux locaux. <br><br> Les pare-feu NVA peuvent être mis à l’échelle manuellement derrière un équilibreur de charge. <br><br> Bien qu’une batterie de pare-feu soit équipée de logiciels moins spécialisés qu’un WAF, elle dispose d’un plus vaste champ d’application permettant de filtrer et d’inspecter n’importe quel type de trafic en entrée et en sortie. <br><br> Les pare-feu NVA sont disponibles sur la Place de marché Azure. |
 
 <!--markdownlint-enable MD033 -->
 

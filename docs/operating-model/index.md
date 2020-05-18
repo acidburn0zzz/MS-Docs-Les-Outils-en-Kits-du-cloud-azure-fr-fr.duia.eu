@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 6575848df4a20fd828ed2c07703881a171cbfb69
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1489ad64c9900436ff5c5cc6b76d5660a85d8d71
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80526839"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221975"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Établir un modèle de fonctionnement pour le cloud
 
 L’adoption du cloud est un effort itératif qui se concentre sur ce que vous faites dans le cloud. La stratégie cloud décrit la transformation numérique pour guider les programmes métier, plusieurs équipes exécutant les projets d’adoption. La planification et la préparation aident à garantir le succès de chacun de ces éléments importants. Toutes les étapes de l’adoption du cloud sont comparables à des projets tangibles avec des objectifs, des calendriers et des budgets gérables.
 
-Ces efforts d’adoption sont relativement faciles à suivre et à mesurer, même quand ils impliquent plusieurs versions et itérations projetées. Chaque phase du cycle de vie d’adoption est importante. Chaque phase est sujette à des obstacles potentiels au niveau de l’entreprise, de la culture et des contraintes technologiques. Toutefois, chaque phase dépend fortement du modèle de fonctionnement sous-jacent.
+Ces efforts d’adoption sont relativement faciles à suivre et à mesurer, même quand ils impliquent plusieurs versions et itérations projetées. Chaque phase du cycle de vie d’adoption est importante. Chaque phase est sujette à des obstacles potentiels au niveau de l’entreprise, de la culture et des contraintes technologiques. Cependant, chaque phase dépend fortement du modèle de fonctionnement sous-jacent.
 
 **Si l’adoption décrit ce que vous effectuez, le modèle de fonctionnement définit les acteurs et modalités sous-jacents favorisant l’adoption.**
 

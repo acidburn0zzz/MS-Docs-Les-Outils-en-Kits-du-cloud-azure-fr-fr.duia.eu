@@ -7,13 +7,15 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1e175ee448467d9796b1483f66568389fc5d24b0
-ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
+ms.openlocfilehash: 8fdbbcc2dd0042f3b2d0bb6deed1f230695b97b5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81646876"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220870"
 ---
+<!-- docsTest:ignore ARO -->
+
 # <a name="best-practices-for-costing-and-sizing-resources-hosted-in-azure"></a>Meilleures pratiques pour le calcul des coûts et le dimensionnement des ressources hébergées dans Azure
 
 Même si la gouvernance est un élément important, la gestion des coûts est un thème récurrent au niveau de l’entreprise. En optimisant et en gérant les coûts, vous pouvez garantir la réussite à long terme de votre environnement Azure. Il est essentiel que toutes les équipes (telles que les équipes des finances, de gestion et de développement des applications) comprennent les coûts associés et les réexaminent régulièrement.
@@ -25,27 +27,30 @@ Même si la gouvernance est un élément important, la gestion des coûts est un
 
 Au sein de l'entreprise, la gestion des coûts relève d'une fonction de gouvernance et d'exploitation cloud. En matière de gestion des coûts cependant, toutes les décisions entraînent une modification des ressources prenant en charge une charge de travail. Lorsque ces modifications ont un impact sur l’architecture d’une charge de travail, des considérations supplémentaires s'imposent pour réduire l’impact sur les utilisateurs finaux et les fonctions commerciales. L’équipe d’adoption cloud qui a configuré ou développé cette charge de travail sera probablement responsable de mener à bien ces types de modifications.
 
-Cet article sépare les meilleures pratiques en deux catégories : Meilleures pratiques opérationnelles et meilleures pratiques en matière de charge de travail. Alors que les équipes en charge de la gouvernance, des opérations et de l'adoption doivent être alignées pour ce qui est des modifications d'optimisation des coûts, ces deux sections permettent d'illustrer le moment où la séparation des tâches apparaît claire.
+- **La catégorisation est essentielle à toute la gouvernance.** Assurez-vous que toutes les charges de travail et toutes les ressources suivent des [conventions d’attribution de noms et de balisage appropriées](../../ready/azure-best-practices/naming-and-tagging.md) et [appliquez les conventions de catégorisation à l’aide d’Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags).
+- **Identifiez les opportunités de taille adaptée.** Passez en revue l’utilisation actuelle des ressources et les exigences en matière de performances dans l’environnement.
+- **Redimensionner :** Modifiez chaque ressource pour utiliser la plus petite instance ou référence SKU capable de prendre en charge les exigences de performances de chaque ressource.
+- **Mise à l’échelle horizontale ou verticale.** L’utilisation de plusieurs petites instances peut offrir un parcours de mise à l’échelle plus simple qu’avec une seule instance de plus grande taille. Cela permet l’automatisation de la mise à l’échelle, qui favorise l’optimisation des coûts.
 
 ## <a name="operational-cost-management-best-practices"></a>Meilleures pratiques en matière de gestion des coûts opérationnels
 
 Les meilleures pratiques suivantes sont généralement mises en œuvre par un membre de l'équipe de gouvernance ou des opérations cloud, conformément aux processus de mise à jour corrective et autres processus de maintenance planifiés. Chacune de ces meilleures pratiques s'articule autour de conseils pratiques présentés plus loin dans cet article.
 
-- **La catégorisation est essentielle à toute la gouvernance :** Assurez-vous que toutes les charges de travail et toutes les ressources suivent des **[conventions d’attribution de noms et de balisage appropriées](../../ready/azure-best-practices/naming-and-tagging.md)** et [appliquez les conventions de catégorisation à l’aide d’Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags).
+- **La catégorisation est essentielle à toute la gouvernance :** Assurez-vous que toutes les charges de travail et toutes les ressources suivent des [conventions d’attribution de noms et de balisage appropriées](../../ready/azure-best-practices/naming-and-tagging.md) et [appliquez les conventions de catégorisation à l’aide d’Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags).
 - **Identifiez les opportunités de taille adaptée :** Passez en revue l’utilisation actuelle des ressources et les exigences en matière de performances de l’environnement pour identifier les ressources sous-exploitées pendant un certain laps de temps (généralement plus de 90 jours).
 - **Adapter les références SKU approvisionnées :** Modifiez la ressource sous-exploitée pour utiliser la plus petite instance ou référence SKU capable de prendre en charge les exigences de performances de chaque ressource.
 - **Arrêt automatique pour les machines virtuelles :** Lorsqu’une machine virtuelle n’est pas utilisée de façon constante, envisagez son arrêt automatique. La machine virtuelle ne sera pas supprimée ni désaffectée, mais elle cessera de consommer des coûts de calcul et de mémoire jusqu’à ce qu’elle soit redémarrée.
-- **Arrêt automatique de toutes les ressources hors production :** Si une machine virtuelle relève d’un environnement hors production, environnement de développement notamment, établissez une stratégie d’arrêt automatique pour réduire les coûts non utilisés. Dans la mesure du possible, utilisez les labs dev/test pour proposer des options en libre-service et permettre aux développeurs d'être responsables des coûts.
-- **Arrêter et désactiver les ressources non utilisées :** Oui, nous le disons bien deux fois. Si une ressource n’a pas été utilisée pendant plus de 90 jours et n’a pas d’exigence claire d’activité, désactivez-la. Plus important encore, si une machine a été arrêtée pendant plus de 90 jours, déprovisionnez et supprimez cette ressource. * Vérifiez que toutes les stratégies de conservation des données sont respectées grâce à des mécanismes de sauvegarde ou autres.
+- **Arrêt automatique de toutes les ressources hors production :** Si une machine virtuelle relève d’un environnement hors production, environnement de développement notamment, établissez une stratégie d’arrêt automatique pour réduire les coûts non utilisés. Dans la mesure du possible, utilisez Azure DevTest Labs pour proposer des options en libre-service et permettre aux développeurs d'être responsables des coûts.
+- **Arrêter et désactiver les ressources non utilisées :** Oui, nous le disons bien deux fois. Si une ressource n’a pas été utilisée pendant plus de 90 jours et n’a pas d’exigence claire d’activité, désactivez-la. Plus important encore, si une machine a été arrêtée pendant plus de 90 jours, déprovisionnez et supprimez cette ressource. Vérifiez que toutes les stratégies de conservation des données sont respectées grâce à des mécanismes de sauvegarde ou autres.
 - **Nettoyer les disques orphelins :** Supprimez le stockage inutilisé, en particulier le stockage des machines virtuelles qui n’est plus attaché aux machines virtuelles.
 - **Adapter la redondance :** Si la ressource ne nécessite pas un haut degré de redondance, supprimez le stockage géoredondant.
-- **Ajuster les paramètres de mise à l’échelle automatique :** Le surveillance opérationnelle permet de révéler les modèles d'utilisation de différentes ressources. Lorsque ces modèles d’utilisation sont mappés aux paramètres utilisés pour piloter les comportements de mise à l’échelle automatique, il est courant pour l’équipe des opérations d’ajuster les paramètres de mise à l’échelle automatique afin de répondre à la demande saisonnière et/ou aux modifications apportées aux allocations de budget. * Consultez les meilleures pratiques en matière de gestion des coûts de charge de travail pour prendre connaissance de précautions importantes.
+- **Ajuster les paramètres de mise à l’échelle automatique :** Le surveillance opérationnelle permet de révéler les modèles d'utilisation de différentes ressources. Lorsque ces modèles d’utilisation sont mappés aux paramètres utilisés pour piloter les comportements de mise à l’échelle automatique, il est courant pour l’équipe des opérations d’ajuster les paramètres de mise à l’échelle automatique afin de répondre à la demande saisonnière et/ou aux modifications apportées aux allocations de budget. Consultez les meilleures pratiques en matière de gestion des coûts de charge de travail pour prendre connaissance de précautions importantes.
 
 ## <a name="workload-cost-management-best-practices"></a>Meilleures pratiques en matière de gestion des coûts de charge de travail
 
-Avant de procéder à des modifications architecturales, consultez le responsable technique de la charge de travail. Pour faciliter l'examen de la charge de travail, utilisez [Azure Architecture Review](/assessments/?id=azure-architecture-review) et [Azure Architecture Framework](/azure/architecture/framework/) afin de d'orienter les décisions liées aux types de modifications architecturales suivants.
+Avant de procéder à des modifications architecturales, consultez le responsable technique de la charge de travail. Pour faciliter l'examen de la charge de travail, utilisez [Azure Architecture Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) et [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework) afin de d'orienter les décisions liées aux types de modifications architecturales suivants.
 
-- **Azure App Services.** Vérifiez les exigences de production pour les plans App Service Premium. À défaut de comprendre les besoins de l’entreprise pour une charge de travail et la configuration des ressources sous-jacentes, il est difficile de déterminer si un plan App Service Premium est nécessaire.
+- **Azure App Service.** Vérifiez les exigences de production pour les plans App Service Premium. À défaut de comprendre les besoins de l’entreprise pour une charge de travail et la configuration des ressources sous-jacentes, il est difficile de déterminer si un niveau de service Premium est nécessaire.
 - **Mise à l’échelle horizontale ou verticale.** L’utilisation de plusieurs petites instances peut offrir un parcours de mise à l’échelle plus simple qu’avec une seule instance de plus grande taille. Cela permet l’automatisation de la mise à l’échelle, qui favorise l’optimisation des coûts. Toutefois, avant de mettre une charge de travail à l'échelle horizontale, l’équipe technique doit vérifier que l’application est idempotente. Dans un premier temps, la l'échelle horizontale peut nécessiter des modifications en termes de code et de configuration des différentes couches de l’application.
 - **Mise à l’échelle automatique.** Activez la mise à l’échelle automatique sur tous les services d’application pour autoriser un plus petit nombre de machines virtuelles facilement extensibles. L’activation de la mise à l’échelle automatique répond à la même exigence idempotente, ce qui requiert une compréhension de l’architecture de la charge de travail. Avant toute modification opérationnelle liée à la mise à l'échelle horizontale ou à la mise à l'échelle automatique, l'équipe d'adoption doit approuver la charge de travail et les ressources sous-jacentes.
 - **Implémenter des technologies serverless :** Les charges de travail de machine virtuelle sont souvent migrées « en l’état » afin d’éviter les temps d’arrêt. Souvent les machines virtuelles peuvent héberger des tâches intermittentes, à exécution rapide ou très lente. Par exemple, des machines virtuelles qui exécutent des tâches planifiées, comme un planificateur de tâches Windows ou des scripts PowerShell. Lorsque ces tâches ne sont pas en cours d’exécution, vous absorbez néanmoins les coûts de machine virtuelle et de stockage sur disque. Après la migration, envisagez de réorganiser les couches de la charge de travail sur des technologies serverless comme Azure Functions ou Azure Batch.
@@ -62,25 +67,25 @@ Avant de déplacer vos charges de travail vers le cloud, estimez le coût mensue
 
 Pour prévoir votre facture mensuelle pour les ressources Azure, vous pouvez utiliser différents outils.
 
-- **Calculatrice de prix Azure :** vous sélectionnez les produits à estimer (par exemple, les machines virtuelles et le stockage). Vous entrez les coûts dans la calculatrice de prix, pour générer un devis.
+<!-- TODO: Change "input costs" -->
+- **Calculatrice de prix Azure :** Sélectionnez les produits que vous souhaitez estimer, par exemple les machines virtuelles et le stockage, puis entrez les coûts dans la calculatrice pour créer une estimation.
 
- ![Calculatrice de prix Azure](../../migrate/azure-best-practices/media/migrate-best-practices-costs/pricing.png) *Calculatrice de prix Azure*
+    ![Calculatrice de prix Azure](../../migrate/azure-best-practices/media/migrate-best-practices-costs/pricing.png) _Calculatrice de prix Azure_
 
 - **Azure Migrate :** Pour estimer les coûts, vous devez passer en revue et considérer toutes les ressources requises pour exécuter vos charges de travail dans Azure. Pour obtenir ces données, vous créez l’inventaire de vos ressources, y compris les serveurs, les machines virtuelles, les bases de données et le stockage. Vous pouvez utiliser Azure Migrate pour collecter ces informations.
-
   - Azure Migrate détecte et évalue votre environnement local afin de fournir un inventaire.
   - Azure Migrate peut mapper et afficher des dépendances entre les machines virtuelles pour vous donner une vision complète.
   - Une évaluation Azure Migrate contient le coût estimé.
-    - **Calcul des coûts :** selon la taille de machine virtuelle Azure recommandée lorsque vous créez une évaluation, Azure Migrate utilise l’API de facturation pour calculer l’estimation des coûts mensuels de machine virtuelle. Cette estimation tient compte du système d’exploitation, de Software Assurance, des instances réservées, de la durée de fonctionnement de machine virtuelle, de l’emplacement et des paramètres de devise. Elle agrège le coût de toutes les machines virtuelle incluses dans l’évaluation pour calculer le coût de calcul mensuel total.
+    - **Calcul des coûts :** selon la taille de machine virtuelle Azure recommandée lorsque vous créez une évaluation, Azure Migrate utilise les API de facturation Azure pour calculer l’estimation des coûts mensuels de machine virtuelle. Cette estimation tient compte du système d’exploitation, de Software Assurance, des instances réservées, de la durée de fonctionnement de machine virtuelle, de l’emplacement et des paramètres de devise. Elle agrège le coût de toutes les machines virtuelle incluses dans l’évaluation pour calculer le coût de calcul mensuel total.
     - **Coût de stockage :** Azure Migrate calcule le coût de stockage mensuel total en additionnant le coût de stockage de toutes les machines virtuelles incluses dans l’évaluation. Vous calculez le coût de stockage mensuel d’une machine en additionnant le coût mensuel de tous les disques qui lui sont attachés.
 
     ![Azure Migrate](../../migrate/azure-best-practices/media/migrate-best-practices-costs/assess.png)
-    *Évaluation Azure Migrate*
+    _Évaluation Azure Migrate_
 
 **En savoir plus :**
 
 - Utiliser la [calculatrice de tarification Azure](https://azure.microsoft.com/pricing/calculator).
-- Obtenir une [vue d’ensemble d’Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview).
+- Obtenir une [vue d’ensemble d’Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview).
 - En savoir plus sur les [évaluations Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation).
 - En savoir plus sur [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 
@@ -88,14 +93,14 @@ Pour prévoir votre facture mensuelle pour les ressources Azure, vous pouvez uti
 
 Vous avez le choix entre différentes options lorsque vous déployez des machines virtuelles Azure pour prendre en charge les charges de travail. Chaque type de machine virtuelle possède des fonctionnalités spécifiques et différentes combinaisons d’UC, mémoire et disques. Les machines virtuelles sont regroupées comme indiqué ci-dessous :
 
-**Type** | **Détails** | **Utilisation**
---- | --- | ---
-**Usage général** | Ratio processeur/mémoire équilibré. | Convient pour le test et le développement, les bases de données de petite à moyenne taille et les serveurs web au volume de trafic faible à moyen.
-**Optimisé pour le calcul** | Ratio processeur/mémoire élevé. | Convient pour les serveurs web au trafic de moyen volume, les appliances réseau, les processus de traitement par lots et les serveurs d’applications.
-**Optimisé pour la mémoire** | Ratio mémoire/processeur élevé. | Convient pour les bases de données relationnelles, les caches de taille moyenne à grande et l’analytique en mémoire.
-**Optimisé pour le stockage** | Débit de disque et E/S élevés. | Convient pour les bases de données NoSQL, SQL et Big Data.
-**Optimisé pour le GPU** | Machines virtuelles spécialisées. Un ou plusieurs GPU. | Retouche vidéo et graphique avancée.
-**Hautes performances** | Processeur plus rapide et plus puissant. Machines virtuelles avec interfaces réseau haut débit en option (RDMA) | Applications hautes performances critiques.
+| **Type** | **Détails** | **Utilisation** |
+|---|---|---|
+| **À usage général** | Ratio processeur/mémoire équilibré. | Convient pour le test et le développement, les bases de données de petite à moyenne taille. | Serveurs web de trafic faible à moyen. |
+| **Optimisé pour le calcul** | Ratio processeur/mémoire élevé. | Convient pour les serveurs web au trafic de moyen volume, les appliances réseau, les processus de traitement par lots et les serveurs d’applications. |
+| **Optimisé pour la mémoire** | Ratio mémoire/processeur élevé. | Convient pour les bases de données relationnelles, les caches de taille moyenne à grande et l’analytique en mémoire. |
+| **Optimisé pour le stockage** | Débit de disque et E/S élevés. | Convient pour les bases de données NoSQL, SQL et Big Data. |
+| **Optimisé pour le GPU** | Machines virtuelles spécialisées. Un ou plusieurs GPU. | Retouche vidéo et graphique avancée. |
+| **Hautes performances** | Processeur plus rapide et plus puissant. Machines virtuelles avec interfaces réseau haut débit en option (RDMA). | Applications hautes performances critiques. |
 
 - Il est important de comprendre les différences de prix entre ces machines virtuelles et les effets à long terme sur le budget.
 - Chaque type est associé à plusieurs gammes de machines virtuelles.
@@ -119,15 +124,15 @@ Le paramétrage et la gestion de stockage local (SAN ou NAS) et des réseaux qui
 
 Azure fournit différents types de données de stockage.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Type de données** | **Détails** | **Utilisation**
---- | --- |  ---
-**Objets blob** | Optimisé pour stocker de grandes quantités d’objets non structurées, comme des données texte ou binaires.<br/><br/> | Accéder aux données depuis n’importe où via HTTP/HTTPS. | Utiliser cette option pour les scénarios d’accès aléatoire et de diffusion en continu. Par exemple, pour envoyer des images et des documents directement vers un navigateur, diffusez la vidéo et l’audio, et stockez les données de récupération d’urgence et de sauvegarde.
-**Fichiers** | Partages de fichiers managés accessibles via SMB 3.0 | Utiliser lors de la migration des partages de fichiers locaux et pour fournir plusieurs connexions/accès aux données de fichiers.
-**Disques** | Basé sur les objets blob de pages.<br/><br/> Type de disque (vitesse) : Standard (HDD ou SSD) ou Premium (SSD).<br/><br/>Gestion des disques : Non managé (vous gérez les paramètres de disque et le stockage) ou managé (vous sélectionnez le type de disque et Azure gère le disque pour vous). | Utiliser des disques Premium pour les machines virtuelles. Utiliser des disques managés pour la gestion simple et la mise à l’échelle.
-**Files d’attente** | Stocker et récupérer un grand nombre de messages accessibles via des appels authentifiés (HTTP ou HTTPS) | Connecter des composants d’application à la file d’attente asynchrone des messages.
-**Tables** | Tables de stockage. | Désormais inclus dans l’API Table d’Azure Cosmos DB.
+| **Type de données** | **Détails** | **Utilisation** |
+| ---|---|---|
+| **Objets blob** | Optimisé pour stocker de grandes quantités d’objets non structurées, comme des données texte ou binaires. | Accéder aux données depuis n’importe où via HTTP/HTTPS. | Utiliser cette option pour les scénarios d’accès aléatoire et de diffusion en continu. Par exemple, pour envoyer des images et des documents directement vers un navigateur, diffusez la vidéo et l’audio, et stockez les données de récupération d’urgence et de sauvegarde. |
+| **Fichiers** | Partages de fichiers managés accessibles via SMB 3.0. | Utiliser lors de la migration des partages de fichiers locaux et pour fournir plusieurs connexions/accès aux données de fichiers. |
+| **Disques** | Basé sur les objets blob de pages. <br><br> Type de disque (vitesse) : HDD Standard, SSD Standard, SSD Premium ou ultra disques. <br><br> Gestion du disque : non managé (vous gérez les paramètres de disque et le stockage) ou managé (vous sélectionnez le type de disque et Azure gère le disque pour vous). | Utiliser des disques Premium pour les machines virtuelles. Utiliser des disques managés pour la gestion simple et la mise à l’échelle. |
+| **Files d’attente** | Stocker et récupérer un grand nombre de messages accessibles via des appels authentifiés (HTTP ou HTTPS). | Connecter des composants d’application à la file d’attente asynchrone des messages. |
+| **Tables** | Tables de stockage. | Désormais inclus dans l’API Table d’Azure Cosmos DB. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -135,13 +140,13 @@ Azure fournit différents types de données de stockage.
 
 Le stockage Azure propose différentes options permettant d’accéder aux données d’objets blob de blocs. En sélectionnant le niveau d’accès approprié, vous pouvez stocker vos données d’objets blob de blocs de manière plus économique.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Type** | **Détails** | **Utilisation**
---- | --- | ---
-**Chaud** | Stockage plus cher que Froid. Frais d’accès inférieurs à Froid.<br/><br/>Niveau par défaut. | Pour les données en cours d’utilisation qui sont fréquemment sollicitées.
-**Froid** | Stockage moins cher que Chaud. Frais d’accès supérieurs à Chaud.<br/><br/> Stockage minimal de 30 jours. | Stockage à court terme : les données sont disponibles mais sollicitées rarement.
-**Archive** | Utilisé pour les objets blob de blocs.<br/><br/> Option la plus économique pour le stockage. L’accès aux données est plus cher que les options Chaud et Froid. | Pour les données qui peuvent tolérer plusieurs heures de latence de récupération et restent dans le niveau pendant au moins 180 jours.
+| **Niveau d’accès** | **Détails** | **Utilisation** |
+| --- | --- | --- |
+| **Chaud** | Coûts de stockage supérieurs, coûts d'accès et de transaction inférieurs <br><br> Il s’agit du niveau d’accès par défaut. | Pour les données en cours d’utilisation qui sont fréquemment sollicitées. |
+| **Froid** | Coûts de stockage inférieurs, coûts d'accès et de transaction supérieurs. <br><br> Stockage minimal de 30 jours. | Stockage à court terme : les données sont disponibles mais sollicitées rarement. |
+| **Archive** | Utilisé pour les objets blob de blocs. <br><br> Option la plus économique pour le stockage. Coûts de stockage les plus faibles, coûts d'accès et de transaction les plus élevés. | Utilisez pour des données qui peuvent tolérer plusieurs heures de latence de récupération et restent dans le niveau archive pendant au moins 180 jours. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -149,14 +154,14 @@ Le stockage Azure propose différentes options permettant d’accéder aux donn�
 
 Azure fournit différents types de comptes de stockage et niveaux de performances.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Type de compte** | **Détails** | **Utilisation**
---- | --- | ---
-**Usage général v2 Standard** | Prend en charge les objets blob (blocs, page, ajout), fichiers, disques, files d’attente et tables.<br/><br/> Prend en charge les niveaux d’accès Chaud, Froid et Archive. Le stockage redondant interzone (ZRS) est pris en charge. | Utiliser pour la plupart des scénarios et des types de données. Les comptes de stockage standard peuvent être basés sur HHD ou SSD.
-**Usage général v2 Premium** | Prend en charge les données de stockage d’objets blob (objets blob de pages). Prend en charge les niveaux d’accès Chaud, Froid et Archive. ZRS est pris en charge.<br/><br/> Stocké sur disque SSD. | Recommandation de Microsoft pour toutes les machines virtuelles.
-**Usage général v1** | La hiérarchisation des accès n’est pas prise en charge. ZRS n’est pas pris en charge. | Utiliser si les applications ont besoin du modèle de déploiement Azure Classic.
-**Objet blob** | Compte de stockage spécialisé pour le stockage des objets non structurés. Fournit des objets blob de blocs et d’ajout uniquement (aucun service stockage sur fichier, file d’attente, table ou disque). Fournit les mêmes durabilité, disponibilité, évolutivité et performances que l’usage général v2. | Dans ces comptes, vous ne pouvez pas stocker d’objets blob de pages et donc pas de fichiers VHD. Vous pouvez définir le niveau d’accès sur Chaud ou Froid.
+| **Type de compte** | **Détails** | **Utilisation** |
+| --- | --- | --- |
+| **Comptes de stockage à usage général v2 Standard** | Prend en charge les objets blob (blocs, page, ajout), fichiers, disques, files d’attente et tables. <br><br> Prend en charge les niveaux d’accès Chaud, Froid et Archive. Le stockage redondant interzone (ZRS) est pris en charge. | Utiliser pour la plupart des scénarios et des types de données. Les comptes de stockage standard peuvent être basés sur HHD ou SSD. |
+| **Comptes de stockage à usage général v2 Premium** | Prend en charge les données de stockage d’objets blob (objets blob de pages). Prend en charge les niveaux d’accès Chaud, Froid et Archive. ZRS est pris en charge. <br><br> Stocké sur disque SSD. | Recommandation de Microsoft pour toutes les machines virtuelles. |
+| **Usage général v1** | La hiérarchisation des accès n’est pas prise en charge. ZRS n’est pas pris en charge. | Utiliser si les applications ont besoin du modèle de déploiement Azure Classic. |
+| **Objet blob** | Compte de stockage spécialisé pour le stockage des objets non structurés. Fournit des objets blob de blocs et d’ajout uniquement (aucun service stockage sur fichier, file d’attente, table ou disque). Fournit les mêmes durabilité, disponibilité, évolutivité et performances que l’usage général v2. | Dans ces comptes, vous ne pouvez pas stocker d’objets blob de pages et donc pas de fichiers VHD. Vous pouvez définir le niveau d’accès sur Chaud ou Froid. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -164,22 +169,22 @@ Azure fournit différents types de comptes de stockage et niveaux de performance
 
 Les comptes de stockage peuvent utiliser différents types de redondance pour la résilience et la haute disponibilité.
 
-**Type** | **Détails** | **Utilisation**
---- | --- | ---
-**Stockage localement redondant (LRS)** | Protège contre une panne locale grâce à une réplication, au sein d’une unité de stockage unique, vers un domaine de mise à jour et un domaine d'erreur distincts. Conserve plusieurs copies de vos données dans un centre de données. Offre une durabilité des objets d’au moins 99,999999999 % (9 « neuf ») sur une année donnée. | Envisagez cette option si votre application stocke les données qui peuvent être recréées facilement.
-**Stockage redondant interzone (ZRS)** | Protège contre une panne du centre de données grâce à une réplication sur trois clusters de stockage dans une même région. Chaque cluster de stockage est séparé physiquement des autres et se trouve dans sa propre zone de disponibilité. Fournit une durabilité d’au minimum 99,9999999999 % (12 « neuf ») pour les objets sur une année donnée, en conservant plusieurs copies de vos données dans plusieurs centres de données ou régions. | Envisagez cette option si vous avez besoin de cohérence, de durabilité et de haute disponibilité. Vous ne serez peut-être pas à l’abri d’un sinistre régional, lorsque plusieurs zones sont affectées définitivement.
-**Stockage géoredondant (GRS)** | Protège contre une panne dans l’ensemble de la région en répliquant les données vers une région secondaire à des centaines de kilomètres de la région principale. Offre une durabilité des objets d’au moins 99,99999999999999 % (16 « neuf ») sur une année donnée. | Les données de réplica ne sont disponibles que si Microsoft lance un basculement vers la région secondaire. En cas de basculement, les accès en lecture et écriture sont disponibles.
-**Stockage géographiquement redondant avec accès en lecture (RA-GRS)** | Semblable à GRS. Offre une durabilité des objets d’au moins 99,99999999999999 % (16 « neuf ») sur une année donnée. | Fournit une disponibilité de lecture de 99,99 % en autorisant l’accès en lecture à partir de la région secondaire utilisée pour GRS.
+| **Type** | **Détails** | **Utilisation** |
+| --- | --- | --- |
+| **Stockage localement redondant (LRS)** | Protège contre une panne locale grâce à une réplication, au sein d’une unité de stockage unique, vers un domaine de mise à jour et un domaine d'erreur distincts. Conserve plusieurs copies de vos données dans un centre de données. Offre une durabilité des objets d’au moins 99,999999999 % (9 « neuf ») sur une année donnée. | Envisagez cette option si votre application stocke les données qui peuvent être recréées facilement. |
+| **Stockage redondant interzone (ZRS)** | Protège contre une panne du centre de données grâce à une réplication sur trois clusters de stockage dans une même région. Chaque cluster de stockage est séparé physiquement des autres et se trouve dans sa propre zone de disponibilité. Fournit une durabilité d’au minimum 99,9999999999 % (12 « neuf ») pour les objets sur une année donnée, en conservant plusieurs copies de vos données dans plusieurs centres de données ou régions. | Envisagez cette option si vous avez besoin de cohérence, de durabilité et de haute disponibilité. Vous ne serez peut-être pas à l’abri d’un sinistre régional, lorsque plusieurs zones sont affectées définitivement. |
+| **Stockage géoredondant (GRS)** | Protège contre une panne dans l’ensemble de la région en répliquant les données vers une région secondaire à des centaines de kilomètres de la région principale. Offre une durabilité des objets d’au moins 99,99999999999999 % (16 « neuf ») sur une année donnée. | Les données de réplica ne sont disponibles que si Microsoft lance un basculement vers la région secondaire. En cas de basculement, les accès en lecture et écriture sont disponibles. |
+| **Stockage géographiquement redondant avec accès en lecture (RA-GRS)** | Semblable à GRS. Offre une durabilité des objets d’au moins 99,99999999999999 % (16 « neuf ») sur une année donnée. | Fournit une disponibilité de lecture de 99,99 % en autorisant l’accès en lecture à partir de la région secondaire utilisée pour GRS. |
 
 **En savoir plus :**
 
 - [Passez en revue](https://azure.microsoft.com/pricing/details/storage) la tarification du stockage Azure.
 - [En savoir plus](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) sur Azure Import/Export pour l’adoption de grandes quantités de données vers des fichiers et des objets blob Azure.
-- [Comparez](https://docs.microsoft.com/azure/storage/common/storage-introduction?toc=/azure/storage/blobs/toc.json) les types de données pour le stockage sur disque, les objets blobs et le fichiers.
-- [Apprenez-en plus](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) sur les niveaux d’accès.
-- [Passez en revue](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=/azure/storage/blobs/toc.json) les différents types de comptes de stockage.
+- [Comparez](https://docs.microsoft.com/azure/storage/common/storage-introduction) les types de données pour le stockage sur disque, les objets blobs et le fichiers.
+- Apprenez-en plus sur les [niveaux d’accès](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers).
+- [Passez en revue](https://docs.microsoft.com/azure/storage/common/storage-account-overview) les différents types de comptes de stockage.
 - En savoir plus sur la [redondance du stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-redundancy), y compris LRS, ZRS, GRS et GRS en lecture seule.
-- En savoir plus sur les [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
+- Apprenez-en plus sur [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
 
 ## <a name="after-adoption"></a>Après l’adoption
 
@@ -192,16 +197,16 @@ Une fois que les ressources sont en production, les données peuvent être agré
 
 Les meilleures pratiques de cette section incluent les avantages d’Azure Hybrid et des machines virtuelles réservées, la réduction des dépenses cloud dans les abonnements, l’utilisation d’Azure Cost Management pour la budgétisation et l’analyse des coûts, la surveillance des ressources, la mise en œuvre des budgets de groupe de ressources, ainsi que l’optimisation de la surveillance, du stockage et des machines virtuelles.
 
-## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Bonne pratique : Tirer parti des avantages d’Azure Hybrid
+## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>Bonne pratique : Tirer parti des avantages d’Azure Hybrid
 
 Grâce à des années d’investissements logiciels dans des systèmes tels que Windows Server et SQL Server, Microsoft est dans une position unique pour offrir aux clients de la valeur ajoutée dans le cloud, avec de grosses remises que les autres fournisseurs de cloud ne peuvent pas nécessairement proposer.
 
-Un portefeuille de produits Azure/locaux Microsoft intégrés génère des avantages compétitifs et de coût. Si vous disposez actuellement d’un système d’exploitation ou d’autres licences de logiciels via Software Assurance (SA), vous pouvez utilisez ces licences dans le cloud avec Azure Hybrid Benefit.
+Un portefeuille de produits Azure/locaux Microsoft intégrés génère des avantages compétitifs et de coût. Si vous disposez actuellement d’un système d’exploitation ou d’autres licences de logiciels via Software Assurance (SA), vous pouvez utiliser ces licences dans le cloud avec Azure Hybrid Benefit.
 
 **En savoir plus :**
 
 - [Essayez](https://azure.microsoft.com/pricing/hybrid-benefit) la calculatrice des économies réalisées avec Azure Hybrid Benefit.
-- [Apprenez-en plus](https://azure.microsoft.com/pricing/hybrid-benefit) sur Hybrid Benefit pour Windows Server.
+- Apprenez-en plus sur [Azure Hybrid Benefit pour Windows Server](https://azure.microsoft.com/pricing/hybrid-benefit).
 - [Passez en revue](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) la tarification conseillée des machines virtuelles SQL Server Azure.
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>Bonne pratique : utiliser des instances de machines virtuelles réservées
@@ -216,13 +221,13 @@ Avec des instances de machines virtuelles réservées Azure, vous prépayez l’
 - Vous pouvez annuler des instances réservées.
 
 ![Instances réservées](../../migrate/azure-best-practices/media/migrate-best-practices-costs/reserve.png)
-*Machines virtuelles réservées Azure*
+_Figure 1 : Machines virtuelles réservées Azure._
 
 **En savoir plus :**
 
-- [Apprenez-en plus](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) sur les réservations.
-- [Lisez](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq) la FAQ sur les instances réservées Azure.
-- [Obtenez la tarification conseillée](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) des machines virtuelles SQL Server Azure.
+- Apprenez-en plus sur les [réservations Azure](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations).
+- Lisez la [FAQ sur les instances réservées Azure](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq).
+- Passez en revue la [tarification conseillée des machines virtuelles SQL Server Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance).
 
 ## <a name="best-practice-aggregate-cloud-spend-across-subscriptions"></a>Bonne pratique : agréger les dépenses cloud des abonnements
 
@@ -232,7 +237,7 @@ Pour ce faire, vous pouvez utiliser les API Azure Cost Management. Ensuite, apr�
 
 **En savoir plus :**
 
-- [Obtenez une vue d’ensemble](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview) de l’API Azure Consumption.
+- [Obtenez une vue d’ensemble](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview) des API Azure Consumption.
 - [Apprenez-en plus](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights) sur la connexion à Azure Consumption Insights dans Power BI Desktop.
 - [Apprenez à gérer](https://docs.microsoft.com/azure/billing/billing-manage-access) l’accès aux informations de facturation pour Azure à l’aide du contrôle d’accès en fonction du rôle (RBAC).
 
@@ -250,10 +255,10 @@ Dans Azure, vous payez pour ce que vous utilisez, lorsque les ressources sont co
 
 - Obtenez une vue d’ensemble d’[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) et d’[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
 - [Obtenez](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) des recommandations sur les coûts de la part d’Advisor.
-- Découvrez comment [optimiser les coûts à partir des recommandations](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json) et [éviter les frais imprévus](https://docs.microsoft.com/azure/billing/billing-getting-started).
-- En savoir plus sur le [kit d’outils Azure Resource Optimization (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
+- Découvrez comment [optimiser les coûts à partir des recommandations](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) et [éviter les frais imprévus](https://docs.microsoft.com/azure/billing/billing-getting-started).
+- En savoir plus sur le [kit d’outils Azure Resource Optimization (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
-## <a name="best-practice-reduce-non-production-costs"></a>Bonne pratique : Réduire les coûts hors production
+## <a name="best-practice-reduce-nonproduction-costs"></a>Bonne pratique : Réduire les coûts hors production
 
 Les environnements de développement, de test et d’assurance qualité (AQ) sont nécessaires pendant les cycles de développement. Malheureusement, il est courant que ces environnements restent provisionnés longtemps après leur dernière utilisation. Une révision régulière des environnements hors production inutilisés peut avoir un impact immédiat sur les coûts.
 
@@ -278,7 +283,7 @@ Microsoft propose Azure Cost Management pour vous aider à suivre vos dépenses�
 - Il suit l’utilisation des ressources et gère les coûts liés au cloud dans une vue unifiée.
 - Il fournit des insights financiers et opérationnels enrichis pour vous aider à prendre des décisions avisées.
 
-Dans Cost Management, vous pouvez :
+Dans Azure Cost Management, vous pouvez :
 
 - **Créer un budget :** Créez un budget pour garantir la responsabilité financière.
   - Vous pouvez tenir compte des services que vous consommez ou vous abonner pour une période spécifique (mensuelle, trimestrielle, annuelle) et une étendue (abonnements/groupes de ressources). Par exemple, vous pouvez créer un budget d’abonnement Azure pour un mois, un trimestre ou un an.
@@ -286,16 +291,16 @@ Dans Cost Management, vous pouvez :
   - Des notifications par e-mail peuvent être envoyées lorsque les seuils budgétaires sont atteints.
   - Vous pouvez exporter les données de gestion des coûts dans le stockage Azure, à des fins d’analyse.
 
-    ![Budget Cost Management](../../migrate/azure-best-practices/media/migrate-best-practices-costs/budget.png)
-    *Budget Azure Cost Management*
+    ![Afficher les budgets dans Azure Cost Management](../../migrate/azure-best-practices/media/migrate-best-practices-costs/budget.png)
+    _Budget Azure Cost Management_
 
 - **Réaliser une analyse des coûts :** Obtenez une analyse des coûts pour explorer et examiner vos coûts organisationnels, afin de comprendre comment les coûts sont accumulés et d’identifier les tendances de dépenses.
   - L’analyse des coûts est accessible aux utilisateurs EA.
   - Vous pouvez voir les données d’analyse des coûts pour différentes étendues, notamment par service, compte, abonnement ou groupe de ressources.
   - Vous pouvez obtenir une analyse des coûts qui montre le coût total pour le mois en cours et les coûts quotidiens cumulés.
 
-    ![Analyse Cost Management](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
-    *Analyse Azure Cost Management*
+    ![Analyse d’Azure Cost Management](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
+    _Figure : Analyse d’Azure Cost Management._
 
 - **Obtenir des recommandations :** Obtenez des recommandations d’Advisor, pour savoir comment optimiser et améliorer l’efficacité.
 
@@ -304,7 +309,7 @@ Dans Cost Management, vous pouvez :
 - [Obtenez une vue d’ensemble](https://docs.microsoft.com/azure/cost-management/overview) d’Azure Cost Management.
 - [Apprenez à optimiser](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) votre investissement dans le cloud avec Azure Cost Management.
 - [Apprenez à utiliser](https://docs.microsoft.com/azure/cost-management/use-reports) les rapports Azure Cost Management.
-- [Obtenez un tutoriel](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json) sur l’optimisation des coûts à partir de recommandations.
+- [Obtenez un tutoriel](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) sur l’optimisation des coûts à partir de recommandations.
 - [Examinez](https://docs.microsoft.com/rest/api/consumption/budgets) l’API Azure Consumption.
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Bonne pratique : implémenter des budgets de groupe de ressources
@@ -317,7 +322,7 @@ Souvent, les groupes de ressources sont utilisés pour représenter des limites 
 **En savoir plus :**
 
 - [Apprenez à gérer](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) les coûts avec Azure Budgets.
-- [Suivez un tutoriel](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/toc.json) pour créer et gérer un budget Azure.
+- [Suivez un tutoriel](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets) pour créer et gérer un budget Azure.
 
 ## <a name="best-practice-review-azure-advisor-recommendations"></a>Bonne pratique : Examiner les recommandations Azure Advisor
 
@@ -352,7 +357,7 @@ L’identification des données périmées et leur déplacement vers des zones d
 
 **En savoir plus :**
 
-- [Apprenez-en plus](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) sur les niveaux d’accès.
+- Apprenez-en plus sur les [niveaux d’accès](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers).
 - [Obtenez une vue d’ensemble](https://docs.microsoft.com/azure/azure-monitor/overview) de StorSimple et de la [tarification StorSimple](https://azure.microsoft.com/pricing/details/storsimple).
 
 ## <a name="best-practice-automate-vm-optimization"></a>Bonne pratique : automatiser l’optimisation des machines virtuelles
@@ -366,23 +371,22 @@ Vous pouvez optimiser une machine virtuelle avec Azure Automation, des groupes d
 - [Découvrez comment](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision) utiliser la mise à l’échelle automatique verticale.
 - [Planifiez](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) un démarrage automatique de machine virtuelle.
 - [Découvrez comment](https://docs.microsoft.com/azure/automation/automation-solution-vm-management) démarrer ou arrêter des machines virtuelles hors des heures d’activité dans Azure Automation.
-- [Obtenez des informations supplémentaires] sur [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) et le [kit d’outils Azure Resource Optimization (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
+- Obtenez des informations supplémentaires sur [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) et le [kit d’outils Azure Resource Optimization (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
-## <a name="best-practices-use-logic-apps-and-runbooks-with-budgets-api"></a>Meilleure pratique : utiliser des applications logiques et des runbooks avec l’API Budgets
+## <a name="best-practice-use-logic-apps-and-runbooks-with-budgets-api"></a>Bonne pratique : utiliser des applications logiques et des runbooks avec l’API Budgets
 
 Azure fournit une API REST qui peut accéder à vos informations de facturation client.
 
 - Vous pouvez utiliser l’API Budgets pour intégrer des systèmes externes et des flux de travail déclenchés par les mesures que vous générez à partir des données de l’API.
 - Vous pouvez extraire les données d’utilisation et de ressources dans vos outils d’analyse de données préférés.
-- Les API d’utilisation des ressources Azure et RateCard peuvent vous aider à prévoir vos coûts avec précision et à les gérer.
+- Le API d’utilisation des ressources Azure et l’API de tarification des ressources Azure peuvent vous aider à prévoir et à gérer vos coûts avec précision.
 - Les API sont implémentées en tant que fournisseur de ressources et incluses dans les API exposées par Azure Resource Manager.
-- L’API Budgets peut être intégrée à Azure Logic Apps et aux runbooks.
+- L’API Budgets peut être intégrée à Azure Logic Apps et aux runbooks Azure Automation.
 
 **En savoir plus :**
 
-- [Apprenez-en plus](https://docs.microsoft.com/rest/api/consumption/budgets) sur l’API Budget.
-- [Obtenez des informations](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview) dans l’utilisation d’Azure avec l’API de facturation.
-
+- Apprenez-en plus sur l’[API Budget](https://docs.microsoft.com/rest/api/consumption/budgets).
+- [Obtenez des informations](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview) dans l’utilisation d’Azure avec les API Facturation Azure.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

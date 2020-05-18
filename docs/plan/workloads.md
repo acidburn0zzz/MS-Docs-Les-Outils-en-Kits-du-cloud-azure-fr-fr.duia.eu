@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eee8a2845a797cc1d9df3c2484cd3165967ac4d8
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433971"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215515"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Définir et hiérarchiser les charges de travail pour un plan d’adoption du cloud
 
@@ -28,24 +28,24 @@ La limitation du plan à 10 charges de travail favorise l’agilité et l’ali
 
 Dans le contexte d’une adoption du cloud, une charge de travail est un ensemble de ressources informatiques (serveurs, machines virtuelles, applications, données ou appliances) qui soutiennent collectivement un processus défini. Les charges de travail peuvent soutenir plusieurs processus. Elles peuvent également dépendre d’autres ressources partagées ou plateformes étendues. Toutefois, une charge de travail doit avoir des limites définies en ce qui concerne les ressources et les processus qui en dépendent. Souvent, il est possible de visualiser les charges de travail en surveillant le trafic réseau entre les ressources informatiques.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Les entrées stratégiques de la liste des prérequis facilitent grandement les tâches suivantes. Pour obtenir de l’aide sur la collecte des données présentées dans cet article, passez en revue les [prérequis](./prerequisites.md).
 
 ## <a name="initial-workload-prioritization"></a>Hiérarchisation initiale des charges de travail
 
-Au cours du processus de [rationalisation incrémentielle](../digital-estate/rationalize.md), votre équipe doit s’accorder sur une approche de type « puissance de 10 », qui est constituée de 10 charges de travail prioritaires. Ces charges de travail servent de limite initiale pour la planification de l’adoption.
+Au cours du processus de [rationalisation incrémentielle](../digital-estate/rationalize.md), votre équipe doit s’accorder sur une [approche Puissance 10](../digital-estate/rationalize.md#release-planning), constituée de 10 charges de travail prioritaires. Ces charges de travail servent de limite initiale pour la planification de l’adoption.
 
 Si vous décidez qu’une rationalisation du patrimoine numérique n’est pas nécessaire, nous recommandons aux équipes d’adoption du cloud et à l’équipe de stratégie cloud de convenir d’une liste de 10 applications qui serviront d’objectif initial de la migration. Nous vous recommandons de faire en sorte que ces 10 charges de travail comptent des charges de travail simples (moins de 10 ressources dans un déploiement autonome) et des charges de travail plus complexes. Ces 10 charges de travail commenceront le processus de hiérarchisation des charges de travail.
 
 > [!NOTE]
-> L’approche de type « puissance de 10 » sert de limite initiale pour la planification, afin de concentrer énergie et investissement dans une première phase d’analyse. Toutefois, l’analyse et la définition des charges de travail peuvent entraîner des modifications dans la liste des charges de travail prioritaires.
+> L’approche Puissance 10 sert de limite initiale pour la planification, afin d’orienter l’énergie et l’investissement dans une première phase d’analyse. Toutefois, l’analyse et la définition des charges de travail peuvent entraîner des modifications dans la liste des charges de travail prioritaires.
 
 ## <a name="add-workloads-to-your-cloud-adoption-plan"></a>Ajouter des charges de travail à votre plan d’adoption du cloud
 
 Dans l’article précédent, [Plan d’adoption du cloud et Azure DevOps](./template.md), vous avez créé un plan d’adoption du cloud dans Azure DevOps.
 
-Vous pouvez à présent représenter les charges de travail de la liste « Puissance de 10 » dans votre plan d’adoption du cloud. Le moyen le plus simple pour cela consiste à effectuer des modifications en bloc dans Microsoft Excel. Pour préparer votre station de travail pour des modifications en bloc, consultez [Ajouter ou modifier en bloc des éléments de travail avec Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Vous pouvez à présent représenter les charges de travail de la liste « Puissance de 10 » dans votre plan d’adoption du cloud. Le moyen le plus simple pour cela consiste à effectuer des modifications en bloc dans Microsoft Excel. Pour préparer votre station de travail à des modifications en bloc, consultez [Ajout ou modification en bloc d’éléments de travail avec Microsoft Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 L’étape 5 de cet article vous indique de sélectionner **Liste d’entrée**. Au lieu de cela, sélectionnez **Liste de requête**. Ensuite, dans la liste déroulante **Sélectionner une requête**, sélectionnez la requête **Workload Template** (Modèle de charge de travail). Cette requête charge tous les efforts liés à la migration d’une charge de travail unique dans votre feuille de calcul.
 

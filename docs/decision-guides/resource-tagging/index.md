@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7d59f446966d853e29fc5c44bbc2da44cba114c2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396097"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222757"
 ---
+<!--docsTest:disable - TODO -->
+
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guides de décision concernant le nommage et l’étiquetage des ressources
@@ -27,8 +29,8 @@ L’organisation des ressources cloud est une tâche cruciale pour le service in
   - [Modèles de comptabilité cloud](../../strategy/cloud-accounting.md)
   - [Calculs du retour sur investissement](../../strategy/financial-models.md#return-on-investment)
   - [Suivi des coûts](../../ready/azure-best-practices/track-costs.md)
-  - [Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [Alertes](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Alertes](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [Suivi des dépenses récurrentes et création de rapports](../../govern/cost-management/compliance-processes.md)
   - [Optimisations après implémentation](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [Tactiques d’optimisation des coûts](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -76,11 +78,11 @@ Les modèles d’étiquetage courants listés ci-dessous montrent comment vous p
 
 | Type d’étiquette | Exemples | Description |
 |-----|-----|-----|
-| Fonctionnelle            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | Permet d’attribuer une catégorie aux ressources par rapport à leur rôle au sein d’une charge de travail, à l’environnement dans lequel elles ont été déployées, ou par rapport à d’autres fonctionnalités ou détails opérationnels.                                 |
-| classification ;        | confidentiality=private<br/>sla = 24hours                                 | Classifie une ressource selon son utilisation et les stratégies qui y sont appliquées                               |
-| Comptabilité            | department = finance <br/>program = business-initiative <br/>region = northamerica | Permet à une ressource d’être associée à des groupes d’une organisation à des fins de facturation |
-| Partenariat           | owner = jsmith <br/>contactalias = catsearchowners<br/>stakeholders = user1;user2;user3<br/>                       | Fournit des informations sur la façon dont les utilisateurs (en dehors de l’équipe informatique) sont liés à la ressource ou affectés par celle-ci.                      |
-| Objectif               | businessprocess=support<br/>businessimpact=moderate<br/>revenueimpact=high   | Aligne les ressources sur les fonctions métier pour mieux prendre en charge les décisions relatives aux investissements  |
+| Fonctionnelle | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | Permet d’attribuer une catégorie aux ressources par rapport à leur rôle au sein d’une charge de travail, à l’environnement dans lequel elles ont été déployées, ou par rapport à d’autres fonctionnalités ou détails opérationnels |
+| classification ; | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | Classifie une ressource selon son utilisation et les stratégies qui y sont appliquées |
+| Comptabilité | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | Permet à une ressource d’être associée à des groupes d’une organisation à des fins de facturation |
+| Partenariat | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | Fournit des informations sur la façon dont les utilisateurs (en dehors de l’équipe informatique) sont liés à la ressource ou affectés par celle-ci. |
+| Objectif | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | Aligne les ressources sur les fonctions métier pour mieux prendre en charge les décisions relatives aux investissements |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -89,7 +91,7 @@ Les modèles d’étiquetage courants listés ci-dessous montrent comment vous p
 Pour plus d’informations sur le nommage et l’étiquetage dans Azure, consultez :
 
 - [Conventions d’affectation de noms pour les ressources Azure](../../ready/azure-best-practices/naming-and-tagging.md). Consultez ce guide afin de connaître les conventions de nommage recommandées pour les ressources Azure.
-- [Organisation des ressources Azure à l’aide d’étiquettes](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags). Dans Azure, vous pouvez appliquer des étiquettes au niveau des groupes de ressources et au niveau des ressources, ce qui vous permet de choisir le niveau de granularité des rapports comptables en fonction des étiquettes appliquées.
+- [Utiliser des étiquettes pour organiser vos ressources Azure et votre hiérarchie de gestion](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources). Dans Azure, vous pouvez appliquer des étiquettes au niveau des groupes de ressources et au niveau des ressources, ce qui vous permet de choisir le niveau de granularité des rapports comptables en fonction des étiquettes appliquées.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

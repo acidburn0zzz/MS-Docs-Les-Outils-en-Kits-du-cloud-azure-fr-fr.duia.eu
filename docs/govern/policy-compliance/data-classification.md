@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ffa318f44a6fe3a856598581ca7cc2de37fbd6f5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e64acdc08f975662d3176964acbc2c0dcd53e3e4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997362"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224236"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ La liste ci-dessous répertorie les classifications utilisées par Microsoft. En
 
 Les balises de ressource sont une bonne approche suggérée pour le stockage des métadonnées, et vous pouvez utiliser ces balises pour appliquer des informations de classification aux ressources déployées. Bien que le marquage des ressources cloud par classification ne remplace pas le processus formel de classification des données, il s’agit d’un outil précieux pour la gestion des ressources et l’application de la stratégie. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) offre une excellente solution pour classer les _données_, et ce, quel que soit leur emplacement (en local, dans Azure ou ailleurs). Considérez-le comme s’inscrivant dans une stratégie de classification globale.
 
-Pour plus d’informations sur le balisage des ressources dans Azure, consultez [Organisation des ressources Azure à l'aide de balises](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
+Pour plus d’informations sur le balisage des ressources dans Azure, consultez [Utiliser des étiquettes pour organiser vos ressources Azure et votre hiérarchie de gestion](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -1,18 +1,18 @@
 ---
-title: Chemin de préparation aux compétences pendant la planification
-description: Utilisez le Cloud Adoption Framework pour Azure afin d’en savoir plus sur la préparation des compétences pendant la phase de planification de la migration.
+title: Chemin de préparation aux compétences durant la phase de planification d’un parcours de migration
+description: Utilisez Cloud Adoption Framework pour Azure afin de découvrir le parcours de préparation des compétences pendant la phase de planification de la migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 38b5ebc82052869294eb7ad49e50a1d54b5a696f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997503"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214954"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Chemin de préparation aux compétences durant la phase de planification d’un parcours de migration
 
@@ -44,7 +44,7 @@ La justification de l’investissement pour adopter le cloud peut nécessiter un
 Vous pouvez affiner votre étude de rentabilisation en alignant l’étude de rentabilisation souhaitée avec l’inventaire du patrimoine numérique actuel et futur. Ces articles peuvent guider le développement d’une rationalisation du patrimoine numérique :
 
 - [Rationalisation incrémentielle](../digital-estate/rationalize.md) : approche agile de la rationalisation qui aligne correctement les décisions techniques à liaison tardive.
-- [Les 5 R de la rationalisation](../digital-estate/5-rs-of-rationalization.md) : comprenez les diverses options de rationalisation.
+- [Les cinq R de la rationalisation](../digital-estate/5-rs-of-rationalization.md) : comprenez les diverses options de rationalisation.
 
 ## <a name="create-a-migration-backlog-technical-plan"></a>Création d’un backlog de migration (plan technique)
 
@@ -86,9 +86,9 @@ Nous vous recommandons d’obtenir la reconnaissance officielle de vos connaissa
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation aux nouvelles compétences et responsabilités qui accompagnent l’adoption du cloud n’est pas facile. Microsoft Learn offre une approche plus gratifiante de l’apprentissage pratique qui vous permet d’atteindre vos objectifs plus rapidement. Gagnez des points, des niveaux et accomplissez davantage !
+Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation aux nouvelles compétences et responsabilités qui accompagnent l’adoption du cloud n’est pas facile. Microsoft Learn offre une approche plus gratifiante de l’apprentissage pratique qui vous permet d’atteindre vos objectifs plus rapidement. Gagnez des points et des niveaux et accomplissez davantage.
 
-Voici un exemple de parcours d’apprentissage personnalisé qui s’aligne sur la portion Stratégie du Cloud Adoption Framework.
+Voici un exemple de parcours d’apprentissage personnalisé qui s’aligne sur la méthodologie Stratégie de Cloud Adoption Framework.
 
 [Découvrez la valeur métier de Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure) : Cette expérience d’apprentissage vous fera découvrir un parcours qui commence en vous indiquant comment la transformation numérique et la puissance du cloud peuvent transformer votre entreprise. Nous allons aborder la façon dont les services cloud Microsoft Azure peuvent alimenter votre organisation sur une plateforme cloud approuvée. Enfin, nous conclurons en vous montrant comment rendre ce parcours réel pour votre organisation.
 

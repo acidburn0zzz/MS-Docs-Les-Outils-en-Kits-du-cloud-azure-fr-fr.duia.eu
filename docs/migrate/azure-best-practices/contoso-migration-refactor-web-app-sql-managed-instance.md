@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 7456d74ac4702ee403583148aa8c3f5491ef5721
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0e288b29077d68ee4b0c0522537abe0baaa276ac
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120721"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223692"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -41,7 +41,7 @@ L’équipe cloud de Contoso a épinglé les objectifs de cette migration. Ces o
 
 **Configuration requise** | **Détails**
 --- | ---
-**Application** | L’application dans Azure restera aussi critique qu’aujourd’hui.<br/><br/> Elle doit offrir le même niveau de performance qu’actuellement dans VMware.<br/><br/> L’équipe ne souhaite pas investir dans l’application. Pour l’instant, les administrateurs veulent simplement déplacer l’application de façon sécurisée vers le cloud.<br/><br/> L’équipe veut cesser de prendre en charge Windows Server 2008 R2, sur lequel l’application s’exécute actuellement.<br/><br/> L’équipe veut aussi passer de SQL Server 2008 R2 à une plateforme de base de données PaaS moderne, de façon à réduire les tâches de gestion.<br/><br/> Contoso souhaite tirer parti autant que possible de son investissement dans les licences SQL Server et dans Software Assurance.<br/><br/> En outre, Contoso veut limiter les risques liés à un point de défaillance unique sur le niveau web.
+**Application** | L’application dans Azure restera aussi critique qu’aujourd’hui. <br><br> Elle doit offrir le même niveau de performance qu’actuellement dans VMware. <br><br> L’équipe ne souhaite pas investir dans l’application. Pour l’instant, les administrateurs veulent simplement déplacer l’application de façon sécurisée vers le cloud. <br><br> L’équipe veut cesser de prendre en charge Windows Server 2008 R2, sur lequel l’application s’exécute actuellement. <br><br> L’équipe veut aussi passer de SQL Server 2008 R2 à une plateforme de base de données PaaS moderne, de façon à réduire les tâches de gestion. <br><br> Contoso souhaite tirer parti autant que possible de son investissement dans les licences SQL Server et dans Software Assurance. <br><br> En outre, Contoso veut limiter les risques liés à un point de défaillance unique sur le niveau web.
 **Limitations** | L’application consiste en une application ASP.NET et un service WCF (Windows Communication Foundation) s’exécutant sur la même machine virtuelle. Ils veulent fractionner cela en deux applications web utilisant Azure App Service.
 **Microsoft Azure** | Contoso veut déplacer l’application vers Azure, mais ne veut pas l’exécuter sur des machines virtuelles. Contoso veut utiliser des services PaaS d’Azure pour les couches Web et Données.
 **DevOps** | Contoso veut passer à un modèle DevOps, en utilisant Azure DevOps pour les builds et les pipelines de mise en production.
@@ -63,7 +63,7 @@ Après avoir défini précisément les objectifs et exigences, Contoso conçoit 
 ### <a name="proposed-solution"></a>Solution proposée
 
 - Pour le niveau web de l’application, Contoso a décidé d’utiliser Azure App Service. Ce service PaaS permet de déployer l’application avec seulement quelques changements de configuration. Contoso utilisera Visual Studio pour apporter les modifications et déployer deux applications web. L’une pour le site web, et l’autre pour le service WCF.
-- Pour satisfaire aux exigences d’un pipeline DevOps, Contoso a décidé d’utiliser Azure DevOps pour la gestion du code source avec des dépôts Git. Des builds et la mise en production automatisées seront utilisées pour générer le code et le déployer sur Azure App Service.
+- Pour satisfaire aux exigences d’un pipeline DevOps, Contoso a choisi Azure DevOps pour la gestion du code source avec des dépôts Git. Des builds et la mise en production automatisées seront utilisées pour générer le code et le déployer sur Azure App Service.
 
 ### <a name="database-considerations"></a>Considérations liées à la base de données
 
@@ -85,8 +85,8 @@ Contoso évalue la conception proposée en dressant une liste des avantages et d
 
 **Considération** | **Détails**
 --- | ---
-**Avantages** | Le code de l’application SmartHotel360 ne nécessite pas de modification avant sa migration vers Azure.<br/><br/> Contoso peut tirer parti de son investissement dans Software Assurance en utilisant Azure Hybrid Benefit tant pour SQL Server que pour Windows Server.<br/><br/> Après la migration, Windows Server 2008 R2 ne devra plus être pris en charge. Pour plus d’informations, consultez [Stratégie de cycle de vie Microsoft](https://aka.ms/lifecycle).<br/><br/> Contoso peut configurer la couche web de l’application avec plusieurs instances, pour qu’elle ne constitue plus un point de défaillance unique.<br/><br/> La base de données ne dépendra plus de SQL Server 2008 R2, qui est une version déjà ancienne.<br/><br/> SQL Managed Instance prend en charge les spécifications techniques et les objectifs de Contoso.<br/><br/> Managed Instance offre une compatibilité de 100 % avec le déploiement actuel, tout en permettant à Contoso de ne plus utiliser SQL Server 2008 R2.<br/><br/> Contoso peut tirer parti de son investissement dans Software Assurance en utilisant Azure Hybrid Benefit pour SQL Server et Windows Server.<br/><br/> Elle peut réutiliser Azure Database Migration Service pour d’autres migrations futures.<br/><br/> SQL Managed Instance intègre une tolérance de panne que Contoso n’a pas besoin de configurer. Cela signifie que la couche Données n’est plus un point de basculement unique.
-**Inconvénients** | Azure App Service ne prend en charge le déploiement que d’une seule application pour chaque application web. Cela signifie que deux applications web doivent être approvisionnées (l’une pour le site web et l’autre pour le service WCF).<br/><br/>Pour la couche Données, Managed Instance n’est peut-être pas la meilleure solution si Contoso veut personnaliser le système d’exploitation ou le serveur de base de données, ou si l’entreprise veut exécuter des applications tierces avec SQL Server. L’exécution de SQL Server sur une machine virtuelle IaaS peut apporter cette flexibilité.
+**Avantages** | Le code de l’application SmartHotel360 ne nécessite pas de modification avant sa migration vers Azure. <br><br> Contoso peut tirer parti de son investissement dans Software Assurance en utilisant Azure Hybrid Benefit tant pour SQL Server que pour Windows Server. <br><br> Après la migration, Windows Server 2008 R2 ne devra plus être pris en charge. Pour plus d’informations, consultez [Stratégie de cycle de vie Microsoft](https://aka.ms/lifecycle). <br><br> Contoso peut configurer la couche web de l’application avec plusieurs instances, pour qu’elle ne constitue plus un point de défaillance unique. <br><br> La base de données ne dépendra plus de SQL Server 2008 R2, qui est une version déjà ancienne. <br><br> SQL Managed Instance prend en charge les spécifications techniques et les objectifs de Contoso. <br><br> Managed Instance offre une compatibilité de 100 % avec le déploiement actuel, tout en permettant à Contoso de ne plus utiliser SQL Server 2008 R2. <br><br> Contoso peut tirer parti de son investissement dans Software Assurance en utilisant Azure Hybrid Benefit pour SQL Server et Windows Server. <br><br> Elle peut réutiliser Azure Database Migration Service pour d’autres migrations futures. <br><br> SQL Managed Instance intègre une tolérance de panne que Contoso n’a pas besoin de configurer. Cela signifie que la couche Données n’est plus un point de basculement unique.
+**Inconvénients** | Azure App Service ne prend en charge le déploiement que d’une seule application pour chaque application web. Cela signifie que deux applications web doivent être approvisionnées (l’une pour le site web et l’autre pour le service WCF). <br><br> Pour la couche Données, Managed Instance n’est peut-être pas la meilleure solution si Contoso veut personnaliser le système d’exploitation ou le serveur de base de données, ou si l’entreprise veut exécuter des applications tierces avec SQL Server. L’exécution de SQL Server sur une machine virtuelle IaaS peut apporter cette flexibilité.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -118,7 +118,7 @@ Voici ce dont Contoso a besoin pour exécuter ce scénario :
 
 **Configuration requise** | **Détails**
 --- | ---
-**Abonnement Azure** | Contoso a créé des abonnements dans un article précédent. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions.<br/><br/> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.
+**Abonnement Azure** | Contoso a créé des abonnements dans un article précédent. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial). <br><br> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions. <br><br> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.
 **Infrastructure Azure** | [Découvrez comment](./contoso-migration-infrastructure.md) Contoso configure une infrastructure Azure.
 
 <!--markdownlint-enable MD033 -->
@@ -144,7 +144,7 @@ Pour configurer Azure SQL Database Managed Instance, Contoso a besoin d’un sou
 - Une fois l’instance gérée créée, Contoso ne doit pas ajouter de ressources au sous-réseau.
 - Aucun groupe de sécurité réseau ne doit être associé au sous-réseau.
 - Le sous-réseau doit avoir une table de routage définie par l’utilisateur. Le seul itinéraire attribué doit être 0.0.0.0/0 tronçon suivant vers Internet.
-- Système DNS personnalisé facultatif : si un système DNS personnalisé est spécifié sur le réseau virtuel Azure, vous devez ajouter l’adresse IP des programmes de résolution récursifs d’Azure (par exemple 168.63.129.16) à la liste. Découvrez comment [configurer un système DNS personnalisé pour Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Si un DNS personnalisé facultatif est spécifié pour le réseau virtuel, l’adresse IP virtuelle `168.63.129.16` pour les programmes de résolution récursifs dans Azure doit être ajoutée à la liste. Découvrez comment [configurer un DNS personnalisé pour une instance managée Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Le sous-réseau ne doit pas avoir de point de terminaison de service (stockage ou SQL) associé. Les points de terminaison doivent être désactivés sur le réseau virtuel.
 - Le sous-réseau doit avoir un minimum de 16 adresses IP. Découvrez comment [dimensionner le sous-réseau Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
 - Dans l’environnement hybride de Contoso, des paramètres DNS personnalisés sont nécessaires. Contoso configure les paramètres DNS pour utiliser un ou plusieurs des serveurs DNS Azure de l’entreprise. Apprenez-en davantage sur la [personnalisation du système DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
@@ -239,8 +239,8 @@ Les administrateurs Contoso la migrent à l’aide des services de migration de 
 
 En résumé, vous devez effectuer les opérations suivantes :
 
-- Créez un Azure Database Migration Service (DMS) avec une référence SKU `Premium` connectée au réseau virtuel.
-- Assurez-vous que le service Azure Database Migration Service (DMS) peut accéder au SQL Server à distance via le réseau virtuel. Cela implique de s’assurer que tous les ports entrants sont autorisés entre Azure et SQL Server au niveau du réseau virtuel, du VPN réseau et de la machine qui héberge SQL Server.
+- Créer un service Azure Database Migration Service (DMS) avec une référence SKU `Premium` connectée au réseau virtuel.
+- Vous assurer que le service Azure Database Migration Service (DMS) peut accéder au SQL Server à distance via le réseau virtuel. Cela implique de s’assurer que tous les ports entrants sont autorisés entre Azure et SQL Server au niveau du réseau virtuel, du VPN réseau et de la machine qui héberge SQL Server.
 - Configurer Azure Database Migration Service :
   - Créez un projet de migration.
   - Ajoutez une source (base de données locale).
@@ -277,7 +277,7 @@ Contoso doit générer l’infrastructure et les pipelines DevOps pour l’appli
 
     ![Nouveau projet](./media/contoso-migration-refactor-web-app-sql-managed-instance/vsts1.png)
 
-2. Ils importent le dépôt Git qui détient actuellement leur code d’application. Il se trouve dans un [dépôt GitHub public](https://github.com/Microsoft/SmartHotel360-Registration) que vous pouvez télécharger.
+2. Ils importent le dépôt Git qui détient actuellement leur code d’application. Il se trouve dans un [référentiel GitHub public](https://github.com/Microsoft/SmartHotel360-Registration) que vous pouvez télécharger.
 
     ![Télécharger le code d’application](./media/contoso-migration-refactor-web-app-sql-managed-instance/vsts2.png)
 
@@ -298,11 +298,11 @@ Les administrateurs Contoso doivent faire en sorte que les applications web et l
 
     ![Chaîne de connexion](./media/contoso-migration-refactor-web-app-sql-managed-instance/string1.png)
 
-3. Dans Visual Studio, ils ouvrent le projet **SmartHotel.Registration.wcf** à partir du fichier solution. La section **connectionStrings** du fichier web.config pour le service WCF SmartHotel.Registration.Wcf doit être mise à jour avec la chaîne de connexion.
+3. Dans Visual Studio, ils ouvrent le projet **SmartHotel.Registration.wcf** à partir du fichier solution. La section **connectionStrings** du fichier web.config pour le service WCF **SmartHotel.Registration.Wcf** doit être mise à jour avec la chaîne de connexion.
 
      ![Chaîne de connexion](./media/contoso-migration-refactor-web-app-sql-managed-instance/string2.png)
 
-4. La section **client** du fichier web.config pour SmartHotel.Registration.Web doit être modifiée de façon à ce qu’elle pointe vers le nouvel emplacement du service WCF. Il s’agit de l’URL de l’application web WCF qui héberge le point de terminaison de service.
+4. La section **client** du fichier web.config pour **SmartHotel.Registration.Web** doit être modifiée de façon à ce qu’elle pointe vers le nouvel emplacement du service WCF. Il s’agit de l’URL de l’application web WCF qui héberge le point de terminaison de service.
 
     ![Chaîne de connexion](./media/contoso-migration-refactor-web-app-sql-managed-instance/strings3.png)
 

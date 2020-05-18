@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 70b4d0ee295f06db68090551fac02fd205111c60
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 72bc453ba9ce0feb90e6dceaf73cd89ded0c64e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995716"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221329"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 
@@ -21,11 +21,15 @@ La rationalisation du cloud est le processus qui consiste à évaluer des ressou
 
 ## <a name="traditional-view-of-rationalization"></a>Considérations traditionnelles sur la rationalisation
 
-La rationalisation est facile à comprendre lorsque vous visualisez le processus traditionnel de rationalisation sous la forme d’un arbre de décision complexe. Chaque ressource du patrimoine numérique est analysée par un processus qui aboutit à l’un des cinq résultats possibles (les cinq R). Ce processus fonctionne bien pour les petits patrimoines. Pour les gros patrimoines, en revanche, il n’est pas efficace et peut entraîner d’importants retards. Pour comprendre pourquoi, examinons de plus près ce processus. Ensuite, nous présenterons un modèle plus efficace.
+La rationalisation est facile à comprendre lorsque vous visualisez le processus traditionnel de rationalisation sous la forme d’un arbre de décision complexe. Chaque ressource du patrimoine numérique est analysée par un processus qui aboutit à l’un des cinq résultats possibles (les cinq R de la rationalisation). Ce processus fonctionne bien pour les petits patrimoines. Pour les gros patrimoines, en revanche, il n’est pas efficace et peut entraîner d’importants retards. Pour comprendre pourquoi, examinons de plus près ce processus. Ensuite, nous présenterons un modèle plus efficace.
 
 **Inventaire :** Il est nécessaire d’effectuer un inventaire complet des ressources, y compris des applications, des logiciels, du matériel, des systèmes d’exploitation et des métriques de performances système, afin de réaliser une rationalisation complète à l’aide de modèles traditionnels.
 
-**Analyse quantitative :** Dans l’arbre de décision, ce sont les questions quantitatives qui déterminent la première couche de décisions. Les questions courantes sont les suivantes : Cette ressource est-elle actuellement utilisée ? Si oui, est-elle correctement optimisée et dimensionnée ? Quelles sont les dépendances qui existent entre les ressources ? Ces questions sont essentielles à la classification de l’inventaire.
+**Analyse quantitative :** Dans l’arbre de décision, ce sont les questions quantitatives qui déterminent la première couche de décisions. Les questions courantes sont les suivantes :
+
+    - Cette ressource est-elle actuellement utilisée ?
+    - Si oui, est-elle correctement optimisée et dimensionnée ?
+    - Quelles sont les dépendances qui existent entre les ressources ? Ces questions sont essentielles à la classification de l’inventaire.
 
 **Analyse qualitative :** L’ensemble de décisions suivant nécessite une intelligence humaine dans le but d’effectuer une analyse qualitative. Souvent, ces questions sont propres à la solution et ne peuvent être posées qu’aux parties prenantes et aux utilisateurs avancés. Ces décisions retardent généralement le processus, ce qui ralentit considérablement les choses. Cette analyse nécessite généralement 40 à 80 heures de travail à temps plein par application.
 
@@ -71,7 +75,7 @@ Par exemple, si les options sont limitées au réhébergement ou à la mise hors
 
 « L’analyse indique qu’aucun utilisateur n’utilise activement cette ressource. Est-ce exact ou avons-nous négligé quelque chose ? » Il est généralement beaucoup plus facile de répondre à cette question binaire en effectuant une analyse qualitative.
 
-Cette approche simplifiée produit des lignes de base, des plans financiers, une stratégie et une direction. Par la suite, chaque ressource fait l’objet d’une rationalisation et d’une analyse qualitative afin d’évaluer d’autres options. Toutes les hypothèses que vous poserez dans cette rationalisation initiale sont testées avant
+Cette approche simplifiée produit des lignes de base, des plans financiers, une stratégie et une direction. Par la suite, chaque ressource fait l’objet d’une rationalisation et d’une analyse qualitative afin d’évaluer d’autres options. Toutes les hypothèses que vous poserez dans cette rationalisation initiale sont testées avant de migrer des charges de travail individuelles.
 
 ## <a name="challenge-assumptions"></a>Remettre en question les hypothèses
 
@@ -115,7 +119,7 @@ La première charge de travail est souvent déployée dans un environnement exp�
 
 ### <a name="qualitative-analysis"></a>Analyse qualitative
 
-Les équipes chargées de l’adoption du cloud et l’équipe chargée de l’adoption du cloud peuvent collaborer pour analyser cette petite charge de travail. Cette collaboration génère une opportunité contrôlée pour créer et tester les critères de l’analyse qualitative. Les petites charges de travail permettent d’interroger les utilisateurs affectés dans le but d’effectuer une analyse qualitative détaillée en une semaine maximum. Pour connaître les facteurs courants d’analyse qualitative, consultez la cible de rationalisation correspondante dans les [5 R de la rationalisation](./5-rs-of-rationalization.md).
+Les équipes chargées de l’adoption du cloud et l’équipe chargée de l’adoption du cloud peuvent collaborer pour analyser cette petite charge de travail. Cette collaboration génère une opportunité contrôlée pour créer et tester les critères de l’analyse qualitative. Les petites charges de travail permettent d’interroger les utilisateurs affectés dans le but d’effectuer une analyse qualitative détaillée en une semaine maximum. Pour connaître les facteurs courants d’analyse qualitative, consultez la cible de rationalisation correspondante dans les [cinq R de la rationalisation](./5-rs-of-rationalization.md).
 
 ### <a name="migration"></a>Migration
 
@@ -133,7 +137,7 @@ Pendant que l’équipe chargée de l’adoption du cloud effectue la migration 
 
 ### <a name="power-of-10"></a>Puissance 10
 
-L’approche de rationalisation traditionnelle vise à répondre à tous les besoins envisageables. Heureusement, le processus de transformation ne nécessite pas toujours un plan pour chaque application. Dans un modèle incrémentiel, la méthode Puissance 10 constitue un bon point de départ. Dans ce modèle, l’équipe de stratégie cloud sélectionne les 10 premières applications devant faire l’objet d’une migration. Ces dix charges de travail doivent être un mélange de charges de travail simples et complexes.
+L’approche de rationalisation traditionnelle vise à répondre à tous les besoins envisageables. Heureusement, le processus de transformation ne nécessite pas toujours un plan pour chaque application. Dans un modèle incrémentiel, l’approche des 10 premières applications constitue un bon point de départ. Dans ce modèle, l’équipe de stratégie cloud sélectionne les 10 premières applications devant faire l’objet d’une migration. Ces dix charges de travail doivent être un mélange de charges de travail simples et complexes.
 
 ### <a name="build-the-first-backlogs"></a>Créer les premiers backlogs
 

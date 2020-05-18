@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3eb3a4feb5871ac2e3ebe72c0bcbc1747e3f3eaa
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9f0005c3d84f1a9f49c3756932838bbe5634269d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122030"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213951"
 ---
 # <a name="improve-landing-zone-governance"></a>Améliorer la gouvernance des zones d’atterrissage
 
@@ -21,10 +21,10 @@ La gouvernance des zones d’atterrissage est la plus petite unité de gouvernan
 ## <a name="landing-zone-governance-best-practices"></a>Meilleures pratiques pour la gouvernance des zones d’atterrissage
 
 - **Gouvernance d’atterrissage initiale :** L’article sur la mise en place d’une [fondation de gouvernance initiale](../../govern/guides/complex/index.md) vous aidera à ajouter des outils de gouvernance initiale aux premières zones d’atterrissage. Ces pratiques vous aideront à mettre à l’échelle l’adoption et la gouvernance, ainsi que l’implémentation d’une gestion saine des coûts. Cette approche commence par : L’organisation de ressources, les définitions de stratégie, les rôles RBAC et les définitions Blueprint.
-- **[Normes d’attribution de noms et de marquage](../azure-best-practices/naming-and-tagging.md)**  : Assurez la cohérence de l’attribution de noms et du marquage, offrant les données de base pour l’établissement de pratiques de gouvernance saines.
-- **[Suivre les coûts entre les charges de travail](../azure-best-practices/track-costs.md)**  : Commencez le suivi des coûts dans votre première zone d’atterrissage. Évaluer la façon dont vous allez appliquer la cohérence entre plusieurs charges de travail et rôles.
-- **[Mettre à l’échelle avec plusieurs abonnements](../azure-best-practices/scale-subscriptions.md)**  : Évaluez la façon dont cette zone d’atterrissage et les autres zones d’atterrissage seront mises à l’échelle, car plusieurs abonnements deviennent une exigence.
-- **[Organiser les abonnements](../azure-best-practices/organize-subscriptions.md)**  : Comprenez comment organiser et gérer plusieurs abonnements.
+- **[Standards de nommage et de marquage](../azure-best-practices/naming-and-tagging.md) :** Assurez la cohérence de l’attribution de noms et du marquage, offrant les données de base pour l’établissement de pratiques de gouvernance saines.
+- **[Suivi des coûts sur plusieurs charges de travail](../azure-best-practices/track-costs.md) :** Commencez le suivi des coûts dans votre première zone d’atterrissage. Évaluer la façon dont vous allez appliquer la cohérence entre plusieurs charges de travail et rôles.
+- **[Scaling avec plusieurs abonnements](../azure-best-practices/scale-subscriptions.md) :** Évaluez la façon dont cette zone d’atterrissage et les autres zones d’atterrissage seront mises à l’échelle, car plusieurs abonnements deviennent une exigence.
+- **[Organisation des abonnements](../azure-best-practices/organize-subscriptions.md) :** Comprenez comment organiser et gérer plusieurs abonnements.
 
 ## <a name="four-steps-to-improve-overall-governance"></a>Quatre étapes pour améliorer la gouvernance globale
 

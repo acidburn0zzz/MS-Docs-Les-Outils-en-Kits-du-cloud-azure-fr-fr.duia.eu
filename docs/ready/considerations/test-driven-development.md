@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5693072eee18e0e3ee45bd3d3fd62d3a7de5795e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 055279bccb9c2897b3cc67adf549f5f57c5bf5fc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122014"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222995"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Développement piloté par les tests (TDD) des zones d’atterrissage
 
@@ -38,7 +38,7 @@ Le cycle qui rend le développement piloté par les tests efficace est souvent a
 
 ![Processus de développement piloté par les tests pour les zones d’atterrissage cloud](../../_images/ready/test-driven-development-process.png)
 
-- **Créer un test :** Définissez un test pour valider que les critères d’acceptation pour une fonctionnalité spécifique à valeur ajoutée ont été satisfaits. Lorsque cela est possible, automatisez le test.
+- **Créer un test :** Définissez un test pour valider que les critères d’acceptation pour une fonctionnalité spécifique à valeur ajoutée ont été satisfaits. Automatisez le test chaque fois que possible.
 - **Tester la zone d’atterrissage :** Exécutez le nouveau test et les tests existants. Si la fonctionnalité requise n’a pas déjà été remplie par des efforts de développement antérieurs et n’est pas incluse dans l’offre du fournisseur cloud, le test doit échouer. L’exécution de tests existants vous permettra de vérifier que votre nouveau test ne réduit pas la fiabilité des fonctionnalités de la zone d’atterrissage fournies par le code existant.
 - **Développer et refactoriser la zone d'atterrissage :** Ajoutez ou modifiez le code source pour satisfaire la fonctionnalité à valeur ajoutée demandée et améliorer la qualité générale de la base de code. Pour rencontrer au maximum l’esprit du développement piloté par les tests, l’équipe de la plateforme cloud n’ajouterait que du code pour répondre à la fonctionnalité demandée et rien de plus. En même temps, le maintien de la qualité et la maintenance du code sont un travail partagé. Lors de la réalisation de nouvelles demandes de fonctionnalités, l’équipe de la plateforme cloud doit chercher à améliorer le code en supprimant la duplication et en clarifiant le code. L’exécution de tests entre la création de code et la refactorisation du code source est fortement suggérée.
 - **Déployer la zone d’atterrissage :** Une fois que le code source est capable de remplir la demande de fonctionnalité, déployez la zone d’atterrissage modifiée sur le fournisseur de cloud dans un environnement de test contrôlé ou de bac à sable (sandbox).
@@ -53,9 +53,9 @@ Pour un effort de migration initial, la définition de Terminé peut être trop 
 - La zone d’atterrissage initiale sera utilisée pour héberger 10 charges de travail à des fins d’apprentissage initial. Ces charges de travail ne sont pas essentielles pour l’entreprise et n’ont pas accès aux données sensibles. À l’avenir, il est probable que ces charges de travail soient mises en production, mais leur caractère critique et sensible ne changera probablement pas. Pour prendre en charge ces charges de travail, l’équipe chargée de l’adoption du cloud doit respecter les critères suivants :
 
 - Segmentation de réseau à aligner avec la conception de réseau proposée.
-- Accès aux ressources de calcul, de stockage et de mise en réseau pour héberger les charges de travail alignées sur la découverte de domaine numérique
+- Accès aux ressources de calcul, de stockage et de mise en réseau pour héberger les charges de travail alignées sur la découverte de domaine numérique.
 - Schéma d’attribution de noms et de marquage pour une utilisation plus simple.
-- Cet environnement doit être traité comme une « zone démilitarisée (DMZ) » avec accès à l’Internet public
+- Cet environnement doit être traité comme une « _zone démilitarisée (DMZ)_  » avec accès à l’Internet public.
 - Au cours des efforts d’adoption, l’équipe d’adoption du cloud souhaiterait un accès temporaire à l’environnement pour modifier les configurations de service.
 - À des fins de sensibilisation uniquement : Avant la version de production, ces charges de travail nécessitent une intégration avec le fournisseur d’identité d’entreprise pour régir l’identité et l’accès en continu à des fins de gestion des opérations. C’est à ce moment que l’accès de l’équipe d’adoption du cloud doit être révoqué.
 

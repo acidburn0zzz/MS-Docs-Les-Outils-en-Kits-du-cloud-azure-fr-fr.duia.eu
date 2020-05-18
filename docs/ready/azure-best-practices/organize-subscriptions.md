@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 79ba055381ccdcb5a70fb24f5da3554a8652fc97
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7f232b6af4dc501b775d99a567cdca11dc0500a2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998015"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223420"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>Organiser et gérer plusieurs abonnements Azure
 
@@ -22,7 +22,7 @@ Si vous disposez de quelques abonnements seulement, les gérer de manière indé
 
 Les groupes d’administration Azure permettent une gestion efficace des accès, des stratégies et de la conformité des abonnements d’une organisation. Chaque groupe d’administration est un conteneur pour un ou plusieurs abonnements.
 
-Les groupes d’administration sont organisés dans une hiérarchie unique. Vous définissez cette hiérarchie dans votre locataire Azure Active Directory (Azure AD) pour l’aligner sur la structure et les besoins de votre organisation. Le niveau supérieur est appelé le *groupe d’administration racine*. Vous pouvez définir jusqu’à six niveaux de groupes d’administration dans votre hiérarchie. Chaque abonnement est contenu dans un seul groupe d’administration.
+Les groupes d’administration sont organisés dans une hiérarchie unique. Vous définissez cette hiérarchie dans votre locataire Azure Active Directory (Azure AD) pour l’aligner sur la structure et les besoins de votre organisation. Le niveau supérieur est appelé le _groupe d’administration racine_. Vous pouvez définir jusqu’à six niveaux de groupes d’administration dans votre hiérarchie. Chaque abonnement est contenu dans un seul groupe d’administration.
 
 Azure propose quatre niveaux d’étendue de la gestion :
 
@@ -57,7 +57,7 @@ Si vous envisagez un développement de votre environnement Azure, vous devez cr�
 Voici quelques exemples de base de l’utilisation de groupes d’administration pour séparer différentes charges de travail :
 
 - **Charges de travail de production et non-production :** Utilisez les groupes d’administration pour gérer plus facilement les différents rôles et les différentes stratégies entre les abonnements de production et les abonnements de non-production. Par exemple, les abonnements de non-production peuvent accorder aux développeurs un accès de contributeur tandis que les développeurs en production disposent d’un accès de lecteur.
-- **Services internes et services externes :** Les entreprises ont souvent des besoins, des stratégies et des rôles différents pour les services internes et les services externes destinés aux clients.
+- **Services internes et services externes :** Les entreprises ont souvent des besoins, des stratégies et des rôles différents pour les services internes et les services externes destinés aux clients.
 
 ## <a name="related-resources"></a>Ressources associées
 

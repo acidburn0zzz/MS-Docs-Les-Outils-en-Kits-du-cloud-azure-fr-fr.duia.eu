@@ -7,18 +7,20 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 396fecb03210980cae4c4f14cc6afcee331c3034
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4e3c9b7e924f1285389430ea9aae93cdecffea89
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997577"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222009"
 ---
+<!-- cSpell:ignore Getting Started -->
+
 # <a name="skills-readiness-for-cloud-migration"></a>Préparation aux compétences pour la migration vers le cloud
 
 Lors d’une migration vers le cloud, il est probable que les employés et même certains partenaires d’intégration de systèmes ou partenaires de services managés en place devront développer de nouvelles compétences pour être efficaces lors des efforts de migration.
 
-Quatre processus distincts sont effectués de façon itérative pendant la phase de migration lors de tout parcours de migration. Les sections suivantes permettent d’aligner les compétences nécessaires à chacun de ces processus avec les références aux deux prérequis pour les ressources de développement de compétence.
+Quatre processus distincts sont effectués de façon itérative dans la méthodologie Migration. Les sections suivantes permettent d’aligner les compétences nécessaires à chacun de ces processus avec les références aux deux prérequis pour les ressources de développement de compétence.
 
 ## <a name="prerequisites-skilling-resources"></a>Ressources de développement de compétences prérequises
 

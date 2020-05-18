@@ -7,18 +7,18 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3731564f5f481f62cd461a9742eb8416e182b550
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e5407f2f78942d22c5fa07b277f600d5440ddc04
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427876"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214019"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Chronologies d’un plan d’adoption du cloud
 
 Dans l’article précédent de cette série, les charges de travail et les tâches étaient attribuées aux [mises en production et aux itérations](./iteration-paths.md). Ces attributions alimentent les estimations de chronologie dans cet article.
 
-Les structures de répartition du travail (WBS) sont couramment utilisées dans les outils de gestion de projets séquentiels. Elles représentent la façon dont les tâches dépendantes sont effectuées dans le temps. De telles structures fonctionnent bien lorsque les tâches sont séquentielles par nature. Les interdépendances des tâches dans l’adoption du cloud rendent ces structures difficiles à gérer. Pour combler cette lacune, vous pouvez estimer les chronologies en fonction des attributions de chemin d’itération en masquant la complexité.
+Les structures de répartition du travail sont couramment utilisées dans les outils de gestion de projets séquentiels. Elles représentent la façon dont les tâches dépendantes sont effectuées dans le temps. De telles structures fonctionnent bien lorsque les tâches sont séquentielles par nature. Les interdépendances des tâches dans l’adoption du cloud rendent ces structures difficiles à gérer. Pour combler cette lacune, vous pouvez estimer les chronologies en fonction des attributions de chemin d’itération en masquant la complexité.
 
 ## <a name="estimate-timelines"></a>Estimer les chronologies
 
@@ -30,4 +30,6 @@ Quel que soit le niveau de granularité, utilisez le dernier jour de l’itérat
 
 ## <a name="delivery-plans-in-azure-devops"></a>Plans de livraison dans Azure DevOps
 
-Si vous utilisez Azure DevOps pour gérer votre plan d’adoption du cloud, envisagez d’utiliser l’[extension Plans de livraison Microsoft](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans). Cette extension permet de créer rapidement une représentation visuelle de la chronologie basée sur les attributions d’itération et de mise en production.
+<!-- docsTest:ignore "Microsoft Delivery Plans" -->
+
+Si vous utilisez Azure DevOps pour gérer votre plan d’adoption du cloud, envisagez d’avoir recours à [l’extension Plans de livraison Microsoft](https://marketplace.visualstudio.com/items?itemname=ms.vss-plans). Cette extension permet de créer rapidement une représentation visuelle de la chronologie basée sur les attributions d’itération et de mise en production.

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9647b2e7a32cd1374390e8849b62b41580284163
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9347c0c9517327dfa01bc49e344dfcc8ed90e60d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809155"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219714"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -20,14 +20,14 @@ ms.locfileid: "80809155"
 
 Vous devez effectuer ces deux tâches pour intégrer les services de gestion de serveur Azure dans vos serveurs :
 
-- Déployer des agents de service sur vos serveurs
-- Activer les solutions de gestion
+- Déployer des agents de service sur vos serveurs.
+- Activer les solutions de gestion.
 
 Cet article aborde les trois processus suivants nécessaires pour effectuer ces tâches :
 
-1. Déployer les agents requis sur des machines virtuelles Azure à l’aide d’Azure Policy
-1. Déployer les agents requis sur les serveurs locaux
-1. Activer et configurer les solutions
+1. Déployer les agents requis sur des machines virtuelles Azure à l’aide d’Azure Policy.
+1. Déployer les agents requis sur les serveurs locaux.
+1. Activer et configurer les solutions.
 
 > [!NOTE]
 > Créez l’[espace de travail Log Analytics et le compte Azure Automation](./prerequisites.md#create-a-workspace-and-automation-account) requis avant d’intégrer des machines virtuelles dans des services de gestion de serveur Azure.
@@ -39,8 +39,8 @@ Toutes les solutions de gestion décrites dans [Outils et services d’administr
 Azure Policy dispose d’une [initiative de stratégie](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives) intégrée qui inclut l’agent Log Analytics et [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), requis par Azure Monitor pour machines virtuelles.
 
 <!-- TODOBACKLOG: Add these when available.
-- [Preview]: Enable Azure Monitor for virtual machine scale sets.
-- [Preview]: Enable Azure Monitor for VMs.
+**Preview:** Enable Azure Monitor for virtual machine scale sets.
+**Preview:** Enable Azure Monitor for VMs.
  -->
 
 > [!NOTE]

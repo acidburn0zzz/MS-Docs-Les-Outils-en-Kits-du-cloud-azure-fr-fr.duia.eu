@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 97f8a82295a8eff5614c965ba583fcbf8d50f501
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 835614ca30fc4fc5ca3e617e920f46aa4039cd8b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434588"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220360"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Amélioration de la discipline Accélération du déploiement
 
@@ -23,9 +23,9 @@ Cet article décrit certaines tâches potentielles que votre entreprise peut ent
 
 ![Quatre phases d’adoption](../../_images/govern/adoption-phases.png)
 
-*Figure 1 - Phases d’adoption de l’approche incrémentielle de la gouvernance cloud.*
+_Figure 1 : Phases d’adoption de l’approche incrémentielle de la gouvernance cloud._
 
-Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [produit minimum viable (MVP) de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance cloud devra décider combien investir dans ces activités pour améliorer vos fonctionnalités de gouvernance de base de référence des identités.
+Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [produit minimum viable (MVP) de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance cloud devra décider combien investir dans ces activités pour améliorer vos fonctionnalités de discipline de ligne de base des identités.
 
 > [!CAUTION]
 > Les activités minimales ou potentielles décrites dans cet article ne correspondent pas spécialement à des stratégies d’entreprise spécifiques ou à des exigences de conformité de tiers. Ces conseils visent à favoriser les échanges qui conduiront à un alignement des deux exigences avec un modèle de gouvernance cloud.
@@ -38,7 +38,7 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 
 - Évaluez vos options de [chaîne d’outils d’accélération du déploiement](./toolchain.md) et implémentez une stratégie hybride appropriée pour votre organisation.
 - Élaborer un brouillon de recommandations relatives à l’architecture et distribuer ce document aux principales parties prenantes.
-- Sensibiliser et impliquer les personnes et les équipes concernées par le développement des recommandations relatives à l’architecture.
+- Formez et impliquez les personnes et les équipes concernées par le développement des instructions relatives à l'architecture.
 - Formez le personnel informatique et les équipes de développement pour qu’elles comprennent les stratégies et les principes DevSecOps, ainsi que l’importance des déploiements intégralement automatisés dans la discipline Accélération du déploiement.
 
 **Activités potentielles :**
@@ -82,7 +82,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 
 **Activités minimales suggérées :**
 
-- Personnalisez votre [chaîne d’outils d’accélération du déploiement](./toolchain.md) en fonction des changements résultant de l’évolution des besoins en matière d’identité de votre organisation.
+- Personnalisez votre [chaîne d’outils d’accélération du déploiement](./toolchain.md) en fonction de l’évolution des besoins de votre organisation.
 - Automatisez les notifications et les rapports pour vous avertir des problèmes de configuration ou menaces potentiels.
 - Analysez et créez des rapports sur l’utilisation des ressources et des applications.
 - Générez des rapports sur les métriques post-déploiement et distribuez-les aux parties prenantes.
@@ -97,7 +97,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À présent que vous avez compris le concept de gouvernance des identités cloud, examinez la [chaîne d’outils de base de référence des identités](./toolchain.md) pour identifier les outils et fonctionnalités Azure dont vous aurez besoin lors du développement de la discipline de gouvernance Base de référence des identités sur la plateforme Azure.
+À présent que vous avez compris le concept de gouvernance des identités cloud, examinez la [chaîne d’outils de base de référence des identités](./toolchain.md) pour identifier les outils et fonctionnalités Azure dont vous aurez besoin lors du développement de votre discipline Base de référence des identités sur la plateforme Azure.
 
 > [!div class="nextstepaction"]
 > [Chaîne d’outils de base de référence des identités pour Azure](./toolchain.md)

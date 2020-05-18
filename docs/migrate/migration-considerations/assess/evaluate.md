@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4321cf289bcab6fbee061fbff27d45fd8d695eac
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ddeea58c9e50327f318640160317556191c26d7f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432797"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216144"
 ---
 # <a name="evaluate-workload-readiness"></a>Évaluer la préparation des charges de travail
 
@@ -33,7 +33,7 @@ Veillez à documenter toutes les incohérences dans la configuration de l’hôt
 
 ## <a name="common-database-evaluation-activities"></a>Activités courantes d’évaluation des bases de données
 
-- Documentez les objectifs de point de récupération et les objectifs de temps de récupération du déploiement de base de données actuel. Ceux-ci sont utilisés dans les [activités d’architecture](./architect.md) pour faciliter la prise de décision.
+- Documentez les objectifs de point de récupération (RPO) et les objectifs de temps de récupération (RTO) du déploiement de base de données actuel. Ils sont utilisés au cours des [activités d’architecture](./architect.md) pour faciliter la prise de décision.
 - Documentez toute exigence relative à la configuration de haute disponibilité. Pour plus d’informations sur la configuration requise pour SQL Server, consultez le [guide des solutions de haute disponibilité SQL Server](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
 - Évaluez la compatibilité PaaS. Le [guide de migration des données Azure](https://datamigration.microsoft.com) mappe des bases de données locales à des solutions PaaS Azure compatibles, telles que [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) ou [Azure DB](https://docs.microsoft.com/azure/sql-database) pour [MySQL](https://docs.microsoft.com/azure/mysql), [PostgreSQL](https://docs.microsoft.com/azure/postgresql) ou [MariaDB](https://docs.microsoft.com/azure/mariadb).
 - Lorsque la compatibilité PaaS est une option sans que cela nécessite de correction, consultez l’équipe responsable des [activités d’architecture](./architect.md). Les migrations PaaS peuvent produire des gains de temps et des réductions importantes dans le coût total de possession (TCO) de la plupart des solutions cloud.
@@ -42,7 +42,7 @@ Veillez à documenter toutes les incohérences dans la configuration de l’hôt
 - Lorsque cela est possible, documentez toutes les applications ou autres ressources qui appellent chaque base de données.
 
 > [!NOTE]
-> La synchronisation de toute ressource consomme de la bande passante pendant les processus de réplication. Un piège très courant consiste à ignorer la consommation de bande passante requise pour maintenir la synchronisation des ressources entre le point de réplication et la mise en production. Les bases de données sont des consommatrices courantes de bande passante pendant les cycles de mise en production, et les bases de données avec des empreintes de stockage importantes ou un taux de change élevé sont particulièrement préoccupantes. Envisagez une approche de réplication de la structure de données, avec des mises à jour contrôlées avant les tests d’acceptation utilisateur (UAT) et la mise en production. Dans de tels scénarios, les alternatives aux Azure Site Recovery peuvent être plus appropriées. Pour plus d’informations, consultez le [guide de migration des données Azure](https://datamigration.microsoft.com).
+> La synchronisation de toute ressource consomme de la bande passante pendant les processus de réplication. Un piège très courant consiste à ignorer la consommation de bande passante requise pour maintenir la synchronisation des ressources entre le point de réplication et la mise en production. Les bases de données sont des consommatrices courantes de bande passante pendant les cycles de mise en production, et les bases de données avec des empreintes de stockage importantes ou un taux de change élevé sont particulièrement préoccupantes. Envisagez une approche de réplication de la structure de données, avec des mises à jour contrôlées avant les tests d’acceptation utilisateur (UAT) et la mise en production. Dans de tels scénarios, les alternatives aux Azure Site Recovery peuvent être plus appropriées. Pour plus d’informations, consultez les instructions du [Guide Azure Database Migration](https://datamigration.microsoft.com).
 
 ## <a name="common-network-evaluation-activities"></a>Activités courantes d’évaluation des bases de données
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7fa026a06f2f42fda09783a29554e2a6c4797fcd
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 52f6c15f2f116c8ef972e38e0123cd8d57985cd5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434416"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220088"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -33,7 +33,7 @@ Depuis, certains changements ont eu lieu et ceux-ci vont avoir un impact sur la 
 
 - L’identité est contrôlée par une instance locale d’Active Directory. L’identité hybride est facilitée grâce à la réplication vers Azure Active Directory.
 - Les opérations informatiques ou opérations cloud sont principalement gérées par Azure Monitor et les autres fonctionnalités d’automatisation associées.
-- La continuité d’activité et reprise d’activité (BCDR) sont contrôlées par des instances Azure Vault.
+- La continuité d’activité et reprise d’activité (BCDR) sont contrôlées par des coffres Azure Recovery Services.
 - Azure Security Center est utilisé pour superviser les attaques et les violations de sécurité.
 - Azure Security Center et Azure Monitor sont tous les deux utilisés pour superviser la gouvernance du cloud.
 - Azure Blueprints, Azure Policy et des groupes d’administration sont utilisés pour automatiser la conformité à la stratégie.

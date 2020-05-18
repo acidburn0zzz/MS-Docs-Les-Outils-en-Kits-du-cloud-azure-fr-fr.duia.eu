@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ff7b8669d71f72b87bbfcc3377dc5bf439311987
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3f664aa94228da83ee86fd51392958341269c1e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995282"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214733"
 ---
 # <a name="cloud-governance-guides"></a>Guides de gouvernance cloud
 
-Les guides de gouvernance actionnables de cette section illustrent l’approche incrémentielle du modèle de gouvernance du Framework d’adoption du cloud, basée sur la [méthodologie de gouvernance](../methodology.md) décrite précédemment. Vous pouvez établir une approche agile de la gouvernance cloud capable d’évoluer pour répondre aux besoins de n’importe quel scénario de gouvernance cloud.
+Les guides de gouvernance actionnables de cette section illustrent l’approche incrémentielle du modèle de gouvernance Cloud Adoption Framework, qui s’appuie sur la [méthodologie Gouvernance](../methodology.md) décrite précédemment. Vous pouvez établir une approche agile de la gouvernance cloud capable d’évoluer pour répondre aux besoins de n’importe quel scénario de gouvernance cloud.
 
 ## <a name="review-and-adopt-cloud-governance-best-practices"></a>Découvrir et adopter les meilleures pratiques en matière de gouvernance cloud
 
@@ -67,8 +67,11 @@ Les différents guides montrent comment implémenter un MVP de gouvernance. Ensu
 
 Pour entamer un parcours de gouvernance, choisissez l’une des deux options ci-dessous. Les options s’appuient sur des expériences client synthétisées. Les titres évoquent la complexité de l’entreprise pour faciliter votre navigation. Toutefois, il se peut que la décision du lecteur soit plus complexe. Les tableaux suivants dressent la liste des différences entre ces deux options :
 
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+
 > [!WARNING]
-> Un point de départ de gouvernance plus robuste peut être nécessaire. Dans ce cas, examinez l’approche [Centre de données virtuel Azure](#azure-virtual-datacenter) décrite brièvement [ci-dessous](#azure-virtual-datacenter). Cette approche est généralement conseillée lors d’un projet d’adoption à l’échelle de l’entreprise, en particulier si ce projet dépasse 10 000 ressources. C’est également la meilleure option pour les scénarios de gouvernance complexes lorsqu’une des conditions suivantes est requise : exigences de conformité étendues de la part de tiers, expertise approfondie du domaine, ou parité avec des stratégies de gouvernance et des exigences de conformité informatique éprouvées.
+> Un point de départ de gouvernance plus robuste peut être nécessaire. Dans ce cas, examinez l’approche [Centre de données virtuel Azure](#azure-virtual-datacenter) décrite brièvement [ci-dessous](#azure-virtual-datacenter). Cette approche est généralement conseillée lors d’un projet d’adoption à l’échelle de l’entreprise, en particulier si ce projet dépasse 10 000 ressources. C’est également la solution par défaut pour les scénarios de gouvernance complexes lorsqu’une des conditions suivantes est requise : exigences de conformité étendues de la part de tiers, expertise approfondie du domaine ou parité avec des exigences de conformité et des stratégies de gouvernance informatique éprouvées.
 
 <!-- markdownlint-disable MD028 -->
 
@@ -96,8 +99,8 @@ Pour entamer un parcours de gouvernance, choisissez l’une des deux options ci-
 
 | State | Organisation standard | Entreprise complexe |
 |---|---|---|
-| Gestion des coûts – comptabilité cloud | Modèle de récupération des données de facturation. Facturation informatique centralisée. | Modèle de rétrofacturation. La facturation peut être répartie en fonction de l’approvisionnement informatique. |
-| Ligne de base de sécurité – données protégées | Données financières de l’entreprise et adresse IP. Données client limitées. Aucune exigence en matière de conformité des tiers. | Plusieurs ensembles de données financières et personnelles des clients. Conformité des tiers à envisager. |
+| Gestion des coûts &mdash; comptabilité cloud | Modèle de récupération des données de facturation. Facturation informatique centralisée. | Modèle de rétrofacturation. La facturation peut être répartie en fonction de l’approvisionnement informatique. |
+| Base de référence de sécurité &mdash; données protégées | Données financières de l’entreprise et adresse IP. Données client limitées. Aucune exigence en matière de conformité des tiers. | Plusieurs ensembles de données financières et personnelles des clients. Conformité des tiers à envisager. |
 
 ## <a name="azure-virtual-datacenter"></a>Centre de données virtuel Azure
 
@@ -114,8 +117,8 @@ Un centre de données virtuel peut être considéré comme votre propre cloud is
 Même si des équipes restreintes peuvent bénéficier des modèles et des suggestions du Centre de données virtuel Azure, cette approche est conçue pour guider les services informatiques d’entreprise qui gèrent de grands environnements cloud. Les entreprises qui répondent aux critères suivants devraient suivre les recommandations du Centre de données virtuel Azure lors de la conception de leur infrastructure cloud basée sur Azure :
 
 - Votre entreprise est soumise à des exigences de conformité réglementaire nécessitant des capacités centralisées de surveillance et d’audit.
-- Vous devez maintenir une conformité commune aux stratégies et à la gouvernance et un contrôle informatique central sur les principaux services.
-- Votre secteur dépend d’une plateforme complexe qui nécessite des contrôles complexes et une expertise approfondie du domaine pour gouverner la plateforme. C’est le plus courant dans les grandes entreprises des secteurs de la finance, du pétrole ou de l’industrie.
+- Vous devez maintenir une conformité de stratégie et de gouvernance commune et un contrôle informatique central sur les principaux services.
+- Votre secteur dépend d’une plateforme complexe qui nécessite des contrôles complexes et une expertise approfondie du domaine pour gouverner la plateforme. C’est particulièrement courant dans les grandes entreprises des secteurs de la finance, de l’industrie et du pétrole.
 - Vos stratégies de gouvernance informatique existantes exigent une parité plus étroite avec les fonctionnalités existantes, même pendant la phase initiale d’adoption.
 
 Pour plus d’informations, consultez la section [Centre de données virtuel Azure](../../reference/vdc.md) du Framework d’adoption cloud.

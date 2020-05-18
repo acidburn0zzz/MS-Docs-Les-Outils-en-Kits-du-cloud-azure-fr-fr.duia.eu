@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 12b1a578c98a2c870306d9bc5b3587477adbb3d3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6d777a1c919e72c55d8c6202ef1c32f44d9444d9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430347"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219476"
 ---
 <!-- cSpell:ignore jenhayes -->
 
@@ -29,7 +29,7 @@ Nous vous recommandons d’utiliser un seul locataire Azure AD pour votre organi
 
 Lorsqu’une architecture multilocataire est nécessaire, [Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/overview) offre un moyen de centraliser et de simplifier les opérations de gestion. Les abonnements de plusieurs locataires peuvent être intégrés pour la [gestion des ressources déléguées Azure](https://docs.microsoft.com/azure/lighthouse/concepts/azure-delegated-resource-management). Cette option permet aux utilisateurs spécifiés du locataire gérant pour effectuer [des fonctions de gestion inter-locataires](https://docs.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience) de manière centralisée et évolutive.
 
-Par exemple, supposons que votre organisation dispose d’un seul locataire, *Locataire A* (Tenant A). L’organisation acquiert ensuite deux locataires supplémentaires, *Locataire B* (Tenant B) et *Locataire C* (Tenant C), et vous avez des raisons métier qui vous demandent d’assurer la maintenance en tant que locataires distincts.
+Par exemple, supposons que votre organisation dispose d’un seul locataire, `Tenant A`. L’organisation acquiert ensuite deux locataires supplémentaires, `Tenant B` et `Tenant C`, et vous avez des raisons métier qui vous demandent d’assurer la maintenance en tant que locataires distincts.
 
 Votre organisation souhaite utiliser les mêmes définitions de stratégie, pratiques de sauvegarde et processus de sécurité sur tous les locataires. Étant donné que vous avez déjà des utilisateurs (notamment des groupes d’utilisateurs et des principaux de service) qui sont chargés de l’exécution de ces tâches dans le Locataire A, vous pouvez intégrer tous les abonnements du Locataire B et du Locataire C afin que ces mêmes utilisateurs du Locataire A puissent exécuter ces tâches. Le locataire A devient alors le locataire gestionnaire pour le locataire B et le locataire C.
 

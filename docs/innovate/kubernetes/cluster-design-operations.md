@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d48a451a9cb6bcedb4f680701f9a6752df24e6a3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527177"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223981"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -37,7 +37,7 @@ Pour bien démarrer, la liste de contrôle et les ressources ci-dessous vous aid
 >
 > | Liste de contrôle  | Ressources |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Identifiez les considérations relatives à la conception réseau.** Familiarisez-vous avec les considérations relatives à la conception du réseau de clusters, comparez les modèles de réseau et choisissez le plug-in de mise en réseau Kubernetes adapté à vos besoins.    | [Kubenet et Azure Container Networking Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Utiliser la mise en réseau kubenet avec vos propres plages d’adresses IP dans Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Configurer un réseau Azure CNI dans AKS (Azure Kubernetes Service)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Conception d’un réseau sécurisé pour un cluster AKS](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
+> | **Identifiez les considérations relatives à la conception réseau.** Familiarisez-vous avec les considérations relatives à la conception du réseau de clusters, comparez les modèles de réseau et choisissez le plug-in de mise en réseau Kubernetes adapté à vos besoins.    | [Kubenet et Azure Container Networking Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Utiliser la mise en réseau kubenet avec vos propres plages d’adresses IP dans Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Configurer un réseau Azure CNI dans AKS (Azure Kubernetes Service)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Conception d’un réseau sécurisé pour un cluster AKS](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
 > | **Créez plusieurs pools de nœuds.** Pour prendre en charge les applications qui ont des exigences de calcul ou de stockage différentes, vous pouvez éventuellement configurer votre cluster avec plusieurs pools de nœuds. Par exemple, utilisez des pools de nœuds supplémentaires afin de fournir des GPU pour les applications nécessitant beaucoup de ressources système ou d’accéder à un stockage SSD hautes performances.   | [Créer et gérer plusieurs pools de nœuds pour un cluster dans Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
 > | **Déterminez les exigences en matière de disponibilité.** Pour offrir un niveau de disponibilité plus élevé à vos applications, les clusters peuvent être répartis sur plusieurs zones de disponibilité. Ces zones représentent des centres de données physiquement séparés au sein d’une région donnée. Quand les composants du cluster sont répartis sur plusieurs zones, votre cluster est capable de tolérer une défaillance dans l’une de ces zones. Vos applications et vos opérations de gestion restent disponibles même si un centre de données complet rencontre un problème.   | [Créer un cluster Azure Kubernetes Service (AKS) qui utilise des zones de disponibilité](https://docs.microsoft.com/azure/aks/availability-zones) |
 
@@ -54,11 +54,11 @@ Lors de la préparation de l’application pour la production, vous devez implé
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Liste de contrôle  | Ressources                                                                                                     |
-> |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Automatisez le provisionnement des clusters.** Avec l’infrastructure en tant que code, vous pouvez automatiser le provisionnement de l’infrastructure afin d’offrir une plus grande résilience pendant les sinistres et gagner en agilité pour redéployer rapidement l’infrastructure en fonction des besoins.     | [Créer un cluster Kubernetes avec Azure Kubernetes Service et Terraform](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks)|
-> | **Planifiez la disponibilité à l’aide de budgets de perturbation de pod.** Pour assurer la disponibilité des applications, définissez des budgets de perturbation de pod afin de vous assurer qu’un nombre minimal de pods est disponible dans le cluster pendant les défaillances matérielles ou les mises à niveau de cluster. | [Planifier la disponibilité à l’aide de budgets de perturbation de pod](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets)  |
-> | **Appliquez des quotas de ressources sur les espaces de noms.** Planifiez et appliquez des quotas de ressources au niveau de l’espace de noms. Vous pouvez définir des quotas sur les ressources de calcul, les ressources de stockage et le nombre d’objets.| [Appliquer des quotas de ressources](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas)  |
+> | Liste de contrôle  | Ressources |
+> |---|---|
+> | **Automatisez le provisionnement des clusters.** Avec l’infrastructure en tant que code, vous pouvez automatiser le provisionnement de l’infrastructure afin d’offrir une plus grande résilience pendant les sinistres et gagner en agilité pour redéployer rapidement l’infrastructure en fonction des besoins. | [Créer un cluster Kubernetes avec Azure Kubernetes Service et Terraform](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks) |
+> | **Planifiez la disponibilité à l’aide de budgets de perturbation de pod.** Pour assurer la disponibilité des applications, définissez des budgets de perturbation de pod afin de vous assurer qu’un nombre minimal de pods est disponible dans le cluster pendant les défaillances matérielles ou les mises à niveau de cluster. | [Planifier la disponibilité à l’aide de budgets de perturbation de pod](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets) |
+> | **Appliquez des quotas de ressources sur les espaces de noms.** Planifiez et appliquez des quotas de ressources au niveau de l’espace de noms. Vous pouvez définir des quotas sur les ressources de calcul, les ressources de stockage et le nombre d’objets. | [Appliquer des quotas de ressources](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas) |
 
 ## <a name="optimize-and-scale"></a>Optimiser et mettre à l’échelle
 

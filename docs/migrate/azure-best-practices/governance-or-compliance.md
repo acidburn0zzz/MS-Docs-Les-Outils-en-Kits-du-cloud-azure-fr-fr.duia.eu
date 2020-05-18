@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 35e7f2a09dd1421f0d57808658a96135dcf8e947
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b07ded7b1d2ede7bc354709a798180daedfdae3b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997599"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216161"
 ---
 # <a name="governance-or-compliance-strategy"></a>Stratégie de gouvernance ou de conformité
 
@@ -30,11 +30,14 @@ La configuration de l’environnement Azure de base peut changer considérableme
 
 **Blueprints de conformité ISO 27001 :** Pour les clients qui doivent adhérer aux normes de conformité ISO, les [exemples de blueprint de services partagés ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared) peuvent servir de MVP plus efficace pour produire des contraintes de gouvernance plus riches plus tôt dans le processus itératif. L’[exemple App Service Environment/SQL Database ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) se développe sur le blueprint pour mapper les contrôles et déployer une architecture commune pour un environnement d’application. Des blueprints de conformité supplémentaires seront référencés ici à mesure de leur publication.
 
-**Centre de données virtuel :** Un point de départ de gouvernance plus robuste peut être nécessaire. Dans de tels cas, examinez le [Centre de données virtuel (VDC) Azure](../../reference/vdc.md). Cette approche est généralement conseillée lors d’un projet d’adoption à l’échelle de l’entreprise, en particulier si ce projet dépasse 10 000 ressources. C’est également la meilleure option pour les scénarios de gouvernance complexes lorsqu’une des conditions suivantes est requise : exigences de conformité étendues de la part de tiers, expertise approfondie du domaine, ou parité avec des stratégies de gouvernance et des exigences de conformité informatique éprouvées.
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+
+**Centre de données virtuel Azure :** Un point de départ de gouvernance plus robuste peut être nécessaire. Dans de tels cas, examinez le [Centre de données virtuel (VDC) Azure](../../reference/vdc.md). Cette approche est généralement conseillée lors d’un projet d’adoption à l’échelle de l’entreprise, en particulier si ce projet dépasse 10 000 ressources. C’est également la solution par défaut pour les scénarios de gouvernance complexes lorsqu’une des conditions suivantes est requise : exigences de conformité étendues de la part de tiers, expertise approfondie du domaine ou parité avec des exigences de conformité et des stratégies de gouvernance informatique éprouvées.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Option de partenariat pour remplir les prérequis
 
-**Services Microsoft :** Les services Microsoft fournissent des offres de solutions qui peuvent s’aligner sur le modèle de gouvernance du Framework d’adoption du cloud, les blueprints de conformité ou les options Centre de données virtuel pour garantir le modèle de gouvernance ou de conformité le plus approprié. Utilisez l’offre de solutions [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) pour établir une image basée sur les données d’un déploiement client dans Azure, valider la maturité de l’implémentation Azure du client tout en identifiant l’optimisation des architectures de déploiement existantes et supprimer les risques relatifs à la disponibilité et à la sécurité de la gouvernance. Selon les insights des clients, vous devriez adopter les approches suivantes :
+**Services Microsoft :** Les services Microsoft fournissent des offres de solutions qui peuvent s’aligner sur le modèle de gouvernance du Framework d’adoption du cloud, les blueprints de conformité ou les options Centre de données virtuel pour garantir le modèle de gouvernance ou de conformité le plus approprié. Utilisez l’offre de solutions [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) pour brosser un tableau axé sur les données d’un déploiement client dans Azure, valider la maturité de l’implémentation Azure du client tout en identifiant l’optimisation des architectures de déploiement existantes et supprimer les risques relatifs à la disponibilité et à la sécurité de la gouvernance. Selon les insights des clients, vous devriez adopter les approches suivantes :
 
 - **Fondation du cloud :** Établissez les conceptions, les modèles et l’architecture de gouvernance Azure essentiels du client à l’aide de l’offre de solutions [Hybride Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf). Mappez les exigences du client à l’architecture de référence la plus appropriée. Implémentez un produit minimum viable constitué de services partagés et de charges de travail IaaS.
 - **Modernisation du cloud :** Utilisez l’offre de solutions [Cloud Modernisation](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) comme approche complète pour déplacer des applications; des données et des infrastructures vers un cloud de classe Entreprise, ainsi que pour optimiser et moderniser après le déploiement dans le cloud.
@@ -48,19 +51,19 @@ Pendant l’évaluation, des décisions supplémentaires sont requises pour s’
 
 Les exigences en matière d’évaluation de la gouvernance et de la conformité sont trop spécifiques au client pour fournir des indications générales sur les étapes réellement effectuées pendant l’évaluation. Cependant, le processus doit inclure des tâches et du temps alloué pour « l’alignement sur les exigences de conformité/gouvernance ». Pour une compréhension plus approfondie de ces exigences, consultez les liens suivants :
 
-Pour une compréhension plus approfondie de la gouvernance, consultez la [vue d’ensemble des cinq disciplines de la gouvernance cloud](../../govern/governance-disciplines.md). Cette section du Framework d’adoption du cloud comprend également des modèles pour documenter les stratégies, les recommandations et les exigences de chacune des cinq sections :
+Pour une compréhension plus approfondie de la gouvernance, consultez la vue d’ensemble des [Cinq disciplines de la gouvernance cloud](../../govern/governance-disciplines.md). Cette section de Cloud Adoption Framework comprend des modèles permettant de documenter les stratégies, les instructions et les exigences de chacune des cinq sections :
 
-- [Cost Management](../../govern/cost-management/template.md)
-- [Base de référence de la sécurité](../../govern/security-baseline/template.md)
-- [Cohérence des ressources](../../govern/resource-consistency/template.md)
-- [Base de référence des identités](../../govern/identity-baseline/template.md)
-- [Accélération du déploiement](../../govern/deployment-acceleration/template.md)
+- [Discipline Gestion des coûts](../../govern/cost-management/template.md)
+- [Discipline Base de référence de sécurité](../../govern/security-baseline/template.md)
+- [Discipline Cohérence des ressources](../../govern/resource-consistency/template.md)
+- [Discipline Base de référence des identités](../../govern/identity-baseline/template.md)
+- [Discipline Accélération du déploiement](../../govern/deployment-acceleration/template.md)
 
-Pour obtenir des conseils sur l’élaboration d’une gouvernance basée sur le modèle de gouvernance du Framework d’adoption du cloud, consultez [Implémentation d’une stratégie de gouvernance cloud](../../govern/corporate-policy.md).
+Pour plus d’informations sur l’élaboration d’instructions de gouvernance à partir du modèle de gouvernance Cloud Adoption Framework, consultez [Implémentation d’une stratégie de gouvernance cloud](../../govern/corporate-policy.md).
 
 ## <a name="optimize-and-promote-process-changes"></a>Changements aux processus d’optimisation et de promotion
 
-Au cours des processus d’optimisation et de promotion, l’équipe de gouvernance cloud doit consacrer le temps nécessaire pour tester et valider l’adhésion aux standards de gouvernance et de conformité. En outre, cette étape est un bon moment pour injecter des processus afin que l’équipe de gouvernance cloud organise des modèles qui pourraient fournir une [accélération de déploiement](../../govern/deployment-acceleration/index.md) supplémentaire pour les projets à venir.
+Au cours des processus d’optimisation et de promotion, l’équipe de gouvernance cloud doit consacrer le temps nécessaire pour tester et valider l’adhésion aux standards de gouvernance et de conformité. Par ailleurs, cette étape constitue le bon moment pour injecter des processus permettant à l’équipe chargée de la gouvernance cloud d’organiser des modèles qui pourraient fournir une [discipline Accélération du déploiement](../../govern/deployment-acceleration/index.md) supplémentaire pour les projets à venir.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Action suggérée pendant le processus d’optimisation et de promotion
 

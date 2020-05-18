@@ -1,18 +1,18 @@
 ---
 title: Développer votre zone d’atterrissage
-description: Utiliser le Cloud Adoption Framework pour Azure pour apprendre à développer une zone d’atterrissage
+description: Utiliser Cloud Adoption Framework pour Azure afin d’apprendre à développer une zone d’atterrissage.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cbfbadebd635891d680da29091ca572611712e09
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3adb6067ec003b668316b5296f3105d1a09e01a4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120792"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215209"
 ---
 # <a name="expand-your-landing-zone"></a>Développer votre zone d’atterrissage
 

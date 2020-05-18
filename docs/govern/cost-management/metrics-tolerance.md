@@ -1,6 +1,6 @@
 ---
-title: Métriques et indicateurs de tolérance au risque lié à la gestion des coûts
-description: Utilisez le Framework d’adoption du cloud pour Azure pour quantifier les métriques et les indicateurs de tolérance au risque liée à la gestion des coûts par rapport à la gouvernance cloud.
+title: Métriques et indicateurs de tolérance au risque dans la discipline Gestion des coûts
+description: Utilisez le Framework d’adoption du cloud pour Azure pour quantifier les métriques et les indicateurs de tolérance au risque pour la gestion des coûts la gouvernance cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,33 +8,33 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 15b54e847ff5dd6b2d18d4d8c83db5ad7283d803
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a50a03096aad4dd492fc86e574aa7e335c5b178f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434675"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220513"
 ---
-# <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Mesures, indicateurs et tolérance au risque de Cost Management
+# <a name="risk-tolerance-metrics-and-indicators-in-the-cost-management-discipline"></a>Métriques et indicateurs de tolérance au risque dans la discipline Gestion des coûts
 
-Cet article vous aide à quantifier la tolérance au risque de l’entreprise en lien avec Cost Management. La définition de mesures et d’indicateurs vous aide à créer une étude de rentabilité pour investir dans la maturité de la discipline Cost Management.
+Apprenez à quantifier la tolérance aux risques de l’entreprise associée à la discipline Gestion des coûts. La définition de mesures et d’indicateurs vous aide à créer une étude de rentabilité pour investir dans la maturité de cette discipline.
 
 ## <a name="metrics"></a>Mesures
 
-Cost Management met généralement l’accent sur les mesures liées aux coûts. Dans le cadre de votre analyse des risques, vous aurez besoin de collecter des données relatives à vos dépenses actuelles et planifiées liées aux charges de travail cloud afin de déterminer le niveau de risque auquel vous êtes exposé et l’importance des investissements dans la gouvernance des coûts pour votre stratégie d’adoption du cloud.
+La gestion des coûts met généralement l’accent sur les mesures liées aux coûts. Dans le cadre de votre analyse des risques, vous aurez besoin de collecter des données relatives à vos dépenses actuelles et planifiées liées aux charges de travail cloud afin de déterminer le niveau de risque auquel vous êtes exposé et l’importance des investissements dans votre discipline de gestion des coûts pour vos déploiements cloud planifiés.
 
 Voici quelques exemples de métriques utiles que vous devez rassembler pour mieux évaluer la tolérance aux risques dans la discipline Gestion des coûts :
 
 - **Dépenses annuelles :** Coût annuel total des services fournis par un fournisseur de services cloud.
 - **Dépenses mensuelles :** Coût mensuel total des services fournis par un fournisseur de services cloud.
 - **Ratio du prévisionnel par rapport au réel :** Ratio de comparaison des dépenses prévues et des dépenses réelles (mensuelles ou annuelles).
-- **Ratio du rythme d’adoption (MOM) :** Pourcentage du delta dans les coûts du cloud d’un mois à l’autre.
+- **Rapport de rythme d’adoption (mois par mois) :** Pourcentage du delta dans les coûts du cloud d’un mois à l’autre.
 - **Coûts cumulés :** Total de dépenses quotidiennes cumulées, à partir du début du mois.
 - **Tendances des dépenses :** Tendance des dépenses par rapport au budget.
 
 ## <a name="risk-tolerance-indicators"></a>Indicateurs de tolérance au risque
 
-Au cours des déploiements précoces à petite échelle, tels que le développement/les tests ou les premières charges de travail expérimentales, Cost Management est susceptible de présenter un risque relativement faible. À mesure que des ressources sont déployées, le risque augmente et la tolérance au risque de l’entreprise est susceptible de diminuer. De plus, à mesure que les équipes d’adoption du cloud ont la possibilité de configurer ou de déployer des ressources dans le cloud, le risque augmente et la tolérance diminue. À l’inverse, le développement d’une discipline Cost Management nécessite des collaborateurs de la phase d’adoption du cloud pour le déploiement de nouvelles technologies plus innovantes.
+Au cours des déploiements précoces à petite échelle, tels que le développement/les tests ou les premières charges de travail expérimentales, Cost Management est susceptible de présenter un risque relativement faible. À mesure que des ressources sont déployées, le risque augmente et la tolérance au risque de l’entreprise est susceptible de diminuer. De plus, à mesure que les équipes d’adoption du cloud ont la possibilité de configurer ou de déployer des ressources dans le cloud, le risque augmente et la tolérance diminue. À l’inverse, le développement d’une discipline Cost Management nécessite des collaborateurs de la phase d’adoption du cloud pour le déploiement des technologies plus innovantes.
 
 Lors des premières étapes de l’adoption du cloud, vous collaborez avec votre entreprise pour déterminer une base de référence de tolérance au risque. Une fois que vous disposez d’une base de référence, vous devez déterminer les critères qui déclenchent un investissement dans la discipline Cost Management. Ces critères seront probablement différents pour chaque organisation.
 
@@ -49,9 +49,9 @@ Après avoir identifié les [risques métier](./business-risks.md), vous collabo
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle de gestion cloud ](./template.md), documenter les métriques et les indicateurs de tolérance correspondant au plan d’adoption du cloud actuel.
+À l’aide du [modèle de stratégie de gestion des coûts](./template.md), documenter les métriques et les indicateurs de tolérance correspondant au plan d’adoption du cloud actuel.
 
-Considérez les exemples de stratégies de gestion des coûts comme des points de départ permettant de développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
+Considérez les exemples de stratégies de Gestion des coûts comme des points de départ permettant de développer vos propres stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
 > [!div class="nextstepaction"]
 > [Examiner les exemples de stratégies](./policy-statements.md)

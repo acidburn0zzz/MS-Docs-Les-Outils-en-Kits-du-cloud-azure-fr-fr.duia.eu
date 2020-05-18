@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7fa525ae5a2f0a7fe6d2075cd13d2bc9a1b08713
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 703a5152ef47d19ec5eb654f9ba4d83786562d12
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996466"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224389"
 ---
 # <a name="encryption-decision-guide"></a>Guide de décision concernant le chiffrement
 
@@ -36,7 +36,7 @@ Les systèmes modernes de gestion des clés comme Azure Key Vault prennent en ch
 Si vous planifiez une migration vers le cloud, le tableau suivant peut vous aider à choisir comment stocker et gérer les clés de chiffrement, certificats et secrets qui sont essentiels à la création de déploiements cloud sécurisés et faciles à gérer :
 
 | Question | Cloud natif | BYOK (Bring Your Own Key) | Hold Your Own Key |
-|---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
+|--- |--------------|--------|-------------|
 | Manque-t-il un système centralisé de gestion des secrets et des clés à votre organisation ?                                                                    | Oui          | Non     | Non          |
 | Devrez-vous restreindre la création de clés et de secrets sur les appareils locaux lors de l’utilisation de ces clés dans le cloud ? | Non           | Oui    | Non          |
 | Votre organisation a-t-elle mis en place des règles ou des stratégies qui empêchent le stockage hors site des clés ?                | Non           | Non     | Oui         |
@@ -45,7 +45,7 @@ Si vous planifiez une migration vers le cloud, le tableau suivant peut vous aide
 
 Avec la gestion native des clés dans le cloud, l’ensemble des clés et des secrets sont générés, gérés et stockés dans un coffre du cloud, tel qu’Azure Key Vault. Cette approche simplifie de nombreuses tâches informatiques liées à la gestion des clés, comme la sauvegarde, le stockage ou le renouvellement des clés.
 
-L’utilisation d’un système natif de gestion des clés dans le cloud suppose que :
+**Conditions nécessaires pour le cloud natif :** L’utilisation d’un système natif de gestion des clés dans le cloud suppose que :
 
 - Vous faites confiance à la solution cloud de gestion des clés pour créer, gérer et héberger les secrets et les clés de votre organisation.
 - Vous avez activé l’ensemble des applications et des services locaux qui ont besoin des services de chiffrement ou des secrets pour accéder au système de gestion des clés dans le cloud.
@@ -121,10 +121,10 @@ Le chiffrement des données en cours d’utilisation implique la sécurisation d
 
 Pour plus d’informations sur le chiffrement et la gestion des clés dans Azure, consultez :
 
-- [Vue d’ensemble du chiffrement Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview). Description détaillée de la façon dont Azure utilise le chiffrement pour sécuriser les données au repos et les données en transit.
-- [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Key Vault est le principal système de gestion des clés qui permet de stocker et de gérer des clés de chiffrement, des secrets et des certificats dans Azure.
-- [Bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices). Rubrique concernant les bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure.
-- [Informatique confidentielle dans Azure](https://azure.microsoft.com/solutions/confidential-compute). L’informatique confidentielle d’Azure fournit des outils et des technologies pour créer des environnements d’exécution approuvés ou d’autres mécanismes de chiffrement permettant de sécuriser les données en cours d’utilisation.
+- **[Vue d’ensemble du chiffrement Azure ](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview):** Description détaillée de la façon dont Azure utilise le chiffrement pour sécuriser les données au repos et les données en transit.
+- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview) :** Key Vault est le principal système de gestion des clés qui permet de stocker et de gérer des clés de chiffrement, des secrets et des certificats dans Azure.
+- **[Bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices).** Rubrique concernant les bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure.
+- **[Informatique confidentielle dans Azure ](https://azure.microsoft.com/solutions/confidential-compute):** L’informatique confidentielle d’Azure fournit des outils et des technologies pour créer des environnements d’exécution approuvés ou d’autres mécanismes de chiffrement permettant de sécuriser les données en cours d’utilisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

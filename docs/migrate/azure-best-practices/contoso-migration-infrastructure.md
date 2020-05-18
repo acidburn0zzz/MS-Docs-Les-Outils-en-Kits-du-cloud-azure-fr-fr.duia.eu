@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 049de2f62bd2b5bc5720ea1788de7be5d3492b13
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2db5b95fd21fbbfaba4e5d7ad1c1ccad91317c5c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120587"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223777"
 ---
 <!-- cSpell:ignore deltadan CSPs untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -117,7 +117,7 @@ L’octroi et le contrôle de l’accès utilisateur à des ressources Azure ave
 - L’entreprise crée pour cela un annuaire Active Directory basé sur Azure.
 - Comme Contoso n’a pas Office 365, l’entreprise doit provisionner un nouveau Azure AD.
 - Office 365 utilise Azure AD pour la gestion des utilisateurs. Si Contoso utilisait Office 365, l’entreprise aurait déjà un locataire Azure AD pouvant servir de répertoire principal.
-- Découvrez plus en détail [Azure AD pour Office 365](https://docs.microsoft.com/office365/enterprise/about-office-365-identity) et l’[ajout d’un abonnement à un locataire Azure AD existant](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory).
+- Découvrez plus en détail [Azure AD pour Office 365](https://docs.microsoft.com/office365/enterprise/about-office-365-identity) et l’[ajout d’un abonnement à un locataire Azure AD existant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 
 ### <a name="create-an-azure-ad"></a>Créer une application Azure AD
 
@@ -164,7 +164,7 @@ Les administrateurs de Contoso configurent des groupes de ressources Azure comme
 
 **Groupe de ressources** | **Détails**
 --- | ---
-**ContosoCobRG** | Ce groupe contient toutes les ressources liées à la continuité des activités. Il inclut les coffres que Contoso utilise pour le service Azure Site Recovery et le service Sauvegarde Azure.<br/><br/> Il inclut également les ressources utilisées pour la migration, notamment Azure Migrate et Azure Database Migration Service.
+**ContosoCobRG** | Ce groupe contient toutes les ressources liées à la continuité des activités. Il inclut les coffres que Contoso utilise pour le service Azure Site Recovery et le service Sauvegarde Azure. <br><br> Il inclut également les ressources utilisées pour la migration, notamment Azure Migrate et Azure Database Migration Service.
 **ContosoDevRG** | Ce groupe contient des ressources de développement et de test.
 **ContosoFailoverRG** | Ce groupe sert de zone d’accueil pour les ressources basculées.
 **ContosoNetworkingRG** | Ce groupe contient toutes les ressources de mise en réseau.
@@ -223,15 +223,15 @@ Pour faciliter l’intégration, Contoso se sert de [l’outil Azure AD Connect]
 
 Notez les points suivants :
 
-- Contoso dispose d’une connexion directe à Azure. Si votre répertoire Active Directory local se trouve derrière un proxy, lisez cet [article](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity).
-
-- Après la première synchronisation, les objets Active Directory locaux sont visibles dans le répertoire Azure AD.
-
-    ![Répertoire Active Directory local dans Azure](./media/contoso-migration-infrastructure/on-prem-ad-groups.png)
-
-- Le service informatique de Contoso est représenté dans chaque groupe, en fonction de son rôle.
-
-    ![Membres Active Directory locaux dans Azure](./media/contoso-migration-infrastructure/on-prem-ad-group-members.png)
+    - Contoso dispose d’une connexion directe à Azure. Si votre répertoire Active Directory local se trouve derrière un proxy, lisez cet [article](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity).
+    
+    - Après la première synchronisation, les objets Active Directory locaux sont visibles dans le répertoire Azure AD.
+    
+        ![Répertoire Active Directory local dans Azure](./media/contoso-migration-infrastructure/on-prem-ad-groups.png)
+    
+    - Le service informatique de Contoso est représenté dans chaque groupe, en fonction de son rôle.
+    
+        ![Membres Active Directory locaux dans Azure](./media/contoso-migration-infrastructure/on-prem-ad-group-members.png)
 
 ### <a name="set-up-rbac"></a>Configurer le RBAC
 
@@ -302,7 +302,7 @@ Sauvegarde Azure vous permet de sauvegarder et de restaurer des disques de machi
 - Si une panne régionale se produit, Sauvegarde Azure prend également en charge le stockage géoredondant (GRS) en répliquant vos données de sauvegarde dans une région secondaire jumelée.
 - Sauvegarde Azure chiffre les données en transit à l’aide d’AES 256. Les données sauvegardées au repos sont chiffrées à l’aide de [Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
-Contoso utilise Sauvegarde Azure avec GRS sur toutes les machines virtuelles de production pour s’assurer que les données de charge de travail sont sauvegardées et peuvent être restaurées rapidement si une panne ou une autre interruption se produit. Pour plus d’informations, consultez [Vue d’ensemble de Sauvegarde Azure](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
+Contoso utilise Sauvegarde Azure avec GRS sur toutes les machines virtuelles de production pour s’assurer que les données de charge de travail sont sauvegardées et peuvent être restaurées rapidement si une panne ou une autre interruption se produit. Pour plus d’informations, consultez [Vue d’ensemble de Sauvegarde Azure](https://docs.microsoft.com/azure/backup/backup-overview).
 
 ### <a name="set-up-disaster-recovery"></a>Configurer une récupération d'urgence
 
@@ -328,14 +328,14 @@ Une fois la conception des régions définie, Contoso peut élaborer une straté
 
 Contoso a étudié [plusieurs architectures](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) pour créer un réseau hybride entre Azure et le centre de données local. Pour plus d'informations, consultez [Choisir une solution pour connecter un réseau local à Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations).
 
-Pour rappel, l’infrastructure du réseau local de Contoso se compose actuellement du centre de données à New York et de branches locales dans la partie est des États-Unis. Tous les emplacements disposent d’une connexion Internet de qualité professionnelle. Chacune des branches est ensuite connectée au centre de données via un tunnel VPN IPSec sur Internet.
+Pour rappel, l’infrastructure du réseau local de Contoso se compose actuellement du centre de données à New York et de branches locales dans la moitié est des États-Unis. Tous les emplacements disposent d’une connexion Internet de qualité professionnelle. Chacune des branches est ensuite connectée au centre de données via un tunnel VPN IPSec sur Internet.
 
 ![Réseau Contoso](./media/contoso-migration-infrastructure/contoso-networking.png)
 
 Voici comment Contoso a décidé d’implémenter une connectivité hybride :
 
 1. Configurer une nouvelle connexion VPN de site à site entre le centre de données Contoso de New York et les deux régions Azure USA Est 2 et USA Centre.
-2. Le trafic des branches pour les réseaux virtuels Azure sera acheminé via le principal centre de données Contoso.
+2. Le trafic des branches pour les réseaux virtuels dans Azure sera acheminé via le principal centre de données Contoso.
 3. À mesure que Contoso étend son déploiement Azure, l’entreprise établit une connexion ExpressRoute entre le centre de données et les régions Azure. Dans ce cas, Contoso conserve la connexion VPN de site à site pour le basculement uniquement.
     - [En savoir plus](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) sur le choix entre une solution hybride ExpressRoute et VPN.
     - Vérifiez les [emplacements ExpressRoute et la prise en charge](https://docs.microsoft.com/azure/expressroute/expressroute-locations-providers).
@@ -422,44 +422,44 @@ USA Est 2 est la région principale que Contoso utilisera pour déployer des ser
 
 Les réseaux virtuels de la région USA Est 2 sont résumés dans le tableau suivant.
 
-**Réseau virtuel** | **Plage** | **Homologue**
---- | --- | ---
-**VNET-HUB-EUS2** | 10.240.0.0/20 | VNET-HUB-CUS2, VNET-DEV-EUS2, VNET-PROD-EUS2
-**VNET-DEV-EUS2** | 10.245.16.0/20 | VNET-HUB-EUS2
-**VNET-PROD-EUS2** | 10.245.32.0/20 | VNET-HUB-EUS2, VNET-PROD-CUS
+| **Réseau virtuel** | **Plage** | **Homologue** |
+| --- | --- | --- |
+| **VNET-HUB-EUS2** | 10.240.0.0/20 | VNET-HUB-CUS2, VNET-DEV-EUS2, VNET-PROD-EUS2 |
+| **VNET-DEV-EUS2** | 10.245.16.0/20 | VNET-HUB-EUS2 |
+| **VNET-PROD-EUS2** | 10.245.32.0/20 | VNET-HUB-EUS2, VNET-PROD-CUS |
 
 ![Modèle hub-and-spoke dans la région primaire](./media/contoso-migration-infrastructure/primary-hub-peer.png)
 
 #### <a name="subnets-in-the-east-us-2-hub-network-vnet-hub-eus2"></a>Sous-réseaux du réseau hub de la région USA Est 2 (VNET-HUB-EUS2)
 
-**Sous-réseau/zone** | **CIDR** | **Adresses IP utilisables
---- | --- | ---
-**IB-UntrustZone** | 10.240.0.0/24 | 251
-**IB-TrustZone** | 10.240.1.0/24 | 251
-**OB-UntrustZone** | 10.240.2.0/24 | 251
-**OB-TrustZone** | 10.240.3.0/24 | 251
-**GatewaySubnets** | 10.240.10.0/24 | 251
+| **Sous-réseau/zone** | **CIDR** | **Adresses IP utilisables |
+| --- | --- | --- |
+| **IB-UntrustZone** | 10.240.0.0/24 | 251 |
+| **IB-TrustZone** | 10.240.1.0/24 | 251 |
+| **OB-UntrustZone** | 10.240.2.0/24 | 251 |
+| **OB-TrustZone** | 10.240.3.0/24 | 251 |
+| **GatewaySubnets** | 10.240.10.0/24 | 251 |
 
 #### <a name="subnets-in-the-east-us-2-dev-network-vnet-dev-eus2"></a>Sous-réseaux du réseau de développement de la région USA Est 2 (VNET-DEV-EUS2)
 
 Le réseau virtuel de développement est utilisé par l’équipe de développement comme zone de production pilote. Il comporte trois sous-réseaux.
 
-**Sous-réseau** | **CIDR** | **Adresses** | **Dans un sous-réseau**
---- | --- | --- | ---
-**DEV-FE-EUS2** | 10.245.16.0/22 | 1019 | Machines virtuelles frontales/de couche web
-**DEV-APP-EUS2** | 10.245.20.0/22 | 1019 | Machines virtuelles de niveau application
-**DEV-DB-EUS2** | 10.245.24.0/23 | 507 | Machines virtuelles de base de données
+| **Sous-réseau** | **CIDR** | **Adresses** | **Dans un sous-réseau** |
+| --- | --- | --- | --- |
+| **DEV-FE-EUS2** | 10.245.16.0/22 | 1019 | Machines virtuelles frontales/de couche web |
+| **DEV-APP-EUS2** | 10.245.20.0/22 | 1019 | Machines virtuelles de niveau application |
+| **DEV-DB-EUS2** | 10.245.24.0/23 | 507 | Machines virtuelles de base de données |
 
 #### <a name="subnets-in-the-east-us-2-production-network-vnet-prod-eus2"></a>Sous-réseaux du réseau de production de la région USA Est 2 (VNET-PROD-EUS2)
 
 Les composants IaaS Azure sont situés dans le réseau de production. Chaque niveau application a son propre sous-réseau. Les sous-réseaux correspondent à ceux du réseau de développement, avec ajout d’un sous-réseau pour les contrôleurs de domaine.
 
-**Sous-réseau** | **CIDR** | **Adresses** | **Dans un sous-réseau**
---- | --- | --- | ---
-**PROD-FE-EUS2** | 10.245.32.0/22 | 1019 | Machines virtuelles frontales/de couche web
-**PROD-APP-EUS2** | 10.245.36.0/22 | 1019 | Machines virtuelles de niveau application
-**PROD-DB-EUS2** | 10.245.40.0/23 | 507 | Machines virtuelles de base de données
-**PROD-DC-EUS2** | 10.245.42.0/24 | 251 | Machines virtuelles de contrôleur de domaine
+| **Sous-réseau** | **CIDR** | **Adresses** | **Dans un sous-réseau** |
+| --- | --- | --- | --- |
+| **PROD-FE-EUS2** | 10.245.32.0/22 | 1019 | Machines virtuelles frontales/de couche web |
+| **PROD-APP-EUS2** | 10.245.36.0/22 | 1019 | Machines virtuelles de niveau application |
+| **PROD-DB-EUS2** | 10.245.40.0/23 | 507 | Machines virtuelles de base de données |
+| **PROD-DC-EUS2** | 10.245.42.0/24 | 251 | Machines virtuelles de contrôleur de domaine |
 
 ![Architecture réseau du hub](./media/contoso-migration-infrastructure/azure-networks-eus2.png)
 
@@ -476,11 +476,11 @@ La région USA Centre est la région secondaire de Contoso. Voici comment Contos
 
 Les réseaux virtuels de la région USA Centre sont résumés dans le tableau suivant.
 
-**Réseau virtuel** | **Plage** | **Homologue**
---- | --- | ---
-**VNET-HUB-CUS** | 10.250.0.0/20 | VNET-HUB-EUS2, VNET-ASR-CUS, VNET-PROD-CUS
-**VNET-ASR-CUS** | 10.255.16.0/20 | VNET-HUB-CUS, VNET-PROD-CUS
-**VNET-PROD-CUS** | 10.255.32.0/20 | VNET-HUB-CUS, VNET-ASR-CUS, VNET-PROD-EUS2
+| **Réseau virtuel** | **Plage** | **Homologue** |
+| --- | --- | --- |
+| **VNET-HUB-CUS** | 10.250.0.0/20 | VNET-HUB-EUS2, VNET-ASR-CUS, VNET-PROD-CUS |
+| **VNET-ASR-CUS** | 10.255.16.0/20 | VNET-HUB-CUS, VNET-PROD-CUS |
+| **VNET-PROD-CUS** | 10.255.32.0/20 | VNET-HUB-CUS, VNET-ASR-CUS, VNET-PROD-EUS2 |
 
 ![Modèle hub-and-spoke dans une région jumelée](./media/contoso-migration-infrastructure/paired-hub-peer.png)
 
@@ -498,12 +498,12 @@ Les réseaux virtuels de la région USA Centre sont résumés dans le tableau s
 
 Parallèlement au réseau de production dans la région principale USA Est 2, il existe un réseau de production dans la région secondaire USA Centre.
 
-**Sous-réseau** | **CIDR** | **Adresses** | **Dans un sous-réseau**
---- | --- | --- | ---
-**PROD-FE-CUS** | 10.255.32.0/22 | 1019 | Machines virtuelles frontales/de couche web
-**PROD-APP-CUS** | 10.255.36.0/22 | 1019 | Machines virtuelles de niveau application
-**PROD-DB-CUS** | 10.255.40.0/23 | 507 | Machines virtuelles de base de données
-**PROD-DC-CUS** | 10.255.42.0/24 | 251 | Machines virtuelles de contrôleur de domaine
+| **Sous-réseau** | **CIDR** | **Adresses** | **Dans un sous-réseau** |
+| --- | --- | --- | --- |
+| **PROD-FE-CUS** | 10.255.32.0/22 | 1019 | Machines virtuelles frontales/de couche web |
+| **PROD-APP-CUS** | 10.255.36.0/22 | 1019 | Machines virtuelles de niveau application |
+| **PROD-DB-CUS** | 10.255.40.0/23 | 507 | Machines virtuelles de base de données |
+| **PROD-DC-CUS** | 10.255.42.0/24 | 251 | Machines virtuelles de contrôleur de domaine |
 
 #### <a name="subnets-in-the-central-us-failoverrecovery-network-in-central-us-vnet-asr-cus"></a>Sous-réseaux du réseau de basculement et de récupération de la région USA Centre (VNET-ASR-CUS)
 
@@ -511,11 +511,11 @@ Le réseau VNET-ASR-CUS est utilisé à des fins de basculement entre les régio
 
 VNET-ASR-CUS est le même sous-réseau de base que le sous-réseau virtuel de production de la région USA Est 2, mais sans sous-réseau de contrôleur de domaine.
 
-**Sous-réseau** | **CIDR** | **Adresses** | **Dans un sous-réseau**
---- | --- | --- | ---
-**ASR-FE-CUS** | 10.255.16.0/22 | 1019 | Machines virtuelles frontales/de couche web
-**ASR-APP-CUS** | 10.255.20.0/22 | 1019 | Machines virtuelles de niveau application
-**ASR-DB-CUS** | 10.255.24.0/23 | 507 | Machines virtuelles de base de données
+| **Sous-réseau** | **CIDR** | **Adresses** | **Dans un sous-réseau** |
+| --- | --- | --- | --- |
+| **ASR-FE-CUS** | 10.255.16.0/22 | 1019 | Machines virtuelles frontales/de couche web |
+| **ASR-APP-CUS** | 10.255.20.0/22 | 1019 | Machines virtuelles de niveau application |
+| **ASR-DB-CUS** | 10.255.24.0/23 | 507 | Machines virtuelles de base de données |
 
 ![Architecture réseau du hub](./media/contoso-migration-infrastructure/azure-networks-cus.png)
 
@@ -558,21 +558,23 @@ Lorsque vous déployez des ressources dans des réseaux virtuels, vous avez deux
 
 Les administrateurs de Contoso ont décidé que le service Azure DNS n’est pas un bon choix dans l’environnement hybride. Ils préfèrent plutôt utiliser les serveurs DNS locaux.
 
+<!-- docsTest:ignore "on premises" -->
+
 - Comme il s’agit d’un réseau hybride, toutes les machines virtuelles locales et dans Azure doivent être capables de résoudre les noms afin de fonctionner correctement. Cela signifie que des paramètres DNS personnalisés doivent être appliqués à tous les réseaux virtuels.
 - Actuellement, Contoso a déployé des contrôleurs de domaine dans ses centres de données et ses filiales. Ses serveurs DNS principaux sont CONTOSODC1 (172.16.0.10) et CONTOSODC2 (172.16.0.1).
 - Une fois que les réseaux virtuels sont déployés, les contrôleurs de domaine locaux sont configurés comme serveurs DNS dans les réseaux.
-- Pour cette configuration, lorsque vous utilisez un DNS personnalisé sur le réseau virtuel, vous devez ajouter l’adresse IP des programmes de résolution récursifs d’Azure (168.63.129.16) à la liste DNS. Pour cela, Contoso configure les paramètres du serveur DNS sur chaque réseau virtuel. Par exemple, les paramètres du DNS personnalisé pour le réseau virtuel VNET-HUB-EUS2 se présenteraient ainsi :
+- Si un DNS personnalisé facultatif est spécifié pour le réseau virtuel, l’adresse IP virtuelle `168.63.129.16` pour les programmes de résolution récursifs dans Azure doit être ajoutée à la liste. Pour cela, Contoso configure les paramètres du serveur DNS sur chaque réseau virtuel. Par exemple, les paramètres du DNS personnalisé pour le réseau virtuel VNET-HUB-EUS2 se présenteraient ainsi :
 
     ![Système DNS personnalisé](./media/contoso-migration-infrastructure/custom-dns.png)
 
 En plus des contrôleurs de domaine locaux, Contoso implémente quatre contrôleurs de domaine supplémentaires pour prendre en charge les réseaux Azure, deux pour chaque région. Voici les éléments que Contoso déploie dans Azure.
 
-**Région** | **DC** | **Réseau virtuel** | **Sous-réseau** | **Adresse IP**
---- | --- | --- | --- | ---
-EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4
-EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5
-CUS | CONTOSODC5 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4
-CUS | CONTOSODC6 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4
+| **Région** | **DC** | **Réseau virtuel** | **Sous-réseau** | **Adresse IP** |
+| --- | --- | --- | --- | --- |
+| EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4 |
+| EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5 |
+| CUS | CONTOSODC5 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4 |
+| CUS | CONTOSODC6 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4 |
 
 Après avoir déployé les contrôleurs de domaine locaux, Contoso doit mettre à jour les paramètres DNS sur les réseaux de chaque région afin d’inclure les nouveaux contrôleurs de domaine dans la liste de serveurs DNS.
 
@@ -619,7 +621,7 @@ Après la mise à jour des paramètres du réseau, les administrateurs de Contos
 
 Active Directory est un service essentiel pour la mise en réseau et doit être correctement configuré. Les administrateurs de Contoso génèrent des sites Active Directory pour le centre de données Contoso et pour les régions EUS2 et CUS.
 
-1. Elle crée deux nouveaux sites (AZURE-EUS2 et AZURE-CUS), en plus du site du centre de données (ContosoDatacenter).
+1. Ils créent deux nouveaux sites (`AZURE-EUS2` et `AZURE-CUS`), ainsi que le site du centre de données (`ContosoDatacenter`).
 2. Après avoir créé ces sites, Contoso crée des sous-réseaux dans les sites pour qu’ils correspondent aux réseaux virtuels et au centre de données.
 
     ![Sous-réseaux DC](./media/contoso-migration-infrastructure/dc-subnets.png)
@@ -706,15 +708,15 @@ En plus de fournir des informations sur les ressources et les propriétaires, le
 
 Contoso doit visualiser ses ressources Azure de façon pertinente pour l’entreprise, comme par rôle ou département. Notez que les ressources ne doivent pas nécessairement appartenir au même groupe de ressources pour partager une balise. Contoso créera une taxonomie d’étiquette afin que tout le monde utilise les mêmes étiquettes.
 
-**Nom de la balise** | **Valeur**
---- | ---
-CostCenter | 12345 : doit être un centre de coût valide de SAP.
-BusinessUnit | Nom de l’unité commerciale (de SAP). Correspond à CostCenter.
-ApplicationTeam | Alias de messagerie de l’équipe propriétaire de la prise en charge de l’application.
-CatalogName | Nom de l’application ou ShareServices, par catalogue de services, que la ressource prend en charge.
-ServiceManager | Alias de messagerie du Gestionnaire de services ITIL pour la ressource.
-COBPriority | Priorité définie par l’entreprise pour BCDR. Valeurs de 1 à 5.
-ENV | Les valeurs possibles sont DEV, STG et PROD. Représente les phases de développement, mise en lots et production.
+| **Nom de la balise** | **Valeur** |
+| --- | --- |
+| CostCenter | 12345 : doit être un centre de coût valide de SAP. |
+| BusinessUnit | Nom de l’unité commerciale (de SAP). Correspond à CostCenter. |
+| ApplicationTeam | Alias de messagerie de l’équipe propriétaire de la prise en charge de l’application. |
+| CatalogName | Nom de l’application ou ShareServices, par catalogue de services, que la ressource prend en charge. |
+| ServiceManager | Alias de messagerie du Gestionnaire de services ITIL pour la ressource. |
+| COBPriority | Priorité définie par l’entreprise pour BCDR. Valeurs de 1 à 5. |
+| ENV | DEV, STG et PROD sont les valeurs autorisées. Représente les phases de développement, mise en lots et production. |
 
 Par exemple :
 
@@ -736,9 +738,9 @@ Contoso doit prendre en compte quelques aspects :
 
 Contoso recherche le moyen d’obtenir un aperçu de la sécurité de son nouveau cloud hybride et plus précisément de ses charges de travail Azure. Par conséquent, Contoso a décidé d’implémenter Azure Security Center en commençant par les fonctionnalités suivantes :
 
-- Gestion de stratégie centralisée
-- Évaluation continue
-- Recommandations exploitables
+- Gestion de stratégie centralisée.
+- Évaluation continue.
+- Recommandations exploitables.
 
 #### <a name="centralize-policy-management"></a>Gestion de stratégie centralisée
 
@@ -778,12 +780,12 @@ Contoso a créé un modèle montrant le résultat potentiel pour ses application
 
 Les groupes de sécurité réseau associés aux groupes de sécurité d’application seront configurés avec des privilèges minimum pour s’assurer que seuls les paquets autorisés peuvent circuler d’une partie du réseau vers leur destination.
 
-**Action** | **Nom** | **Source** | **Cible** | **Port**
---- | --- | --- | --- | ---
-Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
-Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
-Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
-Deny | DenyAllInbound | Quelconque | Quelconque | Quelconque
+| **Action** | **Nom** | **Source** | **Cible** | **Port** |
+| --- | --- | --- | --- | --- |
+| Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443 |
+| Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443 |
+| Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433 |
+| Deny | DenyAllInbound | Quelconque | Quelconque | Quelconque |
 
 ### <a name="encrypt-data"></a>Chiffrer les données
 

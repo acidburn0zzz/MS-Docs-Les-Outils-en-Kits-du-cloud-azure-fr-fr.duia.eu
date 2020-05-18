@@ -1,6 +1,6 @@
 ---
-title: Risques métier liés à la base de référence des identités
-description: Appréhendez et découvrez des exemples de clients types qui adoptent une discipline de base de référence des identités dans le cadre d’une stratégie de gouvernance cloud. 
+title: Motivations et risques pour l’entreprise dans la discipline de Base de référence des identités
+description: Appréhendez et découvrez des exemples de clients types qui adoptent une discipline de base de référence des identités dans le cadre d’une stratégie de gouvernance cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fa8bd53e2d920f8d69fe6484d427d9c9400ad174
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 370dfa7a040a41e22f23741ca30cf3a305de7f29
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429891"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219884"
 ---
-# <a name="identity-baseline-motivations-and-business-risks"></a>Risques d’affaires et motivations associés à la base de référence des identités
+# <a name="motivations-and-business-risks-in-the-identity-baseline-discipline"></a>Motivations et risques pour l’entreprise dans la discipline de Base de référence des identités
 
 Cet article décrit les raisons pour lesquelles les clients adoptent une discipline Base de référence des identités au sein d’une stratégie de gouvernance cloud. Des exemples sur les risques métier conduisant à la rédaction d’instructions de stratégie sont également présentés.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="identity-baseline-relevancy"></a>Pertinence de la Base de référence des identités
+## <a name="relevance"></a>Pertinence
 
 Les répertoires locaux traditionnels sont conçus pour permettre aux entreprises de contrôler strictement les autorisations et les stratégies pour les utilisateurs, les groupes et les rôles au sein de leurs réseaux et centres de données internes. Ces répertoires prennent généralement en charge les implémentations à locataire unique, les services ne s’appliquant qu’au sein de l’environnement local.
 
@@ -42,7 +42,7 @@ Les risques diffèrent en fonction de l’organisation, mais ceux liés aux iden
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle Gestion de cloud](./template.md), documentez les risques métier susceptibles d’être introduits par le plan d’adoption du cloud actuel.
+À l’aide du [modèle de discipline Base de référence des identités](./template.md), documentez les risques métier susceptibles d’être introduits par le plan d’adoption du cloud actuel.
 
 Une fois tous les risques métier réalistes appréhendés, l’étape suivante consiste à documenter la tolérance de l’activité aux risques, ainsi que les indicateurs et métriques clés permettant de surveiller cette tolérance.
 

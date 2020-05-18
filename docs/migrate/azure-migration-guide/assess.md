@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bbe61dfa9962d194ddb994b6753c2cbd07a9997f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 23ce74def1dd0d5efc77b448b6fe3303a890b994
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120722"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214563"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="assess-workloads-and-refine-plans"></a>Évaluer les charges de travail et affiner les plans
 
 Les ressources de ce guide vous aideront à évaluer chaque charge de travail, à vérifier les hypothèses concernant la pertinence de la migration de chaque charge de travail, ainsi qu’à finaliser les décisions architecturales à propos des options de migration.
@@ -102,7 +104,7 @@ Les liens ci-dessus suggèrent que les hypothèses sont acceptables et qu’elle
 
 Deux étapes pondérées de façon égale sont nécessaires à la [rationalisation incrémentielle](../../digital-estate/rationalize.md#incremental-rationalization). Ces deux étapes nécessitent des données et des insights concernant l’environnement. Toutefois, chaque méthode respecte la durée et la précision nécessaires à la réussite de la migration.
 
-- **[Planification de type Puissance 10](../../digital-estate/rationalize.md#release-planning) :** lors de la première rationalisation et de la première planification de la mise en production, seul l’un des [5 R de la rationalisation](../../digital-estate/5-rs-of-rationalization.md) doit être utilisé lors de l’évaluation. Estimez et planifiez en fonction de l’option de rationalisation qui correspond le mieux aux motivations globales définies dans le [document relatif aux stratégies d’adoption du cloud](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- [Planification de la mise en production de type Puissance 10](../../digital-estate/rationalize.md#release-planning) : lors de la première rationalisation et de la première planification de la mise en production, seul l’un des [cinq R de la rationalisation](../../digital-estate/5-rs-of-rationalization.md) doit être utilisé dans l’évaluation. Estimez et planifiez en fonction de l’option de rationalisation qui correspond le mieux aux motivations globales définies dans le [document relatif aux stratégies d’adoption du cloud](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
 
 - **Évaluation détaillée de chaque charge de travail :** les hypothèses associées à la planification de type Puissance 10 sont suffisamment acceptables pour créer un plan. Toutefois, ces mêmes hypothèses peuvent entraîner des problèmes importants si elles ne sont pas évaluées avant la migration.
 
@@ -112,7 +114,7 @@ Examinez attentivement les données d’évaluation dans Azure Migrate ou dans l
 
 Avant la migration, utilisez ces données, ainsi que les conversations concernant la découverte que vous avez eues avec le chef produit, les équipes de développement, les administrateurs et les autres personnes impliquées, afin d’évaluer la faisabilité de la migration d’une charge de travail. Utilisez ces éléments de découverte pour vérifier les principales hypothèses concernant cette charge de travail. Si les résultats nécessitent la modification du plan de migration ou d’adoption, mettez à jour le plan en conséquence.
 
-La première étape de cette vérification consiste à [passer en revue les 5 R](../../digital-estate/rationalize.md).
+La première étape du test de ces hypothèses consiste en une [vérification des cinq R de la rationalisation](../../digital-estate/rationalize.md).
 
     - La méthode de rationalisation supposée est-elle compatible avec cette charge de travail ? S’agit-il de la meilleure méthode ?
     - La migration de cette charge de travail sera-t-elle impactée par l’une des [lois de réplication](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) ?

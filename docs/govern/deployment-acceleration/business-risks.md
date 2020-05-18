@@ -1,5 +1,5 @@
 ---
-title: Risques métier liés à l’accélération du déploiement
+title: Motivations et risques commerciaux dans la discipline Accélération du déploiement
 description: Utilisez le Framework d’adoption du cloud pour Azure pour comprendre les risques métier liés à la discipline d’accélération du déploiement, qui peut être utilisée dans la stratégie de gouvernance.
 author: alexbuckgit
 ms.author: abuck
@@ -8,26 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a4f022d995cf4dca25cfd5369ce92dd4496e8687
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6cd6d309b5c44c55d0409b759950662eccb9f50a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434609"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220445"
 ---
-# <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivations et risques métier en matière d'accélération du déploiement
+# <a name="motivations-and-business-risks-in-the-deployment-acceleration-discipline"></a>Motivations et risques commerciaux dans la discipline Accélération du déploiement
 
 Cet article décrit les raisons pour lesquelles les clients adoptent une discipline d'accélération du déploiement dans le cadre d’une stratégie de gouvernance cloud. Des exemples sur les risques métier conduisant à la rédaction d’instructions de stratégie sont également présentés.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="deployment-acceleration-relevancy"></a>Pertinence de l’accélération du déploiement
+## <a name="relevance"></a>Pertinence
 
 Les systèmes locaux sont souvent déployés à l’aide d'images de référence ou de scripts d’installation. Une configuration supplémentaire est généralement requise, ce qui peut impliquer plusieurs étapes, voire une intervention humaine. Ces processus manuels sont sujets aux erreurs et entraînent souvent une « dérive de configuration », nécessitant des tâches de dépannage et de correction chronophages.
 
-La plupart des ressources Azure peuvent être déployées et configurées manuellement via le portail Azure. Cette approche peut couvrir vos besoins si vous n'avez que quelques ressources à gérer. En revanche, au fur et à mesure que votre cloud va évoluer, votre organisation devra commencer à intégrer une automatisation dans ses processus de déploiement pour éviter toute dérive de configuration des ressources cloud ou d’autres problèmes introduits par les processus manuels. L’adoption d’une approche DevOps ou [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) est souvent le meilleur moyen de gérer vos déploiements au fur et à mesure que vos efforts d’adoption du cloud évoluent.
-
-<!-- "en-us" location is required for the URL above. -->
+La plupart des ressources Azure peuvent être déployées et configurées manuellement via le portail Azure. Cette approche peut couvrir vos besoins si vous n'avez que quelques ressources à gérer. En revanche, au fur et à mesure que votre cloud va évoluer, votre organisation devra commencer à intégrer une automatisation dans ses processus de déploiement pour éviter toute dérive de configuration des ressources cloud ou d’autres problèmes introduits par les processus manuels. L’adoption d’une approche DevOps ou [DevSecOps](https://www.microsoft.com/devsecops) est souvent le meilleur moyen de gérer vos déploiements au fur et à mesure que vos efforts d’adoption du cloud évoluent.
 
 Un plan d'accélération du déploiement robuste permet de veiller à ce que vos ressources cloud soient déployées, mises à jour et configurées de façon correcte et cohérente, et qu'elles le restent. La maturité de votre stratégie d’accélération du déploiement peut également constituer un facteur important de votre [stratégie de gestion des coûts](../cost-management/index.md). L’approvisionnement et la configuration automatiques de vos ressources cloud vous permettent de descendre en puissance ou de libérer des ressources lorsque la demande est faible ou limitée dans le temps, de manière à ne payer que les ressources dont vous avez besoin.
 
@@ -41,7 +39,7 @@ La discipline d’accélération du déploiement tente de résoudre les risques 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle Gestion de cloud](./template.md), documentez les risques métier susceptibles d’être introduits par le plan d’adoption du cloud actuel.
+À l’aide du [modèle de discipline Accélération du déploiement](./template.md), documentez les risques métier susceptibles d’être introduits par le plan d’adoption du cloud actuel.
 
 Une fois tous les risques métier réalistes appréhendés, l’étape suivante consiste à documenter la tolérance de l’activité aux risques, ainsi que les indicateurs et métriques clés permettant de surveiller cette tolérance.
 

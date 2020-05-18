@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc22c00d9470209f4442f1b9c4a194b8b1fdb417
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527644"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223930"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>Conformité opérationnelle dans la gestion cloud
 
@@ -30,7 +30,7 @@ Le maintien de la conformité par rapport aux engagements opérationnels requier
 
 ### <a name="resource-consistency"></a>Cohérence des ressources
 
-L’action la plus efficace pour une équipe de gestion cloud en matière de conformité opérationnelle consiste à établir une cohérence dans l’organisation et le balisage des ressources. Lorsque les ressources sont organisées et marquées de manière cohérente, toutes les autres tâches opérationnelles deviennent plus faciles. Pour obtenir des conseils plus approfondis sur la cohérence des ressources, consultez la [phase de gouvernance](../../govern/index.md) du cycle de vie dans l’adoption du cloud. Plus précisément, les [articles sur les bases de la gouvernance initiale](../../govern/initial-foundation.md) montrent comment commencer à développer des ressources de manière cohérente.
+L’action la plus efficace pour une équipe de gestion cloud en matière de conformité opérationnelle consiste à établir une cohérence dans l’organisation et le balisage des ressources. Lorsque les ressources sont organisées et marquées de manière cohérente, toutes les autres tâches opérationnelles deviennent plus faciles. Pour obtenir des conseils plus approfondis sur la cohérence des ressources, consultez la [méthodologie Gouvernance](../../govern/index.md). Plus précisément, consultez les [articles sur les bases de la gouvernance initiale](../../govern/initial-foundation.md) pour commencer à développer des ressources de manière cohérente.
 
 ### <a name="environment-consistency"></a>Cohérence de l’environnement
 

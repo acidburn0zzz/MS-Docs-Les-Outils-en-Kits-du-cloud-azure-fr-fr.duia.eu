@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f65118884e4bac8b62d3857008ccd5ad126656b9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6515a690ea0590061cb4b5ea707f7636b380dd10
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80808991"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220156"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Gestion des coûts
 
@@ -57,7 +57,7 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 - Tous les coûts doivent être affectés à une fonction opérationnelle à des fins de responsabilisation.
 - Les ressources du cloud doivent être contrôlées en permanence afin de déceler les possibilités d'optimisation.
 - Les outils de gouvernance cloud doivent limiter les options de taille des ressources à une liste approuvée de configurations. Les outils doivent garantir que toutes les ressources peuvent être détectées et suivies par la solution de supervision des coûts.
-- Lors de la planification du déploiement, toutes les ressources cloud requises associées à l’hébergement de charges de travail de production doivent être documentées. Cette documentation permettra d’affiner les budgets et de préparer des outils d’automatisation supplémentaires pour éviter l’utilisation d’options plus coûteuses. Au cours de ce processus, il convient d’envisager l’adoption de différents outils de remise proposés par le fournisseur de cloud, tels que des instances réservées ou des réductions sur le coût des licences.
+- Lors de la planification du déploiement, toutes les ressources cloud requises associées à l’hébergement de charges de travail de production doivent être documentées. Cette documentation permettra d’affiner les budgets et de préparer des outils d’automatisation supplémentaires pour éviter l’utilisation d’options plus coûteuses. Au cours de ce processus, il convient d'envisager l'adoption de différents outils de remise proposés par le fournisseur de cloud, tels que des instances réservées ou des réductions sur le coût des licences.
 - Tous les propriétaires d’applications sont tenus de suivre une formation sur les pratiques d’optimisation des charges de travail afin de mieux contrôler les coûts liés au cloud.
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Amélioration incrémentielle des bonnes pratiques

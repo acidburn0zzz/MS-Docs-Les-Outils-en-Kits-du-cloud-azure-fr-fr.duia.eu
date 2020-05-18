@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328577aae931194517e015973a935de24b580a96
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b7f8b26833a98ac02a867b466e58f5214334a0b5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995240"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219991"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Guide de gouvernance pour les entreprises standard : Explication des conseils
 
@@ -25,7 +25,9 @@ Dans cet article, nous allons parler des stratégies de haut niveau qui sont né
 
 Grâce à quelques principes simples et à des outils de gouvernance basés sur le cloud, il est possible d’adopter rapidement la gouvernance et une stratégie d’entreprise. Voici les trois premières disciplines de gouvernance à aborder lors d’un processus de gouvernance. Chaque discipline est expliquée plus loin dans cet article.
 
-Pour établir le point de départ, cet article traite des stratégies de haut niveau derrière la base de référence des identités, la base de référence de la sécurité et l’accélération du déploiement. Ces stratégies sont requises pour créer un MVP de gouvernance, qui serve de base pour l’ensemble du processus d’adoption.
+<!--docsTest:ignore "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
+
+Pour établir le point de départ, cet article traite des stratégies de haut niveau derrière la base de référence des identités, la base de référence de la sécurité et l’accélération du déploiement. Ces disciplines sont requises pour créer un MVP de gouvernance, qui serve de base pour l’ensemble du processus d’adoption.
 
 ![Exemple de MVP de gouvernance incrémentielle](../../../_images/govern/governance-mvp.png)
 
@@ -37,7 +39,7 @@ L’implémentation du MVP de gouvernance dépend de l’identité, de la sécur
 
 Cette implémentation peut également être décrite à l’aide d’une simple check-list :
 
-1. Sollicitez des décisions concernant les principales dépendances : Identité, mise en réseau, surveillance et chiffrement.
+1. Sollicitez des décisions concernant les dépendances principales : identité, mise en réseau, surveillance et chiffrement.
 2. Déterminez le modèle à utiliser lors de l’application des stratégies d’entreprise.
 3. Déterminez les modèles de gouvernance appropriés pour les disciplines suivantes : cohérence des ressources, identification des ressources, création et journalisation de rapports.
 4. Implémentez les outils de gouvernance alignés sur le modèle d’application de stratégie choisi, dans le but d’appliquer des décisions dépendantes et des décisions de gouvernance.
@@ -58,7 +60,7 @@ La décision sur la conception de l’abonnement à utiliser détermine la faço
 
 ### <a name="resource-consistency"></a>Cohérence des ressources
 
-Les décisions relatives à la cohérence des ressources déterminent les outils, processus et efforts nécessaires pour garantir que les ressources Azure sont déployées, configurées et gérées de manière cohérente au sein d’un abonnement. Dans ce scénario, la **[cohérence de déploiement](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** a été choisie comme modèle de cohérence des ressources principales.
+Les décisions relatives à la cohérence des ressources déterminent les outils, processus et efforts nécessaires pour garantir que les ressources Azure sont déployées, configurées et gérées de manière cohérente au sein d’un abonnement. Dans ce scénario, la [cohérence de déploiement](../../../decision-guides/resource-consistency/index.md#deployment-consistency) a été choisie comme modèle de cohérence des ressources principales.
 
 - Des groupes de ressources sont créés pour les applications à l’aide de l’approche du cycle de vie. Tout ce qui est créé, maintenu et mis hors service ensemble doit résider dans un seul groupe de ressources. Pour plus d’informations, consultez le [Guide de décision pour la cohérence des ressources](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - La stratégie Azure doit être appliquée à tous les abonnements du groupe d’administration associé.
@@ -72,7 +74,7 @@ Les décisions relatives à la cohérence des ressources déterminent les outils
 
 ### <a name="resource-tagging"></a>Identification des ressources
 
-Les décisions relatives à l’identification des ressources déterminent la façon dont les métadonnées sont appliquées aux ressources Azure au sein d’un abonnement pour prendre en charge les opérations, la gestion et la comptabilité. Dans ce scénario, le modèle **[Classification](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** a été choisi comme modèle par défaut pour l’identification des ressources.
+Les décisions relatives à l’identification des ressources déterminent la façon dont les métadonnées sont appliquées aux ressources Azure au sein d’un abonnement pour prendre en charge les opérations, la gestion et la comptabilité. Dans ce scénario, le modèle [Classification](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns) a été choisi comme modèle par défaut pour l’identification des ressources.
 
 - Les ressources déployées doivent être étiquetées avec :
   - Classification des données

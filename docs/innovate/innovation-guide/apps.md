@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7f0ebc370b18e5c010322a2dacac8750714810f8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 53bf6e8a6c3e01255e57613b3b1a3cd2fa9cdc07
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427357"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222247"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -161,7 +161,7 @@ Utilisez un service Kubernetes complètement managé pour gérer l’approvision
 
 #### <a name="action"></a>Action
 
-Pour configurer ou surveiller un service Azure Kubernetes :
+Pour configurer ou surveiller un service AKS :
 
 1. Accédez à **Azure Kubernetes services**.
 2. Configurer un nouveau service : Sélectionnez **Ajouter** et suivez les invites.
@@ -171,7 +171,7 @@ Pour configurer ou surveiller un service Azure Kubernetes :
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

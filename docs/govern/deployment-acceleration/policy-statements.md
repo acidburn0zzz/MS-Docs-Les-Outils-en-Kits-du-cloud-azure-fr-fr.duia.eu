@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18eef9f270e4c9ab8b2ee31268e46f0d4d929e34
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b92f9593c0d35f4c73dc17733d1ae57dbbe599b4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995525"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220258"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exemples d’instructions de stratégie pour l’accélération du déploiement
 
@@ -56,7 +56,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques métiers 
 
 Utilisez les exemples mentionnés dans cet article comme point de départ pour développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
-Pour commencer à développer vos instructions de stratégie personnalisées pour la gestion des identités, téléchargez le [modèle de base de référence des identités](../identity-baseline/template.md).
+Pour commencer à développer vos déclarations de stratégie personnalisées pour la Base de référence des identités, téléchargez le [modèle de discipline Base de référence des identités](../identity-baseline/template.md).
 
 Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance actionnable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
 

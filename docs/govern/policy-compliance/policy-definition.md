@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c1e34c9f13a170abd1f00b603537c73ce51688da
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4db3e7b94d370ebc50fa96c92e019ca9b2839497
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396080"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224202"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Définir la stratégie de l’entreprise en matière de gouvernance cloud
 
@@ -26,7 +26,7 @@ Dans la gouvernance traditionnelle et incrémentielle, la stratégie d’entrepr
 
 ![Gouvernance d’entreprise et disciplines de gouvernance](../../_images/operational-transformation-govern-highres.png)
 
-*Figure 1 - Gouvernance d’entreprise et disciplines de gouvernance.*
+_Figure 1 : Gouvernance d’entreprise et disciplines de gouvernance._
 
 L’image ci-dessus illustre la relation entre les risques métiers, la stratégie et la conformité, ainsi que les mécanismes de surveillance et d’application qui doivent interagir dans le cadre de votre stratégie de gouvernance. Les cinq disciplines de la gouvernance cloud vous permettent de gérer ces interactions et d’élaborer votre stratégie.
 
@@ -55,7 +55,7 @@ Les instructions de stratégie cloud individuelles sont des recommandations dest
 - **Instruction de stratégie :** une explication succincte claire des exigences de la stratégie.
 - **Conseils techniques ou de conception** : suggestions, spécifications ou autres conseils pratiques pour prendre en charge et appliquer cette stratégie que les équipes informatiques et les développeurs peuvent utiliser lors de la conception et de la construction de leurs déploiements cloud.
 
-Si vous avez besoin d’aide pour commencer à définir des stratégies, consultez les [disciplines de gouvernance](../governance-disciplines.md)présentées dans l’aperçu de la section gouvernance. Les articles pour chacune de ces disciplines comprennent des exemples de risques métiers communs rencontrés lors de la migration vers le cloud et des exemples de stratégies utilisées pour corriger ces risques. Par exemple, consultez les [Exemples de définitions de stratégies](../cost-management/policy-statements.md) de la discipline Azure Cost Management.
+Si vous avez besoin d’aide pour commencer à définir des stratégies, consultez les [disciplines de gouvernance](../governance-disciplines.md) présentées dans l’aperçu de la section gouvernance. Les articles pour chacune de ces disciplines comprennent des exemples de risques métiers communs rencontrés lors de la migration vers le cloud et des exemples de stratégies utilisées pour corriger ces risques. Par exemple, consultez les [Exemples de définitions de stratégies](../cost-management/policy-statements.md) de la discipline Azure Cost Management.
 
 ## <a name="incremental-governance-and-integrating-with-existing-policy"></a>Gouvernance progressive et intégration à la stratégie existante
 

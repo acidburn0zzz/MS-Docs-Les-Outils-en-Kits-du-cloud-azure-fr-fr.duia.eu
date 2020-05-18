@@ -3,109 +3,32 @@ title: Gérer l’alignement de l’organisation
 description: Découvrez comment établir et gérer l’alignement de votre organisation à l’aide du Cloud Adoption Framework pour Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
-ms.topic: landing-page
+ms.date: 05/04/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-layout: LandingPage
-ms.openlocfilehash: de34df16a5c709ac5cffbdb355f70c60c8a18c25
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4d34515e2e109e77e18a129b490e6c7e1faee593
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527692"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222060"
 ---
 # <a name="manage-organizational-alignment"></a>Gérer l’alignement organisationnel
 
-L’adoption du cloud est impossible sans des personnes bien organisées. Une adoption réussie du cloud est le résultat de personnes qualifiées qui procèdent à des tâches appropriées, en phase avec leurs objectifs métier clairement définis et dans un environnement bien géré. Pour obtenir un modèle d’exploitation cloud efficace, il est important d’établir des structures organisationnelles avec le bon personnel. Cet article décrit une approche permettant d’établir et de maintenir des structures organisationnelles appropriées en quatre étapes.
-
-## <a name="organization-alignment-exercises"></a>Exercices d’alignement de l’organisation
+L’adoption du cloud est impossible sans des personnes bien organisées. Une adoption réussie du cloud est le résultat de personnes qualifiées qui procèdent à des tâches appropriées, en phase avec leurs objectifs métier clairement définis et dans un environnement bien géré. Pour obtenir un modèle d’exploitation pour le cloud efficace, il est important d’établir des structures organisationnelles avec le bon personnel. Cet article décrit une approche permettant d’établir et de maintenir des structures organisationnelles appropriées en quatre étapes.
 
 Les exercices suivants vous aideront lors du processus de création de zone d’accueil afin de prendre en charge l’adoption du cloud.
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="#structure-type">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Type de structure</h3>
-Définir le type de structure organisationnelle qui correspond le mieux à votre modèle d’exploitation.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="#understand-required-cloud-capabilities">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Fonctionnalités cloud</h3>
-Comprendre les fonctionnalités cloud nécessaires à l’adoption et au fonctionnement du cloud.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./organization-structures.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Établir des équipes</h3>
-Définir les équipes qui fourniront les diverses fonctionnalités cloud. Plusieurs options de bonnes pratiques sont listées pour référence.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./raci-alignment.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Matrice RACI</h3>
-Une définition claire de chaque rôle est un aspect important de tout modèle d’exploitation. Utilisez la matrice RACI fournie pour attribuer les rôles de responsabilité, de consultation et d’information à chacune des équipes pour les diverses fonctions du modèle d’exploitation cloud.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+| | |
+|---|---|
+| ![1](../_Images/icons/1.png)     | <br>[Type de structure](#structure-type) : Définir le type de structure organisationnelle qui correspond le mieux à votre modèle d’exploitation.                                |
+| ![2](../_Images/icons/2.png)     | <br>[Fonctions cloud](#understand-required-cloud-functions) : Comprendre les fonctionnalités cloud nécessaires à l’adoption et au fonctionnement du cloud.                                |
+| ![3](../_Images/icons/3.png)     | <br>[Structures d’équipe matures](./organization-structures.md) : Définissez les équipes qui peuvent fournir différentes fonctions cloud.                                |
+| ![4](../_Images/icons/4.png)      | [Matrice RACI](./raci-alignment.md) : Une définition claire de chaque rôle est un aspect important de tout modèle d’exploitation. Utilisez la matrice RACI fournie pour attribuer les rôles de responsabilité, de consultation et d’information à chacune des équipes pour les diverses fonctions du modèle d’exploitation cloud.                        |
 
 ## <a name="structure-type"></a>Type de structure
 
@@ -117,34 +40,26 @@ La première étape de la gestion de l’alignement organisationnel consiste à 
 - **Équipes virtuelles :** Les structures de management et les organigrammes restent inchangés. Par contre, des équipes virtuelles sont créées et associées aux fonctions requises.
 - **Modèle mixte :** Le plus souvent, un mélange d’alignement d’organigramme et d’équipe virtuelle est nécessaire pour atteindre les objectifs de la transformation.
 
-## <a name="understand-required-cloud-capabilities"></a>Comprendre les fonctionnalités cloud requises
+## <a name="understand-required-cloud-functions"></a>Comprendre les fonctions cloud requises
 
-Voici une liste des fonctionnalités cloud indispensables à une adoption réussie du cloud et à des modèles d’exploitation à plus long terme. Une fois que vous vous êtes familiarisé avec les différentes fonctionnalités cloud, celles-ci peuvent être alignées sur les structures organisationnelles en fonction du personnel et de l’évolution :
+Voici une liste des fonctionnalités indispensables à une adoption réussie du cloud et à des modèles d’exploitation à plus long terme. Une fois que vous vous êtes familiarisé avec, celles-ci peuvent être alignées sur les structures organisationnelles en fonction du personnel et de l’évolution :
 
-- [Adoption du cloud](./cloud-adoption.md) : Offrir des solutions techniques.
 - [Stratégie cloud](./cloud-strategy.md) : Aligner le changement technique sur les besoins métier.
+- [Adoption du cloud](./cloud-adoption.md) : Offrir des solutions techniques.
+- [Gouvernance cloud](./cloud-governance.md) : Gérer le risque.
+- [Équipe informatique centrale](./central-it.md) : Soutien du personnel informatique existant.
 - [Opérations cloud](./cloud-operations.md) : Prendre en charge et utiliser les solutions adoptées.
 - [Centre d’excellence du cloud](./cloud-center-of-excellence.md) : Améliorer la qualité, la vitesse et la résilience de l’adoption.
-- [Gouvernance cloud](./cloud-governance.md) : Gérer le risque.
 - [Plateforme cloud](./cloud-platform.md) : Utiliser et faire évoluer la plateforme.
 - [Automatisation du cloud](./cloud-automation.md) : Accélérer l’adoption et l’innovation.
-
-## <a name="mature-organizational-structures"></a>Faire évoluer les structures organisationnelles
+- [Sécurité cloud](./cloud-security.md) : Gérez les risques liés à la sécurité des informations.
 
 Dans une certaine mesure, chacune des fonctionnalités ci-dessus est fournie dans chaque étape de l’adoption du cloud, soit explicitement, soit conformément à une structure d’équipe définie.
+
 Si les besoins d’adoption augmentent, les besoins de créer un équilibre et une structure augmentent également. Pour y répondre, les entreprises suivent souvent un processus d’évolution des structures organisationnelles.
 
 ![Cycle d’évolution de l’organisation](../_images/ready/org-ready-maturity.png)
 
 L’article sur la [détermination de l’évolution de la structure organisationnelle](./organization-structures.md) fournit des détails supplémentaires sur chaque niveau de l’évolution.
 
-## <a name="align-raci-charts"></a>Aligner les graphiques RACI
-
-À chaque niveau de l’évolution, la responsabilité des différentes fonctionnalités cloud passe entre les mains de nouvelles équipes. Ce changement de responsabilité permet d’accélérer les cycles de migration et d’innovation en supprimant et en automatisant les obstacles au changement. Pour aligner correctement les attributions, l’article sur [l’alignement RACI](./raci-alignment.md) partage un graphique RACI pour chacune des structures organisationnelles référencées.
-
-## <a name="next-steps"></a>Étapes suivantes
-
 Pour suivre les décisions de structure de l’organisation au fur et à mesure, téléchargez et modifiez le [modèle de feuille de calcul RACI](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx).
-
-> [!div class="nextstepaction"]
-> [Télécharger le modèle de feuille de calcul RACI](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)

@@ -1,5 +1,5 @@
 ---
-title: Établir des structures d’équipe
+title: Structures d’équipe matures
 description: Utilisez ces exemples de structures d’équipe courantes pour trouver la structure organisationnelle la mieux adaptée à vos besoins opérationnels.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f01499141c85b1baca2b19f2ce6a8ed15163c4a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c46f3d6372c532911bc794128a0ea47509ee1860
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995172"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222094"
 ---
 <!-- cSpell:ignore ccoe -->
 
-# <a name="establish-team-structures"></a>Établir des structures d’équipe
+# <a name="mature-team-structures"></a>Structures d’équipe matures
 
 Chaque fonctionnalité cloud est fournie par un utilisateur lors de chaque effort d’adoption du cloud. Ces affectations et structures d’équipe peuvent se développer de façon organique ou être intentionnellement conçues pour correspondre à une structure d’équipe définie.
 
@@ -34,7 +34,7 @@ Les structures organisationnelles ont tendance à passer par le modèle de matur
 5. [Alignement opérationnel](#operational-alignment)
 6. [Centre d’excellence du cloud (CCoE)](#cloud-center-of-excellence)
 
-La plupart des entreprises engagent le processus avec une simple *équipe d’adoption du cloud*. Toutefois, nous vous recommandons d’établir une structure organisationnelle qui ressemble davantage à la structure des [meilleures pratiques MVP](#best-practice-minimum-viable-product-mvp).
+La plupart des entreprises engagent le processus avec une simple _équipe d’adoption du cloud_. Toutefois, nous vous recommandons d’établir une structure organisationnelle qui ressemble davantage à la structure des [meilleures pratiques MVP](#best-practice-minimum-viable-product-mvp).
 
 ## <a name="cloud-adoption-team-only"></a>Équipe d’adoption du cloud uniquement
 
@@ -45,9 +45,9 @@ L’équipe d’adoption du cloud constitue le noyau de tous les efforts d’ado
 Pour les efforts d’adoption à petite échelle ou précoces, cette équipe peut se limiter à une personne. Dans les efforts à grande échelle ou tardifs, il est courant d’avoir plusieurs équipes d’adoption du cloud, comptant chacune six ingénieurs environ. Quelles que soient la taille ou les tâches, le rôle d’une équipe d’adoption du cloud est de fournir les moyens d’intégrer des solutions dans le cloud. Pour certaines organisations, il peut s’agir d’une structure organisationnelle suffisante. L’article sur l’[équipe d’adoption du cloud](./cloud-adoption.md) fournit plus d’insights sur la structure, la composition et la fonction de l’équipe d’adoption du cloud.
 
 > [!WARNING]
-> Fonctionner *uniquement* avec une équipe d’adoption du cloud (ou plusieurs équipes d’adoption du cloud) est considéré comme un *anti-modèle* et doit, à ce titre, être évité. Au minimum, adoptez la [meilleure pratique MVP](#best-practice-minimum-viable-product-mvp).
+> Fonctionner _uniquement_ avec une équipe d’adoption du cloud (ou plusieurs équipes d’adoption du cloud) est considéré comme un _anti-modèle_ et doit, à ce titre, être évité. Au minimum, adoptez la [meilleure pratique MVP](#best-practice-minimum-viable-product-mvp).
 
-## <a name="best-practice-minimum-viable-product-mvp"></a>Meilleure pratique : produit minimum viable (MVP)
+## <a name="best-practice-minimum-viable-product-mvp"></a>Bonne pratique : Produit minimum viable (MVP)
 
 Nous vous recommandons de disposer de deux équipes pour créer un équilibre entre les efforts d’adoption du cloud. Ces deux équipes sont responsables de diverses fonctionnalités tout au long du processus d’adoption.
 
@@ -66,7 +66,7 @@ Au fur et à mesure que l’adoption évolue, l’équipe de gouvernance cloud p
 
 ![Adoption du cloud avec un modèle informatique central](../_images/ready/org-ready-central-it.png)
 
-Malheureusement, la phase informatique centrale peut constituer l’une des phases les plus risquées de la maturité organisationnelle. L’équipe informatique centrale doit faire preuve d’un fort esprit de croissance. Si l’équipe considère le cloud comme une opportunité de se développer et d’adapter ses capacités, elle peut lui apporter une grande valeur tout au long du processus. Cependant, si l’équipe informatique centrale considère l’adoption du cloud principalement comme une menace pour son modèle existant, elle devient un obstacle pour les équipes d’adoption du cloud et les objectifs commerciaux que celles-ci soutiennent. Certaines équipes informatiques centrales ont passé des mois, voire des années, à tenter de forcer le cloud à s’aligner sur les approches locales, sans succès. Le cloud ne nécessite pas que le bouleversement complet de l’informatique centrale mais que des changements se mettent en place. Si la résistance au changement prévaut au sein de l’équipe informatique centrale, cette phase de maturité peut rapidement devenir un anti-modèle culturel.
+Malheureusement, la phase informatique centrale peut constituer l’une des phases les plus risquées de la maturité organisationnelle. L’équipe informatique centrale doit faire preuve d’un fort esprit de croissance. Si l’équipe considère le cloud comme une opportunité de se développer et de s’adapter, elle peut lui apporter une grande valeur tout au long du processus. Cependant, si l’équipe informatique centrale considère l’adoption du cloud principalement comme une menace pour son modèle existant, elle devient un obstacle pour les équipes d’adoption du cloud et les objectifs commerciaux que celles-ci soutiennent. Certaines équipes informatiques centrales ont passé des mois, voire des années, à tenter de forcer le cloud à s’aligner sur les approches locales, sans succès. Le cloud ne nécessite pas que le bouleversement complet de l’informatique centrale mais que des changements significatifs se mettent en place. Si la résistance au changement prévaut au sein de l’équipe informatique centrale, cette phase de maturité peut rapidement devenir un anti-modèle culturel.
 
 Les plans d’adoption du cloud principalement axés sur la plateforme en tant que service (PaaS), DevOps ou d’autres solutions qui nécessitent moins de support opérationnel sont moins susceptibles de tirer des avantages de cette phase de maturité. Au contraire, ces types de solutions sont les plus susceptibles d’être entravés ou bloqués par les tentatives de centralisation de l’informatique. Un niveau de maturité plus élevé, comme un [centre d’excellence dans le cloud (CCoE)](#cloud-center-of-excellence), est plus susceptible de donner des résultats positifs pour ces types d’efforts de transformation. Pour comprendre les différences entre l’informatique centrale dans le cloud et un CCoE, consultez [Centre d’excellence du cloud](./cloud-center-of-excellence.md).
 

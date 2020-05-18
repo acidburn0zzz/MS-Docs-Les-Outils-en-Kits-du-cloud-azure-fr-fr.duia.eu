@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b900826ef28aada53a9a73cdae9679d5f35f3007
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80606568"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223760"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Guide de supervision du cloud : Introduction
 
@@ -57,7 +57,7 @@ Cet article fait partie d’une série. Les articles suivants sont destinés à 
 Quelques logiciels et services sont disponibles pour vous aider à superviser et à gérer diverses ressources hébergées dans Azure, votre réseau d’entreprise ou d’autres fournisseurs de cloud. Il s'agit de :
 
 - System Center Operations Manager
-- Azure Monitor, qui comprend maintenant Log Analytics et Application Insights
+- Azure Monitor, (comprend maintenant Log Analytics et Application Insights)
 - Azure Policy et Azure Blueprints
 - Azure Automation
 - Azure Logic Apps

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 244444057561118c2e3f2b7a574bfdfb529f0978
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 872a492be4ef27fbbbba758c9780a9af5d070940
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997407"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224270"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,12 +36,18 @@ Lors d’une transformation cloud, les stratégies régissent souvent les nombre
 
 ## <a name="the-cloud-policy-review-process"></a>Le processus de révision de stratégie cloud
 
-Les révisions de stratégie cloud font correspondre les stratégies de sécurité informatique et de gouvernance informatique existantes avec les [cinq disciplines de la gouvernance cloud](../index.md) : [Gestion des coûts](../cost-management/index.md), [Base de référence de sécurité](../security-baseline/index.md), [Base de référence des identités](../identity-baseline/index.md), [Cohérence des ressources](../resource-consistency/index.md) et [Accélération du déploiement](../deployment-acceleration/index.md).
+Les révisions de stratégie cloud font correspondre les stratégies de sécurité informatique et de gouvernance informatique existantes avec les [cinq disciplines de la gouvernance cloud](../index.md) :
+
+- [Discipline Gestion des coûts](../cost-management/index.md)
+- [Discipline Base de référence de la sécurité](../security-baseline/index.md)
+- [Discipline de base de référence des identités](../identity-baseline/index.md)
+- [Discipline de cohérence des ressources](../resource-consistency/index.md)
+- [Discipline Accélération du déploiement](../deployment-acceleration/index.md).
 
 Pour chacune de ces disciplines, le processus de révision suit les étapes ci-dessous :
 
 1. Révision des stratégies locales existantes en lien avec la discipline concernée pour rechercher deux points de données clés : les dépendances héritées et les risques métier identifiés.
-2. Évaluation de chacun des risques métier grâce à une question simple : « Le risque existe-t-il toujours dans un modèle cloud ? »
+2. Évaluez chaque risque pour l’entreprise en posant une question simple : « Le risque existe-t-il toujours dans un modèle cloud ? »
 3. Si le risque existe toujours, réécriture de la stratégie en documentant l’atténuation nécessaire des risques métier plutôt que la solution technique.
 4. Révision de la stratégie mise à jour avec les équipes d’adoption du cloud pour comprendre les solutions techniques potentielles associées à l’atténuation nécessaire.
 

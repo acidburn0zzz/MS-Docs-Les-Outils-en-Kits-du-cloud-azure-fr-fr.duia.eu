@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 9ef3c108d330cd52b470c590a48f79c65502a7e6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f746b00773dc4a9fd3a6dc0fe38a8a0e56d94fcc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431631"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222910"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Créer une justification professionnelle pour la migration vers le cloud
 
@@ -21,19 +21,29 @@ Les migrations cloud peuvent rapidement générer un retour sur investissement (
 
 ## <a name="dispelling-cloud-migration-myths"></a>Démystification de la migration cloud
 
-**Mythe : Le cloud est toujours moins cher.** Il est communément admis qu’exploiter un centre de données dans le cloud revient toujours moins cher que de l’exploiter localement. Bien que cette hypothèse soit généralement vraie, ce n’est pas toujours le cas. Parfois, les coûts opérationnels du cloud sont plus élevés. Ces coûts plus élevés sont souvent liés à une mauvaise gouvernance, des architectures système inadéquates, une duplication des processus, des configurations système atypiques ou des charges de personnel plus importantes. Heureusement, vous pouvez atténuer un bon nombre de ces problèmes pour obtenir un ROI (retour sur investissement) rapide. Suivre l’aide fournie dans [Générer la justification métier](#build-the-business-justification) peut vous aider à détecter et à éviter ces alignements incorrects. Le fait de dissiper les autres mythes décrits ici peut également vous aider.
+### <a name="myth-the-cloud-is-always-cheaper"></a>Mythe : Le cloud est toujours moins cher
 
-**Mythe : Tout doit être placé dans le cloud.** En fait, certains axes stratégiques peuvent vous amener à choisir une solution hybride. Avant de finaliser un modèle d’affaires, il est judicieux d’effectuer une première analyse quantitative, comme cela est expliqué dans les [articles consacrés au patrimoine numérique](../digital-estate/5-rs-of-rationalization.md). Pour plus d’informations sur les différents facteurs quantitatifs impliqués dans la rationalisation, consultez [Les 5 R de la rationalisation](../digital-estate/5-rs-of-rationalization.md). Chaque approche utilise des données d’inventaire faciles à obtenir ainsi qu’une brève analyse quantitative pour identifier les charges de travail ou les applications susceptibles de présenter des coûts plus élevés dans le cloud. Ces approches peuvent également identifier les dépendances ou les modèles de trafic qui nécessitent une solution hybride.
+Il est communément admis qu’exploiter un centre de données dans le cloud revient toujours moins cher que de l’exploiter localement. Bien que cette hypothèse soit généralement vraie, ce n’est pas toujours le cas. Parfois, les coûts opérationnels du cloud sont plus élevés. Ces coûts plus élevés sont souvent liés à une mauvaise gouvernance, des architectures système inadéquates, une duplication des processus, des configurations système atypiques ou des charges de personnel plus importantes. Heureusement, vous pouvez atténuer un bon nombre de ces problèmes pour obtenir un ROI (retour sur investissement) rapide. Suivre l’aide fournie dans [Générer la justification métier](#build-the-business-justification) peut vous aider à détecter et à éviter ces alignements incorrects. Le fait de dissiper les autres mythes décrits ici peut également vous aider.
 
-**Mythe : La mise en miroir de mon environnement local va m’aider à faire des économies dans le cloud.** Durant la planification du patrimoine numérique, il n’est pas rare que les entreprises détectent une sous-utilisation des fonctionnalités supérieure à 50 % de l’environnement provisionné. Si les ressources sont provisionnées dans le cloud pour correspondre au provisionnement actuel, il est difficile d’effectuer des économies. Réduisez éventuellement la taille des ressources déployées pour les aligner sur les modèles d’utilisation plutôt que sur les modèles de provisionnement.
+### <a name="myth-everything-should-go-into-the-cloud"></a>Mythe : Tout doit être placé dans le cloud
 
-**Mythe : Les coûts des serveurs impactent les analyses de rentabilisation de la migration cloud.** Parfois, cette hypothèse est vraie. Certaines entreprises jugent qu’il est important de réduire leurs dépenses d’investissement actuelles pour les serveurs. Mais cela dépend de plusieurs facteurs. Les entreprises dont le cycle de renouvellement du matériel est compris entre cinq et huit ans ont peu de chances d’obtenir des retours sur investissement rapides de leur migration cloud. Celles qui ont des cycles de renouvellement standards ou fixes peuvent atteindre un seuil de rentabilité rapidement. Dans les deux cas, d’autres dépenses peuvent être les déclencheurs financiers qui justifient la migration. Voici quelques exemples de coûts généralement négligés quand les entreprises adoptent une vision des coûts axée uniquement sur les serveurs ou uniquement sur les machines virtuelles :
+En fait, certains axes stratégiques peuvent vous amener à choisir une solution hybride. Avant de finaliser un modèle d’affaires, il est judicieux d’effectuer une première analyse quantitative, comme cela est expliqué dans les [articles consacrés au patrimoine numérique](../digital-estate/5-rs-of-rationalization.md). Pour plus d’informations sur les différents facteurs quantitatifs impliqués dans la rationalisation, consultez [Les cinq R de la rationalisation](../digital-estate/5-rs-of-rationalization.md). Chaque approche utilise des données d’inventaire faciles à obtenir ainsi qu’une brève analyse quantitative pour identifier les charges de travail ou les applications susceptibles de présenter des coûts plus élevés dans le cloud. Ces approches peuvent également identifier les dépendances ou les modèles de trafic qui nécessitent une solution hybride.
+
+### <a name="myth-mirroring-my-on-premises-environment-will-help-me-save-money-in-the-cloud"></a>Mythe : La mise en miroir de mon environnement local va m’aider à faire des économies dans le cloud
+
+Durant la planification du patrimoine numérique, il n’est pas rare que les entreprises détectent une sous-utilisation des fonctionnalités supérieure à 50 % de l’environnement provisionné. Si les ressources sont provisionnées dans le cloud pour correspondre au provisionnement actuel, il est difficile d’effectuer des économies. Réduisez éventuellement la taille des ressources déployées pour les aligner sur les modèles d’utilisation plutôt que sur les modèles de provisionnement.
+
+### <a name="myth-server-costs-drive-business-cases-for-cloud-migration"></a>Mythe : Les coûts des serveurs impactent les analyses de rentabilisation de la migration cloud
+
+Parfois, cette hypothèse est vraie. Certaines entreprises jugent qu’il est important de réduire leurs dépenses d’investissement actuelles pour les serveurs. Mais cela dépend de plusieurs facteurs. Les entreprises dont le cycle de renouvellement du matériel est compris entre cinq et huit ans ont peu de chances d’obtenir des retours sur investissement rapides de leur migration cloud. Celles qui ont des cycles de renouvellement standards ou fixes peuvent atteindre un seuil de rentabilité rapidement. Dans les deux cas, d’autres dépenses peuvent être les déclencheurs financiers qui justifient la migration. Voici quelques exemples de coûts généralement négligés quand les entreprises adoptent une vision des coûts axée uniquement sur les serveurs ou uniquement sur les machines virtuelles :
 
 - Les coûts des logiciels de virtualisation, des serveurs et des middlewares (intergiciels) peuvent être considérables. Les fournisseurs de cloud éliminent certains de ces coûts. Les programmes [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit/#services) et [Réservations](https://azure.microsoft.com/reservations) sont deux exemples de fournisseur de cloud qui permettent de réduire les coûts de virtualisation.
 - Les pertes financières dues à des pannes peuvent rapidement dépasser les coûts matériels ou logiciels. Si votre centre de données actuel est instable, travaillez avec l’entreprise pour quantifier l’impact des interruptions de service au niveau des coûts d’opportunité ou des coûts d’exploitation réels.
 - Les coûts environnementaux peuvent également être importants. Pour une famille américaine moyenne, le logement représente le plus gros investissement et le poste de dépense le plus élevé dans le budget. Il en va souvent de même pour les centres de données. Les coûts immobiliers, d’équipement et d’énergie représentent une bonne part des coûts locaux. Une fois que les centres de données sont mis hors service, ces installations peuvent être reconverties, ou votre entreprise peut éventuellement se libérer entièrement de ces coûts.
 
-**Mythe : Un modèle de dépenses d’exploitation est préférable à un modèle de dépenses en capital.** Comme cela est expliqué dans l’article sur les [résultats financiers](./business-outcomes/fiscal-outcomes.md), un modèle de dépenses d’exploitation peut être une bonne chose. Toutefois, certaines industries ont une vision négative des dépenses d’exploitation. Voici quelques exemples susceptibles de déclencher une intégration plus étroite avec les unités comptables et commerciales en ce qui concerne la conversation relative aux dépenses d’exploitation :
+### <a name="myth-an-operating-expense-model-is-better-than-a-capital-expense-model"></a>Mythe : Un modèle de dépenses d’exploitation est préférable à un modèle de dépenses en capital
+
+Comme cela est expliqué dans l’article sur les [résultats financiers](./business-outcomes/fiscal-outcomes.md), un modèle de dépenses d’exploitation peut être une bonne chose. Toutefois, certaines industries ont une vision négative des dépenses d’exploitation. Voici quelques exemples susceptibles de déclencher une intégration plus étroite avec les unités comptables et commerciales en ce qui concerne la conversation relative aux dépenses d’exploitation :
 
 - Quand une entreprise considère les immobilisations comme un facteur d’évaluation, les réductions des dépenses en capital peuvent être perçues comme un résultat négatif. Bien qu’il ne s’agisse pas d’un standard universel, ce sentiment est le plus souvent observé dans les secteurs de la vente au détail, de la fabrication et de la construction.
 - Une société de capital-investissement ou une société qui recherche un afflux de capitaux peut considérer l’augmentation des dépenses d’exploitation comme un résultat négatif.
@@ -43,7 +53,9 @@ Les entreprises ont tendance à percevoir les dépenses d’exploitation de mani
 
 Avant de fournir une justification métier axée sur la conversion des dépenses en capital en dépenses d’exploitation, déterminez ce qui convient le mieux à votre entreprise. La comptabilité et les achats peuvent souvent vous aider à aligner le message sur les objectifs financiers.
 
-**Mythe : Migrer vers le cloud est aussi simple que d’appuyer sur un bouton.** Une migration est une transformation technique qui s’effectue manuellement. Dans votre justification, en particulier pour les facteurs temps, prenez en compte les aspects suivants qui peuvent allonger le processus de migration des ressources :
+### <a name="myth-moving-to-the-cloud-is-like-flipping-a-switch"></a>Mythe : Migrer vers le cloud est aussi simple que d’appuyer sur un bouton
+
+Une migration est une transformation technique qui s’effectue manuellement. Dans votre justification, en particulier pour les facteurs temps, prenez en compte les aspects suivants qui peuvent allonger le processus de migration des ressources :
 
 - **Limitations de bande passante :** la quantité de bande passante entre le centre de données actuel et le fournisseur de cloud détermine les chronologies durant la migration.
 - **Chronologies des tests :** tester les applications auprès de l’entreprise pour valider leur disponibilité et leur niveau de performance peut prendre du temps. Il est donc primordial de planifier les processus de test en accord avec les utilisateurs décisionnaires.
@@ -68,8 +80,8 @@ Nous pouvons décomposer cette équation afin d’obtenir une vue spécifique à
 
 ## <a name="migration-specific-initial-investment"></a>Investissement initial pour la migration
 
-- Les fournisseurs de cloud comme Azure proposent des outils de calcul pour estimer le montant des investissements dans le cloud. La [calculatrice de prix Azure](https://azure.microsoft.com/pricing/calculator) en est un exemple.
-- Certains fournisseurs de cloud proposent également des calculatrices du delta des coûts. La [calculatrice du TCO (coût total de possession) Azure](https://azure.com/tco) en est un exemple.
+- Les fournisseurs de cloud proposent des outils de calcul pour estimer le montant des investissements dans le cloud. Microsoft fournit une [calculatrice de tarification Azure](https://azure.microsoft.com/pricing/calculator).
+- Certains fournisseurs de cloud proposent également des calculatrices du delta des coûts. Microsoft fournit la [calculatrice du TCO (coût total de possession) Azure](https://azure.microsoft.com/pricing/tco/calculator).
 - Pour des structures de coûts plus détaillées, effectuez plutôt une [planification du patrimoine numérique](../digital-estate/index.md).
 - Estimez le coût de la migration.
 - Estimez le coût des besoins de formation. [Microsoft Learn](https://docs.microsoft.com/learn) peut être une solution pour atténuer ces coûts.
@@ -84,7 +96,7 @@ Une fois que vous avez étudié les opportunités offertes par le cloud, travail
 
 ## <a name="migration-specific-cost-deltas"></a>Écarts de coûts liés à la migration
 
-Calculez les nouveaux coûts estimés après la migration proposée. Consultez l’article sur les [modèles financiers](./financial-models.md) pour plus d’informations sur les types de delta des coûts. Les fournisseurs de cloud proposent souvent des outils permettant de calculer le delta des coûts. La [calculatrice du TCO (coût total de possession) Azure](https://azure.com/tco) en est un exemple.
+Calculez les nouveaux coûts estimés après la migration proposée. Consultez l’article sur les [modèles financiers](./financial-models.md) pour plus d’informations sur les types de delta des coûts. Les fournisseurs de cloud proposent souvent des outils permettant de calculer le delta des coûts. La [calculatrice du TCO (coût total de possession) Azure](https://azure.microsoft.com/pricing/tco/calculator) en est un exemple.
 
 Autres exemples de coûts pouvant être réduits par une migration cloud :
 

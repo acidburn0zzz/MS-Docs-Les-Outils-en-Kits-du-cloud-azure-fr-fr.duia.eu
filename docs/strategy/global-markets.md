@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b4c39b0a55485335e65bee9a5e6be2fe5fe22279
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dba91bf7bd87395d3b5c55cf99480f8c6a54bd4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997752"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221448"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,4 +45,4 @@ Il est également important de comprendre les modèles d’utilisation des utili
 Découvrez les [compétences nécessaires au cours de la phase de stratégie](./suggested-skills.md) de votre parcours d’adoption du cloud.
 
 > [!div class="nextstepaction"]
-> [Compétences relatives à la stratégie](./suggested-skills.md)
+> [Compétences nécessaires pendant la phase de stratégie](./suggested-skills.md)

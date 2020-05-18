@@ -1,29 +1,26 @@
 ---
-title: Fonctionnalités de la stratégie cloud
-description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à aligner les activités techniques sur les résultats opérationnels.
-author: BrianBlanchard
-ms.author: brblanch
-ms.date: 09/10/2019
-ms.topic: conceptual
+title: Comprendre la fonction de la stratégie cloud
+description: Comprenez comment les fonctions de stratégie cloud permettent d’aligner les résultats commerciaux et les efforts d’adoption du cloud.
+author: JanetCThomas
+ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: 02582dd6da694c64c8344e17fc301a26e5a82bc7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.topic: conceptual
+ms.date: 05/05/2020
+ms.openlocfilehash: 828ab41080e4742fb633bb30467dda4bd4e3c535
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428494"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221958"
 ---
-# <a name="cloud-strategy-capabilities"></a>Fonctionnalités de la stratégie cloud
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
 
-L’adoption réussie du cloud doit être conforme aux motivations définies et aux résultats pour l’entreprise. Lorsque ces résultats ont un impact sur les fonctions de l’entreprise, il est judicieux de mettre en place une équipe composée de responsables émanant de différentes parties de l’entreprise. Pour regrouper tous ces responsables, nous conseillons à l’équipe dirigeante de créer une équipe responsable de la stratégie cloud. L’objectif de cette équipe de stratégie cloud est de produire des résultats tangibles pour l’entreprise via les technologies cloud. Cette équipe garantit que les efforts d’adoption du cloud progressent en fonction des résultats pour l’entreprise.
+# <a name="cloud-strategy-functions"></a>Fonctions de stratégie cloud
 
-En l’absence d’équipe de stratégie cloud clairement définie, quelqu’un doit quand même pouvoir aligner les activités techniques sur les résultats pour l’entreprise. Cette même personne ou ce même groupe doit également gérer les changements dans le projet. Cette section définit cette fonctionnalité plus en détail.
+Une équipe de stratégie cloud définit des motivations et des résultats commerciaux, et valide et maintient l’alignement entre les priorités de l’entreprise et les efforts d’adoption du cloud. En l’absence d’équipe de stratégie cloud clairement définie, quelqu’un doit quand même pouvoir aligner les activités techniques sur les résultats pour l’entreprise. Cette même personne ou ce même groupe doit également gérer les changements dans le projet.
 
-## <a name="possible-sources-for-this-capability"></a>Sources possibles pour cette compétence
-
-Cette fonctionnalité est généralement fournie par les types de rôles suivants. Lorsqu’une équipe de stratégie cloud est en place, elle doit inclure un grand nombre des rôles suivants :
+Les fonctions de stratégie cloud sont généralement fournies par les types de rôles suivants. Lorsqu’une équipe de stratégie cloud est en place, elle doit inclure un grand nombre des rôles suivants :
 
 - Finances
 - Secteur d’activité
@@ -34,33 +31,61 @@ Cette fonctionnalité est généralement fournie par les types de rôles suivant
 - Groupes d’applications
 - Chefs de projet (souvent avec une expérience en gestion de projet agile)
 
-Cette fonctionnalité permet de guider les efforts de hiérarchisation et de découverte critiques pendant l’adoption du cloud. Elle peut également déclencher des modifications dans les processus de l’entreprise, l’exécution d’opérations, les interactions avec les clients ou même le développement des produits. Si cette fonctionnalité est limitée au secteur informatique, le succès des efforts d’adoption du cloud est limité. Pour véritablement faire évoluer l’entreprise, les dirigeants doivent constituer la principale source de cette fonctionnalité. Une équipe de stratégie cloud définie constitue un moyen permettant d’impliquer les participants clés de façon structurée.
+Cette fonctionnalité permet de guider les efforts de hiérarchisation et de découverte critiques pendant l’adoption du cloud. Elle peut également déclencher des modifications dans les processus de l’entreprise, l’exécution d’opérations, les interactions avec les clients ou même le développement des produits. Si ces fonctionnalités sont limitées au secteur informatique, le succès des efforts d’adoption du cloud est limité. Pour véritablement faire évoluer l’entreprise, les dirigeants doivent constituer la principale source de cette fonctionnalité. Une équipe de stratégie cloud définie constitue un moyen permettant d’impliquer les participants clés de façon structurée.
 
 > [!NOTE]
 > Le PDG et le responsable informatique de l’organisation désignent souvent les membres de cette équipe. Les affectations sont généralement basées sur le fait de donner à cette équipe les moyens de mettre en œuvre les changements qui affectent les différentes organisations au sein de l’entreprise. Les membres de l’équipe de stratégie cloud doivent être affectés en fonction des [motivations de l’adoption du cloud](../strategy/motivations.md), des [résultats pour l’entreprise](../strategy/business-outcomes/index.md) et des [modèles financiers](../strategy/financial-models.md) pertinents.
 
-## <a name="key-responsibilities"></a>Responsabilités principales
+## <a name="preparation"></a>Préparation
 
-L’objectif principal de la stratégie cloud est de valider et de tenir à jour l’alignement entre les priorités de l’entreprise et les efforts d’adoption du cloud. Vous devez également vous concentrer sur la gestion des changements dans les différents efforts d’adoption. Les tâches suivantes permettent d’obtenir cette fonctionnalité.
+- [Découvrez la valeur métier de Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure).
+- [Découvrez comment Cloud Adoption Framework](https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure) peut vous aider à aligner la stratégie pour les entreprises, les personnes et la technologie.
+- Passez en revue le processus [Stratégie d’adoption du cloud](../strategy/index.md).
+- Téléchargez le [modèle de stratégie et de plan](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
 
-### <a name="early-planning-tasks"></a>Tâches de planification anticipée
+## <a name="minimum-scope"></a>Étendue minimale
 
-- Passer en revue et fournir des commentaires sur les [résultats pour l’entreprise](../strategy/business-outcomes/index.md) et les [modèles financiers](../strategy/financial-models.md).
-- Aider à établir des [motivations claires pour l’adoption du cloud](../strategy/motivations.md) et qui soient alignées sur les objectifs de l’entreprise.
-- Définir des [métriques d’apprentissage](../strategy/learning-metrics.md) pertinentes qui reflètent clairement la progression vers les résultats pour l’entreprise.
-- Comprendre [les risques pour l’entreprise](../govern/policy-compliance/risk-tolerance.md) créés par le plan, représenter la [tolérance de l’entreprise en matière de risques](../govern/policy-compliance/risk-tolerance.md).
-- Examiner et approuver la [rationalisation du patrimoine numérique](../digital-estate/rationalize.md).
+Alignez les parties prenantes pour optimiser la valeur commerciale des investissements en matière d’adoption du cloud.
 
-### <a name="ongoing-monthly-tasks"></a>Tâches mensuelles en cours
+Dans la mesure du possible, les résultats opérationnels et de stratégie cloud doivent être définis au début du processus. Au fur et à mesure que l’investissement dans l’adoption du cloud augmente et que l’entreprise en tire des bénéfices, les parties prenantes s’impliquent souvent davantage dans le processus. Lorsque les efforts d’adoption du cloud sont dirigés par l’entreprise, l’accent est sur le modèle d’exploitation et l’organisation.
 
-- Prendre en charge la [fonctionnalité de gouvernance cloud](./cloud-governance.md) pendant les conversations de risque/tolérance.
+### <a name="establish-a-vision"></a>Établir une vision
+
+- [Motivations de l’adoption](../strategy/motivations.md) : documentez et énoncez les raisons qui sous-tendent les efforts techniques.
+- [Résultats opérationnels](../strategy/business-outcomes/index.md) : énoncez clairement ce qui est attendu par l’équipe technique en termes de modifications d’entreprise.
+- [Métriques d’apprentissage](../strategy/learning-metrics.md) : établissez des métriques à court terme qui peuvent montrer la progression vers des résultats métiers à plus long terme.
+
+### <a name="build-business-justification"></a>Créer une justification métier
+
+- [Analyse de rentabilisation d’une migration cloud](../strategy/cloud-migration-business-case.md). Établissez une étude de rentabilisation pour la migration cloud.
+
+### <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
+
+- [Rationalisation incrémentielle](../digital-estate/rationalize.md) : approche agile de la rationalisation qui aligne correctement les décisions techniques à liaison tardive.
+- [Les 5 R de la rationalisation](../digital-estate/5-rs-of-rationalization.md) : comprenez les diverses options de rationalisation.
+
+## <a name="deliverable"></a>Livrable
+
+L’équipe de stratégie cloud guide les efforts de hiérarchisation et de découverte critiques pendant l’adoption du cloud. Elle peut également déclencher des modifications dans les processus de l’entreprise, l’exécution d’opérations, les interactions avec les clients ou même le développement des produits. L’objectif principal de l’équipe de stratégie cloud est de valider et de tenir à jour l’alignement entre les priorités de l’entreprise et les efforts d’adoption du cloud. Cette équipe doit également se concentrer sur la gestion des changements dans les différents efforts d’adoption. L’équipe de stratégie cloud doit pouvoir effectuer les tâches suivantes.
+
+**Tâches de planification précoces :**
+
+- Passer en revue et fournir des commentaires sur les résultats pour l’entreprise et les modèles financiers.
+- Aider à établir des motivations claires pour l’adoption du cloud et qui soient alignées sur les objectifs de l’entreprise.
+- Définir des métriques d’apprentissage pertinentes qui reflètent clairement la progression vers les résultats pour l’entreprise.
+- Comprendre les risques pour l’entreprise créés par le plan, représenter la tolérance de l’entreprise en matière de risques.
+- Examiner et approuver la rationalisation du patrimoine numérique.
+
+**Tâches mensuelles en cours :**
+
+- Soutenir l’équipe de gouvernance cloud pendant les conversations de risque/tolérance.
 - Passer en revue les plans pour comprendre les scénarios et l’impact sur l’entreprise des changements techniques.
 - Définir des plans de changement pour l’entreprise associés à des mises en production planifiées.
 - S’assurer que les équipes de l’entreprise sont prêtes à exécuter les tests et à mettre en œuvre le plan de changement pour l’entreprise.
 
-## <a name="meeting-cadence"></a>Cadence des réunions
+**Cadence des réunions :**
 
-Les tâches de la section précédente peuvent prendre du temps lors des premières phases de planification. Voici quelques recommandations pour l’allocation du temps des membres de l’équipe de stratégie cloud :
+Les membres de l’équipe de stratégie cloud doivent être en mesure de consacrer du temps à la planification et au développement de la stratégie cloud :
 
 - Pendant les premiers efforts de planification, allouez une heure chaque semaine pour rencontrer l’équipe. Une fois le plan d’adoption consolidé (généralement dans les 4 à 6 semaines), les exigences de temps peuvent être réduites.
 - Tout au long des efforts d’adoption, allouez 1 à 2 heures par mois pour examiner la progression et valider les priorités.
@@ -68,7 +93,6 @@ Les tâches de la section précédente peuvent prendre du temps lors des premiè
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-La stratégie et la planification sont importantes. Toutefois, rien n’est exploitable [sans les fonctionnalités d’adoption du cloud](./cloud-adoption.md). Il est important de bien comprendre cette fonctionnalité importante avant de commencer les efforts d’adoption.
-
-> [!div class="nextstepaction"]
-> [Aligner les fonctionnalités d’adoption du cloud](./cloud-adoption.md)
+- Créer une [équipe de stratégie cloud](../get-started/team/cloud-strategy.md)
+- Alignez votre stratégie avec les [fonctions d’adoption du cloud](./cloud-adoption.md) en créant une [équipe d’adoption du cloud](../get-started/team/cloud-adoption.md).
+- Utilisez le [modèle de feuille de calcul RACI](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) pour aligner les responsabilités entre les équipes.

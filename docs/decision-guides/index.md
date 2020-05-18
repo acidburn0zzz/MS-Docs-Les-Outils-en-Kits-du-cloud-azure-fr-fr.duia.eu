@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9a2cfb6d4280ac5d5fd6e16e330121e568ba7a71
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 49bfe755f27305e644b28ece987e1ad09a52d39e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434890"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214979"
 ---
 # <a name="architectural-decision-guides"></a>Guides de décision en matière d'architecture
 
@@ -31,11 +31,11 @@ Chacune des catégories suivantes représente une technologie de base de tout d�
 
 [Identité](./identity/index.md) : Intégrez des services d’identité basés sur le cloud à vos ressources d’identité existantes pour prendre en charge les autorisations et le contrôle d’accès au sein de votre environnement informatique.
 
-[Application de stratégies](./policy-enforcement/index.md) : Définissez et appliquez des règles de stratégie d’entreprise pour les ressources et charges de travail déployées dans le cloud qui s’alignent sur vos besoins de gouvernance.
+[Application des stratégies](./policy-enforcement/index.md) : Définissez et appliquez des règles de stratégie d’entreprise pour les ressources et charges de travail déployées dans le cloud qui s’alignent sur vos besoins de gouvernance.
 
 [Cohérence des ressources](./resource-consistency/index.md) : Vérifiez que le déploiement et l'organisation de vos ressources cloud s'alignent en termes de gestion des ressources et d'exigences de stratégie.
 
-[Identification des ressources](./resource-tagging/index.md) : Organisez vos ressources cloud de manière à ce qu’elles prennent en charge les modèles de facturation, les approches en matière de comptabilité cloud, le management, et qu’elles optimisent l’utilisation des ressources et les coûts. L'identification des ressources requiert un schéma d'attribution de noms et de métadonnées cohérent et bien organisé.
+[Marquage des ressources](./resource-tagging/index.md) : Organisez vos ressources cloud de manière à ce qu’elles prennent en charge les modèles de facturation, les approches en matière de comptabilité cloud, le management, et qu’elles optimisent l’utilisation des ressources et les coûts. L'identification des ressources requiert un schéma d'attribution de noms et de métadonnées cohérent et bien organisé.
 
 [SDN (Software Defined Network)](./software-defined-network/index.md) : Déployez des charges de travail sécurisées dans le cloud moyennant le déploiement rapide et la modification des fonctionnalités de mise en réseau virtualisées. Les réseaux à définition logicielle peuvent prendre en charge des workflows agiles, isoler des ressources et intégrer des systèmes basés sur le cloud à votre infrastructure informatique existante.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Gouvernance pour les entreprises complexes : Améliorer la discipline de base de référence des identités'
+title: 'Gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence des identités'
 description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir comment ajouter des contrôles de base de référence des identités à un produit minimum viable (MVP, minimum viable product) de gouvernance.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6cce3a3aafc62926c7e53d611cb4c94ae2496ac2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ec0f2ff617e0d4e5464dc5c9b1cead87b5a27048
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434449"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220122"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
@@ -77,7 +77,7 @@ Cette conception du MVP de gouvernance change de façon à inclure de nouvelles 
 
 Voici les nouvelles meilleures pratiques :
 
-- **Blueprint de réseau virtuel hybride sécurisé :** le côté local du réseau hybride doit être configuré de manière à autoriser la communication entre la solution suivante et les serveurs Active Directory locaux. Pour respecter cette meilleure pratique, la zone démilitarisée doit activer Active Directory Domain Services au-delà des limites du réseau.
+- **Plan de réseau virtuel hybride sécurisé :** le côté local du réseau hybride doit être configuré de manière à autoriser la communication entre la solution suivante et les serveurs Active Directory locaux. Pour respecter cette meilleure pratique, la zone démilitarisée doit activer Active Directory Domain Services au-delà des limites du réseau.
 - **Modèles Azure Resource Manager :**
     1. Définissez un groupe de sécurité réseau pour bloquer le trafic externe et autoriser le trafic interne.
     2. Déployez deux machines virtuelles Active Directory dans une paire à charge équilibrée basée sur une image finale (golden). Au premier démarrage, cette image exécute un script PowerShell pour joindre le domaine et s’inscrire auprès des services du domaine. Pour plus d’informations, consultez la page [Extension d’Active Directory Domain Services (AD DS) à Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).

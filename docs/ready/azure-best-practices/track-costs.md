@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b444c94686f6314fb2922e8b2c6ed99fea57e6ec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: aff6ee1eb16f1e2ab671c20bea61093d68b99fe4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396114"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223301"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Suivi des coûts dans les unités commerciales, les environnements ou les projets
 
@@ -28,7 +28,7 @@ Les ressources incluent l’ensemble des machines virtuelles, des sources de don
 
 ### <a name="classification"></a>classification ;
 
-La *catégorisation* est un moyen simple de classer les ressources. La catégorisation associe des métadonnées à une ressource. Ces métadonnées peuvent être utilisées pour classer la ressource en fonction de divers points de données. Lorsque des balises sont utilisées pour classer des ressources dans le cadre d’un effort de gestion des coûts, les sociétés ont souvent besoin des balises suivantes : unité commerciale, service, code de facturation, zone géographique, environnement, projet et charge de travail ou « catégorisation d’application ». Azure Cost Management peut utiliser ces balises pour créer des affichages différents de données de coûts.
+La _catégorisation_ est un moyen simple de classer les ressources. La catégorisation associe des métadonnées à une ressource. Ces métadonnées peuvent être utilisées pour classer la ressource en fonction de divers points de données. Lorsque des balises sont utilisées pour classer des ressources dans le cadre d’un effort de gestion des coûts, les sociétés ont souvent besoin des balises suivantes : unité commerciale, service, code de facturation, zone géographique, environnement, projet et charge de travail ou « catégorisation d’application ». Azure Cost Management peut utiliser ces balises pour créer des affichages différents de données de coûts.
 
 La catégorisation est un moyen primaire de comprendre les données dans les rapports de coûts. Il s’agit d’un élément fondamental de tout environnement bien managé. C’est également la première étape pour établir la gouvernance appropriée de tout environnement.
 
@@ -72,6 +72,8 @@ La gestion des coûts est une activité d’équipe. La section du Framework d�
 En règle générale et à titre de meilleure pratique, nous vous suggérons de disposer d’un modèle basé sur le privilège minimum pour affecter des personnes à différents rôles et étendues.
 
 ### <a name="roles"></a>Rôles
+
+<!-- docsTest:ignore Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
 Azure Cost Management prend en charge les rôles intégrés suivants pour chaque étendue :
 
@@ -117,7 +119,7 @@ Azure Cost Management est un outil bien documenté permettant de définir des bu
 
 ### <a name="get-started-with-azure-cost-management"></a>Prise en main d’Azure Cost Management
 
-Pour plus d’informations sur la prise en main d’Azure Cost Management, consultez le [Guide pratique pour optimiser votre investissement dans le cloud avec Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
+Pour commencer à utiliser Azure Cost Management, consultez le [Guide pratique pour optimiser votre investissement dans le cloud avec Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="use-azure-cost-management"></a>utiliser Azure Cost Management
 

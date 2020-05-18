@@ -9,15 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c946b5e7e43004653b31bc67ff1e325363deff9f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c1c54d7587bf73f5c9348c878caea7ae7cde89ae
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396165"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220190"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>Les cinq disciplines de la gouvernance cloud
 
+<!-- docsTest:disable TODO -->
 <!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsI">
@@ -26,7 +27,10 @@ ms.locfileid: "81396165"
             <div class="cardPadding" style="padding-bottom:10px;">
                 <div class="card" style="padding-bottom:10px;">
                     <div class="cardText" style="padding-left:0px;">
-Toute modification apportée à des processus métier ou à des plates-formes technologiques présente un risque. Les équipes de gouvernance cloud, dont les membres sont parfois appelés gardiens du cloud, sont chargées de minimiser ces risques et d’interrompre au minimum l’adoption et l’innovation.<br/><br/>Le modèle de gouvernance du cadre d’adoption du cloud guide ces décisions (indépendamment de la plateforme cloud choisie) en se concentrant sur le <a href="./corporate-policy.md">développement d’une stratégie d’entreprise</a> et les <a href="#disciplines-of-cloud-governance">cinq disciplines de gouvernance cloud</a>. Les <a href="./guides/index.md">guides de conception actionnables</a> illustrent ce modèle qui utilise des services Azure. Découvrez les disciplines du modèle de gouvernance cloud du cadre d’adoption du cloud.
+Toute modification apportée à des processus métier ou à des plates-formes technologiques présente un risque. Les équipes de gouvernance cloud, dont les membres sont parfois appelés gardiens du cloud, sont chargées de minimiser ces risques et d’interrompre au minimum l’adoption et l’innovation.
+    <br>
+    <br>
+Le modèle de gouvernance du cadre d’adoption du cloud guide ces décisions (indépendamment de la plateforme cloud choisie) en se concentrant sur le <a href="./corporate-policy.md">développement d’une stratégie d’entreprise</a> et les <a href="#disciplines-of-cloud-governance">cinq disciplines de gouvernance cloud</a>. Les <a href="./guides/index.md">guides de conception actionnables</a> illustrent ce modèle qui utilise des services Azure. Découvrez les disciplines du modèle de gouvernance cloud du cadre d’adoption du cloud.
                     </div>
                 </div>
             </div>
@@ -40,7 +44,7 @@ Toute modification apportée à des processus métier ou à des plates-formes te
                         <div class="cardText" style="padding-left:0px;">
     <img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
     <br>
-    <i>Figure 1 - Diagramme de la stratégie d’entreprise et les cinq disciplines de la gouvernance cloud.</i>
+    <i> Figure 1 : Diagramme de la stratégie d’entreprise et les cinq disciplines de la gouvernance cloud.</i>
                         </div>
                     </div>
                 </div>

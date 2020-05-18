@@ -1,31 +1,24 @@
 ---
-title: Capacités opérationnelles du cloud
-description: Utilisez le Cloud Adoption Framework pour Azure afin de découvrir les capacités opérationnelles du cloud et permettre aux opérations informatiques d’améliorer l’existant en apportant une valeur ajoutée.
-author: BrianBlanchard
-ms.author: brblanch
-ms.date: 09/10/2019
-ms.topic: conceptual
+title: Présentation des fonctions d’exploitation du cloud
+description: Découvrez la formation des fonctionnalités d’exploitation du cloud et composez votre équipe en fonction.
+author: JanetCThomas
+ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: fc5097eb5a6bb0c0400c0789ea197d0472f858ea
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.topic: conceptual
+ms.date: 04/20/2020
+ms.openlocfilehash: 3fd693d5e3275eea40d1a71149207689b7dca35b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428551"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215617"
 ---
-# <a name="cloud-operation-capabilities"></a>Capacités opérationnelles du cloud
+# <a name="cloud-operations-functions"></a>Fonctions d’exploitation du cloud
 
-La transformation d’entreprise est rendue possible par l’adoption du cloud. Toutefois, les retours sont uniquement réalisés quand les charges de travail déployées sur le cloud fonctionnent en s’alignant sur les attentes en matière de performances. À mesure que les charges de travail supplémentaires adoptent les technologies cloud, une capacité opérationnelle supplémentaire est nécessaire.
+Une équipe opérationnelle se concentre sur la supervision, la réparation et la correction des problèmes liés aux opérations et aux ressources informatiques traditionnelles. Dans le cloud, la plupart des dépenses d’investissement et des activités opérationnelles sont transférés vers le fournisseur de cloud, ce qui donne à l’équipe chargée de l’exploitation informatique la possibilité d’améliorer et de fournir une valeur ajoutée significative.
 
-Les opérations informatiques traditionnelles devaient se concentrer sur la gestion des opérations d’état actuel pour un large éventail de ressources techniques de bas niveau. Les éléments tels que le stockage, le processeur, la mémoire, l’équipement réseau, les serveurs et les hôtes d’ordinateurs virtuels nécessitent une maintenance continue pour gérer les opérations d’aperçu. Les budgets en capital incluent souvent des dépenses importantes liées à des mises à jour annuelles ou périodiques de ces ressources de bas niveau.
-
- Le capital humain au sein des opérations portent également sur la surveillance, la réparation et la correction des problèmes liés à ces ressources. Dans le cloud, un grand nombre de ces coûts d’investissement et activités opérationnelles sont transférés vers le fournisseur de cloud. Cela permet aux opérations informatiques de s’améliorer et de fournir une valeur ajoutée significative.
-
-## <a name="possible-sources-for-this-capability"></a>Sources possibles pour cette compétence
-
-Les compétences nécessaires pour fournir des fonctionnalités opérationnelles de cloud peuvent être fournies par :
+Les compétences nécessaires pour fournir des fonctions d’exploitation du cloud peuvent être assurées par les professionnels suivants :
 
 - Opérations informatiques
 - Externalisation des fournisseurs d’opérations informatiques
@@ -35,35 +28,53 @@ Les compétences nécessaires pour fournir des fonctionnalités opérationnelles
 - Équipes opérationnelles des applications métier
 - Équipes DevOps
 
-## <a name="key-responsibilities"></a>Responsabilités principales
+## <a name="preparation"></a>Préparation
 
-Les responsabilités des personnes qui fournissent des fonctionnalités opérationnelles du cloud sont de fournir des performances de charge de travail maximales et des interruptions d’activité minimales dans les limites des budgets opérationnels convenus.
+- [Gestion des ressources dans Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure) : Découvrez comment utiliser Azure CLI et le portail web pour créer, gérer et contrôler les ressources cloud.
+- [Services réseau Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking) : Découvrez les bases des réseaux Azure et comment améliorer la résilience et réduire la latence.
 
-### <a name="strategic-tasks"></a>Tâches stratégiques
+Consultez les pages suivantes :
 
-- Passez en revue les [résultats de l’entreprise](../strategy/business-outcomes/index.md), les [modèles financiers](../strategy/financial-models.md), les [motivations pour l’adoption du cloud](../strategy/motivations.md), les [risques commerciaux](../govern/policy-compliance/risk-tolerance.md) et la [rationalisation du patrimoine numérique](../digital-estate/index.md).
-- Déterminez la gravité de la charge de travail, l’impact des perturbations ou la dégradation des performances.
-- Établissez des engagements en matière de coûts et de performances approuvés par l’entreprise.
+- [Résultats opérationnels](../strategy/business-outcomes/index.md)
+- [Modèles financiers](../strategy/financial-models.md)
+- [Motivations en faveur de l’adoption du cloud](../strategy/motivations.md)
+- [Risques métier](../govern/policy-compliance/risk-tolerance.md)
+- [Rationalisation du patrimoine numérique](../digital-estate/index.md)
+
+## <a name="minimum-scope"></a>Étendue minimale
+
+Les membres de l’équipe chargée de l’exploitation du cloud ont pour mission de fournir des performances de charge de travail maximales et des interruptions d’activité minimales dans les limites d’un budget opérationnel convenu.
+
+- Déterminez le niveau stratégique de la charge de travail, l’impact des perturbations ou la dégradation des performances.
+- Établissez des engagements approuvés par l’entreprise en matière de coûts et de performances.
 - Surveillez et exploitez les charges de travail du cloud.
 
-### <a name="technical-tasks"></a>Tâches techniques
+## <a name="deliverables"></a>Livrables
 
-- Conservez l’inventaire des ressources et des charges de travail.
-- Surveiller les performances des charges de travail.
-- Conservez la conformité opérationnelle.
-- Protégez les charges de travail et les ressources associées.
-- Récupérez les ressources en cas de dégradation des performances ou d’interruption de l’activité.
-- Perfectionnez les fonctionnalités des plateformes de base.
-- Améliorez en permanence les performances des charges de travail.
-- Améliorez les exigences budgétaires et de conception des charges de travail pour répondre aux engagements vis-à-vis de l’entreprise.
+- Conserver un inventaire des ressources et des charges de travail
+- Superviser les performances des charges de travail
+- Maintenir la conformité opérationnelle
+- Protéger les charges de travail et les ressources associées
+- Récupérer les ressources en cas de détérioration des performances ou d’interruption de l’activité
+- Développer les fonctionnalités des plateformes centrales
+- Améliorer en permanence les performances des charges de travail
+- Perfectionner les exigences budgétaires et de conception des charges de travail en fonction des engagements vis-à-vis de l’entreprise
 
-## <a name="meeting-cadence"></a>Cadence des réunions
+### <a name="meeting-cadence"></a>Cadence des réunions
 
-Ceux qui effectuent des opérations de cloud doivent être impliqués dans la planification des mises en production et la planification du centre cloud d’excellence pour fournir des commentaires et se préparer aux exigences opérationnelles.
+L’équipe chargée de l’exploitation du cloud doit être impliquée dans la planification de la mise en production et du centre d’excellence cloud pour formuler des commentaires et se préparer aux exigences opérationnelles.
+
+## <a name="out-of-scope"></a>Hors propos
+
+La gestion des opérations informatiques traditionnelles à l’état actuel pour les ressources techniques de bas niveau ne fait pas partie des attributions de l’équipe chargée de l’exploitation du cloud. Des opérations continues de maintenance, de supervision, de réparation et de correction des problèmes sont nécessaires pour maintenir un fonctionnement maximal sur des éléments comme le stockage, le processeur, la mémoire, l’équipement réseau, les serveurs et les hôtes de machines virtuelles. Dans le cloud, un grand nombre de ces coûts d’investissement et activités opérationnelles sont transférés vers le fournisseur de cloud.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Au fur et à mesure de l’évolution de l’adoption et des opérations, il est important de définir et d’automatiser les meilleures pratiques de gouvernance qui étendent les besoins informatiques existants. La formation d’un [centre cloud d’excellence](./cloud-center-of-excellence.md) est une étape importante de la mise à l’échelle de l’adoption du cloud, des opérations du cloud et des efforts de gouvernance du cloud.
+Au fur et à mesure de l’évolution de l’adoption et des opérations, il est important de définir et d’automatiser les meilleures pratiques de gouvernance qui étendent les besoins informatiques existants. La formation d’un centre d’excellence cloud constitue une étape importante du développement des efforts d’adoption, d’exploitation et de gouvernance cloud.
 
-> [!div class="nextstepaction"]
-> [Établir un centre cloud d’excellence](./cloud-center-of-excellence.md)
+Pour en savoir plus :
+
+- Fonctions d’un [centre d’excellence cloud](../organize/cloud-center-of-excellence.md)
+- [Antimodèles organisationnels : Silos et fiefs](../organize/fiefdoms-silos.md)
+
+Découvrez comment aligner les responsabilités entre les équipes en développant une matrice qui identifie les parties en charge, responsables, consultées et informées (RACI). Téléchargez et modifiez le [modèle de feuille de calcul RACI](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx).

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a03abe234773139e291679e986452702e849c33e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5ddbd7a8f3780d4dc65492c9298119d0095f91db
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997221"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222587"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Créer un consensus autour de la valeur métier de l’innovation
 
@@ -47,7 +47,7 @@ Si l’une des équipes ne parvient pas à répondre aux quatre questions en 30 
 
 Le framework d’adoption du cloud doit suivre une procédure comprenant les phases suivantes : stratégie, planification, préparation et adoption. L’innovation cloud s’inscrit dans la phase d’adoption de ce processus. Les réponses aux [questions de qualification](#qualifying-questions) trois et quatre concernent les résultats et les motivations. Si ces réponses ne sont pas cohérentes, ceci indique que votre organisation a manqué quelque chose pendant la phase de stratégie du cycle de vie d’adoption du cloud. Certains des scénarios suivants sont susceptibles de se présenter.
 
-- **Opportunité d’alignement :** quand les parties prenantes de l’entreprise ne peuvent pas s’accorder sur les motivations et les résultats opérationnels liés à un effort d’innovation cloud, cela révèle une problématique plus importante. Les exercices de la [phase de stratégie cloud](../strategy/index.md) peuvent aider à développer l’alignement entre les parties prenantes de l’entreprise. En outre, il est fortement recommandé à ces parties prenantes de former une [équipe de stratégie cloud](../organize/cloud-strategy.md) se réunissant régulièrement.
+- **Opportunité d’alignement :** quand les parties prenantes de l’entreprise ne peuvent pas s’accorder sur les motivations et les résultats opérationnels liés à un effort d’innovation cloud, cela révèle une problématique plus importante. Les exercices de la [méthodologie Stratégie](../strategy/index.md) peuvent aider à développer l’alignement entre les parties prenantes de l’entreprise. En outre, il est fortement recommandé à ces parties prenantes de former une [équipe de stratégie cloud](../organize/cloud-strategy.md) se réunissant régulièrement.
 
 - **Opportunité de communication :** quand l’équipe de développement ne peut pas s’accorder sur les motivations et les résultats opérationnels, cela peut indiquer des lacunes en termes de communication stratégique. Vous pouvez résoudre rapidement ce problème en examinant la stratégie de cloud avec l’équipe d’adoption du cloud. Plusieurs semaines après cet examen, l’équipe doit se prêter une nouvelle fois à l’exercice sur les questions de qualification.
 

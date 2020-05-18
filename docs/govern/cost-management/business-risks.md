@@ -1,6 +1,6 @@
 ---
-title: Risques métier liés à la gestion des coûts
-description: Appréhendez et découvrez des exemples de clients ypes qui adoptent une discipline de gestion des coûts dans le cadre d’une stratégie de gouvernance cloud. 
+title: Motivations et risques pour l’entreprise dans la discipline de Gestion des coûts
+description: Appréhendez et découvrez des exemples de clients ypes qui adoptent une discipline de gestion des coûts dans le cadre d’une stratégie de gouvernance cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,22 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0afb5c3a4c8c1f355083ae6d4734ca4fa45b34ca
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 08ae1bab0697fdd7bbffecca18c62e5ae637c2b6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434703"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220717"
 ---
 <!-- cSpell:ignore prepurchases -->
 
-# <a name="cost-management-motivations-and-business-risks"></a>Risques métier et motivations associés à Gestion des coûts
+# <a name="motivations-and-business-risks-in-the-cost-management-discipline"></a>Motivations et risques pour l’entreprise dans la discipline de Gestion des coûts
 
 Cet article décrit les raisons pour lesquelles les clients adoptent une discipline Gestion des coûts au sein d’une stratégie de gouvernance cloud. Des exemples sur les risques métier conduisant à la rédaction d’instructions de stratégie sont également présentés.
 
-<!-- markdownlint-disable MD026 -->
-
-## <a name="is-cost-management-relevant"></a>La discipline Gestion des coûts est-elle pertinente ?
+## <a name="relevance"></a>Pertinence
 
 En matière de gouvernance des coûts, l’adoption du cloud crée un changement de paradigme. Dans un environnement local classique, la gestion des coûts repose sur des cycles de renouvellement, l’acquisition de centres de données, le renouvellement d’hôtes et des problèmes de maintenance périodiques. Vous pouvez prévoir, planifier et affiner chacun de ces coûts afin de vous aligner aux budgets de dépenses d’investissement annuels.
 
@@ -44,7 +42,7 @@ Les risques diffèrent en fonction de l’organisation, mais ceux liés aux coû
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle Gestion de cloud](./template.md), documentez les risques métier susceptibles d’être introduits par le plan d’adoption du cloud actuel.
+À l’aide du [modèle de stratégie Gestion des coûts](./template.md), documentez les risques métier susceptibles d’être introduits par le plan d’adoption du cloud actuel.
 
 Une fois que vous avez compris tous les risques métier réalistes, l’étape suivante consiste à documenter la tolérance de l’activité aux risques, ainsi que les indicateurs et métriques clés permettant de superviser cette tolérance.
 

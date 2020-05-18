@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 36c2653876f0d254a282a7f7ed3abaee2ca82656
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7c38d394e5681de181186c3c8f04e6704b53e96e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434399"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220071"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Guide de gouvernance pour les entreprises complexes : Couches de gouvernance multiples
 
@@ -51,7 +51,7 @@ Les outils tels que les groupes d’administration permettent à l’équipe inf
 
 Le point important à retenir pour chacun de ces outils est la possibilité d’appliquer plusieurs blueprints à une hiérarchie. La gouvernance devient alors un processus en couches. Voici un exemple de cette application hiérarchique de la gouvernance :
 
-- **Équipe informatique de l’entreprise :** elle crée un ensemble de standards et de stratégies qui s’applique à l’ensemble de l’adoption du cloud. Cela est matérialisé dans un blueprint « Planning de référence ». L’équipe informatique de l’entreprise devient alors propriétaire de la hiérarchie du groupe d’administration, et s’assure qu’une version de la base de référence est appliquée à tous les abonnements dans la hiérarchie.
+- **Équipe informatique de l’entreprise :** elle crée un ensemble de standards et de stratégies qui s’applique à l’ensemble de l’adoption du cloud. Cela est matérialisé dans un blueprint _Planning de référence_. L’équipe informatique de l’entreprise devient alors propriétaire de la hiérarchie du groupe d’administration, et s’assure qu’une version de la base de référence est appliquée à tous les abonnements dans la hiérarchie.
 - **Équipe informatique d’unité commerciale ou régionale :** plusieurs équipes informatiques peuvent appliquer une couche de gouvernance supplémentaire en créant leur propre blueprint. Ces blueprints vont permettre de créer d’autres stratégies et standards. Une fois développés, l’équipe informatique de l’entreprise peut appliquer ces blueprints aux nœuds concernés dans la hiérarchie du groupe d’administration.
 - **Équipes d’adoption du cloud :** des implémentations et décisions précises au sujet des applications ou des charges de travail peuvent être mises en place et prises par les équipes d’adoption du cloud, au sein du contexte des exigences de la gouvernance. L’équipe peut parfois demander des modèles de cohérence des ressources Azure supplémentaires pour accélérer les efforts d’adoption.
 

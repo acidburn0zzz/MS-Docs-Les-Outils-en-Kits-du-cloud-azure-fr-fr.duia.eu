@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a26ad28c5cd91225f02d5824690bc2d409bbd55f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc655eb5d7169c84c8cf577326b7396758e49970
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433733"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221414"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,17 +44,17 @@ La modification d’un secteur, la disruption de marchés ou la transformation d
 
 En revanche, certains indicateurs positifs sont souvent associés à l’apprentissage piloté par les données : la centralisation des jeux de données hétérogènes, l’entrée des données et la démocratisation des données. Alors que l’équipe est en train de se renseigner sur le client de demain, des résultats réels peuvent se produire immédiatement. La prise en charge des métriques d’apprentissage peut inclure les éléments suivants :
 
-- Nombre de modèles disponibles
-- Nombre de sources de données de partenaire consommées
-- Appareils produisant des données d’entrée
-- Volume de données d’entrée
-- Types de données
+- Nombre de modèles disponibles.
+- Nombre de sources de données de partenaire consommées.
+- Appareils produisant des données d’entrée.
+- Volume de données d’entrée.
+- Types de données.
 
 Une métrique encore plus précieuse est le nombre de tableaux de bord créés à partir de sources de données combinées. Ce nombre reflète les processus métiers en l’état actuel qui sont affectés par les nouvelles sources de données. En partageant les nouvelles sources de données de manière ouverte, votre entreprise peut tirer parti des données à l’aide d’outils de création de rapports comme Power BI pour produire des Insights incrémentaux et générer des modifications métiers.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois les métriques d’apprentissage alignées, vous êtes prêt à commencer à [effectuer une analyse de rentabilisation](.\cloud-migration-business-case.md) à délivrer par rapport à ces métriques.
+Une fois les métriques d’apprentissage alignées, vous êtes prêt à commencer à [effectuer une analyse de rentabilisation](./cloud-migration-business-case.md) à délivrer par rapport à ces métriques.
 
 > [!div class="nextstepaction"]
-> [Effectuer l’analyse de rentabilisation du cloud](.\cloud-migration-business-case.md)
+> [Effectuer l’analyse de rentabilisation du cloud](./cloud-migration-business-case.md)

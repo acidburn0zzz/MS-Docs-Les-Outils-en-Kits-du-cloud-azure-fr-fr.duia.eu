@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ebb0f0899ad8ea4e5f26c43b0486c56560b4dd14
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4b0d1c727a0b224071d008e82af16a142e98d60a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708867"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220734"
 ---
 # <a name="cost-management-discipline-overview"></a>Vue d’ensemble de la discipline Gestion des coûts
 
-La gestion des coûts est l’une des [cinq disciplines de la gouvernance du cloud](../governance-disciplines.md) dans le [modèle de gouvernance du Framework d’adoption du cloud](../index.md). Pour de nombreux clients, le contrôle des coûts est une préoccupation majeure lors de l’adoption de technologies cloud. Parvenir à un équilibre entre les demandes de performances, le rythme d’adoption et les coûts des services cloud peut se révéler périlleux. Cela est particulièrement vrai lors des transformations majeures de l’entreprise qui implémente des technologies cloud. Cette section décrit l’approche à adopter pour élaborer une discipline Gestion des coûts dans le cadre d’une stratégie de gouvernance cloud.
+La discipline Gestion des coûts est l’une des [cinq disciplines de la gouvernance du cloud](../governance-disciplines.md) dans le [modèle de gouvernance du Framework d’adoption du cloud](../index.md). Pour de nombreux clients, le contrôle de leurs coûts est une préoccupation majeure lors de l’adoption de technologies cloud. Parvenir à un équilibre entre les demandes de performances, le rythme d’adoption et les coûts des services cloud peut se révéler périlleux. Cela est particulièrement vrai lors des transformations majeures de l’entreprise qui implémente des technologies cloud. Cette section décrit l’approche à adopter pour élaborer une discipline Gestion des coûts dans le cadre d’une stratégie de gouvernance cloud.
 
 > [!NOTE]
-> La gouvernance Gestion des coûts ne remplace pas les équipes commerciales, les pratiques de comptabilité et les procédures existantes qui sont impliquées dans la gestion financière des coûts informatiques de votre organisation. Le principal objectif de cette discipline consiste à identifier les potentiels risques cloud en lien avec les dépenses informatiques, et à proposer des conseils d’atténuation des risques aux équipes commerciales et informatiques responsables du déploiement et de la gestion des ressources cloud.
+> La discipline Gestion des coûts ne remplace pas les équipes commerciales, les pratiques de comptabilité et les procédures existantes qui sont impliquées dans la gestion financière des coûts informatiques de votre organisation. Le principal objectif de cette discipline consiste à identifier les potentiels risques cloud en lien avec les dépenses informatiques, et à proposer des conseils d’atténuation des risques aux équipes commerciales et informatiques responsables du déploiement et de la gestion des ressources cloud.
 
 Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Cependant, les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés dans votre entreprise et vos équipes informatiques, en particulier les responsables de la propriété, de la gestion et du paiement des charges de travail dans le cloud.
 
@@ -50,14 +50,15 @@ Les six étapes suivantes vous aideront à définir des stratégies de gouvernan
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Modèle Gestion des coûts</h3>
-                        <p class="x-hidden-focus">Télécharger le modèle pour documenter une discipline Gestion des coûts</p>
+                        <h3>Modèle de discipline Gestion des coûts</h3>
+                        <p class="x-hidden-focus">Télécharger le modèle pour documenter une discipline Gestion des coûts.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -68,7 +69,7 @@ Les six étapes suivantes vous aideront à définir des stratégies de gouvernan
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Risques commerciaux</h3>
+                        <h3>Risques métier</h3>
                         <p class="x-hidden-focus">Appréhendez les motivations et les risques généralement associés à la discipline Gestion des coûts.</p>
                     </div>
                 </div>
@@ -126,7 +127,7 @@ Les six étapes suivantes vous aideront à définir des stratégies de gouvernan
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Maturité</h3>
-                        <p class="x-hidden-focus">Adéquation de la maturité de la gestion du cloud avec les phases d’adoption du cloud.</p>
+                        <p class="x-hidden-focus">Alignez la maturité de la gestion du cloud avec les phases d’adoption du cloud.</p>
                     </div>
                 </div>
             </div>

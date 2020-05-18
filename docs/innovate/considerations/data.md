@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 878127e904adb28b873f642bb7d8ef152d7e63ff
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eb54bd4c583878fb72b4e7401fd05662ca87bc63
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997192"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224134"
 ---
 # <a name="democratize-data"></a>Démocratiser les données
 
@@ -43,7 +43,7 @@ Les principaux outils permettant de partager des données directement avec les c
 
 Le partage de données peut rapidement produire un PMV utilisable dans le cadre des conversations avec les clients. Toutefois, pour transformer ces données partagées en connaissances utiles et exploitables, il en faut généralement un peu plus. Une fois qu'une hypothèse a été validée par le partage des données, la phase suivante du développement est généralement la gouvernance des données.
 
-La gouvernance des données est un vaste sujet qui pourrait nécessiter son propre framework. Ce degré de granularité dépasse la portée du [Framework d'adoption du cloud](../../index.md). Toutefois, certains aspects de la gouvernance des données doivent être pris en compte dès que l'hypothèse du client est validée. Par exemple :
+La gouvernance des données est un vaste sujet qui pourrait nécessiter son propre framework. Ce degré de granularité dépasse la portée du [Framework d'adoption du cloud](../../index.yml). Toutefois, certains aspects de la gouvernance des données doivent être pris en compte dès que l'hypothèse du client est validée. Par exemple :
 
 - **Les données partagées sont-elles sensibles ?** [Les données doivent être classées secrètes](../../govern/policy-compliance/data-classification.md) avant d’être partagées publiquement afin de protéger les intérêts des clients et de l’entreprise.
 - **Si les données sont sensibles, ont-elles été sécurisées ?** La protection des données sensibles doit être obligatoire pour toutes les données démocratisées. L’exemple de la charge de travail axée sur la [sécurisation des solutions de données](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) fournit quelques références relatives à la sécurisation des données.
@@ -56,7 +56,7 @@ Lorsque la démocratisation des données est importante pour une hypothèse cent
 Lorsque les données sont interrompues dans un environnement informatique, les possibilités d'innovation peuvent être extrêmement limitées, coûteuses et chronophages. Le cloud offre de nouvelles opportunités pour centraliser les données entre les silos de données. Lorsque la centralisation de plusieurs sources de données est requise pour [développer en faisant preuve d'empathie vis-à-vis du client](./build.md), le cloud peut accélérer le test des hypothèses.
 
 > [!CAUTION]
-> Quel que soit le processus d'innovation, la centralisation des données constitue toujours un risque. Lorsque la centralisation des données représente un [défi technique](./build.md#reduce-complexity-and-delay-technical-spikes) (par opposition à une source de valeur pour le client), nous vous conseillons de reporter la centralisation jusqu'à ce que les hypothèses du client aient été confirmées.
+> Quel que soit le processus d'innovation, la centralisation des données constitue toujours un risque. Lorsque la centralisation des données représente un [défi technique](./build.md#reduce-complexity-and-delay-technical-spikes), et pas une source de valeur pour le client, nous vous conseillons de reporter la centralisation jusqu'à ce que les hypothèses du client aient été confirmées.
 
 Si une centralisation des données est nécessaire, vous devez d'abord définir le magasin de données approprié pour les données centralisées. L'approche recommandée consiste à établir un entrepôt de données dans le cloud. Cette option évolutive fournira un emplacement central pour toutes vos données. Ce type de solution est disponible dans les options de traitement analytique en ligne (OLAP) ou de Big Data.
 
@@ -67,7 +67,7 @@ Les architectures de référence des solutions [OLAP](https://docs.microsoft.com
 
 ### <a name="collect-data"></a>Collecter les données
 
-Lorsque vous devez centraliser des données pour répondre aux besoins d'un client, vous pouvez également être amené à collecter les données issues de différentes sources et les transférer vers le magasin de données centralisé. Il existe deux principales formes de collecte de données : l'*intégration* et l'*ingestion*.
+Lorsque vous devez centraliser des données pour répondre aux besoins d'un client, vous pouvez également être amené à collecter les données issues de différentes sources et les transférer vers le magasin de données centralisé. Il existe deux principales formes de collecte de données : l'_intégration_ et l'_ingestion_.
 
 **Intégration :** Les données qui résident dans un magasin de données existant peuvent être intégrées au magasin de données centralisé en utilisant des techniques traditionnelles de déplacement des données. Cela est particulièrement courant pour les scénarios qui impliquent un stockage de données multicloud. Ces techniques consistent à extraire les données du magasin de données existant, puis à les charger dans le magasin de données central. À un moment donné de ce processus, les données sont généralement transformées pour être plus utiles et pertinentes dans le magasin central.
 

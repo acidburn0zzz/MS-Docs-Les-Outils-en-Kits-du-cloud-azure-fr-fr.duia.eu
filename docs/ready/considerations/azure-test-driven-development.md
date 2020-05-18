@@ -1,18 +1,18 @@
 ---
-title: Développement piloté par les tests des zones d’atterrissage dans Azure
-description: Développement piloté par les tests des zones d’atterrissage dans Azure
+title: Développement piloté par les tests des zones d’atterrissage dans Azure.
+description: Développement piloté par les tests des zones d’atterrissage dans Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: de56ab7dca0a769272777118836bc9ee93058002
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b4edc0f0e485c040045bc8c1b7bce6c91f3d13f9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122058"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221907"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Développement piloté par les tests des zones d’atterrissage dans Azure
 

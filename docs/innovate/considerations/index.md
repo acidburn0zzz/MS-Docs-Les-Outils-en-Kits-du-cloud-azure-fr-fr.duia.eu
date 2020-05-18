@@ -7,18 +7,18 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3e8824e93f5ecc1db8359d8361a4aa6c84dd00f4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d46518dca8738efd1b1e22f8d276102e198fc6be
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427630"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219680"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innovation dans l’économie numérique
 
 L’économie numérique est une force indéniable dans presque tous les secteurs d’activité. Pendant la révolution industrielle, l’essence, les tapis roulants et l’ingéniosité humaine étaient des facteurs d’innovation clés sur le marché. La qualité des produits, le prix et la logistique eurent une influence sur le marché à mesure que les entreprises cherchaient à fournir plus rapidement de meilleurs produits à leurs clients. Aujourd’hui, l’économie numérique change la façon dont les clients interagissent avec les entreprises. Les principales formes de différenciation des capitaux et des marchés ont toutes évolué en conséquence. Dans l’économie numérique, les clients attachent moins d’importance à la logistique et davantage à leur expérience globale d’utilisation d’un produit. Cette évolution vient de l’interaction directe avec la technologie dans nos vies quotidiennes et de la réalisation de la valeur associée à ces interactions.
 
-Dans la phase d’innovation du Framework d’adoption du cloud, nous nous concentrerons sur la compréhension des besoins des clients et sur la création rapide d’innovations qui déterminent la manière dont vos clients interagissent avec vos produits. Nous présenterons une approche permettant de garantir la valeur d’un produit minimum viable (MVP). Enfin, nous établirons une carte de décisions communes aux cycles d’innovation pour vous aider à comprendre comment le cloud peut libérer l’innovation et créer des partenariats avec vos clients.
+Dans la méthodologie d’innovation du Framework d’adoption du cloud, nous nous concentrerons sur la compréhension des besoins des clients et sur la création rapide d’innovations qui déterminent la manière dont vos clients interagissent avec vos produits. Nous présenterons une approche permettant de garantir la valeur d’un produit minimum viable (MVP). Enfin, nous établirons une carte de décisions communes aux cycles d’innovation pour vous aider à comprendre comment le cloud peut libérer l’innovation et créer des partenariats avec vos clients.
 
 ## <a name="innovate-methodology"></a>Méthodologie d’innovation
 
@@ -55,7 +55,7 @@ Chaque équipe de développement dispose d’un ensemble d’outils ou de techno
 
 ## <a name="commitment-to-transparency"></a>Engagement à la transparence
 
-Pour comprendre la mesure dans une approche d’innovation, vous devez tout d’abord comprendre l’engagement à la transparence. L’innovation ne peut prospérer que dans un environnement qui adhère à un *état d’esprit tourné vers la croissance*. Ce dernier trouve son origine dans un impératif culturel d’apprendre des expériences. L’innovation réussie et l’apprentissage continu commencent par un engagement à la transparence concernant la mesure. Il s’agit d’un engagement courageux pour l’équipe d’adoption du cloud. Toutefois, cet engagement est vain si ne lui fait pas écho un engagement à préserver la transparence au sein des équipes de direction et de stratégie cloud.
+Pour comprendre la mesure dans une approche d’innovation, vous devez tout d’abord comprendre l’engagement à la transparence. L’innovation ne peut prospérer que dans un environnement qui adhère à un _état d’esprit tourné vers la croissance_. Ce dernier trouve son origine dans un impératif culturel d’apprendre des expériences. L’innovation réussie et l’apprentissage continu commencent par un engagement à la transparence concernant la mesure. Il s’agit d’un engagement courageux pour l’équipe d’adoption du cloud. Toutefois, cet engagement est vain si ne lui fait pas écho un engagement à préserver la transparence au sein des équipes de direction et de stratégie cloud.
 
 La transparence est importante, car la mesure de l’impact sur les clients ne répond pas à la question de la pertinence ou de la non-pertinence. Les mesures d’impact ne sont pas non plus révélatrices de la qualité du travail ou des performances de l’équipe d’adoption. Au lieu de cela, elles représentent une possibilité d’apprendre et de mieux répondre aux besoins de vos clients. Une mauvaise utilisation des métriques d’innovation peut entraver cette culture. Finalement, cette utilisation incorrecte aboutit à une manipulation des métriques, qui entraîne à son tour un échec à long terme de l’invention, du personnel de support et enfin de la structure de gestion qui a mal utilisé les données. Les responsables et les contributeurs doivent réserver l’utilisation des mesures à l’apprentissage et à l’amélioration de la solution MVP.
 

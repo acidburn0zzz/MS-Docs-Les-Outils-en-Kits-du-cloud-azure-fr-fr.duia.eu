@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4dea8b186d2c37f614be364c605144a744479990
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e7b5811099119e3f3b1c148ae550bd92e8fc8090
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433202"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223250"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -54,7 +54,7 @@ Pour créer un blueprint :
 
 ::: zone target="docs"
 
-1. Accédez à [Blueprints – Prise en main](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
+1. Accédez à [Blueprints : Bien démarrer](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. Dans la section **Créer un blueprint**, sélectionnez **Créer**.
 1. Filtrez la liste des blueprints pour sélectionner le blueprint approprié.
 1. Entrez le **Nom du blueprint**, puis sélectionnez l’**Emplacement de définition** approprié.
@@ -162,8 +162,8 @@ Pour plus d'informations, consultez les rubriques suivantes :
 
 - [Centre de sécurité Azure](https://docs.microsoft.com/azure/security-center)
 - [Accès juste-à-temps aux machines virtuelles](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
-- [Niveaux tarifaires Standard et Gratuit](https://azure.microsoft.com/pricing/details/security-center)
-- [Framework d’adoption du cloud : Discipline de la gouvernance relative à la base de référence de la sécurité](../../govern/security-baseline/index.md)
+- [Tarification Security Center](https://azure.microsoft.com/pricing/details/security-center)
+- [Framework d’adoption du cloud : Discipline Base de référence de la sécurité](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

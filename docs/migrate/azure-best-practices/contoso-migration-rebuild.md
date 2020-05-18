@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 92ca2b6a59654824e4d4dcb23f29917491f64ffb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 089533e9bff66fb355fb0ae720aa868bce67bd89
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120777"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223845"
 ---
+<!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
+
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel contososmarthotel smarthotelcontoso smarthotelpetchecker petchecker smarthotelakseus smarthotelacreus smarthotelpets kubectl contosodevops visualstudio azuredeploy cloudapp smarthotelsettingsurl appsettings -->
 
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Regénérer une application locale sur Azure AD
@@ -54,16 +56,16 @@ Après avoir défini précisément les objectifs et exigences, Contoso conçoit 
 - L’application SmartHotel360 locale est hiérarchisée sur deux machines virtuelles (WEBVM et SQLVM).
 - Les machines virtuelles sont situées sur un hôte VMware ESXi **contosohost1.contoso.com** (version 6.5).
 - L’environnement VMware est géré par le serveur vCenter Server 6.5 (**vcenter.contoso.com**) s’exécutant sur une machine virtuelle.
-- Contoso dispose d’un centre de données local (contoso-datacenter), avec un contrôleur de domaine local (**contosodc1**).
+- Contoso dispose d’un centre de données local (**contoso-datacenter**), avec un contrôleur de domaine local (**contosodc1**).
 - Les machines virtuelles locales dans le centre de données Contoso seront désaffectées une fois la migration terminée.
 
 ### <a name="proposed-architecture"></a>Architecture proposée
 
 - Le front-end de l’application est déployé en tant qu’application web Azure App Service, dans la région Azure primaire.
 - Une fonction Azure fournit les chargements de photos d’animaux, et le site interagit avec cette fonctionnalité.
-- La fonction de photos d’animaux s’appuie sur l’API Vision d’Azure Cognitive Services et Cosmos DB.
-- Le serveur principal du site est créé à l’aide de microservices. Ceux-ci seront déployés sur des conteneurs gérés sur Azure Kubernetes Service (AKS).
-- Les conteneurs seront générés à l’aide d’Azure DevOps, et envoyés à Azure Container Registry (ACR).
+- La fonction de photos d’animaux s’appuie sur l’API Vision par ordinateur d’Azure Cognitive Services et Cosmos DB.
+- Le serveur principal du site est créé à l’aide de microservices. Ces derniers seront déployés sur des conteneurs gérés dans AKS.
+- Les conteneurs seront générés à l’aide d’Azure DevOps, et envoyés à Azure Container Registry.
 - Pour l’instant, Contoso déploie manuellement l’application web et le code de fonction à l’aide de Visual Studio.
 - Les microservices sont déployés à l’aide d’un script PowerShell qui appelle des outils de ligne de commande de Kubernetes.
 
@@ -77,16 +79,16 @@ Contoso évalue la conception proposée en dressant la liste des avantages et de
 
 **Considération** | **Détails**
 --- | ---
-**Avantages** | L’utilisation de solutions PaaS et sans serveur pour le déploiement de bout en bout réduit considérablement le temps de gestion pour Contoso.<br/><br/> La migration vers une architecture de microservices permet à Contoso d’étendre facilement la solution au fil du temps.<br/><br/> Les nouvelles fonctionnalités peuvent être mises en ligne sans interruption des bases de code de solutions existantes.<br/><br/> L’application web est configurée avec plusieurs instances sans point de défaillance unique.<br/><br/> La mise à l'échelle automatique sera activée afin que l’application puisse traiter les variations de volume du trafic.<br/><br/> Avec la migration vers des services PaaS, Contoso peut mettre hors service des solutions obsolètes s’exécutant sur le système d’exploitation Windows Server 2008 R2.<br/><br/> Cosmos DB a une tolérance de panne intégrée qui ne nécessite aucune configuration par Contoso. Cela signifie que la couche Données n’est plus un point de basculement unique.
-**Inconvénients** | Les conteneurs sont plus complexes que d’autres options de migration. La courbe d’apprentissage pourrait poser problème à Contoso. Ils introduisent un nouveau niveau de complexité qui apporte de la valeur en dépit de la courbe.<br/><br/> L’équipe des opérations chez Contoso doit redoubler d’efforts pour comprendre et prendre en charge Azure, les conteneurs et les microservices pour l’application.<br/><br/> Contoso n’a pas encore totalement implémenté le DevOps pour la solution entière. Contoso doit y réfléchir pour le déploiement de services vers AKS, Azure Functions et Azure App Service.
+**Avantages** | L’utilisation de solutions PaaS et sans serveur pour le déploiement de bout en bout réduit considérablement le temps de gestion pour Contoso. <br><br> La migration vers une architecture de microservices permet à Contoso d’étendre facilement la solution au fil du temps. <br><br> Les nouvelles fonctionnalités peuvent être mises en ligne sans interruption des bases de code de solutions existantes. <br><br> L’application web est configurée avec plusieurs instances sans point de défaillance unique. <br><br> La mise à l'échelle automatique sera activée afin que l’application puisse traiter les variations de volume du trafic. <br><br> Avec la migration vers des services PaaS, Contoso peut mettre hors service des solutions obsolètes s’exécutant sur le système d’exploitation Windows Server 2008 R2. <br><br> Cosmos DB a une tolérance de panne intégrée qui ne nécessite aucune configuration par Contoso. Cela signifie que la couche Données n’est plus un point de basculement unique.
+**Inconvénients** | Les conteneurs sont plus complexes que d’autres options de migration. La courbe d’apprentissage pourrait poser problème à Contoso. Ils introduisent un nouveau niveau de complexité qui apporte de la valeur en dépit de la courbe. <br><br> L’équipe des opérations chez Contoso doit redoubler d’efforts pour comprendre et prendre en charge Azure, les conteneurs et les microservices pour l’application. <br><br> Contoso n’a pas encore totalement implémenté le DevOps pour la solution entière. Contoso doit y réfléchir pour le déploiement de services vers AKS, Azure Functions et Azure App Service.
 
 <!-- markdownlint-enable MD033 -->
 
 ### <a name="migration-process"></a>Processus de migration
 
-1. Contoso approvisionne l’ACR, l’AKS et Cosmos DB.
-2. Ils approvisionnent l’infrastructure pour le déploiement, notamment l’application web Azure App Service, le compte de stockage, la fonction et l’API.
-3. Une fois l’infrastructure en place, ils vont construire leurs images conteneurs de microservices à l’aide d’Azure DevOps qui les envoie à l’ACR.
+1. Contoso provisionne Azure Container Registry, AKS et Cosmos DB.
+2. Contoso approvisionne l’infrastructure pour le déploiement, notamment l’application web Azure App Service, le compte de stockage, la fonction et l’API.
+3. Une fois l’infrastructure en place, ils vont construire leurs images conteneurs de microservices à l’aide d’Azure DevOps qui les envoie au registre de conteneurs.
 4. Contoso déploiera ces microservices vers l’AKS à l’aide d’un script PowerShell.
 5. Enfin, ils déploieront la fonction et l’application web.
 
@@ -109,9 +111,9 @@ Voici ce dont Contoso a besoin pour ce scénario :
 
 **Configuration requise** | **Détails**
 --- | ---
-**Abonnement Azure** | Dans un article précédent, Contoso a créé des abonnements. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions.<br/><br/> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.
-**Infrastructure Azure** | [Découvrez comment](./contoso-migration-infrastructure.md) Contoso configure une infrastructure Azure.
-**Prérequis pour développeur** | Contoso a besoin des outils suivants sur une station de travail de développeur :<br/><br/> - [Visual Studio 2017 Community Edition : Version 15.5](https://visualstudio.microsoft.com)<br/><br/> Charge de travail .NET activée.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install), configurés pour utiliser des conteneurs Windows.
+Abonnement Azure | <li> Dans un article précédent, Contoso a créé des abonnements. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial). <li> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions. <li> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.
+Infrastructure Azure | <li> Découvrez [comment Contoso configure une infrastructure Azure](./contoso-migration-infrastructure.md).
+Prérequis pour développeur | Contoso a besoin des outils suivants sur une station de travail de développeur : <li>  [Visual Studio 2017 Community Edition : Version 15.5](https://visualstudio.microsoft.com) <li> Charge de travail .NET activée. <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install), configurés pour utiliser des conteneurs Windows.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -121,16 +123,16 @@ Voici comment Contoso exécutera la migration :
 
 > [!div class="checklist"]
 >
-> - **Étape 1 : Provisionner AKS et ACR.** Contoso approvisionne le cluster AKS géré et le registre de conteneurs Azure à l’aide de PowerShell.
-> - **Étape 2 : Générer des conteneurs Docker.** Ils configurent l’intégration continue pour les conteneurs Docker à l’aide d’Azure DevOps et les placent sur l’ACR.
+> - **Étape 1 : Approvisionnez AKS et Azure Container Registry.** Contoso approvisionne le cluster AKS géré et le registre de conteneurs à l’aide de PowerShell.
+> - **Étape 2 : Générer des conteneurs Docker.** Ils configurent l’intégration continue (CI) pour les conteneurs Docker à l’aide d’Azure DevOps et les poussent vers le registre de conteneurs.
 > - **Étape 3 : Déployer les microservices principaux.** Ils déploient le reste de l’infrastructure qu’utiliseront les microservices principaux.
-> - **Étape 4 : Déployer l’infrastructure frontale.** Ils déploient l’infrastructure frontale, dont le stockage blob pour les photos d’animaux, Cosmos DB et l’API Vision.
+> - **Étape 4 : Déployer l’infrastructure frontale.** Ils déploient l’infrastructure frontale, dont le stockage blob pour les photos d’animaux, Cosmos DB et l’API Vision par ordinateur.
 > - **Étape 5 : Migrer le serveur principal.** Ils déploient les microservices et de les exécutent sur AKS pour migrer le serveur principal.
 > - **Étape 6 : Publier le frontal.** Ils publient l’application SmartHotel360 sur Azure App Service, ainsi que la Function App qui sera appelée par le service de gestion des animaux.
 
 ## <a name="step-1-provision-back-end-resources"></a>Étape 1 : Approvisionner les ressources backend
 
-Les administrateurs de Contoso exécutent un script de déploiement pour créer le cluster Kubernetes managé à l’aide d’AKS et d’Azure Container Registry (ACR).
+Les administrateurs de Contoso exécutent un script de déploiement pour créer le cluster Kubernetes managé à l’aide d’AKS et d’Azure Container Registry.
 
 - Les instructions de cette section utilisent le référentiel **SmartHotel360-Backend**.
 - Le référentiel GitHub **SmartHotel360-Backend** contient tous les logiciels pour cette partie du déploiement.
@@ -142,13 +144,13 @@ Les administrateurs de Contoso exécutent un script de déploiement pour créer 
 
     `git clone https://github.com/Microsoft/SmartHotel360-Backend.git`
 
-### <a name="provision-aks-and-acr"></a>Provisionner AKS et ACR
+### <a name="provision-aks-and-azure-container-registry"></a>Approvisionner AKS et Azure Container Registry
 
 Les administrateurs de Contoso effectuent le provisionnement comme suit :
 
 1. Ils ouvrent le dossier à l’aide de Visual Studio Code, et accèdent au répertoire **/deploy/k8s** qui contient le script **gen-aks-env.ps1**.
 
-2. Ils exécutent le script pour créer le cluster Kubernetes managé à l’aide d’AKS et d’ACR.
+2. Ils exécutent le script pour créer le cluster Kubernetes géré à l’aide d’AKS et d’Azure Container Registry.
 
    ![AKS](./media/contoso-migration-rebuild/aks1.png)
 
@@ -160,7 +162,7 @@ Les administrateurs de Contoso effectuent le provisionnement comme suit :
 
    ![AKS](./media/contoso-migration-rebuild/aks3.png)
 
-5. Dans le terminal intégré PowerShell, ils se connectent à Azure à l’aide de la commande Connect-AzureRmAccount. [En savoir plus](https://docs.microsoft.com/powershell/azure/get-started-azureps) sur la mise en route avec PowerShell.
+5. Dans le terminal intégré PowerShell, ils se connectent à Azure à l’aide de la commande Connect-AzureRmAccount. [Découvrez comment](https://docs.microsoft.com/powershell/azure/get-started-azureps) commencer à utiliser PowerShell.
 
    ![AKS](./media/contoso-migration-rebuild/aks4.png)
 
@@ -168,7 +170,7 @@ Les administrateurs de Contoso effectuent le provisionnement comme suit :
 
    ![AKS](./media/contoso-migration-rebuild/aks5.png)
 
-7. Ils exécutent la commande suivante, en passant le nom de groupe de ressources ContosoRG, le nom du cluster AKS smarthotel-aks-eus2, et le nouveau nom de registre.
+7. Ils exécutent la commande suivante, en passant le nom de groupe de ressources **ContosoRG**, le nom du cluster AKS **smarthotel-aks-eus2**, et le nouveau nom de registre.
 
    ```PowerShell
    .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
@@ -204,7 +206,7 @@ Les administrateurs de Contoso effectuent le provisionnement comme suit :
 
 ### <a name="create-an-azure-devops-project-and-build"></a>Créer un projet Azure DevOps et une build
 
-Contoso crée un projet Azure DevOps et configure une build CI pour créer le conteneur, puis transmet celui-ci à l’ACR. Les instructions de cette section utilisent le référentiel [SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend).
+Contoso crée un projet Azure DevOps et configure une build CI pour créer le conteneur, puis transmet celui-ci au registre de conteneurs. Les instructions de cette section utilisent le référentiel [SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend).
 
 1. À partir de visualstudio.com, ils créent une organisation (**contosodevops360.visualstudio.com**), puis la configurent pour utiliser Git.
 
@@ -232,11 +234,11 @@ Contoso crée un projet Azure DevOps et configure une build CI pour créer le co
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts6.png)
 
-8. Ils répètent l’opération pour ajouter une autre tâche **Docker Compose**. Celle-ci envoie les conteneurs à l’ACR.
+8. Ils répètent l’opération pour ajouter une autre tâche **Docker Compose**. Celle-ci transmet les conteneurs au registre de conteneurs.
 
      ![Azure DevOps](./media/contoso-migration-rebuild/vsts7.png)
 
-9. Ils sélectionnent la première tâche (générer) et configurent la build avec l’abonnement, l’autorisation et l’ACR Azure.
+9. Ils sélectionnent la première tâche (générer) et configurent la build avec l’abonnement, l’autorisation et le registre de conteneurs.
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts8.png)
 
@@ -244,7 +246,7 @@ Contoso crée un projet Azure DevOps et configure une build CI pour créer le co
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts9.png)
 
-11. Maintenant, ils configurent la deuxième tâche de Docker (envoyer). Ils sélectionnent l’abonnement et l’ACR **smarthotelacreus2**.
+11. Maintenant, ils configurent la deuxième tâche de Docker (envoyer). Ils sélectionnent l’abonnement et le registre de conteneurs **smarthotelacreus2**.
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts10.png)
 
@@ -260,7 +262,7 @@ Contoso crée un projet Azure DevOps et configure une build CI pour créer le co
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts13.png)
 
-15. Une fois la build terminée, l’ACR montre les nouveaux référentiels qui sont remplis des conteneurs utilisés par les microservices.
+15. Une fois la build terminée, le registre de conteneurs montre les nouveaux référentiels qui sont remplis des conteneurs utilisés par les microservices.
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts14.png)
 
@@ -275,7 +277,7 @@ Ils déploient comme suit :
 
 1. Ils ouvrent une invite de commandes de développeur et utilisent la commande `az login` pour l’abonnement Azure.
 
-2. Ils utilisent le fichier deploy.cmd pour déployer les ressources Azure dans le groupe de ressources ContosoRG et la région EUS2, en tapant la commande suivante :
+2. Ils utilisent le fichier deploy.cmd pour déployer les ressources Azure dans le groupe de ressources **ContosoRG** et la région **EUS2**, en tapant la commande suivante :
 
     ```azurecli
     .\deploy.cmd azuredeploy ContosoRG -c eastus2
@@ -352,14 +354,18 @@ Ils créent le pipeline :
 
 ## <a name="step-3-provision-front-end-services"></a>Étape 3 : Provisionner les services frontaux
 
-Les administrateurs de Contoso doivent déployer l’infrastructure qui sera utilisée par les applications frontales. Ils créent un conteneur de stockage d’objets blob pour stocker les images d’animaux, la base de données Cosmos pour stocker les documents contenant les informations sur les animaux, et l’API Vision pour le site web.
+Les administrateurs de Contoso doivent déployer l’infrastructure qui sera utilisée par les applications frontales. Ils créent :
 
-Les instructions de cette section utilisent le dépôt [SmartHotel360-Website](https://github.com/Microsoft/SmartHotel360-Website).
+- Un conteneur de stockage d’objets BLOB pour stocker les images d’animaux
+- Une base de données Cosmos DB pour stocker des documents contenant des informations sur les animaux
+- API Vision par ordinateur pour le site web.
+
+Les instructions de cette section utilisent le dépôt [SmartHotel360-Website](https://github.com/microsoft/smartHotel360-website).
 
 ### <a name="create-blob-storage-containers"></a>Créer des conteneurs de Stockage Blob
 
 1. Sur le portail Azure, ils ouvrent le compte de stockage créé, puis sélectionnent **Objets blob**.
-2. Ils créent un conteneur (**Pets**) avec le niveau d’accès public défini sur conteneur. Les utilisateurs chargeront leurs photos d’animaux sur ce conteneur.
+2. Ils créent un conteneur **Pets** avec le niveau d’accès public défini sur conteneur. Les utilisateurs chargeront leurs photos d’animaux sur ce conteneur.
 
     ![Objet blob de stockage](./media/contoso-migration-rebuild/blob1.png)
 
@@ -371,15 +377,15 @@ Les instructions de cette section utilisent le dépôt [SmartHotel360-Website](h
 
     ![Objet blob de stockage](./media/contoso-migration-rebuild/blob2.png)
 
-### <a name="provision-a-cosmos-database"></a>Approvisionner une base de données Cosmos
+### <a name="provision-a-cosmos-db-atabase"></a>Approvisionner une base de données Cosmos DB
 
-Les administrateurs de Contoso provisionnent une base de données Cosmos à utiliser pour les informations sur les animaux.
+Les administrateurs de Contoso provisionnent une base de données Cosmos DB à utiliser pour les informations sur les animaux.
 
 1. Ils créent une **Azure Cosmos DB** dans la Place de marché Azure.
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
 
-2. Ils spécifient un nom (**contososmarthotel**), sélectionnent l’API SQL, puis la placent dans le groupe de ressources de production ContosoRG, dans la région principale USA Est 2.
+2. Ils spécifient un nom (**contososmarthotel**), sélectionnent l’API SQL, puis la placent dans le groupe de ressources de production **ContosoRG**, dans la région principale USA Est 2.
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
 
@@ -399,7 +405,7 @@ Les administrateurs de Contoso provisionnent l’API Vision par ordinateur. L’
 
      ![Vision par ordinateur](./media/contoso-migration-rebuild/vision1.png)
 
-2. Ils approvisionnent l’API (**smarthotelpets**) dans le groupe de ressources de production ContosoRG, dans la région principale USA Est 2.
+2. Ils approvisionnent l’API (**smarthotelpets**) dans le groupe de ressources de production **ContosoRG**, dans la région principale USA Est 2.
 
     ![Vision par ordinateur](./media/contoso-migration-rebuild/vision2.png)
 
@@ -469,7 +475,7 @@ Les administrateurs de Contoso créent deux projets différents pour le site fro
 4. Ils mettent à jour le fichier /config-sample.json/sample.json.
 
     - Il s’agit du fichier de configuration pour le web en cas d’utilisation d’un point de terminaison public.
-    - Ils modifient les sections **urls** et **pets_config** avec les valeurs de points de terminaison, de comptes de stockage et de base de données Cosmos de l’API AKS.
+    - Ils modifient les sections **urls** et **pets_config** avec les valeurs de points de terminaison, de comptes de stockage et de base de données Cosmos DB de l’API AKS.
     - Les URL doivent correspondre au nom DNS de la nouvelle application web que Contoso va créer.
     - Pour Contoso, il s’agit de **smarthotelcontoso.eastus2.cloudapp.azure.com**.
 
@@ -565,7 +571,7 @@ Les administrateurs de Contoso déploient l’application comme suit.
 
 1. Ils clonent le dépôt localement sur la machine de développement en se connectant au projet Azure DevOps.
 2. Dans Visual Studio, ils ouvrent le dossier pour afficher tous les fichiers contenus dans le référentiel.
-3. Ils ouvrent le fichier **src/PetCheckerFunction/local.settings.json**, puis ajoutent les paramètres d’application pour le stockage, la base de données Cosmos et l’API Vision par ordinateur.
+3. Ils ouvrent le fichier **src/PetCheckerFunction/local.settings.json**, puis ajoutent les paramètres d’application pour le stockage, la base de données Cosmos DB et l’API Vision par ordinateur.
 
     ![Déployer la fonction](./media/contoso-migration-rebuild/function5.png)
 
@@ -589,7 +595,7 @@ Les administrateurs de Contoso déploient l’application comme suit.
 
     ![Déployer la fonction](./media/contoso-migration-rebuild/function6.png)
 
-15. Ils accèdent à l’application pour vérifier que l’intelligence artificielle de Pet Checker (Vérificateur d’animaux) fonctionne comme prévu sur [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets).
+15. Ils accèdent à l’application pour vérifier que l’intelligence artificielle de Pet Checker (Vérificateur d’animaux) fonctionne comme prévu sur `http://smarthotel360public.azurewebsites.net/pets`.
 
 16. Ils sélectionnent l’avatar pour charger une image.
 
@@ -617,7 +623,7 @@ Une fois les ressources migrées dans Azure, Contoso doit rendre la nouvelle inf
 
 - Contoso doit examiner les [besoins de sauvegarde de la base de données Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 - Contoso devrait envisager d’implémenter des [groupes de basculement SQL afin de fournir un basculement régional pour la base de données](https://docs.microsoft.com/azure/sql-database/sql-database-auto-failover-group).
-- Contoso peut utiliser la [géoréplication pour la référence (SKU) premium d’ACR](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
+- Contoso peut utiliser la [géoréplication pour la référence (SKU) premium d’Azure Container Registry](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
 - Cosmos DB est sauvegardé automatiquement. Contoso peut [en savoir plus](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore) sur ce processus.
 
 ### <a name="licensing-and-cost-optimization"></a>Gestion des licences et optimisation des coûts
@@ -636,6 +642,6 @@ Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation 
 
 Voici plusieurs exemples de parcours d’apprentissage personnalisés sur Microsoft Learn en ligne avec l’application Contoso SmartHotel360 dans Azure.
 
-[Déployer un site web sur Azure avec Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service) : Web Apps dans Azure vous permet de publier et de gérer votre site web facilement sans avoir à utiliser les ressources réseau, stockage ou serveurs sous-jacents. Vous pouvez donc vous concentrer sur les fonctionnalités de votre site web et vous appuyer sur la plateforme Azure robuste pour fournir un accès sécurisé à votre site.
+- **[Déployer un site web sur Azure avec Azure App Service ](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service):** Web Apps dans Azure vous permet de publier et de gérer votre site web facilement sans avoir à utiliser les ressources réseau, stockage ou serveurs sous-jacents. Vous pouvez donc vous concentrer sur les fonctionnalités de votre site web et vous appuyer sur la plateforme Azure robuste pour fournir un accès sécurisé à votre site.
 
-[Traitez et classifiez les images avec les services Azure Cognitive Vision](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services) : Azure Cognitive Services propose des fonctionnalités prédéfinies pour activer la vision par ordinateur dans vos applications. Découvrez comment utiliser les services Cognitive Vision pour détecter des visages, étiqueter et classifier des images, et identifier des objets.
+- **[Traitez et classifiez les images avec les services Azure Cognitive Vision ](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services):** Azure Cognitive Services propose des fonctionnalités prédéfinies pour activer la vision par ordinateur dans vos applications. Découvrez comment utiliser les services Cognitive Vision pour détecter des visages, étiqueter et classifier des images, et identifier des objets.

@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e45d3fe552c13b502f61dfa91e0af85ad10e00b2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1696f4ee2f10ba9b7a9fa01865dd041181f9034a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428107"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223454"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planifier l’adoption du cloud
 
@@ -26,7 +26,7 @@ Cet effort commence par le patrimoine numérique (proposé ou existant), qui con
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>Passer d’une planification séquentielle à une planification itérative
 
-La planification de l’adoption du cloud peut représenter un changement important pour certaines organisations. Les organisations informatiques ont longtemps porté leur attention sur l’application de modèles linéaires ou séquentiels de gestion de projet, tels que le [modèle en cascade](https://wikipedia.org/wiki/Waterfall_model). Dans le cadre de l’informatique traditionnelle, cette approche était entièrement logique. La plupart des grands projets informatiques débutaient avec une demande d’approvisionnement pour acquérir des ressources matérielles coûteuses. Les demandes de dépenses en immobilisations, les allocations de budget et l’acquisition d’équipements constituaient souvent une part importante de l’exécution d’un projet. En outre, une fois acquis, le matériel lui-même devenait une contrainte sur ce qui pouvait être livré.
+La planification de l’adoption du cloud peut représenter un changement important pour certaines organisations. Les organisations informatiques ont longtemps porté leur attention sur l’application de modèles linéaires ou séquentiels de gestion de projet, tels que le [modèle en cascade](https://wikipedia.org/wiki/waterfall_model). Dans le cadre de l’informatique traditionnelle, cette approche était entièrement logique. La plupart des grands projets informatiques débutaient avec une demande d’approvisionnement pour acquérir des ressources matérielles coûteuses. Les demandes de dépenses en immobilisations, les allocations de budget et l’acquisition d’équipements constituaient souvent une part importante de l’exécution d’un projet. En outre, une fois acquis, le matériel lui-même devenait une contrainte sur ce qui pouvait être livré.
 
 Les modèles d’acquisition du cloud changent les dépendances principales qui rendaient nécessaire un modèle séquentiel. Le remplacement des cycles d’acquisition par une approche axée sur les frais d’exploitation permet aux entreprises d’évoluer plus rapidement tout en réduisant leurs engagements financiers. Cette approche permet aux équipes de s’impliquer dans des projets avant de connaître toutes les exigences qui s’y rapportent. Elle favorise également une mentalité axée sur la croissance et offre aux équipes la liberté d’expérimenter, d’apprendre et de produire sans contraintes artificielles. Pour toutes ces raisons et d'autres encore, nous recommandons vivement aux équipes d’utiliser des approches agiles ou itératives de la planification de l’adoption du cloud.
 
@@ -38,7 +38,7 @@ Cette série d’articles décrit chaque étape de la procédure visant à tradu
 2. **Définir et hiérarchiser les charges de travail** : Classez par ordre de priorité vos 10 premières charges de travail pour établir un backlog d’adoption initial.
 3. **Aligner les ressources sur les charges de travail :** Identifiez les ressources (proposées ou existantes) requises pour prendre en charge les charges de travail hiérarchisées.
 4. **Passer en revue les décisions de rationalisation :** Examinez les décisions de rationalisation pour affiner les choix de chemin d’adoption : migrer ou innover.
-5. **Établir des itérations et des plans de mise en production :** Les *itérations* sont les blocs de temps alloués pour le travail. Les *versions* sont la définition du travail à effectuer avant de déclencher une modification des processus de production.
+5. **Établir des itérations et des plans de mise en production :** Les _itérations_ sont les blocs de temps alloués pour le travail. Les _versions_ sont la définition du travail à effectuer avant de déclencher une modification des processus de production.
 6. **Estimer les chronologies** : Établissez des chronologies approximatives pour la planification des versions, en fonction des estimations initiales.
 
 ## <a name="next-steps"></a>Étapes suivantes

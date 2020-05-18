@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 212c5634c09900e52c02ec6691862f3c60b7b3dc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79023864"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221686"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Le modèle Cloud Operating Model fait désormais partie du Framework d’adoption du cloud Microsoft pour Azure
 
@@ -26,15 +26,17 @@ En octobre 2018, nous avons commencé à examiner tous les modèles qui étaien
 
 Pour une approche similaire au COM, les lecteurs doivent commencer par l’un des éléments suivants :
 
-- [Commencer un parcours de migration vers le cloud](../getting-started/migrate.md)
-- [Innover via l’adoption du cloud](../getting-started/innovate.md)
-- [Réussir l’adoption du cloud](../getting-started/enable.md)
+- [Commencer un parcours de migration vers le cloud](../get-started/migrate.md)
+- [Innover via l’adoption du cloud](../get-started/innovate.md)
+- [Réussir l’adoption du cloud](../get-started/enable.md)
 
 Les conseils fournis précédemment dans le modèle COM sont toujours pertinents dans le cadre de l’adoption du Framework d’adoption du cloud. L’expérience est différente, mais la structure du Framework d’adoption du cloud est simplement une prolongation de ces conseils. Pour passer du modèle COM au Framework d’adoption du cloud, il est important d’en comprendre la portée et la structure. Les deux sections suivantes décrivent cette transition.
 
 ## <a name="scope"></a>Étendue
 
 COM définit un champ d’application constitué des composants suivants :
+
+<!-- cSpell:ignore caf -->
 
 ![Champ d’application du Framework d’adoption du cloud](../_images/caf-scope.png)
 
@@ -45,7 +47,7 @@ COM définit un champ d’application constitué des composants suivants :
 Le champ d’application du Cloud Operating Model et celui du Framework d’adoption du cloud sont similaires. L’entreprise, la culture et la technologie sont reprises dans les conseils et chaque méthodologie dans le Framework d’adoption du cloud.
 
 > [!NOTE]
-> Le champ d’application du Framework d’adoption du cloud comporte deux points importants. Dans le Framework d’adoption du cloud, la stratégie métier va au-delà de la documentation des coûts du cloud. Il s’agit de comprendre les motivations, les résultats souhaités, les retours attendus et les coûts liés au cloud afin de créer des plans applicables immédiatement et de clarifier les justifications métier. Dans le Framework d’adoption du cloud, la stratégie du personnel va au-delà de la formation et reprend différentes approches qui suscitent une maturité culturelle concrète. Certains aspects de la feuille de route comprennent des démonstrations de l’impact de la gestion agile, de l’intégration DevOps, de l’empathie et de l’obsession du client, ainsi que des approches légères du développement des produits.
+> Le champ d’application du Framework d’adoption du cloud comporte deux points importants. Dans le framework, la stratégie métier va au-delà de la documentation des coûts du cloud.&mdash;Il s’agit de comprendre les motivations, les résultats souhaités, les retours attendus et les coûts liés au cloud afin de créer des plans applicables immédiatement et de clarifier les justifications métier. Dans le Framework d’adoption du cloud, la stratégie du personnel va au-delà de la formation et reprend différentes approches qui suscitent une maturité culturelle concrète. Certains aspects de la feuille de route comprennent des démonstrations de l’impact de la gestion agile, de l’intégration DevOps, de l’empathie et de l’obsession du client, ainsi que des approches légères du développement des produits.
 
 ## <a name="structure"></a>Structure
 
@@ -65,15 +67,15 @@ Les trois phases de l’adoption sont les suivantes :
 
 Les trois phases d’adoption du cloud correspondent à deux parcours spécifiques :
 
-- [Migration](../getting-started/migrate.md) : Déplacer les charges de travail existantes dans le cloud.
-- [Innovation :](../getting-started/innovate.md) Moderniser les charges de travail existantes et créer des produits et services.
+- [Migration](../get-started/migrate.md) : Déplacer les charges de travail existantes dans le cloud.
+- [Innovation :](../get-started/innovate.md) Moderniser les charges de travail existantes et créer des produits et services.
 
-Les ressources supplémentaires requises pour réussir l’adoption du cloud sont disponibles dans [Favoriser la réussite de l’adoption](../getting-started/enable.md).
+Les ressources supplémentaires requises pour réussir l’adoption du cloud sont disponibles dans [Favoriser la réussite de l’adoption](../get-started/enable.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour reprendre votre parcours là où le modèle COM s’est arrêté, choisissez un des parcours d’adoption du cloud suivants :
+Pour reprendre votre parcours là où le modèle COM s’est arrêté, choisissez un des guides de prise en main suivants :
 
-- [Bien démarrer avec la migration vers le cloud](../getting-started/migrate.md)
-- [Bien démarrer avec l’innovation dans le cloud](../getting-started/innovate.md)
-- [Favoriser la réussite de l’adoption](../getting-started/enable.md)
+- [Bien démarrer avec la migration vers le cloud](../get-started/migrate.md)
+- [Bien démarrer avec l’innovation dans le cloud](../get-started/innovate.md)
+- [Favoriser le succès de l’adoption](../get-started/enable.md)

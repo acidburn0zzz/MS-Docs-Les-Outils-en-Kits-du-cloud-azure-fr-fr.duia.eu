@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e2549c252b8fddf6cd549215704300a764f4040
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9c8bc1a9dd0c475a72db73ad032dabd1ff83f476
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997269"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219850"
 ---
 # <a name="security-baseline-discipline-overview"></a>Présentation de la discipline Base de référence de la sécurité
 
 La base de référence de la sécurité est l’une des [cinq disciplines de la gouvernance du cloud](../governance-disciplines.md) dans le [modèle de gouvernance du Framework d’adoption du cloud](../index.md). La sécurité s’invite dans chaque déploiement informatique, et le cloud fait naître des problèmes de sécurité uniques. De nombreuses entreprises sont soumises à des exigences réglementaires qui font de la protection des données sensibles une priorité organisationnelle majeure, particulièrement lors du passage au cloud. Il est primordial que les équipes de sécurité informatique et de cybersécurité identifient les menaces de sécurité potentielles pour votre environnement cloud, et établissent des processus et procédures pour répondre à ces menaces. La discipline Base de référence de la sécurité garantit que les exigences techniques et les contraintes de sécurité soient appliquées de façon homogène dans les environnements cloud, à mesure que ces exigences gagnent en maturité.
 
 > [!NOTE]
-> La gouvernance Base de référence de la sécurité ne remplace pas les équipes, les processus et les procédures informatiques existants que votre organisation utilise pour sécuriser les ressources déployées sur le cloud. L’objectif principal de cette discipline est d’identifier les risques de sécurité potentiels et de fournir des conseils sur l’atténuation des risques au personnel informatique responsable de l’infrastructure de sécurité. Lorsque vous élaborez des stratégies et des processus de gouvernance, veillez à faire participer les équipes informatiques pertinentes à vos processus de planification et de révision.
+> La discipline Base de référence de la sécurité ne remplace pas les équipes, les processus et les procédures informatiques existants que votre organisation utilise pour sécuriser les ressources déployées sur le cloud. L’objectif principal de cette discipline est d’identifier les risques de sécurité potentiels et de fournir des conseils sur l’atténuation des risques au personnel informatique responsable de l’infrastructure de sécurité. Lorsque vous élaborez des stratégies et des processus de gouvernance, veillez à faire participer les équipes informatiques pertinentes à vos processus de planification et de révision.
 
 Cet article décrit l’approche à adopter pour élaborer une discipline Base de référence de la sécurité dans le cadre de votre stratégie de gouvernance cloud. Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Cependant, les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés au sein de votre équipe de sécurité et votre équipe informatique, en particulier les responsables techniques chargés de l’implémentation de la mise en réseau, du chiffrement et des services d’identité.
 
@@ -36,7 +36,7 @@ Les instructions de stratégie exploitables et les exigences d’architecture qu
 
 ## <a name="develop-governance-policy-statements"></a>Développer des instructions de stratégie de gouvernance
 
-Les six étapes suivantes offrent des exemples et des options potentielles à prendre en compte lors de l’élaboration de la gouvernance Base de référence de la sécurité. Chaque étape peut servir de thème de discussion au sein de votre équipe de gouvernance cloud et avec les équipes commerciales, informatiques et de sécurité concernées au sein de votre organisation, en vue d’établir les stratégies et processus nécessaires à la gestion des risques liés à la sécurité.
+Les six étapes suivantes offrent des exemples et des options potentielles à prendre en compte lors de l’élaboration de la discipline Base de référence de la sécurité. Chaque étape peut servir de thème de discussion au sein de votre équipe de gouvernance cloud et avec les équipes commerciales, informatiques et de sécurité concernées au sein de votre organisation, en vue d’établir les stratégies et processus nécessaires à la gestion des risques liés à la sécurité.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -52,14 +52,15 @@ Les six étapes suivantes offrent des exemples et des options potentielles à pr
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Modèle Base de référence de la sécurité</h3>
-                        <p class="x-hidden-focus">Télécharger le modèle pour documenter une discipline Base de référence de la sécurité</p>
+                        <h3>Modèle de discipline Base de référence de la sécurité</h3>
+                        <p class="x-hidden-focus">Télécharger le modèle pour documenter une discipline Base de référence de la sécurité.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -70,7 +71,7 @@ Les six étapes suivantes offrent des exemples et des options potentielles à pr
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Risques commerciaux</h3>
+                        <h3>Risques métier</h3>
                         <p class="x-hidden-focus">Appréhendez les motivations et les risques généralement associés à la discipline Base de référence de la sécurité.</p>
                     </div>
                 </div>
@@ -128,7 +129,7 @@ Les six étapes suivantes offrent des exemples et des options potentielles à pr
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Maturité</h3>
-                        <p class="x-hidden-focus">Adéquation de la maturité de la gestion du cloud avec les phases d’adoption du cloud.</p>
+                        <p class="x-hidden-focus">Alignez la maturité de la gestion du cloud avec les phases d’adoption du cloud.</p>
                     </div>
                 </div>
             </div>

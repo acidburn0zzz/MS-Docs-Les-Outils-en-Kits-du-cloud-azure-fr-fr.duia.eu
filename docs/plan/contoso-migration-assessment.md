@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b91652ac2dd06882551c6e9474d5c0e0574deda2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc1753821e61ee0a7af74bc720a56ec8962ecded
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80889732"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214580"
 ---
+<!-- docsTest:disable TODO -->
+
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Évaluer facilement vos charges de travail locales en vue d’une migration vers Azure
@@ -29,10 +31,10 @@ Pour démarrer et pour mieux comprendre les technologies impliquées, Contoso va
 
 <!-- markdownlint-disable MD033 -->
 
-Nom de l’application | Plateforme | Niveaux de l’application | Détails
---- | --- | --- | ---
-SmartHotel360<br/><br/> (gère les déplacements de Contoso) | S’exécute sur Windows avec une base de données SQL Server | Application à deux niveaux. Le site web ASP.NET frontend s’exécute sur une machine virtuelle (**WEBVM**), et SQL Server s’exécute sur une autre machine virtuelle (**SQLVM**). | Les machines virtuelles sont des machines VMware s’exécutant sur un hôte ESXi géré par vCenter Server.<br/><br/> Vous pouvez télécharger l’exemple d’application sur [GitHub](https://github.com/Microsoft/SmartHotel360).
-osTicket<br/><br/> (application Service Desk de Contoso) | S’exécute sur Linux/Apache avec MySQL PHP (LAMP) | Application à deux niveaux. Le site web PHP frontend s’exécute sur une machine virtuelle (**OSTICKETWEB**) et la base de données MySQL s’exécute sur une autre machine virtuelle (**OSTICKETMYSQL**). | L’application est utilisée par les applications de service clientèle pour effectuer le suivi des problèmes pour les employés et les clients externes.<br/><br/> Vous pouvez télécharger l’exemple sur [GitHub](https://github.com/osTicket/osTicket).
+| Nom de l’application | Plateforme | Niveaux de l’application | Détails |
+| --- | --- | --- | --- |
+| SmartHotel360 <br><br> (gère les déplacements de Contoso) | S’exécute sur Windows avec une base de données SQL Server | Application à deux niveaux. Le site web ASP.NET frontend s’exécute sur une machine virtuelle (**WEBVM**), et SQL Server s’exécute sur une autre machine virtuelle (**SQLVM**). | Les machines virtuelles sont des machines VMware s’exécutant sur un hôte ESXi géré par vCenter Server. <br><br> Vous pouvez télécharger l’exemple d’application sur [GitHub](https://github.com/Microsoft/SmartHotel360). |
+| osTicket <br><br> (application Service Desk de Contoso) | S’exécute sur Linux/Apache avec MySQL PHP (LAMP) | Application à deux niveaux. Le site web PHP frontend s’exécute sur une machine virtuelle (**OSTICKETWEB**) et la base de données MySQL s’exécute sur une autre machine virtuelle (**OSTICKETMYSQL**). | L’application est utilisée par les applications de service clientèle pour effectuer le suivi des problèmes pour les employés et les clients externes. <br><br> Vous pouvez télécharger l’exemple sur [GitHub](https://github.com/osTicket/osTicket). |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -72,11 +74,11 @@ L’équipe cloud de Contoso a identifié des objectifs pour ses évaluations de
 
 Contoso utilise les outils Microsoft pour son évaluation de la migration. Ces outils s’alignent sur les objectifs de Contoso et doivent lui fournir toutes les informations dont elle a besoin.
 
-Technology | Description | Coût
---- | --- | ---
-[Assistant de migration des données](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso utilise l’Assistant Migration de données pour évaluer et détecter les problèmes de compatibilité susceptibles d’affecter les fonctionnalités de base de données dans Azure. L’Assistant Migration de données évalue la parité des fonctionnalités entre les instances sources et cibles de SQL. Il recommande des améliorations au niveau des performances et de la fiabilité. | L’Assistant Migration de données est un outil gratuit et téléchargeable.
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso utilise le service Azure Migrate pour évaluer ses machines virtuelles VMware. Azure Migrate évalue la pertinence de la migration des ordinateurs. Il fournit des estimations de dimensionnement et de coût pour l’exécution des machines dans Azure. | À compter de mai 2018, Azure Migrate devient un service gratuit.
-[Service Map](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate utilise Service Map pour afficher les dépendances qui existent entre les ordinateurs que vous souhaitez migrer. | Service Map fait partie des journaux d’Azure Monitor. Contoso peut utiliser Service Map gratuitement pendant 180 jours.
+| Technology | Description | Coût |
+| --- | --- | --- |
+| [Assistant de migration des données](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso utilise l’Assistant Migration de données pour évaluer et détecter les problèmes de compatibilité susceptibles d’affecter les fonctionnalités de base de données dans Azure. L’Assistant Migration de données évalue la parité des fonctionnalités entre les instances sources et cibles de SQL. Il recommande des améliorations au niveau des performances et de la fiabilité. | L’Assistant Migration de données est un outil gratuit et téléchargeable. |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso utilise le service Azure Migrate pour évaluer ses machines virtuelles VMware. Azure Migrate évalue la pertinence de la migration des ordinateurs. Il fournit des estimations de dimensionnement et de coût pour l’exécution des machines dans Azure. | À compter de mai 2018, Azure Migrate devient un service gratuit. |
+| [Service Map](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate utilise Service Map pour afficher les dépendances qui existent entre les ordinateurs que vous souhaitez migrer. | Service Map fait partie des journaux d’Azure Monitor. Contoso peut utiliser Service Map gratuitement pendant 180 jours. |
 
 Dans ce scénario, Contoso télécharge et exécute l’Assistant Migration de données pour évaluer la base de données SQL Server locale pour son application de voyage. Contoso utilise Azure Migrate avec un mappage des dépendances pour évaluer les machines virtuelles de l’application avant d’opérer la migration vers Azure.
 
@@ -316,7 +318,7 @@ Ensuite, Contoso exécute le collecteur pour découvrir les machines virtuelles.
 
     ![Console du client vSphere - Raccourci du collecteur](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
 
-3. Dans Azure Migrate Collector, ouvrez **Configurer les prérequis**. Contoso accepte les termes de licence et lit les informations relatives aux tiers.
+3. Dans Azure Migrate Collector, Contoso sélectionne **Configurer les prérequis**. Contoso accepte les termes de licence et lit les informations relatives aux tiers.
 
 4. Le collecteur vérifie que la machine virtuelle a accès à Internet, que l’heure est synchronisée et que le service du collecteur est en cours d’exécution (le collecteur est installé par défaut sur la machine virtuelle). Contoso installe également le kit de développement de disque virtuel VMware vSphere.
 
@@ -484,16 +486,16 @@ Une évaluation obtient un niveau de confiance compris entre 1 étoile et 5 éto
 
 - Le niveau de confiance est affecté à une évaluation en fonction de la disponibilité des points de données qui sont nécessaires pour calculer l’évaluation.
 - Ce niveau vous permet d’évaluer la fiabilité des recommandations de taille fournies par Azure Migrate.
-- Le niveau de confiance est utile lorsque vous effectuez un *dimensionnement basé sur les performances*. Azure Migrate peut ne pas avoir suffisamment de points de données pour le dimensionnement basé sur l’utilisation. Pour un dimensionnement effectué *Localement*, le niveau de confiance s’élève toujours à 5 étoiles, car Azure Migrate dispose de tous les points de données nécessaires au dimensionnement de la machine virtuelle.
+- Le niveau de confiance est utile lorsque vous effectuez un _dimensionnement basé sur les performances_. Azure Migrate peut ne pas avoir suffisamment de points de données pour le dimensionnement basé sur l’utilisation. Pour un dimensionnement effectué _Localement_, le niveau de confiance s’élève toujours à 5 étoiles, car Azure Migrate dispose de tous les points de données nécessaires au dimensionnement de la machine virtuelle.
 - Selon le pourcentage de points de données disponibles, le niveau de confiance pour l’évaluation est fourni :
 
-   Disponibilité des points de données | Niveau de confiance
-   --- | ---
-   0 %-20 % | 1 étoile
-   21 %-40 % | 2 étoiles
-   41 %-60 % | 3 étoiles
-   61 %-80 % | 4 étoiles
-   81 %-100 % | 5 étoiles
+   | Disponibilité des points de données | Niveau de confiance |
+   | --- | --- |
+   | 0 %-20 % | 1 étoile |
+   | 21 %-40 % | 2 étoiles |
+   | 41 %-60 % | 3 étoiles |
+   | 61 %-80 % | 4 étoiles |
+   | 81 %-100 % | 5 étoiles |
 
 #### <a name="verify-azure-readiness"></a>Vérifier la compatibilité avec Azure
 
@@ -507,12 +509,12 @@ Le rapport d’évaluation affiche les informations qui sont regroupées dans le
 
 <!-- markdownlint-disable MD033 -->
 
-Paramètre | Indication | Détails
---- | --- | ---
-**Préparation des machines virtuelles pour Azure** | Indique si la machine virtuelle est prête pour la migration. | États possibles :<br/><br/>- Prête pour Azure<br/><br/>- Prête sous conditions <br/><br/>- Pas prête pour Azure<br/><br/>- État de préparation inconnue<br/><br/> Si une machine virtuelle n’est pas prête, Azure Migrate fournit des étapes de correction.
-**Taille de la machine virtuelle Azure** | Pour les machines virtuelles prêtes, Azure Migrate fournit des recommandations concernant la taille des machines virtuelles Azure. | La recommandation de taille dépend des propriétés de l’évaluation :<br/><br/>- Si vous avez utilisé un dimensionnement basé sur les performances, le dimensionnement prend en compte l’historique des performances des machines virtuelles.<br/><br/>- Si vous avez sélectionné l’option *Localement*, le dimensionnement est basé sur la taille de la machine virtuelle locale, et les données d’utilisation ne sont pas utilisées.
-**Outil suggéré** | Étant donné que les machines Azure exécutent des agents, Azure Migrate examine les processus qui sont exécutés sur les machines. Il détermine si la machine est une machine de base de données.
-**VM information** (Informations de machine virtuelle) | Le rapport affiche les paramètres de la machine virtuelle locale, y compris des informations sur le système d’exploitation, le type de démarrage, le disque et le stockage.
+| Paramètre | Indication | Détails |
+| --- | --- | --- |
+| **Préparation des machines virtuelles pour Azure** | Indique si la machine virtuelle est prête pour la migration. | États possibles : <li> Disponible pour Azure <li> Disponible sous conditions <li> Non préparé pour Azure <li> Préparation inconnue <br><br> Si une machine virtuelle n’est pas prête, Azure Migrate fournit des étapes de correction. |
+| **Taille de la machine virtuelle Azure** | Pour les machines virtuelles prêtes, Azure Migrate fournit des recommandations concernant la taille des machines virtuelles Azure. | La recommandation de taille dépend des propriétés de l’évaluation : <li> Le dimensionnement basé sur les performances prend en compte l’historique des performances des machines virtuelles. <li> Si vous avez sélectionné l’option _Comme en local_, le dimensionnement se base sur la taille et l’utilisation de la machine virtuelle locale. <li> Les données ne sont pas utilisées. |
+| **Outil suggéré** | Étant donné que les machines Azure exécutent des agents, Azure Migrate examine les processus qui sont exécutés sur les machines. Il détermine si la machine est une machine de base de données. | |
+| **VM information** (Informations de machine virtuelle) | Le rapport affiche les paramètres de la machine virtuelle locale, y compris des informations sur le système d’exploitation, le type de démarrage, le disque et le stockage. | |
 
 <!-- markdownlint-enable MD033 -->
 

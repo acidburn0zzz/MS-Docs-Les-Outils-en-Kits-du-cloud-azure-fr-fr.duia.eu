@@ -8,22 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: abdd12c9c236b66fced32b1b70886d118a25c7bc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 98c41d102ca54ebcb299989b907e2e6c6b237896
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995062"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223471"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Chemin de préparation des qualifications durant la phase Prêt d’une migration
+# <a name="building-technical-skills"></a>Développement des compétences techniques
 
-Pendant la phase *Prêt* d’une migration, l’objectif est de préparer le parcours. Cette phase est accomplie dans deux domaines principaux : la préparation de l’organisation et la préparation de l’environnement (technique). Chaque domaine peut nécessiter de nouvelles qualifications pour les contributeurs techniques et non techniques. Les informations suivantes peuvent aider votre organisation à compiler les qualifications nécessaires.
+La préparation de l’organisation et de l’environnement (technique) peut nécessiter de nouvelles compétences pour les contributeurs techniques et non techniques. Les informations suivantes peuvent aider votre organisation à compiler les qualifications nécessaires.
 
 ## <a name="organizational-readiness-learning-paths"></a>Parcours d’apprentissage de la préparation de l’organisation
 
 Selon les motivations et les résultats métier associés à un effort d’adoption du cloud, des dirigeants peuvent être appelés à établir de nouvelles structures organisationnelles ou équipes virtuelles afin de faciliter diverses fonctions. Les articles suivants peuvent aider votre organisation à développer les qualifications nécessaires pour structurer ces équipes afin qu’elles atteignent les résultats souhaités :
 
-- [Alignement initial de l’organisation](./index.md) : Vue d’ensemble de l’alignement et des structures d’équipe pour atteindre des objectifs spécifiques.
+- [Alignez votre organisation](../get-started/org-alignment.md) : Découvrez les approches permettant d’établir les structures organisationnelles appropriées.
+- [Exercices d’alignement de l’organisation](./index.md) : Obtenez une vue d’ensemble de l’alignement et des structures d’équipe pour atteindre des objectifs spécifiques.
+- [Création des équipes](../get-started/help.md#establish-teams) : Découvrez comment établir des équipes au sein de votre organisation qui sont responsables de la fourniture des fonctionnalités du cloud.
 - [Briser les silos et les fiefs](./fiefdoms-silos.md) : Découvrez deux *antimodèles* organisationnels courants et des méthodes pour guider les équipes vers une collaboration productive.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Parcours d’apprentissage de la préparation (technique) de l’environnement
@@ -71,7 +73,7 @@ Voici quelques exemples de parcours d’apprentissage propres à des rôles sur 
 
 - Les [administrateurs](https://docs.microsoft.com/learn/browse/?roles=administrator) ont accès à des modules qui se concentrent sur les notions de base d’Azure, la configuration de conteneurs et même l’administration avancée dans le cloud.
 
-- Les [développeurs](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure) peuvent utiliser des ressources Learn dans le cadre des activités d’architecture, de gouvernance et de modernisation.
+- Les [développeurs](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure) peuvent utiliser des ressources Microsoft Learn dans le cadre des activités d’architecture, de gouvernance et de modernisation.
 
 ## <a name="learn-more"></a>En savoir plus
 

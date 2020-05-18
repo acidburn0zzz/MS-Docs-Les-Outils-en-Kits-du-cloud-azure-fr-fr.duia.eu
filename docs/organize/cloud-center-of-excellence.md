@@ -1,29 +1,29 @@
 ---
-title: Centre d’excellence de cloud
-description: Utilisez le Cloud Adoption Framework pour Azure afin d’apprendre à établir un centre d’excellence cloud (CCoE).
+title: Présentation des fonctions du centre d’excellence cloud (CCoE)
+description: Découvrez les fonctions d’un centre d’excellence cloud (CCoE), notamment la source, l’étendue et le livrable.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8145df1035079731016e90b82d3b4b8cd830c171
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0f4ccda8c5f05f24fae2b32715029a42e8c33348
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428676"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215770"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 
-# <a name="cloud-center-of-excellence"></a>Centre d’excellence de cloud
+# <a name="cloud-center-of-excellence-ccoe-functions"></a>Fonctions du centre d’excellence cloud (CCoE)
 
 L’agilité commerciale et technique est un objectif fondamental de la plupart des organisations informatiques. Un centre d’excellence de cloud (CCoE) est une fonction qui crée un équilibre entre vitesse et stabilité.
 
 ## <a name="function-structure"></a>Structure fonctionnelle
 
-Un modèle CCoE nécessite une collaboration entre chacune des fonctionnalités suivantes :
+Un modèle CCoE implique la collaboration entre les aspects suivants :
 
 - Adoption du cloud (en particulier les architectes de solutions)
 - Stratégie cloud (plus précisément, les chefs de projet et les responsables de programme)
@@ -68,7 +68,7 @@ Exemples de cette transition :
 | Scénario | Solution pré-CCoE | Solution post-CCoE |
 |---------|---------|---------|
 | Approvisionner un serveur SQL Server de production | Les équipes réseau, informatique et de plateforme de données approvisionnent différents composants durant plusieurs jours, voire plusieurs semaines. | L’équipe qui demande le serveur déploie une instance PaaS d’Azure SQL Database. Vous pouvez également utiliser un modèle pré-approuvé pour déployer toutes les ressources IaaS dans le cloud en quelques heures. |
-| Approvisionner un environnement de développement | Les équipes Réseau, Informatique, Développement et DevOps s’entendent sur les spécifications et le déploiement d’un environnement. | L’équipe de développement définit ses propres spécifications et déploie un environnement basé sur le budget alloué. |
+| Approvisionner un environnement de développement | Les équipes chargées des réseaux, des technologies de l’information, du développement et du DevOps s’entendent sur les spécifications et déploient un environnement. | L’équipe de développement définit ses propres spécifications et déploie un environnement basé sur le budget alloué. |
 | Mettre à jour les exigences de sécurité pour améliorer la protection des données | Les équipes chargées de la mise en réseau, de l’informatique et de la sécurité mettent à jour différents appareils réseau et machines virtuelles dans plusieurs environnements afin d’ajouter des protections. | Les outils de gouvernance du cloud permettent de mettre à jour les stratégies qui peuvent être appliquées immédiatement à toutes les ressources dans tous les environnements cloud. |
 
 ## <a name="negotiations"></a>Négociations
@@ -101,7 +101,7 @@ Ce type de changement demande du temps, de l’expérimentation et de la négoci
 
 ### <a name="key-stakeholders"></a>Parties prenantes principales
 
-La direction informatique est la première et la plus évidente partie prenante. Les responsables informatiques jouent un rôle important. Cependant, ce processus requiert le soutien du responsable des investissements et des cadres informatiques.
+La direction informatique est la première partie prenante et la plus évidente. Les responsables informatiques jouent un rôle important. Cependant, ce processus requiert le soutien du responsable des investissements et des cadres informatiques.
 
 Celui des parties prenantes de l’entreprise est moins évident. L’agilité et le délai de commercialisation de l’entreprise sont des motivations clés pour la formation du CCoE. Par conséquent, les parties prenantes principales doivent avoir un intérêt direct dans ces domaines. Parmi les parties prenantes de l’entreprise, citons les dirigeants, les cadres financiers, les cadres d’exploitation et les propriétaires de produits professionnels.
 
@@ -129,11 +129,13 @@ De plus, nous recommandons que les parties prenantes de l’entreprise s’infor
 
 **Soutenir les efforts :** Un CCoE peut représenter un engagement important pour toute équipe informatique aux ressources limitées. Le fait de retirer les architectes expérimentés des projets à court terme pour se concentrer sur les gains à long terme risque de poser des difficultés aux membres de l’équipe qui ne font pas partie du CCoE. Les dirigeants et les parties prenantes informatiques doivent demeurer concentrés sur l’objectif du CCoE. L’appui des dirigeants et des parties prenantes informatiques est nécessaire pour éviter que les opérations quotidiennes soient perturbées au profit des tâches du CCoE.
 
-**Créer une zone tampon :** L’équipe du CCoE expérimentera de nouvelles approches. Certaines de ces approches ne s’harmoniseront pas bien avec les opérations existantes ou les contraintes techniques. Il existe un risque réel que le CCoE subisse des pressions ou des recours de la part d’autres équipes en cas d’échec des expériences. Il est important d’encourager l’équipe et de la mettre à l’abri des conséquences des opportunités d’apprentissage « Fast Fail ». Il est tout aussi important de tenir l’équipe responsable de sa volonté de croissance, de s’assurer qu’elle tire des leçons de ces expériences et de trouver de meilleures solutions.
+**Créer une zone tampon :** L’équipe du CCoE expérimentera de nouvelles approches. Certaines de ces approches ne s’harmoniseront pas bien avec les opérations existantes ou les contraintes techniques. Il existe un risque réel que le CCoE subisse des pressions ou des recours de la part d’autres équipes en cas d’échec des expériences. Il est important d’encourager l’équipe et de la mettre à l’abri des conséquences des opportunités d’apprentissage « Fail-fast ». Il est tout aussi important de tenir l’équipe responsable de sa volonté de croissance, de s’assurer qu’elle tire des leçons de ces expériences et de trouver de meilleures solutions.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Un modèle CCoE nécessite à la fois des [fonctionnalités de la plateforme cloud](./cloud-platform.md) et des [fonctionnalités d’automatisation du cloud](./cloud-automation.md). La prochaine étape consiste à aligner les [fonctionnalités de la plateforme cloud](./cloud-platform.md).
+Un modèle CCoE exige des fonctions de plateforme cloud et d’automatisation du cloud. La prochaine étape consiste à aligner les fonctions de plateforme cloud.
 
-> [!div class="nextstepaction"]
-> [Aligner les fonctionnalités de la plateforme cloud](./cloud-platform.md)
+Pour en savoir plus :
+
+- [Fonctions de plateforme cloud](./cloud-platform.md)
+- [Fonctions d’automatisation du cloud](./cloud-automation.md)

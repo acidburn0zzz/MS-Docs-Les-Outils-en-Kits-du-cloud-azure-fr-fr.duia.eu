@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 6a6ebbfc94dbe3b3fe031210f55f51635228013f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 21504538837030bf9a6ab84e42a09f365386fa78
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431062"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214801"
 ---
 # <a name="cloud-rationalization"></a>Rationalisation du cloud
 
@@ -23,11 +23,17 @@ La rationalisation du cloud est le processus qui consiste à évaluer des ressou
 
 Les cinq R de la rationalisation mentionnés dans cet article constituent un excellent moyen d’étiqueter un état futur potentiel pour toute charge de travail considérée comme candidate pour un transfert dans le cloud. Toutefois, ce processus d’étiquetage doit être placé dans le contexte approprié avant de tenter de rationaliser l’environnement. Passez en revue les mythes suivants pour comprendre le contexte :
 
-- **Mythe : Il est facile de prendre des décisions de rationalisation en début de processus.** Une rationalisation précise requiert une connaissance détaillée de la charge de travail et des ressources associées (applications, machines virtuelles et données). Plus important encore, les décisions de rationalisation précises prennent du temps. Nous vous recommandons d’appliquer un [processus de rationalisation incrémentielle](./rationalize.md#incremental-rationalization).
+### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>Mythe : Il est facile de prendre des décisions de rationalisation en début de processus
 
-- **Mythe : L’adoption du cloud doit attendre que toutes les charges de travail soient rationalisées.** La rationalisation de l’intégralité du portefeuille informatique ou même d’un centre de données peut retarder la création de la valeur commerciale de plusieurs mois, voire de plusieurs années. La rationalisation complète doit être évitée dans la mesure du possible. Au lieu de cela, appliquez l’[approche Puissance 10 pour la planification des mises en production](./rationalize.md#release-planning) pour prendre des décisions judicieuses sur les 10 charges de travail à prendre en compte pour l’adoption du cloud.
+ Une rationalisation précise requiert une connaissance détaillée de la charge de travail et des ressources associées (applications, machines virtuelles et données). Plus important encore, les décisions de rationalisation précises prennent du temps. Nous vous recommandons d’appliquer un [processus de rationalisation incrémentielle](./rationalize.md#incremental-rationalization).
 
-- **Mythe : La justification métier doit attendre que toutes les charges de travail soient rationalisées.** Pour développer une justification métier pour un effort d’adoption du cloud, émettez quelques hypothèses de base au niveau du portefeuille. Lorsque les motivations sont alignées sur l’innovation, on suppose qu’une réarchitecture est nécessaire. Lorsque les motivations sont alignées sur l’innovation, on suppose qu’un réhébergement est nécessaire. Ces hypothèses peuvent accélérer le processus de justification métier. Les hypothèses sont ensuite contestées et les budgets sont affinés pendant la phase d’évaluation du cycle d’adoption de chaque charge de travail.
+### <a name="myth-cloud-adoption-has-to-wait-for-all-workloads-to-be-rationalized"></a>Mythe : L’adoption du cloud doit attendre que toutes les charges de travail soient rationalisées
+
+La rationalisation de l’intégralité du portefeuille informatique ou même d’un centre de données peut retarder la création de la valeur commerciale de plusieurs mois, voire de plusieurs années. La rationalisation complète doit être évitée dans la mesure du possible. Appliquez plutôt [l’approche Puissance 10 de la planification de la mise en production](./rationalize.md#release-planning) pour prendre des décisions judicieuses sur les 10 prochaines charges de travail destinées à l’adoption du cloud.
+
+### <a name="myth-business-justification-has-to-wait-for-all-workloads-to-be-rationalized"></a>Mythe : La justification métier doit attendre que toutes les charges de travail soient rationalisées
+
+Pour développer une justification métier pour un effort d’adoption du cloud, émettez quelques hypothèses de base au niveau du portefeuille. Lorsque les motivations sont alignées sur l’innovation, on suppose qu’une réarchitecture est nécessaire. Lorsque les motivations sont alignées sur l’innovation, on suppose qu’un réhébergement est nécessaire. Ces hypothèses peuvent accélérer le processus de justification métier. Les hypothèses sont ensuite contestées et les budgets sont affinés pendant la phase d’évaluation du cycle d’adoption de chaque charge de travail.
 
 Examinez à présent les cinq R de rationalisation suivants pour vous familiariser avec le processus à long terme. Lors du développement de votre plan d’adoption du cloud, choisissez l’option qui convient le mieux à vos motivations, aux résultats pour l’entreprise et à l’environnement actuel. L’objectif de la rationalisation du patrimoine numérique est de définir une ligne de base, et non pas de rationaliser chaque charge de travail.
 
@@ -41,22 +47,22 @@ Les 5 R de la rationalisation listés ici décrivent les options de rationalisa
 
 Les facteurs les plus courants sont les suivants :
 
-- Réduire les dépenses d’investissement
-- Libérer de l’espace dans un centre de données
-- Accélérer le retour sur investissement dans le cloud
+- Réduction des dépenses d’investissement.
+- Libération d’espace dans les centres de données.
+- Accélération du retour sur investissement dans le cloud.
 
 Facteurs d’analyse quantitative :
 
-- Taille de la machine virtuelle (processeur, mémoire, stockage)
-- Dépendances (trafic réseau)
-- Compatibilité des ressources
+- Taille des machines virtuelles (processeur, mémoire, stockage).
+- Dépendances (trafic réseau).
+- Compatibilité des ressources.
 
 Facteurs d’analyse qualitative :
 
-- Tolérance au changement
-- Priorités de l’entreprise
-- Événements critiques pour l’entreprise
-- Dépendances de processus
+- Tolérance au changement.
+- Priorités de l’entreprise.
+- Événements commerciaux stratégiques.
+- Dépendances des processus.
 
 ## <a name="refactor"></a>Refactorisation
 
@@ -66,23 +72,23 @@ La refactorisation s’applique également au processus de développement d’ap
 
 Les facteurs les plus courants sont les suivants :
 
-- Mises à jour plus rapides
-- Portabilité du code
-- Une plus grande efficacité du cloud (ressources, vitesse, coût, opérations managées)
+- Accélération des mises à jour.
+- Portabilité du code.
+- Augmentation de l’efficacité du cloud (ressources, vitesse, coût, opérations managées).
 
 Facteurs d’analyse quantitative :
 
-- Taille des ressources d’application (processeur, mémoire, stockage)
-- Dépendances (trafic réseau)
-- Trafic utilisateur (consultations de page, temps passé sur une page, temps de chargement)
-- Plateforme de développement (langages, plateforme de données, services de niveau intermédiaire)
-- Base de données (UC, mémoire, stockage, version)
+- Taille des ressources d’application (processeur, mémoire, stockage).
+- Dépendances (trafic réseau).
+- Trafic des utilisateurs (pages vues, temps passé sur une page, temps de chargement).
+- Plateforme de développement (langages, plateforme de données, services de niveau intermédiaire).
+- Base de données (processeur, mémoire, stockage, version).
 
 Facteurs d’analyse qualitative :
 
-- Investissements continus
-- Options de cloud bursting/Chronologies
-- Dépendances des processus métier
+- Poursuite des investissements.
+- Options de bursting ou chronologies.
+- Dépendances des processus d’entreprise.
 
 ## <a name="rearchitect"></a>Réarchitecture
 
@@ -92,22 +98,22 @@ Dans d’autres cas, les applications qui sont compatibles avec le cloud mais qu
 
 Les facteurs les plus courants sont les suivants :
 
-- Mise à l’échelle et agilité de l’application
-- Adoption facilitée des nouvelles fonctionnalités cloud
-- Piles de technologies mixtes
+- Scaling et agilité des applications.
+- Simplification de l’adoption des nouvelles fonctionnalités cloud.
+- Piles de technologies mixtes.
 
 Facteurs d’analyse quantitative :
 
-- Taille des ressources d’application (processeur, mémoire, stockage)
-- Dépendances (trafic réseau)
-- Trafic utilisateur (consultations de page, temps passé sur une page, temps de chargement)
-- Plateforme de développement (langages, plateforme de données, services de niveau intermédiaire)
-- Base de données (UC, mémoire, stockage, version)
+- Taille des ressources d’application (processeur, mémoire, stockage).
+- Dépendances (trafic réseau).
+- Trafic des utilisateurs (pages vues, temps passé sur une page, temps de chargement).
+- Plateforme de développement (langages, plateforme de données, services de niveau intermédiaire).
+- Base de données (processeur, mémoire, stockage, version).
 
 Facteurs d’analyse qualitative :
 
-- Investissements continus en augmentation
-- Coûts d’exploitation
+- Augmentation des investissements.
+- Coûts opérationnels.
 - Boucles de rétroaction et investissements DevOps potentiels.
 
 ## <a name="rebuild"></a>Reconstruire
@@ -116,23 +122,23 @@ Dans certains scénarios, les efforts nécessaires à la réarchitecture d’une
 
 Les facteurs les plus courants sont les suivants :
 
-- Accélérer l’innovation
-- Créer des applications plus rapidement
-- Réduire les coûts d’exploitation
+- Accélération de l’innovation.
+- Accélération de la création d’applications.
+- Réduction des coûts opérationnels.
 
 Facteurs d’analyse quantitative :
 
-- Taille des ressources d’application (processeur, mémoire, stockage)
-- Dépendances (trafic réseau)
-- Trafic utilisateur (consultations de page, temps passé sur une page, temps de chargement)
-- Plateforme de développement (langages, plateforme de données, services de niveau intermédiaire)
-- Base de données (UC, mémoire, stockage, version)
+- Taille des ressources d’application (processeur, mémoire, stockage).
+- Dépendances (trafic réseau).
+- Trafic des utilisateurs (pages vues, temps passé sur une page, temps de chargement).
+- Plateforme de développement (langages, plateforme de données, services de niveau intermédiaire).
+- Base de données (processeur, mémoire, stockage, version).
 
 Facteurs d’analyse qualitative :
 
-- Baisse de la satisfaction des utilisateurs finaux
-- Processus d’entreprise limités dans leur fonctionnalité
-- Amélioration potentielle des coûts, de l’expérience ou du chiffre d’affaires
+- Baisse de la satisfaction des utilisateurs finaux.
+- Processus d’entreprise limités dans leur fonctionnalité.
+- Amélioration potentielle des coûts, de l’expérience ou du chiffre d’affaires.
 
 ## <a name="replace"></a>Replace
 
@@ -140,24 +146,24 @@ Les solutions sont généralement implémentées à l’aide de la technologie e
 
 Les facteurs les plus courants sont les suivants :
 
-- Normaliser les bonnes pratiques du secteur
-- Accélérer l’adoption des approches basées sur les processus d’entreprise
-- Réallouer les investissements de développement dans des applications qui créent un avantage compétitif ou autre avantage
+- Normalisation autour des meilleures pratiques du secteur.
+- Accélération de l’adoption des approches axées sur les processus d’entreprise.
+- Réallocation des investissements de développement dans des applications qui créent des avantages compétitifs ou une différenciation.
 
 Facteurs d’analyse quantitative :
 
-- Réductions des coûts d’exploitation généraux
-- Taille de la machine virtuelle (processeur, mémoire, stockage)
-- Dépendances (trafic réseau)
-- Ressources à mettre hors service
-- Base de données (UC, mémoire, stockage, version)
+- Réduction des coûts opérationnels généraux.
+- Taille des machines virtuelles (processeur, mémoire, stockage).
+- Dépendances (trafic réseau).
+- Ressources à mettre hors service.
+- Base de données (processeur, mémoire, stockage, version).
 
 Facteurs d’analyse qualitative :
 
-- Analyse coûts-avantages de l’architecture actuelle par rapport à une solution SaaS
-- Diagramme des processus métier
-- Schémas de données
-- Processus personnalisés ou automatisés
+- Analyse coûts-avantages de l’architecture actuelle par rapport à une solution SaaS.
+- Diagrammes de processus d’entreprise.
+- Schémas de données.
+- Processus personnalisés ou automatisés.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

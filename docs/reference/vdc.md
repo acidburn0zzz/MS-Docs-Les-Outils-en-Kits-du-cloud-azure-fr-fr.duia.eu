@@ -7,15 +7,15 @@ ms.date: 06/12/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4eb8e5a0c9fa88bdfbd6e00c55047e75873ff36f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 87966103eaf1d360db77e9bdf34f62afa77fdaa9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79311555"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221652"
 ---
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 <!-- cSpell:ignore tracsman jonor -->
 
 # <a name="azure-virtual-datacenter"></a>Centre de données virtuel Azure
@@ -29,7 +29,7 @@ ms.locfileid: "79311555"
 
 <table>
 <tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
+    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Azure Virtual Datacenter e-book" /></a></td>
     <td>
         <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Centre de données virtuel Azure : Concepts</a></h3>
         <p>Ce livre électronique vous explique comment déployer des charges de travail d’entreprise sur la plateforme cloud Azure tout en respectant vos stratégies de sécurité et de mise en réseau existantes.</p>
@@ -38,7 +38,7 @@ ms.locfileid: "79311555"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Centre de données virtuel : perspective réseau</a></h3>
+        <h3><a href="./networking-vdc.md">Le centre de données virtuel Azure : perspective réseau</a></h3>
         <p>Cette vue d’ensemble des modèles et conceptions réseau répond aux problèmes de mise à l’échelle architecturale, de performance et de sécurité auxquels les clients sont confrontés quand ils planifient une migration cloud à grande échelle.</p>
     </td>
 </tr>

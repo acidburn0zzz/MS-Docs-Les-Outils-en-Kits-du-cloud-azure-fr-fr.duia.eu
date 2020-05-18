@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e3f2a6156d282e2db6fb8a7206251447f9e48f71
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997246"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219799"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Exemples d’instructions de stratégie de base de référence de la sécurité
 
@@ -47,7 +47,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques courants 
 
 **Instruction de stratégie :** Les sous-réseaux de réseau qui contiennent des données protégées doivent être isolés de tous les autres sous-réseaux. Le trafic réseau entre des sous-réseaux de données protégées doit être audité régulièrement.
 
-**Option de conception potentielle :** Dans Azure, l’isolement réseau et de sous-réseau est géré par le biais d’[Azure Virtual Networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
+**Option de conception potentielle :** Dans Azure, l’isolement réseau et de sous-réseau est géré par le biais du [Réseau virtuel Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
 
 ## <a name="secure-external-access"></a>Sécuriser l’accès externe
 
@@ -55,7 +55,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques courants 
 
 **Instruction de stratégie :** Aucun sous-réseau contenant des données protégées ne doit pas être accessible directement par l’Internet public ou dans les centres de données. L’accès à ces sous-réseaux doit être routé via des sous-réseaux intermédiaires. Tous les accès à ces sous-réseaux doivent transiter par une solution de pare-feu capable d’effectuer des analyses des paquets et de bloquer des fonctions.
 
-**Option de conception potentielle :** Dans Azure, sécurisez les points de terminaison publics en déployant une [zone DMZ entre l’Internet public et votre réseau basé sur le cloud](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Envisagez le déploiement, la configuration et l’automatisation du [pare-feu Azure](https://docs.microsoft.com/azure/firewall).
+**Option de conception potentielle :** Dans Azure, sécurisez les points de terminaison publics en déployant une [zone DMZ entre l’Internet public et votre réseau basé sur le cloud](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Envisagez le déploiement, la configuration et l’automatisation du [pare-feu Azure](https://docs.microsoft.com/azure/firewall/overview).
 
 ## <a name="ddos-protection"></a>Protection DDoS
 
@@ -93,7 +93,7 @@ Les exemples d’énoncés de stratégie suivants traitent des risques courants 
 
 Utilisez les exemples mentionnés dans cet article comme point de départ pour développer des stratégies qui gèrent des risques de sécurité spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
-Pour commencer à développer vos propres instructions de stratégie personnalisées liées à la base de référence de la sécurité, téléchargez le [modèle de base de référence de la sécurité](./template.md).
+Pour commencer à développer vos propres instructions de stratégie personnalisées liées à la base de référence de la sécurité, téléchargez le [modèle de discipline de base de référence de la sécurité](./template.md).
 
 Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance actionnable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
 

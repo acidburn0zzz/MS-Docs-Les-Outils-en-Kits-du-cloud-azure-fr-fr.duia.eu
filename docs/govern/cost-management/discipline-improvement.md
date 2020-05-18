@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 02d76581a49f58358d624ded4add1af180964f16
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 45b750b6d99bf858eaefa635aa6b16464158f412
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120388"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220632"
 ---
 # <a name="cost-management-discipline-improvement"></a>Amélioration de la discipline de gestion des coûts
 
-La discipline Gestion des coûts vise à lever les principaux risques métier liés aux dépenses à engager pour l’hébergement des charges de travail cloud. Parmi les Cinq disciplines de la gouvernance cloud, la gestion des coûts est impliquée dans le contrôle des coûts et l’utilisation des ressources cloud dans l’optique de créer et maintenir un cycle de coûts planifié.
+La discipline Gestion des coûts vise à lever les principaux risques métier liés aux dépenses à engager pour l’hébergement des charges de travail cloud. Parmi les Cinq disciplines de la gouvernance cloud, la discipline Gestion des coûts est impliquée dans le contrôle des coûts et l’utilisation des ressources cloud dans l’optique de créer et maintenir un cycle de coûts planifié.
 
 Cet article décrit les tâches que votre entreprise est susceptible d’effectuer pour développer et affiner la discipline de gestion des coûts. Ces tâches peuvent être divisées en phases de planification, de création, d’adoption et d’exploitation de l’implémentation d’une solution cloud. Les tâches sont ensuite répétées pour permettre le développement d’une [approche incrémentielle de la gouvernance cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quatre phases d’adoption](../../_images/govern/adoption-phases.png)
 
-*Figure 1 - Phases d’adoption de l’approche incrémentielle de la gouvernance cloud.*
+_Figure 1 : Phases d’adoption de l’approche incrémentielle de la gouvernance cloud._
 
-Un seul document ne peut pas prendre en compte les exigences de toutes les entreprises. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [produit minimum viable (MVP) de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance cloud devra décider de la part d’investissement qu’elle est prête à consentir dans ces activités pour améliorer vos capacités de gouvernance en matière de gestion des coûts.
+Un seul document ne peut pas prendre en compte les exigences de toutes les entreprises. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [produit minimum viable (MVP) de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance cloud devra décider de la part d’investissement qu’elle est prête à consentir dans ces activités pour améliorer vos capacités de discipline en matière de gestion des coûts.
 
 > [!CAUTION]
 > Les activités minimales ou potentielles décrites dans cet article ne correspondent pas spécialement à des stratégies d’entreprise spécifiques ou à des exigences de conformité de tiers. Ces conseils visent à favoriser les échanges qui conduiront à un alignement des deux exigences avec un modèle de gouvernance cloud.
@@ -38,7 +38,7 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 
 - Évaluer vos options de [chaîne d’outils de gestion des coûts](./toolchain.md).
 - Élaborer un brouillon de recommandations relatives à l’architecture et distribuer ce document aux principales parties prenantes.
-- Sensibiliser et impliquer les personnes et les équipes concernées par le développement des recommandations relatives à l’architecture.
+- Formez et impliquez les personnes et les équipes concernées par le développement des instructions relatives à l'architecture.
 
 **Activités potentielles :**
 
@@ -64,7 +64,7 @@ Plusieurs conditions techniques et non techniques sont exigées pour migrer corr
 **Activités potentielles :**
 
 - Calquer vos plans budgétaires sur la [stratégie d’abonnement](../../decision-guides/subscriptions/index.md) qui définit votre modèle de possession de base.
-- Utilisez la [stratégie de cohérence des ressources](../../decision-guides/resource-consistency/index.md) pour appliquer les recommandations relatives à l’architecture et aux coûts dans le temps.
+- Utilisez la [stratégie de discipline Cohérence des ressources](../../decision-guides/resource-consistency/index.md) pour appliquer les recommandations relatives à l’architecture et aux coûts dans le temps.
 - Déterminer s’il existe des anomalies au niveau des coûts qui contrarient vos plans de migration et d’adoption.
 
 ## <a name="adopt-and-migrate"></a>Adoption et migration
@@ -90,7 +90,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 
 **Activités minimales suggérées :**
 
-- Personnaliser votre [chaîne d’outils de gestion des coûts](./toolchain.md) en fonction de l’évolution des besoins de votre organisation en gestion de coûts.
+- Personnalisez votre [chaîne d’outils Gestion des coûts](./toolchain.md) en fonction des changements des besoins de votre organisation.
 - Envisager l’automatisation des notifications et des rapports à mesure que les dépenses réelles évoluent.
 - Affiner les recommandations relatives à l’architecture pour orienter les futurs processus d’adoption.
 - Sensibiliser régulièrement les équipes concernées pour assurer leur adhérence continue aux recommandations d’architecture.

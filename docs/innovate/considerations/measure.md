@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 49377f419a8b5315a9f4a544fca37579b6dfbcaa
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bb7399f6c937ed433d4d8610a15153c10f01659c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427397"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222502"
 ---
 # <a name="measure-for-customer-impact"></a>Mesure de l’impact sur le client
 
@@ -22,7 +22,12 @@ Il existe plusieurs façons de mesurer l’impact sur le client. Cet article doi
 
 Au cours de la [phase de stratégie](../../strategy/index.md) du cycle de vie de l’adoption du cloud, nous examinons les [motivations](../../strategy/motivations.md) et les [résultats opérationnels](../../strategy/business-outcomes/index.md). Ces pratiques fournissent un ensemble de métriques permettant de tester l’impact sur les clients. Lorsque l’innovation est réussie, vous avez tendance à voir les résultats alignés sur vos objectifs stratégiques.
 
-Avant d’établir des métriques d’apprentissage, définissez quelques métriques stratégiques qui doivent être impactées par cette innovation. Généralement, ces métriques stratégiques sont alignées sur une ou plusieurs des zones de résultats suivantes : [agilité de l’entreprise](../../strategy/business-outcomes/agility-outcomes.md), [engagement du client](../../strategy/business-outcomes/engagement-outcomes.md), [portée du client](../../strategy/business-outcomes/reach-outcomes.md), [impact financier](../../strategy/business-outcomes/fiscal-outcomes.md) ou, en cas d’innovation opérationnelle : [performances de la solution](../../strategy/business-outcomes/fiscal-outcomes.md).
+Avant d’établir des métriques d’apprentissage, définissez quelques métriques stratégiques qui doivent être impactées par cette innovation. En général, ces métriques stratégiques s’alignent sur une ou plusieurs des catégories de résultats suivantes :
+    - [Agilité de l’entreprise](../../strategy/business-outcomes/agility-outcomes.md)
+    - [Engagement client](../../strategy/business-outcomes/engagement-outcomes.md)
+    - [Portée du client](../../strategy/business-outcomes/reach-outcomes.md)
+    - [Impact financier](../../strategy/business-outcomes/fiscal-outcomes.md)
+    - [Performances de la solution](../../strategy/business-outcomes/fiscal-outcomes.md), dans le cas de l’innovation opérationnelle.
 
 Documentez les métriques convenues et assurez un suivi régulier de leur impact. Toutefois, ne vous attendez pas à ce que l’une de ces métriques fasse émerger des résultats pour plusieurs itérations. Pour plus d’informations sur le paramétrage et sur l’alignement des attentes sur les parties impliquées, consultez [Engagement à l’itération](./index.md#commitment-to-iteration).
 
@@ -47,19 +52,19 @@ Dans la plupart des cas, un flux client possède un point de départ facilement 
 3. **Étapes de la solution :** ce terme désigne les étapes nécessaires pour faire passer le client du déclencheur initial à un résultat satisfaisant. Chaque étape produit une métrique d’apprentissage basée sur la décision du client de passer à l’étape suivante.
 4. **Adoption individuelle concrétisée :** quand le déclencheur se présente de nouveau, si le client choisit encore la solution répondant à ses besoins, l’adoption individuelle est concrétisée.
 5. **Indicateur de résultat opérationnel :** quand un client se comporte d’une manière contribuant au résultat opérationnel défini, un indicateur de résultat opérationnel est observé.
-6. **Innovation réelle :** quand les *indicateurs de résultats opérationnels* et l’*adoption individuelle* sont observés à l’échelle souhaitée, vous avez réalisé une véritable innovation.
+6. **Innovation réelle :** quand les _indicateurs de résultats opérationnels_ et l’_adoption individuelle_ sont observés à l’échelle souhaitée, vous avez réalisé une véritable innovation.
 
 Chaque étape du flux client génère des métriques d’apprentissage. Après chaque itération (ou version), une nouvelle version de l’hypothèse est testée. Des ajustements de la solution sont également testés parallèlement pour refléter les ajustements de l’hypothèse. Quand les clients suivent la voie prescrite à une étape donnée, une métrique positive est enregistrée. Quand les clients s’écartent de la voie prescrite, une métrique négative est enregistrée.
 
 Ces compteurs d’alignement et d’écart créent des métriques d’apprentissage. Chacune d’elles doit être enregistrée et suivie à mesure que l’équipe d’adoption du cloud progresse vers les résultats opérationnels et l’innovation réelle. Dans [Apprendre avec les clients](./learn.md), nous allons évoquer comment appliquer ces métriques pour apprendre et développer de meilleures solutions.
 
-### <a name="grouping-and-observing-customer-partners"></a>Regroupement et observation des partenaires clients
+### <a name="group-and-observe-customer-partners"></a>Regrouper et observer les partenaires clients
 
 La définition du partenaire client représente la première mesure définissant les métriques d’apprentissage. Tout client qui participe à des cycles d’innovation se qualifie comme partenaire client. Pour mesurer le comportement de façon précise, vous devez utiliser un modèle de cohorte pour définir les partenaires clients. Dans ce modèle, les clients sont regroupés pour aiguiser la compréhension de leurs réponses aux modifications du MVP. Ces groupes ressemblent généralement à ce qui suit :
 
 - **Groupe d’expérimentation ou représentatif :** regroupement de clients sur la base de leur participation à une expérience spécifique pour tester les modifications au fil du temps.
 - **Segment :** regroupement des clients selon la taille de l’entreprise.
-- **Secteur :** regroupement des clients en fonction du *secteur d’activité* qu’ils représentent.
+- **Secteur :** regroupement des clients en fonction du _secteur d’activité_ qu’ils représentent.
 - **Données démographiques individuelles :** regroupement basé sur des données démographiques personnelles, telles que l’âge et l’emplacement physique.
 
 Ces types de regroupements vous aident à valider les métriques d’apprentissage sur plusieurs échantillons de clients vous choisissant comme partenaire pendant vos efforts d’innovation. Toutes les métriques suivantes doivent être dérivées du regroupement de clients définissable.

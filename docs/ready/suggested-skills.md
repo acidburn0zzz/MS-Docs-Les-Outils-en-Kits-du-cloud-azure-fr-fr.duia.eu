@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 75b410e293d3e083b45b91b543bce4b70b8078ee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 118b8af3ed191be6b203413fc2a5399f6aa6a04d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997744"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221669"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Chemin d’accès à la préparation des qualifications durant la phase Prêt d’un parcours de migration
 
@@ -62,7 +62,7 @@ Obtenez la reconnaissance officielle de vos connaissances sur Azure au moyen des
 
 Microsoft Learn est une nouvelle approche de l’apprentissage. La préparation aux nouvelles compétences et responsabilités qui accompagnent l’adoption du cloud n’est pas facile. Microsoft Learn offre une approche plus gratifiante de l’apprentissage pratique qui vous permet d’atteindre vos objectifs plus rapidement. Gagnez des points et des niveaux et accomplissez davantage.
 
-Les exemples suivants illustrent quelques parcours d’apprentissage sur mesure sur Microsoft Learn, qui correspondent à la section Ready (Prêt) de l’infrastructure d’adoption du cloud :
+Les exemples suivants illustrent quelques parcours d’apprentissage sur mesure sur Microsoft Learn, qui correspondent à la méthodologie Ready (Prêt) de l’infrastructure d’adoption du cloud :
 
 [Notions de base d’Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer) : Découvrez les concepts du cloud, comme la haute disponibilité, l’évolutivité, l’élasticité, l’agilité, la tolérance de panne et la récupération d’urgence. Découvrez les avantages du cloud computing dans Azure et comment cela peut vous faire gagner du temps et de l’argent. Comparez les stratégies de base pour la transition vers le cloud Azure. Explorez l’éventail des services disponibles dans Azure, notamment le calcul, le réseau, le stockage et la sécurité.
 

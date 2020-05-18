@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: e99bb023f73baad9e1940f06128ba09bd79ab0a1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e0da2ec011f2fc6a823868d877780906ab472111
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80606580"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224304"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Lors d’une transformation, les mêmes risques relatifs existent.
 - Pendant une expérimentation anticipée, quelques ressources sont déployées avec peu ou pas de données pertinentes. Le risque est faible.
 - Quand la première charge de travail est déployée, le risque augmente un peu. Ce risque est facilement corrigé en choisissant une application à faible risque par nature avec une base d’utilisateurs réduite.
 - À mesure que le nombre de charges de travail mises en ligne augmente, les risques changent à chaque mise en production. La publication de nouvelles applications fait évoluer les risques.
-- Quand une entreprise met en ligne les 10 à 20 premières applications, le profil de risque est très différent de celui de la mise en production de la 1 000ème application dans le cloud.
+- Quand une entreprise met en ligne les 10 à 20 premières applications, le profil de risque est très différent de celui de la mise en production de la 1 000e application dans le cloud.
 
 L’accumulation des ressources dans le patrimoine local traditionnel s’est probablement effectuée au fil du temps. La maturité des équipes commerciales et informatiques se développait vraisemblablement de la même manière. Cette croissance parallèle peut avoir tendance à créer un bagage de stratégies inutiles.
 

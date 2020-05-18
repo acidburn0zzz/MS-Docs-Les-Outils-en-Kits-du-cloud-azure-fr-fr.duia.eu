@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 27ee8420a1d610705b76c80590229ee1a7c454da
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 360c222130341e19d4fd185cc738fa47c26e01a6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434253"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214529"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -34,8 +34,8 @@ Dans la phase précédente de ce scénario, l’entreprise avait commencé à en
 Depuis, certains changements ont eu lieu et ceux-ci vont avoir un impact sur la gouvernance :
 
 - L’identité est contrôlée par une instance locale d’Active Directory. L’identité hybride est facilitée grâce à la réplication vers Azure Active Directory.
-- Les opérations informatiques ou opérations cloud sont principalement gérées par Azure Monitor et des processus automatisés associés.
-- La récupération d'urgence et la continuité de l’activité sont contrôlées par des instances Azure Vault.
+- L’exploitation informatique et l’exploitation du cloud sont principalement gérées par Azure Monitor et les processus automatisés associés.
+- La reprise d’activité et la continuité d’activité sont contrôlées par des coffres Azure Recovery Services.
 - Azure Security Center est utilisé pour superviser les attaques et les violations de sécurité.
 - Azure Security Center et Azure Monitor sont tous les deux utilisés pour superviser la gouvernance du cloud.
 - Azure Blueprints, Azure Policy et des groupes d’administration Azure sont utilisés pour automatiser la conformité à la stratégie.
@@ -65,7 +65,7 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 
 Cette section de l’article va modifier la conception du MVP de gouvernance, afin d’inclure de nouvelles stratégies Azure ainsi qu’une implémentation d’Azure Cost Management. Ensemble, ces modifications de la conception permettront de répondre aux nouvelles instructions de la stratégie d’entreprise.
 
-1. Connectez les réseaux. Cette étape est effectuée par les équipes de mise en réseau et de sécurité informatique, en collaboration avec l’équipe de gouvernance cloud. L’ajout d’une connexion d’un fournisseur MPLS/de ligne allouée au nouveau cloud intègrera les réseaux. L’ajout de configurations de pare-feu et de tables de routage contrôlera l’accès et le trafic entre les environnements.
+1. Connectez les réseaux. Cette étape est effectuée par les équipes réseaux et sécurité informatique, en collaboration avec l’équipe chargée de la gouvernance cloud. L’ajout d’une connexion d’un fournisseur MPLS/de ligne allouée au nouveau cloud intègrera les réseaux. L’ajout de configurations de pare-feu et de tables de routage contrôlera l’accès et le trafic entre les environnements.
 2. Consolidez les fournisseurs d’identité. En fonction des charges de travail hébergées dans le cloud secondaire, diverses options sont proposées pour consolider le fournisseur d’identité. Voici quelques exemples :
     1. Pour les applications qui utilisent l’authentification OAuth2, les utilisateurs Active Directory dans le cloud secondaire peuvent simplement être répliqués sur le locataire Azure AD existant. Grâce à cela, tous les utilisateurs peuvent être authentifiés dans le locataire.
     2. D’un autre côté, la fédération permet aux unités d’organisation de circuler dans Active Directory local, puis dans l’instance Azure AD.

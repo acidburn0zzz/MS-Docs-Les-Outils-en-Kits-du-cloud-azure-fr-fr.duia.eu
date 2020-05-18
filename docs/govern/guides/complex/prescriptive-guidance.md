@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 50335d2c7e6a628c0fd8886f5d1fac2701d7f286
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0b807867164fb9ad2717499fc6772c7594140fc2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995516"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220020"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Guide de gouvernance pour les entreprises complexes : Explication des conseils
 
@@ -25,7 +25,9 @@ Dans cet article, nous allons parler des stratégies de haut niveau qui sont né
 
 Grâce à quelques principes simples et à des outils de gouvernance basés sur le cloud, il est possible d’adopter rapidement la gouvernance et une stratégie d’entreprise. Voici la première des trois disciplines de gouvernance à aborder lors d’un processus de gouvernance. Chaque discipline est expliquée plus loin dans cet article.
 
-Pour établir le point de départ, cet article traite des stratégies de haut niveau derrière la base de référence des identités, la base de référence de la sécurité et l’accélération du déploiement. Ces stratégies sont requises pour créer un MVP de gouvernance, qui serve de base pour l’ensemble du processus d’adoption.
+<!--docsTest:ignore "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
+
+Pour établir le point de départ, cet article traite des stratégies de haut niveau derrière la base de référence des identités, la base de référence de la sécurité et l’accélération du déploiement. Ces disciplines sont requises pour créer un MVP de gouvernance, qui serve de base pour l’ensemble du processus d’adoption.
 
 ![Exemple de MVP de gouvernance incrémentielle](../../../_images/govern/governance-mvp.png)
 
@@ -37,7 +39,7 @@ L’implémentation du MVP de gouvernance dépend de l’identité, de la sécur
 
 Cette implémentation peut également être décrite à l’aide d’une simple check-list :
 
-1. Sollicitez des décisions concernant les principales dépendances : identité, réseau et chiffrement.
+1. Sollicitez des décisions concernant les dépendances principales : identité, mise en réseau et chiffrement.
 1. Déterminez le modèle à utiliser lors de l’application des stratégies d’entreprise.
 1. Déterminez les modèles de gouvernance appropriés pour les disciplines suivantes : cohérence des ressources, identification des ressources, création et journalisation de rapports.
 1. Implémentez les outils de gouvernance alignés sur le modèle d’application de stratégie choisi, dans le but d’appliquer des décisions dépendantes et des décisions de gouvernance.
@@ -50,15 +52,21 @@ L’équipe de gouvernance cloud est responsable des décisions et implémentati
 
 ### <a name="subscription-design"></a>Conception de l’abonnement
 
-La décision sur la conception de l’abonnement à utiliser détermine la façon dont les abonnements Azure sont structurés, et la façon dont les groupes d’administration Azure sont utilisés pour gérer efficacement l’accès, les stratégies et la conformité de ces abonnements. Dans ce scénario, l’équipe de gouvernance a choisi une **[stratégie d’abonnement mixte](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** .
+La décision sur la conception de l’abonnement à utiliser détermine la façon dont les abonnements Azure sont structurés, et la façon dont les groupes d’administration Azure sont utilisés pour gérer efficacement l’accès, les stratégies et la conformité de ces abonnements. Dans ce scénario, l’équipe de gouvernance a choisi une [stratégie d’abonnement mixte](../../../decision-guides/subscriptions/index.md#mix-subscription-strategies).
 
-- Comme les nouvelles requêtes pour des ressources Azure augmentent, un « Département » doit être établi pour chacune des grandes unités commerciales dans chaque géographie opérationnelle. Dans chacun de ces départements, des « abonnements » doivent être créés pour chaque archétype d’application.
-- Un archétype d’application est un moyen de regrouper des applications dont les besoins sont similaires. Voici quelques exemples communs : Applications avec des données protégées, applications régies (telles que HIPAA ou FedRAMP), applications à faible risque, applications avec des dépendances locales, applications SAP ou autre mainframe dans Azure, ou applications qui étendent localement des applications SAP ou mainframe. Chaque organisation a ses propres besoins, en fonction des classifications de données et des types d’applications qui alimentent l’entreprise. Le mappage des dépendances de l’investissement numérique peut aider à définir les archétypes d’application dans une organisation.
-- Une convention d’affectation de noms commune doit être convenue dans le cadre de la conception de l’abonnement, en tenant compte des deux points précédents.
+- Comme les nouvelles requêtes pour des ressources Azure augmentent, un _département_ doit être établi pour chacune des grandes unités commerciales dans chaque géographie opérationnelle. Dans chacun de ces départements, des _abonnements_ doivent être créés pour chaque archétype d’application.
+- Un archétype d’application est un moyen de regrouper des applications dont les besoins sont similaires. Voici quelques exemples communs :
+  - Applications avec des données protégées, applications régies (telles que HIPAA ou FedRAMP).
+  - Applications à faible risque.
+  - Applications avec des dépendances locales.
+  - SAP ou d’autres applications mainframe dans Azure.
+  - Applications qui étendent des applications SAP ou mainframe locales.
+  Chaque organisation a ses propres besoins, en fonction des classifications de données et des types d’applications qui alimentent l’entreprise. Le mappage des dépendances de l’investissement numérique peut aider à définir les archétypes d’application dans une organisation.
+- Une convention d’affectation de noms commune doit être adoptée dans le cadre de la conception de l’abonnement, en tenant compte des points précédents.
 
 ### <a name="resource-consistency"></a>Cohérence des ressources
 
-Les décisions relatives à la cohérence des ressources déterminent les outils, processus et efforts nécessaires pour garantir que les ressources Azure sont déployées, configurées et gérées de manière cohérente au sein d’un abonnement. Dans ce scénario, la **[cohérence de déploiement](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** a été choisie comme modèle de cohérence des ressources principales.
+Les décisions relatives à la cohérence des ressources déterminent les outils, processus et efforts nécessaires pour garantir que les ressources Azure sont déployées, configurées et gérées de manière cohérente au sein d’un abonnement. Dans ce scénario, la [cohérence de déploiement](../../../decision-guides/resource-consistency/index.md#deployment-consistency) a été choisie comme modèle de cohérence des ressources principales.
 
 - Des groupes de ressources sont créés pour les applications à l’aide de l’approche du cycle de vie. Tout ce qui est créé, maintenu et mis hors service ensemble doit résider dans un seul groupe de ressources. Pour plus d’informations, consultez le [Guide de décision pour la cohérence des ressources](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - La stratégie Azure doit être appliquée à tous les abonnements du groupe d’administration associé.
@@ -72,10 +80,10 @@ Les décisions relatives à la cohérence des ressources déterminent les outils
 
 ### <a name="resource-tagging"></a>Identification des ressources
 
-Les décisions relatives à l’identification des ressources déterminent la façon dont les métadonnées sont appliquées aux ressources Azure au sein d’un abonnement pour prendre en charge les opérations, la gestion et la comptabilité. Dans ce scénario, le modèle **[ Comptabilité](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** a été choisi comme modèle par défaut pour l’identification des ressources.
+Les décisions relatives à l’identification des ressources déterminent la façon dont les métadonnées sont appliquées aux ressources Azure au sein d’un abonnement pour prendre en charge les opérations, la gestion et la comptabilité. Dans ce scénario, le modèle [Comptabilité](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns) a été choisi comme modèle par défaut pour l’identification des ressources.
 
 - Les ressources déployées doivent être étiquetées avec des valeurs pour :
-  - Département/Unité de facturation
+  - Département ou unité de facturation
   - Geography
   - Classification des données
   - Caractère critique
@@ -88,7 +96,7 @@ Les décisions relatives à l’identification des ressources déterminent la fa
 
 ### <a name="logging-and-reporting"></a>Journalisation et création de rapports
 
-Les décisions relatives à la journalisation et la création de rapports déterminent la façon dont votre magasin stocke les données, et la façon dont les outils de supervision et de création de rapports, qui renseignent le personnel informatique sur l’intégrité opérationnelle, sont structurées. Dans ce scénario, un modèle **[Supervision hybride](../../../decision-guides/logging-and-reporting/index.md)** de journalisation et création de rapports est suggéré, mais pas exigé à ce stade par les équipes de développement.
+Les décisions relatives à la journalisation et la création de rapports déterminent la façon dont votre magasin stocke les données, et la façon dont les outils de supervision et de création de rapports, qui renseignent le personnel informatique sur l’intégrité opérationnelle, sont structurées. Dans ce scénario, un modèle [Supervision hybride](../../../decision-guides/logging-and-reporting/index.md) de journalisation et création de rapports est suggéré, mais pas exigé à ce stade par les équipes de développement.
 
 - Pour le moment, aucune exigence en matière de gouvernance n’a été établie pour les points de données spécifiques qui doivent être collectés à des fins de journalisation et de création de rapports. Il s’agit d’un élément spécifique (qui doit être considéré comme un anti-modèle) à ce scénario fictif. Les normes de journalisation doivent être définies et appliquées dès que possible.
 - Une analyse supplémentaire est nécessaire avant de publier les données protégées ou les charges de travail critiques.

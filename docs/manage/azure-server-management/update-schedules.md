@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3d40eb748c58643a981110e03417275b465c158
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ba44b786e63a0f7a9c63a527b6abbb1074a410fb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430489"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219544"
 ---
 # <a name="create-update-schedules"></a>Créer des planifications de mise à jour
 
@@ -28,9 +28,9 @@ L’exemple de script de cette section illustre l’utilisation de l’étiqueta
 
 - Crée une planification de mise à jour Azure Automation qui s’exécute tous les samedis à 8 heures.
 - Crée une requête pour les machines qui satisfont à ces critères :
-  - Déployée dans l’emplacement Azure `westus`, `eastus` ou `eastus2`
-  - Avoir une étiquette `Owner` appliquée avec pour valeur `JaneSmith`
-  - Avoir une étiquette `Production` appliquée avec pour valeur `true`
+  - Déployée dans l’emplacement Azure `westus`, `eastus` ou `eastus2`.
+  - Possède une étiquette `Owner` appliquée avec pour valeur `JaneSmith`.
+  - Possède une étiquette `Production` appliquée avec pour valeur `true`.
 - Applique la planification de mise à jour aux ordinateurs interrogés et définit une fenêtre de mise à jour de deux heures.
 
 Avant d’exécuter l’exemple de script, vous devez vous connecter à l’aide de l’applet de commande [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0). Lorsque vous démarrez le script, entrez les informations suivantes :
@@ -54,19 +54,19 @@ Avant d’exécuter l’exemple de script, vous devez vous connecter à l’aide
 
     param (
         [Parameter(Mandatory=$true)]
-        [string]$SubscriptionId,
+        [string] $SubscriptionId,
 
         [Parameter(Mandatory=$true)]
-        [string]$ResourceGroupName,
+        [string] $ResourceGroupName,
 
         [Parameter(Mandatory=$true)]
-        [string]$WorkspaceName,
+        [string] $WorkspaceName,
 
         [Parameter(Mandatory=$true)]
-        [string]$AutomationAccountName,
+        [string] $AutomationAccountName,
 
         [Parameter(Mandatory=$false)]
-        [string]$scheduleName = "SaturdayCriticalSecurity"
+        [string] $scheduleName = "SaturdayCriticalSecurity"
     )
 
     Import-Module Az.Automation
@@ -87,8 +87,8 @@ Avant d’exécuter l’exemple de script, vous devez vous connecter à l’aide
 
     $query1Location =@("westus", "eastus", "eastus2")
     $query1FilterOperator = "Any"
-    $ownerTag = @{"Owner"= @("JaneSmith")}
-    $ownerTag.add("Production", "true")
+    $ownerTag = @{ "Owner"= @("JaneSmith") }
+    $ownerTag.Add("Production", "true")
 
     $DGQuery = New-AzAutomationUpdateManagementAzureQuery -ResourceGroupName $ResourceGroupName `
         -AutomationAccountName $AutomationAccountName `

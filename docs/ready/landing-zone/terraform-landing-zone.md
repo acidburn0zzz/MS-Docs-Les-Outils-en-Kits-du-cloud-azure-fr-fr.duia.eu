@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fd5f3ca69312156c705857bb91968ea40cd3a867
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a7662d8460581d143b75a8f95aa48bf290d39c2d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997804"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221754"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -38,13 +38,17 @@ La première zone d’atterrissage déploie les composants suivants dans votre a
 
 Les composants déployés et leur rôle comprennent ce qui suit :
 
-| Composant             | Responsabilité                                                                                                                                                                                                                                            |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Groupes de ressources       | Principaux groupes de ressources nécessaires pour la base                                                                                                                                                                                                            |
-| Journalisation de l’activité      | Audit de toutes les activités d’abonnement et de l’archivage : </br> – Compte de stockage </br> - Azure Event Hubs                                                                                                                                                      |
-| Journalisation des diagnostics   | Tous les journaux d’opérations sont conservés pendant un certain nombre de jours : </br> – Compte de stockage </br> – Event Hubs                                                                                                                                                         |
-| Log Analytics         | Stocke tous les journaux d’opérations </br> Déploie des solutions courantes pour un examen approfondi des meilleures pratiques d’application : </br> – NetworkMonitoring </br> – ADAssessment </br> – ADReplication </br> – AgentHealthAssessment </br> – DnsAnalytics </br> – KeyVaultAnalytics |
+<!-- markdownlint-disable MD033 -->
+
+| Composant | Responsabilité |
+|---|---|
+| Groupes de ressources | Principaux groupes de ressources nécessaires pour la base |
+| Journalisation de l’activité      | Audit de toutes les activités d’abonnement et de l’archivage : <li> Compte de stockage <li> Hubs d'événements Azure |
+| Journalisation des diagnostics | Tous les journaux d’opérations sont conservés pendant un certain nombre de jours : <li> Compte de stockage <li> Event Hubs |
+| Log Analytics | Stocke tous les journaux d’opérations. Déploie des solutions courantes pour un examen approfondi des meilleures pratiques d’application : <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure Security Center | Envoi de mesures et d’alertes en matière d’hygiène de sécurité par e-mail et numéro de téléphone                                                                                                                                                                                        |
+
+<!-- markdownlint-enable MD033 -->
 
 ## <a name="use-this-blueprint"></a>Utilisation du blueprint
 
@@ -94,6 +98,8 @@ Cet ensemble minimal d’étiquettes doit se trouver dans toutes les ressources 
 | Type de déploiement   | Définit la façon dont les ressources sont conservées.                                                    | deploymentType  | Manual, Terraform                                |
 | Version           | Version du blueprint déployé.                                                                 | version         | v0.1                                             |
 | Nom de l’application  | Nom de l’application, du service ou de la charge de travail auxquels la ressource est associée.             | ApplicationName | « app name »                                       |
+
+<!-- cSpell:ignore caf -->
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Personnaliser et déployer votre première zone d’atterrissage
 
@@ -145,7 +151,7 @@ tags_hub = {
 }
 ```
 
-Ensuite, nous précisons le nom de l’analytique des journaux d’activité et un ensemble de solutions qui analysent le déploiement. Ici, nous avons conservé Supervision réseau, Évaluation d’Active Directory (AD) et Réplication, DNS Analytics et Key Vault Analytics.
+Ensuite, nous précisons le nom de l’analytique des journaux d’activité et un ensemble de solutions qui analysent le déploiement. Ici, nous avons conservé Supervision réseau, Évaluation d’Active Directory et Réplication, DNS Analytics et Key Vault Analytics.
 
 ```hcl
 

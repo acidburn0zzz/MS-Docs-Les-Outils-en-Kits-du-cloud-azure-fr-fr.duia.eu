@@ -7,16 +7,18 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f961fa2b20fc5fc8fe2670b05b5a66d9e99c0805
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b6ccab2eb6f7f25ad83fa2d2a0592a557b7b79d0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120615"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224151"
 ---
+<!--docsTest:ignore "Oxford English Dictionary" -->
+
 # <a name="build-with-customer-empathy"></a>Développer en faisant preuve d’empathie vis à vis du client
 
-« La nécessité est mère de l’invention ». Ce proverbe anglais illustre le caractère omniprésent de l’esprit humain et notre tendance naturelle à inventer. Comme expliqué dans l’Oxford English Dictionary, quand quelque chose devient vraiment indispensable, vous devez trouver le moyen de l’obtenir. Qui pourrait contredire ces vérités universelles sur l’invention ? Toutefois, comme décrit dans [Innovation dans l’économie numérique](./index.md), l’innovation nécessite un équilibre entre *invention* et *adoption*.
+« La nécessité est mère de l’invention ». Ce proverbe anglais illustre le caractère omniprésent de l’esprit humain et notre tendance naturelle à inventer. Comme expliqué dans l’Oxford English Dictionary, quand quelque chose devient vraiment indispensable, vous devez trouver le moyen de l’obtenir. Qui pourrait contredire ces vérités universelles sur l’invention ? Toutefois, comme décrit dans [Innovation dans l’économie numérique](./index.md), l’innovation nécessite un équilibre entre _invention_ et _adoption_.
 
 Dans le contexte de cette analogie, l’innovation émane d’un concept plus étendu. *L’empathie vis-à-vis du client est mère de l’innovation.* La création d’une solution favorisant l’innovation implique un besoin légitime du client&mdash;un besoin qui incite le client à revenir pour résoudre des problèmes critiques. Ces solutions sont basées sur les besoins du client et non sur ses souhaits ou ses envies. L’identification des véritables besoins des clients commence par l’empathie &mdash; une compréhension approfondie de l’expérience du client. L’empathie est une compétence insuffisamment développée chez de nombreux ingénieurs et chefs produits, voire chez les dirigeants d’entreprise. Heureusement, les différentes interactions et l’évolution rapide du rôle d’architecte du cloud semblent avoir déjà déclenché l’obtention de ces compétences.
 
@@ -65,7 +67,7 @@ Les [disciplines de l’invention](./invention.md) présentées dans la [méthod
 
 L’éventail de fonctionnalités et les différentes disciplines de l’invention ne peuvent pas toutes être établies en une seule itération. Plusieurs versions peuvent être nécessaires pour qu’une solution MVP puisse inclure la complexité de plusieurs disciplines. En fonction de l’investissement en développement, plusieurs équipes peuvent travailler en parallèle dans différentes disciplines pour tester plusieurs hypothèses. Bien qu’il soit futé de préserver l’alignement architectural entre ces équipes, il est déconseillé d’essayer de concevoir des solutions intégrées complexes tant que les hypothèses de valeur ne sont pas validées.
 
-C’est en observant la fréquence ou le volume des *spikes techniques* que l’on peut le mieux identifier la complexité. Les spikes techniques représentent les efforts à consacrer pour créer des solutions techniques qui ne peuvent pas être facilement testées avec les clients. Quand la valeur client et l’empathie vis-à-vis du client ne sont pas testées, les spikes techniques représentent un risque pour l’innovation et doivent être minimisés. Concernant les types de solutions matures testées dans le cadre d’un effort de migration, il est courant d’effectuer des spikes techniques tout au long de l’adoption. Cependant, ils retardent le test des hypothèses durant les efforts d’innovation et doivent être reportés dans la mesure du possible.
+C’est en observant la fréquence ou le volume des _spikes techniques_ que l’on peut le mieux identifier la complexité. Les spikes techniques représentent les efforts à consacrer pour créer des solutions techniques qui ne peuvent pas être facilement testées avec les clients. Quand la valeur client et l’empathie vis-à-vis du client ne sont pas testées, les spikes techniques représentent un risque pour l’innovation et doivent être minimisés. Concernant les types de solutions matures testées dans le cadre d’un effort de migration, il est courant d’effectuer des spikes techniques tout au long de l’adoption. Cependant, ils retardent le test des hypothèses durant les efforts d’innovation et doivent être reportés dans la mesure du possible.
 
 Il est recommandé d’adopter une approche basée sur la simplification constante pour toute définition de MVP. Cette approche consiste à supprimer tout ce qui ne contribue pas à votre capacité à valider l’hypothèse. Pour réduire la complexité, limitez le nombre d’intégrations et les fonctionnalités qui ne sont pas nécessaires pour tester l’hypothèse.
 
@@ -105,7 +107,7 @@ De nombreuses exigences juridiques, de conformité et sectorielles peuvent néce
 
 <!-- cSpell:ignore Ries -->
 
-Certains concepts de cet article s’appuient sur les sujets abordés dans l’ouvrage [*The Lean Startup*](http://theleanstartup.com/book) (Eric Ries, Crown Business, 2011).
+Certains concepts de cet article s’appuient sur les sujets abordés dans l’ouvrage [_The Lean Startup_](http://theleanstartup.com/book) par Eric Ries.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

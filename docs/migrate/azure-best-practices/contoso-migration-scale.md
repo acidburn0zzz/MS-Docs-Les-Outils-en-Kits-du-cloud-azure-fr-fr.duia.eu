@@ -8,14 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 2cbbff8565ceaead94c9612bba6042ddc5b858a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cb8fba789ef2f8d66d1f1a7a6480d37e662fc525
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120657"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222298"
 ---
-<!-- cSpell:ignore VHDs autosnooze unsnooze HANU SCALR -->
+<!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
+
+<!-- cSpell:ignore VHDs autosnooze unsnooze Hanu Scalr -->
 
 # <a name="scale-a-migration-to-azure"></a>Mettre à l’échelle une migration vers Azure
 
@@ -36,12 +38,12 @@ L’équipe informatique a travaillé en étroite collaboration avec des partena
 
 L’équipe cloud de Contoso a épinglé les objectifs de cette migration. Ces objectifs ont été utilisés pour déterminer la meilleure méthode de migration.
 
-**Configuration requise** | **Détails**
---- | ---
-**Migrer rapidement vers le cloud** | Contoso souhaite déplacer les applications et les machines virtuelles dans Azure aussi vite que possible.
-**Compiler un inventaire complet** | Contoso souhaite dresser un inventaire complet des applications, des bases de données et des machines virtuelles présentes dans l’organisation.
-**Évaluer et classifier les applications** | Contoso souhaite tirer pleinement parti du cloud. Par défaut, Contoso considère que tous les services s’exécuteront en tant que PaaS. IaaS sera utilisé quand PaaS ne conviendra pas.
-**Former et migrer vers DevOps** | Contoso souhaite passer à un modèle DevOps. Contoso prévoit de former les équipes à Azure et DevOps et de les réorganiser selon les besoins.
+| **Configuration requise** | **Détails** |
+| --- | --- |
+| Migrer rapidement vers Azure | Contoso souhaite déplacer les applications et les machines virtuelles dans Azure aussi vite que possible. |
+| Compiler un inventaire complet | Contoso souhaite dresser un inventaire complet des applications, des bases de données et des machines virtuelles présentes dans l’organisation. |
+| Évaluer et classifier les applications | Contoso souhaite tirer pleinement parti du cloud. Par défaut, Contoso considère que tous les services s’exécuteront en tant que PaaS. IaaS sera utilisé quand PaaS ne conviendra pas. |
+| Former et migrer vers DevOps | Contoso souhaite passer à un modèle DevOps. Contoso prévoit de former les équipes à Azure et DevOps et de les réorganiser selon les besoins. |
 
 Après avoir défini les objectifs et les contraintes, Contoso examine l’encombrement informatique et identifie le processus de migration.
 
@@ -49,13 +51,13 @@ Après avoir défini les objectifs et les contraintes, Contoso examine l’encom
 
 Après avoir planifié et configuré une [infrastructure Azure](./contoso-migration-infrastructure.md) et effectué différentes preuves de concepts (POC) sur les combinaisons de migration détaillées dans le tableau ci-dessus, la société Contoso est prête à se lancer dans une migration complète vers Azure à l’échelle. Voici ce que Contoso souhaite migrer.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Item** | **Volume** | **Détails**
---- | --- | ---
-**Charges de travail** | Plus de 3 000 applications | Les applications s’exécutent sur des machines virtuelles.<br/><br/>  Les applications sont basées sur Windows, SQL, des systèmes d’exploitation open source et LAMP.
-**Bases de données** | Autour de 8 500 | Les bases de données utilisées sont SQL Server, MySQL et PostgreSQL.
-**Machines virtuelles** | Plus de 35 000 | Les machines virtuelles s’exécutent sur des hôtes VMware et sont gérées par des serveurs vCenter.
+| **Item** | **Volume** | **Détails** |
+| --- | --- | --- |
+| Charges de travail | Plus de 3 000 applications | <li> Les applications s’exécutent sur des machines virtuelles. <li> Les applications sont basées sur Windows, SQL, des systèmes d’exploitation open source et LAMP. |
+| Bases de données | Environ 8 500 bases de données | Les bases de données utilisées sont SQL Server, MySQL et PostgreSQL. |
+| Machines virtuelles | Plus de 35 000 machines virtuelles | Les machines virtuelles s’exécutent sur des hôtes VMware et sont gérées par des serveurs vCenter. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -84,13 +86,13 @@ Contoso exécute des milliers d’applications sur divers types de serveurs. Out
 
 Contoso identifie certaines catégories communes pour classifier les ressources dans l’inventaire. Ces classifications sont essentielles aux décisions que va prendre Contoso pour la migration. La liste de classifications aide à établir les priorités de migration et à identifier les problèmes complexes.
 
-**Catégorie** | **Valeur attribuée** | **Détails**
---- | --- | ---
-Groupe de l’entreprise | Liste des noms de groupes de l’entreprise | Quel est le groupe en charge de l’élément d’inventaire ?
-Candidat à une preuve de concept | O/N | L’application peut-elle être utilisée comme preuve de concept ou précurseur pour la migration vers le cloud ?
-Dette technique | Aucune/Légère/Lourde | L’élément d’inventaire est-il en cours d’exécution ou utilise-t-il un produit, une plateforme ou un système d’exploitation dont le support n’est plus assuré ?
-Implications pour le pare-feu | O/N | L’application communique-t-elle avec Internet/trafic extérieur ?  S’intègre-t-elle à un pare-feu ?
-Problèmes de sécurité | O/N | Existe-t-il des problèmes de sécurité connus au niveau de l’application ?  L’application utilise-t-elle des données non chiffrées ou des plateformes obsolètes ?
+| **Catégorie** | **Valeur attribuée** | **Détails** |
+| --- | --- | --- |
+| Groupe de l’entreprise | Liste des noms de groupes de l’entreprise | Quel est le groupe en charge de l’élément d’inventaire ? |
+| Candidat à une preuve de concept | O/N | L’application peut-elle être utilisée comme preuve de concept ou précurseur pour la migration vers le cloud ? |
+| Dette technique | Aucune/Légère/Lourde | L’élément d’inventaire est-il en cours d’exécution ou utilise-t-il un produit, une plateforme ou un système d’exploitation dont le support n’est plus assuré ? |
+| Implications pour le pare-feu | O/N | L’application communique-t-elle avec Internet/trafic extérieur ? S’intègre-t-elle à un pare-feu ? |
+| Problèmes de sécurité | O/N | Existe-t-il des problèmes de sécurité connus au niveau de l’application ? L’application utilise-t-elle des données non chiffrées ou des plateformes obsolètes ? |
 
 ### <a name="discover-app-dependencies"></a>Détecter les dépendances des applications
 
@@ -110,20 +112,20 @@ Dans la dernière étape du processus de détection et d’évaluation, Contoso 
 
 Pour bien représenter ce processus d’évaluation, elle ajoute quelques classifications supplémentaires à l’inventaire.
 
-**Catégorie** | **Valeur attribuée** | **Détails**
---- | --- | ---
-Groupe de l’entreprise | Liste des noms de groupes de l’entreprise | Quel est le groupe en charge de l’élément d’inventaire ?
-Candidat à une preuve de concept | O/N | L’application peut-elle être utilisée comme preuve de concept ou précurseur pour la migration vers le cloud ?
-Dette technique | Aucune/Légère/Lourde | L’élément d’inventaire est-il en cours d’exécution ou utilise-t-il un produit, une plateforme ou un système d’exploitation dont le support n’est plus assuré ?
-Implications pour le pare-feu | O/N | L’application communique-t-elle avec Internet/trafic extérieur ?  S’intègre-t-elle à un pare-feu ?
-Problèmes de sécurité | O/N | Existe-t-il des problèmes de sécurité connus au niveau de l’application ?  L’application utilise-t-elle des données non chiffrées ou des plateformes obsolètes ?
-Stratégie de migration | Réhébergement/Refactorisation/Réarchitecture/Regénération | De quel type de migration l’application a-t-elle besoin ? Comment l’application sera-t-elle déployée dans Azure ? [Plus d’informations](./contoso-migration-overview.md#migration-patterns)
-Complexité technique | 1-5 | Quel est le degré de complexité de la migration ? Cette valeur doit être définie par l’équipe DevOps de Contoso et par les partenaires compétents.
-Caractère critique pour l’entreprise | 1-5 | Quelle importance l’application a-t-elle pour l’entreprise ? Par exemple, une note de 1 pourra être attribuée à une application utilisée par un petit groupe de travail et une note de 5 à une application critique utilisée dans toute l’organisation. Cette note influencera le niveau de priorité de sa migration.
-Priorité de migration | 1/2/3 | Quelle est la priorité de migration de l’application ?
-Risque de migration | 1-5 | Qu’est le niveau de risque pour la migration de l’application ? L’équipe DevOps de Contoso et les partenaires compétents doivent se mettre d’accord sur cette valeur.
+| **Catégorie** | **Valeur attribuée** | **Détails** |
+| --- | --- | --- |
+| Groupe de l’entreprise | Liste des noms de groupes de l’entreprise | Quel est le groupe en charge de l’élément d’inventaire ? |
+| Candidat à une preuve de concept | O/N | L’application peut-elle être utilisée comme preuve de concept ou précurseur pour la migration vers le cloud ? |
+| Dette technique | Aucune/Légère/Lourde | L’élément d’inventaire est-il en cours d’exécution ou utilise-t-il un produit, une plateforme ou un système d’exploitation dont le support n’est plus assuré ? |
+| Implications pour le pare-feu | O/N | L’application communique-t-elle avec Internet/trafic extérieur ? S’intègre-t-elle à un pare-feu ? |
+| Problèmes de sécurité | O/N | Existe-t-il des problèmes de sécurité connus au niveau de l’application ? L’application utilise-t-elle des données non chiffrées ou des plateformes obsolètes ? |
+| Stratégie de migration | Réhébergement/Refactorisation/Réarchitecture/Regénération | De quel type de migration l’application a-t-elle besoin ? Comment l’application sera-t-elle déployée dans Azure ? [Plus d’informations](./contoso-migration-overview.md#migration-patterns) |
+| Complexité technique | 1-5 | Quel est le degré de complexité de la migration ? Cette valeur doit être définie par l’équipe DevOps de Contoso et par les partenaires compétents. |
+| Caractère critique pour l’entreprise | 1-5 | Quelle importance l’application a-t-elle pour l’entreprise ? Par exemple, une note de 1 pourra être attribuée à une application utilisée par un petit groupe de travail et une note de 5 à une application critique utilisée dans toute l’organisation. Cette note influencera le niveau de priorité de sa migration. |
+| Priorité de migration | 1/2/3 | Quelle est la priorité de migration de l’application ? |
+| Risque de migration | 1-5 | Qu’est le niveau de risque pour la migration de l’application ? L’équipe DevOps de Contoso et les partenaires compétents doivent se mettre d’accord sur cette valeur. |
 
-### <a name="figure-out-costs"></a>Déterminer les coûts
+### <a name="determine-costs"></a>Déterminer les coûts
 
 Pour déterminer les coûts et les économies potentielles de la migration vers Azure, Contoso peut se servir de la [Calculatrice du coût total de possession (TCO)](https://azure.microsoft.com/pricing/tco/calculator) pour calculer le coût TCO pour Azure et le comparer à celui d’un déploiement sur site équivalent.
 
@@ -137,7 +139,7 @@ Le service Azure Migrate permet de détecter et d’évaluer les machines virtue
 
 1. **Découvrir :** Détecter les machines virtuelles VMware locales.
     - Azure Migrate prend en charge la détection à partir de plusieurs serveurs vCenter (en série) et peut exécuter des détections dans différents projets Azure Migrate.
-    - Azure Migrate assure la détection au moyen d’une machine virtuelle VMware exécutant Migrate Collector. Le même collecteur peut détecter les machines virtuelles sur différents serveurs vCenter et envoyer des données à différents projets.
+    - Azure Migrate assure la détection via une machine virtuelle VMware exécutant Azure Migrate Collector. Le même collecteur peut détecter les machines virtuelles sur différents serveurs vCenter et envoyer des données à différents projets.
 
 2. **Évaluer la préparation :** Évaluez si les machines locales se prêtent à une exécution dans Azure. L’évaluation comprend les éléments suivants :
     - **Recommandations de taille :** Obtenez des suggestions de taille pour les machines virtuelles Azure, en fonction de l’historique des performances des machines virtuelles locales.
@@ -155,11 +157,11 @@ Contoso doit utiliser Azure Migrate correctement en raison de l’échelle de ce
 - Les administrateurs Contoso apprennent à [déployer Azure Migrate à grande échelle](https://docs.microsoft.com/azure/migrate/scale-hyper-v-assessment).
 - Contoso prend note des limites d’Azure Migrate résumées dans le tableau suivant.
 
-**Action** | **Limite**
---- | ---
-Création d’un projet Azure Migrate | 10 000 machines virtuelles
-Découverte | 10 000 machines virtuelles
-Évaluation | 10 000 machines virtuelles
+| **Action** | **Limite** |
+| --- | --- |
+| Création d’un projet Azure Migrate | 10 000 machines virtuelles |
+| Découverte | 10 000 machines virtuelles |
+| Évaluation | 10 000 machines virtuelles |
 
 Contoso prévoit d’utiliser Azure Migrate de la façon suivante :
 
@@ -178,7 +180,7 @@ En plus d’Azure Database Migration Service, Contoso dispose d’autres scripts
 
 #### <a name="partner-assessment-tools"></a>Outils d’évaluation des partenaires
 
-Plusieurs autres outils de partenaires peuvent être utiles à Contoso pour évaluer l’environnement local en vue de la migration vers Azure. [En savoir plus](https://azure.microsoft.com/migration/partners) sur les partenaires de migration Azure.
+Plusieurs autres outils de partenaires peuvent être utiles à Contoso pour évaluer l’environnement local en vue de la migration vers Azure. En savoir plus sur les [partenaires de migration Azure](https://azure.microsoft.com/migration/partners).
 
 ## <a name="phase-2-migrate"></a>Phase 2 : Migrer
 
@@ -188,14 +190,14 @@ Maintenant que l’évaluation est terminée, Contoso doit identifier les outils
 
 Contoso a le choix entre quatre stratégies de migration globales.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Stratégie** | **Détails** | **Utilisation**
---- | --- | ---
-**Réhébergement** | Souvent appelée migration _lift-and-shift_, cette option sans code permet de migrer rapidement les applications existantes vers Azure.<br/><br/> Les applications sont migrées en l’état, avec les avantages du cloud et sans les risques ou les coûts associés aux modifications de code. | Contoso peut réhéberger les applications moins stratégiques, qui ne nécessitent pas de modifications de code.
-**Refactorisation** | Également appelée « repackaging », cette stratégie demande peu de modifications du code ou de la configuration de l’application pour connecter cette dernière à Azure PaaS et tirer le meilleur parti des capacités du cloud. | Contoso peut refactoriser les applications stratégiques afin qu’elles conservent les mêmes fonctionnalités de base, mais en les déplaçant pour qu’elles s’exécutent sur une plateforme Azure telle qu’Azure App Service.<br/><br/> Cela demande peu de modifications de code.<br/><br/> En revanche, Contoso devra assurer la maintenance d’une plateforme de machines virtuelles, car elle ne sera pas gérée par Microsoft.
-**Réarchitecture** | Cette stratégie consiste à modifier ou à étendre la base de code d’une application de façon à optimiser son architecture et ainsi profiter des fonctionnalités du cloud et de la mise à l’échelle.<br/><br/> Elle permet d’en faire une application moderne dotée d’une architecture résiliente, hautement scalable et déployable de façon indépendante.<br/><br/> Les services Azure peuvent accélérer le processus, mettre à l’échelle les applications en toute confiance et gérer ces dernières en toute simplicité.
-**Recréation** | Cette approche consiste à regénérer entièrement une application à l’aide de technologies cloud natives.<br/><br/> La plateforme Azure en tant que service (PaaS) propose un environnement complet de développement et de déploiement dans le cloud. Elle élimine en partie le coût et la complexité des licences logicielles et évite d’avoir à recourir à une infrastructure applicative sous-jacente, à des intergiciels (middleware) et à d’autres ressources. | Contoso peut réécrire entièrement les applications critiques pour tirer parti des technologies cloud comme l’informatique serverless ou les microservices.<br/><br/> Contoso gérera les applications et les services qu’elle développe et Azure gérera tout le reste.
+| **Stratégie** | **Détails** | **Utilisation** |
+| --- | --- | --- |
+| Réhébergement | <li> Souvent appelée migration _lift-and-shift_, cette option sans code permet de migrer rapidement les applications existantes vers Azure. <li> Les applications sont migrées en l’état, avec les avantages du cloud et sans les risques ou les coûts associés aux modifications de code. | <li> Contoso peut réhéberger les applications moins stratégiques, qui ne nécessitent pas de modifications de code. |
+| Refactorisation | <li> Également appelée « repackaging », cette stratégie demande peu de modifications du code ou de la configuration de l’application pour connecter cette dernière à Azure PaaS et tirer le meilleur parti des capacités du cloud. | <li> Contoso peut refactoriser les applications stratégiques afin qu’elles conservent les mêmes fonctionnalités de base, mais en les déplaçant pour qu’elles s’exécutent sur une plateforme Azure telle qu’Azure App Service. <li> Cela demande peu de modifications de code. <li> En revanche, Contoso devra assurer la maintenance d’une plateforme de machines virtuelles, car elle ne sera pas gérée par Microsoft. |
+| Réarchitecture | <li> Cette stratégie consiste à modifier ou à étendre la base de code d’une application de façon à optimiser son architecture et ainsi profiter des fonctionnalités du cloud et de la mise à l’échelle. <li> Elle permet d’en faire une application moderne dotée d’une architecture résiliente, hautement scalable et déployable de façon indépendante. <li> Les services Azure peuvent accélérer le processus, mettre à l’échelle les applications en toute confiance et gérer ces dernières en toute simplicité. |
+| Reconstruire | <li> Cette approche consiste à regénérer entièrement une application à l’aide de technologies cloud natives. <li> La plateforme Azure en tant que service (PaaS) propose un environnement complet de développement et de déploiement dans le cloud. Elle élimine en partie le coût et la complexité des licences logicielles et évite d’avoir à recourir à une infrastructure applicative sous-jacente, à des intergiciels (middleware) et à d’autres ressources. | <li> Contoso peut réécrire entièrement les applications critiques pour tirer parti des technologies cloud comme l’informatique serverless ou les microservices. <li> Contoso gérera les applications et les services qu’elle développe et Azure gérera tout le reste. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -205,9 +207,9 @@ Les données doivent aussi être prises en considération, surtout au vu du volu
 
 Contoso utilise essentiellement une paire de services et d’outils Azure pour la migration :
 
-- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) : Service de migration de machines virtuelles locales et d’autres ressources vers Azure.
-- [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) : Orchestre la récupération d’urgence et migre les machines virtuelles locales vers Azure.
-- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) : Migre les bases de données locales comme SQL Server, MySQL et Oracle vers Azure.
+- **[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) :** Service de migration de machines virtuelles locales et d’autres ressources vers Azure.
+- **[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) :** Orchestre la récupération d’urgence et migre les machines virtuelles locales vers Azure.
+- **[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) :** Migre les bases de données locales comme SQL Server, MySQL et Oracle vers Azure.
 
 <!-- markdownlint-disable MD024 -->
 
@@ -222,13 +224,13 @@ Contoso avait déjà [réalisé une preuve de concept](./contoso-migration-rehos
 
 ##### <a name="use-azure-migrate-at-scale"></a>Utiliser Azure Migrate à grande échelle
 
-Contoso envisage d’effectuer plusieurs migrations lift-and-shift. Pour s’assurer que cela fonctionne, Migrate exécutera une réplication par lots d’environ 100 machines virtuelles à la fois. Pour savoir comment cela fonctionne, Contoso a besoin de planifier la capacité pour la migration proposée.
+Contoso envisage d’effectuer plusieurs migrations lift-and-shift. Pour s’assurer que cela fonctionne, Azure Migrate exécutera une réplication par lots d’environ 100 machines virtuelles à la fois. Pour déterminer comment cela fonctionne, Contoso a besoin de planifier la capacité pour la migration proposée.
 
 - Contoso doit collecter des informations sur ses volumes de trafic. En particulier :
   - Contoso doit déterminer le taux de modification des machines virtuelles à répliquer.
   - Contoso doit aussi tenir compte de la connectivité réseau du site local à Azure.
 - Face aux exigences de capacité et de volume, les équipes doivent allouer suffisamment de bande passante, compte tenu du taux de modification quotidien des données des machines virtuelles en question, pour atteindre son objectif de point de récupération (RPO).
-- Enfin, elles doivent déterminer le nombre de serveurs qu’il faudra pour exécuter les composants Migrate nécessaires au déploiement.
+- Enfin, elles doivent déterminer le nombre de serveurs qu’il faudra pour exécuter les composants Azure Migrate nécessaires au déploiement.
 
 ###### <a name="gather-on-premises-information"></a>Collecter les informations locales
 
@@ -243,29 +245,30 @@ Contoso peut utiliser Azure Migrate :
 
 Outre la réplication des machines virtuelles, Site Recovery a besoin de plusieurs composants pour la migration de VMware.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Composant** | **Détails**
---- | ---
-**Serveur de configuration** | Généralement une machine virtuelle VMware configurée à l’aide d’un modèle OVF.<br/><br/> Le composant de serveur de configuration coordonne la communication entre les ordinateurs locaux et Azure, et gère la réplication des données.
-**Serveur de traitement** | Installé par défaut sur le serveur de configuration.<br/><br/> Le composant serveur de processus reçoit les données de réplication, les optimise grâce à la mise en cache, la compression et le chiffrement, puis les envoie à Stockage Azure.<br/><br/> De plus, le serveur de processus installe le service Mobilité d’Azure Site Recovery sur les machines virtuelles que vous voulez répliquer, et effectue une découverte automatique sur les machines locales.<br/><br/> Les déploiements mis à l’échelle ont besoin d’autres serveurs de processus autonomes pour gérer les importants volumes de trafic de réplication.
-**Service Mobilité** | L’agent Service Mobilité est installé sur chaque machine virtuelle VMware destinée à être migrée avec Site Recovery.
+| **Composant** | **Détails** |
+| --- | --- |
+| Serveur de configuration | <li> Généralement une machine virtuelle VMware configurée à l’aide d’un modèle OVF. <li> Le composant de serveur de configuration coordonne la communication entre les ordinateurs locaux et Azure, et gère la réplication des données. |
+| Serveur de traitement | <li> Installé par défaut sur le serveur de configuration. <li> Le composant serveur de processus reçoit les données de réplication, les optimise grâce à la mise en cache, la compression et le chiffrement, puis les envoie à Stockage Azure. <li> De plus, le serveur de processus installe le service Mobilité d’Azure Site Recovery sur les machines virtuelles que vous voulez répliquer, et effectue une découverte automatique sur les machines locales. <li> Les déploiements mis à l’échelle ont besoin d’autres serveurs de processus autonomes pour gérer les importants volumes de trafic de réplication. |
+| Service Mobilité | <li> L’agent Service Mobilité est installé sur chaque machine virtuelle VMware destinée à être migrée avec Azure Site Recovery. |
 
 <!--markdownlint-enable MD033 -->
 
 Contoso doit savoir comment déployer ces composants en tenant compte des considérations de capacité.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Composant** | **Besoins en capacité**
---- | ---
-**Taux de modification quotidien maximal** | Un seul serveur de processus peut prendre en charge un taux de modification quotidien maximal de 2 To. Sachant qu’une machine virtuelle ne peut utiliser qu’un seul serveur de processus, le taux quotidien maximal de modification de données pris en charge pour une machine virtuelle répliquée est de 2 To.
-**Débit maximal** | Un compte standard Stockage Azure peut gérer au maximum 20 000 demandes par seconde, et les opérations d’entrée/sortie par seconde (IOPS) sur une machine virtuelle en cours de réplication doivent se situer dans cette limite. Par exemple, si une machine virtuelle dispose de 5 disques et que chaque disque génère 120 IOPS (taille de 8 Ko) sur la machine virtuelle, la limite de 500 IOPS sur le disque Azure est respectée.<br/><br/> Le nombre de comptes de stockage nécessaires est égal au nombre total d’IOPS de la machine source divisé par 20 000. Un ordinateur répliqué ne peut appartenir qu’à un seul compte de stockage dans Azure.
-**Serveur de configuration** | D’après son estimation de réplication de 100 à 200 machines virtuelles et des [exigences de dimensionnement du serveur de configuration](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server), les équipes Contoso estiment qu’elles ont besoin d’un ordinateur serveur de configuration avec les capacités suivantes :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> En plus des exigences de dimensionnement, Contoso devra vérifier que l’emplacement du serveur de configuration est optimal, à savoir sur le même réseau et le même segment de réseau local que les machines virtuelles qui seront migrées.
-**Serveur de traitement** | Contoso prévoit de déployer un serveur de processus dédié autonome capable de répliquer entre 100 et 200 machines virtuelles :<br/><br/> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz)<br/><br/> Mémoire : 32 Go<br/><br/> Disque cache : 1 To<br/><br/> Taux de modification des données : 1 To à 2 To.<br/><br/> Le serveur de processus sera fortement sollicité et doit donc se trouver sur un hôte ESXi capable de gérer les E/S disque, le trafic réseau et l’UC nécessaires à la réplication. Pour cela, Contoso examinera s’il y a lieu d’utiliser un hôte dédié.
-**Mise en réseau** | Après avoir examiné l’infrastructure VPN de site à site actuelle, Contoso a décidé d’implémenter Azure ExpressRoute. Cette implémentation est cruciale, car elle permettra de réduire la latence et d’améliorer la bande passante pour la région Azure primaire de Contoso (USA Est 2).<br/><br/> **Surveillance :** Contoso devra superviser attentivement les flux de données en provenance du serveur de processus. Si les données surchargent la bande passante réseau, Contoso envisagera de [limiter la bande passante du serveur de processus](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
-**Azure Storage** | Pour la migration, Contoso doit identifier le type et le nombre appropriés de comptes Stockage Azure cibles. Site Recovery réplique les données de machine virtuelle dans le stockage Azure.<br/><br/> Site Recovery peut répliquer dans des comptes de stockage Standard ou Premium (SSD).<br/><br/> Pour prendre une décision concernant le stockage, Contoso doit examiner les [limites de stockage](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) et tenir compte des perspectives de croissance et d’utilisation dans le temps. Compte tenu de la vitesse et de la priorité des migrations, Contoso a décidé d’utiliser des SSD Premium.<br/><br/>
-Contoso a décidé d’utiliser des disques managés pour toutes les machines virtuelles déployées dans Azure. Le nombre d’opérations d’entrée/sortie par seconde (IOPS) dictera le type de disque qui sera utilisé : Standard (HDD ou SSD) ou Premium (SSD).<br/><br/>
+<br>
+
+| **Composant** | **Besoins en capacité** |
+| --- | --- |
+| Taux de modification quotidien maximal | <li> Un seul serveur de processus peut prendre en charge un taux de modification quotidien maximal de 2 To. Sachant qu’une machine virtuelle ne peut utiliser qu’un seul serveur de processus, le taux quotidien maximal de modification de données pris en charge pour une machine virtuelle répliquée est de 2 To. |
+| Débit maximal | <li> Un compte standard Stockage Azure peut gérer au maximum 20 000 demandes par seconde, et les opérations d’entrée/sortie par seconde (IOPS) sur une machine virtuelle en cours de réplication doivent se situer dans cette limite. Par exemple, si une machine virtuelle dispose de 5 disques et que chaque disque génère 120 IOPS (taille de 8 Ko) sur la machine virtuelle, la limite de 500 IOPS sur le disque Azure est respectée. <li> Le nombre de comptes de stockage nécessaires est égal au nombre total d’IOPS de la machine source divisé par 20 000. Un ordinateur répliqué ne peut appartenir qu’à un seul compte de stockage dans Azure. |
+| Serveur de configuration | D’après son estimation de réplication de 100 à 200 machines virtuelles et des [exigences de dimensionnement du serveur de configuration](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server), les équipes Contoso estiment qu’elles ont besoin d’un ordinateur serveur de configuration avec les capacités suivantes : <li> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz) <li> Mémoire : 32 Go <li> Disque cache : 1 To <li> Taux de modification des données : 1 To à 2 To. <br> En plus des exigences de dimensionnement, Contoso devra vérifier que l’emplacement du serveur de configuration est optimal, à savoir sur le même réseau et le même segment de réseau local que les machines virtuelles qui seront migrées. |
+| Serveur de traitement | Contoso prévoit de déployer un serveur de processus dédié autonome capable de répliquer entre 100 et 200 machines virtuelles : <li> Processeur : 16 processeurs virtuels (2 sockets &#215; 8 cœurs de 2,5 GHz) <li> Mémoire : 32 Go <li> Disque cache : 1 To <li> Taux de modification des données : 1 To à 2 To. <br> Le serveur de processus sera fortement sollicité et se trouve donc sur un hôte ESXi capable de gérer les E/S disque, le trafic réseau et l’UC nécessaires à la réplication. Pour cela, Contoso examinera s’il y a lieu d’utiliser un hôte dédié. |
+| Mise en réseau | <li> Après avoir examiné l’infrastructure VPN de site à site actuelle, Contoso a décidé d’implémenter Azure ExpressRoute. Cette implémentation est cruciale, car elle permettra de réduire la latence et d’améliorer la bande passante pour la région Azure primaire de Contoso (USA Est 2). <li> Contoso devra superviser attentivement les flux de données en provenance du serveur de processus. Si les données surchargent la bande passante réseau, Contoso envisagera de [limiter la bande passante du serveur de processus](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth). |
+| Stockage Azure | <li> Pour la migration, Contoso doit identifier le type et le nombre appropriés de comptes Stockage Azure cibles. Site Recovery réplique les données de machine virtuelle dans le stockage Azure. <li> Site Recovery peut répliquer dans des comptes de stockage Standard ou Premium (SSD). <li> Pour prendre une décision concernant le stockage, Contoso doit examiner les [limites de stockage](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) et tenir compte des perspectives de croissance et d’utilisation à l’avenir. Compte tenu de la vitesse et de la priorité des migrations, Contoso a décidé d’utiliser des SSD Premium. <li> Contoso a décidé d’utiliser des disques managés pour toutes les machines virtuelles déployées dans Azure. Le nombre d’opérations d’entrée/sortie par seconde (IOPS) vous aidera à déterminer le type de disque qui sera utilisé : Standard HDD ou SSD, ou Premium SSD. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -324,7 +327,7 @@ Contoso prévoit aussi d’utiliser des scripts pour localiser les ressources no
   - Mise en veille et sortie de veille programmées des machines virtuelles Azure.
   - Mise en veille et sortie de veille programmées des machines virtuelles Azure par ordre croissant et décroissant à l’aide de balises Azure.
   - Suppression en bloc de groupes de ressources à la demande.
-- Démarrez avec le kit de ressources ARO dans ce [dépôt GitHub](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
+- Démarrez avec le kit de ressources ARO dans ce [dépôt GitHub](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ### <a name="partner-optimization-tools"></a>Outils d’optimisation de partenaires
 

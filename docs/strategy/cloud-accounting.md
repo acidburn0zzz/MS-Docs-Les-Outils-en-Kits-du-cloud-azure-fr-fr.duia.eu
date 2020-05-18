@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5c01fc4a0a4f1e05b34d8b9c91d71761a6e86f73
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 69f92ffaeb30b59bfa8ac2aeaea9aaad02e9aaeb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431674"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216229"
 ---
 <!-- cSpell:ignore CIOs -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "80431674"
 
 # <a name="what-is-cloud-accounting"></a>Qu’est-ce que la comptabilité cloud ?
 
-Le cloud change la façon dont les coûts sont comptabilisés par le service informatique, comme indiqué dans la section [Création d’un modèle financier pour la transformation cloud](./financial-models.md). Il est plus facile de prendre en charge différents modèles de comptabilité informatique en raison de la façon dont le cloud alloue les coûts. Il est donc important de comprendre comment comptabiliser les coûts du cloud avant d’entamer un parcours de transformation cloud. Cet article décrit les modèles de comptabilité cloud les plus courants pour l’informatique.
+Le cloud change la façon dont les coûts sont comptabilisés par le service informatique, comme le montre la section [Création d’un modèle financier pour la transformation cloud](./financial-models.md). Il est plus facile de prendre en charge différents modèles de comptabilité informatique en raison de la façon dont le cloud alloue les coûts. Il est donc important de comprendre comment comptabiliser les coûts du cloud avant d’entamer un parcours de transformation cloud. Cet article décrit les modèles de comptabilité cloud les plus courants pour l’informatique.
 
 ## <a name="traditional-it-accounting-cost-center-model"></a>Comptabilité informatique classique (modèle de centre de coûts)
 
@@ -30,17 +30,17 @@ Quand l’informatique sert de centre de coûts, sa valeur est largement perçue
 
 ## <a name="central-it-accounting-profit-center-model"></a>Comptabilité du service informatique central (modèle de centre de profits)
 
-Pour dépasser la vision de centre de coûts de l’informatique, certains DSI (directeurs des systèmes d’information) ont opté pour un modèle de comptabilité du service informatique central. Dans ce type de modèle, l’informatique est traitée comme une unité commerciale concurrente et en tant qu’homologue des unités commerciales génératrices de revenus. Dans certains cas, ce modèle peut être entièrement logique. Par exemple, certaines organisations ont une division des services informatiques professionnels qui génère un flux de revenus. Bien souvent, les modèles du service informatique central ne génèrent pas de revenus significatifs, ce qui rend leur justification difficile.
+Pour dépasser la vision de centre de coûts de l’informatique, certains DSI ont opté pour un modèle centralisé de comptabilité du service informatique. Dans ce type de modèle, l’informatique est traitée comme une unité commerciale concurrente et en tant qu’homologue des unités commerciales génératrices de revenus. Dans certains cas, ce modèle peut être entièrement logique. Par exemple, certaines organisations ont une division des services informatiques professionnels qui génère un flux de revenus. Bien souvent, les modèles de service informatique centralisés ne génèrent pas de revenus significatifs, ce qui rend leur justification difficile.
 
-Quel que soit le modèle de revenus, les modèles de comptabilité du service informatique central sont uniques en raison de la manière dont l’unité informatique comptabilise les coûts. Dans un modèle informatique classique, l’équipe informatique enregistre les coûts et les paie à partir de fonds partagés, par exemple un compte d’opérations de maintenance ou un compte de pertes et profits dédié.
+Quel que soit le modèle de revenus, les modèles centralisés de comptabilité du service informatique sont uniques en raison de la manière dont les coûts sont comptabilisés par l’unité informatique. Dans un modèle informatique classique, l’équipe informatique enregistre les coûts et les paie à partir de fonds partagés, par exemple un compte d’opérations de maintenance ou un compte de pertes et profits dédié.
 
-Dans un modèle de comptabilité du service informatique central, l’équipe informatique recense les services fournis pour comptabiliser les frais généraux, les frais de gestion et les autres dépenses estimées. Elle facture ensuite les unités commerciales concurrentes pour les services recensés. Dans ce modèle, le DSI est censé gérer le P&L (pertes et profits) associé à la vente de ces services. Cela peut entraîner une inflation des coûts informatiques ainsi que des conflits entre le service informatique central et les unités commerciales, en particulier quand le service informatique doit réduire les coûts ou quand il ne respecte pas les SLA (contrats de niveau de service) convenus. En période de changement de technologie ou de marché, l’introduction d’une nouvelle technologie perturbe le P&L du service informatique central, ce qui rend la transformation difficile.
+Dans un modèle centralisé de comptabilité du service informatique, l’équipe informatique recense les services fournis pour comptabiliser les frais généraux, les frais de gestion et les autres dépenses estimées. Elle facture ensuite les unités commerciales concurrentes pour les services recensés. Dans ce modèle, le DSI est censé gérer le P&L (pertes et profits) associé à la vente de ces services. Cela peut entraîner une inflation des coûts informatiques ainsi que des conflits entre le service informatique central et les divisions, en particulier si le service informatique doit réduire les coûts ou ne respecte pas les contrats de niveau de service convenus. En période d’évolution des technologies ou du marché, l’introduction d’une nouvelle technologie perturbe le P&L du service informatique central, ce qui rend la transformation difficile.
 
 ## <a name="chargeback"></a>Facturation interne
 
 L’une des premières étapes usuelles pour changer la réputation de l’informatique en tant que centre de coûts consiste à implémenter un modèle de comptabilité par facturation interne. Ce modèle est particulièrement répandu dans les petites entreprises ou les organisations informatiques très efficaces. Dans le modèle basé sur la facturation interne, tous les coûts informatiques associés à une unité commerciale spécifique sont traités comme des dépenses d’exploitation au sein du budget de cette unité. Cette pratique réduit les effets de coûts cumulés sur l’informatique, ce qui permet aux valeurs métier d’être mieux visibles.
 
-Dans un modèle local hérité, la facturation interne est difficile à effectuer, car une personne doit encore assumer les importantes dépenses en capital ainsi que l’amortissement. La conversion continue des dépenses en capital en dépenses d’exploitation associées à l’utilisation est un exercice comptable difficile. Cette difficulté est l’une des principales raisons de la création du modèle de comptabilité informatique classique et du modèle de comptabilité du service informatique central. Le modèle des dépenses d’exploitation de la comptabilité cloud est quasiment indispensable si vous souhaitez fournir un modèle de facturation interne de manière efficace.
+Dans un modèle local hérité, la facturation interne est difficile à effectuer, car une personne doit encore assumer les importantes dépenses en capital ainsi que l’amortissement. La conversion continue des dépenses en capital en dépenses d’exploitation associées à l’utilisation est un exercice comptable difficile. Cette difficulté est l’une des principales raisons de la création du modèle classique de comptabilité informatique et du modèle centralisé de comptabilité du service informatique. Le modèle des dépenses d’exploitation de la comptabilité cloud est quasiment indispensable si vous souhaitez fournir un modèle de facturation interne de manière efficace.
 
 Toutefois, vous ne devez pas implémenter ce modèle sans prendre en compte ses implications. Voici quelques conséquences spécifiques à un modèle de facturation interne :
 

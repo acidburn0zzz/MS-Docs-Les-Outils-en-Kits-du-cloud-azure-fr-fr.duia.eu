@@ -1,6 +1,6 @@
 ---
 title: Processus de conformité à la stratégie Accélération du déploiement
-description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir une approche de création de processus qui vont dans le sens d’une discipline de gouvernance de gestion du déploiement.
+description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir une approche de création de processus qui vont dans le sens d’une discipline de gestion du déploiement.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3c5d6d187e72217c16ca380f6ef433560b647574
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b56c599be38c83c325ffbd00fba077452019e0e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434562"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220394"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Processus de conformité à la stratégie Accélération du déploiement
 
-Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent [l’Accélération du déploiement](./index.md). Pour être efficace, une gouvernance de configuration du cloud implique plusieurs processus manuels récurrents qui visent à détecter les problèmes et à imposer des stratégies d’atténuation de ces risques. Cependant, vous pouvez automatiser ces processus et les compléter par des outils pour réduire la charge de gouvernance et accélérer la réponse en cas de manquement.
+Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent la [discipline Accélération du déploiement](./index.md). Pour être efficace, une gouvernance de configuration du cloud implique plusieurs processus manuels récurrents qui visent à détecter les problèmes et à imposer des stratégies d’atténuation de ces risques. Cependant, vous pouvez automatiser ces processus et les compléter par des outils pour réduire la charge de gouvernance et accélérer la réponse en cas de manquement.
 
 ## <a name="planning-review-and-reporting-processes"></a>Processus de planification, de révision et de génération de rapports
 
@@ -39,9 +39,9 @@ Ce processus de planification constitue également un moment idéal pour évalue
 
 **Révisions d’audit et création de rapports mensuelles :** Tous les mois, effectuez un audit sur tous les déploiements cloud afin de garantir leur alignement continu sur la stratégie de configuration. Examinez les activités liées au déploiement avec le personnel informatique, puis identifiez les problèmes de conformité qui n’ont pas encore été pris en charge par le processus d’application et de supervision continues. Cet examen produit un rapport pour l’équipe de la stratégie cloud et chaque équipe d’adoption du cloud afin de communiquer sur l’adhésion générale des parties prenantes à la stratégie. Le rapport est également conservé à des fins d’audit et juridiques.
 
-## <a name="ongoing-monitoring-processes"></a>Processus de supervision continue
+## <a name="processes-for-ongoing-monitoring"></a>Processus de surveillance continue
 
-Votre stratégie de gouvernance Accélération du déploiement réussit si l’état actuel et passé de votre infrastructure cloud est clairement identifiable. Si vous ne pouvez pas analyser les métriques et données pertinentes au sujet de l’intégrité et de l’activité opérationnelles de vos ressources cloud, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance continus décrits ci-dessus exigent que vous fournissiez des données de qualité afin d’être capable de modifier la stratégie pour protéger votre infrastructure face à l’évolution des menaces et des risques induits par des ressources mal configurées.
+Votre stratégie Accélération du déploiement réussit si l’état actuel et passé de votre infrastructure cloud est clairement identifiable. Si vous ne pouvez pas analyser les métriques et données pertinentes au sujet de l’intégrité et de l’activité opérationnelles de vos ressources cloud, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance continus décrits ci-dessus exigent que vous fournissiez des données de qualité afin d’être capable de modifier la stratégie pour protéger votre infrastructure face à l’évolution des menaces et des risques induits par des ressources mal configurées.
 
 Assurez-vous que vos équipes des opérations informatiques ont implémenté des systèmes de supervision automatisés pour votre infrastructure cloud recueillant les données de journaux d’activité pertinentes dont vous avez besoin pour évaluer les risques. Soyez proactif dans le cadre de la surveillance de ces systèmes afin d’assurer la détection et l’atténuation rapides des violations potentielles des stratégies, et assurez-vous que votre stratégie de supervision est conforme aux besoins de déploiement et de configuration.
 
@@ -59,7 +59,7 @@ Les déclencheurs et mesures d’exécution suivants fournissent des exemples ut
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle de gestion cloud](./template.md), documentez les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
+Utilisez le [modèle de discipline Accélération du déploiement](./template.md) pour documenter les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
 
 Pour obtenir des conseils sur l’exécution des stratégies de gestion cloud en harmonie avec les plans d’adoption, consultez l’article sur l’amélioration de la discipline.
 

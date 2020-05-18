@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 470c84385606f1f7c5c36ec8e72b348aa6d4d8a5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9dbbf67fcd303803a110b49b803698eea2c37687
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995409"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220139"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Guide de gouvernance pour les entreprises complexes : Stratégie d’entreprise initiale sous-tendant la stratégie de gouvernance
 
@@ -34,9 +34,9 @@ Après la réunion, deux membres de l'équipe de gouvernance informatique ont de
 
 La tolérance au risque actuelle est élevée et l’envie d’investir dans la gouvernance de cloud est faible. Par conséquent, les indicateurs de tolérance agissent comme un système d’avertissement précoce pour déclencher les investissements de temps et d’énergie. Si les indicateurs suivants sont observés, il apparaît judicieux de faire progresser la stratégie de gouvernance.
 
-- **Gestion des coûts :** La mise à l’échelle du déploiement dépasse 1 000 ressources dans le cloud, ou les dépenses dépassent 10 000 USD par mois.
-- **Base de référence des identités :** Inclusion d’applications avec exigences d’authentification multifacteur tierces ou héritées.
-- **Base de référence de la sécurité :** Inclusion de données protégées dans des plans définis d’adoption du cloud.
+- **Gestion des coûts :** La mise à l’échelle du déploiement dépasse 1 000 ressources dans le cloud, ou les dépenses dépassent 10 000 USD par mois.
+- **Base de référence des identités :** Inclusion d’applications avec exigences d’authentification multifacteur tierces ou héritées.
+- **Base de référence de sécurité :** Inclusion de données protégées dans des plans définis d’adoption du cloud.
 - **Cohérence des ressources :** Inclusion de toutes les applications stratégiques dans des plans définis d’adoption du cloud.
 
 [!INCLUDE [policy-statements](../../../../includes/policy-statements.md)]

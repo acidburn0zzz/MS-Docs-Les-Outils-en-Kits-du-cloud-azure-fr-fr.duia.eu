@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9bc19716cc0122ea95672b4a48d6536a77fb5fe3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a69c196d76db7f633acdfcf0aff6ad72a11872e5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996195"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215022"
 ---
 # <a name="software-defined-networking-cloud-native"></a>SDN (Software Defined Network) : Cloud natif
 
@@ -40,5 +40,5 @@ Les autres problèmes que votre équipe chargée de l’adoption du cloud doit p
 
 Pour plus d’informations sur les réseaux virtuels cloud natifs sur la plateforme Azure, consultez :
 
-- [Réseau virtuel Azure : guides pratiques](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Les réseaux virtuels Azure nouvellement créés sont natifs du cloud par défaut. Aidez-vous de ces guides pour planifier la conception et le déploiement de vos réseaux virtuels.
-- [Limites d’abonnement : Mise en réseau](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Chaque réseau virtuel et les ressources connectées existent dans un même abonnement. Ces ressources sont soumises aux limites de l’abonnement.
+- [Guides du Réseau virtuel Azure](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) : Les nouveaux réseaux virtuels Azure sont natifs cloud par défaut. Aidez-vous de ces guides pour planifier la conception et le déploiement de vos réseaux virtuels.
+- [Limites des réseaux Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits) : Chaque réseau virtuel et les ressources connectées existent dans un même abonnement. Ces ressources sont soumises aux limites de l’abonnement.

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7050b4b40508f9ac133322600625e016c270bb15
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434074"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219561"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Outils et services de gestion de serveur Azure
 
@@ -57,8 +57,8 @@ Pour les données de votre serveur de fichiers, un autre service à prendre en c
 
 [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) fournit une vue de diverses ressources, telles que les applications, les conteneurs et les machines virtuelles. Il collecte également les données de plusieurs sources :
 
-- Azure Monitor pour machines virtuelles ([insights](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)) fournit une vue détaillée de l’intégrité des machines virtuelles, des tendances en matière de performances et des dépendances. Le service supervise l’intégrité du système d’exploitation de vos machines virtuelles Azure, de vos groupes de machines virtuelles identiques et des machines de votre environnement local.
-- Log Analytics ([journaux d’activité](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) est une fonctionnalité d’Azure Monitor. Son rôle est central pour l’ensemble de la gestion Azure. Il sert de magasin de données pour l’analyse des journaux et pour de nombreux autres services Azure. Le langage de requête est riche et le moteur analytique fournit des informations sur le fonctionnement de vos applications et de vos ressources.
+- [Azure Monitor pour machines virtuelles](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) fournit une vue détaillée de l’intégrité des machines virtuelles, des tendances en matière de performances et des dépendances. Le service supervise l’intégrité du système d’exploitation de vos machines virtuelles Azure, de vos groupes de machines virtuelles identiques et des machines de votre environnement local.
+- [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) est une fonctionnalité d’Azure Monitor. Son rôle est central pour l’ensemble de la gestion Azure. Il sert de magasin de données pour l’analyse des journaux et pour de nombreux autres services Azure. Le langage de requête est riche et le moteur analytique fournit des informations sur le fonctionnement de vos applications et de vos ressources.
 - Le [Journal d’activité Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) est également une fonctionnalité d’Azure Monitor. Il fournit un insight sur les événements de niveau abonnement qui se produisent dans Azure.
 
 ## <a name="configure"></a>Configurer

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d9207e5494ef6e645780c35477636c5ebcb9df2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dd818e65e6f9064119b27dfb5ea87b8a04bda671
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429053"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222128"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -30,7 +30,7 @@ L’objectif de tout effort d’adoption peut avoir un impact significatif sur l
 
 Aucune entreprise ne poursuivrait un seul de ces résultats. Sans opérations, il n’y a pas de client et vice versa. L’adoption du cloud n’est pas différente. Les entreprises s’efforcent généralement d’atteindre chacun de ces résultats, mais en essayant de vous concentrer simultanément sur chacun d’entre eux, vous risquez d’éparpiller vos efforts et de ralentir vos progrès sur le travail qui pourraient profiter le plus à vos besoins commerciaux.
 
-Ce prérequis n’est pas une demande pour vous de choisir l’un de ces trois objectifs, mais plutôt d’aider vos équipes de stratégie cloud et d’adoption du cloud à établir un ensemble de priorités opérationnelles qui guideront l’exécution des trois à six prochains mois. Ces priorités sont définies en classant chacune des trois options détaillées de *la plus significative* à *la moins significative*, car elles se rapportent aux efforts auxquels cette équipe peut contribuer au cours d’un ou des deux trimestres suivants.
+Ce prérequis n’est pas une demande pour vous de choisir l’un de ces trois objectifs, mais plutôt d’aider vos équipes de stratégie cloud et d’adoption du cloud à établir un ensemble de priorités opérationnelles qui guideront l’exécution des trois à six prochains mois. Ces priorités sont définies en classant chacune des trois options détaillées de _la plus significative_ à _la moins significative_, car elles se rapportent aux efforts auxquels cette équipe peut contribuer au cours d’un ou des deux trimestres suivants.
 
 ### <a name="act-on-migration-outcomes"></a>Agir sur les résultats de la migration
 
@@ -46,17 +46,17 @@ Si les données, l’expérimentation, la recherche et le développement (R&D) o
 
 ## <a name="effort"></a>Effort
 
-L’effort de migration peut varier considérablement en fonction de la taille et de la complexité des charges de travail impliquées. Une migration de charge de travail plus petite impliquant quelques centaines de machines virtuelles est un processus tactique qui peut être implémenté à l’aide d’outils automatisés tels qu’[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). À l’inverse, la migration de dizaines de milliers de charges de travail d’une grande entreprise nécessite un processus hautement stratégique et peut impliquer une refactorisation, une régénération et un remplacement importants des applications existantes intégrant des fonctionnalités PaaS (platform as a service) et SaaS (software as a service). [L’identification et l’équilibrage de l’étendue](../../../strategy/balance-the-portfolio.md) de vos migrations planifiées sont essentielles.
+L’effort de migration peut varier considérablement en fonction de la taille et de la complexité des charges de travail impliquées. Une migration de charge de travail plus petite impliquant quelques centaines de machines virtuelles est un processus tactique qui peut être implémenté à l’aide d’outils automatisés tels qu’[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview). À l’inverse, la migration de dizaines de milliers de charges de travail d’une grande entreprise nécessite un processus hautement stratégique et peut impliquer une refactorisation, une régénération et un remplacement importants des applications existantes intégrant des fonctionnalités PaaS (platform as a service) et SaaS (software as a service). [L’identification et l’équilibrage de l’étendue](../../../strategy/balance-the-portfolio.md) de vos migrations planifiées sont essentielles.
 
 Avant de prendre des décisions susceptibles d’avoir un impact à long terme sur le programme de migration actuel, il est primordial de créer un consensus sur les décisions suivantes.
 
 ### <a name="effort-type"></a>Type d’effort
 
-Dans toute migration d’envergure (plus de 250 machines virtuelles), la migration des ressources est effectuée à l’aide de diverses options de transition, présentées dans les 5 R de la rationalisation : *réhébergement*, *refactorisation*, *réarchitecture*, *régénération* et *remplacement*.
+Dans toute migration d’envergure (plus de 250 machines virtuelles), la migration des ressources est effectuée à l’aide de diverses options de transition, présentées dans les 5 R de la rationalisation : _réhébergement_, _refactorisation_, _réarchitecture_, _régénération_ et _remplacement_.
 
-Certaines charges de travail sont modernisées à l’aide d’ un processus de *régénération* ou de *réarchitecture*, créant ainsi des applications plus modernes avec de nouvelles capacités techniques et fonctionnalités. D’autres ressources passent par un processus de *refactorisation*, par exemple un déplacement vers des conteneurs ou d’autres approches opérationnelles et d’hébergement plus modernes qui ne modifient pas nécessairement la base de code des solutions. En règle générale, les machines virtuelles et autres ressources mieux établies passent par un processus de *réhébergement*, en transférant ces ressources du centre de données vers le cloud. Certaines charges de travail pourraient faire l’objet d’une migration vers le cloud, mais doivent plutôt être *remplacées* par des services cloud basés sur les services (SaaS) qui répondent aux mêmes besoins métier, par exemple en utilisant Office 365 comme alternative à la migration des instances Exchange Server.
+Certaines charges de travail sont modernisées à l’aide d’ un processus de _régénération_ ou de _réarchitecture_, créant ainsi des applications plus modernes avec de nouvelles capacités techniques et fonctionnalités. D’autres ressources passent par un processus de _refactorisation_, par exemple un déplacement vers des conteneurs ou d’autres approches opérationnelles et d’hébergement plus modernes qui ne modifient pas nécessairement la base de code des solutions. En règle générale, les machines virtuelles et autres ressources mieux établies passent par un processus de _réhébergement_, en transférant ces ressources du centre de données vers le cloud. Certaines charges de travail pourraient faire l’objet d’une migration vers le cloud, mais doivent plutôt être _remplacées_ par des services cloud basés sur les services (SaaS) qui répondent aux mêmes besoins métier, par exemple en utilisant Office 365 comme alternative à la migration des instances Exchange Server.
 
-Dans la plupart des scénarios, un événement métier crée une fonction de forçage qui entraîne la migration temporaire d’un pourcentage élevé de ressources à l’aide du processus de *réhébergement*, suivie d’une transition secondaire plus importante à l’aide de l’une des autres stratégies de migration, une fois qu’elles se trouvent dans le cloud. Ce processus est communément appelé *transition cloud*.
+Dans la plupart des scénarios, un événement métier crée une fonction de forçage qui entraîne la migration temporaire d’un pourcentage élevé de ressources à l’aide du processus de _réhébergement_, suivie d’une transition secondaire plus importante à l’aide de l’une des autres stratégies de migration, une fois qu’elles se trouvent dans le cloud. Ce processus est communément appelé _transition cloud_.
 
 Durant le processus de [rationalisation du patrimoine numérique](../../../digital-estate/calculate.md), ces types de décisions sont appliqués à chaque ressource à migrer. Toutefois, il convient pour l’instant de faire une hypothèse de base. Parmi les cinq stratégies de migration, laquelle est la plus adaptée aux objectifs stratégiques ou aux résultats métier qui motivent cet effort de migration ? Cette décision sert d’hypothèse directrice dans tout l’effort de migration.
 
@@ -77,8 +77,8 @@ Souvent, les migrations sont motivées par un événement métier attrayant qui 
 Avant de continuer, documentez les hypothèses suivantes et partagez-les avec les équipes de stratégie cloud et d’adoption du cloud :
 
 - Résultats métier.
-- Rôles, documentés et affinés pour les processus de migration *Évaluer*, *Migrer*, *Optimiser* et *Sécuriser et gérer*.
-- Définition de Terminé, documentée et affinée séparément pour les processus de migration *Évaluer*, *Migrer*, *Optimiser* et *Sécuriser et gérer*.
+- Rôles, documentés et affinés pour les processus de migration _Évaluer_, _Migrer_, _Optimiser_ et _Sécuriser et gérer_.
+- Définition de Terminé, documentée et affinée séparément pour les processus de migration _Évaluer_, _Migrer_, _Optimiser_ et _Sécuriser et gérer_.
 - Type d’effort.
 - Échelle de l’effort.
 - Calendrier de l’effort.
@@ -87,7 +87,7 @@ Avant de continuer, documentez les hypothèses suivantes et partagez-les avec le
 
 Une fois le processus compris par l’équipe, il est temps de passer en revue les prérequis techniques. La [check-list de planification de l’environnement de migration](./planning-checklist.md) permet de s’assurer que la base technique est prête pour la migration.
 
-Une fois que le processus est compris par les membres de l’équipe, il est temps de passer en revue les prérequis techniques la [check-list de planification de la migration] permettra de s’assurer que la base technique est prête pour la migration.
+Une fois que le processus est compris par les membres de l’équipe, il est temps de passer en revue les prérequis techniques la [check-list de planification de la migration](./planning-checklist.md) permettra de s’assurer que la base technique est prête pour la migration.
 
 > [!div class="nextstepaction"]
 > [Vérifier la check-list de planification de la migration](./planning-checklist.md)

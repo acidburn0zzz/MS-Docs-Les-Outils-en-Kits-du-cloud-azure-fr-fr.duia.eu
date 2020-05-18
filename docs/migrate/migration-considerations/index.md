@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d238918580c2db808a82c52d67d837a055c033e9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: db298f40598bc1060c56901d95f7b325ce548abe
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432579"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214359"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Modèle de migration du Framework d’adoption du cloud
 
@@ -29,13 +29,13 @@ Le modèle de migration Framework d’adoption du cloud dépend de l’organisat
 
 ## <a name="envision-an-end-state"></a>Prévoir un état final
 
-Il est important de vous faire une idée approximative de l’état final avant de commencer vos efforts de migration. Le diagramme ci-dessous montre un point de départ local de l’infrastructure, des applications et des données qui définissent votre *patrimoine numérique*. Au cours du processus de migration, ces ressources sont transférées au moyen de l’une des cinq stratégies de migration décrites dans [Les cinq R de la rationalisation](../../digital-estate/5-rs-of-rationalization.md).
+Il est important de vous faire une idée approximative de l’état final avant de commencer vos efforts de migration. Le diagramme ci-dessous montre un point de départ local de l’infrastructure, des applications et des données qui définissent votre _patrimoine numérique_. Au cours du processus de migration, ces ressources sont transférées au moyen de l’une des cinq stratégies de migration décrites dans les [cinq R de la rationalisation](../../digital-estate/5-rs-of-rationalization.md).
 
 ![Infographie des options de migration](../../_images/migrate/migration-options.png)
 
-Les efforts entrepris pour migrer et moderniser les charges de travail varient selon l’approche choisie. Ainsi, les migrations de _réhébergement_ (également appelé _lift and shift_) utilisent simplement des fonctionnalités IaaS (infrastructure as a service) ne nécessitant aucun changement au niveau du code et des applications. En revanche, la _refactorisation_ nécessite quelques changements minimes, tandis que la _réarchitecture_ exige la modification et l’extension du code et des fonctionnalités des applications afin de tirer parti des technologies cloud.
+La migration et la modernisation des charges de travail sont très variables : migrations de _réhébergement_ (également appelées _lift-and-shift_) à l’aide de fonctionnalités IaaS (infrastructure as a service) ne nécessitant aucun changement au niveau du code et des applications, _refactorisation_ impliquant quelques changements minimes ou encore _réarchitecture_ consistant à modifier le code et les fonctionnalités des applications pour tirer parti des technologies cloud.
 
-Les stratégies natives dans le cloud et les stratégies PaaS (platform as a service) *reconstruisent* des charges de travail locales à l’aide des offres de plateforme locales et de services gérés Azure. Les charges de travail ayant des offres équivalentes basées sur le cloud SaaS (software as a service) et entièrement gérées peuvent souvent être entièrement *remplacées* par ces services dans le cadre du processus de migration.
+Les stratégies natives dans le cloud et les stratégies PaaS (platform as a service) _reconstruisent_ des charges de travail locales à l’aide des offres de plateforme locales et de services gérés Azure. Les charges de travail ayant des offres équivalentes basées sur le cloud SaaS (software as a service) et entièrement gérées peuvent souvent être entièrement _remplacées_ par ces services dans le cadre du processus de migration.
 
 > [!NOTE]
 > Durant la présentation publique du Framework d’adoption du cloud, cette section du framework met l’accent sur une stratégie de migration de réhébergement. Bien que les solutions PaaS et SaaS soient envisagées comme alternatives au besoin, la migration des charges de travail basées sur des machines virtuelles à l’aide de fonctionnalités IaaS constitue l’objectif premier.

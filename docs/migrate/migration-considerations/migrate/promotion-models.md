@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 81a11a06236840658e87dbee1d0bed72579e7f6e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 105c25258fba28fe61cc127e1f1e602c0c822202
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432507"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216127"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>Modèles de promotion : single-step (étape unique), staged (étapes intermédiaires) ou flight (vol)
 
@@ -24,11 +24,11 @@ Il existe plusieurs modèles de promotion. Cet article décrit trois des modèle
 
 Dans chacun des modèles de promotion suivants, l’outil de migration choisi réplique et prépare les ressources qui composent une charge de travail. Après la mise en lots, chaque modèle traite la ressource un peu différemment.
 
-- **Promotion à étape unique.** Dans un modèle de promotion *à étape unique*, la mise en lots sert également de processus de promotion. Une fois toutes les ressources mises en lots, le trafic des utilisateurs finaux est redirigé et la mise en lots passe en production. Dans ce cas, la promotion fait partie du processus de migration. Il s’agit du modèle de migration le plus rapide. Toutefois, cette approche rend plus difficile l’intégration d’activités robustes de test ou d’optimisation. En outre, ce type de modèle suppose que l’équipe de migration a accès à l’environnement de mise en lots et de production, ce qui compromet les exigences de séparation des tâches dans certains environnements.
+- **Promotion à étape unique.** Dans un modèle de promotion _à étape unique_, la mise en lots sert également de processus de promotion. Une fois toutes les ressources mises en lots, le trafic des utilisateurs finaux est redirigé et la mise en lots passe en production. Dans ce cas, la promotion fait partie du processus de migration. Il s’agit du modèle de migration le plus rapide. Toutefois, cette approche rend plus difficile l’intégration d’activités robustes de test ou d’optimisation. En outre, ce type de modèle suppose que l’équipe chargée de la migration a accès à l’environnement intermédiaire et à l’environnement de production, ce qui compromet la séparation des tâches dans certains environnements.
   > [!NOTE]
   >La table des matières de ce site répertorie l’activité de promotion dans le cadre du processus d’optimisation. Dans un modèle à étape unique, la promotion se produit pendant le processus de migration. Lors de l’utilisation de ce modèle, les rôles et les responsabilités doivent être mis à jour en conséquence.
-- **Intermédiaire.** Dans un modèle de promotion *intermédiaire*, la charge de travail est considérée comme migrée après avoir la mise en lots, mais elle n’est pas encore promue. Avant la promotion, la charge de travail migrée subit une série de tests de performances, de tests métier et de modifications d’optimisation. Elle est ensuite promue à une date ultérieure conjointement à un plan de test d’entreprise. Cette approche améliore l’équilibre entre les coûts et le niveau de performance, tout en facilitant l’obtention de la validation d’activité.
-- **En vol.** Le modèle de promotion *en vol* combine les modèles à étape unique et intermédiaire. Dans un modèle en vol, les ressources de la charge de travail sont traitées comme une production après le passage en mise en lots. Après une période condensée de tests automatisés, le trafic de production est acheminé vers la charge de travail. Toutefois, il s’agit d’un sous-ensemble du trafic. Ce trafic fait office de premier vol de production et de test. Partant du principe que la charge de travail s’effectue du point de vue du niveau de performance et des fonctionnalités, le trafic supplémentaire est migré. Une fois que tout le trafic de production a été déplacé vers les nouvelles ressources, la charge de travail est considérée comme entièrement promue.
+- **Intermédiaire.** Dans un modèle de promotion _intermédiaire_, la charge de travail est considérée comme migrée après avoir la mise en lots, mais elle n’est pas encore promue. Avant la promotion, la charge de travail migrée subit une série de tests de performances, de tests métier et de modifications d’optimisation. Elle est ensuite promue à une date ultérieure conjointement à un plan de test d’entreprise. Cette approche améliore l’équilibre entre les coûts et le niveau de performance, tout en facilitant l’obtention de la validation d’activité.
+- **En vol.** Le modèle de promotion _en vol_ combine les modèles à étape unique et intermédiaire. Dans un modèle en vol, les ressources de la charge de travail sont traitées comme une production après le passage en mise en lots. Après une période condensée de tests automatisés, le trafic de production est acheminé vers la charge de travail. Toutefois, il s’agit d’un sous-ensemble du trafic. Ce trafic fait office de premier vol de production et de test. Partant du principe que la charge de travail s’effectue du point de vue du niveau de performance et des fonctionnalités, le trafic supplémentaire est migré. Une fois que tout le trafic de production a été déplacé vers les nouvelles ressources, la charge de travail est considérée comme entièrement promue.
 
 Le modèle de promotion choisi a un impact sur la séquence des activités à effectuer. Cela influence également les rôles et responsabilités de l’équipe d’adoption du cloud. Cela peut même avoir un impact sur la composition d’un ou de plusieurs sprints.
 
