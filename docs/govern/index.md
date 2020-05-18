@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 37c7b219699d2d70c1f0493fbb146933f8eeee21
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: edd91f1786dfc0649e06d643662fb7af12ec4c96
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218660"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399686"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Gouvernance dans le Framework d’adoption du cloud Microsoft pour Azure
 
@@ -22,14 +22,13 @@ Le cloud crée de nouveaux paradigmes pour les technologies sur lesquelles s’a
 La gouvernance du cloud est un processus itératif. Pour les organisations qui disposent déjà de stratégies régissant les environnements informatiques locaux, la gouvernance cloud vient en complément de ces stratégies. Cependant, le niveau d’intégration entre les stratégies d’entreprise locales et cloud varie en fonction de la maturité de la gouvernance cloud et du patrimoine numérique dans le cloud. Les processus de gouvernance et les stratégies cloud changent au même rythme que le patrimoine cloud. Les exercices suivants vous aident à commencer à créer les bases initiales de votre gouvernance.
 
 <!-- markdownlint-disable MD033 -->
-<!-- docsTest:disable TODO -->
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[Méthodologie](./methodology.md) : Appréhendez les notions élémentaires de la méthodologie pilotant la gouvernance cloud dans le Framework d’adoption du cloud pour commencer à réfléchir à la solution de l’état final.                                |
-| ![2](../_images/icons/2.png)     | <br>[Référence](./benchmark.md) : Évaluez votre état actuel et l’état futur afin d’établir une vision pour l’application du framework.                                |
-| ![3](../_images/icons/3.png)     | <br>[Fondation de gouvernance initiale](./initial-foundation.md) : Commencez votre parcours de gouvernance avec un petit ensemble d’outils de gouvernance facilement implémenté. Cette base de gouvernance initiale est appelée « produit minimum viable » (MVP, Minimum Viable Product).                                |
-| ![4](../_images/icons/4.png)      | <br>[Améliorer la fondation de gouvernance initiale](./foundation-improvements.md) : Tout au long de l’implémentation du plan d’adoption du cloud, ajoutez de manière itérative des contrôles de gouvernance afin de gérer les risques tangibles à mesure que vous avancez vers l’état final.  |
+| <br> ![1](../_images/icons/1.png) | [Méthodologie](./methodology.md) : Appréhendez les notions élémentaires de la méthodologie pilotant la gouvernance cloud dans le Framework d’adoption du cloud pour commencer à réfléchir à la solution de l’état final. |
+| <br> ![2](../_images/icons/2.png) | <br> [Référence](./benchmark.md) : Évaluez votre état actuel et l’état futur afin d’établir une vision pour l’application du framework. |
+| <br> ![3](../_images/icons/3.png) | <br> [Fondation de gouvernance initiale](./initial-foundation.md) : Commencez votre parcours de gouvernance avec un petit ensemble d’outils de gouvernance facilement implémenté. Cette base de gouvernance initiale est appelée « produit minimum viable » (MVP, Minimum Viable Product).                                |
+| <br> ![4](../_images/icons/4.png) | <br> [Améliorer la fondation de gouvernance initiale](./foundation-improvements.md) : Tout au long de l’implémentation du plan d’adoption du cloud, ajoutez de manière itérative des contrôles de gouvernance afin de gérer les risques tangibles à mesure que vous avancez vers l’état final. |
 
 ## <a name="objective-of-this-content"></a>Objectif de ce contenu
 

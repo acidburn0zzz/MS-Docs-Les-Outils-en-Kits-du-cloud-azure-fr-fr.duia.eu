@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 486dabd5b2926b9f8f794767181c75bc1eff34b6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 954c97c78d3dcd4827505e2d9b6df2d4a5355e04
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216807"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398817"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -65,6 +65,9 @@ Pour une configuration plus précise, CICS est couramment utilisé avec IMS/TM (
 Voici quelques opérations mainframe classiques :
 
 - **En ligne :** Les charges de travail incluent le traitement transactionnel, la gestion des bases de données et les connexions. Elles sont souvent implémentées à l’aide d’IBM DB2, de CICS et des connecteurs z/OS.
+
+<!-- docsTest:ignore "BMC Control-M" -->
+<!-- cSpell:ignore JOB ASSGN DLBL EXTENT LIBDEF EXEC -->
 
 - **Par lots :** Les travaux sont exécutés sans intervention de l’utilisateur, et suivent généralement des intervalles réguliers (chaque matin, par exemple). Les traitements par lots peuvent être exécutés sur des systèmes Windows ou Linux à l’aide d’un émulateur JCL, tels les logiciels Micro Focus Enterprise Server ou BMC Control-M.
 
