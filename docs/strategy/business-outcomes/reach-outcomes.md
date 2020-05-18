@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 59810d9bd3e45086597cb9811ce4bba160640246
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9c4a98c05f1a3cda8265b928c1a71556f1288e30
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80526974"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216246"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exemples de résultats de portée globale
 
-Comme indiqué dans la [section sur les résultats métiers](./index.md), plusieurs résultats métiers potentiels peuvent servir de base pour les conversations sur le parcours de transformation avec l’entreprise. Cet article se concentre sur une mesure métier courante : la portée. Bien comprendre la stratégie de globalisation de l’entreprise permet de structurer les résultats métiers qui constituent l’objectif du parcours de transformation de l’entreprise.
+Comme indiqué dans la section [Résultats métiers](./index.md), plusieurs résultats métiers potentiels peuvent servir de base pour les conversations sur le parcours de transformation avec l’entreprise. Cet article se concentre sur une mesure métier courante : la portée. Bien comprendre la stratégie de globalisation de l’entreprise permet de structurer les résultats métiers qui constituent l’objectif du parcours de transformation de l’entreprise.
 
 Au sein des plus grandes entreprises du classement Fortune 500, la globalisation des services et de la clientèle est une priorité depuis plus de trois décennies. À mesure que le monde devient plus petit, la probabilité qu’une entreprise s’implique dans le commerce mondial augmente. La prise en charge des opérations à l’échelle mondiale est complexe et coûteuse. L’hébergement de centres de données dans le monde entier peut consommer plus de 80 % d’un budget informatique annuel. Par eux-mêmes, les réseaux étendus utilisant des lignes privées pour se connecter à ces centres de données peuvent coûter des millions de dollars par an.
 
@@ -26,7 +26,7 @@ Les solutions cloud déplacent le coût de la globalisation vers le fournisseur 
 
 Le développement sur un nouveau marché peut être l’un des résultats métiers les plus importants au cours d’une transformation. La capacité à déployer rapidement des ressources sur le marché sans engagement à long terme permet aux commerciaux et aux responsables des opérations d’explorer les options qui n’auraient pas été prises en compte dans le passé.
 
-- **Exemple :** Un fabricant de produits cosmétiques a identifié une tendance. Certains produits sont expédiés vers la région Asie-Pacifique, même si aucune équipe commerciale n’opère dans cette région. Les systèmes minimaux requis par une force de vente à distance sont peu volumineux, mais la latence empêche une solution d’accès à distance. Pour tirer profit de cette tendance, le directeur des ventes souhaite expérimenter avec les équipes de vente au Japon et en Corée. Étant donné que la société a subi une migration vers le cloud, elle a pu déployer les systèmes nécessaires à la fois au Japon et en Corée en quelques jours. Cela a permis au VP des ventes d’augmenter le chiffre d’affaires dans la région de _x %_ dans les trois mois. Ces deux marchés continuent d’être plus performants que les autres parties du monde, et réalisent des opérations de vente dans l’ensemble de la région.
+- **Exemple :** Un fabricant de produits cosmétiques a identifié une tendance. Certains produits sont expédiés vers la région Asie-Pacifique, même si aucune équipe commerciale n’opère dans cette région. Les systèmes minimaux requis par une force de vente à distance sont peu volumineux, mais la latence empêche une solution d’accès à distance. Pour tirer profit de cette tendance, le Vice-Président des ventes souhaite faire un essai avec les équipes de vente au Japon et en Corée du Sud. Étant donné que la société a subi une migration vers le cloud, elle a pu déployer les systèmes nécessaires à la fois au Japon et en Corée du Sud en quelques jours. Cela a permis au Vice-Président des ventes d’augmenter le chiffre d’affaires dans la région de _x %_ en trois mois. Ces deux marchés continuent d’être plus performants que les autres parties du monde, et réalisent des opérations de vente dans l’ensemble de la région.
 
 ## <a name="data-sovereignty"></a>Souveraineté des données
 

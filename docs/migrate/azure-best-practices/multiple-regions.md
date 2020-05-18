@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ff04f94c8f6dbf023f706ac3c66778fdc89c3437
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998071"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217181"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
@@ -24,7 +24,7 @@ Azure est disponible dans de nombreuses régions du monde. Comme chaque [région
 1. **Contraintes :** Certaines contraintes affectent le déploiement de services dans certaines régions. Par exemple, certaines régions sont disponibles uniquement en tant que destinations de sauvegarde ou de basculement. Les [exigences de souveraineté des données](https://azure.microsoft.com/global-infrastructure/geographies) représentent d’autres contraintes qu’il est important de noter.
 1. **Souveraineté :** Certaines régions sont dédiées à des entités souveraines spécifiques. Même si toutes les régions sont des régions Azure, ces régions souveraines sont totalement isolées du reste d’Azure, elles ne sont pas nécessairement gérées par Microsoft et peuvent être limitées à certains types de clients. Ces régions souveraines sont les suivantes :
     1. [Azure Chine](https://azure.microsoft.com/global-infrastructure/china)
-    1. [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany) (dépréciée en faveur des régions Azure non souveraines standard en Allemagne)
+    1. [Azure Allemagne](https://azure.microsoft.com/global-infrastructure/germany) : dépréciée en faveur des régions Azure non souveraines standard en Allemagne
     1. [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
     1. Remarque : En [Australie](https://azure.microsoft.com/global-infrastructure/australia), deux régions sont gérées par Microsoft, mais sont fournies pour le gouvernement australien, ses clients et sous-traitants. Ainsi, elles impliquent des contraintes vis-à-vis des clients, de la même façon que les autres clouds souverains.
 
@@ -43,7 +43,7 @@ En examinant ces formes de complexité de façon plus approfondie, vous comprend
 
 Tout déploiement cloud robuste nécessite un réseau bien étudié, tenant compte des régions Azure. Une fois que vous avez examiné les caractéristiques ci-dessus pour déterminer les régions de déploiement, le réseau doit être déployé. Si cet article n’a pas pour objet de fournir des informations réseau exhaustives, certaines considérations doivent faire l’objet d’une attention particulière :
 
-- Les régions Azure sont déployées par paires. En cas de défaillance irrémédiable affectant une région, une autre région incluse dans le même périmètre géopolitique* joue le rôle de région jumelée. Envisagez l’opportunité d’effectuer le déploiement dans des régions jumelées comme une stratégie de résilience principale et secondaire. *La région Azure Brésil représente une exception notable dans la mesure où sa région jumelée est la région USA Centre Sud. Pour en savoir plus, consultez [Régions jumelées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+- Les régions Azure sont déployées par paires. En cas de défaillance irrémédiable affectant une région, une autre région incluse dans le même périmètre géopolitique joue le rôle de région jumelée. Envisagez l’opportunité d’effectuer le déploiement dans des régions jumelées comme une stratégie de résilience principale et secondaire. La région Azure Brésil représente une exception notable dans la mesure où sa région jumelée est la région USA Centre Sud. Pour plus d’informations, consultez [Régions jumelées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
   - Le service Stockage Azure prend en charge le [stockage géoredondant](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) (GRS, Geographically Redundant Storage) : trois copies de vos données sont stockées dans votre région primaire et trois copies supplémentaires sont stockées dans la région jumelée. Vous ne pouvez pas modifier le jumelage du stockage dans le cadre d’un stockage géoredondant.
   - Les services qui s’appuient sur le stockage géoredondant Azure peuvent tirer parti de cette fonctionnalité de région jumelée. La prise en charge de cette fonctionnalité doit alors être prévue aussi bien au niveau de vos applications qu’au niveau du réseau.
@@ -88,7 +88,7 @@ Le tableau suivant peut vous aider à documenter les résultats des étapes pré
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="data-sovereignty-relevancy"></a>Pertinence de la souveraineté des données
+## <a name="relevance-of-data-sovereignty"></a>Pertinence de la souveraineté des données
 
 Dans le monde entier, les organisations gouvernementales ont commencé à établir des exigences en matière de souveraineté des données, comme le Règlement général sur la protection des données (RGPD). Les exigences de conformité de cette nature requièrent souvent une localisation au sein d’une région spécifique ou même au sein d’un pays spécifique pour protéger ses citoyens. Dans certains cas, les données relatives aux clients, aux employés ou aux partenaires doivent être stockées sur une plateforme cloud au sein de la même région que l’utilisateur final.
 

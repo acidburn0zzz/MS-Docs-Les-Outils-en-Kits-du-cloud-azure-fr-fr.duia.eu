@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c3543299d323c8be6bf7ee88d6e9205c307e24f9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9f688988e62cf7783f76cf67d90fdc5b024e4fef
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997435"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218575"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Exemples de déclarations de stratégie Base de référence des identités
 
@@ -42,7 +42,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 - Un modèle d’accès à privilège minimum sera appliqué à toutes les ressources impliquées dans des applications stratégiques ou des données protégées.
 - Les autorisations élevées doivent rester une exception, et toute exception de ce type doit être communiquée à l’équipe de gouvernance cloud. Les exceptions seront régulièrement vérifiées.
 
-**Options de conception potentielles** : consultez les [Meilleures pratiques d’Azure Identity Management](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) pour implémenter une stratégie de contrôle d’accès en fonction du rôle (RBAC) qui restreint l’accès selon les principes [à savoir](https://wikipedia.org/wiki/Need_to_know) et [sécurité à privilège minimum](https://wikipedia.org/wiki/Principle_of_least_privilege).
+**Options de conception potentielles** : Consultez les [Meilleures pratiques pour la gestion des identités par Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) pour implémenter une stratégie de contrôle d’accès en fonction du rôle (RBAC) qui restreint l’accès selon les principes du [besoin de savoir](https://wikipedia.org/wiki/Need_to_know) et de la [sécurité à privilège minimum](https://wikipedia.org/wiki/Principle_of_least_privilege).
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>Absence de comptes de gestion partagés entre l'infrastructure locale et le cloud
 
@@ -66,13 +66,13 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 **Instruction de stratégie :** Le déploiement des applications nécessitant une authentification des clients doit utiliser un fournisseur d'identité approuvé compatible avec le fournisseur d'identité principal pour les utilisateurs internes.
 
-**Options de conception potentielles** : implémentez une [fédération avec Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) entre vos fournisseurs d’identité interne et client ou utilisez [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
+**Options de conception potentielles** : Implémentez une [fédération avec Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) entre vos fournisseurs d’identité interne et client ou utilisez [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
 ## <a name="identity-reviews"></a>Révisions des identités
 
 **Risque technique :** à mesure que l’activité évolue, l’ajout de nouveaux déploiements dans le cloud ou l’apparition d’autres problèmes de sécurité peut accroître les risques d’accès non autorisé à des ressources sécurisées.
 
-**Instruction de stratégie :** les processus de gouvernance cloud doivent inclure des révisions trimestrielles avec les équipes de gestion des indentés. L'objectif est d'identifier les modèles d'utilisation ou les acteurs malveillants devant être bloqués par la configuration des ressources cloud.
+**Instruction de stratégie :** Les processus de gouvernance du cloud doivent inclure des révisions trimestrielles avec les équipes de gestion des indentés. L'objectif est d'identifier les modèles d'utilisation ou les acteurs malveillants devant être bloqués par la configuration des ressources cloud.
 
 **Options de conception potentielles** : tous les trimestres, organisez une réunion destinée à la révision de la sécurité avec les membres de l'équipe de gouvernance et le personnel informatique chargé de la gestion des services d'identité. Passez en revue les données et les métriques de sécurité existantes pour déterminer les lacunes de la stratégie et des outils de gestion des identités actuels, ainsi que pour mettre à jour la stratégie afin de limiter les nouveaux risques éventuels.
 
@@ -80,7 +80,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 Utilisez les exemples mentionnés dans cet article comme point de départ pour développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
-Pour commencer à développer vos déclarations de stratégie personnalisées pour la Base de référence des identités, téléchargez le [modèle Base de référence des identités](./template.md).
+Pour commencer à développer vos déclarations de stratégies personnalisées Ligne de base des identités, téléchargez le [modèle de discipline Ligne de base des identités](./template.md).
 
 Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance actionnable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
 

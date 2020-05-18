@@ -1,5 +1,5 @@
 ---
-title: Modèle Base de référence de la sécurité
+title: Modèle de discipline Ligne de base de la sécurité
 description: Servez-vous de ce modèle comme point de départ pour documenter et communiquer les déclarations de stratégie qui régissent les problèmes de sécurité dans le cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 94570e0e4fbb41342dbe41e0377160449d832818
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7a76999130144b2ac67913f0c9f1974456e442c0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425912"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217708"
 ---
-# <a name="security-baseline-template"></a>Modèle Base de référence de la sécurité
+# <a name="security-baseline-discipline-template"></a>Modèle de discipline Ligne de base de la sécurité
 
 La première étape de l’implémentation d’une modification consiste à communiquer autour de la modification désirée. Il en est de même lors de la modification des pratiques de gouvernance. Le modèle ci-dessous sert de point de départ pour documenter et communiquer des énoncés de stratégie qui régissent les problèmes de sécurité dans le cloud.
 
@@ -24,7 +24,7 @@ Lorsque vos discussions avancent, utilisez la structure de ce modèle comme mod�
 > [!IMPORTANT]
 > Ce modèle est un exemple limité. Avant de mettre à jour ce modèle pour l’adapter à vos besoins, vous devez passer en revue les étapes suivantes pour définir une discipline Base de référence de la sécurité efficace dans votre stratégie de gouvernance cloud.
 
-[Télécharger le modèle de discipline de gouvernance](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
+[Télécharger le modèle de discipline Ligne de base de la sécurité](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

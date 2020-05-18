@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 234136b777107c93e7ea26b9a183c1ec34b75e24
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f0f680c26fec666c7f60ba9c74b5cdc7eb22348
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120099"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217740"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Amélioration de la discipline Base de référence de la sécurité
 
-La discipline Base de référence de la sécurité se concentre sur l’établissement de stratégies qui protègent le réseau, les ressources et, plus important encore, les données qui résideront sur la solution d’un fournisseur de services cloud. Parmi les cinq disciplines de la gouvernance cloud, la discipline Base de référence de la sécurité inclut la classification du parc numérique et des données. Elle inclut également la documentation relative aux risques, à la tolérance métier et aux stratégies d’atténuation associées à la sécurité des données, des ressources et du réseau. D'un point de vue technique, cela englobe également la participation aux décisions concernant le [chiffrement](../../decision-guides/encryption/index.md), la [configuration réseau requise](../../decision-guides/software-defined-network/index.md), les [stratégies d'identités hybrides](../../decision-guides/identity/index.md) et les [processus](./compliance-processes.md) utilisés pour développer les stratégies Base de référence de la sécurité du cloud.
+La discipline Base de référence de la sécurité se concentre sur l’établissement de stratégies qui protègent le réseau, les ressources et, plus important encore, les données qui résideront sur la solution d’un fournisseur de services cloud. Parmi les Cinq disciplines de la gouvernance du cloud, la discipline Ligne de base de la sécurité implique la classification du parc numérique et des données. Elle inclut également la documentation relative aux risques, à la tolérance métier et aux stratégies d’atténuation associées à la sécurité des données, des ressources et du réseau. D'un point de vue technique, cela englobe également la participation aux décisions concernant le [chiffrement](../../decision-guides/encryption/index.md), les [exigences réseau](../../decision-guides/software-defined-network/index.md), les [stratégies d'identités hybrides](../../decision-guides/identity/index.md) et les [processus](./compliance-processes.md) utilisés pour développer les stratégies Ligne de base de la sécurité du cloud.
 
 Cet article décrit certaines tâches potentielles que votre entreprise peut entreprendre pour mieux développer et faire mûrir la discipline de Base de référence de la sécurité. Ces tâches peuvent être décomposées en phases de planification, de construction, d’adoption et d’exploitation de l’implémentation d’une solution cloud, qui sont ensuite répétées pour permettre le développement d’une [approche incrémentielle de la gouvernance cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quatre phases d’adoption](../../_images/govern/adoption-phases.png)
 
-*Figure 1 - Phases d’adoption de l’approche incrémentielle de la gouvernance cloud.*
+_Figure 1 : Phases d’adoption de l’approche incrémentielle de la gouvernance cloud._
 
-Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [produit minimum viable (MVP) de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance cloud devra décider combien investir dans ces activités pour améliorer vos fonctionnalités de gouvernance de Base de référence de la sécurité.
+Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. Ces activités visent principalement à vous aider à générer un [MVP de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir une infrastructure pour offrir une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance du cloud devra décider combien investir dans ces activités pour améliorer votre discipline Ligne de base de la sécurité.
 
 > [!CAUTION]
 > Les activités minimales ou potentielles décrites dans cet article ne correspondent pas spécialement à des stratégies d’entreprise spécifiques ou à des exigences de conformité de tiers. Ces conseils visent à favoriser les échanges qui conduiront à un alignement des deux exigences avec un modèle de gouvernance cloud.
@@ -37,7 +37,7 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 **Activités minimales suggérées :**
 
 - Évaluez les options de votre [chaîne d'outils Base de référence de la sécurité](./toolchain.md).
-- Élaborer un brouillon de recommandations relatives à l’architecture et distribuer ce document aux principales parties prenantes.
+- Élaborez un brouillon de recommandations relatives à l’architecture et distribuez ce document aux principales parties prenantes.
 - Formez et impliquez les personnes et les équipes concernées par le développement des instructions relatives à l'architecture.
 - Ajoutez des tâches de sécurité classées par ordre de priorité à votre backlog de migration.
 
@@ -46,13 +46,11 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 - Définissez un schéma de classification des données.
 - Menez un processus de planification du parc numérique pour dresser l'inventaire des ressources informatiques qui alimentent actuellement vos processus métier et les opérations associées.
 - Menez une [révision des stratégies](../../govern/policy-compliance/cloud-policy-review.md) pour entamer le processus de modernisation des stratégies de sécurité informatique existantes, et définissez des stratégies MVP pour répondre aux risques connus.
-- Passez en revue les consignes de sécurité de votre plateforme cloud. Pour Azure, vous les trouverez sur la [Plateforme d'approbation de services Microsoft](https://servicetrust.microsoft.com).
-- Déterminez si votre stratégie Base de référence de la sécurité inclut un [Cycle de vie de développement de la sécurité](https://www.microsoft.com/en-us/securityengineering/sdl).
+- Passez en revue les consignes de sécurité de votre plateforme cloud. Pour Azure, vous les trouverez sur le [Portail d'approbation de services Microsoft](https://servicetrust.microsoft.com).
+- Déterminez si votre stratégie Ligne de base de la sécurité inclut un [Cycle de vie de développement de la sécurité](https://www.microsoft.com/sdl).
 - Évaluez les risques métier liés au réseau, aux données et aux ressources en fonction des trois versions suivantes et déterminez la tolérance de votre organisation vis-à-vis de ces risques.
 - Consultez le rapport Microsoft consacré aux [principales tendances en matière de cybersécurité](https://www.microsoft.com/security/operations/security-intelligence-report) pour obtenir un aperçu du paysage de la sécurité actuel.
-- Envisagez de développer un rôle [Security DevOps](https://www.microsoft.com/en-us/securityengineering/devsecops) au sein de votre organisation.
-
-<!-- "en-us" location is required for the URLs above. -->
+- Envisagez de développer un rôle [DevSecOps](https://www.microsoft.com/devsecops) au sein de votre organisation.
 
 ## <a name="build-and-predeployment"></a>Génération et prédéploiement
 
@@ -61,7 +59,7 @@ Plusieurs conditions techniques et non techniques sont exigées pour migrer corr
 **Activités minimales suggérées :**
 
 - Implémentez votre [chaîne d’outils Base de référence de la sécurité](./toolchain.md) en la déployant dans le cadre d’une phase de prédéploiement.
-- Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
+- Mettez à jour les recommandations relatives à l’architecture et distribuez ce document aux principales parties prenantes.
 - Implémentez des tâches de sécurité sur votre backlog de migration classé par ordre de priorité.
 - Élaborer une documentation et des ressources pédagogiques, des messages de sensibilisation, des incitations et d’autres programmes afin de favoriser l’adoption par les utilisateurs.
 
@@ -73,7 +71,7 @@ Plusieurs conditions techniques et non techniques sont exigées pour migrer corr
 - Évaluez les stratégies d’[accès à privilège minimum](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-delegate-by-task) de votre organisation et utilisez des rôles basés sur des tâches pour fournir un accès à des ressources spécifiques.
 - Appliquez des mécanismes de sécurité et de supervision à tous les services cloud et à toutes les machines virtuelles.
 - Si possible, automatisez les [stratégies de sécurité](../../decision-guides/policy-enforcement/index.md).
-- Passez en revue votre stratégie Base de référence de la sécurité et déterminez si vous devez modifier vos plans en fonction des meilleures pratiques, comme celles décrites dans le [Cycle de vie de développement de la sécurité](https://www.microsoft.com/securityengineering/sdl).
+- Considérez votre stratégie Ligne de base de la sécurité et déterminez si vous devez modifier vos plans en fonction des meilleures pratiques, comme celles décrites dans le [Cycle de vie de développement de la sécurité](https://www.microsoft.com/sdl).
 
 ## <a name="adopt-and-migrate"></a>Adoption et migration
 
@@ -82,12 +80,12 @@ La migration est un processus incrémentiel qui porte essentiellement sur le dé
 **Activités minimales suggérées :**
 
 - Migrez votre [chaîne d’outils Base de référence de la sécurité](./toolchain.md) de la phase de prédéploiement vers la phase de production.
-- Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
+- Mettez à jour les recommandations relatives à l’architecture et distribuez ce document aux principales parties prenantes.
 - Élaborer une documentation et des ressources pédagogiques, des messages de sensibilisation, des incitations et d’autres programmes afin de favoriser l’adoption par les utilisateurs.
 
 **Activités potentielles :**
 
-- Consultez les dernières informations relatives à la Base de référence de la sécurité et aux menaces pour identifier tout nouveau risque.
+- Consultez les dernières informations relatives à la Ligne de base de la sécurité et aux menaces pour identifier tout nouveau risque.
 - Évaluez la tolérance de votre organisation pour faire face aux nouveaux risques liés à la sécurité.
 - Identifiez les écarts par rapport la stratégie et procédez à des corrections.
 - Ajustez la sécurité et l'automatisation du contrôle d'accès afin d'assurer une conformité maximale avec la stratégie.

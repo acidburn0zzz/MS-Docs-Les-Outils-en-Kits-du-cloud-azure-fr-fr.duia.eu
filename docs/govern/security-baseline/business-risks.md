@@ -1,5 +1,5 @@
 ---
-title: Risques métier liés à la base de référence de la sécurité
+title: Motivations et risques métier dans la discipline Ligne de base des identités
 description: Appréhendez et découvrez des exemples de clients types qui adoptent une discipline de base de référence de la sécurité dans le cadre d’une stratégie de gouvernance cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 40b92c15af9ea4677d049cc76902d33e6807f139
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5e0e9b51ec666d48b886f37913a4a0d5441dd78d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433624"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217776"
 ---
-# <a name="security-baseline-motivations-and-business-risks"></a>Risques métier et motivations associés à la Base de référence de la sécurité
+# <a name="motivations-and-business-risks-in-the-security-baseline-discipline"></a>Motivations et risques métier dans la discipline Ligne de base des identités
 
 Cet article décrit les raisons pour lesquelles les clients adoptent une discipline Base de référence de la sécurité au sein d’une stratégie de gouvernance cloud. Des exemples sur les risques métier potentiels pouvant conduire à la rédaction d’instructions de stratégie sont également présentés.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="security-baseline-relevancy"></a>Pertinence de la Base de référence de la sécurité
+## <a name="relevance"></a>Pertinence
 
 La sécurité est une préoccupation majeure de tous les services informatiques. Les déploiements dans le cloud sont confrontés aux mêmes risques de sécurité que les charges de travail hébergées dans des centres de données locaux classiques. Cela étant, la nature des plateformes de cloud public, sans propriété directe sur le matériel physique stockant et exécutant vos charges de travail, signifie que la sécurité du cloud requiert ses propres stratégies et processus.
 
@@ -32,7 +32,7 @@ Vos investissements et processus en matière de stratégie de sécurité dépend
 La discipline Base de référence de la sécurité couvre les stratégies d'entreprise et les processus manuels que vous pouvez mettre en place pour protéger votre déploiement dans le cloud contre les risques de sécurité.
 
 > [!NOTE]
->S'il est important d'appréhender la [Base de référence des identités](../identity-baseline/index.md) dans le contexte de la Base de référence de la sécurité et de la façon dont cela se rapporte au contrôle d'accès, les [cinq disciplines de la gouvernance cloud](../index.md) considèrent la [Base de référence des identités](../identity-baseline/index.md) comme leur propre discipline, indépendamment de la Base de référence de la sécurité.
+>S'il est important de comprendre la [discipline Ligne de base des identités](../identity-baseline/index.md) dans le contexte de la discipline Ligne de base de la sécurité et de la façon dont cela se rapporte au contrôle d'accès, les [Cinq disciplines de la gouvernance du cloud](../index.md) la traitent comme une discipline à part.
 
 ## <a name="business-risk"></a>Risque métier
 
@@ -45,7 +45,7 @@ Les risques diffèrent en fonction de l’organisation, mais ceux liés à la s�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle Gestion de cloud](./template.md), documentez les risques métier susceptibles d’être introduits par le plan d’adoption du cloud actuel.
+À l’aide du [modèle de discipline Ligne de base des identités](./template.md), documentez les risques métier susceptibles d’être introduits par le plan d’adoption du cloud actuel.
 
 Une fois tous les risques métier réalistes appréhendés, l’étape suivante consiste à documenter la tolérance de l’activité aux risques, ainsi que les indicateurs et métriques clés permettant de surveiller cette tolérance.
 

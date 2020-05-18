@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4d9638f123da72ec10f0f68f91a5daf69f727ba7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 683340ce6247e33e78def4abf662dd63b65bf085
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425999"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217725"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Stratégie cloud native Base de référence de la sécurité
 
-La discipline [Base de référence de la sécurité](./index.md) est l’une des [cinq disciplines de la gouvernance cloud](../governance-disciplines.md). Elle se concentre sur les sujets généraux liés à la sécurité, comme la protection du réseau, les ressources numériques et les données. Comme indiqué dans le [Guide de révision des stratégies](../policy-compliance/cloud-policy-review.md), le Framework d’adoption du cloud comprend trois niveaux d’exemples de stratégies : cloud native, d’entreprise et conforme au principe de conception cloud pour chacune des disciplines. Cet article traite de l’exemple de stratégie Native Cloud pour la discipline Base de référence de la sécurité.
+La [discipline Ligne de base de la sécurité](./index.md) est l’une des [Cinq disciplines de gouvernance du cloud](../governance-disciplines.md). Elle se concentre sur les sujets généraux liés à la sécurité, comme la protection du réseau, les ressources numériques et les données. Comme indiqué dans le [Guide de révision des stratégies](../policy-compliance/cloud-policy-review.md), le Framework d’adoption du cloud comprend trois niveaux d’exemples de stratégies : cloud native, d’entreprise et conforme au principe de conception cloud pour chacune des disciplines. Cet article traite de l’exemple de stratégie Native Cloud pour la discipline Base de référence de la sécurité.
 
 > [!NOTE]
 > Microsoft n'est pas en position d'imposer une stratégie d'entreprise ou une stratégie informatique. Cet article vous aide à vous préparer à une révision de stratégie interne. Il est supposé que cet exemple de stratégie sera étendu, validé et testé sur votre stratégie d'entreprise avant toute tentative d'utilisation. Il est déconseillé d’utiliser cet exemple de stratégie en l’état.
@@ -36,7 +36,7 @@ La robustesse de l'infrastructure de sécurité est difficile à maintenir lorsq
 
 ### <a name="cloud-native-identity-policies"></a>Stratégies d'identité de type Native cloud
 
-L'identité joue désormais un rôle majeur pour la sécurité, au niveau du réseau. Les périmètres réseau sont devenus de plus en plus poreux, et cette défense de périmètre ne peut pas être aussi efficace qu’elle l’était avant l’évolution des applications BYOD et cloud. La gestion des identités et le contrôle d'accès Azure permettent un accès transparent et sécurisé à toutes vos applications.
+L'identité joue désormais un rôle majeur pour la sécurité, au niveau du réseau. Les périmètres réseau sont devenus de plus en plus poreux et cette défense de périmètre ne peut pas être aussi efficace qu’elle l’était avant l’évolution des applications BYOD et cloud. La gestion des identités et le contrôle d'accès Azure permettent un accès transparent et sécurisé à toutes vos applications.
 
 Un exemple de stratégie Native cloud portant sur l'identité dans les annuaires cloud et locaux peut inclure des exigences semblables aux suivantes :
 
@@ -45,7 +45,7 @@ Un exemple de stratégie Native cloud portant sur l'identité dans les annuaires
 - Accès juste-à-temps (JIT) et « just-enough » accordé tâche par tâche pour limiter l’exposition des informations d’identification des administrateurs dotés de privilèges excessifs.
 - Identité utilisateur étendue et accès aux stratégies de plusieurs environnements via Azure Active Directory.
 
-S'il est important d'appréhender la [Base de référence des identités](../identity-baseline/index.md) dans le contexte de la Base de référence de la sécurité, les [cinq disciplines de la gouvernance cloud](../index.md) considèrent la [Base de référence des identités](../identity-baseline/index.md) comme leur propre discipline, indépendamment de la Base de référence de la sécurité.
+S'il est important de comprendre la [discipline Ligne de base des identités](../identity-baseline/index.md) dans le contexte de la discipline Ligne de base de la sécurité, les [Cinq disciplines de la gouvernance du cloud](../index.md) la traitent comme une discipline à part.
 
 ### <a name="network-access-policies"></a>Stratégies d'accès réseau
 
@@ -55,8 +55,8 @@ Une stratégie Native cloud destinée aux contrôles réseau peut inclure des ex
 
 - Les connexions hybrides aux ressources locales peuvent ne pas être autorisées dans le cadre d’une stratégie Native cloud. Si une connexion hybride s'avère nécessaire, l'exemple de stratégie de sécurité Entreprise, plus robuste, constituera une référence plus pertinente.
 - Les utilisateurs peuvent établir des connexions sécurisées vers et au sein d'Azure à l'aide de réseaux virtuels et de groupes de sécurité réseau.
-- Le Pare-feu Windows Azure natif protège les hôtes du trafic réseau malveillant par un accès limité aux ports. La nécessité de bloquer (ou de ne pas activer) le trafic direct vers une machine virtuelle avec un protocole SSH/RDP offre un bon exemple de cette stratégie.
-- Des services tels que le pare-feu d’applications web et Azure Application Gateway et Azure DDoS Protection protègent les applications et garantissent la disponibilité des machines virtuelles exécutées dans Azure. Ces fonctionnalités ne doivent pas être désactivées.
+- Le Pare-feu Windows Azure natif protège les hôtes du trafic réseau malveillant par un accès limité aux ports. La nécessité de bloquer ou de ne pas activer le trafic direct vers une machine virtuelle avec un protocole SSH/RDP offre un bon exemple de cette stratégie.
+- Des services tels que le Pare-feu d’applications web sur Azure Application Gateway et Azure DDoS Protection protègent les applications et garantissent la disponibilité des machines virtuelles exécutées dans Azure. Ces fonctionnalités ne doivent pas être désactivées.
 
 ### <a name="data-protection"></a>Protection de données
 
@@ -71,7 +71,7 @@ Bien que les fonctionnalités mentionnées ci-dessus soient intégrées à Azure
 
 ### <a name="security-monitoring"></a>Surveillance de la sécurité
 
-Ici, la surveillance de la sécurité est une stratégie proactive qui audite vos ressources afin d’identifier les systèmes qui ne répondent pas aux normes organisationnelles ou aux meilleures pratiques. Azure Security Center fournit une Base de référence de la sécurité unifiée et une protection avancée contre les menaces à l'ensemble des charges de travail cloud hybrides. Avec Security Center, vous pouvez appliquer des stratégies de sécurité à l'ensemble de vos charges de travail, limiter votre exposition aux menaces, détecter et répondre aux attaques grâce aux fonctionnalités suivantes :
+Ici, la surveillance de la sécurité est une stratégie proactive qui audite vos ressources afin d’identifier les systèmes qui ne répondent pas aux normes organisationnelles ou aux meilleures pratiques. Azure Security Center fournit une Ligne de base de la sécurité unifiée et une protection avancée contre les menaces à l'ensemble des charges de travail cloud hybrides. Avec Security Center, vous pouvez appliquer des stratégies de sécurité à l'ensemble de vos charges de travail, limiter votre exposition aux menaces, détecter et répondre aux attaques grâce aux fonctionnalités suivantes :
 
 - Vue unifiée de la sécurité sur toutes vos charges de travail cloud et locales avec Azure Security Center.
 - Supervision et évaluations continues de la sécurité pour assurer la conformité et corriger les vulnérabilités.
@@ -79,12 +79,12 @@ Ici, la surveillance de la sécurité est une stratégie proactive qui audite vo
 - Journalisation étendue et intégration aux informations de sécurité existantes.
 - Réduit la nécessité de recourir à des solutions de sécurité isolées, non intégrées et onéreuses.
 
-### <a name="extending-cloud-native-policies"></a>Extension des stratégies de type Native cloud
+### <a name="extend-cloud-native-policies"></a>Extension des stratégies de type natif Cloud
 
 L'utilisation du cloud peut réduire une partie du fardeau que représente la sécurité. Microsoft assure la sécurité physique des centres de données Azure et contribue à protéger la plateforme cloud des menaces d'infrastructure, comme les attaques DDoS. Sachant que Microsoft emploie des milliers de spécialistes de la cybersécurité qui œuvrent chaque jour pour garantir la sécurité, les ressources engagées pour atténuer, détecter et réduire les cyberattaques sont considérables. En fait, alors que d’habitude les entreprises se demandaient si le cloud était sécurisé, la plupart d’entre elles savent maintenant que, compte tenu du niveau d’investissement en termes de ressources humaines et d’infrastructures spécialisées effectuées par des fournisseurs tels que Microsoft, le cloud est en réalité plus sécurisé que la plupart des centres de données locaux.
 L'utilisation du cloud peut réduire une partie du fardeau que représente la sécurité. Microsoft assure la sécurité physique des centres de données Azure et contribue à protéger la plateforme cloud des menaces d'infrastructure, comme les attaques DDoS. Sachant que Microsoft emploie des milliers de spécialistes de la cybersécurité qui œuvrent chaque jour pour garantir la sécurité, les ressources engagées pour atténuer, détecter et réduire les cyberattaques sont considérables. En fait, alors que d’habitude les entreprises se demandaient si le cloud était sécurisé, la plupart d’entre elles savent maintenant que, compte tenu du niveau d’investissement en termes de ressources humaines et d’infrastructures spécialisées effectuées par des fournisseurs tels que Microsoft, le cloud est en réalité plus sécurisé que la plupart des centres de données locaux.
 
-Malgré cet investissement dans la Base de référence de la sécurité Native cloud, il est conseillé d'étendre les stratégies de type Native cloud par défaut de toute stratégie Base de référence de la sécurité. Voici quelques exemples de stratégies étendues à prendre en compte, même dans un environnement de type Native cloud :
+Malgré cet investissement dans la Ligne de base de la sécurité natif Cloud, il est conseillé d'étendre les stratégies de type natif Cloud par défaut de toute stratégie Ligne de base de la sécurité. Voici quelques exemples de stratégies étendues à prendre en compte, même dans un environnement de type Native cloud :
 
 - **Sécuriser des machines virtuelles**. La sécurité doit être la priorité absolue de toutes les organisations, et pour la garantir, vous devez : évaluer votre état de sécurité, vous protéger contre les menaces, puis détecter et réagir rapidement aux menaces qui surviennent.
 - **Protéger le contenu des machines virtuelles**. La mise en place de sauvegardes automatiques régulières est essentielle pour vous protéger des erreurs des utilisateurs. Mais ce n'est pas suffisant ; vous devez également vous assurer que vos sauvegardes sont protégées des cyberattaques et disponibles lorsque vous en avez besoin.

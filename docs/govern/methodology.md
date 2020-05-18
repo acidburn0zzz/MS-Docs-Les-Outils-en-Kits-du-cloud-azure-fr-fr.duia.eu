@@ -1,5 +1,5 @@
 ---
-title: Méthodologie de gouvernance cloud
+title: Régit la méthodologie du cloud
 description: Utilisez une approche de gouvernance incrémentielle basée sur un produit minimum viable (MVP) pour prendre en charge les stratégies d’entreprise et passer rapidement à l’adoption du cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2738d623e863ae78903d3f20d60561349ef0d21e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0e26e7ee1c4bc534ea461de2293fe69b75de1360
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997418"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218388"
 ---
-# <a name="cloud-governance-methodology"></a>Méthodologie de gouvernance cloud
+# <a name="govern-methodology-for-the-cloud"></a>Régit la méthodologie du cloud
 
 L’adoption du cloud est un cheminement, non un objectif. Ce parcours est jalonné d’étapes cruciales et d’avantages commerciaux tangibles. Toutefois, lorsqu’une entreprise entame son parcours d’adoption du cloud, elle sait rarement quel sera son état final. La gouvernance cloud permet de mettre en place un rail de sécurité pour l’entreprise tout au long de son parcours.
 
@@ -37,17 +37,17 @@ Le modèle de gouvernance du Framework d’adoption du cloud (FAC) identifie cer
 
 **Cinq disciplines de gouvernance cloud :** Ces disciplines soutiennent les stratégies d’entreprise. Chaque discipline protège l’entreprise contre certains pièges potentiels :
 
-- Cost Management
-- Base de référence de la sécurité
-- Cohérence des ressources
-- Base de référence des identités
-- Accélération du déploiement
+- Discipline Gestion des coûts
+- Discipline Ligne de base de la sécurité
+- Discipline Cohérence des ressources
+- Discipline Ligne de base des identités
+- Discipline Accélération du déploiement
 
 Au fond, les stratégies d’entreprise font figure de système d’avertissement qui détecte les potentiels problèmes. Les disciplines aident l’entreprise à gérer les risques et forment une sorte de « glissière de sécurité ».
 
 ## <a name="grow-to-the-end-state"></a>Parvenir à l’état final
 
-Comme les exigences de gouvernance changent tout au long du parcours d’adoption cloud, il est nécessaire d’adopter une approche différente face à la gouvernance. Les entreprises ne peuvent plus espérer qu’une petite équipe sécurise et jalonne chaque processus *avant de se lancer et de mettre en œuvre une première étape*. Des résultats commerciaux rapides et réguliers sont attendus. La gouvernance informatique doit également évoluer rapidement et suivre le rythme des exigences opérationnelles afin de rester pertinente lors du passage au cloud et d’éviter le phénomène « d’informatique fantôme ».
+Comme les exigences de gouvernance changent tout au long du parcours d’adoption cloud, il est nécessaire d’adopter une approche différente face à la gouvernance. Les entreprises ne peuvent plus espérer qu’une petite équipe sécurise et jalonne chaque processus _avant de se lancer et de mettre en œuvre une première étape_. Des résultats commerciaux rapides et réguliers sont attendus. La gouvernance informatique doit également évoluer rapidement et suivre le rythme des exigences opérationnelles afin de rester pertinente lors du passage au cloud et d’éviter le phénomène « d’informatique fantôme ».
 
 L’approche de **gouvernance incrémentielle** permet de prendre toute la mesure de ces caractéristiques. La gouvernance incrémentielle repose sur un petit ensemble de stratégies d’entreprise, de processus et d’outils qui visent à établir une base solide pour le passage au cloud et sa gouvernance. Cette base est appelée un **produit minimum viable** (MVP, minimum viable product). Grâce au produit minimum viable, l’équipe responsable peut intégrer rapidement la gouvernance aux implémentations tout au long du cycle d’adoption du cloud. Un produit minimum viable peut être établi à tout moment pendant ce processus. Toutefois, il est conseillé d’adopter un produit minimum viable (MVP) le plus tôt possible.
 

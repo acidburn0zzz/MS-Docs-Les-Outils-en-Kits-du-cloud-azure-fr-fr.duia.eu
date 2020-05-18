@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca91b52aa11427d81e8f9244e1cc74a88972b842
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 309132227df915f6673d1d5509a64f9d796af40c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433776"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218898"
 ---
-<!-- cSpell:ignore Exak -->
+<!-- cSpell:ignore ExakTime -->
 
 # <a name="examples-of-customer-engagement-outcomes"></a>Exemples de résultats au niveau de l’engagement client
 
@@ -28,17 +28,22 @@ Voici quelques exemples et quelques résultats liés à l’engagement client :
 
 ## <a name="cycle-time"></a>Temps de cycle
 
-Dans le cadre des transformations où le client est fortement impliqué, par exemple un effort d’innovation sur les applications cloud, les clients répondent à l’engagement direct et à leurs besoins sont satisfaits rapidement par l’équipe de développement. Le temps de cycle est un terme Six Sigma qui fait référence au temps écoulé entre le début et la fin d’une fonction. Pour les leaders de l’entreprise qui sont obsédés par le client et qui investissent énormément dans l’amélioration de l’engagement client, le temps de cycle peut être un résultat important.
+Dans le cadre des transformations où le client est fortement impliqué, par exemple un effort d’innovation sur les applications cloud, les clients répondent à l’engagement direct et à la possibilité de voir leurs besoins rapidement satisfaits par l’équipe de développement. Le temps de cycle est un terme Six Sigma qui fait référence au temps écoulé entre le début et la fin d’une fonction. Pour les leaders de l’entreprise qui sont obsédés par le client et qui investissent énormément dans l’amélioration de l’engagement client, le temps de cycle peut être un résultat important.
 
 - **Exemple :** Une société de services qui fournit des services B2B (Business-to-Business) tente de maintenir sa part de marché sur un marché compétitif. Les clients qui sont partis chez un autre fournisseur de services ont trouvé que sa solution technique trop complexe interférait avec leurs processus et constituait la principale raison de leur départ. Dans ce cas, le temps de cycle est un élément impératif. Aujourd’hui, il faut 12 mois pour qu’une fonctionnalité passe de la demande à la mise en production. Si elle est définie comme prioritaire par l’équipe de direction, ce cycle peut être réduit à six à neuf mois. Grâce à l’innovation des applications cloud, aux modèles d’applications cloud natives et à l’intégration d’Azure DevOps, l’équipe a pu réduire la durée du cycle à 1 mois, ce qui a permis aux équipes de développement des processus métier et des applications d’interagir directement avec les clients.
+
+<!--docsTest:ignore "Wayne Wise" "Vice President of Software Development" -->
 
 > **ExakTime**
 >
 > La gestion de la main-d’œuvre se libère des contraintes locales avec la technologie cloud. Avec Microsoft Azure, ExakTime évolue vers un développement de produit agile et rationalisé, tandis que les clients de la société bénéficient d’un produit plus robuste et plus facile à utiliser, avec de nouvelles fonctionnalités.
 >
-> « Maintenant, le développeur peut s’asseoir devant son ordinateur, avoir une idée, créer un service web ou une instance Azure, tester son idée, le pointer sur des données de test et faire fonctionner le concept. Dans le temps qu’il nous aurait fallu pour regrouper tous les éléments nécessaires au test, nous pouvons créer la fonctionnalité. »  
-> Wayne Wise  
-> Vice-Président du développement logiciel  
+> « Maintenant, le développeur peut s’asseoir devant son ordinateur, avoir une idée, créer un service web ou une instance Azure, tester son idée, le pointer sur des données de test et faire fonctionner le concept. Dans le temps qu’il nous aurait fallu pour regrouper tous les éléments nécessaires au test, nous pouvons créer la fonctionnalité. »
+>
+> Wayne Wise
+>
+> Vice-Président du développement logiciel
+>
 > ExakTime
 
 ## <a name="next-steps"></a>Étapes suivantes

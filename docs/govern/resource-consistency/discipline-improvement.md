@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dcfa6596d61233efa83bc6a1c6977a2ebe4ad510
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4dda94a3ec0439fd30097fb5f9962d3cdb6eeeec
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433480"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218201"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Amélioration de la discipline Cohérence des ressources
 
-La discipline Cohérence des ressources se concentre sur les moyens à utiliser pour établir des stratégies en lien avec la gestion opérationnelle d'un environnement, d'une application ou d'une charge de travail. Parmi les cinq disciplines de la gouvernance cloud, la Cohérence des ressources inclut la supervision de l’application, de la charge de travail et des performances des ressources. Elle inclut également les tâches nécessaires pour répondre aux demandes de mise à l'échelle, corriger les violations de contrat de niveau de service et prévenir de façon proactive les violations de contrat de niveau de service via la correction automatisée.
+La discipline Cohérence des ressources se concentre sur les moyens à utiliser pour établir des stratégies en lien avec la gestion opérationnelle d'un environnement, d'une application ou d'une charge de travail. Parmi les Cinq disciplines de la gouvernance du cloud, la discipline Cohérence des ressources comprend l’analyse des performances des applications, des charges de travail et des ressources. Elle inclut également les tâches nécessaires pour répondre aux demandes de mise à l'échelle, corriger les violations de contrat de niveau de service et prévenir de façon proactive les violations de contrat de niveau de service via la correction automatisée.
 
 Cet article décrit certaines tâches potentielles que votre entreprise peut entreprendre pour mieux développer et faire mûrir la discipline de Cohérence des ressources. Ces tâches peuvent être décomposées en phases de planification, de construction, d’adoption et d’exploitation de l’implémentation d’une solution cloud, qui sont ensuite répétées pour permettre le développement d’une [approche incrémentielle de la gouvernance cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quatre phases d’adoption](../../_images/govern/adoption-phases.png)
 
-*Figure 1 - Phases d’adoption de l’approche incrémentielle de la gouvernance cloud.*
+_Figure 1 : Phases d’adoption de l’approche incrémentielle de la gouvernance cloud._
 
-Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. L’objectif initial de ces activités est de vous aider à générer un [produit minimum viable (MVP) de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir un framework pour une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance cloud devra décider combien investir dans ces activités pour améliorer vos fonctionnalités de gouvernance de Cohérence des ressources.
+Il est impossible pour un même document de prendre en compte les exigences de toutes les organisations. Par conséquent, cet article présente des exemples d’activités minimales et potentielles suggérés pour chaque phase du processus de maturation de la gouvernance. Ces activités visent principalement à vous aider à générer un [MVP de stratégie](../guides/index.md#an-incremental-approach-to-cloud-governance) et à établir une infrastructure pour offrir une amélioration incrémentielle de la stratégie. Votre équipe de gouvernance du cloud devra décider combien investir dans ces activités pour améliorer votre discipline Cohérence des ressources.
 
 > [!CAUTION]
 > Les activités minimales ou potentielles décrites dans cet article ne correspondent pas spécialement à des stratégies d’entreprise spécifiques ou à des exigences de conformité de tiers. Ces conseils visent à favoriser les échanges qui conduiront à un alignement des deux exigences avec un modèle de gouvernance cloud.
@@ -38,8 +38,8 @@ Cette phase de maturité de la gouvernance comble le fossé entre les résultats
 
 - Évaluez votre options de [chaîne d’outils en matière de cohérence des données](./toolchain.md).
 - Appréhendez au mieux les conditions de licence de votre stratégie cloud.
-- Élaborer un brouillon de recommandations relatives à l’architecture et distribuer ce document aux principales parties prenantes.
-- Familiarisez-vous avec le gestionnaire de ressources que vous utilisez pour déployer, gérer et surveiller toutes les ressources de votre solution en tant que groupe.
+- Élaborez un brouillon de recommandations relatives à l’architecture et distribuez ce document aux principales parties prenantes.
+- Familiarisez-vous avec Resource Manager que vous utilisez pour déployer, gérer et surveiller toutes les ressources de votre solution en tant que groupe.
 - Formez et impliquez les personnes et les équipes concernées par le développement des instructions relatives à l'architecture.
 - Ajoutez des tâches de déploiement de ressources classées par ordre de priorité à votre backlog de migration.
 
@@ -58,7 +58,7 @@ Plusieurs conditions techniques et non techniques sont exigées pour migrer corr
 **Activités minimales suggérées :**
 
 - Implémentez votre [chaîne d’outils de cohérence des ressources](./toolchain.md) en la déployant dans le cadre d’une phase de prédéploiement.
-- Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
+- Mettez à jour les recommandations relatives à l’architecture et distribuez ce document aux principales parties prenantes.
 - Implémentez des tâches de déploiement de ressources sur votre backlog de migration classé par ordre de priorité.
 - Élaborer une documentation et des ressources pédagogiques, des messages de sensibilisation, des incitations et d’autres programmes afin de favoriser l’adoption par les utilisateurs.
 
@@ -71,9 +71,9 @@ Plusieurs conditions techniques et non techniques sont exigées pour migrer corr
 - Établissez un modèle d’autorisations avec des privilèges minimum dans lequel les utilisateurs ne disposent d’aucune autorisation par défaut.
 - Au sein de votre organisation, déterminez les propriétaires de chaque charge de travail et compte, ainsi que les personnes qui pourront y accéder à des fins de maintenance et de modification de ces ressources. Définissez des rôles et responsabilités cloud correspondant à ces besoins et utilisez ces rôles comme base pour le contrôle d’accès.
 - Définissez les dépendances entre les ressources.
-- Implémentez la mise à l’échelle automatisée des ressources conformément aux exigences définies à l'étape de planification.
+- Implémentez la mise à l’échelle automatisée des ressources conformément aux exigences définies à la phase de planification.
 - Mettez en place des performances d'accès pour mesurer la qualité des services reçus.
-- Envisagez de déployer une [stratégie](https://docs.microsoft.com/azure/governance/policy/overview) pour gérer la mise en œuvre du contrat SLA à l’aide de paramètres de configuration et de règles de création de ressources.
+- Envisagez de déployer [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) pour gérer la mise en œuvre du contrat SLA à l’aide de paramètres de configuration et de règles de création de ressources.
 
 ## <a name="adopt-and-migrate"></a>Adoption et migration
 
@@ -82,7 +82,7 @@ La migration est un processus incrémentiel qui porte essentiellement sur le dé
 **Activités minimales suggérées :**
 
 - Migrez votre [chaîne d’outils de cohérence des ressources](./toolchain.md) du prédéploiement à la production.
-- Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
+- Mettez à jour les recommandations relatives à l’architecture et distribuez ce document aux principales parties prenantes.
 - Élaborer une documentation et des ressources pédagogiques, des messages de sensibilisation, des incitations et d’autres programmes afin de favoriser l’adoption par les utilisateurs.
 - Migrez tous les scripts de correction automatisés ou outils pour prendre en charge les exigences du contrat SLA.
 
@@ -108,9 +108,9 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 
 **Activités minimales suggérées :**
 
-- Personnalisez votre [chaîne d’outils de cohérence des ressources](./toolchain.md) selon les besoins évolutifs de votre entreprise en matière de gestion des coûts.
+- Personnalisez votre [chaîne d’outils de Cohérence des ressources](./toolchain.md) selon les besoins évolutifs de votre entreprise.
 - Envisagez l’automatisation des notifications et des rapports à mesure que l'utilisation des ressources évolue.
-- Affiner les recommandations relatives à l’architecture pour orienter les futurs processus d’adoption.
+- Affinez les recommandations relatives à l’architecture pour orienter les futurs processus d’adoption.
 - Formez régulièrement les équipes concernées pour vous assurer de leur adhésion continue aux instructions relatives à l'architecture.
 
 **Activités potentielles :**
@@ -120,7 +120,7 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 - Évaluez les ressources sous-utilisées et déterminez s’il est intéressant de les conserver.
 - Détectez les distorsions et les anomalies entre l'utilisation prévue et réelle des ressources.
 - Aidez les équipes d’adoption du cloud et l’équipe de stratégie cloud à comprendre et à résoudre ces anomalies.
-- Déterminez si des modifications doivent être apportées à la cohérence des ressources en termes de facturation et de contrats SLA.
+- Déterminez si des modifications doivent être apportées à la discipline Cohérence des ressources en termes de facturation et de contrats SLA.
 - Évaluez les outils de journalisation et de surveillance pour déterminer si votre solution locale, de passerelle cloud ou hybride doit être ajustée.
 - Pour les unités commerciales et les groupes distribués géographiquement, déterminez si votre organisation doit envisager d’utiliser des fonctionnalités de gestion cloud supplémentaires, comme [Groupes d’administration Azure](https://docs.microsoft.com/azure/governance/management-groups), afin de mieux appliquer la stratégie centralisée et de répondre aux exigences du contrat SLA.
 

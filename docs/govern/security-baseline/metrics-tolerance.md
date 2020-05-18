@@ -1,6 +1,6 @@
 ---
-title: Métriques et indicateurs de tolérance au risque liée à la base de référence de la sécurité
-description: Utilisez le Framework d’adoption du cloud pour Azure pour savoir comment quantifier la tolérance au risque métier liée à la base de référence de la sécurité.
+title: Mesures et indicateurs de tolérance au risque liée à la discipline Ligne de base de la sécurité.
+description: Utilisez Cloud Adoption Framework pour Azure pour savoir comment quantifier la tolérance au risque métier liée à la discipline Ligne de base de la sécurité.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 770b266f243a016d0de65dfc235717a405025aa9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b55a8fbd96f83339cbc696ac9e3c15cbc2916924
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425969"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217691"
 ---
-# <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Métriques, indicateurs et tolérance au risque de la base de référence de sécurité
+# <a name="risk-tolerance-metrics-and-indicators-in-the-security-baseline-discipline"></a>Mesures et indicateurs de tolérance au risque dans la discipline Ligne de base de la sécurité
 
-Cet article vous aide à quantifier la tolérance aux risques métier en lien avec la base de référence de sécurité. La définition de métriques et d’indicateurs vous aide à créer une étude d’opportunité pour investir dans la maturation de la discipline Base de référence de sécurité.
+Apprenez à quantifier la tolérance aux risques de l’entreprise associée à la discipline Ligne de base de la sécurité. La définition de mesures et d’indicateurs vous aide à créer une étude de rentabilisation pour investir dans la maturité de cette discipline.
 
 ## <a name="metrics"></a>Mesures
 
-La base de référence de sécurité se concentre généralement sur l’identification de potentielles vulnérabilités dans vos déploiements cloud. Dans le cadre de votre analyse des risques, vous allez collecter des données relatives à votre environnement de sécurité pour déterminer le risque auquel vous êtes exposé et l’importance d’investir dans la gouvernance de la base de référence de sécurité pour vos déploiements cloud planifiés.
+La discipline Ligne de base de la sécurité se concentre généralement sur l’identification de potentielles vulnérabilités dans vos déploiements cloud. Dans le cadre de votre analyse des risques, vous allez collecter des données relatives à votre environnement de sécurité pour déterminer le risque auquel vous êtes exposé et l’importance d’investir dans la discipline Ligne de base de la sécurité pour vos déploiements cloud planifiés.
 
 Chaque organisation dispose de ses propres environnements et exigences de sécurité, ainsi que de ses propres sources potentielles de données de sécurité. Voici quelques exemples de métriques utiles que vous devez rassembler pour mieux évaluer la tolérance aux risques dans la discipline Base de référence de la sécurité :
 
@@ -58,9 +58,9 @@ Les métriques et déclencheurs exacts à utiliser pour évaluer la tolérance a
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle de gestion cloud ](./template.md), documenter les métriques et les indicateurs de tolérance correspondant au plan d’adoption du cloud actuel.
+Utilisez le [modèle de discipline Ligne de base de la sécurité](./template.md) pour documenter les mesures et indicateurs de tolérance qui correspondent au plan d’adoption du cloud actuel.
 
-Considérez les exemples de stratégies de base de référence de la sécurité comme des points de départ permettant de développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
+Considérez l’exemple de stratégies Ligne de base de la sécurité comme point de départ permettant de développer vos propres stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
 > [!div class="nextstepaction"]
 > [Examiner les exemples de stratégies](./policy-statements.md)

@@ -1,6 +1,6 @@
 ---
 title: Conception de gouvernance pour une charge de travail simple
-description: Découvrez le processus de conception d’un modèle de gouvernance des ressources dans Azure pour subvenir aux besoins d’une seule équipe et d’une charge de travail simple. 
+description: Découvrez le processus de conception d’un modèle de gouvernance des ressources dans Azure pour subvenir aux besoins d’une seule équipe et d’une charge de travail simple.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f7a9f455c302c6cbdee843f04a8d1b48f56940a1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 75f07c6f3c37d83321fd6758d3d79c7573792ef0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809035"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218218"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Conception de gouvernance pour une charge de travail simple
 
@@ -33,8 +33,8 @@ Avant de commencer la conception du modèle de gouvernance, il est important de 
 
 Lorsqu’Azure a été ajouté au Contrat Entreprise de votre organisation, cette dernière a été invitée à créer un **compte Azure**. Pendant le processus de création du compte, un **propriétaire de compte Azure** a été créé, ainsi qu’un locataire Azure Active Directory (Azure AD) avec un compte **d’administrateur général**. Un client Azure AD est une construction logique qui représente une instance d’Azure AD dédiée et sécurisée.
 
-![Compte Azure avec responsable du compte Azure et administrateur global Azure AD](../../_images/govern/design/governance-3-0.png)
-*Figure 1 - Compte Azure avec responsable du compte et administrateur global Azure AD.*
+![Compte Azure avec propriétaire du compte Azure et administrateur général Azure AD](../../_images/govern/design/governance-3-0.png)
+_Figure 1 : Un compte Azure avec un propriétaire du compte Azure et un administrateur général Azure AD._
 
 ## <a name="identity-management"></a>Gestion des identités
 
@@ -44,8 +44,8 @@ Nous devons autoriser la gestion des identités pour un seul **propriétaire de 
 
 Notre administrateur général Azure AD crée le compte de **propriétaire de la charge de travail** pour le propriétaire de la charge de travail :
 
-![L’administrateur général Azure AD crée le compte de propriétaire de la charge de travail](../../_images/govern/design/governance-1-2.png)
-*Figure 2 - L’administrateur général Azure AD crée le compte d’utilisateur du propriétaire de la charge de travail.*
+![L’administrateur général Azure AD crée le compte du propriétaire de la charge de travail](../../_images/govern/design/governance-1-2.png)
+_Figure 2 : L’administrateur général Azure AD crée le compte d’utilisateur du propriétaire de la charge de travail._
 
 Vous ne pouvez pas assigner d’autorisation d’accès aux ressources tant que cet utilisateur n’a pas été ajouté à un **abonnement**. C’est donc ce que vous allez faire dans les deux sections suivantes.
 
@@ -56,26 +56,26 @@ Vous ne pouvez pas assigner d’autorisation d’accès aux ressources tant que 
 Le niveau supérieur de l’étendue de gestion des ressources est le niveau **abonnement**. Un abonnement est créé par le **propriétaire du compte** Azure, qui établit l’engagement financier et est responsable du paiement de toutes les ressources Azure associées à l’abonnement :
 
 ![Le propriétaire du compte Azure crée un abonnement](../../_images/govern/design/governance-1-3.png)
-*Figure 3 - Le propriétaire du compte Azure crée un abonnement.*
+_Figure 3 : Le propriétaire de compte Azure crée un abonnement._
 
 Une fois l’abonnement créé, le **propriétaire du compte** Azure associe un client Azure AD à l’abonnement. Ce client Azure AD est utilisé pour authentifier et autoriser les utilisateurs :
 
-![Le propriétaire du compte Azure associe le locataire Azure AD à l’abonnement](../../_images/govern/design/governance-1-4.png)
-*Figure 4 - Le propriétaire du compte Azure associe le locataire Azure AD à l’abonnement.*
+![Le propriétaire du compte Azure associe l’abonné Azure AD à l’abonnement](../../_images/govern/design/governance-1-4.png)
+_Figure 4 : Le propriétaire du compte Azure associe le client Azure AD à l’abonnement._
 
 Vous avez peut-être remarqué qu’il n’y a actuellement aucun utilisateur associé à l’abonnement, ce qui signifie que personne n’est autorisé à gérer les ressources. En réalité, le **propriétaire du compte** est le propriétaire de l’abonnement et a l’autorisation d’agir sur une ressource dans l’abonnement. Toutefois, en pratique, le **propriétaire du compte** est probablement une personne de finances dans votre organisation et n’est pas responsable de la création, lecture, mise à jour et suppression de ressources. Ces tâches seront effectuées par le **propriétaire de la charge de travail**. Par conséquent, vous devez ajouter le **propriétaire de la charge de travail** à l’abonnement et lui attribuer des autorisations.
 
 Dans la mesure où le **propriétaire du compte** est actuellement le seul utilisateur autorisé à ajouter le **propriétaire de la charge de travail** à l’abonnement, il doit ajouter le **propriétaire de la charge de travail** à l’abonnement :
 
 ![Le propriétaire du compte Azure ajoute le **propriétaire de la charge de travail** à l’abonnement](../../_images/govern/design/governance-1-5.png)
-*Figure 5 - Le propriétaire du compte Azure ajoute le propriétaire de la charge de travail à l’abonnement.*
+_Figure 5 : Le propriétaire du compte Azure ajoute le propriétaire de la charge de travail à l’abonnement._
 
 Le **propriétaire du compte** Azure accorde des autorisations au **propriétaire de la charge de travail** en assignant un rôle de [Contrôle d’accès en fonction du rôle (RBAC)](https://docs.microsoft.com/azure/role-based-access-control). Le rôle RBAC spécifie un ensemble d’autorisations dont le **propriétaire de la charge de travail** dispose comme type de ressource individuelle ou ensemble de types de ressources.
 
 Notez que dans cet exemple, le **propriétaire du compte** a attribué le [rôle de **propriétaire** intégré](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) :
 
 ![Le rôle de propriétaire intégré a été attribué au **propriétaire de la charge de travail**](../../_images/govern/design/governance-1-6.png)
-*Figure 6 - Le rôle de propriétaire intégré a été attribué au propriétaire de la charge de travail.*
+_Figure 6 : Le rôle de propriétaire intégré a été attribué au propriétaire de la charge de travail._
 
 Le rôle de **propriétaire** intégré accorde toutes les autorisations au **propriétaire de la charge de travail** pour l’étendue d’abonnement.
 
@@ -87,14 +87,14 @@ Le niveau suivant de l’étendue de la gestion est le niveau **groupe de ressou
 Pour illustrer ceci, nous allons examiner ce qui se passe lorsque le **propriétaire de la charge de travail** crée un groupe de ressources :
 
 ![Le **propriétaire de la charge de travail** crée un groupe de ressources](../../_images/govern/design/governance-1-7.png)
-*Figure 7 - Le propriétaire de la charge de travail crée un groupe de ressources et hérite du rôle de propriétaire intégré pour l’étendue du groupe de ressources.*
+_Figure 7 : Le propriétaire de la charge de travail crée un groupe de ressources et hérite du rôle de propriétaire intégré pour l’étendue du groupe de ressources._
 
 Là encore, le rôle de **propriétaire** intégré accorde toutes les autorisations au **propriétaire de la charge de travail** pour l’étendue du groupe de ressources. Comme indiqué précédemment, ce rôle est hérité du niveau d’abonnement. Si un rôle différent est attribué à cet utilisateur dans cette étendue, il s’applique à cette étendue uniquement.
 
 Le niveau le plus bas de l’étendue de la gestion est le niveau **ressource**. Les opérations appliquées au niveau de la ressource s’appliquent uniquement à la ressource elle-même. Là encore, les autorisations au niveau de la ressource sont héritées de l’étendue du groupe de ressources. Par exemple, nous allons examiner ce qui se passe si le **propriétaire de la charge de travail** déploie un [réseau virtuel](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) dans le groupe de ressources :
 
 ![Le **propriétaire de la charge de travail** crée une ressource](../../_images/govern/design/governance-1-8.png)
-*Figure 8 - Le propriétaire de la charge de travail crée une ressource et hérite du rôle de propriétaire intégré pour l’étendue de la ressource.*
+_Figure 8 : Le propriétaire de la charge de travail crée une ressource et hérite du rôle de propriétaire intégré pour l’étendue de la ressource._
 
 Le **propriétaire de la charge de travail** hérite du rôle de propriétaire au niveau de l’étendue d’une ressource, ce qui signifie que le propriétaire de la charge de travail dispose de toutes les autorisations pour le réseau virtuel.
 

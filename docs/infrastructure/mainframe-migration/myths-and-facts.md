@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6e4132bd67623b7eeea856824062c7e973d206c8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e07879cfe8b40f9b0482d804aa6073c7ad79f3e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425642"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217606"
 ---
 <!-- cSpell:ignore njray nanra chargebacks IPLs -->
 
@@ -24,7 +24,7 @@ La fiabilité, la disponibilité et la puissance de traitement des ordinateurs m
 
 ## <a name="myth-mainframes-never-go-down-and-have-a-minimum-of-five-9s-of-availability"></a>Mythe : les ordinateurs mainframe ne tombent jamais en panne et ont un minimum de cinq 9 (99,999 %) de taux de disponibilité
 
-Les systèmes d’exploitation et le matériel des ordinateurs mainframe sont considérés comme fiables et stables. Or, la réalité est que des temps d’arrêt doivent être planifiés pour la maintenance et les redémarrages (appelés chargements de programmes initiaux). Quand ces tâches sont prises en compte, une solution d’ordinateur mainframe est souvent plus proche de deux ou trois 9 de disponibilité, ce qui équivaut à celle des serveurs Intel haut de gamme.
+Les systèmes d’exploitation et le matériel des ordinateurs mainframe sont considérés comme fiables et stables. Or, la réalité est que des temps d’arrêt doivent être planifiés pour la maintenance et les redémarrages, appelés chargements de programmes initiaux (IPL). Quand ces tâches sont prises en compte, une solution d’ordinateur mainframe est souvent plus proche de deux ou trois 9 de disponibilité, ce qui équivaut à celle des serveurs Intel haut de gamme.
 
 Les ordinateurs mainframe demeurent aussi vulnérables face aux sinistres que tous les autres serveurs et nécessitent des onduleurs pour gérer ces types de défaillances.
 

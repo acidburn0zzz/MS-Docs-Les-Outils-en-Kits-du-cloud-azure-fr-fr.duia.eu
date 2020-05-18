@@ -1,6 +1,6 @@
 ---
 title: Outils de cohérence des ressources dans Azure
-description: Découvrez comment les outils natifs Azure peuvent contribuer à affiner les stratégies et les processus qui vont dans le sens de la discipline de gouvernance de cohérence des ressources.
+description: Découvrez comment les outils natifs Azure peuvent contribuer à affiner les stratégies et les processus qui vont dans le sens de la discipline Cohérence des ressources.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2f4d06c06ffcb89d30205b90ba37f70f76d50b1f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a64cbd53cdd4c524b370681ebedf1f8282ac2a93
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997305"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217946"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Outils de cohérence des ressources dans Azure
 
-La discipline [Cohérence des ressources](./index.md) est l'une des [cinq disciplines de la gouvernance cloud](../governance-disciplines.md). Elle se concentre sur les moyens à utiliser pour établir des stratégies en lien avec la gestion opérationnelle d’un environnement, d’une application ou d’une charge de travail. Parmi les cinq disciplines de la gouvernance cloud, la Cohérence des ressources comprend la supervision des performances des applications, des charges de travail et des ressources. Elle inclut également les tâches nécessaires pour répondre aux demandes de mise à l’échelle, corriger les violations de contrat de niveau de service de performances et prévenir ces violations de façon proactive via la correction automatisée.
+La [Cohérence des ressources](./index.md) est l'une des [Cinq disciplines de la gouvernance du cloud](../governance-disciplines.md). Elle se concentre sur les moyens à utiliser pour établir des stratégies en lien avec la gestion opérationnelle d’un environnement, d’une application ou d’une charge de travail. Parmi les cinq disciplines de la gouvernance cloud, la Cohérence des ressources comprend la supervision des performances des applications, des charges de travail et des ressources. Elle inclut également les tâches nécessaires pour répondre aux demandes de mise à l’échelle, corriger les violations de contrat de niveau de service de performances et prévenir ces violations de façon proactive via la correction automatisée.
 
-La liste suivante énumère les outils Azure qui peuvent contribuer à faire mûrir les stratégies et les processus soutenant cette discipline de gouvernance.
+La liste suivante énumère les outils Azure qui peuvent contribuer à faire mûrir les stratégies et les processus soutenant cette discipline.
 
-| Outil | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| Outil | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | Déployer des ressources                             | Oui | Oui | Oui | Oui | Non  | Non | Non |
 | Gestion des ressources                             | Oui | Oui | Oui | Oui | Non  | Non | Non |
@@ -40,8 +40,8 @@ La liste suivante énumère les outils Azure qui peuvent contribuer à faire mû
 | Application de la correction automatique                  | Non  | Non  | Non  | Oui | Non  | Non | Non |
 | Gérer la facturation                               | Oui | Non  | Non  | Non  | Non  | Non | Non |
 | Préparation des ressources pour la récupération d'urgence         | Oui | Oui | Oui | Non  | Non  | Oui | Oui |
-|Récupération des données lors d'une panne ou d'une violation du contrat de niveau de service     | Non | Non  | Non  | Non  | Non  | Oui | Oui |
-|Récupération des applications et des données lors d'une panne ou d'une violation du contrat de niveau de service     | Non | Non  | Non  | Non  | Non  | Oui | Oui |
+| Récupération des données lors d'une panne ou d'une violation du contrat de niveau de service     | Non | Non  | Non  | Non  | Non  | Oui | Oui |
+| Récupération des applications et des données lors d'une panne ou d'une violation du contrat de niveau de service     | Non | Non  | Non  | Non  | Non  | Oui | Oui |
 
 Outre ces outils et fonctionnalités de cohérence des ressources, vous devez superviser les ressources que vous avez déployées afin de déceler les éventuels problèmes de performances et d'intégrité. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) est la solution de supervision et de création de rapports par défaut d'Azure. Azure Monitor fournit des fonctionnalités de surveillance de vos ressources cloud. Cette liste présente la fonctionnalité qui répond aux exigences de surveillance les plus courantes.
 

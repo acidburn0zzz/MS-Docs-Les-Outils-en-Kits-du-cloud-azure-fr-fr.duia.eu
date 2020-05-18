@@ -7,13 +7,15 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f8ced104862d27c01c2d63ecbcb4af15deded343
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 00efe3b582b5850ff7a5c6c1a6ab16977c6ada4d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434000"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216892"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan d’adoption du cloud et Azure DevOps
 
 Azure DevOps est l’ensemble des outils basés sur le cloud pour les clients Azure qui gèrent des projets itératifs. Il comprend également des outils permettant de gérer les pipelines de déploiement et d’autres aspects importants de DevOps.
@@ -22,7 +24,7 @@ Dans cet article, vous allez apprendre à déployer rapidement un backlog sur Az
 
 ## <a name="create-your-cloud-adoption-plan"></a>Créer votre plan d’adoption du cloud
 
-Pour déployer le plan d’adoption du cloud, ouvrez [Azure DevOps Demo Generator](https://aka.ms/adopt/plan/generator). Cet outil déploie le modèle sur votre locataire Azure DevOps. L’utilisation de cet outil nécessite les étapes suivantes :
+Pour déployer le plan d’adoption du cloud, ouvrez le [générateur de démonstrations Azure DevOps](https://aka.ms/adopt/plan/generator). Cet outil déploie le modèle sur votre locataire Azure DevOps. L’utilisation de cet outil nécessite les étapes suivantes :
 
 1. Vérifiez que le champ **Modèle sélectionné** est défini sur **Plan d’adoption du cloud**. Si ce n’est pas le cas, sélectionnez **Choisir un modèle** pour choisir le modèle approprié.
 2. Sélectionnez votre organisation Azure DevOps dans la zone de liste déroulante **Sélectionner une organisation**.
@@ -32,19 +34,19 @@ Pour déployer le plan d’adoption du cloud, ouvrez [Azure DevOps Demo Generato
 
 Une fois que votre projet a été créé, poursuivez la lecture de cette série d’articles pour découvrir comment modifier le modèle afin vous aligner sur votre plan d’adoption du cloud.
 
-Pour obtenir de l’aide et des conseils supplémentaires sur cet outil, consultez [Azure DevOps Services Demo Generator](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops).
+Pour obtenir de l’aide et des conseils supplémentaires sur cet outil, consultez [Générateur de démonstrations Azure DevOps](https://docs.microsoft.com/azure/devops/demo-gen).
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>Modifier en bloc le plan d’adoption du cloud
 
-Une fois le projet de plan déployé, vous pouvez utiliser Microsoft Excel pour le modifier. Il est beaucoup plus facile de créer des charges de travail ou des ressources dans le plan en utilisant Excel qu’en utilisant le navigateur Azure DevOps.
+Une fois le projet de plan déployé, vous pouvez utiliser Microsoft Excel pour le modifier. Il est beaucoup plus facile de créer des charges de travail ou des ressources dans le plan en utilisant Microsoft Excel qu’en utilisant l’expérience du navigateur Azure DevOps.
 
-Pour préparer votre station de travail pour des modifications en bloc, consultez [Ajouter ou modifier en bloc des éléments de travail avec Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Pour préparer votre station de travail à des modifications en bloc, consultez [Ajout ou modification en bloc d’éléments de travail avec Microsoft Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 ## <a name="use-the-cloud-adoption-plan"></a>Utiliser le plan d’adoption du cloud
 
 Le plan d’adoption du cloud organise les activités par type d’activité :
 
-- **Épopées :** Une *épopée* représente une phase globale du cycle de vie d’adoption du cloud.
+- **Épopées :** Une _épopée_ représente une phase globale du cycle de vie d’adoption du cloud.
 - **Fonctionnalités :** Les fonctionnalités permettent d’organiser des objectifs spécifiques au sein de chaque phase. Par exemple, la migration d’une charge de travail spécifique est une fonctionnalité.
 - **Récits utilisateur :** Les récits utilisateur regroupent le travail en collections logiques d’activités basées sur un objectif spécifique.
 - **Tâches :** Les tâches correspondent au véritable travail à effectuer.
@@ -58,7 +60,7 @@ La vue la plus claire du plan d’adoption du cloud provient de la vue du backlo
 
 ## <a name="align-the-cloud-adoption-plan"></a>Aligner le plan d’adoption du cloud
 
-Les pages de présentation des phases de planification et de stratégie du cycle de vie d’adoption du cloud font toutes référence au document [Cloud Adoption Framework strategy and planning template](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) (Modèle de planification et de stratégie du Framework d’adoption du cloud). Ce modèle organise les décisions et les points de données qui aligneront le modèle de plan d’adoption du cloud avec vos plans spécifiques d’adoption. Si vous ne l’avez pas déjà fait, vous souhaiterez peut-être effectuer les exercices relatifs à la [stratégie](../strategy/index.md) et à la [planification](../plan/index.md) avant d’aligner votre nouveau projet.
+Les pages de présentation des phases de planification et de stratégie du cycle de vie d’adoption du cloud font toutes référence au document [Modèle de stratégie et de plan Cloud Adoption Framework](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ce modèle organise les décisions et les points de données qui aligneront le modèle de plan d’adoption du cloud avec vos plans spécifiques d’adoption. Si vous ne l’avez pas déjà fait, vous souhaiterez peut-être effectuer les exercices relatifs à la [stratégie](../strategy/index.md) et à la [planification](../plan/index.md) avant d’aligner votre nouveau projet.
 
 Les articles suivants prennent en charge l’alignement du plan d’adoption du cloud :
 

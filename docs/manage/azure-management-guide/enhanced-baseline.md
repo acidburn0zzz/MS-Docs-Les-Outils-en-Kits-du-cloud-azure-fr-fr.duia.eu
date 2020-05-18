@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7ffdc348d9f5e1d1e9a76155ce9de2b3e19ccf2a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a5cafc31b5ede4060aedf78ff40215cb7d132aaa
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426873"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216790"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -22,12 +22,16 @@ ms.locfileid: "80426873"
 
 Les trois premières disciplines de gestion cloud décrivent une base de référence de gestion. Les articles précédents de ce guide ont décrit un produit viable minimal (MVP) pour les services de gestion cloud, appelé ligne de base de gestion. Cet article décrit quelques-unes des améliorations courantes apportées à la ligne de base.
 
-L’objectif d’une base de référence de gestion est de créer une offre cohérente fournissant un niveau minimal d’engagement métier pour *toutes* les charges de travail prises en charge. Cette ligne de base d’offres de gestion reproductibles et communes permet à l’équipe de fournir une gestion opérationnelle hautement optimisée, avec une déviation minime.
+L’objectif d’une base de référence de gestion est de créer une offre cohérente fournissant un niveau minimal d’engagement métier pour _toutes_ les charges de travail prises en charge. Cette ligne de base d’offres de gestion reproductibles et communes permet à l’équipe de fournir une gestion opérationnelle hautement optimisée, avec une déviation minime.
 
 Toutefois, un engagement plus important envers l’entreprise au-delà de l’offre standard peut être nécessaire. L’image et la liste suivantes présentent trois façons d’aller au-delà de la ligne de base de gestion.
 
 ![Au-delà de la base de référence de gestion cloud](../../_images/manage/beyond-the-baseline.png)
 
+- **Base de référence de gestion améliorée :**
+  - Ajoutez des améliorations à la ligne de base de gestion lorsque la majorité des charges de travail du portefeuille ont une exigence partagée.
+  - Des engagements commerciaux légèrement améliorés à l’aide d’outils et de processus d’opérations natifs Cloud.
+  - Les améliorations apportées à la ligne de base ne doivent pas avoir d’impact sur l’architecture des charges de travail spécifiques.
 - **Opérations de charge de travail :**
   - Plus grand investissement d’opérations par charge de travail.
   - Degré de résilience le plus élevé.
@@ -38,9 +42,6 @@ Toutefois, un engagement plus important envers l’entreprise au-delà de l’of
   - Les améliorations de la résilience affectent toutes les charges de travail qui utilisent la plateforme définie.
   - Recommandé pour environ 20 % des plateformes ayant le niveau d’état critique le plus élevé.
   - Habituellement réservé aux charges de travail de niveau moyen ou critique.
-- **Base de référence de gestion améliorée :**
-  - Investissement opérationnel le plus bas.
-  - Des engagements commerciaux légèrement améliorés à l’aide d’outils et de processus d’opérations natifs du cloud.
 
 Les opérations de charge de travail et de plateforme nécessitent la modification des principes de conception et d’architecture. Ces modifications peuvent prendre du temps et entraîner des frais d’exploitation accrus. Pour réduire le nombre de charges de travail nécessitant de tels investissements, une ligne de base de gestion améliorée peut représenter une amélioration suffisante pour l’engagement métier.
 
@@ -48,12 +49,13 @@ Ce tableau présente quelques processus, outils et effets potentiels courants co
 
 | Discipline  | Process  | Outil | Impact potentiel | En savoir plus |
 |---|---|---|---|---|
-|Inventaire et visibilité|Service de suivi des modifications|Azure Resource Graph|Une meilleure visibilité des modifications apportées aux services Azure peut aider à détecter les impacts négatifs plus tôt ou à les corriger plus rapidement|[Aperçu d’Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview)|
-|Inventaire et visibilité|Intégration de la gestion des services informatiques (ITSM)|Connecteur de gestion des services informatiques|La connexion ITSM automatisée crée une sensibilisation plus tôt.|[Connecteur de gestion des services informatiques (ITSMC)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview)|
-|Conformité opérationnelle|Automatisation des opérations|Azure Automation|Automatisez la conformité opérationnelle pour une réponse plus rapide et plus précise aux modifications.|Consultez les sections suivantes|
-|Conformité opérationnelle|Opérations multiclouds|Runbook Worker hybride Azure Automation|Automatiser les opérations sur plusieurs clouds.|[Vue d’ensemble des Runbooks Workers hybrides](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)|
-|Conformité opérationnelle|Automatisation invité| Configuration d’état souhaité|Configuration basée sur le code des systèmes d’exploitation invités pour réduire les erreurs et la dérive de configuration.|[Vue d’ensemble de la DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview)|
-|Protection et récupération|Notification de violation|Azure Security Center|Étendre la protection pour inclure les déclencheurs de récupération de violation de sécurité.|Consultez les sections suivantes|
+| Inventaire et visibilité | Service de suivi des modifications | Azure Resource Graph | Une meilleure visibilité des modifications apportées aux services Azure peut aider à détecter les impacts négatifs plus tôt ou à les corriger plus rapidement | [Aperçu d’Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) |
+| Inventaire et visibilité | Intégration de la gestion des services informatiques (ITSM) | Connecteur de gestion des services informatiques | La connexion ITSM automatisée crée une sensibilisation plus tôt. | [Connecteur de gestion des services informatiques (ITSMC)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview) |
+| Conformité opérationnelle | Automatisation des opérations | Azure Automation | Automatisez la conformité opérationnelle pour une réponse plus rapide et plus précise aux modifications. | Consultez les sections suivantes |
+| Conformité opérationnelle | Automatisation des performances | Azure Automation | Automatisez la conformité opérationnelle avec les attentes en matière de performances pour résoudre les problèmes courants de mise à l’échelle ou de dimensionnement spécifiques aux ressources. | Consultez les sections suivantes |
+| Conformité opérationnelle | Opérations multiclouds | Runbook Worker hybride Azure Automation | Automatiser les opérations sur plusieurs clouds. | [Vue d’ensemble des Runbooks Workers hybrides](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker) |
+| Conformité opérationnelle | Automatisation invité |  Configuration d’état souhaité | Configuration basée sur le code des systèmes d’exploitation invités pour réduire les erreurs et la dérive de configuration. | [Vue d’ensemble de la DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview) |
+| Protection et récupération | Notification de violation | Azure Security Center | Étendre la protection pour inclure les déclencheurs de récupération de violation de sécurité. | Consultez les sections suivantes |
 
 ::: zone target="docs"
 
@@ -76,7 +78,7 @@ L’unité de code de base pour fournir une correction automatisée est le runbo
 
 Pour créer ou gérer des runbooks :
 
-1. Accédez à [Azure Automation](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Accédez à [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Sélectionnez **Comptes Automation**, puis choisissez un des comptes répertoriés.
 1. Allez à **Automatisation de processus**.
 1. Les options présentées vous permettent de créer ou de gérer des runbooks, des planifications et d’autres fonctionnalités de correction automatisée.

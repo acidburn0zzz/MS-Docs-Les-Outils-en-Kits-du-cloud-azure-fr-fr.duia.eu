@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3781bb50f8d2ad76efd606f8d6914582cee0754c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 213fc070f648a43d285e59948bb567502f944603
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434222"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218779"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Guide de gouvernance pour les entreprises standard : Le scénario sous-tendant la stratégie de gouvernance
 
@@ -30,14 +30,14 @@ Dans le passé, le directeur informatique de la société était exclu de ces di
 L’entreprise a le profil d’activité suivant :
 
 - Toutes les ventes et les opérations se font dans un même pays, avec un faible pourcentage de clients du monde entier.
-- L’entreprise fonctionne comme une seule division, avec un budget aligné sur les fonctions, notamment Ventes, Marketing, Exploitation et Informatique.
+- L’entreprise fonctionne comme une seule unité, avec un budget aligné sur les fonctions, notamment ventes, marketing, exploitation et informatique.
 - L’entreprise voit l’informatique principalement comme des investissements à perte ou un centre de coûts.
 
 ## <a name="current-state"></a>État actuel
 
 Voici l’état actuel de l’informatique et de l’exploitation du cloud dans l’entreprise :
 
-- Le département informatique exploite deux environnements d’infrastructure hébergés. Un environnement contient des ressources de production. Le deuxième environnement contient les ressources de reprise d’activité et certaines ressources de développement/test. Ces environnements sont hébergés par deux fournisseurs différents. Le département informatique appelle ces deux centres Prod (Production) et DR (Disaster Recovery, Reprise d’activité), respectivement.
+- Le département informatique exploite deux environnements d’infrastructure hébergés. Un environnement contient des ressources de production. Le deuxième environnement contient les ressources de reprise d’activité et certaines ressources de développement/test. Ces environnements sont hébergés par deux fournisseurs différents. Le département informatique appelle ces deux centres de données Prod (production) et DR (récupération d'urgence), respectivement.
 - Le département informatique est entré dans le cloud en migrant tous les comptes de messagerie des utilisateurs finaux vers Office 365. Cette migration s’est terminée il y a six mois. Quelques autres ressources informatiques ont été déployés sur le cloud.
 - Les équipes de développement d’applications travaillent dans une capacité de développement/test pour découvrir les fonctionnalités natives du cloud.
 - L’équipe Décisionnel (BI) expérimente le Big Data dans le cloud et la collecte des données sur de nouvelles plateformes.

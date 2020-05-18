@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ed8d8511cbdac9996ff61688b4e6d783877e9d9c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 869b3b9e0a283ce28c6fba7807d0282dcb53d9cf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997516"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216331"
 ---
 # <a name="azure-fundamental-concepts"></a>Concepts fondamentaux Azure
 
@@ -37,7 +37,7 @@ Il est utile de connaître les définitions suivantes lorsque vous commencez vos
 
 Un abonnement Azure remplit plusieurs fonctions. Un abonnement Azure est :
 
-- **Un accord légal.** Chaque abonnement est associé à une [offre Azure](https://azure.microsoft.com/support/legal/offer-details) (par exemple une version d’évaluation gratuite ou un paiement à l’utilisation). Chaque offre présente un plan tarifaire, des avantages et des conditions générales associées. Vous choisissez une offre Azure lorsque vous créez un abonnement.
+- **Un accord légal.** Chaque abonnement est associé à une [offre Azure](https://azure.microsoft.com/support/legal/offer-details), par exemple une évaluation gratuite ou un paiement à l’utilisation. Chaque offre présente un plan tarifaire, des avantages et des conditions générales associées. Vous choisissez une offre Azure lorsque vous créez un abonnement.
 - **Un accord de paiement.** Lorsque vous créez un abonnement, vous fournissez des informations de paiement pour cet abonnement, comme un numéro de carte de crédit. Chaque mois, les coûts engendrés par les ressources déployées sur cet abonnement sont calculés et facturés par le biais de ce mode de paiement.
 - **Une limite d’échelle.** Des limites d’échelle sont définies pour un abonnement. Les ressources de l’abonnement ne peuvent pas dépasser les limites d’échelle définies. Par exemple, il existe une limite sur le nombre de machines virtuelles que vous pouvez créer dans un seul abonnement.
 - **Une limite administrative.** Un abonnement peut agir comme une limite pour l’administration, la sécurité et la stratégie. Azure fournit également d’autres mécanismes pour répondre à ces besoins, comme les groupes d’administration, les groupes de ressources et le contrôle d’accès en fonction du rôle.
@@ -50,15 +50,15 @@ Lorsque vous créez un abonnement Azure, vous effectuez plusieurs choix clés su
 - **Quelle offre Azure m’intéresse-t-elle ?** Chaque abonnement est associé à une [offre Azure](https://azure.microsoft.com/support/legal/offer-details) spécifique. Vous pouvez choisir l’offre Azure qui répond le mieux à vos besoins. Par exemple, si vous envisagez d’utiliser un abonnement pour exécuter des charges de travail hors production, vous pouvez choisir l’offre Dev/Test - Paiement à l’utilisation ou l’offre Enterprise Dev/Test.
 
 > [!NOTE]
-> Lorsque vous vous inscrivez à Azure, vous pourriez voir l’expression *Créer un compte Azure*. Vous créez un compte Azure lorsque vous créez un abonnement Azure et que vous associez l’abonnement à un compte e-mail.
+> Lorsque vous vous inscrivez à Azure, vous pourriez voir l’expression _Créer un compte Azure_. Vous créez un compte Azure lorsque vous créez un abonnement Azure et que vous associez l’abonnement à un compte e-mail.
 
 ## <a name="azure-administrative-roles"></a>Rôles d’administration d’Azure
 
 Azure définit trois types de rôles pour l’administration des abonnements, des identités et des ressources :
 
-- Rôles d’administrateur d’abonnements classique
-- Rôles de contrôle d’accès en fonction du rôle (RBAC) Azure
-- Rôles d’administrateur Azure Active Directory (Azure AD)
+- Rôles Administrateur d’abonnements classiques.
+- Rôles de contrôle d’accès en fonction du rôle (RBAC) Azure.
+- Rôles Administrateur Azure Active Directory (Azure AD).
 
 Le rôle d’administrateur de compte pour un abonnement Azure est attribué au compte e-mail utilisé pour créer l’abonnement Azure. L’administrateur de compte est le responsable de la facturation de l’abonnement. L’administrateur de compte peut gérer les détails de l’abonnement dans le [Centre des comptes Azure](https://account.azure.com/subscriptions).
 
@@ -83,7 +83,7 @@ Un abonnement n’est pas lié à une région Azure spécifique. Toutefois, chaq
 
 Les ressources suivantes fournissent des informations détaillées sur les concepts abordés dans cet article :
 
-- [Fonctionnement d’Azure](../../getting-started/what-is-azure.md)
+- [Fonctionnement d’Azure](../../get-started/what-is-azure.md)
 - [Gestion de l’accès aux ressources dans Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Présentation d’Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
 - [Contrôle d’accès en fonction du rôle (RBAC) pour les ressources Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)

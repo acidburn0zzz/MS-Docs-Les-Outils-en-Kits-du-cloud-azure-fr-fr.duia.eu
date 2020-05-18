@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 6f49ee7c8aa63af1d7826a817cc2fae28357caba
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9855b9d56025af86f62dc4e7f055e1584cbbe993
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430743"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218286"
 ---
 # <a name="evaluate-risk-tolerance"></a>Évaluer la tolérance au risque
 
@@ -29,11 +29,11 @@ Les véritables risques métier sont basés sur les détails des transformations
 > [!IMPORTANT]
 > Avant de lire ce qui suit, sachez que chacun de ces risques peut être géré. L’objectif de cet article est d’informer et de préparer les lecteurs à des discussions plus productives sur la gestion des risques.
 
-- **Violation des données :** Le principal risque d’une transformation est une violation de données. Les fuites de données peuvent provoquer des dommages importants pour votre entreprise, entraînant une perte de clients, une baisse de l’activité ou même une responsabilité légale. Tout changement apporté à la façon dont les données sont stockées, traitées ou utilisées engendre un risque. Les transformations cloud entraînent de nombreux changements en matière de gestion des données. Le risque ne doit donc pas être pris à la légère. La [base de référence de sécurité](../security-baseline/index.md), la [classification des données](./data-classification.md) et la [rationalisation incrémentielle](../../digital-estate/rationalize.md#incremental-rationalization) peuvent chacune contribuer à gérer ce risque.
+- **Violation des données :** Le principal risque d’une transformation est une violation de données. Les fuites de données peuvent provoquer des dommages importants pour votre entreprise, entraînant une perte de clients, une baisse de l’activité ou même une responsabilité légale. Tout changement apporté à la façon dont les données sont stockées, traitées ou utilisées engendre un risque. Les transformations cloud entraînent de nombreux changements en matière de gestion des données. Le risque ne doit donc pas être pris à la légère. La [discipline Ligne de base de la sécurité](../security-baseline/index.md), la [classification des données](./data-classification.md) et la [rationalisation incrémentielle](../../digital-estate/rationalize.md#incremental-rationalization) peuvent chacune contribuer à gérer ce risque.
 
 - **Interruption de service :** les opérations métier et les expériences client reposent largement sur les opérations techniques. Les transformations cloud entraînent des changements au niveau des opérations informatiques. Dans certaines organisations, ces changements sont mineurs et faciles à ajuster. Dans d’autres, ils peuvent nécessiter un réoutillage, un réentraînement ou de nouvelles approches pour prendre en charge les opérations cloud. Plus les changements sont importants, plus l’impact potentiel sur les opérations métier et l’expérience client le sont également. La gestion de ce risque exigera la participation de l’entreprise à la planification de la transformation. Les sections relatives à la planification de la mise en production et à la sélection de la première charge de travail dans l’article [Rationalisation incrémentielle](../../digital-estate/rationalize.md#incremental-rationalization) expliquent comment choisir les charges de travail pour les projets de transformation. Le rôle de l’entreprise dans le cadre de cette activité consiste à communiquer le risque des opérations métier que constitue le changement des charges de travail définies comme prioritaires. Le fait d’aider l’équipe informatique à choisir des charges de travail ayant un moindre impact sur les opérations diminuera le risque global.
 
-- **Contrôle du budget :** les modèles de coûts changent dans le cloud. Ce changement peut engendrer des risques associés à des dépassements de coûts ou à des augmentations du coût des marchandises vendues (COGS, Cost of Goods Sold), en particulier des dépenses d’exploitation directement imputables. Quand l’équipe commerciale travaille en étroite collaboration avec l’équipe informatique, une véritable transparence peut être atteinte en matière de coûts et d’utilisation des services par différents programmes, unités opérationnelles ou projets. La section [Gestion des coûts](../cost-management/index.md) fournit des exemples de partenariats entre les équipes commerciales et informatiques sur ce sujet.
+- **Contrôle du budget :** les modèles de coûts changent dans le cloud. Ce changement peut engendrer des risques associés à des dépassements de coûts ou à des augmentations du coût des marchandises vendues (COGS, Cost of Goods Sold), en particulier des dépenses d’exploitation directement imputables. Quand l’équipe commerciale travaille en étroite collaboration avec l’équipe informatique, une véritable transparence peut être atteinte en matière de coûts et d’utilisation des services par différents programmes, unités opérationnelles ou projets. La [discipline Cost Management](../cost-management/index.md) fournit des exemples de partenariats entre les équipes commerciales et informatiques sur ce sujet.
 
 Voici quelques-uns des risques les plus fréquemment mentionnés par les clients. L’équipe de gouvernance cloud et les équipes d’adoption du cloud peuvent commencer à développer un profil de risque à mesure que les charges de travail sont migrées et préparées pour la mise en production. Préparez-vous à devoir discuter pour définir, affiner et gérer les risques en fonction des résultats opérationnels et des efforts de transformation souhaités.
 

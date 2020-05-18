@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 06389b972ee01079a3927515c95d3f3ae3cab3de
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cd6f89162b2975313f0eebcd4e3e1385787f8ee7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426568"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217436"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Spécialisation de la charge de travail pour la gestion cloud
 
@@ -41,7 +41,7 @@ La spécialisation de la charge de travail entraîne souvent un changement cultu
 
 Lorsque la spécialisation de la charge de travail est requise, la gestion opérationnelle évolue souvent au-delà d’un point de vue informatique central. L’approche suggérée dans le cadre du Framework d’adoption du cloud est une distribution de fonctionnalités de gestion du cloud.
 
-Dans ce modèle, les tâches opérationnelles, telles que la surveillance, le déploiement, DevOps et d’autres fonctions d’innovation, sont déplacées vers une organisation de développement d’applications ou d’unité commerciale. La plateforme cloud et l’équipe de surveillance du cloud de base fournissent toujours la ligne de base de gestion dans l’environnement.
+Dans ce modèle, les tâches opérationnelles, telles que la surveillance, le déploiement, DevOps et d’autres fonctions d’innovation, sont déplacées vers une organisation de développement d’applications ou d’unité commerciale. L’équipe de la plateforme cloud et l’équipe d’analyse du cloud de base fournissent toujours la ligne de base de gestion dans l’environnement.
 
 Ces équipes centralisées guident et demandent aux équipes de charge de travail des équipes spécialisées concernant les opérations de leurs charges de travail. Mais la responsabilité opérationnelle quotidienne se situe dans une équipe de gestion cloud gérée en dehors de celle-ci. Ce type de contrôle distribué est un des principaux indicateurs de maturité dans un centre d’excellence cloud.
 
@@ -49,10 +49,10 @@ Ces équipes centralisées guident et demandent aux équipes de charge de travai
 
 Des détails supplémentaires sur la charge de travail spécifique sont requis pour fournir des opérations de charge de travail claires. Au cours de la phase d’amélioration permanente, Application Insights sera nécessaire pour la chaîne d’outils de gestion cloud.
 
-|Condition requise|Outil|Objectif|
-|---|---|---|
-|Monitoring des applications|Application Insights|Surveillance et diagnostic pour les applications|
-|Performances, disponibilité et utilisation|Application Insights|Surveillance avancée des applications avec le tableau de bord d’application, les mappages composites, l’utilisation et le suivi|
+| Condition requise                          | Outil                 | Objectif                                                                                |
+| ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------- |
+| Monitoring des applications               | Application Insights | Surveillance et diagnostic pour les applications                                                    |
+| Performances, disponibilité et utilisation | Application Insights | Surveillance avancée des applications avec le tableau de bord d’application, les mappages composites, l’utilisation et le suivi |
 
 ### <a name="deploy-application-insights"></a>Déployer Application Insights
 

@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 646ac9da914939a63b9bd4a5cb73ae2899263823
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5284af93b76ae2396e753914264861492b65356f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80392515"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218762"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ Les transformations les mieux réussies commencent toujours par une idée de ré
 
 Pendant une transformation cloud, le fait de parler en termes de résultats métier permet la transparence et le partenariat entre les services. Le framework des résultats métier commence par un modèle simple qui permet aux équipes techniques de documenter la transformation et de parvenir à un consensus. Ce modèle peut être utilisé par plusieurs parties prenantes afin de recueillir divers résultats métier, pouvant chacun être influencé par une transformation de l’entreprise. N’hésitez pas à utiliser ce modèle au format électronique ou mieux encore, à le dessiner sur un tableau, pour que les responsables et les différentes parties prenantes discutent des résultats à obtenir.
 
-Pour plus d’informations sur les résultats métier et sur le modèle, consultez la [documentation des résultats métier](./business-outcome-template.md) ou téléchargez le [modèle de résultat métier](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx).
+Pour plus d’informations sur les résultats et sur le modèle de résultat métier, consultez la [Documentation sur les résultats métier](./business-outcome-template.md) ou téléchargez le [modèle de résultat métier](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx).
 
 ## <a name="prepare-for-conversations-with-different-personas"></a>Préparer les conversations impliquant les différents rôles
 

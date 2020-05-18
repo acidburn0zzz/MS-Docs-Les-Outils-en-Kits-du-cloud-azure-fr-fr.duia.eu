@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cc095a1751e945ca18763757582a6cd27b65d72a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f5bcde9c0eab879eea9c49a7ab46338a141cb1cb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119763"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217011"
 ---
 # <a name="assess-workloads-and-validate-assumptions-before-migration"></a>Évaluer les charges de travail et valider les hypothèses avant la migration
 
@@ -20,13 +20,13 @@ Bon nombre de vos charges de travail existantes sont des candidates idéales pou
 
 Par conséquent, avant de migrer une charge de travail vers le cloud, il est important d’évaluer l’adéquation des ressources individuelles associées à cette charge de travail pour déterminer si elles sont aptes à être migrées. Au cours de cette évaluation, votre équipe d’adoption du cloud doit évaluer la compatibilité technique, l’architecture nécessaire, les attentes en matière de performances/dimensionnement ainsi que les dépendances, pour garantir que la charge de travail migrée peut être déployée efficacement dans le cloud.
 
-*Évaluer* est la première des quatre activités incrémentielles qui ont lieu dans une itération. Comme indiqué dans l’article des prérequis traitant [de la complexité technique et de la gestion des changements](../prerequisites/technical-complexity.md), vous devez décider à l’avance de la manière dont cette phase doit être exécutée. Déterminez en particulier si les évaluations seront effectuées par l’équipe d’adoption du cloud durant le même sprint que l’effort de migration réel. Sinon, décidez si un modèle de type « vague » ou « usine » sera utilisé pour effectuer les évaluations dans une itération séparée. Si certains membres n’ont pas de connaissances élémentaires sur ces processus, il peut être judicieux de revisiter la section sur les [prérequis](../prerequisites/index.md).
+_Évaluer_ est la première des quatre activités incrémentielles qui ont lieu dans une itération. Comme indiqué dans l’article des prérequis traitant [de la complexité technique et de la gestion des changements](../prerequisites/technical-complexity.md), vous devez décider à l’avance de la manière dont cette phase doit être exécutée. Déterminez en particulier si les évaluations seront effectuées par l’équipe d’adoption du cloud durant le même sprint que l’effort de migration réel. Sinon, décidez si un modèle de type « vague » ou « usine » sera utilisé pour effectuer les évaluations dans une itération séparée. Si certains membres n’ont pas de connaissances élémentaires sur ces processus de base, il peut être judicieux de revisiter la section sur les [Composants requis](../prerequisites/index.md).
 
 ## <a name="objective"></a>Objectif
 
 L’objectif est d’évaluer un candidat à la migration en examinant la charge de travail, les ressources associées et les dépendances avant la migration.
 
-## <a name="definition-of-done"></a>Définition de « *terminé* »
+## <a name="definition-of-_done_"></a>Définition de « _terminé_ »
 
 Ce processus est terminé quand les tâches suivantes ont été accomplies pour chaque candidat à la migration :
 

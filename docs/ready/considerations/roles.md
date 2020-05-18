@@ -8,14 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6029f3d46f3a59adc465d47d9545a017d04487e6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997926"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216399"
 ---
 # <a name="role-based-access-control"></a>Contrôle d’accès en fonction du rôle
 
@@ -54,7 +53,7 @@ Azure fournit de nombreuses définitions de rôle intégrées, avec trois rôles
 - Le rôle [Contributeur de machines virtuelles](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) peut gérer des machines virtuelles, mais ne peut pas accéder à ces dernières, au réseau virtuel ni au compte de stockage auquel elles sont connectées.
 - Le rôle [Connexion de l’utilisateur aux machines virtuelles](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) peut afficher les machines virtuelles dans le portail et se connecter en tant qu’utilisateur standard.
 
-Pour obtenir un autre exemple d’utilisation des rôles intégrés pour gérer l’accès à des fonctionnalités spécifiques, consultez la discussion sur le contrôle de l’accès aux fonctionnalités de suivi des coûts dans [Suivi des coûts dans les unités commerciales, les environnements ou les projets](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access).
+Pour obtenir un autre exemple d’utilisation des rôles intégrés pour gérer l’accès à des fonctionnalités spécifiques, consultez la discussion sur le contrôle de l’accès aux fonctionnalités de suivi des coûts dans [Suivre les coûts dans les unités commerciales, les environnements ou les projets](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access).
 
 Pour obtenir la liste complète des rôles intégrés disponibles, consultez [Rôles intégrés pour les ressources Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
@@ -76,10 +75,10 @@ Le tableau suivant illustre un modèle commun de séparation des responsabilité
 
 | Groupe | Nom du rôle commun | Responsabilités |
 | --- | --- | --- |
-| Opérations de sécurité | Responsables des opérations de sécurité | Fournit un aperçu général de la sécurité.<br/><br/> Établit et applique la stratégie de sécurité, comme le chiffrement au repos.<br/><br/> Gère les clés de chiffrement.<br/><br/> Gère les règles de pare-feu. |
+| Opérations de sécurité | Responsables des opérations de sécurité | Fournit un aperçu général de la sécurité.  <br><br> Établit et applique la stratégie de sécurité, comme le chiffrement au repos. <br><br> Gère les clés de chiffrement. <br><br> Gère les règles de pare-feu. |
 | Opérations réseau | NetOps | Gère la configuration et les opérations du réseau au sein de réseaux virtuels, tels que les itinéraires et les Peerings. |
 | Opérations systèmes | SysOps | Spécifie les options d’infrastructure de calcul et de stockage et gère les ressources qui ont été déployées. |
-| Développement, test et opérations | DevOps | Génère et déploie des fonctionnalités de charge de travail et des applications.<br/><br/> Utilise des fonctionnalités et des applications pour répondre aux contrats de niveau de service (SLA) et à d’autres standards de qualité. |
+| Développement, test et opérations | DevOps | Génère et déploie des fonctionnalités de charge de travail et des applications. <br><br> Utilise des fonctionnalités et des applications pour répondre aux contrats de niveau de service (SLA) et à d’autres standards de qualité. |
 
 <!-- markdownlint-enable MD033 -->
 

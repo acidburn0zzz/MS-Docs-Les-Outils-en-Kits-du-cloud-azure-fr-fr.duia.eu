@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2230fe8d8ee2f2c7d5b9a695ec01268e3306bff9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426460"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217402"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Criticité pour l’entreprise en gestion cloud
 
@@ -54,14 +54,14 @@ Plus loin dans le processus d’adoption cloud, l’équipe de gestion cloud uti
 
 La révision initiale de chaque charge de travail du portefeuille peut prendre du temps. Pour garantir que cette tâche ne bloque pas la stratégie cloud dans son ensemble, il est préférable que vos équipes s’accordent sur l’état critique par défaut qu’il convient d’appliquer à toutes les charges de travail.
 
-En fonction de la table de mise à l’échelle de l’état critique précédente, nous vous recommandons d’adopter un état critique *Moyen* comme valeur par défaut. Cela permettra à votre équipe de stratégie cloud d’identifier rapidement les charges de travail qui nécessitent un niveau d’état critique plus élevé.
+En fonction de la table de mise à l’échelle de l’état critique précédente, nous vous recommandons d’adopter un état critique _Moyen_ comme valeur par défaut. Cela permettra à votre équipe de stratégie cloud d’identifier rapidement les charges de travail qui nécessitent un niveau d’état critique plus élevé.
 
 ## <a name="use-the-template"></a>Utiliser le modèle
 
 Les étapes suivantes s’appliquent si vous utilisez le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud.
 
 1. Enregistrez l’échelle des états critiques dans l’onglet **Mettre à l'échelle** du classeur.
-2. Mettez à jour chaque charge de travail qui se trouve dans l’onglet *Exemple* ou *Nettoyer le modèle* pour refléter l’état critique par défaut indiqué dans la colonne *État critique*.
+2. Mettez à jour chaque charge de travail qui se trouve dans l’onglet _Exemple_ ou _Nettoyer le modèle_ pour refléter l’état critique par défaut indiqué dans la colonne _État critique_.
 3. L’entreprise doit entrer les valeurs exactes pour voir les écarts qui existent par rapport à l’état critique par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes

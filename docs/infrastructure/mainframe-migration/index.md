@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9d11c3954bb97d14c5ee4c59e27013cff7e8cf7a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 486dabd5b2926b9f8f794767181c75bc1eff34b6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425537"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216807"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -24,7 +24,7 @@ En général, le terme mainframe désigne un système informatique volumineux, m
 
 La migration vers le cloud permet aux entreprises de moderniser leur infrastructure. Avec les services cloud, vous pouvez proposer des applications mainframe, et la valeur qu’elles offrent, sous forme de charge de travail dès que votre organisation en a besoin. De nombreuses charges de travail peuvent être transférées vers Azure suite à quelques modifications mineures du code (mettre à jour le nom des bases de données, par exemple). Vous pouvez migrer des charges de travail plus complexes à l’aide d’une approche en phases.
 
-La plupart des entreprises classées au Fortune 500 exécutent déjà leurs charges de travail critiques sur Azure. Les avantages financiers significatifs qu’offre Azure motivent de nombreux projets de migration. En général, les entreprises commencent par migrer les charges de travail de développement et de test vers Azure, puis enchaînent avec les services DevOps, la messagerie et la récupération d’urgence en tant que service.
+La plupart des entreprises classées au Fortune 500 exécutent déjà leurs charges de travail critiques sur Azure. Les avantages financiers significatifs qu’offre Azure motivent de nombreux projets de migration. En règle générale, les entreprises déplacent d’abord les charges de travail relatives au développement et aux tests vers Azure, puis DevOps, les e-mails et la récupération d’urgence.
 
 ## <a name="intended-audience"></a>Public concerné
 
@@ -48,7 +48,7 @@ Une architecture mainframe IBM classique inclut généralement ces composants :
 
 - **Code :** Les langages de programmation utilisés par les ordinateurs mainframe incluent COBOL, Fortran, PL/I et Natural. Job control language (JCL) est utilisé pour travailler avec z/OS.
 
-- **Couche Base de données :** Le système de gestion de base de données relationnelle (SGBDR) courant pour z/OS est IBM DD2. Il gère des structures de données appelées *dbspaces*, qui contiennent une ou plusieurs tables et sont affectées à des pools de stockage d’ensembles de données physiques appelés *dbextents*. Il existe deux composants majeurs des bases de données : le répertoire qui identifie les emplacements des données dans les pools de stockage et le journal qui contient un enregistrement des opérations effectuées sur la base de données. Différents formats de fichiers plats sont pris en charge pour les données. Le système DB2 pour z/OS utilise généralement des jeux de données avec la méthode VSAM (Virtual Storage Access Method) pour stocker les données.
+- **Couche Base de données :** Le système de gestion de base de données relationnelle (SGBDR) courant pour z/OS est IBM DD2. Il gère des structures de données appelées _dbspaces_, qui contiennent une ou plusieurs tables et sont affectées à des pools de stockage d’ensembles de données physiques appelés _dbextents_. Il existe deux composants majeurs des bases de données : le répertoire qui identifie les emplacements des données dans les pools de stockage et le journal qui contient un enregistrement des opérations effectuées sur la base de données. Différents formats de fichiers plats sont pris en charge pour les données. Le système DB2 pour z/OS utilise généralement des jeux de données avec la méthode VSAM (Virtual Storage Access Method) pour stocker les données.
 
 - **Niveau Gestion :** Les ordinateurs mainframe IBM comportent des logiciels de planification tels que TWS-OPC, des outils de gestion des impressions et des sorties (comme CA-SAR et SPOOL) et un système de contrôle du code source. Le contrôle des accès sécurisé pour z/OS est géré par la fonctionnalité de contrôle des accès aux ressources (RACF). Un gestionnaire de bases de données fournit l’accès aux données dans la base de données et s’exécute dans sa propre partition dans un environnement z/OS.
 

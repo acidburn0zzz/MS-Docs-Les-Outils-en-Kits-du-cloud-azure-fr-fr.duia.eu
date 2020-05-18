@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 5950b94a6247864ef101e6e8c2040eee899a5bb4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9087a61baaeffa2bb769899a04f55c3eb959f4ea
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433750"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218830"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exemples de résultats comptables
 
@@ -34,7 +34,7 @@ Le reste de cet article explique ces résultats comptables dans le contexte d’
 
 Le cloud permet de créer des opportunités pour fournir de nouveaux produits à des clients ou fournir des produits existants d’une nouvelle façon. Les nouveaux flux de revenus sont une source d’innovation, d’entrepreneuriat et de motivation pour de nombreuses personnes dans le monde des affaires. Toutefois, ils sont aussi sources d’échec et sont perçus par un grand nombre d’entreprises comme un grand risque. Les résultats corrélés au chiffre d’affaires proposés par le service informatique sont généralement mal accueillis. Pour renforcer la crédibilité de ces revenus, établissez un partenariat avec un chef d’entreprise reconnu pour ses innovations. Une validation du flux de revenus tôt dans le processus permet à l’entreprise d’éviter les obstacles.
 
-- **Exemple :** Une société vend des livres depuis plus de cent ans. Un employé de la société réalise que le contenu des livres peut être distribué par voie électronique. Il crée un appareil qui peut être vendu dans la librairie et qui permet de les télécharger directement, et ainsi de générer X euros avec les nouvelles ventes.
+- **Exemple :** Une société vend des livres depuis plus de cent ans. Un employé de la société réalise que le contenu des livres peut être distribué par voie électronique. Il crée un appareil qui peut être vendu dans la librairie et qui permet de les télécharger directement, et ainsi de générer _x euros_ par les nouvelles ventes.
 
 ### <a name="revenue-increases"></a>Augmentation du chiffre d’affaires
 
@@ -53,18 +53,22 @@ Il est rare qu’un même effort augmente les revenus et réduit les coûts simu
 Le cloud computing peut réduire les dépenses d’investissement liées à l’achat de matériel et de logiciel, à la configuration des centres de données, au fonctionnement des centres de données sur site, etc. Les coûts des racks de serveurs, l’alimentation électrique permanente pour le fonctionnement et le refroidissement, et les experts en informatique pour la gestion de l’infrastructure s’additionnent rapidement. L’arrêt d’un centre de données peut réduire les engagements en matière de dépenses d’investissement. Ceci est communément appelé « getting out of the data center business » (Sortie de l’activité des centres de données). La réduction des coûts est généralement mesurée en euros dans le budget courant, qui peut couvrir de une à cinq années, selon la façon dont le directeur financier gère les finances.
 
 - **Exemple no 1 :** Le centre de données d’une entreprise consomme un pourcentage important du budget informatique annuel. Le département informatique choisit d’effectuer une migration cloud et de transformer les ressources de ce centre de données vers des solutions IaaS (Infrastructure as a Service), ce qui génère une réduction des coûts de trois ans.
-- **Exemple no 2 :** Une société de portefeuille a récemment acquis une nouvelle entreprise. Dans le cadre de l’acquisition, les termes du contrat indiquent que la nouvelle entité doit être supprimée des centres de données dans les six mois. Si elle ne le fait pas, elle entraîne une pénalité de 1 million d’euros/mois au profit de la société de portefeuille. Le déplacement des ressources numériques vers le cloud dans le cadre d’une migration cloud pourrait permettre une mise hors service rapide des anciennes ressources.
+- **Exemple no 2 :** Une société de portefeuille a récemment acquis une nouvelle entreprise. Dans le cadre de l’acquisition, les termes du contrat indiquent que la nouvelle entité doit être supprimée des centres de données dans les six mois. Si cela n’est pas fait, une pénalité de 1 million d’euros par mois en découle au profit de la société de portefeuille. Le déplacement des ressources numériques vers le cloud dans le cadre d’une migration cloud pourrait permettre une mise hors service rapide des anciennes ressources.
 - **Exemple no 3 :** Une société qui s’occupe de la gestion des impôts sur le revenu de particuliers réalise 70 pour cent de son chiffre d’affaires annuel au cours des trois premiers mois de l’année. Le reste de l’année, son important investissement dans l’informatique est relativement peu utilisé. Une migration cloud permettrait au département informatique de déployer la capacité de traitement/hébergement nécessaire pour ces trois mois. Pendant les 9 mois restants, les coûts IaaS pourraient être considérablement réduits en diminuant la surface du système informatique.
 
+<!-- docsTest:ignore "Ryan Sorensen" "Director of Application Development and Enterprise Architecture" 1M -->
 <!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>Exemple : Coverdell
 
 Coverdell modernise son infrastructure afin de réaliser des économies de coûts avec Azure. La décision de Coverdell d’investir dans Azure et d’unifier son réseau de sites web, ses applications, ses données et son infrastructure au sein de cet environnement a permis de réaliser davantage d’économies que ce que la société attendait. La migration vers un environnement entièrement Azure a diminué de 54 000 euros les coûts mensuels pour les services de colocation. Avec son infrastructure nouvelle et unifiée, Coverdell s’attend à économiser environ 1 million d’euros au cours des deux à trois prochaines années.
 
-> « L’accès à l’ensemble des technologies Azure ouvre la porte à des solutions scalables, faciles à implémenter et avec une haute disponibilité, qui se révèlent être rentables. Ainsi, nos architectes peuvent être bien plus créatifs dans les solutions qu’ils fournissent. »  
-> Ryan Sorensen  
-> Directeur du développement des applications et de l’architecture d’entreprise  
+> « L’accès à l’ensemble des technologies Azure ouvre la porte à des solutions scalables, faciles à implémenter et avec une haute disponibilité, qui se révèlent être rentables. Ainsi, nos architectes peuvent être bien plus créatifs dans les solutions qu’ils fournissent. »
+>
+> Ryan Sorensen
+>
+> Directeur du développement des applications et de l’architecture d’entreprise
+>
 > Coverdell
 
 ### <a name="cost-avoidance"></a>Évitement des coûts
@@ -72,6 +76,8 @@ Coverdell modernise son infrastructure afin de réaliser des économies de coût
 La mise hors service des centres de données peut également permettre une suppression des coûts, car elle permet d’éviter les cycles d’actualisation ultérieurs. Un cycle de renouvellement est un processus consistant à acheter de nouveaux matériels et logiciels pour remplacer des systèmes locaux vieillissants. Dans Azure, le matériel et le système d’exploitation sont maintenus, corrigés et actualisés régulièrement sans coût supplémentaire pour les clients. Ceci permet à un directeur financier d’éliminer certaines dépenses planifiées futures dans les prévisions financières à long terme. La suppression des coûts se mesure en euros. Elle diffère de la réduction des coûts en cela qu’elle est centrée sur un budget futur qui n’a pas encore été entièrement approuvé.
 
 - **Exemple :** Le centre de données d’une entreprise doit faire l’objet d’un renouvellement de bail dans six mois. Le centre de données est en service depuis huit ans. Il y a quatre ans, tous les serveurs ont été actualisés et virtualisés, ce qui a coûté des millions d’euros à l’entreprise. L’année prochaine, l’entreprise prévoit d’actualiser à nouveau le matériel et les logiciels. La migration des ressources de ce centre de données dans le cadre d’une migration cloud permettrait une suppression de coûts, en éliminant l’actualisation planifiée du budget prévu pour l’année prochaine. Elle pourrait également produire une réduction des coûts en réduisant ou en éliminant les coûts liés à la location des locaux.
+
+<!-- docsTest:ignore "vs. Operating" -->
 
 ### <a name="capital-expenses-vs-operating-expenses"></a>Dépenses d’investissement et frais d’exploitation
 
@@ -88,7 +94,7 @@ Les termes suivants vous aideront à comprendre les différences entre les dépe
 
 Il y a fort à parier que différents dirigeants, y compris le responsable des investissements, discutent de la meilleure utilisation du capital pour développer la société dans la direction voulue. Donner au responsable des investissements le moyen de convertir des discussions sur les dépenses d’investissement litigieuses en objectifs comptables clairs de dépenses d’exploitation peut être un résultat intéressant par lui-même. Dans de nombreux secteurs, les directeurs financiers recherchent activement des moyens pour mieux associer des chiffrages comptables au coût des biens vendus.
 
-Cependant, avant d’associer des parcours de transformation à ce type de conversion des dépenses d’investissement en dépenses d’exploitation, il est judicieux de rencontrer des membres des équipes de la direction financière ou informatique pour déterminer quelle structure de coûts l’entreprise préfère. Dans certaines organisations, la réduction des dépenses d’investissement en faveur des dépenses d’exploitation engendre des *réticences*. Comme mentionné plus haut, cette approche est adoptée parfois dans les sociétés de distribution, de portefeuille ou de capital investissement, qui accordent une valeur plus importante aux modèles traditionnels de comptabilisation des actifs, lesquels accordent une valeur minime à l’informatique. Vous pouvez aussi le voir dans les organisations qui ont eu dans le passé des expériences négatives lorsqu’elles externalisent leur service informatique ou d’autres fonctions.
+Cependant, avant d’associer des parcours de transformation à ce type de conversion des dépenses d’investissement en dépenses d’exploitation, il est judicieux de rencontrer des membres des équipes de la direction financière ou informatique pour déterminer quelle structure de coûts l’entreprise préfère. Dans certaines organisations, la réduction des dépenses d’investissement en faveur des dépenses d’exploitation engendre des réticences. Comme mentionné plus haut, cette approche est adoptée parfois dans les sociétés de distribution, de portefeuille ou de capital investissement, qui accordent une valeur plus importante aux modèles traditionnels de comptabilisation des actifs, lesquels accordent une valeur minime à l’informatique. Vous pouvez aussi le voir dans les organisations qui ont eu dans le passé des expériences négatives lorsqu’elles externalisent leur service informatique ou d’autres fonctions.
 
 Si un modèle de dépenses d’exploitation est souhaitable, l’exemple suivant peut être un résultat viable pour l’entreprise :
 

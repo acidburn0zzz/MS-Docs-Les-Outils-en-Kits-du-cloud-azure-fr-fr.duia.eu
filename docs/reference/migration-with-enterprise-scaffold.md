@@ -8,13 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: e276f6fd504ec0417ec15504cda52682d67bcba6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b757a0066250a37816eed5445d79663b72a7aae3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119786"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219323"
 ---
+<!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Structure d’entreprise Azure : Gouvernance normative de l’abonnement
@@ -162,13 +163,13 @@ Les initiatives offrent aux entreprises la possibilité de regrouper des straté
 
 Après avoir créé des stratégies et les avoir regroupées sous forme d’initiatives logiques, vous devez affecter la stratégie à une étendue, qu’il s’agisse d’un groupe d’administration, d’un abonnement ou même d’un groupe de ressources. Les affectations vous permettent aussi d’exclure une sous-étendue de l’affectation d’une stratégie. Par exemple, si vous interdisez la création d’adresses IP publiques au sein d’un abonnement, vous pouvez créer une affectation en excluant un groupe de ressources connecté à votre zone DMZ protégée.
 
-Vous trouverez dans ce dépôt [GitHub](https://github.com/Azure/azure-policy) plusieurs exemples de stratégies qui montrent comment une stratégie et des initiatives peuvent être appliquées à diverses ressources dans Azure.
+Vous trouverez dans ce dépôt [GitHub](https://github.com/azure/azure-policy) plusieurs exemples de stratégies qui montrent comment une stratégie et des initiatives peuvent être appliquées à diverses ressources dans Azure.
 
 ## <a name="identity-and-access-management"></a>Gestion de l’identité et de l’accès
 
 Quand vous vous lancez dans le cloud public, vous devez en premier lieu vous poser les questions suivantes : « qui doit avoir accès aux ressources ? » et « comment contrôler cet accès ? ». Le contrôle de l’accès au portail Azure et aux ressources qu’il contient s’avère essentiel pour la sécurité à long terme de vos ressources dans le cloud.
 
-Pour sécuriser l’accès à vos ressources, vous devez configurer d’abord votre fournisseur d’identité, puis les rôles et l’accès. Azure Active Directory (Azure AD), connecté à votre instance Active Directory locale, est la pierre angulaire d’Azure Identity. Ceci dit, Azure AD n’est *pas* la même chose qu’Active Directory local et il est important de comprendre ce qu’est un locataire Azure AD et le rapport avec votre abonnement Azure. Consultez les [informations](../govern/resource-consistency/resource-access-management.md) disponibles pour acquérir des bases solides sur Azure AD et Active Directory local. Pour connecter et synchroniser votre instance Active Directory à Azure AD, installez et configurez l’[outil Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) localement.
+Pour sécuriser l’accès à vos ressources, vous devez configurer d’abord votre fournisseur d’identité, puis les rôles et l’accès. Azure Active Directory (Azure AD), connecté à votre instance Active Directory locale, est la pierre angulaire d’Azure Identity. Ceci dit, Azure AD n’est _pas_ la même chose qu’Active Directory local et il est important de comprendre ce qu’est un locataire Azure AD et le rapport avec votre abonnement Azure. Consultez les [informations](../govern/resource-consistency/resource-access-management.md) disponibles pour acquérir des bases solides sur Azure AD et Active Directory local. Pour connecter et synchroniser votre instance Active Directory à Azure AD, installez et configurez l’[outil Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) localement.
 
 ![Schéma de l’architecture AD](../_images/reference/ad-architecture.png)
 
@@ -182,7 +183,7 @@ Lorsque vous implémentez l’accès en fonction du rôle, vous avez tout intér
 - Suivez le principe de l’octroi des **privilèges minimum** nécessaires pour exécuter le travail prévu.
 
 > [!IMPORTANT]
->Envisagez d’utiliser les fonctionnalités [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) et l’[accès conditionnel](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) pour améliorer la sécurité et la visibilité des actions d’administration dans vos abonnements Azure. Ces fonctionnalités sont celles d’une licence Azure AD Premium valide (selon le cas) et visent à mieux sécuriser et gérer votre identité. Azure AD PIM permet un accès administratif « juste-à-temps » avec le workflow d’approbation, ainsi qu’un audit complet des activations et des activités d’administrateur. Azure Multi-Factor Authentication est une autre fonctionnalité critique qui permet une vérification en deux étapes pour ouvrir une session sur le Portail Microsoft Azure. En l’associant aux contrôles d’accès conditionnel, vous pouvez gérer efficacement vos risques de compromission.
+>Envisagez d’utiliser les fonctionnalités [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) et l’[accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) pour améliorer la sécurité et la visibilité des actions d’administration dans vos abonnements Azure. Ces fonctionnalités sont celles d’une licence Azure AD Premium valide (selon le cas) et visent à mieux sécuriser et gérer votre identité. Azure AD PIM permet un accès administratif « juste-à-temps » avec le workflow d’approbation, ainsi qu’un audit complet des activations et des activités d’administrateur. Azure Multi-Factor Authentication est une autre fonctionnalité critique qui permet une vérification en deux étapes pour ouvrir une session sur le Portail Microsoft Azure. En l’associant aux contrôles d’accès conditionnel, vous pouvez gérer efficacement vos risques de compromission.
 
 L’une des meilleures stratégies d’atténuation des risques que vous puissiez adopter et qui devrait être considérée comme obligatoire pour chaque déploiement consiste à planifier et à préparer vos contrôles d’identité et d’accès et à suivre les [bonnes pratiques de gestion des identités Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices).
 
@@ -244,11 +245,11 @@ Ces informations peuvent être consultées et traitées à plusieurs niveaux et 
 
 - **Azure Monitor :** Azure Monitor est le service de plateforme principal qui fournit une seule source de supervision des ressources Azure. L’interface Azure Monitor du portail Azure offre un point d’accès centralisé à toutes les fonctionnalités de supervision d’Azure, notamment aux fonctionnalités de supervision approfondies d’Application Insights, de Log Analytics, de la supervision réseau, des solutions de gestion et de Service Map. Avec Azure Monitor, vous pouvez visualiser, interroger, router, archiver et agir sur les métriques et les journaux issus des ressources Azure à l’échelle de votre domaine cloud. En plus du portail, vous pouvez récupérer les données par l’intermédiaire des applets de commande PowerShell Monitor, de l’interface de ligne de commande multiplateforme ou des API REST Azure Monitor.
 
-- **Azure Advisor :** Azure Advisor supervise constamment les données de télémétrie de tous vos abonnements et environnements. Il fournit des suggestions sur les bonnes pratiques permettant d’optimiser vos ressources Azure pour faire des économies et améliorer les performances, la sécurité et la disponibilité des ressources qui composent vos applications.
+- **Azure Advisor :** Azure Advisor analyse en permanence la télémétrie de vos abonnements et environnements. Il recommande également les meilleures pratiques pour optimiser les coûts de vos ressources Azure et améliorer les performances, la sécurité et la disponibilité des ressources de votre application.
 
 - **Service Health :** Azure Service Health identifie les problèmes liés aux services Azure qui peuvent affecter vos applications et vous aide à définir des fenêtres de maintenance planifiées.
 
-- **Journal d’activité :** Le journal d’activité décrit toutes les opérations effectuées sur les ressources de vos abonnements. Il fournit une piste d’audit pour déterminer le « quoi », « qui, » et « quand » des opérations de création, de mise à jour et de suppression des ressources. Les événements du journal d’activité sont stockés dans la plateforme et peuvent faire l’objet d’une requête pendant 90 jours. Vous pouvez intégrer les journaux d’activité à Log Analytics sur des périodes de conservation plus longues et pour des interrogations et analyses plus approfondies sur diverses ressources.
+- **Journal d’activité :** Le journal d’activité décrit toutes les opérations effectuées sur les ressources de vos abonnements. Il fournit une piste d’audit pour déterminer le _quoi_, le _qui_ et le _quand_ des opérations de création, de mise à jour et de suppression des ressources. Les événements du journal d’activité sont stockés dans la plateforme et peuvent faire l’objet d’une requête pendant 90 jours. Vous pouvez intégrer les journaux d’activité à Log Analytics sur des périodes de conservation plus longues et pour des interrogations et analyses plus approfondies sur diverses ressources.
 
 ### <a name="deep-application-monitoring"></a>Analyse approfondie des applications
 
@@ -279,14 +280,16 @@ Il s’agit d’outils destinés à fournir des informations instantanées sur l
 
 - **Coût des ressources d’abonnement :** Située dans le portail, la vue [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) vous donne un aperçu rapide de vos coûts ainsi que des informations sur les dépenses quotidiennes par ressource ou groupe de ressources.
 - **Azure Cost Management :** Ce produit vous permet de gérer et d’analyser vos dépenses Azure et ce que vous dépensez auprès d’autres fournisseurs de clouds publics. Il existe des niveaux gratuits et payants, offrant un grande quantité de fonctionnalités.
-- **Budgets et groupes d’actions Azure :** Jusqu’à récemment, la détermination du coût d’un service et les réponses à y apporter étaient un exercice plutôt manuel. Avec l’introduction des budgets Azure et des API correspondantes, il est maintenant possible de créer des actions (comme dans [cet exemple](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)) quand les coûts atteignent un seuil. Par exemple, vous pouvez arrêter un groupe de ressources de « test » dès qu’il atteint 100 % de son budget.
+- **Budgets et groupes d’actions Azure :** Jusqu’à récemment, la détermination du coût d’un service et les réponses à y apporter étaient un exercice plutôt manuel. Avec l’introduction des budgets Azure et des API correspondantes, il est maintenant possible de [créer des actions](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups) qui s’exécutent quand les coûts atteignent un certain seuil. Par exemple, vous pouvez arrêter un groupe de ressources de « test » dès qu’il atteint 100 % de son budget.
 - **Azure Advisor :** Connaître le coût d’un service est une chose, savoir exploiter ces informations en est une autre. [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) vous fait des suggestions quant aux mesures à prendre pour réaliser des économies, améliorer la fiabilité ou même accroître la sécurité.
 
 ### <a name="external-cost-management-tools"></a>Outils de gestion des coûts externes
 
+<!-- TODO: Content packs are deprecated. -->
+
 - **Power BI Azure Consumption Insights :** Vous souhaitez créer vos propres visualisations pour votre organisation ? Dans ce cas, le pack de contenu Azure Consumption Insights pour Power BI est l’outil qu’il vous faut. Avec ce pack de contenu et Power BI, vous pouvez créer des visualisations personnalisées de façon à représenter votre organisation, à effectuer une analyse plus approfondie des coûts et à ajouter d’autres sources de données pour enrichir ces visualisations.
 
-- **API de consommation :** Les [API de consommation](https://docs.microsoft.com/rest/api/consumption) vous donnent un accès programmatique à des données de coûts et d’utilisation, ainsi qu’à des informations sur les budgets, les instances réservées et les coûts de place de marché. Seuls les Accord de Mise en Œuvre Entreprise et certains abonnements directs web ont accès à ces API. Cependant, celles-ci vous permettent d’intégrer vos données de coûts dans vos propres outils et entrepôts de données. Vous pouvez également [accéder à ces API par le biais d’Azure CLI](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
+- **API de consommation Azure :** Les [API de consommation](https://docs.microsoft.com/rest/api/consumption) vous donnent un accès programmatique à des données de coûts et d’utilisation, ainsi qu’à des informations sur les budgets, les instances réservées et les coûts de place de marché. Seuls les Accord de Mise en Œuvre Entreprise et certains abonnements directs web ont accès à ces API. Cependant, celles-ci vous permettent d’intégrer vos données de coûts dans vos propres outils et entrepôts de données. Vous pouvez également [accéder à ces API par le biais d’Azure CLI](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
 
 Les clients qui sont des utilisateurs chevronnés du cloud suivent certaines meilleures pratiques :
 
@@ -314,9 +317,9 @@ L’automatisation est une tâche à temps plein qui deviendra rapidement l’un
 
 ## <a name="templates-and-devops"></a>Modèles et DevOps
 
-Comme nous l’avons souligné dans la section Automatiser, votre objectif en tant qu’organisation doit être de provisionner les ressources à l’aide de scripts et de modèles sous contrôle de code source et de limiter la configuration interactive de vos environnements. Cette approche d’« infrastructure en tant que code » couplée à un processus DevOps rigoureux pour le déploiement continu peut assurer la cohérence et réduire la dérive dans vos environnements. Pratiquement toutes les ressources Azure peuvent être déployées à l’aide de [modèles JSON Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) en combinaison avec PowerShell ou l’interface CLI multiplateforme d’Azure et des outils comme Terraform de HashiCorp (qui bénéficie d’une prise en charge de premier ordre et qui est intégré avec Azure Cloud Shell).
+Comme nous l’avons souligné dans la section Automatiser, votre objectif en tant qu’organisation doit être de provisionner les ressources à l’aide de scripts et de modèles sous contrôle de code source et de limiter la configuration interactive de vos environnements. Cette approche d’« infrastructure en tant que code » couplée à un processus DevOps rigoureux pour le déploiement continu peut assurer la cohérence et réduire la dérive dans vos environnements. Pratiquement toutes les ressources Azure peuvent être déployées à l’aide de [modèles JSON Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) en combinaison avec PowerShell ou l’interface CLI multiplateforme d’Azure et des outils comme Terraform par HashiCorp qui bénéficie d’une prise en charge de premier ordre et qui est intégré avec Azure Cloud Shell.
 
-Certains articles comme [Bonnes pratiques pour utiliser des modèles Azure Resource Manager](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) font un excellent exposé sur les bonnes pratiques et les enseignements tirés de la mise en œuvre d’une approche DevOps sur des modèles Azure Resource Manager avec la chaîne d’outils [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts). Prenez le temps de développer un ensemble de modèles en fonction des besoins spécifiques de votre organisation, ainsi que des pipelines de livraison continue avec les chaînes d’outils DevOps (comme Azure DevOps, Jenkins, Bamboo, TeamCity et Concourse), en particulier pour vos environnements de production et d’assurance qualité. Il existe une grande bibliothèque de [modèles de démarrage rapide Azure](https://github.com/Azure/azure-quickstart-templates) sur GitHub qui peuvent vous servir de point de départ pour les modèles, et vous pouvez rapidement créer des pipelines de livraison basés sur le cloud avec Azure DevOps.
+Certains articles comme [Bonnes pratiques pour utiliser des modèles Azure Resource Manager](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) font un excellent exposé sur les bonnes pratiques et les enseignements tirés de la mise en œuvre d’une approche DevOps sur des modèles Azure Resource Manager avec la chaîne d’outils [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts). Prenez le temps de développer un ensemble de modèles en fonction des besoins spécifiques de votre organisation, ainsi que des pipelines de livraison continue avec les chaînes d’outils DevOps (comme Azure DevOps, Jenkins, Bamboo, TeamCity et Concourse), en particulier pour vos environnements de production et d’assurance qualité. Il existe une grande bibliothèque de [modèles de démarrage rapide Azure](https://github.com/azure/azure-quickstart-templates) sur GitHub qui peuvent vous servir de point de départ pour les modèles, et vous pouvez rapidement créer des pipelines de livraison basés sur le cloud avec Azure DevOps.
 
 En guise de bonne pratique pour les abonnements de production ou les groupes de ressources, votre objectif doit être d’utiliser la sécurité RBAC pour interdire les utilisateurs interactifs par défaut et d’utiliser des pipelines de livraison continue automatisés basés sur des principaux de service pour provisionner toutes les ressources et livrer tout le code d’application. Aucun administrateur ou développeur ne doit toucher au portail Azure pour configurer les ressources de manière interactive. Ce niveau de DevOps demande un effort concerté et utilise tous les concepts de la structure Azure. Par ailleurs, il fournit un environnement cohérent et plus sécurisé qui répondra aux besoins de votre organisation à mesure qu’elle se développera.
 
@@ -331,12 +334,18 @@ La composante finale du modèle de référence de structure Azure est essentiell
 
 - Les **réseaux virtuels** sont des objets Conteneur de sous-réseaux. Bien qu’ils ne soient pas strictement nécessaires, ils sont souvent utilisés lors de la connexion d’applications à des ressources d’entreprise internes.
 - Les **routes définies par l’utilisateur** vous permettent de manipuler la table de routage au sein d’un sous-réseau, ce qui vous permet d’envoyer le trafic par l’intermédiaire d’une appliance virtuelle réseau ou à une passerelle distante sur un réseau virtuel appairé.
-- L’**appairage de réseaux virtuels** vous permet de connecter plusieurs réseaux virtuels Azure sans interruption, de créer des conceptions Hub and Spoke plus complexes ou des réseaux de services partagés.
+- L’**appairage de réseaux virtuels** vous permet de connecter plusieurs réseaux virtuels sans interruption dans Azure, de créer des conceptions Hub et Spoke plus complexes ou des réseaux de services partagés.
 - **Points de terminaison de service.** Par le passé, les services PaaS s’appuyaient sur différentes méthodes pour sécuriser l’accès aux ressources des réseaux virtuels. Les points de terminaison de service vous permettent de sécuriser l’accès aux services PaaS activés à partir de points de terminaison connectés **uniquement**, ce qui améliore la sécurité globale.
 - Les **groupes de sécurité** constituent un ensemble complet de règles qui vous permettent d’autoriser ou de refuser le trafic entrant et sortant dans les ressources Azure. Les [groupes de sécurité](https://docs.microsoft.com/azure/virtual-network/security-overview) sont constitués de règles de sécurité, qui peuvent être enrichies avec des **balises de service** (qui définissent des services Azure courants comme Azure Key Vault ou Azure SQL Database) et des **groupes de sécurité d’application** (qui définissent la structure d’application, comme les serveurs web ou les serveurs d’applications).
 
 > [!TIP]
-> Vous pouvez utiliser des balises de service et des groupes de sécurité d’application dans vos groupes de sécurité réseau non seulement pour améliorer la lisibilité de vos règles (ce qui est essentiel pour en comprendre l’impact), mais aussi pour permettre une micro-segmentation efficace au sein d’un sous-réseau plus vaste, ce qui réduit la prolifération et améliore la flexibilité.
+> Utilisez des balises de service et des groupes de sécurité réseau dans vos groupes de sécurité réseau pour :
+>
+> - améliorer la lisibilité de vos règles, ce qui est essentiel pour comprendre l’impact.
+> - activer la micro-segmentation effective dans un sous-réseau de plus grande taille, ce qui réduit la prolifération et augmente la flexibilité.
+
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Centre de données virtuel Azure
 

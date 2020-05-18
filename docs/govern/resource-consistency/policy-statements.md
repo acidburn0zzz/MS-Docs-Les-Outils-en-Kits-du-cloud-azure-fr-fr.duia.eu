@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e0a64a2f0b2c1c9a948c142a28fca0c9d534804
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3418eeb2a2d141ac7c3b190b8706a404b1cfbc7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997324"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217980"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Déclarations de stratégie de cohérence des ressources
 
@@ -27,7 +27,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques commer
 
 ## <a name="tagging"></a>Marquage
 
-**Risque technique :** Sans marquage approprié des métadonnées associées aux ressources déployées, les opérations informatiques ne peuvent pas hiérarchiser la prise en charge ou l’optimisation des ressources selon le contrat SLA requis, l'importance pour les opérations de l’entreprise ou les coûts d'exploitation. Cela peut entraîner une mauvaise allocation des ressources informatiques, ainsi que de possibles retards en termes de résolution des incidents.
+**Risque technique :** Sans marquage approprié des métadonnées associées aux ressources déployées, les opérations informatiques ne peuvent pas hiérarchiser la prise en charge ni l’optimisation des ressources selon le contrat SLA requis, l'importance pour les opérations de l’entreprise ou les coûts d'exploitation. Cela peut entraîner une mauvaise allocation des ressources informatiques, ainsi que de possibles retards en termes de résolution des incidents.
 
 **Instruction de stratégie :** les stratégies suivantes seront implémentées :
 
@@ -52,7 +52,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques commer
 
 **Risque technique :** Les machines virtuelles (VM) ne disposant pas des dernières mises à jour et derniers correctifs logiciels peuvent faire l'objet de problèmes de sécurité ou de performances susceptibles d'entraîner des interruptions de service.
 
-**Instruction de stratégie :** Les outils de gouvernance doivent veiller à ce que les mises à jour automatiques soient activées sur toutes les machines virtuelles déployées. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas mises à jour automatiquement doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
+**Instruction de stratégie :** Les outils de gouvernance doivent veiller à ce que les mises à jour automatiques soient activées sur toutes les machines virtuelles déployées. Les violations doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies liées aux opérations. Les ressources qui ne sont pas automatiquement mises à jour doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
 
 **Options de conception potentielles** : Les machines virtuelles hébergées sur Azure peuvent faire l'objet d'une gestion cohérente des mises à jour à l'aide de la [solution Update Management dans Azure Automation](https://docs.microsoft.com/azure/automation/automation-update-management).
 
@@ -90,7 +90,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques commer
 
 Utilisez les exemples mentionnés dans cet article comme point de départ pour développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
-Pour commencer à développer vos déclarations de stratégie personnalisées liées à la cohérence des ressources, téléchargez le [modèle Cohérence des ressources](./template.md).
+Pour commencer à développer vos déclarations de stratégie personnalisées liées à la Cohérence des ressources, téléchargez le [modèle de discipline Cohérence des ressources](./template.md).
 
 Pour accélérer l’adoption de cette discipline, choisissez le [guide de gouvernance actionnable](../guides/index.md) correspondant le mieux à votre environnement. Modifiez ensuite la conception pour intégrer vos décisions spécifiques en matière de stratégie d’entreprise.
 

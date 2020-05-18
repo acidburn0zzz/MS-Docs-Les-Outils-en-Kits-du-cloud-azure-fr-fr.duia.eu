@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f76cde92d52cd9390974501326a198656cd11d71
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5b96c9216619a881ec9ad5a09e77ef9b3955bdb0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431712"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216280"
 ---
 # <a name="examples-of-performance-outcomes"></a>Exemples de résultats de performances
 
-Comme indiqué dans la [section sur les résultats métiers](./index.md), plusieurs résultats métiers potentiels peuvent servir de base pour les conversations sur le parcours de transformation avec l’entreprise. Cet article se concentre sur une mesure métier courante : les performances.
+Comme indiqué dans la section [Résultats métiers](./index.md), plusieurs résultats métiers potentiels peuvent servir de base pour les conversations sur le parcours de transformation avec l’entreprise. Cet article se concentre sur une mesure métier courante : les performances.
 
 Dans la société technologique d’aujourd’hui, les clients partent du principe que les applications fonctionnent correctement et seront toujours disponibles. Lorsque cette attente n’est pas satisfaite, cela entraîne des dommages en matière de réputation qui peuvent être coûteux et durables.
 
@@ -40,7 +40,7 @@ Sauvegarde Azure est une solution simple qui réduit vos coûts d’infrastructu
 
 Azure Site Recovery simplifie le test de la récupération d’urgence en répliquant les applications entre les régions Azure. Vous pouvez également répliquer des machines virtuelles VMware et Hyper-V et des serveurs physiques locaux sur Azure pour qu’ils restent disponibles en cas de défaillance du site principal. Et vous pouvez récupérez les charges de travail sur le site principal lorsqu’il fonctionne à nouveau.
 
-- **Exemple :** Une société de pétrole et de gaz a utilisé des technologies Azure pour implémenter une récupération de site complète. L’entreprise a choisi de ne pas adopter pleinement le cloud pour les opérations quotidiennes. Toutefois, les fonctionnalités de continuité d’activité et de reprise d’activité du cloud ont continué de protéger son centre de données. Tandis qu’un ouragan se formait à des centaines de kilomètres, son partenaire d’implémentation a commencé la récupération du site vers Azure. Avant même que la tempête n’arrive, toutes les ressources critiques s’exécutaient dans Azure, évitant ainsi tout temps d’arrêt.
+- **Exemple :** Une société de pétrole et de gaz a utilisé des technologies Azure pour implémenter une récupération de site complète. L’entreprise a choisi de ne pas adopter pleinement le cloud pour les opérations quotidiennes. Toutefois, les fonctionnalités de continuité d’activité et de reprise d’activité du cloud ont continué de protéger son centre de données. Tandis qu’un ouragan se formait à des centaines de kilomètres, son partenaire d’implémentation a commencé la récupération du site vers Azure. Avant même que l’ouragan n’arrive, toutes les ressources stratégiques s’exécutaient dans Azure, évitant ainsi tout temps d’arrêt.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

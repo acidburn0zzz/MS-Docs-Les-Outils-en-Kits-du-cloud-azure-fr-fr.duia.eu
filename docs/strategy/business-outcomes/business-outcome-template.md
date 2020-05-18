@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 55dd535e42f6cbd74c8b7071d13a9c94a5228b0c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cc7558e9adf16d962e086307e213af990ff60e92
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433815"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219000"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Comment utiliser le modèle de résultat opérationnel
 
@@ -26,21 +26,21 @@ Téléchargez la [feuille de calcul du modèle de résultats opérationnels](htt
 
 Dans ce modèle, les résultats opérationnels sont axés principalement sur trois aspects :
 
-- Alignement sur les parties prenantes ou les décisionnaires d’entreprise
-- Compréhension des axes stratégiques et des objectifs de l’entreprise
-- Mappage des résultats à des solutions spécifiques et des capacités techniques
+- Alignement sur les parties prenantes ou les décisionnaires d’entreprise.
+- Compréhension des axes stratégiques et des objectifs de l’entreprise.
+- Mappage des résultats à des solutions spécifiques et des capacités techniques.
 
 ![Les résultats opérationnels sont visualisés sous la forme d’une maison avec les parties prenantes à l’étage supérieur, et les résultats opérationnels et les capacités techniques aux étages inférieurs](../../_images/strategy/business-outcome-house.png)
 
-*Figure 1 - Les résultats opérationnels sont visualisés sous la forme d’une maison avec les parties prenantes à l’étage supérieur, et les résultats opérationnels et les capacités techniques aux étages inférieurs.*
+_Figure 1 : Les résultats opérationnels sont visualisés sous la forme d’une maison avec les parties prenantes à l’étage supérieur et les résultats opérationnels et les capacités techniques aux étages inférieurs._
 
 Le modèle de résultat opérationnel se concentre sur des conversations simplifiées pouvant impliquer rapidement les parties prenantes sans entrer dans les détails de la solution technique. En comprenant et en alignant rapidement les indicateurs de performance clés (KPI) et les axes stratégiques importants pour les parties prenantes, votre équipe peut réfléchir à des approches et à des transformations de haut niveau avant de se plonger dans les détails de la mise en œuvre.
 
-Vous en trouverez un exemple dans l’onglet « Exemple de résultat » de la feuille de calcul, comme indiqué ci-dessous. Pour effectuer le suivi de plusieurs résultats, ajoutez-les à l’onglet « Résultats collectifs ».
+Vous en trouverez un exemple sous l’onglet « Exemple de résultat » de la feuille de calcul, comme indiqué ci-dessous. Pour effectuer le suivi de plusieurs résultats, ajoutez-les à l’onglet « Résultats collectifs ».
 
 ![Exemple de modèle de résultat opérationnel](../../_images/strategy/business-outcome-template.png)
 
-*Figure 2 - Exemple de modèle de résultat opérationnel.*
+_Figure 2 : Exemple de modèle de résultat opérationnel._
 
 ## <a name="why-is-this-template-relevant"></a>En quoi ce modèle est-il pertinent ?
 
@@ -48,7 +48,7 @@ La découverte est un principe fondamental de l’architecture d’entreprise. S
 
 ![Cinq domaines principaux pour la découverte : les parties prenantes, les résultats, les axes, les indicateurs de performance et les fonctionnalités](../../_images/strategy/business-outcome-focus-areas.png)
 
-*Figure 3 - Cinq domaines principaux pour la découverte : les parties prenantes, les résultats, les axes, les indicateurs de performance et les fonctionnalités.*
+_Figure 3 : Cinq domaines principaux pour la découverte : les parties prenantes, les résultats, les pilotes, les indicateurs de performance clé et les fonctionnalités._
 
 **Parties prenantes :** Qui dans l'organisation est susceptible de voir la plus grande valeur dans un résultat opérationnel spécifique ? Qui est le plus susceptible de prendre en charge cette transformation, en particulier quand les choses deviennent difficiles ou fastidieuses ? Qui a le plus grand intérêt à la réussite de cette transformation ? Cette personne est une partie prenante potentielle.
 

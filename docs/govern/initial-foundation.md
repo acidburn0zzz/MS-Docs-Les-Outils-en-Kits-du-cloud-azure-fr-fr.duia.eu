@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5cd0a9f4a9ec7d32b2aced903f2689884c32e97c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7ce353a03c57e89800d65edc5cdfbdec8c53d092
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80356975"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218490"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Établir une fondation de gouvernance cloud initiale
 
@@ -24,9 +24,7 @@ Cet article présente deux options permettant d’établir une fondation initial
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Framework d’adoption du cloud déjà en cours d’utilisation
 
-Si vous avez suivi le Framework d’adoption du cloud, vous avez peut-être déjà déployé un MVP de gouvernance. La gouvernance est un aspect fondamental de tout modèle d’exploitation. Elle est présente dans chaque méthodologie du cycle de vie de l’adoption du cloud. Ainsi, le [Framework d’adoption du cloud](../index.md) fournit des instructions qui injectent de la gouvernance dans les activités liées à l’implémentation de votre [plan d’adoption du cloud](../plan/index.md).
-
-Un exemple de l’intégration de cette gouvernance est l’utilisation de blueprints pour déployer une ou plusieurs zones d’accueil présentes dans les instructions de [préparation](../ready/index.md). Les conseils concernant l’[organisation et la gestion de vos abonnements](../ready/azure-best-practices/organize-subscriptions.md) en sont un autre exemple. Si vous avez suivi l’une de ces recommandations, les sections suivantes du MVP sont simplement une révision de vos décisions de déploiement existantes. Après un examen rapide, passez directement à [Améliorer la solution de gouvernance initiale et appliquer des contrôles recommandés](./foundation-improvements.md).
+Si vous avez suivi le Cloud Adoption Framework, vous avez peut-être déjà déployé un MVP de gouvernance. La gouvernance est un aspect fondamental de tout modèle d’exploitation. Elle est présente dans chaque méthodologie du cycle de vie de l’adoption du cloud. Ainsi, le [Framework d’adoption du cloud](../index.yml) fournit des instructions qui injectent de la gouvernance dans les activités liées à l’implémentation de votre [plan d’adoption du cloud](../plan/index.md). Un exemple de l’intégration de cette gouvernance consiste à utiliser des blueprints pour déployer une ou plusieurs zones d’atterrissage présentes dans les instructions de [Méthodologie Ready](../ready/index.md). Voici un autre exemple d’instruction pour l’[application d’un scale-out aux abonnements](../ready/azure-best-practices/scale-subscriptions.md). Si vous avez suivi l’une de ces recommandations, les sections suivantes du MVP sont simplement une révision de vos décisions de déploiement existantes. Après un examen rapide, passez directement à [Améliorer la solution de gouvernance initiale et appliquer des contrôles des meilleures pratiques recommandés](./foundation-improvements.md).
 
 ## <a name="establish-an-initial-governance-foundation"></a>Établir une fondation de gouvernance initiale
 

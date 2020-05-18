@@ -7,21 +7,21 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 714bd0d26a38a1ee3a3cb2bfc2d336d1ffd4f45c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dbf5f3364277ad3a245796e47523cb803a074d31
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428517"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216416"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Construire une organisation sensible aux coûts
 
-Comme indiqué dans [Motivations : Pourquoi migrons-nous vers le cloud ?](../strategy/motivations.md), il existe, pour une entreprise, de nombreuses raisons d’adopter le cloud. Lorsque la réduction des coûts est une motivation majeure, il est important de créer une organisation sensible aux coûts.
+Comme indiqué dans [Motivations : pourquoi se déplacer vers le cloud ?](../strategy/motivations.md) il existe, pour une entreprise, de nombreuses raisons d’adopter le cloud. Lorsque la réduction des coûts est une motivation majeure, il est important de créer une organisation sensible aux coûts.
 
-Assurer une sensibilisation aux coûts n’est pas une activité ponctuelle. Comme d’autres sujets en lien avec l’adoption du cloud, il s’agit d’une activité itérative. Le diagramme suivant décrit ce processus en se concentrant sur trois activités interdépendantes : *visibilité*, *responsabilité financière* et *optimisation*. Ces processus s’exécutent au niveau macro et micro, que nous décrivons en détail dans cet article.
+Assurer une sensibilisation aux coûts n’est pas une activité ponctuelle. Comme d’autres sujets en lien avec l’adoption du cloud, il s’agit d’une activité itérative. Le diagramme suivant décrit ce processus en se concentrant sur trois activités interdépendantes : _visibilité_, _responsabilité financière_ et _optimisation_. Ces processus s’exécutent au niveau macro et micro, que nous décrivons en détail dans cet article.
 
-![Processus sensible aux coûts](../_images/ready/cost-optimization-process.png)
-*Figure 1 : Structure de l’organisation sensible aux coûts.*
+![Processus sensibles aux coûts généraux](../_images/ready/cost-optimization-process.png)
+_Figure 1 : Plan de l’organisation attentif aux coûts._
 
 ## <a name="general-cost-conscious-processes"></a>Processus sensibles aux coûts généraux
 
@@ -35,11 +35,11 @@ Assurer une sensibilisation aux coûts n’est pas une activité ponctuelle. Com
 
 - **Optimisation :** L’optimisation est l’action qui crée les réductions de coûts. Pendant l’optimisation, les allocations de ressources sont modifiées pour réduire le coût de prise en charge de différentes charges de travail. Ce processus nécessite une itération et une expérimentation. Chaque réduction de coût réduit les performances. Trouver le bon équilibre entre les attentes en matière de contrôle des coûts et de performances des utilisateurs finaux exige la contribution de plusieurs parties.
 
-Les sections suivantes décrivent les rôles que l’*équipe de stratégie cloud*, l’*équipe d’adoption du cloud*, l’*équipe de gouvernance cloud* et le *centre d’excellence du cloud (CCoE)* jouent dans le développement d’une organisation sensible aux coûts.
+Les sections suivantes décrivent les rôles que l’_équipe de stratégie cloud_, l’_équipe d’adoption du cloud_, l’_équipe de gouvernance du cloud_ et le _centre d’excellence du cloud (CCoE)_ jouent dans le développement d’une organisation sensible aux coûts.
 
 ## <a name="cloud-strategy-team"></a>Équipe de stratégie cloud
 
-L’élaboration d’une sensibilisation aux coûts dans le cadre des efforts d’adoption du cloud commence au niveau du leadership. Pour être efficace à long terme, l’[équipe de stratégie cloud](./cloud-strategy.md) doit inclure un membre du service financier. Si votre structure financière inclut des directeurs commerciaux responsables du coût des solutions, ceux-ci doivent également être invités à rejoindre l’équipe. En plus des activités de base généralement affectées à l’équipe de stratégie cloud, tous les membres de cette équipe ont également les responsabilités suivantes :
+L’élaboration d’une sensibilisation aux coûts dans le cadre des efforts d’adoption du cloud commence au niveau du leadership. Pour être efficace sur le long terme, l’[équipe de stratégie cloud](./cloud-strategy.md) doit inclure un membre du service financier. Si votre structure financière inclut des directeurs commerciaux responsables du coût des solutions, ceux-ci doivent également être invités à rejoindre l’équipe. En plus des activités de base généralement affectées à l’équipe de stratégie cloud, tous les membres de cette équipe ont également les responsabilités suivantes :
 
 - **Visibilité :** L’équipe de stratégie cloud et l’[équipe de gouvernance cloud](./cloud-governance.md) ont besoin de connaître les coûts réels des efforts d’adoption du cloud. Compte tenu du caractère dirigeant de cette équipe, elle doit avoir accès à plusieurs étendues de coût pour analyser les décisions liées aux dépenses. En règle générale, un dirigeant a besoin d’une visibilité sur les coûts totaux pour l’ensemble des « dépenses » liées au cloud. Mais en tant que membres actifs de l’équipe de stratégie cloud, l’équipe doit aussi être capable d’afficher les coûts par division ou par unité de facturation pour valider les [modèles de comptabilité cloud](../strategy/cloud-accounting.md) de type showback, chargeback ou autre.
 
@@ -53,7 +53,7 @@ L’[équipe d’adoption du cloud](./cloud-adoption.md) est au centre de toutes
 
 - **Visibilité :**
 
-  - **Prise de conscience :** Il est important pour l’équipe d’adoption du cloud d’avoir une visibilité sur les objectifs de réduction des coûts de l’effort. Se contenter d’affirmer que l’effort d’adoption du cloud va permettre de réduire les coûts est le meilleur moyen d’échouer. Une visibilité *spécifique* est importante. Par exemple, si l’objectif est de réduire le coût total de possession du centre de données de 3 % ou les frais d’exploitation annuels de 7 %, révélez ces cibles au plus tôt et distinctement.
+  - **Prise de conscience :** Il est important pour l’équipe d’adoption du cloud d’avoir une visibilité sur les objectifs de réduction des coûts de l’effort. Se contenter d’affirmer que l’effort d’adoption du cloud va permettre de réduire les coûts est le meilleur moyen d’échouer. Une visibilité _spécifique_ est importante. Par exemple, si l’objectif est de réduire le coût total de possession du centre de données de 3 % ou les frais d’exploitation annuels de 7 %, révélez ces cibles au plus tôt et distinctement.
   - **Données de télémétrie :** Cette équipe a besoin d’une visibilité sur l’impact de ses décisions. Au cours des activités de migration ou d’innovation, les décisions de cette équipe ont un effet direct sur les coûts et les performances. L’équipe a besoin d’équilibrer ces deux facteurs contradictoires. La supervision des performances et la supervision des coûts dont l’étendue se limite aux projets actifs de l’équipe sont importantes pour offrir la visibilité nécessaire.
 
 - **Responsabilité financière :** L’équipe d’adoption du cloud a besoin de connaître tous les budgets prédéfinis associés à ses efforts d’adoption. Quand les coûts réels ne sont pas alignés sur le budget, il est possible de créer une responsabilité financière. Celle-ci ne revient pas à pénaliser l’équipe d’adoption pour avoir dépassé le budget, car l’excédent de budget peut être dû à des décisions prises par nécessité pour les performances. La responsabilité financière consiste plutôt à éduquer l’équipe sur les objectifs et la façon dont ses décisions affectent ces objectifs. De plus, la responsabilité financière implique de faciliter le dialogue pour que l’équipe puisse communiquer sur les décisions qui ont conduit au dépassement du budget. Si ces décisions vont à l’encontre des objectifs du projet, cet effort offre une bonne opportunité de collaborer avec l’équipe de stratégie cloud pour prendre de meilleures décisions.
@@ -62,7 +62,7 @@ L’[équipe d’adoption du cloud](./cloud-adoption.md) est au centre de toutes
 
 ## <a name="cloud-governance-team"></a>Équipe de gouvernance cloud
 
-En règle générale, l’[équipe de gouvernance cloud](./cloud-governance.md) est responsable de la gestion des coûts pour tout l’effort d’adoption du cloud. Comme indiqué dans la rubrique relative à la [discipline Gestion des coûts](../govern/cost-management/index.md) dans la méthodologie de gouvernance du Framework d’adoption du cloud, la gestion des coûts est la première des cinq disciplines de gouvernance cloud. Ces articles présentent une série de responsabilités plus profondes pour l’équipe de gouvernance cloud.
+En règle générale, l’[équipe de gouvernance cloud](./cloud-governance.md) est responsable de la gestion des coûts pour tout l’effort d’adoption du cloud. Comme indiqué dans la rubrique relative à la [discipline Gestion des coûts](../govern/cost-management/index.md) dans la méthodologie de gouvernance du Cloud Adoption Framework, la gestion des coûts est la première des Cinq disciplines de gouvernance du cloud. Ces articles présentent une série de responsabilités plus profondes pour l’équipe de gouvernance du cloud.
 
 Cet effort se concentre sur les activités suivantes, liées au développement d’une organisation sensible aux coûts :
 

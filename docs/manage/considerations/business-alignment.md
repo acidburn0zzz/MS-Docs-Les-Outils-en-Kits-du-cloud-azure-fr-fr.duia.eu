@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 432e974a304741a64e0cd7da9577ecec5e35d57e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434050"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216586"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Créer un alignement des activités en gestion cloud
 
@@ -26,14 +26,14 @@ Heureusement, la mise en œuvre d’une stratégie d’adoption cloud et d’un 
 
 - **[État critique](./criticality.md)**  : Mise en correspondance des charges de travail avec les processus métier. Classement de la criticité pour mieux définir les investissements.
 - **[Impact](./impact.md) :** Compréhension de l’impact des pannes potentielles pour faciliter l’évaluation du retour sur investissement pour la gestion cloud.
-- **[Engagement](./commitment.md) :** Développement de vrais partenariats, en créant et en documentant des contrats *avec l’entreprise*.
+- **[Engagement](./commitment.md) :** Développement de vrais partenariats, en créant et en documentant des contrats _avec l’entreprise_.
 
 > [!NOTE]
 > Les termes soulignés sont des termes informatiques classiques tels que le contrat de niveau de service, le RTO et le RPO. Le mappage des termes métier et des termes informatiques est abordé plus en détail dans l’article [Engagement](./commitment.md).
 
-## <a name="ops-management-planning-workbook"></a>Classeur de planification de la gestion des opérations
+## <a name="operations-management-workbook"></a>Classeur Operations Management
 
-Pour noter les décisions prises lors de cette conversation sur l’alignement des termes, un [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) est disponible sur notre site GitHub. Ce classeur ne permet pas de créer le contrat SLA ni de calculer les coûts. Il permet uniquement de capturer ces mesures et prévoir le retour sur les efforts de prévention des pertes.
+Pour noter les décisions prises lors de cette conversation sur l’alignement des termes, un [classeur Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) est disponible sur notre site GitHub. Ce classeur ne permet pas de créer le contrat SLA ni de calculer les coûts. Il permet uniquement de capturer ces mesures et prévoir le retour sur les efforts de prévention des pertes.
 
 Les mêmes charges de travail et ressources associées peuvent également être étiquetées directement dans Azure, si les solutions sont déjà déployées dans le cloud.
 

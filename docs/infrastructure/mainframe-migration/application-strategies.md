@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4b66a43cdf3524b23c109cdc5fa4e965c6e01f4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425808"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217657"
 ---
-<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
 # <a name="mainframe-application-migration"></a>Migration d’applications d’un environnement mainframe
 
@@ -106,7 +106,7 @@ Utilisez :
 
 ### <a name="monitoring"></a>Surveillance
 
-- Utilisez des outils de supervision, [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) et même les journaux Azure afin d’aider les administrateurs à identifier les surcharges de performances liées aux traitements par lots et à éliminer les goulots d’étranglement.
+- Utilisez des outils d’analyse, [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) et les journaux Azure afin d’aider les administrateurs à analyser les surcharges de performances liées aux traitements par lots et à éliminer les goulots d’étranglement.
 
 ## <a name="migrate-development-environments"></a>Migrer des environnements de développement
 
@@ -164,7 +164,7 @@ La figure suivante illustre un déploiement Azure possible avec un site principa
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>Effectuer une migration intermédiaire de l’ordinateur mainframe vers Azure
 
-Le processus de déplacement des solutions d’un ordinateur mainframe vers Azure peut comprendre une migration *intermédiaire*, qui consiste à déplacer certaines applications en priorité et à conserver les applications restantes sur l’ordinateur mainframe de façon temporaire ou permanente. Cette approche nécessite généralement des systèmes qui permettent aux applications et aux bases de données d’interagir entre l’ordinateur mainframe et Azure.
+Le processus de déplacement des solutions d’un ordinateur mainframe vers Azure peut comprendre une migration _intermédiaire_, qui consiste à déplacer certaines applications en priorité et à conserver les applications restantes sur l’ordinateur mainframe de façon temporaire ou permanente. Cette approche nécessite généralement des systèmes qui permettent aux applications et aux bases de données d’interagir entre l’ordinateur mainframe et Azure.
 
 Un scénario courant consiste à déplacer une application vers Azure, mais en conservant sur l’ordinateur mainframe toutes les données dont a besoin l’application. Un logiciel spécifique est utilisé pour que les applications sur Azure puissent accéder aux données à partir de l’ordinateur mainframe. Heureusement, il existe un large éventail de solutions qui permettent l’intégration entre Azure et les environnements mainframe existants, la prise en charge de scénarios hybrides et la migration progressive. Les partenaires Microsoft, les éditeurs de logiciels indépendants et les intégrateurs système peuvent vous aider dans votre démarche.
 

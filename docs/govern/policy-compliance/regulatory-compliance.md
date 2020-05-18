@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 22e74aabc56ae25d0448bf321c645449e4989668
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0860dfc137b8aaa9ad39beeebb3856786eee1318
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809128"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218303"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Présentation de la conformité réglementaire
 
@@ -27,13 +27,18 @@ Comme avec les contrôles de sécurité, les organisations doivent comprendre la
 
 Voici des descriptions de règles de conformité dans divers secteurs et zones géographiques :
 
+<!-- docsTest:ignore PHI "Health Information Portability and Accountability Act" -->
+
 ## <a name="hipaa"></a>HIPAA
 
-Une application de santé qui traite des informations PHI (Protected Health Information, ou informations de santé protégées) doit respecter les règles de confidentialité et les règles de sécurité édictées par la loi Health Information Portability and Accountability Act (HIPAA). Au minimum, la loi HIPAA peut exiger qu’un établissement de soins de santé recevoir impérativement par écrit une garantie du fournisseur de cloud indiquant que les données PHI reçues ou créées seront protégées.
+Une application de santé qui traite des informations PHI (Protected Health Information ou informations de santé protégées) doit respecter les règles de confidentialité et les règles de sécurité édictées par la loi Health Information Portability and Accountability Act (HIPAA). Au minimum, la loi HIPAA peut exiger qu’un établissement de soins de santé recevoir impérativement par écrit une garantie du fournisseur de cloud indiquant que les données PHI reçues ou créées seront protégées.
+
+<!-- cSpell:ignore Visa Mastercard -->
+<!-- docsTest:ignore "American Express" Discover JCB QSA ISA ROC SAQ DPO GRC -->
 
 ## <a name="pci"></a>PCI
 
-La norme de sécurité de l’industrie des cartes de paiement (PCI DSS) concerne les informations propriétaires pour les organisations, lorsque celles-ci traitent les cartes de crédit venant des grands systèmes de carte comme Visa, MasterCard, American Express, Discover et JCB. La norme PCI est mandatée par les sociétés de carte de paiement, et administrée par le Payment Card Industry Security Standards Council. La norme a été créée pour augmenter les contrôles sur les données des titulaires de carte, et ainsi réduire les fraudes. La validation de la conformité est effectuée tous les ans par un Qualified Security Assessor (QSA) externe ou un Internal Security Assessor (ISA) spécifique à la firme. Il crée alors un Report on Compliance (ROC, ou rapport sur la conformité) pour les organisations traitant de larges volumes de transactions. Pour les entreprises, cette validation est effectuée par un Self-Assessment Questionnaire (SAQ).
+La norme de sécurité de l’industrie des cartes de paiement (PCI DSS) concerne les informations propriétaires relatives aux normes de sécurité pour les organisations, lorsque celles-ci traitent les cartes de crédit venant des grands systèmes de carte comme Visa, MasterCard, American Express, Discover et JCB. La norme PCI est mandatée par les sociétés de carte de paiement, et administrée par le Payment Card Industry Security Standards Council. La norme a été créée pour augmenter les contrôles sur les données des titulaires de carte, et ainsi réduire les fraudes. La validation de la conformité est effectuée tous les ans par un Qualified Security Assessor (QSA) externe ou un Internal Security Assessor (ISA) spécifique à la firme. Il crée alors un Report on Compliance (ROC ou rapport sur la conformité) pour les organisations traitant de larges volumes de transactions. Pour les entreprises, cette validation est effectuée par un Questionnaire d’auto-évaluation (SAQ).
 
 ## <a name="personal-data"></a>Données à caractère personnel
 
@@ -41,15 +46,20 @@ Les données personnelles sont des informations qui peuvent être utilisées pou
 
 ## <a name="gdpr"></a>RGPD
 
-Un des développements les plus importants dans ce sens est le Règlement général sur la protection des données (RGPD). Celui-ci a été conçu pour renforcer la protection des données pour les personnes au sein de l’Union européenne. Le RGPD exige que les données concernant les personnes (comme « un nom, une adresse postale, une photo, une adresse e-mail, des coordonnées bancaires, des publications sur des réseaux sociaux, des informations médicales ou l’adresse IP d’un ordinateur ») restent sur des serveurs au sein de l’UE et ne soient pas transférées hors de celle-ci. Il exige également que les entreprises informent les personnes en cas de violations des données, et engagent un délégué à la protection des données (DPD). D’autres pays ont développé des réglementations semblables, ou sont en train de le faire.
+Un des principaux développements dans ce sens est le Règlement général sur la protection des données (RGPD). Celui-ci a été conçu pour renforcer la protection des données pour les personnes au sein de l’Union européenne. Le RGPD exige que les données concernant les personnes (comme « un nom, une adresse postale, une photo, une adresse e-mail, des coordonnées bancaires, des publications sur des réseaux sociaux, des informations médicales ou l’adresse IP d’un ordinateur ») restent sur des serveurs au sein de l’UE et ne soient pas transférées hors de celle-ci. Il exige également que les entreprises informent les personnes en cas de violations des données, et engagent un délégué à la protection des données (DPD). D’autres pays ont développé des réglementations semblables, ou sont en train de le faire.
 
 ## <a name="compliant-foundation-in-azure"></a>Conformité dans Azure
 
-Pour aider les clients à répondre à leurs propres obligations en matière de conformité dans les industries et sur les marchés réglementés du monde entier, Azure gère la plus grande gamme de solutions de conformité du secteur, aussi bien en termes de largeur (nombre total d’offres) et de profondeur (nombre de services B2C dans l’étendue d’évaluation). Les offres de conformité Azure sont regroupées dans quatre segments : applicables globalement, gouvernement des États-Unis, propres à un secteur d’activité, et propres à une région ou un pays.
+Pour aider les clients à respecter leurs propres obligations en matière de conformité dans les industries et sur les marchés réglementés du monde entier, Azure gère la plus grande gamme de solutions de conformité du secteur en termes de largeur (nombre total d’offres) et de profondeur (nombre de services B2C dans l’étendue d’évaluation). Les offres de conformité Azure sont regroupées en quatre segments :
+
+- Global
+- Gouvernement américain
+- Secteur d’activité
+- Zones géographiques
 
 Les offres de conformité Azure sont basées sur divers types de garanties, notamment des certifications, attestations, validations, autorisations et évaluations officielles créées par des sociétés d’audit tierces indépendantes, ainsi que des modifications contractuelles, des auto-évaluations et des documents de conseils pour les clients créés par Microsoft. Chaque description d’offre de ce document fournit une instruction mise à jour indiquant quels services Azure orientés client se trouvent dans le champ d’application de l’évaluation, et donne des liens vers des ressources téléchargeables pour aider les clients à gérer leurs obligations en matière de conformité.
 
-Le centre de gestion de la confidentialité Microsoft fournit des informations plus détaillées sur les [offres de conformité Azure](https://www.microsoft.com/trust-center/compliance/compliance-overview). En outre, toute la documentation téléchargeable est disponible à certains clients Azure sur le [portail d’approbation de services](https://servicetrust.microsoft.com) dans les sections suivantes :
+Le centre de gestion de la confidentialité Microsoft fournit des informations plus détaillées sur les [offres de conformité Azure](https://www.microsoft.com/trust-center/compliance/compliance-overview). En outre, toute la documentation téléchargeable est disponible pour certains clients Azure sur le [Portail d’approbation de services](https://servicetrust.microsoft.com) dans les sections suivantes :
 
 - **Rapports d’audit :** Comprend les sections relatives aux rapports FedRAMP, d’évaluation GRC, ISO, PCI DSS et SOC.
 - **Ressources de protection des données :** Inclut des guides de conformité, des questions fréquentes (FAQ), des livres blancs, ainsi que des sections sur les tests d’intrusion et les évaluations de sécurité.

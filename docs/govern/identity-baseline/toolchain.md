@@ -1,6 +1,6 @@
 ---
 title: Base de référence des identités dans Azure
-description: Découvrez comment les outils natifs Azure peuvent contribuer à affiner les stratégies et les processus qui vont dans le sens de la discipline de gouvernance de base de référence des identités.
+description: Découvrez comment les outils natifs Azure peuvent contribuer à affiner les stratégies et les processus qui vont dans le sens de la discipline Ligne de base des identités.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 368d2811bb54ef373be8df036d96452023891b83
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7000f40ebfedb6f5285f3e9148c7f07ebbc17ab5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434956"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218524"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Base de référence des identités dans Azure
 
-[Base de référence des identités](./index.md) est l’une des [cinq disciplines de la gouvernance cloud](../governance-disciplines.md). Cette discipline se concentre sur les manières d’établir des stratégies qui garantissent la cohérence et la continuité des identités utilisateurs, quel que soit le fournisseur de cloud hébergeant l’application ou la charge de travail.
+La [discipline Ligne de base des identités](./index.md) est l’une des [Cinq disciplines de gouvernance du cloud](../governance-disciplines.md). Cette discipline se concentre sur les manières d’établir des stratégies qui garantissent la cohérence et la continuité des identités utilisateurs, quel que soit le fournisseur de cloud hébergeant l’application ou la charge de travail.
 
-Les outils suivants sont inclus dans le guide de découverte sur Identité hybride.
+Les outils suivants sont inclus dans le guide de découverte de l’identité hybride.
 
 **Active Directory (local) :** Active Directory est le fournisseur d’identité le plus fréquemment utilisé dans l’entreprise pour stocker et valider les informations d’identification des utilisateurs.
 
@@ -39,8 +39,10 @@ Quand vous choisissez cette méthode, Azure AD gère le processus de connexion d
 
 **Authentification directe Azure AD :** Fournit une validation de mot de passe persistante pour les services d’authentification Azure AD à l’aide d’un agent logiciel qui s’exécute sur un ou plusieurs serveurs locaux.
 
+<!-- docsTest:ignore "pass-through authentication method" -->
+
 > [!NOTE]
-> La méthode d’authentification directe convient pour les entreprises qui, pour des raisons de sécurité, requièrent l’application immédiate d’heures d’ouverture de session, de stratégies de mot de passe et d’états des comptes d’utilisateur locaux.
+> La méthode d’authentification directe convient aux entreprises qui, pour des raisons de sécurité, requièrent l’application immédiate d’heures d’ouverture de session, de stratégies de mot de passe et d’états des comptes d’utilisateur locaux.
 
 **Authentification fédérée :**
 
@@ -48,26 +50,29 @@ Quand vous choisissez cette méthode, Azure AD transfère le processus d’auth
 
 L’article [Choisir la méthode d’authentification adaptée à Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) propose un arbre de décision pour vous aider à choisir la meilleure solution pour votre organisation.
 
-Le tableau suivant énumère les outils natifs qui peuvent aider à faire mûrir les stratégies et les processus qui supportent cette discipline de gouvernance.
+Le tableau suivant énumère les outils natifs qui peuvent aider à faire mûrir les stratégies et les processus qui supportent cette discipline.
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:ignore UserPrincipalName SamAccountName -->
 
-|Considération|Synchronisation de hachage du mot de passe + authentification unique transparente|Authentification directe + authentification unique transparente|Fédération avec AD FS|
-|:-----|:-----|:-----|:-----|
-|Où l’authentification se produit-elle ?|Dans le cloud|Dans le cloud, après un échange de vérification de mot de passe sécurisé avec l’agent d’authentification local|Local|
-|Quelles sont les exigences pour le serveur local au-delà du système de provisionnement : Azure AD Connect ?|None|Un serveur par agent d’authentification supplémentaire|Deux ou plusieurs serveurs AD FS<br><br>Deux ou plusieurs serveurs WAP dans le réseau de périmètre/DMZ|
-|Quelles sont les exigences Internet et réseau locales au-delà du système de provisionnement ?|None|[Accès Internet sortant](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) à partir des serveurs exécutant des agents d’authentification|[Accès Internet entrant](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) pour les serveurs WAP dans le périmètre<br><br>Accès réseau entrant aux serveurs AD FS à partir des serveurs WAP dans le périmètre<br><br>Équilibrage de charge réseau|
-|Y a-t-il une exigence de certificat SSL ?|Non|Non|Oui|
-|Existe-t-il une solution de supervision de l’intégrité ?|Non requis|État de l’agent fourni par le [Centre d’administration Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication)|[Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs)|
-|Les utilisateurs obtiennent-ils une authentification unique auprès des ressources cloud à partir d’appareils joints au domaine au sein du réseau d’entreprise ?|Oui avec [authentification unique fluide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Oui avec [authentification unique fluide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Oui|
-|Quels types de connexion sont pris en charge ?|UserPrincipalName + mot de passe<br><br>Authentification Windows intégrée avec [authentification unique transparente](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)<br><br>[ID de connexion de substitution](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)|UserPrincipalName + mot de passe<br><br>Authentification Windows intégrée avec [authentification unique transparente](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)<br><br>[ID de connexion de substitution](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-faq)|UserPrincipalName + mot de passe<br><br>sAMAccountName + mot de passe<br><br>Authentification Windows intégrée<br><br>[Authentification par certificat et carte à puce](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-user-certificate-authentication)<br><br>[ID de connexion de substitution](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configuring-alternate-login-id)|
-|Windows Hello Entreprise est-il pris en charge ?|[Modèle de confiance de clé](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)<br><br>[Modèle de certificat de confiance avec Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune)|[Modèle de confiance de clé](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)<br><br>[Modèle de certificat de confiance avec Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune)|[Modèle de confiance de clé](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)<br><br>[Modèle de certificat de confiance ](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs)|
-|Quelles sont les options d’authentification multifacteur ?|[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication)<br><br>[Contrôles personnalisés avec accès conditionnel*](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview)|[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication)<br><br>[Contrôles personnalisés avec accès conditionnel*](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview)|[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication)<br><br>[Serveur Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy)<br><br>[Authentification multifacteur externe](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs)<br><br>[Contrôles personnalisés avec accès conditionnel*](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview)|
-|Quels sont les états de compte d’utilisateur pris en charge ?|Comptes désactivés<br>(délai pouvant atteindre 30 minutes)|Comptes désactivés<br><br>Compte verrouillé<br><br>Compte expiré<br><br>Mot de passe expiré<br><br>Heures de connexion|Comptes désactivés<br><br>Compte verrouillé<br><br>Compte expiré<br><br>Mot de passe expiré<br><br>Heures de connexion|
-|Quelles sont les options d’accès conditionnel ?|[Accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)|[Accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)|[Accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)<br><br>[Règles de revendication AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)|
-|Le blocage des protocoles hérités est-il pris en charge ?|[Oui](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)|[Oui](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)|[Oui](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/access-control-policies-w2k12)|
-|Pouvez-vous personnaliser le logo, l’image et la description sur les pages de connexion ?|[Oui, avec Azure AD Premium](https://docs.microsoft.com/azure/active-directory/customize-branding)|[Oui, avec Azure AD Premium](https://docs.microsoft.com/azure/active-directory/customize-branding)|[Oui](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-management#customlogo)|
-|Quels sont les scénarios avancés pris en charge ?|[Verrouillage de mot de passe intelligent](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)<br><br>[Rapports sur les informations d’identification divulguées](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-risk-events)|[Verrouillage de mot de passe intelligent](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication-smart-lockout)|Système d’authentification multisite à faible latence<br><br>[Verrouillage extranet AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-extranet-soft-lockout-protection)<br><br>[Intégration aux systèmes d’identité tiers](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)|
+<!-- TODO: Fix link for Azure Active Directory admin center -->
+
+| Considération | Synchronisation de hachage du mot de passe + authentification unique transparente | Authentification directe + authentification unique transparente | Fédération avec AD FS |
+| --- | --- | --- | --- |
+| Où l’authentification se produit-elle ? | Dans le cloud | Dans le cloud, après un échange de vérification de mot de passe sécurisé avec l’agent d’authentification local | Local |
+| Quelles sont les exigences pour le serveur local au-delà du système de provisionnement : Azure AD Connect ? | None | Un serveur par agent d’authentification supplémentaire | Deux ou plusieurs serveurs AD FS <br><br> Deux ou plusieurs serveurs WAP dans le réseau de périmètre/DMZ |
+| Quelles sont les exigences Internet et réseau locales au-delà du système de provisionnement ? | None | [Accès Internet sortant](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) à partir des serveurs exécutant des agents d’authentification | [Accès Internet entrant](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) pour les serveurs WAP dans le périmètre <br><br> Accès réseau entrant aux serveurs AD FS à partir des serveurs WAP dans le périmètre <br><br> Équilibrage de charge réseau |
+| Y a-t-il une exigence de certificat SSL ? | Non | Non | Oui |
+| Existe-t-il une solution de supervision de l’intégrité ? | Non requis | État de l’agent fourni par le [Centre d’administration Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication) | [Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs) |
+| Les utilisateurs obtiennent-ils une authentification unique auprès des ressources cloud à partir d’appareils joints au domaine au sein du réseau d’entreprise ? | Oui avec [authentification unique fluide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) | Oui avec [authentification unique fluide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) | Oui |
+| Quels types de connexion sont pris en charge ? | UserPrincipalName + mot de passe  <br><br>  Authentification Windows intégrée avec [Authentification unique transparente](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) <br><br> [ID de connexion de substitution](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom) | UserPrincipalName + mot de passe <br><br> Authentification Windows intégrée avec [Authentification unique transparente](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) <br><br> [ID de connexion de substitution](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-faq) | UserPrincipalName + mot de passe <br><br> SamAccountName + mot de passe <br><br> Authentification Windows intégrée <br><br> [Authentification par certificat et carte à puce](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-user-certificate-authentication) <br><br> [ID de connexion de substitution](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) |
+| Windows Hello Entreprise est-il pris en charge ? | [Modèle de confiance de clé](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Modèle de certificat de confiance avec Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [Modèle de confiance de clé](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Modèle de certificat de confiance avec Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [Modèle de confiance de clé](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Modèle de certificat de confiance ](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs) |
+| Quelles sont les options d’authentification multifacteur ? | [Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication) <br><br> [Contrôles personnalisés avec accès conditionnel*](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication) <br><br> [Contrôles personnalisés avec accès conditionnel*](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication) <br><br> [Serveur Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy) <br><br> [Authentification multifacteur externe](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs) <br><br> [Contrôles personnalisés avec accès conditionnel*](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview) |
+| Quels sont les états de compte d’utilisateur pris en charge ? | Comptes désactivés <br> (Délai pouvant atteindre 30 minutes) | Comptes désactivés <br><br> Compte verrouillé <br><br> Compte expiré <br><br> Mot de passe expiré <br><br> Heures de connexion | Comptes désactivés <br><br> Compte verrouillé <br><br> Compte expiré <br><br> Mot de passe expiré <br><br> Heures de connexion |
+| Quelles sont les options d’accès conditionnel ? | [Accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) | [Accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) | [Accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) <br><br> [Règles de revendication AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) |
+| Le blocage des protocoles hérités est-il pris en charge ? | [Oui](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection) | [Oui](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection) | [Oui](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/access-control-policies-w2k12) |
+| Pouvez-vous personnaliser le logo, l’image et la description sur les pages de connexion ? | [Oui, avec Azure AD Premium](https://docs.microsoft.com/azure/active-directory/customize-branding) | [Oui, avec Azure AD Premium](https://docs.microsoft.com/azure/active-directory/customize-branding) | [Oui](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-management#customlogo) |
+| Quels sont les scénarios avancés pris en charge ? | [Verrouillage de mot de passe intelligent](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-howitworks) <br><br> [Rapports sur les informations d’identification divulguées](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events) | [Verrouillage de mot de passe intelligent](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication-smart-lockout) | Système d’authentification multisite à faible latence <br><br> [Verrouillage extranet AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-extranet-soft-lockout-protection) <br><br> [Intégration aux systèmes d’identité tiers](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -75,6 +80,10 @@ Le tableau suivant énumère les outils natifs qui peuvent aider à faire mûrir
 > Contrôles personnalisés dans Azure AD. L’accès conditionnel ne prend actuellement pas en charge l’inscription d’appareil.
 
 ## <a name="next-steps"></a>Étapes suivantes
+
+<!-- TODO: The download button for this whitepaper returns 404. -->
+
+<!-- docsTest:ignore "Hybrid Identity Digital Transformation Framework" -->
 
 Le livre blanc [Hybrid Identity Digital Transformation Framework](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html) décrit un certain nombre de combinaisons et de solutions pour le choix et l’intégration de chacun de ces éléments.
 

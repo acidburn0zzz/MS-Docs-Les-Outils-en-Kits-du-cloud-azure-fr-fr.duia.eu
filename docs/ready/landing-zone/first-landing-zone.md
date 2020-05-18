@@ -7,15 +7,13 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04816ede2d9c46e60baef88652551e647049bd99
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67b4968a62e795c6dbd3c09a954dbe0edf12166d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120686"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219255"
 ---
-<!-- cSpell:ignore CAF -->
-
 # <a name="first-landing-zone"></a>Première zone d’accueil
 
 L’infrastructure as code (IaC) est une transition naturelle durant la plupart des opérations d’adoption du cloud. Le déploiement de vos premières zones d’atterrissage dans le cloud est généralement la première étape du passage à un environnement basé sur le code. Cet article vous aidera à comprendre la notion de _zone d’atterrissage_ et à déterminer laquelle de ces zones est la mieux adaptée à vos besoins d’adoption.
@@ -35,7 +33,7 @@ C. Certains plans d’adoption du cloud sont régis par des exigences de conform
 D. Quand un partenaire fournit des services gérés continus ou s’il s’est engagé par contrat à fournir le plan d’adoption, il fournit généralement sa propre zone d’atterrissage. L’utilisation de la zone d’atterrissage d’un partenaire peut accélérer les efforts d’adoption et garantir la cohérence des exigences de gestion opérationnelle. Toutefois, pour garantir l’alignement, vous devez tenir compte de la gouvernance interne et des exigences de sécurité.
 
 > [!NOTE]
-> Avant de passer à une approche basée sur le code et la refactorisation, les lecteurs doivent se familiariser avec les [priorités en concurrence derrière cette décision](../../strategy/balance-competing-priorities.md#balance-during-ready). Quand vous choisissez une approche de zone d’atterrissage, vous devez bien comprendre l’équilibre nécessaire entre « Délai d’adoption » et « Opérations à long terme ».
+> Avant de passer à une approche basée sur le code et la refactorisation, les lecteurs doivent se familiariser avec les [priorités en concurrence derrière cette décision](../../strategy/balance-competing-priorities.md#balance-during-the-ready-phase). Quand vous choisissez une approche de zone d’atterrissage, vous devez bien comprendre l’équilibre nécessaire entre _Délai d’adoption_ et _Opérations à long terme_.
 
 ## <a name="choosing-a-first-landing-zone"></a>Choix d’une première zone d’atterrissage
 
@@ -43,15 +41,15 @@ La sélection de la première zone d’atterrissage dépend de plusieurs variabl
 
 | Zone d’atterrissage                                 | Expérience cloud  | Scale             | Heure de découverte | Prêt pour la production | Hybride             | Données sensibles     | Stratégique   | Conformité         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|
-| [CAF Migrate](./migrate-landing-zone.md)     | Nouveau dans le cloud      | < 1 000 ressources    | 1 à 5 jours    | Étendue limitée -> | Extension nécessaire | Extension nécessaire | Extension nécessaire | Extension nécessaire |
-| [CAF Terraform](./terraform-landing-zone.md) | Divers modèles | Divers modèles | 10 à 20 semaines | Étendue limitée -> | Modules disponibles  | Modules disponibles  | Modules disponibles  | Modules disponibles  |
+| [Zone d’accueil de migration du framework d’adoption du cloud](./migrate-landing-zone.md)     | Nouveau dans le cloud      | < 1 000 ressources    | 1 à 5 jours    | Étendue limitée -> | Extension nécessaire | Extension nécessaire | Extension nécessaire | Extension nécessaire |
+| [Zone d’atterrissage CAF Terraform](./terraform-landing-zone.md) | Divers modèles | Divers modèles | 10 à 20 semaines | Étendue limitée -> | Modules disponibles  | Modules disponibles  | Modules disponibles  | Modules disponibles  |
 
 Le tableau suivant présente les mêmes zones d’atterrissage, mais d’un point de vue légèrement différent, afin d’aider les décisions plus techniques.
 
 | Zone d’atterrissage                                 | Hub                          | Spoke    | Modèle cloud | Technology      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
-| [CAF Migrate](./migrate-landing-zone.md)     | Refactorisation nécessaire            | Inclus | Azure uniquement  | Azure Blueprint |
-| [CAF Terraform](./terraform-landing-zone.md) | Inclus dans le module VDC       | Inclus | Multicloud  | Terraform       |
+| [Zone d’accueil de migration du framework d’adoption du cloud](./migrate-landing-zone.md)     | Refactorisation nécessaire            | Inclus | Azure uniquement  | Azure Blueprint |
+| [Zone d’atterrissage CAF Terraform](./terraform-landing-zone.md) | Inclus dans le module VDC       | Inclus | Multicloud  | Terraform       |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

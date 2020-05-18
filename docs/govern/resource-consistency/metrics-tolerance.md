@@ -1,6 +1,6 @@
 ---
-title: Métriques et indicateurs de tolérance au risque liée à la cohérence des ressources
-description: Utilisez le Framework d’adoption du cloud pour Azure pour quantifier la tolérance au risque métier liée à la cohérence des ressources.
+title: Mesures et indicateurs de tolérance au risque dans la discipline Cohérence des ressources
+description: Utilisez Cloud Adoption Framework pour Azure pour quantifier la tolérance au risque métier liée à la discipline Cohérence des ressources.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e7cf8bec88178908caeae27742e5fbc92155003
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ac55b8e0918000955924aa735fb46cd9518b9b57
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997354"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217997"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
-# <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Métriques de cohérence des ressources, indicateurs et tolérance au risque
+# <a name="risk-tolerance-metrics-and-indicators-in-the-resource-consistency-discipline"></a>Mesures et indicateurs de tolérance au risque dans la discipline Cohérence des ressources
 
-Cet article vous aide à quantifier la tolérance au risque de l’activité en lien avec la cohérence des ressources. La définition de métriques et d’indicateurs vous aide à créer une étude de rentabilité pour investir dans la maturation de la discipline Cohérence des ressources.
+Apprenez à quantifier la tolérance au risque de l’entreprise associée à la discipline Cohérence des ressources. La définition de mesures et d’indicateurs vous aide à créer une étude de rentabilisation pour investir dans la maturité de cette discipline.
 
 ## <a name="metrics"></a>Mesures
 
-La discipline Cohérence des ressources se concentre sur la réponse aux risques liés à la gestion opérationnelle de vos déploiements cloud. Dans le cadre de votre analyse des risques, vous aurez besoin de collecter des données relatives à vos opérations informatiques pour déterminer le risque auquel vous êtes exposé et l’importance d’investir dans la gouvernance Cohérence des ressources pour vos déploiements cloud planifiés.
+La cohérence des ressources se concentre sur la réponse aux risques liés à la gestion opérationnelle de vos déploiements cloud. Dans le cadre de votre analyse des risques, vous aurez besoin de collecter des données relatives à vos opérations informatiques pour déterminer le risque auquel vous êtes exposé et l’importance d’investir dans la discipline Cohérence des ressources pour vos déploiements cloud planifiés.
 
 Chaque organisation a ses propres scénarios opérationnels, mais les éléments suivants représentent des exemples utiles des métriques à collecter lors de l’évaluation de la tolérance au risque dans la discipline Cohérence des ressources :
 
@@ -48,7 +48,7 @@ Chaque organisation a ses propres scénarios opérationnels, mais les éléments
 
 ## <a name="risk-tolerance-indicators"></a>Indicateurs de tolérance au risque
 
-Les plateformes cloud offrent un ensemble de fonctionnalités de base permettant aux équipes de déploiement de gérer efficacement de petits déploiements sans planification ou processus supplémentaires importants. Par conséquent, les premières charges de travail de développement/test ou d’expérimentation incluant une quantité relativement faible de ressources cloud présentent un faible niveau de risque, et n’auront probablement pas besoin de beaucoup pour la mise en place d’une stratégie formelle Cohérence des ressources.
+Les plateformes cloud offrent un ensemble de fonctionnalités de base permettant aux équipes de déploiement de gérer efficacement de petits déploiements sans planification ou processus supplémentaires importants. Par conséquent, les premières charges de travail de développement/test ou d’expérimentation incluant une quantité relativement basse de ressources cloud présentent un faible niveau de risque et n’auront probablement pas besoin de beaucoup pour la mise en place d’une stratégie formelle Cohérence des ressources.
 
 Cependant, à mesure que la taille de vos ressources cloud augmente, leur gestion devient de plus en plus difficile. Avec davantage de ressources dans le cloud, il est essentiel de pouvoir identifier la propriété de celles-ci et de contrôler celles qui sont utiles afin de minimiser les risques. À mesure que davantage de charges de travail stratégiques sont déployées dans le cloud, le temps d’activité du service devient plus critique et la tolérance en lien avec le coût potentiel de perturbations du service diminue rapidement.
 
@@ -59,7 +59,7 @@ Une fois que vous avez une base de référence, établissez des seuils minimaux 
 - **Déclencheur de marquage et de nommage.** Une entreprise disposant de plus de _X_ ressources dépourvues des informations de marquage requises ou ne respectant pas les standards de nommage doit envisager d’investir dans la discipline Cohérence des ressources afin d’affiner ces standards et de garantir leur application cohérente aux ressources déployées dans le cloud.
 - **Déclencheur de surapprovisionnement de ressources.** Si une entreprise a plus de _X %_ de ses ressources utilisant régulièrement une faible proportion de leurs capacités de mémoire, d’UC ou de réseau disponibles, il est conseillé d’investir dans la discipline Cohérence des ressources afin d’optimiser l’utilisation des ressources pour ces éléments.
 - **Déclencheur de sous-approvisionnement de ressources.** Si une entreprise a plus de _X %_ de ses ressources épuisant régulièrement la plupart de leurs capacités de mémoire, d’UC ou de réseau, il est conseillé d’investir dans la discipline Cohérence des ressources afin de s’assurer de disposer des ressources nécessaires pour éviter des interruptions de service.
-- **Déclencheur d’âge de ressource.** Une entreprise disposant de plus de _X_ ressources qui n’ont pas été mises à jour depuis plus de _y_ mois pourrait tirer profit d’un investissement dans la discipline Cohérence des ressources visant à garantir que les ressources actives sont dûment corrigées et saines, tout en éliminant celles qui sont obsolètes ou inutilisées.
+- **Déclencheur d’âge de ressource.** Une entreprise disposant de plus de _x_ ressources qui n’ont pas été mises à jour depuis plus de _y_ mois pourrait tirer profit d’un investissement dans la discipline Cohérence des ressources visant à garantir que les ressources actives sont dûment corrigées et saines, tout en éliminant celles qui sont obsolètes ou inutilisées.
 - **Déclencheur relatif au contrat de niveau de service (SLA).** Lorsqu’une entreprise n’est pas capable de respecter les contrats de niveau de service de ses clients externes ou partenaires internes, elle doit investir dans la discipline Accélération du déploiement afin de réduire les temps d’arrêt du système.
 - **Déclencheur relatif au temps de récupération.** Lorsqu’une entreprise dépasse les seuils de temps de récupération définis après une défaillance du système, elle doit investir dans l’amélioration de sa discipline Accélération du déploiement pour réduire ou éliminer les pannes ou l’impact des temps d’arrêt des composants individuels.
 - **Déclencheur d’intégrité de machine virtuelle.** Une entreprise dont plus de _X_ % des machines virtuelles rencontrent un problème d’intégrité critique doit investir dans la discipline Cohérence des ressources pour identifier les problèmes et améliorer la stabilité des machines virtuelles.
@@ -71,9 +71,9 @@ Les métriques et déclencheurs exacts à utiliser pour évaluer la tolérance a
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle de gestion cloud ](./template.md), documenter les métriques et les indicateurs de tolérance correspondant au plan d’adoption du cloud actuel.
+Utilisez le [modèle de discipline Cohérence des ressources](./template.md) pour documenter les mesures et indicateurs de tolérance qui correspondent au plan d’adoption du cloud actuel.
 
-Considérez les exemples de cohérence des ressources comme points de départ permettant de développer des stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
+Considérez les exemples de stratégies de Cohérence des ressources comme des points de départ permettant de développer vos propres stratégies qui répondent à des risques métier spécifiques, dans la continuité de vos plans d’adoption du cloud.
 
 > [!div class="nextstepaction"]
 > [Examiner les exemples de stratégies](./policy-statements.md)

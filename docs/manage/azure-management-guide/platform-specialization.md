@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 421e079d1d219818670328db208a2269bf1dcfdb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37826614e405ddb5cb15db62ffce7cfe43b2ec20
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426767"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216637"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Spécialisation de la plateforme pour la gestion cloud
 
@@ -30,14 +30,14 @@ Les opérations de charge de travail et de plateforme nécessitent la modificati
 
 Ce tableau présente quelques processus, outils et effets potentiels courants communs aux lignes de base de gestion améliorée des clients :
 
-|Process  |Outil  |Objectif  |Niveau de gestion suggéré  |
-|---------|---------|---------|---------|
-|Améliorer la conception du système|Infrastructure Azure Architecture|Améliorer la conception architecturale de la plateforme pour optimiser les opérations|N/A|
-|Automatiser la correction|Azure Automation|Répondre aux données de plateforme avancées avec une automatisation spécifique à une plateforme|Opérations de plateforme|
-|Catalogue de services|Centre d'applications managées|Fournir un catalogue en libre-service de solutions approuvées répondant aux normes organisationnelles|Opérations de plateforme|
-|Performances du conteneur|Azure Monitor pour des conteneurs|Surveillance et diagnostic des conteneurs|Opérations de plateforme|
-|Performances des données Platform as a Service (PaaS)|Azure SQL Analytics|Surveillance et diagnostic pour les bases de données PaaS|Opérations de plateforme|
-|Performances des données Infrastructure as a service (IaaS)|Vérification d’intégrité SQL Server|Surveillance et diagnostic pour les bases de données IaaS|Opérations de plateforme|
+| Process | Outil | Objectif  | Niveau de gestion suggéré |
+|---|---|---|---|
+| Améliorer la conception du système | Infrastructure Azure Architecture | Améliorer la conception architecturale de la plateforme pour optimiser les opérations | N/A |
+| Automatiser la correction | Azure Automation | Répondre aux données de plateforme avancées avec une automatisation spécifique à une plateforme | Opérations de plateforme |
+| Catalogue de services | Centre d'applications managées | Fournir un catalogue en libre-service de solutions approuvées répondant aux normes organisationnelles | Opérations de plateforme |
+| Performances du conteneur | Azure Monitor pour des conteneurs | Surveillance et diagnostic des conteneurs | Opérations de plateforme |
+| Performances des données Platform as a Service (PaaS) | Azure SQL Analytics | Surveillance et diagnostic pour les bases de données PaaS | Opérations de plateforme |
+| Performances des données Infrastructure as a service (IaaS) | Vérification d’intégrité SQL Server | Surveillance et diagnostic pour les bases de données IaaS | Opérations de plateforme |
 
 ## <a name="high-level-process"></a>Processus de haut niveau
 
@@ -65,11 +65,11 @@ En complément du Framework d’adoption cloud, Azure Architecture Framework fou
 
 Azure Architecture Framework se concentre sur l’amélioration par le biais des cinq principes de la conception système :
 
-- **Scalabilité :** Mise à l’échelle des ressources de plateforme communes pour gérer une charge accrue
-- **Disponibilité :** Réduction des interruptions d’activité par l’amélioration du potentiel de disponibilité
-- **Résilience :** Amélioration du temps de récupération pour réduire la durée des interruptions
-- **Sécurité :** Protection des applications et des données contre les menaces externes
-- **Gestion :** Processus opérationnels propres aux ressources de plateforme communes
+- **Scalabilité :** Mise à l’échelle des ressources de plateforme communes pour gérer une charge accrue.
+- **Disponibilité :** Réduction des interruptions d’activité par l’amélioration de la durée de bon fonctionnement potentielle.
+- **Résilience :** Amélioration du temps de récupération pour réduire la durée des interruptions.
+- **Sécurité :** Protection des applications et des données contre les menaces externes.
+- **Gestion :** Processus opérationnels propres aux ressources de plateforme communes.
 
 Les dettes techniques et les défauts architecturaux sont à l'origine de la plupart des interruptions d'activité. Pour les déploiements existants, les améliorations de la conception système peuvent être vues comme le paiement d’une dette technique existante. Pour les nouveaux déploiements, ces améliorations peuvent être vues comme l’évitement d’une dette technique.
 

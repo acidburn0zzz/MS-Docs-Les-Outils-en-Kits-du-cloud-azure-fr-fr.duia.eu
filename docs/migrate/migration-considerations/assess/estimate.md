@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a9996ac0cc1b3ab324fb16b5f03f37adccaa84bb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3537c41610a49b2fd600bb5d81197c515e5c6164
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432809"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219374"
 ---
 # <a name="estimate-cloud-costs"></a>Estimer les coûts du cloud
 
@@ -22,9 +22,9 @@ Pendant la migration, plusieurs facteurs peuvent affecter les décisions et les 
 
 La taille de votre patrimoine numérique affecte directement les décisions de migration. Les migrations qui impliquent moins de 250 machines virtuelles peuvent être estimées beaucoup plus facilement qu’une migration impliquant plus de 10 000 machines virtuelles. Il est fortement recommandé de sélectionner une charge de travail plus petite pour votre première migration. Cela permet à votre équipe d’apprendre à estimer les coûts d’un effort de migration simple avant de tenter d’estimer des migrations de charges de travail plus importantes et plus complexes.
 
-Toutefois, notez que les migrations de charges de travail uniques et de taille modeste peuvent tout de même impliquer un volume très variable de ressources de soutien. Si votre migration implique moins de 1 000 machines virtuelles, un outil comme [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) est probablement suffisant pour collecter les données sur l’inventaire et prévoir les coûts. D’autres options d’outils de calcul des coûts sont décrites dans l’article sur les [calculs des coûts du patrimoine numérique](../../../digital-estate/calculate.md).
+Toutefois, notez que les migrations de charges de travail uniques et de taille modeste peuvent tout de même impliquer un volume très variable de ressources de soutien. Si votre migration implique moins de 1 000 machines virtuelles, un outil comme [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) est probablement suffisant pour collecter les données sur l’inventaire et prévoir les coûts. D’autres options d’outils de calcul des coûts sont décrites dans l’article sur les [calculs des coûts du patrimoine numérique](../../../digital-estate/calculate.md).
 
-Pour les patrimoines numériques de plus de 1 000 appareils, il est toujours possible de diviser une estimation en quatre ou cinq itérations actionnables, ce qui rend le processus d’estimation plus gérable. Pour les grands patrimoines ou lorsqu’un degré de précision des prévisions plus élevé est requis, une approche plus complète, comme celle décrite dans la section « [Patrimoine numérique](../../../digital-estate/index.md) » du Framework d’adoption du cloud, sera probablement nécessaire.
+Pour les patrimoines numériques de plus de 1 000 appareils, il est toujours possible de diviser une estimation en quatre ou cinq itérations actionnables, ce qui rend le processus d’estimation plus gérable. Pour les grands patrimoines ou lorsqu’un degré de précision des prévisions plus élevé est requis, une approche plus complète, comme celle décrite dans la section [Patrimoine numérique](../../../digital-estate/index.md) de Cloud Adoption Framework, sera probablement nécessaire.
 
 ## <a name="accounting-models"></a>Modèles de comptabilité
 
@@ -32,7 +32,7 @@ Modèles de comptabilité
 
 Si vous êtes familiarisé avec les processus traditionnels d’approvisionnement en informatique, l’estimation dans le cloud peut vous paraître étrangère. Lors de l’adoption de technologies cloud, l’acquisition passe d’un modèle de dépenses d’investissement rigide et structuré à un modèle de dépenses au fonctionnement fluide. Dans le modèle de dépenses en capital traditionnel, l’équipe informatique tente de consolider le pouvoir d’achat pour plusieurs charges de travail à travers différents programmes afin de centraliser un pool de ressources informatiques partagées pouvant prendre en charge chacune de ces solutions. Dans le modèle de dépenses d’exploitation du cloud, les coûts peuvent être directement attribués aux besoins des charges de travail individuelles, des équipes ou des unités commerciales. Cette approche permet une attribution plus directe des coûts au client interne soutenu. Lors de l’estimation des coûts, il est important de comprendre d’abord la mesure dans laquelle cette nouvelle fonctionnalité de gestion des comptes sera utilisée par l’équipe informatique.
 
-Pour ceux souhaitant répliquer l’approche héritée des dépenses d’investissement dans la comptabilité, utilisez les sorties de l'une des approches suggérées dans la section « [Taille du patrimoine numérique](#digital-estate-size) » ci-dessus pour obtenir un coût annuel. Ensuite, multipliez ce coût annuel par le cycle habituel d’actualisation du matériel de l’entreprise. Le cycle d’actualisation du matériel correspond à la fréquence à laquelle une entreprise remplace le matériel vieillissant, généralement mesuré en années. La fréquence d’exécution annuelle multipliée par le cycle d’actualisation du matériel crée une structure de coûts similaire à un modèle d’investissement en dépenses de capital.
+Pour ceux souhaitant répliquer l’approche héritée des dépenses d’investissement dans la comptabilité, utilisez les sorties de l'une des approches suggérées dans la section [Taille du patrimoine numérique](#digital-estate-size) ci-dessus pour obtenir un coût annuel. Ensuite, multipliez ce coût annuel par le cycle habituel d’actualisation du matériel de l’entreprise. Le cycle d’actualisation du matériel correspond à la fréquence à laquelle une entreprise remplace le matériel vieillissant, généralement mesuré en années. La fréquence d’exécution annuelle multipliée par le cycle d’actualisation du matériel crée une structure de coûts similaire à un modèle d’investissement en dépenses de capital.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

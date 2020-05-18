@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7259fced72aa959509f55bbb81e9fc4b2f182e36
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 609c4f9f369e27c699f72cf85ebe311dbf918019
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433910"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219272"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -26,8 +26,8 @@ Les modèles de déploiement hybrides pendant la migration peuvent réduire les 
 
 L’utilisation d’une solution de cloud hybride permet aux organisations d’adapter l’échelle des ressources de calcul. Elle élimine aussi la nécessité de consentir des investissements conséquents pour gérer de brefs pics de demande. Les changements dans votre entreprise peuvent entraîner la libération de ressources locales pour des données ou des applications plus sensibles. Il est plus facile, plus rapide et moins onéreux de mettre hors service les ressources cloud. Vous payez uniquement pour les ressources que votre organisation utilise temporairement, au lieu de devoir acheter et gérer des ressources supplémentaires. Cette approche réduit la quantité d’équipements qui pourraient rester inutilisés pendant de longues périodes. Le cloud computing hybride est une plateforme offrant tous les avantages du cloud computing (flexibilité, extensibilité et rentabilité), et une exposition minimale des données conservées en local.
 
-![Création d’une cohérence cloud hybride pour l’identité, la gestion, la sécurité, les données, le développement et DevOps](../../_images/hybrid-consistency.png)
-*Figure 1 : création d’une cohérence cloud hybride pour l’identité, la gestion, la sécurité, les données, le développement et DevOps.*
+![Création de la cohérence de cloud hybride entre identité, gestion, sécurité, données, développement et DevOps](../../_images/hybrid-consistency.png)
+_Figure 1 : Création de la cohérence de cloud hybride entre identité, gestion, sécurité, données, développement et DevOps._
 
 Une solution de cloud hybride véritable doit fournir quatre composants, chacun d’eux apportant des avantages significatifs :
 

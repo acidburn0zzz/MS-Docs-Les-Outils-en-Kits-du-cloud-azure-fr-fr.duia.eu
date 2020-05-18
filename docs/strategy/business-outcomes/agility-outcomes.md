@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 29e30f6980d583850f5af6c82302d91b0078d049
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: feff683b4b19018895cc7eb9ac3ede6b03cd5300
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433785"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218932"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exemples de résultats souhaités en termes d’agilité
 
@@ -32,9 +32,11 @@ Pour les entreprises bien implantées et les nouveaux venus, l’agilité métie
 
 Pendant les efforts d’innovation dans le cloud, le Time-to-market est une mesure essentielle de la capacité du service informatique à répondre aux changements de marché. Dans de nombreux cas, un responsable d’entreprise peut avoir un budget existant pour la création d’une application ou le lancement d’un nouveau produit. Le fait de communiquer clairement un avantage Time-to-market peut inciter ce responsable à rediriger le budget vers le parcours de transformation du service informatique.
 
-- **Exemple 1 :** La division européenne d’une société américaine doit se conformer aux réglementations RGPD en protégeant les données client dans une base de données qui prend en charge les opérations du Royaume-Uni. La version existante de SQL ne prend pas en charge la sécurité au niveau des lignes nécessaire. Une mise à niveau sur place serait trop disruptive. En utilisant Azure SQL pour répliquer et mettre à niveau la base de données, le client ajoute la mesure de conformité nécessaire en quelques semaines.
+- **Exemple 1 :** La division européenne d’une société américaine doit se conformer aux réglementations RGPD en protégeant les données client dans une base de données qui prend en charge les opérations du Royaume-Uni. La version existante de SQL Server ne prend pas en charge la sécurité au niveau des lignes nécessaire. Une mise à niveau sur place serait trop disruptive. En utilisant Azure SQL Database pour répliquer et mettre à niveau la base de données, le client ajoute la mesure de conformité nécessaire en quelques semaines.
 
 - **Exemple 2 :** Une société de logistique a découvert un segment inexploité du marché, mais elle a besoin d’une nouvelle version de son application phare pour capturer cette part de marché. Son plus grand concurrent a effectué la même découverte. Grâce à l’exécution d’un effort d’innovation pour les applications cloud, la société adopte l’obsession du client et une approche de développement orientée DevOps pour devancer son concurrent de _x_ mois. Ce saut à l’entrée du marché a permis de sécuriser la base de clients.
+
+<!-- docsTest:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 
 ### <a name="aurora-health-care"></a>Aurora Health Care
 
@@ -42,9 +44,12 @@ le système de santé transforme les services en ligne en expérience numérique
 
 <!-- cSpell:ignore Jamey Shiels -->
 
-> « En tant qu’équipe, nous nous concentrons sur les solutions de haute qualité et la vitesse. Le choix d’Azure a été une décision source de transformation pour nous. »  
-> Jamey Shiels  
-> Vice-Président de l’expérience numérique  
+> « En tant qu’équipe, nous nous concentrons sur les solutions de haute qualité et la vitesse. Le choix d’Azure a été une décision source de transformation pour nous. »
+>
+> Jamey Shiels
+>
+> Vice-Président de l’expérience numérique
+>
 > Aurora Health Care
 
 ## <a name="provision-time"></a>Délai de provisionnement

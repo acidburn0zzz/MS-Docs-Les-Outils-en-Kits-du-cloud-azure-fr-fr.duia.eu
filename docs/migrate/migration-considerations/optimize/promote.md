@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0ec1144e93c449f15579d5cf0246bb44785faed0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc67072e80cc752a1167ad453a56fd96f6890874
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429276"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219238"
 ---
-<!-- cSpell:ignore CISO prepromotion -->
+<!-- cSpell:ignore CISO -->
 
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "80429276"
 
 La promotion vers la production marque la fin de la migration d’une charge de travail vers le cloud. Une fois que la ressource et toutes ses dépendances sont promues, le trafic de production est redirigé. La redirection du trafic rend obsolètes les ressources locales, ce qui leur permet d’être désactivées.
 
-Le processus de promotion varie en fonction de l’architecture de la charge de travail. Toutefois, il existe plusieurs prérequis cohérents et quelques tâches courantes. Cet article décrit chacune d’entre elles et sert de check-list de prépromotion.
+Le processus de promotion varie en fonction de l’architecture de la charge de travail. Toutefois, il existe plusieurs prérequis cohérents et quelques tâches courantes. Cet article décrit chacune d’entre elles et sert de liste de vérification avant les promotions.
 
 ## <a name="prerequisite-processes"></a>Processus préalables
 

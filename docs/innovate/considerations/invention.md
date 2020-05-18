@@ -7,22 +7,22 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 010702ef16c3350049e8cc3cd84a26266fe77661
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bacb3b97934044bed3b1e7466b0a8ecb06efb33b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427500"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217487"
 ---
 # <a name="develop-digital-inventions"></a>Développer des inventions numériques
 
-Comme décrit dans [Innovation dans l'économie numérique](./index.md), l'innovation nécessite un équilibre entre *invention* et *adoption*. Les retours des clients et un partenariat avec ces derniers sont essentiels pour susciter l’adoption. Les disciplines décrites dans la prochaine section définissent une série d’approches pour développer des inventions numériques en gardant à l’esprit l’adoption et l’empathie vis-à-vis du client. Chacune des disciplines est brièvement décrite, et chaque processus est associé à des liens permettant d’obtenir plus d’informations.
+Comme décrit dans [Innovation dans l'économie numérique](./index.md), l'innovation nécessite un équilibre entre _invention_ et _adoption_. Les retours des clients et un partenariat avec ces derniers sont essentiels pour susciter l’adoption. Les disciplines décrites dans la prochaine section définissent une série d’approches pour développer des inventions numériques en gardant à l’esprit l’adoption et l’empathie vis-à-vis du client. Chacune des disciplines est brièvement décrite, et chaque processus est associé à des liens permettant d’obtenir plus d’informations.
 
 ![Méthodologie d’innovation du Framework d’adoption du cloud](../../_images/innovate/innovate-methodology.png)
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>Résumé de chaque discipline d’invention numérique
 
-Les disciplines suivantes ne sont pas *toutes* nécessaires pour stimuler l’innovation dans un cas donné. L’article [Développer en faisant preuve d’empathie vis-à-vis du client](./build.md), fournit des conseils pour tester une hypothèse à chaque itération. En définissant la sortie de chaque itération en tant que [produit viable minimal (MVP)](../../govern/policy-compliance/index.md), cela devrait vous permettre d’impliquer le moins de disciplines possible.
+Les disciplines suivantes ne sont pas _toutes_ nécessaires pour stimuler l’innovation dans un cas donné. L’article [Développer en faisant preuve d’empathie vis-à-vis du client](./build.md), fournit des conseils pour tester une hypothèse à chaque itération. En définissant la sortie de chaque itération en tant que [produit viable minimal (MVP)](../../govern/policy-compliance/index.md), cela devrait vous permettre d’impliquer le moins de disciplines possible.
 
 - **[Démocratiser les données](./data.md) :** En mettant les données entre les mains des clients, des partenaires et des employés, vous encouragez l’observation innovante. Ingérez, centralisez, gouvernez et partagez les données.
 - **[Impliquer par le biais d’applications ](./apps.md):** Les utilisateurs accèdent à la connaissance par le biais d’applications et d’expériences. Donnez aux développeurs professionnels et citoyens les moyens de créer rapidement des applications.

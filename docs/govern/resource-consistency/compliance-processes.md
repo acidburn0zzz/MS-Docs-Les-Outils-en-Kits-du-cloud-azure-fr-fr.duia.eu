@@ -1,6 +1,6 @@
 ---
 title: Processus de conformité à la stratégie de cohérence des ressources
-description: Utilisez le Framework d’adoption du cloud pour Azure pour découvrir une approche de création de processus qui vont dans le sens d’une discipline de gouvernance de cohérence des ressources.
+description: Utilisez Cloud Adoption Framework pour Azure pour découvrir une approche de création de processus qui vont dans le sens d’une discipline Cohérence des ressources.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dd9f23a35e4e97605c23fbc52d32433eab97539b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9d53f9ad9f69e80f4ff65f31f29e00f8e2bb3f90
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433663"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218235"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processus de conformité à la stratégie de cohérence des ressources
 
-Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent la [cohérence des ressources](./index.md). Une gouvernance efficace de la cohérence des ressources cloud commence par des processus manuels récurrents. Ces processus ont été conçus pour identifier l’inefficacité opérationnelle, améliorer la gestion des ressources déployées, et garantir un minimum d’interruptions pour les charges de travail critiques. Ces processus manuels sont complétés par la supervision, l’automatisation et des outils afin de réduire la surcharge de gouvernance et de permettre de répondre plus rapidement aux écarts à la stratégie.
+Cet article décrit une approche des processus d’adhésion à la stratégie qui gouverne la [cohérence des ressources](./index.md). Une gouvernance efficace de la cohérence des ressources cloud commence par des processus manuels récurrents. Ces processus ont été conçus pour identifier les inefficacités opérationnelles, améliorer la gestion des ressources déployées et garantir un minimum d’interruptions pour les charges de travail critiques. Ces processus manuels sont complétés par la supervision, l’automatisation et des outils afin de réduire la surcharge de gouvernance et de permettre de répondre plus rapidement aux écarts à la stratégie.
 
 ## <a name="planning-review-and-reporting-processes"></a>Processus de planification, de révision et de génération de rapports
 
-Les plateformes cloud offrent tout un ensemble d’outils et de fonctionnalités de gestion que vous pouvez utiliser pour organiser, approvisionner, mettre à l’échelle et minimiser les temps d’arrêt. L’utilisation de ces outils afin de structurer et d’exécuter vos déploiements cloud de manière efficace et de minimiser les risques potentiels demande de faire appel à des processus et stratégies réfléchis. En parallèle, vous devrez travailler en étroite collaboration avec les équipes en charge des opérations informatiques et les parties prenantes de l’entreprise.
+Les plateformes cloud offrent tout un ensemble d’outils et de fonctionnalités de gestion que vous pouvez utiliser pour organiser, approvisionner, mettre à l’échelle et minimiser les temps d’arrêt. L’utilisation de ces outils visant à structurer et exécuter vos déploiements cloud de manière efficace et à minimiser les risques potentiels demande de faire appel à des processus et stratégies réfléchis. En parallèle, vous devrez travailler en étroite collaboration avec les équipes en charge des opérations informatiques et les parties prenantes de l’entreprise.
 
 Les éléments suivants représentent un ensemble d’exemples de processus généralement impliqués dans la discipline Cohérence des ressources. Ces exemples constituent des points de départ pour planifier les processus qui vous permettront de mettre à jour la stratégie de cohérence des ressources à mesure que l’entreprise évolue et selon les commentaires des équipes informatiques chargés d’implémenter les mesures de gouvernance.
 
@@ -31,19 +31,19 @@ Les éléments suivants représentent un ensemble d’exemples de processus gén
 
 **Test de déploiement :** Dans le cadre du processus de déploiement, l’équipe de gouvernance cloud, en collaboration avec les équipes en charge des opérations cloud, est tenue de passer en revue le déploiement pour valider la conformité à la stratégie Cohérence des ressources.
 
-**Planification annuelle :** Tous les ans, effectuez une révision de haut niveau de la stratégie Cohérence des ressources. Étudiez les plans d’expansion de l’entreprise ou ses priorités pour l’avenir, puis mettez à jour les stratégies d’adoption du cloud afin d’identifier l’augmentation des risques potentiels ou d’autres besoins émergents pour la Cohérence des ressources. Utilisez ce temps de révision annuelle pour examiner les dernières meilleures pratiques liées à la Cohérence des ressources cloud. Puis intégrez ces pratiques dans vos stratégies et processus de révision.
+**Planification annuelle :** Tous les ans, effectuez une révision de haut niveau de la stratégie Cohérence des ressources. Étudiez les plans d’expansion de l’entreprise ou ses priorités pour l’avenir, puis mettez à jour les stratégies d’adoption du cloud afin d’identifier l’augmentation des risques potentiels ou d’autres besoins émergents pour la cohérence des ressources. Utilisez ce temps de révision annuelle pour examiner les dernières meilleures pratiques liées à la cohérence des ressources cloud. Puis intégrez ces pratiques dans vos stratégies et processus de révision.
 
 **Planification et révision trimestrielles :** Tous les trimestres, effectuez une révision des données opérationnelles et des rapports d’incident afin d’identifier les modifications requises dans la stratégie Cohérence des ressources. Dans le cadre de ce processus, observez les changements d’utilisation et de performances des ressources, afin d’identifier les augmentations et diminutions requises en termes d’allocation des ressources. Par ailleurs, identifiez les charges de travail ou ressources qui peuvent être mises hors service.
 
-Ce processus de planification constitue également un moment idéal pour évaluer les lacunes des membres de votre équipe de gouvernance cloud en lien avec les risques, nouveaux ou évolutifs, liés à la Cohérence des ressources en tant que discipline. Invitez le personnel informatique concerné à participer aux révisions et à la planification en tant que conseillers techniques temporaires ou membres permanents de votre équipe.
+Ce processus de planification constitue également un moment idéal pour évaluer les lacunes des membres de votre équipe de gouvernance du cloud en lien avec les stratégies et les risques, nouveaux ou évolutifs, associés à la discipline Cohérence des ressources. Invitez le personnel informatique concerné à participer aux révisions et à la planification en tant que conseillers techniques temporaires ou membres permanents de votre équipe.
 
 **Apprentissage et formation :** Deux fois par mois, offrez des sessions de formation pour vous assurer que le personnel informatique et les développeurs connaissent les dernières exigences et recommandations pour la stratégie Cohérence des ressources. Dans le cadre de ce processus, relisez et mettez à jour toute la documentation et les autres ressources de formation pour vous assurer qu’elles correspondent aux dernières instructions stratégiques de l’entreprise.
 
 **Révisions d’audit et création de rapports mensuelles :** Tous les mois, effectuez un audit sur tous les déploiements cloud afin de garantir leur alignement continu sur la stratégie Cohérence des ressources. Examinez les activités associées à la stratégie avec le personnel informatique, puis identifiez les problèmes de conformité qui n’ont pas encore été pris en charge par le processus d’application et de supervision continues. Le résultat de cette révision est un rapport pour l’équipe de la stratégie cloud et chaque équipe d’adoption du cloud afin de communiquer sur les performances et l’adhésion générales vis-à-vis de la stratégie. Le rapport est également conservé à des fins d’audit et juridiques.
 
-## <a name="ongoing-monitoring-processes"></a>Processus de supervision continue
+## <a name="processes-for-ongoing-monitoring"></a>Processus de surveillance continue
 
-Votre stratégie de gouvernance Cohérence des ressources réussit si l’état actuel et passé de votre infrastructure cloud est clairement identifiable. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet de l’intégrité et de l’activité de votre environnement cloud, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance continue indiqués ci-dessus nécessitent des données de qualité pour s’assurer que la stratégie peut être modifiée. De cette manière, vous pouvez optimiser l’utilisation des ressources cloud et améliorer les performances globales des charges de travail hébergées sur le cloud.
+Votre stratégie Consistance des ressources réussit si l’état actuel et passé de votre infrastructure cloud est clairement identifiable. Si vous ne pouvez pas analyser les mesures et données pertinentes au sujet de l’intégrité et de l’activité de votre environnement cloud, vous ne pourrez pas identifier les changements de risques ni détecter les violations de vos tolérances aux risques. Les processus de gouvernance continue indiqués ci-dessus nécessitent des données de qualité pour s’assurer que la stratégie peut être modifiée. De cette manière, vous pouvez optimiser l’utilisation des ressources cloud et améliorer les performances globales des charges de travail hébergées sur le cloud.
 
 Assurez-vous que vos équipes informatiques ont implémenté des systèmes de supervision automatisés pour votre infrastructure cloud recueillant les données de journaux d’activité pertinentes dont vous avez besoin pour évaluer les risques. Soyez proactif dans le cadre de la supervision de ces systèmes afin d’assurer la détection et l’atténuation rapides des violations potentielles des stratégies, et assurez-vous que votre stratégie de supervision est conforme à vos besoins opérationnels.
 
@@ -63,7 +63,7 @@ Les déclencheurs et mesures d’application ci-après fournissent des exemples 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À l’aide du [modèle de gestion cloud](./template.md), documentez les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
+Utilisez le [modèle de discipline Ligne de base des identités](./template.md) pour documenter les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
 
 Pour obtenir des conseils sur l’exécution des stratégies de gestion cloud en harmonie avec les plans d’adoption, consultez l’article sur l’amélioration de la discipline.
 
