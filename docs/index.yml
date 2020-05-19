@@ -11,12 +11,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 04/20/2020
-  ms.openlocfilehash: 2214466178729bcf6cb0e6ddd02a22d036039004
-  ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+  ms.openlocfilehash: 79cb54103165ff42402513e66053456b124bd77d
+  ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/12/2020
-  ms.locfileid: "83228301"
+  ms.lasthandoff: 05/14/2020
+  ms.locfileid: "83398997"
 highlightedContent:
   items:
   - title: Démarrez votre voyage vers le cloud
@@ -67,7 +67,7 @@ productDirectory:
     - url: ./plan/suggested-skills.md
       text: Plan de préparation des compétences
     - url: ./plan/template.md
-      text: Plan d’adoption du cloud DevOps
+      text: Plan d’adoption du cloud pour DevOps
   - title: Ready
     imageSrc: ./_images/caf-ready.png
     links:
@@ -120,7 +120,7 @@ productDirectory:
     - url: ./manage/considerations/business-alignment.md
       text: Engagements métier
     - url: ./manage/best-practices.md
-      text: Développer la ligne de base
+      text: Étendre la base de référence
     - url: ./manage/design-principles.md
       text: Évaluer les principes de conception
   - title: Organiser
@@ -172,7 +172,7 @@ conceptualContent:
 additionalContent:
   sections:
   - title: Recherche de support
-    summary: Si vous rencontrez des difficultés dans votre voyage vers l’adoption du cloud, Microsoft dispose de ressources dédiées pour vous aider à trouver le déclic.
+    summary: Si vous rencontrez des difficultés dans votre parcours d’adoption du cloud, Microsoft dispose de ressources dédiées pour vous aider à avancer.
     items:
     - title: FastTrack for Azure
       summary: Obtenir de l’aide des ingénieurs de Microsoft

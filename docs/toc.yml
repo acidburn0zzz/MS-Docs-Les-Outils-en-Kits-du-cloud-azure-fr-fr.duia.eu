@@ -41,6 +41,8 @@ items:
         href: get-started/reliability.md
       - name: Garantir des performances cohérentes
         href: get-started/performance.md
+      - name: Permettre aux clients de réussir
+        href: get-started/enable.md
       - name: Aligner votre organisation
         href: get-started/org-alignment.md
       - name: Créer une équipe chargée de la stratégie cloud
@@ -1265,24 +1267,50 @@ items:
         href: organize/index.md
       - name: Fonctions cloud requises
         items:
-          - name: Stratégie cloud
+          - name: Fonctions de stratégie cloud
             href: organize/cloud-strategy.md
-          - name: Adoption du cloud
+          - name: Fonctions d’adoption du cloud
             href: organize/cloud-adoption.md
-          - name: Gouvernance cloud
+          - name: Fonctions de gouvernance cloud
             href: organize/cloud-governance.md
-          - name: Équipe informatique centrale
+          - name: Fonctions d’informatique centralisée
             href: organize/central-it.md
-          - name: Opérations cloud
+          - name: Fonctions d’exploitation du cloud
             href: organize/cloud-operations.md
-          - name: Centre d’excellence de cloud
+          - name: Fonctions du centre d’excellence du cloud
             href: organize/cloud-center-of-excellence.md
-          - name: Plateforme cloud
+          - name: Fonctions de plateforme cloud
             href: organize/cloud-platform.md
-          - name: Automatisation du cloud
+          - name: Fonctions d’automatisation du cloud
             href: organize/cloud-automation.md
-          - name: Sécurité cloud
-            href: organize/cloud-security.md
+          - name: "Fonctions de sécurité\_du cloud"
+            items:
+              - name: "Fonctions de l’équipe de sécurité\_du cloud"
+                href: organize/cloud-security.md
+              - name: Stratégie et normes
+                href: organize/cloud-security-policy-standards.md
+              - name: Centre des opérations de sécurité
+                href: organize/cloud-security-operations-center.md
+              - name: Architecture de la sécurité
+                href: organize/cloud-security-architecture.md
+              - name: Gestion de la conformité de la sécurité
+                href: organize/cloud-security-compliance-management.md
+              - name: Personnes de sécurité
+                href: organize/cloud-security-people.md
+              - name: Sécurité des applications et DevSecOps
+                href: organize/cloud-security-apsec-devsecops.md
+              - name: Sécurité des données
+                href: organize/cloud-security-data-security.md
+              - name: Sécurité d’infrastructure et de point de terminaison
+                href: organize/cloud-security-infrastructure-endpoint.md
+              - name: Identité et clés
+                href: organize/cloud-security-identity-keys.md
+              - name: Informations sur les menaces
+                href: organize/cloud-security-threat-intelligence.md
+              - name: Gestion de la posture
+                href: organize/cloud-security-posture-management.md
+              - name: Préparation aux incidents
+                href: organize/cloud-security-incident-preparation.md
       - name: Développer la structure des équipes
         href: organize/organization-structures.md
       - name: Aligner la matrice RACI

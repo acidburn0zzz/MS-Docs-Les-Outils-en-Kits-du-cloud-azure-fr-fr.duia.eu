@@ -4,17 +4,16 @@ description: Consultez les guides de gouvernance cloud qui illustrent les bonnes
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: d3f664aa94228da83ee86fd51392958341269c1e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6fceb9665712b4d787689ad2e3e709a5ac14d0d0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214733"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400744"
 ---
 # <a name="cloud-governance-guides"></a>Guides de gouvernance cloud
 
@@ -26,36 +25,15 @@ Pour commencer votre parcours d’adoption du cloud, choisissez un des guides de
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./standard/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Guide de gouvernance standard</h3>
-                        <p>Guide pour la plupart des organisations basées sur le modèle à deux abonnements recommandé, conçu pour les déploiements dans plusieurs régions, mais sans englober les clouds publics et souverains/gouvernementaux.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./complex/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Guide de gouvernance pour les entreprises complexes</h3>
-                        <p>Guide pour les entreprises qui sont gérées par plusieurs unités commerciales informatiques indépendantes ou qui englobent des clouds publics et souverains/gouvernementaux.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+- [Guide de gouvernance standard](./standard/index.md) : Guide pour la plupart des organisations basées sur le modèle à deux abonnements recommandé, conçu pour les déploiements dans plusieurs régions, mais sans englober les clouds publics et souverains/gouvernementaux.
+
+> [!div class="nextstepaction"]
+> [Guide de gouvernance standard](./standard/index.md)
+
+- [Guide de gouvernance pour les entreprises complexes](./complex/index.md) : Guide pour les entreprises qui sont gérées par plusieurs unités commerciales informatiques indépendantes ou qui englobent des clouds publics et souverains/gouvernementaux.
+
+> [!div class="nextstepaction"]
+> [Guide de gouvernance pour les entreprises complexes](./complex/index.md)
 
 <!-- markdownlint-enable MD033 -->
 

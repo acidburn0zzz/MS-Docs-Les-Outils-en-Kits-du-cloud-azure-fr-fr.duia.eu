@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 638f8dad1d7f284104765b28fe53561d98e02b56
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222757"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399817"
 ---
-<!--docsTest:disable - TODO -->
-
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guides de décision concernant le nommage et l’étiquetage des ressources
@@ -75,15 +73,17 @@ Dans le cadre de votre processus de planification, aidez-vous des questions suiv
 Les modèles d’étiquetage courants listés ci-dessous montrent comment vous pouvez utiliser l’étiquetage pour organiser les ressources cloud. Ces modèles ne sont pas destinés à être exclusifs et peuvent être utilisés en parallèle, fournissant ainsi plusieurs façons d’organiser les ressources en fonction des besoins de votre entreprise.
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:disable -->
 
 | Type d’étiquette | Exemples | Description |
 |-----|-----|-----|
-| Fonctionnelle | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | Permet d’attribuer une catégorie aux ressources par rapport à leur rôle au sein d’une charge de travail, à l’environnement dans lequel elles ont été déployées, ou par rapport à d’autres fonctionnalités ou détails opérationnels |
-| classification ; | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | Classifie une ressource selon son utilisation et les stratégies qui y sont appliquées |
-| Comptabilité | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | Permet à une ressource d’être associée à des groupes d’une organisation à des fins de facturation |
+| Fonctionnelle | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | Permet d’attribuer une catégorie aux ressources par rapport à leur rôle au sein d’une charge de travail, à l’environnement dans lequel elles ont été déployées, ou par rapport à d’autres fonctionnalités ou détails opérationnels. |
+| classification ; | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | Classifie une ressource selon son utilisation et les stratégies qui y sont appliquées. |
+| Comptabilité | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | Permet à une ressource d’être associée à des groupes d’une organisation à des fins de facturation. |
 | Partenariat | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | Fournit des informations sur la façon dont les utilisateurs (en dehors de l’équipe informatique) sont liés à la ressource ou affectés par celle-ci. |
-| Objectif | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | Aligne les ressources sur les fonctions métier pour mieux prendre en charge les décisions relatives aux investissements |
+| Objectif | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | Aligne les ressources sur les fonctions métier pour mieux prendre en charge les décisions relatives aux investissements. |
 
+<!-- docsTest:enable -->
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="learn-more"></a>En savoir plus
