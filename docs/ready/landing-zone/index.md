@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e5aa8d4d21b4bb1f01b1bad091c13512aa4f8a96
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: fbb39153dc729b7822c53520e9424a5280cb013a
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400112"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621747"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Avant de définir des zones d’atterrissage, il est important de comprendre un 
 > [!CAUTION]
 > La séparation des responsabilités ne doit pas décourager les équipes à utiliser cette bonne pratique uniquement sur la base actuelle de l’allocation du personnel ou des structures d’équipe. Lors de l’adoption précoce du cloud, une équipe d’adoption unique peut conserver temporairement toutes les responsabilités liées à l’adoption de la technologie cloud et à la gouvernance, la sécurité et les opérations pour un petit nombre de charges de travail. Si le plan à terme comprend la séparation des responsabilités, voire l’isolation des tâches, cette approche est toujours la bonne pratique recommandée.
 
-**Responsabilités partagées :** La _fondation de plateforme_ fournit des contrôles centralisés pour régir la plateforme cloud. Toutefois, il existe toujours une responsabilité partagée entre tous les membres de l’équipe pour prendre en compte les exigences en matière d’identité, de sécurité, d’exploitation, de conformité et de gouvernance. Avant d’adopter une technologie dans une zone d’atterrissage, vous devez comprendre quels sont les utilitaires fournis par la _fondation de plateforme_ et ce que vous devrez implémenter dans la zone d’atterrissage pour assumer vos responsabilités partagées.
+**Responsabilités partagées :** La _fondation de plateforme_ fournit des contrôles centralisés pour régir la plateforme cloud. Il existe toujours une responsabilité partagée entre tous les membres de l’équipe pour prendre en compte les exigences en matière d’identité, de sécurité, d’exploitation, de conformité et de gouvernance. Avant d’adopter une technologie dans une zone d’atterrissage, vous devez comprendre quels sont les utilitaires fournis par la _fondation de plateforme_ et ce que vous devrez implémenter dans la zone d’atterrissage pour assumer vos responsabilités partagées.
 
 > [!IMPORTANT]
 > Les développeurs et les architectes qui déploient des solutions au sein d’une zone d'atterrissage peuvent se reporter à [l’infrastructure d’architecture Azure](https://docs.microsoft.com/azure/architecture/framework/) pour incorporer et développer ces piliers d’architecture partagée lors de la conception, de la construction ou de la prise en charge des charges de travail qui s’exécutent dans une zone d'atterrissage.
