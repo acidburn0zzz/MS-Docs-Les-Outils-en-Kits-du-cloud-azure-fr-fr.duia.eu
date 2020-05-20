@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 703a5152ef47d19ec5eb654f9ba4d83786562d12
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3eb722a170f508f749795fbfc91dc2ce58a1edb9
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224389"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621206"
 ---
 # <a name="encryption-decision-guide"></a>Guide de décision concernant le chiffrement
 
@@ -122,7 +122,7 @@ Le chiffrement des données en cours d’utilisation implique la sécurisation d
 Pour plus d’informations sur le chiffrement et la gestion des clés dans Azure, consultez :
 
 - **[Vue d’ensemble du chiffrement Azure ](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview):** Description détaillée de la façon dont Azure utilise le chiffrement pour sécuriser les données au repos et les données en transit.
-- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview) :** Key Vault est le principal système de gestion des clés qui permet de stocker et de gérer des clés de chiffrement, des secrets et des certificats dans Azure.
+- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview) :** Key Vault est le principal système de gestion des clés qui permet de stocker et de gérer des clés de chiffrement, des secrets et des certificats dans Azure.
 - **[Bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices).** Rubrique concernant les bonnes pratiques relatives au chiffrement et à la sécurité des données dans Azure.
 - **[Informatique confidentielle dans Azure ](https://azure.microsoft.com/solutions/confidential-compute):** L’informatique confidentielle d’Azure fournit des outils et des technologies pour créer des environnements d’exécution approuvés ou d’autres mécanismes de chiffrement permettant de sécuriser les données en cours d’utilisation.
 

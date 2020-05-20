@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ee28a021d3e58aae70efe0092bbef4698c897459
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 8a33ae2b86c7e78b4148e656f56080c403c5db47
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400849"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621280"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Gestion de cloud dans le Framework d’adoption du cloud
 
@@ -26,10 +26,10 @@ Pour vous préparer à cette phase du cycle d’adoption du cloud, le framework 
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png)     | [Établir une base de référence de gestion](./azure-management-guide/index.md) : Définissez les classifications de criticité, les outils de gestion de cloud et les processus requis pour respecter votre engagement minimal en termes de gestion des opérations.                                |
-| <br> ![2](../_images/icons/2.png)     | [Définir des engagements métier](./considerations/business-alignment.md) : Documentez les charges de travail prises en charge pour établir des engagements opérationnels avec l’entreprise et convenez des investissements de gestion de cloud pour chaque charge de travail.                                |
-| <br> ![3](../_images/icons/3.png)     | [Développer la base de référence de gestion](./best-practices.md) : En fonction des engagements métier et des décisions opérationnelles, tirez parti des bonnes pratiques incluses pour mettre en œuvre les outils de gestion de cloud requis.                                |
-| <br> ![4](../_images/icons/4.png)      | [Principes de conception et d’opérations avancés](./design-principles.md) : Les plateformes ou charges de travail nécessitant un niveau d’engagement métier plus élevé peuvent nécessiter un examen approfondi de l’architecture pour respecter les engagements en matière de résilience et de fiabilité.  |
+| <br> ![1](../_images/icons/1.png) | <br> [Établir une base de référence de gestion](./azure-management-guide/index.md) : Définissez les classifications de criticité, les outils de gestion de cloud et les processus requis pour respecter votre engagement minimal en termes de gestion des opérations.                                |
+| <br> ![2](../_images/icons/2.png) | <br> [Définir des engagements métier](./considerations/business-alignment.md) : Documentez les charges de travail prises en charge pour établir des engagements opérationnels avec l’entreprise et convenez des investissements de gestion de cloud pour chaque charge de travail.                                |
+| <br> ![3](../_images/icons/3.png) | <br> [Développer la base de référence de gestion](./best-practices.md) : En fonction des engagements métier et des décisions opérationnelles, tirez parti des bonnes pratiques incluses pour mettre en œuvre les outils de gestion de cloud requis.                                |
+| <br> ![4](../_images/icons/4.png) | <br> [Principes de conception et d’opérations avancés](./design-principles.md) : Les plateformes ou charges de travail nécessitant un niveau d’engagement métier plus élevé peuvent nécessiter un examen approfondi de l’architecture pour respecter les engagements en matière de résilience et de fiabilité.  |
 
 Les étapes précédentes créent des approches actionnables pour suivre la méthodologie de gestion du Framework d’adoption du cloud.
 
