@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 835614ca30fc4fc5ca3e617e920f46aa4039cd8b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3851fbc2634f98ce7e993be5cca14d89f523abf1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220360"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400620"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Amélioration de la discipline Accélération du déploiement
 
@@ -88,6 +88,8 @@ Une fois la transformation terminée, la gouvernance et les opérations doivent 
 - Générez des rapports sur les métriques post-déploiement et distribuez-les aux parties prenantes.
 - Révisez les instructions relatives à l’architecture pour guider les futurs processus d’adoption.
 - Continuez à communiquer avec les équipes et personnes concernées et formez-les régulièrement pour vous assurer de leur adhésion continue aux instructions relatives à l’architecture.
+
+<!-- docsTest:ignore "desired state configuration" -->
 
 **Activités potentielles :**
 

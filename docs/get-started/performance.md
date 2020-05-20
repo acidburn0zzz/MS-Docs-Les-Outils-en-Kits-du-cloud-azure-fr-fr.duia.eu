@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 6052e119cc2bf2ce078bfdc3df6613ff665e503f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 845574b9b7e045869561f43745a23ec104893d1f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230449"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400198"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>Bien démarrer : Garantir des performances cohérentes à l’échelle d’un portefeuille
 
 Comment garantir des performances adéquates dans un portefeuille de charges de travail ? Ce guide peut vous aider à établir des processus pour maintenir les performances dans toute l’entreprise. Les étapes décrites ici peuvent aider l’équipe des opérations à garantir la cohérence des attentes en matière de performances parmi toutes les charges de travail. Les performances dépendent également d’autres rôles et fonctions. Cet article mappe ces fonctions de support pour vous aider à créer un alignement entre chacune des équipes impliquées.
@@ -32,7 +30,7 @@ La base de référence de gestion des opérations, décrite dans le cadre du Clo
 
 - Améliorer la base de référence de gestion de façon à inclure des tâches de correction automatisées relatives aux écarts par rapport aux attentes de performances.
 - Quand des modifications d’architecture ou des modèles de données propres à la charge de travail sont nécessaires pour répondre aux exigences de performances, des opérations propres à la charge de travail peuvent offrir un contrôle accru sur les performances.
-- Documenter les décisions opérationnelles à l’échelle du portefeuille informatique dans le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx), en incluant notamment les décisions relatives à l’automatisation des performances dans la section « Conformité opérationnelle » de l’onglet « Base de référence ».
+- Documenter les décisions opérationnelles à l’échelle du portefeuille informatique dans le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx), en incluant notamment les décisions relatives à l’automatisation des performances dans la section « Conformité opérationnelle » de l’onglet « Base de référence ».
 
 **Conseils relatifs aux livrables :**
 
@@ -147,7 +145,7 @@ Les opérations à long terme peuvent être affectées par les décisions prises
 
 - Tester la disponibilité opérationnelle des déploiements de production à l’aide de stratégies de cohérence des ressources.
 - Valider le respect des exigences des opérations et de la conception de la cohérence des ressources.
-- Documenter les exigences des opérations avancées dans le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
+- Documenter les exigences des opérations avancées dans le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Conseils relatifs aux livrables :**
 

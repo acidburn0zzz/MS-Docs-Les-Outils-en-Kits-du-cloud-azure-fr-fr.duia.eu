@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 81955582145c9ffa2b63364a1ed2948715cf37d5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a885de58423bea1cef9e2e87ef4d09f4cb6e9363
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230329"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399875"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-build-a-cloud-strategy-team"></a>Bien démarrer : Créer une équipe de stratégie cloud
 
 Pour aboutir, chaque parcours d'adoption du cloud requiert un certain niveau de stratégie. Ce guide de prise en main vous aidera à créer une équipe dédiée ou une équipe virtuelle afin de fournir une stratégie cloud solide. La première étape consiste à déterminer si vous avez besoin d’une équipe de stratégie, ou si des membres de l’équipe existante peuvent fournir la stratégie cloud dans le cadre de responsabilités distribuées.
@@ -119,7 +117,7 @@ Cet exercice sera l'occasion de conversations qui pourront contribuer à créer 
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes en charge et de soutien |
+| Équipe responsable | Équipes responsable et de support |
 | --- | --- |
 | <li> Équipe de stratégie cloud | Passez en revue les motivations et l’orientation stratégique générale avec : <li> Équipe de gouvernance cloud <li> Équipe d’adoption du cloud <li> Centre d'excellence du cloud ou équipe informatique centrale |
 
@@ -165,7 +163,7 @@ Chaque membre de l’équipe de stratégie devra passer en revue les mythes et a
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes en charge et de soutien |
+| Équipe responsable | Équipes responsable et de support |
 | --- | --- |
 | <li> Équipe de stratégie cloud | <li> Équipe de gouvernance cloud <li> Équipe d’adoption du cloud <li> Centre d'excellence du cloud ou équipe informatique centrale |
 
@@ -190,7 +188,7 @@ Une fois la décision de mise en œuvre prise en concertation avec l'équipe de 
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes en charge et de soutien |
+| Équipe responsable | Équipes responsable et de support |
 | --- | --- |
 | <li> Équipe de stratégie cloud | <li> Équipe de gouvernance cloud <li> Équipe d’adoption du cloud <li> Centre d'excellence du cloud ou équipe informatique centrale |
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0e26e7ee1c4bc534ea461de2293fe69b75de1360
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d1cbf6c608bbea2374cb6325e755fc9367aedc03
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218388"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399606"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>Régit la méthodologie du cloud
 
@@ -25,7 +25,7 @@ Le Framework d’adoption du cloud fournit des guides de gouvernance qui décriv
 
 Lorsque la fin d’un parcours n’est pas définie, on parle d’errance. Il est important d’élaborer une vision globale de l’état final avant d’entreprendre la première étape. L’infographie suivante sert de référence pour ébaucher un état final. Il ne constitue pas votre point de départ, mais montre une destination potentielle.
 
-![Infographie du modèle de gouvernance du Framework d’adoption du cloud (FAC)](../_images/operational-transformation-govern-highres.png)
+![Infographie du modèle de gouvernance du Framework d’adoption du cloud (FAC)](../_images/operational-transformation-govern-large.png)
 
 Le modèle de gouvernance du Framework d’adoption du cloud (FAC) identifie certains domaines clés tout au long du parcours. Chaque domaine est associé à différents types de risques que l’entreprise doit prendre en compte à mesure qu’elle adopte des services cloud. Dans ce framework, le guide de gouvernance identifie certaines actions requises de l’équipe de gouvernance cloud. Chaque principe du modèle de gouvernance du Framework d’adoption du cloud (FAC) est décrit plus en détail. En général, ils incluent les éléments suivants :
 

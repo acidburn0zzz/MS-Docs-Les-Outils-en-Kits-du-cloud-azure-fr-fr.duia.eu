@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 30c25159dc677c5220c80697c282304f73a59a9b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: db90e2ca82164d645605e49dc288c21b610e12b9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218796"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399538"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -87,7 +87,7 @@ Dans les deux exemples, un administrateur de services d’abonnement se voit att
 ![Administrateur de services fédérés d’abonnement avec le rôle de propriétaire](../../_images/govern/design/governance-2-1.png)
 _Figure 3 : Abonnement dans lequel un administrateur de services fédérés se voit attribuer le rôle de propriétaire intégré._
 
-<!-- docsTest:ignore "resource group A" "resource group B" "resource groups A and B" "workload owner A" "workload owner B" -->
+<!-- docsTest:ignore "resource group A" "resource groups A and B" "workload owner A" -->
 
 1. Dans le premier exemple, le **propriétaire de la charge de travail A** ne possède pas d’autorisation au niveau de l’étendue de l’abonnement&mdash;par défaut, il ne possède donc pas de droit de gestion des accès aux ressources. Cet utilisateur souhaite déployer et gérer les ressources de sa charge de travail. Il doit contacter **l’administrateur de services fédérés** pour demander la création d’un groupe de ressources.
     ![Le propriétaire de la charge de travail demande la création du groupe de ressources A](../../_images/govern/design/governance-2-2.png)
@@ -168,7 +168,8 @@ Voyons tout d’abord un exemple de modèle de gestion des ressources utilisant 
 
 Commençons par examiner la première option. Vous allez utiliser le modèle d’autorisations dont il a été question dans la section précédente, avec un seul administrateur de services fédérés d’abonnement qui crée des groupes de ressources et y ajoute des utilisateurs disposant du rôle de **contributeur** ou de **lecteur** intégré.
 
-<!-- docsTest:ignore managedBy hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
+<!-- docsTest:ignore managedBy -->
+<!-- hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
 
 1. Le premier groupe de ressources déployé représente l’environnement **d’infrastructure partagée**. Le compte du **propriétaire de l’abonnement** crée un groupe de ressources nommé `netops-shared-rg` pour les ressources de l’infrastructure partagée.
     ![Création d’un groupe de ressources](../../_images/govern/design/governance-3-0d.png)

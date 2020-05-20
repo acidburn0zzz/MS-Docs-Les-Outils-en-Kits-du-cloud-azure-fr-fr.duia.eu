@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7e5512cba033adca5c3e88be265d45b5f8bc8f3c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215566"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621415"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -24,7 +24,7 @@ _Hub-and-spoke_ est un modèle de réseau visant à gérer de manière plus effi
 
 - **Réduction des coûts et amélioration de la gestion**. En centralisant les services qui peuvent être partagés par plusieurs charges de travail (comme les appliances virtuelles réseau et les serveurs DNS) en un seul endroit, le service informatique est capable de réduire les ressources et efforts de gestion redondants.
 - **Dépassement des limites des abonnements**. Pour exécuter les charges de travail informatiques volumineuses, il se peut que vous ayez besoin d’utiliser davantage de ressources que le quota autorisé par un abonnement Azure unique. Vous avez la possibilité de dépasser ces limites en effectuant le peering des réseaux virtuels de charge de travail issus de différents abonnements à un hub central. Pour plus d’informations, consultez [Limites des abonnements Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
-- **Séparation des problèmes**. Vous pouvez déployer des charges de travail individuelles entre les équipes informatiques centrales et celles dédiées aux charges de travail.
+- **Séparation des problèmes.** Vous pouvez déployer des charges de travail individuelles entre les équipes informatiques centrales et celles dédiées aux charges de travail.
 
 Les patrimoines cloud plus petits pourraient ne pas bénéficier de la structure et des capacités ajoutées offertes par ce modèle. Toutefois, il est préférable d’adopter une architecture de mise en réseau hub-and-spoke en cas d’efforts plus important d’adoption cloud et d’une des préoccupations mentionnées précédemment.
 

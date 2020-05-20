@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: c3bb04bd49a055e71a7572cd8c144a45f5da2efd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: af65cff02d7c3768bf5fca554334923cf2172937
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230341"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400161"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Bien démarrer : Créer une équipe des opérations cloud
 
@@ -39,7 +39,7 @@ En l'absence de contrat lié aux opérations du fournisseur de services ou DevOp
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes en charge et de soutien |
+| Équipe responsable | Équipes responsable et de support |
 | --- | --- |
 | <li> Équipe de stratégie cloud | <li> Équipe d’adoption du cloud <li> Équipe de gouvernance cloud |
 
@@ -55,12 +55,12 @@ L’équipe des opérations hérite des responsabilités opérationnelles de tou
 
 - Passez en revue le [modèle de stratégie et de plan](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) de votre entreprise avec les membres de l’équipe de stratégie cloud pour comprendre les motivations, les métriques et la stratégie.
 - Passez en revue le [modèle de plan d’adoption du cloud](../../plan/template.md) de votre entreprise avec les membres de l’équipe d’adoption du cloud pour comprendre les calendriers et la hiérarchisation.
-- Commencez à développer le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx) pour comprendre les exigences opérationnelles et engagements établis avec l’entreprise.
+- Commencez à développer le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour comprendre les exigences opérationnelles et engagements établis avec l’entreprise.
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes en charge et de soutien |
+| Équipe responsable | Équipes responsable et de support |
 | --- | --- |
 | <li> Équipe des opérations cloud | <li> Équipe de stratégie cloud <li> Équipe d’adoption du cloud <li> Équipe de gouvernance cloud <li> Centre d'excellence du cloud ou équipe informatique centrale |
 
@@ -80,7 +80,7 @@ L’adoption du cloud s’effectue généralement par vagues ou mises en product
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes en charge et de soutien |
+| Équipe responsable | Équipes responsable et de support |
 | --- | --- |
 | <li> Équipe des opérations cloud | <li> Équipe de stratégie cloud <li> Équipe d’adoption du cloud <li> Équipe de gouvernance cloud |
 
@@ -128,7 +128,7 @@ Passez en revue les engagements de base de référence pour les opérations avec
 **Conseils relatifs aux livrables :**
 
 - Créez un [alignement de l'entreprise](../../manage/considerations/business-alignment.md) dans le cloud.
-- Documentez le portefeuille et les attentes en matière d'opérations dans le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx).
+- Documentez le portefeuille et les attentes en matière d'opérations dans le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Équipe responsable :**
 
@@ -171,7 +171,7 @@ Les améliorations opérationnelles peuvent se traduire par plusieurs options :
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes en charge et de soutien |
+| Équipe responsable | Équipes responsable et de support |
 | --- | --- |
 | <li> Équipe de gouvernance cloud | <li> Équipe des opérations cloud |
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: efefa348324ab0c9dff86b5d19f7c3f11d9d437d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 94f51b92b50dabff8551e30e476d2738c3f2fef7
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223267"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621650"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -68,7 +68,7 @@ Pour accorder à un utilisateur l’accès à un abonnement :
 
 Pour accorder à un utilisateur l’accès à un groupe de ressources :
 
-1. Accédez à [Groupes de ressources](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
+1. Accédez à [Groupes de ressources](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
 1. Sélectionnez un groupe de ressources.
 1. Sélectionnez **Contrôle d’accès (IAM)** .
 1. Sélectionnez **+ Ajouter** > **Ajouter une attribution de rôle**.

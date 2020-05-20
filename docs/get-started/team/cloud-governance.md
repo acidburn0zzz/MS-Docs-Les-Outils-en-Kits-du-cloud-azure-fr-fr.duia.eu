@@ -7,18 +7,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 5b1d1cb9213b40242e95af60bead9ef3a919054a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ac6696cf71d43fb8cae3ec5d7e8fe455cf18d989
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230381"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400176"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-build-a-cloud-governance-team"></a>Bien démarrer : Créer une équipe de gouvernance cloud
 
-Une équipe de gouvernance cloud garantit que les risques et la tolérance aux risques sont évalués et gérés correctement. Cette équipe garantit une identification correcte des risques que l’entreprise ne peut pas tolérer. Les membres de cette équipe convertissent les risques en stratégies d’entreprise de gouvernance.
+Une équipe de gouvernance cloud garantit que les risques et la tolérance aux risques sont évalués et gérés correctement. Elle assure la bonne identification des risques que l’entreprise ne peut pas tolérer. Les membres de cette équipe convertissent les risques en stratégies d’entreprise de gouvernance.
 
 ![Bien démarrer avec la création d’une équipe de gouvernance cloud](../../_images/get-started/governance-team-map.png)
 
@@ -49,13 +47,13 @@ L’équipe de gouvernance garantit la cohérence et l’adhésion à un ensembl
 
 **Livrables :**
 
-- Discuter de l’implémentation actuelle et des plans d’adoption actuels avec chaque équipe.
+- Discutez de l’implémentation de l'état et des plans d’adoption actuels avec chaque équipe.
 
 **Conseils relatifs aux livrables :**
 
 - Passez en revue le [modèle de stratégie et de plan](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) de votre entreprise avec les membres de l’équipe de stratégie cloud pour comprendre les motivations, les métriques et la stratégie.
 - Passez en revue le [modèle de plan d’adoption du cloud](../../plan/template.md) de votre entreprise avec les membres de l’équipe d’adoption du cloud pour comprendre les calendriers et la hiérarchisation.
-- Consultez le [classeur Operations Management](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx) de l’équipe d’exploitation pour comprendre les engagements et les conditions d’exploitation qui ont été établis avec l’entreprise.
+- Consultez le [classeur Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) de l’équipe d’exploitation pour comprendre les engagements et les conditions d’exploitation qui ont été établis avec l’entreprise.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -70,7 +68,7 @@ L’adoption du cloud s’effectue généralement par vagues (ou mises en produc
 
 **Livrables :**
 
-- Établir une cadence avec chacune des équipes de support. Dans la mesure du possible, aligner cette cadence sur les cycles de mise en production et de planification.
+- Établissez une cadence avec chacune des équipes de soutien. Dans la mesure du possible, aligner cette cadence sur les cycles de mise en production et de planification.
 - Établir une cadence distincte directement avec l’équipe de stratégie cloud (ou plusieurs membres de l’équipe) afin de passer en revue les risques associés à la prochaine vague d’adoption et de mesurer le niveau de tolérance envers ces risques.
 
 **Conseils relatifs aux livrables :**
@@ -170,7 +168,7 @@ Les besoins de gouvernance augmentent à mesure que les phases supplémentaires 
 
 **Livrables :**
 
-- Passer en revue et accepter régulièrement les transferts à partir des équipes d’adoption du cloud.
+- Passez en revue et acceptez régulièrement les transferts issus des équipes d’adoption du cloud.
 
 **Conseils relatifs aux livrables :**
 
@@ -179,7 +177,7 @@ Les besoins de gouvernance augmentent à mesure que les phases supplémentaires 
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes responsable et de support |
+| Équipe responsable | Équipes en charge et de soutien |
 | --- | --- |
 | <li> Équipes d’adoption du cloud | <li> Équipe de gouvernance cloud <li> Équipe des opérations cloud |
 
@@ -187,4 +185,4 @@ Les besoins de gouvernance augmentent à mesure que les phases supplémentaires 
 
 Chaque entreprise est unique, il en va de même pour ses besoins en matière de gouvernance. Choisissez le niveau de maturité adapté à votre organisation et utilisez le Framework d’adoption du cloud pour sélectionner les pratiques, les processus et les outils qui vont vous aider à y parvenir.
 
-Au fur et à mesure que la gouvernance cloud mûrit, les équipes sont en mesure d’adopter le cloud selon un rythme plus rapide. Les efforts continus en matière d’adoption du cloud ont tendance à faire mûrir les opérations informatiques. Développez une [équipe des opérations cloud](./cloud-operations.md) ou collaborez étroitement avec votre équipe des opérations cloud pour vous assurer que la gouvernance fait partie du développement des opérations.
+Plus la gouvernance cloud mûrit, plus vite les équipes sont en mesure d’adopter le cloud. Les efforts continus en matière d’adoption du cloud ont tendance à faire mûrir les opérations informatiques. Développez une [équipe des opérations cloud](./cloud-operations.md) ou collaborez étroitement avec votre équipe des opérations cloud pour vous assurer que la gouvernance fait partie du développement des opérations.

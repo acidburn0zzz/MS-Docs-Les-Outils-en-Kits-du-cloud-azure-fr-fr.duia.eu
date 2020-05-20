@@ -7,15 +7,13 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 00efe3b582b5850ff7a5c6c1a6ab16977c6ada4d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cb0b963b68fbad8d883e7cbbfd107cc774136ad0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216892"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401084"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan d’adoption du cloud et Azure DevOps
 
 Azure DevOps est l’ensemble des outils basés sur le cloud pour les clients Azure qui gèrent des projets itératifs. Il comprend également des outils permettant de gérer les pipelines de déploiement et d’autres aspects importants de DevOps.
@@ -60,7 +58,7 @@ La vue la plus claire du plan d’adoption du cloud provient de la vue du backlo
 
 ## <a name="align-the-cloud-adoption-plan"></a>Aligner le plan d’adoption du cloud
 
-Les pages de présentation des phases de planification et de stratégie du cycle de vie d’adoption du cloud font toutes référence au document [Modèle de stratégie et de plan Cloud Adoption Framework](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ce modèle organise les décisions et les points de données qui aligneront le modèle de plan d’adoption du cloud avec vos plans spécifiques d’adoption. Si vous ne l’avez pas déjà fait, vous souhaiterez peut-être effectuer les exercices relatifs à la [stratégie](../strategy/index.md) et à la [planification](../plan/index.md) avant d’aligner votre nouveau projet.
+Les pages de présentation des phases de planification et de stratégie du cycle de vie d’adoption du cloud font toutes référence au document [Cloud Adoption Framework strategy and planning template](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) (Modèle de planification et de stratégie du Framework d’adoption du cloud). Ce modèle organise les décisions et les points de données qui aligneront le modèle de plan d’adoption du cloud avec vos plans spécifiques d’adoption. Si vous ne l’avez pas déjà fait, vous souhaiterez peut-être effectuer les exercices relatifs à la [stratégie](../strategy/index.md) et à la [planification](../plan/index.md) avant d’aligner votre nouveau projet.
 
 Les articles suivants prennent en charge l’alignement du plan d’adoption du cloud :
 

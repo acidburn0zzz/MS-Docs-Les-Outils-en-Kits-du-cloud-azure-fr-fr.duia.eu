@@ -7,14 +7,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 344931adc74456f8253cc3e53dfe034f8c071f52
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6ab95bab83c7683628c0ba4a0e332d8aba4b4034
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230681"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401267"
 ---
-# <a name="functions-of-a-cloud-security-team"></a>Fonctions d’une équipe de sécurité du cloud
+<!-- cSpell:ignore MarkSimos -->
+
+# <a name="cloud-security-functions"></a>Fonctions de sécurité du cloud
 
 Cet article fournit un résumé des fonctions organisationnelles requises pour gérer les risques liés à la sécurité des informations dans une entreprise. Ces fonctions organisationnelles forment collectivement le volet humain d’un système de cybersécurité globale. Chaque fonction peut être exercée par une ou plusieurs personnes, et chaque personne peut exercer une ou plusieurs fonctions, sur la base de divers facteurs tels que la culture, le budget et les ressources disponibles.
 
@@ -23,6 +25,8 @@ Le diagramme et la documentation qui suivent représentent une vue idéale des f
 ![Vue des fonctions d’une équipe de sécurité d’entreprise](../_images/security/enterprise-security-team.png)
 
 **La sécurité est un sport d’équipe :** Il est essentiel que les membres de l’équipe de sécurité se considèrent entre eux comme faisant partie d’une même équipe de sécurité, d’une même organisation et d’une communauté de sécurité plus large luttant contre les mêmes adversaires. Cette vision holistique permet à l’équipe de bien fonctionner en général. C’est d’autant plus important que les équipes travaillent sur des lacunes et chevauchements imprévus découverts au cours de l’évolution des rôles et des responsabilités.
+
+<!-- cSpell:ignore apsec -->
 
 ## <a name="security-functions"></a>Fonctions de sécurité
 

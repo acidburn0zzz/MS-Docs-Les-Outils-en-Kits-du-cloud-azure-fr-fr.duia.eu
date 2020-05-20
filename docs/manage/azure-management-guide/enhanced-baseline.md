@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a5cafc31b5ede4060aedf78ff40215cb7d132aaa
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4d17c8fe7251a4ce5281f94d8776ba5ceaddd181
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216790"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621229"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -78,7 +78,7 @@ L’unité de code de base pour fournir une correction automatisée est le runbo
 
 Pour créer ou gérer des runbooks :
 
-1. Accédez à [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Accédez à **Azure Automation**.
 1. Sélectionnez **Comptes Automation**, puis choisissez un des comptes répertoriés.
 1. Allez à **Automatisation de processus**.
 1. Les options présentées vous permettent de créer ou de gérer des runbooks, des planifications et d’autres fonctionnalités de correction automatisée.
@@ -87,7 +87,7 @@ Pour créer ou gérer des runbooks :
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Go to Azure Automation" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

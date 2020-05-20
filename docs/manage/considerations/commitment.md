@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d0f392d58efe65b8199aefeb9dbd554ed0896cae
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0ca1c1804b2c7116ed61e05a10a221b472a2807d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216178"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398753"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Engagement commercial dans la gestion cloud
 
@@ -49,7 +49,7 @@ Le [Guide de gestion Azure](../azure-management-guide/index.md) présente les ou
 <!-- -->
 
 > [!TIP]
-> Si vous utilisez le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud, les champs de gestion des opérations doivent être mis à jour de façon à refléter ces prérequis. Ces champs incluent le _niveau d’engagement_, le _contrat SLA composite_ et le _coût mensuel_. Le coût mensuel doit représenter le coût des outils de gestion opérationnelle ajoutés sur une base mensuelle.
+> Si vous utilisez le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud, les champs de gestion des opérations doivent être mis à jour de façon à refléter ces prérequis. Ces champs incluent le _niveau d’engagement_, le _contrat SLA composite_ et le _coût mensuel_. Le coût mensuel doit représenter le coût des outils de gestion opérationnelle ajoutés sur une base mensuelle.
 
 La ligne de base de la gestion des opérations sert de point de départ à valider dans chacune des sections suivantes.
 
@@ -110,7 +110,7 @@ Pour les solutions gérées, plusieurs principes de conception et solutions de m
 Les calculs suivants vous guideront dans les formules pour vous aider à mieux comprendre les différences entre les pertes et les investissements de gestion accrus. Pour obtenir des conseils sur le calcul du coût d’une gestion accrue, consultez [Automatisation de la charge de travail](./workload.md) et [Automatisation de la plateforme](./platform.md).
 
 > [!TIP]
-> Si vous utilisez le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud, mettez à jour les champs de gestion des opérations de façon qu’ils reflètent chaque conversation. Ces champs incluent le _niveau d’engagement_, le _contrat SLA composite_ et le _coût mensuel_. Le coût mensuel doit représenter le coût mensuel des outils de gestion opérationnelle ajoutés. Une fois mis à jour, les champs mettent à jour les formules ROI et chacun des champs suivants.
+> Si vous utilisez le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud, mettez à jour les champs de gestion des opérations de façon qu’ils reflètent chaque conversation. Ces champs incluent le _niveau d’engagement_, le _contrat SLA composite_ et le _coût mensuel_. Le coût mensuel doit représenter le coût mensuel des outils de gestion opérationnelle ajoutés. Une fois mis à jour, les champs mettent à jour les formules ROI et chacun des champs suivants.
 
 ### <a name="estimate-outage-hours-per-year"></a>Estimation de l’interruption (heures par année)
 

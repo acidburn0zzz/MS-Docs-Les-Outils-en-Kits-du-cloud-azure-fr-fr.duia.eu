@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5a7bfbffa84e7a64221d560b88067caebd311e85
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216586"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400781"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Créer un alignement des activités en gestion cloud
 
@@ -33,7 +33,7 @@ Heureusement, la mise en œuvre d’une stratégie d’adoption cloud et d’un 
 
 ## <a name="operations-management-workbook"></a>Classeur Operations Management
 
-Pour noter les décisions prises lors de cette conversation sur l’alignement des termes, un [classeur Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) est disponible sur notre site GitHub. Ce classeur ne permet pas de créer le contrat SLA ni de calculer les coûts. Il permet uniquement de capturer ces mesures et prévoir le retour sur les efforts de prévention des pertes.
+Pour noter les décisions prises lors de cette conversation sur l’alignement des termes, un [classeur Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) est disponible sur notre site GitHub. Ce classeur ne permet pas de créer le contrat SLA ni de calculer les coûts. Il permet uniquement de capturer ces mesures et prévoir le retour sur les efforts de prévention des pertes.
 
 Les mêmes charges de travail et ressources associées peuvent également être étiquetées directement dans Azure, si les solutions sont déjà déployées dans le cloud.
 

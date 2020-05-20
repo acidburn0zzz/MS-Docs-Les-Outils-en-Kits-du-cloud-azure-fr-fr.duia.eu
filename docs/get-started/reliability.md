@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8e17c53a2a54a212fa312b62b2ff527497583919
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c75b7a17c8c2676688f5221ec0e4d0f2ed0641a5
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230469"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400217"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Bien démarrer : Améliorer la fiabilité avec les contrôles appropriés
 
 Comment appliquer les bons contrôles pour améliorer la fiabilité ? Ce guide aide à réduire les interruptions liées aux incohérences dans la configuration, l’organisation des ressources, les bases de référence de sécurité ou la protection des ressources. Les étapes de ce guide aident l’équipe des opérations à équilibrer la fiabilité et les coûts dans le portefeuille informatique, et l’équipe de gouvernance à s’assurer que l’équilibre est appliqué de manière cohérente. La fiabilité dépend également d’autres rôles et fonctions. Cet article mappe ces différentes fonctions de support pour vous aider à créer un alignement entre chacune des équipes impliquées.
@@ -34,7 +32,7 @@ Toutes les charges de travail ne sont pas égales au moment de leur création. D
 - Négociez des engagements métier avec l’équipe de stratégie cloud afin de développer un plan pour les opérations avancées et les exigences de résilience.
 - Développez votre base de référence de gestion, si des opérations supplémentaires sont nécessaires pour la majorité des charges de travail.
 - Appliquez des exigences d’opérations avancées aux zones d’atterrissage et aux ressources qui prennent en charge des charges de travail plus critiques.
-- Documentez les décisions d’opérations dans le portefeuille informatique au sein du [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
+- Documentez les décisions d’opérations dans le portefeuille informatique au sein du [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Conseils pour la prise en charge de l’achèvement des livrables :**
 
@@ -158,7 +156,7 @@ Les opérations à long terme peuvent être affectées par les décisions prises
 
 - Testez la disponibilité opérationnelle des déploiements de production à l’aide de stratégies de cohérence des ressources.
 - Validez le respect des exigences des opérations et de la conception de la cohérence des ressources.
-- Documentez les exigences des opérations avancées dans le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
+- Documentez les exigences des opérations avancées dans le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Conseils pour la prise en charge de l’achèvement des livrables :**
 

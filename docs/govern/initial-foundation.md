@@ -4,17 +4,16 @@ description: Utilisez Cloud Adoption Framework pour Azure afin de démarrer avec
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 7ce353a03c57e89800d65edc5cdfbdec8c53d092
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5c3dbc530ff2e1f28c0927cead3a761463295c4d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218490"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399622"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Établir une fondation de gouvernance cloud initiale
 
@@ -30,38 +29,9 @@ Si vous avez suivi le Cloud Adoption Framework, vous avez peut-être déjà dép
 
 Voici deux exemples de fondations de gouvernance initiales (également appelées MVP de gouvernance) illustrant l’application d’une solide fondation pour la gouvernance à des déploiements nouveaux ou existants. Choisissez le MVP qui correspond le mieux aux besoins de votre entreprise pour commencer :
 
-<!-- markdownlint-disable MD033 -->
+- [Guide de gouvernance standard](./guides/standard/index.md) : Guide pour la plupart des organisations basées sur le modèle à deux abonnements initial recommandé, conçu pour les déploiements dans plusieurs régions, mais sans englober les clouds publics et souverains/gouvernementaux.
+- [Guide de gouvernance pour les entreprises complexes](./guides/complex/index.md) : Guide pour les entreprises qui sont gérées par plusieurs unités commerciales informatiques indépendantes ou qui englobent des clouds publics et souverains/gouvernementaux.
 
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./guides/standard/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Guide de gouvernance standard</h3>
-                        <p>Guide pour la plupart des organisations basées sur le modèle à deux abonnements initial recommandé, conçu pour les déploiements dans plusieurs régions, mais sans englober les clouds publics et souverains/gouvernementaux.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./guides/complex/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Guide de gouvernance pour les entreprises complexes</h3>
-                        <p>Guide pour les entreprises qui sont gérées par plusieurs unités commerciales informatiques indépendantes ou qui englobent des clouds publics et souverains/gouvernementaux.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="next-steps"></a>Étapes suivantes

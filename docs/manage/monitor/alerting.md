@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33aaab94c1f6758f6b77be62ab7a70ed2f6bc1ee
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223828"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400811"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -87,7 +87,7 @@ En général, les [solutions de gestion](https://docs.microsoft.com/azure/azure-
 Azure Monitor pour machines virtuelles | Les critères d’intégrité sont des métriques écrites dans le magasin de métriques. | Des alertes sont générées quand l’état d’intégrité passe d’une condition saine à une condition non saine. Cette alerte prend seulement en charge les groupes d’actions configurés pour envoyer des notifications par SMS ou par e-mail. |
 | | Les données du journal de performances du système d’exploitation de mappage et invité sont écrites dans le magasin de journaux. | Créez des alertes de requête de journal. |
 
-<!-- docsTest:ignore "speed driven" -->
+<!-- docsTest:ignore "speed driven by cost" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>Vitesse la plus rapide pilotée par le coût
 

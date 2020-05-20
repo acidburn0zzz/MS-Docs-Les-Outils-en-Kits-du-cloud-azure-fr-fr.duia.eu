@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2230fe8d8ee2f2c7d5b9a695ec01268e3306bff9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2114b212718adb22b190f854de665e0d59fa50a4
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217402"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398469"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Criticité pour l’entreprise en gestion cloud
 
@@ -58,7 +58,7 @@ En fonction de la table de mise à l’échelle de l’état critique précéden
 
 ## <a name="use-the-template"></a>Utiliser le modèle
 
-Les étapes suivantes s’appliquent si vous utilisez le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud.
+Les étapes suivantes s’appliquent si vous utilisez le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud.
 
 1. Enregistrez l’échelle des états critiques dans l’onglet **Mettre à l'échelle** du classeur.
 2. Mettez à jour chaque charge de travail qui se trouve dans l’onglet _Exemple_ ou _Nettoyer le modèle_ pour refléter l’état critique par défaut indiqué dans la colonne _État critique_.

@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.openlocfilehash: 828ab41080e4742fb633bb30467dda4bd4e3c535
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 686bac552a1c91efd7bbfede22221a0e61b6bcfa
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221958"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401244"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="cloud-strategy-functions"></a>Fonctions de stratégie cloud
 
 Une équipe de stratégie cloud définit des motivations et des résultats commerciaux, et valide et maintient l’alignement entre les priorités de l’entreprise et les efforts d’adoption du cloud. En l’absence d’équipe de stratégie cloud clairement définie, quelqu’un doit quand même pouvoir aligner les activités techniques sur les résultats pour l’entreprise. Cette même personne ou ce même groupe doit également gérer les changements dans le projet.

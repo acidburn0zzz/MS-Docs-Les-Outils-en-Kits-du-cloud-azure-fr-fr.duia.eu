@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a7662d8460581d143b75a8f95aa48bf290d39c2d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 69d1aaf7ff2a5bd3d71cb03fd1149019792c71f1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221754"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401287"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -43,10 +43,10 @@ Les composants déployés et leur rôle comprennent ce qui suit :
 | Composant | Responsabilité |
 |---|---|
 | Groupes de ressources | Principaux groupes de ressources nécessaires pour la base |
-| Journalisation de l’activité      | Audit de toutes les activités d’abonnement et de l’archivage : <li> Compte de stockage <li> Hubs d'événements Azure |
+| Journalisation de l’activité | Audit de toutes les activités d’abonnement et de l’archivage : <li> Compte de stockage <li> Hubs d'événements Azure |
 | Journalisation des diagnostics | Tous les journaux d’opérations sont conservés pendant un certain nombre de jours : <li> Compte de stockage <li> Event Hubs |
 | Log Analytics | Stocke tous les journaux d’opérations. Déploie des solutions courantes pour un examen approfondi des meilleures pratiques d’application : <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
-| Azure Security Center | Envoi de mesures et d’alertes en matière d’hygiène de sécurité par e-mail et numéro de téléphone                                                                                                                                                                                        |
+| Azure Security Center | Envoi de mesures et d’alertes en matière d’hygiène de sécurité par e-mail et numéro de téléphone |
 
 <!-- markdownlint-enable MD033 -->
 

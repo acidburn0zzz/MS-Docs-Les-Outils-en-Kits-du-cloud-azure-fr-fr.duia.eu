@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a49e52f94b2c9b84afd4e00402a4307fac21923b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 97da5f902fb195a4390b33ef5b8eed2f12ac4a94
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230533"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621191"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Bien démarrer : Accélérer l’innovation dans de nouveaux produits et services dans le cloud
 
 La création de produits et services dans le cloud nécessite une approche différente de la migration. La méthodologie Innover du Cloud Adoption Framework établit une approche qui oriente le développement de nouveaux produits et services.
@@ -31,6 +29,8 @@ Pour éviter les points de blocage courants, créez une stratégie métier clair
 **Livrables :**
 
 - Utilisez le [modèle de stratégie et de plan](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) pour enregistrer les motivations et les résultats métier souhaités.
+
+<!-- docsTest:ignore "Get started: Accelerate migration" -->
 
 **Conseils pour la prise en charge de l’achèvement des livrables :**
 
@@ -149,13 +149,13 @@ Définissez le plan des responsabilités opérationnelles à long terme concerna
 **Livrables :**
 
 - Effectuez l’[examen de l’architecture Azure](https://docs.microsoft.com/assessments/?id=azure-architecture-review) pour évaluer différentes décisions en matière d’architecture et de fonctionnement.
-- Ajustez le [classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour qu’il reflète toutes les opérations avancées nécessaires.
+- Ajustez le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour qu’il reflète toutes les opérations avancées nécessaires.
 
 **Conseils pour la prise en charge de l’achèvement des livrables :**
 
 - [Développer la base de référence de gestion](../manage/best-practices.md) : Cette section du Framework d'adoption du cloud vous guide au fil des différentes transitions vers la gestion opérationnelle dans le cloud.
 - [Gagner en spécificité avec les opérations avancées](../manage/design-principles.md) : Découvrez comment aller au-delà de votre base de référence de gestion.
-- Si des opérations avancées sont nécessaires pour prendre en charge vos besoins opérationnels, évaluez les [engagements métier](https://docs.microsoft.com/manage/considerations/business-alignment) pour déterminer les responsabilités opérationnelles des deux équipes.
+- Si des opérations avancées sont nécessaires pour prendre en charge vos besoins opérationnels, évaluez les [engagements métier](../manage/considerations/business-alignment.md) pour déterminer les responsabilités opérationnelles des deux équipes.
 
 <!-- markdownlint-disable MD033 -->
 <br>

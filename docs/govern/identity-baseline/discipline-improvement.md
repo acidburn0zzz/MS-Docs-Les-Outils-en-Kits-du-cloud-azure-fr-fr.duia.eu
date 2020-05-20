@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 82725e152efc8038d983939b1f690be0574e435b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f1e991a83c79be3e829bce618a50243b74c2c90f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219867"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400722"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -94,8 +94,6 @@ La migration est un processus incrémentiel qui porte essentiellement sur le dé
 - Migrez votre [chaîne d’outils de ligne de base d’identité](./toolchain.md) du développement vers la production.
 - Mettre à jour les recommandations relatives à l’architecture et distribuer le document aux principales parties prenantes.
 - Élaborer une documentation et des ressources pédagogiques, des messages de sensibilisation, des incitations et d’autres programmes afin de favoriser l’adoption par les utilisateurs.
-
-<!-- docsTest:ignore "Seamless SSO" -->
 
 **Activités potentielles :**
 

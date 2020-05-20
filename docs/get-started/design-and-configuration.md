@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 39e5feba4e0d214a86767bf6a2152ae1887dc383
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 007a2219a65147e1682de5d1e0a4ae29251d2153
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230581"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400008"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-design-and-configuration"></a>Bien démarrer : Conception et configuration
 
 La conception et la configuration de l'environnement sont les obstacles les plus courants aux efforts d'adoption axés sur la migration ou l'innovation. Il peut être difficile d'implémenter rapidement une conception capable de soutenir votre plan d'adoption à long terme. Cet article présente une approche et une série d'étapes à suivre pour surmonter les obstacles courants et accélérer les efforts d'adoption.

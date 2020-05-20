@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 22956507d801163b2ee75f074f48bbd955546c11
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d14e37cad9d6d1e63200a9401cfaac2ca2e07655
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230525"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400709"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-manage-cloud-costs"></a>Bien démarrer : Gérer les coûts du cloud
 
 L’une des principales disciplines de la gouvernance cloud est la gestion des coûts. La gestion des coûts est axée sur l’établissement de budgets, la supervision des modèles d’allocation des coûts et l’implémentation de contrôles visant à améliorer les comportements de dépense cloud à l’échelle du portefeuille informatique. Toutefois, l’optimisation des coûts d’entreprise implique de nombreux autres rôles et fonctions pour réduire les coûts et équilibrer les besoins en matière de scalabilité, de performances, de sécurité et de fiabilité. Ce guide de démarrage rapide mappe ces différentes fonctions de support afin d’aider à créer un alignement entre chacune des équipes impliquées.
@@ -92,7 +90,7 @@ Les décisions stratégiques affectent directement les contrôles des coûts, to
 
 | Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe de stratégie cloud | <li> Équipe de gouvernance cloud <li> Équipe d’adoption du cloud <li> Centre d’excellence de cloud ou informatique centralisée |
+| <li> Équipe de stratégie cloud | <li> Équipe de gouvernance cloud <li> Équipe d’adoption du cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="step-3-develop-a-cloud-adoption-plan"></a>Étape 3 : Développer un plan d’adoption du cloud
 
@@ -140,7 +138,7 @@ La méthodologie de préparation du Cloud Adoption Framework est principalement 
 
 | Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe d’adoption du cloud | <li> Équipe de stratégie cloud <li> Équipe de gouvernance cloud <li> Centre d’excellence de cloud ou informatique centralisée |
+| <li> Équipe d’adoption du cloud | <li> Équipe de stratégie cloud <li> Équipe de gouvernance cloud <li> Centre d’excellence du cloud ou équipe informatique centrale |
 
 ## <a name="step-5-complete-waves-of-migration-effort"></a>Étape 5 : Terminer les vagues de l’effort de migration
 
@@ -167,7 +165,7 @@ Les coûts d’exploitation à long terme sont un thème commun dans chaque doma
 
 | Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe d’adoption du cloud | <li> Équipe de stratégie cloud <li> Équipe de gouvernance cloud <li> Centre d’excellence de cloud ou informatique centralisée |
+| <li> Équipe d’adoption du cloud | <li> Équipe de stratégie cloud <li> Équipe de gouvernance cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="step-6-drive-customer-focused-innovation"></a>Étape 6 : Stimuler l’innovation axée sur le client
 
@@ -206,7 +204,7 @@ L’établissement d’une ligne de base de gestion solide permet de collecter d
 
 | Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe des opérations cloud | <li> Équipe de stratégie cloud <li> Équipe de gouvernance cloud <li> Centre d’excellence de cloud ou informatique centralisée |
+| <li> Équipe des opérations cloud | <li> Équipe de stratégie cloud <li> Équipe de gouvernance cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="value-statement"></a>Énoncé de la valeur
 

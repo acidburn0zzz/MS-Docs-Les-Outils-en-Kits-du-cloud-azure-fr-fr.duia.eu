@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 23ce74def1dd0d5efc77b448b6fe3303a890b994
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9e0ed1d2e8c7358c0dcb5c90bb2ed33670fbc63f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214563"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401047"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="assess-workloads-and-refine-plans"></a>Évaluer les charges de travail et affiner les plans
 
 Les ressources de ce guide vous aideront à évaluer chaque charge de travail, à vérifier les hypothèses concernant la pertinence de la migration de chaque charge de travail, ainsi qu’à finaliser les décisions architecturales à propos des options de migration.

@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: c27ab20e703ae8ef37fcfba1a2d3f4585d2832da
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 137ab71429b6f827ee0f01154ea372784327e964
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219391"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400924"
 ---
-<!-- docsTest:disable -->
+<!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
 
 # <a name="the-virtual-datacenter-a-network-perspective"></a>Centre de données virtuel : perspective réseau
@@ -430,7 +430,7 @@ Apprenez-en davantage sur les fonctionnalités Azure présentées dans ce docume
 
 Sécurité | Autres services Azure | |
 |-|-|-|
-| [Pare-feu Azure][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway - WAF][AppGWWAF] <br> [Front Door - WAF][AFDWAF] <br> [Service de protection DDoS Azure][DDoS] <br> | [Stockage Azure][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Hubs d'événements][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
+| [Pare-feu Azure][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway - WAF][AppGWWAF] <br> [Front Door - WAF][AFDWAF] <br> [Service de protection DDoS Azure][DDoS] <br> | [Stockage Azure][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Azure Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Hubs d'événements][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
 
 <!-- markdownlint-enable MD033 -->
 
