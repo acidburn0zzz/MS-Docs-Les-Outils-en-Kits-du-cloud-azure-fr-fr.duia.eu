@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4b5e98141b581eb9b39f3056f1025c7fe614ae70
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 27714dd779a9d0c3624cdce6355a478dbd9168f4
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398931"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620563"
 ---
 # <a name="security-baseline-discipline-overview"></a>Présentation de la discipline Base de référence de la sécurité
 
@@ -41,12 +41,12 @@ Les six étapes suivantes offrent des exemples et des options potentielles à pr
 
 | | |
 |---|---|
-| <br> ![Icône Modèle](../../_images/govern/process-template.png) | [Modèle de discipline Base de référence de la sécurité](./template.md) : Télécharger le modèle pour documenter une discipline Base de référence de la sécurité. |
-| <br> ![Icône Risques](../../_images/govern/process-risks.png) | [Risques métier](./business-risks.md) : Appréhendez les motivations et les risques généralement associés à la discipline Base de référence de la sécurité. |
-| <br> ![Icône Métriques](../../_images/govern/process-metrics.png) | [Indicateurs et métriques](./metrics-tolerance.md) : Indicateurs permettant de déterminer à quel moment il est pertinent d’investir dans la discipline Base de référence de la sécurité. |
-| <br> ![Icône Adhérence](../../_images/govern/process-enforce.png) | [Processus d’adhésion à la stratégie](./compliance-processes.md) : Suggestions de processus pour appuyer la conformité aux stratégies dans la discipline Base de référence de la sécurité. |
-| <br> ![Icône Maturité](../../_images/govern/process-maturity.png) | [Maturité](./discipline-improvement.md) : Aligner la maturité de la gestion du cloud avec les phases d’adoption du cloud. |
-| <br> ![Icône Chaîne d’outils](../../_images/govern/process-toolchain.png) | [Chaîne d’outils](./toolchain.md) : Services Azure qui peuvent être implémentés pour soutenir la discipline Base de référence de la sécurité. |
+| <br> ![Icône Modèle](../../_images/govern/process-template.png) | <br> [Modèle de discipline Base de référence de la sécurité](./template.md) : Télécharger le modèle pour documenter une discipline Base de référence de la sécurité. |
+| <br> ![Icône Risques](../../_images/govern/process-risks.png) | <br> [Risques métier](./business-risks.md) : Appréhendez les motivations et les risques généralement associés à la discipline Base de référence de la sécurité. |
+| <br> ![Icône Métriques](../../_images/govern/process-metrics.png) | <br> [Indicateurs et métriques](./metrics-tolerance.md) : Indicateurs permettant de déterminer à quel moment il est pertinent d’investir dans la discipline Base de référence de la sécurité. |
+| <br> ![Icône Adhérence](../../_images/govern/process-enforce.png) | <br> [Processus d’adhésion à la stratégie](./compliance-processes.md) : Suggestions de processus pour appuyer la conformité aux stratégies dans la discipline Base de référence de la sécurité. |
+| <br> ![Icône Maturité](../../_images/govern/process-maturity.png) | <br> [Maturité](./discipline-improvement.md) : Aligner la maturité de la gestion du cloud avec les phases d’adoption du cloud. |
+| <br> ![Icône Chaîne d’outils](../../_images/govern/process-toolchain.png) | <br> [Chaîne d’outils](./toolchain.md) : Services Azure qui peuvent être implémentés pour soutenir la discipline Base de référence de la sécurité. |
 
 <!-- markdownlint-enable MD033 -->
 

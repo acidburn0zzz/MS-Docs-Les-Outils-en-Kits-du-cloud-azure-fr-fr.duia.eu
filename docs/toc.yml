@@ -31,7 +31,9 @@ items:
         href: get-started/innovate.md
       - name: Débloquer la conception et la configuration de l’environnement
         href: get-started/design-and-configuration.md
-      - name: Assurer une excellence opérationnelle
+      - name: Permettre aux clients de réussir
+        href: get-started/enable.md
+      - name: Assurer l'excellence opérationnelle
         href: get-started/operational-excellence.md
       - name: Gérer les coûts du cloud
         href: get-started/manage-costs.md
@@ -41,8 +43,6 @@ items:
         href: get-started/reliability.md
       - name: Garantir des performances cohérentes
         href: get-started/performance.md
-      - name: Permettre aux clients de réussir
-        href: get-started/enable.md
       - name: Aligner votre organisation
         href: get-started/org-alignment.md
       - name: Créer une équipe chargée de la stratégie cloud

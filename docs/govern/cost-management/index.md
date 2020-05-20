@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e65fc091b5578c2a3fdf8ea0483450526b47f1c5
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 2a89fe9d799e866468df02a9a0f6e7d973ed35dd
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400677"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620458"
 ---
 # <a name="cost-management-discipline-overview"></a>Vue d’ensemble de la discipline Gestion des coûts
 
@@ -39,12 +39,12 @@ Les six étapes suivantes vous aideront à définir des stratégies de gouvernan
 
 | | |
 |---|---|
-| <br> ![Icône Modèle](../../_images/govern/process-template.png) | [Modèle de discipline Gestion des coûts](./template.md) : Télécharger le modèle pour documenter une discipline Gestion des coûts. |
-| <br> ![Icône Risques](../../_images/govern/process-risks.png) | [Risques métier](./business-risks.md) : Appréhendez les motivations et les risques généralement associés à la discipline Gestion des coûts. |
-| <br> ![Icône Métriques](../../_images/govern/process-metrics.png) | [Indicateurs et métriques](./metrics-tolerance.md) : Indicateurs permettant de déterminer à quel moment il est pertinent d’investir dans la discipline Gestion des coûts. |
-| <br> ![Icône Adhérence](../../_images/govern/process-enforce.png) | [Processus d’adhésion à la stratégie](./compliance-processes.md) : Suggestions de processus pour appuyer la conformité aux stratégies dans la discipline Gestion des coûts. |
-| <br> ![Icône Maturité](../../_images/govern/process-maturity.png) | [Maturité](./discipline-improvement.md) : Aligner la maturité de la gestion du cloud avec les phases d’adoption du cloud. |
-| <br> ![Icône Chaîne d’outils](../../_images/govern/process-toolchain.png) | [Chaîne d’outils](./toolchain.md) : Services Azure qui peuvent être implémentés pour soutenir la discipline Gestion des coûts. |
+| <br> ![Icône Modèle](../../_images/govern/process-template.png) | <br> [Modèle de discipline Gestion des coûts](./template.md) : Télécharger le modèle pour documenter une discipline Gestion des coûts. |
+| <br> ![Icône Risques](../../_images/govern/process-risks.png) | <br> [Risques métier](./business-risks.md) : Appréhendez les motivations et les risques généralement associés à la discipline Gestion des coûts. |
+| <br> ![Icône Métriques](../../_images/govern/process-metrics.png) | <br> [Indicateurs et métriques](./metrics-tolerance.md) : Indicateurs permettant de déterminer à quel moment il est pertinent d’investir dans la discipline Gestion des coûts. |
+| <br> ![Icône Adhérence](../../_images/govern/process-enforce.png) | <br> [Processus d’adhésion à la stratégie](./compliance-processes.md) : Suggestions de processus pour appuyer la conformité aux stratégies dans la discipline Gestion des coûts. |
+| <br> ![Icône Maturité](../../_images/govern/process-maturity.png) | <br> [Maturité](./discipline-improvement.md) : Aligner la maturité de la gestion du cloud avec les phases d’adoption du cloud. |
+| <br> ![Icône Chaîne d’outils](../../_images/govern/process-toolchain.png) | <br> [Chaîne d’outils](./toolchain.md) : Services Azure qui peuvent être implémentés pour soutenir la discipline Gestion des coûts. |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

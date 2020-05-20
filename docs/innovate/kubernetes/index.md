@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 15e1d020d00bfd2c1b8c8ddb4b0e60e4e98407fd
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 430058a8646f536243f7e6f04ec64deae6d95aff
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398855"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621247"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 
@@ -30,8 +30,8 @@ Pour vous préparer à cette phase du cycle d’adoption du cloud, utilisez les 
 
 | | |
 |---|---|
-| <br> ![Icône de l’élément 1](../../_images/icons/1.png) | [Développement et déploiement d’applications](./application-development.md) : Examinez les modèles et les pratiques de développement d’applications, configurez les pipelines DevOps et implémentez les bonnes pratiques SRE (Site Reliability Engineering). |
-| <br> ![Icône de l’élément 2](../../_images/icons/2.png) | [Conception et opérations de cluster](./cluster-design-operations.md) : Identifiez la configuration du cluster et la conception du réseau. Scalabilité future en automatisant le provisionnement de l’infrastructure. Assurez une haute disponibilité en planifiant la continuité d’activité et la reprise d’activité. |
-| <br> ![Icône de l’élément 3](../../_images/icons/3.png) | [Sécurité des clusters et des applications](./cluster-application-security.md) : Familiarisez-vous avec les bases de sécurité de Kubernetes. Passez en revue la configuration sécurisée des clusters et les conseils en matière de sécurité des applications. |
+| <br> ![Icône de l’élément 1](../../_images/icons/1.png) | <br> [Développement et déploiement d’applications](./application-development.md) : Examinez les modèles et les pratiques de développement d’applications, configurez les pipelines DevOps et implémentez les bonnes pratiques SRE (Site Reliability Engineering). |
+| <br> ![Icône de l’élément 2](../../_images/icons/2.png) | <br> [Conception et opérations de cluster](./cluster-design-operations.md) : Identifiez la configuration du cluster et la conception du réseau. Scalabilité future en automatisant le provisionnement de l’infrastructure. Assurez une haute disponibilité en planifiant la continuité d’activité et la reprise d’activité. |
+| <br> ![Icône de l’élément 3](../../_images/icons/3.png) | <br> [Sécurité des clusters et des applications](./cluster-application-security.md) : Familiarisez-vous avec les bases de sécurité de Kubernetes. Passez en revue la configuration sécurisée des clusters et les conseils en matière de sécurité des applications. |
 
 <!-- markdownlint-enable MD033 -->

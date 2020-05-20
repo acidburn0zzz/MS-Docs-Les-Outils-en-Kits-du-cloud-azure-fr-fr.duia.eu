@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6db5662a5e470730116310a291ac669192e0f3e4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: dbd60db37d5eb14b877f45c00956fd1869e9a0ba
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400637"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620539"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Vue d’ensemble de la discipline Accélération du déploiement
 
@@ -41,12 +41,12 @@ Les six étapes suivantes vous aideront à définir des stratégies de gouvernan
 
 | | |
 |---|---|
-| <br> ![Icône Modèle](../../_images/govern/process-template.png) | [Modèle de discipline Accélération du déploiement](./template.md) : Télécharger le modèle pour documenter une discipline Accélération du déploiement. |
-| <br> ![Icône Risques](../../_images/govern/process-risks.png) | [Risques métier](./business-risks.md) : Appréhendez les motivations et les risques généralement associés à la discipline Accélération du déploiement.|
-| <br> ![Icône Métriques](../../_images/govern/process-metrics.png) | [Indicateurs et métriques](./metrics-tolerance.md) : Indicateurs permettant de déterminer à quel moment il est pertinent d’investir dans la discipline Accélération du déploiement. |
-| <br> ![Icône Adhérence](../../_images/govern/process-enforce.png) | [Processus d’adhésion à la stratégie](./compliance-processes.md) : Suggestions de processus pour appuyer la conformité aux stratégies dans la discipline Accélération du déploiement. |
-| <br> ![Icône Maturité](../../_images/govern/process-maturity.png) | [Maturité](./discipline-improvement.md) : Aligner la maturité de la gestion du cloud avec les phases d’adoption du cloud.|
-| <br> ![Icône Chaîne d’outils](../../_images/govern/process-toolchain.png) | [Chaîne d’outils](./toolchain.md) : Services Azure qui peuvent être implémentés pour soutenir la discipline Accélération du déploiement. |
+| <br> ![Icône Modèle](../../_images/govern/process-template.png) | <br> [Modèle de discipline Accélération du déploiement](./template.md) : Télécharger le modèle pour documenter une discipline Accélération du déploiement. |
+| <br> ![Icône Risques](../../_images/govern/process-risks.png) | <br> [Risques métier](./business-risks.md) : Appréhendez les motivations et les risques généralement associés à la discipline Accélération du déploiement.|
+| <br> ![Icône Métriques](../../_images/govern/process-metrics.png) | <br> [Indicateurs et métriques](./metrics-tolerance.md) : Indicateurs permettant de déterminer à quel moment il est pertinent d’investir dans la discipline Accélération du déploiement. |
+| <br> ![Icône Adhérence](../../_images/govern/process-enforce.png) | <br> [Processus d’adhésion à la stratégie](./compliance-processes.md) : Suggestions de processus pour appuyer la conformité aux stratégies dans la discipline Accélération du déploiement. |
+| <br> ![Icône Maturité](../../_images/govern/process-maturity.png) | <br> [Maturité](./discipline-improvement.md) : Aligner la maturité de la gestion du cloud avec les phases d’adoption du cloud.|
+| <br> ![Icône Chaîne d’outils](../../_images/govern/process-toolchain.png) | <br> [Chaîne d’outils](./toolchain.md) : Services Azure qui peuvent être implémentés pour soutenir la discipline Accélération du déploiement. |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
