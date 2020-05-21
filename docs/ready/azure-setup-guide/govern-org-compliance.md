@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e7b5811099119e3f3b1c148ae550bd92e8fc8090
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a44dcdf49d2dad17236f4f1dc009758acf4230fc
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223250"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621625"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -22,11 +22,11 @@ ms.locfileid: "83223250"
 
 # <a name="governance-security-and-compliance-in-azure"></a>Gouvernance, sécurité et conformité dans Azure
 
-Lorsque vous établissez une stratégie d’entreprise et planifiez vos stratégies de gouvernance, vous pouvez utiliser des outils et des services tels que Azure Policy, Azure Blueprints et Azure Security Center pour appliquer et automatiser les décisions de gouvernance de votre organisation. Avant de commencer votre planification de la gouvernance, utilisez l’[outil Governance Benchmark](https://cafbaseline.com) pour identifier les lacunes potentielles dans l’approche de gouvernance cloud de votre organisation. Pour plus d’informations sur la façon de développer des processus de gouvernance, consultez l’[aide du Framework d’adoption du cloud pour Azure au sujet de la gouvernance](../../govern/index.md).
+Lorsque vous établissez une stratégie d’entreprise et planifiez vos stratégies de gouvernance, vous pouvez utiliser des outils et des services tels que Azure Policy, Azure Blueprints et Azure Security Center pour appliquer et automatiser les décisions de gouvernance de votre organisation. Avant de commencer votre planification de la gouvernance, utilisez l’[outil Governance Benchmark](https://cafbaseline.com) pour identifier les lacunes potentielles dans l’approche de gouvernance cloud de votre organisation. Pour plus d’informations sur le développement de processus de gouvernance, consultez la [méthodologie de gouvernance](../../govern/index.md).
 
 # <a name="azure-blueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
-Azure Blueprints permet aux architectes cloud et aux groupes centraux responsables des technologies de l’information de définir un ensemble reproductible de ressources Azure qui implémentent et respectent les normes, modèles et exigences d’une organisation. Azure Blueprints permet aux équipes de développement de créer et mettre en place rapidement de nouveaux environnements et d’avoir confiance en leur conformité aux exigences de l’organisation à l’aide d’un ensemble de composants intégrés, comme la mise en réseau, visant à accélérer le développement et la livraison.
+Azure Blueprints permet aux architectes cloud et aux groupes centraux responsables des technologies de l’information de définir un ensemble reproductible de ressources Azure qui implémentent et respectent les normes, modèles et exigences d’une organisation. Azure Blueprints permet aux équipes de développement de créer et de mettre en place rapidement de nouveaux environnements et d’avoir confiance dans leur conformité aux exigences de l’organisation, en utilisant un ensemble de composants intégrés comme la mise en réseau, visant à accélérer le développement et la livraison.
 
 Les blueprints sont un moyen déclaratif d’orchestrer le déploiement de divers modèles de ressources et d’autres artefacts, notamment ceux-ci :
 
@@ -41,7 +41,7 @@ Pour créer un blueprint :
 
 ::: zone target="chromeless"
 
-1. Accédez à **Blueprints – Prise en main**.
+1. Accédez à **Blueprints : Bien démarrer**.
 1. Dans la section **Créer un blueprint**, sélectionnez **Créer**.
 1. Filtrez la liste des blueprints pour sélectionner le blueprint approprié.
 1. Entrez le **Nom du blueprint**, puis sélectionnez l’**Emplacement de définition** approprié.
@@ -69,7 +69,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 
 ::: zone target="chromeless"
 
-1. Accédez à **Blueprints - Définitions de blueprints**.
+1. Accédez à **Blueprints : Définitions de blueprint**.
 1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
 1. Passez en revue la définition de blueprint, puis sélectionnez **Publier le blueprint**.
 1. Spécifiez une **Version** (par exemple, _1.0_) et les **Notes de changement** éventuelles, puis sélectionnez **Publier**.
@@ -80,7 +80,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 
 ::: zone target="docs"
 
-1. Accédez à [Blueprints - Définitions de blueprints](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
+1. Accédez à [Blueprints : Définitions de blueprint](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Sélectionnez la définition de blueprint que vous avez créée dans les étapes précédentes.
 1. Passez en revue la définition de blueprint, puis sélectionnez **Publier le blueprint**.
 1. Spécifiez une **Version** (par exemple, _1.0_) et les **Notes de changement** éventuelles, puis sélectionnez **Publier**.
@@ -147,7 +147,7 @@ Azure Security Center joue un rôle important dans votre stratégie de gouvernan
 - Fournit des recommandations de sécurité actionnables pour corriger les problèmes avant qu’ils ne soient exploités de façon malveillante.
 - Peut être utilisé pour appliquer des stratégies de sécurité sur l’ensemble de vos charges de travail cloud hybrides pour garantir la conformité aux normes de sécurité.
 
-La plupart des fonctionnalités de sécurité, telles que la stratégie de sécurité et les recommandations, sont disponibles gratuitement. Certaines des fonctionnalités plus avancées, telles que l’accès aux machines virtuelles juste-à-temps et la prise en charge des charges de travail hybrides, sont disponibles au niveau standard de Security Center. L’accès aux machines virtuelles juste-à-temps peut aider à réduire la surface d’attaque du réseau en contrôlant l’accès aux ports de gestion sur les machines virtuelles Azure.
+La plupart des fonctionnalités de sécurité, comme la stratégie et les recommandations de sécurité, sont disponibles gratuitement. Certaines des fonctionnalités plus avancées, comme l’accès aux machines virtuelles juste-à-temps et la prise en charge des charges de travail hybrides, sont disponibles au niveau standard de Security Center. L’accès aux machines virtuelles juste-à-temps peut aider à réduire la surface d’attaque du réseau en contrôlant l’accès aux ports de gestion sur les machines virtuelles Azure.
 
 > [!TIP]
 > L’Azure Security Center est activé par défaut dans chaque abonnement. Nous vous recommandons d’activer la collecte de données depuis des machines virtuelles pour autoriser Azure Security Center à installer son agent et à commencer la collecte des données.

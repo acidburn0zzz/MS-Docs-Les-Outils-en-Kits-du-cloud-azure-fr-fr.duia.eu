@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 53bf6e8a6c3e01255e57613b3b1a3cd2fa9cdc07
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c1a6ce684998ed3a9a67ad92face8adfdcbce104
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222247"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621339"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -116,7 +116,7 @@ Au cours de votre parcours d’innovation, vous serez éventuellement amené à 
 
 ## <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-Étant donné que la popularité des applications mobiles continue de croître, la nécessité d’une plate-forme capable de fournir des tests automatisés sur des appareils réels avec des configurations différentes augmente. Visual Studio App Center ne fournit pas seulement un emplacement où vous pouvez tester vos applications pour iOS, Android, Windows et macOS. Il fournit également une plateforme de surveillance qui peut utiliser Azure Application Insights pour analyser vos données de télémétrie rapidement et facilement. Pour plus d’informations, consultez [Vue d’ensemble de Visual Studio App Center](https://docs.microsoft.com/appcenter).
+Étant donné que la popularité des applications mobiles continue de croître, la nécessité d’une plate-forme capable de fournir des tests automatisés sur des appareils réels avec des configurations différentes augmente. Visual Studio App Center fournit non seulement un endroit où vous pouvez tester vos applications sur iOS, Android, Windows et macOS, mais il offre également une plateforme de supervision qui peut utiliser Azure Application Insights pour analyser votre télémétrie rapidement et facilement. Pour plus d’informations, consultez [Visual Studio App Center](https://docs.microsoft.com/appcenter).
 
 Visual Studio App Center fournit également un service de notification qui vous permet d’utiliser un appel unique pour envoyer des notifications à votre application sur plusieurs plateformes sans avoir à contacter chaque service de notification individuellement. Pour plus d’informations, consultez [Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push).
 
@@ -287,7 +287,9 @@ Pour configurer ou surveiller des instances de conteneur :
 
 Azure Red Hat OpenShift permet un déploiement flexible en libre-service de clusters OpenShift complètement managés. Tenez à jour la conformité réglementaire et concentrez-vous sur le développement de vos applications pendant que les nœuds principaux, les nœuds d’infrastructure et les nœuds d’application sont corrigés, mis à jour et surveillés par Microsoft et Red Hat. Choisissez vos propres solutions de registre, de mise en réseau, de stockage ou de CI/CD. Ou lancez-vous rapidement en utilisant des solutions intégrées avec gestion automatisée du code source, création de conteneurs et d’applications, déploiements, mise à l’échelle, gestion de l’intégrité, etc.
 
-**Accédez à [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)**
+### <a name="learn-more"></a>En savoir plus
+
+- [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)
 
 # <a name="isolate-points-of-failure"></a>[Isoler les points d’échec](#tab/IsolatePointsOfFailure)
 

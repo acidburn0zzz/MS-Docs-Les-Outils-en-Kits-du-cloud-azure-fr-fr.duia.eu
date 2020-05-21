@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 055279bccb9c2897b3cc67adf549f5f57c5bf5fc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0eb8597e32f14685e1f1fc69a51673fb1d1d360f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222995"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621810"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Développement piloté par les tests (TDD) des zones d’atterrissage
 
@@ -59,7 +59,7 @@ Pour un effort de migration initial, la définition de Terminé peut être trop 
 - Au cours des efforts d’adoption, l’équipe d’adoption du cloud souhaiterait un accès temporaire à l’environnement pour modifier les configurations de service.
 - À des fins de sensibilisation uniquement : Avant la version de production, ces charges de travail nécessitent une intégration avec le fournisseur d’identité d’entreprise pour régir l’identité et l’accès en continu à des fins de gestion des opérations. C’est à ce moment que l’accès de l’équipe d’adoption du cloud doit être révoqué.
 
-Le dernier point ci-dessus n’est pas une fonctionnalité ni un critère d’acceptation. Toutefois, il s’agit d’un indicateur selon lequel des expansions supplémentaires seront nécessaires et doivent être explorées par d’autres équipes de façon anticipée.
+Le dernier point ci-dessus n’est pas une fonctionnalité ni un critère d’acceptation. Il s’agit cependant d’un indicateur selon lequel des expansions supplémentaires seront nécessaires et doivent être explorées par d’autres équipes de façon anticipée.
 
 ## <a name="additional-examples-of-a-definition-of-done"></a>Exemples supplémentaires d’une définition de Terminé
 

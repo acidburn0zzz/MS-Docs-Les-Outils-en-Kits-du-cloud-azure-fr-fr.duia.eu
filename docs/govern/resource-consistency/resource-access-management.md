@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 23212be551ace2808757836a0e7ac135363dd8e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 51047cd648953b68caa7f09e132b832a287e4a71
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218184"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399059"
 ---
 # <a name="resource-access-management-in-azure"></a>Gestion de l’accès aux ressources dans Azure
 
@@ -48,7 +48,7 @@ _Figure 3 : Un abonnement Azure._
 
 ## <a name="what-is-azure-resource-manager"></a>Qu’est-ce qu’Azure Resource Manager ?
 
-Dans [Comment fonctionne Azure ?](../../get-started/what-is-azure.md), vous avez appris qu’Azure comprend un « serveur frontal » avec de nombreux services qui orchestrent toutes les fonctions d’Azure. L’un de ces services, [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager), héberge l’API RESTful utilisée par les clients pour gérer les ressources.
+Dans [Fonctionnement d’Azure](../../get-started/what-is-azure.md), vous avez découvert qu’Azure comprend un front-end avec de nombreux services qui orchestrent toutes les fonctions d’Azure. L’un de ces services, [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager), héberge l’API RESTful utilisée par les clients pour gérer les ressources.
 
 ![Diagramme d’Azure Resource Manager](../../_images/govern/design/governance-1-12.png)
 _Figure 4 : Azure Resource Manager._

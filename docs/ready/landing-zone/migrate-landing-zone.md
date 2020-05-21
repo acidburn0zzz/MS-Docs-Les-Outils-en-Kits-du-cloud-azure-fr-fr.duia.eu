@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 218dbe7cdc4be8e98b4c8ef3fd20ebd865a58a84
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 601481112f2d8144596951e1a68bd7d0bda0b95a
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222893"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621766"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -35,7 +35,7 @@ La zone d’atterrissage initiale est associée aux hypothèses ou contraintes s
 - **Conformité :** Aucune exigence de tiers en matière de conformité n’est nécessaire dans cette zone d’accueil.
 - **Complexité architecturale :** La complexité architecturale ne nécessite pas d’abonnements de production supplémentaires.
 - **Services partagés :** Aucun des services partagés existants dans Azure ne nécessite que cet abonnement soit traité comme un spoke dans une architecture hub and spoke.
-- **Étendue de production limitée :** Cette zone d’atterrissage peut potentiellement héberger des charges de travail de production. Toutefois, il ne s’agit pas d’un environnement adapté pour les données sensibles ou les charges de travail stratégiques.
+- **Étendue de production limitée :** Cette zone d’atterrissage peut potentiellement héberger des charges de travail de production. Il ne s’agit pas d’un environnement adapté pour les données sensibles ou les charges de travail stratégiques.
 
 Si ces hypothèses s’alignent sur vos besoins d’adoption actuels, ce blueprint peut être un bon point de départ pour la création de votre zone d’atterrissage.
 

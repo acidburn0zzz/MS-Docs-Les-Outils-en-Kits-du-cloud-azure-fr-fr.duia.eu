@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: aff6ee1eb16f1e2ab671c20bea61093d68b99fe4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 83ce5d4a2c4cb44ebd66f1f784002660bad6c86f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223301"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621663"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Suivi des coûts dans les unités commerciales, les environnements ou les projets
 
@@ -56,7 +56,7 @@ Le diagramme montre les meilleures pratiques, mais n’inclut pas les options su
 - Quand une société intègre une équipe Centre d’excellence du cloud (CCoE), les abonnements aux services partagés dans chaque nœud géographique peuvent réduire les ressources dupliquées.
 - Des efforts d’adoption plus petits peuvent avoir une hiérarchie de gestion bien plus petite. Il est courant de voir un seul nœud racine pour le service informatique de l’entreprise, avec un seul niveau de nœuds subordonnés dans la hiérarchie pour différents environnements. Il ne s’agit pas d’une violation des meilleures pratiques pour un environnement bien managé. Toutefois, cela rend plus difficile la proposition d’un modèle d’accès de moindres droits pour le contrôle des coûts et d’autres fonctions importantes.
 
-Le reste de cet article suppose l’utilisation de l’approche recommandée dans le diagramme précédent. Toutefois, les articles suivants peuvent vous aider à appliquer l’approche à une organisation de ressources qui correspond le mieux à votre entreprise :
+Le reste de cet article suppose l’utilisation de l’approche recommandée dans le diagramme précédent. Cependant, les articles suivants peuvent vous aider à appliquer l’approche à une organisation de ressources qui correspond le mieux à votre entreprise :
 
 - [Mettre à l’échelle votre environnement Azure avec plusieurs abonnements](../azure-best-practices/scale-subscriptions.md)
 - [Organiser et gérer vos abonnements Azure](../azure-best-practices/organize-subscriptions.md)
@@ -77,13 +77,13 @@ En règle générale et à titre de meilleure pratique, nous vous suggérons de 
 
 Azure Cost Management prend en charge les rôles intégrés suivants pour chaque étendue :
 
-- [Propriétaire](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) : peut afficher les coûts et tout gérer, y compris la configuration des coûts.
-- [Collaborateur](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) : peut afficher les coûts et tout gérer, y compris la configuration des coûts, à l’exclusion du contrôle d’accès.
-- [Lecteur](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader) : peut tout afficher, y compris les données et la configuration des coûts, mais ne peut pas apporter de modifications.
-- [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) : peut afficher les coûts et gérer la configuration des coûts.
-- [Lecteur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) : peut afficher les données et la configuration des coûts.
+- [Propriétaire](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) : Peut afficher les coûts et tout gérer, y compris la configuration des coûts.
+- [Collaborateur](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) : Peut afficher les coûts et tout gérer, y compris la configuration des coûts, à l’exclusion du contrôle d’accès.
+- [Lecteur](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader) : Peut tout visualiser, y compris les données et la configuration des coûts, mais ne peut pas apporter de modifications.
+- [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) : Peut afficher les coûts et gérer leur configuration.
+- [Lecteur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) : Peut visualiser les données et la configuration des coûts.
 
-En règle générale et à titre de meilleure pratique, les membres de toutes les équipes doivent être affectés au rôle de Contributeur Cost Management. Celui-ci accorde un accès permettant de créer et gérer les budgets et les exportations pour une surveillance et une création de rapports plus efficaces sur les coûts. Toutefois, les membres de l’[équipe de stratégie cloud](../../organize/cloud-strategy.md) doivent être définis sur Lecteur Cost Management uniquement. Cela est dû au fait qu’ils ne sont pas impliqués dans le paramétrage des budgets au sein de l’outil Azure Cost Management.
+En règle générale et à titre de meilleure pratique, les membres de toutes les équipes doivent être affectés au rôle de Contributeur Cost Management. Celui-ci accorde un accès permettant de créer et gérer les budgets et les exportations pour une surveillance et une création de rapports plus efficaces sur les coûts. Cependant, les membres de l’[équipe de stratégie cloud](../../organize/cloud-strategy.md) doivent être définis sur Lecteur Cost Management uniquement. Cela est dû au fait qu’ils ne sont pas impliqués dans le paramétrage des budgets au sein de l’outil Azure Cost Management.
 
 ### <a name="scope"></a>Étendue
 
@@ -91,8 +91,8 @@ Les paramètres d’étendue et de rôle suivants vont créer la visibilité req
 
 - [Équipe d’adoption du cloud](../../organize/cloud-adoption.md). Les responsabilités liées aux modifications d’optimisation continue nécessitent un accès du contributeur Cost Management au niveau du groupe de ressources.
 
-  - **Environnement de travail**. Au minimum, l’équipe d’adoption du cloud doit déjà avoir un accès [Contributeur](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) à tous les groupes de ressources concernés, ou au moins à ces groupes associés aux activités de développement/test ou de déploiement continu. Aucun paramètre d’étendue supplémentaire n’est requis.
-  - **Environnements de production**. Lorsque une séparation appropriée des responsabilités a été établie, l’équipe d’adoption du cloud ne pourra probablement pas continuer à accéder aux groupes de ressources associés à ses projets. Les groupes de ressources qui prennent en charge les instances de production de leurs charges de travail auront besoin d’une étendue supplémentaire pour permettre à cette équipe de mieux comprendre l’impact de ses décisions sur les coûts de production. Le paramétrage de l’étendue du [contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) pour les groupes de ressources de production de cette équipe permettra à l’équipe de surveiller les coûts et de définir des budgets en fonction de l’utilisation et des investissements continus dans les charges de travail prises en charge.
+  - **Environnement de travail.** Au minimum, l’équipe d’adoption du cloud doit déjà avoir un accès [Contributeur](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) à tous les groupes de ressources concernés, ou au moins à ces groupes associés aux activités de développement/test ou de déploiement continu. Aucun paramètre d’étendue supplémentaire n’est requis.
+  - **Environnements de production.** Lorsque une séparation appropriée des responsabilités a été établie, l’équipe d’adoption du cloud ne pourra probablement pas continuer à accéder aux groupes de ressources associés à ses projets. Les groupes de ressources qui prennent en charge les instances de production de leurs charges de travail auront besoin d’une étendue supplémentaire pour permettre à cette équipe de mieux comprendre l’impact de ses décisions sur les coûts de production. Le paramétrage de l’étendue du [contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) pour les groupes de ressources de production de cette équipe permettra à l’équipe de surveiller les coûts et de définir des budgets en fonction de l’utilisation et des investissements continus dans les charges de travail prises en charge.
 
 - [Équipe de stratégie cloud](../../organize/cloud-strategy.md). Les responsabilités relatives au suivi des coûts entre plusieurs projets et unités commerciales nécessitent un accès Lecteur Cost Management au niveau racine de la hiérarchie des groupes d’administration.
 
@@ -106,10 +106,10 @@ Les paramètres d’étendue et de rôle suivants vont créer la visibilité req
 
 - [Centre d’excellence du cloud](../../organize/cloud-center-of-excellence.md). La responsabilité de la gestion des coûts associés aux services partagés requiert un accès Contributeur Cost Management au niveau de l’abonnement. En outre, cette équipe peut nécessiter un accès Contributeur Cost Management aux groupes de ressources ou aux abonnements contenant des ressources déployées par les automatisations du CCoE pour comprendre comment ces automatisations influencent les coûts.
 
-  - **Services partagés**. Lorsqu’un centre d’excellence du cloud est engagé, la meilleure pratique consiste à ce que les ressources managées par le CCoE soient prises en charge à partir d’un abonnement de services partagés centralisé au sein d’un modèle hub and spoke. Dans ce scénario, le CCoE est susceptible d’avoir un accès contributeur ou propriétaire à cet abonnement, ce qui rend inutile l’attribution d’une étendue supplémentaire pour un [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
-  - **Automatisation/contrôles du CCoE**. Le CCoE fournit généralement des contrôles et des scripts de déploiement automatisés aux équipes d’adoption du cloud. Le CCoE a la responsabilité de comprendre comment ces accélérateurs influencent les coûts. Pour obtenir cette visibilité, l’équipe a besoin d’un accès [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) à tous les groupes de ressources ou abonnements qui exécutent ces accélérateurs.
+  - **Services partagés.** Lorsqu’un centre d’excellence du cloud est engagé, la meilleure pratique consiste à ce que les ressources managées par le CCoE soient prises en charge à partir d’un abonnement de services partagés centralisé au sein d’un modèle hub and spoke. Dans ce scénario, le CCoE est susceptible d’avoir un accès contributeur ou propriétaire à cet abonnement, ce qui rend inutile l’attribution d’une étendue supplémentaire pour un [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
+  - **Automatisation/contrôles du centre d’excellence du cloud (CCoE)** Le CCoE fournit généralement des contrôles et des scripts de déploiement automatisés aux équipes d’adoption du cloud. Le CCoE a la responsabilité de comprendre comment ces accélérateurs influencent les coûts. Pour obtenir cette visibilité, l’équipe a besoin d’un accès [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) à tous les groupes de ressources ou abonnements qui exécutent ces accélérateurs.
 
-- **Équipe des opérations cloud**. La responsabilité de la gestion des coûts continus des environnements de production nécessite un accès Contributeur Cost Management à tous les abonnements de production.
+- **Équipe chargée des opérations cloud.** La responsabilité de la gestion des coûts continus des environnements de production nécessite un accès Contributeur Cost Management à tous les abonnements de production.
 
   - La recommandation générale place les ressources de production et hors production dans des abonnements distincts qui sont régis par des nœuds de la hiérarchie des groupes d’administration associés aux environnements de production. Dans un environnement bien managé, les membres de l’équipe responsable des opérations ont probablement un accès propriétaire ou contributeur aux abonnements de production, ce qui rend inutile le rôle [Contributeur Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
 
@@ -128,9 +128,11 @@ Pour commencer à utiliser Azure Cost Management, consultez le [Guide pratique p
 - [Optimiser les coûts selon les recommandations](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [Utiliser les alertes de coût pour superviser l’utilisation et les dépenses](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
+<-- docsTest : « Coût et utilisation d’AWS » -->
+
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Utiliser Azure Cost Management pour régir les coûts d’AWS
 
-- [Intégration des rapports sur les coûts et l’utilisation d’AWS](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
+- [Configurer l’intégration des rapports sur les coûts et l’utilisation d’AWS](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [Gérer les coûts d’AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>Établir l’accès, les rôles et l’étendue

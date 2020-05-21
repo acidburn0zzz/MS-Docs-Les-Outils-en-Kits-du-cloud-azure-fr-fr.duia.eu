@@ -7,15 +7,13 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 3373e5fd09aa9280de2c9b944d2b9648ffe8ae1a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: eda7866700edb0a1e86776f1b0f23d95799d5b67
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219102"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621581"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 <!-- cSpell:ignore Terraform's -->
 
 # <a name="tools-and-templates"></a>Outils et modèles
@@ -41,23 +39,23 @@ L’infrastructure d’adoption du Cloud comprend des outils qui vous aident à 
 
 | Ressource | Description |
 |----------|-------------|
-| [Check-list de disponibilité](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | Utilisez cette check-list pour préparer votre environnement en vue de son adoption, y compris la préparation de votre première zone de migration, la personnalisation du plan et son développement. |
+| [Check-list de disponibilité](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | Utilisez cette check-list pour préparer votre environnement en vue de son adoption, y compris la préparation de votre première zone de migration, la personnalisation du plan et son développement. |
 | [Modèle de suivi d’attribution de noms et marquage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx) | Documentez les décisions relatives au nommage et aux normes de marquage pour garantir la cohérence et réduire la durée d’intégration. |
-| [Blueprint&nbsp;de base&nbsp;CAF](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Utilisez une implémentation légère d’une fondation de gouvernance initiale pour offrir une expérience pratique avec les outils de gouvernance dans Azure. |
-| [Blueprint de zone d’accueil de la migration CAF](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone) | Approvisionnez et préparez l’hébergement des charges de travail en cours de migration à partir d’un environnement local vers Azure. Pour plus d’informations sur ce plan, consultez [Déployer une zone d’atterrissage de migration](../ready/landing-zone/migrate-landing-zone.md). |
+| [Blueprint&nbsp;de base&nbsp;CAF](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Utilisez une implémentation légère d’une fondation de gouvernance initiale pour offrir une expérience pratique avec les outils de gouvernance dans Azure. |
+| [Blueprint de zone d’accueil de la migration CAF](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone) | Approvisionnez et préparez l’hébergement des charges de travail en cours de migration à partir d’un environnement local vers Azure. Pour plus d’informations sur ce plan, consultez [Déployer une zone d’atterrissage de migration](../ready/landing-zone/migrate-landing-zone.md). |
 | [Blueprint de la zone d’atterrissage Terraform](../ready/landing-zone/terraform-landing-zone.md) | Base de code open source pour la version Terraform des blueprints des zones d'atterrissage CAF. |
-| [Registre Terraform](https://registry.terraform.io/search?q=aztfmod) | Site web du registre de Terraform, filtré pour répertorier tous les modules d’infrastructure d’adoption du cloud nécessaires à la création d’une zone d’atterrissage Terraform. |
+| [Registre Terraform](https://registry.terraform.io/search?q=aztfmod) | Site web du registre de Terraform, filtré pour lister tous les modules du Cloud Adoption Framework nécessaires à la création d’une zone d’atterrissage Terraform. |
 
 ## <a name="govern"></a>Gouvernance
 
 | Ressource | Description |
 |----------|-------------|
 | [Évaluation de benchmark de gouvernance](https://cafbaseline.com) | Identifiez les lacunes entre votre état actuel et vos priorités métier et recevez les ressources appropriées pour vous aider à combler ces lacunes. |
-| [Blueprint&nbsp;de base&nbsp;CAF](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Implémentation légère d’une fondation de gouvernance initiale pour offrir une expérience pratique relative aux outils de gouvernance dans Azure. |
+| [Blueprint&nbsp;de base&nbsp;CAF](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Implémentation légère d’une fondation de gouvernance initiale pour offrir une expérience pratique relative aux outils de gouvernance dans Azure. |
 | [Modèle de processus de gouvernance](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Governance%20Discipline%20Template.docx) | Définissez l’ensemble de base des processus de gouvernance utilisés pour appliquer chaque discipline de gouvernance. |
 | [Modèle de processus Cost Management](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx) | Définissez les instructions de stratégie et les conseils de conception qui vous permettent de faire évoluer la gouvernance cloud au sein de votre organisation, en vous concentrant sur la gestion des coûts. |
 | [Modèle de processus d’accélération du déploiement](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx) | Définissez les instructions de stratégie et les conseils de conception qui vous permettent de faire évoluer la gouvernance cloud au sein de votre organisation, en vous concentrant sur l’accélération du déploiement. |
-| [Modèle de processus d’identité](https://archcenter.blob.core.windows.net/cdn/fusion/governance/identity%20baseline%20discipline%20template.docx) | Définissez les instructions de stratégie et les conseils de conception qui vous permettent de faire évoluer la gouvernance cloud au sein de votre organisation en vous concentrant sur les exigences relatives aux identités. |
+| [Modèle de processus d’identité](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx) | Définissez les instructions de stratégie et les conseils de conception qui vous permettent de faire évoluer la gouvernance cloud au sein de votre organisation en vous concentrant sur les exigences relatives aux identités. |
 | [Modèle de processus de cohérence des ressources](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx) | Définissez les instructions de stratégie et les conseils de conception qui vous permettent de faire évoluer la gouvernance cloud au sein de votre organisation, en vous concentrant sur la cohérence des ressources. |
 | [Modèle de processus de ligne de base de la sécurité](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx) | Définissez les instructions de stratégie et les conseils de conception qui vous permettent de faire évoluer la gouvernance cloud au sein de votre organisation, en vous concentrant sur la ligne de base de sécurité. |
 
@@ -66,8 +64,8 @@ L’infrastructure d’adoption du Cloud comprend des outils qui vous aident à 
 | Ressource | Description |
 |----------|-------------|
 | [Évaluation de l’architecture Azure](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | Cette évaluation en ligne vous aidera à définir des architectures et des options d’opérations spécifiques à la charge de travail. |
-| [Best&nbsp;practices&nbsp;source&nbsp;code](https://github.com/microsoft/CloudAdoptionFramework/tree/master/manage/automation-best-practices) | Ce code source déployable complète et accélère l’adoption des bonnes pratiques pour les services de gestion des serveurs Azure. Utilisez ce code source pour activer rapidement la gestion des opérations et établir une ligne de base des opérations. |
-| [Classeur de gestion des opérations](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | Documentez les décisions relatives à la gestion des opérations dans le cloud et facilitez les conversations avec les parties prenantes de l’entreprise pour garantir le respect des contrats de niveau de service, des investissements dans le domaine de la résilience et l’allocation de budgets liés aux opérations. |
+| [Best&nbsp;practices&nbsp;source&nbsp;code](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | Ce code source déployable complète et accélère l’adoption des bonnes pratiques pour les services de gestion des serveurs Azure. Utilisez ce code source pour activer rapidement la gestion des opérations et établir une ligne de base des opérations. |
+| [Classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | Documentez les décisions relatives à la gestion des opérations dans le cloud et facilitez les conversations avec les parties prenantes de l’entreprise pour garantir le respect des contrats de niveau de service, des investissements dans le domaine de la résilience et l’allocation de budgets liés aux opérations. |
 
 ## <a name="organize"></a>Organiser
 

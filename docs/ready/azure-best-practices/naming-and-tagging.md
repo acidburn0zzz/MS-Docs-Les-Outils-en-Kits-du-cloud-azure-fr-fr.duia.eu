@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 3ac1d332e0671a682eaa9b60a7e8a677fbf2fa37
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d3a0e4c640588dda3e97d7ecc24039869d87dd94
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223369"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621671"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -131,7 +131,7 @@ La liste suivante répertorie les préfixes de type de ressource Azure recommand
 |--------------------------------|-------------|
 | Serveur Azure SQL Database      | sql-        |
 | Base de données Azure SQL             | sqldb-      |
-| Base de données Cosmos DB             | cosmos-     |
+| Base de données Azure Cosmos DB       | cosmos-     |
 | Instance Azure Cache pour Redis | redis-      |
 | Base de données MySQL                 | mysql-      |
 | Base de données PostgreSQL            | psql-       |
@@ -236,7 +236,7 @@ La section suivante fournit des exemples de noms pour les types de ressources Az
 
 | Type de ressource                      | Étendue                              | Format                                                      | Exemples                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Abonnement                    | Compte/ <br/>Contrat Entreprise | \<Unité commerciale\>-\<Type d’abonnement\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> corp-shared-001  <li> fin-client-001 |
+| Abonnement                    | Compte/ <br> Contrat Entreprise | \<Unité commerciale\>-\<Type d’abonnement\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> corp-shared-001 <li> fin-client-001 |
 | Resource group                  | Abonnement                       | rg-\<Nom de l’application ou du service\>-\<Type d’abonnement\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-acctlookupsvc-share-001  <li> rg-ad-dir-services-shared-001 |
 | Instance du service de gestion des API | Global                             | apim-\<Nom de l’application ou du service\>                                | apim-navigator-prod                                                                                                     |
 
@@ -275,7 +275,7 @@ La section suivante fournit des exemples de noms pour les types de ressources Az
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
 | Serveur Azure SQL Database      | Global             | sql-\<Nom de l’application\>-\<Environnement\>       | <li> sql-navigator-prod <li> sql-emissions-dev |
 | Base de données Azure SQL             | Azure SQL Database | sqldb-\<Nom de la base de données>-\<Environnement\> | <li> sqldb-users-prod <li> sqldb-users-dev |
-| Base de données Cosmos DB             | Global             | cosmos-\<Nom de l’application\>-\<Environnement\>    | <li> cosmos-navigator-prod <li> cosmos-emissions-dev |
+| Base de données Azure Cosmos DB       | Global             | cosmos-\<Nom de l’application\>-\<Environnement\>    | <li> cosmos-navigator-prod <li> cosmos-emissions-dev |
 | Instance Azure Cache pour Redis | Global             | redis-\<Nom de l’application\>-\<Environnement\>     | <li> redis-navigator-prod <li> redis-emissions-dev |
 | Base de données MySQL                 | Global             | mysql-\<Nom de l’application\>-\<Environnement\>     | <li> mysql-navigator-prod <li> mysql-emissions-dev |
 | Base de données PostgreSQL            | Global             | psql-\<Nom de l’application\>-\<Environnement\>      | <li> psql-navigator-prod <li> psql-emissions-dev |

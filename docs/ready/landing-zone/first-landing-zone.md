@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67b4968a62e795c6dbd3c09a954dbe0edf12166d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d9643f0bc303c6557d02f107fc91c7654c25ec0d
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219255"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621783"
 ---
 # <a name="first-landing-zone"></a>Première zone d’accueil
 
@@ -24,13 +24,13 @@ L’image suivante montre diverses options relatives aux zones d’atterrissage.
 
 ![Options des zones d’atterrissage](../../_images/ready/landing-zone-options.png)
 
-R. Commencez par du code permettant de produire des zones d’atterrissage cohérentes et reproductibles. Si vous êtes à l’aise avec la refactorisation (ou l’affinage du code et de l’infrastructure) pendant votre apprentissage, commencez par une base de code légère, telle que le blueprint de zone d’atterrissage de migration Cloud Adoption Framework. Cette méthode accélère l’adoption et crée des opportunités d’apprentissage pratique. Toutefois, ce type de zone d’atterrissage initiale ne peut pas être utilisé pour les données sensibles ou les charges de travail stratégiques sans une refactorisation supplémentaire.
+R. Commencez par du code permettant de produire des zones d’atterrissage cohérentes et reproductibles. Si vous êtes à l’aise avec la refactorisation (affinage du code et de l’infrastructure) pendant votre apprentissage, commencez par une base de code légère, comme le blueprint de zone d’atterrissage de migration du Cloud Adoption Framework. Cette méthode accélère l’adoption et crée des opportunités d’apprentissage pratique. Cependant, ce type de zone d’atterrissage initiale n’est pas conçu pour les données sensibles ou les charges de travail stratégiques sans une refactorisation supplémentaire.
 
 B. À mesure que l’adoption grandit et que les exigences sont plus clairement identifiées, les équipes chargées de l’adoption et des plateformes refactorisent les zones d’atterrissage en fonction de ce qu’elles apprennent. Le processus d’extension de vos zones d’atterrissage prépare les environnements à des exigences de conformité ou d’architecture plus complexes. L’article [Étendre la zone d’atterrissage](../considerations/index.md) fournit des guides de décision et des liens vers de bonnes pratiques pour vous guider dans vos efforts de refactorisation. L’extension de la zone d’atterrissage peut contribuer au respect des exigences concernant la sécurité, les opérations et la gouvernance.
 
 C. Certains plans d’adoption du cloud sont régis par des exigences de conformité externes. Azure fournit quelques exemples de blueprints Azure qui vous permettront de répondre plus facilement à ces exigences. Certains de ces exemples peuvent être ajoutés à votre blueprint initial. D’autres exemples ont également une implémentation spécifique qui peut servir de première zone d’atterrissage.
 
-D. Quand un partenaire fournit des services gérés continus ou s’il s’est engagé par contrat à fournir le plan d’adoption, il fournit généralement sa propre zone d’atterrissage. L’utilisation de la zone d’atterrissage d’un partenaire peut accélérer les efforts d’adoption et garantir la cohérence des exigences de gestion opérationnelle. Toutefois, pour garantir l’alignement, vous devez tenir compte de la gouvernance interne et des exigences de sécurité.
+D. Quand un partenaire fournit des services gérés continus ou s’il s’est engagé par contrat à fournir le plan d’adoption, il fournit généralement sa propre zone d’atterrissage. L’utilisation de la zone d’atterrissage d’un partenaire peut accélérer les efforts d’adoption et garantir la cohérence des exigences de gestion opérationnelle. Cependant, pour garantir l’alignement, vous devez tenir compte de la gouvernance interne et des exigences de sécurité.
 
 > [!NOTE]
 > Avant de passer à une approche basée sur le code et la refactorisation, les lecteurs doivent se familiariser avec les [priorités en concurrence derrière cette décision](../../strategy/balance-competing-priorities.md#balance-during-the-ready-phase). Quand vous choisissez une approche de zone d’atterrissage, vous devez bien comprendre l’équilibre nécessaire entre _Délai d’adoption_ et _Opérations à long terme_.

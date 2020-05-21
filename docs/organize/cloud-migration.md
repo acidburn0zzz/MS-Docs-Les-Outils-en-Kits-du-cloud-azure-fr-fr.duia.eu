@@ -1,5 +1,5 @@
 ---
-title: Comprendre les fonctions de migration vers le cloud.
+title: Comprendre les fonctions de migration vers le cloud
 description: Comprendre les fonctions de migration vers le cloud.
 author: JanetCThomas
 ms.author: janet
@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 1431f117bed4ce23ab69e26bc41f2a9ecdb67b29
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 876705322aad42ac2dac0eb29d7291d6d6df71ec
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230193"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401001"
 ---
 # <a name="cloud-migration-functions"></a>Fonctions de migration cloud
 
@@ -25,29 +25,29 @@ Quel que soit le type ou le nombre d’équipes de migration vers le cloud, ces 
 - [Création d’un compte Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account) : La première étape pour utiliser Azure est de créer un compte.
 - [Portail Azure](https://docs.microsoft.com/learn/modules/tour-azure-portal): Découvrez les fonctionnalités du portail et des services Azure, et personnalisez le portail.
 - [Présentation d’Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) : Bien démarrer avec Azure. Créez et configurez votre première machine virtuelle dans le cloud.
-- [Notions de base d’Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer) : Découvrez les concepts du cloud, comprenez les avantages, comparez les stratégies de base et explorez l’éventail des services disponibles dans Azure.
-- Passez en revue la [méthodologie Migration](../migrate/index.md).
+- [Notions de base d’Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer) : Découvrez les concepts du cloud, familiarisez-vous avec les avantages, comparez et confrontez les stratégies de base, et explorez l'éventail des services disponibles dans Azure.
+- Consultez la [méthodologie Migration](../migrate/index.md).
 
 ## <a name="minimum-scope"></a>Étendue minimale
 
-L’équipe d’adoption du cloud constitue le noyau de tous les efforts de migration vers le cloud. Cette équipe pilote les modifications techniques qui permettent l’adoption du cloud. Selon les objectifs de l’effort d’adoption, cette équipe peut comprendre des membres aux compétences diverses qui s’occupent d’un large éventail de tâches techniques et commerciales.
+L'équipe chargée de la migration vers le cloud constitue le noyau de tous les efforts de migration vers le cloud. Cette équipe pilote les modifications techniques qui permettent l’adoption du cloud. Selon les objectifs de l’effort d’adoption, cette équipe peut comprendre des membres aux compétences diverses qui s’occupent d’un large éventail de tâches techniques et commerciales.
 
-Au minimum, l’étendue de l’équipe comprend :
+Au minimum, l’étendue de l’équipe comprend les aspects suivants :
 
 - [Rationalisation du patrimoine numérique](../digital-estate/index.md)
-- Examiner, valider et faire avancer le backlog [de migration par priorité](../migrate/migration-considerations/assess/release-iteration-backlog.md)
-- L’exécution de [la première charge de travail](../digital-estate/rationalize.md#select-the-first-workload) en tant qu’opportunité de formation.
+- Examen, validation et progression du [backlog de migration classé par ordre de priorité](../migrate/migration-considerations/assess/release-iteration-backlog.md)
+- Exécution de la [première charge de travail](../digital-estate/rationalize.md#select-the-first-workload) comme opportunité d’apprentissage.
 
 ## <a name="deliverable"></a>Livrable
 
-Le livrable principal de toute fonctionnalité de l’équipe de migration cloud est la mise en œuvre en temps réel des solutions techniques présentées dans le plan d’adoption, en fonction des exigences de gouvernance et des résultats pour l’entreprise, en tirant parti de la technologie, des outils et solutions d’automatisation mis à la disposition de l’équipe.
+Le livrable principal de toute équipe chargée de la migration vers le cloud est la mise en œuvre en temps réel des solutions techniques présentées dans le plan d'adoption, conformément aux exigences de gouvernance et aux résultats opérationnels, en tirant parti de la technologie, des outils et des solutions d'automatisation disponibles.
 
 ### <a name="ongoing-monthly-tasks"></a>Tâches mensuelles en cours
 
 - Superviser le [processus de gestion des changements](../migrate/migration-considerations/prerequisites/technical-complexity.md).
 - Gérer les [backlogs de mise en production et de sprint](../migrate/migration-considerations/assess/release-iteration-backlog.md)
 - Créer et tenir à jour la zone d’adoption conformément aux exigences de gouvernance.
-- Terminez les tâches techniques définies dans les [backlogs des sprints](../migrate/migration-considerations/assess/release-iteration-backlog.md).
+- Accomplir les tâches techniques décrites dans les [backlogs de sprint](../migrate/migration-considerations/assess/release-iteration-backlog.md)
 
 ### <a name="team-cadence"></a>Cadence de l’équipe
 
@@ -55,11 +55,11 @@ Nous vous recommandons que les équipes qui assurent les fonctionnalités d’ad
 
 Il est préférable que ces équipes se réunissent tous les jours de manière autonome. L’objectif de ces réunions quotidiennes est de mettre à jour rapidement le backlog et de communiquer ce qui a été effectué, ce qui doit être fait aujourd’hui et les différents points de blocage et tout ce qui nécessite un support externe supplémentaire.
 
-Le calendrier de mise en production et la durée des itérations sont propres à chaque entreprise. Toutefois, la durée moyenne semble être une plage d’une à quatre semaines par itération. Quelle que soit la cadence des itérations et des mises en production, nous vous recommandons que l’équipe rencontre toutes les équipes qui l’assistent à la fin de chaque mise en production afin de communiquer le résultat de cette mise en production et de réorganiser les efforts restants. Il est aussi utile à l’équipe de se retrouver à la fin de chaque sprint, avec l’équipe du [centre d’excellence du cloud](../organize/cloud-center-of-excellence.md) ou l’[équipe de gouvernance du cloud](./cloud-governance.md), afin que les équipes restent alignées sur les efforts et les besoins communs.
+Le calendrier de mise en production et la durée des itérations sont propres à chaque entreprise. Toutefois, la durée moyenne semble être une plage d’une à quatre semaines par itération. Quelle que soit la cadence des itérations et des mises en production, nous vous recommandons que l’équipe rencontre toutes les équipes qui l’assistent à la fin de chaque mise en production afin de communiquer le résultat de cette mise en production et de réorganiser les efforts restants. Il est également utile de se réunir en équipe à la fin de chaque sprint, avec l'équipe du [centre d'excellence du cloud](../organize/cloud-center-of-excellence.md) ou l'[équipe de gouvernance du cloud](./cloud-governance.md), pour rester aligné sur les efforts et besoins communs.
 
 Certaines des tâches techniques associées à l’adoption du cloud peuvent devenir répétitives. Les membres de l’équipe doivent tourner tous les 3 à 6 mois pour éviter les problèmes de satisfaction des employés et tenir les compétences à jour. Un siège tournant dans le [centre d’excellence du cloud](../organize/cloud-center-of-excellence.md) ou l’[équipe de gouvernance du cloud](./cloud-governance.md) peut offrir une excellente opportunité de préserver la motivation des employés et d’exploiter de nouvelles innovations.
 
-## <a name="baseline-capability"></a>Fonctionnalité de base
+## <a name="baseline-capability"></a>Fonctionnalités de base
 
 Selon les résultats souhaités par l’entreprise, les aptitudes nécessaires pour fournir des capacités complètes d’adoption du cloud peuvent être fournies par les services suivants :
 
@@ -75,7 +75,7 @@ Pour une collaboration et une efficacité optimales, nous recommandons que les �
 
 Un soutien supplémentaire du personnel informatique existant peut être nécessaire. L’informatique peut être un contributeur important à l’adoption du cloud en devenant un courtier cloud et un partenaire pour l’innovation et l’agilité métier.
 
-- [Responsabilités centrales de l’informatique](../organize/central-it.md)
+- [Responsabilités de l'équipe informatique centrale](../organize/central-it.md)
 
 ## <a name="whats-next"></a>Étapes suivantes
 
@@ -83,4 +83,4 @@ L’adoption est intéressante, mais l’adoption anarchique peut produire des r
 
 Ces deux équipes créent un équilibre entre les efforts d’adoption du cloud, mais elles sont considérées comme un MVP, car elles peuvent ne pas être durables. Chaque équipe endosse plusieurs rôles et caractéristiques, comme indiqué dans les tableaux [*réalisateur, approbateur, consulté, informé* (RACI)](../organize/raci-alignment.md).
 
-En savoir plus sur les [antimodèles organisationnels : silos et fiefs](../organize/fiefdoms-silos.md).
+Découvrez-en plus sur les [antimodèles organisationnels : silos et fiefs](../organize/fiefdoms-silos.md).

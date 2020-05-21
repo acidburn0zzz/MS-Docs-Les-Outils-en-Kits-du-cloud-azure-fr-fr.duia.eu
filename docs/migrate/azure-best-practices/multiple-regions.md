@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1b4859d3adbfdedc1ff8d5322398e350ba9d72de
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217181"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400831"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
@@ -43,9 +43,9 @@ En examinant ces formes de complexité de façon plus approfondie, vous comprend
 
 Tout déploiement cloud robuste nécessite un réseau bien étudié, tenant compte des régions Azure. Une fois que vous avez examiné les caractéristiques ci-dessus pour déterminer les régions de déploiement, le réseau doit être déployé. Si cet article n’a pas pour objet de fournir des informations réseau exhaustives, certaines considérations doivent faire l’objet d’une attention particulière :
 
-- Les régions Azure sont déployées par paires. En cas de défaillance irrémédiable affectant une région, une autre région incluse dans le même périmètre géopolitique joue le rôle de région jumelée. Envisagez l’opportunité d’effectuer le déploiement dans des régions jumelées comme une stratégie de résilience principale et secondaire. La région Azure Brésil représente une exception notable dans la mesure où sa région jumelée est la région USA Centre Sud. Pour plus d’informations, consultez [Régions jumelées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+- Les régions Azure sont déployées par paires. En cas de défaillance catastrophique affectant une région, une autre région faisant partie du même périmètre géopolitique est désignée comme région appairée. Envisagez le déploiement dans des régions appairées comme stratégie de résilience primaire et secondaire. Brésil Sud est une exception notable dont la région appairée est USA Centre Sud. Pour plus d’informations, consultez [Régions jumelées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
-  - Le service Stockage Azure prend en charge le [stockage géoredondant](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) (GRS, Geographically Redundant Storage) : trois copies de vos données sont stockées dans votre région primaire et trois copies supplémentaires sont stockées dans la région jumelée. Vous ne pouvez pas modifier le jumelage du stockage dans le cadre d’un stockage géoredondant.
+  - Stockage Azure prend en charge le [stockage géoredondant](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) (GRS, Geographically Redundant Storage) : trois copies de vos données sont stockées dans votre région primaire et trois copies supplémentaires sont stockées dans la région appairée. Vous ne pouvez pas modifier le jumelage du stockage dans le cadre d’un stockage géoredondant.
   - Les services qui s’appuient sur le stockage géoredondant Azure peuvent tirer parti de cette fonctionnalité de région jumelée. La prise en charge de cette fonctionnalité doit alors être prévue aussi bien au niveau de vos applications qu’au niveau du réseau.
   - Si vous n’envisagez pas d’utiliser le stockage géoredondant pour satisfaire vos besoins en résilience régionale, nous vous recommandons de _ne pas_ utiliser la région jumelée comme région secondaire. En cas de défaillance régionale, les ressources seront soumises à une pression intense dans la région jumelée lors de leur migration. En utilisant un autre site pour la reprise d’activité, vous évitez cette pression et gagnez ainsi en rapidité lors de la reprise.
   > [!WARNING]
@@ -57,7 +57,7 @@ Tout déploiement cloud robuste nécessite un réseau bien étudié, tenant comp
 
 - De nombreux services PaaS dans Azure prennent en charge les [points de terminaison de service](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) ou la [liaison privée](https://docs.microsoft.com/azure/private-link/private-link-overview). Ces deux solutions conditionnent fortement les considérations relatives au réseau quand vous étudiez la résilience régionale, la migration et la gouvernance.
 
-- De nombreux services PaaS s’appuient sur leurs propres solutions de résilience régionale. Par exemple, Azure SQL Database et Cosmos DB vous permettent d’effectuer facilement des réplications dans _x_ régions supplémentaires. Certains services, comme Azure DNS, n’ont aucune dépendance vis-à-vis de la région. Quand vous réfléchissez aux services que vous allez utiliser dans votre processus d’adoption, veillez à bien comprendre les fonctionnalités de basculement et les étapes de récupération potentiellement nécessaires pour chaque service Azure.
+- De nombreux services PaaS s’appuient sur leurs propres solutions de résilience régionale. Par exemple, Azure SQL Database et Azure Cosmos DB vous permettent d’effectuer facilement des réplications dans _x_ régions supplémentaires. Certains services, comme Azure DNS, n’ont aucune dépendance vis-à-vis de la région. Quand vous réfléchissez aux services que vous allez utiliser dans votre processus d’adoption, veillez à bien comprendre les fonctionnalités de basculement et les étapes de récupération potentiellement nécessaires pour chaque service Azure.
 
 - En plus d’effectuer leurs déploiements dans plusieurs régions pour assurer la reprise d’activité, de nombreuses organisations choisissent un modèle de déploiement actif-actif de sorte qu’aucun basculement ne soit nécessaire. Cette approche présente des avantages supplémentaires, à savoir un équilibrage de charge global et un renforcement de la tolérance de panne et des performances réseau. Pour tirer parti de ce modèle, vos applications doivent prendre en charge l’exécution en mode actif-actif dans plusieurs régions.
 

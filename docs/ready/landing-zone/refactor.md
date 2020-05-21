@@ -8,12 +8,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bc5263b1f9dfcbdb0d5c14e79e5de976fdd59818
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8e1576afb56afd79a1028658609dc62c25775f75
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221805"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621588"
 ---
 # <a name="refactor-landing-zones"></a>Refactorisation des zones d’atterrissage
 
@@ -27,7 +27,7 @@ La méthodologie Ready utilise le concept de refactorisation pour accélérer la
 
 Lorsque les clients adoptent le cloud, les considérations relatives aux zones d’atterrissage représentent le point de blocage le plus courant pour l’adoption et les résultats liés au cloud. Les clients ont tendance pencher vers l’un des deux points de blocage suivants. La plupart du temps, les équipes penchent vers l’un de ces deux points de blocage, ce qui entraîne des blocages culturels qui compliquent l’adoption.
 
-Les deux points de blocage principaux prennent racine dans une seule et même conviction, à savoir que l’environnement cloud et les centres de centres existants doivent être en parité ou presque au niveau des fonctionnalités des opérations, de la gouvernance et de la sécurité. Il s’agit d’un objectif à long terme. Cependant, la difficulté vient de l’équilibre délicat entre le moment où vous atteignez cet objectif et la rapidité requise pour arriver à des résultats commerciaux concrets.
+Les deux points de blocage principaux prennent racine dans une seule et même conviction, à savoir que l’environnement cloud et les centres de centres existants doivent être en parité ou presque au niveau des fonctionnalités des opérations, de la gouvernance et de la sécurité. Il s’agit d’un objectif à long terme. La difficulté vient cependant de l’équilibre délicat entre le moment où vous atteignez cet objectif et la rapidité nécessaire pour délivrer des résultats métier.
 
 ### <a name="blocker-acting-too-soon"></a>Point de blocage : Action trop précoce
 
@@ -35,7 +35,7 @@ Il a fallu des années et des efforts importants pour atteindre le niveau actuel
 
 ![Point de blocage courant : Action trop précoce](../../_images/ready/blocker-act-too-soon.png)
 
-Dans l’image ci-dessus, le client a un objectif de 100 charges de travail dans le cloud. Pour y parvenir, il déploiera probablement sa première charge de travail. Puis les 10 premières charges de travail, avant qu’il ne soit prêt à mettre une de ces charges de travail en production. Enfin, il atteindra l’objectif du plan d’adoption et disposera d’un portefeuille robuste dans le cloud. Toutefois, la croix rouge dans l’image indique le point où les clients sont généralement bloqués. Si vous attendez un alignement à 100 %, vous pouvez retarder la première charge de travail de plusieurs semaines ou plusieurs mois, voire plusieurs années.
+Dans l’image ci-dessus, le client a un objectif de 100 charges de travail dans le cloud. Pour y parvenir, il déploiera probablement sa première charge de travail. Puis les 10 premières charges de travail, avant qu’il ne soit prêt à mettre une de ces charges de travail en production. Enfin, il atteindra l’objectif du plan d’adoption et disposera d’un portefeuille robuste dans le cloud. Cependant, la croix rouge dans l’image indique le point où les clients sont généralement bloqués. Si vous attendez un alignement à 100 %, vous pouvez retarder la première charge de travail de plusieurs semaines ou plusieurs mois, voire plusieurs années.
 
 ### <a name="blocker-acting-too-late"></a>Point de blocage : Action trop tardive
 

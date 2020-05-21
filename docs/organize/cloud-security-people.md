@@ -1,20 +1,20 @@
 ---
-title: Fonctions des personnes de sécurité dans le cloud
-description: Comprenez la fonction des personnes de sécurité cloud.
+title: Fonctions de sécurité des personnes dans le cloud
+description: Comprendre les fonctions des personnes de sécurité dans le cloud.
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 85c878517fbb3ceca84bc2588e90648e9b1cb2f3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3e6895e1f2b13c4f2791b60baf7457223732fecf
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230189"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401097"
 ---
-# <a name="functions-of-a-people-security-in-the-cloud"></a>Fonctions des personnes de sécurité dans le cloud
+# <a name="people-security-functions-in-the-cloud"></a>Fonctions de sécurité des personnes dans le cloud
 
 Les personnes de sécurité protègent l’organisation contre les erreurs humaines et les actions malveillantes.
 
@@ -26,20 +26,22 @@ La modernisation de cette fonction comprend les éléments suivants :
 - **Engagement humain de haute qualité :** La formation et les communications de sensibilisation à la sécurité doivent être des productions de haute qualité qui pilotent l’interconnexion et l’engagement émotionnel pour se connecter au côté humain des employés et aux missions des organisations.
 - **Attentes réalistes :** Acceptez que les utilisateurs cliquent parfois sur des e-mails de hameçonnage et concentrez les mesures de réussite sur la réduction du taux plutôt que d’attendre un arrêt complet des clics.
 - **Modification de la culture de l’organisation :** La direction de l’organisation doit conduire une modification de culture intentionnelle pour que la sécurité soit prioritaire pour chaque membre de l’organisation.
-- **Davantage de concentration sur les risques internes** afin d’aider les organisations à protéger les secrets commerciaux et autres données avec des cas d’utilisation illicites très rentables (par exemple les emplacements des clients, les enregistrements de communication, etc.)
+- Un **accent mis sur les risques internes** afin d’aider les organisations à protéger les secrets commerciaux et d’autres données où des cas d’utilisation illicite seraient très rentables (par exemple la localisation des clients, les enregistrements des communications, etc.)
 - Une **détection des risques interne améliorée** qui tire parti des fonctionnalités du cloud pour la journalisation des activités, l’analyse du comportement et l’apprentissage automatique (Machine Learning).
 
 ## <a name="team-composition-and-key-relationships"></a>Composition d’équipe et relations clés
 
-Les personnes de sécurité sont généralement des partenaires avec les types de rôles suivants.
+La sécurité des personnes fonctionne généralement en partenariat avec les types de rôles suivants :
 
-- Équipes d’audit et de questions juridiques
+- Équipes d’audit et juridiques
 - Ressources humaines
 - Équipe de confidentialité
 - Sécurité des données
-- Équipe(s) de communication (pour la sensibilisation des utilisateurs)
-- Opérations de sécurité (pour les risques internes)
-- Sécurité physique (risques internes)
+- Équipes de communication, pour la sensibilisation des utilisateurs
+- Opérations de sécurité, pour les risques internes
+- Sécurité physique, pour les risques internes
+
+<!-- cSpell:ignore apsec -->
 
 ## <a name="next-steps"></a>Étapes suivantes
 

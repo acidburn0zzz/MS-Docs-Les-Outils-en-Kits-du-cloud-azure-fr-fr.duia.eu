@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1f1060ba4df7dfb398a94f8611901612e1ecf60d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 87376016c2d775d9aa546036504dfdf8c3ec9ba2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219782"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398727"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Collecter des données dans le cadre de la migration et de la modernisation de sources de données existantes
 
@@ -28,7 +28,7 @@ Pendant le processus d’évaluation de la méthodologie de migration, une équi
 
 Lorsque vous migrez et modernisez des données locales, l’outil Azure le plus couramment choisi est [Azure Database Migration Service](https://docs.microsoft.com/azure/dms). Ce service fait partie de la vaste chaîne d'outils [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview). Pour les sources de données SQL Server existantes, l’[Assistant Migration de données](https://docs.microsoft.com/sql/dma/dma-overview) peut vous aider à évaluer et à migrer un petit nombre de structures de données.
 
-Pour prendre en charge les migrations Oracle et NoSQL, vous pouvez également utiliser [Database Migration Service](https://docs.microsoft.com/azure/dms) pour certains types de bases de données source/cible. Les exemples incluent des migrations d’Oracle vers PostgreSQL et de MongoDB vers Cosmos DB. D’une manière plus générale, les équipes d’adoption utilisent des outils partenaires ou des scripts personnalisés pour migrer vers Azure Cosmos DB, Azure HDInsight ou des options de machine virtuelle basées sur infrastructure as a service (IaaS).
+Pour prendre en charge les migrations Oracle et NoSQL, vous pouvez également utiliser [Database Migration Service](https://docs.microsoft.com/azure/dms) pour certains types de bases de données source/cible. Des migrations d’Oracle vers PostgreSQL et de MongoDB vers Cosmos DB en sont des exemples. D’une manière plus générale, les équipes d’adoption utilisent des outils partenaires ou des scripts personnalisés pour migrer vers Azure Cosmos DB, Azure HDInsight ou des options de machine virtuelle basées sur infrastructure as a service (IaaS).
 
 ## <a name="considerations-and-guidance"></a>Aide et aspects à prendre en considération
 

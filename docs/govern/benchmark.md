@@ -4,17 +4,16 @@ description: Utilisez cet outil d’évaluation de la gouvernance pour obtenir u
 author: alexbuckgit
 ms.author: abuck
 ms.date: 08/27/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: d6eb865cb0ab44a76278afb7751684b53a40e0e7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: daad757372250014556de53ddd6cfdacf66b0b7f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708901"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620347"
 ---
 # <a name="assess-your-transformation-journey"></a>Évaluez votre parcours de transformation
 
@@ -22,29 +21,10 @@ Le Cloud Adoption Framework fournit un [outil de benchmark de gouvernance](https
 
 ## <a name="governance-benchmark-tool"></a>Outil de benchmark de gouvernance
 
-L’outil de benchmark de gouvernance fournit un rapport personnalisé qui présente la différence entre votre état actuel et les priorités de votre entreprise, ainsi que des ressources personnalisées pour vous aider à commencer.
+Reçoit un rapport personnalisé qui présente la différence entre votre état actuel et les priorités de votre entreprise, ainsi que des ressources personnalisées pour vous aider à démarrer. Évaluez votre état actuel et l’état futur afin d’établir une vision pour l’application du framework.
 
-<!-- markdownlint-disable MD033 -->
-
-<ul class="panelContent cardsZ">
-    <li style="display: flex; flex-direction: column;">
-        <a href="https://cafbaseline.com" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-            <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-                <div class="cardPadding" style="display: flex;">
-                    <div class="card">
-                        <div class="cardText">
-                            <h3>Outil de benchmark de gouvernance</h3>
-                            <p>Évaluez votre état actuel et l’état futur afin d’établir une vision pour l’application du framework.</p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+> [!div class="nextstepaction"]
+> [Utiliser l’outil de benchmark de gouvernance](https://cafbaseline.com)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

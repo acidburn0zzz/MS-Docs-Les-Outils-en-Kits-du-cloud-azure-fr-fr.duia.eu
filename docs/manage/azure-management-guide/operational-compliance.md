@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b747a6f0d50fbf2510dc3a5220f72d513e8d1cb3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7aeb83064faa4105214d47149fbf9e789add47d3
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216705"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621217"
 ---
 <!-- cSpell:ignore WSUS getting started -->
 
@@ -127,7 +127,7 @@ Pour appliquer une stratégie à un groupe de ressources :
 Pour plus d'informations, consultez les rubriques suivantes :
 
 - [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
-- [Azure Policy - Configuration invité](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)
+- [Azure Policy : Configuration des invités](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)
 - [Framework d’adoption du cloud : Guide de décision pour l’application des stratégies](../../decision-guides/policy-enforcement/index.md)
 
 ## <a name="azure-blueprints"></a>Azure Blueprints
@@ -158,7 +158,7 @@ Pour créer un blueprint :
 
 ::: zone target="chromeless"
 
-1. Accédez à **Blueprints – Prise en main**.
+1. Accédez à **Blueprints : Bien démarrer**.
 1. Dans le volet **Créer un blueprint**, sélectionnez **Créer**.
 1. Filtrez la liste des blueprints pour sélectionner le blueprint approprié.
 1. Dans la zone **Nom du blueprint**, entrez le nom du blueprint.
@@ -172,7 +172,7 @@ Pour créer un blueprint :
 
 ::: zone target="docs"
 
-1. Accédez à [Blueprints – Prise en main](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
+1. Accédez à [Blueprints : Bien démarrer](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. Dans le volet **Créer un blueprint**, sélectionnez **Créer**.
 1. Filtrez la liste des blueprints pour sélectionner le blueprint approprié.
 1. Dans la zone **Nom du blueprint**, entrez le nom du blueprint.
@@ -201,7 +201,7 @@ Pour publier des artefacts de blueprint dans votre abonnement :
 
 ::: zone target="docs"
 
-1. Accédez à [Blueprints - Définitions de blueprints](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
+1. Accédez à [Blueprints : Définitions de blueprint](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Sélectionnez le blueprint que vous avez créé dans les étapes précédentes.
 1. Passez en revue la définition de blueprint, puis sélectionnez **Publier le blueprint**.
 1. Dans la zone **Version**, entrez une version, par exemple « 1.0 ».

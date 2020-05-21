@@ -7,14 +7,13 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ebeb0d36b82a60ce0a0516b98909db5da8626dd2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230317"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620873"
 ---
-<!-- cSpell:ignore CAF -->
 <!-- markdownlint-disable MD024 -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Nouveautés du Microsoft Cloud Adoption Framework pour Azure
@@ -22,6 +21,18 @@ ms.locfileid: "83230317"
 Voici la liste des changements récemment apportés au Cloud Adoption Framework.
 
 Ce framework est le fruit d’une collaboration entre les clients, les partenaires et les équipes internes de Microsoft. Les nouveautés et les mises à jour sont publiées dès qu’elles sont disponibles. De cette façon, vous pouvez tester, valider et affiner les conseils à nos côtés. Nous vous encourageons à faire équipe avec nous afin de développer le Cloud Adoption Framework pour Azure.
+
+## <a name="may-15-2020"></a>15 mai 2020
+
+Sur la base de votre feedback, nous avons créé un nouveau contenu pour vous aider à commencer à utiliser le Cloud Adoption Framework. Les nouveaux guides de prise en main vous aident à naviguer dans l’infrastructure en fonction de ce que vous voulez accomplir.
+
+| Article | Description |
+|---|---|
+| [Bien démarrer avec le Cloud Adoption Framework](./index.md) | Commencez ici pour choisir un guide de prise en main aligné sur vos objectifs en matière d’adoption du cloud. Ces scénarios courants fournissent une feuille de route dans le cadre de Microsoft Cloud Adoption Framework pour Azure.|
+| [Comprendre et documenter les décisions d’alignement de base](./cloud-concepts.md) | Découvrez plus d’informations sur les décisions initiales que chaque équipe impliquée dans l’adoption du cloud doit comprendre. |
+| [Comprendre et aligner la hiérarchie du portefeuille](../reference/fundamental-concepts/hosting-hierarchy.md) | Découvrez comment une hiérarchie de portefeuille montre comment vos charges de travail et les services de prise en charge se combinent. |
+| [Comment les produits Azure prennent-ils en charge la hiérarchie du portefeuille ?](../reference/fundamental-concepts/hierarchy-azure-tools.md) | Découvrez plus d’informations sur les outils et les solutions Azure qui prennent en charge votre hiérarchie de portefeuille. |
+| [Gérer l’alignement organisationnel](../organize/index.md) | Établissez des structures organisationnelles avec des équipes adaptées qui constituent un modèle de fonctionnement efficace pour le cloud. |
 
 ## <a name="april-14-2020"></a>14 avril 2020
 

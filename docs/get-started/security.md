@@ -7,18 +7,16 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3de015250a7fd14e01eb14094e564f51e0425648
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 100d5c327fb6e87f0a355f5305ff83ebb972b020
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230437"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400760"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 <!-- cSpell:ignore CISO passwordless -->
 
-# <a name="get-started-implementing-security-across-the-enterprise-environment"></a>Bien démarrer : Implémentation de la sécurité dans l’environnement de l’entreprise
+# <a name="get-started-implement-security-across-the-enterprise-environment"></a>Bien démarrer : Implémenter la sécurité dans l’environnement de l’entreprise
 
 La sécurité permet aux entreprises de créer des garanties de confidentialité, d’intégrité et de disponibilité avec, comme objectif essentiel, de se protéger contre l’impact potentiel sur les opérations d’actes malveillants et involontaires internes et externes. Cette feuille de route décrit les principales étapes qui permettent d’atténuer ou d’éviter les risques métier liés aux attaques de cybersécurité en établissant rapidement des pratiques de sécurité essentielles dans le cloud et en intégrant la sécurité à votre processus d’adoption du cloud.
 
@@ -239,9 +237,9 @@ Pour plus d’informations, consultez [identifier et classer les applications cr
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes en charge et de support technique |
+| Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe d’adoption du cloud | <li> Équipe d’adoption du cloud <li> Équipe de stratégie cloud <li> Équipe de sécurité du cloud <li> Équipe de gouvernance cloud <li> Centre d’excellence du cloud ou équipe informatique centrale |
+| <li> Équipe d’adoption du cloud | <li> Équipe d’adoption du cloud <li> Équipe de stratégie cloud <li> Équipe de sécurité du cloud <li> Équipe de gouvernance cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="step-6-govern-to-manage-and-improve-security-posture"></a>Étape 6 : Gouverner pour gérer et améliorer la posture de sécurité
 
@@ -263,7 +261,7 @@ Une application cohérente des exigences de sécurité vient de disciplines de g
 <!-- markdownlint-disable MD033 -->
 <br>
 
-| Équipe responsable | Équipes en charge et de support technique |
+| Équipe responsable | Équipes responsable et de support |
 | --- | --- |
 | <li> Équipe de gouvernance cloud | <li> Équipe de stratégie cloud <li> Équipe de sécurité du cloud <li> Centre d’excellence du cloud ou équipe informatique centrale |
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b05218d1dfc353e0d9cbed9006a980b845f67915
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 42ace02c82ffbb034f3405a6c699d7b0d29fbf1e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221856"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621505"
 ---
 # <a name="review-your-compute-options"></a>Passer en revue vos options de calcul
 
@@ -64,7 +64,7 @@ Le tableau suivant illustre quelques scénarios d’utilisation courants et les 
 
 Azure vous permet d’offrir des services à l’échelle dont vous avez besoin pour atteindre vos clients et partenaires, _où qu’ils soient_. Un facteur clé dans la planification de votre déploiement cloud consiste à déterminer la région Azure qui hébergera vos ressources de charge de travail.
 
-Certaines options de calcul, telles qu’Azure App Service, sont généralement disponibles dans la plupart des régions Azure. Toutefois, certains services de calcul sont pris en charge uniquement dans des régions spécifiques. Certains types de machines virtuelles et leurs types de stockage associés ont une disponibilité régionale limitée. Avant de choisir les régions dans lesquelles vous allez déployer vos ressources de calcul, nous vous recommandons de consulter la [page Régions](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) pour vérifier l’état le plus récent de la disponibilité régionale.
+Certaines options de calcul, telles qu’Azure App Service, sont généralement disponibles dans la plupart des régions Azure. Cependant, certains services de calcul sont pris en charge seulement dans certaines régions. Certains types de machines virtuelles et leurs types de stockage associés ont une disponibilité régionale limitée. Avant de choisir les régions dans lesquelles vous allez déployer vos ressources de calcul, nous vous recommandons de consulter la [page Régions](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) pour vérifier l’état le plus récent de la disponibilité régionale.
 
 Pour en savoir plus sur l’infrastructure globale Azure, consultez la [page Régions Azure](https://azure.microsoft.com/global-infrastructure/regions). Vous pouvez également consulter [les produits disponibles par région](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all) pour obtenir des détails spécifiques sur les services globaux disponibles dans chaque région Azure.
 

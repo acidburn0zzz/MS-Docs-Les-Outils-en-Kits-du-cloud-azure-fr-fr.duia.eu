@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ece40e0ce2aeaa32eb51d8511d743f674200ea6e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 07b9eb1ebcb464abda6f2c2cf276cb91596cea1a
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219952"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400499"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises complexes : Améliorer la discipline Base de référence de la sécurité
 
@@ -81,7 +81,7 @@ Les modifications suivantes apportées à la stratégie contribueront à traiter
 6. Aucun sous-réseau contenant des données protégées ne doit être accessible directement via l’Internet public ou entre les centres de données. L’accès à ces sous-réseaux doit être routé via des sous-réseaux intermédiaires. Tous les accès à ces sous-réseaux doivent transiter par une solution de pare-feu capable d’effectuer des analyses de paquets et de mettre en œuvre des fonctions de blocage.
 7. Les outils de gouvernance doivent auditer et appliquer les exigences de configuration réseau définies par l’équipe Gestion de la sécurité.
 8. Les outils de gouvernance doivent limiter le déploiement des machines virtuelles seulement avec des images approuvées.
-9. Quand c’est possible, la gestion de la configuration des nœuds doit appliquer les exigences de la stratégie à la configuration de tous les systèmes d’exploitation invités. La gestion de la configuration des nœuds doit respecter l'investissement existant dans l'objet de stratégie de groupe en termes de configuration des ressources.
+9. Quand c’est possible, la gestion de la configuration des nœuds doit appliquer les exigences de la stratégie à la configuration de tous les systèmes d’exploitation invités. La gestion de la configuration des nœuds doit respecter l’investissement existant dans les objets de stratégie de groupe en termes de configuration des ressources.
 10. Les outils de gouvernance s'assureront que les mises à jour automatiques soient activées sur toutes les ressources déployées. Dans la mesure du possible, des mises à jour automatiques seront appliquées. Les violations au niveau du nœud doivent être examinées avec les équipes de gestion opérationnelle et corrigées conformément aux stratégies d’exploitation. Les ressources qui ne sont pas automatiquement mises à jour doivent être incluses dans les processus détenus par l’équipe responsable des opérations informatiques.
 11. La création de nouveaux abonnements ou de groupes d’administration pour les applications stratégiques ou les données protégées nécessite un examen par l’équipe de gouvernance cloud pour vérifier que le blueprint approprié est affecté.
 12. Un modèle d’accès de moindre privilège doit être appliqué aux abonnements qui contiennent des applications critiques ou des données protégées.
@@ -121,7 +121,7 @@ Les nouvelles bonnes pratiques se répartissent en deux catégories : informati
     4. Appliquez le blueprint `corporate-it-subscription-blueprint` à chaque instance régionale.
     5. Cela permettra d’établir un hub pour chaque unité commerciale dans chaque région. Remarque : le partage de hubs entre les unités commerciales de chaque région permet une plus importante réduction des coûts.
 6. Intégrez des objets de stratégie de groupe (GPO) par le biais d'une configuration d'état souhaité (DSC) :
-    1. Conversion gpo vers dsc - &mdash;Le [projet de gestion de la base de référence Microsoft](https://github.com/microsoft/baselinemanagement) dans GitHub peut accélérer cet effort. Veillez à stocker DSC dans le référentiel, parallèlement aux modèles Resource Manager.
+    1. Conversion GPO vers DSC - &mdash;Le [projet de gestion de la base de référence Microsoft](https://github.com/microsoft/baselinemanagement) dans GitHub peut accélérer ce travail. Veillez à stocker DSC dans le référentiel, parallèlement aux modèles Resource Manager.
     2. Déployez la configuration d’état souhaité Azure Automation sur plusieurs instances de l'abonnement informatique d'entreprise. Azure Automation peut être utilisé pour appliquer la configuration d'état souhaité aux machines virtuelles déployées dans des abonnements pris en charge au sein du groupe d’administration.
     3. La feuille de route actuelle vise à autoriser les stratégies de configuration personnalisée invité. Une fois cette fonctionnalité disponible, l’utilisation d’Azure Automation dans le cadre de cette meilleure pratique ne sera plus requise.
 
@@ -133,8 +133,8 @@ Dans les modifications itératives précédentes apportées à la bonne pratique
     1. L’architecture de référence de la section précédente, la [topologie hub-and-spoke avec des services partagés](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), a généré un modèle Resource Manager permettant le peering de réseau virtuel.
     2. Ce modèle peut faire office de guide pour modifier le modèle DMZ à partir de la précédente itération de gouvernance.
     3. Nous ajoutons désormais le peering de réseau virtuel au réseau virtuel DMZ précédemment connecté à l'appareil de périmètre local via VPN.
-    4. *** Le VPN doit aussi être supprimé de ce modèle de façon à garantir qu’aucun trafic n’est directement routé vers le centre de données local sans transiter via l’abonnement du département informatique de l’entreprise et la solution de pare-feu. Vous pouvez également définir ce VPN comme circuit de basculement en cas de défaillance d’un circuit ExpressRoute.
-    5. Une [configuration réseau](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) supplémentaire sera requise par Azure Automation pour appliquer la configuration d'état souhaité aux machines virtuelles hébergées.
+    4. Le VPN doit aussi être supprimé de ce modèle de façon à garantir qu’aucun trafic n’est directement routé vers le centre de données local sans transiter via l’abonnement du département informatique de l’entreprise et la solution de pare-feu. Vous pouvez également définir ce VPN comme circuit de basculement en cas de défaillance d’un circuit ExpressRoute.
+    5. Une [configuration réseau](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) supplémentaire est nécessaire pour Azure Automation afin d’appliquer la configuration d’état souhaité aux machines virtuelles hébergées.
 2. Modifiez le groupe de sécurité réseau. Bloquez tout le trafic public **et** dirigez le trafic local vers le groupe de sécurité réseau. Seul le trafic entrant doit transiter via l'homologue de réseau virtuel dans l'abonnement informatique d'entreprise.
     1. Dans le cadre de la précédente itération, un groupe de sécurité réseau a été créé pour bloquer tout le trafic public et mettre le trafic interne sur liste verte. À présent, nous voulons légèrement déplacer ce groupe de sécurité réseau.
     2. La nouvelle configuration de groupe de sécurité réseau doit bloquer tout le trafic public, et tout le trafic provenant du centre de données local.

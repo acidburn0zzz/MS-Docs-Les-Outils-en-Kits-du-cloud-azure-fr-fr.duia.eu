@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fc7806035d66d44f29f9c4658c24efb950193378
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 096657f869f591a8ef758ce5b5ed2f504b07a894
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230613"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401315"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -26,24 +26,23 @@ Les programmes d’adoption du cloud réussis impliquent généralement au moins
 
 Au cours des premières phases stratégiques d’adoption, il est important de commencer à aligner votre stratégie de partenariat. Les étapes suivantes peuvent vous aider à balayer les obstacles dans les phases ultérieures du cycle de vie de l’adoption.
 
-1) Commencer à comprendre les besoins de support
-2) Examiner les options de partenariat adaptées à votre culture et à vos besoins
-3) Évaluer une courte liste d’options de partenariat
-4) Commencer les examens de contrats et de documents avec les partenaires sélectionnés
+1. Commencer à comprendre les besoins de support.
+1. Examiner les options de partenariat adaptées à votre culture et à vos besoins.
+1. Évaluer une liste de présélection d’options de partenariat.
+1. Commencer l’examen des contrats et des documents avec des partenaires sélectionnés.
 
-L’accomplissement précoce de ces étapes garantira le succès de l’équipe lorsque les efforts techniques commenceront.
-Les sections suivantes de cet article fournissent des conseils pour chacune de ces étapes.
+L’accomplissement précoce de ces étapes garantira le succès de l’équipe lorsque les efforts techniques commenceront. Les sections suivantes de cet article fournissent des conseils pour chacune de ces étapes.
 
 ## <a name="understanding-support-needs"></a>Compréhension des besoins de support
 
 Tout au long du cycle de vie de l’adoption du cloud, les différentes équipes peuvent avoir besoin de support pour réussir. Voici quelques exemples des types d’aide couramment requis.
 
 - **Stratégie :** support définissant la stratégie commerciale et la stratégie technologique associée.
-- **Planification :** support pour la découverte du portefeuille, l’évaluation quantitative du patrimoine numérique, le développement d’un plan d’adoption du cloud et la création d’un plan de qualification.
-- **Préparation :** support pour le déploiement d’une zone d’atterrissage ou d’un environnement cloud complet pouvant prendre en charge le plan d’adoption du cloud.
-- **Migration :** assistance à la migration de charges de travail ou à la création d’une fabrique de migration pour garantir l’intégrité des processus de migration.
+- **Planifier :** support pour la découverte du portefeuille, l’évaluation quantitative du patrimoine numérique, le développement d’un plan d’adoption du cloud et la création d’un plan de qualification.
+- **Prêt :** support pour le déploiement d’une zone d’atterrissage ou d’un environnement cloud complet pouvant prendre en charge le plan d’adoption du cloud.
+- **Migrer :** assistance à la migration de charges de travail ou à la création d’une fabrique de migration pour garantir l’intégrité des processus de migration.
 - **Innovation :** aide au développement de nouvelles solutions ou à la reconstruction/réorganisation de solutions existantes pour promouvoir l’innovation.
-- **Gouvernance** : support ou services gérés en continu pour fournir une gouvernance et des contrôles dans l’environnement cloud.
+- **Gouverner** : support ou services gérés en continu pour fournir une gouvernance et des contrôles dans l’environnement cloud.
 - **Gestion** support ou services gérés en continu pour exploiter la plateforme cloud et les charges de travail hébergées dans le cloud.
 
 Peu d’entreprises disposent de la palette des compétences requises pour prendre en charge la stratégie, la planification, la préparation, l’adoption, la gouvernance et la gestion. Des partenaires et d’autres modèles de support sont souvent nécessaires pour combler les lacunes de compétences et de responsabilités de l’équipe.

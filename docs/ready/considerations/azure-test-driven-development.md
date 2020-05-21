@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4edc0f0e485c040045bc8c1b7bce6c91f3d13f9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 13dc523902e5db36abf559a25c6edba44f912613
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221907"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621535"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Développement piloté par les tests des zones d’atterrissage dans Azure
 
@@ -26,7 +26,7 @@ La chaîne d’outils des produits et services de gouvernance Azure natif peut f
 
 ## <a name="microsoft-provided-test-and-deployment-templates-to-accelerate-tdd"></a>Modèles de test et de déploiement fournis par Microsoft pour accélérer le développement piloté par les tests (TDD)
 
-Microsoft fournit les exemples suivants à des fins de gouvernance. Toutefois, chacun peut être utilisé comme un test ou une série de tests dans un cycle de développement piloté par les tests pour les zones d’atterrissage. Vous trouverez des informations complémentaires sur chaque outil dans la section suivante.
+Microsoft fournit les exemples suivants à des fins de gouvernance. Cependant, chacun peut être utilisé comme un test ou une série de tests dans un cycle de développement piloté par les tests pour les zones d’atterrissage. Vous trouverez des informations complémentaires sur chaque outil dans la section suivante.
 
 - Azure Blueprints fournit plusieurs [exemples de blueprints](https://docs.microsoft.com/azure/governance/blueprints/samples), qui incluent des stratégies de test et de modèles pour le déploiement. Ces exemples de blueprints permettent d’accélérer les efforts de développement, de déploiement et de test dans les cycles TDD.
 - Azure Policy comprend également des [initiatives de stratégie intégrées](https://docs.microsoft.com/azure/governance/policy/samples/built-in-initiatives), qui peuvent être utilisées pour tester et appliquer la définition complète de traitement terminé pour une zone d’atterrissage. Azure Policy comprend des [définitions de stratégie intégrées](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies) qui peuvent répondre à des critères d’acceptation individuels dans la définition de traitement terminé.

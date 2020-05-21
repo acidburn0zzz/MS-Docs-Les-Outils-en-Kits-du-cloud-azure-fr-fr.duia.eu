@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ff7c476737bed0f079cbebac736506cb6801bfd8
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c356554dbdca417708d7eb9698d9729270d8e981
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223607"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401020"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -131,7 +131,7 @@ Voici ce que doit faire Contoso pour ce scénario.
 | --- | --- |
 | **Abonnement Azure** | Contoso a déjà créé un abonnement dans un précédent article de cette série. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial). <br><br> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions. <br><br> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur. |
 | **Infrastructure Azure** | Contoso configure l’infrastructure Azure comme décrit dans [Infrastructure Azure pour la migration](./contoso-migration-infrastructure.md). <br><br> En savoir plus sur les [conditions requises](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) spécifiques pour Azure Migrate : Server Migration. |
-| **Serveurs locaux** | L’instance vCenter Server locale doit exécuter la version 5.5, 6.0, 6.5 ou 6.7. <br><br> Un hôte ESXi qui exécute la version 5.5, 6.0, 6.5 ou 6.7. <br><br> Une ou plusieurs machines virtuelles VMware exécutées sur l’hôte ESXi. |
+| **Serveurs locaux** | Le serveur vCenter Server local doit exécuter la version 5.5, 6.0, 6.5 ou 6.7. <br><br> Un hôte ESXi qui exécute la version 5.5, 6.0, 6.5 ou 6.7. <br><br> Une ou plusieurs machines virtuelles VMware exécutées sur l’hôte ESXi. |
 | **Machines virtuelles locales** | [Examinez les machines Linux](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros) approuvées pour s’exécuter sur Azure. |
 
 <!-- markdownlint-enable MD033 -->
@@ -203,7 +203,7 @@ Les administrateurs de Contoso créent un compte de stockage de la façon suivan
 
 1. Un nom identifiable est spécifié pour le compte (**contosocloudwitness**).
 2. Un compte polyvalent général est déployé, avec stockage localement redondant (LRS).
-3. Ce compte est placé dans une région tierce, à savoir les USA Centre Sud. Il est placé en dehors des régions primaire et secondaire et reste donc disponible en cas de panne régionale.
+3. Ce compte est placé dans une troisième région : USA Centre Sud. Il est placé en dehors des régions primaire et secondaire et reste donc disponible en cas de panne régionale.
 4. Il se trouve dans le groupe de ressources de Contoso, qui contient les ressources d’infrastructure, **ContosoInfraRG**.
 
     ![Témoin de cloud](./media/contoso-migration-rehost-vm-sql-ag/witness-storage.png)

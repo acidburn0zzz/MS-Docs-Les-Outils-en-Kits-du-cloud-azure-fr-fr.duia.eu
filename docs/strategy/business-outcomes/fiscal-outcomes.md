@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 9087a61baaeffa2bb769899a04f55c3eb959f4ea
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218830"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401183"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exemples de résultats comptables
 
@@ -77,9 +77,7 @@ La mise hors service des centres de données peut également permettre une suppr
 
 - **Exemple :** Le centre de données d’une entreprise doit faire l’objet d’un renouvellement de bail dans six mois. Le centre de données est en service depuis huit ans. Il y a quatre ans, tous les serveurs ont été actualisés et virtualisés, ce qui a coûté des millions d’euros à l’entreprise. L’année prochaine, l’entreprise prévoit d’actualiser à nouveau le matériel et les logiciels. La migration des ressources de ce centre de données dans le cadre d’une migration cloud permettrait une suppression de coûts, en éliminant l’actualisation planifiée du budget prévu pour l’année prochaine. Elle pourrait également produire une réduction des coûts en réduisant ou en éliminant les coûts liés à la location des locaux.
 
-<!-- docsTest:ignore "vs. Operating" -->
-
-### <a name="capital-expenses-vs-operating-expenses"></a>Dépenses d’investissement et frais d’exploitation
+### <a name="capital-expenses-and-operating-expenses"></a>Dépenses d’investissement et dépenses d’exploitation
 
 Avant d’aborder les coûts, il est important de comprendre les deux options de coût principales : les dépenses d’investissement et les dépenses d’exploitation.
 

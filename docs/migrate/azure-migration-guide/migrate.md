@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a4e26787fb2125dd2784698b06171e898dd7ac55
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 574dba7b2c5db10b007dcf6cb7ecdd6dc93a0111
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214478"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401163"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -197,13 +197,13 @@ Pour plus d'informations, consultez les pages suivantes :
 
 - [Vue d’ensemble de l’Assistant Expérimentation de base de données](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
-## <a name="cosmos-db-data-migration-tool"></a>Outil de migration de données Cosmos DB
+## <a name="azure-cosmos-db-data-migration-tool"></a>Outil de migration de données Azure Cosmos DB
 
 L’outil de migration de données Azure Cosmos DB peut importer des données dans les collections et les tables Azure Cosmos DB à partir de différentes sources. Vous pouvez importer à partir de fichiers JSON, de fichiers CSV, de SQL, de MongoDB, d’un stockage Table Azure, d’Amazon DynamoDB et même de collections d’API SQL Azure Cosmos DB. L’outil de migration de données peut également être utilisé pour migrer des données à partir d’une collection à partition unique vers une collection multipartition pour l’API SQL.
 
 Pour plus d'informations, consultez les pages suivantes :
 
-- [Outil de migration de données Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/import-data)
+- [Outil de migration de données Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/import-data)
 
 <!-- markdownlint-disable MD025 -->
 
@@ -241,7 +241,7 @@ Movere est une solution de détection qui fournit les données et les insights n
 
 [En savoir plus](https://www.movere.io)
 
-## <a name="cosmos-db-partners"></a>Partenaires Cosmos DB
+## <a name="azure-cosmos-db-partners"></a>Partenaires Azure Cosmos DB
 
 Vous pouvez choisir parmi un large éventail d’outils et de partenaires intégrateurs système expérimentés pour vous assister dans vos migrations Azure Cosmos DB tout en répondant à vos besoins en matière de bases de données NoSQL.
 

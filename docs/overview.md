@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 46be63c2dfe2e4eb5e617c4d74edfc835bf1ddc0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 06ac22741c7b61b59ae308444833852f2fcbff08
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230249"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621454"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,12 +33,12 @@ Le Cloud Adoption Framework rassemble les meilleures pratiques d’adoption du c
 
 <!-- markdownlint-disable MD033 -->
 
-|                                                    |                                                                                                                          |                                                |                                                                                                              |  |  |  |  |
-|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--|--|--|--|
-| ![Icône de stratégie](./_images/icons/strategy.png) | [Stratégie](./strategy/index.md) : définir la justification professionnelle et les résultats attendus de l’adoption.  | <br>![Icône Planification](./_images/icons/plan.png)  | [Planification](./plan/index.md) : Aligner les plans d’adoption actionnables sur les résultats métier. |  |  |  |  |
-| ![Icône Préparation](./_images/icons/ready.png)        | <br>[Prêt](./ready/index.md) : Préparer l’environnement cloud pour les modifications planifiées. | ![Icône Migration](./_images/icons/adopt.png)     | <br>[Migration](./migrate/index.md) : Migrer et moderniser les charges de travail existantes.             |  |  |  |  |
-| ![Icône Innovation](./_images/icons/innovate.png)        | <br>[Innovation :](./innovate/index.md) Développer de nouvelles solutions hybrides ou cloud natives. | ![Icône Gouvernance](./_images/icons/govern.png)     | <br>[Gouverner](./govern/index.md) : Gouverner l’environnement et les charges de travail.             |  |  |  |  |
-| ![Icône Gestion](./_images/icons/manage.png) | <br>[Gérer](./manage/index.md) : Gestion des opérations pour les solutions cloud et hybrides. | ![Icône Organisation](./_images/icons/organize.png)     | <br>[Organiser](./organize/index.md) : Gouverner l’environnement et les charges de travail.             |  |  |  |  |
+| | | | | |
+|--|--|--|--|--|
+| <br> ![Icône de stratégie](./_images/icons/strategy.png) | <br> [Stratégie](./strategy/index.md) :&nbsp;Définir une&nbsp;justification&nbsp;métier&nbsp; et les bénéfices attendus de l’adoption. | <br> ![Icône Planification](./_images/icons/plan.png) | <br> [Planifier](./plan/index.md) :&nbsp;Aligner des plans&nbsp;d’adoption&nbsp;exploitables&nbsp;sur les bénéfices métier. |
+| <br> ![Icône Préparation](./_images/icons/ready.png)       | <br> [Prêt](./ready/index.md) : Préparer l’environnement cloud pour les modifications planifiées. | <br> ![Icône Migration](./_images/icons/adopt.png) | <br> [Migration](./migrate/index.md) : Migrer et moderniser les charges de travail existantes. |
+| <br> ![Icône Innovation](./_images/icons/innovate.png) | <br> [Innovation :](./innovate/index.md) Développer de nouvelles solutions hybrides ou cloud natives. | <br> ![Icône Gouvernance](./_images/icons/govern.png) | <br> [Gouverner](./govern/index.md) : Gouverner l’environnement et les charges de travail. |
+| <br> ![Icône Gérer](./_images/icons/manage.png)     | <br> [Gérer](./manage/index.md) : Gestion des opérations pour les solutions cloud et hybrides. | <br> ![Icône Organisation](./_images/icons/organize.png) | <br> [Organiser](./organize/index.md) : Gouverner l’environnement et les charges de travail. |
 
 ## <a name="understand-the-lifecycle"></a>Comprendre le cycle de vie
 

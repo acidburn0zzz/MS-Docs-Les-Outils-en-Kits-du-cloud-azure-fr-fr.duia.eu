@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8ba2926d702b12234dd81f93cb6820352c0fbf58
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8f69e5c6d988bbfc637c7ba40eb156dc45524bce
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222264"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621323"
 ---
 ::: zone target="docs"
 
@@ -108,9 +108,11 @@ GitHub, la plus grande communauté de développeurs, est au cœur de la communau
 
 Pour innover, de nombreux développeurs utilisent du code open source. 80 à 90% du développement d’une nouvelle application commence par le code open source. Tout ne tourne pas autour du code. Il s’agit également des communautés et des développeurs interconnectés dans le monde entier. Tirant parti d’un modèle de développement ouvert avec GitHub, les équipes innovent et collaborent, identifient les vulnérabilités de sécurité rapidement et découvrent les compétences des experts. Les équipes de développement d’entreprise peuvent intégrer des référentiels GitHub à Microsoft Teams et à Azure. Teams est la seule solution proposant chat écrit et audio et collaboration avec l’efficacité des workflows de processus métier, de réunions et d’applications Microsoft Office, le tout en une seule expérience utilisateur. C’est le hub du travail d’équipe et l’innovation.
 
-**Accédez à [Open source sur Azure](https://azure.microsoft.com/overview/choose-azure-opensource)**
+### <a name="learn-more"></a>En savoir plus
 
-**Accédez à la documentation [Microsoft teams](https://docs.microsoft.com/MicrosoftTeams)**
+- [Open source sur Azure](https://azure.microsoft.com/overview/choose-azure-opensource)
+
+- [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
 
 # <a name="innovation-characteristics"></a>[Caractéristiques de l’innovation](#tab/Characteristics)
 
