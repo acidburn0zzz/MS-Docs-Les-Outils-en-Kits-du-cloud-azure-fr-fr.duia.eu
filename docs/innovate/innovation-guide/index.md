@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7af2b3865a78a72231efed3b3faea21f764d45ff
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1718a1f41ceaa167583681146dbd046dccfb7987
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224066"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756241"
 ---
 ::: zone target="docs"
 
@@ -49,7 +49,9 @@ Dans ce guide, vous allez apprendre à :
 > [!TIP]
 > Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [centre des guides de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure, sélectionnez **Guide d’innovation Azure** et suivez les instructions pas à pas.
 
-Étapes suivantes : [Préparer l’innovation avec un dépôt partagé et des outils de gestion de la conceptualisation](./adoption.md)
+**Étapes suivantes :**
+
+- [Préparer l’innovation avec un dépôt partagé et des outils de gestion de la conceptualisation](./adoption.md)
 
 ::: zone-end
 
