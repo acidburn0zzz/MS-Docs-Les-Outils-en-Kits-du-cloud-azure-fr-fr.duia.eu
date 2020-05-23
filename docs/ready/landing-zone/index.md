@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbb39153dc729b7822c53520e9424a5280cb013a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: de1fef059841fe013163f822c9188b7ed5b64a29
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621747"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755698"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -34,7 +34,7 @@ Avant de définir des zones d’atterrissage, il est important de comprendre un 
 **Responsabilités partagées :** La _fondation de plateforme_ fournit des contrôles centralisés pour régir la plateforme cloud. Il existe toujours une responsabilité partagée entre tous les membres de l’équipe pour prendre en compte les exigences en matière d’identité, de sécurité, d’exploitation, de conformité et de gouvernance. Avant d’adopter une technologie dans une zone d’atterrissage, vous devez comprendre quels sont les utilitaires fournis par la _fondation de plateforme_ et ce que vous devrez implémenter dans la zone d’atterrissage pour assumer vos responsabilités partagées.
 
 > [!IMPORTANT]
-> Les développeurs et les architectes qui déploient des solutions au sein d’une zone d'atterrissage peuvent se reporter à [l’infrastructure d’architecture Azure](https://docs.microsoft.com/azure/architecture/framework/) pour incorporer et développer ces piliers d’architecture partagée lors de la conception, de la construction ou de la prise en charge des charges de travail qui s’exécutent dans une zone d'atterrissage.
+> Les développeurs et les architectes qui déploient des solutions au sein d’une zone d’atterrissage peuvent se référer à [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/) pour incorporer et développer ces piliers d’architecture partagée lors de la conception, de la construction ou de la prise en charge des charges de travail qui s’exécutent dans une zone d’atterrissage.
 
 ## <a name="landing-zone-definition"></a>Définition de la zone d’accueil
 
@@ -60,7 +60,7 @@ L’objectif et l’étendue du plan d’adoption global du cloud définissent �
 
 ## <a name="decentralized-operations"></a>Opérations décentralisées
 
-Dans certaines organisations décentralisées, les conceptions d’adoption exigent des équipes de charge de travail qui sont **seules responsables** de l’implémentation et de l’exploitation de chaque charge de travail isolée, y compris la sécurité, la gouvernance, la gestion des opérations et d’autres fonctions. Pour ces équipes, une charge de travail peut avoir son propre environnement séparé, sans dépendances vis-à-vis d’une fondation de plateforme. Ces environnements spécifiques à la charge de travail ont des implémentations de sécurité, de fiabilité, de performances, de coûts et de cloud incohérentes. Par conséquent, ils ne doivent pas être désignés comme des zones d’atterrissage. Ces équipes doivent rechercher des conseils dans [l’infrastructure d’architecture Azure](https://docs.microsoft.com/azure/architecture/framework/) pour concevoir, générer et optimiser chaque charge de travail de manière indépendante.
+Dans certaines organisations décentralisées, les conceptions d’adoption exigent des équipes de charge de travail qui sont **seules responsables** de l’implémentation et de l’exploitation de chaque charge de travail isolée, y compris la sécurité, la gouvernance, la gestion des opérations et d’autres fonctions. Pour ces équipes, une charge de travail peut avoir son propre environnement séparé, sans dépendances vis-à-vis d’une fondation de plateforme. Ces environnements spécifiques à la charge de travail ont des implémentations de sécurité, de fiabilité, de performances, de coûts et de cloud incohérentes. Par conséquent, ils ne doivent pas être désignés comme des zones d’atterrissage. Ces équipes doivent rechercher des conseils dans [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/) afin de concevoir, générer et optimiser chaque charge de travail de manière indépendante.
 
 > [!IMPORTANT]
 > Similaire mais différent : au début du cycle de vie de l’adoption du cloud, les petites équipes peuvent fonctionner comme des organisations décentralisées par nécessité. Si ces équipes sont décentralisées à cause des circonstances (par opposition à la décentralisation volontaire), il est toujours recommandé de suivre la meilleure pratique de zone d'atterrissage.

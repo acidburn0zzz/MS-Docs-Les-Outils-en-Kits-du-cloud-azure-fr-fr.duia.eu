@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6fceb9665712b4d787689ad2e3e709a5ac14d0d0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 69c46eb18c3181ed1f4301847786ebb538ee46fe
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400744"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754861"
 ---
 # <a name="cloud-governance-guides"></a>Guides de gouvernance cloud
 
@@ -43,7 +43,7 @@ Pour commencer votre parcours d’adoption du cloud, choisissez un des guides de
 
 Les différents guides montrent comment implémenter un MVP de gouvernance. Ensuite, chaque guide indique comment l’équipe de gouvernance cloud peut travailler au-devant des équipes chargées de l’adoption du cloud en tant que partenaire, afin d’accélérer le passage au cloud. Le modèle de gouvernance du Framework d’adoption du cloud guide l’application de la gouvernance, depuis les éléments de base jusqu’aux améliorations et évolutions postérieures.
 
-Pour entamer un parcours de gouvernance, choisissez l’une des deux options ci-dessous. Les options s’appuient sur des expériences client synthétisées. Les titres évoquent la complexité de l’entreprise pour faciliter votre navigation. Toutefois, il se peut que la décision du lecteur soit plus complexe. Les tableaux suivants dressent la liste des différences entre ces deux options :
+Pour entamer un parcours de gouvernance, choisissez l’une des deux options ci-dessous. Les options s’appuient sur des expériences client synthétisées. Les titres évoquent la complexité de l’entreprise pour faciliter votre navigation. Votre décision peut être plus complexe. Les tableaux suivants dressent la liste des différences entre ces deux options :
 
 <!-- TODO: Refactor VDC content below. -->
 <!-- docsTest:ignore "Azure Virtual Datacenter" -->
@@ -84,7 +84,7 @@ Pour entamer un parcours de gouvernance, choisissez l’une des deux options ci-
 
 Le centre de données virtuel Azure est une approche permettant de tirer le meilleur parti des capacités de la plateforme cloud Azure tout en garantissant la sécurité de l’entreprise et les exigences de gouvernance.
 
-Par rapport à des environnements locaux traditionnels, Azure permet aux équipes de développement des charges de travail et leurs partenaires commerciaux de tirer parti de l’agilité de déploiement accrue qu’offrent les plateformes cloud. Toutefois, à mesure que vos efforts d’adoption du cloud s’intensifient pour inclure des charges de travail et des données stratégiques, cette agilité peut entrer en conflit avec les exigences de sécurité et de conformité de l’entreprise, établies par vos équipes informatiques. Cela est particulièrement vrai pour les grandes entreprises qui doivent respecter des obligations réglementaires et de gouvernance complexes existantes.
+Par rapport à des environnements locaux traditionnels, Azure permet aux équipes de développement des charges de travail et leurs partenaires commerciaux de tirer parti de l’agilité de déploiement accrue qu’offrent les plateformes cloud. À mesure que vos efforts d’adoption du cloud s’intensifient pour inclure des charges de travail et des données stratégiques, cette agilité peut entrer en conflit avec les exigences de sécurité et de conformité de l’entreprise, établies par vos équipes informatiques. Cela est particulièrement vrai pour les grandes entreprises qui doivent respecter des obligations réglementaires et de gouvernance complexes existantes.
 
 L’approche Centre de données virtuel Azure vise à répondre à ces préoccupations en amont du cycle d’adoption en fournissant des modèles, des architectures de référence, des exemples d'artefacts d’automatisation ainsi que des conseils pour faciliter un équilibre entre les exigences de gouvernance des développeurs et des équipes informatiques pendant les efforts d’adoption du cloud en entreprise. Au cœur de cette approche se trouve le concept même d’un centre de données virtuel : l’implémentation de limites d’isolation autour de votre infrastructure cloud par l’application de contrôles d’accès et de sécurité, de stratégies réseau et de surveillance de la conformité.
 

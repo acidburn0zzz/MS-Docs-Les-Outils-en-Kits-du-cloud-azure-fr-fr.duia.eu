@@ -3,16 +3,16 @@ title: Développer votre zone d’atterrissage
 description: Utiliser Cloud Adoption Framework pour Azure afin d’apprendre à développer une zone d’atterrissage.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3adb6067ec003b668316b5296f3105d1a09e01a4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0964da23da680755ea9d6c35fef0996e986780b4
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215209"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756564"
 ---
 # <a name="expand-your-landing-zone"></a>Développer votre zone d’atterrissage
 
@@ -24,16 +24,16 @@ Le développement de votre zone d’atterrissage fournit une approche orientée 
 
 ![Principes d’une architecture partagée](../../_images/ready/shared-principles.png)
 
-Ces mêmes principes d’architecture sont partagés par [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework) et les solutions du [Centre des architectures Azure](https://docs.microsoft.com/azure/architecture).
+Ces mêmes principes d’architecture sont partagés par [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) et les solutions du [Centre des architectures Azure](https://docs.microsoft.com/azure/architecture).
 
 ## <a name="applying-these-principles-to-your-landing-zone-improvements"></a>Application de ces principes à vos améliorations de zone d’atterrissage
 
 Pour garantir un meilleur alignement avec les méthodologies du Cloud Adoption Framework, les principes ci-dessus sont regroupés en améliorations de zone d’atterrissage exploitables :
 
-- Considérations de base : Refactorisez une zone d’atterrissage pour affiner l’hébergement, les notions de base et d’autres éléments fondamentaux.
-- Développements liés aux opérations : Ajoutez des configurations de gestion des opérations pour améliorer **les performances, la fiabilité et l’excellence opérationnelle**.
-- Développements liés à la gouvernance : Ajoutez des configurations de gouvernance pour améliorer **les coûts, la fiabilité, la sécurité** et la cohérence.
-- Développements liés à la sécurité : Ajoutez des configurations de **sécurité** pour améliorer la protection des données sensibles et des systèmes critiques.
+- Considérations de base : refactorisez une zone d’atterrissage pour affiner l’hébergement, les notions de base et d’autres éléments fondamentaux.
+- Extension des opérations : ajoutez des configurations de gestion des opérations pour améliorer **les performances, la fiabilité et l’excellence opérationnelle**.
+- Extension de la gouvernance : ajoutez des configurations de gouvernance pour améliorer **les coûts, la fiabilité, la sécurité** et la cohérence.
+- Extension de la sécurité : ajoutez des configurations de **sécurité** pour améliorer la protection des données sensibles et des systèmes critiques.
 
 > [!WARNING]
 > Les équipes d’adoption qui ont pour objectif à moyen terme (dans les 24 mois) d’**héberger plus de 1 000 ressources (applications, infrastructure ou ressources de données) dans le cloud** doivent considérer chacun de ces développements au début de leur parcours d’adoption du cloud. Pour tous les autres modèles d’adoption, les développements de zones d’atterrissage peuvent être des itérations parallèles, favorisant un succès métier précoce.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 27714dd779a9d0c3624cdce6355a478dbd9168f4
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 6939a369a93eed253d62b69130a4da2fbf7f8a6d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620563"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756224"
 ---
 # <a name="security-baseline-discipline-overview"></a>Présentation de la discipline Base de référence de la sécurité
 
@@ -22,13 +22,13 @@ La base de référence de la sécurité est l’une des [cinq disciplines de la 
 > [!NOTE]
 > La discipline Base de référence de la sécurité ne remplace pas les équipes, les processus et les procédures informatiques existants que votre organisation utilise pour sécuriser les ressources déployées sur le cloud. L’objectif principal de cette discipline est d’identifier les risques de sécurité potentiels et de fournir des conseils sur l’atténuation des risques au personnel informatique responsable de l’infrastructure de sécurité. Lorsque vous élaborez des stratégies et des processus de gouvernance, veillez à faire participer les équipes informatiques pertinentes à vos processus de planification et de révision.
 
-Cet article décrit l’approche à adopter pour élaborer une discipline Base de référence de la sécurité dans le cadre de votre stratégie de gouvernance cloud. Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Cependant, les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés au sein de votre équipe de sécurité et votre équipe informatique, en particulier les responsables techniques chargés de l’implémentation de la mise en réseau, du chiffrement et des services d’identité.
+Cet article décrit l’approche à adopter pour élaborer une discipline Base de référence de la sécurité dans le cadre de votre stratégie de gouvernance cloud. Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés au sein de votre équipe de sécurité et votre équipe informatique, en particulier les responsables techniques chargés de l’implémentation des réseaux, du chiffrement et des services d’identité.
 
 Prendre les bonnes décisions en matière de sécurité est un point essentiel pour réussir vos déploiements dans le cloud et favoriser votre succès commercial. Si votre organisation manque d’expertise interne en matière de cybersécurité, envisagez de faire appel à des consultants de sécurité externes dans le cadre de cette discipline. Envisagez également de faire appel aux [Services de conseil Microsoft](https://www.microsoft.com/industry/services/consulting), au service d’adoption du cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou à des experts externes pour aborder les préoccupations liées à cette discipline.
 
 ## <a name="policy-statements"></a>Policy statements
 
-Les instructions de stratégie exploitables et les exigences d’architecture qui en résultent constituent le fondement d’une discipline Base de référence de la sécurité. Pour prendre connaissance des exemples d’instructions de stratégie, consultez l’article [Instructions de stratégie Base de référence de la sécurité](./policy-statements.md). Ces exemples peuvent servir de point de départ à l’élaboration de stratégies de gouvernance de votre organisation.
+Les instructions de stratégie exploitables et les exigences d’architecture qui en résultent constituent le fondement d’une discipline Base de référence de la sécurité. Utilisez des [exemples d’instructions de stratégie](./policy-statements.md) comme point de départ pour la définition de vos stratégies de base de référence de la sécurité.
 
 > [!CAUTION]
 > Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des instructions stratégiques qui répondent aux besoins particuliers de votre entreprise.

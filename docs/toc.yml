@@ -1225,9 +1225,9 @@ items:
             href: manage/centralize-operations.md
           - name: Mettre en place un examen de santé opérationnel
             href: manage/operational-fitness-review.md
-          - name: Amélioration de la résilience des plateformes et des charges de travail
+          - name: Amélioration de la fiabilité des plateformes et des charges de travail
             items:
-              - name: Liste de vérification de la résilience pour les services Azure
+              - name: Liste de vérification de la fiabilité pour les services Azure
                 href: 'https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Analyse du mode d’échec
                 href: 'https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
@@ -1363,7 +1363,7 @@ items:
         items:
           - name: Centre des architectures Azure pour l’architecture des solutions
             href: 'https://docs.microsoft.com/azure/architecture'
-          - name: Framework des architectures Azure pour l’architecture des charges de travail
+          - name: Microsoft Azure Well-Architected Framework pour l’architecture des charges de travail
             href: 'https://docs.microsoft.com/azure/architecture/framework'
           - name: Documentation pour l’implémentation des produits
             href: 'https://docs.microsoft.com'

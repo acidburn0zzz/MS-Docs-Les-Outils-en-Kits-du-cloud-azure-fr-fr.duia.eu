@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e462f0a20daddaf87eda4c77999cb2680dea643e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f88d7a6e7856e1a909547d721be2e4b4a132692e
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224372"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753536"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 
@@ -57,7 +57,7 @@ L’utilisation de solutions de journalisation et de création de rapports cloud
 
 Pour que cette approche soit possible, vos ressources cloud doivent être en mesure de communiquer directement avec vos systèmes locaux via un [réseau hybride](../software-defined-network/hybrid.md) et des [services de domaine hébergés dans le cloud](../identity/index.md#cloud-hosted-domain-services). Une fois cela mis en place, le réseau virtuel cloud fonctionne comme une extension de l’environnement local. Par conséquent, vos charges de travail hébergées sur le cloud peuvent communiquer directement avec votre système de création de rapports et de journalisation local.
 
-Cette approche s’appuie sur les investissements que vous avez déjà faits dans les outils de supervision, et modifie de manière limitée les applications et services déployés sur le cloud. Cette approche est souvent la plus rapide pour prendre en charge la supervision lors d’une migration de type lift-and-shift. En revanche, elle ne permet pas de capturer les données de journal produites par les ressources PaaS et SaaS basées sur le cloud. De même, elle omet tous les journaux liés aux machines virtuelles et générés par la plateforme cloud en elle-même, comme l’état des machines virtuelles. Par conséquent, ce modèle doit servir de solution temporaire en attendant qu’une solution de supervision hybride plus complète soit implémentée.
+Cette approche s’appuie sur les investissements que vous avez déjà faits dans les outils de supervision, et modifie de manière limitée les applications et services déployés sur le cloud. Cette approche est souvent la plus rapide pour prendre en charge la supervision lors d’une migration de type lift-and-shift. En revanche, elle ne permet pas de capturer les données de journal produites par les ressources PaaS et SaaS basées sur le cloud. De même, elle omet tous les journaux liés aux machines virtuelles et générés par la plateforme cloud, comme l’état des machines virtuelles. Par conséquent, ce modèle doit servir de solution temporaire en attendant qu’une solution de supervision hybride plus complète soit implémentée.
 
 Conditions s’appliquant uniquement aux scénarios en local :
 

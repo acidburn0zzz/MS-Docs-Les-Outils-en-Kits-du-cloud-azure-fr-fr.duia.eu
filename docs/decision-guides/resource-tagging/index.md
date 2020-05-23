@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 638f8dad1d7f284104765b28fe53561d98e02b56
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 2865f9a7ceb6d20828e76ad4da3a7ae5ebd81ba3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399817"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753490"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -48,7 +48,7 @@ Votre approche d’étiquetage peut être simple ou complexe, et mettre l’acce
 
 Un étiquetage aligné sur le service informatique (comme l’étiquetage basé sur la charge de travail, l’application, la fonction ou l’environnement) permet de simplifier la supervision des ressources et de faciliter les décisions de gestion prises en fonction des besoins opérationnels.
 
-L’étiquetage des schémas qui sont alignés sur l’entreprise (comme la comptabilité, la propriété d’entreprise ou la criticité) peut nécessiter plus de temps, notamment pour créer des standards d’étiquetage qui reflètent les intérêts métier, et pour conserver ces standards. Toutefois, le résultat de ce processus est un système d’étiquetage qui permet de mieux prendre en compte les coûts ainsi que la valeur des ressources informatiques de l’entreprise. Le fait d’associer la valeur métier d’une ressource à son coût d’exploitation est l’une des premières étapes permettant de modifier la façon dont votre organisation perçoit l’informatique en tant que centre de coûts.
+L’étiquetage des schémas qui sont alignés sur l’entreprise (comme la comptabilité, la propriété d’entreprise ou la criticité) peut nécessiter plus de temps, notamment pour créer des standards d’étiquetage qui reflètent les intérêts métier, et pour conserver ces standards. Cet investissement génère un système d’étiquetage qui permet d’améliorer la gestion des coûts et de la valeur des ressources informatiques dans l’ensemble de l’entreprise. Le fait d’associer la valeur métier d’une ressource à son coût d’exploitation est l’une des premières étapes permettant de modifier la façon dont votre organisation perçoit l’informatique en tant que centre de coûts.
 
 ## <a name="baseline-naming-conventions"></a>Conventions de nommage des bases de référence
 

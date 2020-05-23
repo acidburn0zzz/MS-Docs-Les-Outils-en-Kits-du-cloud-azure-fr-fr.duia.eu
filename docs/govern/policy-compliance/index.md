@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 63eeb2cbcaa278934ba107114057f911604883f2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: d52ac870c7732732ec5ec92e93b5af6caaf8eacf
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399522"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755222"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Dans l’image ci-dessus, la stratégie de gouvernance (risque, stratégie et co
 
 Une approche incrémentielle de la gouvernance cloud part du principe qu’il est inacceptable de dépasser le [seuil de tolérance aux risques de l’entreprise](./risk-tolerance.md). Pour elle, le rôle de la gouvernance est d’accélérer les changements de l’entreprise, d’aider les ingénieurs à comprendre les conseils d’architecture et de s’assurer que les [risques métier](./business-risk.md) sont régulièrement communiqués et évités. À l’inverse, le rôle traditionnel de la gouvernance peut devenir un obstacle à l’adoption par les ingénieurs ou par l’entreprise en général.
 
-Avec l’approche incrémentielle de la gouvernance cloud, il existe parfois une opposition naturelle entre les équipes qui développent de nouvelles solutions métier et les équipes qui protègent l’entreprise des risques. Toutefois, dans ce modèle, les deux équipes peuvent devenir des pairs travaillant par incréments ou sprints. De cette manière, l’équipe de gouvernance cloud et les équipes d’adoption du cloud peuvent travailler ensemble à l’exposition, l’évaluation et l’élimination des risques métier. Grâce à cela, il est possible de réduire naturellement l’opposition entre les équipes et établir la collaboration.
+Avec l’approche incrémentielle de la gouvernance cloud, il existe parfois une opposition naturelle entre les équipes qui développent de nouvelles solutions métier et les équipes qui protègent l’entreprise des risques. Dans ce modèle, les deux équipes peuvent devenir des pairs travaillant par incréments ou sprints. De cette manière, l’équipe de gouvernance cloud et les équipes d’adoption du cloud peuvent travailler ensemble à l’exposition, l’évaluation et l’élimination des risques métier. Grâce à cela, il est possible de réduire naturellement l’opposition entre les équipes et établir la collaboration.
 
 ## <a name="minimum-viable-product-mvp-for-policy"></a>Produit minimum viable (MVP) pour la stratégie
 

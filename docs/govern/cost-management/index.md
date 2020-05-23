@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a89fe9d799e866468df02a9a0f6e7d973ed35dd
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 17d1e25c7e87252b51b83d283da5c328a622293f
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620458"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755064"
 ---
 # <a name="cost-management-discipline-overview"></a>Vue d’ensemble de la discipline Gestion des coûts
 
@@ -22,11 +22,11 @@ La discipline Gestion des coûts est l’une des [cinq disciplines de la gouvern
 > [!NOTE]
 > La discipline Gestion des coûts ne remplace pas les équipes commerciales, les pratiques de comptabilité et les procédures existantes qui sont impliquées dans la gestion financière des coûts informatiques de votre organisation. Le principal objectif de cette discipline consiste à identifier les potentiels risques cloud en lien avec les dépenses informatiques, et à proposer des conseils d’atténuation des risques aux équipes commerciales et informatiques responsables du déploiement et de la gestion des ressources cloud.
 
-Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Cependant, les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés dans votre entreprise et vos équipes informatiques, en particulier les responsables de la propriété, de la gestion et du paiement des charges de travail dans le cloud.
+Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés dans votre entreprise et vos équipes informatiques, en particulier les responsables de la propriété, de la gestion et du paiement des charges de travail dans le cloud.
 
 ## <a name="policy-statements"></a>Policy statements
 
-Les instructions de stratégie exploitables et les exigences d’architecture qui en résultent constituent le fondement d’une discipline Gestion des coûts. Pour prendre connaissance des exemples de déclarations de stratégie, consultez l’article [Instructions de stratégie Gestion des coûts](./policy-statements.md). Ces exemples peuvent servir de point de départ à l’élaboration de stratégies de gouvernance de votre organisation.
+Les instructions de stratégie exploitables et les exigences d’architecture qui en résultent constituent le fondement d’une discipline Gestion des coûts. Utilisez des [exemples d’instructions de stratégie](./policy-statements.md) comme point de départ pour la définition de vos stratégies de gestion des coûts.
 
 > [!CAUTION]
 > Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des instructions stratégiques qui répondent aux besoins particuliers de votre entreprise.

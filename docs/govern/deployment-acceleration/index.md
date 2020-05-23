@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dbd60db37d5eb14b877f45c00956fd1869e9a0ba
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d1a268ca7900d26dc6b47e9bb14bdf813e0023ba
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620539"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755008"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Vue d’ensemble de la discipline Accélération du déploiement
 
@@ -24,11 +24,11 @@ Cet article décrit le processus d’accélération du déploiement qu’une ent
 > [!NOTE]
 > La discipline Accélération du déploiement ne remplace pas les équipes, les processus et les procédures informatiques existants qui permettent à votre entreprise de déployer et de configurer efficacement les ressources cloud. L’objectif principal de cette discipline est d’identifier les risques métier potentiels et de fournir des conseils sur l’atténuation des risques au personnel informatique responsable de la gestion de vos ressources dans le cloud. Lorsque vous élaborez des stratégies et des processus de gouvernance, veillez à faire participer les équipes informatiques pertinentes à vos processus de planification et de révision.
 
-Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Cependant, les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés dans votre entreprise et vos équipes informatiques, en particulier les responsables du déploiement et de la configuration des charges de travail dans le cloud.
+Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés dans votre entreprise et vos équipes informatiques, en particulier les responsables du déploiement et de la configuration des charges de travail dans le cloud.
 
 ## <a name="policy-statements"></a>Policy statements
 
-Les déclarations de stratégie exploitables et les exigences d’architecture qui en résultent constituent la base d’une discipline Accélération du déploiement. Pour prendre connaissance des exemples de déclarations de stratégie, consultez l’article [Déclarations de stratégie d’accélération du déploiement](./policy-statements.md). Ces exemples peuvent servir de point de départ à l’élaboration de stratégies de gouvernance de votre organisation.
+Les déclarations de stratégie exploitables et les exigences d’architecture qui en résultent constituent la base d’une discipline Accélération du déploiement. Utilisez des [exemples d’instructions de stratégie](./policy-statements.md) comme point de départ pour la définition de vos stratégies d’accélération du déploiement.
 
 > [!CAUTION]
 > Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des instructions stratégiques qui répondent aux besoins particuliers de votre entreprise.

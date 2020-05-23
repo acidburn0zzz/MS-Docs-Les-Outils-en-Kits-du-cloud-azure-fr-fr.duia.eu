@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3eb722a170f508f749795fbfc91dc2ce58a1edb9
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 01619281c3531c18afe3fc031b9f1fde1f7d4f0b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621206"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753997"
 ---
 # <a name="encryption-decision-guide"></a>Guide de décision concernant le chiffrement
 
@@ -25,7 +25,7 @@ La stratégie de chiffrement cloud se concentre sur la stratégie d’entreprise
 
 Pour les charges de travail exigeantes, il est essentiel de trouver le bon équilibre entre performances et chiffrement, ainsi que de déterminer comment chiffrer les données et le trafic. Le coût et la complexité des mécanismes de chiffrement peuvent varier. En outre, les exigences techniques et stratégiques peuvent influencer vos décisions concernant la façon dont le chiffrement est appliqué et la façon dont les clés et les secrets critiques sont stockés et gérés.
 
-Lorsque vous planifiez une stratégie de chiffrement, la stratégie d’entreprise et les exigences de conformité tierces constituent les principaux éléments à prendre en compte. Azure propose plusieurs mécanismes standards capables de répondre aux exigences courantes concernant le chiffrement des données qui sont au repos ou en transit. Toutefois, pour les stratégies et les exigences de conformité qui demandent un contrôle plus strict, telles que la gestion standardisée des clés et des secrets, le chiffrement des données en cours d’utilisation ou le chiffrement de certaines données, vous devrez probablement implémenter une stratégie de chiffrement plus sophistiquée afin de répondre à ces exigences.
+Lorsque vous planifiez une stratégie de chiffrement, la stratégie d’entreprise et les exigences de conformité tierces constituent les principaux éléments à prendre en compte. Azure propose plusieurs mécanismes standards capables de répondre aux exigences courantes concernant le chiffrement des données qui sont au repos ou en transit. Pour les stratégies et les exigences de conformité qui demandent un contrôle plus strict, telles que la gestion standardisée des clés et des secrets, le chiffrement des données en cours d’utilisation ou le chiffrement de certaines données, vous devrez probablement implémenter une stratégie de chiffrement plus sophistiquée afin de répondre à ces exigences.
 
 ## <a name="key-management"></a>Gestion des clés
 
@@ -58,7 +58,7 @@ Avec une approche de type BYOK (Bring Your Own Key), vous générez des clés su
 
 - Vous faites confiance à l’infrastructure sous-jacente de sécurité et de contrôle d’accès de la plateforme cloud pour héberger et utiliser vos clés et vos secrets.
 - Vos applications ou services hébergés dans le cloud peuvent accéder aux clés et aux secrets, et les utiliser de manière fiable et sécurisée.
-- Vous êtes obligé, par une stratégie réglementaire ou organisationnelle, de créer et de gérer les secrets et les clés de votre organisation localement.
+- Vous êtes obligé, par une stratégie réglementaire ou organisationnelle, de créer et de gérer localement les secrets et les clés de votre organisation.
 
 ### <a name="on-premises-hold-your-own-key"></a>Locale (Hold Your Own Key, HYOK)
 

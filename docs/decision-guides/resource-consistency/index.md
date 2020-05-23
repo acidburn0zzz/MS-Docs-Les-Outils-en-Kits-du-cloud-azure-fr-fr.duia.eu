@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d89a0e0facd81ed06c38cae4283f96791eeddd3f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0d38c59c75c2119043f04cdeb9c10402bfce53c2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224321"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753531"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guide de décision pour la cohérence des ressources
 
@@ -40,7 +40,7 @@ Les groupes de ressources servent de conteneurs pour les ressources ayant un cyc
 Si vous avez répondu _non_ à l’une ou plusieurs de ces questions, vous devez placer la ressource en question ailleurs, dans un autre groupe de ressources.
 
 > [!IMPORTANT]
-> Les groupes de ressources sont également spécifiques à la région. Toutefois, il arrive fréquemment que des ressources se trouvent dans des régions différentes au sein du même groupe de ressources, car elles sont gérées ensemble comme décrit ci-dessus. Pour plus d’informations sur la sélection des régions, consultez [Plusieurs régions](../../migrate/azure-best-practices/multiple-regions.md).
+> Les groupes de ressources sont également spécifiques à la région. Toutefois, il arrive fréquemment que des ressources se trouvent dans des régions différentes au sein du même groupe de ressources, car elles sont gérées ensemble, comme décrit ci-dessus. Pour plus d’informations sur la sélection des régions, consultez [Plusieurs régions](../../migrate/azure-best-practices/multiple-regions.md).
 
 ## <a name="deployment-consistency"></a>Cohérence du déploiement
 
@@ -64,7 +64,7 @@ La section [Application de stratégie](../policy-enforcement/index.md) fournit u
 
 ## <a name="hierarchical-consistency"></a>Cohérence hiérarchique
 
-Les groupes de ressources vous permettent de prendre en charge des niveaux hiérarchiques supplémentaires au sein de l’abonnement de votre organisation, en appliquant les règles Azure Policy et les contrôles d’accès au niveau d’un groupe de ressources. Toutefois, à mesure que grandit votre patrimoine cloud, vous aurez peut-être des besoins de gouvernance multiabonnements plus complexes que ceux pouvant être satisfaits par la hiérarchie Entreprise/Service/Compte/Abonnement du Contrat Entreprise Azure.
+Les groupes de ressources vous permettent de prendre en charge des niveaux hiérarchiques supplémentaires au sein de l’abonnement de votre organisation, en appliquant les règles Azure Policy et les contrôles d’accès au niveau d’un groupe de ressources. À mesure que grandit votre patrimoine cloud, vous aurez peut-être des besoins de gouvernance multiabonnements plus complexes que ceux pouvant être satisfaits par la hiérarchie Entreprise/Service/Compte/Abonnement du Contrat Entreprise Azure.
 
 Les [groupes d’administration Azure](https://docs.microsoft.com/azure/governance/management-groups) vous permettent d’organiser les abonnements dans des structures organisationnelles plus sophistiquées en les regroupant dans une hiérarchie distincte de celle du Contrat Entreprise. Cette autre hiérarchie vous permet d’appliquer des mécanismes d’application des stratégies et de contrôle de l’accès dans plusieurs abonnements à la fois et dans les ressources qu’ils contiennent. Les hiérarchies des groupes d’administration peuvent être utilisées pour associer les abonnements de votre patrimoine cloud à des opérations ou à des besoins de gouvernance métier. Pour plus d’informations, consultez le [Guide de décision concernant les abonnements](../subscriptions/index.md).
 
@@ -74,7 +74,7 @@ Pour les grands déploiements cloud, la gouvernance mondiale devient à la fois 
 
 [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) donnent les moyens aux organisations de supporter la gouvernance globale des vastes domaines cloud dans Azure. Les blueprints vont au-delà des fonctionnalités fournies par les modèles standard Azure Resource Manager pour créer des orchestrations de déploiement complètes capables de déployer des ressources et d’appliquer des règles de stratégie. Les blueprints prennent en charge la gestion de versions, et permettent de mettre à jour tous les abonnements où le blueprint a été utilisé et de bloquer les abonnements déployés pour éviter la création et la modification non autorisées des ressources.
 
-Ces packages de déploiement permettent aux équipes informatiques et de développement de déployer rapidement de nouvelles charges de travail et des ressources réseau conformes à l’évolution des exigences des stratégies de l’entreprise. Les blueprints peuvent également être intégrés dans les pipelines de CI/CD afin d’appliquer les normes de gouvernance révisées aux déploiements au fur et à mesure de leur mise à jour.
+Ces packages de déploiement permettent aux équipes informatiques et de développement de déployer rapidement de nouvelles charges de travail et des ressources réseau conformes à l’évolution des exigences des stratégies de l’entreprise. Les blueprints peuvent également être intégrés dans les pipelines CI/CD afin d’appliquer les standards de gouvernance révisés aux déploiements, au fur et à mesure de leur mise à jour.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 92e793e2df89bbb70fe51fd7af9ef8fc1456ffa2
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d246a5c00aff0bacc7b12f79c9f252f6956b2907
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620655"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754644"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Présentation de la discipline Base de référence des identités
 
@@ -22,13 +22,13 @@ La base de référence des identités est l’une des [Cinq disciplines de la go
 > [!NOTE]
 > La discipline Ligne de base des identités ne remplace pas les équipes, les processus et les procédures informatiques existants qui permettent à votre entreprise de gérer et de sécuriser les services d’identité. L’objectif principal de cette discipline est d’identifier les risques métier potentiels liés aux identités et de fournir des conseils sur l’atténuation des risques au personnel informatique responsable de l’implémentation, de la gestion et de l’exploitation de votre infrastructure de gestion des identités. Lorsque vous élaborez des stratégies et des processus de gouvernance, veillez à faire participer les équipes informatiques pertinentes à vos processus de planification et de révision.
 
-Cette section des lignes directrices du Framework d’adoption du cloud décrit l’approche à adopter pour élaborer une discipline Base de référence des identités dans le cadre de votre stratégie de gouvernance cloud. Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Cependant, les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés des équipes informatiques responsables de l’implémentation et de l’administration de vos solutions de gestion des identités.
+Cette section des lignes directrices du Framework d’adoption du cloud décrit l’approche à adopter pour élaborer une discipline Base de référence des identités dans le cadre de votre stratégie de gouvernance cloud. Ce guide s’adresse principalement aux architectes cloud de votre organisation et aux autres membres de votre équipe de gouvernance cloud. Les décisions, les stratégies et les processus qui découlent de cette discipline doivent impliquer un engagement et des discussions avec les membres concernés des équipes informatiques responsables de l’implémentation et de l’administration de vos solutions de gestion des identités.
 
 Si votre organisation manque d’expertise interne en matière de sécurité et d’identités, envisagez de faire appel à des consultants externes pour y remédier. Envisagez également de faire appel aux [Services de conseil Microsoft](https://www.microsoft.com/industry/services/consulting), au service d’adoption du cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou à des partenaires externes pour aborder les préoccupations liées à cette discipline.
 
 ## <a name="policy-statements"></a>Policy statements
 
-Les déclarations de stratégie exploitables et les exigences d’architecture qui en résultent constituent la base d’une discipline Base de référence des identités. Pour prendre connaissance des exemples de déclarations de stratégie, consultez l’article [Déclarations des stratégies Ligne de base des identités](./policy-statements.md). Ces exemples peuvent servir de point de départ à l’élaboration de stratégies de gouvernance de votre organisation.
+Les déclarations de stratégie exploitables et les exigences d’architecture qui en résultent constituent la base d’une discipline Base de référence des identités. Utilisez des [exemples d’instructions de stratégie](./policy-statements.md) comme point de départ pour la définition de vos stratégies de base de référence des identités.
 
 > [!CAUTION]
 > Les exemples de stratégies émanent de l’expérience commune des clients. Pour mieux corréler ces stratégies aux besoins spécifiques de gouvernance cloud, exécutez les étapes suivantes afin de créer des instructions stratégiques qui répondent aux besoins particuliers de votre entreprise.

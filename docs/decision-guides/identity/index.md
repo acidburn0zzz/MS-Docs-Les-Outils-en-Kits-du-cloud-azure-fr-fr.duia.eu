@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ed4c1c3cf7958f4e96db7eba71fe1f008bc81eb2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3c89c5347032d0dcec68344066ac00028fedb7bd
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222842"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753793"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -27,7 +27,7 @@ Passer à : [Déterminer les exigences d’intégration des identités](#determ
 
 Plusieurs options sont disponibles pour gérer les identités dans un environnement cloud. Ces options varient au niveau du coût et de la complexité. Le niveau d’intégration requis avec votre infrastructure d’identité sur site existante est un facteur clé dans la structuration de vos services d’identité cloud.
 
-Azure Active Directory (Azure AD) fournit un niveau basique de gestion des identités et de contrôle d’accès aux ressources Azure. Cependant, si l’infrastructure Active Directory locale de votre organisation présente une structure en forêt complexe ou des unités d’organisation personnalisées, il se peut que vos charges de travail basées sur le cloud nécessitent la synchronisation des annuaires avec Azure AD pour bénéficier d’un ensemble cohérent d’identités, de groupes et de rôles dans vos environnements locaux et cloud. De plus, pour garantir la prise en charge des applications qui dépendent de mécanismes d’authentification hérités, vous pouvez être amené à déployer Active Directory Domain Services (AD DS) dans le cloud.
+Azure Active Directory (Azure AD) fournit un niveau basique de gestion des identités et de contrôle d’accès aux ressources Azure. Si l’infrastructure Active Directory locale de votre organisation présente une structure en forêt complexe, ou des unités d’organisation personnalisées, il se peut que vos charges de travail basées sur le cloud nécessitent la synchronisation des annuaires avec Azure AD pour bénéficier d’un ensemble cohérent d’identités, de groupes et de rôles dans vos environnements locaux et cloud. De plus, pour garantir la prise en charge des applications qui dépendent de mécanismes d’authentification hérités, vous pouvez être amené à déployer Active Directory Domain Services (AD DS) dans le cloud.
 
 La gestion des identités basée sur le cloud est un processus itératif. Pour un premier déploiement, vous pouvez commencer par une solution cloud native avec un petit ensemble d’utilisateurs et les rôles correspondants. À mesure que votre migration arrive à maturité, vous pouvez avoir besoin d’intégrer votre solution d’identité en utilisant la synchronisation d’annuaires ou d’ajouter des services de domaine dans le cadre de vos déploiements cloud. Réétudiez votre stratégie d’identité dans chaque itération du processus de migration.
 

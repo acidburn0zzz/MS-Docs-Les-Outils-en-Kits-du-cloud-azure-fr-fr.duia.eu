@@ -8,27 +8,27 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5c5ba323856ef3eb9612c7abdd733bfa32c6725f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: cd9454d33e15a862a68ba299cc10036fdb0c8ac9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620500"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754435"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Gouvernance dans le Framework d’adoption du cloud Microsoft pour Azure
 
 Le cloud crée de nouveaux paradigmes pour les technologies sur lesquelles s’appuie l’entreprise. Ces nouveaux paradigmes changent également la façon dont ces technologies sont adoptées, gérées et régies. Alors qu’il est désormais possible de virtuellement déconstruire et recréer un centre de données avec une seule ligne de code exécutée à partir d’un processus sans assistance, nous devons repenser les approches traditionnelles. Ceci est particulièrement vrai pour la gouvernance.
 
-La gouvernance du cloud est un processus itératif. Pour les organisations qui disposent déjà de stratégies régissant les environnements informatiques locaux, la gouvernance cloud vient en complément de ces stratégies. Cependant, le niveau d’intégration entre les stratégies d’entreprise locales et cloud varie en fonction de la maturité de la gouvernance cloud et du patrimoine numérique dans le cloud. Les processus de gouvernance et les stratégies cloud changent au même rythme que le patrimoine cloud. Les exercices suivants vous aident à commencer à créer les bases initiales de votre gouvernance.
+La gouvernance du cloud est un processus itératif. Pour les organisations qui disposent déjà de stratégies régissant les environnements informatiques locaux, la gouvernance cloud vient en complément de ces stratégies. Le niveau d’intégration des stratégies d’entreprise locales et cloud varie en fonction de la maturité de la gouvernance cloud et du patrimoine numérique dans le cloud. Les processus de gouvernance et les stratégies cloud changent au même rythme que le patrimoine cloud. Les exercices suivants vous aident à commencer à créer les bases initiales de votre gouvernance.
 
 <!-- markdownlint-disable MD033 -->
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png) | <br> [Méthodologie](./methodology.md) : Appréhendez les notions élémentaires de la méthodologie pilotant la gouvernance cloud dans le Framework d’adoption du cloud pour commencer à réfléchir à la solution de l’état final. |
-| <br> ![2](../_images/icons/2.png) | <br> [Référence](./benchmark.md) : Évaluez votre état actuel et l’état futur afin d’établir une vision pour l’application du framework. |
-| <br> ![3](../_images/icons/3.png) | <br> [Fondation de gouvernance initiale](./initial-foundation.md) : Commencez votre parcours de gouvernance avec un petit ensemble d’outils de gouvernance facilement implémenté. Cette base de gouvernance initiale est appelée « produit minimum viable » (MVP, Minimum Viable Product).                                |
-| <br> ![4](../_images/icons/4.png) | <br> [Améliorer la fondation de gouvernance initiale](./foundation-improvements.md) : Tout au long de l’implémentation du plan d’adoption du cloud, ajoutez de manière itérative des contrôles de gouvernance afin de gérer les risques tangibles à mesure que vous avancez vers l’état final. |
+| <br> ![1](../_Images/icons/1.png) | <br> [Méthodologie](./methodology.md) : Appréhendez les notions élémentaires de la méthodologie pilotant la gouvernance cloud dans le Framework d’adoption du cloud pour commencer à réfléchir à la solution de l’état final. |
+| <br> ![2](../_Images/icons/2.png) | <br> [Référence](./benchmark.md) : Évaluez votre état actuel et l’état futur afin d’établir une vision pour l’application du framework. |
+| <br> ![3](../_Images/icons/3.png) | <br> [Fondation de gouvernance initiale](./initial-foundation.md) : Commencez votre parcours de gouvernance avec un petit ensemble d’outils de gouvernance facilement implémenté. Cette base de gouvernance initiale est appelée « produit minimum viable » (MVP, Minimum Viable Product).                                |
+| <br> ![4](../_Images/icons/4.png) | <br> [Améliorer la fondation de gouvernance initiale](./foundation-improvements.md) : Tout au long de l’implémentation du plan d’adoption du cloud, ajoutez de manière itérative des contrôles de gouvernance afin de gérer les risques tangibles à mesure que vous avancez vers l’état final. |
 
 ## <a name="objective-of-this-content"></a>Objectif de ce contenu
 
@@ -45,7 +45,7 @@ Le contenu du Framework d’adoption du cloud touche l’activité, la technolog
 
 L’architecte du cloud joue le rôle de facilitateur et de leader d’opinion pour rassembler tous ces publics. Le contenu figurant dans cette collection de guides est conçu pour aider l’architecte cloud à adapter les discussions en fonction des publics et ainsi prendre les décisions nécessaires. La transformation métier rendue possible par le cloud dépend des conseils donnés par l’architecte du cloud aux équipes métier et informatiques.
 
-**Spécialisation Architecte du cloud dans cette section :** Chaque section du Framework d’adoption du cloud représente une spécialisation ou une variante différente du rôle de l’architecte cloud. La présente section du Framework d’adoption du cloud s’adresse aux architectes du cloud qui se passionnent pour l’atténuation ou la réduction des risques techniques. Des fournisseurs cloud nomment ces spécialistes des _concierges du cloud_, mais nous préférons les appeler _gardiens du cloud_ ou _équipe de gouvernance cloud_. Chacun des guides de gouvernance exploitables comporte des articles détaillant la composition et le rôle de l’équipe de gouvernance cloud et son évolution au fil du temps.
+**Spécialisation Architecte du cloud dans cette section :** Chaque section du Framework d’adoption du cloud représente une spécialisation ou une variante différente du rôle de l’architecte cloud. La présente section du Framework d’adoption du cloud s’adresse aux architectes du cloud qui se passionnent pour l’atténuation ou la réduction des risques techniques. Des fournisseurs cloud nomment ces spécialistes des _concierges du cloud_, mais nous préférons les appeler _gardiens du cloud_ ou _équipe de gouvernance cloud_. Chacun des guides de gouvernance actionnable explique comment la composition et le rôle de l’équipe de gouvernance cloud peuvent changer au fil du temps.
 
 ## <a name="use-this-guide"></a>Utiliser ce guide
 
