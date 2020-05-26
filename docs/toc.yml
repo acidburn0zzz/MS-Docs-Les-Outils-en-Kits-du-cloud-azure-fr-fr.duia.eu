@@ -387,7 +387,7 @@ items:
                 items:
                   - name: Refactoriser une application sur Azure App Service et Azure SQL Database
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                  - name: Refactoriser une application sur Azure App Service et une instance managée Azure SQL Database
+                  - name: Refactoriser une application sur Azure App Service et Azure SQL Managed Instance
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance.md
                   - name: Regénérer une application dans Azure App Service
                     href: migrate/azure-best-practices/contoso-migration-rebuild.md
@@ -415,7 +415,7 @@ items:
                     href: 'https://docs.microsoft.com/azure/java/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: SQL Server
                 items:
-                  - name: Réhéberger une application sur des machines virtuelles Azure et sur une instance managée Azure SQL Database
+                  - name: Réhéberger une application sur des machines virtuelles Azure et Azure SQL Managed Instance
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
                   - name: Réhéberger une application sur des machines virtuelles Azure et des groupes de disponibilité SQL Server AlwaysOn
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
@@ -427,7 +427,7 @@ items:
                     items:
                       - name: Refactoriser SQL Server dans Azure SQL Database
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb'
-                      - name: Refactoriser SQL Server dans une instance managée Azure SQL Database
+                      - name: Refactoriser SQL Server dans Azure SQL Managed Instance
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi'
                       - name: Refactoriser SQL Server dans SQL Server sur des machines virtuelles Azure
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm'
@@ -483,11 +483,11 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Migrer SQL Server vers Azure SQL Database en ligne
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Migrer SQL Server vers une instance managée Azure SQL Database hors connexion
+                      - name: Migrer SQL Server vers Azure SQL Managed Instance hors connexion
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Migrer SQL Server vers une instance managée Azure SQL Database en ligne
+                      - name: Migrer SQL Server vers Azure SQL Managed Instance en ligne
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Migrer Amazon RDS SQL Server vers Azure SQL Database ou Azure SQL Database Managed Instance en ligne
+                      - name: Migrer Amazon RDS SQL Server vers Azure SQL Database ou Azure SQL Managed Instance en ligne
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Migrer MySQL vers Azure Database pour MySQL en ligne
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'

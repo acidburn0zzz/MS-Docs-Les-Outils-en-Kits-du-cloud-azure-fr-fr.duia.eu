@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1da093324253a3a551b1bb8306a0727536ec46b5
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2f619ae4b8d1b4cc28062537489ddc6d30f4f6e7
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753781"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814713"
 ---
 # <a name="architectural-decision-guides"></a>Guides de décision en matière d'architecture
 
@@ -25,7 +25,7 @@ Ces guides de décision complètent les exemples de parcours de gouvernance en p
 
 ## <a name="decision-guidance-categories"></a>Catégories de recommandations de décision
 
-Chacune des catégories suivantes représente une technologie de base de tout déploiement dans le cloud. Les exemples de parcours de gouvernance prennent des décisions de conception liées à ces technologies, en fonction des besoins des entreprises exemples, et certaines de ces décisions peuvent ne pas correspondre aux propres besoins de votre organisation. Les sections suivantes traitent des options alternatives pour chacune de ces catégories, ce qui vous permet de choisir un schéma ou un modèle plus adapté à vos besoins.
+Les catégories suivantes représentent les technologies fondamentales de tous les déploiements cloud. Les exemples de parcours de gouvernance prennent des décisions de conception liées à ces technologies, en fonction des besoins des entreprises exemples, et certaines de ces décisions peuvent ne pas correspondre aux propres besoins de votre organisation. Les sections suivantes traitent des options alternatives pour chaque catégorie, ce qui vous permet de choisir un schéma ou un modèle plus adapté à vos besoins.
 
 [Abonnements](./subscriptions/index.md) : Planifiez la conception d'abonnement et la structure de compte de votre déploiement dans le cloud pour répondre aux fonctionnalités de votre organisation en termes de propriété, de facturation et de gestion.
 

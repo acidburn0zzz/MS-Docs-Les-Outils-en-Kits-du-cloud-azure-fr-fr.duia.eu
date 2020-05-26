@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 10525a8bf3c49646d99e5e99de6372c0c1d570ee
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80636506"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815291"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Guide de migration Azure : Avant de commencer
 
@@ -25,7 +25,7 @@ Le présent guide expose une version simplifiée de ce processus dans le context
 ::: zone target="docs"
 
 > [!TIP]
-> Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [centre des guides de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure, sélectionnez **Migrer votre environnement vers Azure** et suivez les instructions pas à pas.
+> Pour une expérience interactive, consultez ce guide dans le portail Azure. Accédez au [centre des guides de démarrage rapide Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) dans le portail Azure, sélectionnez **Guide de migration Azure** et suivez les instructions pas à pas.
 
 ::: zone-end
 

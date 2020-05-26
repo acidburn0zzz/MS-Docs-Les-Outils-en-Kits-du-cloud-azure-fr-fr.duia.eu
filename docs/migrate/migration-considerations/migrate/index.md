@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6325e577453598bee8092ee3ba49c6dc1057c9e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ce653ab8c37eb4e034647cb8022adaf391f1949f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214223"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815342"
 ---
 # <a name="deploy-workloads"></a>Déployer les charges de travail
 
