@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f88d7a6e7856e1a909547d721be2e4b4a132692e
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5aa8f25ea54fc6ab8df5728bc742f6f3c9ff3886
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753536"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862464"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guide de décision sur la journalisation et création de rapports
 
@@ -36,7 +36,7 @@ Lors de la planification de votre déploiement, vous devez penser à l’emplace
 | Vous disposez déjà d’une infrastructure de supervision locale ? | Non | Oui | Oui |  Non |
 | Avez-vous des exigences qui empêchent le stockage des données de journal dans des emplacements de stockage externes ? | Non | Oui | Non | Non |
 | Avez-vous besoin d’intégrer la supervision cloud à des systèmes locaux ? | Non | Non | Oui | Non |
-Avez-vous besoin de traiter ou filtrer les données de télémétrie avant de les envoyer à vos systèmes de supervision ? | Non | Non | Non | Oui |
+| Avez-vous besoin de traiter ou filtrer les données de télémétrie avant de les envoyer à vos systèmes de supervision ? | Non | Non | Non | Oui |
 
 ### <a name="cloud-native"></a>Cloud natif
 
