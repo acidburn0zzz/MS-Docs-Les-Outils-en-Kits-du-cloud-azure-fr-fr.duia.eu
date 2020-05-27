@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 074762c6d02c6da1cd6812064e20f63a44aa4bd7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 61777d3fa99c8692c8db91281dfdc0914e9f2b59
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217283"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861563"
 ---
 # <a name="common-azure-policy-examples"></a>Exemples de stratégies Azure Policy courantes
 
@@ -32,20 +32,21 @@ La conformité aux réglementations et aux stratégies dépend souvent du contr�
 Pour trouver cette stratégie dans le portail, recherchez « emplacement » dans la page de définition de stratégie. Ou exécutez cette cmdlet pour rechercher la stratégie :
 
 ```powershell
-Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn') -and ($_.Properties.displayName -like '*location*') }
+Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn') `
+  -and ($_.Properties.displayName -like '*location*') }
 ```
 
 Le script suivant montre comment attribuer la stratégie. Modifiez la valeur de `$SubscriptionID` pour qu’elle pointe vers l’abonnement auquel vous souhaitez affecter la stratégie. Avant d’exécuter le script, utilisez la cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) pour vous connecter.
 
 ```powershell
-#Specify the value for $SubscriptionID.
+# Specify the value for $SubscriptionID.
 $SubscriptionID = <subscription ID>
 $scope = "/subscriptions/$SubscriptionID"
 
-#Replace the -Name GUID with the policy GUID you want to assign.
+# Replace the -Name GUID with the policy GUID you want to assign.
 $AllowedLocationPolicy = Get-AzPolicyDefinition -Name "e56962a6-4747-49cd-b67b-bf8b01975c4c"
 
-#Replace the locations with the ones you want to specify.
+# Replace the locations with the ones you want to specify.
 $policyParam = '{ "listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyParam
 ```
@@ -77,14 +78,14 @@ Le GUID de la stratégie est `2835b622-407b-4114-9198-6f7064cbe0dc`.
 Le script suivant montre comment attribuer la stratégie. Pour utiliser le script, modifiez la valeur de `$SubscriptionID` pour qu’elle pointe vers l’abonnement auquel vous souhaitez affecter la stratégie. Avant d’exécuter le script, utilisez la cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) pour vous connecter.
 
 ```powershell
-#Specify the value for $SubscriptionID.
-$SubscriptionID = <subscription ID>
-$scope = "/subscriptions/$SubscriptionID"
+# Specify the value for $SubscriptionID.
+$subscriptionID = <subscription ID>
+$scope = "/subscriptions/$subscriptionID"
 
-$AntimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
+$antimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
 
-#Replace location "eastus" with the value that you want to use.
-New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $AntimalwarePolicy -Location eastus –AssignIdentity
+# Replace location "eastus" with the value that you want to use.
+New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $antimalwarePolicy -Location eastus –AssignIdentity
 
 ```
 

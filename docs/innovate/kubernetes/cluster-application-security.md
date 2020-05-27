@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6a5ae0083e619dc2db975682b5f50c0e8e2f1936
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 919291ade8c760429eb5df4d848f745014912eb6
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224015"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861988"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -37,7 +37,7 @@ Pour bien démarrer, la liste de contrôle et les ressources ci-dessous vous aid
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Familiarisez-vous avec le livre blanc sur les principes de base de la sécurité de Kubernetes.** Les objectifs principaux d’un environnement Kubernetes sécurisé consistent à s’assurer que les applications qu’il exécute sont protégées, que les problèmes de sécurité peuvent être identifiés et résolus rapidement, et que les futurs problèmes similaires seront évités. | [The Definitive Guide to Securing Kubernetes (whitepaper)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original) (Guide de sécurisation de Kubernetes (livre blanc))     |
 > | **Passez en revue la configuration du durcissement de la sécurité pour les nœuds de cluster.** Un système d’exploitation hôte à la sécurité durcie réduit la surface d’exposition aux attaques et permet de déployer des conteneurs en toute sécurité. | [Durcissement de la sécurité des hôtes de machines virtuelles AKS](https://docs.microsoft.com/azure/aks/security-hardened-vm-host-image)     |
-> | **Configurez le contrôle d’accès en fonction du rôle (RBAC) pour le cluster.** Ce mécanisme de contrôle vous permet d’affecter à des utilisateurs ou à des groupes d’utilisateurs, l’autorisation d’accomplir des opérations, telles que la création ou la modification de ressources, ou encore l’affichage de journaux d’activité à partir de charges de travail d’applications en cours d’exécution. | [Présentation du contrôle d’accès en fonction du rôle (RBAC) dans Kubernetes (vidéo)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br/> [Intégrer Azure AD à Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br/> [Limiter l’accès au fichier de configuration de cluster](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
+> | **Configurez le contrôle d’accès en fonction du rôle (RBAC) pour le cluster.** Ce mécanisme de contrôle vous permet d’affecter à des utilisateurs ou à des groupes d’utilisateurs, l’autorisation d’accomplir des opérations, telles que la création ou la modification de ressources, ou encore l’affichage de journaux d’activité à partir de charges de travail d’applications en cours d’exécution. | [Présentation du contrôle d’accès en fonction du rôle (RBAC) dans Kubernetes (vidéo)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [Intégrer Azure AD à Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br> [Limiter l’accès au fichier de configuration de cluster](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>Déployer en production et appliquer les bonnes pratiques
 
@@ -62,7 +62,7 @@ Lors de la préparation de l’application pour la production, vous devez implé
 > | **Limitez le trafic de sortie du cluster.** Découvrez les ports et adresses à autoriser pour limiter le trafic de sortie du cluster. Vous pouvez utiliser le Pare-feu Azure ou une appliance de pare-feu tierce pour sécuriser votre trafic de sortie et définir ces ports et adresses requis. | [Contrôler le trafic de sortie pour les nœuds de cluster dans AKS](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
 > | **Sécurisez le trafic avec un pare-feu d’applications web (WAF).** Utilisez Azure Application Gateway comme contrôleur d’entrée pour les clusters Kubernetes.  | [Configurer Azure Application Gateway comme contrôleur d’entrée](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **Appliquez des mises à jour de sécurité et de noyau aux nœuds Worker.** Familiarisez-vous avec l’expérience de mise à jour des nœuds AKS Pour protéger vos clusters, les mises à jour de sécurité sont appliquées automatiquement aux nœuds Linux dans AKS. Ces mises à jour incluent des correctifs de sécurité ou des mises à jour du noyau. Certaines de ces mises à jour nécessitent un redémarrage du nœud pour terminer le processus. | [Utiliser kured afin de redémarrer automatiquement les nœuds pour appliquer les mises à jour](https://docs.microsoft.com/azure/aks/node-updates-kured) |
-> | **Configurez une solution d’analyse de conteneur et de cluster.** Analysez les conteneurs envoyés dans Azure Container Registry et obtenez une visibilité accrue des nœuds de cluster, du trafic cloud et des contrôles de sécurité. | [Intégration d’Azure Container Registry avec Security Center](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Intégration d’Azure Kubernetes Service à Security Center](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
+> | **Configurez une solution d’analyse de conteneur et de cluster.** Analysez les conteneurs envoyés dans Azure Container Registry et obtenez une visibilité accrue des nœuds de cluster, du trafic cloud et des contrôles de sécurité. | [Intégration d’Azure Container Registry avec Security Center](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br> [Intégration d’Azure Kubernetes Service à Security Center](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 
 ## <a name="optimize-and-scale"></a>Optimiser et mettre à l’échelle
 

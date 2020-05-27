@@ -6,14 +6,14 @@ ms.service: cloud-adoption-framework
 ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.subservice: overview
-ms.openlocfilehash: 0481175abfc695d9a7eb17f537cdb3ff40fcd7a3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bdcf7b83191c2e4311759c56bd3928207dd00b8a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230553"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752808"
 ---
 # <a name="help-finding-the-appropriate-getting-started-guide"></a>Aide pour trouver le guide de mise en route approprié
 
@@ -59,8 +59,8 @@ L'adoption du cloud requiert des changements techniques, mais pour se transforme
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | [Comment assurer l'excellence opérationnelle dans le cadre de la transformation cloud ?](./operational-excellence.md)                   | Les étapes décrites dans ce guide aideront l'équipe chargée de la stratégie à diriger la gestion des changements organisationnels nécessaire pour garantir l'excellence opérationnelle de manière cohérente. |
 | [Comment gérer les coûts de l'entreprise ?](./manage-costs.md)                                          | Optimisez les coûts de l'entreprise et gérez les coûts dans l'ensemble de l'environnement.                                                                           |
-| [Comment sécuriser l'environnement cloud de l'entreprise ?](./security.md)             | Ce guide de prise en main peut aider à s'assurer que les exigences de sécurité appropriées ont été appliquées dans toute l'entreprise pour réduire les risques de violation et accélérer la récupération en cas de violation.                                       |
-| [Comment appliquer les bons contrôles pour améliorer la fiabilité ?](./reliability.md)                   | Ce guide de prise en main permet de réduire les interruptions liées aux incohérences dans la configuration, l'organisation des ressources, les bases de référence de sécurité ou les stratégies de protection des ressources. |
+| [Comment sécuriser l'environnement cloud de l'entreprise ?](./security.md)             | Ce guide de démarrage peut aider à s’assurer que les exigences de sécurité appropriées ont été appliquées dans l’entreprise pour réduire les risques de violation et accélérer la récupération en cas de violation.                                       |
+| [Comment appliquer les bons contrôles pour améliorer la fiabilité ?](./reliability.md)                   | Ce guide de démarrage aide à réduire les interruptions liées aux incohérences dans la configuration, l’organisation des ressources, les bases de référence de sécurité ou les stratégies de protection des ressources. |
 | [Comment garantir les performances dans l'ensemble de l'entreprise ?](./performance.md)                               | Ce guide de prise en main peut vous aider à établir des processus pour maintenir les performances dans toute l'entreprise.                               |
 
 ## <a name="establish-teams"></a>Établir des équipes

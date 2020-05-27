@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 5e3c99c0a2cb9578aebb7e66b3350c4c6c21348b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: a155bb9c084b49f0f2876e3166e44c1aab3c78df
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230265"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755493"
 ---
 # <a name="cloud-security-compliance-management-functions"></a>Fonctions de gestion de la conformité de la sécurité du cloud
 

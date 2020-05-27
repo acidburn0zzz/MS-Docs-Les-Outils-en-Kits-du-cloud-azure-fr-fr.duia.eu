@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: c966129e01d9cf97af0ac1db0a8ac7bec8efb751
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: 45fe536ab6ae8efd9a11adb6e7f8776a05f76566
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401126"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815512"
 ---
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
@@ -31,8 +31,8 @@ La détection des menaces et la réponse à celles-ci font actuellement l’obje
 
 - **Élévation à la gestion des risques métier :** le centre des opérations de sécurité du cloud devient un composant clé de la gestion des risques pour l’organisation.
 - **Métriques et objectifs :** le suivi de l’efficacité du centre des opérations de sécurité du cloud évolue, passant du « temps de détection » aux indicateurs clés suivants :
-  - *Réactivité* via un temps moyen d’accusé de réception
-  - *Vitesse de correction* via un temps moyen de correction
+  - _Réactivité_ via un temps moyen d’accusé de réception
+  - _Vitesse de correction_ via un temps moyen de correction
 - **Évolution de la technologie :** la technologie du centre des opérations de sécurité du cloud évolue, passant de l’utilisation exclusive de l’analyse statique des journaux dans les Informations de sécurité et gestion d’événements (SIEM) pour ajouter le recours à des outils spécialisés et des techniques d’analyse sophistiquées. Cela permet de recueillir des informations approfondies sur des ressources qui fournissent des alertes de haute qualité et une expérience d’investigation qui complètent la vue élargie des Informations de sécurité et gestion d’événements. Les deux types d’outils se servent de plus en plus de l’intelligence artificielle et de l’apprentissage automatique (AI/ML), de l’analyse du comportement et du renseignement intégré sur les menaces pour aider à épingler et à hiérarchiser des actions anormales susceptibles d’émaner d’un agresseur malveillant.
 - **Chasse aux menaces :** les centres des opérations de sécurité du cloud ajoutent la chasse aux menaces fondée sur des hypothèses afin d’identifier de manière proactive des attaques avancées et d’écarter les alertes bruyantes des files d’attente d’analyses en première ligne.
 - **Gestion des incidents :** la discipline est de plus en plus formalisée afin de coordonner les éléments non techniques des incidents avec des équipes en charge des aspects juridiques, de communications et autres.

@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: b23cc2be9398a3512de95b5e2312b30764de8695
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: bd98ff4e52faceea4c7dd48a2363efc5ebe87da2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230257"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755468"
 ---
 # <a name="function-of-identity-and-key-management-in-the-cloud"></a>Fonction de gestion des identités et des clés dans le cloud
 

@@ -3,16 +3,16 @@ title: Définir une stratégie de sécurité
 description: Le Cloud Adoption Framework pour Azure explique comment développer une argumentation métier à l’appui d’une migration vers le cloud.
 author: MarkSimos
 ms.author: mas
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36fa032ce989dedd393886e7154aa46e1c7e376b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d97c47610999e525b967786ac9ce766788739c25
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230621"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755612"
 ---
 <!-- cSpell:ignore MarkSimos NIST CISO COVID -->
 

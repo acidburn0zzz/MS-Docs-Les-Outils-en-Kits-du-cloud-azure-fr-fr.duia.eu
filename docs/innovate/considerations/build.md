@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b6ccab2eb6f7f25ad83fa2d2a0592a557b7b79d0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 15bc194c124a8f278028f9cbcd508a18641d9a43
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224151"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815155"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "83224151"
 
 « La nécessité est mère de l’invention ». Ce proverbe anglais illustre le caractère omniprésent de l’esprit humain et notre tendance naturelle à inventer. Comme expliqué dans l’Oxford English Dictionary, quand quelque chose devient vraiment indispensable, vous devez trouver le moyen de l’obtenir. Qui pourrait contredire ces vérités universelles sur l’invention ? Toutefois, comme décrit dans [Innovation dans l’économie numérique](./index.md), l’innovation nécessite un équilibre entre _invention_ et _adoption_.
 
-Dans le contexte de cette analogie, l’innovation émane d’un concept plus étendu. *L’empathie vis-à-vis du client est mère de l’innovation.* La création d’une solution favorisant l’innovation implique un besoin légitime du client&mdash;un besoin qui incite le client à revenir pour résoudre des problèmes critiques. Ces solutions sont basées sur les besoins du client et non sur ses souhaits ou ses envies. L’identification des véritables besoins des clients commence par l’empathie &mdash; une compréhension approfondie de l’expérience du client. L’empathie est une compétence insuffisamment développée chez de nombreux ingénieurs et chefs produits, voire chez les dirigeants d’entreprise. Heureusement, les différentes interactions et l’évolution rapide du rôle d’architecte du cloud semblent avoir déjà déclenché l’obtention de ces compétences.
+Dans le contexte de cette analogie, l’innovation émane d’un concept plus étendu. _L’empathie vis-à-vis du client est mère de l’innovation._ La création d’une solution favorisant l’innovation implique un besoin légitime du client&mdash;un besoin qui incite le client à revenir pour résoudre des problèmes critiques. Ces solutions sont basées sur les besoins du client et non sur ses souhaits ou ses envies. L’identification des véritables besoins des clients commence par l’empathie &mdash; une compréhension approfondie de l’expérience du client. L’empathie est une compétence insuffisamment développée chez de nombreux ingénieurs et chefs produits, voire chez les dirigeants d’entreprise. Heureusement, les différentes interactions et l’évolution rapide du rôle d’architecte du cloud semblent avoir déjà déclenché l’obtention de ces compétences.
 
 Pourquoi l’empathie est-il si importante ? De la première version d’un produit minimum viable (MVP, minimum viable product) à la disponibilité générale d’une solution commercialisable, l’empathie vis-à-vis du client nous permet de comprendre et de partager son expérience. L’empathie nous aide à développer une meilleure solution. Plus important encore : elle nous permet de mieux nous positionner pour inventer des solutions qui encouragent l’adoption. Dans une économie numérique, ceux qui développent le plus rapidement une empathie vis-à-vis du client peuvent contribuer à créer un avenir meilleur, qui redéfinit et trace la voie du marché.
 

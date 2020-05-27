@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 98c41d102ca54ebcb299989b907e2e6c6b237896
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9b33b242611a576558c858080581650e67cd8382
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223471"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815427"
 ---
 # <a name="building-technical-skills"></a>Développement des compétences techniques
 
@@ -26,7 +26,7 @@ Selon les motivations et les résultats métier associés à un effort d’adopt
 - [Alignez votre organisation](../get-started/org-alignment.md) : Découvrez les approches permettant d’établir les structures organisationnelles appropriées.
 - [Exercices d’alignement de l’organisation](./index.md) : Obtenez une vue d’ensemble de l’alignement et des structures d’équipe pour atteindre des objectifs spécifiques.
 - [Création des équipes](../get-started/help.md#establish-teams) : Découvrez comment établir des équipes au sein de votre organisation qui sont responsables de la fourniture des fonctionnalités du cloud.
-- [Briser les silos et les fiefs](./fiefdoms-silos.md) : Découvrez deux *antimodèles* organisationnels courants et des méthodes pour guider les équipes vers une collaboration productive.
+- [Briser les silos et les fiefs](./fiefdoms-silos.md) : Découvrez deux _antimodèles_ organisationnels courants et des méthodes pour guider les équipes vers une collaboration productive.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Parcours d’apprentissage de la préparation (technique) de l’environnement
 

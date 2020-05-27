@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 8c9a30baf5b985e81881f48c313805a68f6325ad
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 312b24a8b20eeda6fb28ca9f126067da1ace4786
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230269"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755445"
 ---
 # <a name="function-of-cloud-security-incident-preparation"></a>Fonction de préparation aux incidents de sécurité du cloud
 
@@ -29,7 +29,7 @@ Les exercices pratiques sont devenus des outils puissants pour s’assurer que l
 - **Membres de l’équipe technique** pour analyser et corriger l’incident.
 - **Intégration de la continuité de l’activité** avec des fonctions organisationnelles qui possèdent les plans de gestion de crise, de récupération d’urgence et de continuité de l’activité.
 
-<!-- docsTest:ignore "Incident Response Reference Guide (IRRG)" -->
+<!-- docsTest:ignore "Incident Response Reference Guide (IRRG) " -->
 <!-- cSpell:ignore IRRG -->
 
 Microsoft a publié une série d’enseignements et de recommandations dans le [Guide de référence sur les réponses aux incidents](https://aka.ms/IRRG).

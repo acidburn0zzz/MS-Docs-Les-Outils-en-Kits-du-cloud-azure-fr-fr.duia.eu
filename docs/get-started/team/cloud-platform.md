@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 50ebbe6f3c141671412d5338d89c1de623ab3b0c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: c7753434a9ce901693938651f303add90bb6002b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230337"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83751965"
 ---
 # <a name="get-started-build-a-cloud-platform-team"></a>Bien démarrer : Créer une équipe de plateforme cloud
 
@@ -28,7 +28,7 @@ Les fonctionnalités de la plateforme cloud sont généralement fournies par un 
 
 Consultez les pages suivantes :
 
-- [Résultats métiers](../../strategy/business-outcomes/index.md)
+- [Résultats opérationnels](../../strategy/business-outcomes/index.md)
 - [Modèles financiers](../../strategy/financial-models.md)
 - [Motivations en faveur de l’adoption du cloud](../../strategy/motivations.md)
 - [Risques métier](../../govern/policy-compliance/risk-tolerance.md)
@@ -68,7 +68,7 @@ Les compétences nécessaires pour fournir des fonctionnalités de plateforme co
 - Les opérations informatiques.
 - La gouvernance informatique.
 - L’infrastructure informatique.
-- Le réseau.
+- Mise en réseau.
 - L’identité.
 - La virtualisation.
 - La continuité d’activité et la reprise d’activité.

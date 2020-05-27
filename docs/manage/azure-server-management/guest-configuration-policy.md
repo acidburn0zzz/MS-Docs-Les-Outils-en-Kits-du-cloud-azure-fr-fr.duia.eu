@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 18153a2525a3128702e3d35e2217539abc3f8bcf
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 938934e1a45d8f8abebede6cca8dcd9987cfb7e0
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217266"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861461"
 ---
 # <a name="guest-configuration-policy"></a>Stratégie Guest Configuration
 
@@ -47,7 +47,7 @@ Utilisez l’exemple de script PowerShell suivant pour déployer ces stratégies
 
 ```powershell
 
-    #Assign Guest Configuration policy.
+    # Assign Guest Configuration policy.
 
     param (
         [Parameter(Mandatory=$true)]

@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a4b66a43cdf3524b23c109cdc5fa4e965c6e01f4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: eb599b892e5cb3e898faf84fb1bd8b65b8d9d03b
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217657"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815070"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
@@ -175,6 +175,8 @@ Un scénario courant consiste à déplacer une application vers Azure, mais en c
 Si vous envisagez d’effectuer une migration de mainframe, le réseau de partenaires est là pour vous aider.
 
 Azure fournit une infrastructure fiable, hautement disponible et évolutive pour les systèmes qui s’exécutent sur des ordinateurs mainframe. Certaines charges de travail peuvent être migrées assez facilement. D’autres charges de travail qui dépendent de logiciels système hérités, tels que CICS et IMS, peuvent être réhébergées à l’aide de solutions de partenaires, en attendant d’être migrées progressivement vers Azure. Quel que soit votre choix, Microsoft et ses partenaires sont à votre disposition pour vous aider à optimiser votre environnement pour Azure tout en maintenant le même niveau de fonctionnalités logicielles de votre système mainframe existant.
+
+<!-- docsTest:ignore "IBM DB2 pureScale" -->
 
 ## <a name="learn-more"></a>En savoir plus
 

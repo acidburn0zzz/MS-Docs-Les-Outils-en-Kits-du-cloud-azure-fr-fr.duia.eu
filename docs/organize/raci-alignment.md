@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: e5e6e495aed54648ec480c8def0ae9c784b6b800
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ed1bce61d2a5ba51459df60e94949e0cdd5e533d
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216909"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815444"
 ---
 <!-- cSpell:ignore ccoe -->
 
 # <a name="align-responsibilities-across-teams"></a>Aligner les responsabilités entre les équipes
 
-Apprenez à aligner les responsabilités entre les équipes en développant une matrice entre les équipes qui identifie les parties *en charge, responsables, consultées et informées* (RACI). Cet article fournit un exemple de matrice RACI pour les structures organisationnelles décrites dans [Établir des structures d’équipe](./organization-structures.md) :
+Apprenez à aligner les responsabilités entre les équipes en développant une matrice entre les équipes qui identifie les parties _en charge, responsables, consultées et informées_ (RACI). Cet article fournit un exemple de matrice RACI pour les structures organisationnelles décrites dans [Établir des structures d’équipe](./organization-structures.md) :
 
 - [Équipe d’adoption du cloud uniquement](#cloud-adoption-team-only)
 - [Meilleure pratique MVP](#best-practice-minimum-viable-product-mvp)

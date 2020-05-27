@@ -6,13 +6,13 @@ ms.author: mas
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 6ab95bab83c7683628c0ba4a0e332d8aba4b4034
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: 68ce6816dbcbbc1770ac8a51a6d77329e65b4eca
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401267"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755307"
 ---
 <!-- cSpell:ignore MarkSimos -->
 

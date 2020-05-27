@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 04e5d34da71fb67ce6608aea5f1db5dc6f90f705
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: e09df6f954a410dedde7ecd77fd7b8bd5d429241
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401116"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862226"
 ---
 <!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
 
@@ -109,11 +109,11 @@ Voici ce dont Contoso a besoin pour ce scénario :
 
 <!-- markdownlint-disable MD033 -->
 
-**Configuration requise** | **Détails**
---- | ---
-Abonnement Azure | <li> Dans un article précédent, Contoso a créé des abonnements. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial). <li> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions. <li> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur.
-Infrastructure Azure | <li> Découvrez [comment Contoso configure une infrastructure Azure](./contoso-migration-infrastructure.md).
-Prérequis pour développeur | Contoso a besoin des outils suivants sur une station de travail de développeur : <li>  [Visual Studio 2017 Community Edition : Version 15.5](https://visualstudio.microsoft.com) <li> Charge de travail .NET activée. <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install), configurés pour utiliser des conteneurs Windows.
+| **Configuration requise** | **Détails** |
+| --- | --- |
+| Abonnement Azure | <li> Dans un article précédent, Contoso a créé des abonnements. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/pricing/free-trial). <li> Si vous créez un compte gratuit, vous êtes l’administrateur de votre abonnement et pouvez effectuer toutes les actions. <li> Si vous utilisez un abonnement existant et que vous n’êtes pas l’administrateur, vous devez collaborer avec l’administrateur pour qu’il vous donne les autorisations Propriétaire ou Contributeur. |
+| Infrastructure Azure | <li> Découvrez [comment Contoso configure une infrastructure Azure](./contoso-migration-infrastructure.md). |
+| Prérequis pour développeur | Contoso a besoin des outils suivants sur une station de travail de développeur : <li>  [Visual Studio 2017 Community Edition : Version 15.5](https://visualstudio.microsoft.com) <li> Charge de travail .NET activée. <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install), configurés pour utiliser des conteneurs Windows. |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -152,39 +152,37 @@ Les administrateurs de Contoso effectuent le provisionnement comme suit :
 
 2. Ils exécutent le script pour créer le cluster Kubernetes géré à l’aide d’AKS et d’Azure Container Registry.
 
-   ![AKS](./media/contoso-migration-rebuild/aks1.png)
+    ![AKS](./media/contoso-migration-rebuild/aks1.png)
 
 3. Après avoir ouvert le fichier, ils mettent à jour le paramètre $location en définissant **eastus2**, puis enregistrent le fichier.
 
-   ![AKS](./media/contoso-migration-rebuild/aks2.png)
+    ![AKS](./media/contoso-migration-rebuild/aks2.png)
 
 4. Dans Visual Studio Code, ils sélectionnent **Affichage** > **Terminal intégré** pour ouvrir le terminal intégré.
 
-   ![AKS](./media/contoso-migration-rebuild/aks3.png)
+    ![AKS](./media/contoso-migration-rebuild/aks3.png)
 
 5. Dans le terminal intégré PowerShell, ils se connectent à Azure à l’aide de la commande Connect-AzureRmAccount. [Découvrez comment](https://docs.microsoft.com/powershell/azure/get-started-azureps) commencer à utiliser PowerShell.
 
-   ![AKS](./media/contoso-migration-rebuild/aks4.png)
+    ![AKS](./media/contoso-migration-rebuild/aks4.png)
 
 6. Ils authentifient Azure CLI en exécutant la commande `az login`, et en suivant les instructions pour s’authentifier à l’aide de leur navigateur web. [En savoir plus](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sur la connexion avec Azure CLI.
 
-   ![AKS](./media/contoso-migration-rebuild/aks5.png)
+    ![AKS](./media/contoso-migration-rebuild/aks5.png)
 
 7. Ils exécutent la commande suivante, en passant le nom de groupe de ressources **ContosoRG**, le nom du cluster AKS **smarthotel-aks-eus2**, et le nouveau nom de registre.
 
-   ```PowerShell
-   .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
-   ```
+    `.\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2`
 
-   ![AKS](./media/contoso-migration-rebuild/aks6.png)
+    ![AKS](./media/contoso-migration-rebuild/aks6.png)
 
 8. Azure crée un autre groupe de ressources contenant les ressources pour le cluster AKS.
 
-   ![AKS](./media/contoso-migration-rebuild/aks7.png)
+    ![AKS](./media/contoso-migration-rebuild/aks7.png)
 
 9. Une fois le déploiement terminé, ils installent l’outil en ligne de commande `kubectl`. L’outil est déjà installé dans Azure Cloud Shell.
 
-   `az aks install-cli`
+    `az aks install-cli`
 
 10. Ils vérifient la connexion au cluster en exécutant la commande `kubectl get nodes`. Le nœud porte le même nom que la machine virtuelle dans le groupe de ressources créé automatiquement.
 
@@ -275,9 +273,7 @@ Ils déploient comme suit :
 
 2. Ils utilisent le fichier deploy.cmd pour déployer les ressources Azure dans le groupe de ressources **ContosoRG** et la région **EUS2**, en tapant la commande suivante :
 
-    ```azurecli
-    .\deploy.cmd azuredeploy ContosoRG -c eastus2
-    ```
+    `.\deploy.cmd azuredeploy ContosoRG -c eastus2`
 
     ![Déployer le serveur principal](./media/contoso-migration-rebuild/backend1.png)
 
@@ -433,11 +429,11 @@ Dans le portail Azure, les administrateurs de Contoso provisionnent l’applicat
 
 1. Ils sélectionnent **Application de fonction**.
 
-   ![Créer une application de fonction](./media/contoso-migration-rebuild/function-app1.png)
+    ![Créer une application de fonction](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Ils fournissent un nom d’application (**smarthotelpetchecker**). Ils placent l’application dans le groupe de ressources de production **ContosoRG**. Ils configurent l’emplacement d’hébergement sur **Plan de consommation** et placent l’application dans la région USA Est 2. Un compte de stockage est créé, ainsi qu’une instance d’Application Insights pour la supervision.
 
-   ![Paramètres Function App](./media/contoso-migration-rebuild/function-app2.png)
+    ![Paramètres Function App](./media/contoso-migration-rebuild/function-app2.png)
 
 3. Une fois l’application déployée, ils accèdent à l’adresse de l’application pour vérifier si celle-ci a été correctement créée.
 
@@ -447,7 +443,7 @@ Les administrateurs de Contoso créent deux projets différents pour le site fro
 
 1. Dans Azure DevOps, ils créent un projet **SmartHotelFrontend**.
 
-   ![Projet frontal](./media/contoso-migration-rebuild/function-app1.png)
+    ![Projet frontal](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Ils importent le référentiel Git [SmartHotel360 front-end](https://github.com/Microsoft/SmartHotel360-Website) dans le nouveau projet.
 

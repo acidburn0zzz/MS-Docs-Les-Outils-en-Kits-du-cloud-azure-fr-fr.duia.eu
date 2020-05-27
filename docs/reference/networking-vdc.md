@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 137ab71429b6f827ee0f01154ea372784327e964
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 7fc85776fee5078b17fc9e7d91b184d2ba550a66
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400924"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862685"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -428,7 +428,7 @@ Apprenez-en davantage sur les fonctionnalités Azure présentées dans ce docume
 | --- | --- | --- |
 | [Azure Active Directory][azure-ad] <br>[Azure Multi-Factor Authentication][multi-factor-authentication] <br> [Contrôle d’accès en fonction du rôle][RBAC] <br> [Rôles Azure AD par défaut][Roles] <br><br><br> | [Network Watcher][NetWatch] <br> [Azure Monitor][MonitorOverview] <br> [Log Analytics][LogAnalytics] <br> | [Groupe d’administration][MgmtGrp] <br> [Gestion des abonnements](../ready/azure-best-practices/scale-subscriptions.md) <br> [Gestion des groupes de ressources][RGMgmt] <br> [Limites d’abonnement Azure][limits] <br><br><br> |
 
-Sécurité | Autres services Azure | |
+| Sécurité | Autres services Azure | |
 |-|-|-|
 | [Pare-feu Azure][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway - WAF][AppGWWAF] <br> [Front Door - WAF][AFDWAF] <br> [Service de protection DDoS Azure][DDoS] <br> | [Stockage Azure][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Azure Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Hubs d'événements][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
 

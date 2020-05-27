@@ -3,16 +3,16 @@ title: Guides de prise en main pour les équipes chargées de l'adoption du clou
 description: Utilisez ces guides de prise en main pour identifier les objectifs et les responsabilités des équipes chargées de vos efforts d'adoption du cloud. Ces guides fournissent une feuille de route dans le cadre du Cloud Adoption Framework.
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 891300cd245b96598e1bce375aef064dc3544d7a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 72d6f233f1dbdda60a0f48dbc89449915c013cf8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230429"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752002"
 ---
 # <a name="getting-started-guides-for-cloud-adoption-teams"></a>Guides de prise en main pour les équipes chargées de l'adoption du cloud
 

@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: df8df76ac903329b21e4d543793250e70bb0afa8
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: b5b8d72c3f4b42d58a903b2fe9c2a8b33ebc1d67
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400961"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755518"
 ---
 # <a name="cloud-security-architecture-functions"></a>Fonctions de l’architecture de sécurité cloud
 
@@ -24,7 +24,7 @@ L’architecture de sécurité est affectée par différents facteurs :
 
 - **Modèle d’engagement continu :** La publication continue de mises à jour logicielles et de fonctionnalités cloud rend les modèles d’engagement fixes obsolètes. Les architectes doivent être engagés auprès de toutes les équipes travaillant dans des domaines techniques pour guider les décisions tout au long du cycle de vie de capacité des équipes.
 - **Sécurité dans le cloud :** Intégrez des fonctionnalités de sécurité dans le cloud pour réduire le temps d’activation et les coûts de maintenance courante (matériel, logiciels, temps et efforts).
-- **Sécurité du cloud :** Assurez-vous que toutes les ressources cloud, notamment les applications de logiciel en tant que service (SaaS), les machines virtuelles d’infrastructure en tant que service (IaaS) et les applications et services de plateforme en tant que service (PaaS).  Cela doit inclure la découverte et la sécurité à la fois des services approuvés et non approuvés.
+- **Sécurité du cloud :** Assurez-vous que toutes les ressources cloud, notamment les applications de logiciel en tant que service (SaaS), les machines virtuelles d’infrastructure en tant que service (IaaS) et les applications et services de plateforme en tant que service (PaaS). Cela doit inclure la découverte et la sécurité à la fois des services approuvés et non approuvés.
 - **Intégration des identités :** Les architectes de sécurité doivent garantir un alignement étroit avec les équipes d’identité pour aider les organisations à répondre à la fois aux objectifs de productivité et de garanties en matière de sécurité.
 - **Intégration du contexte interne** dans les conceptions de sécurité, comme le contexte de la gestion de posture et les incidents examinés par le [centre] des opérations de sécurité (SOC). Cela doit inclure des éléments tels que les scores de risque relatifs des comptes d’utilisateur et des appareils, la sensibilité des données et les limites d’isolation de sécurité clés pour une défense active.
 

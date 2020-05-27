@@ -3,16 +3,16 @@ title: Surmonter les obstacles à l'adoption du cloud
 description: Utilisez l'infrastructure Cloud Adoption Framework pour surmonter les obstacles. Ces scénarios fournissent une feuille de route dans le cadre de l'infrastructure Cloud Adoption Framework.
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/03/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 497fa72c60d1890efa0b8dbca76464a57782560d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6ae30bea30c80644e30f5f18b44a07d01c49131a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230593"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753254"
 ---
 # <a name="accelerate-adoption"></a>Accélérer l'adoption
 
