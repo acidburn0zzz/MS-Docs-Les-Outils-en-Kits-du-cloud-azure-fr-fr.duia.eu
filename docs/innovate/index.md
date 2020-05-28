@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0a55d829f5881fc8b39f550e2c0fdb5073373780
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 760b97f268c9696ee73c9ae4e4c3b9b1475ffafa
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621353"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862192"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovation cloud dans le Framework d’adoption du cloud
 
@@ -45,6 +45,6 @@ Voici quelques exemples de parcours d’apprentissage spécifiques aux rôles su
 
 [Administrer les conteneurs dans Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure) : Azure Container Instances (ACI) constitue le moyen le plus rapide et le plus facile d’exécuter des conteneurs dans Azure. Ce parcours d’apprentissage vous apprend à créer et gérer vos conteneurs, et à utiliser ACI pour fournir une mise à l’échelle élastique pour Kubernetes.
 
-[Créer des applications serverless](https://docs.microsoft.com/learn/paths/create-serverless-applications) : Azure Functions permet de créer des systèmes de calcul à la demande basés sur les événements, qui peuvent être déclenchés par divers événements externes. Découvrez comment utiliser des fonctions pour exécuter une logique côté serveur et créer des architectures serverless.
+[Créer des applications serverless](https://docs.microsoft.com/learn/paths/create-serverless-applications) : Azure Functions permet de créer des systèmes de calcul à la demande basés sur les événements, qui peuvent être déclenchés par divers événements externes. Apprenez à utiliser des fonctions pour exécuter une logique côté serveur et créer des architectures serverless.
 
 Pour découvrir des parcours d’apprentissage supplémentaires, parcourez le [catalogue Learn](https://docs.microsoft.com/learn/browse). Utilisez le filtre **Rôles** pour aligner les parcours d’apprentissage avec votre rôle.
