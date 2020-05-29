@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ada273d5de7f0579848e102781f7a1f40d91bef2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9f239c0cb5cadad59ca687f156b04c095ee7b3c1
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400535"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754930"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
@@ -38,7 +38,7 @@ L’équipe de gouvernance cloud se développe. Étant donné l’accroissement 
 
 ### <a name="changes-in-the-current-state"></a>Modifications apportées à l’état actuel
 
-L’équipe informatique est autorisée à mettre en œuvre les plans du directeur informatique et du directeur financier qui visent à mettre les deux centres de données hors service. Toutefois, le service informatique est préoccupé, car 750 ressources (15 % du total) de ces centres de données devront être déplacées ailleurs que dans le cloud.
+L’équipe informatique est autorisée à mettre en œuvre les plans du directeur informatique et du directeur financier qui visent à mettre les deux centres de données hors service. L'équipe est préoccupée, car 750 ressources (15 % du total) de ces centres de données devront être déplacées ailleurs que dans le cloud.
 
 ### <a name="incrementally-improve-the-future-state"></a>Améliorer progressivement l’état futur
 

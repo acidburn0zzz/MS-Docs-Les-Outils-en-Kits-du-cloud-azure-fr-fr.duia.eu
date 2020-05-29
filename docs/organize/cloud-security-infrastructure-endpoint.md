@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 81dc8e9ab0aaad9981dd44fdbbd64d4b5d1caf87
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 427ab031953652c32c77a24e73fb0a0e4cfa10af
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230229"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755427"
 ---
 # <a name="function-of-cloud-infrastructure-and-endpoint-security"></a>Fonction de sécurité d’infrastructure cloud et de point de terminaison
 
@@ -22,7 +22,7 @@ Une équipe de sécurité du cloud travaillant sur la sécurité d’infrastruct
 
 Des centres de données à définition logicielle et d’autres technologies cloud aident à résoudre des problèmes de longue date liés à la sécurité d’infrastructure et de point de terminaison, à savoir :
 
-- **Détection d’erreurs d’inventaire et de configuration** bien plus fiable pour des ressources hébergées dans le cloud, car elles sont toutes immédiatement visibles (contrairement à un centre de données physique).
+- **Détection d'erreurs d'inventaire et de configuration** bien plus fiable pour des ressources hébergées dans le cloud, car elles sont toutes immédiatement visibles (contrairement à un centre de données physique).
 - **Gestion des vulnérabilités** devenant une partie essentielle de la gestion de la posture de sécurité globale.
 - **Ajout de technologies de conteneur** devant être gérées et sécurisées par une ou plusieurs équipes d’infrastructure et de réseau à mesure que l’organisation adopte cette technologie à grande échelle. Pour obtenir un exemple, consultez [Sécurité des conteneurs dans Security Center](https://docs.microsoft.com/azure/security-center/container-security).
 - **Consolidation de l’agent de sécurité** et la simplification de l’outil pour réduire la surcharge de maintenance et de performances des agents et outils de sécurité.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b55a8fbd96f83339cbc696ac9e3c15cbc2916924
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 974a500a846cfe1a907d91b1b055d6b75b94a3d9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217691"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755215"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-security-baseline-discipline"></a>Mesures et indicateurs de tolérance au risque dans la discipline Ligne de base de la sécurité
 
@@ -39,7 +39,7 @@ Chaque organisation dispose de ses propres environnements et exigences de sécur
 
 ## <a name="risk-tolerance-indicators"></a>Indicateurs de tolérance au risque
 
-Les plateformes cloud fournissent un ensemble de fonctionnalités de base qui permettent aux petites équipes de déploiement de configurer des paramètres de sécurité basiques sans avoir recours à une planification considérable. Par conséquent, les premières charges de travail de développement/test ou d’expérimentation qui n’incluent pas de données sensibles présentent un faible niveau de risque, et n’auront probablement pas besoin de beaucoup pour la mise en place d’une stratégie formelle Base de référence de sécurité. Toutefois, dès que des données importantes ou des fonctionnalités critiques sont déplacées sur le cloud, les risques de sécurité augmentent, et la tolérance à ces risques diminue rapidement. Plus vos données et vos fonctionnalités sont déployées sur le cloud, plus vous avez besoin d’investir dans la discipline Base de référence de sécurité.
+Les plateformes cloud fournissent un ensemble de fonctionnalités de base qui permettent aux petites équipes de déploiement de configurer des paramètres de sécurité basiques sans avoir recours à une planification considérable. Par conséquent, les premières charges de travail de développement/test ou d’expérimentation qui n’incluent pas de données sensibles présentent un faible niveau de risque, et n’auront probablement pas besoin de beaucoup pour la mise en place d’une stratégie formelle Base de référence de sécurité. Dès que des données importantes ou des fonctionnalités stratégiques sont déplacées vers le cloud, les risques liés à la sécurité augmentent, et la tolérance à ces risques diminue rapidement. Plus vos données et vos fonctionnalités sont déployées sur le cloud, plus vous avez besoin d’investir dans la discipline Base de référence de sécurité.
 
 Au début de l’adoption du cloud, collaborez avec votre équipe Sécurité informatique et les parties prenantes de l’entreprise pour identifier les [risques métier](./business-risks.md) liés à l’identité, puis déterminez une base de référence acceptable pour la tolérance au risque de sécurité. Cette section du Framework d’adoption du cloud fournit des exemples, mais les risques et les bases de référence détaillés pour votre entreprise ou vos déploiements peuvent être différents.
 

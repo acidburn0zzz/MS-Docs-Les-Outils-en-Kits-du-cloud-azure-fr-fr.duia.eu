@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 41134eacc0fbb5356fdff1a56dc292465e6e8750
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f874edbb899512cce5a3868ffa7426b188cedb7d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223879"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756445"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Appliquer des principes de conception et des opérations avancées
 
@@ -75,9 +75,9 @@ Pour chaque spécialisation, le processus en quatre étapes suivant est fourni s
 
 ### <a name="improve-system-design"></a>Améliorer la conception du système
 
-L’amélioration de la conception du système constitue l’approche la plus efficace pour améliorer les opérations de toutes les plateformes communes. Les améliorations de la conception du système peuvent augmenter la stabilité et diminuer les interruptions d’activité. La conception de systèmes individuels n’entre pas dans le cadre du Framework d’adoption cloud. En complément de celui-ci, Azure Architecture Framework fournit les bonnes pratiques permettant d’améliorer la résilience et la conception d’un système spécifique. Vous pouvez appliquer ces améliorations à la conception système d’une plateforme ou d’une charge de travail.
+L’amélioration de la conception du système constitue l’approche la plus efficace pour améliorer les opérations de toutes les plateformes communes. Les améliorations de la conception du système peuvent augmenter la stabilité et diminuer les interruptions d’activité. La conception de systèmes individuels n’entre pas dans le cadre du Framework d’adoption cloud. En complément de celui-ci, Microsoft Azure Well-Architected Framework fournit les bonnes pratiques à suivre pour améliorer la résilience et la conception d'un système spécifique. Vous pouvez appliquer ces améliorations à la conception système d’une plateforme ou d’une charge de travail.
 
-Azure Architecture Framework se concentre sur l’amélioration par le biais des cinq principes de la conception système :
+Microsoft Azure Well-Architected Framework se concentre sur l'amélioration par le biais des cinq principes de la conception système :
 
 - **Scalabilité :** Mise à l’échelle des ressources de plateforme communes pour gérer une charge accrue.
 - **Disponibilité :** Diminution des interruptions d’activité par l’amélioration du potentiel de disponibilité.
@@ -87,7 +87,7 @@ Azure Architecture Framework se concentre sur l’amélioration par le biais des
 
 La plupart des interruptions d’activité correspondent à une certaine forme de dette technique ou de défaillance dans l’architecture. Pour les déploiements existants, les améliorations de la conception système peuvent être vues comme le paiement d’une dette technique existante. Pour les nouveaux déploiements, les améliorations de la conception système peuvent être vues comme l’évitement d’une dette technique. La section suivante, « Correction automatisée », vous permet de résoudre les éventuelles dettes techniques qui ne peuvent pas ou ne doivent pas être résolues.
 
-En savoir plus sur [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) pour améliorer la conception du système. Une fois que la conception de votre système se sera améliorée, revenez à cet article pour trouver de nouvelles opportunités d’améliorer et de faire évoluer ces améliorations dans votre environnement.
+Pour améliorer la conception du système, consultez [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars). Une fois que la conception de votre système se sera améliorée, revenez à cet article pour trouver de nouvelles opportunités d’améliorer et de faire évoluer ces améliorations dans votre environnement.
 
 ### <a name="automated-remediation"></a>Correction automatisée
 

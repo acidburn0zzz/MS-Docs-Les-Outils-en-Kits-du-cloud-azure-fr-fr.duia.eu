@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: b757a0066250a37816eed5445d79663b72a7aae3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1e25d89d5c4beccb3b1f32e846028b8d93e41a11
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219323"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756122"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -247,7 +247,7 @@ Ces informations peuvent être consultées et traitées à plusieurs niveaux et 
 
 - **Azure Advisor :** Azure Advisor analyse en permanence la télémétrie de vos abonnements et environnements. Il recommande également les meilleures pratiques pour optimiser les coûts de vos ressources Azure et améliorer les performances, la sécurité et la disponibilité des ressources de votre application.
 
-- **Service Health :** Azure Service Health identifie les problèmes liés aux services Azure qui peuvent affecter vos applications et vous aide à définir des fenêtres de maintenance planifiées.
+- **Azure Service Health :** Azure Service Health identifie les problèmes liés aux services Azure qui peuvent affecter vos applications et vous aide à définir des fenêtres de maintenance planifiées.
 
 - **Journal d’activité :** Le journal d’activité décrit toutes les opérations effectuées sur les ressources de vos abonnements. Il fournit une piste d’audit pour déterminer le _quoi_, le _qui_ et le _quand_ des opérations de création, de mise à jour et de suppression des ressources. Les événements du journal d’activité sont stockés dans la plateforme et peuvent faire l’objet d’une requête pendant 90 jours. Vous pouvez intégrer les journaux d’activité à Log Analytics sur des périodes de conservation plus longues et pour des interrogations et analyses plus approfondies sur diverses ressources.
 

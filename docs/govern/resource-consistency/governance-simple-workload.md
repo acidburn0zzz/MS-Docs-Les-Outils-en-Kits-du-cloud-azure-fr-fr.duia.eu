@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e68b8bc71e3a7cd306b4cfd8bc39628276d53031
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: cd52ec715e2b51a2507b156be8e7775f9a6b161d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399170"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756003"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Conception de gouvernance pour une charge de travail simple
 
@@ -63,7 +63,7 @@ Une fois l’abonnement créé, le **propriétaire du compte** Azure associe un 
 ![Le propriétaire du compte Azure associe l’abonné Azure AD à l’abonnement](../../_images/govern/design/governance-1-4.png)
 _Figure 4 : Le propriétaire du compte Azure associe le client Azure AD à l’abonnement._
 
-Vous avez peut-être remarqué qu’il n’y a actuellement aucun utilisateur associé à l’abonnement, ce qui signifie que personne n’est autorisé à gérer les ressources. En réalité, le **propriétaire du compte** est le propriétaire de l’abonnement et a l’autorisation d’agir sur une ressource dans l’abonnement. Toutefois, en pratique, le **propriétaire du compte** est probablement une personne de finances dans votre organisation et n’est pas responsable de la création, lecture, mise à jour et suppression de ressources. Ces tâches seront effectuées par le **propriétaire de la charge de travail**. Par conséquent, vous devez ajouter le **propriétaire de la charge de travail** à l’abonnement et lui attribuer des autorisations.
+Vous avez peut-être remarqué qu’il n’y a actuellement aucun utilisateur associé à l’abonnement, ce qui signifie que personne n’est autorisé à gérer les ressources. En réalité, le **propriétaire du compte** est le propriétaire de l’abonnement et a l’autorisation d’agir sur une ressource dans l’abonnement. En pratique, le **propriétaire du compte** est probablement un financier de votre organisation qui n'est pas responsable de la création, de la lecture, de la mise à jour et de la suppression des ressources. Ces tâches seront effectuées par le **propriétaire de la charge de travail**. Par conséquent, vous devez ajouter le **propriétaire de la charge de travail** à l’abonnement et lui attribuer des autorisations.
 
 Dans la mesure où le **propriétaire du compte** est actuellement le seul utilisateur autorisé à ajouter le **propriétaire de la charge de travail** à l’abonnement, il doit ajouter le **propriétaire de la charge de travail** à l’abonnement :
 
@@ -82,7 +82,7 @@ Le rôle de **propriétaire** intégré accorde toutes les autorisations au **pr
 > [!IMPORTANT]
 > Le **propriétaire de compte** Azure est responsable de l’engagement financier associé à l’abonnement, mais le **propriétaire de la charge de travail** dispose des mêmes autorisations. Le **propriétaire du compte** doit approuver le **propriétaire de la charge de travail** pour déployer des ressources comprises dans le budget de l’abonnement.
 
-Le niveau suivant de l’étendue de la gestion est le niveau **groupe de ressources**. Un groupe de ressources est un conteneur logique pour ressources. Les opérations appliquées au niveau du groupe de ressources s’appliquent à toutes les ressources d’un groupe. En outre, il est important de noter que les autorisations pour chaque utilisateur sont héritées du niveau supérieur suivant, sauf si elles sont explicitement modifiées dans cette portée.
+Le niveau suivant de l’étendue de la gestion est le niveau **groupe de ressources**. Un groupe de ressources est un conteneur logique pour ressources. Les opérations appliquées au niveau du groupe de ressources s’appliquent à toutes les ressources d’un groupe. En outre, il convient de noter que les autorisations de chaque utilisateur sont héritées du niveau supérieur suivant, sauf si elles sont explicitement modifiées dans cette étendue.
 
 Pour illustrer ceci, nous allons examiner ce qui se passe lorsque le **propriétaire de la charge de travail** crée un groupe de ressources :
 

@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 107385f48f43b449fd835b5ac28aa0a9ebb5207f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cb974cd5ed319dfd72a1c9342b92e9eb60a35f77
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433079"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754380"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Aligner votre guide de conception de gouvernance cloud sur la stratégie d’entreprise
 

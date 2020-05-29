@@ -3,16 +3,16 @@ title: 'Bien démarrer : Accélérer la migration'
 description: Étapes recommandées pour l’alignement des parties prenantes, la planification de la migration, le déploiement d’une zone d’atterrissage et la migration de vos 10 premières charges de travail.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3c61f18aaa2814d9ac92e176524ef9fb448f67a4
-ms.sourcegitcommit: 605752e331f6d8d8ab98d79f400f74f96d7c6a48
+ms.openlocfilehash: b943259df90851704c8a4035da10d313589eb5b2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83424115"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752850"
 ---
 # <a name="get-started-accelerate-migration"></a>Bien démarrer : Accélérer la migration
 
@@ -33,7 +33,7 @@ Si votre scénario de migration est atypique, vous pouvez obtenir une évaluatio
 
 ## <a name="get-started"></a>Bien démarrer
 
-L’effort et le processus techniques nécessaires à la migration des charges de travail sont relativement simples. Il est important d’effectuer efficacement le processus de migration. Cependant, la préparation à la migration stratégique a un impact encore plus important sur la chronologie et la réussite de la migration globale.
+L’effort et le processus techniques nécessaires à la migration des charges de travail sont relativement simples. Il est important d’effectuer efficacement le processus de migration. La préparation à la migration stratégique a un impact encore plus important sur la chronologie et la réussite de la migration globale.
 
 Pour accélérer l’adoption, vous devez prendre les mesures nécessaires pour soutenir l’équipe d’adoption du cloud pendant la migration. Ce guide décrit ces tâches itératives nécessaires pour aider les clients à appréhender correctement le chemin de migration vers le cloud. Pour montrer l’importance des étapes de support, la migration figure à l’étape 10 de cet article. En réalité, l’équipe chargée de l’adoption du cloud lance probablement la première migration pilote en parallèle avec les étapes 4 ou 5.
 
@@ -53,7 +53,7 @@ Pour éviter les points de blocage de migration courants, créez une stratégie 
 
 | Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe de stratégie cloud | <li> Équipe d’adoption du cloud <li> Centre d’excellence du cloud ou équipe informatique centrale |
+| <li> Équipe de stratégie cloud | <li> Équipe d’adoption du cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="step-2-align-partner-support"></a>Étape 2 : Aligner le support des partenaires
 
@@ -71,7 +71,7 @@ Des partenaires, des services Microsoft ou divers programmes Microsoft sont disp
 
 | Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe de stratégie cloud | <li> Équipe d’adoption du cloud <li> Centre d’excellence du cloud ou équipe informatique centrale |
+| <li> Équipe de stratégie cloud | <li> Équipe d’adoption du cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="step-3-gather-data-and-analyze-assets-and-workloads"></a>Étape 3 : Collecter des données et analyser les ressources et les charges de travail
 
@@ -96,7 +96,7 @@ La découverte et l’évaluation offrent un niveau d’alignement technique plu
 
 ## <a name="step-4-make-a-business-case"></a>Étape 4 : Créer une analyse de rentabilisation
 
-L’analyse de rentabilité de la migration prendra sans doute la forme d’une conversation itérative entre les parties prenantes. Lors de cette première phase de la réalisation de l’analyse de rentabilisation, évaluez le retour élevé initial d’une migration cloud potentielle. L’objectif de cette étape est de garantir que toutes les parties prenantes s’alignent sur une question simple : En fonction des données disponibles, est-ce que l’adoption globale du cloud est une décision avisée ?
+L’analyse de rentabilité de la migration prendra sans doute la forme d’une conversation itérative entre les parties prenantes. Lors de cette première phase de la réalisation de l’analyse de rentabilisation, évaluez le retour élevé initial d’une migration cloud potentielle. L'objectif de cette étape est de s'assurer que toutes les parties prenantes s'alignent sur une question simple : en fonction des données disponibles, l'adoption globale du cloud est-elle une décision métier fondée ?
 
 - La [création d’une analyse de rentabilité de la migration cloud](../strategy/cloud-migration-business-case.md) est un bon point de départ pour le développement d’une analyse de rentabilité de la migration. La clarté des formules et des outils peut aider à la justification pour l’entreprise.
 
@@ -163,7 +163,7 @@ Toutes les ressources migrées sont déployées dans une zone d’atterrissage. 
 **Livrables :**
 
 - Déployer une première zone d’atterrissage pour les migrations initiales à faible risque.
-- Élaborez un plan de refactorisation avec le centre d’excellence du cloud ou l’équipe informatique centrale.
+- Élaborez un plan de refactorisation avec le centre d'excellence du cloud ou l'équipe informatique centrale.
 - Risques liés au calendrier :
   - Les exigences de gouvernance, d’exploitation et de sécurité pour les 10 premières charges de travail peuvent considérablement ralentir ce processus.
   - La refactorisation réelle de la première zone d’atterrissage et des zones d’atterrissage suivantes prend beaucoup plus de temps, mais doit s’effectuer parallèlement aux efforts de migration.
@@ -173,7 +173,7 @@ Toutes les ressources migrées sont déployées dans une zone d’atterrissage. 
 
 | Équipe responsable | Équipes en charge et équipes de soutien |
 | --- | --- |
-| <li> Équipe de plateforme cloud | <li> Équipe d’adoption du cloud <li> Centre d’excellence du cloud ou équipe informatique centrale |
+| <li> Équipe de plateforme cloud | <li> Équipe d’adoption du cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="step-8-migrate-your-first-10-workloads"></a>Étape 8 : Migrer vos 10 premières charges de travail
 
@@ -181,14 +181,14 @@ L’effort technique nécessaire pour migrer vos 10 premières charges de travai
 
 ![Phases de l’effort de migration itérative : évaluer, déployer, publier](../_images/migrate/methodology-effort-only.png)
 
-Les outils de migration cloud permettent de migrer toutes les machines virtuelles d’un centre de communication en une seule passe ou itération. Il est plus courant de migrer un plus petit nombre de charges de travail lors de chaque itération. Le fractionnement de la migration en plus petites vagues ou versions nécessite davantage de planification. Cependant, un plus petit nombre réduit les risques techniques et l’impact de la gestion des changements organisationnels.
+Les outils de migration cloud permettent de migrer toutes les machines virtuelles d’un centre de communication en une seule passe ou itération. Il est plus courant de migrer un plus petit nombre de charges de travail lors de chaque itération. Le fractionnement de la migration en plus petites vagues ou mises en production nécessite davantage de planification, mais un plus petit nombre réduit les risques techniques et l'impact de la gestion des modifications organisationnelles.
 
 À chaque itération, l’équipe d’adoption du cloud devient plus performante dans la migration des charges de travail. Ces étapes permettent de lancer l’équipe technique sur cette courbe de maturité :
 
 1. Migrez vos premières charges de travail en adoptant une approche IaaS pure, en utilisant les outils décrits dans le [guide de migration Azure](../migrate/azure-migration-guide/index.md).
 2. Développez les options des outils pour utiliser la migration et la modernisation avec les [scénarios de migration](../migrate/azure-best-practices/contoso-migration-overview.md).
 3. Développez votre stratégie technique en adoptant des approches plus larges présentées dans les [bonnes pratiques de migration](../migrate/azure-best-practices/index.md).
-4. Améliorez la cohérence, la fiabilité et les performances en adoptant une approche de fabrique de migration efficace, comme indiqué dans les [améliorations du processus de migration](../migrate/migration-considerations/index.md).
+4. Améliorez la cohérence, la fiabilité et les performances en adoptant une approche de fabrique de migration efficace, comme indiqué dans [Améliorations du processus de migration](../migrate/migration-considerations/index.md).
 
 **Livrables :**
 
@@ -199,7 +199,7 @@ Amélioration continue de la capacité de l’équipe d’adoption à migrer les
 
 | Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe d’adoption du cloud | <li> Équipe de stratégie cloud <li> Centre d’excellence du cloud ou équipe informatique centrale |
+| <li> Équipe d’adoption du cloud | <li> Équipe de stratégie cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="step-9-hand-off-production-workloads-to-cloud-governance"></a>Étape 9 : Transférer les charges de travail de production vers la gouvernance cloud
 
@@ -212,15 +212,14 @@ La gouvernance est un facteur déterminant pour le succès à long terme de tout
 
 - Déployer une fondation de gouvernance initiale.
 - Réaliser un benchmark de gouvernance afin de planifier les futures améliorations.
-- Risques liés à la chronologie :
-    - Les stratégies d’amélioration et l’implémentation de la gouvernance peuvent ajouter de une à quatre semaines par discipline.
+- Risques liés à la chronologie : les stratégies d'amélioration et l'implémentation de la gouvernance peuvent ajouter une à quatre semaines par discipline.
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe de gouvernance cloud | <li> Équipe de stratégie cloud <li> Centre d’excellence du cloud ou équipe informatique centrale |
+| <li> Équipe de gouvernance cloud | <li> Équipe de stratégie cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="step-10-hand-off-production-workloads-to-cloud-operations"></a>Étape 10 : Transférer les charges de travail de production vers les opérations cloud
 
@@ -235,17 +234,17 @@ La gestion des opérations est une autre exigence pour réussir la migration. Mi
 
 - Déployer une base de référence de gestion.
 - Compléter le classeur de gestion des opérations.
-- Identifier toutes les charges de travail qui nécessitent une évaluation de l’architecture Azure.
+- Identifier toutes les charges de travail qui nécessitent une évaluation Microsoft Azure Well-Architected Review.
 - Risques liés au calendrier :
-  - Passez en revue le classeur : Estimation d’une heure par propriétaire d’application.
-  - Procédez à l’évaluation de l’architecture Azure : Estimation d’une heure par application.
+  - Consultez le classeur : estimation d'une heure par propriétaire d'application.
+  - Effectuez l'évaluation Microsoft Azure Well-Architected Review : estimation d'une heure par application.
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | Équipe responsable | Équipes responsable et de support |
 | --- | --- |
-| <li> Équipe des opérations cloud | <li> Équipe de stratégie cloud <li> Centre d’excellence du cloud ou équipe informatique centrale |
+| <li> Équipe des opérations cloud | <li> Équipe de stratégie cloud <li> Centre d’excellence du cloud ou informatique centralisée |
 
 ## <a name="value-statement"></a>Énoncé de la valeur
 

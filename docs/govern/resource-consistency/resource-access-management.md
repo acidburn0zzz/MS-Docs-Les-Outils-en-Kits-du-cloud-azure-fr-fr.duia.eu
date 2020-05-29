@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 51047cd648953b68caa7f09e132b832a287e4a71
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9bcd4fb4a516062c053322932e1de878f4ec9095
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399059"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756173"
 ---
 # <a name="resource-access-management-in-azure"></a>Gestion de l’accès aux ressources dans Azure
 
@@ -41,7 +41,7 @@ Les groupes de ressources et les ressources qu’ils contiennent sont associés 
 
 ## <a name="what-is-an-azure-subscription"></a>Qu’est-ce qu’un abonnement Azure ?
 
-Un abonnement Azure est similaire à un groupe de ressources : il s’agit d’une construction logique qui regroupe des groupes de ressources et leurs ressources. Toutefois, un abonnement Azure est également associé aux contrôles utilisés par Azure Resource Manager. Examinez plus en détail Azure Resource Manager pour en savoir plus sur sa relation avec un abonnement Azure.
+Un abonnement Azure est similaire à un groupe de ressources : il s’agit d’une construction logique qui regroupe des groupes de ressources et leurs ressources. Un abonnement Azure est également associé aux contrôles utilisés par Azure Resource Manager. Examinez plus en détail Azure Resource Manager pour en savoir plus sur sa relation avec un abonnement Azure.
 
 ![Diagramme d’un abonnement Azure](../../_images/govern/design/governance-1-11.png)
 _Figure 3 : Un abonnement Azure._

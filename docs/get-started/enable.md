@@ -3,16 +3,16 @@ title: Favoriser la réussite des clients grâce à un modèle d'exploitation so
 description: Aidez-vous du Framework d’adoption du cloud gratuit et en libre-service et d’autres outils pour prendre des décisions d’adoption du cloud qui assureront la réussite de vos clients.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1155431e10a53d34eaa8e8c585c40c09d7be06f0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 54ea9341cfcd5064a6cae737f302ef03736f21af
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230569"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752859"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model"></a>Favoriser la réussite des clients grâce à un modèle d'exploitation solide
 
@@ -34,20 +34,20 @@ Les guides suivants vous aideront à entamer l'alignement du modèle d'exploitat
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | [Comment assurer l'excellence opérationnelle dans le cadre de la transformation cloud ?](./operational-excellence.md)                   | Les étapes décrites dans ce guide aideront l'équipe chargée de la stratégie à diriger la gestion des changements organisationnels nécessaire pour garantir l'excellence opérationnelle de manière cohérente. |
 | [Comment gérer les coûts de l'entreprise ?](./manage-costs.md)                                          | Optimisez les coûts de l'entreprise et gérez les coûts dans l'ensemble de l'environnement.                                                                           |
-| [Comment sécuriser l'environnement cloud de l'entreprise ?](./security.md)             | Ce guide de prise en main peut aider à s'assurer que les exigences de sécurité appropriées ont été appliquées dans toute l'entreprise pour réduire les risques de violation et accélérer la récupération en cas de violation.                                       |
-| [Comment appliquer les bons contrôles pour améliorer la fiabilité ?](./reliability.md)                   | Ce guide de prise en main permet de réduire les interruptions liées aux incohérences dans la configuration, l'organisation des ressources, les bases de référence de sécurité ou les stratégies de protection des ressources. |
-| [Comment garantir les performances dans l'ensemble de l'entreprise ?](./performance.md)                               | Ce guide de prise en main peut vous aider à établir des processus pour maintenir les performances dans toute l'entreprise.                               |
-| [Comment aligner notre organisation ?](./org-alignment.md)                               | Ce guide de prise en main peut vous aider à établir une structure organisationnelle avec le bon personnel.                               |
+| [Comment sécuriser l'environnement cloud de l'entreprise ?](./security.md)             | Ce guide de démarrage peut aider à s’assurer que les exigences de sécurité appropriées ont été appliquées dans l’entreprise pour réduire les risques de violation et accélérer la récupération en cas de violation.                                       |
+| [Comment appliquer les bons contrôles pour améliorer la fiabilité ?](./reliability.md)                   | Ce guide de démarrage aide à réduire les interruptions liées aux incohérences dans la configuration, l’organisation des ressources, les bases de référence de sécurité ou les stratégies de protection des ressources. |
+| [Comment garantir les performances dans l'ensemble de l'entreprise ?](./performance.md)                               | Ce guide de démarrage peut vous aider à établir des processus pour maintenir les performances au sein de l’entreprise.                               |
+| [Comment aligner notre organisation ?](./org-alignment.md)                               | Ce guide de démarrage peut vous aider à établir une structure organisationnelle avec le bon personnel.                               |
 
 ## <a name="shared-architecture-principles"></a>Principes d’une architecture partagée
 
-Les principes de base d'un modèle d'exploitation bien géré reposent sur un ensemble de principes d'architecture communs. Les équipes de soutien pourront s'appuyer sur les conseils de prise en main présentés dans cette série d'articles à mesure qu'elles étendront ces principes à l'échelle de la plateforme cloud et du portefeuille de charges de travail.
+Les principes de base d'un modèle d'exploitation bien géré reposent sur un ensemble de principes d'architecture communs. Les équipes du support technique pourront s’appuyer sur les instructions de démarrage dans cette série d’articles à mesure qu’elles adapteront ces principes à l’échelle de la plateforme cloud et du portefeuille de charges de travail.
 
 ![Principes d’une architecture partagée](../_images/shared-principles.png)
 
-Les principes ci-dessus sont partagés par [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework) et les solutions du [Centre des architectures Azure](https://docs.microsoft.com/azure/architecture).
+Les principes ci-dessus sont partagés par [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) et les solutions du [Centre des architectures Azure](https://docs.microsoft.com/azure/architecture).
 
 - [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) évalue les principes liés aux ressources individuelles dans les solutions, les charges de travail et l'ensemble du portefeuille.
 - Le [Centre des architectures Azure](https://docs.microsoft.com/azure/architecture) applique ces principes pour développer et gérer des solutions techniques spécifiques.
-- [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework) permet d'équilibrer ces principes au sein d'une charge de travail lors de la prise de décisions relatives à l'architecture.
+- [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) permet d'équilibrer ces principes au sein d'une charge de travail lors de la prise de décisions relatives à l'architecture.
 - [Cloud Adoption Framework](../index.yml) garantit l'application des principes dans l'ensemble du portefeuille pour permettre aux équipes d'adoption de travailler dans un environnement bien géré.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17b39eba50b11ee1124e174f3bc89f3e6dada3e2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ebad1c02e22f00532ebb1fa0d16fc4b156ea9253
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218252"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755935"
 ---
 # <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>Risques métier et motivations associés à la discipline Cohérence des ressources
 
@@ -23,7 +23,7 @@ Cet article décrit les raisons pour lesquelles les clients adoptent une discipl
 
 ## <a name="relevance"></a>Pertinence
 
-En matière de déploiement de ressources et de charges de travail, le cloud offre davantage d’agilité et de flexibilité par rapport à la plupart des centres de données locaux traditionnels. Toutefois, ces avantages potentiels liés au cloud sont également associés à d’éventuels inconvénients en termes de gestion, qui peuvent grandement compromettre la réussite de votre adoption du cloud. Quelles ressources avez-vous déployées ? Quelles équipes possèdent quelles ressources ? Avez-vous suffisamment de ressources pour héberger une charge de travail ? Comment savez-vous que les charges de travail sont intègres ?
+En matière de déploiement de ressources et de charges de travail, le cloud offre davantage d’agilité et de flexibilité par rapport à la plupart des centres de données locaux traditionnels. Ces avantages potentiels liés au cloud s'accompagnent également d'éventuels inconvénients de gestion qui peuvent sérieusement compromettre la réussite de votre adoption du cloud. Quelles ressources avez-vous déployées ? Quelles équipes possèdent quelles ressources ? Avez-vous suffisamment de ressources pour héberger une charge de travail ? Comment savez-vous que les charges de travail sont intègres ?
 
 La cohérence des ressources est essentielle pour garantir que les ressources sont déployées, mises à jour et configurées de manière homogène et renouvelable et s’assurer que les interruptions de service sont réduites et corrigées aussi vite que possible.
 

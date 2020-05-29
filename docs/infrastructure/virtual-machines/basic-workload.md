@@ -7,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8432a00865d29767b48292541255f88f9d451665
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0b4f0738e93d08be4f61183272b459eb7856aad1
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217470"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862209"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Déployer une charge de travail de base sur Azure
 
@@ -26,7 +26,7 @@ Cette isolation permet également de favoriser ce qui est désigné sous le nom 
 
 ## <a name="basic-workload"></a>Charge de travail de base
 
-Une _charge de travail de base_ est généralement définie comme une application web unique, ou un réseau virtuel avec une machine virtuelle.
+Une _charge de travail de base_ est généralement définie comme une application web unique, ou comme un réseau virtuel doté d'une machine virtuelle.
 
 > [!NOTE]
 > Ce guide ne couvre pas le développement d’applications. Pour plus d’informations sur le développement d’applications sur Azure, consultez le [Guide d’Architecture des Applications Azure](https://docs.microsoft.com/azure/architecture/guide).

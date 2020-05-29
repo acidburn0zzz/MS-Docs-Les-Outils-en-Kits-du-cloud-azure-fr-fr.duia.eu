@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 9855b9d56025af86f62dc4e7f055e1584cbbe993
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e5dd2effba64b4aee4a60f8264e8ca9499a0f5fd
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218286"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755952"
 ---
 # <a name="evaluate-risk-tolerance"></a>Évaluer la tolérance au risque
 
@@ -39,15 +39,15 @@ Voici quelques-uns des risques les plus fréquemment mentionnés par les clients
 
 ## <a name="understand-risk-tolerance"></a>Comprendre la tolérance aux risques
 
-L'identification des risques est un processus relativement direct. Les risques liés à l’informatique sont généralement standard dans tous les secteurs. Toutefois, la tolérance à ces risques est spécifique à chaque organisation. C'est là que les conversations commerciales et informatiques ont tendance à s'enliser. Chacune des parties représentées parle une langue différente. Les comparaisons et les questions suivantes sont conçues pour engager la conversation afin d'aider chaque partie à mieux appréhender et évaluer la tolérance au risque.
+L'identification des risques est un processus relativement direct. Les risques liés à l’informatique sont généralement standard dans tous les secteurs. La tolérance à ces risques est spécifique à chaque organisation. C'est là que les conversations commerciales et informatiques ont tendance à s'enliser. Chacune des parties représentées parle une langue différente. Les comparaisons et les questions suivantes sont conçues pour engager la conversation afin d'aider chaque partie à mieux appréhender et évaluer la tolérance au risque.
 
 ## <a name="simple-use-case-for-comparison"></a>Cas d'usage simple à des fins de comparaison
 
-Pour appréhender la tolérance au risque, examinons des données client. Si une entreprise d’un secteur particulier publie des données client sur un serveur non sécurisé, le risque technique de compromission ou de vol de ces données est à peu près identique. Toutefois, la tolérance d’une entreprise à ce risque variera considérablement en fonction de la nature et de la valeur potentielle des données.
+Pour appréhender la tolérance au risque, examinons des données client. Si une entreprise d’un secteur particulier publie des données client sur un serveur non sécurisé, le risque technique de compromission ou de vol de ces données est à peu près identique. La tolérance à ce risque variera considérablement en fonction de la nature et de la valeur potentielle des données.
 
 - Aux États-Unis, les entreprises du secteur de la santé et de la finance sont soumises à des obligations de conformité strictes imposées par des tiers. On part du principe que les données personnelles ou les données médicales sont extrêmement confidentielles. Les conséquences pour les entreprises de ce type sont graves si elles sont impliquées dans le scénario de risque ci-dessus. Leur tolérance est extrêmement faible. Toutes les données client publiées à l'intérieur ou à l'extérieur du réseau doivent être régies par ces stratégies de conformité tierces.
 - Une société de jeux dont les données client se limitent à un nom d’utilisateur, à des temps de jeu et à des scores est moins exposée à des conséquences graves (au-delà d’une réputation compromise) si elle adopte le comportement à risque décrit ci-dessus. Si un risque pèse sur des données non sécurisées, l’impact de ce risque est faible. Par conséquent, dans ce cas, la tolérance au risque est élevée.
-- La tolérance d’une PME fournissant des services de nettoyage de tapis à des milliers de clients se situerait entre ces deux extrémités. Les données client peuvent alors être plus robustes et contenir des informations comme l’adresse ou le numéro de téléphone. Dans la mesure où ces informations peuvent être considérées comme des données personnelles, elles doivent être protégées. Cela dit, il se peut qu'aucune obligation de gouvernance spécifique n'impose de sécuriser les données. D'un point de vue informatique, la réponse est simple : sécuriser les données. D'un point de vue commercial, ce n'est peut-être pas aussi simple. L'équipe commerciale aurait besoin de détails supplémentaires avant de pouvoir déterminer un niveau de tolérance pour ce risque.
+- La tolérance d'une PME fournissant des services de nettoyage de tapis à des milliers de clients se situerait entre ces deux extrémités. Les données client peuvent être plus robustes et contenir des informations telles que des adresses et des numéros de téléphone. Ces informations sont considérées comme des données personnelles et doivent être protégées, mais aucune exigence de gouvernance spécifique n'impose qu'elles soient sécurisées. D'un point de vue informatique, la réponse est simple : sécuriser les données. D'un point de vue commercial, ce n'est peut-être pas aussi simple. L'équipe commerciale aurait besoin de détails supplémentaires avant de pouvoir déterminer un niveau de tolérance pour ce risque.
 
 La section suivante contient des exemples de questions qui peuvent aider l’entreprise à déterminer un niveau de tolérance au risque pour le cas d’utilisation ci-dessus, entre autres.
 
@@ -80,7 +80,7 @@ Ces questions de base soulèveront beaucoup d'autres interrogations. Après un d
 - Comment l'entreprise doit-elle s'y prendre pour valider les coûts ?
 - Quels autres avantages peuvent découler de la solution de suppression de ce risque ?
 
-Ces questions simplifient à l’extrême les solutions techniques nécessaires à la gestion ou à la suppression des risques. Toutefois, elles communiquent ces solutions de manière à ce que l'entreprise puisse les intégrer rapidement dans un processus décisionnel.
+Ces questions simplifient les solutions techniques nécessaires à la gestion ou à l'élimination des risques, mais elles communiquent ces solutions de manière à ce que l'entreprise puisse rapidement les intégrer dans un processus de décision.
 
 **Probabilité de perte :** Questions visant à déterminer la probabilité que le risque devienne une réalité. Il s'agit du domaine le plus difficile à quantifier. Nous suggérons plutôt à l’équipe de gouvernance cloud de créer des catégories pour la communication de la probabilité, sur la base de données justificatives. Les questions suivantes peuvent vous aider à créer des catégories pertinentes pour l'équipe.
 
@@ -94,10 +94,10 @@ Après avoir répondu à ces questions à qu’à d’autres questions posées p
 
 - **Aucune indication :** les recherches n’ont pas été suffisantes pour déterminer la probabilité.
 - **Risque faible :** la recherche actuelle indique que la réalisation du risque est peu probable.
-- **Risque futur :** actuellement, la probabilité est faible. Toutefois, la poursuite de l’adoption exigerait une nouvelle analyse.
+- **Risque futur :** actuellement, la probabilité est faible. La poursuite de l'adoption exigerait une nouvelle analyse.
 - **Risque moyen :** il est probable que le risque affectera l’entreprise.
 - **Risque élevé :** au fil du temps, il est de plus en plus probable que l’entreprise sera confrontée à ce risque.
-- **Diminution du risque :** le risque est moyen à élevé. Toutefois, les mesures prises par les équipes informatiques ou commerciales réduisent la probabilité d’un impact.
+- **Diminution du risque :** le risque est moyen à élevé. Les mesures prises par les équipes informatiques ou commerciales réduisent la probabilité d'un impact.
 
 **Détermination de la tolérance :**
 

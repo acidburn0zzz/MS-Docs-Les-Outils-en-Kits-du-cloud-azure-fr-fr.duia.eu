@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 609c4f9f369e27c699f72cf85ebe311dbf918019
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e70a448cb96f7e6a790731cd558627e03a543b49
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219272"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756581"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -47,7 +47,7 @@ Voici quelques exemples de ces composants d’un point de vue Azure :
 
 Azure Stack est une solution de cloud hybride qui permet aux organisations d’exécuter des services Azure cohérents dans leur centre de données. Elle offre une expérience de développement, de gestion et de sécurité simplifiée, compatible avec les services cloud publics d’Azure. Azure Stack est une extension d’Azure. Elle vous permet d’exécuter des services Azure à partir de vos environnements locaux et de passer au cloud Azure si nécessaire.
 
-Avec Azure Stack, vous pouvez déployer et exploiter à la fois l’IaaS et la PaaS en utilisant les mêmes outils et en offrant la même expérience que le cloud public Azure. La gestion d’Azure Stack, via le portail de l’interface utilisateur web ou PowerShell, a une apparence cohérente pour les administrateurs informatiques et les utilisateurs finaux auprès d’Azure.
+Avec Azure Stack, vous pouvez déployer et exploiter à la fois l’IaaS et la PaaS en utilisant les mêmes outils et en offrant la même expérience que le cloud public Azure. La gestion d'Azure Stack, via le portail de l'interface utilisateur web ou PowerShell, se présente sous la même forme pour les administrateurs informatiques et les utilisateurs finaux d'Azure.
 
 Azure et Azure Stack offrent de nouveaux cas d’utilisation hybride pour les applications orientées client et métier internes :
 
@@ -67,6 +67,6 @@ Vous pouvez accélérer les initiatives Azure Stack avec l’écosystème Azure 
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
 
 - Azure garantit que la plupart des applications et services certifiés pour Azure fonctionnent sur Azure Stack. Plusieurs éditeurs de logiciels indépendants étendent leurs solutions sur Azure Stack. Ces éditeurs de logiciels indépendants sont notamment Bitnami, Docker, Kemp Technologies, Pivotal Cloud Foundry, Red Hat Enterprise Linux et SUSE Linux.
-- Vous pouvez décider qu’Azure Stack doit être fourni et utilisé comme un service complètement managé. Plusieurs partenaires recevront des offres de services managés sur Azure et Azure Stack sous peu. Ces partenaires sont Tieto, Yourhosting, Revera, Pulsant et NTT. Ces partenaires fournissent des services gérés pour Azure via le programme fournisseur de solutions cloud (CSP). Ils étendent leurs offres pour y inclure des solutions hybrides.
+- Vous pouvez décider qu’Azure Stack doit être fourni et utilisé comme un service complètement managé. Plusieurs partenaires recevront des offres de services managés sur Azure et Azure Stack sous peu. Ces partenaires sont Tieto, Yourhosting, Revera, Pulsant et NTT. Ces partenaires fournissent des services gérés pour Azure via le programme fournisseur de solutions Cloud. Ils étendent leurs offres pour y inclure des solutions hybrides.
 - En guise d’exemple de solution cloud hybride entièrement gérée, Avanade propose une offre tout-en-un. Elle comprend les services de transformation cloud, les logiciels, l’infrastructure, l’installation et la configuration, ainsi que les services gérés en continu. De cette façon, les clients peuvent utiliser Azure Stack de la même manière qu’Azure aujourd’hui.
 - Les fournisseurs peuvent aider à accélérer les initiatives de modernisation des applications en créant des solutions Azure de bout en bout pour les clients. Ils apportent des compétences Azure approfondies, une connaissance du domaine et du secteur ainsi qu’une expertise sur les processus (par exemple, DevOps). Chaque cloud Azure Stack est une opportunité pour le fournisseur de concevoir la solution et d’orienter le déploiement du système. Il peut également personnaliser les fonctionnalités incluses et fournir des activités d’exploitation. Voici quelques exemples de fournisseurs : Avanade, DXC, Dell EMC Services, InFront Consulting Group, HPE Pointnext et PwC (Pricewaterhouse Coopers).

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: cb8fba789ef2f8d66d1f1a7a6480d37e662fc525
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c0b0bde877de2ae03decebe1b0237e1ba406e453
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222298"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861070"
 ---
 <!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -352,7 +352,7 @@ Contoso a besoin d’une visibilité sur l’intégrité et les performances des
 
 - Grâce à ces outils, Contoso pourra facilement collecter des données provenant de sources et bénéficier d’insights détaillés. Par exemple, Contoso peut mesurer l’utilisation de l’UC, de la mémoire et du disque des machines virtuelles, afficher les dépendances des applications et du réseau au niveau des diverses machines virtuelles et suivre les performances des applications.
 - Contoso se servira de ces outils de supervision du cloud pour prendre des mesures et s’intégrer à des solutions de service.
-- [En savoir plus](https://docs.microsoft.com/azure/azure-monitor/overview) sur la supervision Azure.
+- Apprenez-en davantage sur la [supervision Azure](https://docs.microsoft.com/azure/azure-monitor/overview).
 
 ### <a name="business-continuity-and-disaster-recovery"></a>Continuité d’activité et reprise d’activité
 

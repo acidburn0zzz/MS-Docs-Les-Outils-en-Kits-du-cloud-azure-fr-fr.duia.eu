@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 601481112f2d8144596951e1a68bd7d0bda0b95a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d9aaa631aab30c2a35719425c6249d80a8aff53b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621766"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755668"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -22,7 +22,7 @@ Une _Zone d’accueil de migration_ est un environnement qui a été approvision
 
 ## <a name="deploy-the-first-landing-zone"></a>Déployer votre première zone d’atterrissage
 
-Avant d’utiliser le blueprint de zone d’atterrissage de migration Cloud Adoption Framework, passez en revue les hypothèses, décisions et recommandations d’implémentation suivantes. Si ces informations s’alignent sur le plan d’adoption cloud souhaité, le [blueprint de zone d’atterrissage de migration](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone) peut être déployé à l’aide des [étapes de déploiement][deploy-sample].
+Avant d’utiliser le blueprint de zone d’atterrissage de migration Cloud Adoption Framework, passez en revue les hypothèses, décisions et recommandations d’implémentation suivantes. Si ces informations s'alignent sur le plan d'adoption cloud souhaité, le [blueprint de zone d'atterrissage de migration](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone) peut être déployé en suivant les [étapes de déploiement][deploy-sample].
 
 > [!div class="nextstepaction"]
 > [Déployer l’exemple de blueprint][deploy-sample]
@@ -46,7 +46,7 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 | Composant                    | Décisions                                                                                         | Autres approches                                                                                                                                                                                                                                                                |
 |------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Outils de migration              | Azure Site Recovery sera déployé et un projet Azure Migrate sera créé.                | [Guide de décision sur les outils de migration](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
-| Enregistrement et surveillance       | L’espace de travail Operational Insights et le compte de stockage des diagnostics seront approvisionnés.                |                                                                                                                                                                                                                                                                                       |
+| Enregistrement et surveillance       | L'espace de travail Operational Insights et le compte de stockage des diagnostics seront approvisionnés.                |                                                                                                                                                                                                                                                                                       |
 | Réseau                      | Un réseau virtuel sera créé avec des sous-réseaux pour la passerelle, le pare-feu, le jumpbox et la zone d’accueil.  | [Décisions en matière de mise en réseau](../considerations/networking-options.md)                                                                                                                                                                                                                       |
 | Identité                     | Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory. | [Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | Stratégie                       | Ce blueprint suppose actuellement qu’aucune stratégie Azure ne doit être appliquée.                        |                                                                                                                                                                                                                                                                                       |
@@ -61,7 +61,7 @@ Les décisions suivantes sont représentées dans le blueprint de zone d’accue
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>Personnaliser ou déployer une zone d’atterrissage
 
-Découvrez plus d’informations et téléchargez un exemple de référence du blueprint de zone d’atterrissage de migration du framework d’adoption du cloud afin de le déployer ou de le personnaliser à partir des [exemples Azure Blueprint][deploy-sample].
+Pour en savoir plus et télécharger un exemple de référence du blueprint de zone d'atterrissage de migration du framework CAF afin de le déployer ou de le personnaliser, accédez aux [exemples de blueprints Azure][deploy-sample].
 
 > [!div class="nextstepaction"]
 > [Déployer l’exemple de blueprint][deploy-sample]
@@ -77,4 +77,4 @@ Une fois que vous avez déployé votre première zone d’atterrissage, vous êt
 
 <!-- links -->
 
-[deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy
+[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy

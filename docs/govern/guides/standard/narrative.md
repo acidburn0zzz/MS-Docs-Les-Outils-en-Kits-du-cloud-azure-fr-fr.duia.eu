@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 213fc070f648a43d285e59948bb567502f944603
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dfbde6cb7008ce33a77afde238b2b550ec397d23
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218779"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754707"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Guide de gouvernance pour les entreprises standard : Le scénario sous-tendant la stratégie de gouvernance
 
@@ -21,9 +21,9 @@ Le récit suivant décrit le cas d’utilisation de la gouvernance au cours du [
 
 ## <a name="back-story"></a>Ce qui s’est passé
 
-Le conseil d’administration a démarré l’année avec des plans pour dynamiser l’activité de plusieurs façons. Ils incitent la direction à améliorer l’expérience client de façon à gagner des parts de marché. Ils veulent aussi offrir de nouveaux produits et services qui vont positionner l’entreprise comme leader dans le secteur. Ils ont également initié un travail en parallèle pour réduire le gaspillage et réduire les coûts inutiles. Bien qu’intimidantes, les actions du conseil d’administration et de la direction montrent que ce travail doit être consacré autant que possible à une croissance future.
+Le conseil d’administration a démarré l’année avec des plans pour dynamiser l’activité de plusieurs façons. Ils incitent la direction à améliorer l'expérience client de façon à gagner des parts de marché. Ils veulent aussi offrir de nouveaux produits et services qui vont positionner l'entreprise comme leader dans le secteur. Ils ont également initié un travail en parallèle pour réduire le gaspillage et réduire les coûts inutiles. Bien qu’intimidantes, les actions du conseil d’administration et de la direction montrent que ce travail doit être consacré autant que possible à une croissance future.
 
-Dans le passé, le directeur informatique de la société était exclu de ces discussions stratégiques. Cependant, comme la vision du futur est intrinsèquement liée à une croissance technique, l’informatique a maintenant un siège à la table de réunion pour aider à réaliser ces grands projets. Le département informatique doit désormais fournir ses services selon de nouveaux modes. L’équipe n’est pas préparée pour ces changements et elle aura probablement des difficultés avec la courbe d’apprentissage.
+Dans le passé, le directeur informatique de la société était exclu de ces discussions stratégiques. Comme la vision de l'avenir est intrinsèquement liée à une croissance technique, l'équipe informatique a maintenant un siège à la table de réunion pour participer à la réalisation de ces grands projets. Le département informatique doit désormais fournir ses services selon de nouveaux modes. L’équipe n’est pas préparée pour ces changements et elle aura probablement des difficultés avec la courbe d’apprentissage.
 
 ## <a name="business-characteristics"></a>Caractéristiques de l’entreprise
 

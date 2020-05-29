@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e0e9b51ec666d48b886f37913a4a0d5441dd78d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dd4f6b58d3d8f1a1d1b6348ae83979c37c9305bc
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217776"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755873"
 ---
 # <a name="motivations-and-business-risks-in-the-security-baseline-discipline"></a>Motivations et risques métier dans la discipline Ligne de base des identités
 
@@ -23,7 +23,7 @@ Cet article décrit les raisons pour lesquelles les clients adoptent une discipl
 
 ## <a name="relevance"></a>Pertinence
 
-La sécurité est une préoccupation majeure de tous les services informatiques. Les déploiements dans le cloud sont confrontés aux mêmes risques de sécurité que les charges de travail hébergées dans des centres de données locaux classiques. Cela étant, la nature des plateformes de cloud public, sans propriété directe sur le matériel physique stockant et exécutant vos charges de travail, signifie que la sécurité du cloud requiert ses propres stratégies et processus.
+La sécurité est une préoccupation majeure de tous les services informatiques. Les déploiements dans le cloud sont confrontés aux mêmes risques de sécurité que les charges de travail hébergées dans des centres de données locaux classiques. La nature des plateformes de cloud public, sans propriété directe sur le matériel physique stockant et exécutant vos charges de travail, signifie que la sécurité du cloud requiert ses propres stratégies et processus.
 
 L’un des principaux éléments qui distingue la gouvernance de la sécurité du cloud de la stratégie de sécurité traditionnelle est la facilité avec laquelle les ressources peuvent être créées, ce qui est susceptible d’ajouter des vulnérabilités si la sécurité n’est pas prise en compte avant le déploiement. La flexibilité offerte par certaines technologies comme [SDN (Software-Defined Networking)](../../decision-guides/software-defined-network/index.md) pour rapidement faire évoluer votre topologie réseau cloud peut aussi modifier votre surface d’attaque de manière imprévisible. Les plateformes cloud fournissent également des outils et des fonctionnalités capables d'améliorer vos fonctionnalités de sécurité au-delà des possibilités des environnements locaux.
 
@@ -38,7 +38,7 @@ La discipline Base de référence de la sécurité couvre les stratégies d'entr
 
 La discipline Base de référence de la sécurité tente de répondre aux principaux risques métier en matière de sécurité. Collaborez avec votre entreprise pour identifier ces risques et surveiller la pertinence de chacun d’entre eux lorsque vous planifiez et implémentez vos déploiements cloud.
 
-Les risques diffèrent en fonction de l’organisation, mais ceux liés à la sécurité et présentés ci-dessous peuvent vous servir à initier des discussions au sein de votre équipe de gouvernance cloud :
+Les risques varient d'une organisation à l'autre. Utilisez cette liste de risques courants liés à la sécurité comme point de départ pour les discussions au sein de votre équipe de gouvernance cloud :
 
 - **Violation des données :** Une exposition par inadvertance ou la perte de données sensibles hébergées dans le cloud peut entraîner la perte de clients, des problèmes contractuels ou des conséquences juridiques.
 - **Interruption de service :** Les pannes et autres problèmes de performances dus à une infrastructure non sécurisée altèrent le bon déroulement des opérations et peuvent entraîner une perte de productivité ou d'activité.

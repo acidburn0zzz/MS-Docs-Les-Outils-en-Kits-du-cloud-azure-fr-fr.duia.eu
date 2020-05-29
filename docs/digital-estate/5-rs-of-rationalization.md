@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 21504538837030bf9a6ab84e42a09f365386fa78
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5c4098e2d5655d3b0fbb7fcb1c5a0470547421f3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214801"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753556"
 ---
 # <a name="cloud-rationalization"></a>Rationalisation du cloud
 
@@ -21,7 +21,7 @@ La rationalisation du cloud est le processus qui consiste à évaluer des ressou
 
 ## <a name="rationalization-context"></a>Contexte de la rationalisation
 
-Les cinq R de la rationalisation mentionnés dans cet article constituent un excellent moyen d’étiqueter un état futur potentiel pour toute charge de travail considérée comme candidate pour un transfert dans le cloud. Toutefois, ce processus d’étiquetage doit être placé dans le contexte approprié avant de tenter de rationaliser l’environnement. Passez en revue les mythes suivants pour comprendre le contexte :
+Les _cinq R de la rationalisation_ mentionnés dans cet article constituent un excellent moyen d'étiqueter un état futur potentiel pour toute charge de travail considérée comme candidate à un transfert vers le cloud. Ce processus d'étiquetage doit être placé dans le contexte approprié avant de tenter de rationaliser l'environnement. Passez en revue les mythes suivants pour comprendre le contexte :
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>Mythe : Il est facile de prendre des décisions de rationalisation en début de processus
 

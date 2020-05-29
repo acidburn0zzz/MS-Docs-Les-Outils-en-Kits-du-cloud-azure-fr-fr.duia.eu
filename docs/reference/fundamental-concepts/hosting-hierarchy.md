@@ -3,16 +3,16 @@ title: Comprendre et aligner la hiérarchie du portefeuille
 description: Comprendre et aligner la hiérarchie du portefeuille
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 07466c048560c771fefd6d5d4769da2c5d42d548
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 816224c77f5825e7bae1e63e5a77db648b5dcfd8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400855"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756105"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 
@@ -63,8 +63,8 @@ Une équipe responsable gère chaque couche de la hiérarchie du portefeuille. L
 - **Portefeuille :** l’équipe de stratégie cloud et le Centre d’excellence du cloud (CCoE) utilisent les méthodologies Stratégie et Plan pour guider les décisions qui affectent l’ensemble du portefeuille. L’équipe de stratégie cloud est responsable du niveau entreprise de la hiérarchie du portefeuille cloud. L’équipe de stratégie cloud doit également être informée des décisions concernant l’environnement, les zones d’atterrissage et les charges de travail hautement prioritaires.
 - **Plateformes cloud :** l’équipe de gouvernance cloud est responsable des aspects qui garantissent la cohérence au sein de chaque environnement conformément à la méthodologie de gouvernance. L’équipe de gouvernance cloud est responsable de la gouvernance de toutes les ressources dans tous les environnements. L’équipe de gouvernance cloud doit être consultée quant aux changements pouvant nécessiter une exception aux stratégies de gouvernance ou une modification de celles-ci. L’équipe de gouvernance cloud doit également être informée de l’avancement de l’adoption des charges de travail et des ressources.
 - **Zones d’atterrissage et fondations de plateforme :** l’équipe de plateforme cloud est responsable du développement des zones d’atterrissage et des utilitaires de plateforme qui sous-tendent l’adoption. L’équipe d’automatisation cloud est chargée d’automatiser le développement de ces zones d’atterrissage et utilitaires de plateforme, et de leur prise en charge en continu. Les deux équipes utilisent la méthodologie de préparation pour guider l’implémentation. Les deux équipes doivent être informées de la progression de l’adoption de la charge de travail et de toute modification de l’entreprise ou de l’environnement.
-- **Charges de travail :** l’adoption se produit au niveau de la charge de travail. Les équipes d’adoption cloud utilisent les méthodologies Migration et Innovation pour mettre en place des processus évolutifs destinés à accélérer l’adoption. Une fois l’adoption terminée, la propriété des charges de travail est transférée à une équipe des opérations cloud qui utilise la méthodologie Gestion pour piloter la gestion des opérations. Les deux équipes doivent être à l’aise avec l’utilisation de l’Infrastructure Azure Architecture pour prendre des décisions architecturales détaillées qui affectent les charges de travail qu’elles prennent en charge. Les deux équipes doivent être informées des modifications apportées aux zones d’atterrissage et aux environnements. Les deux équipes peuvent occasionnellement contribuer aux fonctionnalités de la zone d’atterrissage.
-- **Ressources :** les ressources relèvent généralement la responsabilité de l’équipe d’opérations cloud. Celle-ci utilise la ligne de base de la gestion dans la méthodologie Gestion pour guider les décisions en matière de gestion des opérations. Elle doit également utiliser Azure Advisor et l’infrastructure Azure Architecture pour apporter aux ressources et à l’architecture les changements spécifiques nécessaires pour répondre aux exigences des opérations.
+- **Charges de travail :** l’adoption se produit au niveau de la charge de travail. Les équipes d’adoption cloud utilisent les méthodologies Migration et Innovation pour mettre en place des processus évolutifs destinés à accélérer l’adoption. Une fois l’adoption terminée, la propriété des charges de travail est transférée à une équipe des opérations cloud qui utilise la méthodologie Gestion pour piloter la gestion des opérations. Les deux équipes doivent être à l'aise avec l'utilisation de l'infrastructure Microsoft Azure Well-Architected Framework pour prendre des décisions architecturales détaillées qui affectent les charges de travail qu'elles prennent en charge. Les deux équipes doivent être informées des modifications apportées aux zones d’atterrissage et aux environnements. Les deux équipes peuvent occasionnellement contribuer aux fonctionnalités de la zone d’atterrissage.
+- **Ressources :** les ressources relèvent généralement la responsabilité de l’équipe d’opérations cloud. Celle-ci utilise la ligne de base de la gestion dans la méthodologie Gestion pour guider les décisions en matière de gestion des opérations. Elle doit également utiliser Azure Advisor et l'infrastructure Microsoft Azure Well-Architected Framework pour apporter aux ressources et à l'architecture les changements spécifiques nécessaires pour répondre aux exigences des opérations.
 
 ### <a name="accountability-variants"></a>Variantes de responsabilité :
 
@@ -78,11 +78,11 @@ Les exemples suivants illustrent la hiérarchie du portefeuille.
 
 ### <a name="cots-workloads"></a>Charges de travail COTS
 
-Traditionnellement, les entreprises ont privilégié les solutions logicielles du commerce pour alimenter les processus métier. Ces solutions sont installées, configurées, puis exploitées. La configuration modifie peu l’architecture des solutions. 
+Traditionnellement, les entreprises ont privilégié les solutions logicielles du commerce pour alimenter les processus métier. Ces solutions sont installées, configurées, puis exploitées. La configuration modifie peu l’architecture des solutions.
 
 Dans ces scénarios, toute adoption cloud de solutions COTS aboutit à une transition vers une équipe d’opérations cloud. L’équipe d’opérations cloud devient alors propriétaire technique des solutions logicielles et assume la responsabilité de la gestion de la configuration, du coût, des cycles de mise à jour corrective et d’autres besoins opérationnels.
 
-Ces charges de travail comprennent des packages de comptabilité, des logiciels de logistique ou des solutions spécifiques du secteur. Dans la terminologie de Microsoft, les fournisseurs de ces packages sont appelés éditeurs de logiciels indépendants (ISV). De nombreux éditeurs de logiciels indépendants proposent un service pour déployer et maintenir une instance de leur package logiciel dans vos abonnements. Ils peuvent également proposer une version du package logiciel qui s’exécute dans leur propre environnement hébergé dans le cloud, fournissant ainsi une alternative de plateforme en tant que service (PaaS) à la charge de travail. 
+Ces charges de travail comprennent des packages de comptabilité, des logiciels de logistique ou des solutions spécifiques du secteur. Dans la terminologie de Microsoft, les fournisseurs de ces packages sont appelés éditeurs de logiciels indépendants (ISV). De nombreux éditeurs de logiciels indépendants proposent un service pour déployer et maintenir une instance de leur package logiciel dans vos abonnements. Ils peuvent également proposer une version du package logiciel qui s’exécute dans leur propre environnement hébergé dans le cloud, fournissant ainsi une alternative de plateforme en tant que service (PaaS) à la charge de travail.
 
 À l’exception des offres PaaS, les équipes des opérations cloud sont chargées de vérifier la conformité aux exigences opérationnelles de base pour ces charges de travail. Une équipe des opérations cloud doit collaborer avec l’équipe de gouvernance cloud pour aligner les coûts, les performances et les autres piliers de l’architecture.
 
@@ -104,7 +104,7 @@ Dans les deux scénarios, l’équipe d’opérations cloud fait généralement 
 
 ### <a name="mission-critical-workloads"></a>Charges de travail critiques
 
-Au sein de chaque entreprise, il existe des charges de travail dont l’importance est telle qu’elles ne peuvent absolument pas échouer. Ces charges de travail critiques sont généralement associées à des propriétaires d’opérations et de développement exerçant divers niveaux de responsabilité. Ces équipes doivent aligner les changements opérationnels et architecturaux pour minimiser les perturbations de la solution de production. 
+Au sein de chaque entreprise, il existe des charges de travail dont l’importance est telle qu’elles ne peuvent absolument pas échouer. Ces charges de travail critiques sont généralement associées à des propriétaires d’opérations et de développement exerçant divers niveaux de responsabilité. Ces équipes doivent aligner les changements opérationnels et architecturaux pour minimiser les perturbations de la solution de production.
 
 Ces scénarios nécessitent une forte concentration sur la séparation des tâches. À cette fin, l’équipe d’opérations est généralement responsable des changements opérationnels quotidiens dans l’environnement de production. Quand ces changements opérationnels nécessitent une modification architecturale, ils sont effectués par l’équipe de développement ou d’adoption dans un environnement hors production, avant que l’équipe des opérations les applique à la production.
 
@@ -116,11 +116,11 @@ Il est important de comprendre les objectifs stratégiques de l’effort d’ad
 
 ### <a name="innovation-or-development-led-portfolio"></a>Portefeuille guidé par l’innovation ou le développement
 
-Certaines entreprises, en particulier les start-ups connaissance une croissance rapide, ont un pourcentage de projets de développement personnalisé supérieur à la moyenne. Dans des portefeuilles avec des développements lourds, l’environnement, la zone d’atterrissage et les charges de travail sont souvent compressés. Il peut y avoir des environnements (de production ou non) spécifiques dédiés à des charges de travail spécifiques. Il en résulte un rapport un à un entre l’environnement, la zone d’atterrissage et la charge de travail. 
+Certaines entreprises, en particulier les start-ups connaissance une croissance rapide, ont un pourcentage de projets de développement personnalisé supérieur à la moyenne. Dans des portefeuilles avec des développements lourds, l’environnement, la zone d’atterrissage et les charges de travail sont souvent compressés. Il peut y avoir des environnements (de production ou non) spécifiques dédiés à des charges de travail spécifiques. Il en résulte un rapport un à un entre l’environnement, la zone d’atterrissage et la charge de travail.
 
 Comme l’environnement héberge des solutions personnalisées, le pipeline DevOps et la création de rapports au niveau application peuvent remplacer le besoin de fonctions pour les opérations et la gouvernance. Pour ces clients, une concentration réduite sur les opérations, la gouvernance ou d’autres rôles associés est probable. Il est également fréquent de mettre davantage l’accent sur les responsabilités des équipes d’adoption et d’automatisation cloud.
 
-**Alignement du portefeuille :** le portefeuille informatique se concentrera probablement sur les charges de travail et les propriétaires de charges de travail pour prendre des décisions critiques en matière d’architecture. Ces équipes trouveront probablement plus de valeur dans la guidance de l’Infrastructure Azure Architecture lors des activités d’adoption et d’opérations.
+**Alignement du portefeuille :** le portefeuille informatique se concentrera probablement sur les charges de travail et les propriétaires de charges de travail pour prendre des décisions critiques en matière d’architecture. Ces équipes sont susceptibles de trouver plus de valeur dans les orientations de l'infrastructure Microsoft Azure Well-Architected Framework lors des activités d'adoption et d'exploitation.
 
 **Définitions de limites :** les limites logiques, même au niveau entreprise, se concentreront probablement sur la segmentation des environnements de production et hors production. Il peut également y avoir une segmentation claire entre produits dans le portefeuille de logiciels de l’entreprise. Parfois, il peut également y avoir une segmentation entre le développement et les instances hébergées des clients.
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2114b212718adb22b190f854de665e0d59fa50a4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 68bfe3b1acfb6a48fdda7e4d9583adcadac29893
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398469"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815206"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Criticité pour l’entreprise en gestion cloud
 
@@ -20,8 +20,7 @@ Dans chaque entreprise, il existe un petit nombre de charges de travail qui sont
 
 À l’inverse, certaines charges de travail peuvent ne pas être utilisées pendant plusieurs mois. Il n’est bien sûr pas souhaitable que ces charges de travail connaissent des pannes ou une baisse des performances, toutefois, l’impact sera isolé et limité.
 
-La première chose à faire avant de prendre des engagements mutuels en gestion cloud est de comprendre l’importance de chaque charge de travail du portefeuille informatique.
-Le diagramme suivant présente un alignement courant entre l’échelle des états critiques à suivre et les engagements standard pris par l’entreprise.
+La première chose à faire avant de prendre des engagements mutuels en gestion cloud est de comprendre l’importance de chaque charge de travail du portefeuille informatique. Le diagramme suivant présente un alignement courant entre l’échelle des états critiques à suivre et les engagements standard pris par l’entreprise.
 
 ![Criticité et alignement des niveaux de gestion](../../_images/manage/cloud-criticality-alignment.png)
 
@@ -46,7 +45,7 @@ Il est courant pour les entreprises d’inclure des classifications d’état cr
 
 ## <a name="importance-of-accurate-criticality"></a>Importance d’une criticité précise
 
-Plus loin dans le processus d’adoption cloud, l’équipe de gestion cloud utilisera cette classification en vue de déterminer l’effort nécessaire pour atteindre les niveaux d’état critique alignés. Dans les environnements locaux, la gestion des opérations est souvent achetée de façon centralisée et traitée comme une charge métier nécessaire, avec peu ou pas de coûts d’exploitation supplémentaires. Dans le cloud, la gestion des opérations (comme pour tout avec le cloud) est achetée pour chacune des ressources, et elle est prise en compte dans les frais de fonctionnement mensuels.
+Plus loin dans le processus d’adoption cloud, l’équipe de gestion cloud utilisera cette classification en vue de déterminer l’effort nécessaire pour atteindre les niveaux d’état critique alignés. Dans les environnements locaux, la gestion des opérations est souvent achetée de façon centralisée et traitée comme une charge métier nécessaire, avec peu ou pas de coûts d’exploitation supplémentaires. Comme tous les services cloud, la gestion des opérations est achetée pour chacune des ressources, et elle est prise en compte dans les frais de fonctionnement mensuels.
 
 Étant donné que dans le cloud le coût de la gestion des opérations est direct et évident, il est important d’aligner correctement les coûts sur les échelles d’état critique souhaitées.
 
@@ -54,14 +53,14 @@ Plus loin dans le processus d’adoption cloud, l’équipe de gestion cloud uti
 
 La révision initiale de chaque charge de travail du portefeuille peut prendre du temps. Pour garantir que cette tâche ne bloque pas la stratégie cloud dans son ensemble, il est préférable que vos équipes s’accordent sur l’état critique par défaut qu’il convient d’appliquer à toutes les charges de travail.
 
-En fonction de la table de mise à l’échelle de l’état critique précédente, nous vous recommandons d’adopter un état critique _Moyen_ comme valeur par défaut. Cela permettra à votre équipe de stratégie cloud d’identifier rapidement les charges de travail qui nécessitent un niveau d’état critique plus élevé.
+En fonction de la table de mise à l'échelle de l'état critique précédente, nous vous recommandons d'adopter un état critique _moyen_ comme valeur par défaut. Cela permettra à votre équipe de stratégie cloud d’identifier rapidement les charges de travail qui nécessitent un niveau d’état critique plus élevé.
 
 ## <a name="use-the-template"></a>Utiliser le modèle
 
 Les étapes suivantes s’appliquent si vous utilisez le [classeur de gestion des opérations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud.
 
-1. Enregistrez l’échelle des états critiques dans l’onglet **Mettre à l'échelle** du classeur.
-2. Mettez à jour chaque charge de travail qui se trouve dans l’onglet _Exemple_ ou _Nettoyer le modèle_ pour refléter l’état critique par défaut indiqué dans la colonne _État critique_.
+1. Enregistrez l'échelle de criticité dans la feuille de calcul `Scale`.
+2. Mettez à jour chaque charge de travail dans la feuille de calcul `Example` ​​ou la feuille de calcul `Clean Template` pour refléter la criticité par défaut dans la colonne `Criticality`.
 3. L’entreprise doit entrer les valeurs exactes pour voir les écarts qui existent par rapport à l’état critique par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes

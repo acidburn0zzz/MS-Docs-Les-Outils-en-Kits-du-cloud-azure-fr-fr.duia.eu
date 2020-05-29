@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9347c0c9517327dfa01bc49e344dfcc8ed90e60d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 368c5b44513ee98cb7f361305bfe1de468474a03
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219714"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861529"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -125,14 +125,14 @@ Pour créer ou modifier la recherche enregistrée, suivez les étapes ci-dessous
 
 1. Entrez le nom de l’ordinateur ou le VMUUID pour inclure les ordinateurs choisis pour Change Tracking.
 
-    ```kusto
-    Heartbeat
-    | where AzureEnvironment=~"Azure" or Computer in~ ("list of the on-premises server names", "server1")
-    | distinct Computer
-    ```
+  ```kusto
+  Heartbeat
+  | where AzureEnvironment=~"Azure" or Computer in~ ("list of the on-premises server names", "server1")
+  | distinct Computer
+  ```
 
-    > [!NOTE]
-    > Le nom du serveur doit correspondre exactement à la valeur incluse de l’expression, et il ne doit pas contenir un suffixe de nom de domaine.
+  > [!NOTE]
+  > Le nom du serveur doit correspondre exactement à la valeur incluse de l’expression, et il ne doit pas contenir un suffixe de nom de domaine.
 
 1. Sélectionnez **Enregistrer**. Par défaut, la configuration d’étendue est liée à la recherche enregistrée **MicrosoftDefaultComputerGroup**. Elle sera mise à jour automatiquement.
 
@@ -185,9 +185,9 @@ Vous pouvez activer [Azure Monitor pour machines virtuelles](https://docs.micros
 
 ### <a name="azure-security-center"></a>Azure Security Center
 
-Nous vous recommandons d’intégrer tous vos serveurs dans le niveau Azure Security Center *Gratuit*. Cette option fournit un niveau de base d’évaluations de sécurité et de recommandations de sécurité réalisables pour votre environnement. Si vous mettez à niveau vers le niveau *Standard*, vous bénéficiez d’avantages supplémentaires, qui sont abordés en détail dans la [page de tarification de Security Center](https://docs.microsoft.com/azure/security-center/security-center-pricing).
+Nous vous recommandons d'intégrer tous vos serveurs au moins au niveau Gratuit d'Azure Security Center. Cette option fournit des évaluations de sécurité de base et des recommandations de sécurité réalisables pour votre environnement. Le niveau Standard offre des avantages supplémentaires. Pour plus d'informations, consultez [Tarification d'Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-pricing).
 
-Pour activer le niveau gratuit d’Azure Security Center, procédez comme suit :
+Pour activer le niveau Gratuit d'Azure Security Center, procédez comme suit :
 
 1. Accédez à la page du portail **Security Center**.
 2. Sous **STRATÉGIE ET CONFORMITÉ**, sélectionnez **Stratégie de sécurité**.

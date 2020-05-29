@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 374fe7d5aee3a2277f3bd8c6188f132756e538a1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401183"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815359"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exemples de résultats comptables
 
@@ -96,7 +96,7 @@ Cependant, avant d’associer des parcours de transformation à ce type de conve
 
 Si un modèle de dépenses d’exploitation est souhaitable, l’exemple suivant peut être un résultat viable pour l’entreprise :
 
-- **Exemple :** Le centre de données de l’entreprise se déprécie de _x euros_ par an pour les trois prochaines années. Il est prévu que _y euros_ seront nécessaires pour actualiser le matériel au cours des prochaines années. Nous pouvons convertir les dépenses d’investissement en un modèle de dépenses d’exploitation à un coût uniforme de _z euros_ par mois, ce qui permet une meilleure gestion et un meilleur contrôle des coûts d’exploitation de la technologie.
+- **Exemple :** Le centre de données de l'entreprise se déprécie de _x euros_ par an pour les trois prochaines années. Il est prévu que _y euros_ seront nécessaires pour actualiser le matériel au cours des prochaines années. Nous pouvons convertir les dépenses d'investissement en un modèle de dépenses d'exploitation à un coût uniforme de _z euros_ par mois, ce qui permet une meilleure gestion et un meilleur contrôle des coûts d'exploitation de la technologie.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

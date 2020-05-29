@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d9643f0bc303c6557d02f107fc91c7654c25ec0d
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: bab10ca8c3055cfa3b2ca94bec0eb8f052a096de
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621783"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755710"
 ---
 # <a name="first-landing-zone"></a>Première zone d’accueil
 
@@ -24,7 +24,7 @@ L’image suivante montre diverses options relatives aux zones d’atterrissage.
 
 ![Options des zones d’atterrissage](../../_images/ready/landing-zone-options.png)
 
-R. Commencez par du code permettant de produire des zones d’atterrissage cohérentes et reproductibles. Si vous êtes à l’aise avec la refactorisation (affinage du code et de l’infrastructure) pendant votre apprentissage, commencez par une base de code légère, comme le blueprint de zone d’atterrissage de migration du Cloud Adoption Framework. Cette méthode accélère l’adoption et crée des opportunités d’apprentissage pratique. Cependant, ce type de zone d’atterrissage initiale n’est pas conçu pour les données sensibles ou les charges de travail stratégiques sans une refactorisation supplémentaire.
+R. Commencez par du code permettant de produire des zones d’atterrissage cohérentes et reproductibles. Si vous êtes à l'aise avec la refactorisation (affinage du code et de l'infrastructure) pendant votre apprentissage, commencez par une base de code légère, comme le blueprint de zone d'atterrissage de migration du Cloud Adoption Framework. Cette méthode accélère l’adoption et crée des opportunités d’apprentissage pratique. Cependant, ce type de zone d’atterrissage initiale n’est pas conçu pour les données sensibles ou les charges de travail stratégiques sans une refactorisation supplémentaire.
 
 B. À mesure que l’adoption grandit et que les exigences sont plus clairement identifiées, les équipes chargées de l’adoption et des plateformes refactorisent les zones d’atterrissage en fonction de ce qu’elles apprennent. Le processus d’extension de vos zones d’atterrissage prépare les environnements à des exigences de conformité ou d’architecture plus complexes. L’article [Étendre la zone d’atterrissage](../considerations/index.md) fournit des guides de décision et des liens vers de bonnes pratiques pour vous guider dans vos efforts de refactorisation. L’extension de la zone d’atterrissage peut contribuer au respect des exigences concernant la sécurité, les opérations et la gouvernance.
 
@@ -39,16 +39,16 @@ D. Quand un partenaire fournit des services gérés continus ou s’il s’est e
 
 La sélection de la première zone d’atterrissage dépend de plusieurs variables. Le tableau suivant comprend certaines options concernant les premières zones d’atterrissage, ainsi que des variables qui peuvent aider à la prise de décision.
 
-| Zone d’atterrissage                                 | Expérience cloud  | Scale             | Heure de découverte | Prêt pour la production | Hybride             | Données sensibles     | Stratégique   | Conformité         |
+| Zone d'atterrissage                                 | Expérience cloud  | Scale             | Heure de découverte | Prêt pour la production | Hybride             | Données sensibles     | Stratégique   | Conformité         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|
 | [Zone d’accueil de migration du framework d’adoption du cloud](./migrate-landing-zone.md)     | Nouveau dans le cloud      | < 1 000 ressources    | 1 à 5 jours    | Étendue limitée -> | Extension nécessaire | Extension nécessaire | Extension nécessaire | Extension nécessaire |
 | [Zone d’atterrissage CAF Terraform](./terraform-landing-zone.md) | Divers modèles | Divers modèles | 10 à 20 semaines | Étendue limitée -> | Modules disponibles  | Modules disponibles  | Modules disponibles  | Modules disponibles  |
 
 Le tableau suivant présente les mêmes zones d’atterrissage, mais d’un point de vue légèrement différent, afin d’aider les décisions plus techniques.
 
-| Zone d’atterrissage                                 | Hub                          | Spoke    | Modèle cloud | Technology      |
+| Zone d'atterrissage                                 | Hub                          | Spoke    | Modèle cloud | Technology      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
-| [Zone d’accueil de migration du framework d’adoption du cloud](./migrate-landing-zone.md)     | Refactorisation nécessaire            | Inclus | Azure uniquement  | Azure Blueprint |
+| [Zone d’accueil de migration du framework d’adoption du cloud](./migrate-landing-zone.md)     | Refactorisation nécessaire            | Inclus | Azure uniquement  | Blueprint Azure |
 | [Zone d’atterrissage CAF Terraform](./terraform-landing-zone.md) | Inclus dans le module VDC       | Inclus | Multicloud  | Terraform       |
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b56c599be38c83c325ffbd00fba077452019e0e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4850fe8377c642ae7af2c763ee28c13d90f25b61
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220394"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754986"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Processus de conformité à la stratégie Accélération du déploiement
 
-Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent la [discipline Accélération du déploiement](./index.md). Pour être efficace, une gouvernance de configuration du cloud implique plusieurs processus manuels récurrents qui visent à détecter les problèmes et à imposer des stratégies d’atténuation de ces risques. Cependant, vous pouvez automatiser ces processus et les compléter par des outils pour réduire la charge de gouvernance et accélérer la réponse en cas de manquement.
+Cet article décrit les processus d’adhésion à la stratégie, qui gouvernent la [discipline Accélération du déploiement](./index.md). Pour être efficace, une gouvernance de configuration du cloud implique plusieurs processus manuels récurrents qui visent à détecter les problèmes et à imposer des stratégies d’atténuation de ces risques. Vous pouvez automatiser ces processus et les compléter pour réduire la charge de gouvernance et accélérer la réponse en cas de manquement.
 
 ## <a name="planning-review-and-reporting-processes"></a>Processus de planification, de révision et de génération de rapports
 
@@ -35,7 +35,7 @@ Les meilleurs outils Accélération de déploiement du cloud ne peuvent pas surp
 
 Ce processus de planification constitue également un moment idéal pour évaluer les lacunes des membres de votre équipe de gouvernance cloud en lien avec les risques, nouveaux ou évolutifs, encourus par les DevOps et la stratégie Accélération du déploiement. Invitez le personnel informatique concerné à participer aux révisions et à la planification en tant que conseillers techniques temporaires ou membres permanents de votre équipe.
 
-**Apprentissage et formation :** Deux fois par mois, offrez des sessions de formation pour vous assurer que le personnel informatique et les développeurs connaissent les dernières exigences stratégiques Accélération du déploiement. Dans le cadre de ce processus, relisez et mettez à jour toute la documentation, les guides et les autres ressources de formation pour vous assurer qu’ils correspondent aux dernières instructions stratégiques de l’entreprise.
+**Apprentissage et formation :** Deux fois par mois, offrez des sessions de formation pour vous assurer que le personnel informatique et les développeurs connaissent les dernières exigences stratégiques Accélération du déploiement. Dans le cadre de ce processus, relisez et mettez à jour la documentation, les guides et autres ressources de formation pour vous assurer qu'ils correspondent aux dernières instructions stratégiques de l'entreprise.
 
 **Révisions d’audit et création de rapports mensuelles :** Tous les mois, effectuez un audit sur tous les déploiements cloud afin de garantir leur alignement continu sur la stratégie de configuration. Examinez les activités liées au déploiement avec le personnel informatique, puis identifiez les problèmes de conformité qui n’ont pas encore été pris en charge par le processus d’application et de supervision continues. Cet examen produit un rapport pour l’équipe de la stratégie cloud et chaque équipe d’adoption du cloud afin de communiquer sur l’adhésion générale des parties prenantes à la stratégie. Le rapport est également conservé à des fins d’audit et juridiques.
 
@@ -61,7 +61,7 @@ Les déclencheurs et mesures d’exécution suivants fournissent des exemples ut
 
 Utilisez le [modèle de discipline Accélération du déploiement](./template.md) pour documenter les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
 
-Pour obtenir des conseils sur l’exécution des stratégies de gestion cloud en harmonie avec les plans d’adoption, consultez l’article sur l’amélioration de la discipline.
+Pour obtenir des conseils sur l'exécution des stratégies de gestion cloud en harmonie avec les plans d'adoption, consultez [Amélioration de la discipline Accélération du déploiement](./discipline-improvement.md).
 
 > [!div class="nextstepaction"]
 > [Amélioration de la discipline Accélération du déploiement](./discipline-improvement.md)

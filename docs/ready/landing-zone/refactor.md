@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processus de refactorisation des zones d’atterrissage
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8e1576afb56afd79a1028658609dc62c25775f75
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: b7be19e3d17f55a30d7c544c660b3a417247fd8a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621588"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755680"
 ---
 # <a name="refactor-landing-zones"></a>Refactorisation des zones d’atterrissage
 
 La zone d’atterrissage est un environnement permettant d’héberger vos charges de travail, **qui sont préprovisionnées par le biais de code**. Étant donné que l’infrastructure de zone d’atterrissage est définie dans le code, elle peut être refactorisée comme n’importe quel autre code base. La refactorisation est un processus qui consiste à modifier ou à restructurer le code source afin d’optimiser le résultat de ce code sans changer son rôle ou sa fonction principale.
 
-La méthodologie Ready utilise le concept de refactorisation pour accélérer la migration et supprimer les points de blocage courants. Les étapes de la présentation Ready décrivent un processus qui commence par un modèle de zone d’atterrissage prédéfini qui correspond le mieux à votre fonction d’hébergement. Ensuite, refactorisez le code source ou faites-y des ajouts pour étendre la capacité des zones d’atterrissage à fournir cette fonction avec une sécurité, des opérations ou une gouvernance améliorées. L’image suivante illustre le concept de refactorisation.
+La méthodologie Ready utilise le concept de refactorisation pour accélérer la migration et supprimer les points de blocage courants. Les étapes de la présentation Ready décrivent un processus qui commence par un modèle de zone d'atterrissage prédéfini conforme à votre fonction d'hébergement. Ensuite, refactorisez le code source ou faites-y des ajouts pour étendre la capacité des zones d’atterrissage à fournir cette fonction avec une sécurité, des opérations ou une gouvernance améliorées. L’image suivante illustre le concept de refactorisation.
 
 ![Illustration de la refactorisation de la zone d’atterrissage, décrit dans la section suivante de cet article](../../_images/ready/refactor.png)
 
@@ -35,7 +35,7 @@ Il a fallu des années et des efforts importants pour atteindre le niveau actuel
 
 ![Point de blocage courant : Action trop précoce](../../_images/ready/blocker-act-too-soon.png)
 
-Dans l’image ci-dessus, le client a un objectif de 100 charges de travail dans le cloud. Pour y parvenir, il déploiera probablement sa première charge de travail. Puis les 10 premières charges de travail, avant qu’il ne soit prêt à mettre une de ces charges de travail en production. Enfin, il atteindra l’objectif du plan d’adoption et disposera d’un portefeuille robuste dans le cloud. Cependant, la croix rouge dans l’image indique le point où les clients sont généralement bloqués. Si vous attendez un alignement à 100 %, vous pouvez retarder la première charge de travail de plusieurs semaines ou plusieurs mois, voire plusieurs années.
+Dans l’image ci-dessus, le client a un objectif de 100 charges de travail dans le cloud. Pour y parvenir, il déploiera probablement sa première charge de travail. Puis les 10 premières charges de travail, avant qu’il ne soit prêt à mettre une de ces charges de travail en production. Enfin, il atteindra l’objectif du plan d’adoption et disposera d’un portefeuille robuste dans le cloud. Cependant, la croix rouge présente dans l'image indique le point où les clients sont généralement bloqués. Si vous attendez un alignement à 100 %, vous pouvez retarder la première charge de travail de plusieurs semaines ou plusieurs mois, voire plusieurs années.
 
 ### <a name="blocker-acting-too-late"></a>Point de blocage : Action trop tardive
 
@@ -56,7 +56,7 @@ Le reste de cet article se concentre sur certaines contraintes clés qui peuvent
 
 ## <a name="theory"></a>Théorie
 
-Le concept de refactorisation d’une zone d’atterrissage est simple en théorie, mais requiert des garde-fous bien définis. Le concept illustré ci-dessus présente le schéma de base comme suit. Quand vous êtes prêt à créer votre première zone d’atterrissage, commencez par une zone d’atterrissage initiale définie via un modèle. Une fois cette zone d’atterrissage déployée, utilisez les arbres de décision dans les articles suivants sous « Développer votre zone d’atterrissage » de cette série d’articles (voir la table des matières) pour refactoriser et faite des ajouts à votre zone d’atterrissage initiale. Répétez les arbres de décision et la refactorisation jusqu’à ce que vous disposiez d’un environnement d’entreprise conforme aux exigences de vos équipes de sécurité, d’exploitation et de gouvernance.
+Le concept de refactorisation d’une zone d’atterrissage est simple en théorie, mais requiert des garde-fous bien définis. Le concept illustré ci-dessus présente le schéma de base comme suit. Quand vous êtes prêt à créer votre première zone d’atterrissage, commencez par une zone d’atterrissage initiale définie via un modèle. Une fois cette zone d'atterrissage déployée, utilisez les arbres de décision des articles suivants, sous la section « Développer votre zone d’atterrissage » de cette série d'articles (voir la table des matières), pour refactoriser et effectuer des ajouts à votre zone d'atterrissage initiale. Répétez les arbres de décision et la refactorisation jusqu’à ce que vous disposiez d’un environnement d’entreprise conforme aux exigences de vos équipes de sécurité, d’exploitation et de gouvernance.
 
 ## <a name="development-approach"></a>Approche de développement
 
@@ -100,7 +100,7 @@ La section de la méthodologie Ready sur l’extension de votre zone d’atterri
 
 ![Itération parallèle de la zone d’atterrissage](../../_images/ready/refactor-methodologies.png)
 
-Chaque sous-section de la partie liée au « développement de votre zone d’atterrissage » correspond à l’un des ajouts décrits dans l’image ci-dessus. Au-delà de ces expansions de base, certaines méthodologies plus approfondies (comme Govern ou Manage) de ce framework vous aideront à aller au-delà des modifications de base de la zone d’atterrissage pour mettre en place des disciplines à long terme.
+Chaque sous-section de la partie liée au « développement de votre zone d’atterrissage » correspond à l’un des ajouts décrits dans l’image ci-dessus. Au-delà de ces expansions de base, certaines méthodologies plus approfondies (comme Govern ou Manage) de cette infrastructure vous aideront à aller au-delà des modifications de base de la zone d'atterrissage pour mettre en place des disciplines à long terme.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

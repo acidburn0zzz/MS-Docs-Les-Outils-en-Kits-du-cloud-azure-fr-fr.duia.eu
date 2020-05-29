@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c5c295ef24571309e1d97a91ec0c65a0816082e7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6307cb792b6c2cbbda472d1620a91ebdffc18845
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217885"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755903"
 ---
 <!-- cSpell:ignore DPIAs -->
 
@@ -81,4 +81,4 @@ En matière de sécurité, il n'est pas toujours facile de prendre des décision
 
 ## <a name="behavioral-analytics"></a>Analyse comportementale
 
-L’analyse comportementale est une technique qui analyse et compare les données à une collection de modèles connus. Toutefois, ces modèles ne sont pas de simples signatures. Ils sont déterminés par le biais d’algorithmes d’apprentissage automatique appliqués aux ensembles de données massifs. Ils sont également déterminés à travers une analyse minutieuse des comportements malveillants par des experts. Azure Security Center peut utiliser l’analyse comportementale pour identifier les ressources compromises en se basant sur l’analyse des journaux d’activité de la machine virtuelle, des journaux d’activité du périphérique réseau virtuel, des journaux d’activité Service Fabric, des vidages sur incident et d’autres sources.
+L’analyse comportementale est une technique qui analyse et compare les données à une collection de modèles connus. Ces modèles ne sont pas de simples signatures. Ils sont déterminés par le biais d'algorithmes d'apprentissage automatique appliqués aux jeux de données massifs. Ils sont également déterminés à travers une analyse minutieuse des comportements malveillants par des experts. Azure Security Center peut utiliser l’analyse comportementale pour identifier les ressources compromises en se basant sur l’analyse des journaux d’activité de la machine virtuelle, des journaux d’activité du périphérique réseau virtuel, des journaux d’activité Service Fabric, des vidages sur incident et d’autres sources.

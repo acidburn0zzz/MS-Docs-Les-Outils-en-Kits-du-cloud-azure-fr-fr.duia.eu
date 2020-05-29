@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed92a62d83092a54aa86c58f7b453768fe71ad1f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1ab0d2c8657889a8f4ee16bd4dd9ca4f631b32c2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220275"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754972"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-deployment-acceleration-discipline"></a>Métriques et indicateurs de tolérance au risque liée à la discipline Accélération du déploiement
 
@@ -21,7 +21,7 @@ Apprenez à quantifier la tolérance aux risques de l’entreprise associée à 
 
 ## <a name="metrics"></a>Mesures
 
-L’Accélération du déploiement se concentre sur les risques liés à la configuration, au déploiement, à la mise à jour et à la maintenance des ressources cloud. Les informations suivantes sont utiles lors de l’adoption de cette discipline de gouvernance cloud :
+L’Accélération du déploiement se concentre sur les risques liés à la configuration, au déploiement, à la mise à jour et à la maintenance des ressources cloud. Les informations suivantes sont utiles lors de l'adoption de la discipline Accélération du déploiement :
 
 - **Échecs de déploiement :** Pourcentage de déploiements qui échouent ou qui débouchent sur des ressources mal configurées.
 - **Temps de déploiement :** Il s’agit du temps nécessaire pour déployer des mises à jour sur un système existant.

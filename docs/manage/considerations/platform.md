@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8c79c5fe2069d73a9f488f82700f7a96a7c24829
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d9c493436196a8cf95453d1822dfa43df0fa6b5c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223913"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755986"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Opérations de plateforme en gestion cloud
 
@@ -55,7 +55,7 @@ Bien que les outils et les processus de gestion puissent contribuer à améliore
 - **Gestion :** Processus opérationnels assurant l’exécution d’un système en production.
 - **Sécurité :** Protection des applications et des données contre les menaces.
 
-Le [Centre des architectures Azure](https://docs.microsoft.com/azure/architecture/guide/pillars) fournit une méthode permettant de vérifier si les charges de travail suivent ces principes, en vue d’améliorer les opérations globales. Ces principes peuvent être appliqués aussi bien aux opérations de plateforme qu’aux opérations de charge de travail.
+Le [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) fournit une méthode permettant de vérifier si les charges de travail suivent ces principes, en vue d'améliorer les opérations globales. Ces principes peuvent être appliqués aussi bien aux opérations de plateforme qu’aux opérations de charge de travail.
 
 ## <a name="get-started-with-specific-platforms"></a>Bien démarrer avec des plateformes spécifiques
 

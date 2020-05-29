@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble des plateformes de supervision cloud
-description: Obtenez une vue d’ensemble générale de deux plateformes de supervision pour mieux comprendre la façon dont chacune d’elles offre des fonctionnalités de supervision de base.
+description: Consultez une vue d'ensemble générale de deux plateformes de supervision pour mieux comprendre la façon dont chacune d'elles fournit des fonctionnalités de supervision de base.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 45645ec900c4c85c4dd7698f6d5861027dae8bf6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: abe6fb81a1108e291d0a4f12382172a5f6b39e4d
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223743"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861478"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 

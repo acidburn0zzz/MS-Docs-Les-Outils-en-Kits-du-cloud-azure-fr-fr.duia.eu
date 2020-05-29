@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0835bf4fd7aa7f1fb08c8018f8fe2987726eacbf
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5cfe118ff57f998aa6b641c19ede3e89ee29420a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219901"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754612"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guide de gouvernance pour les entreprises standard : Améliorer la discipline Base de référence de la sécurité
 
@@ -36,9 +36,9 @@ Au début de ce scénario, les équipes de développement d’applications trava
 Depuis, certains changements ont eu lieu et ceux-ci vont avoir un impact sur la gouvernance :
 
 - L’équipe de développement d’applications a implémenté un pipeline CI/CD pour déployer une application cloud native avec une expérience utilisateur améliorée. Cette application n’interagit pas encore avec les données protégées : elle n’est donc pas prête pour la production.
-- Au sein du département informatique, l’équipe Décisionnel traite activement les données dans le cloud pour les aspects relatifs à la logistique, à l’inventaire et aux sources tierces. Ces données sont utilisées pour établir de nouvelles prédictions, qui peuvent modeler les processus de l’entreprise. Cependant, ces prédictions et ces insights ne sont pas exploitables tant que les données des clients et les données financières ne peuvent pas être intégrées à la plateforme de données.
+- Au sein du département informatique, l’équipe Décisionnel traite activement les données dans le cloud pour les aspects relatifs à la logistique, à l’inventaire et aux sources tierces. Ces données sont utilisées pour établir de nouvelles prédictions, qui peuvent modeler les processus de l’entreprise. Ces prédictions et ces insights ne sont pas exploitables tant que les données des clients et les données financières ne peuvent pas être intégrées à la plateforme de données.
 - L’équipe informatique avance sur les plans du directeur informatique et du directeur financier pour mettre hors service le centre de données de reprise d’activité. Plus de 1 000 ressources sur les 2 000 du centre de données DR ont été mises hors service ou migrées.
-- Les stratégies à l’origine peu contraignantes concernant les données personnelles et les données financières ont été modernisées. Cependant, les nouvelles stratégies d’entreprise sont déterminées par l’implémentation de stratégies de sécurité et de gouvernance associées. Les équipes restent donc bloquées.
+- Les stratégies à l'origine peu contraignantes en matière de données personnelles et de données financières ont été modernisées. Les nouvelles stratégies d'entreprise sont subordonnées à l'implémentation de stratégies de sécurité et de gouvernance associées. Les équipes restent donc bloquées.
 
 ### <a name="incrementally-improve-the-future-state"></a>Améliorer progressivement l’état futur
 

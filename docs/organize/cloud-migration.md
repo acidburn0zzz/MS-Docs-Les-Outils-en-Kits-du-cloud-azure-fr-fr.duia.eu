@@ -6,17 +6,17 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 876705322aad42ac2dac0eb29d7291d6d6df71ec
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: a5b3caa04e3f87c30236425aff770e82e0a37b4c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401001"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755583"
 ---
 # <a name="cloud-migration-functions"></a>Fonctions de migration cloud
 
-Les équipes chargées de la migration vers le cloud sont l’équivalent moderne des équipes de mise en œuvre technique ou des équipes de projet. Toutefois, la nature du cloud peut nécessiter une équipe à la structure plus fluide. Certaines équipes de migration se concentrent exclusivement sur la migration cloud, tandis que d’autres se concentrent sur des innovations qui tirent parti des technologies cloud. Certaines incluent l’expertise technique large requise pour effectuer des efforts d’adoption importants, comme une migration complète de centre de données, tandis que d’autres ont un objectif technique plus étroit et peuvent passer d’un projet à l’autre pour atteindre des objectifs spécifiques, par exemple une équipe de spécialistes en plateforme de données qui aident à convertir des machines virtuelles SQL en instances SQL PaaS.
+Les équipes chargées de la migration vers le cloud sont l'équivalent moderne des équipes de mise en œuvre technique ou des équipes de projet. Mais la nature du cloud peut nécessiter une équipe à la structure plus fluide. Certaines équipes de migration se consacrent exclusivement à la migration vers le cloud, tandis que d'autres se concentrent sur les innovations qui tirent parti des technologies cloud. Certaines incluent l’expertise technique large requise pour effectuer des efforts d’adoption importants, comme une migration complète de centre de données, tandis que d’autres ont un objectif technique plus étroit et peuvent passer d’un projet à l’autre pour atteindre des objectifs spécifiques, par exemple une équipe de spécialistes en plateforme de données qui aident à convertir des machines virtuelles SQL en instances SQL PaaS.
 
 Quel que soit le type ou le nombre d’équipes de migration vers le cloud, ces équipes fournissent généralement une expertise pour l’informatique, l’analyse commerciale ou les partenaires de mise en œuvre.
 
@@ -55,7 +55,7 @@ Nous vous recommandons que les équipes qui assurent les fonctionnalités d’ad
 
 Il est préférable que ces équipes se réunissent tous les jours de manière autonome. L’objectif de ces réunions quotidiennes est de mettre à jour rapidement le backlog et de communiquer ce qui a été effectué, ce qui doit être fait aujourd’hui et les différents points de blocage et tout ce qui nécessite un support externe supplémentaire.
 
-Le calendrier de mise en production et la durée des itérations sont propres à chaque entreprise. Toutefois, la durée moyenne semble être une plage d’une à quatre semaines par itération. Quelle que soit la cadence des itérations et des mises en production, nous vous recommandons que l’équipe rencontre toutes les équipes qui l’assistent à la fin de chaque mise en production afin de communiquer le résultat de cette mise en production et de réorganiser les efforts restants. Il est également utile de se réunir en équipe à la fin de chaque sprint, avec l'équipe du [centre d'excellence du cloud](../organize/cloud-center-of-excellence.md) ou l'[équipe de gouvernance du cloud](./cloud-governance.md), pour rester aligné sur les efforts et besoins communs.
+Le calendrier de mise en production et la durée des itérations sont propres à chaque entreprise. Mais la durée moyenne semble être une plage d'une à quatre semaines par itération. Quelle que soit la cadence des itérations et des mises en production, nous vous recommandons que l’équipe rencontre toutes les équipes qui l’assistent à la fin de chaque mise en production afin de communiquer le résultat de cette mise en production et de réorganiser les efforts restants. Il est également utile de se réunir en équipe à la fin de chaque sprint, avec l'équipe du [centre d'excellence du cloud](../organize/cloud-center-of-excellence.md) ou l'[équipe de gouvernance du cloud](./cloud-governance.md), pour rester aligné sur les efforts et besoins communs.
 
 Certaines des tâches techniques associées à l’adoption du cloud peuvent devenir répétitives. Les membres de l’équipe doivent tourner tous les 3 à 6 mois pour éviter les problèmes de satisfaction des employés et tenir les compétences à jour. Un siège tournant dans le [centre d’excellence du cloud](../organize/cloud-center-of-excellence.md) ou l’[équipe de gouvernance du cloud](./cloud-governance.md) peut offrir une excellente opportunité de préserver la motivation des employés et d’exploiter de nouvelles innovations.
 

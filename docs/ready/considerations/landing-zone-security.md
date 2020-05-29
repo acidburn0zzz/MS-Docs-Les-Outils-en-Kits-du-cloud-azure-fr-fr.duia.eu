@@ -3,16 +3,16 @@ title: Améliorer la sécurité des zones d’atterrissage
 description: Améliorer la sécurité des zones d’atterrissage
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3debb2057b4f4a6c925b62b3d783c135c5d2b3bb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 116c628d31267fafe50d8a870f9e6c83d3c51f3c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215175"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756496"
 ---
 <!-- cSpell:ignore SIEM -->
 
@@ -35,7 +35,7 @@ La liste suivante d’architectures de référence et de meilleures pratiques co
 
 ## <a name="test-driven-development-cycle"></a>Cycle de développement piloté par les tests
 
-Avant de commencer à apporter des améliorations à la sécurité, il est important de comprendre la « définition de Terminé » et tous les « critères d’acceptation ». Pour plus d’informations, consultez les articles sur le [développement piloté par les tests des zones d’atterrissage](./test-driven-development.md) et le [développement piloté par les tests dans Azure](./azure-test-driven-development.md).
+Avant de commencer à apporter des améliorations à la sécurité, il est important de comprendre la « définition de Terminé » et tous les « critères d’acceptation ». Pour plus d'informations, consultez les articles consacrés au [développement piloté par les tests des zones d'atterrissage](./test-driven-development.md) et au [développement piloté par les tests dans Azure](./azure-test-driven-development.md).
 
 ![Processus de développement piloté par les tests pour les zones d’atterrissage cloud](../../_images/ready/test-driven-development-process.png)
 

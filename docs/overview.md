@@ -3,17 +3,17 @@ title: Documentation sur le Microsoft Cloud Adoption Framework pour Azure
 description: Obtenez les outils, les conseils et les explications qui vous aideront à modeler les stratégies et à aboutir aux résultats métier souhaités dans toutes les phases du cycle de vie de l’adoption du cloud.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 06ac22741c7b61b59ae308444833852f2fcbff08
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: b6c88d978b6b7750bd687e411663d5828f6f4257
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621454"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815478"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,9 +42,7 @@ Le Cloud Adoption Framework rassemble les meilleures pratiques d’adoption du c
 
 ## <a name="understand-the-lifecycle"></a>Comprendre le cycle de vie
 
-Chacune des méthodologies capturées ci-dessus fait partie d’un large cycle de vie d’adoption du cloud. L’image suivante relie chaque méthodologie pour illustrer le cycle de vie global. Le Framework d’adoption du cloud est un framework du cycle de vie complet qui guide les clients tout au long des différentes phases de l’adoption en leur fournissant des méthodologies comme approches spécifiques pour surmonter les blocages courants.
-
-<!-- cSpell:ignore caf -->
+Chaque méthodologie ci-dessus fait partie d'un vaste cycle de vie d'adoption du cloud. Cloud Adoption Framework est un framework de cycle de vie complet qui guide les clients tout au long des différentes phases de l'adoption en leur fournissant des méthodologies comme approches spécifiques pour surmonter les blocages courants, comme illustré ici.
 
 ::: image type="content" source="./_images/caf-overview-new.svg" alt-text="Overview of the Cloud Adoption Framework" :::
 

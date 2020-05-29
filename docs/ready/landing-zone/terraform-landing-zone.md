@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 69d1aaf7ff2a5bd3d71cb03fd1149019792c71f1
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 8eee7eeaf2406a94ee703054ed5f1b9e369bf5a2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401287"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755657"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -45,7 +45,7 @@ Les composants déployés et leur rôle comprennent ce qui suit :
 | Groupes de ressources | Principaux groupes de ressources nécessaires pour la base |
 | Journalisation de l’activité | Audit de toutes les activités d’abonnement et de l’archivage : <li> Compte de stockage <li> Hubs d'événements Azure |
 | Journalisation des diagnostics | Tous les journaux d’opérations sont conservés pendant un certain nombre de jours : <li> Compte de stockage <li> Event Hubs |
-| Log Analytics | Stocke tous les journaux d’opérations. Déploie des solutions courantes pour un examen approfondi des meilleures pratiques d’application : <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
+| Log Analytics | Stocke tous les journaux d’opérations. Déploie des solutions courantes pour un examen approfondi des meilleures pratiques d’application : <li> Networkmonitoring <li> Adassessment <li> Adreplication <li> Agenthealthassessment <li> Dnsanalytics <li> Keyvaultanalytics |
 | Azure Security Center | Envoi de mesures et d’alertes en matière d’hygiène de sécurité par e-mail et numéro de téléphone |
 
 <!-- markdownlint-enable MD033 -->
@@ -71,8 +71,8 @@ Les décisions suivantes sont représentées dans la zone d’atterrissage Terra
 
 | Composant              | Décisions                                                                                                                                                                                                                                                                | Autres approches                                                                                                                                                                                                                                          |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enregistrement et surveillance | L’espace de travail Azure Monitor Log Analytics est utilisé. Un compte de stockage de diagnostics et un Event Hub sont provisionnés.                                                                                                                                                        |                                                                                                                                                                                                                                                                 |
-| Réseau                | N/A : le réseau est implémenté dans une autre zone d’atterrissage.                                                                                                                                                                                                                    | [Décisions en matière de mise en réseau](../considerations/networking-options.md)                                                                                                                                                                                                 |
+| Enregistrement et surveillance | L’espace de travail Azure Monitor Log Analytics est utilisé. Un compte de stockage de diagnostics et un Event Hub sont approvisionnés.                                                                                                                                                        |                                                                                                                                                                                                                                                                 |
+| Réseau                | N/A : le réseau est implémenté dans une autre zone d'atterrissage.                                                                                                                                                                                                                    | [Décisions en matière de mise en réseau](../considerations/networking-options.md)                                                                                                                                                                                                 |
 | Identité               | Il est supposé que l’abonnement est déjà associé à une instance de Azure Active Directory.                                                                                                                                                                        | [Meilleures pratiques de gestion des identités](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)                                                                                                                               |
 | Stratégie                 | Cette zone d’atterrissage indique actuellement qu’aucune stratégie Azure ne doit être appliquée.                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
 | Conception de l’abonnement    | N/A : conçu pour un abonnement de production unique.                                                                                                                                                                                                                     | [Créer des abonnements initiaux](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
@@ -90,14 +90,14 @@ Cet ensemble minimal d’étiquettes doit se trouver dans toutes les ressources 
 
 | Nom de la balise          | Description                                                                                        | Clé             | Valeur d'exemple                                    |
 |-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
-| Unité commerciale     | Division de niveau supérieur de votre entreprise qui est propriétaire de l’abonnement ou de la charge de travail auxquels la ressource appartient. | BusinessUnit    | FINANCE, MARKETING, {Product Name}, CORP, SHARED |
-| Cost Center       | Centre de coût comptable associé à cette ressource.                                              | CostCenter      | Number                                           |
-| Récupération d’urgence | Caractère critique pour l’entreprise de l’application, de la charge de travail ou du service.                                     | DR              | DR-ENABLED, NON-DR-ENABLED                       |
-| Environnement       | Environnement de déploiement de l’application, de la charge de travail ou du service.                                   | Env             | Prod, Dev, QA, Stage, Test, Training             |
-| Nom du propriétaire        | Propriétaire de l’application, de la charge de travail ou du service.                                                    | Propriétaire           | email                                            |
-| Type de déploiement   | Définit la façon dont les ressources sont conservées.                                                    | deploymentType  | Manual, Terraform                                |
-| Version           | Version du blueprint déployé.                                                                 | version         | v0.1                                             |
-| Nom de l’application  | Nom de l’application, du service ou de la charge de travail auxquels la ressource est associée.             | ApplicationName | « app name »                                       |
+| Unité commerciale     | Division de niveau supérieur de votre entreprise qui est propriétaire de l’abonnement ou de la charge de travail auxquels la ressource appartient. | Businessunit    | Finance, marketing, {Nom du produit}, corp, shared |
+| Centre de coûts       | Centre de coût comptable associé à cette ressource.                                              | Costcenter      | Number                                           |
+| Récupération d'urgence | Caractère critique pour l’entreprise de l’application, de la charge de travail ou du service.                                     | Dr              | Dr-enabled, non-dr-enabled                       |
+| Environnement       | Environnement de déploiement de l’application, de la charge de travail ou du service.                                   | Env             | Prod, dev, QA, stage, test, training             |
+| Nom du propriétaire        | Propriétaire de l’application, de la charge de travail ou du service.                                                    | Propriétaire           | E-mail                                            |
+| Type de déploiement   | Définit la façon dont les ressources sont conservées.                                                    | Deploymenttype  | Manual, Terraform                                |
+| Version           | Version du blueprint déployé.                                                                 | Version         | V0.1                                             |
+| Nom de l'application  | Nom de l’application, du service ou de la charge de travail auxquels la ressource est associée.             | Applicationname | « Nom de l'application »                                       |
 
 <!-- cSpell:ignore caf -->
 
@@ -151,7 +151,7 @@ tags_hub = {
 }
 ```
 
-Ensuite, nous précisons le nom de l’analytique des journaux d’activité et un ensemble de solutions qui analysent le déploiement. Ici, nous avons conservé Supervision réseau, Évaluation d’Active Directory et Réplication, DNS Analytics et Key Vault Analytics.
+Ensuite, nous précisons le nom de l'analytique des journaux d'activité et un ensemble de solutions qui analysent le déploiement. Ici, nous avons conservé Supervision réseau, Évaluation d'Active Directory et Réplication, DNS Analytics et Key Vault Analytics.
 
 ```hcl
 

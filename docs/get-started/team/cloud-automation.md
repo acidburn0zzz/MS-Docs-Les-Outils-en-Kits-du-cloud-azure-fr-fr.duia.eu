@@ -6,19 +6,19 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: bbb9f557f68fc50ef38c34371fe5b550375c335b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 4c560271b86b384aa0ba43763344bd0a5335f239
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230405"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814220"
 ---
 # <a name="get-started-build-a-cloud-automation-team"></a>Bien démarrer : Constituer une équipe chargée de l'automatisation du cloud
 
 Ce guide vous aide à comprendre les objectifs d'une équipe d'automatisation travaillant sur l'adoption du cloud.
 
-Au cours des efforts d’adoption du cloud, les capacités d’automatisation du cloud libéreront le potentiel des DevOps et d’une approche native du cloud. L’expertise dans chacun de ces domaines peut accélérer l’adoption et l’innovation.
+Au cours des efforts d’adoption du cloud, les capacités d’automatisation du cloud libéreront le potentiel des DevOps et d’une approche native du cloud. L'expertise dans ces domaines peut accélérer l'adoption et l'innovation.
 
 ## <a name="prerequisites"></a>Prérequis
 

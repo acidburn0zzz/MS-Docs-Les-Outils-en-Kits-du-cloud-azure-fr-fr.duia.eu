@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a50a03096aad4dd492fc86e574aa7e335c5b178f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: abaa95421c8e6acdec724f40e5b0e1cd30b7babf
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220513"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815053"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-cost-management-discipline"></a>Métriques et indicateurs de tolérance au risque dans la discipline Gestion des coûts
 
@@ -41,11 +41,11 @@ Lors des premières étapes de l’adoption du cloud, vous collaborez avec votre
 Après avoir identifié les [risques métier](./business-risks.md), vous collaborez avec votre entreprise pour définir les bancs d’essai permettant d’identifier les déclencheurs d’augmentation potentielle de ces risques. Voici quelques exemples de mesures, telles que celles mentionnées ci-dessus, par rapport à votre tolérance aux risques de référence pour inciter votre entreprise à investir davantage dans Cost Management.
 
 - **Engagement justifié (cas le plus courant) :** Entreprise qui s’engage à dépenser _n 000 000 €_ cette année dans des services de fournisseur cloud. Elle a besoin d’une discipline Cost Management pour veiller à ne pas dépasser ses objectifs de dépenses de plus de 20 % et à utiliser au moins 90 % de son budget.
-- **Déclencheur de pourcentage :** Entreprise dont les dépenses cloud sont stables pour ses systèmes de production. En cas de hausse de plus _x %_ , une discipline Cost Management est un investissement judicieux.
+- **Déclencheur de pourcentage :** Entreprise dont les dépenses cloud sont stables pour ses systèmes de production. En cas de hausse de plus _x pour cent_, une discipline Cost Management est un investissement judicieux.
 - **Déclencheur de surapprovisionnement :** Entreprise qui considère ses solutions déployées sont suraprovisionnées. Cost Management est un investissement prioritaire tant que l’entreprise ne démontre pas que le provisionnement des ressources est parfaitement adapté à l’utilisation de celles-ci.
 - **Déclencheur de dépense mensuelle :** Des dépenses mensuelles de plus de _n 000 €_ constituent un coût important pour une entreprise. Si les dépenses dépassent ce montant au cours d’un mois donné, l’entreprise doit investir dans Cost Management.
-- **Déclencheur de dépense annuelle :** Entreprise disposant d’un budget informatique de R&D qui permet de dépenser _n 000 €_ par an pour l’expérimentation cloud. L’entreprise peut exécuter des charges de travail de production dans le cloud, mais le déclencheur est toujours considéré comme une solution expérimentale si le budget ne dépasse pas ce montant. Si le budget est dépassé, il doit être traité comme un investissement de production, ce qui oblige à gérer étroitement les dépenses.
-- **Frais d’exploitation indésirables (rare) :** Une entreprise refuse de subir des dépenses d’exploitation et a besoin de disposer de contrôles de gestion des coûts avant de déployer une charge de travail de développement/de test.
+- **Déclencheur de dépense annuelle :** Entreprise disposant d’un budget informatique de R&D qui permet de dépenser _n 000 €_ par an pour l’expérimentation cloud. L'entreprise peut exécuter des charges de travail de production dans le cloud, mais le déclencheur est toujours considéré comme une solution expérimentale si le budget ne dépasse pas ce montant. Si le budget est dépassé, il doit être traité comme un investissement de production, ce qui oblige à gérer étroitement les dépenses.
+- **Frais d’exploitation indésirables (rare) :** Une entreprise refuse de subir des dépenses d'exploitation et a besoin de disposer de contrôles de gestion des coûts avant de déployer une charge de travail de développement/de test.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

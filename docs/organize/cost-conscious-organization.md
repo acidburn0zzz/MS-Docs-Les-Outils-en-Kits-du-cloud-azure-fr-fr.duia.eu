@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: dbf5f3364277ad3a245796e47523cb803a074d31
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0304d2a8f8794f7cc191f494179c3bbb9080d00d
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216416"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815461"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Construire une organisation sensible aux coûts
 
@@ -35,7 +35,7 @@ _Figure 1 : Plan de l’organisation attentif aux coûts._
 
 - **Optimisation :** L’optimisation est l’action qui crée les réductions de coûts. Pendant l’optimisation, les allocations de ressources sont modifiées pour réduire le coût de prise en charge de différentes charges de travail. Ce processus nécessite une itération et une expérimentation. Chaque réduction de coût réduit les performances. Trouver le bon équilibre entre les attentes en matière de contrôle des coûts et de performances des utilisateurs finaux exige la contribution de plusieurs parties.
 
-Les sections suivantes décrivent les rôles que l’_équipe de stratégie cloud_, l’_équipe d’adoption du cloud_, l’_équipe de gouvernance du cloud_ et le _centre d’excellence du cloud (CCoE)_ jouent dans le développement d’une organisation sensible aux coûts.
+Les sections suivantes décrivent les rôles que jouent différentes équipes dans le développement d'une organisation sensible aux coûts.
 
 ## <a name="cloud-strategy-team"></a>Équipe de stratégie cloud
 

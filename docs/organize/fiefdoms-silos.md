@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f68976fd07ea5a35078b70d3f18b656e6ba3f683
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a513c5727473d1e42b7fbecb6e0015aeb311fd0d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223505"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755280"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimodèles organisationnels : Silos et fiefs
 
@@ -37,7 +37,7 @@ Bien que les équipes informatiques saines soutiennent avec passion les technolo
 
 Parfois, les microcultures qui existent au sein des équipes informatiques saines peuvent mal réagir aux décisions prises par la voie hiérarchique visant à piloter un changement. Cette réaction est naturelle, car les collectifs d’êtres humains qui partagent des normes coopèrent souvent pour surmonter les menaces externes.
 
-Les changements qui affectent les tâches quotidiennes de l’équipe, le sentiment de sécurité ou l’autonomie peuvent être considérées comme un risque pour le collectif. Les signes de résistance sont souvent un indicateur précoce que les membres de l’équipe se sentent exclus du processus décisionnel.
+Les changements qui affectent les tâches quotidiennes de l’équipe, le sentiment de sécurité ou l’autonomie peuvent être considérées comme un risque pour le collectif. Les signes de résistance sont souvent un indicateur précoce du fait que les membres de l'équipe se sentent exclus du processus décisionnel.
 
 Si les architectes et autres leaders du cloud s’efforcent d’abolir les préjugés de personne en vue d’impliquer les équipes informatiques existantes, cette résistance a de grandes chances de diminuer rapidement et de disparaître au fil du temps. Un outil à la disposition des architectes et leaders du cloud pour créer une prise de décision inclusive consiste à former un CCoE.
 
@@ -47,7 +47,7 @@ Il est facile de confondre résistance et frictions. Les équipes informatiques 
 
 Offrir à ces équipes un mécanisme de communication dans une terminologie d’avenir permettra d’ajouter des points de données, d’identifier des lacunes et de créer des frictions saines autour des solutions proposées. Ces frictions supplémentaires permettront d’adoucir les points de discorde sur les solutions pour plus de valeur ajoutée à long terme. Changer le mode de conversation peut simplement rendre plus clairs les sujets complexes et générer une dynamique vers des solutions plus efficaces.
 
-Les conseils en matière de [définition d’une stratégie d’entreprise](../govern/corporate-policy.md) visent à faciliter les conversations sur les risques avec les parties prenantes de l’entreprise. Toutefois, ce même modèle peut être utilisé pour faciliter les conversations avec les équipes perçues comme résistantes au cloud. Quand la perception de la résistance est large, il peut s’avérer judicieux d’inclure des pratiques de résolution des problèmes de résistance dans la charte d’une [équipe de gouvernance cloud](./cloud-governance.md).
+Les conseils en matière de [définition d’une stratégie d’entreprise](../govern/corporate-policy.md) visent à faciliter les conversations sur les risques avec les parties prenantes de l’entreprise. Mais ce même modèle peut être utilisé pour faciliter les conversations avec les équipes perçues comme hostiles au cloud. Quand la perception de la résistance est large, il peut s’avérer judicieux d’inclure des pratiques de résolution des problèmes de résistance dans la charte d’une [équipe de gouvernance cloud](./cloud-governance.md).
 
 ## <a name="antipatterns"></a>Antimodèles
 
@@ -73,11 +73,11 @@ L’introduction d’une [équipe de stratégie cloud](./cloud-strategy.md) va c
 
 **Envisagez l’expérimentation et l’exposition :** Les membres d’un silo d’informations ont probablement été contraints de penser d’une certaine manière depuis un certain temps. Rompre avec cette pensée unique constitue la première étape pour venir à bout de la résistance.
 
-L’expérimentation et l’exposition sont des outils puissants pour faire tomber les obstacles brandis par les silos. Les membres d’équipe peuvent résister à des solutions concurrentes ; il n’est donc pas conseillé de leur confier une expérience qui va à l’encontre de leur solution existante. Toutefois, dans le cadre d’un premier test de charge de travail du cloud, l’organisation a tout intérêt à implémenter des solutions concurrentes. L’équipe en silo doit être invitée à participer en tant que conseil, mais pas en tant que décisionnaire. Ce rôle doit être clairement communiqué à l’équipe, avec un engagement à la faire participer de manière plus importante en tant que décisionnaire avant de passer aux solutions de production.
+L’expérimentation et l’exposition sont des outils puissants pour faire tomber les obstacles brandis par les silos. Les membres d’équipe peuvent résister à des solutions concurrentes ; il n’est donc pas conseillé de leur confier une expérience qui va à l’encontre de leur solution existante. Mais dans le cadre d'un premier test de charge de travail du cloud, l'organisation a tout intérêt à implémenter des solutions concurrentes. L’équipe en silo doit être invitée à participer en tant que conseil, mais pas en tant que décisionnaire. Ce rôle doit être clairement communiqué à l’équipe, avec un engagement à la faire participer de manière plus importante en tant que décisionnaire avant de passer aux solutions de production.
 
 Pendant l’évaluation de la solution concurrente, utilisez les pratiques décrites dans [Définir la stratégie de l’entreprise](../govern/corporate-policy.md) pour documenter les risques tangibles de l’expérience et établir des stratégies qui aident l’équipe en silo à se sentir plus à l’aise avec la situation future. Ainsi, l’équipe va être exposée à de nouvelles solutions, ce qui permettra de renforcer la future solution.
 
-**Évitez les « cloisonnements » :** Les équipes qui dirigent l’adoption du cloud trouvent qu’il est facile de repousser les limites en explorant de nouvelles solutions cloud natives. Le chemin vers la suppression des cloisonnements est alors à moitié fait. Toutefois, cette mentalité peut renforcer encore plus les silos d’informations. Forcer le changement trop rapidement et sans respect des cultures existantes peut créer des frictions malsaines et entraîner une résistance naturelle.
+**Évitez les « cloisonnements » :** Les équipes qui dirigent l’adoption du cloud trouvent qu’il est facile de repousser les limites en explorant de nouvelles solutions cloud natives. Le chemin vers la suppression des cloisonnements est alors à moitié fait. Mais cette mentalité peut renforcer encore plus les silos d'informations. Forcer le changement trop rapidement et sans respect des cultures existantes peut créer des frictions malsaines et entraîner une résistance naturelle.
 
 Quand les silos d’informations commencent à résister, il est important de ne pas « cloisonner » vos propres solutions. Gardez à l’esprit cette vérité simple : une solution cloud native n’est pas toujours la meilleure. Envisagez des solutions hybrides susceptibles d’offrir une opportunité d’extension des investissements existants du silo d’informations à l’avenir.
 
@@ -118,14 +118,14 @@ Les fiefs informatiques peuvent s’améliorer en suivant les approches de [rés
 Quand une résistance continue provenant de fiefs informatiques bloque les efforts d’adoption du cloud, il peut s’avérer judicieux d’évaluer la situation avec les responsables informatiques existants. Ces derniers doivent écouter attentivement les remarques de l’[équipe de stratégie cloud](./cloud-strategy.md), du [centre d’excellence du cloud](./cloud-center-of-excellence.md) et de l’[équipe de gouvernance cloud](./cloud-governance.md) avant de prendre des décisions.
 
 > [!NOTE]
-> Les responsables informatiques ne doivent jamais prendre à la légère les modifications apportées à l’organigramme. Ils doivent aussi valider et analyser les commentaires émis par chacune des équipes. Toutefois, des efforts de transformation comme l’adoption du cloud tendent à exacerber des problèmes sous-jacents qui n’ont pas été remarqués ni traités depuis longtemps. Quand des fiefs empêchent une entreprise de réussir, un changement de direction est une nécessité probable.
+> Les responsables informatiques ne doivent jamais prendre à la légère les modifications apportées à l’organigramme. Ils doivent aussi valider et analyser les commentaires émis par chacune des équipes. Mais des efforts de transformation comme l'adoption du cloud tendent à exacerber des problèmes sous-jacents qui n'ont pas été remarqués ni traités depuis longtemps. Quand des fiefs empêchent une entreprise de réussir, un changement de direction est une nécessité probable.
 >
 > Heureusement, le départ du responsable d’un fief ne se conclue pas souvent par un licenciement. Ces chefs sérieux et passionnés peuvent souvent évoluer vers un autre poste à responsabilités après une courte période de réflexion. Avec la bonne prise en charge, un tel changement peut s’avérer sain à la fois pour le responsable du fief et l’équipe actuelle.
 
 <!-- -->
 
 > [!CAUTION]
-> Pour les responsables de fiefs informatiques, la protection de l’équipe contre les risques est une valeur incontournable. Toutefois, la distinction entre protection et isolation est alors infime. Quand la participation de l’équipe à des changements est bloquée, celle-ci peut en subir des conséquences psychologiques et professionnelles. L’envie de résister au changement peut être forte, particulièrement en période de changement visible.
+> Pour les responsables de fiefs informatiques, la protection de l’équipe contre les risques est une valeur incontournable. Mais la distinction entre protection et isolation est alors infime. Quand la participation de l’équipe à des changements est bloquée, celle-ci peut en subir des conséquences psychologiques et professionnelles. L’envie de résister au changement peut être forte, particulièrement en période de changement visible.
 >
 > Le responsable d’une équipe isolée peut adopter une volonté de croissance en expérimentant les conseils associés aux équipes informatiques saines dans les sections précédentes. Une participation active et optimiste aux activités de gouvernance et du CCoE peut entraîner un développement personnel. Les responsables de fiefs informatiques sont mieux placés pour guider les mentalités des équipes vers le développement de nouvelles idées.
 

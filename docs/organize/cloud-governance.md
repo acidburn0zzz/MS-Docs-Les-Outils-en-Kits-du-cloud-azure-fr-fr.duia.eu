@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 1ccda999eb0327f7694374b0589321ca0965f1c2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: dfa8275bb96fc075e099b19c9c4b9b81d1714131
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215753"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755591"
 ---
 <!-- docsTest:ignore IS -->
 
@@ -76,7 +76,7 @@ Au fil de l’adoption, l’équipe chargée de la gouvernance cloud risque d’
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Certaines grandes organisations disposent d’équipes dédiées qui se concentrent sur la gouvernance informatique. Ces équipes sont spécialisées dans la gestion des risques de tout le portefeuille informatique. Lorsque ces équipes existent, les modèles de maturité suivants peuvent être rapidement accélérés. En revanche, l’équipe de gouvernance informatique est encouragée à examiner le modèle de gouvernance cloud pour comprendre comment la gouvernance évolue légèrement vers le cloud. Citons deux articles essentiels, sur l’extension de la stratégie d’entreprise dans le cloud et les cinq disciplines de gouvernance cloud.
+Certaines grandes organisations disposent d’équipes dédiées qui se concentrent sur la gouvernance informatique. Ces équipes sont spécialisées dans la gestion des risques de tout le portefeuille informatique. Lorsque ces équipes existent, les modèles de maturité suivants peuvent être rapidement accélérés. Mais l'équipe de gouvernance informatique est encouragée à examiner le modèle de gouvernance cloud pour comprendre comment la gouvernance évolue légèrement dans le cloud. Citons deux articles essentiels, sur l’extension de la stratégie d’entreprise dans le cloud et les cinq disciplines de gouvernance cloud.
 Aucune gouvernance : Il est courant pour les organisations d’adopter le cloud sans établir clairement de plans de gouvernance. Très vite, des préoccupations liées à la sécurité, au coût, à l’échelle et aux opérations commencent à déclencher des conversations sur le besoin d’un modèle de gouvernance et de personnes pour s’occuper des processus associés à ce modèle. Aborder ces sujets avant qu’ils ne deviennent des préoccupations s’avère toujours une démarche préliminaire utile pour éviter l’antimodèle « aucune gouvernance ». La section sur la définition d’une stratégie d’entreprise peut faciliter ces conversations.
 
 **Gouvernance bloquée :** Quand les préoccupations liées à la sécurité, au coût, à l’échelle et aux opérations ne sont pas considérées, les projets et les objectifs de l’entreprise ont tendance à bloquer. Un manque de gouvernance appropriée génère de la peur, de l’incertitude et des doutes parmi les parties prenantes et les ingénieurs. Mettez-y fin tout de suite en prenant des mesures précoces. Les deux guides de gouvernance définis dans le Framework d’adoption du cloud peuvent vous aider à démarrer modestement, puis à définir des stratégies de limitation initiales afin de réduire l’incertitude et d’affiner la gouvernance au fil du temps. Choisissez entre le guide pour entreprise complexe et le guide pour entreprise standard.
@@ -85,7 +85,7 @@ Aucune gouvernance : Il est courant pour les organisations d’adopter le cloud
 
 Les efforts de ces personnes valent bien mieux que les scénarios « aucune gouvernance » ou « gouvernance bloquée ». Même si ces efforts sont louables, cette approche ne doit pas être confondue avec la gouvernance. Une véritable gouvernance nécessite bien plus qu’un soutien sporadique pour être cohérente, laquelle cohérence constitue l’objectif de toute bonne approche de gouvernance. Les instructions données dans les cinq disciplines de gouvernance cloud permettent de développer cette discipline.
 
-**Dépositaire du cloud :** Cette dénomination est devenue une fierté pour de nombreux architectes cloud spécialisés dans la gouvernance des premiers stades. Quand des pratiques de gouvernance se mettent en place, les résultats ont l’air similaires à ceux qu’obtiennent des volontaires. Toutefois, il existe une différence fondamentale. Un dépositaire du cloud a un plan à l’esprit. À ce stade de maturité, l’équipe consacre du temps à corriger les erreurs faites par les architectes cloud qui l’ont précédé. Toutefois, l’opérateur du cloud adapte cet effort à une stratégie d’entreprise bien structurée. Il utilise aussi des outils de gouvernance, comme ceux qui sont décrits dans le MVP de gouvernance.
+**Dépositaire du cloud :** Cette dénomination est devenue une fierté pour de nombreux architectes cloud spécialisés dans la gouvernance des premiers stades. Quand des pratiques de gouvernance se mettent en place, les résultats ont l’air similaires à ceux qu’obtiennent des volontaires. Mais il existe une différence fondamentale. Un dépositaire du cloud a un plan à l’esprit. À ce stade de maturité, l’équipe consacre du temps à corriger les erreurs faites par les architectes cloud qui l’ont précédé. Mais l'opérateur du cloud adapte cet effort à une stratégie d'entreprise bien structurée. Il utilise aussi des outils de gouvernance, comme ceux qui sont décrits dans le MVP de gouvernance.
 
 Une autre différence fondamentale entre un dépositaire du cloud et un volontaire est le soutien du supérieur hiérarchique. Le volontaire fait des heures supplémentaires par rapport à ce qui est attendu de lui parce qu’il a envie d’apprendre et de faire. Le dépositaire du cloud est soutenu par sa direction pour réduire ses tâches quotidiennes afin de veiller à ce que du temps soit régulièrement alloué et investi pour l’amélioration de la gouvernance cloud.
 

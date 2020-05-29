@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 85df89eb5cf17631e63441a806ab15bcfd94c326
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e7a2858773edecb3cfd7e0e8b24f69db44bc6af8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220683"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755087"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Processus de conformité à la stratégie Gestion des coûts
 
@@ -35,7 +35,7 @@ Il est temps de procéder à un engagement ou un achat préalable pour optimiser
 
 Ce processus de planification trimestriel constitue également un moment idéal pour évaluer les lacunes des membres de votre équipe de gouvernance cloud en lien avec les plans de l’entreprise actuels ou futurs. Invitez le personnel concerné et les propriétaires des charges de travail à participer aux révisions et à la planification en tant que conseillers temporaires ou membres permanents de votre équipe.
 
-**Apprentissage et formation :** Deux fois par mois, offrez des sessions de formation pour vous assurer que le personnel commercial et informatique connaît les dernières exigences stratégiques Gestion des coûts. Dans le cadre de ce processus, relisez et mettez à jour toute la documentation, les guides et les autres ressources de formation pour vous assurer qu’ils correspondent aux dernières instructions stratégiques de l’entreprise.
+**Apprentissage et formation :** Deux fois par mois, offrez des sessions de formation pour vous assurer que le personnel commercial et informatique connaît les dernières exigences stratégiques Gestion des coûts. Dans le cadre de ce processus, relisez et mettez à jour la documentation, les guides et autres ressources de formation pour vous assurer qu'ils correspondent aux dernières instructions stratégiques de l'entreprise.
 
 **Génération de rapports mensuels :** Une fois par mois, comparez les dépenses réelles avec vos prévisions. Signalez tout écart inattendu aux responsables de la facturation.
 
@@ -60,7 +60,7 @@ Voici quelques exemples de déclencheurs :
 
 À l’aide du [modèle de discipline Gestion des coûts](./template.md), documentez les processus et les déclencheurs qui correspondent au plan d’adoption du cloud actuel.
 
-Pour obtenir des conseils sur l’exécution des stratégies de Gestion des coûts en harmonie avec les plans d’adoption, consultez l’article sur l’amélioration de la discipline Gestion des coûts.
+Pour obtenir des conseils sur l'exécution des stratégies de Gestion des coûts conformément aux plans d'adoption, consultez [Amélioration de la discipline Gestion des coûts](./discipline-improvement.md).
 
 > [!div class="nextstepaction"]
 > [Amélioration de la discipline Gestion des coûts](./discipline-improvement.md)

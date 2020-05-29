@@ -3,16 +3,16 @@ title: Nouveautés
 description: Découvrez les mises à jour récemment apportées au Microsoft Cloud Adoption Framework pour Azure.
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/27/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3f57409adfa399e267cf14f1f24a3b380ed1bf85
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620873"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862379"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -24,10 +24,11 @@ Ce framework est le fruit d’une collaboration entre les clients, les partenair
 
 ## <a name="may-15-2020"></a>15 mai 2020
 
-Sur la base de votre feedback, nous avons créé un nouveau contenu pour vous aider à commencer à utiliser le Cloud Adoption Framework. Les nouveaux guides de prise en main vous aident à naviguer dans l’infrastructure en fonction de ce que vous voulez accomplir.
+Sur la base de votre feedback, nous avons créé un nouveau contenu pour vous aider à commencer à utiliser le Cloud Adoption Framework. Les nouveaux guides de prise en main vous aident à naviguer dans l’infrastructure en fonction de ce que vous voulez accomplir. Nous avons également créé une nouvelle page de destination pour faciliter l'accès aux conseils, outils, modules d'apprentissage et programmes qui contribuent à la réussite du parcours d'adoption du cloud.
 
 | Article | Description |
 |---|---|
+| [Cloud Adoption Framework pour Azure](../index.yml) | La page de destination du Cloud Adoption Framework a été repensée pour faciliter l'accès aux conseils, outils, modules d'apprentissage et programmes qui contribuent à la réussite du parcours d'adoption du cloud. |
 | [Bien démarrer avec le Cloud Adoption Framework](./index.md) | Commencez ici pour choisir un guide de prise en main aligné sur vos objectifs en matière d’adoption du cloud. Ces scénarios courants fournissent une feuille de route dans le cadre de Microsoft Cloud Adoption Framework pour Azure.|
 | [Comprendre et documenter les décisions d’alignement de base](./cloud-concepts.md) | Découvrez plus d’informations sur les décisions initiales que chaque équipe impliquée dans l’adoption du cloud doit comprendre. |
 | [Comprendre et aligner la hiérarchie du portefeuille](../reference/fundamental-concepts/hosting-hierarchy.md) | Découvrez comment une hiérarchie de portefeuille montre comment vos charges de travail et les services de prise en charge se combinent. |

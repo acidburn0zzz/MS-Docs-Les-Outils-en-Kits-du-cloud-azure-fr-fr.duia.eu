@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 59e01530d66fe55e76123a6de229944b4259175c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: ebccc9b47cc12b0b54b9a7aec1c88d2a7e733816
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230393"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814306"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -95,21 +95,21 @@ Dans les entreprises saines désireuses d’adopter le cloud, ce processus de n�
 
 Le CCoE est une fonction composée d'équipes très sollicitées. Il est important de permettre une collaboration organique et de suivre la croissance grâce à un référentiel/catalogue de solutions commun. Optimiser les interactions naturelles mais réduire le nombre de réunions. Lorsque cette fonction arrive à maturité, les équipes doivent tenter de limiter les réunions dédiées. La participation à des réunions récurrentes, telles que les réunions de mise en place hébergées par l’équipe d’adoption du cloud, fournira des entrées de données. En parallèle, une réunion après chaque plan de publication est partagée peut fournir un point tactile minimal pour cette équipe.
 
-**Soutien et engagement des parties prenantes de l'entreprise :** Les équipes du CCoE peuvent faire la preuve d’une grande réactivité dans certains domaines. Cependant, les objectifs de haut niveau, comme l’agilité commerciale et le délai de commercialisation, peuvent prendre beaucoup plus de temps. Au cours de la maturation, il existe un risque élevé que le CCoE se décourage ou soit découragé de se concentrer sur d’autres efforts informatiques.
+**Soutien et engagement des parties prenantes de l'entreprise :** Les équipes du CCoE peuvent faire la preuve d’une grande réactivité dans certains domaines. Les objectifs de haut niveau, comme l'agilité commerciale et le délai de commercialisation, peuvent prendre beaucoup plus de temps. Au cours de la maturation, il existe un risque élevé que le CCoE se décourage ou soit découragé de se concentrer sur d’autres efforts informatiques.
 
 Au cours des six à neuf premiers mois des efforts du CCoE, nous recommandons que les intervenants opérationnels allouent du temps pour rencontrer mensuellement les dirigeants informatiques et le CCoE. Ces réunions peuvent être mises en place de façon flexible. Le simple fait de rappeler aux membres du CCoE et à leurs dirigeants l’importance de ce programme peut contribuer grandement au succès du CCoE.
 
-De plus, nous recommandons que les parties prenantes de l’entreprise s’informent sur les progrès et les obstacles rencontrés par l’équipe du CCoE. La plupart de leurs efforts sembleront porter sur des détails techniques. Toutefois, il est important que les intervenants opérationnels comprennent la progression du plan afin qu’ils puissent s’engager lorsque l’équipe s’essouffle ou se laisse distraire par d’autres priorités.
+De plus, nous recommandons que les parties prenantes de l’entreprise s’informent sur les progrès et les obstacles rencontrés par l’équipe du CCoE. La plupart de leurs efforts sembleront porter sur des détails techniques. Il est important que les parties prenantes de l'entreprise comprennent l'avancement du plan, afin qu'elles puissent s'engager lorsque l'équipe s'essouffle ou se laisse distraire par d'autres priorités.
 
 **Les parties prenantes informatiques soutiennent la vision :** Le succès des efforts du CCoE nécessite beaucoup de négociations avec les membres actuels de l’équipe informatique. Lorsque le processus se passe bien, toute l’informatique contribue à la solution et se sent à l’aise avec le changement. Lorsque ce n'est pas le cas, certains membres de l'équipe informatique existante peuvent vouloir s'en tenir aux mécanismes de contrôle pour diverses raisons. Le soutien des parties prenantes informatiques est essentiel au succès du CCoE lorsque de telles situations se produisent. Il est important d’encourager et de renforcer les objectifs généraux du CCoE pour surmonter les obstacles à une négociation adéquate. En de rares occasions, les parties prenantes informatiques peuvent même avoir besoin d'intervenir et de sortir d'une impasse ou d'une égalité de voix pour que le CCoE continue de progresser.
 
 **Les parties prenantes informatiques soutiennent les priorités :** Un CCoE peut représenter un engagement important pour toute équipe informatique aux ressources limitées. Le fait de retirer les architectes expérimentés des projets à court terme pour se concentrer sur les gains à long terme risque de poser des difficultés aux membres de l’équipe qui ne font pas partie du CCoE. Les dirigeants et les parties prenantes informatiques doivent demeurer concentrés sur l’objectif du CCoE. L’appui des dirigeants et des parties prenantes informatiques est nécessaire pour éviter que les opérations quotidiennes soient perturbées au profit des tâches du CCoE.
 
-**Les parties prenantes informatiques fournissent protection et responsabilité :** L’équipe du CCoE expérimentera de nouvelles approches. Certaines de ces approches ne s’harmoniseront pas bien avec les opérations existantes ou les contraintes techniques. Il existe un risque réel que le CCoE subisse des pressions ou des recours de la part d’autres équipes en cas d’échec des expériences. Il est important d'encourager l'équipe et de la mettre à l'abri des conséquences des opportunités d'apprentissage « Fail-fast ». Il est tout aussi important de tenir l’équipe responsable de sa volonté de croissance, de s’assurer qu’elle tire des leçons de ces expériences et de trouver de meilleures solutions.
+**Les parties prenantes informatiques fournissent protection et responsabilité :** L’équipe du CCoE expérimentera de nouvelles approches. Certaines de ces approches ne s’harmoniseront pas bien avec les opérations existantes ou les contraintes techniques. Il existe un risque réel que le CCoE subisse des pressions ou des recours de la part d’autres équipes en cas d’échec des expériences. Il est important d'encourager l'équipe et de la mettre à l'abri des conséquences des opportunités d'apprentissage « Fail-fast ». Il est tout aussi important de responsabiliser l'équipe en termes de croissance, en veillant à ce qu'elle tire des leçons de ces expériences et trouve de meilleures solutions.
 
-## <a name="baseline-capability"></a>Fonctionnalités de base
+## <a name="baseline-capability"></a>Fonctionnalité de référence
 
-Un modèle CCoE nécessite une collaboration entre chacune des fonctionnalités suivantes :
+Un modèle CCoE nécessite une collaboration entre les fonctionnalités suivantes :
 
 - Adoption du cloud (plus précisément, les architectes de solutions).
 - Stratégie cloud (plus précisément, les chefs de projet et les responsables de programme).
@@ -119,7 +119,7 @@ Un modèle CCoE nécessite une collaboration entre chacune des fonctionnalités 
 
 Ce modèle nécessite également le soutien des dirigeants et des principales parties prenantes.
 
-La direction informatique est la première et la plus évidente des parties prenantes. Les responsables informatiques jouent un rôle important. Cependant, ce processus requiert le soutien du responsable des investissements et des cadres informatiques.
+La direction informatique est la première et la plus évidente des parties prenantes. Les responsables informatiques jouent un rôle important. Ce processus requiert le soutien du responsable des investissements et des cadres informatiques.
 
 Celui des parties prenantes de l’entreprise est moins évident. L'agilité et le délai de commercialisation de l'entreprise sont les principales motivations pour former un CCoE. Parmi les parties prenantes de l’entreprise, citons les dirigeants, les cadres financiers, les cadres d’exploitation et les propriétaires de produits professionnels.
 
