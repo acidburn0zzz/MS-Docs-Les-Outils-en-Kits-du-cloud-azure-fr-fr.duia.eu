@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0ca1c1804b2c7116ed61e05a10a221b472a2807d
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: a03035c749b57d60bf02db6ed0f019a873aecfc5
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398753"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815274"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Engagement commercial dans la gestion cloud
 
@@ -114,7 +114,7 @@ Les calculs suivants vous guideront dans les formules pour vous aider à mieux c
 
 ### <a name="estimate-outage-hours-per-year"></a>Estimation de l’interruption (heures par année)
 
-Le SLA composite est le contrat de niveau de service basé sur le déploiement de chaque ressource de la charge de travail. Ce champ indique _Estimation de l’interruption_ (marquée _Est. de l’interruption_ dans le classeur). Pour estimer l’interruption en heures par année sans utiliser le classeur, appliquez la formule suivante :
+Le SLA composite est le contrat de niveau de service basé sur le déploiement de chaque ressource de la charge de travail. Ce champ indique une _estimation de l’interruption_ (marquée `Est. Outage` dans le classeur). Pour estimer l’interruption en heures par année sans utiliser le classeur, appliquez la formule suivante :
 
 > _Estimation de l’interruption = (1 - Pourcentage SLA composite) &#215; Nombre d’heures dans une année_
 
@@ -122,15 +122,15 @@ Le classeur utilise la valeur par défaut de _8 760 heures par an_.
 
 ### <a name="standard-loss-impact"></a>Impact sur la perte standard
 
-_L’impact sur la perte standard_ (intitulé _Impact standard_ dans le classeur) prévoit l’impact financier de toute interruption, en supposant que la prédiction _Estimation de l’interruption_ est exacte. Pour calculer cette prévision sans utiliser le classeur, appliquez la formule suivante :
+_L’impact sur la perte standard_ (marqué `Standard Impact` dans le classeur) prévoit l’impact financier de toute interruption, en supposant que la prédiction d'_estimation de l’interruption_ est exacte. Pour calculer cette prévision sans utiliser le classeur, appliquez la formule suivante :
 
-> _Impact standard = Estimation de l’interruption 99,999 % de disponibilité &#215;_
+> _Impact standard = Estimation de l’interruption 99,999 % de disponibilité &#215; Impact durée/valeur_
 
 Cela sert de base pour le coût, si les parties prenantes de l’entreprise choisissent d’investir dans un niveau de gestion plus élevé.
 
-### <a name="composite-sla-impact"></a>Impact du contrat SLA composite
+### <a name="composite-sla-impact"></a>Impact sur le contrat SLA composite
 
-_L’impact sur le contrat SLA composite_ (intitulé _Impact de niveau d’engagement_ dans le classeur) fournit un impact fiscal mis à jour, en fonction des modifications apportées au contrat SLA de temps d’activité. Ce calcul vous permet de comparer l’impact financier projeté des deux options. Pour calculer cet impact de la prévision sans la feuille de calcul, appliquez la formule suivante :
+_L’impact sur le contrat SLA composite_ (marqué `Commitment level impact` dans le classeur) fournit un impact fiscal mis à jour, en fonction des modifications apportées au contrat SLA de temps d’activité. Ce calcul vous permet de comparer l’impact financier projeté des deux options. Pour calculer cet impact de la prévision sans la feuille de calcul, appliquez la formule suivante :
 
 > _Impact du contrat SLA composite = Estimation de l’interruption &#215; Impact durée/valeur_
 

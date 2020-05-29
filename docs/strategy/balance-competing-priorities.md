@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c5eebc5bbc73aa73858daa4b11a3578af8ccc6d9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7a09f6fe1dd337d1c42eb193cc23c9aa9519e6b9
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219085"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815410"
 ---
 # <a name="balance-competing-priorities"></a>Équilibrer les priorités concurrentes
 
@@ -88,7 +88,7 @@ Lors des efforts de migration, il est courant pour les équipes d’adoption de 
 
 **Étendue minimale** : Lors des étapes préliminaires de planification, utilisez l’option de réhébergement pour la planification. Sachez toutefois que cette option est une hypothèse métier initiale et non une décision technique. Dans la méthodologie de migration, il est à prévoir que l’équipe d’adoption conteste cette hypothèse pour chaque charge de travail migrée. Cette méthodologie suit les approches d’évaluation, de migration et de promotion pour chaque charge de travail, groupe ou charge de travail créant une fabrique de migration. Pendant la phase d’évaluation, l’équipe d’adoption évalue l’adéquation technique et l’architecture de chaque charge de travail. Ce travail d’évaluation entraîne rarement une approche « lift-and-shift » pure, car la plupart des composants de l’architecture ont tendance à être sélectionnés pour refactorisation et modernisation.
 
-**Exemple d’étendue développée** : Pour les charges de travail critiques ou très sensibles, comme celles émanant d’un ordinateur mainframe ou d’une application de microservices multiniveau, une évaluation plus approfondie de la charge de travail peut être nécessaire pendant la phase d’évaluation. Dans ces situations de réarchitecture, les clients doivent utiliser Azure Architecture Review et Azure Architecture Framework pour affiner les exigences de la charge de travail pendant l’évaluation.
+**Exemple d’étendue développée** : Pour les charges de travail critiques ou très sensibles, comme celles émanant d’un ordinateur mainframe ou d’une application de microservices multiniveau, une évaluation plus approfondie de la charge de travail peut être nécessaire pendant la phase d’évaluation. Dans ces situations de réarchitecture, les clients doivent utiliser Microsoft Azure Well-Architected Review et Microsoft Azure Well-Architected Framework pour affiner les exigences de la charge de travail pendant l’évaluation.
 
 ## <a name="balance-during-the-innovate-phase"></a>Équilibrage pendant la phase d’innovation
 
@@ -101,7 +101,7 @@ Une véritable innovation orientée client crée des priorités concurrentes ent
 
 **Étendue minimale** : La méthodologie d’innovation montre comment intégrer stratégie et plans grâce à un consensus sur la valeur métier. Le guide présente des outils cloud natifs qui peuvent accélérer chaque discipline d’innovation, puis accompagne les bonnes pratiques en vue de leur implémentation. Enfin, la section sur les améliorations de processus montre les approches à suivre pour développer l’empathie envers les clients tout en respectant les plans et les stratégies du parcours d’adoption du cloud. Cette approche se concentre sur la mise en œuvre de solutions d’innovation en réduisant le plus possible la part de la technologie.
 
-**Exemple d’étendue développée** : Parfois, une innovation peut dépendre de charges de travail critiques hautement sensibles. Lorsque le « client » est un utilisateur interne, l’effort de développement peut être à la fois critique et hautement sensible au cours des premières itérations. Dans ces scénarios, les équipes d’adoption doivent s’appuyer sur Azure Architecture Review et Azure Architecture Framework pour évaluer la conception architecturale avancée au début du processus.
+**Exemple d’étendue développée** : Parfois, une innovation peut dépendre de charges de travail critiques hautement sensibles. Lorsque le « client » est un utilisateur interne, l’effort de développement peut être à la fois critique et hautement sensible au cours des premières itérations. Dans ces scénarios, les équipes d’adoption doivent s’appuyer sur Microsoft Azure Well-Architected Review et Microsoft Azure Well-Architected Framework pour évaluer la conception architecturale avancée au début du processus.
 
 ## <a name="balance-during-the-govern-phase"></a>Équilibrage pendant la phase de gouvernance
 
@@ -127,7 +127,7 @@ Le modèle économique du service informatique en matière de gestion des opéra
 
 **Étendue minimale** : La méthodologie de gestion suggère d’établir une ligne de base de gestion « no-ops » (pas d’opérations) native Cloud. Étant donné que cette ligne de base ne permet pas de répondre à tous les besoins métier, collaborez avec l’entreprise pour définir des engagements et mieux aligner les investissements. Développez la base de référence pour répondre aux besoins communs de toutes les charges de travail. Instruisez ensuite aux équipes responsables des plateformes ou de charges de travail spécifiques de mettre en œuvre des solutions bien gérées dans un environnement bien géré.
 
-**Exemple d’étendue développée** : Dans la plupart des environnements, le pourcentage de charges de travail dont la valeur métier justifie des investissements importants de la part du service informatique dans les opérations est faible. Dans ces scénarios, l’équipe informatique peut utiliser Azure Architecture Review et Azure Architecture Framework pour mener des opérations plus approfondies.
+**Exemple d’étendue développée** : Dans la plupart des environnements, le pourcentage de charges de travail dont la valeur métier justifie des investissements importants de la part du service informatique dans les opérations est faible. Dans ces scénarios, l’équipe informatique peut utiliser Microsoft Azure Well-Architected Review et Microsoft Azure Well-Architected Framework pour mener des opérations plus approfondies.
 
 ## <a name="balance-during-the-organize-phase"></a>Équilibrage pendant la phase d’organisation
 

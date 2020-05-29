@@ -6,17 +6,17 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: e2a761a998a42ebb1f6e8042bd19fb4013c9b786
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 611565362d5828aab075acb23230acd65d269010
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230417"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752010"
 ---
 # <a name="get-started-central-it-team"></a>Bien démarrer : Équipe informatique centrale
 
-Lorsque l’adoption du cloud s’étend d’une équipe à plusieurs équipes dans un laps de temps relativement bref, une prise en charge supplémentaire du personnel informatique existant est nécessaire. Toutefois, ces membres du personnel peuvent ne pas disposer de la formation et de l’expérience nécessaires à la prise en charge du cloud à l’aide des outils informatiques cloud natifs. Cela conduit souvent à la formation d’une équipe d’informatique centralisée qui régit le cloud.
+Lorsque l’adoption du cloud s’étend d’une équipe à plusieurs équipes dans un laps de temps relativement bref, une prise en charge supplémentaire du personnel informatique existant est nécessaire. Ces membres du personnel peuvent ne pas disposer de la formation et de l’expérience nécessaires à la prise en charge du cloud à l’aide des outils informatiques cloud natifs. Cela conduit souvent à la formation d’une équipe d’informatique centralisée qui régit le cloud.
 
 > [!WARNING]
 > L’informatique centralisée doit être appliquée uniquement dans le cloud lorsque la livraison existante en local est basée sur un modèle d’informatique centralisée. Si le modèle local actuel est basé sur un contrôle délégué, envisagez une approche Cloud Center of Excellence (CCoE) qui offre une alternative plus compatible.
@@ -32,7 +32,7 @@ Lorsque l’adoption du cloud s’étend d’une équipe à plusieurs équipes d
 
 Dans le monde informatique moderne, les ressources sont distribuées dans le monde entier. Les responsabilités sont déléguées. La gestion des opérations est assurée par un mélange de personnel interne, de fournisseurs de services managés et de fournisseurs de services cloud. Dans l’économie numérique, les pratiques de gestion informatique sont transférées vers un modèle libre-service et de contrôle délégué avec des barrières de sécurité claires pour appliquer la gouvernance. L’informatique centralisée peut être un contributeur important à l’adoption du cloud en devenant un courtier cloud et un partenaire pour l’innovation et l’agilité métier.
 
-L’informatique centralisée en tant que fonction est bien positionnée pour obtenir des connaissances et des pratiques précieuses à partir des modèles locaux existants et appliquer ces pratiques à la livraison cloud. Toutefois, ce processus nécessite des modifications. De nouveaux processus, de nouvelles compétences et de nouveaux outils sont nécessaires pour prendre en charge l’adoption du cloud à grande échelle. Lorsque l’informatique centralisée s’adapte, elle devient un partenaire important dans le cadre des efforts d’adoption du cloud.
+L’informatique centralisée en tant que fonction est bien positionnée pour obtenir de précieuses connaissances et pratiques à partir des modèles locaux existants et appliquer ces pratiques à la livraison cloud. Ce processus implique un changement. De nouveaux processus, de nouvelles compétences et de nouveaux outils sont nécessaires pour prendre en charge l’adoption du cloud à grande échelle. Lorsque l’informatique centralisée s’adapte, elle devient un partenaire important dans le cadre des efforts d’adoption du cloud.
 
 ## <a name="deliverables"></a>Livrables
 
@@ -77,7 +77,7 @@ Les compétences nécessaires pour fournir des fonctionnalités d’informatique
 - Les opérations informatiques.
 - La gouvernance informatique.
 - L’infrastructure informatique.
-- Le réseau.
+- Mise en réseau.
 - L’identité.
 - La virtualisation.
 - La continuité d’activité et la reprise d’activité.

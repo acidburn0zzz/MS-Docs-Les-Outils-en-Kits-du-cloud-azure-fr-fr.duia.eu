@@ -3,16 +3,16 @@ title: 'Bien démarrer : Aligner votre organisation'
 description: Étapes recommandées pour l’alignement de votre organisation afin que vous soyez prêt pour une adoption réussie du cloud.
 author: JanetCThomas
 ms.author: janet
-ms.date: 05/05/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f40e0ecf16ceb1d3af7c3b99eb111d09a975b6da
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 7ab2ea31c90215efd37c2ab0d65f8a8c7baf24b1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621156"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814288"
 ---
 # <a name="get-started-align-your-organization"></a>Bien démarrer : Aligner votre organisation
 
@@ -41,11 +41,11 @@ L’étape suivante consiste à associer des personnes spécifiques aux fonction
 - Quelle personne sera responsable de la définition de ces contrôles de gouvernance ?
 - D’autres fonctions ou d’autres personnes auront-elles des responsabilités dans le plan d’adoption du cloud ?
 
-Une fois que vous avez documenté les réponses à ces questions, consultez [plans de préparation des compétences](../plan/adapt-roles-skills-processes.md) afin de définir vos plans pour préparer ces personnes au travail à venir.
+Après avoir documenté les réponses à ces questions, consultez [Plans de préparation des compétences](../plan/adapt-roles-skills-processes.md) afin de définir vos plans pour préparer ces personnes au travail à venir.
 
 ## <a name="step-3-determine-how-teams-align-within-your-organization"></a>Étape 3 : Déterminer la façon dont les équipes s’alignent dans votre organisation
 
-Les structures organisationnelles suivantes n’ont pas nécessairement besoin d’être représentées sur un organigramme. Les organigrammes reflètent généralement les structures de gestion des commandes et des contrôles. À l’inverse, les structures organisationnelles suivantes sont conçues pour capturer l’alignement des rôles et des responsabilités. 
+Les structures organisationnelles suivantes n’ont pas nécessairement besoin d’être représentées sur un organigramme. Les organigrammes reflètent généralement les structures de gestion des commandes et des contrôles. À l’inverse, les structures organisationnelles suivantes sont conçues pour capturer l’alignement des rôles et des responsabilités.
 
 Dans une organisation matricielle agile, ces structures peuvent être mieux représentées par des équipes virtuelles. Rien ne suggère que les équipes virtuelles ne pourraient pas être représentées dans un organigramme, mais un organigramme formel n’est pas nécessaire pour produire un modèle d’exploitation efficace.
 
@@ -74,7 +74,7 @@ Si les besoins d’adoption augmentent, les besoins de créer un équilibre et u
 
 ## <a name="step-5-align-raci-charts"></a>Étape 5 : Aligner les graphiques RACI
 
-À chaque niveau de l’évolution, la responsabilité des différentes fonctions cloud passe entre les mains de nouvelles équipes. Ce changement de responsabilité permet d’accélérer les cycles de migration et d’innovation en supprimant et en automatisant les obstacles au changement. Pour aligner correctement les attributions, l’article sur [l’alignement RACI](../organize/raci-alignment.md) montre un graphique RACI pour chacune des structures organisationnelles référencées.
+À chaque niveau de l’évolution, la responsabilité des différentes fonctions cloud passe entre les mains de nouvelles équipes. Ce changement de responsabilité permet d’accélérer les cycles de migration et d’innovation en supprimant et en automatisant les obstacles au changement. Pour aligner correctement les attributions, l’article sur [l’alignement RACI](../organize/raci-alignment.md) montre un graphique RACI pour chacune des structures organisationnelles.
 
 ## <a name="additional-information"></a>Informations supplémentaires
 

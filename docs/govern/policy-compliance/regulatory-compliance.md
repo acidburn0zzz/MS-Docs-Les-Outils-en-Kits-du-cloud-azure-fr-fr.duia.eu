@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0860dfc137b8aaa9ad39beeebb3856786eee1318
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 927c42b216ff22aa3b721c5f741e49fe089e2923
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218303"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755969"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Présentation de la conformité réglementaire
 
@@ -23,7 +23,7 @@ La conformité réglementaire fait référence à la discipline et au processus 
 
 La conformité peut être difficile pour les organisations multinationales, en particulier dans des secteurs fortement réglementés, comme les services de santé et financiers. Les normes et réglementations abondent et, dans certains cas, peuvent changer régulièrement. Il est donc difficile pour les entreprises de suivre les changements des lois internationales sur le traitement des données électroniques.
 
-Comme avec les contrôles de sécurité, les organisations doivent comprendre la répartition des responsabilités en matière de conformité réglementaire dans le cloud. Les fournisseurs de cloud mettent tout en œuvre pour que leurs plateformes et leurs services soient conformes. Toutefois, les organisations doivent également vérifier que leurs applications, l’infrastructure dont dépendent ces applications et les services fournis par des tiers sont également certifiés comme conformes.
+Comme avec les contrôles de sécurité, les organisations doivent comprendre la répartition des responsabilités en matière de conformité réglementaire dans le cloud. Les fournisseurs de cloud mettent tout en œuvre pour que leurs plateformes et leurs services soient conformes. Les organisations doivent également vérifier que leurs applications, l’infrastructure dont dépendent ces applications et les services fournis par des tiers sont également certifiés comme conformes.
 
 Voici des descriptions de règles de conformité dans divers secteurs et zones géographiques :
 

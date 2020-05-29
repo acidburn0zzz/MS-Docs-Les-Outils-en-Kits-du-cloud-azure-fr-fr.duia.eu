@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0837950a32a57fba595166c1b78c18aea0385417
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0882b34dc9b83d6da5926b350db35ab7ecb28495
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214461"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754578"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Base de référence de l’identité des processus de conformité à la stratégie
 
@@ -21,7 +21,7 @@ Cet article décrit une approche des processus d’adhésion à la stratégie qu
 
 ## <a name="planning-review-and-reporting-processes"></a>Processus de planification, de révision et de génération de rapports
 
-Les outils de gestion des identités offrent des capacités et des fonctionnalités qui facilitent grandement la gestion des utilisateurs et le contrôle d’accès dans un déploiement cloud. Cependant, ils exigent également des processus et des stratégies bien pensés pour soutenir les objectifs de votre organisation. Les éléments suivants représentent un ensemble d’exemples de processus généralement impliqués dans la discipline Base de référence de l’identité. Ces exemples constituent des points de départ pour planifier les processus qui vous permettront de mettre à jour la stratégie d’identité à mesure que l’entreprise évolue et selon les commentaires des équipes informatiques chargés d’implémenter les mesures de gouvernance.
+Les outils de gestion des identités offrent des capacités et des fonctionnalités qui facilitent grandement la gestion des utilisateurs et le contrôle d’accès dans un déploiement cloud. Ils exigent également des processus et des stratégies mûrement réfléchis pour soutenir les objectifs de votre organisation. Les éléments suivants représentent un ensemble d’exemples de processus généralement impliqués dans la discipline Base de référence de l’identité. Ces exemples constituent des points de départ pour planifier les processus qui vous permettront de mettre à jour la stratégie d’identité à mesure que l’entreprise évolue et selon les commentaires des équipes informatiques chargés d’implémenter les mesures de gouvernance.
 
 **Évaluation des risques et planification initiales :** Dans le cadre de l’adoption initiale de la discipline de base de référence de l’identité, identifiez vos principaux risques métier et tolérances liés à la gestion des identités du cloud. Utilisez ces informations pour débattre des techniques spécifiques avec les membres de vos équipes informatiques responsables de la gestion des services d’identité, puis développer un ensemble de stratégies de sécurité de base pour atténuer ces risques et ainsi établir votre stratégie de gouvernance initiale.
 

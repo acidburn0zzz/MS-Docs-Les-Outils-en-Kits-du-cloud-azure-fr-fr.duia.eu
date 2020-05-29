@@ -3,23 +3,23 @@ title: Comprendre les fonctions de l’informatique centralisée
 description: Découvrez la fonction d’une équipe chargée de l’informatique centralisée, notamment la source, l’étendue, le livrable et les risques.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4f12b19227559b299b71ab64a95ef75396951183
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dafa11ea95fdbcf62b389ae4e589fde75320af92
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216552"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755841"
 ---
 # <a name="central-it-functions"></a>Fonctions d’informatique centralisée
 
 Dans le cadre de la mise à l’échelle de l’adoption du cloud, les fonctions de gouvernance du cloud ne sont pas suffisantes pour régir les efforts d’adoption. Lorsque l’adoption est progressive, les équipes ont tendance à développer de façon biologique les compétences et les processus qui devaient être prêts pour le cloud au fil du temps.
 
-Cependant, quand une équipe chargée de l’adoption du cloud utilise le cloud pour obtenir un résultat métier de premier plan, l’adoption progressive se fait rarement. La réussite génère la réussite. Cela est également vrai pour l’adoption du cloud, mais cela se produit à l’échelle du cloud. Lorsque l’adoption du cloud s’étend d’une équipe à plusieurs équipes dans un laps de temps relativement bref, une prise en charge supplémentaire du personnel informatique existant est nécessaire. Toutefois, ces membres du personnel peuvent manquer de la formation et de l’expérience nécessaires à la prise en charge du cloud à l’aide des outils informatiques cloud natifs. Cela conduit souvent à la formation d’une équipe d’informatique centralisée qui régit le cloud.
+Mais lorsqu'une équipe chargée de l’adoption du cloud utilise le cloud pour obtenir un résultat métier de premier plan, l’adoption progressive se fait rarement. La réussite génère la réussite. Cela est également vrai pour l’adoption du cloud, mais cela se produit à l’échelle du cloud. Lorsque l’adoption du cloud s’étend d’une équipe à plusieurs équipes dans un laps de temps relativement bref, une prise en charge supplémentaire du personnel informatique existant est nécessaire. Toutefois, ces membres du personnel peuvent manquer de la formation et de l’expérience nécessaires à la prise en charge du cloud à l’aide des outils informatiques cloud natifs. Cela conduit souvent à la formation d’une équipe d’informatique centralisée qui régit le cloud.
 
 > [!CAUTION]
 > Bien qu’il s’agisse d’une étape de maturité courante, elle peut présenter un risque élevé d’adoption, bloquant potentiellement l’innovation et les efforts de migration, en l’absence de gestion efficace. Consultez la section Risque ci-dessous pour savoir comment atténuer le risque que la centralisation devienne un antimodèle culturel.
@@ -82,7 +82,7 @@ Chacune des fonctions cloud et des phases de maturité de l’organisation sont 
 
 Dans le monde informatique moderne, les ressources sont distribuées dans le monde entier. Les responsabilités sont déléguées. La gestion des opérations est assurée par un mélange de personnel interne, de fournisseurs de services managés et de fournisseurs de services cloud. Dans l’économie numérique, les pratiques de gestion informatique sont transférées vers un modèle libre-service et de contrôle délégué avec des barrières de sécurité claires pour appliquer la gouvernance. L’informatique centralisée peut être un contributeur important à l’adoption du cloud en devenant un courtier cloud et un partenaire pour l’innovation et l’agilité métier.
 
-L’informatique centralisée en tant que fonction est bien positionnée pour obtenir des connaissances et des pratiques précieuses à partir des modèles locaux existants et appliquer ces pratiques à la livraison cloud. Toutefois, ce processus nécessite des modifications. De nouveaux processus, de nouvelles compétences et de nouveaux outils sont nécessaires pour prendre en charge l’adoption du cloud à grande échelle. Lorsque l’informatique centralisée s’adapte, elle devient un partenaire important dans le cadre des efforts d’adoption du cloud. Toutefois, si l’informatique centralisée ne s’adapte pas au cloud ou tente d’utiliser le cloud comme catalyseur pour des contrôles étroits, elle devient rapidement un bloqueur de l’adoption, de l’innovation et de la migration.
+L’informatique centralisée en tant que fonction est bien positionnée pour obtenir des connaissances et des pratiques précieuses à partir des modèles locaux existants et appliquer ces pratiques à la livraison cloud. Mais ce processus nécessite des modifications. De nouveaux processus, de nouvelles compétences et de nouveaux outils sont nécessaires pour prendre en charge l’adoption du cloud à grande échelle. Lorsque l’informatique centralisée s’adapte, elle devient un partenaire important dans le cadre des efforts d’adoption du cloud. Cependant, si l’informatique centralisée ne s’adapte pas au cloud ou tente d’utiliser le cloud comme catalyseur pour des contrôles étroits, elle devient rapidement un bloqueur de l’adoption, de l’innovation et de la migration.
 
 Les mesures de ce risque sont la vitesse et la flexibilité. Le cloud simplifie l’adoption rapide de nouvelles technologies. Quand de nouvelles fonctionnalités cloud peuvent être déployées en quelques minutes, mais que les révisions de l’informatique centralisée ajoutent des semaines ou des mois au processus de déploiement, ces processus centralisés deviennent un obstacle majeur au succès de l’entreprise. Lorsque vous rencontrez cet indicateur, envisagez d’autres stratégies de livraison informatique.
 

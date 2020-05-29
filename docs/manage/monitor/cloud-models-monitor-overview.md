@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7fedacff566fb25e7bb166b62ee711f461209f07
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8256c043677ecaf5b540553b27ddb5f1488b5132
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223811"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756139"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -86,7 +86,7 @@ Le tableau suivant résume les conditions requises qu’Azure Monitor et que Sys
 | Superviser les charges de travail de machine virtuelle | Oui, avec des limitations <br>  Peut collecter les journaux d’erreurs IIS et SQL Server, les événements Windows et les compteurs de performances. Requiert la création de visualisations, d’alertes et de requêtes personnalisées. | Oui <br>  Prend en charge la supervision de la plupart des charges de travail serveur avec les packs d’administration disponibles. Nécessite l’agent Windows Log Analytics ou l’agent Operations Manager sur la machine virtuelle, qui rend compte au groupe d’administration sur le réseau d’entreprise. |
 | Superviser Azure IaaS | Oui | Oui <br>  Prend en charge la supervision de la majeure partie de l’infrastructure du réseau d’entreprise. Suit l’état de disponibilité, les métriques et les alertes pour les machines virtuelles Azure, SQL et le stockage via le pack d’administration Azure. |
 | Superviser Azure PaaS | Oui | Oui, avec des limitations <br><br> En fonction de ce qui est pris en charge dans le pack d’administration Azure. |
-| Supervision des services Azure | Oui | Oui <br><br> Bien qu'aucune supervision native de l'intégrité des services Azure ne soit aujourd'hui fournie via un pack d'administration, vous pouvez créer des workflows personnalisés pour interroger les alertes d'intégrité des services Azure. Utilisez l’API REST Azure pour recevoir des alertes via vos notifications existantes. |
+| Supervision des services Azure | Oui | Oui <br><br> Bien qu'aucune supervision native de l'intégrité des services Azure ne soit aujourd'hui fournie via un pack d'administration, vous pouvez créer des workflows personnalisés pour interroger les alertes d'intégrité des services. Utilisez l’API REST Azure pour recevoir des alertes via vos notifications existantes. |
 | Supervision des applications web modernes | Oui | Non |
 | Supervision des applications web héritées | Oui, les limitations dépendent du kit de développement logiciel (SDK) <br><br> Prend en charge la supervision des versions antérieures des applications web .NET et Java. | Oui, avec des limitations |
 | Superviser des conteneurs Azure Kubernetes Service | Oui | Non |

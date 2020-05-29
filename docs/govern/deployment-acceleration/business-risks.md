@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6cd6d309b5c44c55d0409b759950662eccb9f50a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1a2c1f53e5559c9ca161cad5b68266f0cd1ff83d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220445"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755018"
 ---
 # <a name="motivations-and-business-risks-in-the-deployment-acceleration-discipline"></a>Motivations et risques commerciaux dans la discipline Accélération du déploiement
 
@@ -25,7 +25,7 @@ Cet article décrit les raisons pour lesquelles les clients adoptent une discipl
 
 Les systèmes locaux sont souvent déployés à l’aide d'images de référence ou de scripts d’installation. Une configuration supplémentaire est généralement requise, ce qui peut impliquer plusieurs étapes, voire une intervention humaine. Ces processus manuels sont sujets aux erreurs et entraînent souvent une « dérive de configuration », nécessitant des tâches de dépannage et de correction chronophages.
 
-La plupart des ressources Azure peuvent être déployées et configurées manuellement via le portail Azure. Cette approche peut couvrir vos besoins si vous n'avez que quelques ressources à gérer. En revanche, au fur et à mesure que votre cloud va évoluer, votre organisation devra commencer à intégrer une automatisation dans ses processus de déploiement pour éviter toute dérive de configuration des ressources cloud ou d’autres problèmes introduits par les processus manuels. L’adoption d’une approche DevOps ou [DevSecOps](https://www.microsoft.com/devsecops) est souvent le meilleur moyen de gérer vos déploiements au fur et à mesure que vos efforts d’adoption du cloud évoluent.
+La plupart des ressources Azure peuvent être déployées et configurées manuellement via le portail Azure. Cette approche peut couvrir vos besoins si vous n'avez que quelques ressources à gérer. À mesure que votre patrimoine cloud se développe, votre organisation doit intégrer une automatisation dans ses processus de déploiement pour éviter toute dérive de configuration des ressources cloud ou d’autres problèmes introduits par les processus manuels. L’adoption d’une approche DevOps ou [DevSecOps](https://www.microsoft.com/devsecops) est souvent le meilleur moyen de gérer vos déploiements au fur et à mesure que vos efforts d’adoption du cloud évoluent.
 
 Un plan d'accélération du déploiement robuste permet de veiller à ce que vos ressources cloud soient déployées, mises à jour et configurées de façon correcte et cohérente, et qu'elles le restent. La maturité de votre stratégie d’accélération du déploiement peut également constituer un facteur important de votre [stratégie de gestion des coûts](../cost-management/index.md). L’approvisionnement et la configuration automatiques de vos ressources cloud vous permettent de descendre en puissance ou de libérer des ressources lorsque la demande est faible ou limitée dans le temps, de manière à ne payer que les ressources dont vous avez besoin.
 

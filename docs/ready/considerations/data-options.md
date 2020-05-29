@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: af1ba2cbf55d0c144241676f59e6ad154ea1b5f2
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 74fc5b90484bbbc8f72568eb83bbca7c8eb25afb
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620412"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755797"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -57,7 +57,7 @@ Le tableau suivant illustre quelques configurations requises des scénarios d’
 | J’ai besoin d’une base de données relationnelle PostgreSQL évolutive et complètement managée avec une haute disponibilité et une sécurité intégrées, sans coût supplémentaire.      | [Base de données Azure pour PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)                                                             |
 | J’ai l’intention d’héberger des applications SQL Server d’entreprise dans le cloud et d’avoir le contrôle total du système d’exploitation du serveur.                                        | [SQL Server sur les machines virtuelles](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
 | J’ai besoin d’un entrepôt de données élastique complètement managé proposant une sécurité à chaque niveau d’échelle, sans coût supplémentaire.                               | [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is)                               |
-| J’ai besoin de ressources de stockage Data Lake qui peuvent prendre en charge les clusters Hadoop ou les données HDFS.                                         | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake)                                                                                |
+| J’ai besoin de ressources Data Lake Storage capables de prendre en charge les clusters Hadoop ou les données HDFS.                                         | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake)                                                                                |
 | J’ai besoin d’un débit élevé et d’un accès cohérent et à faible latence pour mes données afin de prendre en charge des applications rapides et évolutives.                           | [Cache Azure pour Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview)                                                    |
 | J’ai besoin d’une base de données relationnelle MariaDB évolutive et complètement managée avec une haute disponibilité et une sécurité intégrées, sans coût supplémentaire.         | [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/overview)                                                                   |
 
@@ -79,6 +79,6 @@ Une partie de vos efforts de conformité peut inclure le contrôle de l’emplac
 
 Lorsque vous préparez votre environnement de zone d’accueil, vous pouvez établir des contrôles qui limitent les banques de données que les utilisateurs peuvent déployer. Les contrôles peuvent vous aider à gérer les coûts et à limiter les risques de sécurité, tout en permettant aux développeurs et aux équipes informatiques de déployer et de configurer les ressources nécessaires pour prendre en charge vos charges de travail.
 
-Après avoir identifié et documenté la configuration requise de votre zone d’accueil, vous pouvez utiliser [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) pour contrôler les ressources de base de données que vous autorisez les utilisateurs à créer. Les contrôles peuvent prendre la forme [d’autorisations ou de refus de création de types de ressources de base de données](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Par exemple, vous pouvez limiter les utilisateurs à la création de ressources Azure SQL Database uniquement. Vous pouvez également utiliser une stratégie pour contrôler les options autorisées lors de la création d’une ressource, comme la [restriction des références SKU de SQL Database qui peuvent être approvisionnées](https://docs.microsoft.com/azure/governance/policy/samples/allowed-sql-db-skus) ou [l’autorisation d’installer uniquement des versions spécifiques du serveur SQL](https://docs.microsoft.com/azure/governance/policy/samples/require-sql-12) sur une machine virtuelle IaaS.
+Après avoir identifié et documenté la configuration requise de votre zone d’accueil, vous pouvez utiliser [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) pour contrôler les ressources de base de données que vous autorisez les utilisateurs à créer. Les contrôles peuvent prendre la forme [d’autorisations ou de refus de création de types de ressources de base de données](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Par exemple, vous pouvez limiter les utilisateurs à la création de ressources Azure SQL Database uniquement. Vous pouvez également utiliser une stratégie pour contrôler les options autorisées lors de la création d’une ressource, comme la [restriction des références SKU de SQL Database qui peuvent être approvisionnées](https://docs.microsoft.com/azure/governance/policy/samples/allowed-sql-db-skus) ou [l’autorisation d’installer uniquement des versions spécifiques de SQL Server](https://docs.microsoft.com/azure/governance/policy/samples/require-sql-12) sur une machine virtuelle IaaS.
 
-Les stratégies peuvent être étendues à des ressources, des groupes de ressources, des abonnements et des groupes d’administration. Vous pouvez inclure vos stratégies dans les définitions d’[Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) et les appliquer à plusieurs reprises à l’ensemble de votre parc cloud.
+Les stratégies peuvent être étendues à des ressources, des groupes de ressources, des abonnements et des groupes d’administration. Vous pouvez inclure vos stratégies dans les définitions d'[Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) et les appliquer à plusieurs reprises à l’ensemble de votre parc cloud.

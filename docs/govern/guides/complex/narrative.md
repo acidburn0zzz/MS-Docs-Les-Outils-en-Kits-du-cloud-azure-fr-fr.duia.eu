@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1760f21d464627a81a4388a094f1ef39ade3e075
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a17f1c0293b3807afa912cc25b6f9ebbabd1ebe9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220105"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754925"
 ---
 <!-- cSpell:ignore CDO's CIO's -->
 
@@ -23,7 +23,7 @@ Le scénario suivant établit un cas d’usage de la [gouvernance au cours du pa
 
 ## <a name="back-story"></a>Ce qui s’est passé
 
-Les clients veulent une meilleure expérience lors des interactions avec cette entreprise. L’expérience actuelle a provoqué une érosion du marché et a conduit la direction à embaucher un directeur de la transformation numérique (CDO, Chief Digital Officer). Le directeur de la transformation numérique collabore avec les départements Marketing et Ventes pour piloter une transformation numérique qui permettra d’améliorer les expériences. En outre, plusieurs divisions ont récemment embauché des scientifiques des données pour gérer et exploiter les données, et pour améliorer de nombreuses expériences manuelles via l’apprentissage et la prédiction. Le département informatique fournit un support pour ces travaux là où il peut le faire. Cependant, des activités de type « shadow IT » se font en dehors des contrôles nécessaires en matière de gouvernance et de sécurité.
+Les clients veulent une meilleure expérience lors des interactions avec cette entreprise. L’expérience actuelle a provoqué une érosion du marché et a conduit la direction à embaucher un directeur de la transformation numérique (CDO, Chief Digital Officer). Le directeur de la transformation numérique collabore avec les départements Marketing et Ventes pour piloter une transformation numérique qui permettra d’améliorer les expériences. En outre, plusieurs divisions ont récemment embauché des scientifiques des données pour gérer et exploiter les données, et pour améliorer de nombreuses expériences manuelles via l’apprentissage et la prédiction. Le département informatique fournit un support pour ces travaux là où il peut le faire. Des activités de type « shadow IT » se font en dehors des contrôles nécessaires en matière de gouvernance et de sécurité.
 
 L’organisation du département informatique doit également faire face à ses propres impératifs. Le département Finance prévoit des réductions continues dans le budget informatique pour les cinq prochaines années, ce qui impose des coupes dans les dépenses à partir de cette année. À l’inverse, le RGPD et d’autres règles de souveraineté des données obligent le département informatique à investir dans des ressources pour placer les données dans d’autres pays. Deux des centres de données existants ont pris du retard dans l’actualisation nécessaire de leur matériel, ce qui provoque des problèmes de satisfaction des employés et des clients. Trois autres centres de données nécessitent des actualisations de leur matériel dans le cadre de l’exécution du plan à cinq ans. Le directeur financier pousse la directrice informatique à envisager le cloud en guise d’alternative pour ces centres de données, afin de diminuer les dépenses d’investissement.
 
@@ -56,7 +56,7 @@ Voici l’état actuel de l’informatique et de l’exploitation du cloud dans 
 Les changements suivants sont prévus dans les prochaines années :
 
 - Le directeur informatique conduit un travail visant à moderniser la stratégie sur les données financières et les données personnelles pour prendre en charge les objectifs futurs. Deux membres de l’équipe Gouvernance informatique ont une visibilité sur ce travail.
-- Le responsable des investissements souhaite utiliser la migration vers le cloud comme moyen d’améliorer la cohérence et la stabilité entre les unités métier et les zones géographiques. Toutefois, l’état futur doit respecter les exigences de conformité externe qui devraient s’éloigner des approches standards de certaines équipes informatiques.
+- Le responsable des investissements souhaite utiliser la migration vers le cloud comme moyen d’améliorer la cohérence et la stabilité entre les unités métier et les zones géographiques. L’état futur doit respecter les exigences de conformité externe qui devraient s’éloigner des approches standards de certaines équipes informatiques.
 - Si les premières expérimentations dans le développement des applications et le décisionnel montrent des indicateurs de réussite, chacun souhaiterait mettre en œuvre des solutions de production à petite échelle dans le cloud au cours des 24 prochains mois.
 - La directrice informatique et le directeur financier ont demandé à un architecte et au vice-président en charge de l’infrastructure de faire une analyse des coûts et une étude de faisabilité. Ces travaux détermineront si l’entreprise peut et doit déplacer 5 000 ressources dans le cloud au cours des 36 prochains mois. Une migration réussie permettrait à la directrice informatique d’éliminer deux centres de données, ce qui réduirait les coûts de plus de 100 millions de dollars sur le plan à cinq ans. Si trois ou quatre centres de données peuvent obtenir des résultats similaires, le budget reviendra dans le vert, donnant à la directrice informatique le budget nécessaire pour soutenir plus d’initiatives innovantes.
     ![Les coûts locaux par rapport aux coûts Azure montrent des économies de 100 millions de dollars au cours des cinq prochaines années](../../../_images/govern/calculator-enterprise.png)

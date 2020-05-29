@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1c25a98eaa63e6cd6f71ac571ec4e006ad7c4946
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 44e3cb4488833b2c47d101ed6b5600872d4ccf62
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219935"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754772"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>Guide de gouvernance pour les entreprises standard : Améliorer la discipline Gestion des coûts
 
@@ -34,11 +34,11 @@ Depuis, certains changements ont eu lieu et ceux-ci vont avoir un impact sur la 
 - L'équipe de migration a commencé à migrer les machines virtuelles hors du centre de données de production.
 - Les équipes de développement d'applications envoient (push) activement les applications de production vers le cloud par le biais de pipelines CI/CD. Ces applications peuvent s'adapter de manière réactive aux demandes des utilisateurs.
 - L’équipe décisionnelle du service informatique a fourni plusieurs outils d’analyse prédictive dans le cloud. Les volumes de données agrégées dans le cloud continuent de croître.
-- Cette croissance va dans le sens des engagements pris en matière de résultats opérationnels. En revanche, les coûts ont commencé à s'envoler. Les projections budgétaires augmentent plus rapidement que prévu. Le directeur financier a besoin de revoir les approches en matière de gestion des coûts.
+- Cette croissance va dans le sens des engagements pris en matière de résultats opérationnels. Les coûts ont commencé à monter en flèche. Les projections budgétaires augmentent plus rapidement que prévu. Le directeur financier a besoin de revoir les approches en matière de gestion des coûts.
 
 ### <a name="incrementally-improve-the-future-state"></a>Améliorer progressivement l’état futur
 
-Des fonctionnalités de contrôle des coûts et de création de rapports doivent être ajoutées à la solution cloud. Le service informatique fait toujours office de chambre de compensation des coûts. Cela signifie que les achats informatiques continuent à financer les services cloud. Les rapports devraient cependant lier les frais d’exploitation directs aux fonctions qui absorbent les coûts du cloud. Ce modèle est appelé _showback_ en termes de comptabilité cloud.
+Des fonctionnalités de contrôle des coûts et de création de rapports doivent être ajoutées à la solution cloud. Le service informatique fait toujours office de chambre de compensation des coûts. Cela signifie que les achats informatiques continuent à financer les services cloud. Les rapports devraient lier les frais d’exploitation directs aux fonctions qui absorbent les coûts du cloud. Ce modèle est appelé _showback_ en termes de comptabilité cloud.
 
 Les modifications apportées aux états actuel et futur exposent à de nouveaux risques qui nécessiteront de nouvelles instructions de stratégie.
 

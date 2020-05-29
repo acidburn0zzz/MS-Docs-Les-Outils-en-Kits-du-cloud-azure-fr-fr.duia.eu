@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f3291bb1a5ef114b2ae790bb1a3c82eaf382c37e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9f77d4a13b83c6d22592f36c924c2dd11164e27b
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215124"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814356"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>SDN (Software Defined Network) : Hub-and-spoke
 
@@ -23,7 +23,7 @@ Dans le modèle hub-and-spoke, le _hub_ est un réseau virtuel qui joue le rôle
 
 L’intégralité du trafic qui entre ou sort des réseaux spoke pour la charge de travail est acheminée via le réseau hub. Le trafic peut alors être routé, examiné ou géré par les règles ou processus informatiques centralisés.
 
-Ce modèle vise à résoudre chacun des problèmes suivants :
+Ce modèle vise à résoudre les problèmes suivants :
 
 - **Réduction des coûts et amélioration de la gestion**. En centralisant les services qui peuvent être partagés par plusieurs charges de travail (comme les appliances virtuelles réseau et les serveurs DNS) en un seul endroit, le service informatique est capable de réduire la redondance des ressources et les efforts de gestion sur plusieurs charges de travail.
 - **Dépassement des limites de l’abonnement**. Pour exécuter les charges de travail informatiques volumineuses, il se peut que vous ayez besoin d’utiliser davantage de ressources que le quota autorisé par un seul abonnement Azure. Vous avez la possibilité de dépasser ces limites en effectuant le peering des réseaux virtuels de charge de travail issus de différents abonnements à un hub central. Pour plus d’informations, consultez [Limites de mise en réseau d’Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits).
@@ -46,7 +46,7 @@ L’implémentation d’une architecture de mise en réseau virtuel hub-and-spok
 
 ## <a name="global-hub-and-spoke"></a>Modèle hub-and-spoke mondial
 
-Les architectures hub-and-spoke sont généralement implémentées avec des réseaux virtuels déployés dans la même région Azure afin de réduire la latence entre les réseaux. Toutefois, il se peut que les grandes organisations d’envergure mondiale doivent déployer des charges de travail dans plusieurs régions à des fins de disponibilité, de récupération d’urgence ou de respect des exigences réglementaires. Grâce à l’utilisation du [peering de réseau virtuel mondial](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) Azure, le modèle hub-and-spoke peut étendre la gestion centralisée et le partage de services entre plusieurs régions pour répondre aux charges de travail réparties dans le monde entier.
+Les architectures hub-and-spoke sont généralement implémentées avec des réseaux virtuels déployés dans la même région Azure afin de réduire la latence entre les réseaux. Il se peut que les grandes organisations d’envergure mondiale doivent déployer des charges de travail dans plusieurs régions à des fins de disponibilité, de récupération d’urgence ou de respect des exigences réglementaires. Grâce à l’utilisation du [peering de réseau virtuel mondial](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) Azure, le modèle hub-and-spoke peut étendre la gestion centralisée et le partage de services entre plusieurs régions pour répondre aux charges de travail réparties dans le monde entier.
 
 ## <a name="learn-more"></a>En savoir plus
 

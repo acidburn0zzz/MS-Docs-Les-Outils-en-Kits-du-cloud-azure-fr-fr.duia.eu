@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 37826614e405ddb5cb15db62ffce7cfe43b2ec20
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 88f153d80df79098c4228a6012f513f42f3a2f64
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216637"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756411"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Spécialisation de la plateforme pour la gestion cloud
 
@@ -32,7 +32,7 @@ Ce tableau présente quelques processus, outils et effets potentiels courants co
 
 | Process | Outil | Objectif  | Niveau de gestion suggéré |
 |---|---|---|---|
-| Améliorer la conception du système | Infrastructure Azure Architecture | Améliorer la conception architecturale de la plateforme pour optimiser les opérations | N/A |
+| Améliorer la conception du système | Microsoft Azure Well-Architected Framework | Améliorer la conception architecturale de la plateforme pour optimiser les opérations | N/A |
 | Automatiser la correction | Azure Automation | Répondre aux données de plateforme avancées avec une automatisation spécifique à une plateforme | Opérations de plateforme |
 | Catalogue de services | Centre d'applications managées | Fournir un catalogue en libre-service de solutions approuvées répondant aux normes organisationnelles | Opérations de plateforme |
 | Performances du conteneur | Azure Monitor pour des conteneurs | Surveillance et diagnostic des conteneurs | Opérations de plateforme |
@@ -61,9 +61,9 @@ La spécialisation de la plateforme consiste en une exécution disciplinée des 
 
 L’amélioration de la conception du système constitue l’approche la plus efficace pour améliorer les opérations de toutes les plateformes communes. Grâce aux améliorations de la conception du système, la stabilité peut s’améliorer et les interruptions d’activité peuvent diminuer. La conception de systèmes individuels n’entre pas dans le cadre du Framework d’adoption cloud pour Azure.
 
-En complément du Framework d’adoption cloud, Azure Architecture Framework fournit les bonnes pratiques permettant d’améliorer la résilience et la conception d’un système spécifique. Ces améliorations peuvent être appliquées à la conception système d’une plateforme ou d’une charge de travail.
+En complément du Cloud Adoption Framework, Microsoft Azure Well-Architected Framework fournit les bonnes pratiques permettant d’améliorer la résilience et la conception d’un système spécifique. Ces améliorations peuvent être appliquées à la conception système d’une plateforme ou d’une charge de travail.
 
-Azure Architecture Framework se concentre sur l’amélioration par le biais des cinq principes de la conception système :
+Microsoft Azure Well-Architected Framework se concentre sur l'amélioration par le biais des cinq principes de la conception système :
 
 - **Scalabilité :** Mise à l’échelle des ressources de plateforme communes pour gérer une charge accrue.
 - **Disponibilité :** Réduction des interruptions d’activité par l’amélioration de la durée de bon fonctionnement potentielle.
@@ -75,7 +75,7 @@ Les dettes techniques et les défauts architecturaux sont à l'origine de la plu
 
 L’onglet suivant, **Correction automatisée**, présente différentes solutions pour résoudre les éventuelles dettes techniques qui ne peuvent pas ou ne doivent pas être résolues.
 
-En savoir plus sur [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) pour améliorer la conception du système.
+Apprenez-en davantage sur [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) pour améliorer la conception du système.
 
 Une fois que la conception du système se sera améliorée, revenez à cet article pour trouver de nouvelles opportunités d’améliorer et de faire évoluer ces améliorations dans votre environnement.
 

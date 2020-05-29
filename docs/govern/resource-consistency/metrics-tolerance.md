@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ac55b8e0918000955924aa735fb46cd9518b9b57
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d87969a9c7b06512a74fac42dc1f57492d1ee3cb
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217997"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756037"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
@@ -50,7 +50,7 @@ Chaque organisation a ses propres scénarios opérationnels, mais les éléments
 
 Les plateformes cloud offrent un ensemble de fonctionnalités de base permettant aux équipes de déploiement de gérer efficacement de petits déploiements sans planification ou processus supplémentaires importants. Par conséquent, les premières charges de travail de développement/test ou d’expérimentation incluant une quantité relativement basse de ressources cloud présentent un faible niveau de risque et n’auront probablement pas besoin de beaucoup pour la mise en place d’une stratégie formelle Cohérence des ressources.
 
-Cependant, à mesure que la taille de vos ressources cloud augmente, leur gestion devient de plus en plus difficile. Avec davantage de ressources dans le cloud, il est essentiel de pouvoir identifier la propriété de celles-ci et de contrôler celles qui sont utiles afin de minimiser les risques. À mesure que davantage de charges de travail stratégiques sont déployées dans le cloud, le temps d’activité du service devient plus critique et la tolérance en lien avec le coût potentiel de perturbations du service diminue rapidement.
+À mesure que la taille de vos ressources cloud augmente, leur gestion devient de plus en plus difficile. Avec davantage de ressources dans le cloud, il est essentiel de pouvoir identifier la propriété de celles-ci et de contrôler celles qui sont utiles afin de minimiser les risques. À mesure que davantage de charges de travail stratégiques sont déployées dans le cloud, le temps d’activité du service devient plus critique et la tolérance en lien avec le coût potentiel de perturbations du service diminue rapidement.
 
 Au début de l’adoption du cloud, collaborez avec votre équipe des opérations informatiques et les parties prenantes de l’entreprise pour identifier les [risques commerciaux](./business-risks.md) liés à la cohérence des ressources, puis déterminez une ligne de base acceptable pour la tolérance au risque. Cette section du Framework d’adoption du cloud fournit des exemples, mais les risques et les bases de référence détaillés pour votre entreprise ou vos déploiements peuvent être différents.
 

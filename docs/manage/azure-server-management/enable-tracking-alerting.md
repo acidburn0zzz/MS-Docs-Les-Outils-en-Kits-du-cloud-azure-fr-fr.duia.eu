@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c973dfbdf7cb4fede3520465b2192b7f821cec1d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1fa20d37c5cc7813220ff5862743f3179f4aefcd
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434144"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861512"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -32,9 +32,9 @@ Pour activer le suivi du contenu du fichier hosts, suivez les étapes décrites 
 
 Vous pouvez également ajouter une alerte en cas de modifications des fichiers que vous suivez. Par exemple, imaginons que vous souhaitiez définir une alerte pour les modifications du fichier hosts. Sélectionnez **Log Analytics** sur la barre de commandes, ou Log Search pour l’espace de travail Log Analytics lié. Dans Log Analytics, utilisez la requête suivante pour rechercher des modifications apportées au fichier hosts :
 
-```kusto
-ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
-```
+  ```kusto
+  ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
+  ```
 
 ![Capture d’écran de l’éditeur de requête Log Analytics dans le portail Azure](./media/change-tracking2.png)
 
@@ -98,7 +98,7 @@ Utilisez la requête suivante pour détecter les modifications apportées à des
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Apprenez à utiliser Azure Automation pour [créer des planifications de mise à jour](./update-schedules.md) afin de gérer les mises à jour de vos serveurs.
+Découvrez comment Azure Automation [crée des planifications de mise à jour](./update-schedules.md) afin de gérer les mises à jour de vos serveurs.
 
 > [!div class="nextstepaction"]
 > [Créer des planifications de mise à jour](./update-schedules.md)

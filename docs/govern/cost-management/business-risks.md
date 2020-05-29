@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 08ae1bab0697fdd7bbffecca18c62e5ae637c2b6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 048c41f56247ff7f8878d3fdd05506ed46224768
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220717"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815087"
 ---
 <!-- cSpell:ignore prepurchases -->
 
@@ -23,11 +23,11 @@ Cet article décrit les raisons pour lesquelles les clients adoptent une discipl
 
 ## <a name="relevance"></a>Pertinence
 
-En matière de gouvernance des coûts, l’adoption du cloud crée un changement de paradigme. Dans un environnement local classique, la gestion des coûts repose sur des cycles de renouvellement, l’acquisition de centres de données, le renouvellement d’hôtes et des problèmes de maintenance périodiques. Vous pouvez prévoir, planifier et affiner chacun de ces coûts afin de vous aligner aux budgets de dépenses d’investissement annuels.
+En matière de gouvernance des coûts, l’adoption du cloud crée un changement de paradigme. Dans un environnement local classique, la gestion des coûts repose sur des cycles de renouvellement, l’acquisition de centres de données, le renouvellement d’hôtes et des problèmes de maintenance périodiques. Vous pouvez prévoir, planifier et affiner ces coûts afin de vous aligner aux budgets de dépenses d’investissement annuels.
 
-Pour les solutions cloud, de nombreuses entreprises ont tendance à adopter une approche plus réactive face à la Gestion des coûts. Dans de nombreux cas, les entreprises procèdent à un achat préalable pour une quantité définie de services cloud ou s’engagent à utiliser un certain quota. Dans ce modèle, avec l’optimisation des remises en fonction des prévisions de dépenses de l’entreprise auprès d’un fournisseur de cloud spécifique, le cycle de coût apparaît proactif et planifié. Toutefois, cette perception ne peut devenir réalité que si l’entreprise implémente également des disciplines Gestion des coûts matures.
+Pour les solutions cloud, de nombreuses entreprises ont tendance à adopter une approche plus réactive face à la Gestion des coûts. Dans de nombreux cas, les entreprises procèdent à un achat préalable pour une quantité définie de services cloud ou s’engagent à utiliser un certain quota. Dans ce modèle, avec l’optimisation des remises en fonction des prévisions de dépenses de l’entreprise auprès d’un fournisseur de cloud spécifique, le cycle de coût apparaît proactif et planifié. Cette perception ne peut devenir réalité que si l’entreprise implémente également des disciplines Gestion des coûts matures.
 
-Le cloud offre des fonctionnalités en libre-service qui étaient inconnues dans les centres de données locaux classiques. Avec ces nouvelles fonctionnalités, les entreprises peuvent être plus agiles, moins restrictives et plus ouvertes à l’adoption de nouvelles technologies. Toutefois, le libre-service présente un inconvénient : les utilisateurs finaux peuvent dépasser involontairement les budgets alloués. À l’inverse, s’ils subissent un changement imprévu dans leurs plans, ces mêmes utilisateurs n’utiliseront peut-être pas tout le quota de services cloud prévu. C’est ce potentiel écart (dans les deux sens) qui justifie les investissements dans une discipline Gestion des coûts au sein de l’équipe de gouvernance.
+Le cloud offre des fonctionnalités en libre-service qui étaient inconnues dans les centres de données locaux classiques. Avec ces nouvelles fonctionnalités, les entreprises peuvent être plus agiles, moins restrictives et plus ouvertes à l’adoption de nouvelles technologies. Le libre-service présente un inconvénient : les utilisateurs finaux peuvent dépasser involontairement les budgets alloués. À l’inverse, s’ils subissent un changement imprévu dans leurs plans, ces mêmes utilisateurs n’utiliseront peut-être pas tout le quota de services cloud prévu. C’est ce potentiel écart (dans les deux sens) qui justifie les investissements dans une discipline Gestion des coûts au sein de l’équipe de gouvernance.
 
 ## <a name="business-risk"></a>Risque métier
 

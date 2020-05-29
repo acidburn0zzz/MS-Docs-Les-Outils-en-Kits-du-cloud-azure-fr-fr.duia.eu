@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ab2033046f0f03ca897cf87d71267a069865a8dc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f30e906d7dee61ca98e88398ed16f1dc1828adb3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219833"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755849"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>Base de référence de la sécurité des processus de conformité à la stratégie
 

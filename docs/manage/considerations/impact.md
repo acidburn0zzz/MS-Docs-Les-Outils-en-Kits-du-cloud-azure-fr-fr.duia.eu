@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dc2c490850c47dfa92ec91d5133168b982b5c719
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 42a4dc16a7249ab7211da1e1574511479a566011
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398482"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815240"
 ---
 # <a name="business-impact-in-cloud-management"></a>Impact commercial en gestion cloud
 
@@ -54,7 +54,7 @@ Lorsque vous calculez des pertes en appliquant des données historiques, vous po
 
 Si vous utilisez le [classeur de gestion des operations](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) pour planifier la gestion cloud, procéder comme suit :
 
-- Chaque entreprise doit mettre à jour chacune des charges de travail présentées sous les onglets _Exemple_ et _Nettoyer le modèle_ avec *Impact Temps/Valeur* de chaque charge de travail. Par défaut, *Impact Temps/Valeur* représente les pertes projetées par heure, associées à une panne de charge de travail.
+- Chaque entreprise doit mettre à jour chacune des charges de travail dans la feuille de calcul `Example` ou dans la feuille de calcul `Clean Template`, avec `Time/Value Impact` de chaque charge de travail. Par défaut, `Time/Value Impact` représente les pertes projetées par heure, associées à une panne de charge de travail.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

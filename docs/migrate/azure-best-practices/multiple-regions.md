@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1b4859d3adbfdedc1ff8d5322398e350ba9d72de
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 0445ba3048a7b16b792cd144c29d1643aefe0d09
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400831"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815308"
 ---
 # <a name="azure-regions"></a>Régions Azure
 
@@ -47,7 +47,7 @@ Tout déploiement cloud robuste nécessite un réseau bien étudié, tenant comp
 
   - Stockage Azure prend en charge le [stockage géoredondant](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) (GRS, Geographically Redundant Storage) : trois copies de vos données sont stockées dans votre région primaire et trois copies supplémentaires sont stockées dans la région appairée. Vous ne pouvez pas modifier le jumelage du stockage dans le cadre d’un stockage géoredondant.
   - Les services qui s’appuient sur le stockage géoredondant Azure peuvent tirer parti de cette fonctionnalité de région jumelée. La prise en charge de cette fonctionnalité doit alors être prévue aussi bien au niveau de vos applications qu’au niveau du réseau.
-  - Si vous n’envisagez pas d’utiliser le stockage géoredondant pour satisfaire vos besoins en résilience régionale, nous vous recommandons de _ne pas_ utiliser la région jumelée comme région secondaire. En cas de défaillance régionale, les ressources seront soumises à une pression intense dans la région jumelée lors de leur migration. En utilisant un autre site pour la reprise d’activité, vous évitez cette pression et gagnez ainsi en rapidité lors de la reprise.
+  - Si vous n’envisagez pas d’utiliser le stockage géoredondant pour satisfaire vos besoins en résilience régionale, n'utilisez pas la région jumelée comme région secondaire. En cas de défaillance régionale, les ressources seront soumises à une pression intense dans la région jumelée lors de leur migration. En utilisant un autre site pour la reprise d’activité, vous évitez cette pression et gagnez ainsi en rapidité lors de la reprise.
   > [!WARNING]
   > N’essayez pas d’utiliser le stockage géoredondant Azure pour la récupération ou les sauvegardes de machine virtuelle. Utilisez plutôt la [sauvegarde Azure](https://azure.microsoft.com/services/backup) et [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) avec des [disques managés Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) pour assurer la résilience de vos charges de travail IaaS.
 

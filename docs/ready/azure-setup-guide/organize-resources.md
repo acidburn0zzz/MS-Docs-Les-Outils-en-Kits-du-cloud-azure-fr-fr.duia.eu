@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 93aec136df947f9df94d188dffce79f037cf8fed
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0f85ccbd46587724cba23b859722c4f4fcdc3e88
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621561"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756326"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -55,21 +55,21 @@ Vous pouvez créer un groupe d’administration, des abonnements supplémentaire
 
 Créez un groupe d’administration pour gérer plus facilement l’accès, la stratégie et la conformité pour plusieurs abonnements.
 
-1. Accédez à [Groupes d’administration](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade).
+1. Accédez aux [groupes d’administration](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade).
 2. Sélectionnez **Ajouter un groupe d’administration**.
 
 ### <a name="create-a-subscription"></a>Création d’un abonnement
 
 Utilisez des abonnements pour gérer les coûts et les ressources qui sont créées par les utilisateurs, les équipes ou les projets.
 
-1. Accédez à [Abonnements](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
+1. Accédez aux [abonnements](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
 1. Sélectionnez **Ajouter**.
 
 ### <a name="create-a-resource-group"></a>Créer un groupe de ressources
 
 Créez un groupe de ressources pour regrouper des ressources comme les applications web, les bases de données et les comptes de stockage qui partagent le même cycle de vie, les mêmes autorisations et les mêmes stratégies.
 
-1. Accédez à [Groupes de ressources](https://portal.azure.com/#create/Microsoft.ResourceGroup).
+1. Accédez aux [groupes de ressources](https://portal.azure.com/#create/Microsoft.ResourceGroup).
 1. Sélectionnez **Ajouter**.
 1. Sélectionnez l’**Abonnement** sous lequel vous souhaitez créer votre groupe de ressources.
 1. Entrez un nom pour le **groupe de ressources**.
@@ -146,21 +146,21 @@ Le tableau suivant présente les modèles d’affectation de noms pour quelques 
 
 | Entité | Étendue | Longueur | Casse | Caractères valides | Modèle suggéré | Exemple |
 | --- | --- | --- | --- | --- | --- | --- |
-| Resource group | Abonnement | 1-90 | Insensible à la casse | Alphanumériques, trait de soulignement, parenthèses, trait d’union, point (sauf à la fin) et caractères Unicode | `<service short name>-<environment>-rg` | `profx-prod-rg` |
-| Groupe à haute disponibilité | Resource group | 1-80 | Insensible à la casse | Alphanumériques, trait de soulignement et trait d’union | `<service-short-name>-<context>-as` | `profx-sql-as` |
-| Tag | Entité associée | 512 (nom), 256 (valeur) | Insensible à la casse | Alphanumérique | `"key" : "value"` | `"department" : "Central IT"` |
+| Resource group | Abonnement | 1-90 | Insensible à la casse | Alphanumériques, trait de soulignement, parenthèses, trait d’union, point (sauf à la fin) et caractères Unicode | `<service short name>-<environment>-Rg` | `profx-prod-rg` |
+| Groupe à haute disponibilité | Resource group | 1-80 | Insensible à la casse | Alphanumériques, trait de soulignement et trait d’union | `<service-short-name>-<context>-As` | `profx-SQL-as` |
+| Tag | Entité associée | 512 (nom), 256 (valeur) | Insensible à la casse | Alphanumérique | `"Key" : "value"` | `"Department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[Balises de ressource](#tab/ResourceTags)
 
-Les étiquettes sont utiles pour identifier rapidement vos ressources et groupes de ressources. Vous appliquez des balises à vos ressources Azure pour les organiser de façon logique par catégories. Chaque balise se compose d’un nom et d’une valeur. Par exemple, vous pouvez appliquer le nom « Environnement » et la valeur « Production » à toutes les ressources en production. Les balises doivent inclure le contexte de la charge de travail ou de l’application associée à la ressource, les exigences opérationnelles et les informations de propriété.
+Les étiquettes sont utiles pour identifier rapidement vos ressources et groupes de ressources. Vous appliquez des balises à vos ressources Azure pour les organiser de façon logique par catégories. Chaque balise se compose d’un nom et d’une valeur. Par exemple, vous pouvez appliquer le nom « Environnement » et la valeur « Production » à toutes les ressources en production. Les balises doivent inclure le contexte de la charge de travail ou de l’application associée à la ressource, les exigences opérationnelles et les informations de propriété.
 
 Une fois que vous avez appliqué une balise, vous pouvez utiliser son nom et sa valeur pour récupérer toutes les ressources dans votre abonnement. Lorsque vous organisez des ressources pour la facturation ou l’administration, les balises vous permettent de récupérer des ressources associées à partir de différents groupes de ressources.
 
 Vous pouvez également utiliser des étiquettes pour beaucoup d’autres choses. Voici quelques utilisations courantes :
 
-- **Métadonnées et documentation :** Les administrateurs peuvent facilement voir les détails des ressources sur lesquelles ils travaillent en appliquant une balise comme « PropriétaireProjet ».
-- **Automatisation :** Il se peut que vous ayez des scripts s’exécutant régulièrement qui effectuent une action basée sur une valeur de balise telle que « HeureArrêt » ou « DateDéprovisionnement ».
-- **Optimisation des coûts :** Vous pouvez allouer des ressources aux équipes et aux ressources qui sont responsables du coût. Dans Azure Cost Management, vous pouvez appliquer l’étiquette de centre de coût comme filtre pour obtenir les frais basés sur l’utilisation d’une équipe ou d’un département.
+- **Métadonnées et documentation :** Les administrateurs peuvent facilement voir les détails des ressources sur lesquelles ils travaillent en appliquant une balise telle que `projectowner`.
+- **Automatisation :** Il se peut que vous ayez des scripts s’exécutant régulièrement qui effectuent une action basée sur une valeur de balise telle que `shutdowntime` ou `deprovisiondate`.
+- **Optimisation des coûts** : Vous pouvez allouer des ressources aux équipes et aux ressources qui sont responsables du coût. Dans Azure Cost Management, vous pouvez appliquer l’étiquette de centre de coût comme filtre pour obtenir les frais basés sur l’utilisation d’une équipe ou d’un département.
 
 Chaque ressource ou groupe de ressources peut inclure un maximum de 50 paires nom/valeur de balise. Cette limitation s’applique uniquement aux balises directement appliquées au groupe de ressources ou à la ressource.
 
@@ -172,7 +172,7 @@ Pour obtenir d’autres recommandations et exemples de catégorisation, consulte
 
 Pour appliquer une étiquette à un groupe de ressources :
 
-1. Accédez à [Groupes de ressources](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
+1. Accédez aux [groupes de ressources](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
 1. Sélectionnez un groupe de ressources.
 1. Sélectionnez **Attribuer des étiquettes**.
 1. Entrez un nouveau nom et une nouvelle valeur, ou sélectionnez un nom et une valeur existants dans la liste déroulante.

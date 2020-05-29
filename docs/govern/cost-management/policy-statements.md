@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d686d50b98cbdef31c48d27f20d1c66f942e0818
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 72b2651b1b9b9332048f9f2f452feac039346d9c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220496"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755038"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Exemples d’instructions de la stratégie de gestion des coûts
 
@@ -27,7 +27,7 @@ Les exemples d’instructions de stratégie suivants traitent des risques couran
 
 ## <a name="future-proofing"></a>Pérennité
 
-**Risque métier :** Critères actuels qui ne garantissent pas que l’équipe de gouvernance investisse dans une discipline Gestion des coûts. Toutefois, vous prévoyez un tel investissement à l’avenir.
+**Risque métier :** Critères actuels qui ne garantissent pas que l’équipe de gouvernance investisse dans une discipline de gestion des coûts, mais vous anticipez un tel investissement dans l'avenir.
 
 **Instruction de stratégie :** Vous devez associer toutes les ressources déployées dans le cloud à une unité de facturation et à une application/charge de travail. Cette stratégie permet de garantir l’efficacité de votre discipline Gestion des coûts.
 

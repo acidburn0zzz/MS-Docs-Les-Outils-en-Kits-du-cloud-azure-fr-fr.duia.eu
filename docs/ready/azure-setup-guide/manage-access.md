@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94f51b92b50dabff8551e30e476d2738c3f2fef7
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: e8f20079df4a0e3e55a93e1a35734673d53a0634
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621650"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862515"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -30,7 +30,7 @@ Lorsque vous planifiez votre stratégie de contrôle d’accès, vous pouvez acc
 
 Pour planifier votre stratégie de contrôle d’accès, faites-le si possible en collaboration avec les personnes qui, dans vos organisations, ont un rôle dans les domaines suivants : sécurité et conformité, administration informatique et architecture d’entreprise.
 
-Le Framework d’adoption du cloud offre des conseils supplémentaires sur l’[utilisation du contrôle d’accès en fonction du rôle](../considerations/roles.md) dans le cadre de vos efforts d’adoption du cloud.
+Le Cloud Adoption Framework offre des conseils supplémentaires sur l’[utilisation du contrôle d’accès en fonction du rôle](../considerations/roles.md) dans le cadre de vos efforts d’adoption du cloud.
 
 ::: zone target="chromeless"
 
@@ -68,7 +68,7 @@ Pour accorder à un utilisateur l’accès à un abonnement :
 
 Pour accorder à un utilisateur l’accès à un groupe de ressources :
 
-1. Accédez à [Groupes de ressources](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
+1. Accédez aux [groupes de ressources](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
 1. Sélectionnez un groupe de ressources.
 1. Sélectionnez **Contrôle d’accès (IAM)** .
 1. Sélectionnez **+ Ajouter** > **Ajouter une attribution de rôle**.
@@ -78,7 +78,7 @@ Pour accorder à un utilisateur l’accès à un groupe de ressources :
 
 Pour accorder à un utilisateur l’accès à un abonnement :
 
-1. Accédez à [Abonnements](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
+1. Accédez aux [abonnements](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
 1. Sélectionnez un abonnement.
 1. Sélectionnez **Contrôle d’accès (IAM)** .
 1. Sélectionnez **+ Ajouter** > **Ajouter une attribution de rôle**.

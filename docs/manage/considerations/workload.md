@@ -7,18 +7,20 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 92453f3323a2479160bd7bd45e6ef5101c1d9f1b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1b3f21999cea35de59f30d882f9d8b104169952c
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430130"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815223"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Opérations de charge de travail en gestion cloud
 
 Certaines charges de travail sont essentielles pour le succès de l’entreprise. Pour ces charges de travail, une base de référence de gestion ne suffit pas pour répondre aux engagements métier de la gestion cloud. Les opérations de plateforme peuvent ne pas être suffisantes pour répondre aux engagements métier. Ce sous-ensemble très important de charges de travail nécessite que vous prêtiez une attention particulière au fonctionnement et à la prise en charge des charges de travail.
 
 En retour, cet investissement dans les opérations de charge de travail peut améliorer les performances, réduire les risques d’interruption et accélérer la récupération en cas de défaillance du système. Cet article explique comment investir dans les opérations continues de ces charges de travail haute priorité afin d’améliorer les engagements métier.
+
+<!-- docsTest:disable Pareto -->
 
 ## <a name="when-to-invest-in-workload-operations"></a>Quand investir dans les opérations de charge de travail
 
@@ -80,7 +82,7 @@ Le meilleur des plans d’opérations de charge de travail nécessite toujours u
 
 ### <a name="automated-remediation"></a>Correction automatisée
 
-Il ressort de l’application du principe de Pareto que 80 pour cent de l’impact métier négatif viennent probablement des 20 pour cent des incidents de service. Lorsque ces incidents ne peuvent pas être traités dans le cadre de cycles de développement normaux, des investissements en automatisation des corrections peuvent réduire considérablement les interruptions d’activité.
+Il ressort de l’application du principe de Pareto que 80 pour cent de l’impact métier négatif viennent probablement des 20 pour cent des incidents de service. Lorsque ces incidents ne peuvent pas être traités dans le cadre de cycles de développement normaux, des investissements en automatisation des corrections peuvent réduire considérablement les interruptions d’activité.
 
 ### <a name="improved-system-design"></a>Conception améliorée du système
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bbe36f12e6331a85f024af1835b66c30e35bf430
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e11fb95356f4f7364b544e896a4566b1a3188e85
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218643"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754451"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Mesures, indicateurs et tolérance au risque de la ligne de base des identités
 
@@ -40,7 +40,7 @@ Voici quelques exemples de métriques utiles que vous devez rassembler pour mieu
 
 ## <a name="risk-tolerance-indicators"></a>Indicateurs de tolérance au risque
 
-Les risques liés à la Ligne de base des identités sont principalement liés à la complexité de l’infrastructure d’identité de votre organisation. Si tous vos utilisateurs et groupes sont gérés en utilisant un seul annuaire ou fournisseur d’identité cloud natif avec une intégration minimale à d’autres services, votre niveau de risque est probablement faible. Cependant, comme les besoins de votre entreprise doivent normalement s’accroître, vos systèmes de gestion des identités devront probablement prendre en charge des scénarios plus complexes, comme plusieurs annuaires prenant en charge votre organisation interne ou la fédération avec des fournisseurs d’identité externes. À mesure que ces systèmes deviennent plus complexes, le risque augmente.
+Les risques liés à la Ligne de base des identités sont principalement liés à la complexité de l’infrastructure d’identité de votre organisation. Si tous vos utilisateurs et groupes sont gérés en utilisant un seul annuaire ou fournisseur d’identité cloud natif avec une intégration minimale à d’autres services, votre niveau de risque est probablement faible. Les besoins de votre entreprise devant normalement s’accroître, vos systèmes de gestion des identités devront probablement prendre en charge des scénarios plus complexes, comme plusieurs annuaires prenant en charge votre organisation interne ou la fédération avec des fournisseurs d’identité externes. À mesure que ces systèmes deviennent plus complexes, le risque augmente.
 
 Au début de l’adoption du cloud, collaborez avec votre équipe Sécurité informatique et les parties prenantes de l’entreprise pour identifier les [risques métier](./business-risks.md) liés à l’identité, puis déterminez une base de référence acceptable pour la tolérance au risque pour les identités. Cette section du Framework d’adoption du cloud fournit des exemples, mais les risques et les bases de référence détaillés pour votre entreprise ou vos déploiements peuvent être différents.
 

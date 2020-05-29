@@ -3,16 +3,16 @@ title: Développement piloté par les tests des zones d’atterrissage
 description: Développement piloté par les tests des zones d’atterrissage
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0eb8597e32f14685e1f1fc69a51673fb1d1d360f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d7aa0f388f68e876569ef2e8c3638b77af8ed033
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621810"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755729"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Développement piloté par les tests (TDD) des zones d’atterrissage
 
@@ -57,7 +57,7 @@ Pour un effort de migration initial, la définition de Terminé peut être trop 
 - Schéma d’attribution de noms et de marquage pour une utilisation plus simple.
 - Cet environnement doit être traité comme une « _zone démilitarisée (DMZ)_  » avec accès à l’Internet public.
 - Au cours des efforts d’adoption, l’équipe d’adoption du cloud souhaiterait un accès temporaire à l’environnement pour modifier les configurations de service.
-- À des fins de sensibilisation uniquement : Avant la version de production, ces charges de travail nécessitent une intégration avec le fournisseur d’identité d’entreprise pour régir l’identité et l’accès en continu à des fins de gestion des opérations. C’est à ce moment que l’accès de l’équipe d’adoption du cloud doit être révoqué.
+- À des fins de sensibilisation uniquement : avant la version de production, ces charges de travail nécessitent une intégration avec le fournisseur d’identité d’entreprise pour régir l’identité et l’accès en continu à des fins de gestion des opérations. C’est à ce moment que l’accès de l’équipe d’adoption du cloud doit être révoqué.
 
 Le dernier point ci-dessus n’est pas une fonctionnalité ni un critère d’acceptation. Il s’agit cependant d’un indicateur selon lequel des expansions supplémentaires seront nécessaires et doivent être explorées par d’autres équipes de façon anticipée.
 

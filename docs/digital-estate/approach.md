@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5fe16c365c3b51f275e337e39c39538816765645
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e60d7810e1ddf8cf63f3ded16ba990f08e4ac63f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214750"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814696"
 ---
-<!-- docsTest:ignore windows -->
-
 # <a name="approaches-to-digital-estate-planning"></a>Approches de la planification du patrimoine numérique
 
 Le patrimoine numérique peut prendre plusieurs formes, selon les résultats escomptés et la taille du patrimoine existant. Vous pouvez suivre plusieurs approches. Il est important de définir ses propres attentes relativement tôt dans le cycle de planification. Des attentes qui n’ont pas été clairement définies mènent souvent à des retards dus à la nécessité d’effectuer des inventaires supplémentaires. Cet article présente trois approches pour l’analyse.
@@ -25,7 +23,7 @@ Le patrimoine numérique peut prendre plusieurs formes, selon les résultats esc
 
 L’approche d’évaluation verticale évalue les aspects de sécurité. La sécurité inclut la catégorisation des données (impact métier élevé, moyen ou faible), la conformité, la souveraineté et les exigences liées aux risques de sécurité. Cette approche évalue la complexité architecturale de haut niveau. Elle évalue des aspects comme l’authentification, la structure des données, les exigences de latence, les dépendances et l’espérance de vie des applications.
 
-L’approche descendante mesure également les exigences opérationnelles de l’application, comme les niveaux de service, l’intégration, les fenêtres de maintenance, la supervision et les insights. Une fois que ces aspects ont été analysés et considérés, vous obtenez un score qui reflète la difficulté relative de migrer cette application dans chacune des plateformes cloud : IaaS, PaaS et SaaS.
+L’approche descendante mesure également les exigences opérationnelles de l’application, comme les niveaux de service, l’intégration, les fenêtres de maintenance, la supervision et les insights. Une fois ces aspects analysés et considérés, vous obtenez un score qui reflète la difficulté relative de migrer cette application dans chacune des plateformes cloud : IaaS, PaaS et SaaS.
 
 En outre, l’évaluation descendante évalue les avantages financiers de l’application, comme l’efficacité opérationnelle, le coût total de possession, le retour sur investissement et les autres métriques financières. L’évaluation examine aussi le caractère saisonnier de l’application (par exemple, existe-t-il des périodes de l’année où la demande connaît des pics ?) ainsi que la charge de calcul globale.
 

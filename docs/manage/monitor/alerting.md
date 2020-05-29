@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: d072ed1ac5abaa4f0c5cf3051d6585b4b5b13b24
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400811"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861393"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -66,9 +66,9 @@ Azure Monitor possède quatre types d’alertes, toutes globalement liées au r�
 
 - [Alerte de requête sur un journal](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query) : Disponible pour les alertes sur le contenu des magasins de journaux Application Insights ou Azure. Elle peut également alerter en fonction de requêtes portant sur plusieurs espaces de travail.
 
-- [Alerte de journal d’activité](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log) : Alerte sur les éléments du magasin de journaux d’activités, à l’exception des données de Service Health.
+- [Alerte de journal d’activité](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log) : Alerte sur les éléments du magasin de journaux d’activités, à l’exception des données Azure Service Health.
 
-- [Alerte Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications) : Type spécial d’alerte utilisé seulement pour les problèmes Service Health provenant du magasin de journaux d’activité, comme les pannes et la maintenance planifiée à venir. Notez que ce type d’alerte est configuré via [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), un service associé à Azure Monitor.
+- [Alerte Azure Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications) : Type spécial d’alerte utilisé seulement pour les problèmes Azure Service Health provenant du magasin de journaux d’activité, comme les pannes et la maintenance planifiée à venir. Notez que ce type d’alerte est configuré via [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), un service associé à Azure Monitor.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Activer les alertes via des outils partenaires
 
@@ -84,7 +84,7 @@ En général, les [solutions de gestion](https://docs.microsoft.com/azure/azure-
 |---| ---| --- |
 | Azure Monitor pour des conteneurs | Les données des performances moyennes calculées à partir des nœuds et des pods sont écrites dans le magasin de métriques. | Créez des alertes de métrique si vous voulez être alerté en fonction de la variation des performances d’utilisation mesurées et agrégées sur une période donnée. |
 | | Les données de performances calculées qui utilisent des centiles provenant de nœuds, de contrôleurs, de conteneurs et de pods sont écrites dans le magasin de journaux. Les journaux de conteneur et les informations d’inventaire sont également écrits dans le magasin de journaux. | Créez des alertes de requête de journal si vous voulez être alerté en fonction de la variation de l’utilisation mesurée des clusters et des conteneurs. Les alertes de requête de journal peuvent également être configurées en fonction des nombres de phases de pods et des nombres de nœuds d’état. |
-Azure Monitor pour machines virtuelles | Les critères d’intégrité sont des métriques écrites dans le magasin de métriques. | Des alertes sont générées quand l’état d’intégrité passe d’une condition saine à une condition non saine. Cette alerte prend seulement en charge les groupes d’actions configurés pour envoyer des notifications par SMS ou par e-mail. |
+| Azure Monitor pour machines virtuelles | Les critères d’intégrité sont des métriques écrites dans le magasin de métriques. | Des alertes sont générées quand l’état d’intégrité passe d’une condition saine à une condition non saine. Cette alerte prend seulement en charge les groupes d’actions configurés pour envoyer des notifications par SMS ou par e-mail. |
 | | Les données du journal de performances du système d’exploitation de mappage et invité sont écrites dans le magasin de journaux. | Créez des alertes de requête de journal. |
 
 <!-- docsTest:ignore "speed driven by cost" -->
@@ -128,4 +128,4 @@ Veuillez noter les [limites sur le nombre d’alertes que vous pouvez créer](ht
 
 ### <a name="best-query-experience"></a>Meilleure expérience des requêtes
 
-Si vous recherchez des tendances dans toutes vos données, il est logique d’importer toutes vos données dans les journaux Azure, à moins qu’elles ne se trouvent déjà dans Application Insights. Vous pouvez créer des requêtes sur les deux espaces de travail : il n’est donc pas nécessaire de déplacer les données entre ceux-ci. Vous pouvez également importer le journal d’activité et les données de Service Health dans votre espace de travail Log Analytics. Cette ingestion et ce stockage vous sont facturés, mais vous récupérez toutes vos données à un même emplacement où vous pouvez effectuer des analyses et des interrogations. Cette approche vous donne également la possibilité de créer des conditions de requête complexes et des alertes sur celles-ci.
+Si vous recherchez des tendances dans toutes vos données, il est logique d’importer toutes vos données dans les journaux Azure, à moins qu’elles ne se trouvent déjà dans Application Insights. Vous pouvez créer des requêtes sur les deux espaces de travail : il n’est donc pas nécessaire de déplacer les données entre ceux-ci. Vous pouvez également importer le journal d’activité et les données Azure Service Health dans votre espace de travail Log Analytics. Cette ingestion et ce stockage vous sont facturés, mais vous récupérez toutes vos données à un même emplacement où vous pouvez effectuer des analyses et des interrogations. Cette approche vous donne également la possibilité de créer des conditions de requête complexes et des alertes sur celles-ci.

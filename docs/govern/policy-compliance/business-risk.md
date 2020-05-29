@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: e0da2ec011f2fc6a823868d877780906ab472111
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 07c7534397f2664113cae33b66ca635766f6eb11
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224304"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862311"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,9 +45,9 @@ Lors d’une transformation cloud, les équipes commerciales et informatiques on
 
 ## <a name="what-is-a-business-risk-mvp"></a>Qu’est un MVP de risque métier ?
 
-Un **produit minimum viable** est couramment utilisé pour définir la plus petite unité de quelque chose qui peut produire une valeur tangible. Dans un MVP de risque professionnel, l’équipe de gouvernance cloud part du principe que certaines ressources seront déployées dans un environnement cloud à un moment donné. La nature de ces ressources est inconnue à ce moment-là et l’équipe n’est peut-être pas sûre des types de données qui seront stockés dans ces ressources.
+Un **produit minimum viable** (MVP) est couramment utilisé pour définir la plus petite unité de quelque chose qui peut produire une valeur tangible. Dans un MVP de risque professionnel, l’équipe de gouvernance cloud part du principe que certaines ressources seront déployées dans un environnement cloud à un moment donné. La nature de ces ressources est inconnue à ce moment-là et l’équipe n’est peut-être pas sûre des types de données qui seront stockés dans ces ressources.
 
-Lors de la planification du risque professionnel, l’équipe de gouvernance cloud pourrait générer le scénario le plus défavorable en mappant chaque stratégie possible au cloud. Toutefois, l’identification de tous les risques commerciaux potentiels pour tous les scénarios d’utilisation du cloud peut prendre beaucoup de temps et de travail, ce qui peut retarder l’implémentation de la gouvernance dans vos charges de travail cloud. Cela n’est pas recommandé, mais c’est une option.
+Lors de la planification du risque professionnel, l’équipe de gouvernance cloud pourrait générer le scénario le plus défavorable en mappant chaque stratégie possible au cloud. L’identification de tous les risques commerciaux potentiels pour tous les scénarios d’utilisation du cloud peut prendre beaucoup de temps et de travail, ce qui peut retarder l’implémentation de la gouvernance dans vos charges de travail cloud. Cela n’est pas recommandé, mais c’est une option.
 
 À l’inverse, une approche de MVP peut permettre à l’équipe de définir un point de départ initial et un ensemble d’hypothèses qui seraient vraies pour la plupart/la totalité des ressources. Ce MVP de risque professionnel prend en charge les déploiements de petite échelle ou de test cloud initiaux, puis sert de base pour identifier et corriger progressivement les nouveaux risques à mesure que des besoins métier surviennent ou que des charges de travail supplémentaires sont ajoutées à votre environnement cloud. Ce processus vous permet d’appliquer la gouvernance tout au long du processus d’adoption du cloud.
 
@@ -77,7 +77,7 @@ Cette approche limite les risques, tout en permettant à l’équipe de migrer r
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Découvrez comment évaluer la tolérance au risque pendant l’adoption du cloud.
+Apprenez à évaluer la tolérance au risque pendant l’adoption du cloud.
 
 > [!div class="nextstepaction"]
 > [Évaluer la tolérance au risque](./risk-tolerance.md)

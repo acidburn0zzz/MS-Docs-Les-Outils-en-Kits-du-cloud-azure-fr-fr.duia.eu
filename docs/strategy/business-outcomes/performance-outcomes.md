@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5b96c9216619a881ec9ad5a09e77ef9b3955bdb0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dc0fa352d96f7d1194566006d3d9d1e98eb46b87
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216280"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862634"
 ---
 # <a name="examples-of-performance-outcomes"></a>Exemples de résultats de performances
 
@@ -26,7 +26,7 @@ Les plus grands services de cloud computing s’exécutent sur un réseau de cen
 
 Transformez votre entreprise et réduisez les coûts grâce à une infrastructure écoénergétique couvrant plus de 100 installations hautement sécurisées dans le monde, reliées par l’un des plus grands réseaux au monde. Azure couvre plus de régions que tout autre fournisseur de cloud. Cela se traduit par l’échelle requise pour rapprocher les applications des utilisateurs dans le monde entier, en préservant la résidence des données et en offrant aux clients des options complètes de conformité et de résilience.
 
-- **Exemple 1 :** Une société de services travaillait avec un fournisseur d’hébergement qui hébergeait plusieurs ressources d’infrastructure opérationnelle. Ces systèmes ont subi des pannes fréquentes et ont connu des performances médiocres. La société a migré ses ressources vers Azure pour tirer parti du contrat de niveau de service et des contrôles de performances du cloud. Le temps d’arrêt subi a coûté environ 15 000 USD par minute de panne. Avec quatre à huit heures d’interruption par mois, il était facile de justifier cette transformation organisationnelle.
+- **Exemple 1 :** Une société de services a travaillé avec un fournisseur d’hébergement qui hébergeait plusieurs ressources d’infrastructure opérationnelle. Ces systèmes ont subi des pannes fréquentes et ont connu des performances médiocres. La société a migré ses ressources vers Azure pour tirer parti du contrat de niveau de service et des contrôles de performances du cloud. Tout temps d’arrêt coûterait à l’entreprise quelque 15 000 USD par minute de panne. Avec quatre à huit heures d’interruption par mois, il était facile de justifier cette transformation organisationnelle.
 
 - **Exemple 2 :** Une société d’investissement de consommateurs se trouvait dans les premières étapes d’un effort d’innovation pour les applications prenant en charge le cloud. Les processus agiles et DevOps évoluaient bien, mais les performances de l’application étaient irrégulières. Dans le cadre d’une transformation plus mature, l’entreprise a lancé un programme pour surveiller et automatiser le dimensionnement en fonction des besoins d’utilisation. La société a éliminé les problèmes de dimensionnement à l’aide des outils de gestion des performances Azure, ce qui a entraîné une augmentation surprenante des transactions de 5 %.
 
@@ -44,7 +44,7 @@ Azure Site Recovery simplifie le test de la récupération d’urgence en répli
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Découvrez comment [utiliser le modèle de résultat opérationnel](./business-outcome-template.md).
+Découvrez comment utiliser le [modèle de résultat opérationnel](./business-outcome-template.md).
 
 > [!div class="nextstepaction"]
 > [Utiliser le modèle de résultat opérationnel](./business-outcome-template.md)

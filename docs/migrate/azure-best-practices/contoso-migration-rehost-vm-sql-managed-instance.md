@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f130bbfd306b85620064e50df7c74af804725f62
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fd859de8d7388a0cbd7c55255e005d98e6e87418
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223624"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861580"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -137,7 +137,7 @@ Voici comment Contoso prévoie de configurer le déploiement :
 >
 > - **Étape 1 : Préparer SQL Database Managed Instance.** Contoso a besoin d’une instance managée existante vers laquelle la base de données SQL Server locale migrera.
 > - **Étape 2 : Préparer Azure Database Migration Service.** Contoso doit inscrire le fournisseur de migration de base de données, créer une instance, puis créer un projet Azure Database Migration Service. Contoso doit également configurer un URI (Uniform Resource Identifier) avec signature d’accès partagé (SAP) pour Azure Database Migration Service. Un URI SAP fournit un accès délégué aux ressources du compte de stockage Contoso. Ainsi, Contoso peut accorder des autorisations limitées aux objets de stockage. Contoso configure un URI SAP pour qu’Azure Database Migration Service puisse accéder au conteneur du compte de stockage sur lequel le service charge les fichiers de sauvegarde SQL Server.
-> - **Étape 3 : Préparer Azure pour Azure Migrate : Migration de serveur.** L’outil de migration de serveur a été ajouté dans le projet Azure Migrate.
+> - **Étape 3 : Préparer Azure pour Azure Migrate : d’Azure Migrate.** L’outil de migration de serveur a été ajouté dans le projet Azure Migrate.
 > - **Étape 4 : Préparer l’instance VMware locale pour Azure Migrate : Migration de serveur.** Ils préparent des comptes pour la découverte de machines virtuelles. Ils préparent également la connexion aux machines virtuelles Azure après migration.
 > - **Étape 5 : Répliquer les machines virtuelles.** Ils configurent la réplication et de commencer à répliquer des machines virtuelles dans le stockage Azure.
 > - **Étape 6 : Migrer la base de données à l’aide d’Azure Database Migration Service.** Contoso migre la base de données.
@@ -186,7 +186,7 @@ Les administrateurs de Contoso configurent le réseau virtuel de la façon suiva
 
 **Besoin de plus d’aide ?**
 
-- Obtenez une vue d’ensemble de [SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
+- Consultez la [vue d’ensemble des instances gérées Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
 - Découvrez comment [créer un réseau virtuel pour SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
 - Découvrez comment [configurer le peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering).
 - Découvrez comment [mettre à jour les paramètres DNS d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance).
@@ -293,11 +293,11 @@ La configuration est effectuée´comme suit :
 Les composants Azure dont Contoso a besoin pour migrer les machines virtuelles vers Azure sont les suivants :
 
 - Un réseau virtuel dans lequel les machines virtuelles Azure seront situées après leur création pendant la migration.
-- Azure Migrate : L’outil Azure Migrate (OVA) a été provisionné et configuré.
+- Azure Migrate : L’outil Server Migration (OVA) provisionné et configuré.
 
 La configuration est effectuée´comme suit :
 
-1. Configurer un réseau - Contoso a déjà configuré un réseau qui peut être pour Azure Migrate : Migration de serveur après avoir [déployé l’infrastructure Azure](./contoso-migration-infrastructure.md)
+1. Configurez un réseau. Contoso a déjà configuré un réseau utilisable pour Server Migration Migration de serveur après avoir [déployé l’infrastructure Azure](./contoso-migration-infrastructure.md)
 
     - L’application SmartHotel360 est une application de production, et les machines virtuelles seront migrées vers le réseau de production Azure (VNET-PROD-EUS2) dans la région USA Est 2 principale.
     - Les deux machines virtuelles seront placées dans le groupe de ressources ContosoRG utilisé pour les ressources de production.
@@ -332,7 +332,7 @@ La configuration est effectuée´comme suit :
 
 **Besoin de plus d’aide ?**
 
-[En savoir plus](https://docs.microsoft.com/azure/migrate) sur la configuration d’Azure Migrate : d’Azure Migrate.
+Découvrez comment configurer l’[outil Server Migration d'Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
 
 ### <a name="prepare-on-premises-vms"></a>Préparer des machines virtuelles sur site
 
@@ -362,7 +362,7 @@ Après la migration, Contoso souhaite se connecter aux machines virtuelles Azure
 
 5. Besoin d’aide ?
 
-   - [En savoir plus](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) sur la préparation des machines virtuelles pour la migration.
+   - Apprenez-en davantage sur la [préparation des machines virtuelles pour la migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration).
 
 ## <a name="step-5-replicate-the-on-premises-vms"></a>Étape 5 : Répliquer les machines virtuelles locales
 

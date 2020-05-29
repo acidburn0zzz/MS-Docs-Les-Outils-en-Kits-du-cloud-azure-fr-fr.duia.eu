@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 72bc453ba9ce0feb90e6dceaf73cd89ded0c64e0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a167cce023fc4d69a2099af7cfa305a14393e446
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221329"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753280"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationaliser le patrimoine numérique
 
@@ -53,13 +53,13 @@ La rationalisation complète d’un gros patrimoine numérique implique des risq
 
 ### <a name="inventory-reduce-discovery-data-points"></a>Inventaire : Réduire le nombre de points de données de découverte
 
-Très peu d’organisations consacrent le temps, l’énergie et les ressources nécessaires à un inventaire précis et en temps réel du patrimoine numérique complet. Les pertes, les vols, les cycles d’actualisation et l’intégration de nouveaux employés justifient souvent un suivi détaillé des ressources sur les appareils des utilisateurs finaux. Toutefois, le retour sur investissement associé au maintien d’un inventaire précis du serveur et des applications dans un centre de données local traditionnel, est souvent faible. La plupart des entreprises d’informatique ont des problèmes plus urgents que celui d’effectuer le suivi de l’utilisation des ressources au sein d’un centre de données.
+Très peu d’organisations consacrent le temps, l’énergie et les ressources nécessaires à un inventaire précis et en temps réel du patrimoine numérique complet. Les pertes, les vols, les cycles d’actualisation et l’intégration de nouveaux employés justifient souvent un suivi détaillé des ressources sur les appareils des utilisateurs finaux. Le retour sur investissement associé au maintien d’un inventaire précis du serveur et des applications dans un centre de données local traditionnel, est souvent faible. La plupart des entreprises d’informatique ont des problèmes plus urgents que celui d’effectuer le suivi de l’utilisation des ressources au sein d’un centre de données.
 
 Dans une transformation cloud, l’inventaire est directement lié aux coûts d’exploitation. Pour une bonne planification, vous devez disposer de données d’inventaire exactes. Malheureusement, les options d’analyse de l’environnement peuvent retarder les décisions de plusieurs semaines, voire de plusieurs mois. Heureusement, quelques astuces peuvent accélérer la collecte des données.
 
 L’analyse basée sur l’agent est la source de retard la plus fréquemment citée. Les données robustes nécessaires à une rationalisation traditionnelle peuvent souvent uniquement être collectées en exécutant un agent sur chacune des ressources. Cette dépendance aux agents ralentit souvent la progression, car elle peut nécessiter les commentaires des équipes chargées de la sécurité, des opérations et de l’administration.
 
-Dans un processus de rationalisation incrémentielle, vous pouvez utiliser une solution sans agent pour une découverte initiale visant à accélérer les premières décisions. Selon le niveau de complexité de l’environnement, une solution basée sur l’agent peut rester nécessaire. Toutefois, elle peut être supprimée du chemin critique vers le changement.
+Dans un processus de rationalisation incrémentielle, vous pouvez utiliser une solution sans agent pour une découverte initiale visant à accélérer les premières décisions. Selon le degré de complexité de votre environnement, vous pouvez malgré tout avoir besoin d’une solution basée sur un agent. Toutefois, vous pourrez la supprimer du chemin critique de transformation.
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Analyse quantitative : Simplifier la prise de décisions
 
@@ -85,7 +85,7 @@ Le résultat de la section précédente est une rationalisation approximative ch
 
 Dans un environnement local traditionnel, il est rare que l’hébergement de ressources petites et peu utilisées ait un impact significatif sur les coûts annuels. À quelques exceptions près, les efforts en termes de temps de travail nécessaires à l’analyse et à la mise hors service des ressources compensent largement les économies que représentent la déconnexion et la mise hors service de ces ressources.
 
-Toutefois, lorsque vous passez à un modèle de comptabilité dans le cloud, la mise hors service des ressources peut vous permettre de réaliser d’importantes économies au niveau des coûts d’exploitation annuels et des premiers efforts de migration.
+Lorsque vous passez à un modèle de comptabilité dans le cloud, la mise hors service des ressources peut vous permettre de réaliser d’importantes économies au niveau des coûts d’exploitation annuels et des premiers efforts de migration.
 
 Après l’analyse quantitative, il n’est pas rare que les organisations mettent hors service 20 % (voire plus) de leur patrimoine numérique. Nous vous recommandons d’effectuer une analyse qualitative plus approfondie avant d’agir. Une fois la confirmation acquise, la mise hors service de ces ressources peut vous permettre d’obtenir un premier retour sur investissement suite à la migration dans le cloud. Il s’agit souvent de l’un des plus importants facteurs de réduction des coûts. Par conséquent, l’équipe de stratégie cloud doit superviser la validation et la mise hors service des ressources, parallèlement à l’exécution de la [méthodologie de migration](../migrate/index.md), afin d’obtenir un retour sur investissement rapide.
 
@@ -155,7 +155,7 @@ L’équipe chargée de l’adoption du cloud est susceptible d’exécuter les 
 
 ## <a name="end-state"></a>État final
 
-Avec le temps, l’équipe chargée de l’adoption du cloud et l’équipe de stratégie cloud obtiendront ensemble une rationalisation complète de l’inventaire. Toutefois, l’approche incrémentielle permet aux équipes d’accélérer continuellement leur processus de rationalisation. Elle aide la transformation à générer des résultats commerciaux tangibles plus rapidement, sans un effort d’analyse initiale aussi important.
+Avec le temps, l’équipe chargée de l’adoption du cloud et l’équipe de stratégie cloud obtiennent ensemble une rationalisation complète de l’inventaire. Cette approche incrémentielle permet aux équipes d’accélérer continuellement leur processus de rationalisation. Elle aide la transformation à générer des résultats commerciaux tangibles plus rapidement, sans un effort d’analyse initiale aussi important.
 
 Dans certains cas, le modèle financier peut être trop strict pour permettre une décision sans effectuer de rationalisation supplémentaire. Dans ce cas, vous pouvez adopter une approche de rationalisation plus traditionnelle.
 

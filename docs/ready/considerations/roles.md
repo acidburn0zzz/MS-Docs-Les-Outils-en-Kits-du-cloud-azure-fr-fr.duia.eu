@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 6029f3d46f3a59adc465d47d9545a017d04487e6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2c7a57f339ad241f3d2f448a61d0553d1487bde7
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216399"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862617"
 ---
 # <a name="role-based-access-control"></a>Contrôle d’accès en fonction du rôle
 
@@ -75,13 +75,13 @@ Le tableau suivant illustre un modèle commun de séparation des responsabilité
 
 | Groupe | Nom du rôle commun | Responsabilités |
 | --- | --- | --- |
-| Opérations de sécurité | Responsables des opérations de sécurité | Fournit un aperçu général de la sécurité.  <br><br> Établit et applique la stratégie de sécurité, comme le chiffrement au repos. <br><br> Gère les clés de chiffrement. <br><br> Gère les règles de pare-feu. |
+| Opérations de sécurité | Responsables des opérations de sécurité | Fournit un aperçu général de la sécurité. <br> Établit et applique la stratégie de sécurité, comme le chiffrement au repos. <br><br> Gère les clés de chiffrement. <br><br> Gère les règles de pare-feu. |
 | Opérations réseau | NetOps | Gère la configuration et les opérations du réseau au sein de réseaux virtuels, tels que les itinéraires et les Peerings. |
-| Opérations systèmes | SysOps | Spécifie les options d’infrastructure de calcul et de stockage et gère les ressources qui ont été déployées. |
+| Opérations systèmes | Sysops | Spécifie les options d’infrastructure de calcul et de stockage et gère les ressources qui ont été déployées. |
 | Développement, test et opérations | DevOps | Génère et déploie des fonctionnalités de charge de travail et des applications. <br><br> Utilise des fonctionnalités et des applications pour répondre aux contrats de niveau de service (SLA) et à d’autres standards de qualité. |
 
 <!-- markdownlint-enable MD033 -->
 
 La décomposition des actions et des autorisations dans ces rôles standard est souvent identique dans vos applications, vos abonnements ou l’ensemble du parc cloud, même si ces rôles sont exécutés par différentes personnes à différents niveaux. En conséquence, vous pouvez créer un ensemble commun de définitions de rôle RBAC à appliquer sur différentes étendues au sein de votre environnement. Les utilisateurs et les groupes peuvent ensuite se voir attribuer un rôle commun, mais uniquement pour l’étendue des ressources, des groupes de ressources, des abonnements ou des groupes d’administration qu’ils sont chargés de gérer.
 
-Par exemple, dans une [topologie de réseau hub and spoke](../azure-best-practices/hub-spoke-network-topology.md) avec plusieurs abonnements, vous pouvez avoir un ensemble commun de définitions de rôles pour le hub et tous les spokes de charge de travail. Le rôle NetOps d’un abonnement hub peut être attribué aux membres du personnel informatique central de l’organisation, qui sont chargés de gérer la mise en réseau pour les services partagés utilisés par toutes les charges de travail. Le rôle NetOps d’un abonnement spoke de charge de travail peut ensuite être attribué aux membres de cette équipe de charge de travail spécifique, ce qui leur permet de configurer la mise en réseau au sein de cet abonnement pour prendre en charge au mieux leurs exigences en matière de charge de travail. La même définition de rôle est utilisée pour les deux, mais les attributions basées sur l’étendue garantissent que les utilisateurs disposent uniquement de l’accès dont ils ont besoin pour effectuer leur travail.
+Par exemple, dans une [topologie de réseau hub and spoke](../azure-best-practices/hub-spoke-network-topology.md) avec plusieurs abonnements, vous pouvez avoir un ensemble commun de définitions de rôles pour le hub et tous les spokes de charge de travail. Le rôle netops d’un abonnement hub peut être attribué aux membres du personnel informatique central de l’organisation, qui sont chargés de gérer la mise en réseau pour les services partagés utilisés par toutes les charges de travail. Le rôle netops d’un abonnement spoke de charge de travail peut ensuite être attribué aux membres de cette équipe de charge de travail spécifique, ce qui leur permet de configurer la mise en réseau au sein de cet abonnement pour prendre en charge au mieux leurs exigences en matière de charge de travail. La même définition de rôle est utilisée pour les deux, mais les attributions basées sur l’étendue garantissent que les utilisateurs disposent uniquement de l’accès dont ils ont besoin pour effectuer leur travail.

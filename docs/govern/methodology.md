@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1cbf6c608bbea2374cb6325e755fc9367aedc03
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 3bfade6fee8d07b068165f4148ed134273d646f9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399606"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754392"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>Régit la méthodologie du cloud
 
-L’adoption du cloud est un cheminement, non un objectif. Ce parcours est jalonné d’étapes cruciales et d’avantages commerciaux tangibles. Toutefois, lorsqu’une entreprise entame son parcours d’adoption du cloud, elle sait rarement quel sera son état final. La gouvernance cloud permet de mettre en place un rail de sécurité pour l’entreprise tout au long de son parcours.
+L’adoption du cloud est un cheminement, non un objectif. Ce parcours est jalonné d’étapes cruciales et d’avantages commerciaux tangibles. Lorsqu’une entreprise entame son parcours d’adoption du cloud, elle sait rarement quel sera son état final. La gouvernance cloud permet de mettre en place un rail de sécurité pour l’entreprise tout au long de son parcours.
 
 Le Framework d’adoption du cloud fournit des guides de gouvernance qui décrivent les expériences d’entreprises fictives, basées cependant sur les expériences de clients réels. Chaque guide suit le client dans les aspects qui touchent à la gouvernance du passage au cloud.
 
@@ -49,7 +49,7 @@ Au fond, les stratégies d’entreprise font figure de système d’avertissemen
 
 Comme les exigences de gouvernance changent tout au long du parcours d’adoption cloud, il est nécessaire d’adopter une approche différente face à la gouvernance. Les entreprises ne peuvent plus espérer qu’une petite équipe sécurise et jalonne chaque processus _avant de se lancer et de mettre en œuvre une première étape_. Des résultats commerciaux rapides et réguliers sont attendus. La gouvernance informatique doit également évoluer rapidement et suivre le rythme des exigences opérationnelles afin de rester pertinente lors du passage au cloud et d’éviter le phénomène « d’informatique fantôme ».
 
-L’approche de **gouvernance incrémentielle** permet de prendre toute la mesure de ces caractéristiques. La gouvernance incrémentielle repose sur un petit ensemble de stratégies d’entreprise, de processus et d’outils qui visent à établir une base solide pour le passage au cloud et sa gouvernance. Cette base est appelée un **produit minimum viable** (MVP, minimum viable product). Grâce au produit minimum viable, l’équipe responsable peut intégrer rapidement la gouvernance aux implémentations tout au long du cycle d’adoption du cloud. Un produit minimum viable peut être établi à tout moment pendant ce processus. Toutefois, il est conseillé d’adopter un produit minimum viable (MVP) le plus tôt possible.
+L’approche de **gouvernance incrémentielle** permet de prendre toute la mesure de ces caractéristiques. La gouvernance incrémentielle repose sur un petit ensemble de stratégies d’entreprise, de processus et d’outils qui visent à établir une base solide pour le passage au cloud et sa gouvernance. Cette base est appelée un **produit minimum viable** (MVP, minimum viable product). Grâce au produit minimum viable, l’équipe responsable peut intégrer rapidement la gouvernance aux implémentations tout au long du cycle d’adoption du cloud. Un produit minimum viable peut être établi à tout moment pendant ce processus. Il est conseillé d’adopter un produit minimum viable (MVP) le plus tôt possible.
 
 Quand elle est capable de répondre rapidement à l’évolution des risques, l’équipe de gouvernance cloud peut alors s’impliquer dans d’autres domaines. L’équipe de gouvernance cloud peut jouer le rôle d’éclaireur auprès de l’équipe de stratégie cloud, en devançant les équipes chargées de l’adoption du cloud et en s’éloignant des sentiers battus, afin de mettre rapidement en place des mesures de sécurité permettant de gérer les risques associés aux plans d’adoption. Ces couches de gouvernance juste-à-temps sont des **itérations de gouvernance**. Grâce à cette approche, la stratégie de gouvernance prend une longueur d’avance sur les équipes chargées de l’adoption du cloud.
 

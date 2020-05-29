@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0be49567a459915dbe4b8e8db90feae9b47a1e5c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 857cc9622e71d6ee464fd9d324c6d94e77b0276e
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223182"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756343"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -63,9 +63,9 @@ Pour en savoir plus, consultez la [documentation d’Azure Monitor](https://docs
 
 # <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
-Azure Service Health fournit un affichage personnalisé de l’intégrité des services et régions Azure que vous utilisez. Service Health publie des informations sur les problèmes actuels qui sont utiles pour comprendre l’impact sur vos ressources. Des mises à jour régulières vous tiennent informé de la résolution des problèmes.
+Azure Service Health fournit un affichage personnalisé de l’intégrité des services et régions Azure que vous utilisez. Azure Service Health publie des informations sur les problèmes actuels qui sont utiles pour comprendre l’impact sur vos ressources. Des mises à jour régulières vous tiennent informé de la résolution des problèmes.
 
-Service Health publie également les événements de maintenance planifiée pour vous avertir des prochains changements qui sont susceptibles d’impacter la disponibilité de vos ressources. Configurez des alertes Azure Service Health pour être informé des problèmes liés aux services, de la maintenance planifiée et d’autres changements pouvant avoir un impact sur les services et régions Azure que vous utilisez.
+Azure Service Health publie également les événements de maintenance planifiée pour vous avertir des prochains changements qui sont susceptibles d’impacter la disponibilité de vos ressources. Configurez des alertes Azure Service Health pour être informé des problèmes liés aux services, de la maintenance planifiée et d’autres changements pouvant avoir un impact sur les services et régions Azure que vous utilisez.
 
 Azure Service Health inclut :
 
@@ -83,7 +83,7 @@ Pour configurer une alerte Service Health :
 
 1. Accédez à **Service Health**.
 2. Sélectionnez **Alertes d’intégrité**.
-3. Créez une alerte d’intégrité du service.
+3. Créez une alerte Service Health.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts]" submitText="Go to Service Health" :::
 
@@ -91,11 +91,11 @@ Pour configurer une alerte Service Health :
 
 ::: zone target="docs"
 
-Pour configurer une alerte Service Health, accédez au [Portail Azure](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts).
+Pour configurer une alerte Service Health, accédez au [portail Azure](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts).
 
 ## <a name="learn-more"></a>En savoir plus
 
-Pour plus d’informations, consultez la [documentation d’Azure Service Health](https://docs.microsoft.com/azure/service-health).
+Pour plus d’informations, consultez [Azure Service Health](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
@@ -107,7 +107,7 @@ Azure Advisor est un conseiller personnalisé gratuit basé dans le cloud qui vo
 - **Sécurité :** permet de détecter les menaces et vulnérabilités pouvant conduire à des failles de sécurité. Les recommandations peuvent inclure l’application du chiffrement des disques ou l’activation de groupes de sécurité réseau.
 - **Performances :** pour améliorer la vitesse de vos applications. Les recommandations peuvent inclure l’amélioration des niveaux de performance des requêtes SQL en créant des index ou en reconfigurant vos paramètres de gestion du trafic.
 - **Coût :** pour optimiser et réduire vos dépenses Azure globales. Les recommandations peuvent concerner le redimensionnement ou l’arrêt des machines virtuelles sous-exploitées ou encore le transfert vers des réservations Azure pour diminuer le coût total de possession.
-- **Excellence opérationnelle :** Pour améliorer la facilité de gestion et l’efficacité des processus et des workflows. Les recommandations peuvent inclure la configuration et l’application des règles Azure Policy, la réparation des règles d’alerte de journal non valides et la configuration des alertes Azure Service Health.
+- **Excellence opérationnelle :** Pour améliorer la facilité de gestion et l’efficacité des processus et des workflows. Les recommandations peuvent inclure la configuration et l’application des règles Azure Policy, la réparation des règles d’alerte de journal non valides et la configuration des alertes Service Health.
 
 Les recommandations dans Advisor sont basées sur les ressources que vous déployez et les actions que vous effectuez dans Azure. Vous pouvez consulter Advisor régulièrement pour prendre connaissance des dernières recommandations.
 
@@ -135,7 +135,7 @@ Azure Security Center joue également un rôle important dans votre stratégie d
 
 Quand Security Center identifie une menace, il déclenche une alerte de sécurité qui indique les étapes à effectuer en réponse à l’attaque. Il fournit également un rapport contenant des informations sur la menace qui a été détectée.
 
-Azure Security Center est proposé en deux niveaux de service : Gratuit et Standard. Les fonctionnalités telles que les recommandations de sécurité sont disponibles gratuitement. Le niveau de service Standard fournit une protection supplémentaire comme la détection avancée des menaces et une protection de l’ensemble des charges de travail cloud hybrides.
+Azure Security Center est proposé en deux niveaux de service : Gratuit et Standard. Les fonctionnalités telles que les recommandations de sécurité sont disponibles gratuitement. Le niveau Standard fournit une protection supplémentaire comme la détection avancée des menaces et une protection de l’ensemble des charges de travail cloud hybrides.
 
 ::: zone target="chromeless"
 

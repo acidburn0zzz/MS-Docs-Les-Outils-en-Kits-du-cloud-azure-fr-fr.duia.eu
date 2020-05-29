@@ -3,17 +3,17 @@ title: Présentation des fonctions du centre d’excellence cloud (CCoE)
 description: Découvrez les fonctions d’un centre d’excellence cloud (CCoE), notamment la source, l’étendue et le livrable.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0f4ccda8c5f05f24fae2b32715029a42e8c33348
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 749a6d4693b07102c0904eca72b87a53998d6b59
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215770"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755767"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 
@@ -68,7 +68,7 @@ Exemples de cette transition :
 | Scénario | Solution pré-CCoE | Solution post-CCoE |
 |---------|---------|---------|
 | Approvisionner un serveur SQL Server de production | Les équipes réseau, informatique et de plateforme de données approvisionnent différents composants durant plusieurs jours, voire plusieurs semaines. | L’équipe qui demande le serveur déploie une instance PaaS d’Azure SQL Database. Vous pouvez également utiliser un modèle pré-approuvé pour déployer toutes les ressources IaaS dans le cloud en quelques heures. |
-| Approvisionner un environnement de développement | Les équipes chargées des réseaux, des technologies de l’information, du développement et du DevOps s’entendent sur les spécifications et déploient un environnement. | L’équipe de développement définit ses propres spécifications et déploie un environnement basé sur le budget alloué. |
+| Approvisionner un environnement de développement | Les équipes chargées des réseaux, des technologies de l'information, du développement et des DevOps s'entendent sur les spécifications et déploient un environnement. | L’équipe de développement définit ses propres spécifications et déploie un environnement basé sur le budget alloué. |
 | Mettre à jour les exigences de sécurité pour améliorer la protection des données | Les équipes chargées de la mise en réseau, de l’informatique et de la sécurité mettent à jour différents appareils réseau et machines virtuelles dans plusieurs environnements afin d’ajouter des protections. | Les outils de gouvernance du cloud permettent de mettre à jour les stratégies qui peuvent être appliquées immédiatement à toutes les ressources dans tous les environnements cloud. |
 
 ## <a name="negotiations"></a>Négociations
@@ -101,7 +101,7 @@ Ce type de changement demande du temps, de l’expérimentation et de la négoci
 
 ### <a name="key-stakeholders"></a>Parties prenantes principales
 
-La direction informatique est la première partie prenante et la plus évidente. Les responsables informatiques jouent un rôle important. Cependant, ce processus requiert le soutien du responsable des investissements et des cadres informatiques.
+La direction informatique est la première partie prenante et la plus évidente. Les responsables informatiques jouent un rôle important. Mais ce processus requiert le soutien du responsable des investissements et des cadres informatiques.
 
 Celui des parties prenantes de l’entreprise est moins évident. L’agilité et le délai de commercialisation de l’entreprise sont des motivations clés pour la formation du CCoE. Par conséquent, les parties prenantes principales doivent avoir un intérêt direct dans ces domaines. Parmi les parties prenantes de l’entreprise, citons les dirigeants, les cadres financiers, les cadres d’exploitation et les propriétaires de produits professionnels.
 
@@ -117,11 +117,11 @@ L’accélération des efforts du CCoE est possible avec le soutien des parties 
 
 Ces points de données ne constituent pas une attaque contre l’informatique. Ils aident plutôt le CCoE à tirer les leçons du passé et à établir un backlog réaliste et un plan d’amélioration.
 
-**Support et engagement continus :** Les équipes du CCoE peuvent faire la preuve d’une grande réactivité dans certains domaines. Cependant, les objectifs de haut niveau, comme l’agilité commerciale et le délai de commercialisation, peuvent prendre beaucoup plus de temps. Au cours de la maturation, il existe un risque élevé que le CCoE se décourage ou soit découragé de se concentrer sur d’autres efforts informatiques.
+**Support et engagement continus :** Les équipes du CCoE peuvent faire la preuve d’une grande réactivité dans certains domaines. Mais les objectifs de haut niveau, comme l’agilité commerciale et le délai de commercialisation, peuvent prendre beaucoup plus de temps. Au cours de la maturation, il existe un risque élevé que le CCoE se décourage ou soit découragé de se concentrer sur d’autres efforts informatiques.
 
 Au cours des six à neuf premiers mois des efforts du CCoE, nous recommandons que les intervenants opérationnels allouent du temps pour rencontrer mensuellement les dirigeants informatiques et le CCoE. Ces réunions peuvent être mises en place de façon flexible. Le simple fait de rappeler aux membres du CCoE et à leurs dirigeants l’importance de ce programme peut contribuer grandement au succès du CCoE.
 
-De plus, nous recommandons que les parties prenantes de l’entreprise s’informent sur les progrès et les obstacles rencontrés par l’équipe du CCoE. La plupart de leurs efforts sembleront porter sur des détails techniques. Toutefois, il est important que les intervenants opérationnels comprennent la progression du plan afin qu’ils puissent s’engager lorsque l’équipe s’essouffle ou se laisse distraire par d’autres priorités.
+De plus, nous recommandons que les parties prenantes de l’entreprise s’informent sur les progrès et les obstacles rencontrés par l’équipe du CCoE. La plupart de leurs efforts sembleront porter sur des détails techniques. Mais il est important que les intervenants opérationnels comprennent la progression du plan afin de s’engager lorsque l’équipe s’essouffle ou se laisse distraire par d’autres priorités.
 
 ### <a name="it-stakeholder-support"></a>Soutien des parties prenantes informatiques
 
@@ -129,7 +129,7 @@ De plus, nous recommandons que les parties prenantes de l’entreprise s’infor
 
 **Soutenir les efforts :** Un CCoE peut représenter un engagement important pour toute équipe informatique aux ressources limitées. Le fait de retirer les architectes expérimentés des projets à court terme pour se concentrer sur les gains à long terme risque de poser des difficultés aux membres de l’équipe qui ne font pas partie du CCoE. Les dirigeants et les parties prenantes informatiques doivent demeurer concentrés sur l’objectif du CCoE. L’appui des dirigeants et des parties prenantes informatiques est nécessaire pour éviter que les opérations quotidiennes soient perturbées au profit des tâches du CCoE.
 
-**Créer une zone tampon :** L’équipe du CCoE expérimentera de nouvelles approches. Certaines de ces approches ne s’harmoniseront pas bien avec les opérations existantes ou les contraintes techniques. Il existe un risque réel que le CCoE subisse des pressions ou des recours de la part d’autres équipes en cas d’échec des expériences. Il est important d’encourager l’équipe et de la mettre à l’abri des conséquences des opportunités d’apprentissage « Fail-fast ». Il est tout aussi important de tenir l’équipe responsable de sa volonté de croissance, de s’assurer qu’elle tire des leçons de ces expériences et de trouver de meilleures solutions.
+**Créer une zone tampon :** L’équipe du CCoE expérimentera de nouvelles approches. Certaines de ces approches ne s’harmoniseront pas bien avec les opérations existantes ou les contraintes techniques. Il existe un risque réel que le CCoE subisse des pressions ou des recours de la part d’autres équipes en cas d’échec des expériences. Il est important d'encourager l'équipe et de la mettre à l'abri des conséquences des opportunités d'apprentissage « Fail-fast ». Il est tout aussi important de responsabiliser l'équipe en termes de croissance, en veillant à ce qu'elle tire des leçons de ces expériences et trouve de meilleures solutions.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

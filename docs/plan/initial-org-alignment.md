@@ -7,18 +7,18 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d1e8542b1fe53c88773bd477fe7872b6fac02288
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2780347386db755cab9cc2c0a69549a75463c820
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223488"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862549"
 ---
 # <a name="initial-organization-alignment"></a>Alignement initial de l’organisation
 
 L’aspect le plus important d’un plan d’adoption du cloud est l’alignement des personnes qui mettront en pratique le plan. Un plan n’est terminé que lorsque vous comprenez les aspects liés aux personnes.
 
-Un véritable alignement organisationnel prend du temps. Il est important d’établir un alignement organisationnel à long terme, en particulier lorsque l’adoption du cloud englobe la culture d’entreprise et la culture informatique. L’alignement est si important qu’[une section entière](../organize/index.md) lui a été consacrée dans la méthodologie Organiser du Framework d’adoption du cloud.
+Un véritable alignement organisationnel prend du temps. Il est important d’établir un alignement organisationnel à long terme, en particulier lorsque l’adoption du cloud englobe la culture d’entreprise et la culture informatique. L’alignement est si important qu’une section entière lui a été consacrée dans la [méthodologie Organiser](../organize/index.md) Organiser du Cloud Adoption Framework.
 
 Un alignement complet de l’organisation n’est pas une composante obligatoire du plan d’adoption du cloud. Toutefois, un alignement organisationnel initial est requis. Cet article décrit un point de départ recommandé pour l’alignement organisationnel. Ces conseils peuvent vous aider à terminer votre plan et à préparer vos équipes pour l’adoption du cloud. Lorsque vous êtes prêt, vous pouvez utiliser la section relative à l’[alignement organisationnel](../organize/index.md) pour personnaliser ces conseils et les adapter à votre organisation.
 

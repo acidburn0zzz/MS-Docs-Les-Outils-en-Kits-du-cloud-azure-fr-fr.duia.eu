@@ -3,16 +3,16 @@ title: Commencer par les zones d’atterrissage à l’échelle de l’entrepris
 description: Commencer par les zones d’atterrissage à l’échelle de l’entreprise
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1e34cf58fd3f9827a3cf8dd1ffd866fdcfcca1f7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3eb1e11a50236d078c5dd9b1cc6f317bdfc96823
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215226"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755756"
 ---
 # <a name="start-with-enterprise-scale-landing-zones"></a>Commencer par les zones d’atterrissage à l’échelle de l’entreprise
 
@@ -61,7 +61,7 @@ Chacun des modèles suivants fournit aux clients une zone d’atterrissage initi
 
 - [Services partagés ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared)
 - [Charge de travail App Service Environment/SQL Database ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)
-- [Gouvernance de UK Official et de UK NHS](https://docs.microsoft.com/azure/governance/blueprints/samples/ukofficial)
+- [Gouvernance UK OFFICIAL et UK NHS](https://docs.microsoft.com/azure/governance/blueprints/samples/ukofficial)
 
 Les exemples supplémentaires de l’[article sur les exemples de blueprints Azure](https://docs.microsoft.com/azure/governance/blueprints/samples) peuvent être utilisés en tant que test « Rouge/Vert » pour les zones d’atterrissage à l’échelle de l’entreprise. L’application de ces blueprints permet de garantir qu’un environnement répond aux normes de conformité avant son adoption. Cette approche est ensuite particulièrement utile pour valider les zones d’atterrissage tierces ou partenaires avant d’adopter le cloud :
 

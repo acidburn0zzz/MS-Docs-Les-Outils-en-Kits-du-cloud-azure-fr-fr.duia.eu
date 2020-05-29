@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 574dba7b2c5db10b007dcf6cb7ecdd6dc93a0111
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: dd3d1b0bcbef071c1b5d819071a0f539948ec273
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401163"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861053"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -255,7 +255,7 @@ Vous trouverez dans le [Guide de migration de bases de données Azure](https://d
 
 Les projets qui ne sont pas suivis et gérés sont plus susceptibles de rencontrer des problèmes. Pour garantir un résultat réussi, nous pensons qu’il est important d’utiliser un outil de gestion de projet. De nombreux outils différents sont disponibles et les chefs de projet de votre organisation peuvent déjà avoir leur favori.
 
-Azure DevOps est l’outil de gestion de projet recommandé dans le cadre d’une migration cloud. Pour accélérer l’utilisation d’Azure DevOps, le Framework d’adoption du cloud inclut un outil assurant le déploiement automatique d’un modèle de projet. Ce modèle comprend les tâches généralement exécutées lors d’un travail de migration. Déployez le modèle en suivant [ces instructions](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template). Vous pouvez ensuite le modifier pour prendre en compte les [charges de travail ](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) et les [ressources](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) à migrer.
+Azure DevOps est l’outil de gestion de projet recommandé dans le cadre d’une migration cloud. Pour accélérer l’utilisation d’Azure DevOps, le Framework d’adoption du cloud inclut un outil assurant le déploiement automatique d’un modèle de projet. Ce modèle comprend les tâches généralement exécutées lors d’un travail de migration. Déployez le modèle à l’aide des instructions fournies dans [Plan d’adoption du cloud et Azure DevOps](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template). Vous pouvez ensuite le modifier pour prendre en compte les [charges de travail ](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) et les [ressources](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) à migrer.
 
 Microsoft propose également les outils de gestion de projet suivants, qui peuvent fonctionner ensemble pour fournir des fonctionnalités plus larges :
 

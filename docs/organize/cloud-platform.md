@@ -6,17 +6,17 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 9c2dfc0172df51652bcf56bd7a30a021d4f66900
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: d5aa6f9625f3841890669c3ee4c5d769bd4a9d84
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215583"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755545"
 ---
 # <a name="cloud-platform-functions"></a>Fonctions de plateforme cloud
 
-Le cloud introduit de nombreuses modifications techniques, ainsi que des opportunités de rationalisation des solutions techniques. Toutefois, les principes informatiques généraux et les besoins de l’entreprise restent les mêmes. Vous devez toujours protéger les données sensibles de l’entreprise. Si votre plateforme informatique dépend d’un réseau local, il y a de bonnes chances que vous ayez besoin de définitions de réseau dans le cloud. Les utilisateurs qui ont besoin d’accéder aux applications et aux données doivent disposer de leurs identités actuelles pour accéder aux ressources cloud pertinentes.
+Le cloud introduit de nombreuses modifications techniques, ainsi que des opportunités de rationalisation des solutions techniques. Cependant, les principes informatiques généraux et les besoins de l’entreprise restent les mêmes. Vous devez toujours protéger les données sensibles de l’entreprise. Si votre plateforme informatique dépend d’un réseau local, il y a de bonnes chances que vous ayez besoin de définitions de réseau dans le cloud. Les utilisateurs qui ont besoin d’accéder aux applications et aux données doivent disposer de leurs identités actuelles pour accéder aux ressources cloud pertinentes.
 
 Alors que le cloud vous offre la possibilité d’apprendre de nouvelles qualifications, vos architectes actuels doivent être en mesure d’appliquer directement leurs expériences et leur expertise. Les fonctions de plateforme cloud sont généralement assurées par un petit groupe d’architectes qui se concentrent sur l’apprentissage de la plateforme cloud. Ces architectes aident ensuite les autres à prendre des décisions et mettre en œuvre correctement les contrôles dans les environnements cloud.
 
@@ -46,7 +46,7 @@ Les compétences nécessaires pour fournir des fonctionnalités complètes de pl
 - [Risques métier](../govern/policy-compliance/risk-tolerance.md)
 - [Rationalisation du patrimoine numérique](../digital-estate/index.md)
 
-## <a name="minimum-scope"></a>Étendue minimale
+## <a name="minimum-scope"></a>Cadre minimal
 
 Le centre des tâches de la plateforme cloud est axé sur la création et la prise en charge de votre plateforme cloud ou de vos zones de destination.
 
