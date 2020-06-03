@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7ab2ea31c90215efd37c2ab0d65f8a8c7baf24b1
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 91e9199d8d4dee4a52b0d558f16bb3fcd344bf78
+ms.sourcegitcommit: d2a6430eba5aa3db4a21b8dc4f1c9996224b9cb3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814288"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84149370"
 ---
 # <a name="get-started-align-your-organization"></a>Bien démarrer : Aligner votre organisation
 
@@ -70,7 +70,9 @@ Cette approche éprouvée est considérée comme un produit minimal viable, car 
 
 Si les besoins d’adoption augmentent, les besoins de créer un équilibre et une structure augmentent également. Pour y répondre, les entreprises suivent souvent un processus de maturation de leurs structures organisationnelles.
 
-![Diagramme d’un cycle d’évolution de l’organisation](../_images/ready/org-ready-maturity.png)
+Regardez cette vidéo pour obtenir une vue d’ensemble des structures d’équipe courantes à différentes étapes de la maturité organisationnelle.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS]
 
 ## <a name="step-5-align-raci-charts"></a>Étape 5 : Aligner les graphiques RACI
 
